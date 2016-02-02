@@ -1,0 +1,79 @@
+study(title="ScannerData", shorttitle="_SD_")
+
+
+// study(title="Average True Range", shorttitle="ATR", overlay=false)
+plot(rma(tr(true), 14), title="ATR")
+
+
+// study("Average Directional Index", shorttitle="ADX")
+dirmov(len) =>
+	up = change(high)
+	down = -change(low)
+	truerange = rma(tr, len)
+	plus = fixnan(100 * rma(up > down and up > 0 ? up : 0, len) / truerange)
+	minus = fixnan(100 * rma(down > up and down > 0 ? down : 0, len) / truerange)
+	[plus, minus]
+
+adx(dilen, adxlen) => 
+	[plus, minus] = dirmov(dilen)
+	sum = plus + minus
+	adx = 100 * rma(abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
+
+plot(adx(14, 14), title="ADX")
+
+
+// study(shorttitle="BB", title="Bollinger Bands", overlay=true)
+lengthBB = 20
+srcBB = close
+multBB = 2
+basisBB = sma(srcBB, lengthBB)
+devBB = multBB * stdev(srcBB, lengthBB)
+upperBB = basisBB + devBB
+lowerBB = basisBB - devBB
+plot(basisBB, title="BB.basis")
+plot(upperBB, title="BB.upper")
+plot(lowerBB, title="BB.lower")
+
+
+// study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
+sourceMACD = close
+fastLengthMACD = 12
+slowLengthMACD = 26
+signalLengthMACD = 9
+fastMAMACD = ema(sourceMACD, fastLengthMACD)
+slowMAMACD = ema(sourceMACD, slowLengthMACD)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = sma(macdMACD, signalLengthMACD)
+histMACD = macdMACD - signalMACD
+plot(histMACD, title="MACD.hist")
+plot(macdMACD, title="MACD.macd")
+plot(signalMACD, title="MACD.signal")
+
+
+//study(title="Momentum", shorttitle="Mom")
+plot(close - close[10], title="Mom")
+
+
+//study(title="Relative Strength Index", shorttitle="RSI")
+srcRSI = close
+lenRSI = 14
+upRSI = rma(max(change(srcRSI), 0), lenRSI)
+downRSI = rma(-min(change(srcRSI), 0), lenRSI)
+rsi = downRSI == 0 ? 100 : upRSI == 0 ? 0 : 100 - (100 / (1 + upRSI / downRSI))
+plot(rsi, title="RSI")
+
+
+// study(title="Moving Average", shorttitle="MA", overlay=true)
+plot(sma(close, 20), title="SMA20")
+plot(sma(close, 50), title="SMA50")
+plot(sma(close, 200), title="SMA200")
+
+
+// study(title="Stochastic", shorttitle="Stoch")
+lengthStoch = 14
+smoothKStoch = 1
+smoothDStoch = 3
+kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch = sma(kStoch, smoothDStoch)
+plot(kStoch, title="Stoch.K")
+plot(dStoch, title="Stoch.D")

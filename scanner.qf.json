@@ -1,0 +1,48 @@
+[{
+	"name": "sector",
+	"type": "string"
+},
+{
+	"name": "industry",
+	"type": "string"
+},
+{
+	"name": "market_cap_basic",
+	"type": "float64"
+},
+{
+	"name": "price_earnings_ttm",
+	"type": "float64"
+},
+{
+	"name": "gross_margin_percent_ttm",
+	"type": "float64"
+},
+{
+	"name": "operating_margin",
+	"type": "float64"
+},
+{
+	"name": "price_52_week_high",
+	"type": "float64"
+},
+{
+	"name": "price_52_week_low",
+	"type": "float64"
+},
+{
+	"name": "beta_1_year",
+	"type": "float64"
+},
+{
+	"name": "average_volume",
+	"type": "float64"
+},
+{
+	"name": "ebitda",
+	"type": "float64"
+},
+{
+	"name": "earnings_per_share_basic_ttm",
+	"type": "float64"
+}]

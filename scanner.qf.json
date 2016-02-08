@@ -1,48 +1,48 @@
 [{
 	"name": "sector",
-	"type": "string"
+	"type": "text"
 },
 {
 	"name": "industry",
-	"type": "string"
+	"type": "text"
 },
 {
 	"name": "market_cap_basic",
-	"type": "float64"
+	"type": "number"
 },
 {
 	"name": "price_earnings_ttm",
-	"type": "float64"
+	"type": "number"
 },
 {
 	"name": "gross_margin_percent_ttm",
-	"type": "float64"
+	"type": "percent"
 },
 {
 	"name": "operating_margin",
-	"type": "float64"
+	"type": "percent"
 },
 {
 	"name": "price_52_week_high",
-	"type": "float64"
+	"type": "price"
 },
 {
 	"name": "price_52_week_low",
-	"type": "float64"
+	"type": "price"
 },
 {
 	"name": "beta_1_year",
-	"type": "float64"
+	"type": "number"
 },
 {
 	"name": "average_volume",
-	"type": "float64"
+	"type": "number"
 },
 {
 	"name": "ebitda",
-	"type": "float64"
+	"type": "number"
 },
 {
 	"name": "earnings_per_share_basic_ttm",
-	"type": "float64"
+	"type": "number"
 }]

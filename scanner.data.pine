@@ -77,3 +77,11 @@ kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch = sma(kStoch, smoothDStoch)
 plot(kStoch, title="Stoch.K")
 plot(dStoch, title="Stoch.D")
+
+// performance
+rateOfreturn(v1, v2) => (v1 - v2) * 100 / v2
+plot(rateOfreturn(close, close[5]), title="Perf.W")
+plot(rateOfreturn(close, close[21]), title="Perf.1M")
+plot(rateOfreturn(close, close[63]), title="Perf.3M")
+plot(rateOfreturn(close, close[126]), title="Perf.6M")
+plot(rateOfreturn(close, close[252]), title="Perf.Y")

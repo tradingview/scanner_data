@@ -1,6 +1,12 @@
 {
     "black_list": [
       {
+        "s": "AMEX:BZC",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"

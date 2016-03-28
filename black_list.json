@@ -1,6 +1,12 @@
 {
     "black_list": [
       {
+        "s": "AMEX:CRBQ",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"
@@ -70,6 +76,24 @@
         "s": "AMEX:IPOM",
         "f": [
           "test symbol"
+        ]
+      },
+      {
+        "s": "AMEX:SLDR",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:SLOW",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:STXX",
+        "f": [
+          "no data"
         ]
       },
       {

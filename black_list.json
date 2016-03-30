@@ -1,6 +1,18 @@
 {
     "black_list": [
       {
+        "s": "AMEX:IBCB",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:IBDA",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"
@@ -153,6 +165,7 @@
       {
         "s": "NYSE:PCP",
         "f": [
+          "no data",
           "test symbol"
         ]
       },

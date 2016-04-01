@@ -81,15 +81,18 @@ plot(dStoch, title="Stoch.D")
 
 // performance
 rateOfreturn(v1, v2) => (v1 - v2) * 100 / v2
-plot(rateOfreturn(close, close[5]), title="Perf.W")
-plot(rateOfreturn(close, close[21]), title="Perf.1M")
-plot(rateOfreturn(close, close[63]), title="Perf.3M")
-plot(rateOfreturn(close, close[126]), title="Perf.6M")
-plot(rateOfreturn(close, close[252]), title="Perf.Y")
+rr(bb) =>
+    rof = rateOfreturn(close, close[bb])
+    rof[1]
+plot(rr(5), title="Perf.W")
+plot(rr(21), title="Perf.1M")
+plot(rr(63), title="Perf.3M")
+plot(rr(126), title="Perf.6M")
+plot(rr(252), title="Perf.Y")
 lastYearClose = lastYearClose[1]
 if year > year[1]
     lastYearClose := close[1]
-plot(rateOfreturn(close, lastYearClose), title="Perf.YTD")
+plot(rateOfreturn(close, lastYearClose)[1], title="Perf.YTD")
 
 // volatility
 volatility(bb) => sma((high-low)/low * 100, bb)

@@ -45,4 +45,28 @@
 {
 	"name": "earnings_per_share_basic_ttm",
 	"type": "number"
+},
+{
+	"name": "return_on_assets",
+	"type": "percent"
+},
+{
+	"name": "return_on_equity",
+	"type": "percent"
+},
+{
+	"name": "return_on_invested_capital",
+	"type": "percent"
+},
+{
+	"name": "total_shares_outstanding",
+	"type": "number"
+},
+{
+	"name": "current_ratio",
+	"type": "number"
+},
+{
+	"name": "quick_ratio",
+	"type": "number"
 }]

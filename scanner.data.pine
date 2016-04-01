@@ -1,3 +1,4 @@
+//@version=2
 study(title="ScannerData", shorttitle="_SD_")
 
 
@@ -85,3 +86,14 @@ plot(rateOfreturn(close, close[21]), title="Perf.1M")
 plot(rateOfreturn(close, close[63]), title="Perf.3M")
 plot(rateOfreturn(close, close[126]), title="Perf.6M")
 plot(rateOfreturn(close, close[252]), title="Perf.Y")
+lastYearClose = lastYearClose[1]
+if year > year[1]
+    lastYearClose := close[1]
+plot(rateOfreturn(close, lastYearClose), title="Perf.YTD")
+
+// volatility
+volatility(bb) => sma((high-low)/low * 100, bb)
+volatility5 = volatility(5)
+volatility21 = volatility(21)
+plot(volatility5[1], title="Volatility.W")
+plot(volatility21[1], title="Volatility.M")

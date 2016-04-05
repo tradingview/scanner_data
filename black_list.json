@@ -1,6 +1,12 @@
 {
     "black_list": [
       {
+        "s": "AMEX:BZC",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"
@@ -146,6 +152,12 @@
       },
       {
         "s": "AMEX:ZZZZ",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NASDAQ:OVTI",
         "f": [
           "test symbol"
         ]

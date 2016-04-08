@@ -1,12 +1,6 @@
 {
     "black_list": [
       {
-        "s": "AMEX:EOX",
-        "f": [
-          "no data"
-        ]
-      },
-      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"
@@ -157,9 +151,9 @@
         ]
       },
       {
-        "s": "NYSE:PCON",
+        "s": "NYSE:KING",
         "f": [
-          "no data"
+          "test symbol"
         ]
       },
       {

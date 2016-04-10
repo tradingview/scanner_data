@@ -1,6 +1,12 @@
 {
     "black_list": [
       {
+        "s": "AMEX:EOX",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"

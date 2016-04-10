@@ -1,7 +1,7 @@
 {
     "black_list": [
       {
-        "s": "AMEX:EOX",
+        "s": "AMEX:BZC",
         "f": [
           "test symbol"
         ]
@@ -152,6 +152,12 @@
       },
       {
         "s": "AMEX:ZZZZ",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:KING",
         "f": [
           "test symbol"
         ]

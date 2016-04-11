@@ -1,13 +1,6 @@
 {
     "black_list": [
       {
-        "s": "AMEX:EOX",
-        "f": [
-          "no data",
-          "test symbol"
-        ]
-      },
-      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"
@@ -158,9 +151,9 @@
         ]
       },
       {
-        "s": "NYSE:NQU",
+        "s": "NYSE:KING",
         "f": [
-          "no data"
+          "test symbol"
         ]
       },
       {

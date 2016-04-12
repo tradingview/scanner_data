@@ -1,24 +1,6 @@
 {
     "black_list": [
       {
-        "s": "AMEX:DRVN",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "AMEX:HHDG",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "AMEX:HHFR",
-        "f": [
-          "no data"
-        ]
-      },
-      {
         "s": "AMEX:IPOB",
         "f": [
           "test symbol"
@@ -165,25 +147,6 @@
       {
         "s": "AMEX:ZZZZ",
         "f": [
-          "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:BLT",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:GHI",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:KING",
-        "f": [
-          "no data",
           "test symbol"
         ]
       },

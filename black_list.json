@@ -1,3 +1,10 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "NYSE:ZZZZ",
+        "f": [
+          "test symbol"
+        ]
+      }
+    ]
   }

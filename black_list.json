@@ -1,6 +1,30 @@
 {
     "black_list": [
       {
+        "s": "NASDAQ:BRCM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:BTU",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:CNL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:SUNE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:ZZZZ",
         "f": [
           "test symbol"

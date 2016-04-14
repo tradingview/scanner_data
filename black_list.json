@@ -1,8 +1,135 @@
 {
     "black_list": [
       {
+        "s": "AMEX:FAB",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FAD",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FEX",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FMK",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FNK",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FNX",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FNY",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FTA",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FTC",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FYC",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FYT",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:FYX",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:NVG",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:NZF",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:ADAT",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:KCLI",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:SXCL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:TEMPF",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:ZX",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:GLPW",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:ZZZ",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:ZZZZ",
         "f": [
+          "no data",
           "test symbol"
         ]
       }

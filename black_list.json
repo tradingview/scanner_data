@@ -1,28 +1,3 @@
 {
-    "black_list": [
-      {
-        "s": "AMEX:DPU",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NASDAQ:LMCB",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NASDAQ:MOLG",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:JAH",
-        "f": [
-          "no data"
-        ]
-      }
-    ]
+    "black_list": null
   }

@@ -1,3 +1,46 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "AMEX:CHNB",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:HART",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:JST",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:QTWW",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:ACG",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:BCA",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:GUA",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

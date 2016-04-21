@@ -1,3 +1,16 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "AMEX:BZC",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:QHC/I",
+        "f": [
+          "test symbol"
+        ]
+      }
+    ]
   }

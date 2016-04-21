@@ -1,37 +1,3 @@
 {
-    "black_list": [
-      {
-        "s": "AMEX:BZC",
-        "f": [
-          "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:NGLS",
-        "f": [
-          "invalid symbol",
-          "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:PBY",
-        "f": [
-          "invalid symbol",
-          "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:PCP",
-        "f": [
-          "invalid symbol",
-          "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:QHC/I",
-        "f": [
-          "test symbol"
-        ]
-      }
-    ]
+    "black_list": null
   }

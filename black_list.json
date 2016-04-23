@@ -1,9 +1,22 @@
 {
     "black_list": [
       {
+        "s": "NASDAQ:OVTI",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:BTU",
         "f": [
+          "no data",
           "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:PBY",
+        "f": [
+          "no data"
         ]
       }
     ]

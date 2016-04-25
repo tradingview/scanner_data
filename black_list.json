@@ -1,3 +1,28 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "NYSE:IRC",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:IRC/PA",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:ISH/PA",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:ISH/PB",
+        "f": [
+          "test symbol"
+        ]
+      }
+    ]
   }

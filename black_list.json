@@ -1,34 +1,9 @@
 {
     "black_list": [
       {
-        "s": "AMEX:EOX",
+        "s": "NYSE:IRC/PA",
         "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NASDAQ:OVTI",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:NGLS",
-        "f": [
-          "no data",
           "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:PBY",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:PCP",
-        "f": [
-          "no data"
         ]
       }
     ]

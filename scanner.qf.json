@@ -73,4 +73,20 @@
 {
 	"name": "total_revenue",
 	"type": "number"
+},
+{
+	"name": "debt_to_equity",
+	"type": "number"
+},
+{
+	"name": "price_earnings_to_growth_ttm",
+	"type": "number"
+},
+{
+	"name": "price_book_fq",
+	"type": "number"
+},
+{
+	"name": "price_free_cash_flow_ttm",
+	"type": "number"
 }]

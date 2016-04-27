@@ -1,3 +1,16 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "NYSE:BTU",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:PSA/PQ",
+        "f": [
+          "test symbol"
+        ]
+      }
+    ]
   }

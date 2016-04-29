@@ -1,42 +1,15 @@
 {
     "black_list": [
       {
-        "s": "AMEX:BZC",
+        "s": "AMEX:EOX",
         "f": [
-          "no data",
           "test symbol"
         ]
       },
       {
-        "s": "NASDAQ:TFM",
+        "s": "NYSE:IRC/PA",
         "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:NGLS",
-        "f": [
-          "no data",
           "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:PCP",
-        "f": [
-          "no data",
-          "test symbol"
-        ]
-      },
-      {
-        "s": "NYSE:SUNE",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:SYA",
-        "f": [
-          "no data"
         ]
       }
     ]

@@ -1,13 +1,19 @@
 {
     "black_list": [
       {
-        "s": "NYSE:BTU",
+        "s": "NYSE:ADT",
         "f": [
           "test symbol"
         ]
       },
       {
-        "s": "NYSE:NGLS",
+        "s": "NYSE:IRC",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:KING",
         "f": [
           "test symbol"
         ]

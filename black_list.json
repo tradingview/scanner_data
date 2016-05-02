@@ -1,9 +1,15 @@
 {
     "black_list": [
       {
-        "s": "NYSE:MRO",
+        "s": "NYSE:BTU",
         "f": [
-          "no data"
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:NGLS",
+        "f": [
+          "test symbol"
         ]
       }
     ]

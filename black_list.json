@@ -1,9 +1,38 @@
 {
     "black_list": [
       {
-        "s": "NASDAQ:OVTI",
+        "s": "NYSE:I/PA",
         "f": [
-          "no data",
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:IRC",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:IRC/PA",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:KING",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:PBY",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:PCP",
+        "f": [
           "test symbol"
         ]
       }

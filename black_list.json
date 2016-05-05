@@ -1,38 +1,43 @@
 {
     "black_list": [
       {
-        "s": "NYSE:I/PA",
+        "s": "NASDAQ:DSCO",
         "f": [
-          "test symbol"
+          "no data"
         ]
       },
       {
         "s": "NYSE:IRC",
         "f": [
+          "no data",
           "test symbol"
         ]
       },
       {
         "s": "NYSE:IRC/PA",
         "f": [
+          "no data",
           "test symbol"
         ]
       },
       {
         "s": "NYSE:KING",
         "f": [
+          "no data",
           "test symbol"
         ]
       },
       {
         "s": "NYSE:PBY",
         "f": [
+          "no data",
           "test symbol"
         ]
       },
       {
         "s": "NYSE:PCP",
         "f": [
+          "no data",
           "test symbol"
         ]
       }

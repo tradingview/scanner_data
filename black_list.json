@@ -1,8 +1,15 @@
 {
     "black_list": [
       {
+        "s": "NASDAQ:DSCO",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:KING",
         "f": [
+          "no data",
           "test symbol"
         ]
       }

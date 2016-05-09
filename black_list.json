@@ -1,9 +1,27 @@
 {
     "black_list": [
       {
-        "s": "NYSE:PRE/PH",
+        "s": "AMEX:EOX",
         "f": [
-          "no data"
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:MM",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:NGLS",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:PCP",
+        "f": [
+          "test symbol"
         ]
       }
     ]

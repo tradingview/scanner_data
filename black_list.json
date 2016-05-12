@@ -1,9 +1,45 @@
 {
     "black_list": [
       {
-        "s": "NASDAQ:QKLS",
+        "s": "NASDAQ:OVTI",
         "f": [
-          "no data"
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:I/PA",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:IRC",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:IRC/PA",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:ISH/PA",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:ISH/PB",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:WPP",
+        "f": [
+          "test symbol"
         ]
       }
     ]

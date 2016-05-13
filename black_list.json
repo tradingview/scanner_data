@@ -1,39 +1,9 @@
 {
     "black_list": [
       {
-        "s": "NYSE:EOC",
+        "s": "NYSE:CNW",
         "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:LG",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:MXPT",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:PACD",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:RNF",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:SGY",
-        "f": [
-          "no data"
+          "test symbol"
         ]
       }
     ]

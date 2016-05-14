@@ -1,16 +1,3 @@
 {
-    "black_list": [
-      {
-        "s": "AMEX:EOX",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:CNW",
-        "f": [
-          "test symbol"
-        ]
-      }
-    ]
+    "black_list": null
   }

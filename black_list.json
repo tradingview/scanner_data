@@ -1,33 +1,57 @@
 {
     "black_list": [
       {
-        "s": "AMEX:BZC",
+        "s": "NYSE:BMR",
         "f": [
-          "no data"
+          "test symbol"
         ]
       },
       {
-        "s": "AMEX:GRH",
+        "s": "NYSE:CYN",
         "f": [
-          "no data"
+          "test symbol"
         ]
       },
       {
-        "s": "AMEX:GRH/PC",
+        "s": "NYSE:IRC",
         "f": [
-          "no data"
+          "test symbol"
         ]
       },
       {
-        "s": "AMEX:MLPL",
+        "s": "NYSE:IRC/PA",
         "f": [
-          "no data"
+          "test symbol"
         ]
       },
       {
-        "s": "NASDAQ:OVTI",
+        "s": "NYSE:ISH/PA",
         "f": [
-          "no data"
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:ISH/PB",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:MW",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:NGLS",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:OMG",
+        "f": [
+          "test symbol"
         ]
       }
     ]

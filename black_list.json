@@ -1,6 +1,12 @@
 {
     "black_list": [
       {
+        "s": "NASDAQ:SNDK",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:BMR",
         "f": [
           "test symbol"
@@ -34,6 +40,18 @@
         "s": "NYSE:ISH/PB",
         "f": [
           "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:LG",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:MHFI",
+        "f": [
+          "no data"
         ]
       },
       {

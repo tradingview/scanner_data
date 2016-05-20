@@ -1,22 +1,3 @@
 {
-    "black_list": [
-      {
-        "s": "NASDAQ:AFFX",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NASDAQ:ONS",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:EOC",
-        "f": [
-          "no data"
-        ]
-      }
-    ]
+    "black_list": null
   }

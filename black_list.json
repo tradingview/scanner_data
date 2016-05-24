@@ -1,8 +1,93 @@
 {
     "black_list": [
       {
+        "s": "AMEX:BZC",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:CVOL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:GRH",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:GRH/PC",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:MLPL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:BATRV",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:BRCM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:CTCT",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:FWM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:HILL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:MDAS",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:MRGE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:OVTI",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:RENT",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:NBG",
         "f": [
+          "no data",
           "test symbol"
         ]
       }

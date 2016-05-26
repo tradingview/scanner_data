@@ -1,7 +1,13 @@
 {
     "black_list": [
       {
-        "s": "NYSE:BMR",
+        "s": "AMEX:EOX",
+        "f": [
+          "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:EHT",
         "f": [
           "test symbol"
         ]

@@ -1,22 +1,3 @@
 {
-    "black_list": [
-      {
-        "s": "AMEX:IGZ",
-        "f": [
-          "test symbol"
-        ]
-      },
-      {
-        "s": "AMEX:ZZZ",
-        "f": [
-          "test symbol"
-        ]
-      },
-      {
-        "s": "NASDAQ:ZVZZC",
-        "f": [
-          "test symbol"
-        ]
-      }
-    ]
+    "black_list": null
   }

@@ -1,6 +1,18 @@
 {
     "black_list": [
       {
+        "s": "NASDAQ:LONG",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:IRC",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:IRC/PA",
         "f": [
           "test symbol"
@@ -16,6 +28,18 @@
         "s": "NYSE:ISH/PB",
         "f": [
           "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:RKUS",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:WCN",
+        "f": [
+          "no data"
         ]
       }
     ]

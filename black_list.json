@@ -1,3 +1,40 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "AMEX:SLI",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:FWM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:NRX",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:ONS",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:PCP",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:UPL",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

@@ -1,3 +1,16 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "NASDAQ:FWM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:TFM",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

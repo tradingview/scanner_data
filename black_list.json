@@ -1,3 +1,46 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "AMEX:BZC",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:GRH",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:MLPL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:REDF",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:UACL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:VRNG",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:XUE",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

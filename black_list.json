@@ -1,3 +1,46 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "AMEX:HKOR",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:TPI",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:TYTE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:CBNJ",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:MTSN",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:TFM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:VSCP",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

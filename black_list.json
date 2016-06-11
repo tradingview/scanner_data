@@ -1,27 +1,72 @@
 {
     "black_list": [
       {
+        "s": "AMEX:TYTE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:BLUE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:BRCM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:AFL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:BMR",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:BSI",
         "f": [
+          "no data",
           "test symbol"
         ]
       },
       {
-        "s": "NYSE:HT/PB",
+        "s": "NYSE:CYN",
         "f": [
-          "test symbol"
+          "no data"
         ]
       },
       {
         "s": "NYSE:ISH/PA",
         "f": [
+          "no data",
           "test symbol"
         ]
       },
       {
         "s": "NYSE:ISH/PB",
         "f": [
+          "no data",
           "test symbol"
+        ]
+      },
+      {
+        "s": "NYSE:RKUS",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:UPL",
+        "f": [
+          "no data"
         ]
       }
     ]

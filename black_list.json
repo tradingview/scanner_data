@@ -1,3 +1,28 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "NASDAQ:BRCM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:BTU",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:RLD",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:TWC",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

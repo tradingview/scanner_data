@@ -1,27 +1,15 @@
 {
     "black_list": [
       {
-        "s": "NASDAQ:LINE",
+        "s": "NYSE:CYN",
         "f": [
-          "no data"
+          "test symbol"
         ]
       },
       {
-        "s": "NASDAQ:LNCO",
+        "s": "NYSE:DFT/PA",
         "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:IRC",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:LDI",
-        "f": [
-          "no data"
+          "test symbol"
         ]
       }
     ]

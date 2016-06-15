@@ -1,3 +1,40 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "NASDAQ:BRCM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:LINE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:LNCO",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:BMR",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:BSI",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:OPWR",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

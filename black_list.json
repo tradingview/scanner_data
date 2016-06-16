@@ -1,3 +1,22 @@
 {
-    "black_list": null
+    "black_list": [
+      {
+        "s": "AMEX:TYTE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NASDAQ:TFM",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "NYSE:GRP.U",
+        "f": [
+          "no data"
+        ]
+      }
+    ]
   }

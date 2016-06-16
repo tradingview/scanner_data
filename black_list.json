@@ -1,21 +1,9 @@
 {
     "black_list": [
       {
-        "s": "AMEX:TYTE",
+        "s": "AMEX:HYDD",
         "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NASDAQ:TFM",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:GRP.U",
-        "f": [
-          "no data"
+          "test symbol"
         ]
       }
     ]

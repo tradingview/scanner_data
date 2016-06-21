@@ -1,6 +1,30 @@
 {
     "black_list": [
       {
+        "s": "AMEX:BZC",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:GRH",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:MLPL",
+        "f": [
+          "no data"
+        ]
+      },
+      {
+        "s": "AMEX:TYTE",
+        "f": [
+          "no data"
+        ]
+      },
+      {
         "s": "NYSE:IRC",
         "f": [
           "test symbol"

@@ -103,3 +103,7 @@ plot(volatility21[1], title="Volatility.M")
 
 // average volume
 plot(sma(volume,90*5/7)[1], title="average_volume")
+
+// price 52 week high & low
+plot(highest(high, 52*5), title="price_52_week_high")
+plot(lowest(low, 52*5), title="price_52_week_low")

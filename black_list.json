@@ -1,33 +1,9 @@
 {
     "black_list": [
       {
-        "s": "AMEX:BZC",
+        "s": "NYSE:WNR/I",
         "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "AMEX:GRH",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "AMEX:MLPL",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "AMEX:TYTE",
-        "f": [
-          "no data"
-        ]
-      },
-      {
-        "s": "NYSE:RKUS",
-        "f": [
-          "no data"
+          "test symbol"
         ]
       }
     ]

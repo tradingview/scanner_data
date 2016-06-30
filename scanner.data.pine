@@ -100,7 +100,7 @@ volatility5 = volatility(5)
 volatility21 = volatility(21)
 plot(volatility5[1], title="Volatility.W")
 plot(volatility21[1], title="Volatility.M")
-plot(volatility(1), title="Volatility.D")
+plot(rateOfreturn(high,low), title="Volatility.D")
 
 // average volume
 plot(sma(volume,90*5/7)[1], title="average_volume")

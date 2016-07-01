@@ -96,11 +96,9 @@ plot(rateOfreturn(close, lastYearClose)[1], title="Perf.YTD")
 
 // volatility
 volatility(bb) => sma((high-low)/low * 100, bb)
-volatility5 = volatility(5)
-volatility21 = volatility(21)
-plot(volatility5[1], title="Volatility.W")
-plot(volatility21[1], title="Volatility.M")
-plot(rateOfreturn(high,low), title="Volatility.D")
+plot(volatility(5), title="Volatility.W")
+plot(volatility(21), title="Volatility.M")
+plot(tr(true)*100/low, title="Volatility.D")
 
 // average volume
 plot(sma(volume,90*5/7)[1], title="average_volume")

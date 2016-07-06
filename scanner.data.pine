@@ -103,18 +103,16 @@ plot(tr(true)*100/low, title="Volatility.D")
 // average volume
 plot(sma(volume,90*5/7)[1], title="average_volume")
 
-// price 52 week high & low
-plot(highest(high, 52*5), title="price_52_week_high")
-plot(lowest(low, 52*5), title="price_52_week_low")
-
 // high & low
-allTimeHigh = max(nz(allTimeHigh[1]), high)
+allTimeHigh = max(nz(allTimeHigh[1], high), high)
 allTimeLow = min(nz(allTimeLow[1], low), low)
 plot(allTimeHigh, title="High.All")
 plot(allTimeLow, title="Low.All")
-plot(highest(high, 126), title="High.6M")
-plot(lowest(low, 126), title="Low.6M")
-plot(highest(high, 63), title="High.3M")
-plot(lowest(low, 63), title="Low.3M")
-plot(highest(high, 21), title="High.1M")
-plot(lowest(low, 21), title="Low.1M")
+plot(nz(highest(high, 52*5), allTimeHigh), title="price_52_week_high")
+plot(nz(lowest(low, 52*5), allTimeLow), title="price_52_week_low")
+plot(nz(highest(high, 126), allTimeHigh), title="High.6M")
+plot(nz(lowest(low, 126), allTimeLow), title="Low.6M")
+plot(nz(highest(high, 63), allTimeHigh), title="High.3M")
+plot(nz(lowest(low, 63), allTimeLow), title="Low.3M")
+plot(nz(highest(high, 21), allTimeHigh), title="High.1M")
+plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")

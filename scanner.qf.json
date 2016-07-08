@@ -1,80 +1,238 @@
-[{
-	"name": "sector",
-	"type": "text"
-},
-{
-	"name": "industry",
-	"type": "text"
-},
-{
-	"name": "market_cap_basic",
-	"type": "number"
-},
-{
-	"name": "price_earnings_ttm",
-	"type": "number"
-},
-{
-	"name": "gross_margin_percent_ttm",
-	"type": "percent"
-},
-{
-	"name": "operating_margin",
-	"type": "percent"
-},
-{
-	"name": "beta_1_year",
-	"type": "number"
-},
-{
-	"name": "ebitda",
-	"type": "number"
-},
-{
-	"name": "earnings_per_share_basic_ttm",
-	"type": "number"
-},
-{
-	"name": "return_on_assets",
-	"type": "percent"
-},
-{
-	"name": "return_on_equity",
-	"type": "percent"
-},
-{
-	"name": "return_of_invested_capital_percent_ttm",
-	"type": "percent"
-},
-{
-	"name": "total_shares_outstanding",
-	"type": "number"
-},
-{
-	"name": "current_ratio",
-	"type": "number"
-},
-{
-	"name": "quick_ratio",
-	"type": "number"
-},
-{
-	"name": "total_revenue",
-	"type": "number"
-},
-{
-	"name": "debt_to_equity",
-	"type": "number"
-},
-{
-	"name": "price_earnings_to_growth_ttm",
-	"type": "number"
-},
-{
-	"name": "price_book_fq",
-	"type": "number"
-},
-{
-	"name": "price_free_cash_flow_ttm",
-	"type": "number"
-}]
+[
+  {
+    "name": "sector",
+    "type": "text"
+  },
+  {
+    "name": "industry",
+    "type": "text"
+  },
+  {
+    "name": "market_cap_basic",
+    "type": "number"
+  },
+  {
+    "name": "price_earnings_ttm",
+    "type": "number"
+  },
+  {
+    "name": "gross_margin_percent_ttm",
+    "type": "percent"
+  },
+  {
+    "name": "operating_margin",
+    "type": "percent"
+  },
+  {
+    "name": "beta_1_year",
+    "type": "number"
+  },
+  {
+    "name": "ebitda",
+    "type": "number"
+  },
+  {
+    "name": "earnings_per_share_basic_ttm",
+    "type": "number"
+  },
+  {
+    "name": "return_on_assets",
+    "type": "percent"
+  },
+  {
+    "name": "return_on_equity",
+    "type": "percent"
+  },
+  {
+    "name": "return_of_invested_capital_percent_ttm",
+    "type": "percent"
+  },
+  {
+    "name": "total_shares_outstanding",
+    "type": "number"
+  },
+  {
+    "name": "current_ratio",
+    "type": "number"
+  },
+  {
+    "name": "quick_ratio",
+    "type": "number"
+  },
+  {
+    "name": "total_revenue",
+    "type": "number"
+  },
+  {
+    "name": "debt_to_equity",
+    "type": "number"
+  },
+  {
+    "name": "price_earnings_to_growth_ttm",
+    "type": "number"
+  },
+  {
+    "name": "price_book_fq",
+    "type": "number"
+  },
+  {
+    "name": "price_free_cash_flow_ttm",
+    "type": "number"
+  },
+  {
+    "name": "goodwill",
+    "type": "number"
+  },
+  {
+    "name": "debt_to_assets",
+    "type": "number"
+  },
+  {
+    "name": "cash_ratio",
+    "type": "number"
+  },
+  {
+    "name": "total_capital",
+    "type": "number"
+  },
+  {
+    "name": "long_term_capital",
+    "type": "number"
+  },
+  {
+    "name": "net_debt",
+    "type": "number"
+  },
+  {
+    "name": "total_debt",
+    "type": "number"
+  },
+  {
+    "name": "revenue_per_employee",
+    "type": "number"
+  },
+  {
+    "name": "return_on_invested_capital",
+    "type": "percent"
+  },
+  {
+    "name": "after_tax_margin",
+    "type": "percent"
+  },
+  {
+    "name": "pre_tax_margin",
+    "type": "percent"
+  },
+  {
+    "name": "gross_margin",
+    "type": "percent"
+  },
+  {
+    "name": "dividends_paid",
+    "type": "number"
+  },
+  {
+    "name": "basic_eps_net_income",
+    "type": "number"
+  },
+  {
+    "name": "preferred_dividends",
+    "type": "number"
+  },
+  {
+    "name": "net_income",
+    "type": "number"
+  },
+  {
+    "name": "gross_profit",
+    "type": "number"
+  },
+  {
+    "name": "number_of_shareholders",
+    "type": "number"
+  },
+  {
+    "name": "total_shares_outstanding_fundamental",
+    "type": "number"
+  },
+  {
+    "name": "total_assets",
+    "type": "number"
+  },
+  {
+    "name": "total_current_assets",
+    "type": "number"
+  },
+  {
+    "name": "debt_to_equity_fq",
+    "type": "number"
+  },
+  {
+    "name": "expected_annual_dividends",
+    "type": "number"
+  },
+  {
+    "name": "dividends_per_share_fq",
+    "type": "number"
+  },
+  {
+    "name": "earnings_per_share_diluted_ttm",
+    "type": "number"
+  },
+  {
+    "name": "enterprise_value_ebitda_ttm",
+    "type": "number"
+  },
+  {
+    "name": "enterprise_value_fq",
+    "type": "number"
+  },
+  {
+    "name": "price_revenue_ttm",
+    "type": "number"
+  },
+  {
+    "name": "beta_5_year",
+    "type": "number"
+  },
+  {
+    "name": "beta_3_year",
+    "type": "number"
+  },
+  {
+    "name": "average_volume",
+    "type": "number"
+  },
+  {
+    "name": "price_percent_change_52_week",
+    "type": "percent"
+  },
+  {
+    "name": "price_percent_change_4_week",
+    "type": "percent"
+  },
+  {
+    "name": "price_percent_change_1_week",
+    "type": "percent"
+  },
+  {
+    "name": "price_52_week_low",
+    "type": "price"
+  },
+  {
+    "name": "price_52_week_high",
+    "type": "price"
+  },
+  {
+    "name": "number_of_employees",
+    "type": "number"
+  },
+  {
+    "name": "last_annual_eps",
+    "type": "number"
+  },
+  {
+    "name": "last_annual_revenue",
+    "type": "number"
+  }
+]

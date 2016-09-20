@@ -56,19 +56,25 @@ plot(close - close[10], title="Mom")
 
 
 //study(title="Relative Strength Index", shorttitle="RSI")
-srcRSI = close
-lenRSI = 14
-upRSI = rma(max(change(srcRSI), 0), lenRSI)
-downRSI = rma(-min(change(srcRSI), 0), lenRSI)
-rsi = downRSI == 0 ? 100 : upRSI == 0 ? 0 : 100 - (100 / (1 + upRSI / downRSI))
-plot(rsi, title="RSI")
+plot(rsi(close,14), title="RSI")
+plot(rsi(close,7), title="RSI7")
 
 
 // study(title="Moving Average", shorttitle="MA", overlay=true)
+plot(sma(close, 10), title="SMA10")
 plot(sma(close, 20), title="SMA20")
+plot(sma(close, 30), title="SMA30")
 plot(sma(close, 50), title="SMA50")
+plot(sma(close, 100), title="SMA100")
 plot(sma(close, 200), title="SMA200")
 
+// study(title="Exponential Moving Average", shorttitle="EMA", overlay=true)
+plot(ema(close, 10), title="EMA10")
+plot(ema(close, 20), title="EMA20")
+plot(ema(close, 30), title="EMA30")
+plot(ema(close, 50), title="EMA50")
+plot(ema(close, 100), title="EMA100")
+plot(ema(close, 200), title="EMA200")
 
 // study(title="Stochastic", shorttitle="Stoch")
 lengthStoch = 14
@@ -116,3 +122,23 @@ plot(nz(highest(high, 63), allTimeHigh), title="High.3M")
 plot(nz(lowest(low, 63), allTimeLow), title="Low.3M")
 plot(nz(highest(high, 21), allTimeHigh), title="High.1M")
 plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")
+
+// Commodity Channel Index
+plot(cci(close, 20), title = "CCI20")
+
+// Donchian Channels
+donchLen = 20
+donchUpper = highest(donchLen)
+donchLower = lowest(donchLen)
+plot(donchLower, title = "DonchCh20.Lower")
+plot(donchUpper, title = "DonchCh20.Upper")
+plot(avg(donchUpper, donchLower), title="DonchCh20.Middle")
+
+// Hull Moving Average
+hullMALength = 9
+hullMA_n2ma=2*wma(close,round(hullMALength/2))
+hullMA_nma=wma(close,hullMALength)
+plot(wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength))), title = "HullMA9")
+
+// Awesome Oscillator
+plot(sma(hl2, 5) - sma(hl2, 34), title = "AO")

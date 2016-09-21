@@ -4,7 +4,7 @@
 			{
 				"id": "text",
 				"type": "text",
-				"defval": "change(high)~-change(low)~rma(tr,#0)~0~fixnan(100*rma($0\u003e$1\u0026\u0026$0\u003e0?$0:$3,#0)/$2)~fixnan(100*rma($1\u003e$0\u0026\u0026$1\u003e0?$1:$3,#0)/$2)~$4!$5;(#0-#1)*100/#1;s2:$0(i:#0)~$0~$1~$2+$3~1~100*rma(abs($2-$3)/($4==0?$5:$4),#1)~$6;close~$1(close,$0@#0)~$1@1;(#0-#1)*100/#1;sma((high-low)/low*100,#0);rma(tr(1.0),14)~$2(i:14,i:14)~close~sma($2,20)~2*stdev($2,20)~$3+$4~$3-$4~ema($2,12)~ema($2,26)~$7-$8~sma($9,9)~$9-$10~close-$2@10~rsi(close,14)~rsi(close,7)~sma(close,10)~sma(close,20)~sma(close,30)~sma(close,50)~sma(close,100)~sma(close,200)~ema(close,10)~ema(close,20)~ema(close,30)~ema(close,50)~ema(close,100)~ema(close,200)~sma(stoch(close,high,low,14),1)~sma($27,3)~$3(i:5)~$3(i:21)~$3(i:63)~$3(i:126)~$3(i:252)~$34@1~year~if(year\u003e$35@1){$34=$2@1~$34}~$4(close,$34)~$38@1~$5(i:5)~$5(i:21)~tr(1.0)*100/low~sma(volume,64)~$43@1~max(nz($45@1,high),high)~min(nz($46@1,low),low)~nz(highest(high,260),$45)~nz(lowest(low,260),$46)~nz(highest(high,126),$45)~nz(lowest(low,126),$46)~nz(highest(high,63),$45)~nz(lowest(low,63),$46)~nz(highest(high,21),$45)~nz(lowest(low,21),$46)~cci(close,20)~highest(20)~lowest(20)~avg($56,$57)~2*wma(close,4)~wma(close,9)~wma($59-$60,3)~sma(hl2,5)-sma(hl2,34)~$0!$1!$3!$5!$6!$11!$9!$10!$12!$13!$14!$15!$16!$17!$18!$19!$20!$21!$22!$23!$24!$25!$26!$27!$28!$29!$30!$31!$32!$33!$39!$40!$41!$42!$44!$45!$46!$47!$48!$49!$50!$51!$52!$53!$54!$55!$57!$56!$58!$61!$62;s51:$6()~$7~$8~$9~$10~$11~$12~$13~$14~$15~$16~$17~$18~$19~$20~$21~$22~$23~$24~$25~$26~$27~$28~$29~$30~$31~$32~$33~$34~$35~$36~$37~$38~$39~$40~$41~$42~$43~$44~$45~$46~$47~$48~$49~$50~$51~$52~$53~$54~$55~$56~$57~$58!$59!$60!$61!$62!$63!$64!$65!$66!$67!$68!$69!$70!$71!$72!$73!$74!$75!$76!$77!$78!$79!$80!$81!$82!$83!$84!$85!$86!$87!$88!$89!$90!$91!$92!$93!$94!$95!$96!$97!$98!$99!$100!$101!$102!$103!$104!$105!$106!$107!$108",
+				"defval": "change(high)~-change(low)~rma(tr,#0)~0~fixnan(100*rma($0\u003e$1\u0026\u0026$0\u003e0?$0:$3,#0)/$2)~fixnan(100*rma($1\u003e$0\u0026\u0026$1\u003e0?$1:$3,#0)/$2)~$4!$5;(#0-#1)*100/#1;s2:$0(i:#0)~$0~$1~$2+$3~1~100*rma(abs($2-$3)/($4==0?$5:$4),#1)~$6;close~$1(close,$0@#0)~$1@1;(#0-#1)*100/#1;sma((high-low)/low*100,#0);rma(tr(1.0),14)~$2(i:14,i:14)~close~sma($2,20)~2*stdev($2,20)~$3+$4~$3-$4~ema($2,12)~ema($2,26)~$7-$8~sma($9,9)~$9-$10~close-$2@10~rsi(close,14)~rsi(close,7)~sma(close,10)~sma(close,20)~sma(close,30)~sma(close,50)~sma(close,100)~sma(close,200)~ema(close,10)~ema(close,20)~ema(close,30)~ema(close,50)~ema(close,100)~ema(close,200)~sma(stoch(close,high,low,14),1)~sma($27,3)~$3(i:5)~$3(i:21)~$3(i:63)~$3(i:126)~$3(i:252)~$34@1~year~if(year\u003e$35@1){$34=$2@1~$34}~$4(close,$34)~$38@1~$5(i:5)~$5(i:21)~tr(1.0)*100/low~sma(volume,64)~$43@1~max(nz($45@1,high),high)~min(nz($46@1,low),low)~nz(highest(high,260),$45)~nz(lowest(low,260),$46)~nz(highest(high,126),$45)~nz(lowest(low,126),$46)~nz(highest(high,63),$45)~nz(lowest(low,63),$46)~nz(highest(high,21),$45)~nz(lowest(low,21),$46)~cci(close,20)~highest(20)~lowest(20)~avg($56,$57)~2*wma(close,4)~wma(close,9)~wma($59-$60,3)~sma(hl2,5)-sma(hl2,34)~nz($63@1,open)~nz($64@1,high)~nz($65@1,low)~nz($66@1)~nz($67@1)~nz($68@1)~nz($69@1)~month(time)~if_($70!=$70@1){$66=$63~$69=$2@1~$67=$64~$68=$65~$63=open~$64=high~$65=low~$65}_{$64=max($64,high)~$65=min($65,low)~$65}~($67+$68+$69)/3~$74*2-$68~$74*2-$67~$74+1*($67-$68)~$74-1*($67-$68)~$74+2*($67-$68)~$74-2*($67-$68)~$74+0.382*($67-$68)~$74-0.382*($67-$68)~$74+0.618*($67-$68)~$74-0.618*($67-$68)~($67+$68+$66*2)/4~$85*2-$68~$85*2-$67~$85+1*($67-$68)~$85-1*($67-$68)~$67+2*($85-$68)~$68-2*($67-$85)~$67+$68*2+$69~if($69==$66){$92=$67+$68+$69*2~$92}~if($69\u003e$66){$92=$67*2+$68+$69~$92}~$92/4~$92/2-$68~$92/2-$67~$69+0.09166666666666667*($67-$68)~$69-0.09166666666666667*($67-$68)~$69+0.18333333333333335*($67-$68)~$69-0.18333333333333335*($67-$68)~$69+0.275*($67-$68)~$69-0.275*($67-$68)~$0!$1!$3!$5!$6!$11!$9!$10!$12!$13!$14!$15!$16!$17!$18!$19!$20!$21!$22!$23!$24!$25!$26!$27!$28!$29!$30!$31!$32!$33!$39!$40!$41!$42!$44!$45!$46!$47!$48!$49!$50!$51!$52!$53!$54!$55!$57!$56!$58!$61!$62!$74!$75!$76!$77!$78!$79!$80!$74!$81!$82!$83!$84!$77!$78!$85!$86!$87!$88!$89!$90!$91!$97!$98!$99!$74!$100!$101!$102!$103!$104!$105;s82:$6()~$7~$8~$9~$10~$11~$12~$13~$14~$15~$16~$17~$18~$19~$20~$21~$22~$23~$24~$25~$26~$27~$28~$29~$30~$31~$32~$33~$34~$35~$36~$37~$38~$39~$40~$41~$42~$43~$44~$45~$46~$47~$48~$49~$50~$51~$52~$53~$54~$55~$56~$57~$59~$60~$61~$62~$63~$64~$66~$67~$68~$69~$70~$71~$72~$73~$74~$75~$76~$77~$78~$79~$80~$81~$82~$83~$84~$85~$86~$87~$88~$89!$90!$91!$92!$93!$94!$95!$96!$97!$98!$99!$100!$101!$102!$103!$104!$105!$106!$107!$108!$109!$110!$111!$112!$113!$114!$115!$116!$117!$118!$119!$120!$121!$122!$123!$124!$125!$126!$127!$128!$129!$130!$131!$132!$133!$134!$135!$136!$137!$138!$139!$162!$140!$141!$142!$143!$144!$145!$162!$146!$147!$148!$149!$150!$151!$152!$153!$154!$155!$156!$157!$158!$159!$160!$161!$162!$163!$164!$165!$166!$167!$168",
 				"isFake": false
 			}
 		],
@@ -214,6 +214,130 @@
 			{
 				"id": "plot_50",
 				"type": "line"
+			},
+			{
+				"id": "plot_51",
+				"type": "line"
+			},
+			{
+				"id": "plot_52",
+				"type": "line"
+			},
+			{
+				"id": "plot_53",
+				"type": "line"
+			},
+			{
+				"id": "plot_54",
+				"type": "line"
+			},
+			{
+				"id": "plot_55",
+				"type": "line"
+			},
+			{
+				"id": "plot_56",
+				"type": "line"
+			},
+			{
+				"id": "plot_57",
+				"type": "line"
+			},
+			{
+				"id": "plot_58",
+				"type": "line"
+			},
+			{
+				"id": "plot_59",
+				"type": "line"
+			},
+			{
+				"id": "plot_60",
+				"type": "line"
+			},
+			{
+				"id": "plot_61",
+				"type": "line"
+			},
+			{
+				"id": "plot_62",
+				"type": "line"
+			},
+			{
+				"id": "plot_63",
+				"type": "line"
+			},
+			{
+				"id": "plot_64",
+				"type": "line"
+			},
+			{
+				"id": "plot_65",
+				"type": "line"
+			},
+			{
+				"id": "plot_66",
+				"type": "line"
+			},
+			{
+				"id": "plot_67",
+				"type": "line"
+			},
+			{
+				"id": "plot_68",
+				"type": "line"
+			},
+			{
+				"id": "plot_69",
+				"type": "line"
+			},
+			{
+				"id": "plot_70",
+				"type": "line"
+			},
+			{
+				"id": "plot_71",
+				"type": "line"
+			},
+			{
+				"id": "plot_72",
+				"type": "line"
+			},
+			{
+				"id": "plot_73",
+				"type": "line"
+			},
+			{
+				"id": "plot_74",
+				"type": "line"
+			},
+			{
+				"id": "plot_75",
+				"type": "line"
+			},
+			{
+				"id": "plot_76",
+				"type": "line"
+			},
+			{
+				"id": "plot_77",
+				"type": "line"
+			},
+			{
+				"id": "plot_78",
+				"type": "line"
+			},
+			{
+				"id": "plot_79",
+				"type": "line"
+			},
+			{
+				"id": "plot_80",
+				"type": "line"
+			},
+			{
+				"id": "plot_81",
+				"type": "line"
 			}
 		],
 		"version": "",
@@ -410,16 +534,140 @@
 				"title": "AO",
 				"isHidden": false
 			},
+			"plot_51": {
+				"title": "Pivot.M.Classic.Middle",
+				"isHidden": false
+			},
+			"plot_52": {
+				"title": "Pivot.M.Classic.R1",
+				"isHidden": false
+			},
+			"plot_53": {
+				"title": "Pivot.M.Classic.S1",
+				"isHidden": false
+			},
+			"plot_54": {
+				"title": "Pivot.M.Classic.R2",
+				"isHidden": false
+			},
+			"plot_55": {
+				"title": "Pivot.M.Classic.S2",
+				"isHidden": false
+			},
+			"plot_56": {
+				"title": "Pivot.M.Classic.R3",
+				"isHidden": false
+			},
+			"plot_57": {
+				"title": "Pivot.M.Classic.S3",
+				"isHidden": false
+			},
+			"plot_58": {
+				"title": "Pivot.M.Fibonacci.Middle",
+				"isHidden": false
+			},
+			"plot_59": {
+				"title": "Pivot.M.Fibonacci.R1",
+				"isHidden": false
+			},
 			"plot_6": {
 				"title": "MACD.macd",
+				"isHidden": false
+			},
+			"plot_60": {
+				"title": "Pivot.M.Fibonacci.S1",
+				"isHidden": false
+			},
+			"plot_61": {
+				"title": "Pivot.M.Fibonacci.R2",
+				"isHidden": false
+			},
+			"plot_62": {
+				"title": "Pivot.M.Fibonacci.S2",
+				"isHidden": false
+			},
+			"plot_63": {
+				"title": "Pivot.M.Fibonacci.R3",
+				"isHidden": false
+			},
+			"plot_64": {
+				"title": "Pivot.M.Fibonacci.S3",
+				"isHidden": false
+			},
+			"plot_65": {
+				"title": "Pivot.M.Woodie.Middle",
+				"isHidden": false
+			},
+			"plot_66": {
+				"title": "Pivot.M.Woodie.R1",
+				"isHidden": false
+			},
+			"plot_67": {
+				"title": "Pivot.M.Woodie.S1",
+				"isHidden": false
+			},
+			"plot_68": {
+				"title": "Pivot.M.Woodie.R2",
+				"isHidden": false
+			},
+			"plot_69": {
+				"title": "Pivot.M.Woodie.S2",
 				"isHidden": false
 			},
 			"plot_7": {
 				"title": "MACD.signal",
 				"isHidden": false
 			},
+			"plot_70": {
+				"title": "Pivot.M.Woodie.R3",
+				"isHidden": false
+			},
+			"plot_71": {
+				"title": "Pivot.M.Woodie.S3",
+				"isHidden": false
+			},
+			"plot_72": {
+				"title": "Pivot.M.Demark.Middle",
+				"isHidden": false
+			},
+			"plot_73": {
+				"title": "Pivot.M.Demark.R1",
+				"isHidden": false
+			},
+			"plot_74": {
+				"title": "Pivot.M.Demark.S1",
+				"isHidden": false
+			},
+			"plot_75": {
+				"title": "Pivot.M.Camarilla.Middle",
+				"isHidden": false
+			},
+			"plot_76": {
+				"title": "Pivot.M.Camarilla.R1",
+				"isHidden": false
+			},
+			"plot_77": {
+				"title": "Pivot.M.Camarilla.S1",
+				"isHidden": false
+			},
+			"plot_78": {
+				"title": "Pivot.M.Camarilla.R2",
+				"isHidden": false
+			},
+			"plot_79": {
+				"title": "Pivot.M.Camarilla.S2",
+				"isHidden": false
+			},
 			"plot_8": {
 				"title": "Mom",
+				"isHidden": false
+			},
+			"plot_80": {
+				"title": "Pivot.M.Camarilla.R3",
+				"isHidden": false
+			},
+			"plot_81": {
+				"title": "Pivot.M.Camarilla.S3",
 				"isHidden": false
 			},
 			"plot_9": {

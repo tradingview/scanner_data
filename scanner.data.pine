@@ -142,3 +142,75 @@ plot(wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength))), title = "HullMA9"
 
 // Awesome Oscillator
 plot(sma(hl2, 5) - sma(hl2, 34), title = "AO")
+
+// Pivot Points
+pivotM_open = nz(pivotM_open[1],open)
+pivotM_high = nz(pivotM_high[1],high)
+pivotM_low = nz(pivotM_low[1],low)
+
+pivotM_prev_open = nz(pivotM_prev_open[1])
+pivotM_prev_high = nz(pivotM_prev_high[1])
+pivotM_prev_low = nz(pivotM_prev_low[1])
+pivotM_prev_close = nz(pivotM_prev_close[1])
+
+pivotM_Month = month(time)
+if pivotM_Month != pivotM_Month[1]
+    pivotM_prev_open := pivotM_open
+    pivotM_prev_close := close[1]
+    pivotM_prev_high := pivotM_high
+    pivotM_prev_low := pivotM_low
+
+    pivotM_open := open
+    pivotM_high := high
+    pivotM_low := low
+else
+    pivotM_high := max(pivotM_high, high)
+    pivotM_low := min(pivotM_low, low)
+
+// Classic
+pivotM_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_prev_close)/3
+plot(pivotM_Median, title = 'Pivot.M.Classic.Middle')
+plot(pivotM_Median * 2 - pivotM_prev_low, title = 'Pivot.M.Classic.R1')
+plot(pivotM_Median * 2 - pivotM_prev_high, title = 'Pivot.M.Classic.S1')
+plot(pivotM_Median + 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.R2')
+plot(pivotM_Median - 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.S2')
+plot(pivotM_Median + 2*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.R3')
+plot(pivotM_Median - 2*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.S3')
+
+// Fibonacci
+plot(pivotM_Median, title = 'Pivot.M.Fibonacci.Middle')
+plot(pivotM_Median + 0.382 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R1')
+plot(pivotM_Median - 0.382 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S1')
+plot(pivotM_Median + 0.618 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R2')
+plot(pivotM_Median - 0.618 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S2')
+plot(pivotM_Median + 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R3')
+plot(pivotM_Median - 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S3')
+
+// Woodie
+pivotM_Woodie_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_prev_open * 2)/4
+plot(pivotM_Woodie_Median, title = 'Pivot.M.Woodie.Middle')
+plot(pivotM_Woodie_Median * 2 - pivotM_prev_low, title = 'Pivot.M.Woodie.R1')
+plot(pivotM_Woodie_Median * 2 - pivotM_prev_high, title = 'Pivot.M.Woodie.S1')
+plot(pivotM_Woodie_Median + 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Woodie.R2')
+plot(pivotM_Woodie_Median - 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Woodie.S2')
+plot(pivotM_prev_high + 2*(pivotM_Woodie_Median - pivotM_prev_low), title = 'Pivot.M.Woodie.R3')
+plot(pivotM_prev_low - 2*(pivotM_prev_high - pivotM_Woodie_Median), title = 'Pivot.M.Woodie.S3')
+
+// Demark
+pivotM_Demark_X = pivotM_prev_high + pivotM_prev_low*2 + pivotM_prev_close
+if pivotM_prev_close == pivotM_prev_open
+    pivotM_Demark_X := pivotM_prev_high + pivotM_prev_low + pivotM_prev_close*2
+if pivotM_prev_close > pivotM_prev_open
+    pivotM_Demark_X := pivotM_prev_high*2 + pivotM_prev_low + pivotM_prev_close
+plot(pivotM_Demark_X/4, title = 'Pivot.M.Demark.Middle')
+plot(pivotM_Demark_X/2 - pivotM_prev_low, title = 'Pivot.M.Demark.R1')
+plot(pivotM_Demark_X/2 - pivotM_prev_high, title = 'Pivot.M.Demark.S1')
+
+// Camarilla
+plot(pivotM_Median, title = 'Pivot.M.Camarilla.Middle')
+plot(pivotM_prev_close + 1.1/12.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R1')
+plot(pivotM_prev_close - 1.1/12.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S1')
+plot(pivotM_prev_close + 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R2')
+plot(pivotM_prev_close - 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S2')
+plot(pivotM_prev_close + 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R3')
+plot(pivotM_prev_close - 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S3')

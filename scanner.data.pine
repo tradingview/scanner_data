@@ -218,10 +218,10 @@ plot(pivotM_prev_close - 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = '
 
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
 
-C_Len = input(14)
-C_EmaLen = input(50)
-C_Factor = input(3.0)
-C_ShadowPercent = input(5)
+C_Len = (14)
+C_EmaLen = (50)
+C_Factor = (3.0)
+C_ShadowPercent = (5)
 
 C_BodyHi = max( close, open )
 C_BodyLo = min( close, open )
@@ -280,7 +280,7 @@ plot(C_oEveningStar, title = "Candle.EveningStar")
 
 
 // study("Marubozu")
-C_MarubozuShadowPercent = input(5)
+C_MarubozuShadowPercent = (5)
 C_Marubozu = C_LongBody and C_UpShadow <= C_MarubozuShadowPercent/100*C_Body and C_DnShadow <= C_MarubozuShadowPercent/100*C_Body
 C_WhiteMarubozu = C_Marubozu and C_WhiteBody
 C_BlackMarubozu = C_Marubozu and C_BlackBody
@@ -289,7 +289,7 @@ plot(C_WhiteMarubozu, title = "Candle.Marubozu.White")
 
 
 //study("Doji")
-C_DojiBodyPercent = input(5)
+C_DojiBodyPercent = (5)
 C_Doji = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
 C_DragonflyDoji = C_Doji and C_DownTrend and C_UpShadow <= C_Body
 C_GravestoneDoji = C_Doji and C_UpTrend and C_DnShadow <= C_Body
@@ -304,20 +304,20 @@ plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_Doji and C_IsInside
 
 
 //study("Long Shadows")
-C_LongShadowPercent = input(75)
+C_LongShadowPercent = (75)
 plot(C_DnShadow >= C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Lower")
 plot(C_UpShadow >= C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Upper")
 
 
 //study("Spinning Top")
-C_SpinningTopPercent = input(25)
+C_SpinningTopPercent = (25)
 C_IsSpinningTop = C_DnShadow >= C_Range/100*C_SpinningTopPercent and C_UpShadow >= C_Range/100*C_SpinningTopPercent
 plot(C_IsSpinningTop and C_WhiteBody, title = "Candle.SpinningTop.White")
 plot(C_IsSpinningTop and C_BlackBody, title = "Candle.SpinningTop.Black")
 
 
 // study("3 White Soldiers & 3 Black Crows")
-C_3WSld3WCrwShadowPercent = input(5)
+C_3WSld3WCrwShadowPercent = (5)
 C_3WSld3WCrw_HaveNotUpShadow = C_Range * C_3WSld3WCrwShadowPercent / 100 > C_UpShadow
 C_3WSld3WCrw_HaveNotDnShadow = C_Range * C_3WSld3WCrwShadowPercent / 100 > C_DnShadow
 C_o3WhiteSoldiers = false

@@ -214,5 +214,45 @@
   {
     "name": "last_annual_revenue",
     "type": "number"
+  },
+  {
+    "name": "current_session",
+    "type": "text"
+  },
+  {
+    "name": "rtc",
+    "type": "price"
+  },
+  {
+    "name": "earnings_release_date",
+    "type": "number"
+  },
+  {
+    "name": "earnings_release_next_date",
+    "type": "number"
+  },
+  {
+    "name": "earnings_per_share_fq",
+    "type": "number"
+  },
+  {
+    "name": "earnings_per_share_forecast_fq",
+    "type": "number"
+  },
+  {
+    "name": "revenue_fq",
+    "type": "number"
+  },
+  {
+    "name": "revenue_forecast_fq",
+    "type": "number"
+  },
+  {
+    "name": "earnings_per_share_forecast_next_fq",
+    "type": "number"
+  },
+  {
+    "name": "revenue_forecast_next_fq",
+    "type": "number"
   }
 ]

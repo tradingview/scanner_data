@@ -352,3 +352,8 @@ plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn, title = "Cand
 // study("Kicking")
 plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low, title = "Candle.Kicking.Bullish")
 plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.Kicking.Bearish")
+
+// study("Aroon")
+Aroon_length = (14)
+plot(100 * (highestbars(high, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Up")
+plot(100 * (lowestbars(low, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Down")

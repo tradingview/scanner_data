@@ -91,9 +91,12 @@ rr(bb) =>
     rof = rateOfreturn(close, close[bb])
     rof[1]
 plot(rr(5), title="Perf.W")
+//plot(rr(10), title="Perf.2W")
+//plot(rr(15), title="Perf.3W")
 plot(rr(21), title="Perf.1M")
 plot(rr(63), title="Perf.3M")
 plot(rr(126), title="Perf.6M")
+//plot(rr(189), title="Perf.9M")
 plot(rr(252), title="Perf.Y")
 lastYearClose = lastYearClose[1]
 if year > year[1]
@@ -125,6 +128,7 @@ plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")
 
 // Commodity Channel Index
 plot(cci(close, 20), title = "CCI20")
+//plot(cci(close, 100), title = "CCI100")
 
 // Donchian Channels
 donchLen = 20
@@ -357,3 +361,28 @@ plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.K
 Aroon_length = (14)
 plot(100 * (highestbars(high, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Up")
 plot(100 * (lowestbars(low, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Down")
+
+// value traded (dollar volume)
+plot(volume*close*syminfo.pointvalue, title="Value.Traded")
+
+// study("My Keltner Channels", overlay=true)
+lengthKltChnl = 20
+multKltChnl = 1
+maKltChnl = ema(close, lengthKltChnl)
+rangemaKltChnl = ema(tr, lengthKltChnl)
+plot(maKltChnl + rangemaKltChnl * multKltChnl, title = "KltChnl.upper")
+plot(maKltChnl - rangemaKltChnl * multKltChnl, title = "KltChnl.lower")
+
+// study("My Parabolic SAR", overlay=true)
+plot(sar(0.02, 0.02, 0.2), title = "P.SAR")
+
+// study("My Money Flow")
+lenMF = 14
+posMF = sum(iff(hlc3 > hlc3[1], hlc3 * volume, 0), lenMF)
+negMF = sum(iff(hlc3 < hlc3[1], hlc3 * volume, 0), lenMF)
+plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
+
+// study("My Chaikin Money Flow")
+lenCMF = 20
+accdistRaw = not ( ((close == low) and (close == high)) or (high == low) ) ? (((close - low) - (high - close)) / (high - low)) * volume : 0
+plot( sum(accdistRaw, lenCMF) / sum(volume, lenCMF), title = "ChaikinMoneyFlow" )

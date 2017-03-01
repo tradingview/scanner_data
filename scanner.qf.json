@@ -254,5 +254,9 @@
   {
     "name": "revenue_forecast_next_fq",
     "type": "number"
+  },
+  {
+    "name": "dividends_yield",
+    "type": "number"
   }
 ]

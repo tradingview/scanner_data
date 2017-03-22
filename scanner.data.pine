@@ -19,8 +19,12 @@ adx(dilen, adxlen) =>
 	[plus, minus] = dirmov(dilen)
 	sum = plus + minus
 	adx = 100 * rma(abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
+	[adx, plus, minus]
 
-plot(adx(14, 14), title="ADX")
+[adxValue, adxPlus, adxMinus] = adx(14, 14)
+plot(adxValue, title="ADX")
+plot(adxPlus, title="ADX+DI")
+plot(adxMinus, title="ADX-DI")
 
 
 // study(shorttitle="BB", title="Bollinger Bands", overlay=true)
@@ -52,7 +56,9 @@ plot(signalMACD, title="MACD.signal")
 
 
 //study(title="Momentum", shorttitle="Mom")
-plot(close - close[10], title="Mom")
+Mom = close - close[10]
+plot(Mom, title="Mom")
+plot(Mom[1], title="Mom[1]")
 
 
 //study(title="Relative Strength Index", shorttitle="RSI")
@@ -128,6 +134,7 @@ plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")
 
 // Commodity Channel Index
 plot(cci(close, 20), title = "CCI20")
+plot(cci(close, 20)[1], title = "CCI20[1]")
 //plot(cci(close, 100), title = "CCI100")
 
 // Donchian Channels
@@ -145,7 +152,9 @@ hullMA_nma=wma(close,hullMALength)
 plot(wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength))), title = "HullMA9")
 
 // Awesome Oscillator
-plot(sma(hl2, 5) - sma(hl2, 34), title = "AO")
+AO = sma(hl2, 5) - sma(hl2, 34)
+plot(AO, title = "AO")
+plot(AO[1], title = "AO[1]")
 
 // Pivot Points
 pivotM_open = nz(pivotM_open[1],open)

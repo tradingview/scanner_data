@@ -2,389 +2,76 @@
   "time": "2017-03-24T17:04:00Z",
   "fields": ["sector"],
   "symbols": [
-    {
-      "f": ["Currencies"],
-      "s": "A61!"
-    },
-    {
-      "f": ["Currencies"],
-      "s": "B61!"
-    },
-    {
-      "f": [""],
-      "s": "BO1!"
-    },
-    {
-      "f": [""],
-      "s": "CB1!"
-    },
-    {
-      "f": [""],
-      "s": "CC1!"
-    },
-    {
-      "f": [""],
-      "s": "CL1!"
-    },
-    {
-      "f": [""],
-      "s": "CT1!"
-    },
-    {
-      "f": [""],
-      "s": "D61!"
-    },
-    {
-      "f": [""],
-      "s": "DL1!"
-    },
-    {
-      "f": [""],
-      "s": "DM1!"
-    },
-    {
-      "f": [""],
-      "s": "DX1!"
-    },
-    {
-      "f": [""],
-      "s": "DY1!"
-    },
-    {
-      "f": [""],
-      "s": "E41!"
-    },
-    {
-      "f": [""],
-      "s": "E51!"
-    },
-    {
-      "f": [""],
-      "s": "E61!"
-    },
-    {
-      "f": [""],
-      "s": "E61!"
-    },
-    {
-      "f": [""],
-      "s": "E71!"
-    },
-    {
-      "f": [""],
-      "s": "ES1!"
-    },
-    {
-      "f": [""],
-      "s": "EW1!"
-    },
-    {
-      "f": [""],
-      "s": "FS1!"
-    },
-    {
-      "f": [""],
-      "s": "FV1!"
-    },
-    {
-      "f": [""],
-      "s": "FX1!"
-    },
-    {
-      "f": [""],
-      "s": "GC1!"
-    },
-    {
-      "f": [""],
-      "s": "GF1!"
-    },
-    {
-      "f": [""],
-      "s": "GG1!"
-    },
-    {
-      "f": [""],
-      "s": "GR1!"
-    },
-    {
-      "f": [""],
-      "s": "HE1!"
-    },
-    {
-      "f": [""],
-      "s": "HF1!"
-    },
-    {
-      "f": [""],
-      "s": "HG1!"
-    },
-    {
-      "f": [""],
-      "s": "HR1!"
-    },
-    {
-      "f": [""],
-      "s": "I91!"
-    },
-    {
-      "f": [""],
-      "s": "J61!"
-    },
-    {
-      "f": [""],
-      "s": "J71!"
-    },
-    {
-      "f": [""],
-      "s": "KC1!"
-    },
-    {
-      "f": [""],
-      "s": "L61!"
-    },
-    {
-      "f": [""],
-      "s": "LE1!"
-    },
-    {
-      "f": [""],
-      "s": "LF1!"
-    },
-    {
-      "f": [""],
-      "s": "LO1!"
-    },
-    {
-      "f": [""],
-      "s": "LS1!"
-    },
-    {
-      "f": [""],
-      "s": "M61!"
-    },
-    {
-      "f": [""],
-      "s": "MB 1!"
-    },
-    {
-      "f": [""],
-      "s": "MB1!"
-    },
-    {
-      "f": [""],
-      "s": "MF1!"
-    },
-    {
-      "f": [""],
-      "s": "MG1!"
-    },
-    {
-      "f": [""],
-      "s": "MH1!"
-    },
-    {
-      "f": [""],
-      "s": "MM1!"
-    },
-    {
-      "f": [""],
-      "s": "MN1!"
-    },
-    {
-      "f": [""],
-      "s": "N61!"
-    },
-    {
-      "f": [""],
-      "s": "NA1!"
-    },
-    {
-      "f": [""],
-      "s": "ND1!"
-    },
-    {
-      "f": [""],
-      "s": "NG1!"
-    },
-    {
-      "f": [""],
-      "s": "NM1!"
-    },
-    {
-      "f": [""],
-      "s": "NQ1!"
-    },
-    {
-      "f": [""],
-      "s": "NY1!"
-    },
-    {
-      "f": [""],
-      "s": "OJ1!"
-    },
-    {
-      "f": [""],
-      "s": "PA1!"
-    },
-    {
-      "f": [""],
-      "s": "PL1!"
-    },
-    {
-      "f": [""],
-      "s": "QC1!"
-    },
-    {
-      "f": [""],
-      "s": "QG1!"
-    },
-    {
-      "f": [""],
-      "s": "QI1!"
-    },
-    {
-      "f": [""],
-      "s": "QM1!"
-    },
-    {
-      "f": [""],
-      "s": "QO1!"
-    },
-    {
-      "f": [""],
-      "s": "QT1!"
-    },
-    {
-      "f": [""],
-      "s": "QU1!"
-    },
-    {
-      "f": [""],
-      "s": "RB1!"
-    },
-    {
-      "f": [""],
-      "s": "RJ1!"
-    },
-    {
-      "f": [""],
-      "s": "RL1!"
-    },
-    {
-      "f": [""],
-      "s": "S61!"
-    },
-    {
-      "f": [""],
-      "s": "SB1!"
-    },
-    {
-      "f": [""],
-      "s": "SI1!"
-    },
-    {
-      "f": [""],
-      "s": "SK1!"
-    },
-    {
-      "f": [""],
-      "s": "SM1!"
-    },
-    {
-      "f": [""],
-      "s": "SP1!"
-    },
-    {
-      "f": [""],
-      "s": "T61!"
-    },
-    {
-      "f": [""],
-      "s": "TU1!"
-    },
-    {
-      "f": [""],
-      "s": "UD1!"
-    },
-    {
-      "f": [""],
-      "s": "UD1!"
-    },
-    {
-      "f": [""],
-      "s": "WM1!"
-    },
-    {
-      "f": [""],
-      "s": "WP1!"
-    },
-    {
-      "f": [""],
-      "s": "XK1!"
-    },
-    {
-      "f": [""],
-      "s": "XN1!"
-    },
-    {
-      "f": [""],
-      "s": "XW1!"
-    },
-    {
-      "f": [""],
-      "s": "YG1!"
-    },
-    {
-      "f": [""],
-      "s": "YI1!"
-    },
-    {
-      "f": [""],
-      "s": "YM1!"
-    },
-    {
-      "f": [""],
-      "s": "ZB1!"
-    },
-    {
-      "f": [""],
-      "s": "ZC1!"
-    },
-    {
-      "f": [""],
-      "s": "ZE1!"
-    },
-    {
-      "f": [""],
-      "s": "ZK1!"
-    },
-    {
-      "f": [""],
-      "s": "ZM1!"
-    },
-    {
-      "f": [""],
-      "s": "ZN1!"
-    },
-    {
-      "f": [""],
-      "s": "ZO1!"
-    },
-    {
-      "f": [""],
-      "s": "ZQ1!"
-    },
-    {
-      "f": [""],
-      "s": "ZR1!"
-    },
-    {
-      "f": [""],
-      "s": "ZS1!"
-    },
-    {
-      "f": [""],
-      "s": "ZW1!"
-    }
+    {"f": ["Grains"], "s": "CBOT:BO1!"},
+    {"f": ["Financials"], "s": "CBOT:FV1!"},
+    {"f": ["Grains"], "s": "CBOT:SM1!"},
+    {"f": ["Financials"], "s": "CBOT:TU1!"},
+    {"f": ["Financials"], "s": "CBOT:UD1!"},
+    {"f": ["Financials"], "s": "CBOT:UD1!"},
+    {"f": ["Financials"], "s": "CBOT:ZB1!"},
+    {"f": ["Grains"], "s": "CBOT:ZC1!"},
+    {"f": ["Financials"], "s": "CBOT:ZE1!"},
+    {"f": ["Energies"], "s": "CBOT:ZK1!"},
+    {"f": ["Financials"], "s": "CBOT:ZM1!"},
+    {"f": ["Financials"], "s": "CBOT:ZN1!"},
+    {"f": ["Grains"], "s": "CBOT:ZO1!"},
+    {"f": ["Financials"], "s": "CBOT:ZQ1!"},
+    {"f": ["Grains"], "s": "CBOT:ZR1!"},
+    {"f": ["Grains"], "s": "CBOT:ZS1!"},
+    {"f": ["Grains"], "s": "CBOT:ZW1!"},
+    {"f": ["Grains"], "s": "CBOT_MINI:XK1!"},
+    {"f": ["Grains"], "s": "CBOT_MINI:XN1!"},
+    {"f": ["Meats"], "s": "CBOT_MINI:XW1!"},
+    {"f": ["Currencies"], "s": "CBOT_MINI:YM1!"},
+    {"f": ["Currencies"], "s": "CME:A61!"},
+    {"f": ["Currencies"], "s": "CME:B61!"},
+    {"f": ["Currencies"], "s": "CME:D61!"},
+    {"f": [""], "s": "CME:DL1!"},
+    {"f": [""], "s": "CME:E41!"},
+    {"f": ["Currencies"], "s": "CME:E51!"},
+    {"f": ["Currencies"], "s": "CME:E61!"},
+    {"f": ["Currencies"], "s": "CME:E61!"},
+    {"f": ["Meats"], "s": "CME:GF1!"},
+    {"f": ["Meats"], "s": "CME:HE1!"},
+    {"f": ["Financials"], "s": "CME:I91!"},
+    {"f": ["Currencies"], "s": "CME:J61!"},
+    {"f": ["Currencies"], "s": "CME:L61!"},
+    {"f": ["Meats"], "s": "CME:LE1!"},
+    {"f": ["Softs"], "s": "CME:LS1!"},
+    {"f": ["Currencies"], "s": "CME:M61!"},
+    {"f": ["Currencies"], "s": "CME:N61!"},
+    {"f": ["Indices"], "s": "CME:NY1!"},
+    {"f": ["Currencies"], "s": "CME:QT1!"},
+    {"f": ["Currencies"], "s": "CME:S61!"},
+    {"f": ["Currencies"], "s": "CME:SK1!"},
+    {"f": [""], "s": "CME:SP1!"},
+    {"f": ["Currencies"], "s": "CME:T61!"},
+    {"f": ["Currencies"], "s": "CME:WP1!"},
+    {"f": ["Currencies"], "s": "CME_MINI:E71!"},
+    {"f": ["Indices"], "s": "CME_MINI:ES1!"},
+    {"f": ["Indices"], "s": "CME_MINI:EW1!"},
+    {"f": ["Currencies"], "s": "CME_MINI:J71!"},
+    {"f": ["Currencies"], "s": "CME_MINI:MB1!"},
+    {"f": ["Currencies"], "s": "CME_MINI:MF1!"},
+    {"f": ["Currencies"], "s": "CME_MINI:MG1!"},
+    {"f": ["Indices"], "s": "CME_MINI:NM1!"},
+    {"f": ["Indices"], "s": "CME_MINI:NQ1!"},
+    {"f": ["Energies"], "s": "CME_MINI:RL1!"},
+    {"f": ["Grains"], "s": "CME_MINI:WM1!"},
+    {"f": ["Metals"], "s": "COMEX:GC1!"},
+    {"f": ["Metals"], "s": "COMEX:HG1!"},
+    {"f": ["Metals"], "s": "COMEX:SI1!"},
+    {"f": ["Metals"], "s": "COMEX_MINI:GR1!"},
+    {"f": ["Metals"], "s": "COMEX_MINI:QC1!"},
+    {"f": ["Metals"], "s": "COMEX_MINI:QI1!"},
+    {"f": ["Metals"], "s": "COMEX_MINI:QO1!"},
+    {"f": ["Energies"], "s": "NYMEX:CL1!"},
+    {"f": ["Energies"], "s": "NYMEX:NG1!"},
+    {"f": ["Metals"], "s": "NYMEX:PA1!"},
+    {"f": ["Metals"], "s": "NYMEX:PL1!"},
+    {"f": ["Energies"], "s": "NYMEX:RB1!"},
+    {"f": ["Energies"], "s": "NYMEX_MINI:QG1!"},
+    {"f": ["Energies"], "s": "NYMEX_MINI:QM1!"},
+    {"f": ["Energies"], "s": "NYMEX_MINI:QU1!"}
   ]
 }

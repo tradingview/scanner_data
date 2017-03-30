@@ -25,6 +25,8 @@ adx(dilen, adxlen) =>
 plot(adxValue, title="ADX")
 plot(adxPlus, title="ADX+DI")
 plot(adxMinus, title="ADX-DI")
+plot(adxPlus[1], title="ADX+DI[1]")
+plot(adxMinus[1], title="ADX-DI[1]")
 
 
 // study(shorttitle="BB", title="Bollinger Bands", overlay=true)
@@ -64,6 +66,8 @@ plot(Mom[1], title="Mom[1]")
 //study(title="Relative Strength Index", shorttitle="RSI")
 plot(rsi(close,14), title="RSI")
 plot(rsi(close,7), title="RSI7")
+plot(rsi(close,14)[1], title="RSI[1]")
+plot(rsi(close,7)[1], title="RSI7[1]")
 
 
 // study(title="Moving Average", shorttitle="MA", overlay=true)
@@ -90,6 +94,8 @@ kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch = sma(kStoch, smoothDStoch)
 plot(kStoch, title="Stoch.K")
 plot(dStoch, title="Stoch.D")
+plot(kStoch[1], title="Stoch.K[1]")
+plot(dStoch[1], title="Stoch.D[1]")
 
 // performance
 rateOfreturn(v1, v2) => (v1 - v2) * 100 / v2

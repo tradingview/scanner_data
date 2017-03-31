@@ -242,7 +242,9 @@ function detectMajor(name){
 
 var dstSymbols = [];
 var symbols = JSON.parse(response.getBody());
-symbols.symbols.forEach(function(s){
+symbols.symbols.filter(function(s){
+    return s.f[1] === "forex";
+}).forEach(function(s){
     var dst = {f:[]};
     dst.s = s.s;
     dst.f[0] = detectRegion(s.f[0]);

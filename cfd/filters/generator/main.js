@@ -14,7 +14,8 @@ const groups =[
     "http://hub1.tradingview.com:8094//symbols/government_bonds",
     "http://hub1.tradingview.com:8094//symbols/euro_bonds",
     "http://hub1.tradingview.com:8094//symbols/forex_tvc",
-    "http://hub1.tradingview.com:8094/symbols/oanda"
+    "http://hub1.tradingview.com:8094/symbols/oanda",
+    "http://hub1.tradingview.com:8094/symbols/forex_tvc"
 ];
 
 const types = {

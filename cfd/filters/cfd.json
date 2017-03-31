@@ -1,0 +1,1118 @@
+{
+  "time": "2017-03-31T14:34:18.179Z",
+  "fields": [
+    "sector"
+  ],
+  "symbols": [
+    {
+      "f": [
+        "index"
+      ],
+      "s": "INDEX:DXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:VIX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:TNX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:TYX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:CXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:JXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:DJI"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:NYA"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:BXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:TRJEFFCRB"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:RUI"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:RUT"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:EXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:ZXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:AXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:SXY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:IXIC"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:NDX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:SPX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:NI225"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:SHCOMP"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:HSI"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:SX5E"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:DAX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:FTMIB"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:SSMI"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:CAC40"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:AEX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:UKX"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:IBEX35"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:HK02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ID03Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:CN10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:BE02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:BE10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:GB10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:GB10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:AU02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:AU02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:CN02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:CN02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:DE10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ID03"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:GB02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ES02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:BE02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ID10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ES10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:GB02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:AU10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:FR10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ES10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ID10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:DE10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IE10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:DE02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:AU10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ES02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:FR10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:HK02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:DE02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:FR02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:CN10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:HK10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:FR02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:BE10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:HK10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:MY10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IE02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IT10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:JP10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IN10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IE10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IE02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IN02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IN10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:KR10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:KR02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:JP10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IT02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:MY03"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:MY03Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IT02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:JP02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:KR10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:MY10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IT10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:IN02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:KR02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:JP02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:SG02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TH02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US30Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TH10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:SG10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:SG10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NO10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:PT02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TH10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US30"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TR02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:PT10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US05"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NO02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ZA10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:PT10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NL02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TR10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ZA10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NO10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TR10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NO02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:SG02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:PT02Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:US05Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ZA03"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NL10Y"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NL10"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:NL02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TR02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:TH02"
+    },
+    {
+      "f": [
+        "bond"
+      ],
+      "s": "TVC:ZA03Y"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:EUBUND"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:GOLD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:GOLDSILVER"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:SILVER"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:PLATINUM"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:PALLADIUM"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:USOIL"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "TVC:UKOIL"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:AU200AUD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:BCOUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:CH20CHF"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:CORNUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:DE10YBEUR"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:DE30EUR"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:EU50EUR"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:FR40EUR"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:HK33HKD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:JP225USD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:NAS100USD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:NATGASUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:NL25EUR"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:SG30SGD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:SOYBNUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:SPX500USD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:SUGARUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:UK100GBP"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:UK10YBGBP"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:US2000USD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:US30USD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:USB02YUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:USB05YUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:USB10YUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:USB30YUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:WHEATUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:WTICOUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGAUD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGCAD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGCHF"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGEUR"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGGBP"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGHKD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGJPY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGNZD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGSGD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAGUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUAUD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUCAD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUCHF"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUEUR"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUGBP"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUHKD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUJPY"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUNZD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUSGD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XAUXAG"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XCUUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XPDUSD"
+    },
+    {
+      "f": [
+        ""
+      ],
+      "s": "OANDA:XPTUSD"
+    }
+  ]
+}

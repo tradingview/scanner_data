@@ -1,15 +1,9 @@
 {
-  "time": "2017-04-03T12:57:19.781Z",
+  "time": "2017-04-03T14:28:47.568Z",
   "fields": [
     "sector"
   ],
   "symbols": [
-    {
-      "f": [
-        "index"
-      ],
-      "s": "INDEX:DXY"
-    },
     {
       "f": [
         "index"
@@ -84,19 +78,19 @@
     },
     {
       "f": [
-        ""
+        "index"
       ],
       "s": "OANDA:NL25EUR"
     },
     {
       "f": [
-        ""
+        "index"
       ],
       "s": "OANDA:SG30SGD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:SOYBNUSD"
     },
@@ -108,7 +102,7 @@
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:SUGARUSD"
     },
@@ -156,7 +150,7 @@
     },
     {
       "f": [
-        ""
+        "bond"
       ],
       "s": "OANDA:USB30YUSD"
     },
@@ -168,151 +162,151 @@
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:WTICOUSD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGAUD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGCAD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGCHF"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGEUR"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGGBP"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGHKD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGJPY"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGNZD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGSGD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAGUSD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUAUD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUCAD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUCHF"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUEUR"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUGBP"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUHKD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUJPY"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUNZD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUSGD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUUSD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XAUXAG"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XCUUSD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XPDUSD"
     },
     {
       "f": [
-        ""
+        "commodity"
       ],
       "s": "OANDA:XPTUSD"
     },
@@ -384,7 +378,7 @@
     },
     {
       "f": [
-        ""
+        "index"
       ],
       "s": "TVC:CAC40"
     },
@@ -453,6 +447,12 @@
         "index"
       ],
       "s": "TVC:DJI"
+    },
+    {
+      "f": [
+        "index"
+      ],
+      "s": "TVC:DXY"
     },
     {
       "f": [
@@ -594,7 +594,7 @@
     },
     {
       "f": [
-        ""
+        "index"
       ],
       "s": "TVC:HSI"
     },
@@ -792,7 +792,7 @@
     },
     {
       "f": [
-        ""
+        "index"
       ],
       "s": "TVC:NI225"
     },
@@ -1056,7 +1056,7 @@
     },
     {
       "f": [
-        ""
+        "index"
       ],
       "s": "TVC:UKX"
     },

@@ -3,7 +3,7 @@ var requestSync = require("sync-request"),
 
 const dstPath = "../cfd.json";
 const groups =[
-    "http://hub1.tradingview.com:8094/symbols/dxy",
+    "http://hub1.tradingview.com:8094/symbols/dxy_idc2",
     "http://hub1.tradingview.com:8094/symbols/us_chicago_indices",
     "http://hub1.tradingview.com:8094/symbols/us_ny_indices",
     "http://hub1.tradingview.com:8094/symbols/japan_indices",
@@ -37,15 +37,17 @@ groups.forEach(function(path){
 });
 
 var bondsMarks = [
-    "TREASURY NOTE", "BOND"
+    "TREASURY NOTE", "BOND", "Bond"
 ];
 
 var indexMarks = [
-    "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France", "Hong Kong", "Japan"
+    "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
+    "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG"
 ];
 
 var commoditiesMarks = [
-    "Brent", "WTI", "GOLD", "SILVER", "Corn", "Gas", "PALLADIUM", "PLATINUM"
+    "Brent", "WTI", "West Texas Oil", "GOLD", "Gold", "SILVER", "Silver", "Sugar", "Corn", "Gas", "PALLADIUM", "Palladium",
+    "PLATINUM", "Platinum", "Soybeans", "Copper"
 ];
 
 function matches(s, values){

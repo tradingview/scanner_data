@@ -37,12 +37,13 @@ groups.forEach(function(path){
 });
 
 var bondsMarks = [
-    "TREASURY NOTE", "BOND", "Bond", "T-Note"
+    "TREASURY NOTE", "BOND", "Bond", "T-Note", "EURO BUND"
 ];
 
 var indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
-    "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE"
+    "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE",
+    "UK 10Y Gilt","Bund","IBEX 35","DAX PERFORMANCE","US Wall St 30","US Nas 100","UK 100","US Russ 2000","AEX","US SPX 500"
 ];
 
 var commoditiesMarks = [

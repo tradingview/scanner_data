@@ -37,17 +37,17 @@ groups.forEach(function(path){
 });
 
 var bondsMarks = [
-    "TREASURY NOTE", "BOND", "Bond"
+    "TREASURY NOTE", "BOND", "Bond", "T-Note"
 ];
 
 var indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
-    "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG"
+    "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE"
 ];
 
 var commoditiesMarks = [
-    "Brent", "WTI", "West Texas Oil", "GOLD", "Gold", "SILVER", "Silver", "Sugar", "Corn", "Gas", "PALLADIUM", "Palladium",
-    "PLATINUM", "Platinum", "Soybeans", "Copper"
+    "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "GOLD", "Gold", "SILVER", "Silver", "Sugar", "Corn", "Gas", "PALLADIUM", "Palladium",
+    "PLATINUM", "Platinum", "Soybeans", "Copper", "Wheat"
 ];
 
 function matches(s, values){

@@ -13,10 +13,7 @@ const groups =[
     "http://hub1.tradingview.com:8094/symbols/spanish_indices",
     "http://hub1.tradingview.com:8094/symbols/government_bonds",
     "http://hub1.tradingview.com:8094/symbols/euro_bonds",
-    {
-        url:"http://hub1.tradingview.com:8094/symbols/forex_tvc",
-        exclude:[]
-    },
+    "http://hub1.tradingview.com:8094/symbols/forex_tvc",
     {
         url:"http://hub1.tradingview.com:8094/symbols/oanda",
         include:[

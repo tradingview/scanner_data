@@ -13,9 +13,21 @@ const groups =[
     "http://hub1.tradingview.com:8094/symbols/spanish_indices",
     "http://hub1.tradingview.com:8094/symbols/government_bonds",
     "http://hub1.tradingview.com:8094/symbols/euro_bonds",
-    "http://hub1.tradingview.com:8094/symbols/forex_tvc",
-    "http://hub1.tradingview.com:8094/symbols/oanda",
-    "http://hub1.tradingview.com:8094/symbols/forex_tvc"
+    {
+        url:"http://hub1.tradingview.com:8094/symbols/forex_tvc",
+        exclude:["TVC:GOLD","TVC:GOLDSILVER"]
+    },
+    {
+        url:"http://hub1.tradingview.com:8094/symbols/oanda",
+        include:[
+            "OANDA:CH20CHF","OANDA:SG30SGD","OANDA:HK33HKD","OANDA:JP225USD","OANDA:UK10YBGBP","OANDA:BCOUSD","OANDA:CORNUSD",
+            "OANDA:EU50EUR","OANDA:NAS100USD","OANDA:USB30YUSD","OANDA:SPX500USD","OANDA:XCUUSD","OANDA:XPTUSD",
+            "OANDA:NATGASUSD","OANDA:WTICOUSD","OANDA:DE10YBEUR","OANDA:XAUUSD","OANDA:FR40EUR","OANDA:NL25EUR",
+            "OANDA:US30USD","OANDA:US2000USD","OANDA:USB05YUSD","OANDA:USB02YUSD","OANDA:XAGUSD","OANDA:SUGARUSD",
+            "OANDA:USB10YUSD","OANDA:XPDUSD","OANDA:XAUXAG","OANDA:AU200AUD","OANDA:UK100GBP","OANDA:DE30EUR",
+            "OANDA:WHEATUSD","OANDA:SOYBNUSD"
+        ]
+    }
 ];
 
 const types = {
@@ -25,13 +37,37 @@ const types = {
 
 var symbols = [];
 groups.forEach(function(path){
-    var response = requestSync("GET", path);
+    var url = path;
+    var include;
+    var exclude;
+    if (typeof path !== "string" && path.url){
+        url = path.url;
+        if (path.include){
+            include = {};
+            path.include.forEach(function(val){include[val] = true;});
+        }
+        if (path.exclude){
+            exclude = {};
+            path.exclude.forEach(function(val){exclude[val] = true;});
+        }
+    }
+
+    var response = requestSync("GET", url);
     if (response.statusCode != 200) {
         throw Error(path + ':' + response.statusCode);
     }
     JSON.parse(response.getBody()).symbols.forEach(function(s){
         if (types[s.f[1]]){
-            symbols.push(s);
+            var skip = false;
+            if (include && !include[s.s]){
+                skip = true;
+            }
+            if (exclude && exclude[s.s]){
+                skip = true;
+            }
+            if (!skip) {
+                symbols.push(s);
+            }
         }
     });
 });

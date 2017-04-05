@@ -13,19 +13,14 @@ const groups =[
     "http://hub1.tradingview.com:8094/symbols/spanish_indices",
     "http://hub1.tradingview.com:8094/symbols/government_bonds",
     "http://hub1.tradingview.com:8094/symbols/euro_bonds",
-    {
-        url:"http://hub1.tradingview.com:8094/symbols/forex_tvc",
-        exclude:["TVC:GOLD","TVC:GOLDSILVER"]
-    },
+    "http://hub1.tradingview.com:8094/symbols/forex_tvc",
     {
         url:"http://hub1.tradingview.com:8094/symbols/oanda",
         include:[
-            "OANDA:CH20CHF","OANDA:SG30SGD","OANDA:HK33HKD","OANDA:JP225USD","OANDA:UK10YBGBP","OANDA:BCOUSD","OANDA:CORNUSD",
-            "OANDA:EU50EUR","OANDA:NAS100USD","OANDA:USB30YUSD","OANDA:SPX500USD","OANDA:XCUUSD","OANDA:XPTUSD",
-            "OANDA:NATGASUSD","OANDA:WTICOUSD","OANDA:DE10YBEUR","OANDA:XAUUSD","OANDA:FR40EUR","OANDA:NL25EUR",
-            "OANDA:US30USD","OANDA:US2000USD","OANDA:USB05YUSD","OANDA:USB02YUSD","OANDA:XAGUSD","OANDA:SUGARUSD",
-            "OANDA:USB10YUSD","OANDA:XPDUSD","OANDA:XAUXAG","OANDA:AU200AUD","OANDA:UK100GBP","OANDA:DE30EUR",
-            "OANDA:WHEATUSD","OANDA:SOYBNUSD"
+            "OANDA:CH20CHF","OANDA:SG30SGD","OANDA:HK33HKD","OANDA:UK10YBGBP","OANDA:CORNUSD",
+            "OANDA:USB30YUSD","OANDA:XCUUSD","OANDA:NATGASUSD","OANDA:NL25EUR","OANDA:US30USD",
+            "OANDA:USB05YUSD","OANDA:USB02YUSD","OANDA:SUGARUSD","OANDA:USB10YUSD","OANDA:AU200AUD",
+            "OANDA:DE30EUR","OANDA:WHEATUSD","OANDA:SOYBNUSD"
         ]
     }
 ];

@@ -1,5 +1,5 @@
 {
-  "time": "2017-04-05T14:45:10.118Z",
+  "time": "2017-04-05T15:55:39.389Z",
   "fields": [
     "sector"
   ],
@@ -9,12 +9,6 @@
         "index"
       ],
       "s": "OANDA:AU200AUD"
-    },
-    {
-      "f": [
-        "commodity"
-      ],
-      "s": "OANDA:BCOUSD"
     },
     {
       "f": [
@@ -32,43 +26,13 @@
       "f": [
         "index"
       ],
-      "s": "OANDA:DE10YBEUR"
-    },
-    {
-      "f": [
-        "index"
-      ],
       "s": "OANDA:DE30EUR"
     },
     {
       "f": [
         "index"
       ],
-      "s": "OANDA:EU50EUR"
-    },
-    {
-      "f": [
-        "index"
-      ],
-      "s": "OANDA:FR40EUR"
-    },
-    {
-      "f": [
-        "index"
-      ],
       "s": "OANDA:HK33HKD"
-    },
-    {
-      "f": [
-        "index"
-      ],
-      "s": "OANDA:JP225USD"
-    },
-    {
-      "f": [
-        "index"
-      ],
-      "s": "OANDA:NAS100USD"
     },
     {
       "f": [
@@ -96,12 +60,6 @@
     },
     {
       "f": [
-        "index"
-      ],
-      "s": "OANDA:SPX500USD"
-    },
-    {
-      "f": [
         "commodity"
       ],
       "s": "OANDA:SUGARUSD"
@@ -110,19 +68,7 @@
       "f": [
         "index"
       ],
-      "s": "OANDA:UK100GBP"
-    },
-    {
-      "f": [
-        "index"
-      ],
       "s": "OANDA:UK10YBGBP"
-    },
-    {
-      "f": [
-        "index"
-      ],
-      "s": "OANDA:US2000USD"
     },
     {
       "f": [
@@ -164,43 +110,7 @@
       "f": [
         "commodity"
       ],
-      "s": "OANDA:WTICOUSD"
-    },
-    {
-      "f": [
-        "commodity"
-      ],
-      "s": "OANDA:XAGUSD"
-    },
-    {
-      "f": [
-        "commodity"
-      ],
-      "s": "OANDA:XAUUSD"
-    },
-    {
-      "f": [
-        "commodity"
-      ],
-      "s": "OANDA:XAUXAG"
-    },
-    {
-      "f": [
-        "commodity"
-      ],
       "s": "OANDA:XCUUSD"
-    },
-    {
-      "f": [
-        "commodity"
-      ],
-      "s": "OANDA:XPDUSD"
-    },
-    {
-      "f": [
-        "commodity"
-      ],
-      "s": "OANDA:XPTUSD"
     },
     {
       "f": [
@@ -435,6 +345,18 @@
         "bond"
       ],
       "s": "TVC:GB10Y"
+    },
+    {
+      "f": [
+        "commodity"
+      ],
+      "s": "TVC:GOLD"
+    },
+    {
+      "f": [
+        "commodity"
+      ],
+      "s": "TVC:GOLDSILVER"
     },
     {
       "f": [

@@ -64,27 +64,41 @@ plot(Mom[1], title="Mom[1]")
 
 
 //study(title="Relative Strength Index", shorttitle="RSI")
-plot(rsi(close,14), title="RSI")
+RSI=rsi(close,14)
+plot(RSI, title="RSI")
 plot(rsi(close,7), title="RSI7")
-plot(rsi(close,14)[1], title="RSI[1]")
+plot(RSI[1], title="RSI[1]")
 plot(rsi(close,7)[1], title="RSI7[1]")
 
 
 // study(title="Moving Average", shorttitle="MA", overlay=true)
-plot(sma(close, 10), title="SMA10")
-plot(sma(close, 20), title="SMA20")
-plot(sma(close, 30), title="SMA30")
-plot(sma(close, 50), title="SMA50")
-plot(sma(close, 100), title="SMA100")
-plot(sma(close, 200), title="SMA200")
+SMA10=sma(close, 10)
+plot(SMA10, title="SMA10")
+SMA20=sma(close, 20)
+plot(SMA20, title="SMA20")
+SMA30=sma(close, 30)
+plot(SMA30, title="SMA30")
+SMA50=sma(close, 50)
+plot(SMA50, title="SMA50")
+SMA100=sma(close, 100)
+plot(SMA100, title="SMA100")
+SMA200=sma(close, 200)
+plot(SMA200, title="SMA200")
 
 // study(title="Exponential Moving Average", shorttitle="EMA", overlay=true)
-plot(ema(close, 10), title="EMA10")
-plot(ema(close, 20), title="EMA20")
-plot(ema(close, 30), title="EMA30")
-plot(ema(close, 50), title="EMA50")
-plot(ema(close, 100), title="EMA100")
-plot(ema(close, 200), title="EMA200")
+EMA10=ema(close, 10)
+plot(EMA10, title="EMA10")
+EMA20=ema(close, 20)
+plot(EMA20, title="EMA20")
+EMA30=ema(close, 30)
+plot(EMA30, title="EMA30")
+EMA50=ema(close, 50)
+plot(EMA50, title="EMA50")
+EMA100=ema(close, 100)
+plot(EMA100, title="EMA100")
+EMA200=ema(close, 200)
+plot(EMA200, title="EMA200")
+
 
 // study(title="Stochastic", shorttitle="Stoch")
 lengthStoch = 14
@@ -139,8 +153,9 @@ plot(nz(highest(high, 21), allTimeHigh), title="High.1M")
 plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")
 
 // Commodity Channel Index
-plot(cci(close, 20), title = "CCI20")
-plot(cci(close, 20)[1], title = "CCI20[1]")
+CCI=cci(close, 20)
+plot(CCI, title = "CCI20")
+plot(CCI[1], title = "CCI20[1]")
 //plot(cci(close, 100), title = "CCI100")
 
 // Donchian Channels
@@ -389,7 +404,8 @@ plot(maKltChnl + rangemaKltChnl * multKltChnl, title = "KltChnl.upper")
 plot(maKltChnl - rangemaKltChnl * multKltChnl, title = "KltChnl.lower")
 
 // study("My Parabolic SAR", overlay=true)
-plot(sar(0.02, 0.02, 0.2), title = "P.SAR")
+PSAR=sar(0.02, 0.02, 0.2)
+plot(PSAR, title = "P.SAR")
 
 // study("My Money Flow")
 lenMF = 14
@@ -401,3 +417,46 @@ plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
 lenCMF = 20
 accdistRaw = not ( ((close == low) and (close == high)) or (high == low) ) ? (((close - low) - (high - close)) / (high - low)) * volume : 0
 plot( sum(accdistRaw, lenCMF) / sum(volume, lenCMF), title = "ChaikinMoneyFlow" )
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+calcRecommendMA(left,right)=> left == right ? 0 : ( left < right ? 1 : -1 )
+calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
+
+// calculate trading recommendation based on SMA/EMA
+recMA = 0
+
+recMA := recMA + calcRecommendMA(SMA10, close)
+recMA := recMA + calcRecommendMA(SMA20, close)
+recMA := recMA + calcRecommendMA(SMA30, close)
+recMA := recMA + calcRecommendMA(SMA50, close)
+recMA := recMA + calcRecommendMA(SMA100, close)
+recMA := recMA + calcRecommendMA(SMA200, close)
+recMA := recMA + calcRecommendMA(EMA10, close)
+recMA := recMA + calcRecommendMA(EMA20, close)
+recMA := recMA + calcRecommendMA(EMA30, close)
+recMA := recMA + calcRecommendMA(EMA50, close)
+recMA := recMA + calcRecommendMA(EMA100, close)
+recMA := recMA + calcRecommendMA(EMA200, close)
+
+plot(recMA / 12, title="Recommend.MA")
+
+recOther = 0
+
+recRSI = RSI
+recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+recCCI = CCI
+recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
+recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
+recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
+recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
+
+plot(recOther / 9, title="Recommend.Other")
+
+plot( (recMA+recOther) / 2, title="Recommend.All")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -438,11 +438,10 @@ recMA := recMA + calcRecommendMA(EMA30, close)
 recMA := recMA + calcRecommendMA(EMA50, close)
 recMA := recMA + calcRecommendMA(EMA100, close)
 recMA := recMA + calcRecommendMA(EMA200, close)
-
-plot(recMA / 12, title="Recommend.MA")
+recMA := recMA/ 12
+plot(recMA, title="Recommend.MA")
 
 recOther = 0
-
 recRSI = RSI
 recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
 recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
@@ -454,9 +453,9 @@ recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
 recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
 recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
 recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
+recOther := recOther/9
+plot(recOther, title="Recommend.Other")
 
-plot(recOther / 9, title="Recommend.Other")
-
-plot( (recMA+recOther) / 2, title="Recommend.All")
+plot((recMA+recOther)/2, title="Recommend.All")
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

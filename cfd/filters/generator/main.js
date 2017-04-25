@@ -3,17 +3,17 @@ var requestSync = require("sync-request"),
 
 const dstPath = "../cfd.json";
 const groups =[
-    "http://hub1.tradingview.com:8094/symbols/dxy_idc2",
-    "http://hub1.tradingview.com:8094/symbols/us_chicago_indices",
-    "http://hub1.tradingview.com:8094/symbols/us_ny_indices",
-    "http://hub1.tradingview.com:8094/symbols/japan_indices",
-    "http://hub1.tradingview.com:8094/symbols/china_indices",
-    "http://hub1.tradingview.com:8094/symbols/european_indices",
-    "http://hub1.tradingview.com:8094/symbols/british_indices",
-    "http://hub1.tradingview.com:8094/symbols/spanish_indices",
-    "http://hub1.tradingview.com:8094/symbols/government_bonds",
-    "http://hub1.tradingview.com:8094/symbols/euro_bonds",
-    "http://hub1.tradingview.com:8094/symbols/forex_tvc",
+    { url:"http://hub1.tradingview.com:8094/symbols/dxy_idc2", region:"Americas" },
+    { url:"http://hub1.tradingview.com:8094/symbols/us_chicago_indices", region:"Americas" },
+    { url:"http://hub1.tradingview.com:8094/symbols/us_ny_indices", region:"Americas" },
+    { url:"http://hub1.tradingview.com:8094/symbols/japan_indices", region:"Asia" },
+    { url:"http://hub1.tradingview.com:8094/symbols/china_indices", region:"Asia" },
+    { url:"http://hub1.tradingview.com:8094/symbols/european_indices", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/british_indices", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/spanish_indices", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/government_bonds" },
+    { url:"http://hub1.tradingview.com:8094/symbols/euro_bonds", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/forex_tvc" },
     {
         url:"http://hub1.tradingview.com:8094/symbols/oanda",
         include:[
@@ -61,6 +61,9 @@ groups.forEach(function(path){
                 skip = true;
             }
             if (!skip) {
+                if (path.region){
+                    s.region = path.region;
+                }
                 symbols.push(s);
             }
         }
@@ -82,6 +85,17 @@ var commoditiesMarks = [
     "PLATINUM", "Platinum", "Soybeans", "Copper", "Wheat"
 ];
 
+var regionMarks = {
+  "Middle East": ["TURKEY"],
+  "Asia": ["CHINA","HONG KONG", "Hong Kong","INDIA","INDONESIA","JAPAN","KOREA","MALAYSIA","SINGAPORE","Singapore","THAILAND"],
+  "Europe": ["BELGIUM","FRANCE","GERMAN", "Germany","IRELAND","ITALY","NETHERLANDS", "Netherlands","NORWAY","PORTUGAL","SPAIN", "Swiss","UK"],
+  "Americas": ["US"],
+  "Africa": ["SOUTH AFRICA"],
+  "Pacific": ["AUSTRALIA", "Australia"],
+  "":["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD/SILVER RATIO"]
+};
+
+
 function matches(s, values){
     for (var i = 0; i < values.length; i++){
         if (s.indexOf(values[i])>=0){
@@ -91,29 +105,55 @@ function matches(s, values){
     return false;
 }
 
-function tryDetectCategory(f){
-    if (f[1] === "index" || matches(f[2], indexMarks)){
-        return "index";
+function matches2(s, obj){
+    for (var p in obj){
+        if (matches(s, obj[p])){
+            return p;
+        }
     }
-    if (matches(f[2], bondsMarks)){
-        return "bond";
-    }
-    if (matches(f[2], commoditiesMarks)){
-        return "commodity";
-    }
-    return ""; // TODO
+    return null;
 }
 
-var emptyCategoryCount = 0;
+function tryDetectCategory(s){
+    var description = s.f[2];
+    if (s.f[1] === "index" || matches(description, indexMarks)){
+        return "index";
+    }
+    if (matches(description, bondsMarks)){
+        return "bond";
+    }
+    if (matches(description, commoditiesMarks)){
+        return "commodity";
+    }
+    return null;
+}
+
+function tryDetectRegion(s){
+    if (s.region){
+        return s.region;
+    }
+    var description = s.f[2];
+    return matches2(description, regionMarks);
+}
+
+var emptyCategoryCount = 0, emptyRegionCount = 0;
 var dstSymbols = [];
 symbols.forEach(function(s){
     var dst = {f:[]};
     dst.s = s.s;
-    var cat = tryDetectCategory(s.f);
+    var cat = tryDetectCategory(s);
     if (!cat){
         emptyCategoryCount++;
     }
     dst.f[0] = cat;
+
+    var reg = tryDetectRegion(s);
+    if (reg === undefined || reg === null){
+        emptyRegionCount++;
+        // console.log(s.s + " (" + s.f[2] + ")");
+    }
+    dst.f[1] = reg;
+
     dstSymbols.push(dst);
 });
 
@@ -121,7 +161,13 @@ dstSymbols.sort(function(l,r){
     return l.s.localeCompare(r.s);
 });
 
-console.info("Symbols with empty category is " + emptyCategoryCount);
+if (emptyCategoryCount){
+    console.info("Symbols with empty category is " + emptyCategoryCount);
+}
+
+if (emptyRegionCount){
+    console.info("Symbols with empty region is " + emptyRegionCount);
+}
 
 fs.writeFileSync(dstPath, JSON.stringify(
-    {"time": new Date().toISOString()+'', "fields": ["sector"], "symbols": dstSymbols}, null, 2));
+    {"time": new Date().toISOString()+'', "fields": ["sector","country"], "symbols": dstSymbols}, null, 2));

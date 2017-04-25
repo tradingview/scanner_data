@@ -47,7 +47,7 @@ groups.forEach(function(path){
         }
     }
 
-    var response = requestSync("GET", url);
+    var response = requestSync("GET", url + '?fields=name,type,description');
     if (response.statusCode != 200) {
         throw Error(path + ':' + response.statusCode);
     }
@@ -68,13 +68,13 @@ groups.forEach(function(path){
 });
 
 var bondsMarks = [
-    "TREASURY NOTE", "BOND", "Bond", "T-Note", "EURO BUND"
+    "TREASURY NOTE", "BOND", "Bond", "T-Note", "EURO BUND", "UK 10Y Gilt"
 ];
 
 var indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
     "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE",
-    "UK 10Y Gilt","Bund","IBEX 35","DAX PERFORMANCE","US Wall St 30","US Nas 100","UK 100","US Russ 2000","AEX","US SPX 500"
+    "Bund","IBEX 35","DAX PERFORMANCE","US Wall St 30","US Nas 100","UK 100","US Russ 2000","AEX","US SPX 500"
 ];
 
 var commoditiesMarks = [
@@ -92,13 +92,13 @@ function matches(s, values){
 }
 
 function tryDetectCategory(f){
-    if (f[1] === "index" || matches(f[5], indexMarks)){
+    if (f[1] === "index" || matches(f[2], indexMarks)){
         return "index";
     }
-    if (matches(f[5], bondsMarks)){
+    if (matches(f[2], bondsMarks)){
         return "bond";
     }
-    if (matches(f[5], commoditiesMarks)){
+    if (matches(f[2], commoditiesMarks)){
         return "commodity";
     }
     return ""; // TODO

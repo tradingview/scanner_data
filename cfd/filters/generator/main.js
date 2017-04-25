@@ -5,7 +5,7 @@ const dstPath = "../cfd.json";
 const groups =[
     { url:"http://hub1.tradingview.com:8094/symbols/dxy_idc2", region:"Americas" },
     { url:"http://hub1.tradingview.com:8094/symbols/us_chicago_indices", region:"Americas" },
-    { url:"http://hub1.tradingview.com:8094/symbols/us_ny_indices", region:"Americas" },
+    { url:"http://hub1.tradingview.com:8094/symbols/us_ny_indices" },
     { url:"http://hub1.tradingview.com:8094/symbols/japan_indices", region:"Asia" },
     { url:"http://hub1.tradingview.com:8094/symbols/china_indices", region:"Asia" },
     { url:"http://hub1.tradingview.com:8094/symbols/european_indices", region:"Europe" },
@@ -88,10 +88,10 @@ var commoditiesMarks = [
 var regionMarks = {
   "Middle East": ["TURKEY"],
   "Asia": ["CHINA","HONG KONG", "Hong Kong","INDIA","INDONESIA","JAPAN","KOREA","MALAYSIA","SINGAPORE","Singapore","THAILAND"],
-  "Europe": ["BELGIUM","FRANCE","GERMAN", "Germany","IRELAND","ITALY","NETHERLANDS", "Netherlands","NORWAY","PORTUGAL","SPAIN", "Swiss","UK"],
-  "Americas": ["US"],
+  "Europe": ["EURO CURRENCY INDEX","BRITISH POUND CURRENCY INDEX","SWISS FRANC CURRENCY INDEX","BELGIUM","FRANCE","GERMAN", "Germany","IRELAND","ITALY","NETHERLANDS", "Netherlands","NORWAY","PORTUGAL","SPAIN", "Swiss","UK"],
+  "Americas": ["NYSE","NASDAQ","S&P 500","US","THOMSON REUTERS","CANADIAN DOLLAR CURRENCY INDEX"],
   "Africa": ["SOUTH AFRICA"],
-  "Pacific": ["AUSTRALIA", "Australia"],
+  "Pacific": ["AUSTRALIA", "Australia", "NEW ZEALAND DOLLAR CURRENCY INDEX"],
   "":["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD/SILVER RATIO"]
 };
 
@@ -150,7 +150,7 @@ symbols.forEach(function(s){
     var reg = tryDetectRegion(s);
     if (reg === undefined || reg === null){
         emptyRegionCount++;
-        // console.log(s.s + " (" + s.f[2] + ")");
+        console.log(s.s + " (" + s.f[2] + ")");
     }
     dst.f[1] = reg;
 

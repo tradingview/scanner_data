@@ -80,9 +80,16 @@ var indexMarks = [
     "Bund","IBEX 35","DAX PERFORMANCE","US Wall St 30","US Nas 100","UK 100","US Russ 2000","AEX","US SPX 500"
 ];
 
-var commoditiesMarks = [
-    "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "GOLD", "Gold", "SILVER", "Silver", "Sugar", "Corn", "Gas", "PALLADIUM", "Palladium",
-    "PLATINUM", "Platinum", "Soybeans", "Copper", "Wheat"
+var metalsMarks = [
+    "GOLD", "Gold", "SILVER", "Silver", "PALLADIUM", "Palladium", "PLATINUM", "Platinum", "Copper"
+];
+
+var energyMarks = [
+    "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "Gas"
+];
+
+var agricultureMarks = [
+    "Sugar", "Corn", "Soybeans", "Wheat"
 ];
 
 var regionMarks = {
@@ -122,8 +129,14 @@ function tryDetectCategory(s){
     if (matches(description, bondsMarks)){
         return "bond";
     }
-    if (matches(description, commoditiesMarks)){
-        return "commodity";
+    if (matches(description, metalsMarks)){
+        return "Metals";
+    }
+    if (matches(description, energyMarks)){
+        return "Energy";
+    }
+    if (matches(description, agricultureMarks)){
+        return "Agricultural";
     }
     return null;
 }

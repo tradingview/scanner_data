@@ -1,0 +1,285 @@
+//@version=2
+study(title="ScannerData", shorttitle="_SD_")
+
+
+// study(title="Average True Range", shorttitle="ATR", overlay=false)
+plot(rma(tr(true), 14), title="ATR")
+
+
+// study("Average Directional Index", shorttitle="ADX")
+dirmov(len) =>
+	up = change(high)
+	down = -change(low)
+	truerange = rma(tr, len)
+	plus = fixnan(100 * rma(up > down and up > 0 ? up : 0, len) / truerange)
+	minus = fixnan(100 * rma(down > up and down > 0 ? down : 0, len) / truerange)
+	[plus, minus]
+
+adx(dilen, adxlen) => 
+	[plus, minus] = dirmov(dilen)
+	sum = plus + minus
+	adx = 100 * rma(abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
+	[adx, plus, minus]
+
+[adxValue, adxPlus, adxMinus] = adx(14, 14)
+plot(adxValue, title="ADX")
+plot(adxPlus, title="ADX+DI")
+plot(adxMinus, title="ADX-DI")
+plot(adxPlus[1], title="ADX+DI[1]")
+plot(adxMinus[1], title="ADX-DI[1]")
+
+
+// study(shorttitle="BB", title="Bollinger Bands", overlay=true)
+lengthBB = 20
+srcBB = close
+multBB = 2
+basisBB = sma(srcBB, lengthBB)
+devBB = multBB * stdev(srcBB, lengthBB)
+upperBB = basisBB + devBB
+lowerBB = basisBB - devBB
+plot(basisBB, title="BB.basis")
+plot(upperBB, title="BB.upper")
+plot(lowerBB, title="BB.lower")
+
+
+// study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
+sourceMACD = close
+fastLengthMACD = 12
+slowLengthMACD = 26
+signalLengthMACD = 9
+fastMAMACD = ema(sourceMACD, fastLengthMACD)
+slowMAMACD = ema(sourceMACD, slowLengthMACD)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = sma(macdMACD, signalLengthMACD)
+histMACD = macdMACD - signalMACD
+plot(histMACD, title="MACD.hist")
+plot(macdMACD, title="MACD.macd")
+plot(signalMACD, title="MACD.signal")
+
+
+//study(title="Momentum", shorttitle="Mom")
+Mom = close - close[10]
+plot(Mom, title="Mom")
+plot(Mom[1], title="Mom[1]")
+
+
+//study(title="Relative Strength Index", shorttitle="RSI")
+RSI=rsi(close,14)
+plot(RSI, title="RSI")
+plot(rsi(close,7), title="RSI7")
+plot(RSI[1], title="RSI[1]")
+plot(rsi(close,7)[1], title="RSI7[1]")
+
+
+// study(title="Moving Average", shorttitle="MA", overlay=true)
+SMA10=sma(close, 10)
+plot(SMA10, title="SMA10")
+SMA20=sma(close, 20)
+plot(SMA20, title="SMA20")
+SMA30=sma(close, 30)
+plot(SMA30, title="SMA30")
+SMA50=sma(close, 50)
+plot(SMA50, title="SMA50")
+SMA100=sma(close, 100)
+plot(SMA100, title="SMA100")
+SMA200=sma(close, 200)
+plot(SMA200, title="SMA200")
+
+// study(title="Exponential Moving Average", shorttitle="EMA", overlay=true)
+EMA10=ema(close, 10)
+plot(EMA10, title="EMA10")
+EMA20=ema(close, 20)
+plot(EMA20, title="EMA20")
+EMA30=ema(close, 30)
+plot(EMA30, title="EMA30")
+EMA50=ema(close, 50)
+plot(EMA50, title="EMA50")
+EMA100=ema(close, 100)
+plot(EMA100, title="EMA100")
+EMA200=ema(close, 200)
+plot(EMA200, title="EMA200")
+
+
+// study(title="Stochastic", shorttitle="Stoch")
+lengthStoch = 14
+smoothKStoch = 1
+smoothDStoch = 3
+kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch = sma(kStoch, smoothDStoch)
+plot(kStoch, title="Stoch.K")
+plot(dStoch, title="Stoch.D")
+plot(kStoch[1], title="Stoch.K[1]")
+plot(dStoch[1], title="Stoch.D[1]")
+
+// average volume
+plot(sma(volume,90*5/7)[1], title="average_volume")
+
+// Commodity Channel Index
+CCI=cci(close, 20)
+plot(CCI, title = "CCI20")
+plot(CCI[1], title = "CCI20[1]")
+//plot(cci(close, 100), title = "CCI100")
+
+// Donchian Channels
+donchLen = 20
+donchUpper = highest(donchLen)
+donchLower = lowest(donchLen)
+plot(donchLower, title = "DonchCh20.Lower")
+plot(donchUpper, title = "DonchCh20.Upper")
+plot(avg(donchUpper, donchLower), title="DonchCh20.Middle")
+
+// Hull Moving Average
+hullMALength = 9
+hullMA_n2ma=2*wma(close,round(hullMALength/2))
+hullMA_nma=wma(close,hullMALength)
+plot(wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength))), title = "HullMA9")
+
+// Awesome Oscillator
+AO = sma(hl2, 5) - sma(hl2, 34)
+plot(AO, title = "AO")
+plot(AO[1], title = "AO[1]")
+
+// Pivot Points
+pivotM_open = nz(pivotM_open[1],open)
+pivotM_high = nz(pivotM_high[1],high)
+pivotM_low = nz(pivotM_low[1],low)
+
+pivotM_prev_open = nz(pivotM_prev_open[1])
+pivotM_prev_high = nz(pivotM_prev_high[1])
+pivotM_prev_low = nz(pivotM_prev_low[1])
+pivotM_prev_close = nz(pivotM_prev_close[1])
+
+pivotM_Month = month(time)
+if pivotM_Month != pivotM_Month[1]
+    pivotM_prev_open := pivotM_open
+    pivotM_prev_close := close[1]
+    pivotM_prev_high := pivotM_high
+    pivotM_prev_low := pivotM_low
+
+    pivotM_open := open
+    pivotM_high := high
+    pivotM_low := low
+else
+    pivotM_high := max(pivotM_high, high)
+    pivotM_low := min(pivotM_low, low)
+
+// Classic
+pivotM_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_prev_close)/3
+plot(pivotM_Median, title = 'Pivot.M.Classic.Middle')
+plot(pivotM_Median * 2 - pivotM_prev_low, title = 'Pivot.M.Classic.R1')
+plot(pivotM_Median * 2 - pivotM_prev_high, title = 'Pivot.M.Classic.S1')
+plot(pivotM_Median + 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.R2')
+plot(pivotM_Median - 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.S2')
+plot(pivotM_Median + 2*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.R3')
+plot(pivotM_Median - 2*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.S3')
+
+// Fibonacci
+plot(pivotM_Median, title = 'Pivot.M.Fibonacci.Middle')
+plot(pivotM_Median + 0.382 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R1')
+plot(pivotM_Median - 0.382 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S1')
+plot(pivotM_Median + 0.618 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R2')
+plot(pivotM_Median - 0.618 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S2')
+plot(pivotM_Median + 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R3')
+plot(pivotM_Median - 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S3')
+
+// Woodie
+pivotM_Woodie_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_prev_open * 2)/4
+plot(pivotM_Woodie_Median, title = 'Pivot.M.Woodie.Middle')
+plot(pivotM_Woodie_Median * 2 - pivotM_prev_low, title = 'Pivot.M.Woodie.R1')
+plot(pivotM_Woodie_Median * 2 - pivotM_prev_high, title = 'Pivot.M.Woodie.S1')
+plot(pivotM_Woodie_Median + 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Woodie.R2')
+plot(pivotM_Woodie_Median - 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Woodie.S2')
+plot(pivotM_prev_high + 2*(pivotM_Woodie_Median - pivotM_prev_low), title = 'Pivot.M.Woodie.R3')
+plot(pivotM_prev_low - 2*(pivotM_prev_high - pivotM_Woodie_Median), title = 'Pivot.M.Woodie.S3')
+
+// Demark
+pivotM_Demark_X = pivotM_prev_high + pivotM_prev_low*2 + pivotM_prev_close
+if pivotM_prev_close == pivotM_prev_open
+    pivotM_Demark_X := pivotM_prev_high + pivotM_prev_low + pivotM_prev_close*2
+if pivotM_prev_close > pivotM_prev_open
+    pivotM_Demark_X := pivotM_prev_high*2 + pivotM_prev_low + pivotM_prev_close
+plot(pivotM_Demark_X/4, title = 'Pivot.M.Demark.Middle')
+plot(pivotM_Demark_X/2 - pivotM_prev_low, title = 'Pivot.M.Demark.R1')
+plot(pivotM_Demark_X/2 - pivotM_prev_high, title = 'Pivot.M.Demark.S1')
+
+// Camarilla
+plot(pivotM_Median, title = 'Pivot.M.Camarilla.Middle')
+plot(pivotM_prev_close + 1.1/12.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R1')
+plot(pivotM_prev_close - 1.1/12.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S1')
+plot(pivotM_prev_close + 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R2')
+plot(pivotM_prev_close - 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S2')
+plot(pivotM_prev_close + 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R3')
+plot(pivotM_prev_close - 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S3')
+
+// study("Aroon")
+Aroon_length = (14)
+plot(100 * (highestbars(high, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Up")
+plot(100 * (lowestbars(low, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Down")
+
+// value traded (dollar volume)
+plot(volume*close*syminfo.pointvalue, title="Value.Traded")
+
+// study("My Keltner Channels", overlay=true)
+lengthKltChnl = 20
+multKltChnl = 1
+maKltChnl = ema(close, lengthKltChnl)
+rangemaKltChnl = ema(tr, lengthKltChnl)
+plot(maKltChnl + rangemaKltChnl * multKltChnl, title = "KltChnl.upper")
+plot(maKltChnl - rangemaKltChnl * multKltChnl, title = "KltChnl.lower")
+
+// study("My Parabolic SAR", overlay=true)
+PSAR=sar(0.02, 0.02, 0.2)
+plot(PSAR, title = "P.SAR")
+
+// study("My Money Flow")
+lenMF = 14
+posMF = sum(iff(hlc3 > hlc3[1], hlc3 * volume, 0), lenMF)
+negMF = sum(iff(hlc3 < hlc3[1], hlc3 * volume, 0), lenMF)
+plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
+
+// study("My Chaikin Money Flow")
+lenCMF = 20
+accdistRaw = not ( ((close == low) and (close == high)) or (high == low) ) ? (((close - low) - (high - close)) / (high - low)) * volume : 0
+plot( sum(accdistRaw, lenCMF) / sum(volume, lenCMF), title = "ChaikinMoneyFlow" )
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+calcRecommendMA(left,right)=> left == right ? 0 : ( left < right ? 1 : -1 )
+calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
+
+// calculate trading recommendation based on SMA/EMA
+recMA = 0
+
+recMA := recMA + calcRecommendMA(SMA10, close)
+recMA := recMA + calcRecommendMA(SMA20, close)
+recMA := recMA + calcRecommendMA(SMA30, close)
+recMA := recMA + calcRecommendMA(SMA50, close)
+recMA := recMA + calcRecommendMA(SMA100, close)
+recMA := recMA + calcRecommendMA(SMA200, close)
+recMA := recMA + calcRecommendMA(EMA10, close)
+recMA := recMA + calcRecommendMA(EMA20, close)
+recMA := recMA + calcRecommendMA(EMA30, close)
+recMA := recMA + calcRecommendMA(EMA50, close)
+recMA := recMA + calcRecommendMA(EMA100, close)
+recMA := recMA + calcRecommendMA(EMA200, close)
+recMA := recMA/ 12
+plot(recMA, title="Recommend.MA")
+
+recOther = 0
+recRSI = RSI
+recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+recCCI = CCI
+recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
+recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
+recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
+recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
+recOther := recOther/9
+plot(recOther, title="Recommend.Other")
+
+plot((recMA+recOther)/2, title="Recommend.All")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "sector",
+    "type": "text"
+  },
+  {
+    "name": "country",
+    "type": "text"
+  },
+  {
+    "name": "current_session",
+    "type": "text"
+  },
+  {
+    "name": "rtc",
+    "type": "price"
+  },
+  {
+    "name": "bid",
+    "type": "price"
+  },
+  {
+    "name": "ask",
+    "type": "price"
+  }
+]

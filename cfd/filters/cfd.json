@@ -1,0 +1,1073 @@
+{
+  "time": "2017-04-26T16:21:13.790Z",
+  "fields": [
+    "sector",
+    "country"
+  ],
+  "symbols": [
+    {
+      "f": [
+        "index",
+        "Pacific"
+      ],
+      "s": "OANDA:AU200AUD"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "OANDA:CH20CHF"
+    },
+    {
+      "f": [
+        "Agricultural",
+        ""
+      ],
+      "s": "OANDA:CORNUSD"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "OANDA:DE30EUR"
+    },
+    {
+      "f": [
+        "index",
+        "Asia"
+      ],
+      "s": "OANDA:HK33HKD"
+    },
+    {
+      "f": [
+        "Energy",
+        ""
+      ],
+      "s": "OANDA:NATGASUSD"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "OANDA:NL25EUR"
+    },
+    {
+      "f": [
+        "index",
+        "Asia"
+      ],
+      "s": "OANDA:SG30SGD"
+    },
+    {
+      "f": [
+        "Agricultural",
+        ""
+      ],
+      "s": "OANDA:SOYBNUSD"
+    },
+    {
+      "f": [
+        "Agricultural",
+        ""
+      ],
+      "s": "OANDA:SUGARUSD"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "OANDA:UK10YBGBP"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "OANDA:US30USD"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "OANDA:USB02YUSD"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "OANDA:USB05YUSD"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "OANDA:USB10YUSD"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "OANDA:USB30YUSD"
+    },
+    {
+      "f": [
+        "Agricultural",
+        ""
+      ],
+      "s": "OANDA:WHEATUSD"
+    },
+    {
+      "f": [
+        "Metals",
+        ""
+      ],
+      "s": "OANDA:XCUUSD"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:AEX"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific"
+      ],
+      "s": "TVC:AU02"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific"
+      ],
+      "s": "TVC:AU02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific"
+      ],
+      "s": "TVC:AU10"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific"
+      ],
+      "s": "TVC:AU10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Pacific"
+      ],
+      "s": "TVC:AXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:BE02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:BE02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:BE10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:BE10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:BXY"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:CAC40"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:CN02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:CN02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:CN10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:CN10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:CXY"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:DAX"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:DE02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:DE02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:DE10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:DE10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:DJI"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:DXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:ES02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:ES02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:ES10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:ES10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:EUBUND"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:EXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:FR02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:FR02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:FR10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:FR10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:FTMIB"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:GB02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:GB02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:GB10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:GB10Y"
+    },
+    {
+      "f": [
+        "Metals",
+        ""
+      ],
+      "s": "TVC:GOLD"
+    },
+    {
+      "f": [
+        "Metals",
+        ""
+      ],
+      "s": "TVC:GOLDSILVER"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:HK02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:HK02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:HK10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:HK10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Asia"
+      ],
+      "s": "TVC:HSI"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:IBEX35"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:ID03"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:ID03Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:ID10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:ID10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IE02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IE02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IE10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IE10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:IN02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:IN02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:IN10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:IN10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IT02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IT02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IT10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:IT10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:IXIC"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:JP02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:JP02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:JP10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:JP10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Asia"
+      ],
+      "s": "TVC:JXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:KR02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:KR02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:KR10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:KR10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:MY03"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:MY03Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:MY10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:MY10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:NDX"
+    },
+    {
+      "f": [
+        "index",
+        "Asia"
+      ],
+      "s": "TVC:NI225"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NL02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NL02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NL10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NL10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NO02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NO02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NO10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:NO10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:NYA"
+    },
+    {
+      "f": [
+        "Metals",
+        ""
+      ],
+      "s": "TVC:PALLADIUM"
+    },
+    {
+      "f": [
+        "Metals",
+        ""
+      ],
+      "s": "TVC:PLATINUM"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:PT02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:PT02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:PT10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe"
+      ],
+      "s": "TVC:PT10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:RUI"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:RUT"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:SG02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:SG02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:SG10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:SG10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Asia"
+      ],
+      "s": "TVC:SHCOMP"
+    },
+    {
+      "f": [
+        "Metals",
+        ""
+      ],
+      "s": "TVC:SILVER"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:SPX"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:SSMI"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:SX5E"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:SXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:TH02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:TH02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:TH10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia"
+      ],
+      "s": "TVC:TH10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:TNX"
+    },
+    {
+      "f": [
+        "bond",
+        "Middle East"
+      ],
+      "s": "TVC:TR02"
+    },
+    {
+      "f": [
+        "bond",
+        "Middle East"
+      ],
+      "s": "TVC:TR02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Middle East"
+      ],
+      "s": "TVC:TR10"
+    },
+    {
+      "f": [
+        "bond",
+        "Middle East"
+      ],
+      "s": "TVC:TR10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:TRJEFFCRB"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:TYX"
+    },
+    {
+      "f": [
+        "Energy",
+        ""
+      ],
+      "s": "TVC:UKOIL"
+    },
+    {
+      "f": [
+        "index",
+        "Europe"
+      ],
+      "s": "TVC:UKX"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US02"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US05"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US10"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US30"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas"
+      ],
+      "s": "TVC:US30Y"
+    },
+    {
+      "f": [
+        "Energy",
+        ""
+      ],
+      "s": "TVC:USOIL"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "TVC:VIX"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa"
+      ],
+      "s": "TVC:ZA03"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa"
+      ],
+      "s": "TVC:ZA03Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa"
+      ],
+      "s": "TVC:ZA10"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa"
+      ],
+      "s": "TVC:ZA10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Pacific"
+      ],
+      "s": "TVC:ZXY"
+    }
+  ]
+}

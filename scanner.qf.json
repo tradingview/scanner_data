@@ -258,5 +258,13 @@
   {
     "name": "dividends_yield",
     "type": "number"
+  },
+  {
+    "name": "price_book_ratio",
+    "type": "number"
+  },
+  {
+    "name": "price_sales_ratio",
+    "type": "number"
   }
 ]

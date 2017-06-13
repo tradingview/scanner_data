@@ -266,5 +266,13 @@
   {
     "name": "price_sales_ratio",
     "type": "number"
+  },
+  {
+    "name": "earnings_release_time",
+    "type": "number"
+  },
+  {
+    "name": "earnings_release_next_time",
+    "type": "number"
   }
 ]

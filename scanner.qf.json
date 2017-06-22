@@ -274,5 +274,9 @@
   {
     "name": "earnings_release_next_time",
     "type": "number"
+  },
+  {
+    "name": "fundamental_currency_code",
+    "type": "text"
   }
 ]

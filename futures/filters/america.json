@@ -76,6 +76,12 @@
     {"f":["Metals"],"s":"COMEX:AUP1!"},
     {"f":["Metals"],"s":"COMEX:AEP1!"},
     {"f":["Metals"],"s":"NYMEX:UX1!"},
-    {"f":["Metals"],"s":"COMEX:LD1!"}
+    {"f":["Metals"],"s":"COMEX:LD1!"},
+    {"f":["Agricultural"],"s":"NYMEX:KA1!"},
+    {"f":["Agricultural"],"s":"NYMEX:KT1!"},
+    {"f":["Agricultural"],"s":"CME:G01!"},
+    {"f":["Energy"],"s":"NYMEX:IAC1!"},
+    {"f":["Currencies"],"s":"CME_MINI:WN1!"},
+    {"f":["Currencies"],"s":"CME:UP1!"}
   ]
 }

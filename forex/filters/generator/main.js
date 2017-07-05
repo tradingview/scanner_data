@@ -236,6 +236,8 @@ var regions = {
 	"XDR": "",
 	"VRL": "",
 	"VRN": "",
+	"NTG": "",
+	"WTC": "",
 };
 function detectRegion(name){
     var firstCur = name.substr(0,3);
@@ -333,10 +335,16 @@ var exclude = [
     "M5P"
 ];
 
+var symbolExclude = [
+    "EUREUR",
+    "USDUSD",
+    "GBPGBP",
+];
+
 function mustExcluded(name){
     var firstCur = name.substr(0,3);
     var secondCur = name.substr(3,3);
-    return exclude.indexOf(firstCur) >= 0 || exclude.indexOf(secondCur) >= 0;
+    return exclude.indexOf(firstCur) >= 0 || exclude.indexOf(secondCur) >= 0 || symbolExclude.indexOf(name) >= 0;
 }
 
 var dstSymbols = [];

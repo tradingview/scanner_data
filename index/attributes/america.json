@@ -1,0 +1,50 @@
+{
+  "time": "2017-05-03T14:55:13.255Z",
+  "fields": ["sector"],
+  "symbols": [
+    {
+      "s": "SP:SPF",
+      "f": ["FINANCIALS"]
+    },
+    {
+      "s": "SP:SPN",
+      "f": ["ENERGY"]
+    },
+    {
+      "s": "SP:S5HLTH",
+      "f": ["HEALTH CARE"]
+    },
+    {
+      "s": "SP:S5INFT",
+      "f": ["INFORMATION TECHNOLOGY"]
+    },
+    {
+      "s": "SP:S5CONS",
+      "f": ["CONSUMER STAPLES"]
+    },
+    {
+      "s": "SP:S5MATR",
+      "f": ["MATERIALS"]
+    },
+    {
+      "s": "SP:S5COND",
+      "f": ["CONSUMER DISCRETIONARY"]
+    },
+    {
+      "s": "SP:S5UTIL",
+      "f": ["UTILITIES"]
+    },
+    {
+      "s": "SP:S5INDU",
+      "f": ["INDUSTRIALS"]
+    },
+    {
+      "s": "SP:S5TELS",
+      "f": ["TELECOMMUNICATION SERVICES"]
+    },
+    {
+      "s": "SP:S5REAS",
+      "f": ["REAL ESTATE"]
+    }
+  ]
+}

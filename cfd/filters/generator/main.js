@@ -3,29 +3,24 @@ var requestSync = require("sync-request"),
 
 const dstPath = "../cfd.json";
 const groups =[
-    "http://hub1.tradingview.com:8094/symbols/dxy_idc2",
-    "http://hub1.tradingview.com:8094/symbols/us_chicago_indices",
-    "http://hub1.tradingview.com:8094/symbols/us_ny_indices",
-    "http://hub1.tradingview.com:8094/symbols/japan_indices",
-    "http://hub1.tradingview.com:8094/symbols/china_indices",
-    "http://hub1.tradingview.com:8094/symbols/european_indices",
-    "http://hub1.tradingview.com:8094/symbols/british_indices",
-    "http://hub1.tradingview.com:8094/symbols/spanish_indices",
-    "http://hub1.tradingview.com:8094/symbols/government_bonds",
-    "http://hub1.tradingview.com:8094/symbols/euro_bonds",
-    {
-        url:"http://hub1.tradingview.com:8094/symbols/forex_tvc",
-        exclude:["TVC:GOLD","TVC:GOLDSILVER"]
-    },
+    { url:"http://hub1.tradingview.com:8094/symbols/dxy_idc2", region:"Americas" },
+    { url:"http://hub1.tradingview.com:8094/symbols/us_chicago_indices", region:"Americas" },
+    { url:"http://hub1.tradingview.com:8094/symbols/us_ny_indices" },
+    { url:"http://hub1.tradingview.com:8094/symbols/japan_indices", region:"Asia" },
+    { url:"http://hub1.tradingview.com:8094/symbols/china_indices", region:"Asia" },
+    { url:"http://hub1.tradingview.com:8094/symbols/european_indices", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/british_indices", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/spanish_indices", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/government_bonds" },
+    { url:"http://hub1.tradingview.com:8094/symbols/euro_bonds", region:"Europe" },
+    { url:"http://hub1.tradingview.com:8094/symbols/forex_tvc" },
     {
         url:"http://hub1.tradingview.com:8094/symbols/oanda",
         include:[
-            "OANDA:CH20CHF","OANDA:SG30SGD","OANDA:HK33HKD","OANDA:JP225USD","OANDA:UK10YBGBP","OANDA:BCOUSD","OANDA:CORNUSD",
-            "OANDA:EU50EUR","OANDA:NAS100USD","OANDA:USB30YUSD","OANDA:SPX500USD","OANDA:XCUUSD","OANDA:XPTUSD",
-            "OANDA:NATGASUSD","OANDA:WTICOUSD","OANDA:DE10YBEUR","OANDA:XAUUSD","OANDA:FR40EUR","OANDA:NL25EUR",
-            "OANDA:US30USD","OANDA:US2000USD","OANDA:USB05YUSD","OANDA:USB02YUSD","OANDA:XAGUSD","OANDA:SUGARUSD",
-            "OANDA:USB10YUSD","OANDA:XPDUSD","OANDA:XAUXAG","OANDA:AU200AUD","OANDA:UK100GBP","OANDA:DE30EUR",
-            "OANDA:WHEATUSD","OANDA:SOYBNUSD"
+            "OANDA:CH20CHF","OANDA:SG30SGD","OANDA:HK33HKD","OANDA:UK10YBGBP","OANDA:CORNUSD",
+            "OANDA:USB30YUSD","OANDA:XCUUSD","OANDA:NATGASUSD","OANDA:NL25EUR","OANDA:US30USD",
+            "OANDA:USB05YUSD","OANDA:USB02YUSD","OANDA:SUGARUSD","OANDA:USB10YUSD","OANDA:AU200AUD",
+            "OANDA:DE30EUR","OANDA:WHEATUSD","OANDA:SOYBNUSD"
         ]
     }
 ];
@@ -52,7 +47,7 @@ groups.forEach(function(path){
         }
     }
 
-    var response = requestSync("GET", url);
+    var response = requestSync("GET", url + '?fields=name,type,description');
     if (response.statusCode != 200) {
         throw Error(path + ':' + response.statusCode);
     }
@@ -66,6 +61,9 @@ groups.forEach(function(path){
                 skip = true;
             }
             if (!skip) {
+                if (path.region){
+                    s.region = path.region;
+                }
                 symbols.push(s);
             }
         }
@@ -73,19 +71,37 @@ groups.forEach(function(path){
 });
 
 var bondsMarks = [
-    "TREASURY NOTE", "BOND", "Bond", "T-Note", "EURO BUND"
+    "TREASURY NOTE", "BOND", "Bond", "T-Note", "EURO BUND", "UK 10Y Gilt"
 ];
 
 var indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
     "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE",
-    "UK 10Y Gilt","Bund","IBEX 35","DAX PERFORMANCE","US Wall St 30","US Nas 100","UK 100","US Russ 2000","AEX","US SPX 500"
+    "Bund","IBEX 35","DAX PERFORMANCE","US Wall St 30","US Nas 100","UK 100","US Russ 2000","AEX","US SPX 500"
 ];
 
-var commoditiesMarks = [
-    "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "GOLD", "Gold", "SILVER", "Silver", "Sugar", "Corn", "Gas", "PALLADIUM", "Palladium",
-    "PLATINUM", "Platinum", "Soybeans", "Copper", "Wheat"
+var metalsMarks = [
+    "GOLD", "Gold", "SILVER", "Silver", "PALLADIUM", "Palladium", "PLATINUM", "Platinum", "Copper"
 ];
+
+var energyMarks = [
+    "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "Gas"
+];
+
+var agricultureMarks = [
+    "Sugar", "Corn", "Soybeans", "Wheat"
+];
+
+var regionMarks = {
+  "Middle East": ["TURKEY"],
+  "Asia": ["CHINA","HONG KONG", "Hong Kong","INDIA","INDONESIA","JAPAN","KOREA","MALAYSIA","SINGAPORE","Singapore","THAILAND"],
+  "Europe": ["EURO CURRENCY INDEX","BRITISH POUND CURRENCY INDEX","SWISS FRANC CURRENCY INDEX","BELGIUM","FRANCE","GERMAN", "Germany","IRELAND","ITALY","NETHERLANDS", "Netherlands","NORWAY","PORTUGAL","SPAIN", "Swiss","UK "],
+  "Americas": ["NYSE","NASDAQ","S&P 500","US ","THOMSON REUTERS","CANADIAN DOLLAR CURRENCY INDEX","US GOVERNMENT BONDS","DOW JONES","RUSSELL"],
+  "Africa": ["SOUTH AFRICA"],
+  "Pacific": ["AUSTRALIA", "Australia", "NEW ZEALAND DOLLAR CURRENCY INDEX"],
+  "":["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD", "SILVER", "PLATINUM", "PALLADIUM"]
+};
+
 
 function matches(s, values){
     for (var i = 0; i < values.length; i++){
@@ -96,29 +112,61 @@ function matches(s, values){
     return false;
 }
 
-function tryDetectCategory(f){
-    if (f[1] === "index" || matches(f[5], indexMarks)){
-        return "index";
+function matches2(s, obj){
+    for (var p in obj){
+        if (matches(s, obj[p])){
+            return p;
+        }
     }
-    if (matches(f[5], bondsMarks)){
-        return "bond";
-    }
-    if (matches(f[5], commoditiesMarks)){
-        return "commodity";
-    }
-    return ""; // TODO
+    return null;
 }
 
-var emptyCategoryCount = 0;
+function tryDetectCategory(s){
+    var description = s.f[2];
+    if (s.f[1] === "index" || matches(description, indexMarks)){
+        return "index";
+    }
+    if (matches(description, bondsMarks)){
+        return "bond";
+    }
+    if (matches(description, metalsMarks)){
+        return "Metals";
+    }
+    if (matches(description, energyMarks)){
+        return "Energy";
+    }
+    if (matches(description, agricultureMarks)){
+        return "Agricultural";
+    }
+    return null;
+}
+
+function tryDetectRegion(s){
+    if (s.region){
+        return s.region;
+    }
+    var description = s.f[2];
+    return matches2(description, regionMarks);
+}
+
+var emptyCategoryCount = 0, emptyRegionCount = 0;
 var dstSymbols = [];
 symbols.forEach(function(s){
     var dst = {f:[]};
     dst.s = s.s;
-    var cat = tryDetectCategory(s.f);
+    var cat = tryDetectCategory(s);
     if (!cat){
         emptyCategoryCount++;
     }
     dst.f[0] = cat;
+
+    var reg = tryDetectRegion(s);
+    if (reg === undefined || reg === null){
+        emptyRegionCount++;
+        console.log(s.s + " (" + s.f[2] + ")");
+    }
+    dst.f[1] = reg;
+
     dstSymbols.push(dst);
 });
 
@@ -126,7 +174,13 @@ dstSymbols.sort(function(l,r){
     return l.s.localeCompare(r.s);
 });
 
-console.info("Symbols with empty category is " + emptyCategoryCount);
+if (emptyCategoryCount){
+    console.info("Symbols with empty category is " + emptyCategoryCount);
+}
+
+if (emptyRegionCount){
+    console.info("Symbols with empty region is " + emptyRegionCount);
+}
 
 fs.writeFileSync(dstPath, JSON.stringify(
-    {"time": new Date().toISOString()+'', "fields": ["sector"], "symbols": dstSymbols}, null, 2));
+    {"time": new Date().toISOString()+'', "fields": ["sector","country"], "symbols": dstSymbols}, null, 2));

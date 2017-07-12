@@ -444,7 +444,7 @@ plot(rateOfreturn(close, lastYearClose)[1], title="Perf.YTD")
 volatility(bb) => sma((high-low)/abs(low) * 100, bb)
 plot(volatility(5), title="Volatility.W")
 plot(volatility(21), title="Volatility.M")
-plot(tr(true)*100/low, title="Volatility.D")
+plot(tr(true)*100/abs(low), title="Volatility.D")
 
 // high & low
 allTimeHigh = max(nz(allTimeHigh[1], high), high)

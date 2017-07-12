@@ -111,46 +111,8 @@ plot(dStoch, title="Stoch.D")
 plot(kStoch[1], title="Stoch.K[1]")
 plot(dStoch[1], title="Stoch.D[1]")
 
-// performance
-rateOfreturn(v1, v2) => (v1 - v2) * 100 / v2
-rr(bb) =>
-    rof = rateOfreturn(close, close[bb])
-    rof[1]
-plot(rr(5), title="Perf.W")
-//plot(rr(10), title="Perf.2W")
-//plot(rr(15), title="Perf.3W")
-plot(rr(21), title="Perf.1M")
-plot(rr(63), title="Perf.3M")
-plot(rr(126), title="Perf.6M")
-//plot(rr(189), title="Perf.9M")
-plot(rr(252), title="Perf.Y")
-lastYearClose = lastYearClose[1]
-if year > year[1]
-    lastYearClose := close[1]
-plot(rateOfreturn(close, lastYearClose)[1], title="Perf.YTD")
-
-// volatility
-volatility(bb) => sma((high-low)/low * 100, bb)
-plot(volatility(5), title="Volatility.W")
-plot(volatility(21), title="Volatility.M")
-plot(tr(true)*100/low, title="Volatility.D")
-
 // average volume
 plot(sma(volume,90*5/7)[1], title="average_volume")
-
-// high & low
-allTimeHigh = max(nz(allTimeHigh[1], high), high)
-allTimeLow = min(nz(allTimeLow[1], low), low)
-plot(allTimeHigh, title="High.All")
-plot(allTimeLow, title="Low.All")
-plot(nz(highest(high, 52*5), allTimeHigh), title="price_52_week_high")
-plot(nz(lowest(low, 52*5), allTimeLow), title="price_52_week_low")
-plot(nz(highest(high, 126), allTimeHigh), title="High.6M")
-plot(nz(lowest(low, 126), allTimeLow), title="Low.6M")
-plot(nz(highest(high, 63), allTimeHigh), title="High.3M")
-plot(nz(lowest(low, 63), allTimeLow), title="Low.3M")
-plot(nz(highest(high, 21), allTimeHigh), title="High.1M")
-plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")
 
 // Commodity Channel Index
 CCI=cci(close, 20)
@@ -248,6 +210,79 @@ plot(pivotM_prev_close + 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = '
 plot(pivotM_prev_close - 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S2')
 plot(pivotM_prev_close + 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R3')
 plot(pivotM_prev_close - 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S3')
+
+// study("Aroon")
+Aroon_length = (14)
+plot(100 * (highestbars(high, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Up")
+plot(100 * (lowestbars(low, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Down")
+
+// value traded (dollar volume)
+plot(volume*close*syminfo.pointvalue, title="Value.Traded")
+
+// study("My Keltner Channels", overlay=true)
+lengthKltChnl = 20
+multKltChnl = 1
+maKltChnl = ema(close, lengthKltChnl)
+rangemaKltChnl = ema(tr, lengthKltChnl)
+plot(maKltChnl + rangemaKltChnl * multKltChnl, title = "KltChnl.upper")
+plot(maKltChnl - rangemaKltChnl * multKltChnl, title = "KltChnl.lower")
+
+// study("My Parabolic SAR", overlay=true)
+PSAR=sar(0.02, 0.02, 0.2)
+plot(PSAR, title = "P.SAR")
+
+// study("My Money Flow")
+lenMF = 14
+posMF = sum(iff(hlc3 > hlc3[1], hlc3 * volume, 0), lenMF)
+negMF = sum(iff(hlc3 < hlc3[1], hlc3 * volume, 0), lenMF)
+plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
+
+// study("My Chaikin Money Flow")
+lenCMF = 20
+accdistRaw = not ( ((close == low) and (close == high)) or (high == low) ) ? (((close - low) - (high - close)) / (high - low)) * volume : 0
+plot( sum(accdistRaw, lenCMF) / sum(volume, lenCMF), title = "ChaikinMoneyFlow" )
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+calcRecommendMA(left,right)=> left == right ? 0 : ( left < right ? 1 : -1 )
+calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
+
+// calculate trading recommendation based on SMA/EMA
+recMA = 0
+
+recMA := recMA + calcRecommendMA(SMA10, close)
+recMA := recMA + calcRecommendMA(SMA20, close)
+recMA := recMA + calcRecommendMA(SMA30, close)
+recMA := recMA + calcRecommendMA(SMA50, close)
+recMA := recMA + calcRecommendMA(SMA100, close)
+recMA := recMA + calcRecommendMA(SMA200, close)
+recMA := recMA + calcRecommendMA(EMA10, close)
+recMA := recMA + calcRecommendMA(EMA20, close)
+recMA := recMA + calcRecommendMA(EMA30, close)
+recMA := recMA + calcRecommendMA(EMA50, close)
+recMA := recMA + calcRecommendMA(EMA100, close)
+recMA := recMA + calcRecommendMA(EMA200, close)
+recMA := recMA/ 12
+plot(recMA, title="Recommend.MA")
+
+recOther = 0
+recRSI = RSI
+recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+recCCI = CCI
+recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
+recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
+recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
+recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
+recOther := recOther/9
+plot(recOther, title="Recommend.Other")
+
+plot((recMA+recOther)/2, title="Recommend.All")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
@@ -387,75 +422,40 @@ plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn, title = "Cand
 plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low, title = "Candle.Kicking.Bullish")
 plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.Kicking.Bearish")
 
-// study("Aroon")
-Aroon_length = (14)
-plot(100 * (highestbars(high, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Up")
-plot(100 * (lowestbars(low, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Down")
+// performance
+rateOfreturn(v1, v2) => (v1 - v2) * 100 / abs(v2)
+rr(bb) =>
+    rof = rateOfreturn(close, close[bb])
+    rof[1]
+plot(rr(5), title="Perf.W")
+//plot(rr(10), title="Perf.2W")
+//plot(rr(15), title="Perf.3W")
+plot(rr(21), title="Perf.1M")
+plot(rr(63), title="Perf.3M")
+plot(rr(126), title="Perf.6M")
+//plot(rr(189), title="Perf.9M")
+plot(rr(252), title="Perf.Y")
+lastYearClose = lastYearClose[1]
+if year > year[1]
+    lastYearClose := close[1]
+plot(rateOfreturn(close, lastYearClose)[1], title="Perf.YTD")
 
-// value traded (dollar volume)
-plot(volume*close*syminfo.pointvalue, title="Value.Traded")
+// volatility
+volatility(bb) => sma((high-low)/abs(low) * 100, bb)
+plot(volatility(5), title="Volatility.W")
+plot(volatility(21), title="Volatility.M")
+plot(tr(true)*100/low, title="Volatility.D")
 
-// study("My Keltner Channels", overlay=true)
-lengthKltChnl = 20
-multKltChnl = 1
-maKltChnl = ema(close, lengthKltChnl)
-rangemaKltChnl = ema(tr, lengthKltChnl)
-plot(maKltChnl + rangemaKltChnl * multKltChnl, title = "KltChnl.upper")
-plot(maKltChnl - rangemaKltChnl * multKltChnl, title = "KltChnl.lower")
-
-// study("My Parabolic SAR", overlay=true)
-PSAR=sar(0.02, 0.02, 0.2)
-plot(PSAR, title = "P.SAR")
-
-// study("My Money Flow")
-lenMF = 14
-posMF = sum(iff(hlc3 > hlc3[1], hlc3 * volume, 0), lenMF)
-negMF = sum(iff(hlc3 < hlc3[1], hlc3 * volume, 0), lenMF)
-plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
-
-// study("My Chaikin Money Flow")
-lenCMF = 20
-accdistRaw = not ( ((close == low) and (close == high)) or (high == low) ) ? (((close - low) - (high - close)) / (high - low)) * volume : 0
-plot( sum(accdistRaw, lenCMF) / sum(volume, lenCMF), title = "ChaikinMoneyFlow" )
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-calcRecommendMA(left,right)=> left == right ? 0 : ( left < right ? 1 : -1 )
-calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
-
-// calculate trading recommendation based on SMA/EMA
-recMA = 0
-
-recMA := recMA + calcRecommendMA(SMA10, close)
-recMA := recMA + calcRecommendMA(SMA20, close)
-recMA := recMA + calcRecommendMA(SMA30, close)
-recMA := recMA + calcRecommendMA(SMA50, close)
-recMA := recMA + calcRecommendMA(SMA100, close)
-recMA := recMA + calcRecommendMA(SMA200, close)
-recMA := recMA + calcRecommendMA(EMA10, close)
-recMA := recMA + calcRecommendMA(EMA20, close)
-recMA := recMA + calcRecommendMA(EMA30, close)
-recMA := recMA + calcRecommendMA(EMA50, close)
-recMA := recMA + calcRecommendMA(EMA100, close)
-recMA := recMA + calcRecommendMA(EMA200, close)
-recMA := recMA/ 12
-plot(recMA, title="Recommend.MA")
-
-recOther = 0
-recRSI = RSI
-recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
-recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
-recCCI = CCI
-recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
-recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
-recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
-recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
-recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
-recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
-recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
-recOther := recOther/9
-plot(recOther, title="Recommend.Other")
-
-plot((recMA+recOther)/2, title="Recommend.All")
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// high & low
+allTimeHigh = max(nz(allTimeHigh[1], high), high)
+allTimeLow = min(nz(allTimeLow[1], low), low)
+plot(allTimeHigh, title="High.All")
+plot(allTimeLow, title="Low.All")
+plot(nz(highest(high, 52*5), allTimeHigh), title="price_52_week_high")
+plot(nz(lowest(low, 52*5), allTimeLow), title="price_52_week_low")
+plot(nz(highest(high, 126), allTimeHigh), title="High.6M")
+plot(nz(lowest(low, 126), allTimeLow), title="Low.6M")
+plot(nz(highest(high, 63), allTimeHigh), title="High.3M")
+plot(nz(lowest(low, 63), allTimeLow), title="Low.3M")
+plot(nz(highest(high, 21), allTimeHigh), title="High.1M")
+plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")

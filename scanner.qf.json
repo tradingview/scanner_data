@@ -314,5 +314,13 @@
   {
     "name": "postmarket_volume",
     "type": "number"
+  },
+  {
+    "name": "premarket_time",
+    "type": "number"
+  },
+  {
+    "name": "postmarket_time",
+    "type": "number"
   }
 ]

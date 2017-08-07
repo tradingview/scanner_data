@@ -379,7 +379,7 @@ plot(C_UpShadow >= C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.U
 
 
 //study("Spinning Top")
-C_SpinningTopPercent = (25)
+C_SpinningTopPercent = (34)
 C_IsSpinningTop = C_DnShadow >= C_Range/100*C_SpinningTopPercent and C_UpShadow >= C_Range/100*C_SpinningTopPercent
 plot(C_IsSpinningTop and C_WhiteBody, title = "Candle.SpinningTop.White")
 plot(C_IsSpinningTop and C_BlackBody, title = "Candle.SpinningTop.Black")

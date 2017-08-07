@@ -183,7 +183,7 @@ plot(pivotM_Median + 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.
 plot(pivotM_Median - 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S3')
 
 // Woodie
-pivotM_Woodie_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_prev_open * 2)/4
+pivotM_Woodie_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_open * 2)/4
 plot(pivotM_Woodie_Median, title = 'Pivot.M.Woodie.Middle')
 plot(pivotM_Woodie_Median * 2 - pivotM_prev_low, title = 'Pivot.M.Woodie.R1')
 plot(pivotM_Woodie_Median * 2 - pivotM_prev_high, title = 'Pivot.M.Woodie.S1')

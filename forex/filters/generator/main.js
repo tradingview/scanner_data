@@ -2,7 +2,7 @@ var requestSync = require("sync-request"),
     fs = require("fs");
 
 const dstPath = "../forex.json";
-const symbologyPath = "http://idc.tradingview.com/udf_proxy/symbols/forex";
+const symbologyPath = "http://idc.tradingview.com/udf_proxy/symbols/forex?fields=symbol,type";
 
 var response = requestSync("GET", symbologyPath);
 if (response.statusCode != 200) {
@@ -236,6 +236,8 @@ var regions = {
 	"XDR": "",
 	"VRL": "",
 	"VRN": "",
+	"NTG": "",
+	"WTC": "",
 };
 function detectRegion(name){
     var firstCur = name.substr(0,3);
@@ -254,11 +256,19 @@ function detectRegion(name){
 
 var majors = [
 "EURUSD",
+"USDEUR",
+"JPYUSD",
 "USDJPY",
 "GBPUSD",
+"USDGBP",
 "AUDUSD",
+"USDAUD",
+"CHFUSD",
 "USDCHF",
-"USDCAD"
+"CADUSD",
+"USDCAD",
+"NZDUSD",
+"USDNZD",
 ];
 
 var minors=[
@@ -267,37 +277,43 @@ var minors=[
 "AUDEUR",
 "AUDGBP",
 "AUDJPY",
+"AUDNZD",
 "EURAUD",
 "EURCAD",
 "EURCHF",
 "EURGBP",
 "EURJPY",
+"EURNZD",
 "GBPAUD",
 "GBPCAD",
 "GBPCHF",
 "GBPEUR",
 "GBPJPY",
-"USDAUD",
-"USDEUR",
-"USDGBP",
+"GBPNZD",
 "JPYAUD",
 "JPYCAD",
 "JPYCHF",
 "JPYEUR",
 "JPYGBP",
-"JPYUSD",
+"JPYNZD",
 "CADAUD",
 "CADCHF",
 "CADEUR",
 "CADGBP",
 "CADJPY",
-"CADUSD",
+"CADNZD",
 "CHFAUD",
 "CHFCAD",
 "CHFEUR",
 "CHFGBP",
-"CHFUSD",
-"CHFJPY"
+"CHFJPY",
+"CHFNZD",
+"NZDAUD",
+"NZDCAD",
+"NZDCHF",
+"NZDEUR",
+"NZDJPY",
+"NZDGBP",
 ];
 
 function detectMajor(name){
@@ -310,10 +326,31 @@ function detectMajor(name){
     return "Exotic"
 }
 
+var exclude = [
+    "USY",
+    "WCU",
+    "OSO",
+    "NSO",
+    "DLL",
+    "M5P"
+];
+
+var symbolExclude = [
+    "EUREUR",
+    "USDUSD",
+    "GBPGBP",
+];
+
+function mustExcluded(name){
+    var firstCur = name.substr(0,3);
+    var secondCur = name.substr(3,3);
+    return exclude.indexOf(firstCur) >= 0 || exclude.indexOf(secondCur) >= 0 || symbolExclude.indexOf(name) >= 0;
+}
+
 var dstSymbols = [];
 var symbols = JSON.parse(response.getBody());
 symbols.symbols.filter(function(s){
-    return s.f[1] === "forex";
+    return s.f[1] === "forex" && !mustExcluded(s.f[0]);
 }).forEach(function(s){
     var dst = {f:[]};
     dst.s = s.s;

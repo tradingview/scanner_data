@@ -426,7 +426,7 @@ plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.K
 rateOfreturn(v1, v2) => (v1 - v2) * 100 / abs(v2)
 rr(bb) =>
     rof = rateOfreturn(close, close[bb])
-    rof[1]
+    rof
 plot(rr(5), title="Perf.W")
 //plot(rr(10), title="Perf.2W")
 //plot(rr(15), title="Perf.3W")
@@ -434,7 +434,7 @@ plot(rr(21), title="Perf.1M")
 plot(rr(63), title="Perf.3M")
 plot(rr(126), title="Perf.6M")
 //plot(rr(189), title="Perf.9M")
-plot(rr(252), title="Perf.Y")
+plot(rr(251), title="Perf.Y")
 lastYearClose = lastYearClose[1]
 if year > year[1]
     lastYearClose := close[1]

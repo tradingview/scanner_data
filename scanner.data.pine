@@ -360,8 +360,8 @@ plot(C_WhiteMarubozu, title = "Candle.Marubozu.White")
 //study("Doji")
 C_DojiBodyPercent = (5)
 C_Doji = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
-C_DragonflyDoji = C_Doji and C_DownTrend and C_UpShadow <= C_Body
-C_GravestoneDoji = C_Doji and C_UpTrend and C_DnShadow <= C_Body
+C_DragonflyDoji = C_Doji and C_UpShadow <= C_Body
+C_GravestoneDoji = C_Doji and C_DnShadow <= C_Body
 plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji, title = "Candle.Doji")
 plot(C_DragonflyDoji, title = "Candle.Doji.Dragonfly")
 plot(C_GravestoneDoji, title = "Candle.Doji.Gravestone")

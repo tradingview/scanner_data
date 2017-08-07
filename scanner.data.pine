@@ -375,8 +375,8 @@ plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_Doji and C_IsInside
 
 //study("Long Shadows")
 C_LongShadowPercent = (75)
-plot(C_DnShadow >= C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Lower")
-plot(C_UpShadow >= C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Upper")
+plot(C_DnShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Lower")
+plot(C_UpShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Upper")
 
 
 //study("Spinning Top")

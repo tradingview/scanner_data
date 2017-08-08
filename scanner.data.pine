@@ -308,7 +308,7 @@ C_HasDnShadow = C_DnShadow > C_ShadowPercent / 100 * C_Body
 C_WhiteBody = open < close
 C_BlackBody = open > close
 C_Range = high-low
-C_IsInsideBar = C_BodyHi[1] >= C_BodyHi and C_BodyLo[1] <= C_BodyLo
+C_IsInsideBar = C_BodyHi[1] > C_BodyHi and C_BodyLo[1] < C_BodyLo
 C_BodyMiddle = C_Body / 2 + C_BodyLo
 
 // study("Hammer, Inverted Hammer, Hanging Man, Shooting Star")

@@ -1,10 +1,24 @@
 {
-  "time": "2017-04-26T16:21:13.790Z",
+  "time": "2017-08-08T09:50:00.738Z",
   "fields": [
     "sector",
     "country"
   ],
   "symbols": [
+    {
+      "f": [
+        "Agricultural",
+        ""
+      ],
+      "s": "FOREXCOM:COTUSD"
+    },
+    {
+      "f": [
+        "Energy",
+        ""
+      ],
+      "s": "FOREXCOM:HGOUSD"
+    },
     {
       "f": [
         "index",
@@ -914,13 +928,6 @@
         "Middle East"
       ],
       "s": "TVC:TR02"
-    },
-    {
-      "f": [
-        "bond",
-        "Middle East"
-      ],
-      "s": "TVC:TR02Y"
     },
     {
       "f": [

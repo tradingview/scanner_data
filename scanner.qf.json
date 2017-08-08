@@ -278,5 +278,45 @@
   {
     "name": "fundamental_currency_code",
     "type": "text"
+  },
+  {
+    "name": "ex_dividend_date_recent",
+    "type": "number"
+  },
+  {
+    "name": "amount_recent",
+    "type": "number"
+  },
+  {
+    "name": "type_recent",
+    "type": "text"
+  },
+  {
+    "name": "payment_date_recent",
+    "type": "number"
+  },
+  {
+    "name": "yield_recent",
+    "type": "number"
+  },
+  {
+    "name": "ex_dividend_date_upcoming",
+    "type": "number"
+  },
+  {
+    "name": "amount_upcoming",
+    "type": "number"
+  },
+  {
+    "name": "type_upcoming",
+    "type": "text"
+  },
+  {
+    "name": "payment_date_upcoming",
+    "type": "number"
+  },
+  {
+    "name": "yield_upcoming",
+    "type": "number"
   }
 ]

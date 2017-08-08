@@ -340,11 +340,12 @@ plot(C_oShootingStar, title = "Candle.ShootingStar")
 // study("Evening & Morning Stars")
 C_oMorningStar = false
 C_oEveningStar = false
-if C_BlackBody[2] and C_LongBody[2] and C_BodyHi[1] < C_BodyLo[2] and C_SmallBody[1] and C_WhiteBody and C_LongBody and C_BodyHi >= C_BodyMiddle[2] and C_BodyHi[1] < C_BodyLo
-    C_oMorningStar := true
-else
-    if C_WhiteBody[2] and C_LongBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_SmallBody[1] and C_BlackBody and C_LongBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo[1] > C_BodyHi
-        C_oEveningStar := true
+if C_LongBody[2] and C_SmallBody[1] and C_LongBody
+    if C_BlackBody[2] and C_BodyHi[1] < C_BodyLo[2] and C_WhiteBody and C_BodyHi >= C_BodyMiddle[2] and C_BodyHi < C_BodyHi[2] and C_BodyHi[1] < C_BodyLo
+        C_oMorningStar := true
+    else
+        if C_WhiteBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_BlackBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo > C_BodyLo[2] and C_BodyLo[1] > C_BodyHi
+            C_oEveningStar := true
 plot(C_oMorningStar, title = "Candle.MorningStar")
 plot(C_oEveningStar, title = "Candle.EveningStar")
 

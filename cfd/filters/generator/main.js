@@ -22,6 +22,10 @@ const groups =[
             "OANDA:USB05YUSD","OANDA:USB02YUSD","OANDA:SUGARUSD","OANDA:USB10YUSD","OANDA:AU200AUD",
             "OANDA:DE30EUR","OANDA:WHEATUSD","OANDA:SOYBNUSD"
         ]
+    },
+    {
+        url:"http://hub1.tradingview.com:8094/symbols/gain",
+        include:["FOREXCOM:HGOUSD","FOREXCOM:COTUSD"]
     }
 ];
 
@@ -85,11 +89,11 @@ var metalsMarks = [
 ];
 
 var energyMarks = [
-    "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "Gas"
+    "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "Gas", "Heating Oil"
 ];
 
 var agricultureMarks = [
-    "Sugar", "Corn", "Soybeans", "Wheat"
+    "Sugar", "Corn", "Soybeans", "Wheat", "Cotton"
 ];
 
 var regionMarks = {
@@ -99,7 +103,7 @@ var regionMarks = {
   "Americas": ["NYSE","NASDAQ","S&P 500","US ","THOMSON REUTERS","CANADIAN DOLLAR CURRENCY INDEX","US GOVERNMENT BONDS","DOW JONES","RUSSELL"],
   "Africa": ["SOUTH AFRICA"],
   "Pacific": ["AUSTRALIA", "Australia", "NEW ZEALAND DOLLAR CURRENCY INDEX"],
-  "":["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD", "SILVER", "PLATINUM", "PALLADIUM"]
+  "":["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD", "SILVER", "PLATINUM", "PALLADIUM", "Heating Oil", "Cotton"]
 };
 
 

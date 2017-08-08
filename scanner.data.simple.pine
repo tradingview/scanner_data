@@ -275,9 +275,9 @@ recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] 
 recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
 recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
 recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
-recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
-recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
-recOther := recOther/9
+//recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
+//recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
+recOther := recOther/7 //9
 plot(recOther, title="Recommend.Other")
 
 plot((recMA+recOther)/2, title="Recommend.All")

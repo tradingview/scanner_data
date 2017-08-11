@@ -112,7 +112,7 @@ plot(kStoch[1], title="Stoch.K[1]")
 plot(dStoch[1], title="Stoch.D[1]")
 
 // average volume
-plot(sma(volume,90*5/7)[1], title="average_volume")
+//plot(sma(volume,90*5/7)[1], title="average_volume")
 
 // Commodity Channel Index
 CCI=cci(close, 20)

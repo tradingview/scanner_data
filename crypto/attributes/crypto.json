@@ -1,0 +1,1100 @@
+{
+  "time": "2017-08-15T17:31:45.982Z",
+  "fields": [
+    "sector"
+  ],
+  "symbols": [
+    {
+      "s": "BITFINEX:BTCUSD",
+      "f": [
+        "Bitcoin"
+      ]
+    },
+    {
+      "s": "COINBASE:ETHUSD",
+      "f": [
+        "Ethereum"
+      ]
+    },
+    {
+      "s": "BITSTAMP:XRPUSD",
+      "f": [
+        "Ripple"
+      ]
+    },
+    {
+      "s": "BITFINEX:BCHUSD",
+      "f": [
+        "Bitcoin Cash"
+      ]
+    },
+    {
+      "s": "BITFINEX:IOTBTC",
+      "f": [
+        "IOTA"
+      ]
+    },
+    {
+      "s": "COINBASE:LTCUSD",
+      "f": [
+        "Litecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:XEMBTC",
+      "f": [
+        "NEM"
+      ]
+    },
+    {
+      "s": "BITTREX:NEOBTC",
+      "f": [
+        "NEO"
+      ]
+    },
+    {
+      "s": "KRAKEN:DASHUSD",
+      "f": [
+        "Dash"
+      ]
+    },
+    {
+      "s": "BITFINEX:ETCUSD",
+      "f": [
+        "Ethereum Classic"
+      ]
+    },
+    {
+      "s": "BITFINEX:XMRUSD",
+      "f": [
+        "Monero"
+      ]
+    },
+    {
+      "s": "BITFINEX:BCCBTC",
+      "f": [
+        "BitConnect"
+      ]
+    },
+    {
+      "s": "BITFINEX:OMGBTC",
+      "f": [
+        "OmiseGo"
+      ]
+    },
+    {
+      "s": "BITTREX:STRATBTC",
+      "f": [
+        "Stratis"
+      ]
+    },
+    {
+      "s": "BITTREX:WAVESBTC",
+      "f": [
+        "Waves"
+      ]
+    },
+    {
+      "s": "BITFINEX:EOSBTC",
+      "f": [
+        "EOS"
+      ]
+    },
+    {
+      "s": "BITFINEX:ZECUSD",
+      "f": [
+        "Zcash"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSBTC",
+      "f": [
+        "BitShares"
+      ]
+    },
+    {
+      "s": "KRAKEN:USDTUSD",
+      "f": [
+        "Tether"
+      ]
+    },
+    {
+      "s": "POLONIEX:STEEMBTC",
+      "f": [
+        "Steem"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCNBTC",
+      "f": [
+        "Bytecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:LSKBTC",
+      "f": [
+        "Lisk"
+      ]
+    },
+    {
+      "s": "KRAKEN:REPUSD",
+      "f": [
+        "Augur"
+      ]
+    },
+    {
+      "s": "POLONIEX:GNTBTC",
+      "f": [
+        "Golem"
+      ]
+    },
+    {
+      "s": "POLONIEX:SCBTC",
+      "f": [
+        "Siacoin"
+      ]
+    },
+    {
+      "s": "KRAKEN:XLMUSD",
+      "f": [
+        "Stellar Lumens"
+      ]
+    },
+    {
+      "s": "POLONIEX:DOGEBTC",
+      "f": [
+        "Dogecoin"
+      ]
+    },
+    {
+      "s": "KRAKEN:GNOUSD",
+      "f": [
+        "Gnosis"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTMBTC",
+      "f": [
+        "Bytom"
+      ]
+    },
+    {
+      "s": "BITTREX:ARKBTC",
+      "f": [
+        "Ark"
+      ]
+    },
+    {
+      "s": "POLONIEX:MAIDBTC",
+      "f": [
+        "MaidSafeCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:FCTBTC",
+      "f": [
+        "Factom"
+      ]
+    },
+    {
+      "s": "BITTREX:DGDBTC",
+      "f": [
+        "DigixDAO"
+      ]
+    },
+    {
+      "s": "BITTREX:DCRBTC",
+      "f": [
+        "Decred"
+      ]
+    },
+    {
+      "s": "POLONIEX:ARDRBTC",
+      "f": [
+        "Ardor"
+      ]
+    },
+    {
+      "s": "POLONIEX:DGBBTC",
+      "f": [
+        "DigiByte"
+      ]
+    },
+    {
+      "s": "BITTREX:GAMEBTC",
+      "f": [
+        "GameCredits"
+      ]
+    },
+    {
+      "s": "BITTREX:KMDBTC",
+      "f": [
+        "Komodo"
+      ]
+    },
+    {
+      "s": "POLONIEX:NXTBTC",
+      "f": [
+        "Nxt"
+      ]
+    },
+    {
+      "s": "BITTREX:PIVXBTC",
+      "f": [
+        "PIVX"
+      ]
+    },
+    {
+      "s": "BITTREX:SNGLSBTC",
+      "f": [
+        "SingularDTV"
+      ]
+    },
+    {
+      "s": "BITTREX:NXSBTC",
+      "f": [
+        "Nexus"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTCDBTC",
+      "f": [
+        "BitcoinDark"
+      ]
+    },
+    {
+      "s": "POLONIEX:SYSBTC",
+      "f": [
+        "SysCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SAFEXBTC",
+      "f": [
+        "Safe Exchange Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:BLOCKBTC",
+      "f": [
+        "Blocknet"
+      ]
+    },
+    {
+      "s": "BITTREX:UBQBTC",
+      "f": [
+        "Ubiq"
+      ]
+    },
+    {
+      "s": "BITTREX:MLNBTC",
+      "f": [
+        "Melon"
+      ]
+    },
+    {
+      "s": "POLONIEX:PPCBTC",
+      "f": [
+        "Peercoin"
+      ]
+    },
+    {
+      "s": "BITTREX:EMCBTC",
+      "f": [
+        "Emercoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XVGBTC",
+      "f": [
+        "Verge"
+      ]
+    },
+    {
+      "s": "BITTREX:RDDBTC",
+      "f": [
+        "ReddCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:IOCBTC",
+      "f": [
+        "I/O Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:IONBTC",
+      "f": [
+        "ION"
+      ]
+    },
+    {
+      "s": "POLONIEX:XCPBTC",
+      "f": [
+        "Counterparty"
+      ]
+    },
+    {
+      "s": "BITTREX:XZCBTC",
+      "f": [
+        "ZCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:POTBTC",
+      "f": [
+        "PotCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:NLGBTC",
+      "f": [
+        "Gulden"
+      ]
+    },
+    {
+      "s": "BITTREX:FAIRBTC",
+      "f": [
+        "FairCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:LBCBTC",
+      "f": [
+        "LBRY Credits"
+      ]
+    },
+    {
+      "s": "BTCE:NMCBTC",
+      "f": [
+        "Namecoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XAURBTC",
+      "f": [
+        "Xaurum"
+      ]
+    },
+    {
+      "s": "BITTREX:CLOAKBTC",
+      "f": [
+        "CloakCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:VIABTC",
+      "f": [
+        "Viacoin"
+      ]
+    },
+    {
+      "s": "BITTREX:MONABTC",
+      "f": [
+        "MonaCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:BAYBTC",
+      "f": [
+        "BitBay"
+      ]
+    },
+    {
+      "s": "POLONIEX:AMPBTC",
+      "f": [
+        "Synereo"
+      ]
+    },
+    {
+      "s": "BITTREX:AGRSBTC",
+      "f": [
+        "Agoras Tokens"
+      ]
+    },
+    {
+      "s": "BITTREX:SIBBTC",
+      "f": [
+        "SIBCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:RADSBTC",
+      "f": [
+        "Radium"
+      ]
+    },
+    {
+      "s": "POLONIEX:CLAMBTC",
+      "f": [
+        "Clams"
+      ]
+    },
+    {
+      "s": "BITTREX:MUEBTC",
+      "f": [
+        "MonetaryUnit"
+      ]
+    },
+    {
+      "s": "BITTREX:TIMEBTC",
+      "f": [
+        "Chronobank"
+      ]
+    },
+    {
+      "s": "POLONIEX:BLKBTC",
+      "f": [
+        "BlackCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:GOLOSBTC",
+      "f": [
+        "Golos"
+      ]
+    },
+    {
+      "s": "BITFINEX:SANBTC",
+      "f": [
+        "Santiment Network Token"
+      ]
+    },
+    {
+      "s": "HITBTC:XDNBTC",
+      "f": [
+        "DigitalNote"
+      ]
+    },
+    {
+      "s": "BITTREX:EXPBTC",
+      "f": [
+        "Expanse"
+      ]
+    },
+    {
+      "s": "BITTREX:VTCBTC",
+      "f": [
+        "Vertcoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:NAVBTC",
+      "f": [
+        "NAV Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:SLSBTC",
+      "f": [
+        "SaluS"
+      ]
+    },
+    {
+      "s": "POLONIEX:NXCBTC",
+      "f": [
+        "Nexium"
+      ]
+    },
+    {
+      "s": "POLONIEX:OMNIBTC",
+      "f": [
+        "Omni"
+      ]
+    },
+    {
+      "s": "BITTREX:UNOBTC",
+      "f": [
+        "Unobtanium"
+      ]
+    },
+    {
+      "s": "BITTREX:SWTBTC",
+      "f": [
+        "Swarm City"
+      ]
+    },
+    {
+      "s": "BITTREX:LMCBTC",
+      "f": [
+        "LoMoCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:VOXBTC",
+      "f": [
+        "Voxels"
+      ]
+    },
+    {
+      "s": "BITTREX:CRWBTC",
+      "f": [
+        "Crown"
+      ]
+    },
+    {
+      "s": "POLONIEX:BURSTBTC",
+      "f": [
+        "Burst"
+      ]
+    },
+    {
+      "s": "BITTREX:GRCBTC",
+      "f": [
+        "GridCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:RBYBTC",
+      "f": [
+        "Rubycoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SPRBTC",
+      "f": [
+        "SpreadCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:NEOSBTC",
+      "f": [
+        "NeosCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:ENRGBTC",
+      "f": [
+        "Energycoin"
+      ]
+    },
+    {
+      "s": "BITTREX:DMDBTC",
+      "f": [
+        "Diamond"
+      ]
+    },
+    {
+      "s": "BITTREX:SHIFTBTC",
+      "f": [
+        "Shift"
+      ]
+    },
+    {
+      "s": "POLONIEX:EMC2BTC",
+      "f": [
+        "Einsteinium"
+      ]
+    },
+    {
+      "s": "BITTREX:RISEBTC",
+      "f": [
+        "Rise"
+      ]
+    },
+    {
+      "s": "BITTREX:AEONBTC",
+      "f": [
+        "Aeon"
+      ]
+    },
+    {
+      "s": "BITTREX:FTCBTC",
+      "f": [
+        "Feathercoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:BELABTC",
+      "f": [
+        "BelaCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:GAMBTC",
+      "f": [
+        "Gambit"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCYBTC",
+      "f": [
+        "Bitcrystals"
+      ]
+    },
+    {
+      "s": "POLONIEX:XBCBTC",
+      "f": [
+        "Bitcoin Plus"
+      ]
+    },
+    {
+      "s": "BITTREX:GRSBTC",
+      "f": [
+        "Groestlcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:QWARKBTC",
+      "f": [
+        "Qwark"
+      ]
+    },
+    {
+      "s": "BITTREX:SWIFTBTC",
+      "f": [
+        "Bitswift"
+      ]
+    },
+    {
+      "s": "POLONIEX:VRCBTC",
+      "f": [
+        "VeriCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:XPMBTC",
+      "f": [
+        "Primecoin"
+      ]
+    },
+    {
+      "s": "BITTREX:FLOBTC",
+      "f": [
+        "FlorinCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:ABYBTC",
+      "f": [
+        "ArtByte"
+      ]
+    },
+    {
+      "s": "BITTREX:SLRBTC",
+      "f": [
+        "SolarCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XBBBTC",
+      "f": [
+        "Boolberry"
+      ]
+    },
+    {
+      "s": "POLONIEX:FLDCBTC",
+      "f": [
+        "FoldingCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SEQBTC",
+      "f": [
+        "Sequence"
+      ]
+    },
+    {
+      "s": "BITTREX:BITBBTC",
+      "f": [
+        "BitBean"
+      ]
+    },
+    {
+      "s": "BITTREX:AURBTC",
+      "f": [
+        "Auroracoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:NOTEBTC",
+      "f": [
+        "DNotes"
+      ]
+    },
+    {
+      "s": "BITTREX:PDCBTC",
+      "f": [
+        "Project Decorum"
+      ]
+    },
+    {
+      "s": "BITTREX:BSDBTC",
+      "f": [
+        "BitSend"
+      ]
+    },
+    {
+      "s": "BITTREX:SPHRBTC",
+      "f": [
+        "Sphere"
+      ]
+    },
+    {
+      "s": "BITTREX:BLITZBTC",
+      "f": [
+        "Blitzcash"
+      ]
+    },
+    {
+      "s": "POLONIEX:PASCBTC",
+      "f": [
+        "Pascal Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:COVALBTC",
+      "f": [
+        "Circuits of Value"
+      ]
+    },
+    {
+      "s": "BITTREX:OKBTC",
+      "f": [
+        "OKCash"
+      ]
+    },
+    {
+      "s": "BTCE:NVCBTC",
+      "f": [
+        "Novacoin"
+      ]
+    },
+    {
+      "s": "BITTREX:GCRBTC",
+      "f": [
+        "Global Currency Reserve"
+      ]
+    },
+    {
+      "s": "BITTREX:CUREBTC",
+      "f": [
+        "Curecoin"
+      ]
+    },
+    {
+      "s": "BITTREX:DARBTC",
+      "f": [
+        "Darcrus"
+      ]
+    },
+    {
+      "s": "BITTREX:GLDBTC",
+      "f": [
+        "GoldCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:PINKBTC",
+      "f": [
+        "PinkCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:DYNBTC",
+      "f": [
+        "Dynamic"
+      ]
+    },
+    {
+      "s": "BITTREX:XMYBTC",
+      "f": [
+        "Myriad"
+      ]
+    },
+    {
+      "s": "BITTREX:TRIGBTC",
+      "f": [
+        "Triggers"
+      ]
+    },
+    {
+      "s": "POLONIEX:XVCBTC",
+      "f": [
+        "Vcash"
+      ]
+    },
+    {
+      "s": "BITTREX:XSTBTC",
+      "f": [
+        "Stealthcoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:SBDBTC",
+      "f": [
+        "Steem Dollars"
+      ]
+    },
+    {
+      "s": "BITTREX:BRXBTC",
+      "f": [
+        "Breakout Stake"
+      ]
+    },
+    {
+      "s": "POLONIEX:RICBTC",
+      "f": [
+        "Riecoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SNRGBTC",
+      "f": [
+        "Synergy"
+      ]
+    },
+    {
+      "s": "BITTREX:EXCLBTC",
+      "f": [
+        "ExclusiveCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:BRKBTC",
+      "f": [
+        "Breakout"
+      ]
+    },
+    {
+      "s": "POLONIEX:NAUTBTC",
+      "f": [
+        "NautilusCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:VRMBTC",
+      "f": [
+        "VeriumReserve"
+      ]
+    },
+    {
+      "s": "BITTREX:KOREBTC",
+      "f": [
+        "KoreCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SYNXBTC",
+      "f": [
+        "Syndicate"
+      ]
+    },
+    {
+      "s": "BITTREX:GEOBTC",
+      "f": [
+        "GeoCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:ZCLBTC",
+      "f": [
+        "ZClassic"
+      ]
+    },
+    {
+      "s": "BITTREX:DOPEBTC",
+      "f": [
+        "DopeCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:2GIVEBTC",
+      "f": [
+        "2GIVE"
+      ]
+    },
+    {
+      "s": "BITTREX:TKSBTC",
+      "f": [
+        "Tokes"
+      ]
+    },
+    {
+      "s": "BITTREX:PTCBTC",
+      "f": [
+        "Pesetacoin"
+      ]
+    },
+    {
+      "s": "BITTREX:TXBTC",
+      "f": [
+        "TransferCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XMGBTC",
+      "f": [
+        "Magi"
+      ]
+    },
+    {
+      "s": "BITTREX:VTRBTC",
+      "f": [
+        "vTorrent"
+      ]
+    },
+    {
+      "s": "BITTREX:BTABTC",
+      "f": [
+        "Bata"
+      ]
+    },
+    {
+      "s": "BITTREX:STARTBTC",
+      "f": [
+        "Startcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:EGCBTC",
+      "f": [
+        "EverGreenCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:ERCBTC",
+      "f": [
+        "EuropeCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XWCBTC",
+      "f": [
+        "WhiteCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:THCBTC",
+      "f": [
+        "HempCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:EFLBTC",
+      "f": [
+        "e-Gulden"
+      ]
+    },
+    {
+      "s": "POLONIEX:HUCBTC",
+      "f": [
+        "HunterCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:CANNBTC",
+      "f": [
+        "CannabisCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:HKGBTC",
+      "f": [
+        "Hacker Gold"
+      ]
+    },
+    {
+      "s": "BITTREX:TRUSTBTC",
+      "f": [
+        "TrustPlus"
+      ]
+    },
+    {
+      "s": "BITTREX:PKBBTC",
+      "f": [
+        "ParkByte"
+      ]
+    },
+    {
+      "s": "BITTREX:DRACOBTC",
+      "f": [
+        "DT Token"
+      ]
+    },
+    {
+      "s": "BITTREX:CPCBTC",
+      "f": [
+        "Capricoin"
+      ]
+    },
+    {
+      "s": "BITTREX:BYCBTC",
+      "f": [
+        "Bytecent"
+      ]
+    },
+    {
+      "s": "BITTREX:INFXBTC",
+      "f": [
+        "Influxcoin"
+      ]
+    },
+    {
+      "s": "HITBTC:FCNBTC",
+      "f": [
+        "Fantomcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:NBTBTC",
+      "f": [
+        "NuBits"
+      ]
+    },
+    {
+      "s": "BITTREX:UNBBTC",
+      "f": [
+        "UnbreakableCoin"
+      ]
+    },
+    {
+      "s": "BTCE:DSHUSD",
+      "f": [
+        "Dashcoin"
+      ]
+    },
+    {
+      "s": "HITBTC:QCNBTC",
+      "f": [
+        "QuazarCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:SJCXBTC",
+      "f": [
+        "Storjcoin X"
+      ]
+    },
+    {
+      "s": "BITTREX:IOPBTC",
+      "f": [
+        "Internet of People"
+      ]
+    },
+    {
+      "s": "BITTREX:EBSTBTC",
+      "f": [
+        "eBoost"
+      ]
+    },
+    {
+      "s": "BITFINEX:BCUBTC",
+      "f": [
+        "Bitcoin Unlimited (Futures)"
+      ]
+    },
+    {
+      "s": "BITTREX:CLUBBTC",
+      "f": [
+        "ClubCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:GBGBTC",
+      "f": [
+        "Golos Gold"
+      ]
+    }
+  ]
+}

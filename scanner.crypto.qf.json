@@ -1,0 +1,38 @@
+[
+  {
+    "name": "sector",
+    "type": "text"
+  },
+  {
+    "name": "country",
+    "type": "text"
+  },
+  {
+    "name": "current_session",
+    "type": "text"
+  },
+  {
+    "name": "rtc",
+    "type": "price"
+  },
+  {
+    "name": "bid",
+    "type": "price"
+  },
+  {
+    "name": "ask",
+    "type": "price"
+  },
+  {
+    "name": "total_shares_outstanding",
+    "type": "number"
+  },
+  {
+    "name": "total_shares_diluted",
+    "type": "number"
+  },
+  {
+    "name": "total_value_traded",
+    "type": "number"
+  }
+]

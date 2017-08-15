@@ -59,9 +59,7 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
         key = currencyMapping[s.symbol];
         sym = selectedSymbols[key];
     }
-    if (!sym) {
-        // console.warn("Skip " + s.symbol);
-    } else {
+    if (sym) {
         dstSymbols.push({
             s: sym,
             f: [s.name]

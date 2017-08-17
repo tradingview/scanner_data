@@ -18,11 +18,27 @@ var scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan2"
                 left: "name",
                 operation: "match",
                 right: "USD$|BTC$"
-            }]
+            },
+            // exclude tickers
+            {
+                left: "name",
+                operation: "nequal",
+                right: "DSHUSD"
+            },
+            {
+                left: "name",
+                operation: "nequal",
+                right: "DSHBTC"
+            },
+        ]
     }
 });
 if (scanResp.statusCode != 200) {
-    throw Error(scanResp.statusCode);
+    if (scanResp.statusCode === 400) {
+        throw Error(scanResp.getBody());
+    } else {
+        throw Error(scanResp.statusCode);
+    }
 }
 
 var coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/");

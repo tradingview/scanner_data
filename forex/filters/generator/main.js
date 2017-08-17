@@ -327,12 +327,28 @@ function detectMajor(name){
 }
 
 var exclude = [
-    "USY",
-    "WCU",
-    "OSO",
-    "NSO",
+    "BRX",
     "DLL",
-    "M5P"
+    "DLR",
+    "FLN",
+    "HEL",
+    "ING",
+    "INH",
+    "INJ",
+    "INK",
+    "KRU",
+    "LTN",
+    "M5P",
+    "NSO",
+    "NTG",
+    "OSO",
+    "SWI",
+    "USY",
+    "VRL",
+    "VRN",
+    "WCU",
+    "WTC",
+    "XDR",
 ];
 
 var symbolExclude = [
@@ -357,6 +373,16 @@ symbols.symbols.filter(function(s){
     dst.f[0] = detectRegion(s.f[0]);
     dst.f[1] = detectMajor(s.f[0]);
     dstSymbols.push(dst);
+});
+
+dstSymbols.sort(function (l, r) {
+    if (l.s > r.s) {
+        return 1;
+    }
+    if (l.s < r.s) {
+        return -1;
+    }
+    return 0;
 });
 
 fs.writeFileSync(dstPath, JSON.stringify(

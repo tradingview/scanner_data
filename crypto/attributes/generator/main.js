@@ -62,13 +62,15 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
         key = currencyMapping[s.symbol];
         sym = selectedSymbols[key];
     }
-    if (sym && sym.length === 2) {
-        sym.forEach(function (s1) {
-            dstSymbols.push({
-                s: s1,
-                f: [s.name]
+    if (sym) {
+        if (sym.length === 2) {
+            sym.forEach(function (s1) {
+                dstSymbols.push({
+                    s: s1,
+                    f: [s.name]
+                });
             });
-        });
+        }
 
         delete selectedSymbols[key];
     }

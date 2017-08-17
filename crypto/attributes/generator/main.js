@@ -63,7 +63,7 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
         sym = selectedSymbols[key];
     }
     if (sym) {
-        if (sym.length === 2) {
+        if (sym.length === 2 || key === "BTC" /*include BTCUSD without BTCBTC*/) {
             sym.forEach(function (s1) {
                 dstSymbols.push({
                     s: s1,
@@ -79,6 +79,16 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
 for (var s in selectedSymbols) {
     console.warn("Symbol " + s + " not mapped!");
 }
+
+dstSymbols.sort(function (l, r) {
+    if (l.s > r.s) {
+        return 1;
+    }
+    if (l.s < r.s) {
+        return -1;
+    }
+    return 0;
+});
 
 fs.writeFileSync(dstPath, JSON.stringify({
     "time": new Date().toISOString() + '',

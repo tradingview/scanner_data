@@ -1,33 +1,9 @@
 {
-  "time": "2017-08-17T12:01:18.957Z",
+  "time": "2017-08-17T12:38:08.086Z",
   "fields": [
     "sector"
   ],
   "symbols": [
-    {
-      "s": "POLONIEX:ETHBTC",
-      "f": [
-        "Ethereum"
-      ]
-    },
-    {
-      "s": "BITFINEX:ETHUSD",
-      "f": [
-        "Ethereum"
-      ]
-    },
-    {
-      "s": "POLONIEX:XRPBTC",
-      "f": [
-        "Ripple"
-      ]
-    },
-    {
-      "s": "BITSTAMP:XRPUSD",
-      "f": [
-        "Ripple"
-      ]
-    },
     {
       "s": "BITFINEX:BCHBTC",
       "f": [
@@ -41,45 +17,39 @@
       ]
     },
     {
-      "s": "BITFINEX:IOTUSD",
+      "s": "BITFINEX:BCUBTC",
       "f": [
-        "IOTA"
+        "Bitcoin Unlimited (Futures)"
       ]
     },
     {
-      "s": "BITFINEX:IOTBTC",
+      "s": "BITFINEX:BCUUSD",
       "f": [
-        "IOTA"
+        "Bitcoin Unlimited (Futures)"
       ]
     },
     {
-      "s": "BTCE:LTCUSD",
+      "s": "BITFINEX:BTCUSD",
       "f": [
-        "Litecoin"
+        "Bitcoin"
       ]
     },
     {
-      "s": "POLONIEX:LTCBTC",
+      "s": "BITFINEX:DSHUSD",
       "f": [
-        "Litecoin"
+        "Dashcoin"
       ]
     },
     {
-      "s": "POLONIEX:DASHBTC",
+      "s": "BITFINEX:EOSBTC",
       "f": [
-        "Dash"
+        "EOS"
       ]
     },
     {
-      "s": "KRAKEN:DASHUSD",
+      "s": "BITFINEX:EOSUSD",
       "f": [
-        "Dash"
-      ]
-    },
-    {
-      "s": "POLONIEX:ETCBTC",
-      "f": [
-        "Ethereum Classic"
+        "EOS"
       ]
     },
     {
@@ -89,15 +59,111 @@
       ]
     },
     {
-      "s": "BITFINEX:OMGUSD",
+      "s": "BITFINEX:ETHUSD",
       "f": [
-        "OmiseGo"
+        "Ethereum"
+      ]
+    },
+    {
+      "s": "BITFINEX:IOTBTC",
+      "f": [
+        "IOTA"
+      ]
+    },
+    {
+      "s": "BITFINEX:IOTUSD",
+      "f": [
+        "IOTA"
       ]
     },
     {
       "s": "BITFINEX:OMGBTC",
       "f": [
         "OmiseGo"
+      ]
+    },
+    {
+      "s": "BITFINEX:OMGUSD",
+      "f": [
+        "OmiseGo"
+      ]
+    },
+    {
+      "s": "BITFINEX:SANBTC",
+      "f": [
+        "Santiment Network Token"
+      ]
+    },
+    {
+      "s": "BITFINEX:SANUSD",
+      "f": [
+        "Santiment Network Token"
+      ]
+    },
+    {
+      "s": "BITFINEX:XMRUSD",
+      "f": [
+        "Monero"
+      ]
+    },
+    {
+      "s": "BITFINEX:ZECUSD",
+      "f": [
+        "Zcash"
+      ]
+    },
+    {
+      "s": "BITSTAMP:XRPUSD",
+      "f": [
+        "Ripple"
+      ]
+    },
+    {
+      "s": "BITTREX:PPCBTC",
+      "f": [
+        "Peercoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XLMBTC",
+      "f": [
+        "Stellar Lumens"
+      ]
+    },
+    {
+      "s": "BTCE:LTCUSD",
+      "f": [
+        "Litecoin"
+      ]
+    },
+    {
+      "s": "BTCE:NMCBTC",
+      "f": [
+        "Namecoin"
+      ]
+    },
+    {
+      "s": "BTCE:NMCUSD",
+      "f": [
+        "Namecoin"
+      ]
+    },
+    {
+      "s": "BTCE:NVCBTC",
+      "f": [
+        "Novacoin"
+      ]
+    },
+    {
+      "s": "BTCE:NVCUSD",
+      "f": [
+        "Novacoin"
+      ]
+    },
+    {
+      "s": "BTCE:PPCUSD",
+      "f": [
+        "Peercoin"
       ]
     },
     {
@@ -113,27 +179,15 @@
       ]
     },
     {
+      "s": "HITBTC:DSHBTC",
+      "f": [
+        "Dashcoin"
+      ]
+    },
+    {
       "s": "HITBTC:XMRBTC",
       "f": [
         "Monero"
-      ]
-    },
-    {
-      "s": "BITFINEX:XMRUSD",
-      "f": [
-        "Monero"
-      ]
-    },
-    {
-      "s": "BITFINEX:EOSUSD",
-      "f": [
-        "EOS"
-      ]
-    },
-    {
-      "s": "BITFINEX:EOSBTC",
-      "f": [
-        "EOS"
       ]
     },
     {
@@ -143,27 +197,9 @@
       ]
     },
     {
-      "s": "BITFINEX:ZECUSD",
+      "s": "KRAKEN:DASHUSD",
       "f": [
-        "Zcash"
-      ]
-    },
-    {
-      "s": "POLONIEX:REPBTC",
-      "f": [
-        "Augur"
-      ]
-    },
-    {
-      "s": "KRAKEN:REPUSD",
-      "f": [
-        "Augur"
-      ]
-    },
-    {
-      "s": "POLONIEX:GNOBTC",
-      "f": [
-        "Gnosis"
+        "Dash"
       ]
     },
     {
@@ -173,9 +209,9 @@
       ]
     },
     {
-      "s": "BITTREX:XLMBTC",
+      "s": "KRAKEN:REPUSD",
       "f": [
-        "Stellar Lumens"
+        "Augur"
       ]
     },
     {
@@ -185,75 +221,45 @@
       ]
     },
     {
-      "s": "BTCE:PPCUSD",
+      "s": "POLONIEX:DASHBTC",
       "f": [
-        "Peercoin"
+        "Dash"
       ]
     },
     {
-      "s": "BITTREX:PPCBTC",
+      "s": "POLONIEX:ETCBTC",
       "f": [
-        "Peercoin"
+        "Ethereum Classic"
       ]
     },
     {
-      "s": "BTCE:NMCUSD",
+      "s": "POLONIEX:ETHBTC",
       "f": [
-        "Namecoin"
+        "Ethereum"
       ]
     },
     {
-      "s": "BTCE:NMCBTC",
+      "s": "POLONIEX:GNOBTC",
       "f": [
-        "Namecoin"
+        "Gnosis"
       ]
     },
     {
-      "s": "BITFINEX:SANUSD",
+      "s": "POLONIEX:LTCBTC",
       "f": [
-        "Santiment Network Token"
+        "Litecoin"
       ]
     },
     {
-      "s": "BITFINEX:SANBTC",
+      "s": "POLONIEX:REPBTC",
       "f": [
-        "Santiment Network Token"
+        "Augur"
       ]
     },
     {
-      "s": "BTCE:NVCUSD",
+      "s": "POLONIEX:XRPBTC",
       "f": [
-        "Novacoin"
-      ]
-    },
-    {
-      "s": "BTCE:NVCBTC",
-      "f": [
-        "Novacoin"
-      ]
-    },
-    {
-      "s": "BITFINEX:DSHUSD",
-      "f": [
-        "Dashcoin"
-      ]
-    },
-    {
-      "s": "HITBTC:DSHBTC",
-      "f": [
-        "Dashcoin"
-      ]
-    },
-    {
-      "s": "BITFINEX:BCUUSD",
-      "f": [
-        "Bitcoin Unlimited (Futures)"
-      ]
-    },
-    {
-      "s": "BITFINEX:BCUBTC",
-      "f": [
-        "Bitcoin Unlimited (Futures)"
+        "Ripple"
       ]
     }
   ]

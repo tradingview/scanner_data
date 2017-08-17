@@ -62,7 +62,7 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
         key = currencyMapping[s.symbol];
         sym = selectedSymbols[key];
     }
-    if (sym) {
+    if (sym && sym.length === 2) {
         sym.forEach(function (s1) {
             dstSymbols.push({
                 s: s1,

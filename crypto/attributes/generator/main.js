@@ -50,11 +50,21 @@ function getFirstCurrency(ticker) {
     return ticker.substring(0, ticker.length - 3);
 }
 
+const excludeSymbols = [
+    "BITTREX:BCCBTC",
+    "HITBTC:BCCBTC",
+    "HITBTC:BCCUSD",
+];
+
+function skipSymbol(s) {
+    return excludeSymbols.indexOf(s) >=0;
+}
+
 var tickers = {};
 var selectedSymbols = {};
 JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
     var ticker = s.s.split(':')[1];
-    if (!tickers[ticker]) {
+    if (!tickers[ticker] && !skipSymbol(s.s)) {
         tickers[ticker] = ticker;
         var token = getFirstCurrency(ticker);
         var ss = selectedSymbols[token] || [];

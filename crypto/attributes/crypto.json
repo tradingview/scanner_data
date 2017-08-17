@@ -1,9 +1,21 @@
 {
-  "time": "2017-08-17T14:41:22.134Z",
+  "time": "2017-08-17T15:47:08.784Z",
   "fields": [
     "sector"
   ],
   "symbols": [
+    {
+      "s": "BITFINEX:BCCBTC",
+      "f": [
+        "BitConnect"
+      ]
+    },
+    {
+      "s": "BITFINEX:BCCUSD",
+      "f": [
+        "BitConnect"
+      ]
+    },
     {
       "s": "BITFINEX:BCHBTC",
       "f": [
@@ -158,18 +170,6 @@
       "s": "BTCE:PPCUSD",
       "f": [
         "Peercoin"
-      ]
-    },
-    {
-      "s": "HITBTC:BCCBTC",
-      "f": [
-        "BitConnect"
-      ]
-    },
-    {
-      "s": "HITBTC:BCCUSD",
-      "f": [
-        "BitConnect"
       ]
     },
     {

@@ -40,7 +40,10 @@ JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
     var ticker = s.s.split(':')[1];
     if (!tickers[ticker]) {
         tickers[ticker] = ticker;
-        selectedSymbols[getFirstCurrency(ticker)] = s.s;
+        var token = getFirstCurrency(ticker);
+        var ss = selectedSymbols[token] || [];
+        ss.push(s.s);
+        selectedSymbols[token] = ss;
     }
 });
 
@@ -60,16 +63,18 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
         sym = selectedSymbols[key];
     }
     if (sym) {
-        dstSymbols.push({
-            s: sym,
-            f: [s.name]
+        sym.forEach(function (s1) {
+            dstSymbols.push({
+                s: s1,
+                f: [s.name]
+            });
         });
 
         delete selectedSymbols[key];
     }
 });
 
-for(var s in selectedSymbols){
+for (var s in selectedSymbols) {
     console.warn("Symbol " + s + " not mapped!");
 }
 

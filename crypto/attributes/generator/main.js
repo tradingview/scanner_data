@@ -54,6 +54,8 @@ const excludeSymbols = [
     "BITTREX:BCCBTC",
     "HITBTC:BCCBTC",
     "HITBTC:BCCUSD",
+    "BITFINEX:BCCBTC",
+    "BITFINEX:BCCUSD",
 ];
 
 function skipSymbol(s) {

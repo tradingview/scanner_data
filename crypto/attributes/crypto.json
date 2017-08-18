@@ -1,27 +1,9 @@
 {
-  "time": "2017-08-17T15:47:08.784Z",
+  "time": "2017-08-18T13:41:31.106Z",
   "fields": [
     "sector"
   ],
   "symbols": [
-    {
-      "s": "BITFINEX:BCCBTC",
-      "f": [
-        "BitConnect"
-      ]
-    },
-    {
-      "s": "BITFINEX:BCCUSD",
-      "f": [
-        "BitConnect"
-      ]
-    },
-    {
-      "s": "BITFINEX:BCHBTC",
-      "f": [
-        "Bitcoin Cash"
-      ]
-    },
     {
       "s": "BITFINEX:BCHUSD",
       "f": [
@@ -125,21 +107,9 @@
       ]
     },
     {
-      "s": "BITTREX:PPCBTC",
-      "f": [
-        "Peercoin"
-      ]
-    },
-    {
       "s": "BITTREX:XLMBTC",
       "f": [
         "Stellar Lumens"
-      ]
-    },
-    {
-      "s": "BTCE:LTCUSD",
-      "f": [
-        "Litecoin"
       ]
     },
     {
@@ -167,15 +137,21 @@
       ]
     },
     {
+      "s": "BTCE:PPCBTC",
+      "f": [
+        "Peercoin"
+      ]
+    },
+    {
       "s": "BTCE:PPCUSD",
       "f": [
         "Peercoin"
       ]
     },
     {
-      "s": "HITBTC:XMRBTC",
+      "s": "COINBASE:LTCUSD",
       "f": [
-        "Monero"
+        "Litecoin"
       ]
     },
     {
@@ -206,6 +182,12 @@
       "s": "KRAKEN:XLMUSD",
       "f": [
         "Stellar Lumens"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCHBTC",
+      "f": [
+        "Bitcoin Cash"
       ]
     },
     {
@@ -242,6 +224,12 @@
       "s": "POLONIEX:REPBTC",
       "f": [
         "Augur"
+      ]
+    },
+    {
+      "s": "POLONIEX:XMRBTC",
+      "f": [
+        "Monero"
       ]
     },
     {

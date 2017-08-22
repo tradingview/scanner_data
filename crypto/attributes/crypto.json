@@ -1,9 +1,15 @@
 {
-  "time": "2017-08-18T13:41:31.106Z",
+  "time": "2017-08-22T15:53:37.689Z",
   "fields": [
     "sector"
   ],
   "symbols": [
+    {
+      "s": "BITFINEX:BCHBTC",
+      "f": [
+        "Bitcoin Cash"
+      ]
+    },
     {
       "s": "BITFINEX:BCHUSD",
       "f": [
@@ -65,12 +71,6 @@
       ]
     },
     {
-      "s": "BITFINEX:OMGBTC",
-      "f": [
-        "OmiseGo"
-      ]
-    },
-    {
       "s": "BITFINEX:OMGUSD",
       "f": [
         "OmiseGo"
@@ -95,21 +95,27 @@
       ]
     },
     {
+      "s": "BITFINEX:XRPUSD",
+      "f": [
+        "Ripple"
+      ]
+    },
+    {
       "s": "BITFINEX:ZECUSD",
       "f": [
         "Zcash"
       ]
     },
     {
-      "s": "BITSTAMP:XRPUSD",
+      "s": "BITTREX:OMGBTC",
       "f": [
-        "Ripple"
+        "OmiseGo"
       ]
     },
     {
-      "s": "BITTREX:XLMBTC",
+      "s": "BITTREX:PPCBTC",
       "f": [
-        "Stellar Lumens"
+        "Peercoin"
       ]
     },
     {
@@ -137,12 +143,6 @@
       ]
     },
     {
-      "s": "BTCE:PPCBTC",
-      "f": [
-        "Peercoin"
-      ]
-    },
-    {
       "s": "BTCE:PPCUSD",
       "f": [
         "Peercoin"
@@ -167,30 +167,6 @@
       ]
     },
     {
-      "s": "KRAKEN:GNOUSD",
-      "f": [
-        "Gnosis"
-      ]
-    },
-    {
-      "s": "KRAKEN:REPUSD",
-      "f": [
-        "Augur"
-      ]
-    },
-    {
-      "s": "KRAKEN:XLMUSD",
-      "f": [
-        "Stellar Lumens"
-      ]
-    },
-    {
-      "s": "POLONIEX:BCHBTC",
-      "f": [
-        "Bitcoin Cash"
-      ]
-    },
-    {
       "s": "POLONIEX:DASHBTC",
       "f": [
         "Dash"
@@ -209,21 +185,9 @@
       ]
     },
     {
-      "s": "POLONIEX:GNOBTC",
-      "f": [
-        "Gnosis"
-      ]
-    },
-    {
       "s": "POLONIEX:LTCBTC",
       "f": [
         "Litecoin"
-      ]
-    },
-    {
-      "s": "POLONIEX:REPBTC",
-      "f": [
-        "Augur"
       ]
     },
     {

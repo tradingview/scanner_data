@@ -285,6 +285,75 @@ plot((recMA+recOther)/2, title="Recommend.All")
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+// Stochastic RSI
+StochRSI()=>
+    rsi1 = rsi(close, 14)
+    K = sma(stoch(rsi1, rsi1, rsi1, 14), 3)
+    D = sma(K, 3)
+    [K, D]
+
+[Stoch_RSI_K, Stoch_RSI_D] = StochRSI()
+plot(Stoch_RSI_K, title="Stoch.RSI.K")
+plot(Stoch_RSI_D, title="Stoch.RSI.D")
+
+
+// Williams Percent Range
+WR_period = 14
+plot((highest(high,WR_period)-close)/(highest(high,WR_period)-lowest(low,WR_period)) * -100, title="W.R")
+
+
+// Rate Of Change (ROC)
+plot(roc(close,9), title="ROC")
+
+
+// Bull / Bear Power
+plot(high  + low - 2 * ema(close, 13), title="BBPower")
+
+
+// Ultimate Oscillator
+tl()=> close[1] < low ? close[1]: low
+uo(ShortLen, MiddlLen, LongLen) =>
+    Value1 = sum( tr, ShortLen )
+    Value2 = sum( tr, MiddlLen )
+    Value3 = sum( tr, LongLen )
+    Value4 = sum( close - tl(), ShortLen )
+    Value5 = sum( close - tl(), MiddlLen )
+    Value6 = sum( close - tl(), LongLen )
+    UO = nz(UO[1], 0)
+    if Value1 != 0 and Value2 != 0 and Value3 != 0
+    	var0 = LongLen / ShortLen
+    	var1 = LongLen / MiddlLen
+    	Value7 = ( Value4 / Value1 ) * ( var0 )
+    	Value8 = ( Value5 / Value2 ) * ( var1 )
+    	Value9 = ( Value6 / Value3 )
+    	UO := ( Value7 + Value8 + Value9 ) / ( var0 + var1 + 1 )
+    UO
+plot(uo(7,14,28), title="UO")
+
+
+// Ichimoku Cloud
+donchian(len) => avg(lowest(len), highest(len))
+ichimoku_cloud()=>
+    conversionLine = donchian(9)
+    baseLine = donchian(26)
+    leadLine1 = avg(conversionLine, baseLine)
+    leadLine2 = donchian(52)
+    [conversionLine, baseLine, leadLine1, leadLine2]
+[IC_conversionLine, IC_baseLine, IC_leadLine1, IC_leadLine2] = ichimoku_cloud()
+IC_displacement = 26
+plot(IC_conversionLine, title="Ichimoku.CLine")
+plot(IC_baseLine, title="Ichimoku.BLine")
+plot(IC_leadLine1, offset = IC_displacement, title="Ichimoku.Lead1")
+plot(IC_leadLine2, offset = IC_displacement, title="Ichimoku.Lead2")
+
+
+// Volume Weighted Moving Average (VWMA)
+plot(vwma(close, 20), title="VWMA")
+
+
+// Average Day Range
+plot(sma(high, 14) - sma(low, 14), title="ADR")
+
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
 
 C_Len = (14)

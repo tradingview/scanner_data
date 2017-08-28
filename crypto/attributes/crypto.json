@@ -1,17 +1,11 @@
 {
-  "time": "2017-08-28T16:29:27.311Z",
+  "time": "2017-08-28T17:06:48.042Z",
   "fields": [
     "sector"
   ],
   "symbols": [
     {
       "s": "BITFINEX:BCHBTC",
-      "f": [
-        "Bitcoin Cash"
-      ]
-    },
-    {
-      "s": "BITFINEX:BCHUSD",
       "f": [
         "Bitcoin Cash"
       ]
@@ -47,18 +41,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ETCUSD",
-      "f": [
-        "Ethereum Classic"
-      ]
-    },
-    {
-      "s": "BITFINEX:ETHUSD",
-      "f": [
-        "Ethereum"
-      ]
-    },
-    {
       "s": "BITFINEX:IOTBTC",
       "f": [
         "IOTA"
@@ -71,12 +53,6 @@
       ]
     },
     {
-      "s": "BITFINEX:OMGUSD",
-      "f": [
-        "OmiseGo"
-      ]
-    },
-    {
       "s": "BITFINEX:SANBTC",
       "f": [
         "Santiment Network Token"
@@ -86,24 +62,6 @@
       "s": "BITFINEX:SANUSD",
       "f": [
         "Santiment Network Token"
-      ]
-    },
-    {
-      "s": "BITFINEX:XMRUSD",
-      "f": [
-        "Monero"
-      ]
-    },
-    {
-      "s": "BITFINEX:ZECUSD",
-      "f": [
-        "Zcash"
-      ]
-    },
-    {
-      "s": "BITSTAMP:XRPUSD",
-      "f": [
-        "Ripple"
       ]
     },
     {
@@ -191,12 +149,6 @@
       ]
     },
     {
-      "s": "BITTREX:AMPUSD",
-      "f": [
-        "Synereo"
-      ]
-    },
-    {
       "s": "BITTREX:ANTBTC",
       "f": [
         "Aragon"
@@ -218,12 +170,6 @@
       "s": "BITTREX:APXUSD",
       "f": [
         "APX"
-      ]
-    },
-    {
-      "s": "BITTREX:ARDRUSD",
-      "f": [
-        "Ardor"
       ]
     },
     {
@@ -395,24 +341,6 @@
       ]
     },
     {
-      "s": "BITTREX:BTCDUSD",
-      "f": [
-        "BitcoinDark"
-      ]
-    },
-    {
-      "s": "BITTREX:BTSUSD",
-      "f": [
-        "BitShares"
-      ]
-    },
-    {
-      "s": "BITTREX:BURSTUSD",
-      "f": [
-        "Burst"
-      ]
-    },
-    {
       "s": "BITTREX:BYCBTC",
       "f": [
         "Bytecent"
@@ -446,12 +374,6 @@
       "s": "BITTREX:CFIUSD",
       "f": [
         "Cofound.it"
-      ]
-    },
-    {
-      "s": "BITTREX:CLAMUSD",
-      "f": [
-        "Clams"
       ]
     },
     {
@@ -563,18 +485,6 @@
       ]
     },
     {
-      "s": "BITTREX:DASHUSD",
-      "f": [
-        "Dash"
-      ]
-    },
-    {
-      "s": "BITTREX:DCRUSD",
-      "f": [
-        "Decred"
-      ]
-    },
-    {
       "s": "BITTREX:DCTBTC",
       "f": [
         "DECENT"
@@ -584,12 +494,6 @@
       "s": "BITTREX:DCTUSD",
       "f": [
         "DECENT"
-      ]
-    },
-    {
-      "s": "BITTREX:DGBUSD",
-      "f": [
-        "DigiByte"
       ]
     },
     {
@@ -614,12 +518,6 @@
       "s": "BITTREX:DMDUSD",
       "f": [
         "Diamond"
-      ]
-    },
-    {
-      "s": "BITTREX:DOGEUSD",
-      "f": [
-        "Dogecoin"
       ]
     },
     {
@@ -719,12 +617,6 @@
       ]
     },
     {
-      "s": "BITTREX:EMC2USD",
-      "f": [
-        "Einsteinium"
-      ]
-    },
-    {
       "s": "BITTREX:EMCBTC",
       "f": [
         "Emercoin"
@@ -794,18 +686,6 @@
       "s": "BITTREX:FAIRUSD",
       "f": [
         "FairCoin"
-      ]
-    },
-    {
-      "s": "BITTREX:FCTUSD",
-      "f": [
-        "Factom"
-      ]
-    },
-    {
-      "s": "BITTREX:FLDCUSD",
-      "f": [
-        "FoldingCoin"
       ]
     },
     {
@@ -929,12 +809,6 @@
       ]
     },
     {
-      "s": "BITTREX:GNOUSD",
-      "f": [
-        "Gnosis"
-      ]
-    },
-    {
       "s": "BITTREX:GNTBTC",
       "f": [
         "Golem"
@@ -956,12 +830,6 @@
       "s": "BITTREX:GOLOSUSD",
       "f": [
         "Golos"
-      ]
-    },
-    {
-      "s": "BITTREX:GRCUSD",
-      "f": [
-        "GridCoin"
       ]
     },
     {
@@ -1157,12 +1025,6 @@
       ]
     },
     {
-      "s": "BITTREX:MAIDUSD",
-      "f": [
-        "MaidSafeCoin"
-      ]
-    },
-    {
       "s": "BITTREX:MCOBTC",
       "f": [
         "Monaco"
@@ -1211,15 +1073,933 @@
       ]
     },
     {
+      "s": "BITTREX:MTLBTC",
+      "f": [
+        "Metal"
+      ]
+    },
+    {
+      "s": "BITTREX:MTLUSD",
+      "f": [
+        "Metal"
+      ]
+    },
+    {
+      "s": "BITTREX:MUEBTC",
+      "f": [
+        "MonetaryUnit"
+      ]
+    },
+    {
+      "s": "BITTREX:MUEUSD",
+      "f": [
+        "MonetaryUnit"
+      ]
+    },
+    {
+      "s": "BITTREX:MUSICBTC",
+      "f": [
+        "Musicoin"
+      ]
+    },
+    {
+      "s": "BITTREX:MUSICUSD",
+      "f": [
+        "Musicoin"
+      ]
+    },
+    {
+      "s": "BITTREX:MYSTBTC",
+      "f": [
+        "Mysterium"
+      ]
+    },
+    {
+      "s": "BITTREX:MYSTUSD",
+      "f": [
+        "Mysterium"
+      ]
+    },
+    {
+      "s": "BITTREX:NAVBTC",
+      "f": [
+        "NAV Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:NAVUSD",
+      "f": [
+        "NAV Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:NBTBTC",
+      "f": [
+        "NuBits"
+      ]
+    },
+    {
+      "s": "BITTREX:NBTUSD",
+      "f": [
+        "NuBits"
+      ]
+    },
+    {
+      "s": "BITTREX:NEOBTC",
+      "f": [
+        "NEO"
+      ]
+    },
+    {
+      "s": "BITTREX:NEOUSD",
+      "f": [
+        "NEO"
+      ]
+    },
+    {
+      "s": "BITTREX:NLGBTC",
+      "f": [
+        "Gulden"
+      ]
+    },
+    {
+      "s": "BITTREX:NLGUSD",
+      "f": [
+        "Gulden"
+      ]
+    },
+    {
+      "s": "BITTREX:NMRBTC",
+      "f": [
+        "Numeraire"
+      ]
+    },
+    {
+      "s": "BITTREX:NMRUSD",
+      "f": [
+        "Numeraire"
+      ]
+    },
+    {
+      "s": "BITTREX:NXSBTC",
+      "f": [
+        "Nexus"
+      ]
+    },
+    {
+      "s": "BITTREX:NXSUSD",
+      "f": [
+        "Nexus"
+      ]
+    },
+    {
+      "s": "BITTREX:OKBTC",
+      "f": [
+        "OKCash"
+      ]
+    },
+    {
+      "s": "BITTREX:OKUSD",
+      "f": [
+        "OKCash"
+      ]
+    },
+    {
       "s": "BITTREX:OMGBTC",
       "f": [
         "OmiseGo"
       ]
     },
     {
+      "s": "BITTREX:OMGUSD",
+      "f": [
+        "OmiseGo"
+      ]
+    },
+    {
+      "s": "BITTREX:PARTBTC",
+      "f": [
+        "Particl"
+      ]
+    },
+    {
+      "s": "BITTREX:PARTUSD",
+      "f": [
+        "Particl"
+      ]
+    },
+    {
+      "s": "BITTREX:PAYBTC",
+      "f": [
+        "TenX"
+      ]
+    },
+    {
+      "s": "BITTREX:PAYUSD",
+      "f": [
+        "TenX"
+      ]
+    },
+    {
+      "s": "BITTREX:PDCBTC",
+      "f": [
+        "Project Decorum"
+      ]
+    },
+    {
+      "s": "BITTREX:PDCUSD",
+      "f": [
+        "Project Decorum"
+      ]
+    },
+    {
+      "s": "BITTREX:PIVXBTC",
+      "f": [
+        "PIVX"
+      ]
+    },
+    {
+      "s": "BITTREX:PIVXUSD",
+      "f": [
+        "PIVX"
+      ]
+    },
+    {
+      "s": "BITTREX:PKBBTC",
+      "f": [
+        "ParkByte"
+      ]
+    },
+    {
+      "s": "BITTREX:PKBUSD",
+      "f": [
+        "ParkByte"
+      ]
+    },
+    {
       "s": "BITTREX:PPCBTC",
       "f": [
         "Peercoin"
+      ]
+    },
+    {
+      "s": "BITTREX:PTCBTC",
+      "f": [
+        "Pesetacoin"
+      ]
+    },
+    {
+      "s": "BITTREX:PTCUSD",
+      "f": [
+        "Pesetacoin"
+      ]
+    },
+    {
+      "s": "BITTREX:PTOYBTC",
+      "f": [
+        "Patientory"
+      ]
+    },
+    {
+      "s": "BITTREX:PTOYUSD",
+      "f": [
+        "Patientory"
+      ]
+    },
+    {
+      "s": "BITTREX:QRLBTC",
+      "f": [
+        "Quantum Resistant Ledger"
+      ]
+    },
+    {
+      "s": "BITTREX:QRLUSD",
+      "f": [
+        "Quantum Resistant Ledger"
+      ]
+    },
+    {
+      "s": "BITTREX:QTUMBTC",
+      "f": [
+        "Qtum"
+      ]
+    },
+    {
+      "s": "BITTREX:QTUMUSD",
+      "f": [
+        "Qtum"
+      ]
+    },
+    {
+      "s": "BITTREX:QWARKBTC",
+      "f": [
+        "Qwark"
+      ]
+    },
+    {
+      "s": "BITTREX:QWARKUSD",
+      "f": [
+        "Qwark"
+      ]
+    },
+    {
+      "s": "BITTREX:RADSBTC",
+      "f": [
+        "Radium"
+      ]
+    },
+    {
+      "s": "BITTREX:RADSUSD",
+      "f": [
+        "Radium"
+      ]
+    },
+    {
+      "s": "BITTREX:RBYBTC",
+      "f": [
+        "Rubycoin"
+      ]
+    },
+    {
+      "s": "BITTREX:RBYUSD",
+      "f": [
+        "Rubycoin"
+      ]
+    },
+    {
+      "s": "BITTREX:RDDBTC",
+      "f": [
+        "ReddCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:RDDUSD",
+      "f": [
+        "ReddCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:RISEBTC",
+      "f": [
+        "Rise"
+      ]
+    },
+    {
+      "s": "BITTREX:RISEUSD",
+      "f": [
+        "Rise"
+      ]
+    },
+    {
+      "s": "BITTREX:RLCBTC",
+      "f": [
+        "iExec RLC"
+      ]
+    },
+    {
+      "s": "BITTREX:RLCUSD",
+      "f": [
+        "iExec RLC"
+      ]
+    },
+    {
+      "s": "BITTREX:SAFEXBTC",
+      "f": [
+        "Safe Exchange Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:SAFEXUSD",
+      "f": [
+        "Safe Exchange Coin"
+      ]
+    },
+    {
+      "s": "BITTREX:SBDBTC",
+      "f": [
+        "Steem Dollars"
+      ]
+    },
+    {
+      "s": "BITTREX:SBDUSD",
+      "f": [
+        "Steem Dollars"
+      ]
+    },
+    {
+      "s": "BITTREX:SEQBTC",
+      "f": [
+        "Sequence"
+      ]
+    },
+    {
+      "s": "BITTREX:SEQUSD",
+      "f": [
+        "Sequence"
+      ]
+    },
+    {
+      "s": "BITTREX:SHIFTBTC",
+      "f": [
+        "Shift"
+      ]
+    },
+    {
+      "s": "BITTREX:SHIFTUSD",
+      "f": [
+        "Shift"
+      ]
+    },
+    {
+      "s": "BITTREX:SIBBTC",
+      "f": [
+        "SIBCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SIBUSD",
+      "f": [
+        "SIBCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SLRBTC",
+      "f": [
+        "SolarCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SLRUSD",
+      "f": [
+        "SolarCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SLSBTC",
+      "f": [
+        "SaluS"
+      ]
+    },
+    {
+      "s": "BITTREX:SLSUSD",
+      "f": [
+        "SaluS"
+      ]
+    },
+    {
+      "s": "BITTREX:SNGLSBTC",
+      "f": [
+        "SingularDTV"
+      ]
+    },
+    {
+      "s": "BITTREX:SNGLSUSD",
+      "f": [
+        "SingularDTV"
+      ]
+    },
+    {
+      "s": "BITTREX:SNRGBTC",
+      "f": [
+        "Synergy"
+      ]
+    },
+    {
+      "s": "BITTREX:SNRGUSD",
+      "f": [
+        "Synergy"
+      ]
+    },
+    {
+      "s": "BITTREX:SNTBTC",
+      "f": [
+        "Status"
+      ]
+    },
+    {
+      "s": "BITTREX:SNTUSD",
+      "f": [
+        "Status"
+      ]
+    },
+    {
+      "s": "BITTREX:SPHRBTC",
+      "f": [
+        "Sphere"
+      ]
+    },
+    {
+      "s": "BITTREX:SPHRUSD",
+      "f": [
+        "Sphere"
+      ]
+    },
+    {
+      "s": "BITTREX:SPRBTC",
+      "f": [
+        "SpreadCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SPRUSD",
+      "f": [
+        "SpreadCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:STARTBTC",
+      "f": [
+        "Startcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:STARTUSD",
+      "f": [
+        "Startcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:STORJBTC",
+      "f": [
+        "Storj"
+      ]
+    },
+    {
+      "s": "BITTREX:STORJUSD",
+      "f": [
+        "Storj"
+      ]
+    },
+    {
+      "s": "BITTREX:STRATBTC",
+      "f": [
+        "Stratis"
+      ]
+    },
+    {
+      "s": "BITTREX:STRATUSD",
+      "f": [
+        "Stratis"
+      ]
+    },
+    {
+      "s": "BITTREX:SWIFTBTC",
+      "f": [
+        "Bitswift"
+      ]
+    },
+    {
+      "s": "BITTREX:SWIFTUSD",
+      "f": [
+        "Bitswift"
+      ]
+    },
+    {
+      "s": "BITTREX:SWTBTC",
+      "f": [
+        "Swarm City"
+      ]
+    },
+    {
+      "s": "BITTREX:SWTUSD",
+      "f": [
+        "Swarm City"
+      ]
+    },
+    {
+      "s": "BITTREX:SYNXBTC",
+      "f": [
+        "Syndicate"
+      ]
+    },
+    {
+      "s": "BITTREX:SYNXUSD",
+      "f": [
+        "Syndicate"
+      ]
+    },
+    {
+      "s": "BITTREX:SYSBTC",
+      "f": [
+        "SysCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:SYSUSD",
+      "f": [
+        "SysCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:THCBTC",
+      "f": [
+        "HempCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:THCUSD",
+      "f": [
+        "HempCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:TIMEBTC",
+      "f": [
+        "Chronobank"
+      ]
+    },
+    {
+      "s": "BITTREX:TIMEUSD",
+      "f": [
+        "Chronobank"
+      ]
+    },
+    {
+      "s": "BITTREX:TKNBTC",
+      "f": [
+        "TokenCard"
+      ]
+    },
+    {
+      "s": "BITTREX:TKNUSD",
+      "f": [
+        "TokenCard"
+      ]
+    },
+    {
+      "s": "BITTREX:TKSBTC",
+      "f": [
+        "Tokes"
+      ]
+    },
+    {
+      "s": "BITTREX:TKSUSD",
+      "f": [
+        "Tokes"
+      ]
+    },
+    {
+      "s": "BITTREX:TRIGBTC",
+      "f": [
+        "Triggers"
+      ]
+    },
+    {
+      "s": "BITTREX:TRIGUSD",
+      "f": [
+        "Triggers"
+      ]
+    },
+    {
+      "s": "BITTREX:TRSTBTC",
+      "f": [
+        "WeTrust"
+      ]
+    },
+    {
+      "s": "BITTREX:TRSTUSD",
+      "f": [
+        "WeTrust"
+      ]
+    },
+    {
+      "s": "BITTREX:TRUSTBTC",
+      "f": [
+        "TrustPlus"
+      ]
+    },
+    {
+      "s": "BITTREX:TRUSTUSD",
+      "f": [
+        "TrustPlus"
+      ]
+    },
+    {
+      "s": "BITTREX:TXBTC",
+      "f": [
+        "TransferCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:TXUSD",
+      "f": [
+        "TransferCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:UBQBTC",
+      "f": [
+        "Ubiq"
+      ]
+    },
+    {
+      "s": "BITTREX:UBQUSD",
+      "f": [
+        "Ubiq"
+      ]
+    },
+    {
+      "s": "BITTREX:UNBBTC",
+      "f": [
+        "UnbreakableCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:UNBUSD",
+      "f": [
+        "UnbreakableCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:UNOBTC",
+      "f": [
+        "Unobtanium"
+      ]
+    },
+    {
+      "s": "BITTREX:UNOUSD",
+      "f": [
+        "Unobtanium"
+      ]
+    },
+    {
+      "s": "BITTREX:VOXBTC",
+      "f": [
+        "Voxels"
+      ]
+    },
+    {
+      "s": "BITTREX:VOXUSD",
+      "f": [
+        "Voxels"
+      ]
+    },
+    {
+      "s": "BITTREX:VRCBTC",
+      "f": [
+        "VeriCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:VRCUSD",
+      "f": [
+        "VeriCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:VRMBTC",
+      "f": [
+        "VeriumReserve"
+      ]
+    },
+    {
+      "s": "BITTREX:VRMUSD",
+      "f": [
+        "VeriumReserve"
+      ]
+    },
+    {
+      "s": "BITTREX:VTCBTC",
+      "f": [
+        "Vertcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:VTCUSD",
+      "f": [
+        "Vertcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:VTRBTC",
+      "f": [
+        "vTorrent"
+      ]
+    },
+    {
+      "s": "BITTREX:VTRUSD",
+      "f": [
+        "vTorrent"
+      ]
+    },
+    {
+      "s": "BITTREX:WAVESBTC",
+      "f": [
+        "Waves"
+      ]
+    },
+    {
+      "s": "BITTREX:WAVESUSD",
+      "f": [
+        "Waves"
+      ]
+    },
+    {
+      "s": "BITTREX:WINGSBTC",
+      "f": [
+        "Wings"
+      ]
+    },
+    {
+      "s": "BITTREX:WINGSUSD",
+      "f": [
+        "Wings"
+      ]
+    },
+    {
+      "s": "BITTREX:XAURBTC",
+      "f": [
+        "Xaurum"
+      ]
+    },
+    {
+      "s": "BITTREX:XAURUSD",
+      "f": [
+        "Xaurum"
+      ]
+    },
+    {
+      "s": "BITTREX:XBBBTC",
+      "f": [
+        "Boolberry"
+      ]
+    },
+    {
+      "s": "BITTREX:XBBUSD",
+      "f": [
+        "Boolberry"
+      ]
+    },
+    {
+      "s": "BITTREX:XCPBTC",
+      "f": [
+        "Counterparty"
+      ]
+    },
+    {
+      "s": "BITTREX:XCPUSD",
+      "f": [
+        "Counterparty"
+      ]
+    },
+    {
+      "s": "BITTREX:XELBTC",
+      "f": [
+        "Elastic"
+      ]
+    },
+    {
+      "s": "BITTREX:XELUSD",
+      "f": [
+        "Elastic"
+      ]
+    },
+    {
+      "s": "BITTREX:XLMBTC",
+      "f": [
+        "Stellar Lumens"
+      ]
+    },
+    {
+      "s": "BITTREX:XLMUSD",
+      "f": [
+        "Stellar Lumens"
+      ]
+    },
+    {
+      "s": "BITTREX:XMGBTC",
+      "f": [
+        "Magi"
+      ]
+    },
+    {
+      "s": "BITTREX:XMGUSD",
+      "f": [
+        "Magi"
+      ]
+    },
+    {
+      "s": "BITTREX:XMYBTC",
+      "f": [
+        "Myriad"
+      ]
+    },
+    {
+      "s": "BITTREX:XMYUSD",
+      "f": [
+        "Myriad"
+      ]
+    },
+    {
+      "s": "BITTREX:XSTBTC",
+      "f": [
+        "Stealthcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XSTUSD",
+      "f": [
+        "Stealthcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XVGBTC",
+      "f": [
+        "Verge"
+      ]
+    },
+    {
+      "s": "BITTREX:XVGUSD",
+      "f": [
+        "Verge"
+      ]
+    },
+    {
+      "s": "BITTREX:XWCBTC",
+      "f": [
+        "WhiteCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XWCUSD",
+      "f": [
+        "WhiteCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XZCBTC",
+      "f": [
+        "ZCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:XZCUSD",
+      "f": [
+        "ZCoin"
+      ]
+    },
+    {
+      "s": "BITTREX:ZCLBTC",
+      "f": [
+        "ZClassic"
+      ]
+    },
+    {
+      "s": "BITTREX:ZCLUSD",
+      "f": [
+        "ZClassic"
+      ]
+    },
+    {
+      "s": "BITTREX:ZENBTC",
+      "f": [
+        "ZenCash"
+      ]
+    },
+    {
+      "s": "BITTREX:ZENUSD",
+      "f": [
+        "ZenCash"
       ]
     },
     {
@@ -1247,19 +2027,67 @@
       ]
     },
     {
-      "s": "COINBASE:LTCUSD",
+      "s": "HITBTC:FCNBTC",
       "f": [
-        "Litecoin"
+        "Fantomcoin"
       ]
     },
     {
-      "s": "HITBTC:XEMUSD",
+      "s": "HITBTC:FCNUSD",
       "f": [
-        "NEM"
+        "Fantomcoin"
+      ]
+    },
+    {
+      "s": "HITBTC:NXTBTC",
+      "f": [
+        "Nxt"
+      ]
+    },
+    {
+      "s": "HITBTC:NXTUSD",
+      "f": [
+        "Nxt"
+      ]
+    },
+    {
+      "s": "HITBTC:QCNBTC",
+      "f": [
+        "QuazarCoin"
+      ]
+    },
+    {
+      "s": "HITBTC:QCNUSD",
+      "f": [
+        "QuazarCoin"
+      ]
+    },
+    {
+      "s": "HITBTC:XDNBTC",
+      "f": [
+        "DigitalNote"
+      ]
+    },
+    {
+      "s": "HITBTC:XDNUSD",
+      "f": [
+        "DigitalNote"
+      ]
+    },
+    {
+      "s": "KRAKEN:USDTUSD",
+      "f": [
+        "Tether"
       ]
     },
     {
       "s": "POLONIEX:AMPBTC",
+      "f": [
+        "Synereo"
+      ]
+    },
+    {
+      "s": "POLONIEX:AMPUSD",
       "f": [
         "Synereo"
       ]
@@ -1271,13 +2099,73 @@
       ]
     },
     {
+      "s": "POLONIEX:ARDRUSD",
+      "f": [
+        "Ardor"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCHUSD",
+      "f": [
+        "Bitcoin Cash"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCNBTC",
+      "f": [
+        "Bytecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCNUSD",
+      "f": [
+        "Bytecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:BELABTC",
+      "f": [
+        "Bela"
+      ]
+    },
+    {
+      "s": "POLONIEX:BELAUSD",
+      "f": [
+        "Bela"
+      ]
+    },
+    {
       "s": "POLONIEX:BTCDBTC",
       "f": [
         "BitcoinDark"
       ]
     },
     {
+      "s": "POLONIEX:BTCDUSD",
+      "f": [
+        "BitcoinDark"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTMBTC",
+      "f": [
+        "Bytom"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTMUSD",
+      "f": [
+        "Bytom"
+      ]
+    },
+    {
       "s": "POLONIEX:BTSBTC",
+      "f": [
+        "BitShares"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares"
       ]
@@ -1289,7 +2177,19 @@
       ]
     },
     {
+      "s": "POLONIEX:BURSTUSD",
+      "f": [
+        "Burst"
+      ]
+    },
+    {
       "s": "POLONIEX:CLAMBTC",
+      "f": [
+        "Clams"
+      ]
+    },
+    {
+      "s": "POLONIEX:CLAMUSD",
       "f": [
         "Clams"
       ]
@@ -1301,7 +2201,19 @@
       ]
     },
     {
+      "s": "POLONIEX:DASHUSD",
+      "f": [
+        "Dash"
+      ]
+    },
+    {
       "s": "POLONIEX:DCRBTC",
+      "f": [
+        "Decred"
+      ]
+    },
+    {
+      "s": "POLONIEX:DCRUSD",
       "f": [
         "Decred"
       ]
@@ -1313,7 +2225,19 @@
       ]
     },
     {
+      "s": "POLONIEX:DGBUSD",
+      "f": [
+        "DigiByte"
+      ]
+    },
+    {
       "s": "POLONIEX:DOGEBTC",
+      "f": [
+        "Dogecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:DOGEUSD",
       "f": [
         "Dogecoin"
       ]
@@ -1325,7 +2249,19 @@
       ]
     },
     {
+      "s": "POLONIEX:EMC2USD",
+      "f": [
+        "Einsteinium"
+      ]
+    },
+    {
       "s": "POLONIEX:ETCBTC",
+      "f": [
+        "Ethereum Classic"
+      ]
+    },
+    {
+      "s": "POLONIEX:ETCUSD",
       "f": [
         "Ethereum Classic"
       ]
@@ -1337,7 +2273,19 @@
       ]
     },
     {
+      "s": "POLONIEX:ETHUSD",
+      "f": [
+        "Ethereum"
+      ]
+    },
+    {
       "s": "POLONIEX:FCTBTC",
+      "f": [
+        "Factom"
+      ]
+    },
+    {
+      "s": "POLONIEX:FCTUSD",
       "f": [
         "Factom"
       ]
@@ -1349,7 +2297,19 @@
       ]
     },
     {
+      "s": "POLONIEX:FLDCUSD",
+      "f": [
+        "FoldingCoin"
+      ]
+    },
+    {
       "s": "POLONIEX:GNOBTC",
+      "f": [
+        "Gnosis"
+      ]
+    },
+    {
+      "s": "POLONIEX:GNOUSD",
       "f": [
         "Gnosis"
       ]
@@ -1361,7 +2321,31 @@
       ]
     },
     {
+      "s": "POLONIEX:GRCUSD",
+      "f": [
+        "GridCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:HUCBTC",
+      "f": [
+        "HunterCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:HUCUSD",
+      "f": [
+        "HunterCoin"
+      ]
+    },
+    {
       "s": "POLONIEX:LTCBTC",
+      "f": [
+        "Litecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:LTCUSD",
       "f": [
         "Litecoin"
       ]
@@ -1373,13 +2357,211 @@
       ]
     },
     {
+      "s": "POLONIEX:MAIDUSD",
+      "f": [
+        "MaidSafeCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:NAUTBTC",
+      "f": [
+        "NautilusCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:NAUTUSD",
+      "f": [
+        "NautilusCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:NEOSBTC",
+      "f": [
+        "NeosCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:NEOSUSD",
+      "f": [
+        "NeosCoin"
+      ]
+    },
+    {
       "s": "POLONIEX:NMCBTC",
       "f": [
         "Namecoin"
       ]
     },
     {
+      "s": "POLONIEX:NOTEBTC",
+      "f": [
+        "DNotes"
+      ]
+    },
+    {
+      "s": "POLONIEX:NOTEUSD",
+      "f": [
+        "DNotes"
+      ]
+    },
+    {
+      "s": "POLONIEX:NXCBTC",
+      "f": [
+        "Nexium"
+      ]
+    },
+    {
+      "s": "POLONIEX:NXCUSD",
+      "f": [
+        "Nexium"
+      ]
+    },
+    {
+      "s": "POLONIEX:OMNIBTC",
+      "f": [
+        "Omni"
+      ]
+    },
+    {
+      "s": "POLONIEX:OMNIUSD",
+      "f": [
+        "Omni"
+      ]
+    },
+    {
+      "s": "POLONIEX:PASCBTC",
+      "f": [
+        "Pascal Coin"
+      ]
+    },
+    {
+      "s": "POLONIEX:PASCUSD",
+      "f": [
+        "Pascal Coin"
+      ]
+    },
+    {
+      "s": "POLONIEX:PINKBTC",
+      "f": [
+        "PinkCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:PINKUSD",
+      "f": [
+        "PinkCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:POTBTC",
+      "f": [
+        "PotCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:POTUSD",
+      "f": [
+        "PotCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:REPBTC",
+      "f": [
+        "Augur"
+      ]
+    },
+    {
+      "s": "POLONIEX:REPUSD",
+      "f": [
+        "Augur"
+      ]
+    },
+    {
+      "s": "POLONIEX:RICBTC",
+      "f": [
+        "Riecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:RICUSD",
+      "f": [
+        "Riecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:SCBTC",
+      "f": [
+        "Siacoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:SCUSD",
+      "f": [
+        "Siacoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:SJCXBTC",
+      "f": [
+        "Storjcoin X"
+      ]
+    },
+    {
+      "s": "POLONIEX:SJCXUSD",
+      "f": [
+        "Storjcoin X"
+      ]
+    },
+    {
+      "s": "POLONIEX:STEEMBTC",
+      "f": [
+        "Steem"
+      ]
+    },
+    {
+      "s": "POLONIEX:STEEMUSD",
+      "f": [
+        "Steem"
+      ]
+    },
+    {
+      "s": "POLONIEX:USDTBTC",
+      "f": [
+        "Tether"
+      ]
+    },
+    {
+      "s": "POLONIEX:VIABTC",
+      "f": [
+        "Viacoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:VIAUSD",
+      "f": [
+        "Viacoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:XBCBTC",
+      "f": [
+        "Bitcoin Plus"
+      ]
+    },
+    {
+      "s": "POLONIEX:XBCUSD",
+      "f": [
+        "Bitcoin Plus"
+      ]
+    },
+    {
       "s": "POLONIEX:XEMBTC",
+      "f": [
+        "NEM"
+      ]
+    },
+    {
+      "s": "POLONIEX:XEMUSD",
       "f": [
         "NEM"
       ]
@@ -1391,15 +2573,69 @@
       ]
     },
     {
+      "s": "POLONIEX:XMRUSD",
+      "f": [
+        "Monero"
+      ]
+    },
+    {
+      "s": "POLONIEX:XPMBTC",
+      "f": [
+        "Primecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:XPMUSD",
+      "f": [
+        "Primecoin"
+      ]
+    },
+    {
       "s": "POLONIEX:XRPBTC",
       "f": [
         "Ripple"
       ]
     },
     {
+      "s": "POLONIEX:XRPUSD",
+      "f": [
+        "Ripple"
+      ]
+    },
+    {
+      "s": "POLONIEX:XVCBTC",
+      "f": [
+        "Vcash"
+      ]
+    },
+    {
+      "s": "POLONIEX:XVCUSD",
+      "f": [
+        "Vcash"
+      ]
+    },
+    {
       "s": "POLONIEX:ZECBTC",
       "f": [
         "Zcash"
+      ]
+    },
+    {
+      "s": "POLONIEX:ZECUSD",
+      "f": [
+        "Zcash"
+      ]
+    },
+    {
+      "s": "POLONIEX:ZRXBTC",
+      "f": [
+        "0x"
+      ]
+    },
+    {
+      "s": "POLONIEX:ZRXUSD",
+      "f": [
+        "0x"
       ]
     }
   ]

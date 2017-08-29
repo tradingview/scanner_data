@@ -1,5 +1,5 @@
 {
-  "time": "2017-08-28T17:06:48.042Z",
+  "time": "2017-08-29T14:50:34.405Z",
   "fields": [
     "sector"
   ],
@@ -173,6 +173,18 @@
       ]
     },
     {
+      "s": "BITTREX:ARDRBTC",
+      "f": [
+        "Ardor"
+      ]
+    },
+    {
+      "s": "BITTREX:ARDRUSD",
+      "f": [
+        "Ardor"
+      ]
+    },
+    {
       "s": "BITTREX:ARKBTC",
       "f": [
         "Ark"
@@ -218,18 +230,6 @@
       "s": "BITTREX:BAYUSD",
       "f": [
         "BitBay"
-      ]
-    },
-    {
-      "s": "BITTREX:BCYBTC",
-      "f": [
-        "Bitcrystals"
-      ]
-    },
-    {
-      "s": "BITTREX:BCYUSD",
-      "f": [
-        "Bitcrystals"
       ]
     },
     {
@@ -485,6 +485,18 @@
       ]
     },
     {
+      "s": "BITTREX:DCRBTC",
+      "f": [
+        "Decred"
+      ]
+    },
+    {
+      "s": "BITTREX:DCRUSD",
+      "f": [
+        "Decred"
+      ]
+    },
+    {
       "s": "BITTREX:DCTBTC",
       "f": [
         "DECENT"
@@ -690,12 +702,6 @@
     },
     {
       "s": "BITTREX:FLOBTC",
-      "f": [
-        "FlorinCoin"
-      ]
-    },
-    {
-      "s": "BITTREX:FLOUSD",
       "f": [
         "FlorinCoin"
       ]
@@ -1415,18 +1421,6 @@
       ]
     },
     {
-      "s": "BITTREX:SBDBTC",
-      "f": [
-        "Steem Dollars"
-      ]
-    },
-    {
-      "s": "BITTREX:SBDUSD",
-      "f": [
-        "Steem Dollars"
-      ]
-    },
-    {
       "s": "BITTREX:SEQBTC",
       "f": [
         "Sequence"
@@ -1523,18 +1517,6 @@
       ]
     },
     {
-      "s": "BITTREX:SPHRBTC",
-      "f": [
-        "Sphere"
-      ]
-    },
-    {
-      "s": "BITTREX:SPHRUSD",
-      "f": [
-        "Sphere"
-      ]
-    },
-    {
       "s": "BITTREX:SPRBTC",
       "f": [
         "SpreadCoin"
@@ -1556,6 +1538,18 @@
       "s": "BITTREX:STARTUSD",
       "f": [
         "Startcoin"
+      ]
+    },
+    {
+      "s": "BITTREX:STEEMBTC",
+      "f": [
+        "Steem"
+      ]
+    },
+    {
+      "s": "BITTREX:STEEMUSD",
+      "f": [
+        "Steem"
       ]
     },
     {
@@ -1616,18 +1610,6 @@
       "s": "BITTREX:SYNXUSD",
       "f": [
         "Syndicate"
-      ]
-    },
-    {
-      "s": "BITTREX:SYSBTC",
-      "f": [
-        "SysCoin"
-      ]
-    },
-    {
-      "s": "BITTREX:SYSUSD",
-      "f": [
-        "SysCoin"
       ]
     },
     {
@@ -1760,6 +1742,18 @@
       "s": "BITTREX:UNOUSD",
       "f": [
         "Unobtanium"
+      ]
+    },
+    {
+      "s": "BITTREX:VIABTC",
+      "f": [
+        "Viacoin"
+      ]
+    },
+    {
+      "s": "BITTREX:VIAUSD",
+      "f": [
+        "Viacoin"
       ]
     },
     {
@@ -2003,6 +1997,12 @@
       ]
     },
     {
+      "s": "BTCE:NMCBTC",
+      "f": [
+        "Namecoin"
+      ]
+    },
+    {
       "s": "BTCE:NMCUSD",
       "f": [
         "Namecoin"
@@ -2024,18 +2024,6 @@
       "s": "HITBTC:FCNUSD",
       "f": [
         "Fantomcoin"
-      ]
-    },
-    {
-      "s": "HITBTC:NXTBTC",
-      "f": [
-        "Nxt"
-      ]
-    },
-    {
-      "s": "HITBTC:NXTUSD",
-      "f": [
-        "Nxt"
       ]
     },
     {
@@ -2063,6 +2051,12 @@
       ]
     },
     {
+      "s": "HITBTC:ZECBTC",
+      "f": [
+        "Zcash"
+      ]
+    },
+    {
       "s": "KRAKEN:USDTUSD",
       "f": [
         "Tether"
@@ -2081,18 +2075,6 @@
       ]
     },
     {
-      "s": "POLONIEX:ARDRBTC",
-      "f": [
-        "Ardor"
-      ]
-    },
-    {
-      "s": "POLONIEX:ARDRUSD",
-      "f": [
-        "Ardor"
-      ]
-    },
-    {
       "s": "POLONIEX:BCHUSD",
       "f": [
         "Bitcoin Cash"
@@ -2108,6 +2090,18 @@
       "s": "POLONIEX:BCNUSD",
       "f": [
         "Bytecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCYBTC",
+      "f": [
+        "Bitcrystals"
+      ]
+    },
+    {
+      "s": "POLONIEX:BCYUSD",
+      "f": [
+        "Bitcrystals"
       ]
     },
     {
@@ -2137,13 +2131,13 @@
     {
       "s": "POLONIEX:BTMBTC",
       "f": [
-        "Bytom"
+        "Bitmark"
       ]
     },
     {
       "s": "POLONIEX:BTMUSD",
       "f": [
-        "Bytom"
+        "Bitmark"
       ]
     },
     {
@@ -2192,18 +2186,6 @@
       "s": "POLONIEX:DASHUSD",
       "f": [
         "Dash"
-      ]
-    },
-    {
-      "s": "POLONIEX:DCRBTC",
-      "f": [
-        "Decred"
-      ]
-    },
-    {
-      "s": "POLONIEX:DCRUSD",
-      "f": [
-        "Decred"
       ]
     },
     {
@@ -2291,6 +2273,12 @@
       ]
     },
     {
+      "s": "POLONIEX:FLOUSD",
+      "f": [
+        "FlorinCoin"
+      ]
+    },
+    {
       "s": "POLONIEX:GNOBTC",
       "f": [
         "Gnosis"
@@ -2375,12 +2363,6 @@
       ]
     },
     {
-      "s": "POLONIEX:NMCBTC",
-      "f": [
-        "Namecoin"
-      ]
-    },
-    {
       "s": "POLONIEX:NOTEBTC",
       "f": [
         "DNotes"
@@ -2402,6 +2384,18 @@
       "s": "POLONIEX:NXCUSD",
       "f": [
         "Nexium"
+      ]
+    },
+    {
+      "s": "POLONIEX:NXTBTC",
+      "f": [
+        "Nxt"
+      ]
+    },
+    {
+      "s": "POLONIEX:NXTUSD",
+      "f": [
+        "Nxt"
       ]
     },
     {
@@ -2477,6 +2471,18 @@
       ]
     },
     {
+      "s": "POLONIEX:SBDBTC",
+      "f": [
+        "Steem Dollars"
+      ]
+    },
+    {
+      "s": "POLONIEX:SBDUSD",
+      "f": [
+        "Steem Dollars"
+      ]
+    },
+    {
       "s": "POLONIEX:SCBTC",
       "f": [
         "Siacoin"
@@ -2501,33 +2507,21 @@
       ]
     },
     {
-      "s": "POLONIEX:STEEMBTC",
+      "s": "POLONIEX:SYSBTC",
       "f": [
-        "Steem"
+        "SysCoin"
       ]
     },
     {
-      "s": "POLONIEX:STEEMUSD",
+      "s": "POLONIEX:SYSUSD",
       "f": [
-        "Steem"
+        "SysCoin"
       ]
     },
     {
       "s": "POLONIEX:USDTBTC",
       "f": [
         "Tether"
-      ]
-    },
-    {
-      "s": "POLONIEX:VIABTC",
-      "f": [
-        "Viacoin"
-      ]
-    },
-    {
-      "s": "POLONIEX:VIAUSD",
-      "f": [
-        "Viacoin"
       ]
     },
     {
@@ -2600,12 +2594,6 @@
       "s": "POLONIEX:XVCUSD",
       "f": [
         "Vcash"
-      ]
-    },
-    {
-      "s": "POLONIEX:ZECBTC",
-      "f": [
-        "Zcash"
       ]
     },
     {

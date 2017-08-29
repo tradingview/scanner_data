@@ -84,20 +84,22 @@ var currencyMapping = {
     "USNBT": "NBT"
 };
 
+const explicitCoinNames = {
+    "BAT": "Basic Attention Token",
+    "BTM": "Bitmark"
+};
+
 var dstSymbols = [];
 JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
     var key = s.symbol;
-    var sym = selectedSymbols[key];
-    if (!sym) {
-        key = currencyMapping[s.symbol];
-        sym = selectedSymbols[key];
-    }
+    var sym = selectedSymbols[key] || selectedSymbols[currencyMapping[key]];
     if (sym) {
         if (sym.length === 2 || key === "BTC" /*include BTCUSD without BTCBTC*/) {
+            const explicitName = explicitCoinNames[key];
             sym.forEach(function (s1) {
                 dstSymbols.push({
                     s: s1,
-                    f: [s.name]
+                    f: [explicitName ? explicitName : s.name]
                 });
             });
         }

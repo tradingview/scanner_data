@@ -46,8 +46,9 @@ if (coinMktCapResp.statusCode != 200) {
     throw Error(coinMktCapResp.statusCode);
 }
 
-function getFirstCurrency(ticker) {
-    return ticker.substring(0, ticker.length - 3);
+function getFirstCurrency(symbol) {
+    var cur = symbol.split(':')[1];
+    return cur.substring(0, cur.length - 3);
 }
 
 const excludeSymbols = [
@@ -61,7 +62,7 @@ const excludeSymbols = [
 ];
 
 function skipSymbol(s) {
-    return excludeSymbols.indexOf(s) >=0;
+    return excludeSymbols.indexOf(s) >= 0;
 }
 
 var tickers = {};
@@ -70,19 +71,23 @@ JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
     var ticker = s.s.split(':')[1];
     if (!tickers[ticker] && !skipSymbol(s.s)) {
         tickers[ticker] = ticker;
-        var token = getFirstCurrency(ticker);
+        var token = getFirstCurrency(s.s);
         var ss = selectedSymbols[token] || [];
         ss.push(s.s);
         selectedSymbols[token] = ss;
     }
 });
 
-var currencyMapping = {
+const currencyMapping = {
     "BTU": "BCU",
     "MIOTA": "IOT",
     "XLM": "STR",
     "USNBT": "NBT"
 };
+const currencyRevertedMapping = {};
+Object.keys(currencyMapping).forEach(function (k) {
+    currencyRevertedMapping[currencyMapping[k]] = k;
+})
 
 const explicitCoinNames = {
     "BAT": "Basic Attention Token",
@@ -90,6 +95,18 @@ const explicitCoinNames = {
 };
 
 var dstSymbols = [];
+
+try {
+    JSON.parse(fs.readFileSync(dstPath)).symbols.forEach(function (s) {
+        dstSymbols.push(s);
+        const key = getFirstCurrency(s.s);
+        delete selectedSymbols[key];
+        delete selectedSymbols[currencyRevertedMapping[key]];
+    });
+} catch (exc) {
+    console.warn("Loading previous results failed with error: " + exc);
+}
+
 JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
     var key = s.symbol;
     var sym = selectedSymbols[key] || selectedSymbols[currencyMapping[key]];

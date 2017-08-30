@@ -242,45 +242,6 @@ lenCMF = 20
 accdistRaw = not ( ((close == low) and (close == high)) or (high == low) ) ? (((close - low) - (high - close)) / (high - low)) * volume : 0
 plot( sum(accdistRaw, lenCMF) / sum(volume, lenCMF), title = "ChaikinMoneyFlow" )
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-calcRecommendMA(left,right)=> left == right ? 0 : ( left < right ? 1 : -1 )
-calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
-
-// calculate trading recommendation based on SMA/EMA
-recMA = 0
-
-recMA := recMA + calcRecommendMA(SMA10, close)
-recMA := recMA + calcRecommendMA(SMA20, close)
-recMA := recMA + calcRecommendMA(SMA30, close)
-recMA := recMA + calcRecommendMA(SMA50, close)
-recMA := recMA + calcRecommendMA(SMA100, close)
-recMA := recMA + calcRecommendMA(SMA200, close)
-recMA := recMA + calcRecommendMA(EMA10, close)
-recMA := recMA + calcRecommendMA(EMA20, close)
-recMA := recMA + calcRecommendMA(EMA30, close)
-recMA := recMA + calcRecommendMA(EMA50, close)
-recMA := recMA + calcRecommendMA(EMA100, close)
-recMA := recMA + calcRecommendMA(EMA200, close)
-recMA := recMA/ 12
-plot(recMA, title="Recommend.MA")
-
-recOther = 0
-recRSI = RSI
-recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
-recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
-recCCI = CCI
-recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
-recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
-recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
-recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
-recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
-//recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
-//recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
-recOther := recOther/7 //9
-plot(recOther, title="Recommend.Other")
-
-plot((recMA+recOther)/2, title="Recommend.All")
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -298,7 +259,8 @@ plot(Stoch_RSI_D, title="Stoch.RSI.D")
 
 // Williams Percent Range
 WR_period = 14
-plot((highest(high,WR_period)-close)/(highest(high,WR_period)-lowest(low,WR_period)) * -100, title="W.R")
+WR = (highest(high,WR_period)-close)/(highest(high,WR_period)-lowest(low,WR_period)) * -100
+plot(WR, title="W.R")
 
 
 // Rate Of Change (ROC)
@@ -306,7 +268,9 @@ plot(roc(close,9), title="ROC")
 
 
 // Bull / Bear Power
-plot(high  + low - 2 * ema(close, 13), title="BBPower")
+BullPower = high - ema(close, 13)
+BearPower = low - ema(close, 13)
+plot(BullPower + BearPower, title="BBPower")
 
 
 // Ultimate Oscillator
@@ -352,3 +316,43 @@ plot(vwma(close, 20), title="VWMA")
 
 // Average Day Range
 plot(sma(high, 14) - sma(low, 14), title="ADR")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+calcRecommendMA(left,right)=> left == right ? 0 : ( left < right ? 1 : -1 )
+calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
+
+// calculate trading recommendation based on SMA/EMA
+recMA = 0
+
+recMA := recMA + calcRecommendMA(SMA10, close)
+recMA := recMA + calcRecommendMA(SMA20, close)
+recMA := recMA + calcRecommendMA(SMA30, close)
+recMA := recMA + calcRecommendMA(SMA50, close)
+recMA := recMA + calcRecommendMA(SMA100, close)
+recMA := recMA + calcRecommendMA(SMA200, close)
+recMA := recMA + calcRecommendMA(EMA10, close)
+recMA := recMA + calcRecommendMA(EMA20, close)
+recMA := recMA + calcRecommendMA(EMA30, close)
+recMA := recMA + calcRecommendMA(EMA50, close)
+recMA := recMA + calcRecommendMA(EMA100, close)
+recMA := recMA + calcRecommendMA(EMA200, close)
+recMA := recMA/ 12
+plot(recMA, title="Recommend.MA")
+
+recOther = 0
+recRSI = RSI
+recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+recCCI = CCI
+recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
+recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
+//recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
+//recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
+recOther := recOther/7 //9
+plot(recOther, title="Recommend.Other")
+
+plot((recMA+recOther)/2, title="Recommend.All")

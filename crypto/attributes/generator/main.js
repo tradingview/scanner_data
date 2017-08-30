@@ -81,7 +81,6 @@ JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
 const currencyMapping = {
     "BTU": "BCU",
     "MIOTA": "IOT",
-    "XLM": "STR",
     "USNBT": "NBT"
 };
 const currencyRevertedMapping = {};
@@ -125,8 +124,19 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
     }
 });
 
+const skippedCoins = [
+    "STR",
+    "XBT",
+    "RRT",
+    "EUR",
+    "GHS",
+    "MXN",
+];
+
 for (var s in selectedSymbols) {
-    console.warn("Symbol " + s + " not mapped!");
+    if (skippedCoins.indexOf(s) < 0) {
+        console.warn("Symbol " + s + " not mapped!");
+    }
 }
 
 dstSymbols.sort(function (l, r) {

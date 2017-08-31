@@ -132,7 +132,8 @@ plot(avg(donchUpper, donchLower), title="DonchCh20.Middle")
 hullMALength = 9
 hullMA_n2ma=2*wma(close,round(hullMALength/2))
 hullMA_nma=wma(close,hullMALength)
-plot(wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength))), title = "HullMA9")
+HullMA9 = wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength)))
+plot(HullMA9, title = "HullMA9")
 
 // Awesome Oscillator
 AO = sma(hl2, 5) - sma(hl2, 34)
@@ -300,7 +301,8 @@ uo(ShortLen, MiddlLen, LongLen) =>
     	Value9 = ( Value6 / Value3 )
     	UO := ( Value7 + Value8 + Value9 ) / ( var0 + var1 + 1 )
     UO
-plot(uo(7,14,28), title="UO")
+UO = uo(7,14,28)
+plot(UO, title="UO")
 
 
 // Ichimoku Cloud
@@ -311,20 +313,27 @@ ichimoku_cloud()=>
     leadLine1 = avg(conversionLine, baseLine)
     leadLine2 = donchian(52)
     [conversionLine, baseLine, leadLine1, leadLine2]
-[IC_conversionLine, IC_baseLine, IC_leadLine1, IC_leadLine2] = ichimoku_cloud()
+[IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud()
 IC_displacement = 26
-plot(IC_conversionLine, title="Ichimoku.CLine")
-plot(IC_baseLine, title="Ichimoku.BLine")
-plot(IC_leadLine1, offset = IC_displacement, title="Ichimoku.Lead1")
-plot(IC_leadLine2, offset = IC_displacement, title="Ichimoku.Lead2")
+plot(IC_CLine, title="Ichimoku.CLine")
+plot(IC_BLine, title="Ichimoku.BLine")
+plot(IC_Lead1, offset = IC_displacement, title="Ichimoku.Lead1")
+plot(IC_Lead2, offset = IC_displacement, title="Ichimoku.Lead2")
 
 
 // Volume Weighted Moving Average (VWMA)
-plot(vwma(close, 20), title="VWMA")
+VWMA = vwma(close, 20)
+plot(VWMA, title="VWMA")
 
 
 // Average Day Range
 plot(sma(high, 14) - sma(low, 14), title="ADR")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PriceAvg = ema( close, 50 )
+DownTrend = close < PriceAvg
+UpTrend = close > PriceAvg
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -346,7 +355,13 @@ recMA := recMA + calcRecommendMA(EMA30, close)
 recMA := recMA + calcRecommendMA(EMA50, close)
 recMA := recMA + calcRecommendMA(EMA100, close)
 recMA := recMA + calcRecommendMA(EMA200, close)
-recMA := recMA/ 12
+recMA := recMA + calcRecommendMA(HullMA9, close)
+recMA := recMA + calcRecommendMA(VWMA, close)
+recMA := recMA + calcRecommend(
+ IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine,
+ IC_Lead2 > IC_Lead1 and close < IC_Lead2 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+
+recMA := recMA/ 15
 plot(recMA, title="Recommend.MA")
 
 recOther = 0
@@ -359,9 +374,16 @@ recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] 
 recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
 recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
 recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
-//recOther := recOther + calcRecommend(close < lowerBB, close > upperBB)
-//recOther := recOther + calcRecommend(open > PSAR, open < PSAR)
-recOther := recOther/7 //9
+recOther := recOther + calcRecommend(
+ DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1],
+ UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
+recOther := recOther + calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
+recOther := recOther + calcRecommend(
+ UpTrend and BearPower < 0 and BearPower > BearPower[1],
+ DownTrend and BullPower > 0 and BullPower < BullPower[1])
+recOther := recOther + calcRecommend(UO > 70, UO < 30)
+
+recOther := recOther / 11
 plot(recOther, title="Recommend.Other")
 
 plot((recMA+recOther)/2, title="Recommend.All")

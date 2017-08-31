@@ -140,76 +140,85 @@ plot(AO, title = "AO")
 plot(AO[1], title = "AO[1]")
 
 // Pivot Points
-pivotM_open = nz(pivotM_open[1],open)
-pivotM_high = nz(pivotM_high[1],high)
-pivotM_low = nz(pivotM_low[1],low)
+pivotX_open = nz(pivotX_open[1],open)
+pivotX_high = nz(pivotX_high[1],high)
+pivotX_low = nz(pivotX_low[1],low)
 
-pivotM_prev_open = nz(pivotM_prev_open[1])
-pivotM_prev_high = nz(pivotM_prev_high[1])
-pivotM_prev_low = nz(pivotM_prev_low[1])
-pivotM_prev_close = nz(pivotM_prev_close[1])
+pivotX_prev_open = nz(pivotX_prev_open[1])
+pivotX_prev_high = nz(pivotX_prev_high[1])
+pivotX_prev_low = nz(pivotX_prev_low[1])
+pivotX_prev_close = nz(pivotX_prev_close[1])
 
-pivotM_Month = month(time)
-if pivotM_Month != pivotM_Month[1]
-    pivotM_prev_open := pivotM_open
-    pivotM_prev_close := close[1]
-    pivotM_prev_high := pivotM_high
-    pivotM_prev_low := pivotM_low
+pivotXGetCurDate()=>
+    result = month(time)
+    if isintraday
+        result := interval <= 15 ? dayofmonth(time) : weekofyear(time)
+    else
+        if isweekly or ismonthly
+            result := year(time)
+    result
 
-    pivotM_open := open
-    pivotM_high := high
-    pivotM_low := low
+pivotX_Interval = pivotXGetCurDate()
+if pivotX_Interval != pivotX_Interval[1]
+    pivotX_prev_open := pivotX_open
+    pivotX_prev_close := close[1]
+    pivotX_prev_high := pivotX_high
+    pivotX_prev_low := pivotX_low
+
+    pivotX_open := open
+    pivotX_high := high
+    pivotX_low := low
 else
-    pivotM_high := max(pivotM_high, high)
-    pivotM_low := min(pivotM_low, low)
+    pivotX_high := max(pivotX_high, high)
+    pivotX_low := min(pivotX_low, low)
 
 // Classic
-pivotM_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_prev_close)/3
-plot(pivotM_Median, title = 'Pivot.M.Classic.Middle')
-plot(pivotM_Median * 2 - pivotM_prev_low, title = 'Pivot.M.Classic.R1')
-plot(pivotM_Median * 2 - pivotM_prev_high, title = 'Pivot.M.Classic.S1')
-plot(pivotM_Median + 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.R2')
-plot(pivotM_Median - 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.S2')
-plot(pivotM_Median + 2*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.R3')
-plot(pivotM_Median - 2*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Classic.S3')
+pivotX_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_prev_close)/3
+plot(pivotX_Median, title = 'Pivot.M.Classic.Middle')
+plot(pivotX_Median * 2 - pivotX_prev_low, title = 'Pivot.M.Classic.R1')
+plot(pivotX_Median * 2 - pivotX_prev_high, title = 'Pivot.M.Classic.S1')
+plot(pivotX_Median + 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.R2')
+plot(pivotX_Median - 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.S2')
+plot(pivotX_Median + 2*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.R3')
+plot(pivotX_Median - 2*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.S3')
 
 // Fibonacci
-plot(pivotM_Median, title = 'Pivot.M.Fibonacci.Middle')
-plot(pivotM_Median + 0.382 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R1')
-plot(pivotM_Median - 0.382 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S1')
-plot(pivotM_Median + 0.618 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R2')
-plot(pivotM_Median - 0.618 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S2')
-plot(pivotM_Median + 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.R3')
-plot(pivotM_Median - 1 * (pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Fibonacci.S3')
+plot(pivotX_Median, title = 'Pivot.M.Fibonacci.Middle')
+plot(pivotX_Median + 0.382 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.R1')
+plot(pivotX_Median - 0.382 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.S1')
+plot(pivotX_Median + 0.618 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.R2')
+plot(pivotX_Median - 0.618 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.S2')
+plot(pivotX_Median + 1 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.R3')
+plot(pivotX_Median - 1 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.S3')
 
 // Woodie
-pivotM_Woodie_Median = (pivotM_prev_high + pivotM_prev_low + pivotM_open * 2)/4
-plot(pivotM_Woodie_Median, title = 'Pivot.M.Woodie.Middle')
-plot(pivotM_Woodie_Median * 2 - pivotM_prev_low, title = 'Pivot.M.Woodie.R1')
-plot(pivotM_Woodie_Median * 2 - pivotM_prev_high, title = 'Pivot.M.Woodie.S1')
-plot(pivotM_Woodie_Median + 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Woodie.R2')
-plot(pivotM_Woodie_Median - 1*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Woodie.S2')
-plot(pivotM_prev_high + 2*(pivotM_Woodie_Median - pivotM_prev_low), title = 'Pivot.M.Woodie.R3')
-plot(pivotM_prev_low - 2*(pivotM_prev_high - pivotM_Woodie_Median), title = 'Pivot.M.Woodie.S3')
+pivotX_Woodie_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_open * 2)/4
+plot(pivotX_Woodie_Median, title = 'Pivot.M.Woodie.Middle')
+plot(pivotX_Woodie_Median * 2 - pivotX_prev_low, title = 'Pivot.M.Woodie.R1')
+plot(pivotX_Woodie_Median * 2 - pivotX_prev_high, title = 'Pivot.M.Woodie.S1')
+plot(pivotX_Woodie_Median + 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Woodie.R2')
+plot(pivotX_Woodie_Median - 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Woodie.S2')
+plot(pivotX_prev_high + 2*(pivotX_Woodie_Median - pivotX_prev_low), title = 'Pivot.M.Woodie.R3')
+plot(pivotX_prev_low - 2*(pivotX_prev_high - pivotX_Woodie_Median), title = 'Pivot.M.Woodie.S3')
 
 // Demark
-pivotM_Demark_X = pivotM_prev_high + pivotM_prev_low*2 + pivotM_prev_close
-if pivotM_prev_close == pivotM_prev_open
-    pivotM_Demark_X := pivotM_prev_high + pivotM_prev_low + pivotM_prev_close*2
-if pivotM_prev_close > pivotM_prev_open
-    pivotM_Demark_X := pivotM_prev_high*2 + pivotM_prev_low + pivotM_prev_close
-plot(pivotM_Demark_X/4, title = 'Pivot.M.Demark.Middle')
-plot(pivotM_Demark_X/2 - pivotM_prev_low, title = 'Pivot.M.Demark.R1')
-plot(pivotM_Demark_X/2 - pivotM_prev_high, title = 'Pivot.M.Demark.S1')
+pivotX_Demark_X = pivotX_prev_high + pivotX_prev_low*2 + pivotX_prev_close
+if pivotX_prev_close == pivotX_prev_open
+    pivotX_Demark_X := pivotX_prev_high + pivotX_prev_low + pivotX_prev_close*2
+if pivotX_prev_close > pivotX_prev_open
+    pivotX_Demark_X := pivotX_prev_high*2 + pivotX_prev_low + pivotX_prev_close
+plot(pivotX_Demark_X/4, title = 'Pivot.M.Demark.Middle')
+plot(pivotX_Demark_X/2 - pivotX_prev_low, title = 'Pivot.M.Demark.R1')
+plot(pivotX_Demark_X/2 - pivotX_prev_high, title = 'Pivot.M.Demark.S1')
 
 // Camarilla
-plot(pivotM_Median, title = 'Pivot.M.Camarilla.Middle')
-plot(pivotM_prev_close + 1.1/12.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R1')
-plot(pivotM_prev_close - 1.1/12.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S1')
-plot(pivotM_prev_close + 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R2')
-plot(pivotM_prev_close - 1.1/6.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S2')
-plot(pivotM_prev_close + 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.R3')
-plot(pivotM_prev_close - 1.1/4.0*(pivotM_prev_high - pivotM_prev_low), title = 'Pivot.M.Camarilla.S3')
+plot(pivotX_Median, title = 'Pivot.M.Camarilla.Middle')
+plot(pivotX_prev_close + 1.1/12.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.R1')
+plot(pivotX_prev_close - 1.1/12.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.S1')
+plot(pivotX_prev_close + 1.1/6.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.R2')
+plot(pivotX_prev_close - 1.1/6.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.S2')
+plot(pivotX_prev_close + 1.1/4.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.R3')
+plot(pivotX_prev_close - 1.1/4.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.S3')
 
 // study("Aroon")
 Aroon_length = (14)

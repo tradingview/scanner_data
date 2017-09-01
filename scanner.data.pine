@@ -301,7 +301,7 @@ uo(ShortLen, MiddlLen, LongLen) =>
     	Value9 = ( Value6 / Value3 )
     	UO := ( Value7 + Value8 + Value9 ) / ( var0 + var1 + 1 )
     UO
-UO = uo(7,14,28)
+UO = uo(7,14,28) * 100
 plot(UO, title="UO")
 
 
@@ -355,11 +355,20 @@ recMA := recMA + calcRecommendMA(EMA30, close)
 recMA := recMA + calcRecommendMA(EMA50, close)
 recMA := recMA + calcRecommendMA(EMA100, close)
 recMA := recMA + calcRecommendMA(EMA200, close)
-recMA := recMA + calcRecommendMA(HullMA9, close)
-recMA := recMA + calcRecommendMA(VWMA, close)
-recMA := recMA + calcRecommend(
+
+recHullMA9 = calcRecommendMA(HullMA9, close)
+plot(recHullMA9, title="Rec.HullMA9")
+recMA := recMA + recHullMA9
+
+recVWMA = calcRecommendMA(VWMA, close)
+plot(recVWMA, title="Rec.VWMA")
+recMA := recMA + recVWMA
+
+recIC = calcRecommend(
  IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine,
  IC_Lead2 > IC_Lead1 and close < IC_Lead2 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+plot(recIC, title="Rec.Ichimoku")
+recMA := recMA + recIC
 
 recMA := recMA/ 15
 plot(recMA, title="Recommend.MA")
@@ -374,14 +383,26 @@ recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] 
 recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
 recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
 recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
-recOther := recOther + calcRecommend(
+
+recStoch_RSI = calcRecommend(
  DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1],
  UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
-recOther := recOther + calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
-recOther := recOther + calcRecommend(
+plot(recStoch_RSI, title="Rec.Stoch.RSI")
+recOther := recOther + recStoch_RSI
+
+recWR = calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
+plot(recWR, title="Rec.WR")
+recOther := recOther + recWR
+
+recBBPower = calcRecommend(
  UpTrend and BearPower < 0 and BearPower > BearPower[1],
  DownTrend and BullPower > 0 and BullPower < BullPower[1])
-recOther := recOther + calcRecommend(UO > 70, UO < 30)
+plot(recBBPower, title="Rec.BBPower")
+recOther := recOther + recBBPower
+
+recUO = calcRecommend(UO > 70, UO < 30)
+plot(recUO, title="Rec.UO")
+recOther := recOther + recUO
 
 recOther := recOther / 11
 plot(recOther, title="Recommend.Other")

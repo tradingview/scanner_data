@@ -3,7 +3,7 @@ var requestSync = require("sync-request"),
 
 const dstPath = "../crypto.json";
 
-var scanResp = requestSync("POST", "http://scanner-demo.tradingview.com/crypto/scan2", {
+var scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan2", {
     json: {
         sort: {
             sortBy: "volume",

@@ -17,7 +17,7 @@ const groups =[
     {
         url:"http://hub1.tradingview.com:8094/symbols/oanda",
         include:[
-            "OANDA:CH20CHF","OANDA:SG30SGD","OANDA:HK33HKD","OANDA:UK10YBGBP","OANDA:CORNUSD",
+            "OANDA:SG30SGD","OANDA:HK33HKD","OANDA:UK10YBGBP","OANDA:CORNUSD",
             "OANDA:USB30YUSD","OANDA:XCUUSD","OANDA:NATGASUSD","OANDA:NL25EUR","OANDA:US30USD",
             "OANDA:USB05YUSD","OANDA:USB02YUSD","OANDA:SUGARUSD","OANDA:USB10YUSD","OANDA:AU200AUD",
             "OANDA:DE30EUR","OANDA:WHEATUSD","OANDA:SOYBNUSD"
@@ -51,7 +51,7 @@ groups.forEach(function(path){
         }
     }
 
-    var response = requestSync("GET", url + '?fields=name,type,description');
+    var response = requestSync("GET", url + '?fields=symbol,type,description');
     if (response.statusCode != 200) {
         throw Error(path + ':' + response.statusCode);
     }

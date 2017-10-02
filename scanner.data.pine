@@ -292,7 +292,7 @@ uo(ShortLen, MiddlLen, LongLen) =>
     Value4 = sum( close - tl(), ShortLen )
     Value5 = sum( close - tl(), MiddlLen )
     Value6 = sum( close - tl(), LongLen )
-    UO = nz(UO[1], 0)
+    UO = UO[1]
     if Value1 != 0 and Value2 != 0 and Value3 != 0
     	var0 = LongLen / ShortLen
     	var1 = LongLen / MiddlLen

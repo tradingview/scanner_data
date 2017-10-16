@@ -15,7 +15,7 @@ dirmov(len) =>
 	minus = fixnan(100 * rma(down > up and down > 0 ? down : 0, len) / truerange)
 	[plus, minus]
 
-adx(dilen, adxlen) => 
+adx(dilen, adxlen) =>
 	[plus, minus] = dirmov(dilen)
 	sum = plus + minus
 	adx = 100 * rma(abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
@@ -112,7 +112,9 @@ plot(kStoch[1], title="Stoch.K[1]")
 plot(dStoch[1], title="Stoch.D[1]")
 
 // average volume
-plot(sma(volume,10), title="average_volume_10d_calc")
+AvgVol = sma(volume,10)
+plot(AvgVol, title="average_volume_10d_calc")
+plot(volume/AvgVol, title="relative_volume_10d_calc")
 
 // Commodity Channel Index
 CCI=cci(close, 20)
@@ -292,7 +294,7 @@ uo(ShortLen, MiddlLen, LongLen) =>
     Value4 = sum( close - tl(), ShortLen )
     Value5 = sum( close - tl(), MiddlLen )
     Value6 = sum( close - tl(), LongLen )
-    UO = UO[1]
+    UO = nz(UO[1], 0)
     if Value1 != 0 and Value2 != 0 and Value3 != 0
     	var0 = LongLen / ShortLen
     	var1 = LongLen / MiddlLen

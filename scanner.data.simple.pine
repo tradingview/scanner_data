@@ -112,7 +112,9 @@ plot(kStoch[1], title="Stoch.K[1]")
 plot(dStoch[1], title="Stoch.D[1]")
 
 // average volume
-plot(sma(volume,10), title="average_volume_10d_calc")
+AvgVol = sma(volume,10)
+plot(AvgVol, title="average_volume_10d_calc")
+plot(volume/AvgVol, title="relative_volume_10d_calc")
 
 // Commodity Channel Index
 CCI=cci(close, 20)

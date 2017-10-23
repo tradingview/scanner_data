@@ -1,5 +1,5 @@
 {
-  "time": "2017-08-21T14:36:32.289Z",
+  "time": "2017-10-23T15:55:11.307Z",
   "fields": [
     "country",
     "sector"
@@ -578,6 +578,13 @@
         "Exotic"
       ],
       "s": "FX_IDC:AUDMAD"
+    },
+    {
+      "f": [
+        "Pacific",
+        "Exotic"
+      ],
+      "s": "FX_IDC:AUDMGA"
     },
     {
       "f": [
@@ -1879,6 +1886,13 @@
         "Americas",
         "Exotic"
       ],
+      "s": "FX_IDC:CADMGA"
+    },
+    {
+      "f": [
+        "Americas",
+        "Exotic"
+      ],
       "s": "FX_IDC:CADMKD"
     },
     {
@@ -2262,7 +2276,7 @@
     {
       "f": [
         "Americas",
-        "Major"
+        "Minor"
       ],
       "s": "FX_IDC:CADUSD"
     },
@@ -2957,6 +2971,13 @@
         "Europe",
         "Exotic"
       ],
+      "s": "FX_IDC:CHFMGA"
+    },
+    {
+      "f": [
+        "Europe",
+        "Exotic"
+      ],
       "s": "FX_IDC:CHFMKD"
     },
     {
@@ -3340,7 +3361,7 @@
     {
       "f": [
         "Europe",
-        "Major"
+        "Minor"
       ],
       "s": "FX_IDC:CHFUSD"
     },
@@ -4889,6 +4910,13 @@
         "Europe",
         "Exotic"
       ],
+      "s": "FX_IDC:EURMGA"
+    },
+    {
+      "f": [
+        "Europe",
+        "Exotic"
+      ],
       "s": "FX_IDC:EURMKD"
     },
     {
@@ -5975,6 +6003,13 @@
         "Exotic"
       ],
       "s": "FX_IDC:GBPMDL"
+    },
+    {
+      "f": [
+        "Europe",
+        "Exotic"
+      ],
+      "s": "FX_IDC:GBPMGA"
     },
     {
       "f": [
@@ -7899,6 +7934,13 @@
         "Asia",
         "Exotic"
       ],
+      "s": "FX_IDC:JPYMGA"
+    },
+    {
+      "f": [
+        "Asia",
+        "Exotic"
+      ],
       "s": "FX_IDC:JPYMKD"
     },
     {
@@ -8282,7 +8324,7 @@
     {
       "f": [
         "Asia",
-        "Major"
+        "Minor"
       ],
       "s": "FX_IDC:JPYUSD"
     },
@@ -8859,6 +8901,13 @@
         "Exotic"
       ],
       "s": "FX_IDC:MADUSD"
+    },
+    {
+      "f": [
+        "Africa",
+        "Exotic"
+      ],
+      "s": "FX_IDC:MGAUSD"
     },
     {
       "f": [
@@ -11649,7 +11698,7 @@
     {
       "f": [
         "Pacific",
-        "Major"
+        "Minor"
       ],
       "s": "FX_IDC:USDAUD"
     },
@@ -11915,7 +11964,7 @@
     {
       "f": [
         "Europe",
-        "Major"
+        "Minor"
       ],
       "s": "FX_IDC:USDEUR"
     },
@@ -11936,7 +11985,7 @@
     {
       "f": [
         "Europe",
-        "Major"
+        "Minor"
       ],
       "s": "FX_IDC:USDGBP"
     },
@@ -12208,6 +12257,13 @@
     },
     {
       "f": [
+        "Africa",
+        "Exotic"
+      ],
+      "s": "FX_IDC:USDMGA"
+    },
+    {
+      "f": [
         "Europe",
         "Exotic"
       ],
@@ -12321,7 +12377,7 @@
     {
       "f": [
         "Pacific",
-        "Major"
+        "Minor"
       ],
       "s": "FX_IDC:USDNZD"
     },

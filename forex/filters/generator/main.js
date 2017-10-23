@@ -255,20 +255,13 @@ function detectRegion(name){
 }
 
 var majors = [
-"EURUSD",
-"USDEUR",
-"JPYUSD",
-"USDJPY",
-"GBPUSD",
-"USDGBP",
 "AUDUSD",
-"USDAUD",
-"CHFUSD",
-"USDCHF",
-"CADUSD",
-"USDCAD",
+"EURUSD",
+"GBPUSD",
 "NZDUSD",
-"USDNZD",
+"USDCAD",
+"USDCHF",
+"USDJPY",
 ];
 
 var minors=[
@@ -296,24 +289,31 @@ var minors=[
 "JPYEUR",
 "JPYGBP",
 "JPYNZD",
+"JPYUSD",
 "CADAUD",
 "CADCHF",
 "CADEUR",
 "CADGBP",
 "CADJPY",
 "CADNZD",
+"CADUSD",
 "CHFAUD",
 "CHFCAD",
 "CHFEUR",
 "CHFGBP",
 "CHFJPY",
 "CHFNZD",
+"CHFUSD",
 "NZDAUD",
 "NZDCAD",
 "NZDCHF",
 "NZDEUR",
 "NZDJPY",
 "NZDGBP",
+"USDAUD",
+"USDEUR",
+"USDGBP",
+"USDNZD",
 ];
 
 function detectMajor(name){

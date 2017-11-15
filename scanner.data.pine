@@ -416,6 +416,7 @@ plot((recMA+recOther)/2, title="Recommend.All")
 C_Len = (14)
 C_Factor = (3.0)
 C_ShadowPercent = (5)
+C_ShadowEqualsPercent = (100)
 
 C_BodyHi = max( close, open )
 C_BodyLo = min( close, open )
@@ -434,6 +435,7 @@ C_BlackBody = open > close
 C_Range = high-low
 C_IsInsideBar = C_BodyHi[1] > C_BodyHi and C_BodyLo[1] < C_BodyLo
 C_BodyMiddle = C_Body / 2 + C_BodyLo
+C_ShadowEquals = C_UpShadow == C_DnShadow or (abs(C_UpShadow - C_DnShadow) / C_DnShadow * 100) < C_ShadowEqualsPercent and (abs(C_DnShadow - C_UpShadow) / C_UpShadow * 100) < C_ShadowEqualsPercent
 
 // study("Hammer, Inverted Hammer, Hanging Man, Shooting Star")
 C_oHammer = false
@@ -485,7 +487,7 @@ plot(C_WhiteMarubozu, title = "Candle.Marubozu.White")
 
 //study("Doji")
 C_DojiBodyPercent = (5)
-C_Doji = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
+C_Doji = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100 and C_ShadowEquals
 C_DragonflyDoji = C_Doji and C_UpShadow <= C_Body
 C_GravestoneDoji = C_Doji and C_DnShadow <= C_Body
 plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji, title = "Candle.Doji")

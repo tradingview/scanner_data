@@ -508,7 +508,7 @@ plot(C_UpShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Up
 
 //study("Spinning Top")
 C_SpinningTopPercent = (34)
-C_IsSpinningTop = C_DnShadow >= C_Range/100*C_SpinningTopPercent and C_UpShadow >= C_Range/100*C_SpinningTopPercent
+C_IsSpinningTop = C_DnShadow >= C_Range / 100 * C_SpinningTopPercent and C_UpShadow >= C_Range / 100 * C_SpinningTopPercent and not C_Doji
 plot(C_IsSpinningTop and C_WhiteBody, title = "Candle.SpinningTop.White")
 plot(C_IsSpinningTop and C_BlackBody, title = "Candle.SpinningTop.Black")
 

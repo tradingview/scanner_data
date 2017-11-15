@@ -487,17 +487,18 @@ plot(C_WhiteMarubozu, title = "Candle.Marubozu.White")
 
 //study("Doji")
 C_DojiBodyPercent = (5)
-C_Doji = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100 and C_ShadowEquals
-C_DragonflyDoji = C_Doji and C_UpShadow <= C_Body
-C_GravestoneDoji = C_Doji and C_DnShadow <= C_Body
+C_IsDojiBody = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
+C_Doji = C_IsDojiBody and C_ShadowEquals
+C_DragonflyDoji = C_IsDojiBody and C_UpShadow <= C_Body
+C_GravestoneDoji = C_IsDojiBody and C_DnShadow <= C_Body
 plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji, title = "Candle.Doji")
 plot(C_DragonflyDoji, title = "Candle.Doji.Dragonfly")
 plot(C_GravestoneDoji, title = "Candle.Doji.Gravestone")
 
 
 // study("Harami")
-plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_Doji and C_IsInsideBar, title = "Candle.Harami.Bullish")
-plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_Doji and C_IsInsideBar, title = "Candle.Harami.Bearish")
+plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bullish")
+plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bearish")
 
 
 //study("Long Shadows")
@@ -508,7 +509,7 @@ plot(C_UpShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Up
 
 //study("Spinning Top")
 C_SpinningTopPercent = (34)
-C_IsSpinningTop = C_DnShadow >= C_Range / 100 * C_SpinningTopPercent and C_UpShadow >= C_Range / 100 * C_SpinningTopPercent and not C_Doji
+C_IsSpinningTop = C_DnShadow >= C_Range / 100 * C_SpinningTopPercent and C_UpShadow >= C_Range / 100 * C_SpinningTopPercent and not C_IsDojiBody
 plot(C_IsSpinningTop and C_WhiteBody, title = "Candle.SpinningTop.White")
 plot(C_IsSpinningTop and C_BlackBody, title = "Candle.SpinningTop.Black")
 
@@ -534,8 +535,8 @@ plot(C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody
 
 
 // study("Abandoned Baby")
-plot(C_DownTrend[2] and C_BlackBody[2] and C_Doji[1] and low[2] > high[1] and C_WhiteBody and high[1] < low, title = "Candle.AbandonedBaby.Bullish")
-plot(C_UpTrend[2] and C_WhiteBody[2] and C_Doji[1] and high[2] < low[1] and C_BlackBody and low[1] > high, title = "Candle.AbandonedBaby.Bearish")
+plot(C_DownTrend[2] and C_BlackBody[2] and C_IsDojiBody[1] and low[2] > high[1] and C_WhiteBody and high[1] < low, title = "Candle.AbandonedBaby.Bullish")
+plot(C_UpTrend[2] and C_WhiteBody[2] and C_IsDojiBody[1] and high[2] < low[1] and C_BlackBody and low[1] > high, title = "Candle.AbandonedBaby.Bearish")
 
 
 // study("Tri-Star")

@@ -310,10 +310,6 @@ var minors=[
 "NZDEUR",
 "NZDJPY",
 "NZDGBP",
-"USDAUD",
-"USDEUR",
-"USDGBP",
-"USDNZD",
 ];
 
 function detectMajor(name){
@@ -401,6 +397,10 @@ var symbolExclude = [
     "EUREUR",
     "USDUSD",
     "GBPGBP",
+    "USDAUD",
+    "USDEUR",
+    "USDGBP",
+    "USDNZD",
 ];
 
 function mustExcluded(name){

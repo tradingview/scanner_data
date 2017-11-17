@@ -258,6 +258,12 @@ function detectRegion(name) {
         result = regions[secondCur];
     } else {
         result = regions[firstCur];
+        if (!isMajor(secondCur)) {
+            // это обе региональные валюты. если обе с одного региона, возвращаем его, иначе - ничего
+            if (result !== regions[secondCur]) {
+                result = "";
+            }
+        }
     }
     if (undefined === result) {
         console.warn("can not find region for " + name);

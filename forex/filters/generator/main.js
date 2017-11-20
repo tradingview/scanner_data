@@ -250,8 +250,42 @@ const majorCurs = [
     "NZD",
     "CAD",
 ];
+
 function isMajor(cur) {
     return majorCurs.indexOf(cur) >= 0;
+}
+
+const majorForRegions = {
+    "Middle East": ["USD"],
+    "Asia": [
+        "USD",
+        "JPY"
+    ],
+    "Europe": [
+        "USD",
+        "EUR",
+        "GBP",
+        "CHF"
+    ],
+    "Americas": [
+        "USD",
+        "CAD"
+    ],
+    "Africa": ["USD"],
+    "Pacific": [
+        "USD",
+        "AUD",
+        "NZD"
+    ],
+};
+
+function isRegionMajor(major, region) {
+    const mjs = majorForRegions[region];
+    if (mjs === undefined) {
+        console.error('Unknown region ' + region);
+        return false;
+    }
+    return mjs.indexOf(major) >= 0;
 }
 
 function detectRegion(name) {
@@ -259,10 +293,17 @@ function detectRegion(name) {
     var secondCur = name.substr(3, 3);
     var result;
     if (isMajor(firstCur)) {
+        // первая валюта - мажор
         if (isMajor(secondCur)) {
+            // если и вторая - мажор, то определяем регион по первой
             result = regions[firstCur];
         } else {
+            // если вторая региональная, получаем ее регион
             result = regions[secondCur];
+            if (!isRegionMajor(firstCur, result)) {
+                // если мажор не относится к нашему региону, отбрасываем
+                result = "";
+            }
         }
     } else {
         if (isMajor(secondCur)) {

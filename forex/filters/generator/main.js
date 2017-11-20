@@ -391,7 +391,12 @@ function detectMajor(name) {
     return "Exotic"
 }
 
-var exclude = [
+function detectPriority(name) {
+    // TODO
+    return 0;
+}
+
+var currencyForExclude = [
     "ATS",
     "AUG",
     "AUN",
@@ -475,7 +480,7 @@ var symbolExclude = [
 function mustExcluded(name) {
     var firstCur = name.substr(0, 3);
     var secondCur = name.substr(3, 3);
-    return exclude.indexOf(firstCur) >= 0 || exclude.indexOf(secondCur) >= 0 || symbolExclude.indexOf(name) >= 0;
+    return currencyForExclude.indexOf(firstCur) >= 0 || currencyForExclude.indexOf(secondCur) >= 0 || symbolExclude.indexOf(name) >= 0;
 }
 
 var dstSymbols = [];
@@ -487,6 +492,7 @@ symbols.symbols.filter(function (s) {
     dst.s = s.s;
     dst.f[0] = detectRegion(s.f[0]);
     dst.f[1] = detectMajor(s.f[0]);
+    dst.f[2] = detectPriority(s.f[0]);
     dstSymbols.push(dst);
 });
 
@@ -505,7 +511,8 @@ fs.writeFileSync(dstPath, JSON.stringify(
         "time": new Date().toISOString() + '',
         "fields": [
             "country",
-            "sector"
+            "sector",
+            "audited"
         ],
         "symbols": dstSymbols
     }, null, 2));

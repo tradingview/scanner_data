@@ -244,7 +244,11 @@ const majorCurs = [
     "USD",
     "EUR",
     "GBP",
-    "CHF"
+    "CHF",
+    "AUD",
+    "JPY",
+    "NZD",
+    "CAD",
 ];
 function isMajor(cur) {
     return majorCurs.indexOf(cur) >= 0;
@@ -255,10 +259,17 @@ function detectRegion(name) {
     var secondCur = name.substr(3, 3);
     var result;
     if (isMajor(firstCur)) {
-        result = regions[secondCur];
+        if (isMajor(secondCur)) {
+            result = regions[firstCur];
+        } else {
+            result = regions[secondCur];
+        }
     } else {
-        result = regions[firstCur];
-        if (!isMajor(secondCur)) {
+        if (isMajor(secondCur)) {
+            // если первая региональная валюта, а вторая мажор - исключаем их
+            result = "";
+        } else {
+            result = regions[firstCur];
             // это обе региональные валюты. если обе с одного региона, возвращаем его, иначе - ничего
             if (result !== regions[secondCur]) {
                 result = "";

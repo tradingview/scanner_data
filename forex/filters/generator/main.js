@@ -391,10 +391,38 @@ function detectMajor(name) {
     return "Exotic"
 }
 
-function detectPriority(name) {
-    // TODO
-    return 0;
+function calcHash(name) {
+    let result = 0;
+    for (var i = 0; i < name.length; i++) {
+        result += (name.charCodeAt(i) - 0x41) * Math.pow(10, (name.length - i) * 2);
+    }
+    return result;
 }
+
+function detectPriority(name, region) {
+    if (region) {
+        const firstCur = name.substr(0, 3);
+        const secondCur = name.substr(3, 3);
+        const majorIdx = (majorForRegions[region] || []).indexOf(firstCur);
+        if (majorIdx >= 0) {
+            return calcHash(secondCur) * 10 + majorIdx;
+        }
+    }
+    return calcHash(name);
+}
+
+////////////////// tests
+[
+    detectPriority('USDRUB') > detectPriority('EURRUB'),
+    detectPriority('USDRUB', 'Europe') < detectPriority('EURRUB', 'Europe'),
+    detectPriority('JPYCHN', 'Asia') < detectPriority('EURCHN', 'Asia'),
+].forEach(function (t, i) {
+    if (!t) {
+        console.error('detectPriority check ' + i + ' failed!');
+    }
+});
+
+////////////////// tests
 
 var currencyForExclude = [
     "ATS",

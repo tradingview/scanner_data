@@ -553,10 +553,6 @@ var symbolExclude = [
     "EUREUR",
     "USDUSD",
     "GBPGBP",
-    "USDAUD",
-    "USDEUR",
-    "USDGBP",
-    "USDNZD",
 ];
 
 function mustExcluded(name) {

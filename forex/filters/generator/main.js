@@ -401,6 +401,7 @@ function calcHash(name) {
 
 const customPriority = [
     "USDEUR",
+    "EURUSD",
     "USDJPY",
     "USDGBP",
     "USDAUD",

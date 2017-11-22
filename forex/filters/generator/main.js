@@ -405,10 +405,12 @@ function detectPriority(name, region) {
         const secondCur = name.substr(3, 3);
         const majorIdx = (majorForRegions[region] || []).indexOf(firstCur);
         if (majorIdx >= 0) {
-            return calcHash(secondCur) + (majorIdx + 1) * Math.pow(10, secondCur.length + 1);
+            const result = calcHash(secondCur) + (majorIdx + 1) * Math.pow(10, (secondCur.length + 1) * 2);
+            return result;
         }
     }
-    return calcHash(name);
+    const result = calcHash(name);
+    return result;
 }
 
 ////////////////// tests
@@ -416,6 +418,7 @@ function detectPriority(name, region) {
     detectPriority('USDRUB') > detectPriority('EURRUB'),
     detectPriority('USDRUB', 'Europe') < detectPriority('EURRUB', 'Europe'),
     detectPriority('JPYCHN', 'Asia') < detectPriority('EURCHN', 'Asia'),
+    detectPriority('CADANG', 'Americas') > detectPriority('USDARS', 'Americas'),
 ].forEach(function (t, i) {
     if (!t) {
         console.error('detectPriority check ' + i + ' failed!');

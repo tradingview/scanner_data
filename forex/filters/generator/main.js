@@ -405,7 +405,7 @@ function detectPriority(name, region) {
         const secondCur = name.substr(3, 3);
         const majorIdx = (majorForRegions[region] || []).indexOf(firstCur);
         if (majorIdx >= 0) {
-            return calcHash(secondCur) * 10 + majorIdx;
+            return calcHash(secondCur) + (majorIdx + 1) * Math.pow(10, secondCur.length + 1);
         }
     }
     return calcHash(name);
@@ -520,7 +520,7 @@ symbols.symbols.filter(function (s) {
     dst.s = s.s;
     dst.f[0] = detectRegion(s.f[0]);
     dst.f[1] = detectMajor(s.f[0]);
-    dst.f[2] = detectPriority(s.f[0]);
+    dst.f[2] = detectPriority(s.f[0], dst.f[0]);
     dstSymbols.push(dst);
 });
 

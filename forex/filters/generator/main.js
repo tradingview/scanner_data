@@ -288,15 +288,18 @@ function isRegionMajor(major, region) {
     return mjs.indexOf(major) >= 0;
 }
 
-function detectRegion(name) {
+function detectRegion(name, preferSecondMajor) {
     var firstCur = name.substr(0, 3);
     var secondCur = name.substr(3, 3);
     var result;
     if (isMajor(firstCur)) {
         // первая валюта - мажор
         if (isMajor(secondCur)) {
-            // если и вторая - мажор, то определяем регион по первой
-            result = regions[firstCur];
+            // если и вторая - мажор, то определяем регион по первой (!preferSecondMajor) или второй (preferSecondMajor===true)
+            if (preferSecondMajor === true) {
+                result = regions[secondCur];
+            } else
+                result = regions[firstCur];
         } else {
             // если вторая региональная, получаем ее регион
             result = regions[secondCur];
@@ -400,7 +403,6 @@ function calcHash(name) {
 }
 
 const customPriority = [
-    "USDEUR",
     "EURUSD",
     "USDJPY",
     "USDGBP",
@@ -571,6 +573,7 @@ symbols.symbols.filter(function (s) {
     dst.f[0] = detectRegion(s.f[0]);
     dst.f[1] = detectMajor(s.f[0]);
     dst.f[2] = detectPriority(s.f[0], dst.f[0]);
+    dst.f[3] = detectRegion(s.f[0], true);
     dstSymbols.push(dst);
 });
 
@@ -590,7 +593,8 @@ fs.writeFileSync(dstPath, JSON.stringify(
         "fields": [
             "country",
             "sector",
-            "audited"
+            "audited",
+            "country2"
         ],
         "symbols": dstSymbols
     }, null, 2));

@@ -399,7 +399,56 @@ function calcHash(name) {
     return result;
 }
 
+const customPriority = [
+    "USDEUR",
+    "USDJPY",
+    "USDGBP",
+    "USDAUD",
+    "USDCAD",
+    "USDCNY",
+    "USDCHF",
+    "USDMXN",
+    "USDSGD",
+    "USDKRW",
+    "USDNZD",
+    "USDHKD",
+    "USDSEK",
+    "USDTRY",
+    "USDINR",
+    "USDRUB",
+    "USDNOK",
+    "USDBRL",
+    "USDZAR",
+    "USDTWD",
+    "USDPLN",
+    "USDOTH",
+    "EURGBP",
+    "EURJPY",
+    "EURCHF",
+    "EURSEK",
+    "EURNOK",
+    "EURAUD",
+    "EURCAD",
+    "EURPLN",
+    "EURDKK",
+    "EURHUF",
+    "EURTRY",
+    "EURCNY",
+    "EUROTH",
+    "JPYAUD",
+    "JPYCAD",
+    "JPYNZD",
+    "JPYTRY",
+    "JPYZAR",
+    "JPYBRL",
+    "JPYOTH"
+];
+
 function detectPriority(name, region) {
+    const customPriorityIdx = customPriority.indexOf(name);
+    if (customPriorityIdx >= 0) {
+        return customPriorityIdx;
+    }
     if (region) {
         const firstCur = name.substr(0, 3);
         const secondCur = name.substr(3, 3);
@@ -415,13 +464,14 @@ function detectPriority(name, region) {
 
 ////////////////// tests
 [
-    detectPriority('USDRUB') > detectPriority('EURRUB'),
+    detectPriority('USDRUB') < detectPriority('EURRUB'),
     detectPriority('USDRUB', 'Europe') < detectPriority('EURRUB', 'Europe'),
     detectPriority('JPYCHN', 'Asia') < detectPriority('EURCHN', 'Asia'),
     detectPriority('CADANG', 'Americas') > detectPriority('USDARS', 'Americas'),
 ].forEach(function (t, i) {
     if (!t) {
         console.error('detectPriority check ' + i + ' failed!');
+        process.exit(-1);
     }
 });
 

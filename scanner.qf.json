@@ -322,5 +322,13 @@
   {
     "name": "average_volume",
     "type": "number"
+  },
+  {
+    "name": "float_shares_outstanding",
+    "type": "number"
+  },
+  {
+    "name": "gross_profit_fq",
+    "type": "number"
   }
 ]

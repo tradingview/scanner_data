@@ -1,5 +1,5 @@
 {
-  "time": "2017-11-24T16:24:35.069Z",
+  "time": "2017-11-24T16:43:23.663Z",
   "fields": [
     "country",
     "sector",
@@ -443,7 +443,7 @@
       "f": [
         "Pacific",
         "Minor",
-        202000300,
+        180,
         "Americas"
       ],
       "s": "FX_IDC:AUDCAD"
@@ -452,7 +452,7 @@
       "f": [
         "Pacific",
         "Minor",
-        202070500,
+        190,
         "Europe"
       ],
       "s": "FX_IDC:AUDCHF"
@@ -551,7 +551,7 @@
       "f": [
         "Pacific",
         "Minor",
-        204201700,
+        200,
         "Europe"
       ],
       "s": "FX_IDC:AUDEUR"
@@ -569,7 +569,7 @@
       "f": [
         "Pacific",
         "Minor",
-        206011500,
+        210,
         "Europe"
       ],
       "s": "FX_IDC:AUDGBP"
@@ -794,7 +794,7 @@
       "f": [
         "Pacific",
         "Minor",
-        213250300,
+        230,
         "Pacific"
       ],
       "s": "FX_IDC:AUDNZD"
@@ -1721,7 +1721,7 @@
       "f": [
         "Americas",
         "Minor",
-        200200300,
+        240,
         "Pacific"
       ],
       "s": "FX_IDC:CADAUD"
@@ -1892,7 +1892,7 @@
       "f": [
         "Americas",
         "Minor",
-        202070500,
+        250,
         "Europe"
       ],
       "s": "FX_IDC:CADCHF"
@@ -2045,7 +2045,7 @@
       "f": [
         "Americas",
         "Minor",
-        204201700,
+        260,
         "Europe"
       ],
       "s": "FX_IDC:CADEUR"
@@ -2072,7 +2072,7 @@
       "f": [
         "Americas",
         "Minor",
-        206011500,
+        270,
         "Europe"
       ],
       "s": "FX_IDC:CADGBP"
@@ -2576,7 +2576,7 @@
       "f": [
         "Americas",
         "Minor",
-        213250300,
+        290,
         "Pacific"
       ],
       "s": "FX_IDC:CADNZD"
@@ -3116,7 +3116,7 @@
       "f": [
         "Europe",
         "Minor",
-        400200300,
+        300,
         "Pacific"
       ],
       "s": "FX_IDC:CHFAUD"
@@ -3278,7 +3278,7 @@
       "f": [
         "Europe",
         "Minor",
-        402000300,
+        310,
         "Americas"
       ],
       "s": "FX_IDC:CHFCAD"
@@ -3440,7 +3440,7 @@
       "f": [
         "Europe",
         "Minor",
-        404201700,
+        320,
         "Europe"
       ],
       "s": "FX_IDC:CHFEUR"
@@ -3467,7 +3467,7 @@
       "f": [
         "Europe",
         "Minor",
-        406011500,
+        330,
         "Europe"
       ],
       "s": "FX_IDC:CHFGBP"
@@ -3656,7 +3656,7 @@
       "f": [
         "Europe",
         "Minor",
-        409152400,
+        340,
         "Asia"
       ],
       "s": "FX_IDC:CHFJPY"
@@ -3971,7 +3971,7 @@
       "f": [
         "Europe",
         "Minor",
-        413250300,
+        350,
         "Pacific"
       ],
       "s": "FX_IDC:CHFNZD"
@@ -6464,7 +6464,7 @@
       "f": [
         "Europe",
         "Minor",
-        213250300,
+        50,
         "Pacific"
       ],
       "s": "FX_IDC:EURNZD"
@@ -7013,7 +7013,7 @@
       "f": [
         "Europe",
         "Minor",
-        300200300,
+        80,
         "Pacific"
       ],
       "s": "FX_IDC:GBPAUD"
@@ -7175,7 +7175,7 @@
       "f": [
         "Europe",
         "Minor",
-        302000300,
+        90,
         "Americas"
       ],
       "s": "FX_IDC:GBPCAD"
@@ -7193,7 +7193,7 @@
       "f": [
         "Europe",
         "Minor",
-        302070500,
+        100,
         "Europe"
       ],
       "s": "FX_IDC:GBPCHF"
@@ -7355,7 +7355,7 @@
       "f": [
         "Europe",
         "Minor",
-        304201700,
+        60,
         "Europe"
       ],
       "s": "FX_IDC:GBPEUR"
@@ -7562,7 +7562,7 @@
       "f": [
         "Europe",
         "Minor",
-        309152400,
+        70,
         "Asia"
       ],
       "s": "FX_IDC:GBPJPY"
@@ -7868,7 +7868,7 @@
       "f": [
         "Europe",
         "Minor",
-        313250300,
+        110,
         "Pacific"
       ],
       "s": "FX_IDC:GBPNZD"
@@ -9497,7 +9497,7 @@
       "f": [
         "Asia",
         "Minor",
-        200200300,
+        120,
         "Pacific"
       ],
       "s": "FX_IDC:JPYAUD"
@@ -9659,7 +9659,7 @@
       "f": [
         "Asia",
         "Minor",
-        202000300,
+        130,
         "Americas"
       ],
       "s": "FX_IDC:JPYCAD"
@@ -9677,7 +9677,7 @@
       "f": [
         "Asia",
         "Minor",
-        202070500,
+        140,
         "Europe"
       ],
       "s": "FX_IDC:JPYCHF"
@@ -9830,7 +9830,7 @@
       "f": [
         "Asia",
         "Minor",
-        204201700,
+        150,
         "Europe"
       ],
       "s": "FX_IDC:JPYEUR"
@@ -9857,7 +9857,7 @@
       "f": [
         "Asia",
         "Minor",
-        206011500,
+        160,
         "Europe"
       ],
       "s": "FX_IDC:JPYGBP"
@@ -10352,7 +10352,7 @@
       "f": [
         "Asia",
         "Minor",
-        213250300,
+        170,
         "Pacific"
       ],
       "s": "FX_IDC:JPYNZD"
@@ -12215,7 +12215,7 @@
       "f": [
         "Pacific",
         "Minor",
-        300200300,
+        360,
         "Pacific"
       ],
       "s": "FX_IDC:NZDAUD"
@@ -12224,7 +12224,7 @@
       "f": [
         "Pacific",
         "Minor",
-        302000300,
+        370,
         "Americas"
       ],
       "s": "FX_IDC:NZDCAD"
@@ -12233,7 +12233,7 @@
       "f": [
         "Pacific",
         "Minor",
-        302070500,
+        380,
         "Europe"
       ],
       "s": "FX_IDC:NZDCHF"
@@ -12278,7 +12278,7 @@
       "f": [
         "Pacific",
         "Minor",
-        304201700,
+        390,
         "Europe"
       ],
       "s": "FX_IDC:NZDEUR"
@@ -12296,7 +12296,7 @@
       "f": [
         "Pacific",
         "Minor",
-        306011500,
+        410,
         "Europe"
       ],
       "s": "FX_IDC:NZDGBP"

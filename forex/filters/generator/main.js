@@ -445,9 +445,17 @@ const customPriority = [
 ];
 
 function detectPriority(name, region) {
-    const customPriorityIdx = customPriority.indexOf(name);
-    if (customPriorityIdx >= 0) {
-        return customPriorityIdx;
+    {
+        const customPriorityIdx = customPriority.indexOf(name);
+        if (customPriorityIdx >= 0) {
+            return customPriorityIdx;
+        }
+    }
+    {
+        const customPriorityIdx = minors.indexOf(name);
+        if (customPriorityIdx >= 0) {
+            return customPriorityIdx * 10;
+        }
     }
     if (region) {
         const firstCur = name.substr(0, 3);

@@ -454,7 +454,7 @@ function detectPriority(name, region) {
     {
         const customPriorityIdx = minors.indexOf(name);
         if (customPriorityIdx >= 0) {
-            return customPriorityIdx * 10;
+            return customPriorityIdx;
         }
     }
     if (region) {

@@ -13,7 +13,7 @@ const regions = {
     "AED": "Middle East",
     "AFN": "Asia", // "Central Asia",
     "ALL": "Europe",
-    "AMD": "Middle East",
+    "AMD": "", // "Middle East",
     "ANG": "Americas",
     "AOA": "Africa",
     "ARS": "Americas",

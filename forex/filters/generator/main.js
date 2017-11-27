@@ -1,15 +1,15 @@
-var requestSync = require("sync-request"),
+const requestSync = require("sync-request"),
     fs = require("fs");
 
 const dstPath = "../forex.json";
 const symbologyPath = "http://idc.tradingview.com/udf_proxy/symbols/forex?fields=symbol,type";
 
-var response = requestSync("GET", symbologyPath);
+const response = requestSync("GET", symbologyPath);
 if (response.statusCode != 200) {
     throw Error(response.statusCode);
 }
 
-var regions = {
+const regions = {
     "AED": "Middle East",
     "AFN": "Asia", // "Central Asia",
     "ALL": "Europe",
@@ -326,7 +326,7 @@ function detectRegion(name, preferSecondMajor) {
     return result || "";
 }
 
-var majors = [
+const majors = [
     "AUDUSD",
     "EURUSD",
     "GBPUSD",
@@ -335,8 +335,12 @@ var majors = [
     "USDCHF",
     "USDJPY",
 ];
+const invertedMajors = majors.map(p => {
+    const prim = p.slice(0, 3), sec = p.slice(3);
+    return sec + prim;
+});
 
-var minors = [
+const minors = [
     "EURGBP",
     "EURAUD",
     "EURCAD",
@@ -381,6 +385,158 @@ var minors = [
     "NZDGBP",
 ];
 
+const exotics = [
+    "USDHKD",
+    "USDMXN",
+    "USDSGD",
+    "USDKRW",
+    "USDZAR",
+    "USDRUB",
+    "USDINR",
+    "USDCNY",
+    "USDBRL",
+    "USDHUF",
+    "USDAED",
+    "USDCZK",
+    "USDTHB",
+    "USDNOK",
+    "USDSEK",
+    "USDDKK",
+    "USDISK",
+    "USDMYR",
+    "USDKWD",
+    "USDSAR",
+    "USDOMR",
+    "USDIRR",
+    "USDHRK",
+    "USDPLN",
+    "USDAOA",
+    "USDAFN",
+    "USDAMD",
+    "USDARS",
+    "USDANG",
+    "USDBHD",
+    "USDBAM",
+    "USDBIF",
+    "USDBBD",
+    "USDBMD",
+    "USDAZN",
+    "USDBND",
+    "USDAWG",
+    "USDBGN",
+    "USDBDT",
+    "USDBOB",
+    "USDBZD",
+    "USDBTN",
+    "USDBSD",
+    "USDBYN",
+    "USDCDF",
+    "USDCLP",
+    "USDCNH",
+    "USDCLF",
+    "USDALL",
+    "USDCOP",
+    "USDCRC",
+    "USDCUP",
+    "USDCVE",
+    "USDCUC",
+    "USDDJF",
+    "USDEGP",
+    "USDDOP",
+    "USDDZD",
+    "USDETB",
+    "USDERN",
+    "USDFKP",
+    "USDGIP",
+    "USDGEL",
+    "USDGHS",
+    "USDGNF",
+    "USDGTQ",
+    "USDGYD",
+    "USDGMD",
+    "USDHTG",
+    "USDHNL",
+    "USDIDR",
+    "USDILS",
+    "USDJMD",
+    "USDJOD",
+    "USDIQD",
+    "USDKGS",
+    "USDKMF",
+    "USDKES",
+    "USDKHR",
+    "USDKPW",
+    "USDLKR",
+    "USDKYD",
+    "USDKZT",
+    "USDLAK",
+    "USDLBP",
+    "USDLRD",
+    "USDLYD",
+    "USDLSL",
+    "USDMAD",
+    "USDMVR",
+    "USDMOP",
+    "USDMRO",
+    "USDMDL",
+    "USDMKD",
+    "USDMGA",
+    "USDMNT",
+    "USDMUR",
+    "USDMMK",
+    "USDMWK",
+    "USDMZN",
+    "USDNGN",
+    "USDNAD",
+    "USDNIO",
+    "USDNPR",
+    "USDPAB",
+    "USDPHP",
+    "USDPEN",
+    "USDPKR",
+    "USDPYG",
+    "USDQAR",
+    "USDRSD",
+    "USDRON",
+    "USDRWF",
+    "USDSDG",
+    "USDSCR",
+    "USDSHP",
+    "USDSOS",
+    "USDSLL",
+    "USDSTD",
+    "USDSYP",
+    "USDSVC",
+    "USDSZL",
+    "USDSRD",
+    "USDTJS",
+    "USDTWD",
+    "USDTRY",
+    "USDTND",
+    "USDTTD",
+    "USDTZS",
+    "USDUAH",
+    "USDTMT",
+    "USDUGX",
+    "USDBWP",
+    "USDFJD",
+    "USDTOP",
+    "USDPGK",
+    "USDXAF",
+    "USDUYU",
+    "USDUZS",
+    "USDWST",
+    "USDVUV",
+    "USDVND",
+    "USDVEF",
+    "USDSBD",
+    "USDXCD",
+    "USDXOF",
+    "USDYER",
+    "USDXPF",
+    "USDZMW",
+];
+
 function detectMajor(name) {
     if (majors.indexOf(name) >= 0) {
         return "Major";
@@ -388,7 +544,10 @@ function detectMajor(name) {
     if (minors.indexOf(name) >= 0) {
         return "Minor";
     }
-    return "Exotic"
+    if (exotics.indexOf(name) >= 0) {
+        return "Exotic";
+    }
+    return null;
 }
 
 function calcHash(name) {
@@ -474,6 +633,16 @@ function detectPriorityMinor(name) {
     return detectPriority(name);
 }
 
+function detectPriorityExotic(name) {
+    {
+        const customPriorityIdx = exotics.indexOf(name);
+        if (customPriorityIdx >= 0) {
+            return customPriorityIdx;
+        }
+    }
+    return detectPriority(name);
+}
+
 ////////////////// tests
 [
     detectPriority('USDRUB') < detectPriority('EURRUB'),
@@ -489,7 +658,7 @@ function detectPriorityMinor(name) {
 
 ////////////////// tests
 
-var currencyForExclude = [
+const currencyForExclude = [
     "ATS",
     "AUG",
     "AUN",
@@ -560,7 +729,7 @@ var currencyForExclude = [
     "ZAC"
 ];
 
-var symbolExclude = [
+const symbolExclude = [
     "EUREUR",
     "USDUSD",
     "GBPGBP",
@@ -572,8 +741,8 @@ function mustExcluded(name) {
     return currencyForExclude.indexOf(firstCur) >= 0 || currencyForExclude.indexOf(secondCur) >= 0 || symbolExclude.indexOf(name) >= 0;
 }
 
-var dstSymbols = [];
-var symbols = JSON.parse(response.getBody());
+const dstSymbols = [];
+const symbols = JSON.parse(response.getBody());
 symbols.symbols.filter(function (s) {
     return s.f[1] === "forex" && !mustExcluded(s.f[0]);
 }).forEach(function (s) {
@@ -584,18 +753,14 @@ symbols.symbols.filter(function (s) {
     dst.f[2] = detectPriority(s.f[0], dst.f[0]);
     dst.f[3] = detectRegion(s.f[0], true);
     dst.f[4] = dst.f[1] === "Minor" ? detectPriorityMinor(s.f[0]) : null;
+    dst.f[5] = dst.f[1] === "Exotic" ? detectPriorityExotic(s.f[0]) : null;
     dstSymbols.push(dst);
-});
 
-dstSymbols.sort(function (l, r) {
-    if (l.s > r.s) {
-        return 1;
-    }
-    if (l.s < r.s) {
-        return -1;
-    }
-    return 0;
+    // if (dst.f[1] === "Exotic" && s.f[0].slice(0, 3) === "USD") {
+    //     console.log(s.f[0] + ',');
+    // }
 });
+dstSymbols.sort((l, r) => l.s.localeCompare(r.s));
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {
@@ -606,6 +771,7 @@ fs.writeFileSync(dstPath, JSON.stringify(
             "forex_priority",
             "country2",
             "forex_minor_priority",
+            "forex_exotic_priority",
         ],
         "symbols": dstSymbols
     }, null, 2));

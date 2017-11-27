@@ -277,6 +277,7 @@ const majorForRegions = {
         "AUD",
         "NZD"
     ],
+    "":[]
 };
 
 function isRegionMajor(major, region) {
@@ -289,6 +290,10 @@ function isRegionMajor(major, region) {
 }
 
 function detectRegion(name, preferSecondMajor) {
+    if (isInvertedMajor(name)) {
+        return "";
+    }
+
     var firstCur = name.substr(0, 3);
     var secondCur = name.substr(3, 3);
     var result;
@@ -339,6 +344,10 @@ const invertedMajors = majors.map(p => {
     const prim = p.slice(0, 3), sec = p.slice(3);
     return sec + prim;
 });
+
+function isInvertedMajor(name) {
+    return invertedMajors.indexOf(name) >= 0;
+}
 
 const minors = [
     "EURGBP",
@@ -538,6 +547,9 @@ const exotics = [
 ];
 
 function detectMajor(name) {
+    if (isInvertedMajor(name)) {
+        return null;
+    }
     if (majors.indexOf(name) >= 0) {
         return "Major";
     }

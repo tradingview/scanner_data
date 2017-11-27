@@ -451,12 +451,6 @@ function detectPriority(name, region) {
             return customPriorityIdx;
         }
     }
-    {
-        const customPriorityIdx = minors.indexOf(name);
-        if (customPriorityIdx >= 0) {
-            return customPriorityIdx;
-        }
-    }
     if (region) {
         const firstCur = name.substr(0, 3);
         const secondCur = name.substr(3, 3);
@@ -468,6 +462,16 @@ function detectPriority(name, region) {
     }
     const result = calcHash(name);
     return result;
+}
+
+function detectPriorityMinor(name) {
+    {
+        const customPriorityIdx = minors.indexOf(name);
+        if (customPriorityIdx >= 0) {
+            return customPriorityIdx;
+        }
+    }
+    return detectPriority(name);
 }
 
 ////////////////// tests
@@ -579,6 +583,7 @@ symbols.symbols.filter(function (s) {
     dst.f[1] = detectMajor(s.f[0]);
     dst.f[2] = detectPriority(s.f[0], dst.f[0]);
     dst.f[3] = detectRegion(s.f[0], true);
+    dst.f[4] = dst.f[1] === "Minor" ? detectPriorityMinor(s.f[0]) : null;
     dstSymbols.push(dst);
 });
 
@@ -598,8 +603,9 @@ fs.writeFileSync(dstPath, JSON.stringify(
         "fields": [
             "country",
             "sector",
-            "audited",
-            "country2"
+            "forex_priority",
+            "country2",
+            "forex_minor_priority",
         ],
         "symbols": dstSymbols
     }, null, 2));

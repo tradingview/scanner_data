@@ -28,7 +28,11 @@
     "type": "price"
   },
   {
-    "name": "audited",
+    "name": "forex_priority",
+    "type": "number"
+  },
+  {
+    "name": "forex_minor_priority",
     "type": "number"
   }
 ]

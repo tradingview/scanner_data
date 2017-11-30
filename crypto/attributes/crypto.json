@@ -1,9 +1,21 @@
 {
-  "time": "2017-09-15T08:39:57.481Z",
+  "time": "2017-11-30T11:45:54.073Z",
   "fields": [
     "sector"
   ],
   "symbols": [
+    {
+      "s": "BITFINEX:AVTBTC",
+      "f": [
+        "Aventus"
+      ]
+    },
+    {
+      "s": "BITFINEX:AVTUSD",
+      "f": [
+        "Aventus"
+      ]
+    },
     {
       "s": "BITFINEX:BCHBTC",
       "f": [
@@ -23,9 +35,51 @@
       ]
     },
     {
+      "s": "BITFINEX:BT1BTC",
+      "f": [
+        "BT1 [CST]"
+      ]
+    },
+    {
+      "s": "BITFINEX:BT1USD",
+      "f": [
+        "BT1 [CST]"
+      ]
+    },
+    {
+      "s": "BITFINEX:BT2BTC",
+      "f": [
+        "BT2 [CST]"
+      ]
+    },
+    {
+      "s": "BITFINEX:BT2USD",
+      "f": [
+        "BT2 [CST]"
+      ]
+    },
+    {
       "s": "BITFINEX:BTCUSD",
       "f": [
         "Bitcoin"
+      ]
+    },
+    {
+      "s": "BITFINEX:BTGUSD",
+      "f": [
+        "Bitcoin Gold"
+      ]
+    },
+    {
+      "s": "BITFINEX:EDOBTC",
+      "f": [
+        "Eidoo"
+      ]
+    },
+    {
+      "s": "BITFINEX:EDOUSD",
+      "f": [
+        "Eidoo"
       ]
     },
     {
@@ -38,6 +92,18 @@
       "s": "BITFINEX:EOSUSD",
       "f": [
         "EOS"
+      ]
+    },
+    {
+      "s": "BITFINEX:ETPBTC",
+      "f": [
+        "Metaverse ETP"
+      ]
+    },
+    {
+      "s": "BITFINEX:ETPUSD",
+      "f": [
+        "Metaverse ETP"
       ]
     },
     {
@@ -338,6 +404,12 @@
       "s": "BITTREX:BTAUSD",
       "f": [
         "Bata"
+      ]
+    },
+    {
+      "s": "BITTREX:BTGBTC",
+      "f": [
+        "Bitcoin Gold"
       ]
     },
     {

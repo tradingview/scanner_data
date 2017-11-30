@@ -41,7 +41,7 @@ if (scanResp.statusCode != 200) {
     }
 }
 
-var coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/");
+var coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
 if (coinMktCapResp.statusCode != 200) {
     throw Error(coinMktCapResp.statusCode);
 }

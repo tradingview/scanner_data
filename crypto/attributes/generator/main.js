@@ -81,7 +81,9 @@ JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
 const currencyMapping = {
     "BTU": "BCU",
     "MIOTA": "IOT",
-    "USNBT": "NBT"
+    "USNBT": "NBT",
+    "QTUM": "QTM",
+    "DATA": "DAT",
 };
 const currencyRevertedMapping = {};
 Object.keys(currencyMapping).forEach(function (k) {

@@ -255,6 +255,23 @@ function isMajor(cur) {
     return majorCurs.indexOf(cur) >= 0;
 }
 
+const regionsPriority = [
+    "Americas",
+    "Europe",
+    "Asia",
+    "Pacific",
+    "Middle East",
+    "Africa",
+];
+
+function getRegionPriority(r) {
+    const idx = regionsPriority.indexOf(r);
+    if (idx >= 0) {
+        return idx;
+    }
+    return regionsPriority.length;
+}
+
 const majorForRegions = {
     "Middle East": ["USD"],
     "Asia": [
@@ -277,7 +294,7 @@ const majorForRegions = {
         "AUD",
         "NZD"
     ],
-    "":[]
+    "": []
 };
 
 function isRegionMajor(major, region) {
@@ -627,7 +644,7 @@ function detectPriority(name, region) {
         const secondCur = name.substr(3, 3);
         const majorIdx = (majorForRegions[region] || []).indexOf(firstCur);
         if (majorIdx >= 0) {
-            const result = calcHash(secondCur) + (majorIdx + 1) * Math.pow(10, (secondCur.length + 1) * 2);
+            const result = calcHash(secondCur) + (getRegionPriority(region) * 10 + majorIdx + 1) * Math.pow(10, (secondCur.length + 1) * 2);
             return result;
         }
     }
@@ -661,6 +678,7 @@ function detectPriorityExotic(name) {
     detectPriority('USDRUB', 'Europe') < detectPriority('EURRUB', 'Europe'),
     detectPriority('JPYCHN', 'Asia') < detectPriority('EURCHN', 'Asia'),
     detectPriority('CADANG', 'Americas') > detectPriority('USDARS', 'Americas'),
+    detectPriority('JPYAUD', 'Asia') < detectPriority('AUDCAD', 'Americas'),
 ].forEach(function (t, i) {
     if (!t) {
         console.error('detectPriority check ' + i + ' failed!');

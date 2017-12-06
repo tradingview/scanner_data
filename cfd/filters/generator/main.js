@@ -34,7 +34,11 @@ const groups = [
     {
         url: "http://hub1.tradingview.com:8094/symbols/gain",
         include: ["FOREXCOM:HGOUSD", "FOREXCOM:COTUSD"]
-    }
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/sp_indices?typespecs=main",
+        include: ["SP:SPX"]
+    },
 ];
 
 const types = {

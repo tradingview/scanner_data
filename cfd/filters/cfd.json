@@ -1,5 +1,5 @@
 {
-  "time": "2017-12-05T14:54:19.314Z",
+  "time": "2017-12-06T15:30:16.724Z",
   "fields": [
     "sector",
     "country"
@@ -151,6 +151,13 @@
         ""
       ],
       "s": "OANDA:XCUUSD"
+    },
+    {
+      "f": [
+        "index",
+        "Americas"
+      ],
+      "s": "SP:SPX"
     },
     {
       "f": [
@@ -869,13 +876,6 @@
     {
       "f": [
         "index",
-        "Americas"
-      ],
-      "s": "TVC:SPX"
-    },
-    {
-      "f": [
-        "index",
         "Europe"
       ],
       "s": "TVC:SSMI"
@@ -942,13 +942,6 @@
         "Middle East"
       ],
       "s": "TVC:TR10"
-    },
-    {
-      "f": [
-        "bond",
-        "Middle East"
-      ],
-      "s": "TVC:TR10Y"
     },
     {
       "f": [

@@ -1,5 +1,5 @@
 {
-  "time": "2017-12-05T13:46:03.819Z",
+  "time": "2017-12-07T10:08:59.559Z",
   "fields": [
     "sector"
   ],
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "s": "BITFINEX:LTCBTC",
+      "s": "POLONIEX:LTCBTC",
       "f": [
         "Litecoin"
       ]
@@ -698,6 +698,12 @@
       "s": "BITTREX:DMDUSD",
       "f": [
         "Diamond"
+      ]
+    },
+    {
+      "s": "BITTREX:DNTBTC",
+      "f": [
+        "district0x"
       ]
     },
     {
@@ -2345,7 +2351,7 @@
       ]
     },
     {
-      "s": "COINBASE:LTCUSD",
+      "s": "POLONIEX:LTCUSD",
       "f": [
         "Litecoin"
       ]
@@ -2372,6 +2378,12 @@
       "s": "HITBTC:DASHBTC",
       "f": [
         "Dash"
+      ]
+    },
+    {
+      "s": "HITBTC:DNTUSD",
+      "f": [
+        "district0x"
       ]
     },
     {

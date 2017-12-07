@@ -1,14 +1,15 @@
-var requestSync = require("sync-request"),
+const requestSync = require("sync-request"),
     fs = require("fs");
 
 const dstPath = "../crypto.json";
 
-var scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan2", {
+const scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan2", {
     json: {
         sort: {
             sortBy: "volume",
             sortOrder: "desc"
         },
+        columns: ["description"],
         filter: [
             {
                 left: "volume",
@@ -30,6 +31,11 @@ var scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan2"
                 operation: "nequal",
                 right: "DSHBTC"
             },
+            {
+                left: "exchange",
+                operation: "not_in_range",
+                right: ["COINBASE", "KRAKEN"]
+            },
         ]
     }
 });
@@ -41,13 +47,13 @@ if (scanResp.statusCode != 200) {
     }
 }
 
-var coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
+const coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
 if (coinMktCapResp.statusCode != 200) {
     throw Error(coinMktCapResp.statusCode);
 }
 
 function getFirstCurrency(symbol) {
-    var cur = symbol.split(':')[1];
+    const cur = symbol.split(':')[1];
     return cur.substring(0, cur.length - 3);
 }
 
@@ -58,23 +64,32 @@ const excludeSymbols = [
     "BITFINEX:BCCBTC",
     "BITFINEX:BCCUSD",
     "BTCE:NVCUSD",
-    "BTCE:NVCBTC"
+    "BTCE:NVCBTC",
+    "BITFINEX:QTMBTC",
+    "BITFINEX:QTMUSD",
+    "BITTREX:AMPBTC",
+    "BITTREX:AMPUSD",
+    "BITFINEX:BTGUSD",
+    "BITFINEX:BTGBTC",
 ];
 
 function skipSymbol(s) {
     return excludeSymbols.indexOf(s) >= 0;
 }
 
-var tickers = {};
-var selectedSymbols = {};
+const tickers = {};
+const selectedSymbols = {};
+const descriptions = {};
 JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
-    var ticker = s.s.split(':')[1];
+    const ticker = s.s.split(':')[1];
     if (!tickers[ticker] && !skipSymbol(s.s)) {
         tickers[ticker] = ticker;
-        var token = getFirstCurrency(s.s);
-        var ss = selectedSymbols[token] || [];
+        const token = getFirstCurrency(s.s);
+        const ss = selectedSymbols[token] || [];
         ss.push(s.s);
         selectedSymbols[token] = ss;
+
+        descriptions[s.s] = s.f[0];
     }
 });
 
@@ -82,20 +97,19 @@ const currencyMapping = {
     "BTU": "BCU",
     "MIOTA": "IOT",
     "USNBT": "NBT",
-    "QTUM": "QTM",
     "DATA": "DAT",
 };
 const currencyRevertedMapping = {};
 Object.keys(currencyMapping).forEach(function (k) {
     currencyRevertedMapping[currencyMapping[k]] = k;
-})
+});
 
 const explicitCoinNames = {
     "BAT": "Basic Attention Token",
     "BTM": "Bitmark"
 };
 
-var dstSymbols = [];
+const dstSymbols = [];
 
 try {
     JSON.parse(fs.readFileSync(dstPath)).symbols.forEach(function (s) {
@@ -109,16 +123,25 @@ try {
 }
 
 JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
-    var key = s.symbol;
-    var sym = selectedSymbols[key] || selectedSymbols[currencyMapping[key]];
-    if (sym) {
-        if (sym.length === 2 || key === "BTC" /*include BTCUSD without BTCBTC*/) {
-            const explicitName = explicitCoinNames[key];
-            sym.forEach(function (s1) {
+    let key = s.symbol;
+    let symbols = selectedSymbols[key];
+    if (symbols === undefined) {
+        key = currencyMapping[key];
+        symbols = selectedSymbols[key];
+    }
+    if (symbols) {
+        if (symbols.length === 2 || s.symbol === "BTC" /*include BTCUSD without BTCBTC*/) {
+            const explicitName = explicitCoinNames[s.symbol] || s.name;
+            symbols.forEach(function (s1) {
                 dstSymbols.push({
                     s: s1,
-                    f: [explicitName ? explicitName : s.name]
+                    f: [explicitName]
                 });
+
+                const sDescr = descriptions[s1];
+                if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
+                    console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
+                }
             });
         }
 
@@ -135,7 +158,7 @@ const skippedCoins = [
     "MXN",
 ];
 
-for (var s in selectedSymbols) {
+for (let s in selectedSymbols) {
     if (skippedCoins.indexOf(s) < 0) {
         console.warn("Symbol " + s + " not mapped!");
     }

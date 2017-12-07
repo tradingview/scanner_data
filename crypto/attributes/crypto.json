@@ -1,5 +1,5 @@
 {
-  "time": "2017-12-07T10:08:59.559Z",
+  "time": "2017-12-07T16:10:44.205Z",
   "fields": [
     "sector"
   ],
@@ -137,27 +137,9 @@
       ]
     },
     {
-      "s": "POLONIEX:LTCBTC",
-      "f": [
-        "Litecoin"
-      ]
-    },
-    {
       "s": "BITFINEX:OMGUSD",
       "f": [
         "OmiseGO"
-      ]
-    },
-    {
-      "s": "BITFINEX:QTMBTC",
-      "f": [
-        "Qtum"
-      ]
-    },
-    {
-      "s": "BITFINEX:QTMUSD",
-      "f": [
-        "Qtum"
       ]
     },
     {
@@ -260,18 +242,6 @@
       "s": "BITTREX:AGRSUSD",
       "f": [
         "Agoras Tokens"
-      ]
-    },
-    {
-      "s": "BITTREX:AMPBTC",
-      "f": [
-        "Synereo"
-      ]
-    },
-    {
-      "s": "BITTREX:AMPUSD",
-      "f": [
-        "Synereo"
       ]
     },
     {
@@ -2351,12 +2321,6 @@
       ]
     },
     {
-      "s": "POLONIEX:LTCUSD",
-      "f": [
-        "Litecoin"
-      ]
-    },
-    {
       "s": "HITBTC:BCHBTC",
       "f": [
         "Bitcoin Cash"
@@ -2459,6 +2423,18 @@
       ]
     },
     {
+      "s": "POLONIEX:AMPBTC",
+      "f": [
+        "Synereo"
+      ]
+    },
+    {
+      "s": "POLONIEX:AMPUSD",
+      "f": [
+        "Synereo"
+      ]
+    },
+    {
       "s": "POLONIEX:BCHUSD",
       "f": [
         "Bitcoin Cash"
@@ -2540,6 +2516,18 @@
       "s": "POLONIEX:HUCUSD",
       "f": [
         "HunterCoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:LTCBTC",
+      "f": [
+        "Litecoin"
+      ]
+    },
+    {
+      "s": "POLONIEX:LTCUSD",
+      "f": [
+        "Litecoin"
       ]
     },
     {

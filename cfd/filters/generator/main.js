@@ -1,6 +1,6 @@
-var requestSync = require("sync-request"),
+const requestSync = require("sync-request"),
     fs = require("fs");
-const {URL, URLSearchParams} = require('url');
+const {URL} = require('url');
 
 const dstPath = "../cfd.json";
 const groups = [
@@ -46,11 +46,11 @@ const types = {
     "index": true
 };
 
-var symbols = [];
+const symbols = [];
 groups.forEach(function (path) {
-    var url = path;
-    var include;
-    var exclude;
+    let url = path;
+    let include;
+    let exclude;
     if (typeof path !== "string" && path.url) {
         url = path.url;
         if (path.include) {
@@ -70,13 +70,13 @@ groups.forEach(function (path) {
     const urlO = new URL(url);
     urlO.searchParams.append('fields', 'symbol,type,description');
     url = urlO.toString();
-    var response = requestSync("GET", url);
+    const response = requestSync("GET", url);
     if (response.statusCode != 200) {
         throw Error(path + ':' + response.statusCode);
     }
     JSON.parse(response.getBody()).symbols.forEach(function (s) {
         if (types[s.f[1]]) {
-            var skip = false;
+            let skip = false;
             if (include && !include[s.s]) {
                 skip = true;
             }
@@ -93,29 +93,29 @@ groups.forEach(function (path) {
     });
 });
 
-var bondsMarks = [
+const bondsMarks = [
     "TREASURY NOTE", "BOND", "Bond", "T-Note", "EURO BUND", "UK 10Y Gilt"
 ];
 
-var indexMarks = [
+const indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "DOW-JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
     "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE",
     "Bund", "IBEX 35", "DAX PERFORMANCE", "US Wall St 30", "US Nas 100", "UK 100", "US Russ 2000", "AEX", "US SPX 500"
 ];
 
-var metalsMarks = [
+const metalsMarks = [
     "GOLD", "Gold", "SILVER", "Silver", "PALLADIUM", "Palladium", "PLATINUM", "Platinum", "Copper"
 ];
 
-var energyMarks = [
+const energyMarks = [
     "Brent", "BRENT CRUDE OIL", "WTI", "West Texas Oil", "Gas", "Heating Oil", "Crude Oil"
 ];
 
-var agricultureMarks = [
+const agricultureMarks = [
     "Sugar", "Corn", "Soybeans", "Wheat", "Cotton"
 ];
 
-var regionMarks = {
+const regionMarks = {
     "Middle East": ["TURKEY"],
     "Asia": ["CHINA", "HONG KONG", "Hong Kong", "INDIA", "INDONESIA", "JAPAN", "KOREA", "MALAYSIA", "SINGAPORE", "Singapore", "THAILAND"],
     "Europe": ["EURO CURRENCY INDEX", "BRITISH POUND CURRENCY INDEX", "SWISS FRANC CURRENCY INDEX", "BELGIUM", "FRANCE", "GERMAN", "Germany", "IRELAND", "ITALY", "NETHERLANDS", "Netherlands", "NORWAY", "PORTUGAL", "SPAIN", "Swiss", "UK "],
@@ -127,7 +127,7 @@ var regionMarks = {
 
 
 function matches(s, values) {
-    for (var i = 0; i < values.length; i++) {
+    for (let i = 0; i < values.length; i++) {
         if (s.indexOf(values[i]) >= 0) {
             return true;
         }
@@ -136,7 +136,7 @@ function matches(s, values) {
 }
 
 function matches2(s, obj) {
-    for (var p in obj) {
+    for (const p in obj) {
         if (matches(s, obj[p])) {
             return p;
         }
@@ -145,7 +145,7 @@ function matches2(s, obj) {
 }
 
 function tryDetectCategory(s) {
-    var description = s.f[2];
+    const description = s.f[2];
     if (s.f[1] === "index" || matches(description, indexMarks)) {
         return "index";
     }
@@ -168,28 +168,95 @@ function tryDetectRegion(s) {
     if (s.region) {
         return s.region;
     }
-    var description = s.f[2];
+    const description = s.f[2];
     return matches2(description, regionMarks);
 }
 
-var emptyCategoryCount = 0, emptyRegionCount = 0;
-var dstSymbols = [];
+let emptyCategoryCount = 0, emptyRegionCount = 0;
+const dstSymbols = [];
+
+const symbolsPriorities = {};
+[].concat(
+    "SP:SPX",
+    "TVC:DJI",
+    "OANDA:US30USD",
+    "TVC:IXIC",
+    "TVC:NDX",
+    "TVC:NYA",
+    "TVC:RUT",
+    "TVC:RUI",
+    "TVC:NI225",
+    "TVC:HSI",
+    "OANDA:HK33HKD",
+    "TVC:SHCOMP",
+    "TVC:UKX",
+    "TVC:DAX",
+    "OANDA:DE30EUR",
+    "TVC:CAC40",
+    "TVC:SX5E",
+    "TVC:SSMI",
+    "TVC:IBEX35",
+    "OANDA:NL25EUR",
+    "TVC:FTMIB",
+    "OANDA:AU200AUD",
+    "OANDA:SG30SGD",
+    "TVC:VIX",
+    "TVC:TRJEFFCRB",
+
+    // Currency Indices
+    "TVC:DXY",
+    "TVC:EXY",
+    "TVC:BXY",
+    "TVC:SXY",
+    "TVC:JXY",
+    "TVC:CXY",
+    "TVC:AXY",
+    "TVC:ZXY",
+).concat(
+    "SP:SPX",
+    "SP:MID",
+    "SP:OEX",
+    "CBOE:OEX",
+    "SP:SVX",
+    "DJ:DJI",
+    "SP:SPGSCI",
+    "NASDAQ:IXIC",
+    "NYSE:NDX",
+    "RUSSEL:RUI",
+    "CBOE:RUI",
+    "NYSE:NYA",
+    "NYSE:XMI",
+    "NYSE:XAX",
+    "CBOE:VIX",
+    "NYSE:OSX",
+    "NYSE:XAU",
+    "NYSE:HGX",
+    "NYSE:UTY",
+    "NYSE:SOX",
+).forEach((s, i) => symbolsPriorities[s] = i);
+
+function detectPriority(s) {
+    return symbolsPriorities[s] || null;
+}
+
 symbols.forEach(function (s) {
-    var dst = {f: []};
+    const dst = {f: []};
     dst.s = s.s;
-    var cat = tryDetectCategory(s);
+    let cat = tryDetectCategory(s);
     if (!cat) {
         emptyCategoryCount++;
         console.error("can't detect category for " + s.s + " (" + s.f[2] + ")");
     }
     dst.f[0] = cat;
 
-    var reg = tryDetectRegion(s);
+    const reg = tryDetectRegion(s);
     if (reg === undefined || reg === null) {
         emptyRegionCount++;
         console.error("can't detect region for " + s.s + " (" + s.f[2] + ")");
     }
     dst.f[1] = reg;
+
+    dst.f[2] = detectPriority(s.s);
 
     dstSymbols.push(dst);
 });
@@ -207,4 +274,8 @@ if (emptyRegionCount) {
 }
 
 fs.writeFileSync(dstPath, JSON.stringify(
-    {"time": new Date().toISOString() + '', "fields": ["sector", "country"], "symbols": dstSymbols}, null, 2));
+    {
+        "time": new Date().toISOString() + '',
+        "fields": ["sector", "country", "index_priority"],
+        "symbols": dstSymbols
+    }, null, 2));

@@ -1,50 +1,50 @@
 {
   "time": "2017-05-03T14:55:13.255Z",
-  "fields": ["sector"],
+  "fields": ["sector", "index_priority"],
   "symbols": [
     {
       "s": "SP:SPF",
-      "f": ["FINANCIALS"]
+      "f": ["FINANCIALS", 9]
     },
     {
       "s": "SP:SPN",
-      "f": ["ENERGY"]
+      "f": ["ENERGY", 10]
     },
     {
       "s": "SP:S5HLTH",
-      "f": ["HEALTH CARE"]
+      "f": ["HEALTH CARE", 2]
     },
     {
       "s": "SP:S5INFT",
-      "f": ["INFORMATION TECHNOLOGY"]
+      "f": ["INFORMATION TECHNOLOGY", 4]
     },
     {
       "s": "SP:S5CONS",
-      "f": ["CONSUMER STAPLES"]
+      "f": ["CONSUMER STAPLES", 1]
     },
     {
       "s": "SP:S5MATR",
-      "f": ["MATERIALS"]
+      "f": ["MATERIALS", 5]
     },
     {
       "s": "SP:S5COND",
-      "f": ["CONSUMER DISCRETIONARY"]
+      "f": ["CONSUMER DISCRETIONARY", 0]
     },
     {
       "s": "SP:S5UTIL",
-      "f": ["UTILITIES"]
+      "f": ["UTILITIES", 8]
     },
     {
       "s": "SP:S5INDU",
-      "f": ["INDUSTRIALS"]
+      "f": ["INDUSTRIALS", 3]
     },
     {
       "s": "SP:S5TELS",
-      "f": ["TELECOMMUNICATION SERVICES"]
+      "f": ["TELECOMMUNICATION SERVICES", 7]
     },
     {
       "s": "SP:S5REAS",
-      "f": ["REAL ESTATE"]
+      "f": ["REAL ESTATE", 6]
     }
   ]
 }

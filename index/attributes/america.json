@@ -1,50 +1,331 @@
 {
-  "time": "2017-05-03T14:55:13.255Z",
-  "fields": ["sector", "index_priority"],
+  "time": "2017-12-12T13:34:26.925Z",
+  "fields": [
+    "sector",
+    "index_priority"
+  ],
   "symbols": [
     {
-      "s": "SP:SPF",
-      "f": ["FINANCIALS", 9]
+      "s": "CBOE:OEX",
+      "f": [
+        null,
+        3
+      ]
     },
     {
-      "s": "SP:SPN",
-      "f": ["ENERGY", 10]
+      "s": "CBOE:RUI",
+      "f": [
+        null,
+        10
+      ]
     },
     {
-      "s": "SP:S5HLTH",
-      "f": ["HEALTH CARE", 2]
+      "s": "CBOE:VIX",
+      "f": [
+        null,
+        14
+      ]
     },
     {
-      "s": "SP:S5INFT",
-      "f": ["INFORMATION TECHNOLOGY", 4]
+      "s": "DJ:DJA",
+      "f": [
+        null,
+        16777215
+      ]
     },
     {
-      "s": "SP:S5CONS",
-      "f": ["CONSUMER STAPLES", 1]
+      "s": "DJ:DJCIAGC",
+      "f": [
+        null,
+        16777215
+      ]
     },
     {
-      "s": "SP:S5MATR",
-      "f": ["MATERIALS", 5]
+      "s": "DJ:DJCICC",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJCIEN",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJCIGC",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJCIGR",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJCIIK",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJCIKC",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJCISB",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJCISI",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJI",
+      "f": [
+        null,
+        5
+      ]
+    },
+    {
+      "s": "DJ:DJT",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJU",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "DJ:DJUSCL",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "NASDAQ:IXIC",
+      "f": [
+        null,
+        7
+      ]
+    },
+    {
+      "s": "NYSE:HGX",
+      "f": [
+        null,
+        17
+      ]
+    },
+    {
+      "s": "NYSE:NDX",
+      "f": [
+        null,
+        8
+      ]
+    },
+    {
+      "s": "NYSE:NYA",
+      "f": [
+        null,
+        11
+      ]
+    },
+    {
+      "s": "NYSE:OSX",
+      "f": [
+        null,
+        15
+      ]
+    },
+    {
+      "s": "NYSE:SOX",
+      "f": [
+        null,
+        19
+      ]
+    },
+    {
+      "s": "NYSE:UTY",
+      "f": [
+        null,
+        18
+      ]
+    },
+    {
+      "s": "NYSE:XAU",
+      "f": [
+        null,
+        16
+      ]
+    },
+    {
+      "s": "NYSE:XAX",
+      "f": [
+        null,
+        13
+      ]
+    },
+    {
+      "s": "NYSE:XMI",
+      "f": [
+        null,
+        12
+      ]
+    },
+    {
+      "s": "RUSSEL:RUA",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "RUSSEL:RUI",
+      "f": [
+        null,
+        9
+      ]
+    },
+    {
+      "s": "RUSSEL:RUT",
+      "f": [
+        null,
+        16777215
+      ]
+    },
+    {
+      "s": "SP:MID",
+      "f": [
+        null,
+        1
+      ]
+    },
+    {
+      "s": "SP:OEX",
+      "f": [
+        null,
+        2
+      ]
     },
     {
       "s": "SP:S5COND",
-      "f": ["CONSUMER DISCRETIONARY", 0]
+      "f": [
+        "CONSUMER DISCRETIONARY",
+        20
+      ]
     },
     {
-      "s": "SP:S5UTIL",
-      "f": ["UTILITIES", 8]
+      "s": "SP:S5CONS",
+      "f": [
+        "CONSUMER STAPLES",
+        21
+      ]
+    },
+    {
+      "s": "SP:S5HLTH",
+      "f": [
+        "HEALTH CARE",
+        22
+      ]
     },
     {
       "s": "SP:S5INDU",
-      "f": ["INDUSTRIALS", 3]
+      "f": [
+        "INDUSTRIALS",
+        23
+      ]
     },
     {
-      "s": "SP:S5TELS",
-      "f": ["TELECOMMUNICATION SERVICES", 7]
+      "s": "SP:S5INFT",
+      "f": [
+        "INFORMATION TECHNOLOGY",
+        24
+      ]
+    },
+    {
+      "s": "SP:S5MATR",
+      "f": [
+        "MATERIALS",
+        25
+      ]
     },
     {
       "s": "SP:S5REAS",
-      "f": ["REAL ESTATE", 6]
+      "f": [
+        "REAL ESTATE",
+        26
+      ]
+    },
+    {
+      "s": "SP:S5TELS",
+      "f": [
+        "TELECOMMUNICATION SERVICES",
+        27
+      ]
+    },
+    {
+      "s": "SP:S5UTIL",
+      "f": [
+        "UTILITIES",
+        28
+      ]
+    },
+    {
+      "s": "SP:SPF",
+      "f": [
+        "FINANCIALS",
+        29
+      ]
+    },
+    {
+      "s": "SP:SPGSCI",
+      "f": [
+        null,
+        6
+      ]
+    },
+    {
+      "s": "SP:SPN",
+      "f": [
+        "ENERGY",
+        30
+      ]
+    },
+    {
+      "s": "SP:SPX",
+      "f": [
+        null,
+        0
+      ]
+    },
+    {
+      "s": "SP:SVX",
+      "f": [
+        null,
+        4
+      ]
     }
   ]
 }

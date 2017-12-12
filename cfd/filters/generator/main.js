@@ -213,7 +213,6 @@ const symbolsPriorities = {};
     "TVC:AXY",
     "TVC:ZXY",
 ).concat(
-    "SP:SPX",
     "SP:MID",
     "SP:OEX",
     "CBOE:OEX",
@@ -236,7 +235,7 @@ const symbolsPriorities = {};
 ).forEach((s, i) => symbolsPriorities[s] = i);
 
 function detectPriority(s) {
-    return symbolsPriorities[s] || null;
+    return symbolsPriorities[s];
 }
 
 symbols.forEach(function (s) {

@@ -262,28 +262,6 @@ const symbolsPriorities = {};
     "TVC:CXY",
     "TVC:AXY",
     "TVC:ZXY",
-]).concat([
-    // US Indices
-    "SP:SPX",
-    "SP:SVX",
-    "SP:MID",
-    "SP:OEX",
-    "SP:SPGSCI",
-    "DJ:DJI",
-    "TVC:IXIC",
-    "NYSE:NDX",
-    "RUSSEL:RUA",
-    "RUSSEL:RUT",
-    "RUSSEL:RUI",
-    "NYSE:NYA",
-    "NYSE:XMI",
-    "NYSE:XAX",
-    "CBOE:VIX",
-    "NYSE:OSX",
-    "NYSE:XAU",
-    "NYSE:HGX",
-    "NYSE:UTY",
-    "NYSE:SOX",
 ]).forEach((s, i) => symbolsPriorities[s] = i);
 
 function detectPriority(s) {

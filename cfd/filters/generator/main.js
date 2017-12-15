@@ -90,6 +90,11 @@ const groups = [
         include: ["BME:IBC"],
         region: "Europe"
     },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/dj_indices?typespecs=main",
+        include: ["DJ:DJI"],
+        region: "Americas"
+    },
 ];
 
 const types = {

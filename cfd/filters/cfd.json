@@ -1,5 +1,5 @@
 {
-  "time": "2017-12-12T13:04:23.420Z",
+  "time": "2017-12-15T14:32:16.047Z",
   "fields": [
     "sector",
     "country",
@@ -42,7 +42,7 @@
       "f": [
         "index",
         "Pacific",
-        21
+        null
       ],
       "s": "OANDA:AU200AUD"
     },
@@ -58,7 +58,7 @@
       "f": [
         "index",
         "Europe",
-        14
+        null
       ],
       "s": "OANDA:DE30EUR"
     },
@@ -66,7 +66,7 @@
       "f": [
         "index",
         "Asia",
-        10
+        null
       ],
       "s": "OANDA:HK33HKD"
     },
@@ -82,7 +82,7 @@
       "f": [
         "index",
         "Europe",
-        19
+        null
       ],
       "s": "OANDA:NL25EUR"
     },
@@ -90,7 +90,7 @@
       "f": [
         "index",
         "Asia",
-        22
+        12
       ],
       "s": "OANDA:SG30SGD"
     },
@@ -122,7 +122,7 @@
       "f": [
         "index",
         "Americas",
-        2
+        null
       ],
       "s": "OANDA:US30USD"
     },
@@ -178,7 +178,7 @@
       "f": [
         "index",
         "Americas",
-        0
+        29
       ],
       "s": "SP:SPX"
     },
@@ -226,7 +226,7 @@
       "f": [
         "index",
         "Pacific",
-        31
+        27
       ],
       "s": "TVC:AXY"
     },
@@ -266,7 +266,7 @@
       "f": [
         "index",
         "Europe",
-        27
+        23
       ],
       "s": "TVC:BXY"
     },
@@ -274,7 +274,7 @@
       "f": [
         "index",
         "Europe",
-        15
+        null
       ],
       "s": "TVC:CAC40"
     },
@@ -314,7 +314,7 @@
       "f": [
         "index",
         "Americas",
-        30
+        26
       ],
       "s": "TVC:CXY"
     },
@@ -322,7 +322,7 @@
       "f": [
         "index",
         "Europe",
-        13
+        7
       ],
       "s": "TVC:DAX"
     },
@@ -362,7 +362,7 @@
       "f": [
         "index",
         "Americas",
-        1
+        null
       ],
       "s": "TVC:DJI"
     },
@@ -370,7 +370,7 @@
       "f": [
         "index",
         "Americas",
-        25
+        21
       ],
       "s": "TVC:DXY"
     },
@@ -418,7 +418,7 @@
       "f": [
         "index",
         "Europe",
-        26
+        22
       ],
       "s": "TVC:EXY"
     },
@@ -458,7 +458,7 @@
       "f": [
         "index",
         "Europe",
-        20
+        null
       ],
       "s": "TVC:FTMIB"
     },
@@ -546,7 +546,7 @@
       "f": [
         "index",
         "Asia",
-        9
+        5
       ],
       "s": "TVC:HSI"
     },
@@ -554,7 +554,7 @@
       "f": [
         "index",
         "Europe",
-        18
+        null
       ],
       "s": "TVC:IBEX35"
     },
@@ -690,7 +690,7 @@
       "f": [
         "index",
         "Americas",
-        3
+        35
       ],
       "s": "TVC:IXIC"
     },
@@ -730,7 +730,7 @@
       "f": [
         "index",
         "Asia",
-        29
+        25
       ],
       "s": "TVC:JXY"
     },
@@ -802,7 +802,7 @@
       "f": [
         "index",
         "Americas",
-        4
+        null
       ],
       "s": "TVC:NDX"
     },
@@ -810,7 +810,7 @@
       "f": [
         "index",
         "Asia",
-        8
+        4
       ],
       "s": "TVC:NI225"
     },
@@ -882,7 +882,7 @@
       "f": [
         "index",
         "Americas",
-        5
+        null
       ],
       "s": "TVC:NYA"
     },
@@ -938,7 +938,7 @@
       "f": [
         "index",
         "Americas",
-        7
+        null
       ],
       "s": "TVC:RUI"
     },
@@ -946,7 +946,7 @@
       "f": [
         "index",
         "Americas",
-        6
+        null
       ],
       "s": "TVC:RUT"
     },
@@ -986,7 +986,7 @@
       "f": [
         "index",
         "Asia",
-        11
+        6
       ],
       "s": "TVC:SHCOMP"
     },
@@ -1002,7 +1002,7 @@
       "f": [
         "index",
         "Europe",
-        17
+        20
       ],
       "s": "TVC:SSMI"
     },
@@ -1010,7 +1010,7 @@
       "f": [
         "index",
         "Europe",
-        16
+        9
       ],
       "s": "TVC:SX5E"
     },
@@ -1018,7 +1018,7 @@
       "f": [
         "index",
         "Europe",
-        28
+        24
       ],
       "s": "TVC:SXY"
     },
@@ -1090,7 +1090,7 @@
       "f": [
         "index",
         "Americas",
-        24
+        null
       ],
       "s": "TVC:TRJEFFCRB"
     },
@@ -1106,7 +1106,7 @@
       "f": [
         "index",
         "Europe",
-        12
+        3
       ],
       "s": "TVC:UKX"
     },
@@ -1178,7 +1178,7 @@
       "f": [
         "index",
         "Americas",
-        23
+        null
       ],
       "s": "TVC:VIX"
     },
@@ -1218,7 +1218,7 @@
       "f": [
         "index",
         "Pacific",
-        32
+        28
       ],
       "s": "TVC:ZXY"
     }

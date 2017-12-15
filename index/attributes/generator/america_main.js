@@ -8,7 +8,10 @@ const groups = [
     "http://idc.tradingview.com/udf_proxy/symbols/nyse_indices_eod?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/nasdaq_indices_eod?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/nyse_gif_indices_eod?typespecs=main",
-    "http://idc.tradingview.com/udf_proxy/symbols/cboe_indices_delayed?typespecs=main",
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/cboe_indices_delayed?typespecs=main",
+        include: ["CBOE:VIX"]
+    },
     "http://idc.tradingview.com/udf_proxy/symbols/sp_indices?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/russel_indices_eod?typespecs=main",
 ];

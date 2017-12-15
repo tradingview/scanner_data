@@ -37,7 +37,58 @@ const groups = [
     },
     {
         url: "http://idc.tradingview.com/udf_proxy/symbols/sp_indices?typespecs=main",
-        include: ["SP:SPX"]
+        include: ["SP:SPX"],
+        region: "Americas"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/cboe_indices_delayed?typespecs=main",
+        include: ["CBOE:VIX"],
+        region: "Americas"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/euronext_indices",
+        include: ["EURONEXT:PX1"],
+        region: "Europe"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/toronto_indices",
+        include: ["TSX:TSX"],
+        region: "Americas"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/asx_indices",
+        include: ["ASX:XJO"],
+        region: "Pacific"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/ind",
+        include: ["INDEX:KQY0"],
+        region: "Asia"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/bovespa_indices",
+        include: ["BMFBOVESPA:IBOV"],
+        region: "Americas"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/nse_indices",
+        include: ["NSE:NIFTY"],
+        region: "Asia"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/moex_indices",
+        include: ["MOEX:MICEXINDEXCF"],
+        region: "Europe"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/nzx_indices",
+        include: ["NZX:NZ50G"],
+        region: "Pacific"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/bme_indices",
+        include: ["BME:IBC"],
+        region: "Europe"
     },
 ];
 
@@ -88,6 +139,8 @@ groups.forEach(function (path) {
                     s.region = path.region;
                 }
                 symbols.push(s);
+
+                // if (s.s.indexOf('IXIC')>=0) console.log(url);
             }
         }
     });
@@ -176,7 +229,7 @@ let emptyCategoryCount = 0, emptyRegionCount = 0;
 const dstSymbols = [];
 
 const symbolsPriorities = {};
-[].concat(
+[].concat([
     // Major World Indices
     "SP:SPX",
     "TVC:IXIC",
@@ -199,7 +252,7 @@ const symbolsPriorities = {};
     "NZX:NZ50G",
     "BME:IBC",
     "TVC:SSMI",
-).concat(
+]).concat([
     // Currency Indices
     "TVC:DXY",
     "TVC:EXY",
@@ -209,7 +262,7 @@ const symbolsPriorities = {};
     "TVC:CXY",
     "TVC:AXY",
     "TVC:ZXY",
-).concat(
+]).concat([
     // US Indices
     "SP:SPX",
     "SP:SVX",
@@ -231,7 +284,7 @@ const symbolsPriorities = {};
     "NYSE:HGX",
     "NYSE:UTY",
     "NYSE:SOX",
-).forEach((s, i) => symbolsPriorities[s] = i);
+]).forEach((s, i) => symbolsPriorities[s] = i);
 
 function detectPriority(s) {
     return symbolsPriorities[s];

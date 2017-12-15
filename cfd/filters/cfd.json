@@ -1,11 +1,51 @@
 {
-  "time": "2017-12-15T14:32:16.047Z",
+  "time": "2017-12-15T15:35:21.500Z",
   "fields": [
     "sector",
     "country",
     "index_priority"
   ],
   "symbols": [
+    {
+      "f": [
+        "index",
+        "Pacific",
+        13
+      ],
+      "s": "ASX:XJO"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        19
+      ],
+      "s": "BME:IBC"
+    },
+    {
+      "f": [
+        "index",
+        "Americas",
+        15
+      ],
+      "s": "BMFBOVESPA:IBOV"
+    },
+    {
+      "f": [
+        "index",
+        "Americas",
+        43
+      ],
+      "s": "CBOE:VIX"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        8
+      ],
+      "s": "EURONEXT:PX1"
+    },
     {
       "f": [
         "Agricultural",
@@ -37,6 +77,38 @@
         null
       ],
       "s": "FX:USOIL"
+    },
+    {
+      "f": [
+        "index",
+        "Asia",
+        14
+      ],
+      "s": "INDEX:KQY0"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        17
+      ],
+      "s": "MOEX:MICEXINDEXCF"
+    },
+    {
+      "f": [
+        "index",
+        "Asia",
+        16
+      ],
+      "s": "NSE:NIFTY"
+    },
+    {
+      "f": [
+        "index",
+        "Pacific",
+        18
+      ],
+      "s": "NZX:NZ50G"
     },
     {
       "f": [
@@ -181,6 +253,14 @@
         29
       ],
       "s": "SP:SPX"
+    },
+    {
+      "f": [
+        "index",
+        "Americas",
+        10
+      ],
+      "s": "TSX:TSX"
     },
     {
       "f": [

@@ -10,7 +10,8 @@ const groups = [
     "http://idc.tradingview.com/udf_proxy/symbols/nyse_gif_indices_eod?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/cboe_indices_delayed?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/sp_indices?typespecs=main",
-    "http://idc.tradingview.com/udf_proxy/symbols/russel_indices_eod?typespecs=main"];
+    "http://idc.tradingview.com/udf_proxy/symbols/russel_indices_eod?typespecs=main",
+];
 
 const sectorNames = {};
 [
@@ -103,40 +104,7 @@ groups.forEach(function (path) {
 });
 
 const symbolsPriorities = {};
-[].concat(
-    // Major World Indices
-    "SP:SPX",
-    "TVC:IXIC",
-    "DJ:DJI",
-    "TVC:UKX",
-    "TVC:NI225",
-    "TVC:HSI",
-    "TVC:SHCOMP",
-    "TVC:DAX",
-    "EURONEXT:PX1",
-    "TVC:SX5E",
-    "TSX:TSX",
-    "CBOE:VIX",
-    "OANDA:SG30SGD",
-    "ASX:XJO",
-    "INDEX:KQY0",
-    "BMFBOVESPA:IBOV",
-    "NSE:NIFTY",
-    "MOEX:MICEXINDEXCF",
-    "NZX:NZ50G",
-    "BME:IBC",
-    "TVC:SSMI",
-).concat(
-    // Currency Indices
-    "TVC:DXY",
-    "TVC:EXY",
-    "TVC:BXY",
-    "TVC:SXY",
-    "TVC:JXY",
-    "TVC:CXY",
-    "TVC:AXY",
-    "TVC:ZXY",
-).concat(
+[].concat([
     // US Indices
     "SP:SPX",
     "SP:SVX",
@@ -144,7 +112,7 @@ const symbolsPriorities = {};
     "SP:OEX",
     "SP:SPGSCI",
     "DJ:DJI",
-    "TVC:IXIC",
+    "NASDAQ:IXIC",
     "NYSE:NDX",
     "RUSSEL:RUA",
     "RUSSEL:RUT",
@@ -158,7 +126,19 @@ const symbolsPriorities = {};
     "NYSE:HGX",
     "NYSE:UTY",
     "NYSE:SOX",
-).forEach((s, i) => symbolsPriorities[s] = i);
+]).concat([
+    "SP:S5COND",
+    "SP:S5CONS",
+    "SP:S5HLTH",
+    "SP:S5INDU",
+    "SP:S5INFT",
+    "SP:S5MATR",
+    "SP:S5REAS",
+    "SP:S5TELS",
+    "SP:S5UTIL",
+    "SP:SPF",
+    "SP:SPN",
+]).forEach((s, i) => symbolsPriorities[s] = i);
 
 function detectPriority(s) {
     const p = symbolsPriorities[s];

@@ -9,8 +9,7 @@ const groups = [
     "http://idc.tradingview.com/udf_proxy/symbols/nasdaq_indices_eod?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/nyse_gif_indices_eod?typespecs=main",
     {
-        url: "http://idc.tradingview.com/udf_proxy/symbols/cboe_indices_delayed?typespecs=main",
-        include: ["CBOE:VIX"]
+        url: "http://idc.tradingview.com/udf_proxy/symbols/cboe_indices_delayed?typespecs=main"
     },
     "http://idc.tradingview.com/udf_proxy/symbols/sp_indices?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/russel_indices_eod?typespecs=main",
@@ -143,7 +142,12 @@ const symbolsPriorities = {};
     "SP:SPN",
 ]).forEach((s, i) => symbolsPriorities[s] = i);
 
+const forExclude = ["CBOE:OEX", "CBOE:RUI"];
+
 function detectPriority(s) {
+    if (forExclude.indexOf(s) >= 0) {
+        return null;
+    }
     const p = symbolsPriorities[s];
     return p !== undefined ? p : 0xffffff;
 }

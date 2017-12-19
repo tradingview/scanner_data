@@ -202,7 +202,10 @@ function matches2(s, obj) {
     return null;
 }
 
-function tryDetectCategory(s) {
+function tryDetectSector(s) {
+    if (currencyIndices.indexOf(s.s) >= 0) {
+        return "currency";
+    }
     const description = s.f[2];
     if (s.f[1] === "index" || matches(description, indexMarks)) {
         return "index";
@@ -222,7 +225,7 @@ function tryDetectCategory(s) {
     return null;
 }
 
-function tryDetectRegion(s) {
+function tryDetectCountry(s) {
     if (s.region) {
         return s.region;
     }
@@ -234,6 +237,18 @@ let emptyCategoryCount = 0, emptyRegionCount = 0;
 const dstSymbols = [];
 
 const symbolsPriorities = {};
+
+const currencyIndices = [
+    // Currency Indices
+    "TVC:DXY",
+    "TVC:EXY",
+    "TVC:BXY",
+    "TVC:SXY",
+    "TVC:JXY",
+    "TVC:CXY",
+    "TVC:AXY",
+    "TVC:ZXY",
+];
 [].concat([
     // Major World Indices
     "SP:SPX",
@@ -257,17 +272,7 @@ const symbolsPriorities = {};
     "NZX:NZ50G",
     "BME:IBC",
     "TVC:SSMI",
-]).concat([
-    // Currency Indices
-    "TVC:DXY",
-    "TVC:EXY",
-    "TVC:BXY",
-    "TVC:SXY",
-    "TVC:JXY",
-    "TVC:CXY",
-    "TVC:AXY",
-    "TVC:ZXY",
-]).forEach((s, i) => symbolsPriorities[s] = i);
+]).concat(currencyIndices).forEach((s, i) => symbolsPriorities[s] = i);
 
 function detectPriority(s) {
     return symbolsPriorities[s];
@@ -276,14 +281,14 @@ function detectPriority(s) {
 symbols.forEach(function (s) {
     const dst = {f: []};
     dst.s = s.s;
-    let cat = tryDetectCategory(s);
+    let cat = tryDetectSector(s);
     if (!cat) {
         emptyCategoryCount++;
         console.error("can't detect category for " + s.s + " (" + s.f[2] + ")");
     }
     dst.f[0] = cat;
 
-    const reg = tryDetectRegion(s);
+    const reg = tryDetectCountry(s);
     if (reg === undefined || reg === null) {
         emptyRegionCount++;
         console.error("can't detect region for " + s.s + " (" + s.f[2] + ")");

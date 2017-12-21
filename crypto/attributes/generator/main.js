@@ -69,8 +69,8 @@ const excludeSymbols = [
     "BITFINEX:QTMUSD",
     "BITTREX:AMPBTC",
     "BITTREX:AMPUSD",
-    "BITFINEX:BTGUSD",
-    "BITFINEX:BTGBTC",
+    // "BITFINEX:BTGUSD",
+    // "BITFINEX:BTGBTC",
 ];
 
 function skipSymbol(s) {
@@ -135,7 +135,7 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
             symbols.forEach(function (s1) {
                 dstSymbols.push({
                     s: s1,
-                    f: [explicitName]
+                    f: [explicitName, s.symbol]
                 });
 
                 const sDescr = descriptions[s1];
@@ -176,6 +176,6 @@ dstSymbols.sort(function (l, r) {
 
 fs.writeFileSync(dstPath, JSON.stringify({
     "time": new Date().toISOString() + '',
-    "fields": ["sector"],
+    "fields": ["sector", "crypto_code"],
     "symbols": dstSymbols
 }, null, 2));

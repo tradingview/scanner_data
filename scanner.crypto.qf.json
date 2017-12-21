@@ -34,5 +34,9 @@
   {
     "name": "total_value_traded",
     "type": "number"
+  },
+  {
+    "name": "crypto_code",
+    "type": "text"
   }
 ]

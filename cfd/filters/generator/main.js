@@ -158,7 +158,7 @@ const bondsMarks = [
 const indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "DOW-JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
     "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE",
-    "Bund", "IBEX 35", "DAX PERFORMANCE", "US Wall St 30", "US Nas 100", "UK 100", "US Russ 2000", "AEX", "US SPX 500"
+    "Bund", "IBEX 35", "DAX PERFORMANCE", "US Wall St 30", "US Nas 100", "UK 100", "US Russ 2000", "AEX", "US SPX 500", "DAX"
 ];
 
 const metalsMarks = [
@@ -233,8 +233,32 @@ function tryDetectCountry(s) {
     return matches2(description, regionMarks);
 }
 
-let emptyCategoryCount = 0, emptyRegionCount = 0;
+let emptySectorCount = 0, emptyCountryCount = 0;
 const dstSymbols = [];
+
+const majorIndices = [
+    {"s": "SP:SPX", "cc": "US"},
+    {"s": "TVC:IXIC", "cc": "US"},
+    {"s": "DJ:DJI", "cc": "US"},
+    {"s": "TVC:UKX", "cc": "GB"},
+    {"s": "TVC:NI225", "cc": "JP"},
+    {"s": "TVC:HSI", "cc": "HK"},
+    {"s": "TVC:SHCOMP", "cc": "CN"},
+    {"s": "TVC:DAX", "cc": "DE"},
+    {"s": "EURONEXT:PX1", "cc": "FR"},
+    {"s": "TVC:SX5E", "cc": "EU"},
+    {"s": "TSX:TSX", "cc": "CA"},
+    {"s": "CBOE:VIX", "cc": "US"},
+    {"s": "OANDA:SG30SGD", "cc": "SG"},
+    {"s": "ASX:XJO", "cc": "AU"},
+    {"s": "INDEX:KQY0", "cc": "KR"},
+    {"s": "BMFBOVESPA:IBOV", "cc": "BR"},
+    {"s": "NSE:NIFTY", "cc": "IN"},
+    {"s": "MOEX:MICEXINDEXCF", "cc": "RU"},
+    {"s": "NZX:NZ50G", "cc": "NZ"},
+    {"s": "BME:IBC", "cc": "ES"},
+    {"s": "TVC:SSMI", "cc": "CH"},
+];
 
 const symbolsPriorities = {};
 
@@ -249,33 +273,19 @@ const currencyIndices = [
     "TVC:AXY",
     "TVC:ZXY",
 ];
-[].concat([
-    // Major World Indices
-    "SP:SPX",
-    "TVC:IXIC",
-    "DJ:DJI",
-    "TVC:UKX",
-    "TVC:NI225",
-    "TVC:HSI",
-    "TVC:SHCOMP",
-    "TVC:DAX",
-    "EURONEXT:PX1",
-    "TVC:SX5E",
-    "TSX:TSX",
-    "CBOE:VIX",
-    "OANDA:SG30SGD",
-    "ASX:XJO",
-    "INDEX:KQY0",
-    "BMFBOVESPA:IBOV",
-    "NSE:NIFTY",
-    "MOEX:MICEXINDEXCF",
-    "NZX:NZ50G",
-    "BME:IBC",
-    "TVC:SSMI",
-]).concat(currencyIndices).forEach((s, i) => symbolsPriorities[s] = i);
+[].concat(
+    majorIndices.map(el => el.s)
+).concat(currencyIndices).forEach((s, i) => symbolsPriorities[s] = i);
 
 function detectPriority(s) {
     return symbolsPriorities[s];
+}
+
+const majorIndicesCC = {};
+majorIndices.forEach(s => majorIndicesCC[s.s] = s.cc);
+
+function getCountryCode(s) {
+    return majorIndicesCC[s];
 }
 
 symbols.forEach(function (s) {
@@ -283,19 +293,21 @@ symbols.forEach(function (s) {
     dst.s = s.s;
     let cat = tryDetectSector(s);
     if (!cat) {
-        emptyCategoryCount++;
-        console.error("can't detect category for " + s.s + " (" + s.f[2] + ")");
+        emptySectorCount++;
+        console.error("can't detect sector for " + s.s + " (" + s.f[2] + ")");
     }
     dst.f[0] = cat;
 
     const reg = tryDetectCountry(s);
     if (reg === undefined || reg === null) {
-        emptyRegionCount++;
-        console.error("can't detect region for " + s.s + " (" + s.f[2] + ")");
+        emptyCountryCount++;
+        console.error("can't detect country for " + s.s + " (" + s.f[2] + ")");
     }
     dst.f[1] = reg;
 
     dst.f[2] = detectPriority(s.s);
+
+    dst.f[3] = getCountryCode(s.s);
 
     dstSymbols.push(dst);
 });
@@ -304,17 +316,17 @@ dstSymbols.sort(function (l, r) {
     return l.s.localeCompare(r.s);
 });
 
-if (emptyCategoryCount) {
-    console.info("Symbols with empty category is " + emptyCategoryCount);
+if (emptySectorCount) {
+    console.info("Symbols with empty category is " + emptySectorCount);
 }
 
-if (emptyRegionCount) {
-    console.info("Symbols with empty region is " + emptyRegionCount);
+if (emptyCountryCount) {
+    console.info("Symbols with empty region is " + emptyCountryCount);
 }
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {
         "time": new Date().toISOString() + '',
-        "fields": ["sector", "country", "index_priority"],
+        "fields": ["sector", "country", "index_priority", "country_code"],
         "symbols": dstSymbols
     }, null, 2));

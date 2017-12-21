@@ -1,16 +1,18 @@
 {
-  "time": "2017-12-19T12:29:18.816Z",
+  "time": "2017-12-21T14:14:21.528Z",
   "fields": [
     "sector",
     "country",
-    "index_priority"
+    "index_priority",
+    "country_code"
   ],
   "symbols": [
     {
       "f": [
         "index",
         "Pacific",
-        13
+        13,
+        "AU"
       ],
       "s": "ASX:XJO"
     },
@@ -18,7 +20,8 @@
       "f": [
         "index",
         "Europe",
-        19
+        19,
+        "ES"
       ],
       "s": "BME:IBC"
     },
@@ -26,7 +29,8 @@
       "f": [
         "index",
         "Americas",
-        15
+        15,
+        "BR"
       ],
       "s": "BMFBOVESPA:IBOV"
     },
@@ -34,7 +38,8 @@
       "f": [
         "index",
         "Americas",
-        11
+        11,
+        "US"
       ],
       "s": "CBOE:VIX"
     },
@@ -42,7 +47,8 @@
       "f": [
         "index",
         "Americas",
-        2
+        2,
+        "US"
       ],
       "s": "DJ:DJI"
     },
@@ -50,7 +56,8 @@
       "f": [
         "index",
         "Europe",
-        8
+        8,
+        "FR"
       ],
       "s": "EURONEXT:PX1"
     },
@@ -58,6 +65,7 @@
       "f": [
         "Agricultural",
         "",
+        null,
         null
       ],
       "s": "FOREXCOM:COTUSD"
@@ -66,6 +74,7 @@
       "f": [
         "Energy",
         "",
+        null,
         null
       ],
       "s": "FOREXCOM:HGOUSD"
@@ -74,6 +83,7 @@
       "f": [
         "Energy",
         "",
+        null,
         null
       ],
       "s": "FX:UKOIL"
@@ -82,6 +92,7 @@
       "f": [
         "Energy",
         "",
+        null,
         null
       ],
       "s": "FX:USOIL"
@@ -90,7 +101,8 @@
       "f": [
         "index",
         "Asia",
-        14
+        14,
+        "KR"
       ],
       "s": "INDEX:KQY0"
     },
@@ -98,7 +110,8 @@
       "f": [
         "index",
         "Europe",
-        17
+        17,
+        "RU"
       ],
       "s": "MOEX:MICEXINDEXCF"
     },
@@ -106,7 +119,8 @@
       "f": [
         "index",
         "Asia",
-        16
+        16,
+        "IN"
       ],
       "s": "NSE:NIFTY"
     },
@@ -114,7 +128,8 @@
       "f": [
         "index",
         "Pacific",
-        18
+        18,
+        "NZ"
       ],
       "s": "NZX:NZ50G"
     },
@@ -122,6 +137,7 @@
       "f": [
         "index",
         "Pacific",
+        null,
         null
       ],
       "s": "OANDA:AU200AUD"
@@ -130,6 +146,7 @@
       "f": [
         "Agricultural",
         "",
+        null,
         null
       ],
       "s": "OANDA:CORNUSD"
@@ -138,6 +155,7 @@
       "f": [
         "index",
         "Europe",
+        null,
         null
       ],
       "s": "OANDA:DE30EUR"
@@ -146,6 +164,7 @@
       "f": [
         "index",
         "Asia",
+        null,
         null
       ],
       "s": "OANDA:HK33HKD"
@@ -154,6 +173,7 @@
       "f": [
         "Energy",
         "",
+        null,
         null
       ],
       "s": "OANDA:NATGASUSD"
@@ -162,6 +182,7 @@
       "f": [
         "index",
         "Europe",
+        null,
         null
       ],
       "s": "OANDA:NL25EUR"
@@ -170,7 +191,8 @@
       "f": [
         "index",
         "Asia",
-        12
+        12,
+        "SG"
       ],
       "s": "OANDA:SG30SGD"
     },
@@ -178,6 +200,7 @@
       "f": [
         "Agricultural",
         "",
+        null,
         null
       ],
       "s": "OANDA:SOYBNUSD"
@@ -186,6 +209,7 @@
       "f": [
         "Agricultural",
         "",
+        null,
         null
       ],
       "s": "OANDA:SUGARUSD"
@@ -194,6 +218,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "OANDA:UK10YBGBP"
@@ -202,6 +227,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "OANDA:US30USD"
@@ -210,6 +236,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "OANDA:USB02YUSD"
@@ -218,6 +245,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "OANDA:USB05YUSD"
@@ -226,6 +254,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "OANDA:USB10YUSD"
@@ -234,6 +263,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "OANDA:USB30YUSD"
@@ -242,6 +272,7 @@
       "f": [
         "Agricultural",
         "",
+        null,
         null
       ],
       "s": "OANDA:WHEATUSD"
@@ -250,6 +281,7 @@
       "f": [
         "Metals",
         "",
+        null,
         null
       ],
       "s": "OANDA:XCUUSD"
@@ -258,7 +290,8 @@
       "f": [
         "index",
         "Americas",
-        0
+        0,
+        "US"
       ],
       "s": "SP:SPX"
     },
@@ -266,7 +299,8 @@
       "f": [
         "index",
         "Americas",
-        10
+        10,
+        "CA"
       ],
       "s": "TSX:TSX"
     },
@@ -274,6 +308,7 @@
       "f": [
         "index",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:AEX"
@@ -282,6 +317,7 @@
       "f": [
         "bond",
         "Pacific",
+        null,
         null
       ],
       "s": "TVC:AU02"
@@ -290,6 +326,7 @@
       "f": [
         "bond",
         "Pacific",
+        null,
         null
       ],
       "s": "TVC:AU02Y"
@@ -298,6 +335,7 @@
       "f": [
         "bond",
         "Pacific",
+        null,
         null
       ],
       "s": "TVC:AU10"
@@ -306,6 +344,7 @@
       "f": [
         "bond",
         "Pacific",
+        null,
         null
       ],
       "s": "TVC:AU10Y"
@@ -314,7 +353,8 @@
       "f": [
         "currency",
         "Pacific",
-        27
+        27,
+        null
       ],
       "s": "TVC:AXY"
     },
@@ -322,6 +362,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:BE02"
@@ -330,6 +371,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:BE02Y"
@@ -338,6 +380,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:BE10"
@@ -346,6 +389,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:BE10Y"
@@ -354,7 +398,8 @@
       "f": [
         "currency",
         "Europe",
-        23
+        23,
+        null
       ],
       "s": "TVC:BXY"
     },
@@ -362,6 +407,7 @@
       "f": [
         "index",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:CAC40"
@@ -370,6 +416,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:CN02"
@@ -378,6 +425,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:CN02Y"
@@ -386,6 +434,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:CN10"
@@ -394,6 +443,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:CN10Y"
@@ -402,7 +452,8 @@
       "f": [
         "currency",
         "Americas",
-        26
+        26,
+        null
       ],
       "s": "TVC:CXY"
     },
@@ -410,7 +461,8 @@
       "f": [
         "index",
         "Europe",
-        7
+        7,
+        "DE"
       ],
       "s": "TVC:DAX"
     },
@@ -418,6 +470,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:DE02"
@@ -426,6 +479,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:DE02Y"
@@ -434,6 +488,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:DE10"
@@ -442,6 +497,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:DE10Y"
@@ -450,6 +506,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:DJI"
@@ -458,7 +515,8 @@
       "f": [
         "currency",
         "Americas",
-        21
+        21,
+        null
       ],
       "s": "TVC:DXY"
     },
@@ -466,6 +524,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:ES02"
@@ -474,6 +533,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:ES02Y"
@@ -482,6 +542,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:ES10"
@@ -490,6 +551,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:ES10Y"
@@ -498,6 +560,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:EUBUND"
@@ -506,7 +569,8 @@
       "f": [
         "currency",
         "Europe",
-        22
+        22,
+        null
       ],
       "s": "TVC:EXY"
     },
@@ -514,6 +578,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:FR02"
@@ -522,6 +587,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:FR02Y"
@@ -530,6 +596,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:FR10"
@@ -538,6 +605,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:FR10Y"
@@ -546,6 +614,7 @@
       "f": [
         "index",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:FTMIB"
@@ -554,6 +623,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:GB02"
@@ -562,6 +632,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:GB02Y"
@@ -570,6 +641,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:GB10"
@@ -578,6 +650,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:GB10Y"
@@ -586,6 +659,7 @@
       "f": [
         "Metals",
         "",
+        null,
         null
       ],
       "s": "TVC:GOLD"
@@ -594,6 +668,7 @@
       "f": [
         "Metals",
         "",
+        null,
         null
       ],
       "s": "TVC:GOLDSILVER"
@@ -602,6 +677,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:HK02"
@@ -610,6 +686,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:HK02Y"
@@ -618,6 +695,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:HK10"
@@ -626,6 +704,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:HK10Y"
@@ -634,7 +713,8 @@
       "f": [
         "index",
         "Asia",
-        5
+        5,
+        "HK"
       ],
       "s": "TVC:HSI"
     },
@@ -642,6 +722,7 @@
       "f": [
         "index",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IBEX35"
@@ -650,6 +731,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:ID03"
@@ -658,6 +740,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:ID03Y"
@@ -666,6 +749,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:ID10"
@@ -674,6 +758,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:ID10Y"
@@ -682,6 +767,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IE02"
@@ -690,6 +776,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IE02Y"
@@ -698,6 +785,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IE10"
@@ -706,6 +794,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IE10Y"
@@ -714,6 +803,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:IN02"
@@ -722,6 +812,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:IN02Y"
@@ -730,6 +821,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:IN10"
@@ -738,6 +830,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:IN10Y"
@@ -746,6 +839,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IT02"
@@ -754,6 +848,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IT02Y"
@@ -762,6 +857,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IT10"
@@ -770,6 +866,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:IT10Y"
@@ -778,7 +875,8 @@
       "f": [
         "index",
         "Americas",
-        1
+        1,
+        "US"
       ],
       "s": "TVC:IXIC"
     },
@@ -786,6 +884,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:JP02"
@@ -794,6 +893,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:JP02Y"
@@ -802,6 +902,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:JP10"
@@ -810,6 +911,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:JP10Y"
@@ -818,7 +920,8 @@
       "f": [
         "currency",
         "Asia",
-        25
+        25,
+        null
       ],
       "s": "TVC:JXY"
     },
@@ -826,6 +929,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:KR02"
@@ -834,6 +938,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:KR02Y"
@@ -842,6 +947,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:KR10"
@@ -850,6 +956,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:KR10Y"
@@ -858,6 +965,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:MY03"
@@ -866,6 +974,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:MY03Y"
@@ -874,6 +983,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:MY10"
@@ -882,6 +992,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:MY10Y"
@@ -890,6 +1001,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:NDX"
@@ -898,7 +1010,8 @@
       "f": [
         "index",
         "Asia",
-        4
+        4,
+        "JP"
       ],
       "s": "TVC:NI225"
     },
@@ -906,6 +1019,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NL02"
@@ -914,6 +1028,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NL02Y"
@@ -922,6 +1037,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NL10"
@@ -930,6 +1046,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NL10Y"
@@ -938,6 +1055,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NO02"
@@ -946,6 +1064,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NO02Y"
@@ -954,6 +1073,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NO10"
@@ -962,6 +1082,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:NO10Y"
@@ -970,6 +1091,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:NYA"
@@ -978,6 +1100,7 @@
       "f": [
         "Metals",
         "",
+        null,
         null
       ],
       "s": "TVC:PALLADIUM"
@@ -986,6 +1109,7 @@
       "f": [
         "Metals",
         "",
+        null,
         null
       ],
       "s": "TVC:PLATINUM"
@@ -994,6 +1118,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:PT02"
@@ -1002,6 +1127,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:PT02Y"
@@ -1010,6 +1136,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:PT10"
@@ -1018,6 +1145,7 @@
       "f": [
         "bond",
         "Europe",
+        null,
         null
       ],
       "s": "TVC:PT10Y"
@@ -1026,6 +1154,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:RUI"
@@ -1034,6 +1163,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:RUT"
@@ -1042,6 +1172,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:SG02"
@@ -1050,6 +1181,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:SG02Y"
@@ -1058,6 +1190,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:SG10"
@@ -1066,6 +1199,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:SG10Y"
@@ -1074,7 +1208,8 @@
       "f": [
         "index",
         "Asia",
-        6
+        6,
+        "CN"
       ],
       "s": "TVC:SHCOMP"
     },
@@ -1082,6 +1217,7 @@
       "f": [
         "Metals",
         "",
+        null,
         null
       ],
       "s": "TVC:SILVER"
@@ -1090,7 +1226,8 @@
       "f": [
         "index",
         "Europe",
-        20
+        20,
+        "CH"
       ],
       "s": "TVC:SSMI"
     },
@@ -1098,7 +1235,8 @@
       "f": [
         "index",
         "Europe",
-        9
+        9,
+        "EU"
       ],
       "s": "TVC:SX5E"
     },
@@ -1106,7 +1244,8 @@
       "f": [
         "currency",
         "Europe",
-        24
+        24,
+        null
       ],
       "s": "TVC:SXY"
     },
@@ -1114,6 +1253,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:TH02"
@@ -1122,6 +1262,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:TH02Y"
@@ -1130,6 +1271,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:TH10"
@@ -1138,6 +1280,7 @@
       "f": [
         "bond",
         "Asia",
+        null,
         null
       ],
       "s": "TVC:TH10Y"
@@ -1146,6 +1289,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:TNX"
@@ -1154,6 +1298,7 @@
       "f": [
         "bond",
         "Middle East",
+        null,
         null
       ],
       "s": "TVC:TR02"
@@ -1162,6 +1307,7 @@
       "f": [
         "bond",
         "Middle East",
+        null,
         null
       ],
       "s": "TVC:TR10"
@@ -1170,6 +1316,7 @@
       "f": [
         "bond",
         "Middle East",
+        null,
         null
       ],
       "s": "TVC:TR10Y"
@@ -1178,6 +1325,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:TRJEFFCRB"
@@ -1186,6 +1334,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:TYX"
@@ -1194,7 +1343,8 @@
       "f": [
         "index",
         "Europe",
-        3
+        3,
+        "GB"
       ],
       "s": "TVC:UKX"
     },
@@ -1202,6 +1352,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US02"
@@ -1210,6 +1361,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US02Y"
@@ -1218,6 +1370,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US05"
@@ -1226,6 +1379,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US05Y"
@@ -1234,6 +1388,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US10"
@@ -1242,6 +1397,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US10Y"
@@ -1250,6 +1406,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US30"
@@ -1258,6 +1415,7 @@
       "f": [
         "bond",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:US30Y"
@@ -1266,6 +1424,7 @@
       "f": [
         "index",
         "Americas",
+        null,
         null
       ],
       "s": "TVC:VIX"
@@ -1274,6 +1433,7 @@
       "f": [
         "bond",
         "Africa",
+        null,
         null
       ],
       "s": "TVC:ZA03"
@@ -1282,6 +1442,7 @@
       "f": [
         "bond",
         "Africa",
+        null,
         null
       ],
       "s": "TVC:ZA03Y"
@@ -1290,6 +1451,7 @@
       "f": [
         "bond",
         "Africa",
+        null,
         null
       ],
       "s": "TVC:ZA10"
@@ -1298,6 +1460,7 @@
       "f": [
         "bond",
         "Africa",
+        null,
         null
       ],
       "s": "TVC:ZA10Y"
@@ -1306,7 +1469,8 @@
       "f": [
         "currency",
         "Pacific",
-        28
+        28,
+        null
       ],
       "s": "TVC:ZXY"
     }

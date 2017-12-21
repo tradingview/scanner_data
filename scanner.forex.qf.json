@@ -42,5 +42,9 @@
   {
     "name": "index_priority",
     "type": "number"
+  },
+  {
+    "name": "country_code",
+    "type": "text"
   }
 ]

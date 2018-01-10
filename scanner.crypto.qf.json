@@ -1,5 +1,21 @@
 [
   {
+    "name": "pricescale",
+    "type": "number"
+  },
+  {
+    "name": "minmov",
+    "type": "number"
+  },
+  {
+    "name": "minmove2",
+    "type": "number"
+  },
+  {
+    "name": "fractional",
+    "type": "text"
+  },
+  {
     "name": "sector",
     "type": "text"
   },

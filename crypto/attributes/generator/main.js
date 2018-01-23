@@ -12,10 +12,6 @@ const scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan
         columns: ["description"],
         filter: [
             {
-                left: "volume",
-                operation: "nempty"
-            },
-            {
                 left: "name",
                 operation: "match",
                 right: "USD$|BTC$"
@@ -36,7 +32,18 @@ const scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan
                 operation: "not_in_range",
                 right: ["COINBASE", "KRAKEN"]
             },
-        ]
+        ],
+        filterOR: [
+            {
+                left: "volume",
+                operation: "nempty"
+            },
+            {
+                left: "name",
+                operation: "equal",
+                right: "BTCBTC"
+            }
+        ],
     }
 });
 if (scanResp.statusCode != 200) {
@@ -130,7 +137,7 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
         symbols = selectedSymbols[key];
     }
     if (symbols) {
-        if (symbols.length === 2 || s.symbol === "BTC" /*include BTCUSD without BTCBTC*/) {
+        if (symbols.length === 2) {
             const explicitName = explicitCoinNames[s.symbol] || s.name;
             symbols.forEach(function (s1) {
                 dstSymbols.push({

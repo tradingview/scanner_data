@@ -1,10 +1,17 @@
 {
-  "time": "2017-12-21T15:02:53.046Z",
+  "time": "2018-01-23T15:42:39.854Z",
   "fields": [
     "sector",
     "crypto_code"
   ],
   "symbols": [
+    {
+      "s": "BINANCE:TNBBTC",
+      "f": [
+        "Time New Bank",
+        "TNB"
+      ]
+    },
     {
       "s": "BITFINEX:AVTBTC",
       "f": [
@@ -59,6 +66,13 @@
       "f": [
         "BT2 [CST]",
         "BT2"
+      ]
+    },
+    {
+      "s": "BITFINEX:BTCBTC",
+      "f": [
+        "Bitcoin",
+        "BTC"
       ]
     },
     {
@@ -171,6 +185,27 @@
       "f": [
         "Santiment Network Token",
         "SAN"
+      ]
+    },
+    {
+      "s": "BITFINEX:SPKBTC",
+      "f": [
+        "Sparks",
+        "SPK"
+      ]
+    },
+    {
+      "s": "BITFINEX:SPKUSD",
+      "f": [
+        "Sparks",
+        "SPK"
+      ]
+    },
+    {
+      "s": "BITFINEX:TNBUSD",
+      "f": [
+        "Time New Bank",
+        "TNB"
       ]
     },
     {

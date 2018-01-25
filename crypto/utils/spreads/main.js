@@ -114,7 +114,7 @@ function checkForReplaceSpreadsToNative() {
         usedSpreads[ptn] = s.s;
     });
 
-    return scan({
+    return (scan({
             filter: [
                 {
                     left: "description",
@@ -135,7 +135,7 @@ function checkForReplaceSpreadsToNative() {
                 },
             ]
         }
-    ).symbols.map(function (s) {
+    ).symbols || []).map(function (s) {
         return {"old": usedSpreads[pureTickerName(s.s)], "new": s.s};
     });
 }

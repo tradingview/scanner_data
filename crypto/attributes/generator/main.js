@@ -60,7 +60,7 @@ if (coinMktCapResp.statusCode != 200) {
 }
 
 function getFirstCurrency(symbol) {
-    const cur = symbol.split(':')[1];
+    const cur = getTicker(symbol);
     return cur.substring(0, cur.length - 3);
 }
 
@@ -87,8 +87,13 @@ function skipSymbol(s) {
 const tickers = {};
 const selectedSymbols = {};
 const descriptions = {};
+
+function getTicker(s) {
+    return s.split(':')[1];
+}
+
 JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
-    const ticker = s.s.split(':')[1];
+    const ticker = getTicker(s.s);
     if (!tickers[ticker] && !skipSymbol(s.s)) {
         tickers[ticker] = ticker;
         const token = getFirstCurrency(s.s);
@@ -172,13 +177,11 @@ for (let s in selectedSymbols) {
 }
 
 dstSymbols.sort(function (l, r) {
-    if (l.s > r.s) {
-        return 1;
+    const res = l.f[0].localeCompare(r.f[0]);
+    if (res!==0){
+        return res;
     }
-    if (l.s < r.s) {
-        return -1;
-    }
-    return 0;
+    return getTicker(l.s).localeCompare(getTicker(r.s));
 });
 
 fs.writeFileSync(dstPath, JSON.stringify({

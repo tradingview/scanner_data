@@ -1,5 +1,5 @@
 {
-  "time": "2018-01-31T17:46:12.385Z",
+  "time": "2018-01-31T17:47:22.732Z",
   "fields": [
     "sector",
     "crypto_code"
@@ -62,6 +62,20 @@
       ]
     },
     {
+      "s": "BINANCE:ELFBTC",
+      "f": [
+        "aelf",
+        "ELF"
+      ]
+    },
+    {
+      "s": "BITFINEX:ELFUSD",
+      "f": [
+        "aelf",
+        "ELF"
+      ]
+    },
+    {
       "s": "BITTREX:AEONBTC",
       "f": [
         "Aeon",
@@ -87,6 +101,20 @@
       "f": [
         "Agoras Tokens",
         "AGRS"
+      ]
+    },
+    {
+      "s": "BITFINEX:AIDBTC",
+      "f": [
+        "AidCoin",
+        "AID"
+      ]
+    },
+    {
+      "s": "BITFINEX:AIDUSD",
+      "f": [
+        "AidCoin",
+        "AID"
       ]
     },
     {
@@ -2316,6 +2344,20 @@
       ]
     },
     {
+      "s": "BITTREX:RCNBTC",
+      "f": [
+        "Ripio Credit Network",
+        "RCN"
+      ]
+    },
+    {
+      "s": "BITFINEX:RCNUSD",
+      "f": [
+        "Ripio Credit Network",
+        "RCN"
+      ]
+    },
+    {
       "s": "BITTREX:XRPBTC",
       "f": [
         "Ripple",
@@ -2789,6 +2831,20 @@
       "f": [
         "Triggers",
         "TRIG"
+      ]
+    },
+    {
+      "s": "BINANCE:TRXBTC",
+      "f": [
+        "TRON",
+        "TRX"
+      ]
+    },
+    {
+      "s": "BITFINEX:TRXUSD",
+      "f": [
+        "TRON",
+        "TRX"
       ]
     },
     {

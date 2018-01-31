@@ -1,8 +1,6 @@
 const requestSync = require("sync-request"),
     fs = require("fs");
 
-const dstPath = "../crypto_spreads.json";
-
 function checkResponce(resp) {
     if (resp.statusCode != 200) {
         if (resp.statusCode === 400) {

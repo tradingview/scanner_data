@@ -1,5 +1,5 @@
 {
-  "time": "2017-12-04T12:04:09.246Z",
+  "time": "2018-02-02T12:36:57.200Z",
   "fields": [
     "country",
     "sector",
@@ -727,11 +727,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         200307100300,
         "",
         null,
-        null
+        51
       ],
       "s": "FX_IDC:AUDHKD"
     },
@@ -1123,11 +1123,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         200318060300,
         "",
         null,
-        null
+        52
       ],
       "s": "FX_IDC:AUDSGD"
     },
@@ -2378,17 +2378,6 @@
       "f": [
         "Americas",
         null,
-        202200200,
-        "Americas",
-        null,
-        null
-      ],
-      "s": "FX_IDC:CADCUC"
-    },
-    {
-      "f": [
-        "Americas",
-        null,
         202201500,
         "Americas",
         null,
@@ -2619,11 +2608,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         2000307100300,
         "",
         null,
-        null
+        53
       ],
       "s": "FX_IDC:CADHKD"
     },
@@ -3027,6 +3016,17 @@
       "f": [
         "",
         null,
+        2000312172000,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CADMRU"
+    },
+    {
+      "f": [
+        "",
+        null,
         2000312201700,
         "",
         null,
@@ -3356,11 +3356,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         2000318060300,
         "",
         null,
-        null
+        54
       ],
       "s": "FX_IDC:CADSGD"
     },
@@ -3418,6 +3418,17 @@
         null
       ],
       "s": "FX_IDC:CADSTD"
+    },
+    {
+      "f": [
+        "",
+        null,
+        2000318191300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CADSTN"
     },
     {
       "f": [
@@ -4083,17 +4094,6 @@
       "f": [
         "",
         null,
-        2070502200200,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:CHFCUC"
-    },
-    {
-      "f": [
-        "",
-        null,
         2070502201500,
         "",
         null,
@@ -4137,11 +4137,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1403101000,
         "Europe",
         null,
-        null
+        42
       ],
       "s": "FX_IDC:CHFDKK"
     },
@@ -4324,11 +4324,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         2070507100300,
         "",
         null,
-        null
+        43
       ],
       "s": "FX_IDC:CHFHKD"
     },
@@ -4368,11 +4368,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1407200500,
         "Europe",
         null,
-        null
+        44
       ],
       "s": "FX_IDC:CHFHUF"
     },
@@ -4732,6 +4732,17 @@
       "f": [
         "",
         null,
+        2070512172000,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CHFMRU"
+    },
+    {
+      "f": [
+        "",
+        null,
         2070512201700,
         "",
         null,
@@ -4830,11 +4841,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1413141000,
         "Europe",
         null,
-        null
+        45
       ],
       "s": "FX_IDC:CHFNOK"
     },
@@ -4929,11 +4940,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1415111300,
         "Europe",
         null,
-        null
+        46
       ],
       "s": "FX_IDC:CHFPLN"
     },
@@ -5050,22 +5061,22 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1418041000,
         "Europe",
         null,
-        null
+        47
       ],
       "s": "FX_IDC:CHFSEK"
     },
     {
       "f": [
         "",
-        null,
+        "Exotic",
         2070518060300,
         "",
         null,
-        null
+        48
       ],
       "s": "FX_IDC:CHFSGD"
     },
@@ -5123,6 +5134,17 @@
         null
       ],
       "s": "FX_IDC:CHFSTD"
+    },
+    {
+      "f": [
+        "",
+        null,
+        2070518191300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CHFSTN"
     },
     {
       "f": [
@@ -5215,11 +5237,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         2070519172400,
         "",
         null,
-        null
+        49
       ],
       "s": "FX_IDC:CHFTRY"
     },
@@ -5413,11 +5435,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         2070525001700,
         "",
         null,
-        null
+        50
       ],
       "s": "FX_IDC:CHFZAR"
     },
@@ -5623,6 +5645,17 @@
       "f": [
         "Asia",
         null,
+        2130718060300,
+        "Asia",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CNHSGD"
+    },
+    {
+      "f": [
+        "Asia",
+        null,
         2130719070100,
         "Asia",
         null,
@@ -5662,6 +5695,17 @@
         null
       ],
       "s": "FX_IDC:CNYAUD"
+    },
+    {
+      "f": [
+        "",
+        null,
+        2132401001200,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CNYBAM"
     },
     {
       "f": [
@@ -6041,28 +6085,6 @@
       "f": [
         "",
         null,
-        2200209152400,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:CUCJPY"
-    },
-    {
-      "f": [
-        "",
-        null,
-        2200220180300,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:CUCUSD"
-    },
-    {
-      "f": [
-        "",
-        null,
         2201520180300,
         "",
         null,
@@ -6300,17 +6322,6 @@
         null
       ],
       "s": "FX_IDC:DKKCHF"
-    },
-    {
-      "f": [
-        "",
-        null,
-        3101002200200,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:DKKCUC"
     },
     {
       "f": [
@@ -7141,17 +7152,6 @@
       "f": [
         "",
         null,
-        4201702200200,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:EURCUC"
-    },
-    {
-      "f": [
-        "",
-        null,
         4201702201500,
         "",
         null,
@@ -7173,11 +7173,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1202251000,
         "Europe",
         null,
-        null
+        19
       ],
       "s": "FX_IDC:EURCZK"
     },
@@ -7195,11 +7195,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         33,
         "Europe",
         null,
-        null
+        20
       ],
       "s": "FX_IDC:EURDKK"
     },
@@ -7371,11 +7371,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         4201707100300,
         "",
         null,
-        null
+        21
       ],
       "s": "FX_IDC:EURHKD"
     },
@@ -7415,11 +7415,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         34,
         "Europe",
         null,
-        null
+        22
       ],
       "s": "FX_IDC:EURHUF"
     },
@@ -7779,6 +7779,17 @@
       "f": [
         "",
         null,
+        4201712172000,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:EURMRU"
+    },
+    {
+      "f": [
+        "",
+        null,
         4201712201700,
         "",
         null,
@@ -7811,11 +7822,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         4201712231300,
         "",
         null,
-        null
+        23
       ],
       "s": "FX_IDC:EURMXN"
     },
@@ -7877,11 +7888,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         27,
         "Europe",
         null,
-        null
+        24
       ],
       "s": "FX_IDC:EURNOK"
     },
@@ -7976,11 +7987,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         32,
         "Europe",
         null,
-        null
+        25
       ],
       "s": "FX_IDC:EURPLN"
     },
@@ -8009,11 +8020,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1217141300,
         "Europe",
         null,
-        null
+        26
       ],
       "s": "FX_IDC:EURRON"
     },
@@ -8031,11 +8042,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1217200100,
         "Europe",
         null,
-        null
+        27
       ],
       "s": "FX_IDC:EURRUB"
     },
@@ -8097,22 +8108,22 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         25,
         "Europe",
         null,
-        null
+        28
       ],
       "s": "FX_IDC:EURSEK"
     },
     {
       "f": [
         "",
-        null,
+        "Exotic",
         4201718060300,
         "",
         null,
-        null
+        29
       ],
       "s": "FX_IDC:EURSGD"
     },
@@ -8170,6 +8181,17 @@
         null
       ],
       "s": "FX_IDC:EURSTD"
+    },
+    {
+      "f": [
+        "",
+        null,
+        4201718191300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:EURSTN"
     },
     {
       "f": [
@@ -8262,11 +8284,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         35,
         "",
         null,
-        null
+        30
       ],
       "s": "FX_IDC:EURTRY"
     },
@@ -8460,11 +8482,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         4201725001700,
         "",
         null,
-        null
+        31
       ],
       "s": "FX_IDC:EURZAR"
     },
@@ -8868,17 +8890,6 @@
       "f": [
         "",
         null,
-        6011502200200,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:GBPCUC"
-    },
-    {
-      "f": [
-        "",
-        null,
         6011502201500,
         "",
         null,
@@ -8922,11 +8933,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1303101000,
         "Europe",
         null,
-        null
+        32
       ],
       "s": "FX_IDC:GBPDKK"
     },
@@ -9098,11 +9109,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         6011507100300,
         "",
         null,
-        null
+        33
       ],
       "s": "FX_IDC:GBPHKD"
     },
@@ -9142,11 +9153,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1307200500,
         "Europe",
         null,
-        null
+        34
       ],
       "s": "FX_IDC:GBPHUF"
     },
@@ -9484,12 +9495,34 @@
       "f": [
         "",
         null,
+        6011512141500,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:GBPMOP"
+    },
+    {
+      "f": [
+        "",
+        null,
         6011512171400,
         "",
         null,
         null
       ],
       "s": "FX_IDC:GBPMRO"
+    },
+    {
+      "f": [
+        "",
+        null,
+        6011512172000,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:GBPMRU"
     },
     {
       "f": [
@@ -9593,11 +9626,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1313141000,
         "Europe",
         null,
-        null
+        35
       ],
       "s": "FX_IDC:GBPNOK"
     },
@@ -9692,11 +9725,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1315111300,
         "Europe",
         null,
-        null
+        36
       ],
       "s": "FX_IDC:GBPPLN"
     },
@@ -9725,11 +9758,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1317141300,
         "Europe",
         null,
-        null
+        37
       ],
       "s": "FX_IDC:GBPRON"
     },
@@ -9813,22 +9846,22 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         1318041000,
         "Europe",
         null,
-        null
+        38
       ],
       "s": "FX_IDC:GBPSEK"
     },
     {
       "f": [
         "",
-        null,
+        "Exotic",
         6011518060300,
         "",
         null,
-        null
+        39
       ],
       "s": "FX_IDC:GBPSGD"
     },
@@ -9886,6 +9919,17 @@
         null
       ],
       "s": "FX_IDC:GBPSTD"
+    },
+    {
+      "f": [
+        "",
+        null,
+        6011518191300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:GBPSTN"
     },
     {
       "f": [
@@ -9978,11 +10022,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         6011519172400,
         "",
         null,
-        null
+        40
       ],
       "s": "FX_IDC:GBPTRY"
     },
@@ -10176,11 +10220,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         6011525001700,
         "",
         null,
-        null
+        41
       ],
       "s": "FX_IDC:GBPZAR"
     },
@@ -10440,11 +10484,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         7100309152400,
         "",
         null,
-        null
+        57
       ],
       "s": "FX_IDC:HKDJPY"
     },
@@ -12531,6 +12575,17 @@
       "f": [
         "",
         null,
+        9152412172000,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:JPYMRU"
+    },
+    {
+      "f": [
+        "",
+        null,
         9152412201700,
         "",
         null,
@@ -12922,6 +12977,17 @@
         null
       ],
       "s": "FX_IDC:JPYSTD"
+    },
+    {
+      "f": [
+        "",
+        null,
+        9152418191300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:JPYSTN"
     },
     {
       "f": [
@@ -14071,6 +14137,17 @@
       "f": [
         "",
         null,
+        12172020180300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:MRUUSD"
+    },
+    {
+      "f": [
+        "",
+        null,
         12201702070500,
         "",
         null,
@@ -14179,17 +14256,6 @@
     },
     {
       "f": [
-        "Americas",
-        null,
-        12231302200200,
-        "Americas",
-        null,
-        null
-      ],
-      "s": "FX_IDC:MXNCUC"
-    },
-    {
-      "f": [
         "",
         null,
         12231303101000,
@@ -14235,11 +14301,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         12231309152400,
         "",
         null,
-        null
+        58
       ],
       "s": "FX_IDC:MXNJPY"
     },
@@ -14718,17 +14784,6 @@
     },
     {
       "f": [
-        "",
-        null,
-        13141002200200,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:NOKCUC"
-    },
-    {
-      "f": [
         "Europe",
         null,
         13141002251000,
@@ -14796,11 +14851,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         13141009152400,
         "",
         null,
-        null
+        59
       ],
       "s": "FX_IDC:NOKJPY"
     },
@@ -14862,11 +14917,11 @@
     {
       "f": [
         "Europe",
-        null,
+        "Exotic",
         13141018041000,
         "Europe",
         null,
-        null
+        60
       ],
       "s": "FX_IDC:NOKSEK"
     },
@@ -15038,11 +15093,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         13250307100300,
         "",
         null,
-        null
+        55
       ],
       "s": "FX_IDC:NZDHKD"
     },
@@ -15225,11 +15280,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         13250318060300,
         "",
         null,
-        null
+        56
       ],
       "s": "FX_IDC:NZDSGD"
     },
@@ -16753,17 +16808,6 @@
     },
     {
       "f": [
-        "",
-        null,
-        18041002200200,
-        "",
-        null,
-        null
-      ],
-      "s": "FX_IDC:SEKCUC"
-    },
-    {
-      "f": [
         "Europe",
         null,
         18041002251000,
@@ -16875,11 +16919,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         18041009152400,
         "",
         null,
-        null
+        61
       ],
       "s": "FX_IDC:SEKJPY"
     },
@@ -17106,11 +17150,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         18060302070500,
         "",
         null,
-        null
+        62
       ],
       "s": "FX_IDC:SGDCHF"
     },
@@ -17183,11 +17227,11 @@
     {
       "f": [
         "Asia",
-        null,
+        "Exotic",
         18060307100300,
         "Asia",
         null,
-        null
+        63
       ],
       "s": "FX_IDC:SGDHKD"
     },
@@ -17227,11 +17271,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         18060309152400,
         "",
         null,
-        null
+        64
       ],
       "s": "FX_IDC:SGDJPY"
     },
@@ -17498,6 +17542,17 @@
         null
       ],
       "s": "FX_IDC:STDUSD"
+    },
+    {
+      "f": [
+        "",
+        null,
+        18191320180300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:STNUSD"
     },
     {
       "f": [
@@ -17909,11 +17964,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         19172409152400,
         "",
         null,
-        null
+        65
       ],
       "s": "FX_IDC:TRYJPY"
     },
@@ -18305,77 +18360,77 @@
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4100040300,
         "Middle East",
         null,
-        9
+        null
       ],
       "s": "FX_IDC:USDAED"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2100051300,
         "Asia",
         null,
-        25
+        null
       ],
       "s": "FX_IDC:USDAFN"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1100111100,
         "Europe",
         null,
-        48
+        null
       ],
       "s": "FX_IDC:USDALL"
     },
     {
       "f": [
         "",
-        "Exotic",
+        null,
         20180300120300,
         "",
         null,
-        26
+        null
       ],
       "s": "FX_IDC:USDAMD"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         100130600,
         "Americas",
         null,
-        28
+        null
       ],
       "s": "FX_IDC:USDANG"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5100140000,
         "Africa",
         null,
-        24
+        null
       ],
       "s": "FX_IDC:USDAOA"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         100171800,
         "Americas",
         null,
-        27
+        null
       ],
       "s": "FX_IDC:USDARS"
     },
@@ -18393,121 +18448,121 @@
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         100220600,
         "Americas",
         null,
-        36
+        null
       ],
       "s": "FX_IDC:USDAWG"
     },
     {
       "f": [
         "",
-        "Exotic",
+        null,
         20180300251300,
         "",
         null,
-        34
+        null
       ],
       "s": "FX_IDC:USDAZN"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1101001200,
         "Europe",
         null,
-        30
+        null
       ],
       "s": "FX_IDC:USDBAM"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         101010300,
         "Americas",
         null,
-        32
+        null
       ],
       "s": "FX_IDC:USDBBD"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2101031900,
         "Asia",
         null,
-        38
+        null
       ],
       "s": "FX_IDC:USDBDT"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1101061300,
         "Europe",
         null,
-        37
+        null
       ],
       "s": "FX_IDC:USDBGN"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4101070300,
         "Middle East",
         null,
-        29
+        null
       ],
       "s": "FX_IDC:USDBHD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5101080500,
         "Africa",
         null,
-        31
+        null
       ],
       "s": "FX_IDC:USDBIF"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         101120300,
         "Americas",
         null,
-        33
+        null
       ],
       "s": "FX_IDC:USDBMD"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2101130300,
         "Asia",
         null,
-        35
+        null
       ],
       "s": "FX_IDC:USDBND"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         101140100,
         "Americas",
         null,
-        39
+        null
       ],
       "s": "FX_IDC:USDBOB"
     },
@@ -18518,62 +18573,62 @@
         21,
         "Americas",
         null,
-        7
+        0
       ],
       "s": "FX_IDC:USDBRL"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         101180300,
         "Americas",
         null,
-        42
+        null
       ],
       "s": "FX_IDC:USDBSD"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2101191300,
         "Asia",
         null,
-        41
+        null
       ],
       "s": "FX_IDC:USDBTN"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5101221500,
         "Africa",
         null,
-        132
+        null
       ],
       "s": "FX_IDC:USDBWP"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1101241300,
         "Europe",
         null,
-        43
+        null
       ],
       "s": "FX_IDC:USDBYN"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         101250300,
         "Americas",
         null,
-        40
+        null
       ],
       "s": "FX_IDC:USDBZD"
     },
@@ -18591,11 +18646,11 @@
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5102030500,
         "Africa",
         null,
-        44
+        null
       ],
       "s": "FX_IDC:USDCDF"
     },
@@ -18613,22 +18668,22 @@
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         102110500,
         "Americas",
         null,
-        47
+        null
       ],
       "s": "FX_IDC:USDCLF"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         102111500,
         "Americas",
         null,
-        45
+        null
       ],
       "s": "FX_IDC:USDCLP"
     },
@@ -18639,73 +18694,62 @@
         2102130700,
         "Asia",
         null,
-        46
+        1
       ],
       "s": "FX_IDC:USDCNH"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         6,
         "Asia",
         null,
-        6
+        null
       ],
       "s": "FX_IDC:USDCNY"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         102141500,
         "Americas",
         null,
-        49
+        null
       ],
       "s": "FX_IDC:USDCOP"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         102170200,
         "Americas",
         null,
-        50
+        null
       ],
       "s": "FX_IDC:USDCRC"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
-        102200200,
-        "Americas",
         null,
-        53
-      ],
-      "s": "FX_IDC:USDCUC"
-    },
-    {
-      "f": [
-        "Americas",
-        "Exotic",
         102201500,
         "Americas",
         null,
-        51
+        null
       ],
       "s": "FX_IDC:USDCUP"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5102210400,
         "Africa",
         null,
-        52
+        null
       ],
       "s": "FX_IDC:USDCVE"
     },
@@ -18716,18 +18760,18 @@
         1102251000,
         "Europe",
         null,
-        10
+        2
       ],
       "s": "FX_IDC:USDCZK"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5103090500,
         "Africa",
         null,
-        54
+        null
       ],
       "s": "FX_IDC:USDDJF"
     },
@@ -18738,62 +18782,62 @@
         1103101000,
         "Europe",
         null,
-        14
+        3
       ],
       "s": "FX_IDC:USDDKK"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         103141500,
         "Americas",
         null,
-        56
+        null
       ],
       "s": "FX_IDC:USDDOP"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5103250300,
         "Africa",
         null,
-        57
+        null
       ],
       "s": "FX_IDC:USDDZD"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4104061500,
         "Middle East",
         null,
-        55
+        null
       ],
       "s": "FX_IDC:USDEGP"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5104171300,
         "Africa",
         null,
-        59
+        null
       ],
       "s": "FX_IDC:USDERN"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5104190100,
         "Africa",
         null,
-        58
+        null
       ],
       "s": "FX_IDC:USDETB"
     },
@@ -18811,22 +18855,22 @@
     {
       "f": [
         "Pacific",
-        "Exotic",
+        null,
         3105090300,
         "Pacific",
         null,
-        133
+        null
       ],
       "s": "FX_IDC:USDFJD"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         105101500,
         "Americas",
         null,
-        60
+        null
       ],
       "s": "FX_IDC:USDFKP"
     },
@@ -18844,77 +18888,77 @@
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1106041100,
         "Europe",
         null,
-        62
+        null
       ],
       "s": "FX_IDC:USDGEL"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5106071800,
         "Africa",
         null,
-        63
+        null
       ],
       "s": "FX_IDC:USDGHS"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1106081500,
         "Europe",
         null,
-        61
+        null
       ],
       "s": "FX_IDC:USDGIP"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5106120300,
         "Africa",
         null,
-        67
+        null
       ],
       "s": "FX_IDC:USDGMD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5106130500,
         "Africa",
         null,
-        64
+        null
       ],
       "s": "FX_IDC:USDGNF"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         106191600,
         "Americas",
         null,
-        65
+        null
       ],
       "s": "FX_IDC:USDGTQ"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         106240300,
         "Americas",
         null,
-        66
+        null
       ],
       "s": "FX_IDC:USDGYD"
     },
@@ -18925,18 +18969,18 @@
         14,
         "Asia",
         null,
-        0
+        4
       ],
       "s": "FX_IDC:USDHKD"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         107131100,
         "Americas",
         null,
-        69
+        null
       ],
       "s": "FX_IDC:USDHNL"
     },
@@ -18947,18 +18991,18 @@
         1107171000,
         "Europe",
         null,
-        21
+        5
       ],
       "s": "FX_IDC:USDHRK"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         107190600,
         "Americas",
         null,
-        68
+        null
       ],
       "s": "FX_IDC:USDHTG"
     },
@@ -18969,29 +19013,29 @@
         1107200500,
         "Europe",
         null,
-        8
+        6
       ],
       "s": "FX_IDC:USDHUF"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2108031700,
         "Asia",
         null,
-        70
+        null
       ],
       "s": "FX_IDC:USDIDR"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4108111800,
         "Middle East",
         null,
-        71
+        null
       ],
       "s": "FX_IDC:USDILS"
     },
@@ -19002,62 +19046,62 @@
         18,
         "Asia",
         null,
-        5
+        7
       ],
       "s": "FX_IDC:USDINR"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4108160300,
         "Middle East",
         null,
-        74
+        null
       ],
       "s": "FX_IDC:USDIQD"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4108171700,
         "Middle East",
         null,
-        20
+        null
       ],
       "s": "FX_IDC:USDIRR"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1108181000,
         "Europe",
         null,
-        15
+        null
       ],
       "s": "FX_IDC:USDISK"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         109120300,
         "Americas",
         null,
-        72
+        null
       ],
       "s": "FX_IDC:USDJMD"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4109140300,
         "Middle East",
         null,
-        73
+        null
       ],
       "s": "FX_IDC:USDJOD"
     },
@@ -19075,286 +19119,297 @@
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5110041800,
         "Africa",
         null,
-        77
+        null
       ],
       "s": "FX_IDC:USDKES"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2110061800,
         "Asia",
         null,
-        75
+        null
       ],
       "s": "FX_IDC:USDKGS"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2110071700,
         "Asia",
         null,
-        78
+        null
       ],
       "s": "FX_IDC:USDKHR"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5110120500,
         "Africa",
         null,
-        76
+        null
       ],
       "s": "FX_IDC:USDKMF"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2110152200,
         "Asia",
         null,
-        79
+        null
       ],
       "s": "FX_IDC:USDKPW"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         12,
         "Asia",
         null,
-        3
+        null
       ],
       "s": "FX_IDC:USDKRW"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4110220300,
         "Middle East",
         null,
-        17
+        null
       ],
       "s": "FX_IDC:USDKWD"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         110240300,
         "Americas",
         null,
-        81
+        null
       ],
       "s": "FX_IDC:USDKYD"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2110251900,
         "Asia",
         null,
-        82
+        null
       ],
       "s": "FX_IDC:USDKZT"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2111001000,
         "Asia",
         null,
-        83
+        null
       ],
       "s": "FX_IDC:USDLAK"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4111011500,
         "Middle East",
         null,
-        84
+        null
       ],
       "s": "FX_IDC:USDLBP"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2111101700,
         "Asia",
         null,
-        80
+        null
       ],
       "s": "FX_IDC:USDLKR"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5111170300,
         "Africa",
         null,
-        85
+        null
       ],
       "s": "FX_IDC:USDLRD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5111181100,
         "Africa",
         null,
-        87
+        null
       ],
       "s": "FX_IDC:USDLSL"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5111240300,
         "Africa",
         null,
-        86
+        null
       ],
       "s": "FX_IDC:USDLYD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5112000300,
         "Africa",
         null,
-        88
+        null
       ],
       "s": "FX_IDC:USDMAD"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1112031100,
         "Europe",
         null,
-        92
+        null
       ],
       "s": "FX_IDC:USDMDL"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5112060000,
         "Africa",
         null,
-        94
+        null
       ],
       "s": "FX_IDC:USDMGA"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1112100300,
         "Europe",
         null,
-        93
+        null
       ],
       "s": "FX_IDC:USDMKD"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2112121000,
         "Asia",
         null,
-        97
+        null
       ],
       "s": "FX_IDC:USDMMK"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2112131900,
         "Asia",
         null,
-        95
+        null
       ],
       "s": "FX_IDC:USDMNT"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2112141500,
         "Asia",
         null,
-        90
+        null
       ],
       "s": "FX_IDC:USDMOP"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5112171400,
         "Africa",
         null,
-        91
+        null
       ],
       "s": "FX_IDC:USDMRO"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
+        5112172000,
+        "Africa",
+        null,
+        null
+      ],
+      "s": "FX_IDC:USDMRU"
+    },
+    {
+      "f": [
+        "Africa",
+        null,
         5112201700,
         "Africa",
         null,
-        96
+        null
       ],
       "s": "FX_IDC:USDMUR"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2112211700,
         "Asia",
         null,
-        89
+        null
       ],
       "s": "FX_IDC:USDMVR"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5112221000,
         "Africa",
         null,
-        98
+        null
       ],
       "s": "FX_IDC:USDMWK"
     },
@@ -19365,62 +19420,62 @@
         9,
         "Americas",
         null,
-        1
+        8
       ],
       "s": "FX_IDC:USDMXN"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2112241700,
         "Asia",
         null,
-        16
+        null
       ],
       "s": "FX_IDC:USDMYR"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5112251300,
         "Africa",
         null,
-        99
+        null
       ],
       "s": "FX_IDC:USDMZN"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5113000300,
         "Africa",
         null,
-        101
+        null
       ],
       "s": "FX_IDC:USDNAD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5113061300,
         "Africa",
         null,
-        100
+        null
       ],
       "s": "FX_IDC:USDNGN"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         113081400,
         "Americas",
         null,
-        102
+        null
       ],
       "s": "FX_IDC:USDNIO"
     },
@@ -19431,18 +19486,18 @@
         20,
         "Europe",
         null,
-        12
+        9
       ],
       "s": "FX_IDC:USDNOK"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2113151700,
         "Asia",
         null,
-        103
+        null
       ],
       "s": "FX_IDC:USDNPR"
     },
@@ -19460,66 +19515,66 @@
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4114121700,
         "Middle East",
         null,
-        19
+        null
       ],
       "s": "FX_IDC:USDOMR"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         115000100,
         "Americas",
         null,
-        104
+        null
       ],
       "s": "FX_IDC:USDPAB"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         115041300,
         "Americas",
         null,
-        106
+        null
       ],
       "s": "FX_IDC:USDPEN"
     },
     {
       "f": [
         "Pacific",
-        "Exotic",
+        null,
         3115061000,
         "Pacific",
         null,
-        135
+        null
       ],
       "s": "FX_IDC:USDPGK"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2115071500,
         "Asia",
         null,
-        105
+        null
       ],
       "s": "FX_IDC:USDPHP"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2115101700,
         "Asia",
         null,
-        107
+        null
       ],
       "s": "FX_IDC:USDPKR"
     },
@@ -19530,29 +19585,29 @@
         29,
         "Europe",
         null,
-        22
+        10
       ],
       "s": "FX_IDC:USDPLN"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         115240600,
         "Americas",
         null,
-        108
+        null
       ],
       "s": "FX_IDC:USDPYG"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4116001700,
         "Middle East",
         null,
-        109
+        null
       ],
       "s": "FX_IDC:USDQAR"
     },
@@ -19563,18 +19618,18 @@
         1117141300,
         "Europe",
         null,
-        111
+        11
       ],
       "s": "FX_IDC:USDRON"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1117180300,
         "Europe",
         null,
-        110
+        null
       ],
       "s": "FX_IDC:USDRSD"
     },
@@ -19585,18 +19640,18 @@
         19,
         "Europe",
         null,
-        4
+        12
       ],
       "s": "FX_IDC:USDRUB"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5117220500,
         "Africa",
         null,
-        112
+        null
       ],
       "s": "FX_IDC:USDRWF"
     },
@@ -19607,40 +19662,40 @@
         4118001700,
         "Middle East",
         null,
-        18
+        13
       ],
       "s": "FX_IDC:USDSAR"
     },
     {
       "f": [
         "Pacific",
-        "Exotic",
+        null,
         3118010300,
         "Pacific",
         null,
-        143
+        null
       ],
       "s": "FX_IDC:USDSBD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5118021700,
         "Africa",
         null,
-        114
+        null
       ],
       "s": "FX_IDC:USDSCR"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5118030600,
         "Africa",
         null,
-        113
+        null
       ],
       "s": "FX_IDC:USDSDG"
     },
@@ -19651,7 +19706,7 @@
         15,
         "Europe",
         null,
-        13
+        14
       ],
       "s": "FX_IDC:USDSEK"
     },
@@ -19662,95 +19717,106 @@
         10,
         "Asia",
         null,
-        2
+        15
       ],
       "s": "FX_IDC:USDSGD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5118071500,
         "Africa",
         null,
-        115
+        null
       ],
       "s": "FX_IDC:USDSHP"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5118111100,
         "Africa",
         null,
-        117
+        null
       ],
       "s": "FX_IDC:USDSLL"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5118141800,
         "Africa",
         null,
-        116
+        null
       ],
       "s": "FX_IDC:USDSOS"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         118170300,
         "Americas",
         null,
-        122
+        null
       ],
       "s": "FX_IDC:USDSRD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5118190300,
         "Africa",
         null,
-        118
+        null
       ],
       "s": "FX_IDC:USDSTD"
     },
     {
       "f": [
+        "Africa",
+        null,
+        5118191300,
+        "Africa",
+        null,
+        null
+      ],
+      "s": "FX_IDC:USDSTN"
+    },
+    {
+      "f": [
         "Americas",
-        "Exotic",
+        null,
         118210200,
         "Americas",
         null,
-        120
+        null
       ],
       "s": "FX_IDC:USDSVC"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4118241500,
         "Middle East",
         null,
-        119
+        null
       ],
       "s": "FX_IDC:USDSYP"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5118251100,
         "Africa",
         null,
-        121
+        null
       ],
       "s": "FX_IDC:USDSZL"
     },
@@ -19761,51 +19827,51 @@
         2119070100,
         "Asia",
         null,
-        11
+        16
       ],
       "s": "FX_IDC:USDTHB"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2119091800,
         "Asia",
         null,
-        123
+        null
       ],
       "s": "FX_IDC:USDTJS"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2119121900,
         "Asia",
         null,
-        130
+        null
       ],
       "s": "FX_IDC:USDTMT"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5119130300,
         "Africa",
         null,
-        126
+        null
       ],
       "s": "FX_IDC:USDTND"
     },
     {
       "f": [
         "Pacific",
-        "Exotic",
+        null,
         3119141500,
         "Pacific",
         null,
-        134
+        null
       ],
       "s": "FX_IDC:USDTOP"
     },
@@ -19816,183 +19882,183 @@
         16,
         "Middle East",
         null,
-        125
+        17
       ],
       "s": "FX_IDC:USDTRY"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         119190300,
         "Americas",
         null,
-        127
+        null
       ],
       "s": "FX_IDC:USDTTD"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         26,
         "Asia",
         null,
-        124
+        null
       ],
       "s": "FX_IDC:USDTWD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5119251800,
         "Africa",
         null,
-        128
+        null
       ],
       "s": "FX_IDC:USDTZS"
     },
     {
       "f": [
         "Europe",
-        "Exotic",
+        null,
         1120000700,
         "Europe",
         null,
-        129
+        null
       ],
       "s": "FX_IDC:USDUAH"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5120062300,
         "Africa",
         null,
-        131
+        null
       ],
       "s": "FX_IDC:USDUGX"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         120242000,
         "Americas",
         null,
-        137
+        null
       ],
       "s": "FX_IDC:USDUYU"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2120251800,
         "Asia",
         null,
-        138
+        null
       ],
       "s": "FX_IDC:USDUZS"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         121040500,
         "Americas",
         null,
-        142
+        null
       ],
       "s": "FX_IDC:USDVEF"
     },
     {
       "f": [
         "Asia",
-        "Exotic",
+        null,
         2121130300,
         "Asia",
         null,
-        141
+        null
       ],
       "s": "FX_IDC:USDVND"
     },
     {
       "f": [
         "Pacific",
-        "Exotic",
+        null,
         3121202100,
         "Pacific",
         null,
-        140
+        null
       ],
       "s": "FX_IDC:USDVUV"
     },
     {
       "f": [
         "Pacific",
-        "Exotic",
+        null,
         3122181900,
         "Pacific",
         null,
-        139
+        null
       ],
       "s": "FX_IDC:USDWST"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5123000500,
         "Africa",
         null,
-        136
+        null
       ],
       "s": "FX_IDC:USDXAF"
     },
     {
       "f": [
         "Americas",
-        "Exotic",
+        null,
         123020300,
         "Americas",
         null,
-        144
+        null
       ],
       "s": "FX_IDC:USDXCD"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5123140500,
         "Africa",
         null,
-        145
+        null
       ],
       "s": "FX_IDC:USDXOF"
     },
     {
       "f": [
         "Pacific",
-        "Exotic",
+        null,
         3123150500,
         "Pacific",
         null,
-        147
+        null
       ],
       "s": "FX_IDC:USDXPF"
     },
     {
       "f": [
         "Middle East",
-        "Exotic",
+        null,
         4124041700,
         "Middle East",
         null,
-        146
+        null
       ],
       "s": "FX_IDC:USDYER"
     },
@@ -20003,18 +20069,18 @@
         24,
         "Africa",
         null,
-        23
+        18
       ],
       "s": "FX_IDC:USDZAR"
     },
     {
       "f": [
         "Africa",
-        "Exotic",
+        null,
         5125122200,
         "Africa",
         null,
-        148
+        null
       ],
       "s": "FX_IDC:USDZMW"
     },
@@ -20461,11 +20527,11 @@
     {
       "f": [
         "",
-        null,
+        "Exotic",
         39,
         "",
         null,
-        null
+        66
       ],
       "s": "FX_IDC:ZARJPY"
     },

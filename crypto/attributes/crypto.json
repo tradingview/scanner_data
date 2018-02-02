@@ -1,5 +1,5 @@
 {
-  "time": "2018-01-31T17:47:22.732Z",
+  "time": "2018-01-31T17:51:10.270Z",
   "fields": [
     "sector",
     "crypto_code"
@@ -356,20 +356,6 @@
       ]
     },
     {
-      "s": "BITFINEX:BCUBTC",
-      "f": [
-        "Bitcoin Unlimited (Futures)",
-        "BTU"
-      ]
-    },
-    {
-      "s": "BITFINEX:BCUUSD",
-      "f": [
-        "Bitcoin Unlimited (Futures)",
-        "BTU"
-      ]
-    },
-    {
       "s": "POLONIEX:BTCDBTC",
       "f": [
         "BitcoinDark",
@@ -440,20 +426,6 @@
       ]
     },
     {
-      "s": "BITTREX:SWIFTBTC",
-      "f": [
-        "Bitswift",
-        "SWIFT"
-      ]
-    },
-    {
-      "s": "BITTREX:SWIFTUSD",
-      "f": [
-        "Bitswift",
-        "SWIFT"
-      ]
-    },
-    {
       "s": "BITTREX:BLKBTC",
       "f": [
         "BlackCoin",
@@ -521,34 +493,6 @@
       "f": [
         "Breakout Stake",
         "BRX"
-      ]
-    },
-    {
-      "s": "BITFINEX:BT1BTC",
-      "f": [
-        "BT1 [CST]",
-        "BT1"
-      ]
-    },
-    {
-      "s": "BITFINEX:BT1USD",
-      "f": [
-        "BT1 [CST]",
-        "BT1"
-      ]
-    },
-    {
-      "s": "BITFINEX:BT2BTC",
-      "f": [
-        "BT2 [CST]",
-        "BT2"
-      ]
-    },
-    {
-      "s": "BITFINEX:BT2USD",
-      "f": [
-        "BT2 [CST]",
-        "BT2"
       ]
     },
     {
@@ -874,7 +818,7 @@
       ]
     },
     {
-      "s": "BITTREX:DGDBTC",
+      "s": "BINANCE:DGDBTC",
       "f": [
         "DigixDAO",
         "DGD"
@@ -1756,7 +1700,7 @@
       ]
     },
     {
-      "s": "BITTREX:MTLBTC",
+      "s": "BINANCE:MTLBTC",
       "f": [
         "Metal",
         "MTL"
@@ -2484,7 +2428,7 @@
       ]
     },
     {
-      "s": "BITTREX:SNGLSBTC",
+      "s": "BINANCE:SNGLSBTC",
       "f": [
         "SingularDTV",
         "SNGLS"
@@ -2820,7 +2764,7 @@
       ]
     },
     {
-      "s": "BITTREX:TRIGBTC",
+      "s": "BINANCE:TRIGBTC",
       "f": [
         "Triggers",
         "TRIG"
@@ -3069,20 +3013,6 @@
       "f": [
         "Wings",
         "WINGS"
-      ]
-    },
-    {
-      "s": "BITTREX:XAURBTC",
-      "f": [
-        "Xaurum",
-        "XAUR"
-      ]
-    },
-    {
-      "s": "BITTREX:XAURUSD",
-      "f": [
-        "Xaurum",
-        "XAUR"
       ]
     },
     {

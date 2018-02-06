@@ -1,15 +1,15 @@
 {
   "time": "2018-02-05T15:46:00.270Z",
   "fields": [],
-  "groups": [
-    { "f": [], "g": "btcbtc_spreads"  },
-    { "f": [], "g": "bittrex_spreads"  },
-    { "f": [], "g": "poloniex_spreads"  },
-    { "f": [], "g": "bitflyer_spreads"  },
-    { "f": [], "g": "bitso_spreads"  },
-    { "f": [], "g": "cexio_spreads"  },
-    { "f": [], "g": "gocio_spreads"  },
-    { "f": [], "g": "hitbtc_spreads"  },
-    { "f": [], "g": "therocktrading_spreads"  }
+  "symbols": [
+    { "f": [], "s": "btcbtc_spreads"  },
+    { "f": [], "s": "bittrex_spreads"  },
+    { "f": [], "s": "poloniex_spreads"  },
+    { "f": [], "s": "bitflyer_spreads"  },
+    { "f": [], "s": "bitso_spreads"  },
+    { "f": [], "s": "cexio_spreads"  },
+    { "f": [], "s": "gocio_spreads"  },
+    { "f": [], "s": "hitbtc_spreads"  },
+    { "f": [], "s": "therocktrading_spreads"  }
   ]
 }

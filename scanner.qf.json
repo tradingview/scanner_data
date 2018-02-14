@@ -350,5 +350,13 @@
   {
     "name": "index_priority",
     "type": "number"
+  },
+  {
+    "name": "earnings_release_calendar_date",
+    "type": "number"
+  },
+  {
+    "name": "earnings_release_next_calendar_date",
+    "type": "number"
   }
 ]

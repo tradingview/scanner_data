@@ -245,6 +245,7 @@ const majorIndices = [
     {"s": "TVC:HSI", "cc": "HK"},
     {"s": "TVC:SHCOMP", "cc": "CN"},
     {"s": "TVC:DAX", "cc": "DE"},
+    {"s": "TVC:DEU30", "cc": "DE"},
     {"s": "EURONEXT:PX1", "cc": "FR"},
     {"s": "TVC:SX5E", "cc": "EU"},
     {"s": "TSX:TSX", "cc": "CA"},

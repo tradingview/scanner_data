@@ -158,7 +158,7 @@ const bondsMarks = [
 const indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "DOW-JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
     "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE",
-    "Bund", "IBEX 35", "DAX PERFORMANCE", "US Wall St 30", "US Nas 100", "UK 100", "US Russ 2000", "AEX", "US SPX 500", "DAX", "NYSE AMERICAN COMPOSITE"
+    "Bund", "IBEX 35", "DAX PERFORMANCE", "US Wall St 30", "US Nas 100", "UK 100", "US Russ 2000", "AEX", "US SPX 500", "DAX"
 ];
 
 const metalsMarks = [
@@ -176,10 +176,10 @@ const agricultureMarks = [
 const regionMarks = {
     "Middle East": ["TURKEY"],
     "Asia": ["CHINA", "HONG KONG", "Hong Kong", "INDIA", "INDONESIA", "JAPAN", "KOREA", "MALAYSIA", "SINGAPORE", "Singapore", "THAILAND"],
-    "Europe": ["EURO CURRENCY INDEX", "BRITISH POUND CURRENCY INDEX", "SWISS FRANC CURRENCY INDEX", "BELGIUM", "FRANCE", "GERMAN", "Germany", "IRELAND", "ITALY", "NETHERLANDS", "Netherlands", "NORWAY", "PORTUGAL", "SPAIN", "Swiss", "UK ", "SWEDEN "],
-    "Americas": ["NYSE", "NASDAQ", "S&P 500", "US ", "THOMSON REUTERS", "CANADIAN DOLLAR CURRENCY INDEX", "US GOVERNMENT BONDS", "DOW JONES", "DOW-JONES", "RUSSELL", "PHLX"],
+    "Europe": ["EURO CURRENCY INDEX", "BRITISH POUND CURRENCY INDEX", "SWISS FRANC CURRENCY INDEX", "BELGIUM", "FRANCE", "GERMAN", "Germany", "IRELAND", "ITALY", "NETHERLANDS", "Netherlands", "NORWAY", "PORTUGAL", "SPAIN", "Swiss", "UK "],
+    "Americas": ["NYSE", "NASDAQ", "S&P 500", "US ", "THOMSON REUTERS", "CANADIAN DOLLAR CURRENCY INDEX", "US GOVERNMENT BONDS", "DOW JONES", "DOW-JONES", "RUSSELL"],
     "Africa": ["SOUTH AFRICA"],
-    "Pacific": ["AUSTRALIA", "Australia", "NEW ZEALAND "],
+    "Pacific": ["AUSTRALIA", "Australia", "NEW ZEALAND DOLLAR CURRENCY INDEX"],
     "": ["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD", "SILVER", "PLATINUM", "PALLADIUM", "Heating Oil", "Cotton", "Crude Oil"]
 };
 

@@ -1,5 +1,5 @@
 {
-  "time": "2018-02-22T08:10:13.318Z",
+  "time": "2018-03-01T15:10:28.833Z",
   "fields": [
     "sector",
     "country",
@@ -100,15 +100,6 @@
     {
       "f": [
         "index",
-        "Asia",
-        15,
-        "KR"
-      ],
-      "s": "INDEX:KQY0"
-    },
-    {
-      "f": [
-        "index",
         "Europe",
         18,
         "RU"
@@ -123,15 +114,6 @@
         "IN"
       ],
       "s": "NSE:NIFTY"
-    },
-    {
-      "f": [
-        "index",
-        "Pacific",
-        19,
-        "NZ"
-      ],
-      "s": "NZX:NZ50G"
     },
     {
       "f": [
@@ -186,15 +168,6 @@
         null
       ],
       "s": "OANDA:NL25EUR"
-    },
-    {
-      "f": [
-        "index",
-        "Asia",
-        13,
-        "SG"
-      ],
-      "s": "OANDA:SG30SGD"
     },
     {
       "f": [
@@ -513,6 +486,96 @@
     },
     {
       "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA02"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA03"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA03Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA05"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA10"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA30"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        null
+      ],
+      "s": "TVC:CA30Y"
+    },
+    {
+      "f": [
         "index",
         "Europe",
         null,
@@ -621,24 +684,6 @@
     },
     {
       "f": [
-        "index",
-        "Europe",
-        7,
-        "DE"
-      ],
-      "s": "TVC:DAX"
-    },
-    {
-      "f": [
-        "index",
-        "Europe",
-        7,
-        "DE"
-      ],
-      "s": "TVC:DEU30"
-    },
-    {
-      "f": [
         "bond",
         "Europe",
         null,
@@ -726,6 +771,15 @@
         null
       ],
       "s": "TVC:DE30Y"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        8,
+        "DE"
+      ],
+      "s": "TVC:DEU30"
     },
     {
       "f": [
@@ -1557,6 +1611,15 @@
     },
     {
       "f": [
+        "index",
+        "Asia",
+        15,
+        "KR"
+      ],
+      "s": "TVC:KOSPI"
+    },
+    {
+      "f": [
         "bond",
         "Asia",
         null,
@@ -1945,6 +2008,15 @@
     {
       "f": [
         "index",
+        "Pacific",
+        19,
+        "NZ"
+      ],
+      "s": "TVC:NZ50G"
+    },
+    {
+      "f": [
+        "index",
         "Americas",
         null,
         null
@@ -2247,6 +2319,15 @@
         "CH"
       ],
       "s": "TVC:SSMI"
+    },
+    {
+      "f": [
+        "index",
+        "Asia",
+        13,
+        "SG"
+      ],
+      "s": "TVC:STI"
     },
     {
       "f": [

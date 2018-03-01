@@ -14,6 +14,7 @@ const groups = [
     {url: "http://hub1.tradingview.com:8094/symbols/spanish_indices", region: "Europe"},
     {url: "http://hub1.tradingview.com:8094/symbols/government_bonds"},
     {url: "http://hub1.tradingview.com:8094/symbols/euro_bonds", region: "Europe"},
+    {url: "http://hub1.tradingview.com:8094/symbols/canadian_bonds", region: "Americas"},
     {
         url: "http://hub1.tradingview.com:8094/symbols/forex_tvc",
         exclude: ["TVC:USOIL", "TVC:UKOIL"]
@@ -25,7 +26,7 @@ const groups = [
     {
         url: "http://hub1.tradingview.com:8094/symbols/oanda",
         include: [
-            "OANDA:SG30SGD", "OANDA:HK33HKD", "OANDA:UK10YBGBP", "OANDA:CORNUSD",
+            "OANDA:HK33HKD", "OANDA:UK10YBGBP", "OANDA:CORNUSD",
             "OANDA:USB30YUSD", "OANDA:XCUUSD", "OANDA:NATGASUSD", "OANDA:NL25EUR", "OANDA:US30USD",
             "OANDA:USB05YUSD", "OANDA:USB02YUSD", "OANDA:SUGARUSD", "OANDA:USB10YUSD", "OANDA:AU200AUD",
             "OANDA:DE30EUR", "OANDA:WHEATUSD", "OANDA:SOYBNUSD"
@@ -61,8 +62,8 @@ const groups = [
         region: "Pacific"
     },
     {
-        url: "http://hub1.tradingview.com:8094/symbols/ind",
-        include: ["INDEX:KQY0"],
+        url: "http://hub1.tradingview.com:8094/symbols/korean_tvc_indices",
+        include: ["TVC:KOSPI"],
         region: "Asia"
     },
     {
@@ -81,8 +82,8 @@ const groups = [
         region: "Europe"
     },
     {
-        url: "http://idc.tradingview.com/udf_proxy/symbols/nzx_indices",
-        include: ["NZX:NZ50G"],
+        url: "http://hub1.tradingview.com:8094/symbols/nzx_tvc_indices",
+        include: ["TVC:NZ50G"],
         region: "Pacific"
     },
     {
@@ -94,6 +95,11 @@ const groups = [
         url: "http://idc.tradingview.com/udf_proxy/symbols/dj_indices?typespecs=main",
         include: ["DJ:DJI"],
         region: "Americas"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/singapore_tvc_indices",
+        include: ["TVC:STI"],
+        region: "Asia"
     },
 ];
 
@@ -250,13 +256,13 @@ const majorIndices = [
     {"s": "TVC:SX5E", "cc": "EU"},
     {"s": "TSX:TSX", "cc": "CA"},
     {"s": "CBOE:VIX", "cc": "US"},
-    {"s": "OANDA:SG30SGD", "cc": "SG"},
+    {"s": "TVC:STI", "cc": "SG"},
     {"s": "ASX:XJO", "cc": "AU"},
-    {"s": "INDEX:KQY0", "cc": "KR"},
+    {"s": "TVC:KOSPI", "cc": "KR"},
     {"s": "BMFBOVESPA:IBOV", "cc": "BR"},
     {"s": "NSE:NIFTY", "cc": "IN"},
     {"s": "MOEX:MICEXINDEXCF", "cc": "RU"},
-    {"s": "NZX:NZ50G", "cc": "NZ"},
+    {"s": "TVC:NZ50G", "cc": "NZ"},
     {"s": "BME:IBC", "cc": "ES"},
     {"s": "TVC:SSMI", "cc": "CH"},
 ];

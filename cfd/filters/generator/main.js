@@ -78,7 +78,7 @@ const groups = [
     },
     {
         url: "http://idc.tradingview.com/udf_proxy/symbols/moex_indices",
-        include: ["MOEX:MICEXINDEXCF"],
+        include: ["MOEX:IMOEX"],
         region: "Europe"
     },
     {
@@ -261,7 +261,7 @@ const majorIndices = [
     {"s": "TVC:KOSPI", "cc": "KR"},
     {"s": "BMFBOVESPA:IBOV", "cc": "BR"},
     {"s": "NSE:NIFTY", "cc": "IN"},
-    {"s": "MOEX:MICEXINDEXCF", "cc": "RU"},
+    {"s": "MOEX:IMOEX", "cc": "RU"},
     {"s": "TVC:NZ50G", "cc": "NZ"},
     {"s": "BME:IBC", "cc": "ES"},
     {"s": "TVC:SSMI", "cc": "CH"},

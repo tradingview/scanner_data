@@ -358,5 +358,13 @@
   {
     "name": "earnings_release_next_calendar_date",
     "type": "number"
+  },
+  {
+    "name": "all_time_high",
+    "type": "price"
+  },
+  {
+    "name": "all_time_low",
+    "type": "price"
   }
 ]

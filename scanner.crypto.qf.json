@@ -54,5 +54,13 @@
   {
     "name": "crypto_code",
     "type": "text"
+  },
+  {
+    "name": "all_time_high",
+    "type": "price"
+  },
+  {
+    "name": "all_time_low",
+    "type": "price"
   }
 ]

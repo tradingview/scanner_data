@@ -76,8 +76,8 @@ const excludeSymbols = [
     "BITFINEX:QTMUSD",
     "BITTREX:AMPBTC",
     "BITTREX:AMPUSD",
-    // "BITFINEX:BTGUSD",
-    // "BITFINEX:BTGBTC",
+    "BINANCE:BCCBTC",
+    "BINANCE:BCCUSD",
 ];
 
 function skipSymbol(s) {

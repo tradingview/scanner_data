@@ -1,5 +1,5 @@
 {
-  "time": "2018-04-05T13:19:45.588Z",
+  "time": "2018-04-12T12:28:58.439Z",
   "fields": [
     "sector",
     "crypto_code"
@@ -454,20 +454,6 @@
       ]
     },
     {
-      "s": "BINANCE:BCCBTC",
-      "f": [
-        "BitConnect",
-        "BCC"
-      ]
-    },
-    {
-      "s": "BINANCE:BCCUSD",
-      "f": [
-        "BitConnect",
-        "BCC"
-      ]
-    },
-    {
       "s": "POLONIEX:BCYBTC",
       "f": [
         "Bitcrystals",
@@ -591,6 +577,20 @@
       "f": [
         "Blox",
         "CDT"
+      ]
+    },
+    {
+      "s": "BITFINEX:BFTBTC",
+      "f": [
+        "BnkToTheFuture",
+        "BFT"
+      ]
+    },
+    {
+      "s": "BITFINEX:BFTUSD",
+      "f": [
+        "BnkToTheFuture",
+        "BFT"
       ]
     },
     {
@@ -885,6 +885,20 @@
       "f": [
         "CyberMiles",
         "CMT"
+      ]
+    },
+    {
+      "s": "BITFINEX:DAIBTC",
+      "f": [
+        "Dai",
+        "DAI"
+      ]
+    },
+    {
+      "s": "BITFINEX:DAIUSD",
+      "f": [
+        "Dai",
+        "DAI"
       ]
     },
     {
@@ -1994,6 +2008,20 @@
       ]
     },
     {
+      "s": "BITFINEX:MTNBTC",
+      "f": [
+        "Medicalchain",
+        "MTN"
+      ]
+    },
+    {
+      "s": "BITFINEX:MTNUSD",
+      "f": [
+        "Medicalchain",
+        "MTN"
+      ]
+    },
+    {
       "s": "BITTREX:MLNBTC",
       "f": [
         "Melon",
@@ -2369,6 +2397,20 @@
       "f": [
         "OAX",
         "OAX"
+      ]
+    },
+    {
+      "s": "BITFINEX:ODEBTC",
+      "f": [
+        "ODEM",
+        "ODE"
+      ]
+    },
+    {
+      "s": "BITFINEX:ODEUSD",
+      "f": [
+        "ODEM",
+        "ODE"
       ]
     },
     {
@@ -2915,6 +2957,20 @@
       "f": [
         "SingularDTV",
         "SNGLS"
+      ]
+    },
+    {
+      "s": "BITFINEX:AGIBTC",
+      "f": [
+        "SingularityNET",
+        "AGI"
+      ]
+    },
+    {
+      "s": "BITFINEX:AGIUSD",
+      "f": [
+        "SingularityNET",
+        "AGI"
       ]
     },
     {
@@ -3531,6 +3587,20 @@
       "f": [
         "Waves",
         "WAVES"
+      ]
+    },
+    {
+      "s": "BITTREX:WAXBTC",
+      "f": [
+        "WAX",
+        "WAX"
+      ]
+    },
+    {
+      "s": "BITFINEX:WAXUSD",
+      "f": [
+        "WAX",
+        "WAX"
       ]
     },
     {

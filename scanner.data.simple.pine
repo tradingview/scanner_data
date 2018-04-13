@@ -326,8 +326,8 @@ ichimoku_cloud()=>
 IC_displacement = 26
 plot(IC_CLine, title="Ichimoku.CLine")
 plot(IC_BLine, title="Ichimoku.BLine")
-plot(IC_Lead1, offset = IC_displacement, title="Ichimoku.Lead1")
-plot(IC_Lead2, offset = IC_displacement, title="Ichimoku.Lead2")
+plot(IC_Lead1[IC_displacement], offset = IC_displacement, title="Ichimoku.Lead1")
+plot(IC_Lead2[IC_displacement], offset = IC_displacement, title="Ichimoku.Lead2")
 
 
 // Volume Weighted Moving Average (VWMA)

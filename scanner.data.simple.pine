@@ -102,7 +102,7 @@ plot(EMA200, title="EMA200")
 
 // study(title="Stochastic", shorttitle="Stoch")
 lengthStoch = 14
-smoothKStoch = 1
+smoothKStoch = 3
 smoothDStoch = 3
 kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch = sma(kStoch, smoothDStoch)

@@ -8,8 +8,16 @@ const groups = [
     {url: "http://hub1.tradingview.com:8094/symbols/us_chicago_indices", region: "Americas"},
     {url: "http://hub1.tradingview.com:8094/symbols/us_ny_indices"},
     {url: "http://hub1.tradingview.com:8094/symbols/japan_indices", region: "Asia"},
-    {url: "http://hub1.tradingview.com:8094/symbols/china_indices", region: "Asia"},
-    {url: "http://hub1.tradingview.com:8094/symbols/european_indices", region: "Europe"},
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/china_indices",
+        "include": ["TVC:SHCOMP"],
+        region: "Asia"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/european_indices",
+        include: ["TVC:SX5E"],
+        region: "Europe"
+    },
     {url: "http://hub1.tradingview.com:8094/symbols/british_indices", region: "Europe"},
     {url: "http://hub1.tradingview.com:8094/symbols/spanish_indices", region: "Europe"},
     {url: "http://hub1.tradingview.com:8094/symbols/government_bonds"},
@@ -48,7 +56,10 @@ const groups = [
     },
     {
         url: "http://idc.tradingview.com/udf_proxy/symbols/euronext_indices",
-        include: ["EURONEXT:PX1"],
+        include: [
+            "EURONEXT:PX1",
+            "EURONEXT:AEX",
+            "EURONEXT:BEL20"],
         region: "Europe"
     },
     {
@@ -77,13 +88,18 @@ const groups = [
         region: "Asia"
     },
     {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/bse_indices",
+        include: ["BSE:SENSEX"],
+        region: "Asia"
+    },
+    {
         url: "http://idc.tradingview.com/udf_proxy/symbols/moex_indices",
         include: ["MOEX:IMOEX"],
         region: "Europe"
     },
     {
-        url: "http://hub1.tradingview.com:8094/symbols/nzx_tvc_indices",
-        include: ["TVC:NZ50G"],
+        url: "http://hub1.tradingview.com:8094/symbols/nzx_indices",
+        include: ["NZX:NZ50G"],
         region: "Pacific"
     },
     {
@@ -100,6 +116,46 @@ const groups = [
         url: "http://hub1.tradingview.com:8094/symbols/singapore_tvc_indices",
         include: ["TVC:STI"],
         region: "Asia"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/swiss_indices",
+        include: ["SIX:SMI"],
+        region: "Europe"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/hangseng_indices",
+        include: ["HSI:HSI"],
+        region: "Asia"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/xetra_indices",
+        include: ["XETR:DAX"],
+        region: "Europe"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/istanbul_indices",
+        include: ["BIST:XU100"],
+        region: "Europe"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/warsaw_indices",
+        include: ["GPW:WIG20"],
+        region: "Europe"
+    },
+    {
+        url: "http://idc.tradingview.com/udf_proxy/symbols/mexico_indices",
+        include: ["BMV:ME"],
+        region: "Americas"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/egyptian_indices",
+        include: ["EGX:EGX30"],
+        region: "Middle East"
+    },
+    {
+        url: "http://hub1.tradingview.com:8094/symbols/santiago_indices",
+        include: ["BCS:IPSA"],
+        region: "Americas"
     },
 ];
 
@@ -248,10 +304,9 @@ const majorIndices = [
     {"s": "DJ:DJI", "cc": "US"},
     {"s": "TVC:UKX", "cc": "GB"},
     {"s": "TVC:NI225", "cc": "JP"},
-    {"s": "TVC:HSI", "cc": "HK"},
+    {"s": "HSI:HSI", "cc": "HK"},
     {"s": "TVC:SHCOMP", "cc": "CN"},
-    {"s": "TVC:DAX", "cc": "DE"},
-    {"s": "TVC:DEU30", "cc": "DE"},
+    {"s": "XETR:DAX", "cc": "DE"},
     {"s": "EURONEXT:PX1", "cc": "FR"},
     {"s": "TVC:SX5E", "cc": "EU"},
     {"s": "TSX:TSX", "cc": "CA"},
@@ -261,10 +316,21 @@ const majorIndices = [
     {"s": "TVC:KOSPI", "cc": "KR"},
     {"s": "BMFBOVESPA:IBOV", "cc": "BR"},
     {"s": "NSE:NIFTY", "cc": "IN"},
+    // +new
+    {"s": "BSE:SENSEX", "cc": "IN"},
+    // -new
     {"s": "MOEX:IMOEX", "cc": "RU"},
-    {"s": "TVC:NZ50G", "cc": "NZ"},
+    {"s": "NZX:NZ50G", "cc": "NZ"},
     {"s": "BME:IBC", "cc": "ES"},
-    {"s": "TVC:SSMI", "cc": "CH"},
+    {"s": "SIX:SMI", "cc": "CH"},
+    // +new
+    {"s": "BIST:XU100", "cc": "TR"},
+    {"s": "GPW:WIG20", "cc": "PL"},
+    {"s": "EURONEXT:AEX", "cc": "NL"},
+    {"s": "EURONEXT:BEL20", "cc": "BE"},
+    {"s": "BMV:ME", "cc": "MX"},
+    {"s": "EGX:EGX30", "cc": "EG"},
+    {"s": "BCS:IPSA", "cc": "CL"},
 ];
 
 const symbolsPriorities = {};

@@ -3,6 +3,7 @@ const requestSync = require("sync-request"),
 const {URL} = require('url');
 
 const dstPath = "../cfd.json";
+const dstGroupsPath = "../../groups/indices.json";
 const groups = [
     {url: "http://hub1.tradingview.com:8094/symbols/dxy_idc2", region: "Americas"},
     {url: "http://hub1.tradingview.com:8094/symbols/us_chicago_indices", region: "Americas"},
@@ -403,3 +404,24 @@ fs.writeFileSync(dstPath, JSON.stringify(
         "fields": ["sector", "country", "index_priority", "country_code"],
         "symbols": dstSymbols
     }, null, 2));
+
+
+// update used groups list
+function generateUsedGroups() {
+    const usedGroupsList = groups.map(function (gr) {
+        const url = new URL(gr.url);
+        const groupNames = url.pathname.split('/');
+        const groupName = groupNames[groupNames.length - 1];
+        return groupName + url.search;
+    });
+    usedGroupsList.sort();
+    return usedGroupsList;
+}
+
+fs.writeFileSync(dstGroupsPath, JSON.stringify({
+    "time": new Date().toISOString() + '',
+    "fields": [],
+    "symbols": generateUsedGroups().map(function (s) {
+        return {"s": s, "f": []};
+    })
+}, null, 2));

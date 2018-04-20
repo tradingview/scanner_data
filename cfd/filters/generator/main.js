@@ -425,3 +425,37 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
         return {"s": s, "f": []};
     })
 }, null, 2));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+(function(addedGroupsArr) {
+    const allGroups = JSON.parse(requestSync("GET", "http://idc.tradingview.com/udf_proxy/").getBody());
+    const addedGroupsHash = {};
+    addedGroupsArr.forEach(function (gr) {
+        const url = new URL(gr.url);
+        const groupNames = url.pathname.split('/');
+        const groupName = groupNames[groupNames.length - 1];
+        addedGroupsHash[groupName] = true;
+    });
+
+    const skippedIndices = {
+        "euronext_non_primary_indices": true,
+        "euronext_primary_indices": true,
+        "international_indices": true,
+        "russel_indices": true,
+        "russell_indices": true,
+        "malaysia_ftse_indices": true,
+        "cboe_indices": true,
+        "nasdaq_indices": true,
+        "nyse_gif_indices": true,
+        "nyse_indices": true
+    };
+
+    const missingGroups = Object.keys(allGroups.feeds.idc).filter(function (gr) {
+        return gr.endsWith("_indices") && !skippedIndices[gr];
+    }).filter(function (groupName) {
+        return !addedGroupsHash[groupName];
+    });
+    missingGroups.sort();
+    console.log("Not used index groups:\n" + JSON.stringify(missingGroups, null, 2));
+})(groups);

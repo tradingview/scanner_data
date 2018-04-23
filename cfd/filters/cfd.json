@@ -1,5 +1,5 @@
 {
-  "time": "2018-04-20T10:20:21.315Z",
+  "time": "2018-04-23T14:06:11.055Z",
   "fields": [
     "sector",
     "country",
@@ -19,11 +19,38 @@
     {
       "f": [
         "index",
+        "Middle East",
+        29,
+        "BH"
+      ],
+      "s": "BAHRAIN:BSEX"
+    },
+    {
+      "f": [
+        "index",
+        "Americas",
+        31,
+        "AR"
+      ],
+      "s": "BCBA:IMV"
+    },
+    {
+      "f": [
+        "index",
         "Americas",
         28,
         "CL"
       ],
       "s": "BCS:IPSA"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        30,
+        "RS"
+      ],
+      "s": "BELEX:BELEX15"
     },
     {
       "f": [
@@ -74,10 +101,37 @@
       "f": [
         "index",
         "Americas",
+        32,
+        "CO"
+      ],
+      "s": "BVC:IGBC"
+    },
+    {
+      "f": [
+        "index",
+        "Americas",
+        35,
+        "PE"
+      ],
+      "s": "BVL:SPBLPGPT"
+    },
+    {
+      "f": [
+        "index",
+        "Americas",
         11,
         "US"
       ],
       "s": "CBOE:VIX"
+    },
+    {
+      "f": [
+        "index",
+        "Middle East",
+        33,
+        "AE"
+      ],
+      "s": "DFM:DFMGI"
     },
     {
       "f": [
@@ -144,6 +198,15 @@
     },
     {
       "f": [
+        "index",
+        "Asia",
+        37,
+        "MY"
+      ],
+      "s": "FTSEMYX:FBMKLCI"
+    },
+    {
+      "f": [
         "Energy",
         "",
         null,
@@ -181,6 +244,33 @@
     {
       "f": [
         "index",
+        "Asia",
+        34,
+        "ID"
+      ],
+      "s": "IDX:COMPOSITE"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        36,
+        "LU"
+      ],
+      "s": "LUXSE:LUXX"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        38,
+        "IT"
+      ],
+      "s": "MIL:FTSEMIB"
+    },
+    {
+      "f": [
+        "index",
         "Europe",
         18,
         "RU"
@@ -195,6 +285,15 @@
         "IN"
       ],
       "s": "NSE:NIFTY"
+    },
+    {
+      "f": [
+        "index",
+        "Africa",
+        39,
+        "NG"
+      ],
+      "s": "NSENG:NSE30"
     },
     {
       "f": [
@@ -353,6 +452,42 @@
       "f": [
         "index",
         "Europe",
+        41,
+        "LV"
+      ],
+      "s": "OMXRSE:OMXRGI"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        45,
+        "EE"
+      ],
+      "s": "OMXTSE:OMXTGI"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        47,
+        "LT"
+      ],
+      "s": "OMXVSE:OMXVGI"
+    },
+    {
+      "f": [
+        "index",
+        "Middle East",
+        40,
+        "QA"
+      ],
+      "s": "QSE:GNRI"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
         21,
         "CH"
       ],
@@ -370,11 +505,47 @@
     {
       "f": [
         "index",
+        "Asia",
+        43,
+        "CN"
+      ],
+      "s": "SZSE:399001"
+    },
+    {
+      "f": [
+        "index",
+        "Middle East",
+        42,
+        "SA"
+      ],
+      "s": "TADAWUL:TASI"
+    },
+    {
+      "f": [
+        "index",
+        "Middle East",
+        46,
+        "IL"
+      ],
+      "s": "TASE:TA35"
+    },
+    {
+      "f": [
+        "index",
         "Americas",
         10,
         "CA"
       ],
       "s": "TSX:TSX"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        null,
+        null
+      ],
+      "s": "TVC:AEX"
     },
     {
       "f": [
@@ -470,7 +641,7 @@
       "f": [
         "currency",
         "Pacific",
-        35,
+        54,
         null
       ],
       "s": "TVC:AXY"
@@ -569,7 +740,7 @@
       "f": [
         "currency",
         "Europe",
-        31,
+        50,
         null
       ],
       "s": "TVC:BXY"
@@ -666,6 +837,15 @@
     },
     {
       "f": [
+        "index",
+        "Europe",
+        null,
+        null
+      ],
+      "s": "TVC:CAC40"
+    },
+    {
+      "f": [
         "bond",
         "Asia",
         null,
@@ -758,7 +938,7 @@
       "f": [
         "currency",
         "Americas",
-        34,
+        53,
         null
       ],
       "s": "TVC:CXY"
@@ -856,6 +1036,15 @@
     {
       "f": [
         "index",
+        "Europe",
+        null,
+        null
+      ],
+      "s": "TVC:DEU30"
+    },
+    {
+      "f": [
+        "index",
         "Americas",
         null,
         null
@@ -866,7 +1055,7 @@
       "f": [
         "currency",
         "Americas",
-        29,
+        48,
         null
       ],
       "s": "TVC:DXY"
@@ -974,7 +1163,7 @@
       "f": [
         "currency",
         "Europe",
-        30,
+        49,
         null
       ],
       "s": "TVC:EXY"
@@ -1068,6 +1257,15 @@
         null
       ],
       "s": "TVC:FR30Y"
+    },
+    {
+      "f": [
+        "index",
+        "Europe",
+        null,
+        null
+      ],
+      "s": "TVC:FTMIB"
     },
     {
       "f": [
@@ -1257,6 +1455,15 @@
         null
       ],
       "s": "TVC:HK10Y"
+    },
+    {
+      "f": [
+        "index",
+        "Asia",
+        null,
+        null
+      ],
+      "s": "TVC:HSI"
     },
     {
       "f": [
@@ -1658,7 +1865,7 @@
       "f": [
         "currency",
         "Asia",
-        33,
+        52,
         null
       ],
       "s": "TVC:JXY"
@@ -2062,6 +2269,15 @@
     {
       "f": [
         "index",
+        "Pacific",
+        null,
+        null
+      ],
+      "s": "TVC:NZ50G"
+    },
+    {
+      "f": [
+        "index",
         "Americas",
         null,
         null
@@ -2359,6 +2575,15 @@
     {
       "f": [
         "index",
+        "Europe",
+        null,
+        null
+      ],
+      "s": "TVC:SSMI"
+    },
+    {
+      "f": [
+        "index",
         "Asia",
         12,
         "SG"
@@ -2378,7 +2603,7 @@
       "f": [
         "currency",
         "Europe",
-        32,
+        51,
         null
       ],
       "s": "TVC:SXY"
@@ -2729,10 +2954,19 @@
       "f": [
         "currency",
         "Pacific",
-        36,
+        55,
         null
       ],
       "s": "TVC:ZXY"
+    },
+    {
+      "f": [
+        "index",
+        "Asia",
+        44,
+        "TW"
+      ],
+      "s": "TWSE:TAIEX"
     },
     {
       "f": [

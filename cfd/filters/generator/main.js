@@ -390,6 +390,9 @@ const majorIndices = [
     {"s": "TVC:NI225", "cc": "JP"},
     {"s": "HSI:HSI", "cc": "HK"},
     {"s": "TVC:SHCOMP", "cc": "CN"},
+    // +new
+    {"s": "SZSE:399001", "cc": "CN"},
+    // -new
     {"s": "XETR:DAX", "cc": "DE"},
     {"s": "EURONEXT:PX1", "cc": "FR"},
     {"s": "TVC:SX5E", "cc": "EU"},
@@ -429,7 +432,6 @@ const majorIndices = [
     {"s": "QSE:GNRI", "cc": "QA"},
     {"s": "OMXRSE:OMXRGI", "cc": "LV"},
     {"s": "TADAWUL:TASI", "cc": "SA"},
-    {"s": "SZSE:399001", "cc": "CN"},
     {"s": "TWSE:TAIEX", "cc": "TW"},
     {"s": "OMXTSE:OMXTGI", "cc": "EE"},
     {"s": "TASE:TA35", "cc": "IL"},

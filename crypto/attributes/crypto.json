@@ -1,5 +1,5 @@
 {
-  "time": "2018-04-12T12:28:58.439Z",
+  "time": "2018-05-21T09:22:16.538Z",
   "fields": [
     "sector",
     "crypto_code"
@@ -314,20 +314,6 @@
       ]
     },
     {
-      "s": "POLONIEX:BELABTC",
-      "f": [
-        "Bela",
-        "BELA"
-      ]
-    },
-    {
-      "s": "POLONIEX:BELAUSD",
-      "f": [
-        "Bela",
-        "BELA"
-      ]
-    },
-    {
       "s": "BINANCE:BNBBTC",
       "f": [
         "Binance Coin",
@@ -423,6 +409,20 @@
       "f": [
         "Bitcoin Gold",
         "BTG"
+      ]
+    },
+    {
+      "s": "BITFINEX:BCIBTC",
+      "f": [
+        "Bitcoin Interest",
+        "BCI"
+      ]
+    },
+    {
+      "s": "BITFINEX:BCIUSD",
+      "f": [
+        "Bitcoin Interest",
+        "BCI"
       ]
     },
     {
@@ -969,6 +969,20 @@
       "f": [
         "Decred",
         "DCR"
+      ]
+    },
+    {
+      "s": "BITFINEX:DTHBTC",
+      "f": [
+        "Dether",
+        "DTH"
+      ]
+    },
+    {
+      "s": "BITFINEX:DTHUSD",
+      "f": [
+        "Dether",
+        "DTH"
       ]
     },
     {
@@ -1994,6 +2008,20 @@
       ]
     },
     {
+      "s": "BITFINEX:MKRBTC",
+      "f": [
+        "Maker",
+        "MKR"
+      ]
+    },
+    {
+      "s": "BITFINEX:MKRUSD",
+      "f": [
+        "Maker",
+        "MKR"
+      ]
+    },
+    {
       "s": "BITTREX:GUPBTC",
       "f": [
         "Matchpool",
@@ -2463,14 +2491,14 @@
       ]
     },
     {
-      "s": "BINANCE:OSTUSD",
+      "s": "BINANCE:OSTBTC",
       "f": [
         "OST",
         "OST"
       ]
     },
     {
-      "s": "BINANCE:OSTBTC",
+      "s": "BINANCE:OSTUSD",
       "f": [
         "OST",
         "OST"
@@ -2593,6 +2621,20 @@
       "f": [
         "Po.et",
         "POE"
+      ]
+    },
+    {
+      "s": "BINANCE:POABTC",
+      "f": [
+        "POA Network",
+        "POA"
+      ]
+    },
+    {
+      "s": "BITFINEX:POAUSD",
+      "f": [
+        "POA Network",
+        "POA"
       ]
     },
     {

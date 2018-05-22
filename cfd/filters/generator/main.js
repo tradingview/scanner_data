@@ -13,11 +13,11 @@ const groups = [
     {url: "http://hub1.tradingview.com:8094/symbols/european_indices", region: "Europe"},
     {url: "http://hub1.tradingview.com:8094/symbols/british_indices", region: "Europe"},
     {url: "http://hub1.tradingview.com:8094/symbols/spanish_indices", region: "Europe"},
-    {url: "http://hub1.tradingview.com:8094/symbols/government_bonds"},
-    {url: "http://hub1.tradingview.com:8094/symbols/euro_bonds", region: "Europe"},
-    {url: "http://hub1.tradingview.com:8094/symbols/canadian_bonds", region: "Americas"},
+    {url: "http://hub1.tradingview.com:8094/symbols/government_bonds", sector: "bond"},
+    {url: "http://hub1.tradingview.com:8094/symbols/euro_bonds", sector: "bond", region: "Europe"},
+    {url: "http://hub1.tradingview.com:8094/symbols/canadian_bonds", sector: "bond", region: "Americas"},
     {
-        url: "http://hub1.tradingview.com:8094/symbols/forex_tvc",
+        url: "http://udf-proxy.tradingview.com:8094/symbols/forex_tvc",
         exclude: ["TVC:USOIL", "TVC:UKOIL"]
     },
     {url: "http://hub1.tradingview.com:8094/symbols/nzx_tvc_indices", region: "Pacific"},
@@ -274,7 +274,7 @@ groups.forEach(function (path) {
     url = urlO.toString();
     const response = requestSync("GET", url);
     if (response.statusCode != 200) {
-        throw Error(path + ':' + response.statusCode);
+        throw Error(url + ':' + response.statusCode);
     }
     JSON.parse(response.getBody()).symbols.forEach(function (s) {
         if (types[s.f[1]]) {
@@ -288,6 +288,9 @@ groups.forEach(function (path) {
             if (!skip) {
                 if (path.region) {
                     s.region = path.region;
+                }
+                if (path.sector) {
+                    s.sector = path.sector;
                 }
                 symbols.push(s);
 
@@ -349,6 +352,9 @@ function matches2(s, obj) {
 }
 
 function tryDetectSector(s) {
+    if (s.sector) {
+        return s.sector;
+    }
     if (currencyIndices.indexOf(s.s) >= 0) {
         return "currency";
     }
@@ -454,11 +460,97 @@ function detectPriority(s) {
     return symbolsPriorities[s];
 }
 
-const majorIndicesCC = {};
-majorIndices.forEach(s => majorIndicesCC[s.s] = s.cc);
+const symbolsCountryCode = {};
+majorIndices.forEach(s => symbolsCountryCode[s.s] = s.cc);
 
-function getCountryCode(s) {
-    return majorIndicesCC[s];
+const countryCodeByName = {
+    "SOUTH AFRICA": "ZA",
+    "ARGENTINA": "AR",
+    "AUSTRALIA": "AU",
+    "AUSTRIA": "AT",
+    "BELGIUM": "BE",
+    "BAHRAIN": "BH",
+    "BRAZIL": "BR",
+    "CBOE": "US",
+    "CANADIAN": "CA",
+    "CHILE": "CL",
+    "CHINA": "CN",
+    "COLOMBIA": "CO",
+    "CZECH REPUBLIC": "CZ",
+    "DENMARK": "DK",
+    "EGYPT": "EG",
+    "ESTONIA": "EE",
+    "EURO": "EU",
+    "FINLAND": "FI",
+    "FRANCE": "FR",
+    "GERMAN": "DE",
+    "GREECE": "GR",
+    "HONG KONG": "HK",
+    "HUNGARY": "HU",
+    "ICELAND": "IS",
+    "INDIA": "IN",
+    "INDONESIA": "ID",
+    "IRAN": "IR",
+    "IRELAND": "IE",
+    "ISRAEL": "IL",
+    "ITALY": "IT",
+    "JAPAN": "JP",
+    "KOREA": "KR",
+    "LATVIA": "LV",
+    "LITHUANIA": "LT",
+    "LUXEMBOURG": "LU",
+    "MALAYSIA": "MY",
+    "MEXICO": "MX",
+    "NETHERLANDS": "NL",
+    "NEW ZEALAND": "NZ",
+    "NIGERIA": "NG",
+    "NORWAY": "NO",
+    "NOTH KOREA": "KP",
+    "PORTUGAL GOVERNMENT": "PT",
+    "PERU": "PE",
+    "POLAND": "PL",
+    "QATAR": "QA",
+    "ROMANIA": "RO",
+    "RUSSIA": "RU",
+    "SAUDI ARABIA": "SA",
+    "SERBIA": "RS",
+    "SINGAPORE": "SG",
+    "SPAIN": "ES",
+    "SWEDEN": "SE",
+    "SWITZERLAND": "CH",
+    "TAIWAN": "TW",
+    "THAILAND": "TH",
+    "TURKEY": "TR",
+    "UK ": "UK",
+    "US ": "US",
+    "UNITED ARAB EMIRATES": "AE",
+    "VIETNAM": "VN",
+    "WORLDWIDE": "WW"
+};
+
+function tryMatchCountry(desciption) {
+    for (const p in countryCodeByName) {
+        if (matches(desciption, [p])) {
+            return countryCodeByName[p];
+        }
+    }
+    return undefined;
+}
+
+function getCountryCode(s, cat) {
+    const hardCoded = symbolsCountryCode[s.s];
+    if (hardCoded) {
+        return hardCoded;
+    }
+    if ("bond" === cat) {
+        const description = s.f[2];
+        const result = tryMatchCountry(description);
+        if (!result) {
+            console.error("Can't find country code for " + description);
+        }
+        return result;
+    }
+    return undefined;
 }
 
 symbols.forEach(function (s) {
@@ -480,7 +572,7 @@ symbols.forEach(function (s) {
 
     dst.f[2] = detectPriority(s.s);
 
-    dst.f[3] = getCountryCode(s.s);
+    dst.f[3] = getCountryCode(s, cat);
 
     dstSymbols.push(dst);
 });

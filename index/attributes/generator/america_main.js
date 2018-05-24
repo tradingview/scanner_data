@@ -3,6 +3,8 @@ const requestSync = require("sync-request"),
 const {URL} = require('url');
 
 const dstPath = "../america.json";
+
+// TODO : refactor this - load groups list from ../../groups/list.json
 const groups = [
     "http://idc.tradingview.com/udf_proxy/symbols/dj_indices_delayed?typespecs=main",
     "http://idc.tradingview.com/udf_proxy/symbols/nyse_indices_eod?typespecs=main",

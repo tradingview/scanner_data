@@ -1,5 +1,5 @@
 {
-  "time": "2018-05-24T15:01:48.653Z",
+  "time": "2018-05-28T15:30:07.150Z",
   "fields": [
     "sector",
     "root"
@@ -1680,6 +1680,13 @@
     },
     {
       "s": "CME:BTCN2018",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCQ2018",
       "f": [
         null,
         "CME:BTC"

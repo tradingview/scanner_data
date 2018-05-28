@@ -1,26 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="generate index/america" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="project" path-to-js-file="america_main.js" working-dir="$PROJECT_DIR$/index/attributes/generator">
-    <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
-      <option name="envVars">
-        <list />
-      </option>
-      <option name="extraHosts">
-        <list />
-      </option>
-      <option name="links">
-        <list />
-      </option>
-      <option name="networkDisabled" value="false" />
-      <option name="networkMode" value="bridge" />
-      <option name="portBindings">
-        <list />
-      </option>
-      <option name="publishAllPorts" value="false" />
-      <option name="version" value="1" />
-      <option name="volumeBindings">
-        <list />
-      </option>
-    </EXTENSION>
+  <configuration default="false" name="generate index/america" type="NodeJSConfigurationType" factoryName="Node.js" singleton="true" path-to-js-file="america_main.js" working-dir="$PROJECT_DIR$/index/attributes/generator">
     <method />
   </configuration>
 </component>

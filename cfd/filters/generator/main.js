@@ -7,7 +7,7 @@ const dstGroupsPath = "../../groups/indices.json";
 const udfProxyPath = "http://udf-proxy.tradingview.com:8094/symbols/";
 const groups = [
     {url: "dxy_idc2", region: "Americas"},
-    {url: "us_chicago_indices", region: "Americas"},
+    {url: "us_chicago_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_ny_indices"},
     {url: "japan_indices", region: "Asia"},
     {url: "china_indices", region: "Asia"},

@@ -383,7 +383,7 @@ function tryDetectSector(s) {
     return null;
 }
 
-function tryDetectCountry(s) {
+function tryDetectRegion(s) {
     if (s.region) {
         return s.region;
     }
@@ -445,7 +445,7 @@ const majorIndices = [
     {"s": "BVL:SPBLPGPT", "cc": "PE"}
 ];
 
-const symbolsPriorities = {};
+const indicesPriorities = {};
 
 const currencyIndices = [
     // Currency Indices
@@ -460,10 +460,67 @@ const currencyIndices = [
 ];
 [].concat(
     majorIndices.map(el => el.s)
-).concat(currencyIndices).forEach((s, i) => symbolsPriorities[s] = i);
+).concat(currencyIndices).forEach((s, i) => indicesPriorities[s] = i);
 
-function detectPriority(s) {
-    return symbolsPriorities[s];
+const bondsRegionsPriority = [
+    "US",
+    "CANADIAN",
+    // UK, Germany, France, Spain, Italy, потом по алфавиту
+    "UK",
+    "GERMAN",
+    "FRANCE",
+    "SPAIN",
+    "ITALY",
+    //  japan, korea, china, india, hong kong, singapore, malaysia, indonesia, thailand, потом по алфавиту
+    "JAPAN",
+    "KOREA",
+    "CHINA",
+    "INDIA",
+    "HONG KONG",
+    "SINGAPORE",
+    "MALAYSIA",
+    "INDONESIA",
+    "THAILAND"
+];
+
+function calcHash(name, limit) {
+    let result = 0;
+    const len = Math.min(name.length, limit);
+    for (let i = 0; i < len; i++) {
+        result += (name.charCodeAt(i) - 0x41) * Math.pow(10, (len - i) * 2);
+    }
+    return result;
+}
+
+function getBondRegionPriority(description) {
+    const idx = bondsRegionsPriority.findIndex(reg => description.startsWith(reg));
+    if (idx >= 0) {
+        return idx;
+    }
+    return bondsRegionsPriority.length + calcHash(description, 2);
+}
+
+const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;
+
+function getBondNamePriority(ticker) {
+    const parseResult = rxBondParser.exec(ticker);
+    if (!parseResult) {
+        console.warn("can't parse " + ticker + " bond's name");
+        return calcHash(ticker, 3);
+    }
+    return (parseResult[2] ? 0 : 1) * 10 + (+parseResult[1]);
+}
+
+function detectPriority(s, cat) {
+    switch (cat) {
+        case "bond": {
+            const description = s.f[2];
+            const regionP = getBondRegionPriority(description);
+            const nameP = getBondNamePriority(s.f[0]);
+            return regionP * 1000 + nameP;
+        }
+    }
+    return indicesPriorities[s.s];
 }
 
 const symbolsCountryCode = {};
@@ -569,15 +626,13 @@ symbols.forEach(function (s) {
     }
     dst.f[0] = cat;
 
-    const reg = tryDetectCountry(s);
+    const reg = tryDetectRegion(s);
     if (reg === undefined || reg === null) {
         emptyCountryCount++;
         console.error("can't detect country for " + s.s + " (" + s.f[2] + ")");
     }
     dst.f[1] = reg;
-
-    dst.f[2] = detectPriority(s.s);
-
+    dst.f[2] = detectPriority(s, cat);
     dst.f[3] = getCountryCode(s, cat);
 
     dstSymbols.push(dst);

@@ -1,5 +1,5 @@
 {
-  "time": "2018-05-29T12:39:00.867Z",
+  "time": "2018-05-30T12:24:16.117Z",
   "fields": [
     "sector",
     "country",
@@ -509,6 +509,24 @@
         null,
         "AU"
       ],
+      "s": "TVC:AU01"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific",
+        null,
+        "AU"
+      ],
+      "s": "TVC:AU01Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific",
+        null,
+        "AU"
+      ],
       "s": "TVC:AU02"
     },
     {
@@ -581,6 +599,24 @@
         null,
         "AU"
       ],
+      "s": "TVC:AU15"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific",
+        null,
+        "AU"
+      ],
+      "s": "TVC:AU15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Pacific",
+        null,
+        "AU"
+      ],
       "s": "TVC:AU30"
     },
     {
@@ -600,6 +636,24 @@
         null
       ],
       "s": "TVC:AXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "BE"
+      ],
+      "s": "TVC:BE01"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "BE"
+      ],
+      "s": "TVC:BE01Y"
     },
     {
       "f": [
@@ -680,6 +734,42 @@
         null,
         "BE"
       ],
+      "s": "TVC:BE15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "BE"
+      ],
+      "s": "TVC:BE15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "BE"
+      ],
+      "s": "TVC:BE20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "BE"
+      ],
+      "s": "TVC:BE20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "BE"
+      ],
       "s": "TVC:BE30"
     },
     {
@@ -699,6 +789,24 @@
         null
       ],
       "s": "TVC:BXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "CA"
+      ],
+      "s": "TVC:CA01"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "CA"
+      ],
+      "s": "TVC:CA01Y"
     },
     {
       "f": [
@@ -734,6 +842,24 @@
         null,
         "CA"
       ],
+      "s": "TVC:CA03M"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "CA"
+      ],
+      "s": "TVC:CA03MY"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "CA"
+      ],
       "s": "TVC:CA03Y"
     },
     {
@@ -753,6 +879,24 @@
         "CA"
       ],
       "s": "TVC:CA05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "CA"
+      ],
+      "s": "TVC:CA06M"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "CA"
+      ],
+      "s": "TVC:CA06MY"
     },
     {
       "f": [
@@ -798,6 +942,24 @@
         null
       ],
       "s": "TVC:CAC40"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "CN"
+      ],
+      "s": "TVC:CN01"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "CN"
+      ],
+      "s": "TVC:CN01Y"
     },
     {
       "f": [
@@ -878,6 +1040,42 @@
         null,
         "CN"
       ],
+      "s": "TVC:CN15"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "CN"
+      ],
+      "s": "TVC:CN15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "CN"
+      ],
+      "s": "TVC:CN20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "CN"
+      ],
+      "s": "TVC:CN20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "CN"
+      ],
       "s": "TVC:CN30"
     },
     {
@@ -897,6 +1095,24 @@
         null
       ],
       "s": "TVC:CXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
+      "s": "TVC:DE01"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
+      "s": "TVC:DE01Y"
     },
     {
       "f": [
@@ -977,6 +1193,60 @@
         null,
         "DE"
       ],
+      "s": "TVC:DE15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
+      "s": "TVC:DE15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
+      "s": "TVC:DE20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
+      "s": "TVC:DE20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
+      "s": "TVC:DE25"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
+      "s": "TVC:DE25Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DE"
+      ],
       "s": "TVC:DE30"
     },
     {
@@ -1005,6 +1275,96 @@
         null
       ],
       "s": "TVC:DJI"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK03"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK03Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK05"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK30"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "DK"
+      ],
+      "s": "TVC:DK30Y"
     },
     {
       "f": [
@@ -1094,6 +1454,24 @@
         null,
         "ES"
       ],
+      "s": "TVC:ES20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "ES"
+      ],
+      "s": "TVC:ES20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "ES"
+      ],
       "s": "TVC:ES30"
     },
     {
@@ -1122,6 +1500,24 @@
         null
       ],
       "s": "TVC:EXY"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR01"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR01Y"
     },
     {
       "f": [
@@ -1202,6 +1598,60 @@
         null,
         "FR"
       ],
+      "s": "TVC:FR15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR25"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR25Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
       "s": "TVC:FR30"
     },
     {
@@ -1215,12 +1665,48 @@
     },
     {
       "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR50"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "FR"
+      ],
+      "s": "TVC:FR50Y"
+    },
+    {
+      "f": [
         "index",
         "Europe",
         null,
         null
       ],
       "s": "TVC:FTMIB"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB01"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB01Y"
     },
     {
       "f": [
@@ -1301,6 +1787,60 @@
         null,
         "UK"
       ],
+      "s": "TVC:GB15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB25"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB25Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
       "s": "TVC:GB30"
     },
     {
@@ -1311,6 +1851,24 @@
         "UK"
       ],
       "s": "TVC:GB30Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB50"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "UK"
+      ],
+      "s": "TVC:GB50Y"
     },
     {
       "f": [
@@ -1332,12 +1890,156 @@
     },
     {
       "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR03"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR03Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR05"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR25"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "GR"
+      ],
+      "s": "TVC:GR25Y"
+    },
+    {
+      "f": [
         "index",
         "Americas",
         null,
         null
       ],
       "s": "TVC:HGX"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "HK"
+      ],
+      "s": "TVC:HK01"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "HK"
+      ],
+      "s": "TVC:HK01Y"
     },
     {
       "f": [
@@ -1413,6 +2115,24 @@
     },
     {
       "f": [
+        "bond",
+        "Asia",
+        null,
+        "HK"
+      ],
+      "s": "TVC:HK15"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "HK"
+      ],
+      "s": "TVC:HK15Y"
+    },
+    {
+      "f": [
         "index",
         "Asia",
         null,
@@ -1428,6 +2148,24 @@
         null
       ],
       "s": "TVC:IBEX35"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
+      "s": "TVC:ID01"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
+      "s": "TVC:ID01Y"
     },
     {
       "f": [
@@ -1490,6 +2228,60 @@
         null,
         "ID"
       ],
+      "s": "TVC:ID15"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
+      "s": "TVC:ID15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
+      "s": "TVC:ID20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
+      "s": "TVC:ID20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
+      "s": "TVC:ID25"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
+      "s": "TVC:ID25Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "ID"
+      ],
       "s": "TVC:ID30"
     },
     {
@@ -1500,6 +2292,24 @@
         "ID"
       ],
       "s": "TVC:ID30Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IE"
+      ],
+      "s": "TVC:IE01"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IE"
+      ],
+      "s": "TVC:IE01Y"
     },
     {
       "f": [
@@ -1576,6 +2386,42 @@
     {
       "f": [
         "bond",
+        "Europe",
+        null,
+        "IE"
+      ],
+      "s": "TVC:IE15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IE"
+      ],
+      "s": "TVC:IE15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "IN"
+      ],
+      "s": "TVC:IN01"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "IN"
+      ],
+      "s": "TVC:IN01Y"
+    },
+    {
+      "f": [
+        "bond",
         "Asia",
         null,
         "IN"
@@ -1626,6 +2472,60 @@
         "IN"
       ],
       "s": "TVC:IN10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "IN"
+      ],
+      "s": "TVC:IN20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "IN"
+      ],
+      "s": "TVC:IN20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "IN"
+      ],
+      "s": "TVC:IN25"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "IN"
+      ],
+      "s": "TVC:IN25Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
+      "s": "TVC:IT01"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
+      "s": "TVC:IT01Y"
     },
     {
       "f": [
@@ -1706,6 +2606,60 @@
         null,
         "IT"
       ],
+      "s": "TVC:IT15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
+      "s": "TVC:IT15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
+      "s": "TVC:IT20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
+      "s": "TVC:IT20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
+      "s": "TVC:IT25"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
+      "s": "TVC:IT25Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "IT"
+      ],
       "s": "TVC:IT30"
     },
     {
@@ -1725,6 +2679,24 @@
         "US"
       ],
       "s": "TVC:IXIC"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
+      "s": "TVC:JP01"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
+      "s": "TVC:JP01Y"
     },
     {
       "f": [
@@ -1805,6 +2777,42 @@
         null,
         "JP"
       ],
+      "s": "TVC:JP15"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
+      "s": "TVC:JP15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
+      "s": "TVC:JP20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
+      "s": "TVC:JP20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
       "s": "TVC:JP30"
     },
     {
@@ -1815,6 +2823,24 @@
         "JP"
       ],
       "s": "TVC:JP30Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
+      "s": "TVC:JP40"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "JP"
+      ],
+      "s": "TVC:JP40Y"
     },
     {
       "f": [
@@ -1833,6 +2859,24 @@
         "KR"
       ],
       "s": "TVC:KOSPI"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "KR"
+      ],
+      "s": "TVC:KR01"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "KR"
+      ],
+      "s": "TVC:KR01Y"
     },
     {
       "f": [
@@ -1913,6 +2957,24 @@
         null,
         "KR"
       ],
+      "s": "TVC:KR20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "KR"
+      ],
+      "s": "TVC:KR20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "KR"
+      ],
       "s": "TVC:KR30"
     },
     {
@@ -1985,6 +3047,42 @@
         null,
         "MY"
       ],
+      "s": "TVC:MY15"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "MY"
+      ],
+      "s": "TVC:MY15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "MY"
+      ],
+      "s": "TVC:MY20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "MY"
+      ],
+      "s": "TVC:MY20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "MY"
+      ],
       "s": "TVC:MY30"
     },
     {
@@ -2013,6 +3111,24 @@
         "JP"
       ],
       "s": "TVC:NI225"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "NL"
+      ],
+      "s": "TVC:NL01"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "NL"
+      ],
+      "s": "TVC:NL01Y"
     },
     {
       "f": [
@@ -2085,6 +3201,42 @@
         "NL"
       ],
       "s": "TVC:NL10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "NL"
+      ],
+      "s": "TVC:NL15"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "NL"
+      ],
+      "s": "TVC:NL15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "NL"
+      ],
+      "s": "TVC:NL20"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "NL"
+      ],
+      "s": "TVC:NL20Y"
     },
     {
       "f": [
@@ -2247,6 +3399,60 @@
         null
       ],
       "s": "TVC:PALLADIUM"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "PL"
+      ],
+      "s": "TVC:PL02"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "PL"
+      ],
+      "s": "TVC:PL02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "PL"
+      ],
+      "s": "TVC:PL05"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "PL"
+      ],
+      "s": "TVC:PL05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "PL"
+      ],
+      "s": "TVC:PL10"
+    },
+    {
+      "f": [
+        "bond",
+        "Europe",
+        null,
+        "PL"
+      ],
+      "s": "TVC:PL10Y"
     },
     {
       "f": [
@@ -2489,6 +3695,42 @@
         null,
         "SG"
       ],
+      "s": "TVC:SG15"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "SG"
+      ],
+      "s": "TVC:SG15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "SG"
+      ],
+      "s": "TVC:SG20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "SG"
+      ],
+      "s": "TVC:SG20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "SG"
+      ],
       "s": "TVC:SG30"
     },
     {
@@ -2620,6 +3862,24 @@
     {
       "f": [
         "bond",
+        "Asia",
+        null,
+        "TH"
+      ],
+      "s": "TVC:TH15"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TH"
+      ],
+      "s": "TVC:TH15Y"
+    },
+    {
+      "f": [
+        "bond",
         "Middle East",
         null,
         "TR"
@@ -2691,12 +3951,138 @@
     },
     {
       "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW02"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW02Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW05"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW10"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW20"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW20Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW30"
+    },
+    {
+      "f": [
+        "bond",
+        "Asia",
+        null,
+        "TW"
+      ],
+      "s": "TVC:TW30Y"
+    },
+    {
+      "f": [
         "index",
         "Europe",
         5,
         "GB"
       ],
       "s": "TVC:UKX"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US01"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US01M"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US01MY"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US01Y"
     },
     {
       "f": [
@@ -2723,6 +4109,42 @@
         null,
         "US"
       ],
+      "s": "TVC:US03"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US03M"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US03MY"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US03Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
       "s": "TVC:US05"
     },
     {
@@ -2733,6 +4155,24 @@
         "US"
       ],
       "s": "TVC:US05Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US06M"
+    },
+    {
+      "f": [
+        "bond",
+        "Americas",
+        null,
+        "US"
+      ],
+      "s": "TVC:US06MY"
     },
     {
       "f": [
@@ -2868,6 +4308,42 @@
         "ZA"
       ],
       "s": "TVC:ZA10Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa",
+        null,
+        "ZA"
+      ],
+      "s": "TVC:ZA15"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa",
+        null,
+        "ZA"
+      ],
+      "s": "TVC:ZA15Y"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa",
+        null,
+        "ZA"
+      ],
+      "s": "TVC:ZA20"
+    },
+    {
+      "f": [
+        "bond",
+        "Africa",
+        null,
+        "ZA"
+      ],
+      "s": "TVC:ZA20Y"
     },
     {
       "f": [

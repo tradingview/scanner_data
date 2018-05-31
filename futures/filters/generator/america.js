@@ -25,7 +25,7 @@ function getRootForContinues(s) {
 const rootsHashes = {};
 continuesSrc.symbols.forEach(function (s) {
     const r = getRootForContinues(s.s);
-    rootsHashes[r] = r;
+    rootsHashes[r] = 0;
     s.f.push(r);
 });
 continuesSrc.fields.push("root");
@@ -76,8 +76,9 @@ groups.forEach(function (path) {
     (JSON.parse(response.getBody()).symbols || []).forEach(function (s) {
         const parseRes = parseFuturesName(s.s);
         if (parseRes) {
-            if (rootsHashes[parseRes.root]) {
+            if (rootsHashes[parseRes.root] !== undefined) {
                 if (!isExpired(parseRes)) {
+                    rootsHashes[parseRes.root]++;
                     symbols.push({
                         s: s.s,
                         f: [
@@ -108,3 +109,9 @@ fs.writeFileSync(dstPath, JSON.stringify(
         "fields": continuesSrc.fields,
         "symbols": dstSymbols
     }, null, 2));
+
+for (const r in rootsHashes) {
+    if (0 === rootsHashes[r]) {
+        console.warn("can't find contracts for root " + r);
+    }
+}

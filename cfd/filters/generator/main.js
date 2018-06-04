@@ -494,12 +494,14 @@ function calcHash(name, limit) {
     return result;
 }
 
-function getBondRegionPriority(description) {
-    const idx = bondsRegionsPriority.findIndex(reg => description.startsWith(reg));
-    if (idx >= 0) {
-        return idx;
+function getBondRegionPriority(description, notUseRegionPriority) {
+    if (!notUseRegionPriority) {
+        const idx = bondsRegionsPriority.findIndex(reg => description.startsWith(reg));
+        if (idx >= 0) {
+            return idx;
+        }
     }
-    return bondsRegionsPriority.length + calcHash(description, 2);
+    return bondsRegionsPriority.length + calcHash(description, 4);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;
@@ -513,16 +515,27 @@ function getBondNamePriority(ticker) {
     return (parseResult[2] ? 0 : 1) * 10 + (+parseResult[1]);
 }
 
+function detectBondPriority(s, notUseRegionPriority) {
+    const description = s.f[2];
+    const regionP = getBondRegionPriority(description, notUseRegionPriority);
+    const nameP = getBondNamePriority(s.f[0]);
+    return regionP * 1000 + nameP;
+}
+
 function detectPriority(s, cat) {
     switch (cat) {
-        case "bond": {
-            const description = s.f[2];
-            const regionP = getBondRegionPriority(description);
-            const nameP = getBondNamePriority(s.f[0]);
-            return regionP * 1000 + nameP;
-        }
+        case "bond":
+            return detectBondPriority(s);
     }
     return indicesPriorities[s.s];
+}
+
+function detectPriority2(s, cat) {
+    switch (cat) {
+        case "bond":
+            return detectBondPriority(s, true);
+    }
+    return null;
 }
 
 const symbolsCountryCode = {};
@@ -636,6 +649,7 @@ symbols.forEach(function (s) {
     dst.f[1] = reg;
     dst.f[2] = detectPriority(s, cat);
     dst.f[3] = getCountryCode(s, cat);
+    dst.f[4] = detectPriority2(s, cat);
 
     dstSymbols.push(dst);
 });
@@ -655,7 +669,12 @@ if (emptyCountryCount) {
 fs.writeFileSync(dstPath, JSON.stringify(
     {
         "time": new Date().toISOString() + '',
-        "fields": ["sector", "country", "index_priority", "country_code"],
+        "fields": [
+            "sector",
+            "country",
+            "index_priority",
+            "country_code",
+            "forex_priority"],
         "symbols": dstSymbols
     }, null, 2));
 

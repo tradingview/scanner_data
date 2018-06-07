@@ -1,5 +1,5 @@
 {
-  "time": "2018-05-21T09:22:16.538Z",
+  "time": "2018-06-07T13:18:20.233Z",
   "fields": [
     "sector",
     "crypto_code"
@@ -549,6 +549,20 @@
       "f": [
         "Blocknet",
         "BLOCK"
+      ]
+    },
+    {
+      "s": "BITTREX:VEEBTC",
+      "f": [
+        "BLOCKv",
+        "VEE"
+      ]
+    },
+    {
+      "s": "BITFINEX:VEEUSD",
+      "f": [
+        "BLOCKv",
+        "VEE"
       ]
     },
     {
@@ -1966,6 +1980,20 @@
       ]
     },
     {
+      "s": "BITFINEX:LYMBTC",
+      "f": [
+        "Lympo",
+        "LYM"
+      ]
+    },
+    {
+      "s": "BITFINEX:LYMUSD",
+      "f": [
+        "Lympo",
+        "LYM"
+      ]
+    },
+    {
       "s": "BITTREX:XMGBTC",
       "f": [
         "Magi",
@@ -3366,6 +3394,20 @@
       ]
     },
     {
+      "s": "BINANCE:TUSDBTC",
+      "f": [
+        "TrueUSD",
+        "TUSD"
+      ]
+    },
+    {
+      "s": "BITTREX:TUSDUSD",
+      "f": [
+        "TrueUSD",
+        "TUSD"
+      ]
+    },
+    {
       "s": "BITTREX:TRUSTBTC",
       "f": [
         "TrustPlus",
@@ -3405,6 +3447,20 @@
       "f": [
         "UnbreakableCoin",
         "UNB"
+      ]
+    },
+    {
+      "s": "BITFINEX:UTKBTC",
+      "f": [
+        "UTRUST",
+        "UTK"
+      ]
+    },
+    {
+      "s": "BITFINEX:UTKUSD",
+      "f": [
+        "UTRUST",
+        "UTK"
       ]
     },
     {

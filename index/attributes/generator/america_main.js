@@ -3,17 +3,8 @@ const requestSync = require("sync-request"),
 const {URL} = require('url');
 
 const dstPath = "../america.json";
-const groups = [
-    "http://idc.tradingview.com/udf_proxy/symbols/dj_indices_delayed?typespecs=main",
-    "http://idc.tradingview.com/udf_proxy/symbols/nyse_indices_eod?typespecs=main",
-    "http://idc.tradingview.com/udf_proxy/symbols/nasdaq_indices_eod?typespecs=main",
-    "http://idc.tradingview.com/udf_proxy/symbols/nyse_gif_indices_eod?typespecs=main",
-    {
-        url: "http://idc.tradingview.com/udf_proxy/symbols/cboe_indices_delayed?typespecs=main"
-    },
-    "http://idc.tradingview.com/udf_proxy/symbols/sp_indices?typespecs=main",
-    "http://idc.tradingview.com/udf_proxy/symbols/russel_indices_eod?typespecs=main",
-];
+const udfProxy = "http://udf-proxy.tradingview.com:8094/symbols/";
+const groups = JSON.parse(fs.readFileSync("../../groups/list.json")).symbols.map(s => udfProxy + s.s);
 
 const sectorNames = {};
 [

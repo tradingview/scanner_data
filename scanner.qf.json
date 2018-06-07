@@ -358,5 +358,57 @@
   {
     "name": "earnings_release_next_calendar_date",
     "type": "number"
+  },
+  {
+    "name": "all_time_high",
+    "type": "price"
+  },
+  {
+    "name": "all_time_low",
+    "type": "price"
+  },
+  {
+    "name": "dividend_ex_date_recent",
+    "type": "number"
+  },
+  {
+    "name": "dividend_amount_recent",
+    "type": "number"
+  },
+  {
+    "name": "dividend_frequency_recent",
+    "type": "text"
+  },
+  {
+    "name": "dividend_payment_date_recent",
+    "type": "number"
+  },
+  {
+    "name": "dividend_yield_recent",
+    "type": "number"
+  },
+  {
+    "name": "dividend_ex_date_upcoming",
+    "type": "number"
+  },
+  {
+    "name": "dividend_amount_upcoming",
+    "type": "number"
+  },
+  {
+    "name": "dividend_frequency_upcoming",
+    "type": "text"
+  },
+  {
+    "name": "dividend_payment_date_upcoming",
+    "type": "number"
+  },
+  {
+    "name": "dividend_yield_upcoming",
+    "type": "number"
+  },
+  {
+    "name": "root",
+    "type": "text"
   }
 ]

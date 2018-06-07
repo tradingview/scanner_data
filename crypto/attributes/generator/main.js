@@ -3,7 +3,7 @@ const requestSync = require("sync-request"),
 
 const dstPath = "../crypto.json";
 
-const scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan2", {
+const scanResp = requestSync("POST", "http://scanner-sfo.tradingview.com/crypto/scan2", {
     json: {
         sort: {
             sortBy: "volume",
@@ -76,8 +76,8 @@ const excludeSymbols = [
     "BITFINEX:QTMUSD",
     "BITTREX:AMPBTC",
     "BITTREX:AMPUSD",
-    // "BITFINEX:BTGUSD",
-    // "BITFINEX:BTGBTC",
+    "BINANCE:BCCBTC",
+    "BINANCE:BCCUSD",
 ];
 
 function skipSymbol(s) {

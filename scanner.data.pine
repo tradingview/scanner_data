@@ -102,7 +102,7 @@ plot(EMA200, title="EMA200")
 
 // study(title="Stochastic", shorttitle="Stoch")
 lengthStoch = 14
-smoothKStoch = 1
+smoothKStoch = 3
 smoothDStoch = 3
 kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch = sma(kStoch, smoothDStoch)
@@ -164,6 +164,8 @@ pivotXGetCurDate()=>
             result := year(time)
     result
 
+fNeg(value) => value <= 0 ? na : value
+
 pivotX_Interval = pivotXGetCurDate()
 if pivotX_Interval != pivotX_Interval[1]
     pivotX_prev_open := pivotX_open
@@ -180,32 +182,32 @@ else
 
 // Classic
 pivotX_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_prev_close)/3
-plot(pivotX_Median, title = 'Pivot.M.Classic.Middle')
-plot(pivotX_Median * 2 - pivotX_prev_low, title = 'Pivot.M.Classic.R1')
-plot(pivotX_Median * 2 - pivotX_prev_high, title = 'Pivot.M.Classic.S1')
-plot(pivotX_Median + 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.R2')
-plot(pivotX_Median - 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.S2')
-plot(pivotX_Median + 2*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.R3')
-plot(pivotX_Median - 2*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Classic.S3')
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Classic.Middle')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_low), title = 'Pivot.M.Classic.R1')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_high), title = 'Pivot.M.Classic.S1')
+plot(fNeg(pivotX_Median + 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.R2')
+plot(fNeg(pivotX_Median - 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.S2')
+plot(fNeg(pivotX_Median + 2*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.R3')
+plot(fNeg(pivotX_Median - 2*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.S3')
 
 // Fibonacci
-plot(pivotX_Median, title = 'Pivot.M.Fibonacci.Middle')
-plot(pivotX_Median + 0.382 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.R1')
-plot(pivotX_Median - 0.382 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.S1')
-plot(pivotX_Median + 0.618 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.R2')
-plot(pivotX_Median - 0.618 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.S2')
-plot(pivotX_Median + 1 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.R3')
-plot(pivotX_Median - 1 * (pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Fibonacci.S3')
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Fibonacci.Middle')
+plot(fNeg(pivotX_Median + 0.382 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R1')
+plot(fNeg(pivotX_Median - 0.382 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S1')
+plot(fNeg(pivotX_Median + 0.618 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R2')
+plot(fNeg(pivotX_Median - 0.618 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S2')
+plot(fNeg(pivotX_Median + 1 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R3')
+plot(fNeg(pivotX_Median - 1 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S3')
 
 // Woodie
 pivotX_Woodie_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_open * 2)/4
-plot(pivotX_Woodie_Median, title = 'Pivot.M.Woodie.Middle')
-plot(pivotX_Woodie_Median * 2 - pivotX_prev_low, title = 'Pivot.M.Woodie.R1')
-plot(pivotX_Woodie_Median * 2 - pivotX_prev_high, title = 'Pivot.M.Woodie.S1')
-plot(pivotX_Woodie_Median + 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Woodie.R2')
-plot(pivotX_Woodie_Median - 1*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Woodie.S2')
-plot(pivotX_prev_high + 2*(pivotX_Woodie_Median - pivotX_prev_low), title = 'Pivot.M.Woodie.R3')
-plot(pivotX_prev_low - 2*(pivotX_prev_high - pivotX_Woodie_Median), title = 'Pivot.M.Woodie.S3')
+plot(fNeg(pivotX_Woodie_Median), title = 'Pivot.M.Woodie.Middle')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_low), title = 'Pivot.M.Woodie.R1')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_high), title = 'Pivot.M.Woodie.S1')
+plot(fNeg(pivotX_Woodie_Median + 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Woodie.R2')
+plot(fNeg(pivotX_Woodie_Median - 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Woodie.S2')
+plot(fNeg(pivotX_prev_high + 2*(pivotX_Woodie_Median - pivotX_prev_low)), title = 'Pivot.M.Woodie.R3')
+plot(fNeg(pivotX_prev_low - 2*(pivotX_prev_high - pivotX_Woodie_Median)), title = 'Pivot.M.Woodie.S3')
 
 // Demark
 pivotX_Demark_X = pivotX_prev_high + pivotX_prev_low*2 + pivotX_prev_close
@@ -213,18 +215,18 @@ if pivotX_prev_close == pivotX_prev_open
     pivotX_Demark_X := pivotX_prev_high + pivotX_prev_low + pivotX_prev_close*2
 if pivotX_prev_close > pivotX_prev_open
     pivotX_Demark_X := pivotX_prev_high*2 + pivotX_prev_low + pivotX_prev_close
-plot(pivotX_Demark_X/4, title = 'Pivot.M.Demark.Middle')
-plot(pivotX_Demark_X/2 - pivotX_prev_low, title = 'Pivot.M.Demark.R1')
-plot(pivotX_Demark_X/2 - pivotX_prev_high, title = 'Pivot.M.Demark.S1')
+plot(fNeg(pivotX_Demark_X/4), title = 'Pivot.M.Demark.Middle')
+plot(fNeg(pivotX_Demark_X/2 - pivotX_prev_low), title = 'Pivot.M.Demark.R1')
+plot(fNeg(pivotX_Demark_X/2 - pivotX_prev_high), title = 'Pivot.M.Demark.S1')
 
 // Camarilla
-plot(pivotX_Median, title = 'Pivot.M.Camarilla.Middle')
-plot(pivotX_prev_close + 1.1/12.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.R1')
-plot(pivotX_prev_close - 1.1/12.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.S1')
-plot(pivotX_prev_close + 1.1/6.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.R2')
-plot(pivotX_prev_close - 1.1/6.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.S2')
-plot(pivotX_prev_close + 1.1/4.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.R3')
-plot(pivotX_prev_close - 1.1/4.0*(pivotX_prev_high - pivotX_prev_low), title = 'Pivot.M.Camarilla.S3')
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Camarilla.Middle')
+plot(fNeg(pivotX_prev_close + 1.1/12.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R1')
+plot(fNeg(pivotX_prev_close - 1.1/12.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S1')
+plot(fNeg(pivotX_prev_close + 1.1/6.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R2')
+plot(fNeg(pivotX_prev_close - 1.1/6.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S2')
+plot(fNeg(pivotX_prev_close + 1.1/4.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R3')
+plot(fNeg(pivotX_prev_close - 1.1/4.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S3')
 
 // study("Aroon")
 Aroon_length = (14)
@@ -324,8 +326,8 @@ ichimoku_cloud()=>
 IC_displacement = 26
 plot(IC_CLine, title="Ichimoku.CLine")
 plot(IC_BLine, title="Ichimoku.BLine")
-plot(IC_Lead1, offset = IC_displacement, title="Ichimoku.Lead1")
-plot(IC_Lead2, offset = IC_displacement, title="Ichimoku.Lead2")
+plot(IC_Lead1[IC_displacement], offset = IC_displacement, title="Ichimoku.Lead1")
+plot(IC_Lead2[IC_displacement], offset = IC_displacement, title="Ichimoku.Lead2")
 
 
 // Volume Weighted Moving Average (VWMA)
@@ -666,6 +668,8 @@ allTimeHigh = max(nz(allTimeHigh[1], high), high)
 allTimeLow = min(nz(allTimeLow[1], low), low)
 plot(allTimeHigh, title="High.All")
 plot(allTimeLow, title="Low.All")
+plot(allTimeHigh, title="High.All.Calc")
+plot(allTimeLow, title="Low.All.Calc")
 plot(nz(highest(high, 21*12), allTimeHigh), title="price_52_week_high")
 plot(nz(lowest(low, 21*12), allTimeLow), title="price_52_week_low")
 plot(nz(highest(high, 126), allTimeHigh), title="High.6M")

@@ -3,7 +3,7 @@ const requestSync = require("sync-request"),
 
 const dstPath = "../crypto.json";
 
-const scanResp = requestSync("POST", "http://scanner-sfo.tradingview.com/crypto/scan2", {
+const scanResp = requestSync("POST", "http://scanner-nyc.tradingview.com/crypto/scan2", {
     json: {
         sort: {
             sortBy: "volume",
@@ -92,6 +92,10 @@ function getTicker(s) {
     return s.split(':')[1];
 }
 
+function getExchange(s) {
+    return s.split(':')[0];
+}
+
 JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
     const ticker = getTicker(s.s);
     if (!tickers[ticker] && !skipSymbol(s.s)) {
@@ -134,6 +138,8 @@ try {
     console.warn("Loading previous results failed with error: " + exc);
 }
 
+const missingUSDPairs = [];
+
 JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
     let key = s.symbol;
     let symbols = selectedSymbols[key];
@@ -155,6 +161,8 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
                     console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
                 }
             });
+        } else if (symbols.length === 1) {
+            missingUSDPairs.push(getExchange(symbols[0]) + ':' + key + 'USD');
         }
 
         delete selectedSymbols[key];
@@ -175,6 +183,8 @@ for (let s in selectedSymbols) {
         console.warn("Symbol " + s + " not mapped!");
     }
 }
+
+console.warn("Missing ***USD pairs:\n" + JSON.stringify(missingUSDPairs));
 
 dstSymbols.sort(function (l, r) {
     const res = l.f[0].localeCompare(r.f[0]);

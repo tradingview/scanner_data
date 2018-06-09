@@ -281,7 +281,7 @@ groups.forEach(function (path) {
     }
 
     const urlO = new URL(url);
-    urlO.searchParams.append('fields', 'symbol,type,description');
+    urlO.searchParams.append('fields', 'symbol,type,description,country');
     url = urlO.toString();
     const response = requestSync("GET", url);
     if (response.statusCode != 200) {
@@ -634,6 +634,9 @@ function getCountryCode(s, cat) {
         }
         return result;
     }
+    if (s.f[3]){
+        //return s.f[3].toUpperCase();
+    }
     return undefined;
 }
 
@@ -733,6 +736,19 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
         "tocom_indices": true,
         "tokyo_indices": true,
         "topix_indices": true,
+        "cboe_russell_indices": true,
+        "euronext_non_primary_amsterdam_indices": true,
+        "euronext_non_primary_brussels_indices": true,
+        "euronext_non_primary_europe_indices": true,
+        "euronext_non_primary_lisbon_indices": true,
+        "euronext_non_primary_paris_indices": true,
+        "euronext_primary_amsterdam_indices": true,
+        "euronext_primary_brussels_indices": true,
+        "euronext_primary_europe_indices": true,
+        "euronext_primary_lisbon_indices": true,
+        "euronext_primary_paris_indices": true,
+        "vienna_indices": true,
+        "vietnam_indices": true,
     };
 
     const missingGroups = Object.keys(allGroups.feeds.idc).filter(function (gr) {

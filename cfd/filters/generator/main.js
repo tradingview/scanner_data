@@ -242,7 +242,12 @@ const groups = [
         "url": "vilnius_indices",
         "include": ["OMXVSE:OMXVGI"],
         "region": "Europe"
-    }];
+    },
+    {
+        "url": "south_africa_tvc_indices",
+        "region": "Africa"
+    }
+];
 
 const types = {
     "cfd": true,
@@ -444,7 +449,8 @@ const majorIndices = [
     {"s": "BCBA:IMV", "cc": "AR"},
     {"s": "BVC:IGBC", "cc": "CO"},
     {"s": "BCS:IPSA", "cc": "CL"},
-    {"s": "BVL:SPBLPGPT", "cc": "PE"}
+    {"s": "BVL:SPBLPGPT", "cc": "PE"},
+    {"s": "TVC:SA40", "cc": "ZA"},
 ];
 
 const indicesPriorities = {};

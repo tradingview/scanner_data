@@ -1,5 +1,5 @@
 {
-  "time": "2018-06-04T15:41:17.089Z",
+  "time": "2018-06-09T14:00:53.674Z",
   "fields": [
     "sector",
     "country",
@@ -197,26 +197,6 @@
         null
       ],
       "s": "EURONEXT:PX1"
-    },
-    {
-      "f": [
-        "Agricultural",
-        "",
-        null,
-        null,
-        null
-      ],
-      "s": "FOREXCOM:COTUSD"
-    },
-    {
-      "f": [
-        "Energy",
-        "",
-        null,
-        null,
-        null
-      ],
-      "s": "FOREXCOM:HGOUSD"
     },
     {
       "f": [
@@ -702,7 +682,7 @@
       "f": [
         "currency",
         "Pacific",
-        54,
+        55,
         null,
         null
       ],
@@ -872,7 +852,7 @@
       "f": [
         "currency",
         "Europe",
-        50,
+        51,
         null,
         null
       ],
@@ -1212,7 +1192,7 @@
       "f": [
         "currency",
         "Americas",
-        53,
+        54,
         null,
         null
       ],
@@ -1522,7 +1502,7 @@
       "f": [
         "currency",
         "Americas",
-        48,
+        49,
         null,
         null
       ],
@@ -1662,7 +1642,7 @@
       "f": [
         "currency",
         "Europe",
-        49,
+        50,
         null,
         null
       ],
@@ -3162,7 +3142,7 @@
       "f": [
         "currency",
         "Asia",
-        52,
+        53,
         null,
         null
       ],
@@ -3960,6 +3940,16 @@
     },
     {
       "f": [
+        "index",
+        "Africa",
+        48,
+        "ZA",
+        null
+      ],
+      "s": "TVC:SA40"
+    },
+    {
+      "f": [
         "bond",
         "Europe",
         1822040316012,
@@ -4222,7 +4212,7 @@
       "f": [
         "currency",
         "Europe",
-        51,
+        52,
         null,
         null
       ],
@@ -4317,6 +4307,16 @@
         1920171016012
       ],
       "s": "TVC:TR02"
+    },
+    {
+      "f": [
+        "bond",
+        "Middle East",
+        1920171016012,
+        "TR",
+        1920171016012
+      ],
+      "s": "TVC:TR02Y"
     },
     {
       "f": [
@@ -4852,7 +4852,7 @@
       "f": [
         "currency",
         "Pacific",
-        55,
+        56,
         null,
         null
       ],

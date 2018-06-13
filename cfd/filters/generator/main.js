@@ -436,6 +436,7 @@ const majorIndices = [
     {"s": "OMXVSE:OMXVGI", "cc": "LT"},
     {"s": "BIST:XU100", "cc": "TR"},
     {"s": "TASE:TA35", "cc": "IL"},
+    {"s": "TVC:SA40", "cc": "ZA"},
     {"s": "NSE:NIFTY", "cc": "IN"},
     {"s": "BSE:SENSEX", "cc": "IN"},
     {"s": "DFM:DFMGI", "cc": "AE"},
@@ -450,7 +451,6 @@ const majorIndices = [
     {"s": "BVC:IGBC", "cc": "CO"},
     {"s": "BCS:IPSA", "cc": "CL"},
     {"s": "BVL:SPBLPGPT", "cc": "PE"},
-    {"s": "TVC:SA40", "cc": "ZA"},
 ];
 
 const indicesPriorities = {};

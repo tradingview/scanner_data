@@ -1,5 +1,5 @@
 {
-  "time": "2018-06-09T07:37:02.376Z",
+  "time": "2018-06-19T10:25:09.978Z",
   "fields": [
     "sector",
     "root"
@@ -370,6 +370,13 @@
       ]
     },
     {
+      "s": "CBOT_MINI:YMM2019",
+      "f": [
+        null,
+        "CBOT_MINI:YM"
+      ]
+    },
+    {
       "s": "CBOT_MINI:YMU2018",
       "f": [
         null,
@@ -622,6 +629,13 @@
       "s": "CBOT:UD1!"
     },
     {
+      "s": "CBOT:UDH2019",
+      "f": [
+        null,
+        "CBOT:UD"
+      ]
+    },
+    {
       "s": "CBOT:UDM2018",
       "f": [
         null,
@@ -648,6 +662,13 @@
         "CBOT:ZB"
       ],
       "s": "CBOT:ZB1!"
+    },
+    {
+      "s": "CBOT:ZBH2019",
+      "f": [
+        null,
+        "CBOT:ZB"
+      ]
     },
     {
       "s": "CBOT:ZBM2018",
@@ -1257,6 +1278,13 @@
         "CBOT:ZN"
       ],
       "s": "CBOT:ZN1!"
+    },
+    {
+      "s": "CBOT:ZNH2019",
+      "f": [
+        null,
+        "CBOT:ZN"
+      ]
     },
     {
       "s": "CBOT:ZNM2018",
@@ -1938,6 +1966,13 @@
       ]
     },
     {
+      "s": "CME_MINI:E7Z2018",
+      "f": [
+        null,
+        "CME_MINI:E7"
+      ]
+    },
+    {
       "f": [
         "Indexes",
         "CME_MINI:ES"
@@ -1967,6 +2002,13 @@
     },
     {
       "s": "CME_MINI:ESU2018",
+      "f": [
+        null,
+        "CME_MINI:ES"
+      ]
+    },
+    {
+      "s": "CME_MINI:ESU2019",
       "f": [
         null,
         "CME_MINI:ES"
@@ -2015,6 +2057,13 @@
       ]
     },
     {
+      "s": "CME_MINI:EWU2019",
+      "f": [
+        null,
+        "CME_MINI:EW"
+      ]
+    },
+    {
       "s": "CME_MINI:EWZ2018",
       "f": [
         null,
@@ -2043,6 +2092,13 @@
       ]
     },
     {
+      "s": "CME_MINI:J7Z2018",
+      "f": [
+        null,
+        "CME_MINI:J7"
+      ]
+    },
+    {
       "f": [
         "Currencies",
         "CME_MINI:MB"
@@ -2058,6 +2114,13 @@
     },
     {
       "s": "CME_MINI:MBU2018",
+      "f": [
+        null,
+        "CME_MINI:MB"
+      ]
+    },
+    {
+      "s": "CME_MINI:MBZ2018",
       "f": [
         null,
         "CME_MINI:MB"
@@ -2085,6 +2148,13 @@
       ]
     },
     {
+      "s": "CME_MINI:MFZ2018",
+      "f": [
+        null,
+        "CME_MINI:MF"
+      ]
+    },
+    {
       "f": [
         "Currencies",
         "CME_MINI:MG"
@@ -2100,6 +2170,13 @@
     },
     {
       "s": "CME_MINI:MGU2018",
+      "f": [
+        null,
+        "CME_MINI:MG"
+      ]
+    },
+    {
+      "s": "CME_MINI:MGZ2018",
       "f": [
         null,
         "CME_MINI:MG"
@@ -2169,6 +2246,13 @@
       ]
     },
     {
+      "s": "CME_MINI:NQU2019",
+      "f": [
+        null,
+        "CME_MINI:NQ"
+      ]
+    },
+    {
       "s": "CME_MINI:NQZ2018",
       "f": [
         null,
@@ -2211,6 +2295,13 @@
       ]
     },
     {
+      "s": "CME_MINI:RLU2019",
+      "f": [
+        null,
+        "CME_MINI:RL"
+      ]
+    },
+    {
       "s": "CME_MINI:RLZ2018",
       "f": [
         null,
@@ -2239,6 +2330,13 @@
       ]
     },
     {
+      "s": "CME_MINI:WMZ2018",
+      "f": [
+        null,
+        "CME_MINI:WM"
+      ]
+    },
+    {
       "f": [
         "Currencies",
         "CME_MINI:WN"
@@ -2254,6 +2352,13 @@
     },
     {
       "s": "CME_MINI:WNU2018",
+      "f": [
+        null,
+        "CME_MINI:WN"
+      ]
+    },
+    {
+      "s": "CME_MINI:WNZ2018",
       "f": [
         null,
         "CME_MINI:WN"
@@ -3317,6 +3422,13 @@
       ]
     },
     {
+      "s": "CME:FTUU2019",
+      "f": [
+        null,
+        "CME:FTU"
+      ]
+    },
+    {
       "s": "CME:FTUZ2018",
       "f": [
         null,
@@ -3346,6 +3458,13 @@
     },
     {
       "s": "CME:GFJ2019",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
+      "s": "CME:GFK2019",
       "f": [
         null,
         "CME:GF"
@@ -3471,6 +3590,13 @@
       ]
     },
     {
+      "s": "CME:HEZ2019",
+      "f": [
+        null,
+        "CME:HE"
+      ]
+    },
+    {
       "f": [
         "Financials",
         "CME:I9"
@@ -3560,6 +3686,13 @@
         "CME:IF"
       ],
       "s": "CME:IF1!"
+    },
+    {
+      "s": "CME:IFG2019",
+      "f": [
+        null,
+        "CME:IF"
+      ]
     },
     {
       "s": "CME:IFM2018",
@@ -4018,6 +4151,13 @@
     },
     {
       "s": "CME:L6N2022",
+      "f": [
+        null,
+        "CME:L6"
+      ]
+    },
+    {
+      "s": "CME:L6N2023",
       "f": [
         null,
         "CME:L6"
@@ -5004,6 +5144,27 @@
       ]
     },
     {
+      "s": "CME:SPM2020",
+      "f": [
+        null,
+        "CME:SP"
+      ]
+    },
+    {
+      "s": "CME:SPM2020",
+      "f": [
+        null,
+        "CME:SP"
+      ]
+    },
+    {
+      "s": "CME:SPM2020",
+      "f": [
+        null,
+        "CME:SP"
+      ]
+    },
+    {
       "s": "CME:SPU2018",
       "f": [
         null,
@@ -5600,13 +5761,6 @@
     },
     {
       "s": "COMEX_MINI:QCK2023",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCM2018",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6306,6 +6460,13 @@
       ]
     },
     {
+      "s": "COMEX:AUPJ2023",
+      "f": [
+        null,
+        "COMEX:AUP"
+      ]
+    },
+    {
       "s": "COMEX:AUPK2019",
       "f": [
         null,
@@ -6328,6 +6489,13 @@
     },
     {
       "s": "COMEX:AUPK2022",
+      "f": [
+        null,
+        "COMEX:AUP"
+      ]
+    },
+    {
+      "s": "COMEX:AUPK2023",
       "f": [
         null,
         "COMEX:AUP"
@@ -12334,6 +12502,13 @@
     },
     {
       "s": "NYMEX:UXK2022",
+      "f": [
+        null,
+        "NYMEX:UX"
+      ]
+    },
+    {
+      "s": "NYMEX:UXK2023",
       "f": [
         null,
         "NYMEX:UX"

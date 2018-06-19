@@ -61,7 +61,13 @@ const now = new Date();
 const udfProxy = "http://udf-proxy.tradingview.com:8094/symbols/";
 
 function isExpired(parseRes) {
-    return !(parseRes.year >= now.getUTCFullYear() && parseRes.month >= now.getUTCMonth());
+    if (parseRes.year < now.getUTCFullYear()){
+        return true;
+    }
+    if (parseRes.year > now.getUTCFullYear()){
+        return false;
+    }
+    return parseRes.month < now.getUTCMonth();
 }
 
 groups.forEach(function (path) {

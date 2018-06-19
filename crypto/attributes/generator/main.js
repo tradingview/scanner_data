@@ -114,6 +114,10 @@ const currencyMapping = {
     "MIOTA": "IOT",
     "USNBT": "NBT",
     "DATA": "DAT",
+    "DADI": "DAD",
+    "POLY": "POY",
+    "QASH": "QSH",
+    "MANA": "MNA",
 };
 const currencyRevertedMapping = {};
 Object.keys(currencyMapping).forEach(function (k) {

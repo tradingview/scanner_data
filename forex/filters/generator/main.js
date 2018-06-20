@@ -2,7 +2,7 @@ const requestSync = require("sync-request"),
     fs = require("fs");
 
 const dstPath = "../forex.json";
-const symbologyPath = "http://idc.tradingview.com/udf_proxy/symbols/forex?fields=symbol,type";
+const symbologyPath = "http://udf-proxy.tradingview.com:8094/symbols/forex?fields=symbol,type";
 
 const response = requestSync("GET", symbologyPath);
 if (response.statusCode != 200) {
@@ -714,7 +714,6 @@ dstSymbols.sort((l, r) => l.s.localeCompare(r.s));
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {
-        "time": new Date().toISOString() + '',
         "fields": [
             "country",
             "sector",

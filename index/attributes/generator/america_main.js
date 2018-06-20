@@ -157,7 +157,6 @@ dstSymbols.sort(function (l, r) {
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {
-        "time": new Date().toISOString() + '',
         "fields": ["sector", "index_priority"],
         "symbols": dstSymbols
     }, null, 2));

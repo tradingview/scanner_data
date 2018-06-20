@@ -677,7 +677,6 @@ if (emptyCountryCount) {
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {
-        "time": new Date().toISOString() + '',
         "fields": [
             "sector",
             "country",
@@ -701,7 +700,6 @@ function generateUsedGroups() {
 }
 
 fs.writeFileSync(dstGroupsPath, JSON.stringify({
-    "time": new Date().toISOString() + '',
     "fields": [],
     "symbols": generateUsedGroups().map(function (s) {
         return {"s": s, "f": []};

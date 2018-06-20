@@ -1,5 +1,4 @@
 {
-  "time": "2018-02-02T12:36:57.200Z",
   "fields": [
     "country",
     "sector",
@@ -1309,6 +1308,17 @@
     },
     {
       "f": [
+        "Europe",
+        null,
+        1001217180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:BAMRSD"
+    },
+    {
+      "f": [
         "",
         null,
         1010306011500,
@@ -1449,6 +1459,17 @@
         null
       ],
       "s": "FX_IDC:BGNGBP"
+    },
+    {
+      "f": [
+        "Europe",
+        null,
+        1061317180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:BGNRSD"
     },
     {
       "f": [
@@ -3616,17 +3637,6 @@
         null
       ],
       "s": "FX_IDC:CADUZS"
-    },
-    {
-      "f": [
-        "Americas",
-        null,
-        221040500,
-        "Americas",
-        null,
-        null
-      ],
-      "s": "FX_IDC:CADVEF"
     },
     {
       "f": [
@@ -5931,6 +5941,17 @@
       "f": [
         "",
         null,
+        2132417180300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CNYRSD"
+    },
+    {
+      "f": [
+        "",
+        null,
         2132417200100,
         "",
         null,
@@ -6212,6 +6233,17 @@
         null
       ],
       "s": "FX_IDC:CZKPLN"
+    },
+    {
+      "f": [
+        "Europe",
+        null,
+        2251017180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:CZKRSD"
     },
     {
       "f": [
@@ -10252,6 +10284,17 @@
     },
     {
       "f": [
+        "Africa",
+        null,
+        6071813061300,
+        "Africa",
+        null,
+        null
+      ],
+      "s": "FX_IDC:GHSNGN"
+    },
+    {
+      "f": [
         "",
         null,
         6071820180300,
@@ -10747,6 +10790,17 @@
     },
     {
       "f": [
+        "Europe",
+        null,
+        7171017180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:HRKRSD"
+    },
+    {
+      "f": [
         "",
         null,
         7171020180300,
@@ -10843,6 +10897,17 @@
         null
       ],
       "s": "FX_IDC:HUFJPY"
+    },
+    {
+      "f": [
+        "Europe",
+        null,
+        7200517180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:HUFRSD"
     },
     {
       "f": [
@@ -11151,6 +11216,17 @@
         null
       ],
       "s": "FX_IDC:ILSPLN"
+    },
+    {
+      "f": [
+        "",
+        null,
+        8111818060300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:ILSSGD"
     },
     {
       "f": [
@@ -13354,6 +13430,17 @@
     },
     {
       "f": [
+        "Asia",
+        null,
+        10071718060300,
+        "Asia",
+        null,
+        null
+      ],
+      "s": "FX_IDC:KHRSGD"
+    },
+    {
+      "f": [
         "",
         null,
         10071720180300,
@@ -14110,6 +14197,17 @@
         null
       ],
       "s": "FX_IDC:MOPHKD"
+    },
+    {
+      "f": [
+        "Asia",
+        null,
+        12141518060300,
+        "Asia",
+        null,
+        null
+      ],
+      "s": "FX_IDC:MOPSGD"
     },
     {
       "f": [
@@ -16139,6 +16237,17 @@
       "f": [
         "Europe",
         null,
+        15111317180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:PLNRSD"
+    },
+    {
+      "f": [
+        "Europe",
+        null,
         15111317200100,
         "Europe",
         null,
@@ -16326,6 +16435,17 @@
       "f": [
         "Europe",
         null,
+        17141317180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:RONRSD"
+    },
+    {
+      "f": [
+        "Europe",
+        null,
         17141318041000,
         "Europe",
         null,
@@ -16502,12 +16622,34 @@
       "f": [
         "Europe",
         null,
+        17200117180300,
+        "Europe",
+        null,
+        null
+      ],
+      "s": "FX_IDC:RUBRSD"
+    },
+    {
+      "f": [
+        "Europe",
+        null,
         17200118041000,
         "Europe",
         null,
         null
       ],
       "s": "FX_IDC:RUBSEK"
+    },
+    {
+      "f": [
+        "",
+        null,
+        17200118060300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:RUBSGD"
     },
     {
       "f": [
@@ -17982,6 +18124,17 @@
         null
       ],
       "s": "FX_IDC:TRYPLN"
+    },
+    {
+      "f": [
+        "",
+        null,
+        19172417180300,
+        "",
+        null,
+        null
+      ],
+      "s": "FX_IDC:TRYRSD"
     },
     {
       "f": [

@@ -199,7 +199,6 @@ dstSymbols.sort(function (l, r) {
 });
 
 fs.writeFileSync(dstPath, JSON.stringify({
-    "time": new Date().toISOString() + '',
     "fields": ["sector", "crypto_code"],
     "symbols": dstSymbols
 }, null, 2));

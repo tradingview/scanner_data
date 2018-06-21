@@ -246,7 +246,27 @@ const groups = [
     {
         "url": "south_africa_tvc_indices",
         "region": "Africa"
-    }
+    },
+    {
+        "url": "helsinki_basic_indices",
+        "include": ["OMXHEX:OMXH25"],
+        "region": "Europe"
+    },
+    {
+        "url": "iceland_indices",
+        "include": ["OMXICE:OMXI8"],
+        "region": "Europe"
+    },
+    {
+        "url": "stockholm_basic_indices",
+        "include": ["OMXSTO:OMXS30"],
+        "region": "Europe"
+    },
+    {
+        "url": "copenhagen_indices",
+        "include": ["OMXCOP:OMXC25"],
+        "region": "Europe"
+    },
 ];
 
 const types = {

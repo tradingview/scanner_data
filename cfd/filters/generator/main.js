@@ -771,6 +771,10 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
         "euronext_primary_paris_indices": true,
         "vienna_indices": true,
         "vietnam_indices": true,
+        "copenhagen_basic_indices": true,
+        "helsinki_indices": true,
+        "iceland_basic_indices": true,
+        "stockholm_indices": true,
     };
 
     const missingGroups = Object.keys(allGroups.feeds.idc).filter(function (gr) {

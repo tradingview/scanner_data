@@ -118,6 +118,7 @@ const currencyMapping = {
     "POLY": "POY",
     "QASH": "QSH",
     "MANA": "MNA",
+    "SWIFT": "BITS"
 };
 const currencyRevertedMapping = {};
 Object.keys(currencyMapping).forEach(function (k) {

@@ -189,7 +189,7 @@ const groups = [
     },
     {
         "url": "luxembourg_indices",
-        "include": ["LUXSE:LUXX"],
+        "include": ["LUXSE:LUXX-temporary-deleted"],
         "region": "Europe"
     },
     {

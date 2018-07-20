@@ -585,8 +585,8 @@ plot(C_GravestoneDoji, title = "Candle.Doji.Gravestone")
 
 
 // study("Harami")
-plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bullish")
-plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bearish")
+plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsInsideBar, title = "Candle.Harami.Bullish")
+plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsInsideBar, title = "Candle.Harami.Bearish")
 
 
 //study("Long Shadows")

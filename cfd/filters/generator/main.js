@@ -50,7 +50,7 @@ const groups = [
         region: "Americas"
     },
     {
-        url: "euronext_indices",
+        url: "euronext_primary_indices",
         include: [
             "EURONEXT:PX1",
             "EURONEXT:AEX",
@@ -267,6 +267,11 @@ const groups = [
         "include": ["OMXCOP:OMXC25"],
         "region": "Europe"
     },
+    // {
+    //     "url": "thailand_indices",
+    //     "include": ["SET:SET"], // TODO : uncomment after release
+    //     "region": "Asia"
+    // },
 ];
 
 const types = {
@@ -744,7 +749,7 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
 
     const skippedIndices = {
         "euronext_non_primary_indices": true,
-        "euronext_primary_indices": true,
+        "euronext_indices": true,
         "international_indices": true,
         "russel_indices": true,
         "russell_indices": true,

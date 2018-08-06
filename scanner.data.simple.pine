@@ -25,8 +25,6 @@ adx(dilen, adxlen) =>
 plot(adxValue, title="ADX")
 plot(adxPlus, title="ADX+DI")
 plot(adxMinus, title="ADX-DI")
-plot(adxPlus[1], title="ADX+DI[1]")
-plot(adxMinus[1], title="ADX-DI[1]")
 
 
 // study(shorttitle="BB", title="Bollinger Bands", overlay=true)
@@ -60,15 +58,12 @@ plot(signalMACD, title="MACD.signal")
 //study(title="Momentum", shorttitle="Mom")
 Mom = close - close[10]
 plot(Mom, title="Mom")
-plot(Mom[1], title="Mom[1]")
 
 
 //study(title="Relative Strength Index", shorttitle="RSI")
 RSI=rsi(close,14)
 plot(RSI, title="RSI")
 plot(rsi(close,7), title="RSI7")
-plot(RSI[1], title="RSI[1]")
-plot(rsi(close,7)[1], title="RSI7[1]")
 
 
 // study(title="Moving Average", shorttitle="MA", overlay=true)
@@ -108,8 +103,6 @@ kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch = sma(kStoch, smoothDStoch)
 plot(kStoch, title="Stoch.K")
 plot(dStoch, title="Stoch.D")
-plot(kStoch[1], title="Stoch.K[1]")
-plot(dStoch[1], title="Stoch.D[1]")
 
 // average volume
 AvgVol = sma(volume,10)
@@ -122,7 +115,6 @@ plot(sma(volume,90), title="average_volume_90d_calc")
 // Commodity Channel Index
 CCI=cci(close, 20)
 plot(CCI, title = "CCI20")
-plot(CCI[1], title = "CCI20[1]")
 //plot(cci(close, 100), title = "CCI100")
 
 // Donchian Channels
@@ -143,7 +135,6 @@ plot(HullMA9, title = "HullMA9")
 // Awesome Oscillator
 AO = sma(hl2, 5) - sma(hl2, 34)
 plot(AO, title = "AO")
-plot(AO[1], title = "AO[1]")
 
 // Pivot Points
 pivotX_open = nz(pivotX_open[1],open)

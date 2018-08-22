@@ -5,6 +5,20 @@
   ],
   "symbols": [
     {
+      "s": "BITFINEX:ZCNBTC",
+      "f": [
+        "0chain",
+        "ZCN"
+      ]
+    },
+    {
+      "s": "BITFINEX:ZCNUSD",
+      "f": [
+        "0chain",
+        "ZCN"
+      ]
+    },
+    {
       "s": "POLONIEX:ZRXBTC",
       "f": [
         "0x",
@@ -254,6 +268,20 @@
       "f": [
         "ArtByte",
         "ABY"
+      ]
+    },
+    {
+      "s": "BITFINEX:ATMBTC",
+      "f": [
+        "ATMChain",
+        "ATM"
+      ]
+    },
+    {
+      "s": "BITFINEX:ATMUSD",
+      "f": [
+        "ATMChain",
+        "ATM"
       ]
     },
     {
@@ -817,6 +845,20 @@
       ]
     },
     {
+      "s": "BITFINEX:CTXBTC",
+      "f": [
+        "CarTaxi Token",
+        "CTX"
+      ]
+    },
+    {
+      "s": "BITFINEX:CTXUSD",
+      "f": [
+        "CarTaxi Token",
+        "CTX"
+      ]
+    },
+    {
       "s": "BINANCE:LINKBTC",
       "f": [
         "ChainLink",
@@ -943,6 +985,20 @@
       ]
     },
     {
+      "s": "BITFINEX:SENBTC",
+      "f": [
+        "Consensus",
+        "SEN"
+      ]
+    },
+    {
+      "s": "BITFINEX:SENUSD",
+      "f": [
+        "Consensus",
+        "SEN"
+      ]
+    },
+    {
       "s": "BITTREX:XCPBTC",
       "f": [
         "Counterparty",
@@ -1052,6 +1108,20 @@
       "f": [
         "Dash",
         "DASH"
+      ]
+    },
+    {
+      "s": "BITFINEX:DTABTC",
+      "f": [
+        "DATA",
+        "DTA"
+      ]
+    },
+    {
+      "s": "BITFINEX:DTAUSD",
+      "f": [
+        "DATA",
+        "DTA"
       ]
     },
     {
@@ -1416,6 +1486,20 @@
       "f": [
         "EOS",
         "EOS"
+      ]
+    },
+    {
+      "s": "BITFINEX:ESSBTC",
+      "f": [
+        "Essentia",
+        "ESS"
+      ]
+    },
+    {
+      "s": "BITFINEX:ESSUSD",
+      "f": [
+        "Essentia",
+        "ESS"
       ]
     },
     {
@@ -1864,6 +1948,20 @@
       "f": [
         "HempCoin",
         "THC"
+      ]
+    },
+    {
+      "s": "BINANCE:HOTBTC",
+      "f": [
+        "Holo",
+        "HOT"
+      ]
+    },
+    {
+      "s": "BITFINEX:HOTUSD",
+      "f": [
+        "Holo",
+        "HOT"
       ]
     },
     {
@@ -2833,6 +2931,20 @@
       ]
     },
     {
+      "s": "BITFINEX:ORSBTC",
+      "f": [
+        "Origin Sport",
+        "ORS"
+      ]
+    },
+    {
+      "s": "BITFINEX:ORSUSD",
+      "f": [
+        "Origin Sport",
+        "ORS"
+      ]
+    },
+    {
       "s": "BINANCE:OSTBTC",
       "f": [
         "OST",
@@ -2900,6 +3012,20 @@
       "f": [
         "Patientory",
         "PTOY"
+      ]
+    },
+    {
+      "s": "BITFINEX:PAIBTC",
+      "f": [
+        "PCHAIN",
+        "PAI"
+      ]
+    },
+    {
+      "s": "BITFINEX:PAIUSD",
+      "f": [
+        "PCHAIN",
+        "PAI"
       ]
     },
     {
@@ -3950,20 +4076,6 @@
       "f": [
         "UTRUST",
         "UTK"
-      ]
-    },
-    {
-      "s": "BINANCE:VENBTC",
-      "f": [
-        "VeChain",
-        "VEN"
-      ]
-    },
-    {
-      "s": "BINANCE:VENUSD",
-      "f": [
-        "VeChain",
-        "VEN"
       ]
     },
     {

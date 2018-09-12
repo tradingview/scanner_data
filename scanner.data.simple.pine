@@ -72,6 +72,8 @@ plot(rsi(close,7)[1], title="RSI7[1]")
 
 
 // study(title="Moving Average", shorttitle="MA", overlay=true)
+SMA5=sma(close, 5)
+plot(SMA5, title="SMA5")
 SMA10=sma(close, 10)
 plot(SMA10, title="SMA10")
 SMA20=sma(close, 20)
@@ -86,6 +88,8 @@ SMA200=sma(close, 200)
 plot(SMA200, title="SMA200")
 
 // study(title="Exponential Moving Average", shorttitle="EMA", overlay=true)
+EMA5=ema(close, 5)
+plot(EMA5, title="EMA5")
 EMA10=ema(close, 10)
 plot(EMA10, title="EMA10")
 EMA20=ema(close, 20)

@@ -15,7 +15,7 @@ dirmov(len) =>
 	minus = fixnan(100 * rma(down > up and down > 0 ? down : 0, len) / truerange)
 	[plus, minus]
 
-adx(dilen, adxlen) => 
+adx(dilen, adxlen) =>
 	[plus, minus] = dirmov(dilen)
 	sum = plus + minus
 	adx = 100 * rma(abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
@@ -498,3 +498,143 @@ if not na(recOther)
     recTotalC := recTotalC + 1
 recTotal := recTotalC > 0 ? recTotal / recTotalC : na
 plot(recTotal, title="Recommend.All")
+
+//////////////////////////////////// Candle Patterns ////////////////////////////////////
+
+C_Len = (14)
+C_Factor = (3.0)
+C_ShadowPercent = (5)
+C_ShadowEqualsPercent = (100)
+
+C_BodyHi = max( close, open )
+C_BodyLo = min( close, open )
+C_Body = C_BodyHi - C_BodyLo
+C_BodyAvg = ema( C_Body, C_Len )
+C_SmallBody = C_Body < C_BodyAvg
+C_LongBody = C_Body > C_BodyAvg
+C_UpShadow = high - C_BodyHi
+C_DnShadow = C_BodyLo - low
+C_DownTrend = DownTrend
+C_UpTrend = UpTrend
+C_HasUpShadow = C_UpShadow > C_ShadowPercent / 100 * C_Body
+C_HasDnShadow = C_DnShadow > C_ShadowPercent / 100 * C_Body
+C_WhiteBody = open < close
+C_BlackBody = open > close
+C_Range = high-low
+C_IsInsideBar = C_BodyHi[1] > C_BodyHi and C_BodyLo[1] < C_BodyLo
+C_BodyMiddle = C_Body / 2 + C_BodyLo
+C_ShadowEquals = C_UpShadow == C_DnShadow or (abs(C_UpShadow - C_DnShadow) / C_DnShadow * 100) < C_ShadowEqualsPercent and (abs(C_DnShadow - C_UpShadow) / C_UpShadow * 100) < C_ShadowEqualsPercent
+
+// study("Hammer, Inverted Hammer, Hanging Man, Shooting Star")
+C_oHammer = false
+C_oHangingMan = false
+if C_SmallBody and C_Body > 0 and C_BodyLo > hl2 and C_DnShadow >= C_Factor * C_Body and not C_HasUpShadow
+    if C_DownTrend
+        C_oHammer := true
+	else
+	    if C_UpTrend
+	        C_oHangingMan := true
+
+plot(C_oHammer, title = "Candle.Hammer")
+plot(C_oHangingMan, title = "Candle.HangingMan")
+
+C_oInvertedHammer = false
+C_oShootingStar = false
+if C_SmallBody and C_Body > 0 and C_BodyHi < hl2 and C_UpShadow >= C_Factor * C_Body and not C_HasDnShadow
+    if C_DownTrend
+        C_oInvertedHammer := true
+	else
+	    if C_UpTrend
+	        C_oShootingStar := true
+
+plot(C_oInvertedHammer, title = "Candle.InvertedHammer")
+plot(C_oShootingStar, title = "Candle.ShootingStar")
+
+
+// study("Evening & Morning Stars")
+C_oMorningStar = false
+C_oEveningStar = false
+if C_LongBody[2] and C_SmallBody[1] and C_LongBody
+    if C_DownTrend and C_BlackBody[2] and C_BodyHi[1] < C_BodyLo[2] and C_WhiteBody and C_BodyHi >= C_BodyMiddle[2] and C_BodyHi < C_BodyHi[2] and C_BodyHi[1] < C_BodyLo
+        C_oMorningStar := true
+    else
+        if C_UpTrend and C_WhiteBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_BlackBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo > C_BodyLo[2] and C_BodyLo[1] > C_BodyHi
+            C_oEveningStar := true
+plot(C_oMorningStar, title = "Candle.MorningStar")
+plot(C_oEveningStar, title = "Candle.EveningStar")
+
+
+// study("Marubozu")
+C_MarubozuShadowPercent = (5)
+C_Marubozu = C_LongBody and C_UpShadow <= C_MarubozuShadowPercent/100*C_Body and C_DnShadow <= C_MarubozuShadowPercent/100*C_Body
+C_WhiteMarubozu = C_Marubozu and C_WhiteBody
+C_BlackMarubozu = C_Marubozu and C_BlackBody
+plot(C_BlackMarubozu, title = "Candle.Marubozu.Black")
+plot(C_WhiteMarubozu, title = "Candle.Marubozu.White")
+
+
+//study("Doji")
+C_DojiBodyPercent = (5)
+C_IsDojiBody = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
+C_Doji = C_IsDojiBody and C_ShadowEquals
+C_DragonflyDoji = C_IsDojiBody and C_UpShadow <= C_Body
+C_GravestoneDoji = C_IsDojiBody and C_DnShadow <= C_Body
+plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji, title = "Candle.Doji")
+plot(C_DragonflyDoji, title = "Candle.Doji.Dragonfly")
+plot(C_GravestoneDoji, title = "Candle.Doji.Gravestone")
+
+
+// study("Harami")
+plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bullish")
+plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bearish")
+
+
+//study("Long Shadows")
+C_LongShadowPercent = (75)
+plot(C_DnShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Lower")
+plot(C_UpShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Upper")
+
+
+//study("Spinning Top")
+C_SpinningTopPercent = (34)
+C_IsSpinningTop = C_DnShadow >= C_Range / 100 * C_SpinningTopPercent and C_UpShadow >= C_Range / 100 * C_SpinningTopPercent and not C_IsDojiBody
+plot(C_IsSpinningTop and C_WhiteBody, title = "Candle.SpinningTop.White")
+plot(C_IsSpinningTop and C_BlackBody, title = "Candle.SpinningTop.Black")
+
+
+// study("3 White Soldiers & 3 Black Crows")
+C_3WSld3WCrwShadowPercent = (5)
+C_3WSld3WCrw_HaveNotUpShadow = C_Range * C_3WSld3WCrwShadowPercent / 100 > C_UpShadow
+C_3WSld3WCrw_HaveNotDnShadow = C_Range * C_3WSld3WCrwShadowPercent / 100 > C_DnShadow
+C_o3WhiteSoldiers = false
+C_o3BlackCrows = false
+if C_LongBody and C_LongBody[1] and C_LongBody[2]
+    if C_WhiteBody and C_WhiteBody[1] and C_WhiteBody[2]
+        C_o3WhiteSoldiers := close > close[1] and close[1] > close[2] and open < close[1] and open > open[1] and open[1] < close[2] and open[1] > open[2] and C_3WSld3WCrw_HaveNotUpShadow and C_3WSld3WCrw_HaveNotUpShadow[1] and C_3WSld3WCrw_HaveNotUpShadow[2]
+    if C_BlackBody and C_BlackBody[1] and C_BlackBody[2]
+        C_o3BlackCrows := close < close[1] and close[1] < close[2] and open > close[1] and open < open[1] and open[1] > close[2] and open[1] < open[2] and C_3WSld3WCrw_HaveNotDnShadow and C_3WSld3WCrw_HaveNotDnShadow[1] and C_3WSld3WCrw_HaveNotDnShadow[2]
+plot(C_o3WhiteSoldiers, title = "Candle.3WhiteSoldiers")
+plot(C_o3BlackCrows, title = "Candle.3BlackCrows")
+
+
+// study("Engulfing")
+plot(C_DownTrend and C_WhiteBody and C_LongBody and C_BlackBody[1] and C_SmallBody[1] and close >= open[1] and open <= close[1] and ( close > open[1] or open < close[1] ), title = "Candle.Engulfing.Bullish")
+plot(C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody[1] and close <= open[1] and open >= close[1] and ( close < open[1] or open > close[1] ), title = "Candle.Engulfing.Bearish")
+
+
+// study("Abandoned Baby")
+plot(C_DownTrend[2] and C_BlackBody[2] and C_IsDojiBody[1] and low[2] > high[1] and C_WhiteBody and high[1] < low, title = "Candle.AbandonedBaby.Bullish")
+plot(C_UpTrend[2] and C_WhiteBody[2] and C_IsDojiBody[1] and high[2] < low[1] and C_BlackBody and low[1] > high, title = "Candle.AbandonedBaby.Bearish")
+
+
+// study("Tri-Star")
+C_3Dojis = C_Doji[2] and C_Doji[1] and C_Doji
+C_BodyGapUp = C_BodyHi[1] < C_BodyLo
+C_BodyGapDn = C_BodyLo[1] > C_BodyHi
+plot(C_3Dojis and C_DownTrend[2] and C_BodyGapDn[1] and C_BodyGapUp, title = "Candle.TriStar.Bullish")
+plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn, title = "Candle.TriStar.Bearish")
+
+
+// study("Kicking")
+plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low, title = "Candle.Kicking.Bullish")
+plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.Kicking.Bearish")

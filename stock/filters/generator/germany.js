@@ -67,7 +67,7 @@ function hasDataAny(s) {
 
 function hasDataAll(s) {
     for (let i = 1; i < s.f.length; i++) {
-        if (s.f[i]) {
+        if (!s.f[i]) {
             return false;
         }
     }

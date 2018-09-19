@@ -1951,20 +1951,6 @@
       ]
     },
     {
-      "s": "BINANCE:HOTBTC",
-      "f": [
-        "Holo",
-        "HOT"
-      ]
-    },
-    {
-      "s": "BITFINEX:HOTUSD",
-      "f": [
-        "Holo",
-        "HOT"
-      ]
-    },
-    {
       "s": "BINANCE:HSRBTC",
       "f": [
         "Hshare",
@@ -3880,6 +3866,20 @@
       "f": [
         "Tether",
         "USDT"
+      ]
+    },
+    {
+      "s": "BITFINEX:XTZBTC",
+      "f": [
+        "Tezos",
+        "XTZ"
+      ]
+    },
+    {
+      "s": "BITFINEX:XTZUSD",
+      "f": [
+        "Tezos",
+        "XTZ"
       ]
     },
     {

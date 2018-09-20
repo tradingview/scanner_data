@@ -159,7 +159,7 @@ try {
     console.warn("Loading previous results failed with error: " + exc);
 }
 
-const missingUSDPairs = [];
+const missingPairs = [];
 
 JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
     let key = s.symbol;
@@ -183,7 +183,7 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
                 }
             });
         } else if (symbols.length === 1) {
-            missingUSDPairs.push(getExchange(symbols[0]) + ':' + key + 'USD');
+            missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
         }
 
         delete selectedSymbols[key];
@@ -205,7 +205,7 @@ for (let s in selectedSymbols) {
     }
 }
 
-console.warn("Missing ***USD pairs:\n" + JSON.stringify(missingUSDPairs));
+console.warn("Missing pairs:\n" + JSON.stringify(missingPairs));
 
 dstSymbols.sort(function (l, r) {
     const res = l.f[0].localeCompare(r.f[0]);

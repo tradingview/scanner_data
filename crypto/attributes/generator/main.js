@@ -40,7 +40,7 @@ const scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan
             {
                 left: "exchange",
                 operation: "not_in_range",
-                right: ["COINBASE", "KRAKEN"]
+                right: ["COINBASE", "KRAKEN", "WEX"]
             },
         ],
         filterOR: [

@@ -135,7 +135,7 @@ const currencyMapping = {
     "DADI": "DAD",
     "POLY": "POY",
     "QASH": "QSH",
-    "MANA": "MNA",
+    //"MANA": "MNA",
     "SWIFT": "BITS"
 };
 const currencyRevertedMapping = {};

@@ -453,7 +453,7 @@
       ]
     },
     {
-      "s": "BITTREX:BTGBTC",
+      "s": "BITFINEX:BTGBTC",
       "f": [
         "Bitcoin Gold",
         "BTG"
@@ -1161,20 +1161,6 @@
     },
     {
       "s": "BINANCE:MANAUSD",
-      "f": [
-        "Decentraland",
-        "MANA"
-      ]
-    },
-    {
-      "s": "BITFINEX:MNABTC",
-      "f": [
-        "Decentraland",
-        "MANA"
-      ]
-    },
-    {
-      "s": "BITFINEX:MNAUSD",
       "f": [
         "Decentraland",
         "MANA"
@@ -1951,34 +1937,6 @@
       ]
     },
     {
-      "s": "BINANCE:HOTBTC",
-      "f": [
-        "Holo",
-        "HOT"
-      ]
-    },
-    {
-      "s": "BITFINEX:HOTUSD",
-      "f": [
-        "Holo",
-        "HOT"
-      ]
-    },
-    {
-      "s": "BINANCE:HSRBTC",
-      "f": [
-        "Hshare",
-        "HSR"
-      ]
-    },
-    {
-      "s": "BINANCE:HSRUSD",
-      "f": [
-        "Hshare",
-        "HSR"
-      ]
-    },
-    {
       "s": "BITTREX:HMQBTC",
       "f": [
         "Humaniq",
@@ -2623,20 +2581,6 @@
       ]
     },
     {
-      "s": "POLONIEX:NMCBTC",
-      "f": [
-        "Namecoin",
-        "NMC"
-      ]
-    },
-    {
-      "s": "WEX:NMCUSD",
-      "f": [
-        "Namecoin",
-        "NMC"
-      ]
-    },
-    {
       "s": "BINANCE:NANOBTC",
       "f": [
         "Nano",
@@ -2746,20 +2690,6 @@
       "f": [
         "Nexus",
         "NXS"
-      ]
-    },
-    {
-      "s": "WEX:NVCBTC",
-      "f": [
-        "Novacoin",
-        "NVC"
-      ]
-    },
-    {
-      "s": "WEX:NVCUSD",
-      "f": [
-        "Novacoin",
-        "NVC"
       ]
     },
     {
@@ -3012,34 +2942,6 @@
       "f": [
         "Patientory",
         "PTOY"
-      ]
-    },
-    {
-      "s": "BITFINEX:PAIBTC",
-      "f": [
-        "PCHAIN",
-        "PAI"
-      ]
-    },
-    {
-      "s": "BITFINEX:PAIUSD",
-      "f": [
-        "PCHAIN",
-        "PAI"
-      ]
-    },
-    {
-      "s": "BITTREX:PPCBTC",
-      "f": [
-        "Peercoin",
-        "PPC"
-      ]
-    },
-    {
-      "s": "WEX:PPCUSD",
-      "f": [
-        "Peercoin",
-        "PPC"
       ]
     },
     {
@@ -3883,6 +3785,20 @@
       ]
     },
     {
+      "s": "BITFINEX:XTZBTC",
+      "f": [
+        "Tezos",
+        "XTZ"
+      ]
+    },
+    {
+      "s": "BITFINEX:XTZUSD",
+      "f": [
+        "Tezos",
+        "XTZ"
+      ]
+    },
+    {
       "s": "BINANCE:THETABTC",
       "f": [
         "Theta Token",
@@ -4310,7 +4226,7 @@
       ]
     },
     {
-      "s": "WEX:ZECUSD",
+      "s": "BITFINEX:ZECUSD",
       "f": [
         "Zcash",
         "ZEC"

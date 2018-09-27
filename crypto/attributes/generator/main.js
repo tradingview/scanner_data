@@ -40,7 +40,7 @@ const scanResp = requestSync("POST", "http://scanner.tradingview.com/crypto/scan
             {
                 left: "exchange",
                 operation: "not_in_range",
-                right: ["COINBASE", "KRAKEN"]
+                right: ["COINBASE", "KRAKEN", "WEX"]
             },
         ],
         filterOR: [
@@ -88,6 +88,14 @@ const excludeSymbols = [
     "BITTREX:AMPUSD",
     "BINANCE:BCCBTC",
     "BINANCE:BCCUSD",
+    "BINANCE:HSRBTC",
+    "BINANCE:HSRUSD",
+    "BITFINEX:HOTBTC",
+    "BITFINEX:HOTUSD",
+    "BITFINEX:VETBTC",
+    "BITFINEX:VETUSD",
+    "BITFINEX:PAIBTC",
+    "BITFINEX:PAIUSD"
 ];
 
 function skipSymbol(s) {
@@ -127,7 +135,7 @@ const currencyMapping = {
     "DADI": "DAD",
     "POLY": "POY",
     "QASH": "QSH",
-    "MANA": "MNA",
+    //"MANA": "MNA",
     "SWIFT": "BITS"
 };
 const currencyRevertedMapping = {};
@@ -153,7 +161,7 @@ try {
     console.warn("Loading previous results failed with error: " + exc);
 }
 
-const missingUSDPairs = [];
+const missingPairs = [];
 
 JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
     let key = s.symbol;
@@ -177,7 +185,7 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
                 }
             });
         } else if (symbols.length === 1) {
-            missingUSDPairs.push(getExchange(symbols[0]) + ':' + key + 'USD');
+            missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
         }
 
         delete selectedSymbols[key];
@@ -199,7 +207,7 @@ for (let s in selectedSymbols) {
     }
 }
 
-console.warn("Missing ***USD pairs:\n" + JSON.stringify(missingUSDPairs));
+console.warn("Missing pairs:\n" + JSON.stringify(missingPairs));
 
 dstSymbols.sort(function (l, r) {
     const res = l.f[0].localeCompare(r.f[0]);

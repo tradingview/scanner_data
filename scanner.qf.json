@@ -292,6 +292,54 @@
     "type": "number"
   },
   {
+    "name": "premarket_open",
+    "type": "price"
+  },
+  {
+    "name": "premarket_high",
+    "type": "price"
+  },
+  {
+    "name": "premarket_low",
+    "type": "price"
+  },
+  {
+    "name": "premarket_close",
+    "type": "price"
+  },
+  {
+    "name": "premarket_volume",
+    "type": "number"
+  },
+  {
+    "name": "postmarket_open",
+    "type": "price"
+  },
+  {
+    "name": "postmarket_high",
+    "type": "price"
+  },
+  {
+    "name": "postmarket_low",
+    "type": "price"
+  },
+  {
+    "name": "postmarket_close",
+    "type": "price"
+  },
+  {
+    "name": "postmarket_volume",
+    "type": "number"
+  },
+  {
+    "name": "premarket_time",
+    "type": "number"
+  },
+  {
+    "name": "postmarket_time",
+    "type": "number"
+  },
+  {
     "name": "fundamental_currency_code",
     "type": "text"
   },

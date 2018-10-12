@@ -369,20 +369,6 @@
       ]
     },
     {
-      "s": "BITTREX:BITBBTC",
-      "f": [
-        "Bean Cash",
-        "BITB"
-      ]
-    },
-    {
-      "s": "BITTREX:BITBUSD",
-      "f": [
-        "Bean Cash",
-        "BITB"
-      ]
-    },
-    {
       "s": "BINANCE:BNBBTC",
       "f": [
         "Binance Coin",
@@ -408,6 +394,20 @@
       "f": [
         "BitBay",
         "BAY"
+      ]
+    },
+    {
+      "s": "BITTREX:BITBBTC",
+      "f": [
+        "BitBean",
+        "BITB"
+      ]
+    },
+    {
+      "s": "BITTREX:BITBUSD",
+      "f": [
+        "BitBean",
+        "BITB"
       ]
     },
     {
@@ -831,6 +831,20 @@
       ]
     },
     {
+      "s": "BINANCE:CHATBTC",
+      "f": [
+        "ChatCoin",
+        "CHAT"
+      ]
+    },
+    {
+      "s": "BINANCE:CHATUSD",
+      "f": [
+        "ChatCoin",
+        "CHAT"
+      ]
+    },
+    {
       "s": "BINANCE:CNDBTC",
       "f": [
         "Cindicator",
@@ -901,6 +915,20 @@
       ]
     },
     {
+      "s": "BITFINEX:CBTBTC",
+      "f": [
+        "CommerceBlock",
+        "CBT"
+      ]
+    },
+    {
+      "s": "BITFINEX:CBTUSD",
+      "f": [
+        "CommerceBlock",
+        "CBT"
+      ]
+    },
+    {
       "s": "BITFINEX:SENBTC",
       "f": [
         "Consensus",
@@ -954,20 +982,6 @@
       "f": [
         "Crown",
         "CRW"
-      ]
-    },
-    {
-      "s": "BINANCE:MCOBTC",
-      "f": [
-        "Crypto.com",
-        "MCO"
-      ]
-    },
-    {
-      "s": "BINANCE:MCOUSD",
-      "f": [
-        "Crypto.com",
-        "MCO"
       ]
     },
     {
@@ -1867,20 +1881,6 @@
       ]
     },
     {
-      "s": "BINANCE:ZENBTC",
-      "f": [
-        "Horizen",
-        "ZEN"
-      ]
-    },
-    {
-      "s": "BITTREX:ZENUSD",
-      "f": [
-        "Horizen",
-        "ZEN"
-      ]
-    },
-    {
       "s": "BITTREX:HMQBTC",
       "f": [
         "Humaniq",
@@ -1934,6 +1934,20 @@
       "f": [
         "ICON",
         "ICX"
+      ]
+    },
+    {
+      "s": "BINANCE:ICNBTC",
+      "f": [
+        "Iconomi",
+        "ICN"
+      ]
+    },
+    {
+      "s": "BINANCE:ICNUSD",
+      "f": [
+        "Iconomi",
+        "ICN"
       ]
     },
     {
@@ -2399,6 +2413,20 @@
       ]
     },
     {
+      "s": "BITTREX:MCOBTC",
+      "f": [
+        "Monaco",
+        "MCO"
+      ]
+    },
+    {
+      "s": "BITTREX:MCOUSD",
+      "f": [
+        "Monaco",
+        "MCO"
+      ]
+    },
+    {
       "s": "BITTREX:MONABTC",
       "f": [
         "MonaCoin",
@@ -2806,6 +2834,20 @@
     },
     {
       "s": "BINANCE:OSTBTC",
+      "f": [
+        "OST",
+        "OST"
+      ]
+    },
+    {
+      "s": "BINANCE:OSTBTC",
+      "f": [
+        "OST",
+        "OST"
+      ]
+    },
+    {
+      "s": "BINANCE:OSTUSD",
       "f": [
         "OST",
         "OST"
@@ -3673,6 +3715,13 @@
       ]
     },
     {
+      "s": "POLONIEX:AMPUSD",
+      "f": [
+        "Synereo",
+        "AMP"
+      ]
+    },
+    {
       "s": "BITTREX:SYSBTC",
       "f": [
         "Syscoin",
@@ -3796,6 +3845,20 @@
       "f": [
         "TransferCoin",
         "TX"
+      ]
+    },
+    {
+      "s": "BINANCE:TRIGBTC",
+      "f": [
+        "Triggers",
+        "TRIG"
+      ]
+    },
+    {
+      "s": "BITTREX:TRIGUSD",
+      "f": [
+        "Triggers",
+        "TRIG"
       ]
     },
     {
@@ -4174,6 +4237,20 @@
       "f": [
         "ZCoin",
         "XZC"
+      ]
+    },
+    {
+      "s": "BITTREX:ZENBTC",
+      "f": [
+        "ZenCash",
+        "ZEN"
+      ]
+    },
+    {
+      "s": "BITTREX:ZENUSD",
+      "f": [
+        "ZenCash",
+        "ZEN"
       ]
     },
     {

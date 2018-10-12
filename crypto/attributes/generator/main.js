@@ -131,7 +131,6 @@ const currencyMapping = {
     "BTU": "BCU",
     "MIOTA": "IOT",
     "USNBT": "NBT",
-    "DATA": "DAT",
     "DADI": "DAD",
     "POLY": "POY",
     "QASH": "QSH",

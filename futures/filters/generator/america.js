@@ -111,7 +111,6 @@ dstSymbols.sort(function (l, r) {
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {
-        "time": now.toISOString() + '',
         "fields": continuesSrc.fields,
         "symbols": dstSymbols
     }, null, 2));

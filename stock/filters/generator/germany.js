@@ -87,7 +87,6 @@ config.forEach(c => {
         });
         fs.writeFileSync(c.path, JSON.stringify(
             {
-                "time": (new Date()).toISOString() + '',
                 "symbols": symbols
             }, null, 2));
     }

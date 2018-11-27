@@ -95,7 +95,9 @@ const excludeSymbols = [
     "BITFINEX:VETBTC",
     "BITFINEX:VETUSD",
     "BITFINEX:PAIBTC",
-    "BITFINEX:PAIUSD"
+    "BITFINEX:PAIUSD",
+    "BITFINEX:RBTBTC",
+    "BITFINEX:RBTUSD"
 ];
 
 function skipSymbol(s) {

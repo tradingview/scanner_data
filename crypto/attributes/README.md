@@ -6,4 +6,4 @@
 
 Нужно запускать если требуется обновить список монет для вышеуказанных страниц.
 
-В блеклист генератора можно добавить конкретный символ через переменную [excludeSymbols](https://github.com/multicharts/scanner_data/blob/master/crypto/attributes/generator/main.js#L77) или через [фильтр](https://github.com/multicharts/scanner_data/blob/master/crypto/attributes/generator/main.js#L19) в скан запросе.
+В блеклист генератора можно добавить конкретный символ через переменную [excludeSymbols](generator/main.js#L77) или через [фильтр](generator/main.js#L19) в скан запросе.

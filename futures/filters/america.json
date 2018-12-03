@@ -145,13 +145,6 @@
       ]
     },
     {
-      "s": "CBOT_MINI:XKX2018",
-      "f": [
-        null,
-        "CBOT_MINI:XK"
-      ]
-    },
-    {
       "s": "CBOT_MINI:XKX2019",
       "f": [
         null,
@@ -1020,13 +1013,6 @@
       ]
     },
     {
-      "s": "CBOT:ZKX2018",
-      "f": [
-        null,
-        "CBOT:ZK"
-      ]
-    },
-    {
       "s": "CBOT:ZKX2019",
       "f": [
         null,
@@ -1552,13 +1538,6 @@
       ]
     },
     {
-      "s": "CBOT:ZQX2018",
-      "f": [
-        null,
-        "CBOT:ZQ"
-      ]
-    },
-    {
       "s": "CBOT:ZQX2019",
       "f": [
         null,
@@ -1567,6 +1546,13 @@
     },
     {
       "s": "CBOT:ZQX2020",
+      "f": [
+        null,
+        "CBOT:ZQ"
+      ]
+    },
+    {
+      "s": "CBOT:ZQX2021",
       "f": [
         null,
         "CBOT:ZQ"
@@ -1637,13 +1623,6 @@
     },
     {
       "s": "CBOT:ZRU2019",
-      "f": [
-        null,
-        "CBOT:ZR"
-      ]
-    },
-    {
-      "s": "CBOT:ZRX2018",
       "f": [
         null,
         "CBOT:ZR"
@@ -1791,13 +1770,6 @@
     },
     {
       "s": "CBOT:ZSU2021",
-      "f": [
-        null,
-        "CBOT:ZS"
-      ]
-    },
-    {
-      "s": "CBOT:ZSX2018",
       "f": [
         null,
         "CBOT:ZS"
@@ -2616,14 +2588,14 @@
       ]
     },
     {
-      "s": "CME:BTCH2019",
+      "s": "CME:BTCG2019",
       "f": [
         null,
         "CME:BTC"
       ]
     },
     {
-      "s": "CME:BTCX2018",
+      "s": "CME:BTCH2019",
       "f": [
         null,
         "CME:BTC"
@@ -2946,13 +2918,6 @@
     },
     {
       "s": "CME:DLV2020",
-      "f": [
-        null,
-        "CME:DL"
-      ]
-    },
-    {
-      "s": "CME:DLX2018",
       "f": [
         null,
         "CME:DL"
@@ -3330,13 +3295,6 @@
       ]
     },
     {
-      "s": "CME:GFX2018",
-      "f": [
-        null,
-        "CME:GF"
-      ]
-    },
-    {
       "s": "CME:GFX2019",
       "f": [
         null,
@@ -3477,13 +3435,6 @@
       ]
     },
     {
-      "s": "CME:I9X2018",
-      "f": [
-        null,
-        "CME:I9"
-      ]
-    },
-    {
       "s": "CME:I9X2019",
       "f": [
         null,
@@ -3506,6 +3457,13 @@
     },
     {
       "s": "CME:I9X2022",
+      "f": [
+        null,
+        "CME:I9"
+      ]
+    },
+    {
+      "s": "CME:I9X2023",
       "f": [
         null,
         "CME:I9"
@@ -4262,13 +4220,6 @@
     },
     {
       "s": "CME:LSU2019",
-      "f": [
-        null,
-        "CME:LS"
-      ]
-    },
-    {
-      "s": "CME:LSX2018",
       "f": [
         null,
         "CME:LS"
@@ -5164,13 +5115,6 @@
       ]
     },
     {
-      "s": "CME:T6X2018",
-      "f": [
-        null,
-        "CME:T6"
-      ]
-    },
-    {
       "s": "CME:T6X2019",
       "f": [
         null,
@@ -5361,6 +5305,13 @@
     },
     {
       "s": "COMEX_MINI:GRV2019",
+      "f": [
+        null,
+        "COMEX_MINI:GR"
+      ]
+    },
+    {
+      "s": "COMEX_MINI:GRV2020",
       "f": [
         null,
         "COMEX_MINI:GR"
@@ -5612,13 +5563,6 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCX2018",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCX2019",
       "f": [
         null,
@@ -5626,7 +5570,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCZ2018",
+      "s": "COMEX_MINI:QCX2020",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5822,6 +5766,13 @@
       ]
     },
     {
+      "s": "COMEX_MINI:QOV2020",
+      "f": [
+        null,
+        "COMEX_MINI:QO"
+      ]
+    },
+    {
       "s": "COMEX_MINI:QOZ2018",
       "f": [
         null,
@@ -5977,13 +5928,6 @@
     },
     {
       "s": "COMEX:AEPV2020",
-      "f": [
-        null,
-        "COMEX:AEP"
-      ]
-    },
-    {
-      "s": "COMEX:AEPX2018",
       "f": [
         null,
         "COMEX:AEP"
@@ -6382,13 +6326,6 @@
       ]
     },
     {
-      "s": "COMEX:AUPX2018",
-      "f": [
-        null,
-        "COMEX:AUP"
-      ]
-    },
-    {
       "s": "COMEX:AUPX2019",
       "f": [
         null,
@@ -6557,7 +6494,7 @@
       ]
     },
     {
-      "s": "COMEX:GCX2018",
+      "s": "COMEX:GCV2020",
       "f": [
         null,
         "COMEX:GC"
@@ -6837,14 +6774,14 @@
       ]
     },
     {
-      "s": "COMEX:HGX2018",
+      "s": "COMEX:HGX2019",
       "f": [
         null,
         "COMEX:HG"
       ]
     },
     {
-      "s": "COMEX:HGX2019",
+      "s": "COMEX:HGX2020",
       "f": [
         null,
         "COMEX:HG"
@@ -6963,7 +6900,7 @@
       ]
     },
     {
-      "s": "COMEX:LDX2018",
+      "s": "COMEX:LDX2019",
       "f": [
         null,
         "COMEX:LD"
@@ -6992,6 +6929,13 @@
     },
     {
       "s": "COMEX:SIF2020",
+      "f": [
+        null,
+        "COMEX:SI"
+      ]
+    },
+    {
+      "s": "COMEX:SIG2019",
       "f": [
         null,
         "COMEX:SI"
@@ -7069,13 +7013,6 @@
     },
     {
       "s": "COMEX:SIU2020",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIX2018",
       "f": [
         null,
         "COMEX:SI"
@@ -7194,7 +7131,7 @@
       ]
     },
     {
-      "s": "COMEX:ZAX2018",
+      "s": "COMEX:ZAX2019",
       "f": [
         null,
         "COMEX:ZA"
@@ -7559,13 +7496,6 @@
     },
     {
       "s": "NYMEX_MINI:QGV2023",
-      "f": [
-        null,
-        "NYMEX_MINI:QG"
-      ]
-    },
-    {
-      "s": "NYMEX_MINI:QGX2018",
       "f": [
         null,
         "NYMEX_MINI:QG"
@@ -8076,13 +8006,6 @@
       ]
     },
     {
-      "s": "NYMEX_MINI:QMX2018",
-      "f": [
-        null,
-        "NYMEX_MINI:QM"
-      ]
-    },
-    {
       "s": "NYMEX_MINI:QMX2019",
       "f": [
         null,
@@ -8251,13 +8174,6 @@
       ]
     },
     {
-      "s": "NYMEX_MINI:QUX2018",
-      "f": [
-        null,
-        "NYMEX_MINI:QU"
-      ]
-    },
-    {
       "s": "NYMEX_MINI:QUX2019",
       "f": [
         null,
@@ -8343,13 +8259,6 @@
     },
     {
       "s": "NYMEX_MINI:QXV2019",
-      "f": [
-        null,
-        "NYMEX_MINI:QX"
-      ]
-    },
-    {
-      "s": "NYMEX_MINI:QXX2018",
       "f": [
         null,
         "NYMEX_MINI:QX"
@@ -9098,13 +9007,6 @@
       ]
     },
     {
-      "s": "NYMEX:CLX2018",
-      "f": [
-        null,
-        "NYMEX:CL"
-      ]
-    },
-    {
       "s": "NYMEX:CLX2019",
       "f": [
         null,
@@ -9309,13 +9211,6 @@
     },
     {
       "s": "NYMEX:IACV2019",
-      "f": [
-        null,
-        "NYMEX:IAC"
-      ]
-    },
-    {
-      "s": "NYMEX:IACX2018",
       "f": [
         null,
         "NYMEX:IAC"
@@ -9554,13 +9449,6 @@
     },
     {
       "s": "NYMEX:ITIV2021",
-      "f": [
-        null,
-        "NYMEX:ITI"
-      ]
-    },
-    {
-      "s": "NYMEX:ITIX2018",
       "f": [
         null,
         "NYMEX:ITI"
@@ -10037,13 +9925,6 @@
     },
     {
       "s": "NYMEX:JMJV2024",
-      "f": [
-        null,
-        "NYMEX:JMJ"
-      ]
-    },
-    {
-      "s": "NYMEX:JMJX2018",
       "f": [
         null,
         "NYMEX:JMJ"
@@ -11128,13 +11009,6 @@
       ]
     },
     {
-      "s": "NYMEX:NGX2018",
-      "f": [
-        null,
-        "NYMEX:NG"
-      ]
-    },
-    {
       "s": "NYMEX:NGX2019",
       "f": [
         null,
@@ -11345,13 +11219,6 @@
       ]
     },
     {
-      "s": "NYMEX:PAX2018",
-      "f": [
-        null,
-        "NYMEX:PA"
-      ]
-    },
-    {
       "s": "NYMEX:PAZ2018",
       "f": [
         null,
@@ -11402,13 +11269,6 @@
     },
     {
       "s": "NYMEX:PLV2019",
-      "f": [
-        null,
-        "NYMEX:PL"
-      ]
-    },
-    {
-      "s": "NYMEX:PLX2018",
       "f": [
         null,
         "NYMEX:PL"
@@ -11646,13 +11506,6 @@
       ]
     },
     {
-      "s": "NYMEX:RBX2018",
-      "f": [
-        null,
-        "NYMEX:RB"
-      ]
-    },
-    {
       "s": "NYMEX:RBX2019",
       "f": [
         null,
@@ -11843,13 +11696,6 @@
     },
     {
       "s": "NYMEX:TICV2020",
-      "f": [
-        null,
-        "NYMEX:TIC"
-      ]
-    },
-    {
-      "s": "NYMEX:TICX2018",
       "f": [
         null,
         "NYMEX:TIC"
@@ -12242,13 +12088,6 @@
     },
     {
       "s": "NYMEX:UXV2023",
-      "f": [
-        null,
-        "NYMEX:UX"
-      ]
-    },
-    {
-      "s": "NYMEX:UXX2018",
       "f": [
         null,
         "NYMEX:UX"

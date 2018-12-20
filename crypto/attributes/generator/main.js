@@ -2,7 +2,7 @@ const requestSync = require("sync-request"),
     fs = require("fs");
 
 const dstPath = "../crypto.json";
-// const defaultScannerLocation = 'dal';
+const defaultScannerLocation = 'nyc';
 
 const scanRequestForPairs = {
     sort: {
@@ -60,7 +60,7 @@ const scanRequestForPairs = {
 };
 
 function scan(req, loc) {
-    loc = loc || defaultScannerLocation || 'nyc';
+    loc = loc || defaultScannerLocation;
     const resp = requestSync("POST", `http://scanner-${loc}.tradingview.com/crypto/scan2`, {
         json: req
     });

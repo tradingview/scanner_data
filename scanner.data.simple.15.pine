@@ -655,7 +655,7 @@ rVolCalcAvgVol(offset, daysBack, time1d) =>
     maxDetailedBars = (rVolAvgDays+1)* (24*60/interval)
     maxDetailedUnixTime = maxDetailedBars * interval * 60 * 1000
 
-    if n == 1 // force bars back detector for needed depth
+    if n == 0 // force bars back detector for needed depth
         result := tm[maxDetailedBars] - time1d[maxDetailedBars] > vol[maxDetailedBars] ? 0 : 0
 
     startCalcBound = timenow - maxDetailedUnixTime

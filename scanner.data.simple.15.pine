@@ -118,6 +118,7 @@ plot(dStoch[1], title="Stoch.D[1]")
 // average volume
 AvgVol = sma(volume,10)
 plot(AvgVol, title="average_volume_10d_calc")
+plot(volume/sma(volume[1],10), title="relative_volume_10d_calc")
 plot(sma(volume,30), title="average_volume_30d_calc")
 plot(sma(volume,60), title="average_volume_60d_calc")
 plot(sma(volume,90), title="average_volume_90d_calc")
@@ -696,4 +697,4 @@ calcRVolume() =>
         volNow := volNow * koeff
     volNow / (rVolCalcAvgVol(1, rVolAvgDays + 1, time1d) / rVolAvgDays)
 
-plot(calcRVolume(), title="relative_volume_10d_calc")
+plot(calcRVolume(), title="relative_volume_intraday")

@@ -1,0 +1,699 @@
+//@version=2
+study(title="ScannerData", shorttitle="_SD_")
+
+
+// study(title="Average True Range", shorttitle="ATR", overlay=false)
+plot(rma(tr(true), 14), title="ATR")
+
+
+// study("Average Directional Index", shorttitle="ADX")
+dirmov(len) =>
+	up = change(high)
+	down = -change(low)
+	truerange = rma(tr, len)
+	plus = fixnan(100 * rma(up > down and up > 0 ? up : 0, len) / truerange)
+	minus = fixnan(100 * rma(down > up and down > 0 ? down : 0, len) / truerange)
+	[plus, minus]
+
+adx(dilen, adxlen) =>
+	[plus, minus] = dirmov(dilen)
+	sum = plus + minus
+	adx = 100 * rma(abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
+	[adx, plus, minus]
+
+[adxValue, adxPlus, adxMinus] = adx(14, 14)
+plot(adxValue, title="ADX")
+plot(adxPlus, title="ADX+DI")
+plot(adxMinus, title="ADX-DI")
+plot(adxPlus[1], title="ADX+DI[1]")
+plot(adxMinus[1], title="ADX-DI[1]")
+
+
+// study(shorttitle="BB", title="Bollinger Bands", overlay=true)
+lengthBB = 20
+srcBB = close
+multBB = 2
+basisBB = sma(srcBB, lengthBB)
+devBB = multBB * stdev(srcBB, lengthBB)
+upperBB = basisBB + devBB
+lowerBB = basisBB - devBB
+plot(basisBB, title="BB.basis")
+plot(upperBB, title="BB.upper")
+plot(lowerBB, title="BB.lower")
+
+
+// study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
+sourceMACD = close
+fastLengthMACD = 12
+slowLengthMACD = 26
+signalLengthMACD = 9
+fastMAMACD = ema(sourceMACD, fastLengthMACD)
+slowMAMACD = ema(sourceMACD, slowLengthMACD)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = ema(macdMACD, signalLengthMACD)
+histMACD = macdMACD - signalMACD
+plot(histMACD, title="MACD.hist")
+plot(macdMACD, title="MACD.macd")
+plot(signalMACD, title="MACD.signal")
+
+
+//study(title="Momentum", shorttitle="Mom")
+Mom = close - close[10]
+plot(Mom, title="Mom")
+plot(Mom[1], title="Mom[1]")
+
+
+//study(title="Relative Strength Index", shorttitle="RSI")
+RSI=rsi(close,14)
+plot(RSI, title="RSI")
+plot(rsi(close,7), title="RSI7")
+plot(RSI[1], title="RSI[1]")
+plot(rsi(close,7)[1], title="RSI7[1]")
+
+
+// study(title="Moving Average", shorttitle="MA", overlay=true)
+SMA5=sma(close, 5)
+plot(SMA5, title="SMA5")
+SMA10=sma(close, 10)
+plot(SMA10, title="SMA10")
+SMA20=sma(close, 20)
+plot(SMA20, title="SMA20")
+SMA30=sma(close, 30)
+plot(SMA30, title="SMA30")
+SMA50=sma(close, 50)
+plot(SMA50, title="SMA50")
+SMA100=sma(close, 100)
+plot(SMA100, title="SMA100")
+SMA200=sma(close, 200)
+plot(SMA200, title="SMA200")
+
+// study(title="Exponential Moving Average", shorttitle="EMA", overlay=true)
+EMA5=ema(close, 5)
+plot(EMA5, title="EMA5")
+EMA10=ema(close, 10)
+plot(EMA10, title="EMA10")
+EMA20=ema(close, 20)
+plot(EMA20, title="EMA20")
+EMA30=ema(close, 30)
+plot(EMA30, title="EMA30")
+EMA50=ema(close, 50)
+plot(EMA50, title="EMA50")
+EMA100=ema(close, 100)
+plot(EMA100, title="EMA100")
+EMA200=ema(close, 200)
+plot(EMA200, title="EMA200")
+
+
+// study(title="Stochastic", shorttitle="Stoch")
+lengthStoch = 14
+smoothKStoch = 3
+smoothDStoch = 3
+kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch = sma(kStoch, smoothDStoch)
+plot(kStoch, title="Stoch.K")
+plot(dStoch, title="Stoch.D")
+plot(kStoch[1], title="Stoch.K[1]")
+plot(dStoch[1], title="Stoch.D[1]")
+
+// average volume
+AvgVol = sma(volume,10)
+plot(AvgVol, title="average_volume_10d_calc")
+plot(sma(volume,30), title="average_volume_30d_calc")
+plot(sma(volume,60), title="average_volume_60d_calc")
+plot(sma(volume,90), title="average_volume_90d_calc")
+
+// Commodity Channel Index
+CCI=cci(close, 20)
+plot(CCI, title = "CCI20")
+plot(CCI[1], title = "CCI20[1]")
+//plot(cci(close, 100), title = "CCI100")
+
+// Donchian Channels
+donchLen = 20
+donchUpper = highest(donchLen)
+donchLower = lowest(donchLen)
+plot(donchLower, title = "DonchCh20.Lower")
+plot(donchUpper, title = "DonchCh20.Upper")
+plot(avg(donchUpper, donchLower), title="DonchCh20.Middle")
+
+// Hull Moving Average
+hullMALength = 9
+hullMA_n2ma=2*wma(close,round(hullMALength/2))
+hullMA_nma=wma(close,hullMALength)
+HullMA9 = wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength)))
+plot(HullMA9, title = "HullMA9")
+
+// Awesome Oscillator
+AO = sma(hl2, 5) - sma(hl2, 34)
+plot(AO, title = "AO")
+plot(AO[1], title = "AO[1]")
+
+// Pivot Points
+pivotX_open = nz(pivotX_open[1],open)
+pivotX_high = nz(pivotX_high[1],high)
+pivotX_low = nz(pivotX_low[1],low)
+
+pivotX_prev_open = nz(pivotX_prev_open[1])
+pivotX_prev_high = nz(pivotX_prev_high[1])
+pivotX_prev_low = nz(pivotX_prev_low[1])
+pivotX_prev_close = nz(pivotX_prev_close[1])
+
+pivotXGetCurDate()=>
+    result = month(time)
+    if isintraday
+        result := interval <= 15 ? dayofmonth(time) : weekofyear(time)
+    else
+        if isweekly or ismonthly
+            result := year(time)
+    result
+
+fNeg(value) => value <= 0 ? na : value
+
+pivotX_Interval = pivotXGetCurDate()
+if pivotX_Interval != pivotX_Interval[1]
+    pivotX_prev_open := pivotX_open
+    pivotX_prev_close := close[1]
+    pivotX_prev_high := pivotX_high
+    pivotX_prev_low := pivotX_low
+
+    pivotX_open := open
+    pivotX_high := high
+    pivotX_low := low
+else
+    pivotX_high := max(pivotX_high, high)
+    pivotX_low := min(pivotX_low, low)
+
+// Classic
+pivotX_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_prev_close)/3
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Classic.Middle')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_low), title = 'Pivot.M.Classic.R1')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_high), title = 'Pivot.M.Classic.S1')
+plot(fNeg(pivotX_Median + 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.R2')
+plot(fNeg(pivotX_Median - 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.S2')
+plot(fNeg(pivotX_Median + 2*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.R3')
+plot(fNeg(pivotX_Median - 2*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.S3')
+
+// Fibonacci
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Fibonacci.Middle')
+plot(fNeg(pivotX_Median + 0.382 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R1')
+plot(fNeg(pivotX_Median - 0.382 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S1')
+plot(fNeg(pivotX_Median + 0.618 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R2')
+plot(fNeg(pivotX_Median - 0.618 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S2')
+plot(fNeg(pivotX_Median + 1 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R3')
+plot(fNeg(pivotX_Median - 1 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S3')
+
+// Woodie
+pivotX_Woodie_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_open * 2)/4
+plot(fNeg(pivotX_Woodie_Median), title = 'Pivot.M.Woodie.Middle')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_low), title = 'Pivot.M.Woodie.R1')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_high), title = 'Pivot.M.Woodie.S1')
+plot(fNeg(pivotX_Woodie_Median + 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Woodie.R2')
+plot(fNeg(pivotX_Woodie_Median - 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Woodie.S2')
+plot(fNeg(pivotX_prev_high + 2*(pivotX_Woodie_Median - pivotX_prev_low)), title = 'Pivot.M.Woodie.R3')
+plot(fNeg(pivotX_prev_low - 2*(pivotX_prev_high - pivotX_Woodie_Median)), title = 'Pivot.M.Woodie.S3')
+
+// Demark
+pivotX_Demark_X = pivotX_prev_high + pivotX_prev_low*2 + pivotX_prev_close
+if pivotX_prev_close == pivotX_prev_open
+    pivotX_Demark_X := pivotX_prev_high + pivotX_prev_low + pivotX_prev_close*2
+if pivotX_prev_close > pivotX_prev_open
+    pivotX_Demark_X := pivotX_prev_high*2 + pivotX_prev_low + pivotX_prev_close
+plot(fNeg(pivotX_Demark_X/4), title = 'Pivot.M.Demark.Middle')
+plot(fNeg(pivotX_Demark_X/2 - pivotX_prev_low), title = 'Pivot.M.Demark.R1')
+plot(fNeg(pivotX_Demark_X/2 - pivotX_prev_high), title = 'Pivot.M.Demark.S1')
+
+// Camarilla
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Camarilla.Middle')
+plot(fNeg(pivotX_prev_close + 1.1/12.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R1')
+plot(fNeg(pivotX_prev_close - 1.1/12.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S1')
+plot(fNeg(pivotX_prev_close + 1.1/6.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R2')
+plot(fNeg(pivotX_prev_close - 1.1/6.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S2')
+plot(fNeg(pivotX_prev_close + 1.1/4.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R3')
+plot(fNeg(pivotX_prev_close - 1.1/4.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S3')
+
+// study("Aroon")
+Aroon_length = (14)
+plot(100 * (highestbars(high, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Up")
+plot(100 * (lowestbars(low, Aroon_length+1) + Aroon_length)/Aroon_length, title="Aroon.Down")
+
+// value traded (dollar volume)
+plot(volume*close*syminfo.pointvalue, title="Value.Traded")
+
+// study("My Keltner Channels", overlay=true)
+lengthKltChnl = 20
+multKltChnl = 1
+maKltChnl = ema(close, lengthKltChnl)
+rangemaKltChnl = ema(tr, lengthKltChnl)
+plot(maKltChnl + rangemaKltChnl * multKltChnl, title = "KltChnl.upper")
+plot(maKltChnl - rangemaKltChnl * multKltChnl, title = "KltChnl.lower")
+
+// study("My Parabolic SAR", overlay=true)
+PSAR=sar(0.02, 0.02, 0.2)
+plot(PSAR, title = "P.SAR")
+
+// study("My Money Flow")
+lenMF = 14
+posMF = sum(iff(hlc3 > hlc3[1], hlc3 * volume, 0), lenMF)
+negMF = sum(iff(hlc3 < hlc3[1], hlc3 * volume, 0), lenMF)
+plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
+
+// study("My Chaikin Money Flow")
+lenCMF = 20
+accdistRaw = not ( ((close == low) and (close == high)) or (high == low) ) ? (((close - low) - (high - close)) / (high - low)) * volume : 0
+plot( sum(accdistRaw, lenCMF) / sum(volume, lenCMF), title = "ChaikinMoneyFlow" )
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Stochastic RSI
+StochRSI()=>
+    rsi1 = rsi(close, 14)
+    K = sma(stoch(rsi1, rsi1, rsi1, 14), 3)
+    D = sma(K, 3)
+    [K, D]
+
+[Stoch_RSI_K, Stoch_RSI_D] = StochRSI()
+plot(Stoch_RSI_K, title="Stoch.RSI.K")
+plot(Stoch_RSI_D, title="Stoch.RSI.D")
+
+
+// Williams Percent Range
+WR_period = 14
+WR = (highest(high,WR_period)-close)/(highest(high,WR_period)-lowest(low,WR_period)) * -100
+plot(WR, title="W.R")
+
+
+// Rate Of Change (ROC)
+plot(roc(close,9), title="ROC")
+
+
+// Bull / Bear Power
+BullPower = high - ema(close, 13)
+BearPower = low - ema(close, 13)
+plot(BullPower + BearPower, title="BBPower")
+
+
+// Ultimate Oscillator
+tl()=> close[1] < low ? close[1]: low
+uo(ShortLen, MiddlLen, LongLen) =>
+    Value1 = sum( tr, ShortLen )
+    Value2 = sum( tr, MiddlLen )
+    Value3 = sum( tr, LongLen )
+    Value4 = sum( close - tl(), ShortLen )
+    Value5 = sum( close - tl(), MiddlLen )
+    Value6 = sum( close - tl(), LongLen )
+    UO = na
+    if Value1 != 0 and Value2 != 0 and Value3 != 0
+    	var0 = LongLen / ShortLen
+    	var1 = LongLen / MiddlLen
+    	Value7 = ( Value4 / Value1 ) * ( var0 )
+    	Value8 = ( Value5 / Value2 ) * ( var1 )
+    	Value9 = ( Value6 / Value3 )
+    	UO := ( Value7 + Value8 + Value9 ) / ( var0 + var1 + 1 )
+    UO
+UO = uo(7,14,28)
+if not na(UO)
+    UO := UO * 100
+plot(UO, title="UO")
+
+
+// Ichimoku Cloud
+donchian(len) => avg(lowest(len), highest(len))
+ichimoku_cloud()=>
+    conversionLine = donchian(9)
+    baseLine = donchian(26)
+    leadLine1 = avg(conversionLine, baseLine)
+    leadLine2 = donchian(52)
+    [conversionLine, baseLine, leadLine1, leadLine2]
+[IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud()
+IC_displacement = 26
+plot(IC_CLine, title="Ichimoku.CLine")
+plot(IC_BLine, title="Ichimoku.BLine")
+plot(IC_Lead1[IC_displacement], offset = IC_displacement, title="Ichimoku.Lead1")
+plot(IC_Lead2[IC_displacement], offset = IC_displacement, title="Ichimoku.Lead2")
+
+
+// Volume Weighted Moving Average (VWMA)
+VWMA = vwma(close, 20)
+plot(VWMA, title="VWMA")
+
+
+// Average Day Range
+plot(sma(high, 14) - sma(low, 14), title="ADR")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PriceAvg = ema( close, 50 )
+DownTrend = close < PriceAvg
+UpTrend = close > PriceAvg
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+calcRecommendMA(left,right)=> na(left) or na(right) ? na : (left == right ? 0 : ( left < right ? 1 : -1 ))
+calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
+
+// calculate trading recommendation based on SMA/EMA
+recMA = 0
+recMAC = 0
+
+if not na(close)
+	if not na(SMA10)
+        recMA := recMA + calcRecommendMA(SMA10, close)
+        recMAC := recMAC + 1
+	if not na(SMA20)
+        recMA := recMA + calcRecommendMA(SMA20, close)
+        recMAC := recMAC + 1
+    if not na(SMA30)
+        recMA := recMA + calcRecommendMA(SMA30, close)
+        recMAC := recMAC + 1
+    if not na(SMA50)
+        recMA := recMA + calcRecommendMA(SMA50, close)
+        recMAC := recMAC + 1
+	if not na(SMA100)
+        recMA := recMA + calcRecommendMA(SMA100, close)
+        recMAC := recMAC + 1
+    if not na(SMA200)
+        recMA := recMA + calcRecommendMA(SMA200, close)
+        recMAC := recMAC + 1
+    if not na(EMA10)
+        recMA := recMA + calcRecommendMA(EMA10, close)
+        recMAC := recMAC + 1
+    if not na(EMA20)
+        recMA := recMA + calcRecommendMA(EMA20, close)
+        recMAC := recMAC + 1
+    if not na(EMA30)
+        recMA := recMA + calcRecommendMA(EMA30, close)
+        recMAC := recMAC + 1
+    if not na(EMA50)
+        recMA := recMA + calcRecommendMA(EMA50, close)
+        recMAC := recMAC + 1
+    if not na(EMA100)
+        recMA := recMA + calcRecommendMA(EMA100, close)
+        recMAC := recMAC + 1
+    if not na(EMA200)
+        recMA := recMA + calcRecommendMA(EMA200, close)
+        recMAC := recMAC + 1
+
+recHullMA9 = calcRecommendMA(HullMA9, close)
+plot(recHullMA9, title="Rec.HullMA9")
+if not na(recHullMA9)
+    recMA := recMA + recHullMA9
+    recMAC := recMAC + 1
+
+recVWMA = calcRecommendMA(VWMA, close)
+plot(recVWMA, title="Rec.VWMA")
+if not na(recVWMA)
+    recMA := recMA + recVWMA
+    recMAC := recMAC + 1
+
+recIC = na
+if not (na(IC_Lead1) or na(IC_Lead2) or na(close) or na(close[1]) or na(IC_BLine) or na(IC_CLine))
+    recIC := calcRecommend(
+     IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine,
+     IC_Lead2 > IC_Lead1 and close < IC_Lead2 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+plot(recIC, title="Rec.Ichimoku")
+if not na(recIC)
+    recMA := recMA + recIC
+    recMAC := recMAC + 1
+
+recMA := recMAC > 0 ? recMA / recMAC : na
+plot(recMA, title="Recommend.MA")
+
+recOther = 0
+recOtherC = 0
+
+recRSI = RSI
+if not(na(recRSI) or na(recRSI[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+
+if not(na(kStoch) or na(dStoch) or na(kStoch[1]) or na(dStoch[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+
+recCCI = CCI
+if not(na(recCCI) or na(recCCI[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
+
+if not(na(adxValue) or na(adxPlus[1]) or na(adxMinus[1]) or na(adxPlus) or na(adxMinus))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+
+if not(na(AO) or na(AO[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+
+if not(na(Mom) or na(Mom[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+
+if not(na(macdMACD) or na(signalMACD))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
+
+recStoch_RSI = na
+if not(na(DownTrend) or na(UpTrend) or na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
+    recStoch_RSI := calcRecommend(
+     DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1],
+     UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
+plot(recStoch_RSI, title="Rec.Stoch.RSI")
+if not na(recStoch_RSI)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recStoch_RSI
+
+recWR = na
+if not(na(WR) or na(WR[1]))
+    recWR := calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
+plot(recWR, title="Rec.WR")
+if not na(recWR)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recWR
+
+recBBPower = na
+if not(na(UpTrend) or na(DownTrend) or na(BearPower) or na(BearPower[1]) or na(BullPower) or na(BullPower[1]))
+    recBBPower := calcRecommend(
+     UpTrend and BearPower < 0 and BearPower > BearPower[1],
+     DownTrend and BullPower > 0 and BullPower < BullPower[1])
+plot(recBBPower, title="Rec.BBPower")
+if not na(recBBPower)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recBBPower
+
+recUO = na
+if not(na(UO))
+    recUO := calcRecommend(UO > 70, UO < 30)
+plot(recUO, title="Rec.UO")
+if not na(recUO)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recUO
+
+recOther := recOtherC > 0 ? recOther / recOtherC : na
+plot(recOther, title="Recommend.Other")
+
+recTotal = 0
+recTotalC = 0
+if not na(recMA)
+    recTotal := recTotal + recMA
+    recTotalC := recTotalC + 1
+if not na(recOther)
+    recTotal := recTotal + recOther
+    recTotalC := recTotalC + 1
+recTotal := recTotalC > 0 ? recTotal / recTotalC : na
+plot(recTotal, title="Recommend.All")
+
+//////////////////////////////////// Candle Patterns ////////////////////////////////////
+
+C_Len = (14)
+C_Factor = (3.0)
+C_ShadowPercent = (5)
+C_ShadowEqualsPercent = (100)
+
+C_BodyHi = max( close, open )
+C_BodyLo = min( close, open )
+C_Body = C_BodyHi - C_BodyLo
+C_BodyAvg = ema( C_Body, C_Len )
+C_SmallBody = C_Body < C_BodyAvg
+C_LongBody = C_Body > C_BodyAvg
+C_UpShadow = high - C_BodyHi
+C_DnShadow = C_BodyLo - low
+C_DownTrend = DownTrend
+C_UpTrend = UpTrend
+C_HasUpShadow = C_UpShadow > C_ShadowPercent / 100 * C_Body
+C_HasDnShadow = C_DnShadow > C_ShadowPercent / 100 * C_Body
+C_WhiteBody = open < close
+C_BlackBody = open > close
+C_Range = high-low
+C_IsInsideBar = C_BodyHi[1] > C_BodyHi and C_BodyLo[1] < C_BodyLo
+C_BodyMiddle = C_Body / 2 + C_BodyLo
+C_ShadowEquals = C_UpShadow == C_DnShadow or (abs(C_UpShadow - C_DnShadow) / C_DnShadow * 100) < C_ShadowEqualsPercent and (abs(C_DnShadow - C_UpShadow) / C_UpShadow * 100) < C_ShadowEqualsPercent
+
+// study("Hammer, Inverted Hammer, Hanging Man, Shooting Star")
+C_oHammer = false
+C_oHangingMan = false
+if C_SmallBody and C_Body > 0 and C_BodyLo > hl2 and C_DnShadow >= C_Factor * C_Body and not C_HasUpShadow
+    if C_DownTrend
+        C_oHammer := true
+	else
+	    if C_UpTrend
+	        C_oHangingMan := true
+
+plot(C_oHammer, title = "Candle.Hammer")
+plot(C_oHangingMan, title = "Candle.HangingMan")
+
+C_oInvertedHammer = false
+C_oShootingStar = false
+if C_SmallBody and C_Body > 0 and C_BodyHi < hl2 and C_UpShadow >= C_Factor * C_Body and not C_HasDnShadow
+    if C_DownTrend
+        C_oInvertedHammer := true
+	else
+	    if C_UpTrend
+	        C_oShootingStar := true
+
+plot(C_oInvertedHammer, title = "Candle.InvertedHammer")
+plot(C_oShootingStar, title = "Candle.ShootingStar")
+
+
+// study("Evening & Morning Stars")
+C_oMorningStar = false
+C_oEveningStar = false
+if C_LongBody[2] and C_SmallBody[1] and C_LongBody
+    if C_DownTrend and C_BlackBody[2] and C_BodyHi[1] < C_BodyLo[2] and C_WhiteBody and C_BodyHi >= C_BodyMiddle[2] and C_BodyHi < C_BodyHi[2] and C_BodyHi[1] < C_BodyLo
+        C_oMorningStar := true
+    else
+        if C_UpTrend and C_WhiteBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_BlackBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo > C_BodyLo[2] and C_BodyLo[1] > C_BodyHi
+            C_oEveningStar := true
+plot(C_oMorningStar, title = "Candle.MorningStar")
+plot(C_oEveningStar, title = "Candle.EveningStar")
+
+
+// study("Marubozu")
+C_MarubozuShadowPercent = (5)
+C_Marubozu = C_LongBody and C_UpShadow <= C_MarubozuShadowPercent/100*C_Body and C_DnShadow <= C_MarubozuShadowPercent/100*C_Body
+C_WhiteMarubozu = C_Marubozu and C_WhiteBody
+C_BlackMarubozu = C_Marubozu and C_BlackBody
+plot(C_BlackMarubozu, title = "Candle.Marubozu.Black")
+plot(C_WhiteMarubozu, title = "Candle.Marubozu.White")
+
+
+//study("Doji")
+C_DojiBodyPercent = (5)
+C_IsDojiBody = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
+C_Doji = C_IsDojiBody and C_ShadowEquals
+C_DragonflyDoji = C_IsDojiBody and C_UpShadow <= C_Body
+C_GravestoneDoji = C_IsDojiBody and C_DnShadow <= C_Body
+plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji, title = "Candle.Doji")
+plot(C_DragonflyDoji, title = "Candle.Doji.Dragonfly")
+plot(C_GravestoneDoji, title = "Candle.Doji.Gravestone")
+
+
+// study("Harami")
+plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bullish")
+plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bearish")
+
+
+//study("Long Shadows")
+C_LongShadowPercent = (75)
+plot(C_DnShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Lower")
+plot(C_UpShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Upper")
+
+
+//study("Spinning Top")
+C_SpinningTopPercent = (34)
+C_IsSpinningTop = C_DnShadow >= C_Range / 100 * C_SpinningTopPercent and C_UpShadow >= C_Range / 100 * C_SpinningTopPercent and not C_IsDojiBody
+plot(C_IsSpinningTop and C_WhiteBody, title = "Candle.SpinningTop.White")
+plot(C_IsSpinningTop and C_BlackBody, title = "Candle.SpinningTop.Black")
+
+
+// study("3 White Soldiers & 3 Black Crows")
+C_3WSld3WCrwShadowPercent = (5)
+C_3WSld3WCrw_HaveNotUpShadow = C_Range * C_3WSld3WCrwShadowPercent / 100 > C_UpShadow
+C_3WSld3WCrw_HaveNotDnShadow = C_Range * C_3WSld3WCrwShadowPercent / 100 > C_DnShadow
+C_o3WhiteSoldiers = false
+C_o3BlackCrows = false
+if C_LongBody and C_LongBody[1] and C_LongBody[2]
+    if C_WhiteBody and C_WhiteBody[1] and C_WhiteBody[2]
+        C_o3WhiteSoldiers := close > close[1] and close[1] > close[2] and open < close[1] and open > open[1] and open[1] < close[2] and open[1] > open[2] and C_3WSld3WCrw_HaveNotUpShadow and C_3WSld3WCrw_HaveNotUpShadow[1] and C_3WSld3WCrw_HaveNotUpShadow[2]
+    if C_BlackBody and C_BlackBody[1] and C_BlackBody[2]
+        C_o3BlackCrows := close < close[1] and close[1] < close[2] and open > close[1] and open < open[1] and open[1] > close[2] and open[1] < open[2] and C_3WSld3WCrw_HaveNotDnShadow and C_3WSld3WCrw_HaveNotDnShadow[1] and C_3WSld3WCrw_HaveNotDnShadow[2]
+plot(C_o3WhiteSoldiers, title = "Candle.3WhiteSoldiers")
+plot(C_o3BlackCrows, title = "Candle.3BlackCrows")
+
+
+// study("Engulfing")
+plot(C_DownTrend and C_WhiteBody and C_LongBody and C_BlackBody[1] and C_SmallBody[1] and close >= open[1] and open <= close[1] and ( close > open[1] or open < close[1] ), title = "Candle.Engulfing.Bullish")
+plot(C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody[1] and close <= open[1] and open >= close[1] and ( close < open[1] or open > close[1] ), title = "Candle.Engulfing.Bearish")
+
+
+// study("Abandoned Baby")
+plot(C_DownTrend[2] and C_BlackBody[2] and C_IsDojiBody[1] and low[2] > high[1] and C_WhiteBody and high[1] < low, title = "Candle.AbandonedBaby.Bullish")
+plot(C_UpTrend[2] and C_WhiteBody[2] and C_IsDojiBody[1] and high[2] < low[1] and C_BlackBody and low[1] > high, title = "Candle.AbandonedBaby.Bearish")
+
+
+// study("Tri-Star")
+C_3Dojis = C_Doji[2] and C_Doji[1] and C_Doji
+C_BodyGapUp = C_BodyHi[1] < C_BodyLo
+C_BodyGapDn = C_BodyLo[1] > C_BodyHi
+plot(C_3Dojis and C_DownTrend[2] and C_BodyGapDn[1] and C_BodyGapUp, title = "Candle.TriStar.Bullish")
+plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn, title = "Candle.TriStar.Bearish")
+
+
+// study("Kicking")
+plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low, title = "Candle.Kicking.Bullish")
+plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.Kicking.Bearish")
+
+//////////////////////////////////// study("relative volume v4") ///////////////////////////////////////////////////////
+
+rVolAvgDays = 10
+
+rVolCalcAvgVol(offset, daysBack, time1d) =>
+    vol = volume
+    tm = time
+    result = 0.
+
+    // expected intraday only!
+    maxDetailedBars = (rVolAvgDays+1)* (24*60/interval)
+    maxDetailedUnixTime = maxDetailedBars * interval * 60 * 1000
+
+    if n == 1 // force bars back detector for needed depth
+        result := tm[maxDetailedBars] - time1d[maxDetailedBars] > vol[maxDetailedBars] ? 0 : 0
+
+    startCalcBound = timenow - maxDetailedUnixTime
+    if time >= startCalcBound // skip unneccesary calculations in deep history
+        cur1DTime = time1d[0]
+        cur1DTimeChanged = 0
+        curTimeOffset = -1
+        cumVolume = 0.
+        for i = 1 to maxDetailedBars
+            accumVolume = false
+            if time1d[i] != cur1DTime
+                cur1DTimeChanged := cur1DTimeChanged + 1
+                cur1DTime := time1d[i]
+                accumVolume := cur1DTimeChanged > offset
+
+            if 1==cur1DTimeChanged and curTimeOffset < 0
+                curTimeOffset := i - 1
+
+            if accumVolume
+                startDayTime = i - 1
+                for j = startDayTime - curTimeOffset to startDayTime
+                    cumVolume := cumVolume + vol[j]
+
+            if daysBack == cur1DTimeChanged
+                break
+
+        result := cumVolume
+    result
+
+calcRVolume() =>
+    time1d = security(tickerid, "1D", time)
+    volNow = rVolCalcAvgVol(0, 1, time1d)
+    if barstate.isrealtime
+        // calc 1 hour adjustment: if a new hour have begun nearly we need adjust current day's svolume to end of last hour
+        x_y = (timenow - time1d) / (interval * 60 * 1000)
+        z = 1 - (timenow - time) / (interval * 60 * 1000)
+        koeff = (x_y + z) / x_y
+        volNow := volNow * koeff
+    volNow / (rVolCalcAvgVol(1, rVolAvgDays + 1, time1d) / rVolAvgDays)
+
+plot(calcRVolume(), title="relative_volume_10d_calc")

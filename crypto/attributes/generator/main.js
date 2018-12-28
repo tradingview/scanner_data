@@ -2,66 +2,76 @@ const requestSync = require("sync-request"),
     fs = require("fs");
 
 const dstPath = "../crypto.json";
+const defaultScannerLocation = 'nyc';
 
-const scanResp = requestSync("POST", "http://scanner-nyc.tradingview.com/crypto/scan2", {
-    json: {
-        sort: {
-            sortBy: "volume",
-            sortOrder: "desc"
+const scanRequestForPairs = {
+    sort: {
+        sortBy: "volume",
+        sortOrder: "desc"
+    },
+    columns: ["description"],
+    filter: [
+        {
+            left: "name",
+            operation: "match",
+            right: "USD$|BTC$"
         },
-        columns: ["description"],
-        filter: [
-            {
-                left: "name",
-                operation: "match",
-                right: "USD$|BTC$"
-            },
-            // exclude tickers
-            {
-                left: "name",
-                operation: "nequal",
-                right: "DSHUSD"
-            },
-            {
-                left: "name",
-                operation: "nequal",
-                right: "VENBTC"
-            },
-            {
-                left: "name",
-                operation: "nequal",
-                right: "VENUSD"
-            },
-            {
-                left: "name",
-                operation: "nequal",
-                right: "DSHBTC"
-            },
-            {
-                left: "exchange",
-                operation: "not_in_range",
-                right: ["COINBASE", "KRAKEN", "WEX"]
-            },
-        ],
-        filterOR: [
-            {
-                left: "volume",
-                operation: "nempty"
-            },
-            {
-                left: "name",
-                operation: "equal",
-                right: "BTCBTC"
-            }
-        ],
+        // exclude tickers
+        {
+            left: "name",
+            operation: "nequal",
+            right: "DSHUSD"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "VENBTC"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "VENUSD"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "DSHBTC"
+        },
+        {
+            left: "exchange",
+            operation: "not_in_range",
+            right: [
+                "COINBASE",
+                "KRAKEN",
+                "WEX"]
+        },
+    ],
+    filterOR: [
+        {
+            left: "volume",
+            operation: "nempty"
+        },
+        {
+            left: "name",
+            operation: "equal",
+            right: "BTCBTC"
+        }
+    ],
+};
+
+function scan(req, loc) {
+    loc = loc || defaultScannerLocation;
+    const resp = requestSync("POST", `http://scanner-${loc}.tradingview.com/crypto/scan2`, {
+        json: req
+    });
+    if (resp.statusCode != 200) {
+        if (resp.statusCode === 400) {
+            throw Error(resp.getBody());
+        } else {
+            throw Error(resp.statusCode);
+        }
     }
-});
-if (scanResp.statusCode != 200) {
-    if (scanResp.statusCode === 400) {
-        throw Error(scanResp.getBody());
-    } else {
-        throw Error(scanResp.statusCode);
-    }
+    return resp;
 }
 
 const coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
@@ -116,7 +126,7 @@ function getExchange(s) {
     return s.split(':')[0];
 }
 
-JSON.parse(scanResp.getBody()).symbols.forEach(function (s) {
+JSON.parse(scan(scanRequestForPairs).getBody()).symbols.forEach(function (s) {
     const ticker = getTicker(s.s);
     if (!tickers[ticker] && !skipSymbol(s.s)) {
         tickers[ticker] = ticker;
@@ -177,7 +187,9 @@ JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
             symbols.forEach(function (s1) {
                 dstSymbols.push({
                     s: s1,
-                    f: [explicitName, s.symbol]
+                    f: [
+                        explicitName,
+                        s.symbol]
                 });
 
                 const sDescr = descriptions[s1];
@@ -208,17 +220,26 @@ for (let s in selectedSymbols) {
     }
 }
 
-console.warn("Missing pairs:\n" + JSON.stringify(missingPairs));
+console.warn("Missing pairs:\n" + JSON.stringify(missingPairs) + '\n');
+
+console.warn("Pairs with empty market cap:\n" + JSON.parse(scan(
+    {
+        filter: [{left: "market_cap_calc", operation: "empty"}],
+        symbols: {tickers: dstSymbols.map(s => s.s)}
+    }
+).getBody()).symbols.map(s => s.s).join(', ') + '\n');
 
 dstSymbols.sort(function (l, r) {
     const res = l.f[0].localeCompare(r.f[0]);
-    if (res!==0){
+    if (res !== 0) {
         return res;
     }
     return getTicker(l.s).localeCompare(getTicker(r.s));
 });
 
 fs.writeFileSync(dstPath, JSON.stringify({
-    "fields": ["sector", "crypto_code"],
+    "fields": [
+        "sector",
+        "crypto_code"],
     "symbols": dstSymbols
 }, null, 2));

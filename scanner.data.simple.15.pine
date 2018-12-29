@@ -665,19 +665,22 @@ rVolCalcAvgVol(offset, daysBack, time1d) =>
         cur1DTimeChanged = 0
         curTimeOffset = -1
         cumVolume = 0.
+        startDayTime = 0
+        prevStartDayTime = 0
         for i = 1 to maxDetailedBars
             accumVolume = false
             if time1d[i] != cur1DTime
                 cur1DTimeChanged := cur1DTimeChanged + 1
                 cur1DTime := time1d[i]
                 accumVolume := cur1DTimeChanged > offset
+                prevStartDayTime := startDayTime + 1
+                startDayTime := i - 1
 
             if 1==cur1DTimeChanged and curTimeOffset < 0
                 curTimeOffset := i - 1
 
             if accumVolume
-                startDayTime = i - 1
-                for j = startDayTime - curTimeOffset to startDayTime
+                for j = max(prevStartDayTime, startDayTime - curTimeOffset) to startDayTime
                     cumVolume := cumVolume + vol[j]
 
             if daysBack == cur1DTimeChanged
@@ -689,7 +692,7 @@ rVolCalcAvgVol(offset, daysBack, time1d) =>
 calcRVolume() =>
     time1d = security(tickerid, "1D", time)
     volNow = rVolCalcAvgVol(0, 1, time1d)
-    if barstate.isrealtime
+    if barstate.isrealtime and ((timenow - time1d) < (24 * 60 * 60 * 1000))
         // calc 1 hour adjustment: if a new hour have begun nearly we need adjust current day's svolume to end of last hour
         x_y = (timenow - time1d) / (interval * 60 * 1000)
         z = 1 - (timenow - time) / (interval * 60 * 1000)

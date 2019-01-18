@@ -730,7 +730,7 @@ calcRVolume() =>
     volNow / (rVolCalcAvgVol(1, rVolAvgDays + 1, time1d) / rVolAvgDays)
 
 realtiveVolume = calcRVolume()
-if calcMaxHolesPerDayPercent() < 10
+if calcMaxHolesPerDayPercent() > 10
     realtiveVolume := na
 plot(realtiveVolume, title="relative_volume_intraday")
 plot(realtiveVolume, title="relative_volume_10d_calc")

@@ -1762,6 +1762,13 @@
       ]
     },
     {
+      "s": "CBOT:ZRH2020",
+      "f": [
+        null,
+        "CBOT:ZR"
+      ]
+    },
+    {
       "s": "CBOT:ZRK2019",
       "f": [
         null,
@@ -2385,13 +2392,6 @@
       "s": "CME:A61!"
     },
     {
-      "s": "CME:A6F2019",
-      "f": [
-        null,
-        "CME:A6"
-      ]
-    },
-    {
       "s": "CME:A6G2019",
       "f": [
         null,
@@ -2558,13 +2558,6 @@
         "CME:B6"
       ],
       "s": "CME:B61!"
-    },
-    {
-      "s": "CME:B6F2019",
-      "f": [
-        null,
-        "CME:B6"
-      ]
     },
     {
       "s": "CME:B6G2019",
@@ -3190,13 +3183,6 @@
       "s": "CME:E61!"
     },
     {
-      "s": "CME:E6F2019",
-      "f": [
-        null,
-        "CME:E6"
-      ]
-    },
-    {
       "s": "CME:E6G2019",
       "f": [
         null,
@@ -3680,13 +3666,6 @@
       "s": "CME:J61!"
     },
     {
-      "s": "CME:J6F2019",
-      "f": [
-        null,
-        "CME:J6"
-      ]
-    },
-    {
       "s": "CME:J6G2019",
       "f": [
         null,
@@ -3919,6 +3898,13 @@
     },
     {
       "s": "CME:L6G2023",
+      "f": [
+        null,
+        "CME:L6"
+      ]
+    },
+    {
+      "s": "CME:L6G2024",
       "f": [
         null,
         "CME:L6"
@@ -4373,6 +4359,13 @@
       ]
     },
     {
+      "s": "CME:LSH2020",
+      "f": [
+        null,
+        "CME:LS"
+      ]
+    },
+    {
       "s": "CME:LSK2019",
       "f": [
         null,
@@ -4406,13 +4399,6 @@
         "CME:M6"
       ],
       "s": "CME:M61!"
-    },
-    {
-      "s": "CME:M6F2019",
-      "f": [
-        null,
-        "CME:M6"
-      ]
     },
     {
       "s": "CME:M6F2020",
@@ -5528,13 +5514,6 @@
       "s": "COMEX_MINI:QC1!"
     },
     {
-      "s": "COMEX_MINI:QCF2019",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCF2020",
       "f": [
         null,
@@ -5808,13 +5787,6 @@
       "s": "COMEX_MINI:QI1!"
     },
     {
-      "s": "COMEX_MINI:QIF2019",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIF2020",
       "f": [
         null,
@@ -6004,6 +5976,13 @@
       ]
     },
     {
+      "s": "COMEX:AEPF2021",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
       "s": "COMEX:AEPG2019",
       "f": [
         null,
@@ -6012,6 +5991,13 @@
     },
     {
       "s": "COMEX:AEPG2020",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
+      "s": "COMEX:AEPG2021",
       "f": [
         null,
         "COMEX:AEP"
@@ -6032,6 +6018,13 @@
       ]
     },
     {
+      "s": "COMEX:AEPH2021",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
       "s": "COMEX:AEPJ2019",
       "f": [
         null,
@@ -6040,6 +6033,13 @@
     },
     {
       "s": "COMEX:AEPJ2020",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
+      "s": "COMEX:AEPJ2021",
       "f": [
         null,
         "COMEX:AEP"
@@ -6060,6 +6060,13 @@
       ]
     },
     {
+      "s": "COMEX:AEPK2021",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
       "s": "COMEX:AEPM2019",
       "f": [
         null,
@@ -6068,6 +6075,13 @@
     },
     {
       "s": "COMEX:AEPM2020",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
+      "s": "COMEX:AEPM2021",
       "f": [
         null,
         "COMEX:AEP"
@@ -6088,6 +6102,13 @@
       ]
     },
     {
+      "s": "COMEX:AEPN2021",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
       "s": "COMEX:AEPQ2019",
       "f": [
         null,
@@ -6096,6 +6117,13 @@
     },
     {
       "s": "COMEX:AEPQ2020",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
+      "s": "COMEX:AEPQ2021",
       "f": [
         null,
         "COMEX:AEP"
@@ -6116,6 +6144,13 @@
       ]
     },
     {
+      "s": "COMEX:AEPU2021",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
       "s": "COMEX:AEPV2019",
       "f": [
         null,
@@ -6124,6 +6159,13 @@
     },
     {
       "s": "COMEX:AEPV2020",
+      "f": [
+        null,
+        "COMEX:AEP"
+      ]
+    },
+    {
+      "s": "COMEX:AEPV2021",
       "f": [
         null,
         "COMEX:AEP"

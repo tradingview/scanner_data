@@ -2749,6 +2749,13 @@
       ]
     },
     {
+      "s": "CME:BTCJ2019",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
       "s": "CME:BTCM2019",
       "f": [
         null,
@@ -5192,13 +5199,6 @@
       "s": "CME:T61!"
     },
     {
-      "s": "CME:T6F2019",
-      "f": [
-        null,
-        "CME:T6"
-      ]
-    },
-    {
       "s": "CME:T6F2020",
       "f": [
         null,
@@ -5785,6 +5785,13 @@
         "COMEX_MINI:QI"
       ],
       "s": "COMEX_MINI:QI1!"
+    },
+    {
+      "s": "COMEX_MINI:QIF2019",
+      "f": [
+        null,
+        "COMEX_MINI:QI"
+      ]
     },
     {
       "s": "COMEX_MINI:QIF2020",

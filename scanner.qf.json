@@ -333,11 +333,11 @@
   },
   {
     "name": "premarket_time",
-    "type": "number"
+    "type": "time"
   },
   {
     "name": "postmarket_time",
-    "type": "number"
+    "type": "time"
   },
   {
     "name": "fundamental_currency_code",

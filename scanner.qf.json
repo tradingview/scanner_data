@@ -333,11 +333,11 @@
   },
   {
     "name": "premarket_time",
-    "type": "number"
+    "type": "time"
   },
   {
     "name": "postmarket_time",
-    "type": "number"
+    "type": "time"
   },
   {
     "name": "fundamental_currency_code",
@@ -461,6 +461,14 @@
   },
   {
     "name": "dps_common_stock_prim_issue_fy",
+    "type": "number"
+  },
+  {
+    "name": "total_liabilities_fq",
+    "type": "number"
+  },
+  {
+    "name": "total_liabilities_fy",
     "type": "number"
   }
 ]

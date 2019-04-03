@@ -747,6 +747,20 @@
       ]
     },
     {
+      "s": "BITTREX:GLCBTC",
+      "f": [
+        "GoldCoin",
+        "GLD"
+      ]
+    },
+    {
+      "s": "BITTREX:GLCUSD",
+      "f": [
+        "GoldCoin",
+        "GLD"
+      ]
+    },
+    {
       "s": "BITTREX:GBYTEBTC",
       "f": [
         "Byteball Bytes",
@@ -819,14 +833,14 @@
     {
       "s": "BITTREX:CBCBTC",
       "f": [
-        "Cashbery Coin",
+        "CashBet",
         "CBC"
       ]
     },
     {
       "s": "BITTREX:CBCUSD",
       "f": [
-        "Cashbery Coin",
+        "CashBet",
         "CBC"
       ]
     },
@@ -1210,13 +1224,6 @@
     },
     {
       "s": "BITTREX:DNTBTC",
-      "f": [
-        "district0x",
-        "DNT"
-      ]
-    },
-    {
-      "s": "HITBTC:DNTUSD",
       "f": [
         "district0x",
         "DNT"
@@ -1752,20 +1759,6 @@
       "f": [
         "GoChain",
         "GO"
-      ]
-    },
-    {
-      "s": "BITTREX:GLDBTC",
-      "f": [
-        "GoldCoin",
-        "GLD"
-      ]
-    },
-    {
-      "s": "BITTREX:GLDUSD",
-      "f": [
-        "GoldCoin",
-        "GLD"
       ]
     },
     {
@@ -2413,34 +2406,6 @@
       ]
     },
     {
-      "s": "HITBTC:MGOBTC",
-      "f": [
-        "MobileGo",
-        "MGO"
-      ]
-    },
-    {
-      "s": "HITBTC:MGOUSD",
-      "f": [
-        "MobileGo",
-        "MGO"
-      ]
-    },
-    {
-      "s": "BINANCE:MODBTC",
-      "f": [
-        "Modum",
-        "MOD"
-      ]
-    },
-    {
-      "s": "BINANCE:MODUSD",
-      "f": [
-        "Modum",
-        "MOD"
-      ]
-    },
-    {
       "s": "BINANCE:MDABTC",
       "f": [
         "Moeda Loyalty Points",
@@ -2638,13 +2603,6 @@
     },
     {
       "s": "BITTREX:XEMBTC",
-      "f": [
-        "NEM",
-        "XEM"
-      ]
-    },
-    {
-      "s": "HITBTC:XEMUSD",
       "f": [
         "NEM",
         "XEM"
@@ -3365,20 +3323,6 @@
       ]
     },
     {
-      "s": "BITFINEX:RBTBTC",
-      "f": [
-        "Rimbit",
-        "RBT"
-      ]
-    },
-    {
-      "s": "BITFINEX:RBTUSD",
-      "f": [
-        "Rimbit",
-        "RBT"
-      ]
-    },
-    {
       "s": "BITTREX:RCNBTC",
       "f": [
         "Ripio Credit Network",
@@ -3390,34 +3334,6 @@
       "f": [
         "Ripio Credit Network",
         "RCN"
-      ]
-    },
-    {
-      "s": "BITTREX:XRPBTC",
-      "f": [
-        "Ripple",
-        "XRP"
-      ]
-    },
-    {
-      "s": "BITSTAMP:XRPUSD",
-      "f": [
-        "Ripple",
-        "XRP"
-      ]
-    },
-    {
-      "s": "BINANCE:SALTBTC",
-      "f": [
-        "SALT",
-        "SALT"
-      ]
-    },
-    {
-      "s": "BINANCE:SALTUSD",
-      "f": [
-        "SALT",
-        "SALT"
       ]
     },
     {
@@ -3785,20 +3701,6 @@
       ]
     },
     {
-      "s": "BINANCE:SUBBTC",
-      "f": [
-        "Substratum",
-        "SUB"
-      ]
-    },
-    {
-      "s": "BINANCE:SUBUSD",
-      "f": [
-        "Substratum",
-        "SUB"
-      ]
-    },
-    {
       "s": "BITTREX:SWTBTC",
       "f": [
         "Swarm City",
@@ -3967,7 +3869,7 @@
       ]
     },
     {
-      "s": "BINANCE:TUSDBTC",
+      "s": "BITTREX:TUSDBTC",
       "f": [
         "TrueUSD",
         "TUSD"
@@ -4076,20 +3978,6 @@
       "f": [
         "VeriCoin",
         "VRC"
-      ]
-    },
-    {
-      "s": "HITBTC:VERIBTC",
-      "f": [
-        "Veritaseum",
-        "VERI"
-      ]
-    },
-    {
-      "s": "HITBTC:VERIUSD",
-      "f": [
-        "Veritaseum",
-        "VERI"
       ]
     },
     {
@@ -4272,6 +4160,20 @@
       "f": [
         "Wings",
         "WINGS"
+      ]
+    },
+    {
+      "s": "BITTREX:XRPBTC",
+      "f": [
+        "XRP",
+        "XRP"
+      ]
+    },
+    {
+      "s": "BITSTAMP:XRPUSD",
+      "f": [
+        "XRP",
+        "XRP"
       ]
     },
     {

@@ -1,5 +1,15 @@
-const requestSync = require("sync-request"),
-    fs = require("fs");
+const requestSync = require("sync-request");
+const fs = require("fs");
+const argv = require('minimist')(process.argv.slice(2));
+
+const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
+const API_TOKEN = argv.t || argv.token;
+
+if (API_TOKEN == undefined) {
+    // see https://xwiki.tradingview.com/display/tss/CoinMarketCap for available API tokens
+    console.error("env CMC_API_TOKEN is undefined");
+    process.exit(1);
+}
 
 const dstPath = "../crypto.json";
 const defaultScannerLocation = 'nyc';
@@ -43,7 +53,9 @@ const scanRequestForPairs = {
             right: [
                 "COINBASE",
                 "KRAKEN",
-                "WEX"]
+                "WEX",
+                "BITFINEX"
+            ]
         },
     ],
     filterOR: [
@@ -74,10 +86,65 @@ function scan(req, loc) {
     return resp;
 }
 
-const coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
-if (coinMktCapResp.statusCode != 200) {
-    throw Error(coinMktCapResp.statusCode);
+function getCMCNewAPICall(url) {
+    const result = requestSync("GET", url);
+    const data = JSON.parse(result.getBody());
+    if (data.status.error_code != 0) {
+        console.error("can't get data (BTC), err=%j", data.status.error_message);
+        return null;
+    }
+    return data;
 }
+
+function getCMCCoinsNewAPI() {
+    const cachePath = "./coinmarketcap.cache";
+    try {
+        return JSON.parse("" + fs.readFileSync(cachePath));
+    } catch (err) {
+        console.info("can't load from cache (" + cachePath + "): " + err);
+    }
+    const limit = 5000;
+    let coins = [];
+    let data = {};
+    let start = 1;
+    let count = 0;
+    // let creditCount = 0;
+    // Pro API doesn't support unlimited requests
+    // we have to use pagination
+    do {
+        // in basic (free) plan we cannot use "convert=BTC,USD"
+        // so we have to make two distinct requests with different "convert" parameter value (one for BTC and one for USD)
+        // and then copy USD quote data from the second response
+        const urlBTC = `${API_URL}/v1/cryptocurrency/listings/latest?convert=BTC&start=${start}&sort=name&limit=${limit}&CMC_PRO_API_KEY=${API_TOKEN}`;
+        const urlUSD = `${API_URL}/v1/cryptocurrency/listings/latest?convert=USD&start=${start}&sort=name&limit=${limit}&CMC_PRO_API_KEY=${API_TOKEN}`;
+        const dataBTC = getCMCNewAPICall(urlBTC);
+        const dataUSD = getCMCNewAPICall(urlUSD);
+        //creditCount = dataBTC.status.credit_count + dataUSD.status.credit_count;
+        count = dataBTC.data.length;
+        // retrieve main data and BTC quote
+        dataBTC.data.forEach(function (d) {
+            data[d.id] = d;
+        });
+        // retrieve USD quote and merge it into the main data
+        dataUSD.data.forEach(function (d) {
+            data[d.id].quote.USD = d.quote.USD;
+            coins.push(data[d.id]);
+        });
+        start += limit;
+    } while (count == limit);
+    return coins;
+}
+
+function getCMCCoinsOldAPI() {
+    const coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
+    if (coinMktCapResp.statusCode != 200) {
+        throw Error(coinMktCapResp.statusCode);
+    }
+    return JSON.parse(coinMktCapResp.getBody());
+}
+
+//const coinCapRes = getCMCCoinsOldAPI();
+const coinCapRes = getCMCCoinsNewAPI();
 
 function getFirstCurrency(symbol) {
     const cur = getTicker(symbol);
@@ -139,19 +206,32 @@ JSON.parse(scan(scanRequestForPairs).getBody()).symbols.forEach(function (s) {
     }
 });
 
-const currencyMapping = {
-    "BTU": "BCU",
-    "MIOTA": "IOT",
-    "USNBT": "NBT",
-    "DADI": "DAD",
-    "POLY": "POY",
-    "QASH": "QSH",
-    //"MANA": "MNA",
-    "SWIFT": "BITS"
+const coinsMappingTVvsCoinMktCap = {
+    "BCU": "BTU",
+    "IOTA": "MIOTA",
+    "IOT": "MIOTA",
+    "STR": "XLM",
+    "NBT": "USNBT",
+    "QTM": "QTUM",
+    "DAT": "DATA",
+    "YOYO": "YOYOW",
+    "YYW": "YOYOW",
+    "BQX": "ETHOS",
+    "NANO": "XRB",
+    "QSH": "QASH",
+    "MNA": "MANA",
+    "SNG": "SNGLS",
+    "XBT": "BTC",
+    "IOS": "IOST",
+    "AIO": "AION",
+    "STJ": "STORJ"
 };
-const currencyRevertedMapping = {};
-Object.keys(currencyMapping).forEach(function (k) {
-    currencyRevertedMapping[currencyMapping[k]] = k;
+
+
+const currencyMapping = {};
+const currencyRevertedMapping = coinsMappingTVvsCoinMktCap;
+Object.keys(coinsMappingTVvsCoinMktCap).forEach(function (k) {
+    currencyMapping[coinsMappingTVvsCoinMktCap[k]] = k;
 });
 
 const explicitCoinNames = {
@@ -159,14 +239,27 @@ const explicitCoinNames = {
     "BTM": "Bitmark"
 };
 
-const dstSymbols = [];
+let dstSymbols = [];
+
+const excludedExchanges = ["BITFINEX"];
 
 try {
+    const coins = {};
     JSON.parse(fs.readFileSync(dstPath)).symbols.forEach(function (s) {
-        dstSymbols.push(s);
         const key = getFirstCurrency(s.s);
-        delete selectedSymbols[key];
-        delete selectedSymbols[currencyRevertedMapping[key]];
+        const coin = coins[key] || {exchanges: [], symbols: []};
+        coin.symbols.push(s);
+        coin.exchanges.push(getExchange(s.s));
+        coins[key] = coin;
+    });
+    Object.keys(coins).forEach(key => {
+        const coin = coins[key];
+        const containsExcludedExchange = excludedExchanges.filter(e => coin.exchanges.includes(e)).length > 0;
+        if (!containsExcludedExchange) {
+            dstSymbols = dstSymbols.concat(coin.symbols);
+            delete selectedSymbols[key];
+            delete selectedSymbols[currencyRevertedMapping[key]];
+        }
     });
 } catch (exc) {
     console.warn("Loading previous results failed with error: " + exc);
@@ -174,7 +267,7 @@ try {
 
 const missingPairs = [];
 
-JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
+coinCapRes.forEach(function (s) {
     let key = s.symbol;
     let symbols = selectedSymbols[key];
     if (symbols === undefined) {
@@ -222,12 +315,12 @@ for (let s in selectedSymbols) {
 
 console.warn("Missing pairs:\n" + JSON.stringify(missingPairs) + '\n');
 
-console.warn("Pairs with empty market cap:\n" + JSON.parse(scan(
+console.warn("Pairs with empty market cap:\n" + (JSON.parse(scan(
     {
         filter: [{left: "market_cap_calc", operation: "empty"}],
         symbols: {tickers: dstSymbols.map(s => s.s)}
     }
-).getBody()).symbols.map(s => s.s).join(', ') + '\n');
+).getBody()).symbols || []).map(s => s.s).join(', ') + '\n');
 
 dstSymbols.sort(function (l, r) {
     const res = l.f[0].localeCompare(r.f[0]);

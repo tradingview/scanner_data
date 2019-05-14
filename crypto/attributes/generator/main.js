@@ -53,8 +53,8 @@ const scanRequestForPairs = {
             right: [
                 "COINBASE",
                 "KRAKEN",
-                "WEX",
-                "BITFINEX"
+                "WEX"
+                //, "BITFINEX"
             ]
         },
     ],
@@ -220,11 +220,11 @@ const coinsMappingTVvsCoinMktCap = {
     "NANO": "XRB",
     "QSH": "QASH",
     "MNA": "MANA",
-    "SNG": "SNGLS",
-    "XBT": "BTC",
-    "IOS": "IOST",
-    "AIO": "AION",
-    "STJ": "STORJ"
+    // "SNG": "SNGLS",
+    // "XBT": "BTC",
+    // "IOS": "IOST",
+    // "AIO": "AION",
+    // "STJ": "STORJ"
 };
 
 
@@ -241,7 +241,9 @@ const explicitCoinNames = {
 
 let dstSymbols = [];
 
-const excludedExchanges = ["BITFINEX"];
+const excludedExchanges = [
+//    "BITFINEX"
+];
 
 try {
     const coins = {};

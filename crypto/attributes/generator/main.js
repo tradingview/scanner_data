@@ -54,7 +54,7 @@ const scanRequestForPairs = {
                 "COINBASE",
                 "KRAKEN",
                 "WEX"
-                //, "BITFINEX"
+                , "BITFINEX"
             ]
         },
     ],
@@ -323,6 +323,24 @@ console.warn("Pairs with empty market cap:\n" + (JSON.parse(scan(
         symbols: {tickers: dstSymbols.map(s => s.s)}
     }
 ).getBody()).symbols || []).map(s => s.s).join(', ') + '\n');
+
+{
+    const coinsByName = {};
+    dstSymbols.forEach(s => {
+        const items = coinsByName[s.f[0]] || [];
+        items.push(s.s);
+        coinsByName[s.f[0]] = items;
+    });
+    const coinsWithDuplicates = Object.keys(coinsByName).map(c => {
+        return {
+            n: c,
+            ss: coinsByName[c]
+        }
+    }).filter(c => c.ss.length > 2);
+    if (coinsWithDuplicates.length) {
+        console.warn(`Duplicated coins: ${ JSON.stringify(coinsWithDuplicates) }`);
+    }
+}
 
 dstSymbols.sort(function (l, r) {
     const res = l.f[0].localeCompare(r.f[0]);

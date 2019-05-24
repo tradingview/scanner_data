@@ -523,13 +523,6 @@
       ]
     },
     {
-      "s": "BITTREX:BITSBTC",
-      "f": [
-        "Bitswift",
-        "SWIFT"
-      ]
-    },
-    {
       "s": "BITTREX:BITSUSD",
       "f": [
         "Bitswift",
@@ -2637,13 +2630,6 @@
       ]
     },
     {
-      "s": "BITTREX:NXCBTC",
-      "f": [
-        "Nexium",
-        "NXC"
-      ]
-    },
-    {
       "s": "BITTREX:NXCUSD",
       "f": [
         "Nexium",
@@ -3845,6 +3831,13 @@
       "f": [
         "TokenCard",
         "TKN"
+      ]
+    },
+     {
+      "s": "HITBTC:NXCBTC",
+      "f": [
+        "NXC",
+        "NXC"
       ]
     },
     {

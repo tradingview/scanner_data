@@ -523,13 +523,6 @@
       ]
     },
     {
-      "s": "BITTREX:BITSBTC",
-      "f": [
-        "Bitswift",
-        "SWIFT"
-      ]
-    },
-    {
       "s": "BITTREX:BITSUSD",
       "f": [
         "Bitswift",
@@ -1916,20 +1909,6 @@
       ]
     },
     {
-      "s": "POLONIEX:HUCBTC",
-      "f": [
-        "HunterCoin",
-        "HUC"
-      ]
-    },
-    {
-      "s": "POLONIEX:HUCUSD",
-      "f": [
-        "HunterCoin",
-        "HUC"
-      ]
-    },
-    {
       "s": "BITTREX:HYDROBTC",
       "f": [
         "Hydro",
@@ -2546,20 +2525,6 @@
       ]
     },
     {
-      "s": "POLONIEX:NMCBTC",
-      "f": [
-        "Namecoin",
-        "NMC"
-      ]
-    },
-    {
-      "s": "POLONIEX:NMCUSD",
-      "f": [
-        "Namecoin",
-        "NMC"
-      ]
-    },
-    {
       "s": "BINANCE:NANOBTC",
       "f": [
         "Nano",
@@ -2662,13 +2627,6 @@
       "f": [
         "NeosCoin",
         "NEOS"
-      ]
-    },
-    {
-      "s": "BITTREX:NXCBTC",
-      "f": [
-        "Nexium",
-        "NXC"
       ]
     },
     {
@@ -3250,20 +3208,6 @@
       "f": [
         "Ravencoin",
         "RVN"
-      ]
-    },
-    {
-      "s": "BINANCE:PHXBTC",
-      "f": [
-        "Red Pulse Phoenix",
-        "PHX"
-      ]
-    },
-    {
-      "s": "BINANCE:PHXUSD",
-      "f": [
-        "Red Pulse Phoenix",
-        "PHX"
       ]
     },
     {
@@ -3887,6 +3831,13 @@
       "f": [
         "TokenCard",
         "TKN"
+      ]
+    },
+     {
+      "s": "HITBTC:NXCBTC",
+      "f": [
+        "NXC",
+        "NXC"
       ]
     },
     {

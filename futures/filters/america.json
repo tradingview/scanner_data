@@ -3379,6 +3379,13 @@
       ]
     },
     {
+      "s": "CME:GFK2020",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
       "s": "CME:GFQ2019",
       "f": [
         null,
@@ -3534,6 +3541,13 @@
     },
     {
       "s": "CME:I9K2021",
+      "f": [
+        null,
+        "CME:I9"
+      ]
+    },
+    {
+      "s": "CME:I9K2022",
       "f": [
         null,
         "CME:I9"
@@ -4003,6 +4017,13 @@
     },
     {
       "s": "CME:L6M2023",
+      "f": [
+        null,
+        "CME:L6"
+      ]
+    },
+    {
+      "s": "CME:L6M2024",
       "f": [
         null,
         "CME:L6"
@@ -5397,85 +5418,92 @@
     {
       "f": [
         "Metals",
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ],
-      "s": "COMEX_MINI:GR1!"
+      "s": "COMEX_MINI:MGC1!"
     },
     {
-      "s": "COMEX_MINI:GRG2020",
+      "s": "COMEX_MINI:MGCG2020",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRG2021",
+      "s": "COMEX_MINI:MGCG2021",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRJ2020",
+      "s": "COMEX_MINI:MGCJ2020",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRM2019",
+      "s": "COMEX_MINI:MGCJ2021",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRM2020",
+      "s": "COMEX_MINI:MGCM2019",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRQ2019",
+      "s": "COMEX_MINI:MGCM2020",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRQ2020",
+      "s": "COMEX_MINI:MGCQ2019",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRV2019",
+      "s": "COMEX_MINI:MGCQ2020",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRV2020",
+      "s": "COMEX_MINI:MGCV2019",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRZ2019",
+      "s": "COMEX_MINI:MGCV2020",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
       ]
     },
     {
-      "s": "COMEX_MINI:GRZ2020",
+      "s": "COMEX_MINI:MGCZ2019",
       "f": [
         null,
-        "COMEX_MINI:GR"
+        "COMEX_MINI:MGC"
+      ]
+    },
+    {
+      "s": "COMEX_MINI:MGCZ2020",
+      "f": [
+        null,
+        "COMEX_MINI:MGC"
       ]
     },
     {
@@ -5585,6 +5613,13 @@
     },
     {
       "s": "COMEX_MINI:QCK2023",
+      "f": [
+        null,
+        "COMEX_MINI:QC"
+      ]
+    },
+    {
+      "s": "COMEX_MINI:QCK2024",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5871,6 +5906,13 @@
       ]
     },
     {
+      "s": "COMEX_MINI:QOJ2021",
+      "f": [
+        null,
+        "COMEX_MINI:QO"
+      ]
+    },
+    {
       "s": "COMEX_MINI:QOM2019",
       "f": [
         null,
@@ -5949,6 +5991,13 @@
     },
     {
       "s": "COMEX:GCJ2020",
+      "f": [
+        null,
+        "COMEX:GC"
+      ]
+    },
+    {
+      "s": "COMEX:GCJ2021",
       "f": [
         null,
         "COMEX:GC"
@@ -6200,6 +6249,13 @@
       ]
     },
     {
+      "s": "COMEX:HGK2024",
+      "f": [
+        null,
+        "COMEX:HG"
+      ]
+    },
+    {
       "s": "COMEX:HGM2019",
       "f": [
         null,
@@ -6363,92 +6419,99 @@
     {
       "f": [
         "Metals",
-        "COMEX:LD"
+        "COMEX:LED"
       ],
-      "s": "COMEX:LD1!"
+      "s": "COMEX:LED1!"
     },
     {
-      "s": "COMEX:LDF2020",
+      "s": "COMEX:LEDF2020",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDG2020",
+      "s": "COMEX:LEDG2020",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDH2020",
+      "s": "COMEX:LEDH2020",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDJ2020",
+      "s": "COMEX:LEDJ2020",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDK2019",
+      "s": "COMEX:LEDK2019",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDM2019",
+      "s": "COMEX:LEDK2020",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDN2019",
+      "s": "COMEX:LEDM2019",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDQ2019",
+      "s": "COMEX:LEDN2019",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDU2019",
+      "s": "COMEX:LEDQ2019",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDV2019",
+      "s": "COMEX:LEDU2019",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDX2019",
+      "s": "COMEX:LEDV2019",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
       ]
     },
     {
-      "s": "COMEX:LDZ2019",
+      "s": "COMEX:LEDX2019",
       "f": [
         null,
-        "COMEX:LD"
+        "COMEX:LED"
+      ]
+    },
+    {
+      "s": "COMEX:LEDZ2019",
+      "f": [
+        null,
+        "COMEX:LED"
       ]
     },
     {
@@ -6537,6 +6600,13 @@
     },
     {
       "s": "COMEX:SIN2023",
+      "f": [
+        null,
+        "COMEX:SI"
+      ]
+    },
+    {
+      "s": "COMEX:SIQ2019",
       "f": [
         null,
         "COMEX:SI"
@@ -6635,6 +6705,13 @@
     },
     {
       "s": "ICEUS:CCH2021",
+      "f": [
+        null,
+        "ICEUS:CC"
+      ]
+    },
+    {
+      "s": "ICEUS:CCK2019",
       "f": [
         null,
         "ICEUS:CC"

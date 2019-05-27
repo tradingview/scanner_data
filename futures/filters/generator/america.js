@@ -58,8 +58,6 @@ function isContinues(s) {
 
 const now = new Date();
 
-const udfProxy = "http://udf-proxy.tradingview.com:8094/symbols/";
-
 function isExpired(parseRes) {
     if (parseRes.year < now.getUTCFullYear()){
         return true;
@@ -71,13 +69,13 @@ function isExpired(parseRes) {
 }
 
 groups.forEach(function (path) {
-    let url = udfProxy + path;
+    let url = "http://udf-proxy.tradingview.com:8094/symbols?domain=tv&prefix=" + path;
     const urlO = new URL(url);
     urlO.searchParams.append('fields', 'symbol');
     url = urlO.toString();
     const response = requestSync("GET", url);
     if (response.statusCode != 200) {
-        throw Error(path + ':' + response.statusCode);
+        throw Error(url + ':' + response.statusCode);
     }
     (JSON.parse(response.getBody()).symbols || []).forEach(function (s) {
         const parseRes = parseFuturesName(s.s);

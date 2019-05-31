@@ -188,11 +188,6 @@ const groups = [
         "region": "Americas"
     },
     {
-        "url": "luxembourg_indices",
-        "include": ["LUXSE:LUXX-temporary-deleted"],
-        "region": "Europe"
-    },
-    {
         "url": "malaysia_ftse_indices",
         "include": ["FTSEMYX:FBMKLCI"],
         "region": ""
@@ -774,7 +769,6 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
         "euronext_primary_europe_indices": true,
         "euronext_primary_lisbon_indices": true,
         "euronext_primary_paris_indices": true,
-        "vienna_indices": true,
         "vietnam_indices": true,
         "copenhagen_basic_indices": true,
         "helsinki_indices": true,

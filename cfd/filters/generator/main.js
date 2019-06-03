@@ -88,7 +88,7 @@ const groups = [
         region: "Asia"
     },
     {
-        url: "moex_indices",
+        url: "moex_primary_indices",
         include: ["MOEX:IMOEX"],
         region: "Europe"
     },

@@ -193,11 +193,6 @@ const groups = [
         "region": ""
     },
     {
-        "url": "milan_indices",
-        "include": ["MIL:FTSEMIB"],
-        "region": "Europe"
-    },
-    {
         "url": "nigerian_indices",
         "include": ["NSENG:NSE30"],
         "region": "Africa"

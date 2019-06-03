@@ -741,7 +741,6 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
         "euronext_non_primary_indices": true,
         "euronext_indices": true,
         "international_indices": true,
-        "russel_indices": true,
         "russell_indices": true,
         "malaysia_indices": true,
         "cboe_indices": true,

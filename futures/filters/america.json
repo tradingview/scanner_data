@@ -7,156 +7,114 @@
     {
       "f": [
         "Agricultural",
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ],
-      "s": "CBOT_MINI:XK1!"
+      "s": "CBOT_MINI:XC1!"
     },
     {
-      "s": "CBOT_MINI:XKF2020",
+      "s": "CBOT_MINI:XCH2020",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKF2021",
+      "s": "CBOT_MINI:XCH2021",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKH2020",
+      "s": "CBOT_MINI:XCK2020",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKH2021",
+      "s": "CBOT_MINI:XCK2021",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKK2020",
+      "s": "CBOT_MINI:XCN2019",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKK2021",
+      "s": "CBOT_MINI:XCN2020",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKN2019",
+      "s": "CBOT_MINI:XCN2021",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKN2020",
+      "s": "CBOT_MINI:XCN2022",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKN2021",
+      "s": "CBOT_MINI:XCU2019",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKN2022",
+      "s": "CBOT_MINI:XCU2020",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKQ2019",
+      "s": "CBOT_MINI:XCU2021",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKQ2020",
+      "s": "CBOT_MINI:XCZ2019",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKQ2021",
+      "s": "CBOT_MINI:XCZ2020",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKU2019",
+      "s": "CBOT_MINI:XCZ2021",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
     },
     {
-      "s": "CBOT_MINI:XKU2020",
+      "s": "CBOT_MINI:XCZ2022",
       "f": [
         null,
-        "CBOT_MINI:XK"
+        "CBOT_MINI:XC"
       ]
-    },
-    {
-      "s": "CBOT_MINI:XKU2021",
-      "f": [
-        null,
-        "CBOT_MINI:XK"
-      ]
-    },
-    {
-      "s": "CBOT_MINI:XKX2019",
-      "f": [
-        null,
-        "CBOT_MINI:XK"
-      ]
-    },
-    {
-      "s": "CBOT_MINI:XKX2020",
-      "f": [
-        null,
-        "CBOT_MINI:XK"
-      ]
-    },
-    {
-      "s": "CBOT_MINI:XKX2021",
-      "f": [
-        null,
-        "CBOT_MINI:XK"
-      ]
-    },
-    {
-      "s": "CBOT_MINI:XKX2022",
-      "f": [
-        null,
-        "CBOT_MINI:XK"
-      ]
-    },
-    {
-      "f": [
-        "Agricultural",
-        "CBOT_MINI:XN"
-      ],
-      "s": "CBOT_MINI:XN1!"
     },
     {
       "f": [
@@ -279,17 +237,269 @@
     },
     {
       "f": [
-        "Agricultural",
-        "CBOT:BO"
+        "Energy",
+        "CBOT:EH"
       ],
-      "s": "CBOT:BO1!"
+      "s": "CBOT:EH1!"
     },
     {
+      "s": "CBOT:EHF2020",
       "f": [
-        "Financials",
-        "CBOT:FV"
-      ],
-      "s": "CBOT:FV1!"
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHF2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHF2022",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHG2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHG2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHG2022",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHH2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHH2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHH2022",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHJ2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHJ2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHJ2022",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHK2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHK2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHK2022",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHM2019",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHM2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHM2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHM2022",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHN2019",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHN2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHN2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHQ2019",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHQ2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHQ2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHU2019",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHU2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHU2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHV2019",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHV2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHV2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHX2019",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHX2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHX2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHZ2019",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHZ2020",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
+      "s": "CBOT:EHZ2021",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
     },
     {
       "f": [
@@ -378,16 +588,30 @@
     {
       "f": [
         "Financials",
-        "CBOT:TU"
+        "CBOT:UB"
       ],
-      "s": "CBOT:TU1!"
+      "s": "CBOT:UB1!"
     },
     {
+      "s": "CBOT:UBM2019",
       "f": [
-        "Financials",
-        "CBOT:UD"
-      ],
-      "s": "CBOT:UD1!"
+        null,
+        "CBOT:UB"
+      ]
+    },
+    {
+      "s": "CBOT:UBU2019",
+      "f": [
+        null,
+        "CBOT:UB"
+      ]
+    },
+    {
+      "s": "CBOT:UBZ2019",
+      "f": [
+        null,
+        "CBOT:UB"
+      ]
     },
     {
       "f": [
@@ -531,10 +755,206 @@
     },
     {
       "f": [
-        "Energy",
-        "CBOT:ZK"
+        "Financials",
+        "CBOT:ZF"
       ],
-      "s": "CBOT:ZK1!"
+      "s": "CBOT:ZF1!"
+    },
+    {
+      "s": "CBOT:ZFM2019",
+      "f": [
+        null,
+        "CBOT:ZF"
+      ]
+    },
+    {
+      "s": "CBOT:ZFU2019",
+      "f": [
+        null,
+        "CBOT:ZF"
+      ]
+    },
+    {
+      "s": "CBOT:ZFZ2019",
+      "f": [
+        null,
+        "CBOT:ZF"
+      ]
+    },
+    {
+      "f": [
+        "Agricultural",
+        "CBOT:ZL"
+      ],
+      "s": "CBOT:ZL1!"
+    },
+    {
+      "s": "CBOT:ZLF2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLF2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLH2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLH2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLK2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLK2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLN2019",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLN2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLN2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLN2022",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLQ2019",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLQ2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLQ2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLU2019",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLU2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLU2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLV2019",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLV2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLV2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLV2022",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLZ2019",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLZ2020",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLZ2021",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
+    },
+    {
+      "s": "CBOT:ZLZ2022",
+      "f": [
+        null,
+        "CBOT:ZL"
+      ]
     },
     {
       "f": [
@@ -1291,6 +1711,41 @@
         null,
         "CBOT:ZS"
       ]
+    },
+    {
+      "f": [
+        "Financials",
+        "CBOT:ZT"
+      ],
+      "s": "CBOT:ZT1!"
+    },
+    {
+      "s": "CBOT:ZTM2019",
+      "f": [
+        null,
+        "CBOT:ZT"
+      ]
+    },
+    {
+      "s": "CBOT:ZTU2019",
+      "f": [
+        null,
+        "CBOT:ZT"
+      ]
+    },
+    {
+      "s": "CBOT:ZTZ2019",
+      "f": [
+        null,
+        "CBOT:ZT"
+      ]
+    },
+    {
+      "f": [
+        "Agricultural",
+        "CBOT:ZW"
+      ],
+      "s": "CBOT:ZW1!"
     },
     {
       "f": [

@@ -470,5 +470,9 @@
   {
     "name": "total_liabilities_fy",
     "type": "number"
+  },
+  {
+    "name": "rtc_time",
+    "type": "time"
   }
 ]

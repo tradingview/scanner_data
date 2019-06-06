@@ -70,5 +70,9 @@
   {
     "name": "all_time_low",
     "type": "price"
+  },
+  {
+    "name": "rtc_time",
+    "type": "time"
   }
 ]

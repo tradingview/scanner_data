@@ -593,6 +593,13 @@
       "s": "CBOT:UB1!"
     },
     {
+      "s": "CBOT:UBH2020",
+      "f": [
+        null,
+        "CBOT:UB"
+      ]
+    },
+    {
       "s": "CBOT:UBM2019",
       "f": [
         null,
@@ -619,6 +626,13 @@
         "CBOT:ZB"
       ],
       "s": "CBOT:ZB1!"
+    },
+    {
+      "s": "CBOT:ZBH2020",
+      "f": [
+        null,
+        "CBOT:ZB"
+      ]
     },
     {
       "s": "CBOT:ZBM2019",
@@ -1137,6 +1151,13 @@
         "CBOT:ZN"
       ],
       "s": "CBOT:ZN1!"
+    },
+    {
+      "s": "CBOT:ZNH2020",
+      "f": [
+        null,
+        "CBOT:ZN"
+      ]
     },
     {
       "s": "CBOT:ZNM2019",
@@ -6513,6 +6534,13 @@
         "EUREX:FGBL"
       ],
       "s": "EUREX:FGBL1!"
+    },
+    {
+      "s": "EUREX:FGBLH2020",
+      "f": [
+        null,
+        "EUREX:FGBL"
+      ]
     },
     {
       "s": "EUREX:FGBLM2019",

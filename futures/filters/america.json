@@ -222,6 +222,13 @@
       ]
     },
     {
+      "s": "CBOT_MINI:YMM2020",
+      "f": [
+        null,
+        "CBOT_MINI:YM"
+      ]
+    },
+    {
       "s": "CBOT_MINI:YMU2019",
       "f": [
         null,
@@ -1916,6 +1923,13 @@
       ]
     },
     {
+      "s": "CME_MINI:ESU2020",
+      "f": [
+        null,
+        "CME_MINI:ES"
+      ]
+    },
+    {
       "s": "CME_MINI:ESZ2019",
       "f": [
         null,
@@ -3470,6 +3484,13 @@
       "s": "CME:IF1!"
     },
     {
+      "s": "CME:IFG2020",
+      "f": [
+        null,
+        "CME:IF"
+      ]
+    },
+    {
       "s": "CME:IFM2019",
       "f": [
         null,
@@ -4451,6 +4472,13 @@
     },
     {
       "s": "CME:NYM2021",
+      "f": [
+        null,
+        "CME:NY"
+      ]
+    },
+    {
+      "s": "CME:NYM2022",
       "f": [
         null,
         "CME:NY"
@@ -7866,6 +7894,20 @@
       ]
     },
     {
+      "s": "NYMEX:CLF2029",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLF2030",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
       "s": "NYMEX:CLG2020",
       "f": [
         null,
@@ -7929,6 +7971,20 @@
       ]
     },
     {
+      "s": "NYMEX:CLG2029",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLG2030",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
       "s": "NYMEX:CLH2020",
       "f": [
         null,
@@ -7979,6 +8035,20 @@
     },
     {
       "s": "NYMEX:CLH2027",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLH2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLH2029",
       "f": [
         null,
         "NYMEX:CL"
@@ -8041,6 +8111,20 @@
       ]
     },
     {
+      "s": "NYMEX:CLJ2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLJ2029",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
       "s": "NYMEX:CLK2020",
       "f": [
         null,
@@ -8091,6 +8175,20 @@
     },
     {
       "s": "NYMEX:CLK2027",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLK2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLK2029",
       "f": [
         null,
         "NYMEX:CL"
@@ -8160,6 +8258,20 @@
       ]
     },
     {
+      "s": "NYMEX:CLM2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLM2029",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
       "s": "NYMEX:CLN2019",
       "f": [
         null,
@@ -8217,6 +8329,20 @@
     },
     {
       "s": "NYMEX:CLN2027",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLN2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLN2029",
       "f": [
         null,
         "NYMEX:CL"
@@ -8286,6 +8412,20 @@
       ]
     },
     {
+      "s": "NYMEX:CLQ2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLQ2029",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
       "s": "NYMEX:CLU2019",
       "f": [
         null,
@@ -8343,6 +8483,20 @@
     },
     {
       "s": "NYMEX:CLU2027",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLU2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLU2029",
       "f": [
         null,
         "NYMEX:CL"
@@ -8412,6 +8566,20 @@
       ]
     },
     {
+      "s": "NYMEX:CLV2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLV2029",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
       "s": "NYMEX:CLX2019",
       "f": [
         null,
@@ -8475,6 +8643,20 @@
       ]
     },
     {
+      "s": "NYMEX:CLX2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLX2029",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
       "s": "NYMEX:CLZ2019",
       "f": [
         null,
@@ -8532,6 +8714,20 @@
     },
     {
       "s": "NYMEX:CLZ2027",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLZ2028",
+      "f": [
+        null,
+        "NYMEX:CL"
+      ]
+    },
+    {
+      "s": "NYMEX:CLZ2029",
       "f": [
         null,
         "NYMEX:CL"

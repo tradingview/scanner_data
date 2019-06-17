@@ -1412,13 +1412,6 @@
       ]
     },
     {
-      "s": "CBOT:ZQM2022",
-      "f": [
-        null,
-        "CBOT:ZQ"
-      ]
-    },
-    {
       "s": "CBOT:ZQN2019",
       "f": [
         null,
@@ -2742,18 +2735,25 @@
       ]
     },
     {
-      "s": "CME:TRLZ2019",
+      "s": "CME:TRLU2020",
       "f": [
         null,
         "CME:TRL"
       ]
     },
     {
-      "s": "CME:TRLZ2020",
+      "s": "CME:TRLZ2019",
       "f": [
         null,
         "CME:TRL"
       ]
+    },
+=======
+        "Financials",
+        "CME:WDC"
+      ],
+      "s": "CME:WDC1!"
+>>>>>>> master
     },
     {
       "f": [

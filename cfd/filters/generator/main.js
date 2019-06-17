@@ -88,7 +88,7 @@ const groups = [
         region: "Asia"
     },
     {
-        url: "moex_indices",
+        url: "moex_primary_indices",
         include: ["MOEX:IMOEX"],
         region: "Europe"
     },
@@ -188,19 +188,9 @@ const groups = [
         "region": "Americas"
     },
     {
-        "url": "luxembourg_indices",
-        "include": ["LUXSE:LUXX-temporary-deleted"],
-        "region": "Europe"
-    },
-    {
         "url": "malaysia_ftse_indices",
         "include": ["FTSEMYX:FBMKLCI"],
         "region": ""
-    },
-    {
-        "url": "milan_indices",
-        "include": ["MIL:FTSEMIB"],
-        "region": "Europe"
     },
     {
         "url": "nigerian_indices",
@@ -751,7 +741,6 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
         "euronext_non_primary_indices": true,
         "euronext_indices": true,
         "international_indices": true,
-        "russel_indices": true,
         "russell_indices": true,
         "malaysia_indices": true,
         "cboe_indices": true,
@@ -774,7 +763,6 @@ fs.writeFileSync(dstGroupsPath, JSON.stringify({
         "euronext_primary_europe_indices": true,
         "euronext_primary_lisbon_indices": true,
         "euronext_primary_paris_indices": true,
-        "vienna_indices": true,
         "vietnam_indices": true,
         "copenhagen_basic_indices": true,
         "helsinki_indices": true,

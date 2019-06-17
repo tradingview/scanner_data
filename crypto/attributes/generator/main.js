@@ -3,7 +3,7 @@ const fs = require("fs");
 const argv = require('minimist')(process.argv.slice(2));
 
 const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
-const API_TOKEN = argv.t || argv.token;
+const API_TOKEN = argv.t || argv.token || '3b3c9998-b271-4a97-8330-6d3be70bd22b';
 
 if (API_TOKEN == undefined) {
     // see https://xwiki.tradingview.com/display/tss/CoinMarketCap for available API tokens
@@ -73,7 +73,7 @@ const scanRequestForPairs = {
 
 function scan(req, loc) {
     loc = loc || defaultScannerLocation;
-    const resp = requestSync("POST", `http://scanner-${loc}.tradingview.com/crypto/scan2`, {
+    const resp = requestSync("POST", `http://scanner${loc ? '-' + loc : ''}.tradingview.com/crypto/scan2`, {
         json: req
     });
     if (resp.statusCode != 200) {

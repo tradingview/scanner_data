@@ -131,48 +131,6 @@
       ]
     },
     {
-      "s": "BINANCE:YOYOBTC",
-      "f": [
-        "YOYOW",
-        "YOYO"
-      ]
-    },
-    {
-      "s": "BINANCE:YOYOUSD",
-      "f": [
-        "YOYOW",
-        "YOYO"
-      ]
-    },
-    {
-      "s": "BINANCE:ZECBTC",
-      "f": [
-        "Zcash",
-        "ZEC"
-      ]
-    },
-    {
-      "s": "BINANCE:ZECUSD",
-      "f": [
-        "Zcash",
-        "ZEC"
-      ]
-    },
-    {
-      "s": "BINANCE:XZCBTC",
-      "f": [
-        "ZCoin",
-        "XZC"
-      ]
-    },
-    {
-      "s": "BINANCE:XZCUSD",
-      "f": [
-        "ZCoin",
-        "XZC"
-      ]
-    },
-    {
       "s": "BITTREX:AIDBTC",
       "f": [
         "AidCoin",
@@ -2609,6 +2567,13 @@
       ]
     },
     {
+      "s": "HITBTC:NXCBTC",
+      "f": [
+        "NXC",
+        "NXC"
+      ]
+    },
+    {
       "s": "BITTREX:NXTBTC",
       "f": [
         "Nxt",
@@ -3721,13 +3686,6 @@
         "TKN"
       ]
     },
-     {
-      "s": "HITBTC:NXCBTC",
-      "f": [
-        "NXC",
-        "NXC"
-      ]
-    },
     {
       "s": "BITFINEX:TKNUSD",
       "f": [
@@ -4072,6 +4030,20 @@
       ]
     },
     {
+      "s": "BINANCE:YOYOBTC",
+      "f": [
+        "YOYOW",
+        "YOYO"
+      ]
+    },
+    {
+      "s": "BINANCE:YOYOUSD",
+      "f": [
+        "YOYOW",
+        "YOYO"
+      ]
+    },
+    {
       "s": "HUOBI:ZECBTC",
       "f": [
         "Zcash",
@@ -4079,7 +4051,21 @@
       ]
     },
     {
+      "s": "BINANCE:ZECBTC",
+      "f": [
+        "Zcash",
+        "ZEC"
+      ]
+    },
+    {
       "s": "HITBTC:ZECUSD",
+      "f": [
+        "Zcash",
+        "ZEC"
+      ]
+    },
+    {
+      "s": "BINANCE:ZECUSD",
       "f": [
         "Zcash",
         "ZEC"
@@ -4100,7 +4086,21 @@
       ]
     },
     {
+      "s": "BINANCE:XZCBTC",
+      "f": [
+        "ZCoin",
+        "XZC"
+      ]
+    },
+    {
       "s": "BITTREX:XZCBTC",
+      "f": [
+        "ZCoin",
+        "XZC"
+      ]
+    },
+    {
+      "s": "BINANCE:XZCUSD",
       "f": [
         "ZCoin",
         "XZC"

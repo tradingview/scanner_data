@@ -54,7 +54,7 @@ const scanRequestForPairs = {
                 "COINBASE",
                 "KRAKEN",
                 "WEX"
-                , "BITFINEX"
+                //, "BITFINEX"
             ]
         },
     ],
@@ -174,7 +174,9 @@ const excludeSymbols = [
     "BITFINEX:PAIBTC",
     "BITFINEX:PAIUSD",
     "BITFINEX:RBTBTC",
-    "BITFINEX:RBTUSD"
+    "BITFINEX:RBTUSD",
+    "BITFINEX:MNAUSD",
+    "BITFINEX:MNABTC"
 ];
 
 function skipSymbol(s) {
@@ -208,14 +210,12 @@ JSON.parse(scan(scanRequestForPairs).getBody()).symbols.forEach(function (s) {
 
 const coinsMappingTVvsCoinMktCap = {
     "BCU": "BTU",
-    "IOTA": "MIOTA",
     "IOT": "MIOTA",
     "STR": "XLM",
     "NBT": "USNBT",
     "QTM": "QTUM",
     "DAT": "DATA",
     "YOYO": "YOYOW",
-    "YYW": "YOYOW",
     "BQX": "ETHOS",
     "NANO": "XRB",
     "QSH": "QASH",

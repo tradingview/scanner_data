@@ -54,7 +54,7 @@ const scanRequestForPairs = {
                 "COINBASE",
                 "KRAKEN",
                 "WEX"
-                , "BITFINEX"
+                //, "BITFINEX"
             ]
         },
     ],
@@ -174,7 +174,9 @@ const excludeSymbols = [
     "BITFINEX:PAIBTC",
     "BITFINEX:PAIUSD",
     "BITFINEX:RBTBTC",
-    "BITFINEX:RBTUSD"
+    "BITFINEX:RBTUSD",
+    "BITFINEX:MNAUSD",
+    "BITFINEX:MNABTC"
 ];
 
 function skipSymbol(s) {
@@ -208,21 +210,36 @@ JSON.parse(scan(scanRequestForPairs).getBody()).symbols.forEach(function (s) {
 
 const coinsMappingTVvsCoinMktCap = {
     "BCU": "BTU",
-    "IOTA": "MIOTA",
     "IOT": "MIOTA",
+    "IOTA": "MIOTA",
     "STR": "XLM",
     "NBT": "USNBT",
     "QTM": "QTUM",
     "DAT": "DATA",
     "YOYO": "YOYOW",
-    "YYW": "YOYOW",
     "BQX": "ETHOS",
     "NANO": "XRB",
     "QSH": "QASH",
     "MNA": "MANA",
+    "PROPY": "PRO",
+    "IQX": "IQ",
+    "YYW": "YOYOW",
+    "SEE": "SEER",
+    "CSX": "CS",
+    "NCA": "NCASH",
+    "IOS": "IOST",
+    "MIT": "MITH",
+    "POY": "POLY",
+    "SNG": "SNGLS",
+    "BAB": "BCH",
+    "AIO": "AION",
+    "VSY": "VSYS",
+    "STJ": "STORJ",
+    "ATO": "ATOM",
+    "DAD": "DADI",
+    "OMN": "OMNI",
     // "SNG": "SNGLS",
     // "XBT": "BTC",
-    // "IOS": "IOST",
     // "AIO": "AION",
     // "STJ": "STORJ"
 };
@@ -241,9 +258,13 @@ const explicitCoinNames = {
 
 let dstSymbols = [];
 
-const excludedExchanges = [
-//    "BITFINEX"
+const unDesirableExchanges = [
+    "BITFINEX"
 ];
+
+function isUnDesirableExchange(exc) {
+    return unDesirableExchanges.includes(exc);
+}
 
 try {
     const coins = {};
@@ -256,8 +277,7 @@ try {
     });
     Object.keys(coins).forEach(key => {
         const coin = coins[key];
-        const containsExcludedExchange = excludedExchanges.filter(e => coin.exchanges.includes(e)).length > 0;
-        if (!containsExcludedExchange) {
+        {
             dstSymbols = dstSymbols.concat(coin.symbols);
             delete selectedSymbols[key];
             delete selectedSymbols[currencyRevertedMapping[key]];
@@ -270,34 +290,30 @@ try {
 const missingPairs = [];
 
 coinCapRes.forEach(function (s) {
-    let key = s.symbol;
-    let symbols = selectedSymbols[key];
-    if (symbols === undefined) {
-        key = currencyMapping[key];
-        symbols = selectedSymbols[key];
-    }
-    if (symbols) {
-        if (symbols.length === 2) {
-            const explicitName = explicitCoinNames[s.symbol] || s.name;
-            symbols.forEach(function (s1) {
-                dstSymbols.push({
-                    s: s1,
-                    f: [
-                        explicitName,
-                        s.symbol]
+    [s.symbol, currencyMapping[s.symbol]].forEach(key => {
+        const symbols = selectedSymbols[key];
+        if (symbols) {
+            if (symbols.length === 2) {
+                const explicitName = explicitCoinNames[s.symbol] || s.name;
+                symbols.forEach(function (s1) {
+                    dstSymbols.push({
+                        s: s1,
+                        f: [
+                            explicitName,
+                            s.symbol]
+                    });
+
+                    const sDescr = descriptions[s1];
+                    if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
+                        console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
+                    }
                 });
-
-                const sDescr = descriptions[s1];
-                if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
-                    console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
-                }
-            });
-        } else if (symbols.length === 1) {
-            missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
+            } else if (symbols.length === 1) {
+                missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
+            }
+            delete selectedSymbols[key];
         }
-
-        delete selectedSymbols[key];
-    }
+    });
 });
 
 const skippedCoins = [
@@ -311,7 +327,10 @@ const skippedCoins = [
 
 for (let s in selectedSymbols) {
     if (skippedCoins.indexOf(s) < 0) {
-        console.warn("Symbol " + s + " not mapped!");
+        const ss = selectedSymbols[s];
+        if (ss.length === 2) {
+            console.warn(`Symbol ${s} not mapped (${ss[0]}, ${ss[1]}) !`);
+        }
     }
 }
 
@@ -336,7 +355,21 @@ console.warn("Pairs with empty market cap:\n" + (JSON.parse(scan(
             n: c,
             ss: coinsByName[c]
         }
-    }).filter(c => c.ss.length > 2);
+    }).filter(
+        c => c.ss.length > 2
+    ).map(dup => {
+        const ssForErase = dup.ss.filter(s => isUnDesirableExchange(getExchange(s)));
+        if (ssForErase.length === 2) {
+            ssForErase.forEach(forErase => {
+                dup.ss = dup.ss.filter(s => s != forErase);
+                dstSymbols = dstSymbols.filter(s => s.s != forErase);
+            });
+        }
+        return dup;
+    }).filter(
+        c => c.ss.length > 2
+    );
+
     if (coinsWithDuplicates.length) {
         console.warn(`Duplicated coins: ${ JSON.stringify(coinsWithDuplicates) }`);
     }

@@ -270,34 +270,30 @@ try {
 const missingPairs = [];
 
 coinCapRes.forEach(function (s) {
-    let key = s.symbol;
-    let symbols = selectedSymbols[key];
-    if (symbols === undefined) {
-        key = currencyMapping[key];
-        symbols = selectedSymbols[key];
-    }
-    if (symbols) {
-        if (symbols.length === 2) {
-            const explicitName = explicitCoinNames[s.symbol] || s.name;
-            symbols.forEach(function (s1) {
-                dstSymbols.push({
-                    s: s1,
-                    f: [
-                        explicitName,
-                        s.symbol]
+    [s.symbol, currencyMapping[s.symbol]].forEach(key => {
+        const symbols = selectedSymbols[key];
+        if (symbols) {
+            if (symbols.length === 2) {
+                const explicitName = explicitCoinNames[s.symbol] || s.name;
+                symbols.forEach(function (s1) {
+                    dstSymbols.push({
+                        s: s1,
+                        f: [
+                            explicitName,
+                            s.symbol]
+                    });
+
+                    const sDescr = descriptions[s1];
+                    if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
+                        console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
+                    }
                 });
-
-                const sDescr = descriptions[s1];
-                if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
-                    console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
-                }
-            });
-        } else if (symbols.length === 1) {
-            missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
+            } else if (symbols.length === 1) {
+                missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
+            }
+            delete selectedSymbols[key];
         }
-
-        delete selectedSymbols[key];
-    }
+    });
 });
 
 const skippedCoins = [

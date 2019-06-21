@@ -177,8 +177,6 @@ const excludeSymbols = [
     "BITFINEX:RBTUSD",
     "BITFINEX:MNAUSD",
     "BITFINEX:MNABTC",
-    "BITFINEX:LEOUSD",
-    "BITFINEX:LEOBTC",
 ];
 
 function skipSymbol(s) {

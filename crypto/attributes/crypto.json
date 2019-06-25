@@ -2042,20 +2042,6 @@
       ]
     },
     {
-      "s": "BITFINEX:IOSBTC",
-      "f": [
-        "IOST",
-        "IOST"
-      ]
-    },
-    {
-      "s": "BITFINEX:IOSUSD",
-      "f": [
-        "IOST",
-        "IOST"
-      ]
-    },
-    {
       "s": "BINANCE:IOSTBTC",
       "f": [
         "IOStoken",
@@ -3761,6 +3747,20 @@
       "f": [
         "Stratis",
         "STRAT"
+      ]
+    },
+    {
+      "s": "HITBTC:SWMBTC",
+      "f": [
+        "Swarm",
+        "SWM"
+      ]
+    },
+    {
+      "s": "BITFINEX:SWMUSD",
+      "f": [
+        "Swarm",
+        "SWM"
       ]
     },
     {

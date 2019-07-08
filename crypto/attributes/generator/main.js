@@ -12,7 +12,7 @@ if (API_TOKEN == undefined) {
 }
 
 const dstPath = "../crypto.json";
-const defaultScannerLocation = 'nyc';
+const defaultScannerLocation = '';
 
 const scanRequestForPairs = {
     sort: {
@@ -176,7 +176,9 @@ const excludeSymbols = [
     "BITFINEX:RBTBTC",
     "BITFINEX:RBTUSD",
     "BITFINEX:MNAUSD",
-    "BITFINEX:MNABTC"
+    "BITFINEX:MNABTC",
+    "BITFINEX:IOSBTC",
+    "BITFINEX:IOSUSD",
 ];
 
 function skipSymbol(s) {
@@ -209,39 +211,35 @@ JSON.parse(scan(scanRequestForPairs).getBody()).symbols.forEach(function (s) {
 });
 
 const coinsMappingTVvsCoinMktCap = {
+    "AIO": "AION",
+    "ATO": "ATOM",
+    "BAB": "BCH",
     "BCU": "BTU",
+    "BQX": "ETHOS",
+    "CSX": "CS",
+    "DAD": "DADI",
+    "DAT": "DATA",
+    "IOS": "IOST",
     "IOT": "MIOTA",
     "IOTA": "MIOTA",
-    "STR": "XLM",
-    "NBT": "USNBT",
-    "QTM": "QTUM",
-    "DAT": "DATA",
-    "YOYO": "YOYOW",
-    "BQX": "ETHOS",
-    "NANO": "XRB",
-    "QSH": "QASH",
-    "MNA": "MANA",
-    "PROPY": "PRO",
     "IQX": "IQ",
-    "YYW": "YOYOW",
-    "SEE": "SEER",
-    "CSX": "CS",
-    "NCA": "NCASH",
-    "IOS": "IOST",
     "MIT": "MITH",
-    "POY": "POLY",
-    "SNG": "SNGLS",
-    "BAB": "BCH",
-    "AIO": "AION",
-    "VSY": "VSYS",
-    "STJ": "STORJ",
-    "ATO": "ATOM",
-    "DAD": "DADI",
+    "MNA": "MANA",
+    "NANO": "XRB",
+    "NBT": "USNBT",
+    "NCA": "NCASH",
     "OMN": "OMNI",
-    // "SNG": "SNGLS",
-    // "XBT": "BTC",
-    // "AIO": "AION",
-    // "STJ": "STORJ"
+    "POY": "POLY",
+    "PROPY": "PRO",
+    "QSH": "QASH",
+    "QTM": "QTUM",
+    "SEE": "SEER",
+    "SNG": "SNGLS",
+    "STJ": "STORJ",
+    "STR": "XLM",
+    "VSY": "VSYS",
+    "YOYO": "YOYOW",
+    "YYW": "YOYOW"
 };
 
 

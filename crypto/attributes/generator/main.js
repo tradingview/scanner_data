@@ -12,7 +12,7 @@ if (API_TOKEN == undefined) {
 }
 
 const dstPath = "../crypto.json";
-const defaultScannerLocation = 'nyc';
+const defaultScannerLocation = '';
 
 const scanRequestForPairs = {
     sort: {

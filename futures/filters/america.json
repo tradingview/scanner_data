@@ -2378,13 +2378,6 @@
       ]
     },
     {
-      "s": "CME:6AN2019",
-      "f": [
-        null,
-        "CME:6A"
-      ]
-    },
-    {
       "s": "CME:6AQ2019",
       "f": [
         null,
@@ -2547,13 +2540,6 @@
     },
     {
       "s": "CME:6BM2024",
-      "f": [
-        null,
-        "CME:6B"
-      ]
-    },
-    {
-      "s": "CME:6BN2019",
       "f": [
         null,
         "CME:6B"
@@ -2903,13 +2889,6 @@
       ]
     },
     {
-      "s": "CME:6EN2019",
-      "f": [
-        null,
-        "CME:6E"
-      ]
-    },
-    {
       "s": "CME:6EQ2019",
       "f": [
         null,
@@ -3072,13 +3051,6 @@
     },
     {
       "s": "CME:6JM2024",
-      "f": [
-        null,
-        "CME:6J"
-      ]
-    },
-    {
-      "s": "CME:6JN2019",
       "f": [
         null,
         "CME:6J"
@@ -3855,13 +3827,6 @@
       ]
     },
     {
-      "s": "CME:6MN2019",
-      "f": [
-        null,
-        "CME:6M"
-      ]
-    },
-    {
       "s": "CME:6MN2020",
       "f": [
         null,
@@ -4178,13 +4143,6 @@
     },
     {
       "s": "CME:6ZM2021",
-      "f": [
-        null,
-        "CME:6Z"
-      ]
-    },
-    {
-      "s": "CME:6ZN2019",
       "f": [
         null,
         "CME:6Z"
@@ -4619,13 +4577,6 @@
     },
     {
       "s": "CME:GEM2029",
-      "f": [
-        null,
-        "CME:GE"
-      ]
-    },
-    {
-      "s": "CME:GEN2019",
       "f": [
         null,
         "CME:GE"
@@ -7119,6 +7070,559 @@
     {
       "f": [
         "Energy",
+        "NYMEX_MINI:MBC"
+      ],
+      "s": "NYMEX_MINI:MBC1!"
+    },
+    {
+      "s": "NYMEX_MINI:MBCF2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCF2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCF2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCF2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCF2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCF2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCG2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCG2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCG2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCG2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCG2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCG2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCH2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCH2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCH2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCH2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCH2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCH2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCJ2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCJ2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCJ2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCJ2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCJ2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCJ2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCK2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCK2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCK2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCK2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCK2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCK2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCM2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCM2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCM2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCM2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCM2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCM2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCN2019",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCN2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCN2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCN2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCN2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCN2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCN2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCQ2019",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCQ2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCQ2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCQ2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCQ2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCQ2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCQ2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCU2019",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCU2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCU2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCU2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCU2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCU2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCU2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCV2019",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCV2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCV2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCV2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCV2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCV2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCV2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCX2019",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCX2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCX2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCX2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCX2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCX2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCX2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCZ2019",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCZ2020",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCZ2021",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCZ2022",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCZ2023",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCZ2024",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "s": "NYMEX_MINI:MBCZ2025",
+      "f": [
+        null,
+        "NYMEX_MINI:MBC"
+      ]
+    },
+    {
+      "f": [
+        "Energy",
         "NYMEX_MINI:QG"
       ],
       "s": "NYMEX_MINI:QG1!"
@@ -9268,13 +9772,6 @@
     {
       "f": [
         "Energy",
-        "NYMEX:JMJ"
-      ],
-      "s": "NYMEX:JMJ1!"
-    },
-    {
-      "f": [
-        "Energy",
         "NYMEX:NG"
       ],
       "s": "NYMEX:NG1!"
@@ -10379,6 +10876,13 @@
       ]
     },
     {
+      "s": "NYMEX:PAV2019",
+      "f": [
+        null,
+        "NYMEX:PA"
+      ]
+    },
+    {
       "s": "NYMEX:PAZ2019",
       "f": [
         null,
@@ -10436,6 +10940,13 @@
     },
     {
       "s": "NYMEX:PLV2019",
+      "f": [
+        null,
+        "NYMEX:PL"
+      ]
+    },
+    {
+      "s": "NYMEX:PLV2020",
       "f": [
         null,
         "NYMEX:PL"

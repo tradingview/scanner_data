@@ -1,12 +1,12 @@
 {
-  "time": "2018-05-23T18:00:00.270Z",
+  "time": "2019-07-23T19:40:00.000Z",
   "fields": [],
   "symbols": [
-    { "f": [], "s": "dj_indices_delayed?typespecs=main"},
-    { "f": [], "s": "nasdaq_indices_eod?typespecs=main"},
-    { "f": [], "s": "nyse_gif_indices_eod?typespecs=main"},
-    { "f": [], "s": "cboe_indices_delayed?typespecs=main"},
-    { "f": [], "s": "sp_indices?typespecs=main"},
-    { "f": [], "s": "russell_indices_eod?typespecs=main"}
+    { "f": [], "s": "CBOE"},
+    { "f": [], "s": "DJ"},
+    { "f": [], "s": "NASDAQ&type=index"},
+    { "f": [], "s": "NYSE&type=index"},
+    { "f": [], "s": "RUSSELL"},
+    { "f": [], "s": "SP&type=index"}
   ]
 }

@@ -276,7 +276,7 @@ const symbols = [];
 function getUrl(gr) {
     const udfProxyPath = "http://udf-proxy.tradingview.com:8094/symbols";
     if (gr.url2) {
-        return udfProxyPath + '?perm=*&domain=tvbs&' + gr.url2;
+        return udfProxyPath + '?perm=*&domain=tv&' + gr.url2;
     }
     return udfProxyPath + '/' + gr.url;
 }

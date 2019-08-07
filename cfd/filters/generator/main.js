@@ -3,18 +3,16 @@ const requestSync = require("sync-request"),
 const {URL} = require('url');
 
 const dstPath = "../cfd.json";
-const dstGroupsPath = "../../groups/indices.json";
-const udfProxyPath = "http://udf-proxy.tradingview.com:8094/symbols/";
 const groups = [
     {url: "dxy_idc2", region: "Americas"},
     {url: "us_chicago_indices", region: "Americas", include: ["TVC:VIX"]},
-    {url: "us_ny_indices"},
+    {url: "us_ny_indices", exclude: ["TVC:SPX"]},
     {url: "japan_indices", region: "Asia"},
     {url: "china_indices", region: "Asia"},
     {url: "european_indices", region: "Europe"},
     {url: "british_indices", region: "Europe"},
     {url: "spanish_indices", region: "Europe"},
-    {url: "government_bonds", sector: "bond"},
+    {url: "government_bonds", sector: "bond", excludePattern: /^TVC\:GI/},
     {url: "euro_bonds", sector: "bond", region: "Europe"},
     {url: "canadian_bonds", sector: "bond", region: "Americas"},
     {
@@ -45,7 +43,7 @@ const groups = [
         region: "Americas"
     },
     {
-        url: "cboe_indices_delayed?typespecs=main",
+        url2: "prefix=CBOE&typespecs=main",
         include: ["CBOE:VIX"],
         region: "Americas"
     },
@@ -217,7 +215,11 @@ const groups = [
         "include": ["SZSE:399001"],
         "region": "Asia"
     },
-    {"url": "taiwan_indices", "include": ["TWSE:TAIEX"], "region": "Asia"},
+    {
+        "url": "taiwan_indices",
+        "include": ["TWSE:TAIEX"],
+        "region": "Asia"
+    },
     {
         "url": "tallinn_indices",
         "include": ["OMXTSE:OMXTGI"],
@@ -272,24 +274,28 @@ const types = {
 const symbols = [];
 
 function getUrl(gr) {
-    return udfProxyPath + gr.url;
+    const udfProxyPath = "http://udf-proxy.tradingview.com:8094/symbols";
+    if (gr.url2) {
+        return udfProxyPath + '?perm=*&domain=tv&' + gr.url2;
+    }
+    return udfProxyPath + '/' + gr.url;
 }
 
-groups.forEach(function (path) {
-    let url = path;
+groups.forEach(function (gr) {
+    let url = gr;
     let include;
     let exclude;
-    if (typeof path !== "string" && path.url) {
-        url = getUrl(path);
-        if (path.include) {
+    if (typeof gr !== "string") {
+        url = getUrl(gr);
+        if (gr.include) {
             include = {};
-            path.include.forEach(function (val) {
+            gr.include.forEach(function (val) {
                 include[val] = true;
             });
         }
-        if (path.exclude) {
+        if (gr.exclude) {
             exclude = {};
-            path.exclude.forEach(function (val) {
+            gr.exclude.forEach(function (val) {
                 exclude[val] = true;
             });
         }
@@ -311,12 +317,15 @@ groups.forEach(function (path) {
             if (exclude && exclude[s.s]) {
                 skip = true;
             }
+            if (!skip && gr.excludePattern && gr.excludePattern.test(s.s)) {
+                skip = true;
+            }
             if (!skip) {
-                if (path.region) {
-                    s.region = path.region;
+                if (gr.region) {
+                    s.region = gr.region;
                 }
-                if (path.sector) {
-                    s.sector = path.sector;
+                if (gr.sector) {
+                    s.sector = gr.sector;
                 }
                 symbols.push(s);
 
@@ -354,7 +363,7 @@ const regionMarks = {
     "Europe": ["EURO CURRENCY INDEX", "BRITISH POUND CURRENCY INDEX", "SWISS FRANC CURRENCY INDEX", "BELGIUM", "FRANCE",
                "GERMAN", "DENMARK", "Germany", "IRELAND", "ITALY", "NETHERLANDS", "Netherlands", "NORWAY", "PORTUGAL",
                "SPAIN", "Swiss", "UK ", "SWEDEN", "GREECE", "POLAND"],
-    "Americas": ["NYSE", "NASDAQ", "S&P 500", "US ", "THOMSON REUTERS", "CANADIAN DOLLAR CURRENCY INDEX", "US GOVERNMENT BONDS", "DOW JONES", "DOW-JONES", "RUSSELL", "PHLX"],
+    "Americas": ["NYSE", "NASDAQ", "S&P 500", "US ", "THOMSON REUTERS", "CANADIAN DOLLAR CURRENCY INDEX", "US GOVERNMENT BONDS", "DOW JONES", "DOW-JONES", "RUSSELL", "PHLX", "BR GOVERNMENT BONDS"],
     "Africa": ["SOUTH AFRICA"],
     "Pacific": ["AUSTRALIA", "Australia", "NEW ZEALAND "],
     "": ["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD", "SILVER", "PLATINUM", "PALLADIUM", "Heating Oil", "Cotton", "Crude Oil"]
@@ -628,7 +637,8 @@ const countryCodeByName = {
     "US ": "US",
     "UNITED ARAB EMIRATES": "AE",
     "VIETNAM": "VN",
-    "WORLDWIDE": "WW"
+    "WORLDWIDE": "WW",
+    "BR": "BR",
 };
 
 function tryMatchCountry(desciption) {
@@ -712,13 +722,13 @@ function generateUsedGroups() {
         const url = new URL(getUrl(gr));
         const groupNames = url.pathname.split('/');
         const groupName = groupNames[groupNames.length - 1];
-        return groupName + url.search;
+        return gr.url2 ? url.search : '/' + groupName + url.search;
     });
     usedGroupsList.sort();
     return usedGroupsList;
 }
 
-fs.writeFileSync(dstGroupsPath, JSON.stringify({
+fs.writeFileSync("../../groups/indices.json", JSON.stringify({
     "fields": [],
     "symbols": generateUsedGroups().map(function (s) {
         return {"s": s, "f": []};

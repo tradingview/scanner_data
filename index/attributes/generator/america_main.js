@@ -3,8 +3,7 @@ const requestSync = require("sync-request"),
 const {URL} = require('url');
 
 const dstPath = "../america.json";
-const udfProxy = "http://udf-proxy.tradingview.com:8094/symbols/";
-const groups = JSON.parse(fs.readFileSync("../../groups/list.json")).symbols.map(s => udfProxy + s.s);
+const groups = JSON.parse(fs.readFileSync("../../groups/list.json")).symbols.map(s => `http://udf-proxy.tradingview.com:8094/symbols?perm=*&domain=tv&typespecs=main&prefix=${s.s}`);
 
 const sectorNames = {};
 [

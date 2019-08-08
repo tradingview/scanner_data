@@ -38,8 +38,8 @@ const groups = [
         include: ["FOREXCOM:HGOUSD", "FOREXCOM:COTUSD"]
     },
     {
-        url: "sp_indices?typespecs=main",
-        include: ["SP:SPX"],
+        url2: "prefix=SPCFD&typespecs=main",
+        include: ["SPCFD:SPX"],
         region: "Americas"
     },
     {
@@ -101,8 +101,8 @@ const groups = [
         region: "Europe"
     },
     {
-        url: "dj_indices?typespecs=main",
-        include: ["DJ:DJI"],
+        url2: "prefix=DJCFD&typespecs=main",
+        include: ["DJCFD:DJI"],
         region: "Americas"
     },
     {
@@ -426,9 +426,9 @@ let emptySectorCount = 0, emptyCountryCount = 0;
 const dstSymbols = [];
 
 const majorIndices = [
-    {"s": "SP:SPX", "cc": "US"},
+    {"s": "SPCFD:SPX", "cc": "US"},
     {"s": "TVC:IXIC", "cc": "US"},
-    {"s": "DJ:DJI", "cc": "US"},
+    {"s": "DJCFD:DJI", "cc": "US"},
     {"s": "CBOE:VIX", "cc": "US"},
     {"s": "TSX:TSX", "cc": "CA"},
     {"s": "TVC:UKX", "cc": "GB"},

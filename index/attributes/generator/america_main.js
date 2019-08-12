@@ -8,47 +8,47 @@ const groups = JSON.parse(fs.readFileSync("../../groups/list.json")).symbols.map
 const sectorNames = {};
 [
     {
-        "s": "SPCFD:SPF",
+        "s": "SP:SPF",
         "f": ["FINANCIALS"]
     },
     {
-        "s": "SPCFD:SPN",
+        "s": "SP:SPN",
         "f": ["ENERGY"]
     },
     {
-        "s": "SPCFD:S5HLTH",
+        "s": "SP:S5HLTH",
         "f": ["HEALTH CARE"]
     },
     {
-        "s": "SPCFD:S5INFT",
+        "s": "SP:S5INFT",
         "f": ["INFORMATION TECHNOLOGY"]
     },
     {
-        "s": "SPCFD:S5CONS",
+        "s": "SP:S5CONS",
         "f": ["CONSUMER STAPLES"]
     },
     {
-        "s": "SPCFD:S5MATR",
+        "s": "SP:S5MATR",
         "f": ["MATERIALS"]
     },
     {
-        "s": "SPCFD:S5COND",
+        "s": "SP:S5COND",
         "f": ["CONSUMER DISCRETIONARY"]
     },
     {
-        "s": "SPCFD:S5UTIL",
+        "s": "SP:S5UTIL",
         "f": ["UTILITIES"]
     },
     {
-        "s": "SPCFD:S5INDU",
+        "s": "SP:S5INDU",
         "f": ["INDUSTRIALS"]
     },
     {
-        "s": "SPCFD:S5TELS",
+        "s": "SP:S5TELS",
         "f": ["TELECOMMUNICATION SERVICES"]
     },
     {
-        "s": "SPCFD:S5REAS",
+        "s": "SP:S5REAS",
         "f": ["REAL ESTATE"]
     }
 ].forEach(s => sectorNames[s.s] = s.f[0]);
@@ -98,12 +98,12 @@ groups.forEach(function (path) {
 const symbolsPriorities = {};
 [].concat([
     // US Indices
-    "SPCFD:SPX",
-    "SPCFD:SVX",
-    "SPCFD:MID",
-    "SPCFD:OEX",
-    "SPCFD:SPGSCI",
-    "DJCFD:DJI",
+    "SP:SPX",
+    "SP:SVX",
+    "SP:MID",
+    "SP:OEX",
+    "SP:SPGSCI",
+    "DJ:DJI",
     "NASDAQ:IXIC",
     "NASDAQ:NDX",
     "RUSSELL:RUA",
@@ -119,17 +119,17 @@ const symbolsPriorities = {};
     "NASDAQ:UTY",
     "NASDAQ:SOX",
 ]).concat([
-    "SPCFD:S5COND",
-    "SPCFD:S5CONS",
-    "SPCFD:S5HLTH",
-    "SPCFD:S5INDU",
-    "SPCFD:S5INFT",
-    "SPCFD:S5MATR",
-    "SPCFD:S5REAS",
-    "SPCFD:S5TELS",
-    "SPCFD:S5UTIL",
-    "SPCFD:SPF",
-    "SPCFD:SPN",
+    "SP:S5COND",
+    "SP:S5CONS",
+    "SP:S5HLTH",
+    "SP:S5INDU",
+    "SP:S5INFT",
+    "SP:S5MATR",
+    "SP:S5REAS",
+    "SP:S5TELS",
+    "SP:S5UTIL",
+    "SP:SPF",
+    "SP:SPN",
 ]).forEach((s, i) => symbolsPriorities[s] = i);
 
 const forExclude = ["CBOE:OEX", "CBOE:RUI"];

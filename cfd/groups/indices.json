@@ -50,10 +50,6 @@
       "f": []
     },
     {
-      "s": "/dj_indices?typespecs=main",
-      "f": []
-    },
-    {
       "s": "/dubai_indices",
       "f": []
     },
@@ -186,10 +182,6 @@
       "f": []
     },
     {
-      "s": "/sp_indices?typespecs=main",
-      "f": []
-    },
-    {
       "s": "/spanish_indices",
       "f": []
     },
@@ -239,6 +231,14 @@
     },
     {
       "s": "?perm=*&domain=tv&prefix=CBOE&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=DJCFD&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=SPCFD&typespecs=main",
       "f": []
     }
   ]

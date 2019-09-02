@@ -75,7 +75,7 @@ groups.forEach(function (path) {
     }
 
     const urlO = new URL(url);
-    urlO.searchParams.append('fields', 'symbol,type,description');
+    urlO.searchParams.append('fields', 'symbol,type,description,symbol-proname');
     url = urlO.toString();
     const response = requestSync("GET", url);
     if (response.statusCode != 200) {
@@ -147,7 +147,7 @@ function detectSector(s) {
 }
 
 const dstSymbols = symbols.map(function (sym) {
-    return {"s": sym.s, "f": [detectSector(sym.s), detectPriority(sym.s)]}
+    return {"s": sym.f[3], "f": [detectSector(sym.s), detectPriority(sym.s)]}
 });
 
 dstSymbols.sort(function (l, r) {

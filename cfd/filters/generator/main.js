@@ -302,7 +302,7 @@ groups.forEach(function (gr) {
     }
 
     const urlO = new URL(url);
-    urlO.searchParams.append('fields', 'symbol,type,description,country');
+    urlO.searchParams.append('fields', 'symbol,type,description,country,symbol-proname');
     url = urlO.toString();
     const response = requestSync("GET", url);
     if (response.statusCode != 200) {
@@ -671,7 +671,7 @@ function getCountryCode(s, cat) {
 
 symbols.forEach(function (s) {
     const dst = {f: []};
-    dst.s = s.s;
+    dst.s = s.f[4] || s.s;
     let cat = tryDetectSector(s);
     if (!cat) {
         emptySectorCount++;

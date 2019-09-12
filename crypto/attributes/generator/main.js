@@ -1,8 +1,18 @@
-const requestSync = require("sync-request"),
-    fs = require("fs");
+const requestSync = require("sync-request");
+const fs = require("fs");
+const argv = require('minimist')(process.argv.slice(2));
+
+const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
+const API_TOKEN = argv.t || argv.token || '3b3c9998-b271-4a97-8330-6d3be70bd22b';
+
+if (API_TOKEN == undefined) {
+    // see https://xwiki.tradingview.com/display/tss/CoinMarketCap for available API tokens
+    console.error("env CMC_API_TOKEN is undefined");
+    process.exit(1);
+}
 
 const dstPath = "../crypto.json";
-const defaultScannerLocation = 'nyc';
+const defaultScannerLocation = '';
 
 const scanRequestForPairs = {
     sort: {
@@ -43,7 +53,9 @@ const scanRequestForPairs = {
             right: [
                 "COINBASE",
                 "KRAKEN",
-                "WEX"]
+                "WEX"
+                //, "BITFINEX"
+            ]
         },
     ],
     filterOR: [
@@ -61,7 +73,7 @@ const scanRequestForPairs = {
 
 function scan(req, loc) {
     loc = loc || defaultScannerLocation;
-    const resp = requestSync("POST", `http://scanner-${loc}.tradingview.com/crypto/scan2`, {
+    const resp = requestSync("POST", `http://scanner${loc ? '-' + loc : ''}.tradingview.com/crypto/scan2`, {
         json: req
     });
     if (resp.statusCode != 200) {
@@ -74,10 +86,65 @@ function scan(req, loc) {
     return resp;
 }
 
-const coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
-if (coinMktCapResp.statusCode != 200) {
-    throw Error(coinMktCapResp.statusCode);
+function getCMCNewAPICall(url) {
+    const result = requestSync("GET", url);
+    const data = JSON.parse(result.getBody());
+    if (data.status.error_code != 0) {
+        console.error("can't get data (BTC), err=%j", data.status.error_message);
+        return null;
+    }
+    return data;
 }
+
+function getCMCCoinsNewAPI() {
+    const cachePath = "./coinmarketcap.cache";
+    try {
+        return JSON.parse("" + fs.readFileSync(cachePath));
+    } catch (err) {
+        console.info("can't load from cache (" + cachePath + "): " + err);
+    }
+    const limit = 5000;
+    let coins = [];
+    let data = {};
+    let start = 1;
+    let count = 0;
+    // let creditCount = 0;
+    // Pro API doesn't support unlimited requests
+    // we have to use pagination
+    do {
+        // in basic (free) plan we cannot use "convert=BTC,USD"
+        // so we have to make two distinct requests with different "convert" parameter value (one for BTC and one for USD)
+        // and then copy USD quote data from the second response
+        const urlBTC = `${API_URL}/v1/cryptocurrency/listings/latest?convert=BTC&start=${start}&sort=name&limit=${limit}&CMC_PRO_API_KEY=${API_TOKEN}`;
+        const urlUSD = `${API_URL}/v1/cryptocurrency/listings/latest?convert=USD&start=${start}&sort=name&limit=${limit}&CMC_PRO_API_KEY=${API_TOKEN}`;
+        const dataBTC = getCMCNewAPICall(urlBTC);
+        const dataUSD = getCMCNewAPICall(urlUSD);
+        //creditCount = dataBTC.status.credit_count + dataUSD.status.credit_count;
+        count = dataBTC.data.length;
+        // retrieve main data and BTC quote
+        dataBTC.data.forEach(function (d) {
+            data[d.id] = d;
+        });
+        // retrieve USD quote and merge it into the main data
+        dataUSD.data.forEach(function (d) {
+            data[d.id].quote.USD = d.quote.USD;
+            coins.push(data[d.id]);
+        });
+        start += limit;
+    } while (count == limit);
+    return coins;
+}
+
+function getCMCCoinsOldAPI() {
+    const coinMktCapResp = requestSync("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0");
+    if (coinMktCapResp.statusCode != 200) {
+        throw Error(coinMktCapResp.statusCode);
+    }
+    return JSON.parse(coinMktCapResp.getBody());
+}
+
+//const coinCapRes = getCMCCoinsOldAPI();
+const coinCapRes = getCMCCoinsNewAPI();
 
 function getFirstCurrency(symbol) {
     const cur = getTicker(symbol);
@@ -107,7 +174,11 @@ const excludeSymbols = [
     "BITFINEX:PAIBTC",
     "BITFINEX:PAIUSD",
     "BITFINEX:RBTBTC",
-    "BITFINEX:RBTUSD"
+    "BITFINEX:RBTUSD",
+    "BITFINEX:MNAUSD",
+    "BITFINEX:MNABTC",
+    "BITFINEX:IOSBTC",
+    "BITFINEX:IOSUSD",
 ];
 
 function skipSymbol(s) {
@@ -139,19 +210,43 @@ JSON.parse(scan(scanRequestForPairs).getBody()).symbols.forEach(function (s) {
     }
 });
 
-const currencyMapping = {
-    "BTU": "BCU",
-    "MIOTA": "IOT",
-    "USNBT": "NBT",
-    "DADI": "DAD",
-    "POLY": "POY",
-    "QASH": "QSH",
-    //"MANA": "MNA",
-    "SWIFT": "BITS"
+const coinsMappingTVvsCoinMktCap = {
+    "AIO": "AION",
+    "ATO": "ATOM",
+    "BAB": "BCH",
+    "BCU": "BTU",
+    "BQX": "ETHOS",
+    "CSX": "CS",
+    "DAD": "DADI",
+    "DAT": "DATA",
+    "IOS": "IOST",
+    "IOT": "MIOTA",
+    "IOTA": "MIOTA",
+    "IQX": "IQ",
+    "MIT": "MITH",
+    "MNA": "MANA",
+    "NANO": "XRB",
+    "NBT": "USNBT",
+    "NCA": "NCASH",
+    "OMN": "OMNI",
+    "POY": "POLY",
+    "PROPY": "PRO",
+    "QSH": "QASH",
+    "QTM": "QTUM",
+    "SEE": "SEER",
+    "SNG": "SNGLS",
+    "STJ": "STORJ",
+    "STR": "XLM",
+    "VSY": "VSYS",
+    "YOYO": "YOYOW",
+    "YYW": "YOYOW"
 };
-const currencyRevertedMapping = {};
-Object.keys(currencyMapping).forEach(function (k) {
-    currencyRevertedMapping[currencyMapping[k]] = k;
+
+
+const currencyMapping = {};
+const currencyRevertedMapping = coinsMappingTVvsCoinMktCap;
+Object.keys(coinsMappingTVvsCoinMktCap).forEach(function (k) {
+    currencyMapping[coinsMappingTVvsCoinMktCap[k]] = k;
 });
 
 const explicitCoinNames = {
@@ -159,14 +254,32 @@ const explicitCoinNames = {
     "BTM": "Bitmark"
 };
 
-const dstSymbols = [];
+let dstSymbols = [];
+
+const unDesirableExchanges = [
+    "BITFINEX"
+];
+
+function isUnDesirableExchange(exc) {
+    return unDesirableExchanges.includes(exc);
+}
 
 try {
+    const coins = {};
     JSON.parse(fs.readFileSync(dstPath)).symbols.forEach(function (s) {
-        dstSymbols.push(s);
         const key = getFirstCurrency(s.s);
-        delete selectedSymbols[key];
-        delete selectedSymbols[currencyRevertedMapping[key]];
+        const coin = coins[key] || {exchanges: [], symbols: []};
+        coin.symbols.push(s);
+        coin.exchanges.push(getExchange(s.s));
+        coins[key] = coin;
+    });
+    Object.keys(coins).forEach(key => {
+        const coin = coins[key];
+        {
+            dstSymbols = dstSymbols.concat(coin.symbols);
+            delete selectedSymbols[key];
+            delete selectedSymbols[currencyRevertedMapping[key]];
+        }
     });
 } catch (exc) {
     console.warn("Loading previous results failed with error: " + exc);
@@ -174,35 +287,31 @@ try {
 
 const missingPairs = [];
 
-JSON.parse(coinMktCapResp.getBody()).forEach(function (s) {
-    let key = s.symbol;
-    let symbols = selectedSymbols[key];
-    if (symbols === undefined) {
-        key = currencyMapping[key];
-        symbols = selectedSymbols[key];
-    }
-    if (symbols) {
-        if (symbols.length === 2) {
-            const explicitName = explicitCoinNames[s.symbol] || s.name;
-            symbols.forEach(function (s1) {
-                dstSymbols.push({
-                    s: s1,
-                    f: [
-                        explicitName,
-                        s.symbol]
+coinCapRes.forEach(function (s) {
+    [s.symbol, currencyMapping[s.symbol]].forEach(key => {
+        const symbols = selectedSymbols[key];
+        if (symbols) {
+            if (symbols.length === 2) {
+                const explicitName = explicitCoinNames[s.symbol] || s.name;
+                symbols.forEach(function (s1) {
+                    dstSymbols.push({
+                        s: s1,
+                        f: [
+                            explicitName,
+                            s.symbol]
+                    });
+
+                    const sDescr = descriptions[s1];
+                    if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
+                        console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
+                    }
                 });
-
-                const sDescr = descriptions[s1];
-                if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
-                    console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
-                }
-            });
-        } else if (symbols.length === 1) {
-            missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
+            } else if (symbols.length === 1) {
+                missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
+            }
+            delete selectedSymbols[key];
         }
-
-        delete selectedSymbols[key];
-    }
+    });
 });
 
 const skippedCoins = [
@@ -216,18 +325,53 @@ const skippedCoins = [
 
 for (let s in selectedSymbols) {
     if (skippedCoins.indexOf(s) < 0) {
-        console.warn("Symbol " + s + " not mapped!");
+        const ss = selectedSymbols[s];
+        if (ss.length === 2) {
+            console.warn(`Symbol ${s} not mapped (${ss[0]}, ${ss[1]}) !`);
+        }
     }
 }
 
 console.warn("Missing pairs:\n" + JSON.stringify(missingPairs) + '\n');
 
-console.warn("Pairs with empty market cap:\n" + JSON.parse(scan(
+console.warn("Pairs with empty market cap:\n" + (JSON.parse(scan(
     {
         filter: [{left: "market_cap_calc", operation: "empty"}],
         symbols: {tickers: dstSymbols.map(s => s.s)}
     }
-).getBody()).symbols.map(s => s.s).join(', ') + '\n');
+).getBody()).symbols || []).map(s => s.s).join(', ') + '\n');
+
+{
+    const coinsByName = {};
+    dstSymbols.forEach(s => {
+        const items = coinsByName[s.f[0]] || [];
+        items.push(s.s);
+        coinsByName[s.f[0]] = items;
+    });
+    const coinsWithDuplicates = Object.keys(coinsByName).map(c => {
+        return {
+            n: c,
+            ss: coinsByName[c]
+        }
+    }).filter(
+        c => c.ss.length > 2
+    ).map(dup => {
+        const ssForErase = dup.ss.filter(s => isUnDesirableExchange(getExchange(s)));
+        if (ssForErase.length === 2) {
+            ssForErase.forEach(forErase => {
+                dup.ss = dup.ss.filter(s => s != forErase);
+                dstSymbols = dstSymbols.filter(s => s.s != forErase);
+            });
+        }
+        return dup;
+    }).filter(
+        c => c.ss.length > 2
+    );
+
+    if (coinsWithDuplicates.length) {
+        console.warn(`Duplicated coins: ${ JSON.stringify(coinsWithDuplicates) }`);
+    }
+}
 
 dstSymbols.sort(function (l, r) {
     const res = l.f[0].localeCompare(r.f[0]);

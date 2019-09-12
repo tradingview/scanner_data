@@ -3,53 +3,52 @@ const requestSync = require("sync-request"),
 const {URL} = require('url');
 
 const dstPath = "../america.json";
-const udfProxy = "http://udf-proxy.tradingview.com:8094/symbols/";
-const groups = JSON.parse(fs.readFileSync("../../groups/list.json")).symbols.map(s => udfProxy + s.s);
+const groups = JSON.parse(fs.readFileSync("../../groups/list.json")).symbols.map(s => `http://udf-proxy.tradingview.com:8094/symbols?perm=*&domain=tv&typespecs=main&prefix=${s.s}`);
 
 const sectorNames = {};
 [
     {
-        "s": "SP:SPF",
+        "s": "SPCFD:SPF",
         "f": ["FINANCIALS"]
     },
     {
-        "s": "SP:SPN",
+        "s": "SPCFD:SPN",
         "f": ["ENERGY"]
     },
     {
-        "s": "SP:S5HLTH",
+        "s": "SPCFD:S5HLTH",
         "f": ["HEALTH CARE"]
     },
     {
-        "s": "SP:S5INFT",
+        "s": "SPCFD:S5INFT",
         "f": ["INFORMATION TECHNOLOGY"]
     },
     {
-        "s": "SP:S5CONS",
+        "s": "SPCFD:S5CONS",
         "f": ["CONSUMER STAPLES"]
     },
     {
-        "s": "SP:S5MATR",
+        "s": "SPCFD:S5MATR",
         "f": ["MATERIALS"]
     },
     {
-        "s": "SP:S5COND",
+        "s": "SPCFD:S5COND",
         "f": ["CONSUMER DISCRETIONARY"]
     },
     {
-        "s": "SP:S5UTIL",
+        "s": "SPCFD:S5UTIL",
         "f": ["UTILITIES"]
     },
     {
-        "s": "SP:S5INDU",
+        "s": "SPCFD:S5INDU",
         "f": ["INDUSTRIALS"]
     },
     {
-        "s": "SP:S5TELS",
+        "s": "SPCFD:S5TELS",
         "f": ["TELECOMMUNICATION SERVICES"]
     },
     {
-        "s": "SP:S5REAS",
+        "s": "SPCFD:S5REAS",
         "f": ["REAL ESTATE"]
     }
 ].forEach(s => sectorNames[s.s] = s.f[0]);
@@ -76,7 +75,7 @@ groups.forEach(function (path) {
     }
 
     const urlO = new URL(url);
-    urlO.searchParams.append('fields', 'symbol,type,description');
+    urlO.searchParams.append('fields', 'symbol,type,description,symbol-proname');
     url = urlO.toString();
     const response = requestSync("GET", url);
     if (response.statusCode != 200) {
@@ -99,12 +98,12 @@ groups.forEach(function (path) {
 const symbolsPriorities = {};
 [].concat([
     // US Indices
-    "SP:SPX",
-    "SP:SVX",
-    "SP:MID",
-    "SP:OEX",
-    "SP:SPGSCI",
-    "DJ:DJI",
+    "SPCFD:SPX",
+    "SPCFD:SVX",
+    "SPCFD:MID",
+    "SPCFD:OEX",
+    "SPCFD:SPGSCI",
+    "DJCFD:DJI",
     "NASDAQ:IXIC",
     "NASDAQ:NDX",
     "RUSSELL:RUA",
@@ -120,17 +119,17 @@ const symbolsPriorities = {};
     "NASDAQ:UTY",
     "NASDAQ:SOX",
 ]).concat([
-    "SP:S5COND",
-    "SP:S5CONS",
-    "SP:S5HLTH",
-    "SP:S5INDU",
-    "SP:S5INFT",
-    "SP:S5MATR",
-    "SP:S5REAS",
-    "SP:S5TELS",
-    "SP:S5UTIL",
-    "SP:SPF",
-    "SP:SPN",
+    "SPCFD:S5COND",
+    "SPCFD:S5CONS",
+    "SPCFD:S5HLTH",
+    "SPCFD:S5INDU",
+    "SPCFD:S5INFT",
+    "SPCFD:S5MATR",
+    "SPCFD:S5REAS",
+    "SPCFD:S5TELS",
+    "SPCFD:S5UTIL",
+    "SPCFD:SPF",
+    "SPCFD:SPN",
 ]).forEach((s, i) => symbolsPriorities[s] = i);
 
 const forExclude = ["CBOE:OEX", "CBOE:RUI"];
@@ -148,7 +147,7 @@ function detectSector(s) {
 }
 
 const dstSymbols = symbols.map(function (sym) {
-    return {"s": sym.s, "f": [detectSector(sym.s), detectPriority(sym.s)]}
+    return {"s": sym.f[3], "f": [detectSector(sym.s), detectPriority(sym.s)]}
 });
 
 dstSymbols.sort(function (l, r) {

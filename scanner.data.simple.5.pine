@@ -650,15 +650,17 @@ plot(vwap(hlc3), title="VWAP")
 
 rVolAvgDays = 10
 
-rVolCalcAvgVol(offset, daysBack, time1d) =>
+rVolBarDurationMS() => interval * 60 * 1000
+rVolDayInBars() => 24 * 60 / interval
+
+rVolCalcSumVol(offset, daysBack, time1d) =>
     vol = volume
     tm = time
     result = 0.
 
     // expected intraday only!
-    maxDetailedBars = (rVolAvgDays+1)* (24*60/interval)
-    maxDetailedUnixTime = maxDetailedBars * interval * 60 * 1000
-
+    maxDetailedBars = (rVolAvgDays+1)*rVolDayInBars()
+    maxDetailedUnixTime = maxDetailedBars * rVolBarDurationMS()
     if n == 0 // force bars back detector for needed depth
         result := tm[maxDetailedBars] - time1d[maxDetailedBars] > vol[maxDetailedBars] ? 0 : 0
 
@@ -676,7 +678,7 @@ rVolCalcAvgVol(offset, daysBack, time1d) =>
                 cur1DTimeChanged := cur1DTimeChanged + 1
                 cur1DTime := time1d[i]
                 accumVolume := cur1DTimeChanged > offset
-                prevStartDayTime := startDayTime + 1
+                prevStartDayTime := startDayTime
                 startDayTime := i - 1
 
             if 1==cur1DTimeChanged and curTimeOffset < 0
@@ -696,7 +698,7 @@ calcHolesPerDayPercent(minBarsPerSession) =>
     holes = 0
     days = 0
     bars = 0
-    for i = 0 to 5*(24*60/interval) // try to move back for 5 days
+    for i = 0 to 5*rVolDayInBars() // try to move back for 5 days
         // skip current day, analyse previous days only
         if dayofmonth[i]!=dayofmonth[i+1]
             if bars < minBarsPerSession and days > 0
@@ -723,16 +725,16 @@ calcMaxHolesPerDayPercent()=>
 
 calcRVolume() =>
     time1d = security(tickerid, "1D", time)
-    volNow = rVolCalcAvgVol(0, 1, time1d)
+    volNow = rVolCalcSumVol(0, 1, time1d)
     if barstate.isrealtime and ((timenow - time1d) < (24 * 60 * 60 * 1000))
-        // calc 1 hour adjustment: if a new hour have begun nearly we need adjust current day's svolume to end of last hour
-        x_y = (timenow - time1d) / (interval * 60 * 1000)
-        z = 1 - (timenow - time) / (interval * 60 * 1000)
+        // adjustment for RT bar
+        x_y = (timenow - time1d) / rVolBarDurationMS()
+        z = 1 - (timenow - time) / rVolBarDurationMS()
         koeff = (x_y + z) / x_y
         volNow := volNow * koeff
-    volNow / (rVolCalcAvgVol(1, rVolAvgDays + 1, time1d) / rVolAvgDays)
+    volNow / (rVolCalcSumVol(1, rVolAvgDays + 1, time1d) / rVolAvgDays)
 
-realtiveVolume = calcRVolume()
+realtiveVolume10d = calcRVolume()
 if calcMaxHolesPerDayPercent() > 10
-    realtiveVolume := na
-plot(realtiveVolume, title="relative_volume_intraday")
+    realtiveVolume10d := na
+plot(realtiveVolume10d, title="relative_volume_intraday", linewidth = 2)

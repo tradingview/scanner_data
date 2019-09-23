@@ -642,3 +642,6 @@ plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn, title = "Cand
 // study("Kicking")
 plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low, title = "Candle.Kicking.Bullish")
 plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.Kicking.Bearish")
+
+// study(title="VWAP", shorttitle="VWAP", overlay=true)
+plot(vwap(hlc3), title="VWAP")

@@ -145,20 +145,6 @@
       ]
     },
     {
-      "s": "BITTREX:AIDBTC",
-      "f": [
-        "AidCoin",
-        "AID"
-      ]
-    },
-    {
-      "s": "BITFINEX:AIDUSD",
-      "f": [
-        "AidCoin",
-        "AID"
-      ]
-    },
-    {
       "s": "BINANCE:AIONBTC",
       "f": [
         "Aion",
@@ -254,20 +240,6 @@
       "f": [
         "Ark",
         "ARK"
-      ]
-    },
-    {
-      "s": "BITTREX:ABYBTC",
-      "f": [
-        "ArtByte",
-        "ABY"
-      ]
-    },
-    {
-      "s": "BITTREX:ABYUSD",
-      "f": [
-        "ArtByte",
-        "ABY"
       ]
     },
     {
@@ -411,20 +383,6 @@
       ]
     },
     {
-      "s": "BITTREX:BITBBTC",
-      "f": [
-        "Bean Cash",
-        "BITB"
-      ]
-    },
-    {
-      "s": "BITTREX:BITBUSD",
-      "f": [
-        "Bean Cash",
-        "BITB"
-      ]
-    },
-    {
       "s": "BINANCE:BNBBTC",
       "f": [
         "Binance Coin",
@@ -439,20 +397,6 @@
       ]
     },
     {
-      "s": "BITTREX:BAYBTC",
-      "f": [
-        "BitBay",
-        "BAY"
-      ]
-    },
-    {
-      "s": "BITTREX:BAYUSD",
-      "f": [
-        "BitBay",
-        "BAY"
-      ]
-    },
-    {
       "s": "BITFINEX:BTCBTC",
       "f": [
         "Bitcoin",
@@ -464,6 +408,20 @@
       "f": [
         "Bitcoin",
         "BTC"
+      ]
+    },
+    {
+      "s": "HITBTC:BTCBBTC",
+      "f": [
+        "Bitcoin BEP2",
+        "BTCB"
+      ]
+    },
+    {
+      "s": "BINANCE:BTCBUSD",
+      "f": [
+        "Bitcoin BEP2",
+        "BTCB"
       ]
     },
     {
@@ -551,20 +509,6 @@
       ]
     },
     {
-      "s": "BITTREX:BSDBTC",
-      "f": [
-        "BitSend",
-        "BSD"
-      ]
-    },
-    {
-      "s": "BITTREX:BSDUSD",
-      "f": [
-        "BitSend",
-        "BSD"
-      ]
-    },
-    {
       "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
@@ -579,7 +523,7 @@
       ]
     },
     {
-      "s": "BINANCE:BTTBTC",
+      "s": "HUOBI:BTTBTC",
       "f": [
         "BitTorrent",
         "BTT"
@@ -649,20 +593,6 @@
       ]
     },
     {
-      "s": "BITTREX:TIXBTC",
-      "f": [
-        "Blocktix",
-        "TIX"
-      ]
-    },
-    {
-      "s": "BITTREX:TIXUSD",
-      "f": [
-        "Blocktix",
-        "TIX"
-      ]
-    },
-    {
       "s": "BITTREX:VEEBTC",
       "f": [
         "BLOCKv",
@@ -674,20 +604,6 @@
       "f": [
         "BLOCKv",
         "VEE"
-      ]
-    },
-    {
-      "s": "BITTREX:BLTBTC",
-      "f": [
-        "Bloom",
-        "BLT"
-      ]
-    },
-    {
-      "s": "BITTREX:BLTUSD",
-      "f": [
-        "Bloom",
-        "BLT"
       ]
     },
     {
@@ -838,13 +754,6 @@
       ]
     },
     {
-      "s": "BITTREX:CBCUSD",
-      "f": [
-        "Cashbery Coin",
-        "CBC"
-      ]
-    },
-    {
       "s": "BITFINEX:CTXBTC",
       "f": [
         "Centauri",
@@ -898,34 +807,6 @@
       "f": [
         "Civic",
         "CVC"
-      ]
-    },
-    {
-      "s": "POLONIEX:CLAMBTC",
-      "f": [
-        "Clams",
-        "CLAM"
-      ]
-    },
-    {
-      "s": "POLONIEX:CLAMUSD",
-      "f": [
-        "Clams",
-        "CLAM"
-      ]
-    },
-    {
-      "s": "BITTREX:CLOAKBTC",
-      "f": [
-        "CloakCoin",
-        "CLOAK"
-      ]
-    },
-    {
-      "s": "BITTREX:CLOAKUSD",
-      "f": [
-        "CloakCoin",
-        "CLOAK"
       ]
     },
     {
@@ -1167,20 +1048,6 @@
       ]
     },
     {
-      "s": "BINANCE:DENTBTC",
-      "f": [
-        "Dent",
-        "DENT"
-      ]
-    },
-    {
-      "s": "BINANCE:DENTUSD",
-      "f": [
-        "Dent",
-        "DENT"
-      ]
-    },
-    {
       "s": "BITFINEX:DTHBTC",
       "f": [
         "Dether",
@@ -1192,20 +1059,6 @@
       "f": [
         "Dether",
         "DTH"
-      ]
-    },
-    {
-      "s": "BITTREX:DMDBTC",
-      "f": [
-        "Diamond",
-        "DMD"
-      ]
-    },
-    {
-      "s": "BITTREX:DMDUSD",
-      "f": [
-        "Diamond",
-        "DMD"
       ]
     },
     {
@@ -1328,20 +1181,6 @@
       ]
     },
     {
-      "s": "BITTREX:DYNBTC",
-      "f": [
-        "Dynamic",
-        "DYN"
-      ]
-    },
-    {
-      "s": "BITTREX:DYNUSD",
-      "f": [
-        "Dynamic",
-        "DYN"
-      ]
-    },
-    {
       "s": "BITTREX:EDGBTC",
       "f": [
         "Edgeless",
@@ -1398,31 +1237,17 @@
       ]
     },
     {
-      "s": "BITTREX:EMCBTC",
+      "s": "HITBTC:EMCBTC",
       "f": [
         "Emercoin",
         "EMC"
       ]
     },
     {
-      "s": "BITTREX:EMCUSD",
+      "s": "HITBTC:EMCUSD",
       "f": [
         "Emercoin",
         "EMC"
-      ]
-    },
-    {
-      "s": "BITTREX:EDRBTC",
-      "f": [
-        "Endor Protocol",
-        "EDR"
-      ]
-    },
-    {
-      "s": "BITTREX:EDRUSD",
-      "f": [
-        "Endor Protocol",
-        "EDR"
       ]
     },
     {
@@ -1846,20 +1671,6 @@
       ]
     },
     {
-      "s": "BITTREX:GRCBTC",
-      "f": [
-        "GridCoin",
-        "GRC"
-      ]
-    },
-    {
-      "s": "BITTREX:GRCUSD",
-      "f": [
-        "GridCoin",
-        "GRC"
-      ]
-    },
-    {
       "s": "BITTREX:GRSBTC",
       "f": [
         "Groestlcoin",
@@ -1902,17 +1713,17 @@
       ]
     },
     {
-      "s": "BITTREX:THCBTC",
+      "s": "BITTREX:HBARBTC",
       "f": [
-        "HempCoin",
-        "THC"
+        "Hedera Hashgraph",
+        "HBAR"
       ]
     },
     {
-      "s": "BITTREX:THCUSD",
+      "s": "BITTREX:HBARUSD",
       "f": [
-        "HempCoin",
-        "THC"
+        "Hedera Hashgraph",
+        "HBAR"
       ]
     },
     {
@@ -2084,34 +1895,6 @@
       ]
     },
     {
-      "s": "BITTREX:IOPBTC",
-      "f": [
-        "Internet of People",
-        "IOP"
-      ]
-    },
-    {
-      "s": "BITTREX:IOPUSD",
-      "f": [
-        "Internet of People",
-        "IOP"
-      ]
-    },
-    {
-      "s": "BITTREX:IONBTC",
-      "f": [
-        "ION",
-        "ION"
-      ]
-    },
-    {
-      "s": "BITTREX:IONUSD",
-      "f": [
-        "ION",
-        "ION"
-      ]
-    },
-    {
       "s": "BINANCE:IOSTBTC",
       "f": [
         "IOStoken",
@@ -2165,20 +1948,6 @@
       "f": [
         "Komodo",
         "KMD"
-      ]
-    },
-    {
-      "s": "BITTREX:KOREBTC",
-      "f": [
-        "Kore",
-        "KORE"
-      ]
-    },
-    {
-      "s": "BITTREX:KOREUSD",
-      "f": [
-        "Kore",
-        "KORE"
       ]
     },
     {
@@ -2266,14 +2035,14 @@
       ]
     },
     {
-      "s": "BITTREX:LUNBTC",
+      "s": "BINANCE:LUNBTC",
       "f": [
         "Lunyr",
         "LUN"
       ]
     },
     {
-      "s": "BITTREX:LUNUSD",
+      "s": "BINANCE:LUNUSD",
       "f": [
         "Lunyr",
         "LUN"
@@ -2336,20 +2105,6 @@
       ]
     },
     {
-      "s": "BITTREX:GUPBTC",
-      "f": [
-        "Matchpool",
-        "GUP"
-      ]
-    },
-    {
-      "s": "BITTREX:GUPUSD",
-      "f": [
-        "Matchpool",
-        "GUP"
-      ]
-    },
-    {
       "s": "HUOBI:MANBTC",
       "f": [
         "Matrix AI Network",
@@ -2375,20 +2130,6 @@
       "f": [
         "Medicalchain",
         "MTN"
-      ]
-    },
-    {
-      "s": "BITTREX:MLNBTC",
-      "f": [
-        "Melon",
-        "MLN"
-      ]
-    },
-    {
-      "s": "BITTREX:MLNUSD",
-      "f": [
-        "Melon",
-        "MLN"
       ]
     },
     {
@@ -2560,20 +2301,6 @@
       ]
     },
     {
-      "s": "BITTREX:MUSICBTC",
-      "f": [
-        "Musicoin",
-        "MUSIC"
-      ]
-    },
-    {
-      "s": "BITTREX:MUSICUSD",
-      "f": [
-        "Musicoin",
-        "MUSIC"
-      ]
-    },
-    {
       "s": "BITTREX:XMYBTC",
       "f": [
         "Myriad",
@@ -2693,20 +2420,6 @@
       ]
     },
     {
-      "s": "BITTREX:NEOSBTC",
-      "f": [
-        "NeosCoin",
-        "NEOS"
-      ]
-    },
-    {
-      "s": "BITTREX:NEOSUSD",
-      "f": [
-        "NeosCoin",
-        "NEOS"
-      ]
-    },
-    {
       "s": "BITTREX:NXSBTC",
       "f": [
         "Nexus",
@@ -2777,13 +2490,6 @@
       ]
     },
     {
-      "s": "HITBTC:NXCBTC",
-      "f": [
-        "NXC",
-        "NXC"
-      ]
-    },
-    {
       "s": "BITTREX:NXTBTC",
       "f": [
         "Nxt",
@@ -2823,20 +2529,6 @@
       "f": [
         "ODEM",
         "ODE"
-      ]
-    },
-    {
-      "s": "BITTREX:OCNBTC",
-      "f": [
-        "Odyssey",
-        "OCN"
-      ]
-    },
-    {
-      "s": "BITTREX:OCNUSD",
-      "f": [
-        "Odyssey",
-        "OCN"
       ]
     },
     {
@@ -2952,20 +2644,6 @@
       ]
     },
     {
-      "s": "POLONIEX:PASCBTC",
-      "f": [
-        "Pascal Coin",
-        "PASC"
-      ]
-    },
-    {
-      "s": "POLONIEX:PASCUSD",
-      "f": [
-        "Pascal Coin",
-        "PASC"
-      ]
-    },
-    {
       "s": "BITTREX:PTOYBTC",
       "f": [
         "Patientory",
@@ -3064,14 +2742,14 @@
       ]
     },
     {
-      "s": "BITTREX:POLYBTC",
+      "s": "HUOBI:POLYBTC",
       "f": [
         "Polymath",
         "POLY"
       ]
     },
     {
-      "s": "BITTREX:POLYUSD",
+      "s": "BINANCE:POLYUSD",
       "f": [
         "Polymath",
         "POLY"
@@ -3134,31 +2812,10 @@
       ]
     },
     {
-      "s": "BITTREX:PROBTC",
+      "s": "HITBTC:PROBTC",
       "f": [
         "Propy",
         "PRO"
-      ]
-    },
-    {
-      "s": "BITTREX:PROUSD",
-      "f": [
-        "Propy",
-        "PRO"
-      ]
-    },
-    {
-      "s": "BINANCE:NPXSBTC",
-      "f": [
-        "Pundi X",
-        "NPXS"
-      ]
-    },
-    {
-      "s": "BINANCE:NPXSUSD",
-      "f": [
-        "Pundi X",
-        "NPXS"
       ]
     },
     {
@@ -3243,20 +2900,6 @@
       "f": [
         "QuarkChain",
         "QKC"
-      ]
-    },
-    {
-      "s": "BITTREX:QWARKBTC",
-      "f": [
-        "Qwark",
-        "QWARK"
-      ]
-    },
-    {
-      "s": "BITTREX:QWARKUSD",
-      "f": [
-        "Qwark",
-        "QWARK"
       ]
     },
     {
@@ -3372,20 +3015,6 @@
       ]
     },
     {
-      "s": "BITTREX:RVRBTC",
-      "f": [
-        "RevolutionVR",
-        "RVR"
-      ]
-    },
-    {
-      "s": "BITTREX:RVRUSD",
-      "f": [
-        "RevolutionVR",
-        "RVR"
-      ]
-    },
-    {
       "s": "BITFINEX:RIFBTC",
       "f": [
         "RIF Token",
@@ -3498,20 +3127,6 @@
       ]
     },
     {
-      "s": "BITTREX:SEQBTC",
-      "f": [
-        "Sequence",
-        "SEQ"
-      ]
-    },
-    {
-      "s": "BITTREX:SEQUSD",
-      "f": [
-        "Sequence",
-        "SEQ"
-      ]
-    },
-    {
       "s": "BITTREX:SHIFTBTC",
       "f": [
         "Shift",
@@ -3610,20 +3225,6 @@
       ]
     },
     {
-      "s": "BITTREX:SLRBTC",
-      "f": [
-        "SolarCoin",
-        "SLR"
-      ]
-    },
-    {
-      "s": "BITTREX:SLRUSD",
-      "f": [
-        "SolarCoin",
-        "SLR"
-      ]
-    },
-    {
       "s": "BINANCE:SNMBTC",
       "f": [
         "SONM",
@@ -3656,20 +3257,6 @@
       "f": [
         "Spendcoin",
         "SPND"
-      ]
-    },
-    {
-      "s": "BITTREX:SPNDUSD",
-      "f": [
-        "Spendcoin",
-        "SPND"
-      ]
-    },
-    {
-      "s": "BITTREX:SPHRBTC",
-      "f": [
-        "Sphere",
-        "SPHR"
       ]
     },
     {
@@ -3834,34 +3421,6 @@
       ]
     },
     {
-      "s": "BITTREX:SWTBTC",
-      "f": [
-        "Swarm City",
-        "SWT"
-      ]
-    },
-    {
-      "s": "BITTREX:SWTUSD",
-      "f": [
-        "Swarm City",
-        "SWT"
-      ]
-    },
-    {
-      "s": "BITTREX:SYNXBTC",
-      "f": [
-        "Syndicate",
-        "SYNX"
-      ]
-    },
-    {
-      "s": "BITTREX:SYNXUSD",
-      "f": [
-        "Syndicate",
-        "SYNX"
-      ]
-    },
-    {
       "s": "BITTREX:SYSBTC",
       "f": [
         "Syscoin",
@@ -3971,34 +3530,6 @@
       "f": [
         "TokenCard",
         "TKN"
-      ]
-    },
-    {
-      "s": "BITTREX:TKSBTC",
-      "f": [
-        "Tokes",
-        "TKS"
-      ]
-    },
-    {
-      "s": "BITTREX:TKSUSD",
-      "f": [
-        "Tokes",
-        "TKS"
-      ]
-    },
-    {
-      "s": "BITTREX:TXBTC",
-      "f": [
-        "TransferCoin",
-        "TX"
-      ]
-    },
-    {
-      "s": "BITTREX:TXUSD",
-      "f": [
-        "TransferCoin",
-        "TX"
       ]
     },
     {
@@ -4282,13 +3813,6 @@
       ]
     },
     {
-      "s": "BITTREX:WAXBTC",
-      "f": [
-        "WAX",
-        "WAX"
-      ]
-    },
-    {
       "s": "BITFINEX:WAXUSD",
       "f": [
         "WAX",
@@ -4307,34 +3831,6 @@
       "f": [
         "WePower",
         "WPR"
-      ]
-    },
-    {
-      "s": "BITTREX:XWCBTC",
-      "f": [
-        "WhiteCoin",
-        "XWC"
-      ]
-    },
-    {
-      "s": "BITTREX:XWCUSD",
-      "f": [
-        "WhiteCoin",
-        "XWC"
-      ]
-    },
-    {
-      "s": "BITTREX:WINGSBTC",
-      "f": [
-        "Wings",
-        "WINGS"
-      ]
-    },
-    {
-      "s": "BITTREX:WINGSUSD",
-      "f": [
-        "Wings",
-        "WINGS"
       ]
     },
     {
@@ -4377,20 +3873,6 @@
       "f": [
         "Zcash",
         "ZEC"
-      ]
-    },
-    {
-      "s": "BITTREX:ZCLBTC",
-      "f": [
-        "ZClassic",
-        "ZCL"
-      ]
-    },
-    {
-      "s": "BITTREX:ZCLUSD",
-      "f": [
-        "ZClassic",
-        "ZCL"
       ]
     },
     {

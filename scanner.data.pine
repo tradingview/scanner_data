@@ -118,7 +118,7 @@ plot(dStoch[1], title="Stoch.D[1]")
 // average volume
 AvgVol = sma(volume,10)
 plot(AvgVol, title="average_volume_10d_calc")
-plot(volume/AvgVol, title="relative_volume_10d_calc")
+plot(volume/sma(volume[1],10), title="relative_volume_10d_calc")
 plot(sma(volume,30), title="average_volume_30d_calc")
 plot(sma(volume,60), title="average_volume_60d_calc")
 plot(sma(volume,90), title="average_volume_90d_calc")
@@ -327,7 +327,7 @@ ichimoku_cloud()=>
     leadLine2 = donchian(52)
     [conversionLine, baseLine, leadLine1, leadLine2]
 [IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud()
-IC_displacement = 26
+IC_displacement = 25
 plot(IC_CLine, title="Ichimoku.CLine")
 plot(IC_BLine, title="Ichimoku.BLine")
 plot(IC_Lead1[IC_displacement], offset = IC_displacement, title="Ichimoku.Lead1")

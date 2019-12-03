@@ -60,7 +60,8 @@ const groups = [
     {
         url: "euronext_primary_brussels_indices",
         include: ["EURONEXT:BEL20"],
-        region: "Europe"},
+        region: "Europe"
+    },
     {
         url: "toronto_indices",
         include: ["TSX:TSX"],

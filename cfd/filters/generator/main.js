@@ -48,13 +48,19 @@ const groups = [
         region: "Americas"
     },
     {
-        url: "euronext_primary_indices",
-        include: [
-            "EURONEXT:PX1",
-            "EURONEXT:AEX",
-            "EURONEXT:BEL20"],
+        url: "euronext_primary_paris_indices",
+        include: ["EURONEXT:PX1"],
         region: "Europe"
     },
+    {
+        url: "euronext_primary_amsterdam_indices",
+        include: ["EURONEXT:AEX"],
+        region: "Europe"
+    },
+    {
+        url: "euronext_primary_brussels_indices",
+        include: ["EURONEXT:BEL20"],
+        region: "Europe"},
     {
         url: "toronto_indices",
         include: ["TSX:TSX"],
@@ -768,11 +774,8 @@ fs.writeFileSync("../../groups/indices.json", JSON.stringify({
         "euronext_non_primary_europe_indices": true,
         "euronext_non_primary_lisbon_indices": true,
         "euronext_non_primary_paris_indices": true,
-        "euronext_primary_amsterdam_indices": true,
-        "euronext_primary_brussels_indices": true,
         "euronext_primary_europe_indices": true,
         "euronext_primary_lisbon_indices": true,
-        "euronext_primary_paris_indices": true,
         "vietnam_indices": true,
         "copenhagen_basic_indices": true,
         "helsinki_indices": true,

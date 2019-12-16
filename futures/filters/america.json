@@ -4457,7 +4457,42 @@
       ]
     },
     {
+      "s": "CME:BTCJ2020",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCK2020",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCM2020",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
       "s": "CME:BTCZ2019",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCZ2020",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCZ2021",
       "f": [
         null,
         "CME:BTC"
@@ -6795,6 +6830,13 @@
       ]
     },
     {
+      "s": "COMEX:HGZ2024",
+      "f": [
+        null,
+        "COMEX:HG"
+      ]
+    },
+    {
       "f": [
         "Metals",
         "COMEX:LED"
@@ -7041,6 +7083,13 @@
     },
     {
       "s": "EUREX:FGBLM2020",
+      "f": [
+        null,
+        "EUREX:FGBL"
+      ]
+    },
+    {
+      "s": "EUREX:FGBLU2020",
       "f": [
         null,
         "EUREX:FGBL"
@@ -11331,6 +11380,13 @@
       ]
     },
     {
+      "s": "NYMEX:PAH2021",
+      "f": [
+        null,
+        "NYMEX:PA"
+      ]
+    },
+    {
       "s": "NYMEX:PAM2020",
       "f": [
         null,
@@ -11381,6 +11437,13 @@
     },
     {
       "s": "NYMEX:PLG2020",
+      "f": [
+        null,
+        "NYMEX:PL"
+      ]
+    },
+    {
+      "s": "NYMEX:PLH2020",
       "f": [
         null,
         "NYMEX:PL"

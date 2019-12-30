@@ -313,6 +313,13 @@
       ]
     },
     {
+      "s": "CBOT:EHF2023",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
       "s": "CBOT:EHG2020",
       "f": [
         null,
@@ -4877,6 +4884,13 @@
       ]
     },
     {
+      "s": "CME:GEN2020",
+      "f": [
+        null,
+        "CME:GE"
+      ]
+    },
+    {
       "s": "CME:GEU2020",
       "f": [
         null,
@@ -5981,13 +5995,6 @@
         "COMEX_MINI:QC"
       ],
       "s": "COMEX_MINI:QC1!"
-    },
-    {
-      "s": "COMEX_MINI:QCF2020",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
     },
     {
       "s": "COMEX_MINI:QCF2021",
@@ -11640,13 +11647,6 @@
     },
     {
       "s": "NYMEX:PLV2020",
-      "f": [
-        null,
-        "NYMEX:PL"
-      ]
-    },
-    {
-      "s": "NYMEX:PLZ2019",
       "f": [
         null,
         "NYMEX:PL"

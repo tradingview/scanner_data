@@ -49,20 +49,17 @@ const groups = [
     },
     {
         url: "euronext_primary_paris_indices",
-        include: [
-            "EURONEXT:PX1"],
+        include: ["EURONEXT:PX1"],
         region: "Europe"
     },
     {
         url: "euronext_primary_amsterdam_indices",
-        include: [
-            "EURONEXT:AEX"],
+        include: ["EURONEXT:AEX"],
         region: "Europe"
     },
     {
         url: "euronext_primary_brussels_indices",
-        include: [
-            "EURONEXT:BEL20"],
+        include: ["EURONEXT:BEL20"],
         region: "Europe"
     },
     {

@@ -18,7 +18,7 @@ const selectedSubTypes = [
     "common",
     "preferred",
     "dr"];
-const fieldsNotNull = "earnings_release_date,earnings_release_next_date";
+const fieldsNotNull = "earnings_release_date,earnings_release_next_date,dividend_ex_date_upcoming,dividend_ex_date_recent";
 
 const udfProxy = "http://udf-proxy.tradingview.com:8094/symbols";
 

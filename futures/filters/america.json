@@ -1384,6 +1384,13 @@
       ]
     },
     {
+      "s": "CBOT:ZQG2023",
+      "f": [
+        null,
+        "CBOT:ZQ"
+      ]
+    },
+    {
       "s": "CBOT:ZQH2020",
       "f": [
         null,
@@ -2308,13 +2315,6 @@
       "s": "CME:6A1!"
     },
     {
-      "s": "CME:6AG2020",
-      "f": [
-        null,
-        "CME:6A"
-      ]
-    },
-    {
       "s": "CME:6AH2020",
       "f": [
         null,
@@ -2481,13 +2481,6 @@
         "CME:6B"
       ],
       "s": "CME:6B1!"
-    },
-    {
-      "s": "CME:6BG2020",
-      "f": [
-        null,
-        "CME:6B"
-      ]
     },
     {
       "s": "CME:6BH2020",
@@ -2833,13 +2826,6 @@
       "s": "CME:6E1!"
     },
     {
-      "s": "CME:6EG2020",
-      "f": [
-        null,
-        "CME:6E"
-      ]
-    },
-    {
       "s": "CME:6EH2020",
       "f": [
         null,
@@ -3006,13 +2992,6 @@
         "CME:6J"
       ],
       "s": "CME:6J1!"
-    },
-    {
-      "s": "CME:6JG2020",
-      "f": [
-        null,
-        "CME:6J"
-      ]
     },
     {
       "s": "CME:6JH2020",
@@ -3771,13 +3750,6 @@
       ]
     },
     {
-      "s": "CME:6MG2020",
-      "f": [
-        null,
-        "CME:6M"
-      ]
-    },
-    {
       "s": "CME:6MG2021",
       "f": [
         null,
@@ -4086,13 +4058,6 @@
       ]
     },
     {
-      "s": "CME:6ZG2020",
-      "f": [
-        null,
-        "CME:6Z"
-      ]
-    },
-    {
       "s": "CME:6ZG2021",
       "f": [
         null,
@@ -4248,6 +4213,13 @@
     },
     {
       "s": "CME:BTCN2020",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCQ2020",
       "f": [
         null,
         "CME:BTC"
@@ -5080,6 +5052,13 @@
       ]
     },
     {
+      "s": "CME:LEQ2021",
+      "f": [
+        null,
+        "CME:LE"
+      ]
+    },
+    {
       "s": "CME:LEV2020",
       "f": [
         null,
@@ -5535,6 +5514,13 @@
       ]
     },
     {
+      "s": "CME:WDCG2026",
+      "f": [
+        null,
+        "CME:WDC"
+      ]
+    },
+    {
       "s": "CME:WDCK2020",
       "f": [
         null,
@@ -5711,6 +5697,13 @@
     },
     {
       "s": "COMEX_MINI:QCG2021",
+      "f": [
+        null,
+        "COMEX_MINI:QC"
+      ]
+    },
+    {
+      "s": "COMEX_MINI:QCG2022",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5976,6 +5969,13 @@
       ]
     },
     {
+      "s": "COMEX_MINI:QIF2022",
+      "f": [
+        null,
+        "COMEX_MINI:QI"
+      ]
+    },
+    {
       "s": "COMEX_MINI:QIH2020",
       "f": [
         null,
@@ -6179,6 +6179,13 @@
       ]
     },
     {
+      "s": "COMEX:GCK2020",
+      "f": [
+        null,
+        "COMEX:GC"
+      ]
+    },
+    {
       "s": "COMEX:GCM2020",
       "f": [
         null,
@@ -6320,6 +6327,13 @@
     },
     {
       "s": "COMEX:HGG2021",
+      "f": [
+        null,
+        "COMEX:HG"
+      ]
+    },
+    {
+      "s": "COMEX:HGG2022",
       "f": [
         null,
         "COMEX:HG"
@@ -6592,6 +6606,13 @@
       ]
     },
     {
+      "s": "COMEX:LEDG2021",
+      "f": [
+        null,
+        "COMEX:LED"
+      ]
+    },
+    {
       "s": "COMEX:LEDH2020",
       "f": [
         null,
@@ -6670,6 +6691,13 @@
     },
     {
       "s": "COMEX:SIF2021",
+      "f": [
+        null,
+        "COMEX:SI"
+      ]
+    },
+    {
+      "s": "COMEX:SIF2022",
       "f": [
         null,
         "COMEX:SI"
@@ -11114,6 +11142,13 @@
       ]
     },
     {
+      "s": "NYMEX:PAK2020",
+      "f": [
+        null,
+        "NYMEX:PA"
+      ]
+    },
+    {
       "s": "NYMEX:PAM2020",
       "f": [
         null,
@@ -11171,6 +11206,13 @@
     },
     {
       "s": "NYMEX:PLJ2021",
+      "f": [
+        null,
+        "NYMEX:PL"
+      ]
+    },
+    {
+      "s": "NYMEX:PLK2020",
       "f": [
         null,
         "NYMEX:PL"

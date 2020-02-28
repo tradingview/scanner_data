@@ -174,7 +174,7 @@ const groups = [
     },
     {
         "url": "colombia_indices",
-        "include": ["BVC:IGBC"],
+        "include": ["BVC:ICAP"],
         "region": "Americas"
     },
     {

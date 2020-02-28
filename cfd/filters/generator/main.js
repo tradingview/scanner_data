@@ -154,7 +154,7 @@ const groups = [
     },
     {
         url: "santiago_indices",
-        include: ["BCS:IPSA"],
+        include: ["BCS:SP_IPSA"],
         region: "Americas"
     },
     {
@@ -174,7 +174,7 @@ const groups = [
     },
     {
         "url": "colombia_indices",
-        "include": ["BVC:IGBC"],
+        "include": ["BVC:ICAP"],
         "region": "Americas"
     },
     {
@@ -253,7 +253,7 @@ const groups = [
     },
     {
         "url": "iceland_indices",
-        "include": ["OMXICE:OMXI8"],
+        "include": ["OMXICE:OMXI10"],
         "region": "Europe"
     },
     {
@@ -334,7 +334,11 @@ groups.forEach(function (gr) {
                 if (gr.sector) {
                     s.sector = gr.sector;
                 }
-                symbols.push(s);
+
+                const dolly = Object.assign({}, s);
+                dolly.s = s.f[4] || s.s;
+
+                symbols.push(dolly);
 
                 // if (s.s.indexOf('IXIC')>=0) console.log(url);
             }
@@ -433,9 +437,9 @@ let emptySectorCount = 0, emptyCountryCount = 0;
 const dstSymbols = [];
 
 const majorIndices = [
-    {"s": "SPCFD:SPX", "cc": "US"},
+    {"s": "SP:SPX", "cc": "US"},
     {"s": "TVC:IXIC", "cc": "US"},
-    {"s": "DJCFD:DJI", "cc": "US"},
+    {"s": "DJ:DJI", "cc": "US"},
     {"s": "CBOE:VIX", "cc": "US"},
     {"s": "TSX:TSX", "cc": "CA"},
     {"s": "TVC:UKX", "cc": "GB"},
@@ -677,7 +681,7 @@ function getCountryCode(s, cat) {
 
 symbols.forEach(function (s) {
     const dst = {f: []};
-    dst.s = s.f[4] || s.s;
+    dst.s = s.s;
     let cat = tryDetectSector(s);
     if (!cat) {
         emptySectorCount++;
@@ -709,6 +713,17 @@ if (emptySectorCount) {
 if (emptyCountryCount) {
     console.info("Symbols with empty region is " + emptyCountryCount);
 }
+
+function verifyAllMajorIndicesAreCovered() {
+    const mjInd = {};
+    majorIndices.forEach(i => mjInd[i.s] = true);
+    dstSymbols.forEach(s => delete mjInd[s.s]);
+    const missing = Object.keys(mjInd);
+    if (missing.length > 0) {
+        console.error(`Missing major indices: ${JSON.stringify(missing)}`);
+    }
+};
+verifyAllMajorIndicesAreCovered();
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {

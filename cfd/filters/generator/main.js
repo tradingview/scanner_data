@@ -441,7 +441,7 @@ const majorIndices = [
     {"s": "TVC:UKX", "cc": "GB"},
     {"s": "XETR:DAX", "cc": "DE"},
     {"s": "EURONEXT:PX1", "cc": "FR"},
-    {"s": "MIL:FTSEMIB", "cc": "IT"},
+    {"s": "TVC:FTMIB", "cc": "IT"},
     {"s": "TVC:NI225", "cc": "JP"},
     {"s": "TVC:KOSPI", "cc": "KR"},
     {"s": "TVC:SHCOMP", "cc": "CN"},

@@ -484,7 +484,7 @@ const majorIndices = [
     {"s": "BCBA:IMV", "cc": "AR"},
     {"s": "BVC:ICAP", "cc": "CO"},
     {"s": "BCS:SP_IPSA", "cc": "CL"},
-    {"s": "BVL:SPBLPGPT", "cc": "PE"},
+    {"s": "BVL:SPBLPGPT", "cc": "PE"}
 ];
 
 const indicesPriorities = {};

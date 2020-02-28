@@ -459,10 +459,9 @@ const majorIndices = [
     {"s": "GPW:WIG20", "cc": "PL"},
     {"s": "EURONEXT:AEX", "cc": "NL"},
     {"s": "EURONEXT:BEL20", "cc": "BE"},
-    {"s": "LUXSE:LUXX", "cc": "LU"},
     {"s": "MOEX:IMOEX", "cc": "RU"},
     { "s":"OMXHEX:OMXH25", "cc":"FI" },
-    { "s":"OMXICE:OMXI8",  "cc":"IS" },
+    { "s":"OMXICE:OMXI10",  "cc":"IS" },
     { "s":"OMXSTO:OMXS30", "cc":"SE" },
     { "s":"OMXCOP:OMXC25", "cc":"DK" },
     {"s": "BELEX:BELEX15", "cc": "RS"},
@@ -483,8 +482,8 @@ const majorIndices = [
     {"s": "BMFBOVESPA:IBOV", "cc": "BR"},
     {"s": "BMV:ME", "cc": "MX"},
     {"s": "BCBA:IMV", "cc": "AR"},
-    {"s": "BVC:IGBC", "cc": "CO"},
-    {"s": "BCS:IPSA", "cc": "CL"},
+    {"s": "BVC:ICAP", "cc": "CO"},
+    {"s": "BCS:SP_IPSA", "cc": "CL"},
     {"s": "BVL:SPBLPGPT", "cc": "PE"},
 ];
 

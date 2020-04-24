@@ -3,7 +3,7 @@ const fs = require("fs");
 const argv = require('minimist')(process.argv.slice(2));
 
 const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
-const API_TOKEN = argv.t || argv.token;
+const API_TOKEN = argv.t || argv.token || process.env.CMC_API_TOKEN;
 
 if (API_TOKEN == undefined) {
     // see https://xwiki.tradingview.com/display/tss/CoinMarketCap for available API tokens

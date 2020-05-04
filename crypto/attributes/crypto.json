@@ -19,20 +19,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ZCNBTC",
-      "f": [
-        "0Chain",
-        "ZCN"
-      ]
-    },
-    {
-      "s": "BITFINEX:ZCNUSD",
-      "f": [
-        "0Chain",
-        "ZCN"
-      ]
-    },
-    {
       "s": "BINANCE:ZRXBTC",
       "f": [
         "0x",
@@ -72,20 +58,6 @@
       "f": [
         "ABBC Coin",
         "ABBC"
-      ]
-    },
-    {
-      "s": "BITFINEX:ABSBTC",
-      "f": [
-        "Absolute",
-        "ABS"
-      ]
-    },
-    {
-      "s": "BITFINEX:ABSUSD",
-      "f": [
-        "Absolute",
-        "ABS"
       ]
     },
     {
@@ -212,20 +184,6 @@
       "f": [
         "Agrello",
         "DLT"
-      ]
-    },
-    {
-      "s": "BITFINEX:AIDBTC",
-      "f": [
-        "AidCoin",
-        "AID"
-      ]
-    },
-    {
-      "s": "BITFINEX:AIDUSD",
-      "f": [
-        "AidCoin",
-        "AID"
       ]
     },
     {
@@ -481,20 +439,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ATMBTC",
-      "f": [
-        "ATMChain",
-        "ATM"
-      ]
-    },
-    {
-      "s": "BITFINEX:ATMUSD",
-      "f": [
-        "ATMChain",
-        "ATM"
-      ]
-    },
-    {
       "s": "BITFINEX:ATOBTC",
       "f": [
         "Cosmos",
@@ -509,14 +453,14 @@
       ]
     },
     {
-      "s": "BITFINEX:AUCBTC",
+      "s": "HITBTC:AUCBTC",
       "f": [
         "Auctus",
         "AUC"
       ]
     },
     {
-      "s": "BITFINEX:AUCUSD",
+      "s": "HITBTC:AUCUSD",
       "f": [
         "Auctus",
         "AUC"
@@ -534,34 +478,6 @@
       "f": [
         "Augur",
         "REP"
-      ]
-    },
-    {
-      "s": "BITFINEX:NIOBTC",
-      "f": [
-        "Autonio",
-        "NIO"
-      ]
-    },
-    {
-      "s": "BITFINEX:NIOUSD",
-      "f": [
-        "Autonio",
-        "NIO"
-      ]
-    },
-    {
-      "s": "BITFINEX:AVTBTC",
-      "f": [
-        "Aventus",
-        "AVT"
-      ]
-    },
-    {
-      "s": "BITFINEX:AVTUSD",
-      "f": [
-        "Aventus",
-        "AVT"
       ]
     },
     {
@@ -646,20 +562,6 @@
       "f": [
         "Bankex",
         "BKX"
-      ]
-    },
-    {
-      "s": "BITFINEX:BBNBTC",
-      "f": [
-        "Banyan Network",
-        "BBN"
-      ]
-    },
-    {
-      "s": "BITFINEX:BBNUSD",
-      "f": [
-        "Banyan Network",
-        "BBN"
       ]
     },
     {
@@ -1440,20 +1342,6 @@
       ]
     },
     {
-      "s": "BITFINEX:CTXBTC",
-      "f": [
-        "Centauri",
-        "CTX"
-      ]
-    },
-    {
-      "s": "BITFINEX:CTXUSD",
-      "f": [
-        "Centauri",
-        "CTX"
-      ]
-    },
-    {
       "s": "HITBTC:CENNZBTC",
       "f": [
         "Centrality",
@@ -1594,20 +1482,6 @@
       ]
     },
     {
-      "s": "BITFINEX:CBTBTC",
-      "f": [
-        "CommerceBlock",
-        "CBT"
-      ]
-    },
-    {
-      "s": "BITFINEX:CBTUSD",
-      "f": [
-        "CommerceBlock",
-        "CBT"
-      ]
-    },
-    {
       "s": "HITBTC:XCONBTC",
       "f": [
         "Connect Coin",
@@ -1619,20 +1493,6 @@
       "f": [
         "Connect Coin",
         "XCON"
-      ]
-    },
-    {
-      "s": "BITFINEX:SENBTC",
-      "f": [
-        "Consensus",
-        "SEN"
-      ]
-    },
-    {
-      "s": "BITFINEX:SENUSD",
-      "f": [
-        "Consensus",
-        "SEN"
       ]
     },
     {
@@ -1776,7 +1636,7 @@
       ]
     },
     {
-      "s": "BITFINEX:CSXBTC",
+      "s": "KUCOIN:CSBTC",
       "f": [
         "Credits",
         "CS"

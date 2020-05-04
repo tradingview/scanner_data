@@ -1944,20 +1944,6 @@
       ]
     },
     {
-      "s": "BITFINEX:DTHBTC",
-      "f": [
-        "Dether",
-        "DTH"
-      ]
-    },
-    {
-      "s": "BITFINEX:DTHUSD",
-      "f": [
-        "Dether",
-        "DTH"
-      ]
-    },
-    {
       "s": "BITTREX:DGBBTC",
       "f": [
         "DigiByte",
@@ -2441,34 +2427,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ESSBTC",
-      "f": [
-        "Essentia",
-        "ESS"
-      ]
-    },
-    {
-      "s": "BITFINEX:ESSUSD",
-      "f": [
-        "Essentia",
-        "ESS"
-      ]
-    },
-    {
-      "s": "BITFINEX:IMPBTC",
-      "f": [
-        "Ether Kingdoms Token",
-        "IMP"
-      ]
-    },
-    {
-      "s": "BITFINEX:IMPUSD",
-      "f": [
-        "Ether Kingdoms Token",
-        "IMP"
-      ]
-    },
-    {
       "s": "HUOBI:ETHBTC",
       "f": [
         "Ethereum",
@@ -2578,20 +2536,6 @@
       "f": [
         "Everex",
         "EVX"
-      ]
-    },
-    {
-      "s": "BITFINEX:IQXBTC",
-      "f": [
-        "Everipedia",
-        "IQ"
-      ]
-    },
-    {
-      "s": "BITFINEX:IQXUSD",
-      "f": [
-        "Everipedia",
-        "IQ"
       ]
     },
     {
@@ -3617,7 +3561,7 @@
       ]
     },
     {
-      "s": "BITFINEX:INTBTC",
+      "s": "OKEX:INTBTC",
       "f": [
         "INT Chain",
         "INT"
@@ -4359,31 +4303,17 @@
       ]
     },
     {
-      "s": "BITFINEX:MITBTC",
+      "s": "BINANCE:MITHBTC",
       "f": [
         "Mithril",
         "MITH"
       ]
     },
     {
-      "s": "BITFINEX:MITUSD",
+      "s": "BINANCE:MITHUSD",
       "f": [
         "Mithril",
         "MITH"
-      ]
-    },
-    {
-      "s": "BITFINEX:MGOBTC",
-      "f": [
-        "MobileGo",
-        "MGO"
-      ]
-    },
-    {
-      "s": "BITFINEX:MGOUSD",
-      "f": [
-        "MobileGo",
-        "MGO"
       ]
     },
     {
@@ -4982,20 +4912,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ONLBTC",
-      "f": [
-        "On.Live",
-        "ONL"
-      ]
-    },
-    {
-      "s": "BITFINEX:ONLUSD",
-      "f": [
-        "On.Live",
-        "ONL"
-      ]
-    },
-    {
       "s": "BINANCE:ONTBTC",
       "f": [
         "Ontology",
@@ -5077,20 +4993,6 @@
       "f": [
         "Origin Protocol",
         "OGN"
-      ]
-    },
-    {
-      "s": "BITFINEX:ORSBTC",
-      "f": [
-        "Origin Sport",
-        "ORS"
-      ]
-    },
-    {
-      "s": "BITFINEX:ORSUSD",
-      "f": [
-        "Origin Sport",
-        "ORS"
       ]
     },
     {
@@ -5619,7 +5521,7 @@
       ]
     },
     {
-      "s": "BITFINEX:QSHBTC",
+      "s": "HUOBI:QASHBTC",
       "f": [
         "QASH",
         "QASH"
@@ -5770,20 +5672,6 @@
       "f": [
         "Rate3",
         "RTE"
-      ]
-    },
-    {
-      "s": "BITFINEX:XRABTC",
-      "f": [
-        "Ratecoin",
-        "XRA"
-      ]
-    },
-    {
-      "s": "BITFINEX:XRAUSD",
-      "f": [
-        "Ratecoin",
-        "XRA"
       ]
     },
     {
@@ -6036,20 +5924,6 @@
       "f": [
         "Seele",
         "SEELE"
-      ]
-    },
-    {
-      "s": "BITFINEX:SEEBTC",
-      "f": [
-        "SEER",
-        "SEER"
-      ]
-    },
-    {
-      "s": "BITFINEX:SEEUSD",
-      "f": [
-        "SEER",
-        "SEER"
       ]
     },
     {
@@ -6330,20 +6204,6 @@
       "f": [
         "SpaceChain",
         "SPC"
-      ]
-    },
-    {
-      "s": "BITFINEX:SPKBTC",
-      "f": [
-        "SparksPay",
-        "SPK"
-      ]
-    },
-    {
-      "s": "BITFINEX:SPKUSD",
-      "f": [
-        "SparksPay",
-        "SPK"
       ]
     },
     {
@@ -7201,20 +7061,6 @@
       ]
     },
     {
-      "s": "BITFINEX:UFRBTC",
-      "f": [
-        "Upfiring",
-        "UFR"
-      ]
-    },
-    {
-      "s": "BITFINEX:UFRUSD",
-      "f": [
-        "Upfiring",
-        "UFR"
-      ]
-    },
-    {
       "s": "BITTREX:URACBTC",
       "f": [
         "Uranus",
@@ -7366,20 +7212,6 @@
       "f": [
         "Vertcoin",
         "VTC"
-      ]
-    },
-    {
-      "s": "BITFINEX:VLDBTC",
-      "f": [
-        "Vetri",
-        "VLD"
-      ]
-    },
-    {
-      "s": "BITFINEX:VLDUSD",
-      "f": [
-        "Vetri",
-        "VLD"
       ]
     },
     {

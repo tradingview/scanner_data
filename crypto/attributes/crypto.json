@@ -453,20 +453,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ATOBTC",
-      "f": [
-        "Cosmos",
-        "ATOM"
-      ]
-    },
-    {
-      "s": "BITFINEX:ATOUSD",
-      "f": [
-        "Cosmos",
-        "ATOM"
-      ]
-    },
-    {
       "s": "HITBTC:AUCBTC",
       "f": [
         "Auctus",
@@ -1580,6 +1566,20 @@
       ]
     },
     {
+      "s": "BITFINEX:ATOBTC",
+      "f": [
+        "Cosmos",
+        "ATOM"
+      ]
+    },
+    {
+      "s": "BITFINEX:ATOUSD",
+      "f": [
+        "Cosmos",
+        "ATOM"
+      ]
+    },
+    {
       "s": "BINANCE:COTIBTC",
       "f": [
         "COTI",
@@ -2550,6 +2550,20 @@
       "f": [
         "Everex",
         "EVX"
+      ]
+    },
+    {
+      "s": "HITBTC:IQBTC",
+      "f": [
+        "Everipedia",
+        "IQ"
+      ]
+    },
+    {
+      "s": "HITBTC:IQUSD",
+      "f": [
+        "Everipedia",
+        "IQ"
       ]
     },
     {

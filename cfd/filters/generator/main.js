@@ -48,11 +48,18 @@ const groups = [
         region: "Americas"
     },
     {
-        url: "euronext_primary_indices",
-        include: [
-            "EURONEXT:PX1",
-            "EURONEXT:AEX",
-            "EURONEXT:BEL20"],
+        url: "euronext_primary_paris_indices",
+        include: ["EURONEXT:PX1"],
+        region: "Europe"
+    },
+    {
+        url: "euronext_primary_amsterdam_indices",
+        include: ["EURONEXT:AEX"],
+        region: "Europe"
+    },
+    {
+        url: "euronext_primary_brussels_indices",
+        include: ["EURONEXT:BEL20"],
         region: "Europe"
     },
     {
@@ -147,7 +154,7 @@ const groups = [
     },
     {
         url: "santiago_indices",
-        include: ["BCS:IPSA"],
+        include: ["BCS:SP_IPSA"],
         region: "Americas"
     },
     {
@@ -167,7 +174,7 @@ const groups = [
     },
     {
         "url": "colombia_indices",
-        "include": ["BVC:IGBC"],
+        "include": ["BVC:ICAP"],
         "region": "Americas"
     },
     {
@@ -246,7 +253,7 @@ const groups = [
     },
     {
         "url": "iceland_indices",
-        "include": ["OMXICE:OMXI8"],
+        "include": ["OMXICE:OMXI10"],
         "region": "Europe"
     },
     {
@@ -327,7 +334,11 @@ groups.forEach(function (gr) {
                 if (gr.sector) {
                     s.sector = gr.sector;
                 }
-                symbols.push(s);
+
+                const dolly = Object.assign({}, s);
+                dolly.s = s.f[4] || s.s;
+
+                symbols.push(dolly);
 
                 // if (s.s.indexOf('IXIC')>=0) console.log(url);
             }
@@ -426,15 +437,15 @@ let emptySectorCount = 0, emptyCountryCount = 0;
 const dstSymbols = [];
 
 const majorIndices = [
-    {"s": "SPCFD:SPX", "cc": "US"},
+    {"s": "SP:SPX", "cc": "US"},
     {"s": "TVC:IXIC", "cc": "US"},
-    {"s": "DJCFD:DJI", "cc": "US"},
+    {"s": "DJ:DJI", "cc": "US"},
     {"s": "CBOE:VIX", "cc": "US"},
     {"s": "TSX:TSX", "cc": "CA"},
     {"s": "TVC:UKX", "cc": "GB"},
     {"s": "XETR:DAX", "cc": "DE"},
     {"s": "EURONEXT:PX1", "cc": "FR"},
-    {"s": "MIL:FTSEMIB", "cc": "IT"},
+    {"s": "TVC:FTMIB", "cc": "IT"},
     {"s": "TVC:NI225", "cc": "JP"},
     {"s": "TVC:KOSPI", "cc": "KR"},
     {"s": "TVC:SHCOMP", "cc": "CN"},
@@ -452,10 +463,9 @@ const majorIndices = [
     {"s": "GPW:WIG20", "cc": "PL"},
     {"s": "EURONEXT:AEX", "cc": "NL"},
     {"s": "EURONEXT:BEL20", "cc": "BE"},
-    {"s": "LUXSE:LUXX", "cc": "LU"},
     {"s": "MOEX:IMOEX", "cc": "RU"},
     { "s":"OMXHEX:OMXH25", "cc":"FI" },
-    { "s":"OMXICE:OMXI8",  "cc":"IS" },
+    { "s":"OMXICE:OMXI10",  "cc":"IS" },
     { "s":"OMXSTO:OMXS30", "cc":"SE" },
     { "s":"OMXCOP:OMXC25", "cc":"DK" },
     {"s": "BELEX:BELEX15", "cc": "RS"},
@@ -476,9 +486,9 @@ const majorIndices = [
     {"s": "BMFBOVESPA:IBOV", "cc": "BR"},
     {"s": "BMV:ME", "cc": "MX"},
     {"s": "BCBA:IMV", "cc": "AR"},
-    {"s": "BVC:IGBC", "cc": "CO"},
-    {"s": "BCS:IPSA", "cc": "CL"},
-    {"s": "BVL:SPBLPGPT", "cc": "PE"},
+    {"s": "BVC:ICAP", "cc": "CO"},
+    {"s": "BCS:SP_IPSA", "cc": "CL"},
+    {"s": "BVL:SPBLPGPT", "cc": "PE"}
 ];
 
 const indicesPriorities = {};
@@ -671,7 +681,7 @@ function getCountryCode(s, cat) {
 
 symbols.forEach(function (s) {
     const dst = {f: []};
-    dst.s = s.f[4] || s.s;
+    dst.s = s.s;
     let cat = tryDetectSector(s);
     if (!cat) {
         emptySectorCount++;
@@ -703,6 +713,17 @@ if (emptySectorCount) {
 if (emptyCountryCount) {
     console.info("Symbols with empty region is " + emptyCountryCount);
 }
+
+function verifyAllMajorIndicesAreCovered() {
+    const mjInd = {};
+    majorIndices.forEach(i => mjInd[i.s] = true);
+    dstSymbols.forEach(s => delete mjInd[s.s]);
+    const missing = Object.keys(mjInd);
+    if (missing.length > 0) {
+        console.error(`Missing major indices: ${JSON.stringify(missing)}`);
+    }
+};
+verifyAllMajorIndicesAreCovered();
 
 fs.writeFileSync(dstPath, JSON.stringify(
     {
@@ -754,7 +775,13 @@ fs.writeFileSync("../../groups/indices.json", JSON.stringify({
         "russell_indices": true,
         "malaysia_indices": true,
         "cboe_indices": true,
-        "nasdaq_indices": true,
+        "nasdaq_us_indices": true,
+        "nasdaq_europe_indices": true,
+        "nasdaq_omx_indices": true,
+        "nasdaq_global_indices": true,
+        "nasdaq_asia_indices": true,
+        "nasdaq_america_indices": true,
+        "nasdaq_other_indices": true,
         "nyse_gif_indices": true,
         "nyse_indices": true,
         "hongkong_indices": true,
@@ -768,11 +795,8 @@ fs.writeFileSync("../../groups/indices.json", JSON.stringify({
         "euronext_non_primary_europe_indices": true,
         "euronext_non_primary_lisbon_indices": true,
         "euronext_non_primary_paris_indices": true,
-        "euronext_primary_amsterdam_indices": true,
-        "euronext_primary_brussels_indices": true,
         "euronext_primary_europe_indices": true,
         "euronext_primary_lisbon_indices": true,
-        "euronext_primary_paris_indices": true,
         "vietnam_indices": true,
         "copenhagen_basic_indices": true,
         "helsinki_indices": true,

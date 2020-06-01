@@ -127,8 +127,13 @@ function getCMCCoinsNewAPI() {
         });
         // retrieve USD quote and merge it into the main data
         dataUSD.data.forEach(function (d) {
-            data[d.id].quote.USD = d.quote.USD;
-            coins.push(data[d.id]);
+            const datum = data[d.id];
+            if (datum) {
+                datum.quote.USD = d.quote.USD;
+                coins.push(datum);
+            } else {
+                console.error(`can't find BTC data for ${JSON.stringify(d)}`);
+            }
         });
         start += limit;
     } while (count == limit);

@@ -506,7 +506,7 @@ plot(recTotal, title="Recommend.All")
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
 
 C_Len = (14)
-C_Factor = (3.0)
+C_Factor = (2.0)
 C_ShadowPercent = (5)
 C_ShadowEqualsPercent = (100)
 

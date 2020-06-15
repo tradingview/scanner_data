@@ -5605,13 +5605,6 @@
       ]
     },
     {
-      "s": "CME:WDCX2023",
-      "f": [
-        null,
-        "CME:WDC"
-      ]
-    },
-    {
       "f": [
         "Metals",
         "COMEX_MINI:MGC"
@@ -6828,6 +6821,13 @@
         "EUREX:FGBL"
       ],
       "s": "EUREX:FGBL1!"
+    },
+    {
+      "s": "EUREX:FGBLH2021",
+      "f": [
+        null,
+        "EUREX:FGBL"
+      ]
     },
     {
       "s": "EUREX:FGBLM2020",
@@ -10981,6 +10981,13 @@
       ]
     },
     {
+      "s": "NYMEX:PAU2021",
+      "f": [
+        null,
+        "NYMEX:PA"
+      ]
+    },
+    {
       "s": "NYMEX:PAZ2020",
       "f": [
         null,
@@ -11031,6 +11038,13 @@
     },
     {
       "s": "NYMEX:PLQ2020",
+      "f": [
+        null,
+        "NYMEX:PL"
+      ]
+    },
+    {
+      "s": "NYMEX:PLU2020",
       "f": [
         null,
         "NYMEX:PL"

@@ -13,6 +13,7 @@ const groups = [
     {url: "british_indices", region: "Europe"},
     {url: "spanish_indices", region: "Europe"},
     {url: "government_bonds", sector: "bond", excludePattern: /^TVC\:GI/},
+    {url: "government_bonds_nodaily", sector: "bond", excludePattern: /^TVC\:GI/},
     {url: "euro_bonds", sector: "bond", region: "Europe"},
     {url: "canadian_bonds", sector: "bond", region: "Americas"},
     {

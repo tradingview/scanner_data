@@ -733,6 +733,20 @@
       ]
     },
     {
+      "s": "HITBTC:BTBBTC",
+      "f": [
+        "BitBall",
+        "BTB"
+      ]
+    },
+    {
+      "s": "HITBTC:BTBUSD",
+      "f": [
+        "BitBall",
+        "BTB"
+      ]
+    },
+    {
       "s": "BITFINEX:BTCBTC",
       "f": [
         "Bitcoin",
@@ -1398,6 +1412,20 @@
       ]
     },
     {
+      "s": "BITTREX:CELOBTC",
+      "f": [
+        "Celo",
+        "CELO"
+      ]
+    },
+    {
+      "s": "BITTREX:CELOUSD",
+      "f": [
+        "Celo",
+        "CELO"
+      ]
+    },
+    {
       "s": "HITBTC:CELBTC",
       "f": [
         "Celsius",
@@ -1577,6 +1605,20 @@
       "f": [
         "CommerceBlock",
         "CBT"
+      ]
+    },
+    {
+      "s": "BINACE:COMPBTC",
+      "f": [
+        "Compound",
+        "COMP"
+      ]
+    },
+    {
+      "s": "BINANCE:COMPUSD",
+      "f": [
+        "Compound",
+        "COMP"
       ]
     },
     {
@@ -2056,6 +2098,20 @@
       ]
     },
     {
+      "s": "BITTREX:DAWNBTC",
+      "f": [
+        "Dawn Protocol",
+        "DAWN"
+      ]
+    },
+    {
+      "s": "BITTREX:DAWNUSD",
+      "f": [
+        "Dawn Protocol",
+        "DAWN"
+      ]
+    },
+    {
       "s": "BITTREX:DEPBTC",
       "f": [
         "DEAPcoin",
@@ -2413,6 +2469,20 @@
       ]
     },
     {
+      "s": "BITFINEX:EDOBTC",
+      "f": [
+        "Eidoo",
+        "EDO"
+      ]
+    },
+    {
+      "s": "BITFINEX:EDOUSD",
+      "f": [
+        "Eidoo",
+        "EDO"
+      ]
+    },
+    {
       "s": "BITTREX:EMC2BTC",
       "f": [
         "Einsteinium",
@@ -2452,6 +2522,20 @@
       "f": [
         "Elastic",
         "XEL"
+      ]
+    },
+    {
+      "s": "HITBTC:ECABTC",
+      "f": [
+        "Electra",
+        "ECA"
+      ]
+    },
+    {
+      "s": "HITBTC:ECAUSD",
+      "f": [
+        "Electra",
+        "ECA"
       ]
     },
     {
@@ -2875,7 +2959,7 @@
       ]
     },
     {
-      "s": "HUOBI:FTTBTC",
+      "s": "BINACE:FTTBTC",
       "f": [
         "FTX Token",
         "FTT"
@@ -3264,6 +3348,20 @@
       "f": [
         "Gifto",
         "GTO"
+      ]
+    },
+    {
+      "s": "HITBTC:GLEECBTC",
+      "f": [
+        "Gleec",
+        "GLEEC"
+      ]
+    },
+    {
+      "s": "HITBTC:GLEECUSD",
+      "f": [
+        "Gleec",
+        "GLEEC"
       ]
     },
     {
@@ -3936,6 +4034,20 @@
       "f": [
         "Jibrel Network",
         "JNT"
+      ]
+    },
+    {
+      "s": "BITTREX:KDABTC",
+      "f": [
+        "Kadena",
+        "KDA"
+      ]
+    },
+    {
+      "s": "BITTREX:KDAUSD",
+      "f": [
+        "Kadena",
+        "KDA"
       ]
     },
     {
@@ -6151,6 +6263,20 @@
       ]
     },
     {
+      "s": "BITFINEX:RINGXBTC",
+      "f": [
+        "RING X PLATFORM",
+        "RINGX"
+      ]
+    },
+    {
+      "s": "BITFINEX:RINGXUSD",
+      "f": [
+        "RING X PLATFORM",
+        "RINGX"
+      ]
+    },
+    {
       "s": "BINANCE:RCNBTC",
       "f": [
         "Ripio Credit Network",
@@ -6246,6 +6372,20 @@
       "f": [
         "Santiment Network Token",
         "SAN"
+      ]
+    },
+    {
+      "s": "HUOBI:SEELEBTC",
+      "f": [
+        "Seele-N",
+        "SEELE"
+      ]
+    },
+    {
+      "s": "HITBTC:SEELEUSD",
+      "f": [
+        "Seele-N",
+        "SEELE"
       ]
     },
     {
@@ -6736,6 +6876,34 @@
       "f": [
         "Storj",
         "STORJ"
+      ]
+    },
+    {
+      "s": "HITBTC:STORMBTC",
+      "f": [
+        "Storm",
+        "STORM"
+      ]
+    },
+    {
+      "s": "HITBTC:STORMUSD",
+      "f": [
+        "Storm",
+        "STORM"
+      ]
+    },
+    {
+      "s": "BINANCE:STMXBTC",
+      "f": [
+        "StormX",
+        "STMX"
+      ]
+    },
+    {
+      "s": "BINANCE:STMXUSD",
+      "f": [
+        "StormX",
+        "STMX"
       ]
     },
     {

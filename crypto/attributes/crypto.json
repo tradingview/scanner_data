@@ -1608,14 +1608,14 @@
       ]
     },
     {
-      "s": "HITBTC:COMPBTC",
+      "s": "BINACE:COMPBTC",
       "f": [
         "Compound",
         "COMP"
       ]
     },
     {
-      "s": "FTX:COMPUSD",
+      "s": "BINANCE:COMPUSD",
       "f": [
         "Compound",
         "COMP"
@@ -2959,16 +2959,16 @@
       ]
     },
     {
-      "s": "HUOBI:FTTBTC",
+      "s": "BINACE:FTTBTC",
       "f": [
-        "FarmaTrust",
+        "FTX Token",
         "FTT"
       ]
     },
     {
-      "s": "FTX:FTTUSD",
+      "s": "BINANCE:FTTUSD",
       "f": [
-        "FarmaTrust",
+        "FTX Token",
         "FTT"
       ]
     },

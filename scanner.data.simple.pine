@@ -256,7 +256,7 @@ plot(PSAR, title = "P.SAR")
 lenMF = 14
 posMF = sum(iff(hlc3 > hlc3[1], hlc3 * volume, 0), lenMF)
 negMF = sum(iff(hlc3 < hlc3[1], hlc3 * volume, 0), lenMF)
-plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
+plot( rsi(posMF, negMF), title = "MoneyFlow" )
 
 // study("My Chaikin Money Flow")
 lenCMF = 20

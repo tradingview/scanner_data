@@ -256,7 +256,7 @@ plot(PSAR, title = "P.SAR")
 lenMF = 14
 posMF = sum(iff(hlc3 > hlc3[1], hlc3 * volume, 0), lenMF)
 negMF = sum(iff(hlc3 < hlc3[1], hlc3 * volume, 0), lenMF)
-plot( negMF != 0 ? rsi(posMF, negMF) : 0, title = "MoneyFlow" )
+plot( rsi(posMF, negMF), title = "MoneyFlow" )
 
 // study("My Chaikin Money Flow")
 lenCMF = 20
@@ -589,8 +589,8 @@ plot(C_GravestoneDoji, title = "Candle.Doji.Gravestone")
 
 
 // study("Harami")
-plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bullish")
-plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsDojiBody and C_IsInsideBar, title = "Candle.Harami.Bearish")
+plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsInsideBar, title = "Candle.Harami.Bullish")
+plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsInsideBar, title = "Candle.Harami.Bearish")
 
 
 //study("Long Shadows")

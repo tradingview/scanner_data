@@ -1678,6 +1678,20 @@
       ]
     },
     {
+      "s": "BITTREX:CNTMBTC",
+      "f": [
+        "Connectome",
+        "CNTM"
+      ]
+    },
+    {
+      "s": "BITTREX:CNTMUSD",
+      "f": [
+        "Connectome",
+        "CNTM"
+      ]
+    },
+    {
       "s": "HITBTC:DAGBTC",
       "f": [
         "Constellation",
@@ -7604,6 +7618,20 @@
       "f": [
         "TrueUSD",
         "TUSD"
+      ]
+    },
+    {
+      "s": "POLONIEX:SWAPBTC",
+      "f": [
+        "TrustSwap",
+        "SWAP"
+      ]
+    },
+    {
+      "s": "POLONIEX:SWAPUSD",
+      "f": [
+        "TrustSwap",
+        "SWAP"
       ]
     },
     {

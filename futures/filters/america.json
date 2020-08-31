@@ -4534,6 +4534,13 @@
       ]
     },
     {
+      "s": "CME:GEU2030",
+      "f": [
+        null,
+        "CME:GE"
+      ]
+    },
+    {
       "s": "CME:GEV2020",
       "f": [
         null,
@@ -5017,6 +5024,13 @@
       ]
     },
     {
+      "s": "CME:NKDU2023",
+      "f": [
+        null,
+        "CME:NKD"
+      ]
+    },
+    {
       "s": "CME:NKDZ2020",
       "f": [
         null,
@@ -5416,14 +5430,14 @@
       ]
     },
     {
-      "s": "CME:WDCX2022",
+      "s": "CME:WDCX2021",
       "f": [
         null,
         "CME:WDC"
       ]
     },
     {
-      "s": "CME:WDCX2023",
+      "s": "CME:WDCX2022",
       "f": [
         null,
         "CME:WDC"
@@ -6312,13 +6326,6 @@
       ]
     },
     {
-      "s": "COMEX:HGQ2020",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGQ2021",
       "f": [
         null,
@@ -6607,13 +6614,6 @@
     },
     {
       "s": "COMEX:SIN2025",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIQ2020",
       "f": [
         null,
         "COMEX:SI"
@@ -10729,13 +10729,6 @@
       ]
     },
     {
-      "s": "NYMEX:PAQ2020",
-      "f": [
-        null,
-        "NYMEX:PA"
-      ]
-    },
-    {
       "s": "NYMEX:PAU2020",
       "f": [
         null,
@@ -10793,13 +10786,6 @@
     },
     {
       "s": "NYMEX:PLN2021",
-      "f": [
-        null,
-        "NYMEX:PL"
-      ]
-    },
-    {
-      "s": "NYMEX:PLQ2020",
       "f": [
         null,
         "NYMEX:PL"

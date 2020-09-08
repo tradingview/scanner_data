@@ -698,4 +698,4 @@ plot(nz(highest(high, 5), allTimeHigh), title="High.5D")
 plot(nz(lowest(low, 5), allTimeLow), title="Low.5D")
 
 // business day
-plot(timestamp(year, month, dayofmonth, 0, 0, 0), title="time_business_day")
+plot(timestamp("UTC", year, month, dayofmonth, 0, 0, 0), title="time_business_day")

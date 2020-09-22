@@ -7887,6 +7887,20 @@
       ]
     },
     {
+      "s": "BITTREX:KRTBTC",
+      "f": [
+        "TerraKRW",
+        "KRT"
+      ]
+    },
+    {
+      "s": "BITTREX:KRTUSD",
+      "f": [
+        "TerraKRW",
+        "KRT"
+      ]
+    },
+    {
       "s": "POLONIEX:USDTBTC",
       "f": [
         "Tether",
@@ -8307,20 +8321,6 @@
       ]
     },
     {
-      "s": "BINANCE:UNIBTC",
-      "f": [
-        "Uniswap",
-        "UNI"
-      ]
-    },
-    {
-      "s": "BINANCE:UNIUSD",
-      "f": [
-        "Uniswap",
-        "UNI"
-      ]
-    },
-    {
       "s": "HITBTC:UBTBTC",
       "f": [
         "Unibright",
@@ -8360,6 +8360,20 @@
       "f": [
         "Unikoin Gold",
         "UKG"
+      ]
+    },
+    {
+      "s": "BINANCE:UNIBTC",
+      "f": [
+        "Uniswap",
+        "UNI"
+      ]
+    },
+    {
+      "s": "BINANCE:UNIUSD",
+      "f": [
+        "Uniswap",
+        "UNI"
       ]
     },
     {

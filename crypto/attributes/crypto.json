@@ -1167,6 +1167,20 @@
       ]
     },
     {
+      "s": "POLONIEX:BIDBTC",
+      "f": [
+        "BLOCKIDCOIN",
+        "BID"
+      ]
+    },
+    {
+      "s": "POLONIEX:BIDUSD",
+      "f": [
+        "BLOCKIDCOIN",
+        "BID"
+      ]
+    },
+    {
       "s": "HITBTC:LNCBTC",
       "f": [
         "Blocklancer",
@@ -2417,6 +2431,20 @@
       "f": [
         "Decred",
         "DCR"
+      ]
+    },
+    {
+      "s": "BITTREX:DFIBTC",
+      "f": [
+        "DeFiChain",
+        "DFI"
+      ]
+    },
+    {
+      "s": "BITTREX:DFIUSD",
+      "f": [
+        "DeFiChain",
+        "DFI"
       ]
     },
     {

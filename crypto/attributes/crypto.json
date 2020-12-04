@@ -2168,6 +2168,20 @@
       ]
     },
     {
+      "s": "HITBTC:CRDTBTC",
+      "f": [
+        "CRDT",
+        "CRDT"
+      ]
+    },
+    {
+      "s": "HITBTC:CRDTUSD",
+      "f": [
+        "CRDT",
+        "CRDT"
+      ]
+    },
+    {
       "s": "HUOBI:LBABTC",
       "f": [
         "Cred",
@@ -7635,6 +7649,20 @@
       ]
     },
     {
+      "s": "BINANCE:SKLBTC",
+      "f": [
+        "SKALE Network",
+        "SKL"
+      ]
+    },
+    {
+      "s": "BINANCE:SKLUSD",
+      "f": [
+        "SKALE Network",
+        "SKL"
+      ]
+    },
+    {
       "s": "HUOBI:SKMBTC",
       "f": [
         "Skrumble Network",
@@ -8360,6 +8388,20 @@
       "f": [
         "TerraKRW",
         "KRT"
+      ]
+    },
+    {
+      "s": "BITFINEX:USTBTC",
+      "f": [
+        "TerraUSD",
+        "UST"
+      ]
+    },
+    {
+      "s": "BITFINEX:USTUSD",
+      "f": [
+        "TerraUSD",
+        "UST"
       ]
     },
     {

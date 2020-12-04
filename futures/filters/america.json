@@ -4737,6 +4737,13 @@
       ]
     },
     {
+      "s": "CME:GEZ2030",
+      "f": [
+        null,
+        "CME:GE"
+      ]
+    },
+    {
       "f": [
         "Agricultural",
         "CME:GF"
@@ -5171,6 +5178,13 @@
       ]
     },
     {
+      "s": "CME:NKDZ2026",
+      "f": [
+        null,
+        "CME:NKD"
+      ]
+    },
+    {
       "f": [
         "Currencies",
         "CME:NOK"
@@ -5529,6 +5543,13 @@
     },
     {
       "s": "CME:WDCX2022",
+      "f": [
+        null,
+        "CME:WDC"
+      ]
+    },
+    {
+      "s": "CME:WDCX2023",
       "f": [
         null,
         "CME:WDC"
@@ -6179,13 +6200,6 @@
       ]
     },
     {
-      "s": "COMEX:GCX2020",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCZ2020",
       "f": [
         null,
@@ -6459,13 +6473,6 @@
       ]
     },
     {
-      "s": "COMEX:HGX2020",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGX2021",
       "f": [
         null,
@@ -6705,13 +6712,6 @@
     },
     {
       "s": "COMEX:SIU2022",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIX2020",
       "f": [
         null,
         "COMEX:SI"
@@ -11114,13 +11114,6 @@
       ]
     },
     {
-      "s": "NYMEX:PAX2020",
-      "f": [
-        null,
-        "NYMEX:PA"
-      ]
-    },
-    {
       "s": "NYMEX:PAZ2020",
       "f": [
         null,
@@ -11178,13 +11171,6 @@
     },
     {
       "s": "NYMEX:PLV2021",
-      "f": [
-        null,
-        "NYMEX:PL"
-      ]
-    },
-    {
-      "s": "NYMEX:PLX2020",
       "f": [
         null,
         "NYMEX:PL"

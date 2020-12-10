@@ -4,11 +4,12 @@ const {URL} = require('url');
 
 const dstPath = "../cfd.json";
 const groups = [
-    {url: "dxy_idc2", region: "Americas"},
+    {url: "iceusa_cfd_indices", region: "Americas"},
     {url: "us_chicago_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_ny_indices", exclude: ["TVC:SPX"]},
     {url: "japan_indices", region: "Asia"},
     {url: "china_indices", region: "Asia"},
+    {url: "hangseng_cfd_indices", region: "Asia"},
     {url: "european_indices", region: "Europe"},
     {url: "british_indices", region: "Europe"},
     {url: "spanish_indices", region: "Europe"},
@@ -20,7 +21,7 @@ const groups = [
         url: "forex_tvc",
         exclude: ["TVC:USOIL", "TVC:UKOIL"]
     },
-    {url: "nzx_tvc_indices", region: "Pacific"},
+    {url: "nzx_cfd_indices", region: "Pacific"},
     {
         url: "fxcm_cfd?domain=tvbs",
         include: ["FX:USOIL", "FX:UKOIL"]
@@ -244,7 +245,7 @@ const groups = [
         "region": "Europe"
     },
     {
-        "url": "south_africa_tvc_indices",
+        "url": "johannesburg_cfd_indices",
         "region": "Africa"
     },
     {

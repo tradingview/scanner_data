@@ -1,4 +1,4 @@
-//@version=2
+//@version=4
 study(title="ScannerData", shorttitle="_SD_")
 
 
@@ -150,21 +150,28 @@ plot(AO, title = "AO")
 plot(AO[1], title = "AO[1]")
 
 // Pivot Points
-pivotX_open = nz(pivotX_open[1],open)
-pivotX_high = nz(pivotX_high[1],high)
-pivotX_low = nz(pivotX_low[1],low)
+pivotX_open = float(na)
+pivotX_open := nz(pivotX_open[1],open)
+pivotX_high = float(na)
+pivotX_high := nz(pivotX_high[1],high)
+pivotX_low = float(na)
+pivotX_low := nz(pivotX_low[1],low)
 
-pivotX_prev_open = nz(pivotX_prev_open[1])
-pivotX_prev_high = nz(pivotX_prev_high[1])
-pivotX_prev_low = nz(pivotX_prev_low[1])
-pivotX_prev_close = nz(pivotX_prev_close[1])
+pivotX_prev_open = float(na)
+pivotX_prev_open := nz(pivotX_prev_open[1])
+pivotX_prev_high = float(na)
+pivotX_prev_high := nz(pivotX_prev_high[1])
+pivotX_prev_low = float(na)
+pivotX_prev_low := nz(pivotX_prev_low[1])
+pivotX_prev_close = float(na)
+pivotX_prev_close := nz(pivotX_prev_close[1])
 
 pivotXGetCurDate()=>
     result = month(time)
-    if isintraday
-        result := interval <= 15 ? dayofmonth(time) : weekofyear(time)
+    if timeframe.isintraday
+        result := timeframe.multiplier <= 15 ? dayofmonth(time) : weekofyear(time)
     else
-        if isweekly or ismonthly
+        if timeframe.isweekly or timeframe.ismonthly
             result := year(time)
     result
 
@@ -303,7 +310,7 @@ uo(ShortLen, MiddlLen, LongLen) =>
     Value4 = sum( close - tl(), ShortLen )
     Value5 = sum( close - tl(), MiddlLen )
     Value6 = sum( close - tl(), LongLen )
-    UO = na
+    UO = float(na)
     if Value1 != 0 and Value2 != 0 and Value3 != 0
     	var0 = LongLen / ShortLen
     	var1 = LongLen / MiddlLen
@@ -354,8 +361,8 @@ calcRecommendMA(left,right)=> na(left) or na(right) ? na : (left == right ? 0 : 
 calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
 
 // calculate trading recommendation based on SMA/EMA
-recMA = 0
-recMAC = 0
+recMA = .0
+recMAC = .0
 
 if not na(close)
 	if not na(SMA10)
@@ -407,7 +414,7 @@ if not na(recVWMA)
     recMA := recMA + recVWMA
     recMAC := recMAC + 1
 
-recIC = na
+recIC = float(na)
 if not (na(IC_Lead1) or na(IC_Lead2) or na(close) or na(close[1]) or na(IC_BLine) or na(IC_CLine))
     recIC := calcRecommend(
      IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine,
@@ -420,8 +427,8 @@ if not na(recIC)
 recMA := recMAC > 0 ? recMA / recMAC : na
 plot(recMA, title="Recommend.MA")
 
-recOther = 0
-recOtherC = 0
+recOther = .0
+recOtherC = .0
 
 recRSI = RSI
 if not(na(recRSI) or na(recRSI[1]))
@@ -453,7 +460,7 @@ if not(na(macdMACD) or na(signalMACD))
     recOtherC := recOtherC + 1
     recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
 
-recStoch_RSI = na
+recStoch_RSI = float(na)
 if not(na(DownTrend) or na(UpTrend) or na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
     recStoch_RSI := calcRecommend(
      DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1],
@@ -463,7 +470,7 @@ if not na(recStoch_RSI)
     recOtherC := recOtherC + 1
     recOther := recOther + recStoch_RSI
 
-recWR = na
+recWR = float(na)
 if not(na(WR) or na(WR[1]))
     recWR := calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
 plot(recWR, title="Rec.WR")
@@ -471,7 +478,7 @@ if not na(recWR)
     recOtherC := recOtherC + 1
     recOther := recOther + recWR
 
-recBBPower = na
+recBBPower = float(na)
 if not(na(UpTrend) or na(DownTrend) or na(BearPower) or na(BearPower[1]) or na(BullPower) or na(BullPower[1]))
     recBBPower := calcRecommend(
      UpTrend and BearPower < 0 and BearPower > BearPower[1],
@@ -481,7 +488,7 @@ if not na(recBBPower)
     recOtherC := recOtherC + 1
     recOther := recOther + recBBPower
 
-recUO = na
+recUO = float(na)
 if not(na(UO))
     recUO := calcRecommend(UO > 70, UO < 30)
 plot(recUO, title="Rec.UO")
@@ -492,8 +499,8 @@ if not na(recUO)
 recOther := recOtherC > 0 ? recOther / recOtherC : na
 plot(recOther, title="Recommend.Other")
 
-recTotal = 0
-recTotalC = 0
+recTotal = .0
+recTotalC = .0
 if not na(recMA)
     recTotal := recTotal + recMA
     recTotalC := recTotalC + 1
@@ -539,8 +546,8 @@ if C_SmallBody and C_Body > 0 and C_BodyLo > hl2 and C_DnShadow >= C_Factor * C_
 	    if C_UpTrend
 	        C_oHangingMan := true
 
-plot(C_oHammer, title = "Candle.Hammer")
-plot(C_oHangingMan, title = "Candle.HangingMan")
+plot(C_oHammer ? 1 : 0, title = "Candle.Hammer")
+plot(C_oHangingMan ? 1 : 0, title = "Candle.HangingMan")
 
 C_oInvertedHammer = false
 C_oShootingStar = false
@@ -551,8 +558,8 @@ if C_SmallBody and C_Body > 0 and C_BodyHi < hl2 and C_UpShadow >= C_Factor * C_
 	    if C_UpTrend
 	        C_oShootingStar := true
 
-plot(C_oInvertedHammer, title = "Candle.InvertedHammer")
-plot(C_oShootingStar, title = "Candle.ShootingStar")
+plot(C_oInvertedHammer ? 1 : 0, title = "Candle.InvertedHammer")
+plot(C_oShootingStar ? 1 : 0, title = "Candle.ShootingStar")
 
 
 // study("Evening & Morning Stars")
@@ -564,8 +571,8 @@ if C_LongBody[2] and C_SmallBody[1] and C_LongBody
     else
         if C_UpTrend and C_WhiteBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_BlackBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo > C_BodyLo[2] and C_BodyLo[1] > C_BodyHi
             C_oEveningStar := true
-plot(C_oMorningStar, title = "Candle.MorningStar")
-plot(C_oEveningStar, title = "Candle.EveningStar")
+plot(C_oMorningStar ? 1 : 0, title = "Candle.MorningStar")
+plot(C_oEveningStar ? 1 : 0, title = "Candle.EveningStar")
 
 
 // study("Marubozu")
@@ -573,8 +580,8 @@ C_MarubozuShadowPercent = (5)
 C_Marubozu = C_LongBody and C_UpShadow <= C_MarubozuShadowPercent/100*C_Body and C_DnShadow <= C_MarubozuShadowPercent/100*C_Body
 C_WhiteMarubozu = C_Marubozu and C_WhiteBody
 C_BlackMarubozu = C_Marubozu and C_BlackBody
-plot(C_BlackMarubozu, title = "Candle.Marubozu.Black")
-plot(C_WhiteMarubozu, title = "Candle.Marubozu.White")
+plot(C_BlackMarubozu ? 1 : 0, title = "Candle.Marubozu.Black")
+plot(C_WhiteMarubozu ? 1 : 0, title = "Candle.Marubozu.White")
 
 
 //study("Doji")
@@ -583,27 +590,27 @@ C_IsDojiBody = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
 C_Doji = C_IsDojiBody and C_ShadowEquals
 C_DragonflyDoji = C_IsDojiBody and C_UpShadow <= C_Body
 C_GravestoneDoji = C_IsDojiBody and C_DnShadow <= C_Body
-plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji, title = "Candle.Doji")
-plot(C_DragonflyDoji, title = "Candle.Doji.Dragonfly")
-plot(C_GravestoneDoji, title = "Candle.Doji.Gravestone")
+plot((C_Doji and not C_DragonflyDoji and not C_GravestoneDoji) ? 1 : 0, title = "Candle.Doji")
+plot(C_DragonflyDoji ? 1 : 0, title = "Candle.Doji.Dragonfly")
+plot(C_GravestoneDoji ? 1 : 0, title = "Candle.Doji.Gravestone")
 
 
 // study("Harami")
-plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsInsideBar, title = "Candle.Harami.Bullish")
-plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsInsideBar, title = "Candle.Harami.Bearish")
+plot((C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsInsideBar) ? 1 : 0, title = "Candle.Harami.Bullish")
+plot((C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsInsideBar) ? 1 : 0, title = "Candle.Harami.Bearish")
 
 
 //study("Long Shadows")
 C_LongShadowPercent = (75)
-plot(C_DnShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Lower")
-plot(C_UpShadow > C_Range/100*C_LongShadowPercent, title = "Candle.LongShadow.Upper")
+plot((C_DnShadow > C_Range/100*C_LongShadowPercent) ? 1 : 0, title = "Candle.LongShadow.Lower")
+plot((C_UpShadow > C_Range/100*C_LongShadowPercent) ? 1 : 0, title = "Candle.LongShadow.Upper")
 
 
 //study("Spinning Top")
 C_SpinningTopPercent = (34)
 C_IsSpinningTop = C_DnShadow >= C_Range / 100 * C_SpinningTopPercent and C_UpShadow >= C_Range / 100 * C_SpinningTopPercent and not C_IsDojiBody
-plot(C_IsSpinningTop and C_WhiteBody, title = "Candle.SpinningTop.White")
-plot(C_IsSpinningTop and C_BlackBody, title = "Candle.SpinningTop.Black")
+plot((C_IsSpinningTop and C_WhiteBody) ? 1 : 0, title = "Candle.SpinningTop.White")
+plot((C_IsSpinningTop and C_BlackBody) ? 1 : 0, title = "Candle.SpinningTop.Black")
 
 
 // study("3 White Soldiers & 3 Black Crows")
@@ -617,31 +624,31 @@ if C_LongBody and C_LongBody[1] and C_LongBody[2]
         C_o3WhiteSoldiers := close > close[1] and close[1] > close[2] and open < close[1] and open > open[1] and open[1] < close[2] and open[1] > open[2] and C_3WSld3WCrw_HaveNotUpShadow and C_3WSld3WCrw_HaveNotUpShadow[1] and C_3WSld3WCrw_HaveNotUpShadow[2]
     if C_BlackBody and C_BlackBody[1] and C_BlackBody[2]
         C_o3BlackCrows := close < close[1] and close[1] < close[2] and open > close[1] and open < open[1] and open[1] > close[2] and open[1] < open[2] and C_3WSld3WCrw_HaveNotDnShadow and C_3WSld3WCrw_HaveNotDnShadow[1] and C_3WSld3WCrw_HaveNotDnShadow[2]
-plot(C_o3WhiteSoldiers, title = "Candle.3WhiteSoldiers")
-plot(C_o3BlackCrows, title = "Candle.3BlackCrows")
+plot(C_o3WhiteSoldiers ? 1 : 0, title = "Candle.3WhiteSoldiers")
+plot(C_o3BlackCrows ? 1 : 0, title = "Candle.3BlackCrows")
 
 
 // study("Engulfing")
-plot(C_DownTrend and C_WhiteBody and C_LongBody and C_BlackBody[1] and C_SmallBody[1] and close >= open[1] and open <= close[1] and ( close > open[1] or open < close[1] ), title = "Candle.Engulfing.Bullish")
-plot(C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody[1] and close <= open[1] and open >= close[1] and ( close < open[1] or open > close[1] ), title = "Candle.Engulfing.Bearish")
+plot((C_DownTrend and C_WhiteBody and C_LongBody and C_BlackBody[1] and C_SmallBody[1] and close >= open[1] and open <= close[1] and ( close > open[1] or open < close[1] )) ? 1 : 0, title = "Candle.Engulfing.Bullish")
+plot((C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody[1] and close <= open[1] and open >= close[1] and ( close < open[1] or open > close[1] )) ? 1 : 0, title = "Candle.Engulfing.Bearish")
 
 
 // study("Abandoned Baby")
-plot(C_DownTrend[2] and C_BlackBody[2] and C_IsDojiBody[1] and low[2] > high[1] and C_WhiteBody and high[1] < low, title = "Candle.AbandonedBaby.Bullish")
-plot(C_UpTrend[2] and C_WhiteBody[2] and C_IsDojiBody[1] and high[2] < low[1] and C_BlackBody and low[1] > high, title = "Candle.AbandonedBaby.Bearish")
+plot((C_DownTrend[2] and C_BlackBody[2] and C_IsDojiBody[1] and low[2] > high[1] and C_WhiteBody and high[1] < low) ? 1 : 0, title = "Candle.AbandonedBaby.Bullish")
+plot((C_UpTrend[2] and C_WhiteBody[2] and C_IsDojiBody[1] and high[2] < low[1] and C_BlackBody and low[1] > high) ? 1 : 0, title = "Candle.AbandonedBaby.Bearish")
 
 
 // study("Tri-Star")
 C_3Dojis = C_Doji[2] and C_Doji[1] and C_Doji
 C_BodyGapUp = C_BodyHi[1] < C_BodyLo
 C_BodyGapDn = C_BodyLo[1] > C_BodyHi
-plot(C_3Dojis and C_DownTrend[2] and C_BodyGapDn[1] and C_BodyGapUp, title = "Candle.TriStar.Bullish")
-plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn, title = "Candle.TriStar.Bearish")
+plot((C_3Dojis and C_DownTrend[2] and C_BodyGapDn[1] and C_BodyGapUp) ? 1 : 0, title = "Candle.TriStar.Bullish")
+plot((C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn) ? 1 : 0, title = "Candle.TriStar.Bearish")
 
 
 // study("Kicking")
-plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low, title = "Candle.Kicking.Bullish")
-plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high, title = "Candle.Kicking.Bearish")
+plot((C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low) ? 1 : 0, title = "Candle.Kicking.Bullish")
+plot((C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high) ? 1 : 0, title = "Candle.Kicking.Bearish")
 
 // study(title="VWAP", shorttitle="VWAP", overlay=true)
 plot(vwap(hlc3), title="VWAP")

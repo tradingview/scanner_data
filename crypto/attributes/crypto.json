@@ -4079,10 +4079,17 @@
       ]
     },
     {
-      "s": "BITTREX:GLMUSD",
+      "s": "BINANCE:GLMBTC",
       "f": [
         "Golem",
-        "GLM"
+        "GNT"
+      ]
+    },
+    {
+      "s": "BINANCE:GLMUSD",
+      "f": [
+        "Golem",
+        "GNT"
       ]
     },
     {
@@ -7019,6 +7026,20 @@
       ]
     },
     {
+      "s": "HITBTC:XPRBTC",
+      "f": [
+        "Proton",
+        "XPR"
+      ]
+    },
+    {
+      "s": "HITBTC:XPRUSD",
+      "f": [
+        "Proton",
+        "XPR"
+      ]
+    },
+    {
       "s": "BITTREX:PTONBTC",
       "f": [
         "PTON",
@@ -7275,6 +7296,20 @@
       "f": [
         "ReddCoin",
         "RDD"
+      ]
+    },
+    {
+      "s": "BINANCE:REEFBTC",
+      "f": [
+        "Reef",
+        "REEF"
+      ]
+    },
+    {
+      "s": "BINANCE:REEFUSD",
+      "f": [
+        "Reef",
+        "REEF"
       ]
     },
     {

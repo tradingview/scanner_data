@@ -226,6 +226,7 @@ const coinsMappingTVvsCoinMktCap = {
     "CSX": "CS",
     "DAD": "DADI",
     "DAT": "DATA",
+    "GLM": "GNT",
     "IOS": "IOST",
     "IOT": "MIOTA",
     "IOTA": "MIOTA",

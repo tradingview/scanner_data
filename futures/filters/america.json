@@ -2910,6 +2910,13 @@
       ]
     },
     {
+      "s": "CME:6CK2021",
+      "f": [
+        null,
+        "CME:6C"
+      ]
+    },
+    {
       "s": "CME:6CM2021",
       "f": [
         null,
@@ -3370,13 +3377,6 @@
         "CME:6L"
       ],
       "s": "CME:6L1!"
-    },
-    {
-      "s": "CME:6LF2021",
-      "f": [
-        null,
-        "CME:6L"
-      ]
     },
     {
       "s": "CME:6LF2022",
@@ -5675,13 +5675,6 @@
       ]
     },
     {
-      "s": "CME:WDCX2023",
-      "f": [
-        null,
-        "CME:WDC"
-      ]
-    },
-    {
       "f": [
         "Metals",
         "COMEX_MINI:MGC"
@@ -6201,6 +6194,13 @@
     },
     {
       "s": "COMEX_MINI:QOZ2021",
+      "f": [
+        null,
+        "COMEX_MINI:QO"
+      ]
+    },
+    {
+      "s": "COMEX_MINI:QOZ2022",
       "f": [
         null,
         "COMEX_MINI:QO"

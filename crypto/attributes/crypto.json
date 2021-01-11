@@ -1153,6 +1153,20 @@
       ]
     },
     {
+      "s": "BITTREX:BTCVBTC",
+      "f": [
+        "Bitcoin Vault",
+        "BTCV"
+      ]
+    },
+    {
+      "s": "BITTREX:BTCVUSD",
+      "f": [
+        "Bitcoin Vault",
+        "BTCV"
+      ]
+    },
+    {
       "s": "HITBTC:BTXBTC",
       "f": [
         "Bitcoin X",
@@ -1612,6 +1626,20 @@
       "f": [
         "Bread",
         "BRD"
+      ]
+    },
+    {
+      "s": "HITBTC:BRGBTC",
+      "f": [
+        "Bridge Oracle",
+        "BRG"
+      ]
+    },
+    {
+      "s": "HITBTC:BRGUSD",
+      "f": [
+        "Bridge Oracle",
+        "BRG"
       ]
     },
     {
@@ -4107,17 +4135,17 @@
       ]
     },
     {
-      "s": "BITFINEX:GNTBTC",
+      "s": "BINANCE:GLMBTC",
       "f": [
         "Golem",
-        "GNT"
+        "GLM"
       ]
     },
     {
-      "s": "BITFINEX:GNTUSD",
+      "s": "BINANCE:GLMUSD",
       "f": [
         "Golem",
-        "GNT"
+        "GLM"
       ]
     },
     {

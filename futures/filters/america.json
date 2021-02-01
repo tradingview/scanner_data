@@ -271,13 +271,6 @@
       "s": "CBOT:EH1!"
     },
     {
-      "s": "CBOT:EHF2021",
-      "f": [
-        null,
-        "CBOT:EH"
-      ]
-    },
-    {
       "s": "CBOT:EHF2022",
       "f": [
         null,
@@ -852,13 +845,6 @@
       "s": "CBOT:ZL1!"
     },
     {
-      "s": "CBOT:ZLF2021",
-      "f": [
-        null,
-        "CBOT:ZL"
-      ]
-    },
-    {
       "s": "CBOT:ZLF2022",
       "f": [
         null,
@@ -1046,13 +1032,6 @@
         "CBOT:ZM"
       ],
       "s": "CBOT:ZM1!"
-    },
-    {
-      "s": "CBOT:ZMF2021",
-      "f": [
-        null,
-        "CBOT:ZM"
-      ]
     },
     {
       "s": "CBOT:ZMF2022",
@@ -1361,13 +1340,6 @@
         "CBOT:ZQ"
       ],
       "s": "CBOT:ZQ1!"
-    },
-    {
-      "s": "CBOT:ZQF2021",
-      "f": [
-        null,
-        "CBOT:ZQ"
-      ]
     },
     {
       "s": "CBOT:ZQF2022",
@@ -1797,13 +1769,6 @@
       "s": "CBOT:ZR1!"
     },
     {
-      "s": "CBOT:ZRF2021",
-      "f": [
-        null,
-        "CBOT:ZR"
-      ]
-    },
-    {
       "s": "CBOT:ZRF2022",
       "f": [
         null,
@@ -1858,13 +1823,6 @@
         "CBOT:ZS"
       ],
       "s": "CBOT:ZS1!"
-    },
-    {
-      "s": "CBOT:ZSF2021",
-      "f": [
-        null,
-        "CBOT:ZS"
-      ]
     },
     {
       "s": "CBOT:ZSF2022",
@@ -2609,6 +2567,13 @@
       ]
     },
     {
+      "s": "CME:6AN2021",
+      "f": [
+        null,
+        "CME:6A"
+      ]
+    },
+    {
       "s": "CME:6AU2021",
       "f": [
         null,
@@ -2771,6 +2736,13 @@
     },
     {
       "s": "CME:6BM2025",
+      "f": [
+        null,
+        "CME:6B"
+      ]
+    },
+    {
+      "s": "CME:6BN2021",
       "f": [
         null,
         "CME:6B"
@@ -3113,6 +3085,13 @@
       ]
     },
     {
+      "s": "CME:6EN2021",
+      "f": [
+        null,
+        "CME:6E"
+      ]
+    },
+    {
       "s": "CME:6EU2021",
       "f": [
         null,
@@ -3275,6 +3254,13 @@
     },
     {
       "s": "CME:6JM2025",
+      "f": [
+        null,
+        "CME:6J"
+      ]
+    },
+    {
+      "s": "CME:6JN2021",
       "f": [
         null,
         "CME:6J"
@@ -3946,6 +3932,13 @@
       ]
     },
     {
+      "s": "CME:6MU2022",
+      "f": [
+        null,
+        "CME:6M"
+      ]
+    },
+    {
       "s": "CME:6MV2021",
       "f": [
         null,
@@ -4205,6 +4198,13 @@
       ]
     },
     {
+      "s": "CME:6ZH2023",
+      "f": [
+        null,
+        "CME:6Z"
+      ]
+    },
+    {
       "s": "CME:6ZJ2021",
       "f": [
         null,
@@ -4296,13 +4296,6 @@
       "s": "CME:BTC1!"
     },
     {
-      "s": "CME:BTCF2021",
-      "f": [
-        null,
-        "CME:BTC"
-      ]
-    },
-    {
       "s": "CME:BTCG2021",
       "f": [
         null,
@@ -4364,13 +4357,6 @@
         "CME:DC"
       ],
       "s": "CME:DC1!"
-    },
-    {
-      "s": "CME:DCF2021",
-      "f": [
-        null,
-        "CME:DC"
-      ]
     },
     {
       "s": "CME:DCF2022",
@@ -4716,6 +4702,13 @@
       ]
     },
     {
+      "s": "CME:GEQ2021",
+      "f": [
+        null,
+        "CME:GE"
+      ]
+    },
+    {
       "s": "CME:GEU2021",
       "f": [
         null,
@@ -4863,13 +4856,6 @@
       "s": "CME:GF1!"
     },
     {
-      "s": "CME:GFF2021",
-      "f": [
-        null,
-        "CME:GF"
-      ]
-    },
-    {
       "s": "CME:GFF2022",
       "f": [
         null,
@@ -4996,6 +4982,13 @@
       ]
     },
     {
+      "s": "CME:HEN2022",
+      "f": [
+        null,
+        "CME:HE"
+      ]
+    },
+    {
       "s": "CME:HEQ2021",
       "f": [
         null,
@@ -5057,13 +5050,6 @@
         "CME:LBS"
       ],
       "s": "CME:LBS1!"
-    },
-    {
-      "s": "CME:LBSF2021",
-      "f": [
-        null,
-        "CME:LBS"
-      ]
     },
     {
       "s": "CME:LBSF2022",
@@ -5654,6 +5640,13 @@
       ]
     },
     {
+      "s": "CME:WDCX2023",
+      "f": [
+        null,
+        "CME:WDC"
+      ]
+    },
+    {
       "f": [
         "Metals",
         "COMEX_MINI:MGC"
@@ -5753,13 +5746,6 @@
     },
     {
       "s": "COMEX_MINI:QCF2022",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCG2021",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6018,13 +6004,6 @@
       "s": "COMEX_MINI:QI1!"
     },
     {
-      "s": "COMEX_MINI:QIF2021",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIF2022",
       "f": [
         null,
@@ -6200,13 +6179,6 @@
       "s": "COMEX:GC1!"
     },
     {
-      "s": "COMEX:GCF2021",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCG2021",
       "f": [
         null,
@@ -6359,13 +6331,6 @@
         "COMEX:HG"
       ],
       "s": "COMEX:HG1!"
-    },
-    {
-      "s": "COMEX:HGF2021",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
     },
     {
       "s": "COMEX:HGF2022",
@@ -6641,13 +6606,6 @@
       "s": "COMEX:LED1!"
     },
     {
-      "s": "COMEX:LEDF2021",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDF2022",
       "f": [
         null,
@@ -6739,13 +6697,6 @@
       "s": "COMEX:SI1!"
     },
     {
-      "s": "COMEX:SIF2021",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIF2022",
       "f": [
         null,
@@ -6768,6 +6719,13 @@
     },
     {
       "s": "COMEX:SIH2022",
+      "f": [
+        null,
+        "COMEX:SI"
+      ]
+    },
+    {
+      "s": "COMEX:SIJ2021",
       "f": [
         null,
         "COMEX:SI"
@@ -7185,13 +7143,6 @@
         "NYMEX_MINI:MBC"
       ],
       "s": "NYMEX_MINI:MBC1!"
-    },
-    {
-      "s": "NYMEX_MINI:MBCF2021",
-      "f": [
-        null,
-        "NYMEX_MINI:MBC"
-      ]
     },
     {
       "s": "NYMEX_MINI:MBCF2022",
@@ -7782,13 +7733,6 @@
       "s": "NYMEX_MINI:QG1!"
     },
     {
-      "s": "NYMEX_MINI:QGF2021",
-      "f": [
-        null,
-        "NYMEX_MINI:QG"
-      ]
-    },
-    {
       "s": "NYMEX_MINI:QGF2022",
       "f": [
         null,
@@ -8293,13 +8237,6 @@
       "s": "NYMEX_MINI:QM1!"
     },
     {
-      "s": "NYMEX_MINI:QMF2021",
-      "f": [
-        null,
-        "NYMEX_MINI:QM"
-      ]
-    },
-    {
       "s": "NYMEX_MINI:QMF2022",
       "f": [
         null,
@@ -8802,13 +8739,6 @@
         "NYMEX:CL"
       ],
       "s": "NYMEX:CL1!"
-    },
-    {
-      "s": "NYMEX:CLF2021",
-      "f": [
-        null,
-        "NYMEX:CL"
-      ]
     },
     {
       "s": "NYMEX:CLF2022",
@@ -9749,13 +9679,6 @@
       "s": "NYMEX:HO1!"
     },
     {
-      "s": "NYMEX:HOF2021",
-      "f": [
-        null,
-        "NYMEX:HO"
-      ]
-    },
-    {
       "s": "NYMEX:HOF2022",
       "f": [
         null,
@@ -10097,13 +10020,6 @@
         "NYMEX:NG"
       ],
       "s": "NYMEX:NG1!"
-    },
-    {
-      "s": "NYMEX:NGF2021",
-      "f": [
-        null,
-        "NYMEX:NG"
-      ]
     },
     {
       "s": "NYMEX:NGF2022",
@@ -11198,13 +11114,6 @@
       "s": "NYMEX:PA1!"
     },
     {
-      "s": "NYMEX:PAF2021",
-      "f": [
-        null,
-        "NYMEX:PA"
-      ]
-    },
-    {
       "s": "NYMEX:PAG2021",
       "f": [
         null,
@@ -11261,13 +11170,6 @@
       "s": "NYMEX:PL1!"
     },
     {
-      "s": "NYMEX:PLF2021",
-      "f": [
-        null,
-        "NYMEX:PL"
-      ]
-    },
-    {
       "s": "NYMEX:PLF2022",
       "f": [
         null,
@@ -11322,13 +11224,6 @@
         "NYMEX:RB"
       ],
       "s": "NYMEX:RB1!"
-    },
-    {
-      "s": "NYMEX:RBF2021",
-      "f": [
-        null,
-        "NYMEX:RB"
-      ]
     },
     {
       "s": "NYMEX:RBF2022",

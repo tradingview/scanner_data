@@ -663,6 +663,13 @@
       ]
     },
     {
+      "s": "CBOT:UBZ2021",
+      "f": [
+        null,
+        "CBOT:UB"
+      ]
+    },
+    {
       "f": [
         "Financials",
         "CBOT:ZB"
@@ -685,6 +692,13 @@
     },
     {
       "s": "CBOT:ZBU2021",
+      "f": [
+        null,
+        "CBOT:ZB"
+      ]
+    },
+    {
+      "s": "CBOT:ZBZ2021",
       "f": [
         null,
         "CBOT:ZB"
@@ -1245,6 +1259,13 @@
     },
     {
       "s": "CBOT:ZNU2021",
+      "f": [
+        null,
+        "CBOT:ZN"
+      ]
+    },
+    {
+      "s": "CBOT:ZNZ2021",
       "f": [
         null,
         "CBOT:ZN"
@@ -4457,6 +4478,13 @@
       ]
     },
     {
+      "s": "CME:BTCU2021",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
       "s": "CME:BTCZ2021",
       "f": [
         null,
@@ -4983,6 +5011,13 @@
     },
     {
       "s": "CME:GFH2021",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
+      "s": "CME:GFH2022",
       "f": [
         null,
         "CME:GF"
@@ -5795,13 +5830,6 @@
     },
     {
       "s": "CME:WDCX2022",
-      "f": [
-        null,
-        "CME:WDC"
-      ]
-    },
-    {
-      "s": "CME:WDCX2023",
       "f": [
         null,
         "CME:WDC"
@@ -7048,6 +7076,13 @@
     },
     {
       "s": "EUREX:FGBLU2021",
+      "f": [
+        null,
+        "EUREX:FGBL"
+      ]
+    },
+    {
+      "s": "EUREX:FGBLZ2021",
       "f": [
         null,
         "EUREX:FGBL"

@@ -717,21 +717,21 @@ calcHolesPerDayPercent(minBarsPerSession) =>
                 bars := bars + 1
         if days == 5
             break
-    holes > 0 ? holes / days / minBarsPerSession * 100 : na
+    holes > 0 ? holes / days / minBarsPerSession * 100 : 0
 
 calcMaxHolesPerDayPercent()=>
     var maxHolesPerDayPercent = 0
     var resetStatDays = 0
     if dayofmonth!=dayofmonth[1]
         resetStatDays := resetStatDays + 1
-    if resetStatDays > 10
+    if resetStatDays > rVolAvgDays
         resetStatDays := 0
         maxHolesPerDayPercent := 0
     maxHolesPerDayPercent := max(calcHolesPerDayPercent(5*60/timeframe.multiplier), maxHolesPerDayPercent)
     maxHolesPerDayPercent
 
 calcRVolume() =>
-    time1d = security(syminfo.tickerid, "1D", time)
+    time1d = security(syminfo.tickerid, "1D", time, lookahead=true)
     volNow = rVolCalcSumVol(0, 1, time1d)
     if barstate.isrealtime and ((timenow - time1d) < (24 * 60 * 60 * 1000))
         // adjustment for RT bar
@@ -741,7 +741,5 @@ calcRVolume() =>
         volNow := volNow * koeff
     volNow / (rVolCalcSumVol(1, rVolAvgDays + 1, time1d) / rVolAvgDays)
 
-realtiveVolume10d = calcRVolume()
-if calcMaxHolesPerDayPercent() > 10
-    realtiveVolume10d := na
+realtiveVolume10d = calcRVolume() * (1 - calcMaxHolesPerDayPercent() / 100.0)
 plot(realtiveVolume10d, title="relative_volume_intraday", linewidth = 2)

@@ -6767,6 +6767,20 @@
       ]
     },
     {
+      "s": "BITTREX:ROOMBTC",
+      "f": [
+        "OptionRoom",
+        "ROOM"
+      ]
+    },
+    {
+      "s": "BITTREX:ROOMUSD",
+      "f": [
+        "OptionRoom",
+        "ROOM"
+      ]
+    },
+    {
       "s": "HITBTC:OPTBTC",
       "f": [
         "Opus",
@@ -7072,6 +7086,20 @@
       "f": [
         "Perlin",
         "PERL"
+      ]
+    },
+    {
+      "s": "BINANCE:PERPBTC",
+      "f": [
+        "Perpetual Protocol",
+        "PERP"
+      ]
+    },
+    {
+      "s": "BINANCE:PERPUSD",
+      "f": [
+        "Perpetual Protocol",
+        "PERP"
       ]
     },
     {
@@ -7887,6 +7915,20 @@
       ]
     },
     {
+      "s": "BITTREX:REVVBTC",
+      "f": [
+        "REVV",
+        "REVV"
+      ]
+    },
+    {
+      "s": "BITTREX:REVVUSD",
+      "f": [
+        "REVV",
+        "REVV"
+      ]
+    },
+    {
       "s": "BITFINEX:RIFBTC",
       "f": [
         "RIF Token",
@@ -8150,6 +8192,20 @@
       "f": [
         "ShipChain",
         "SHIP"
+      ]
+    },
+    {
+      "s": "BITTREX:SPIBTC",
+      "f": [
+        "Shopping",
+        "SPI"
+      ]
+    },
+    {
+      "s": "BITTREX:SPIUSD",
+      "f": [
+        "Shopping",
+        "SPI"
       ]
     },
     {

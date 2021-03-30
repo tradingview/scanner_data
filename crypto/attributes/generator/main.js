@@ -73,7 +73,7 @@ const scanRequestForPairs = {
 
 function scan(req, loc) {
     loc = loc || defaultScannerLocation;
-    const resp = requestSync("POST", `http://scanner${loc ? '-' + loc : ''}.tradingview.com/crypto/scan2`, {
+    const resp = requestSync("POST", `https://scanner${loc ? '-' + loc : ''}.tradingview.com/crypto/scan2`, {
         json: req
     });
     if (resp.statusCode != 200) {

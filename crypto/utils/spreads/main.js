@@ -12,7 +12,7 @@ function checkResponce(resp) {
 }
 
 function scan(r) {
-    const scanResp = requestSync("POST", "http://scanner-sfo.tradingview.com/crypto/scan2", {json: r});
+    const scanResp = requestSync("POST", "https://scanner.tradingview.com/crypto/scan2", {json: r});
     checkResponce(scanResp);
     return JSON.parse(scanResp.getBody());
 }

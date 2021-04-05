@@ -8,11 +8,11 @@ const groups = [
     {url: "us_chicago_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_ny_indices", exclude: ["TVC:SPX"]},
     {url: "japan_indices", region: "Asia"},
-    {url: "china_indices", region: "Asia"},
+    {url: "shanghai_cfd_indices", region: "Asia"},
     {url: "hangseng_cfd_indices", region: "Asia"},
     {url: "european_indices", region: "Europe"},
     {url: "british_indices", region: "Europe"},
-    {url: "spanish_indices", region: "Europe"},
+    {url: "bme_cfd_indices", region: "Europe"},
     {url: "government_bonds", sector: "bond", excludePattern: /^TVC\:GI/},
     {url: "government_bonds_nodaily", sector: "bond", excludePattern: /^TVC\:GI/},
     {url: "euro_bonds", sector: "bond", region: "Europe"},
@@ -75,7 +75,7 @@ const groups = [
         region: "Pacific"
     },
     {
-        url: "korean_tvc_indices",
+        url: "korea_main_cfd_indices",
         include: ["TVC:KOSPI"],
         region: "Asia"
     },

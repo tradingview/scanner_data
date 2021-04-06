@@ -19,7 +19,7 @@ const scanRequestForPairs = {
         sortBy: "volume",
         sortOrder: "desc"
     },
-    columns: ["description"],
+    columns: ["description", "base_currency_id"],
     filter: [
         {
             left: "name",
@@ -205,56 +205,42 @@ function getExchange(s) {
     return s.split(':')[0];
 }
 
+const tickers = {};
+const selectedSymbols = {};
+const descriptions = {};
+const skipUSD = {};
+const skipBTC = {};
+
 JSON.parse(scan(scanRequestForPairs).getBody()).symbols.forEach(function (s) {
-    const ticker = getTicker(s.s);
-    if (!tickers[ticker] && !skipSymbol(s.s)) {
-        tickers[ticker] = ticker;
-        const token = getFirstCurrency(s.s);
-        const ss = selectedSymbols[token] || [];
-        ss.push(s.s);
-        selectedSymbols[token] = ss;
-
-        descriptions[s.s] = s.f[0];
+    const cur = s.f[1];
+    if (!cur.includes("XTVC")) {
+        return;
     }
-});
-
-const coinsMappingTVvsCoinMktCap = {
-    "AIO": "AION",
-    "ATO": "ATOM",
-    "BAB": "BCH",
-    "BCU": "BTU",
-    "BQX": "ETHOS",
-    "CSX": "CS",
-    "DAD": "DADI",
-    "DAT": "DATA",
-    "IOS": "IOST",
-    "IOT": "MIOTA",
-    "IOTA": "MIOTA",
-    "IQX": "IQ",
-    "MIT": "MITH",
-    "MNA": "MANA",
-    "NANO": "XRB",
-    "NBT": "USNBT",
-    "NCA": "NCASH",
-    "OMN": "OMNI",
-    "POY": "POLY",
-    "PROPY": "PRO",
-    "QSH": "QASH",
-    "QTM": "QTUM",
-    "SEE": "SEER",
-    "SNG": "SNGLS",
-    "STJ": "STORJ",
-    "STR": "XLM",
-    "VSY": "VSYS",
-    "YOYO": "YOYOW",
-    "YYW": "YOYOW"
-};
-
-
-const currencyMapping = {};
-const currencyRevertedMapping = coinsMappingTVvsCoinMktCap;
-Object.keys(coinsMappingTVvsCoinMktCap).forEach(function (k) {
-    currencyMapping[coinsMappingTVvsCoinMktCap[k]] = k;
+    const ticker = getTicker(s.s);
+    if (tickers[ticker] && skipSymbol(s.s)) {
+        return;
+    }
+    if (!ticker.endsWith("BTC") && !ticker.endsWith("USD")) {
+        return;
+    }
+    const token = cur.slice(4);
+    if (ticker.endsWith("BTC")) {
+        if (skipBTC[token]) {
+            return;
+        }
+        skipBTC[token] = true
+    }
+    if (ticker.endsWith("USD")) {
+        if (skipUSD[token]) {
+            return;
+        }
+        skipUSD[token] = true
+    }
+    tickers[ticker] = token;
+    const ss = selectedSymbols[token] || [];
+    ss.push(s.s);
+    selectedSymbols[token] = ss;
+    descriptions[s.s] = s.f[0];
 });
 
 const explicitCoinNames = {
@@ -275,8 +261,9 @@ function isUnDesirableExchange(exc) {
 try {
     const coins = {};
     JSON.parse(fs.readFileSync(dstPath)).symbols.forEach(function (s) {
-        const key = getFirstCurrency(s.s);
-        const coin = coins[key] || {exchanges: [], symbols: []};
+        const cur = getTicker(symbol);
+        const key =  cur.substring(0, cur.length - 3);
+        const coin = coins[key] || { exchanges: [], symbols: [] };
         coin.symbols.push(s);
         coin.exchanges.push(getExchange(s.s));
         coins[key] = coin;
@@ -286,7 +273,6 @@ try {
         {
             dstSymbols = dstSymbols.concat(coin.symbols);
             delete selectedSymbols[key];
-            delete selectedSymbols[currencyRevertedMapping[key]];
         }
     });
 } catch (exc) {
@@ -296,30 +282,28 @@ try {
 const missingPairs = [];
 
 coinCapRes.forEach(function (s) {
-    [s.symbol, currencyMapping[s.symbol]].forEach(key => {
-        const symbols = selectedSymbols[key];
-        if (symbols) {
-            if (symbols.length === 2) {
-                const explicitName = explicitCoinNames[s.symbol] || s.name;
-                symbols.forEach(function (s1) {
-                    dstSymbols.push({
-                        s: s1,
-                        f: [
-                            explicitName,
-                            s.symbol]
-                    });
-
-                    const sDescr = descriptions[s1];
-                    if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
-                        console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
-                    }
+    const symbols = selectedSymbols[s.symbol];
+    if (symbols) {
+        if (symbols.length === 2) {
+            let explicitName = explicitCoinNames[s.symbol] || s.name;
+            symbols.forEach(function (s1) {
+                dstSymbols.push({
+                    s: s1,
+                    f: [
+                        explicitName,
+                        s.symbol]
                 });
-            } else if (symbols.length === 1) {
-                missingPairs.push(getExchange(symbols[0]) + ':' + key + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
-            }
-            delete selectedSymbols[key];
+
+                const sDescr = descriptions[s1];
+                if (sDescr.toLowerCase().indexOf(explicitName.toLowerCase()) < 0) {
+                    console.error("Symbol " + s1 + " has description '" + sDescr + "' without coin-name '" + explicitName + "'");
+                }
+            });
+        } else if (symbols.length === 1) {
+            missingPairs.push(getExchange(symbols[0]) + ':' + s.symbol + (symbols[0].endsWith("BTC") ? 'USD' : 'BTC'));
         }
-    });
+        delete selectedSymbols[s.symbol];
+    }
 });
 
 const skippedCoins = [

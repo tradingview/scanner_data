@@ -139,9 +139,9 @@ plot(avg(donchUpper, donchLower), title="DonchCh20.Middle")
 
 // Hull Moving Average
 hullMALength = 9
-hullMA_n2ma=2*wma(close,round(hullMALength/2))
+hullMA_n2ma=2*wma(close, hullMALength/2)
 hullMA_nma=wma(close,hullMALength)
-HullMA9 = wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength)))
+HullMA9 = wma(hullMA_n2ma - hullMA_nma, floor(sqrt(hullMALength)))
 plot(HullMA9, title = "HullMA9")
 
 // Awesome Oscillator
@@ -433,7 +433,7 @@ recOtherC = .0
 recRSI = RSI
 if not(na(recRSI) or na(recRSI[1]))
     recOtherC := recOtherC + 1
-    recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+    recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] < recRSI, recRSI > 70 and recRSI[1] > recRSI)
 
 if not(na(kStoch) or na(dStoch) or na(kStoch[1]) or na(dStoch[1]))
     recOtherC := recOtherC + 1
@@ -450,11 +450,11 @@ if not(na(adxValue) or na(adxPlus[1]) or na(adxMinus[1]) or na(adxPlus) or na(ad
 
 if not(na(AO) or na(AO[1]))
     recOtherC := recOtherC + 1
-    recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+    recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1] and AO[2] > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1] and AO[2] < AO[1]))
 
 if not(na(Mom) or na(Mom[1]))
     recOtherC := recOtherC + 1
-    recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+    recOther := recOther + calcRecommend(Mom > Mom[1], Mom < Mom[1])
 
 if not(na(macdMACD) or na(signalMACD))
     recOtherC := recOtherC + 1
@@ -686,8 +686,27 @@ plot(allTimeHigh, title="High.All")
 plot(allTimeLow, title="Low.All")
 plot(allTimeHigh, title="High.All.Calc")
 plot(allTimeLow, title="Low.All.Calc")
-plot(nz(highest(high, 21*12), allTimeHigh), title="price_52_week_high")
-plot(nz(lowest(low, 21*12), allTimeLow), title="price_52_week_low")
+custom_lowest(x, l) =>
+    res = x
+    max_bars_back(x, 366)
+    res := x
+    for i = 0 to l
+        res := min(res, x[i])
+    res
+custom_highest(x, l) =>
+    res = x
+    max_bars_back(x, 366)
+    for i = 0 to l
+        res := max(res, x[i])
+    res
+bar_index_52wago = valuewhen(time < timenow - 1000*60*60*24*7*52, bar_index, 1)
+diff = bar_index - bar_index_52wago
+index = bar_index > 0 ? bar_index : 1
+len = diff > 0 ? diff : index
+lowest_52w = custom_lowest(low, len)
+highest_52w = custom_highest(high, len)
+plot(highest_52w, title="price_52_week_high")
+plot(lowest_52w, title="price_52_week_low")
 plot(nz(highest(high, 126), allTimeHigh), title="High.6M")
 plot(nz(lowest(low, 126), allTimeLow), title="Low.6M")
 plot(nz(highest(high, 63), allTimeHigh), title="High.3M")

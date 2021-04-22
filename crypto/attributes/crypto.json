@@ -1454,13 +1454,6 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
-      "f": [
-        "BitShares",
-        "BTS"
-      ]
-    },
-    {
       "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
@@ -1468,7 +1461,7 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1476,6 +1469,13 @@
     },
     {
       "s": "BINANCE:BTSUSD",
+      "f": [
+        "BitShares",
+        "BTS"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -4020,6 +4020,20 @@
       "f": [
         "Fantom",
         "FTM"
+      ]
+    },
+    {
+      "s": "BINANCE:BARBTC",
+      "f": [
+        "FC Barcelona Fan Token",
+        "BAR"
+      ]
+    },
+    {
+      "s": "BINANCE:BARUSD",
+      "f": [
+        "FC Barcelona Fan Token",
+        "BAR"
       ]
     },
     {

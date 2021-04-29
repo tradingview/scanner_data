@@ -1482,14 +1482,14 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -7275,6 +7275,20 @@
       "f": [
         "Numeraire",
         "NMR"
+      ]
+    },
+    {
+      "s": "BITTREX:NVDABTC",
+      "f": [
+        "NVIDIA tokenized stock FTX",
+        "NVDA"
+      ]
+    },
+    {
+      "s": "BITTREX:NVDAUSD",
+      "f": [
+        "NVIDIA tokenized stock FTX",
+        "NVDA"
       ]
     },
     {

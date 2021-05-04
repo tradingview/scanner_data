@@ -741,5 +741,7 @@ calcRVolume() =>
         volNow := volNow * koeff
     volNow / (rVolCalcSumVol(1, rVolAvgDays + 1, time1d) / rVolAvgDays)
 
-realtiveVolume10d = calcRVolume() * (1 - calcMaxHolesPerDayPercent() / 100.0)
+realtiveVolume10d = calcRVolume()
+if calcMaxHolesPerDayPercent() > 35
+    realtiveVolume10d := na
 plot(realtiveVolume10d, title="relative_volume_intraday", linewidth = 2)

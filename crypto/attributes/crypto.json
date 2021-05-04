@@ -1524,14 +1524,14 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -2312,6 +2312,20 @@
       "f": [
         "ChatCoin",
         "CHAT"
+      ]
+    },
+    {
+      "s": "BITFINEX:XCHBTC",
+      "f": [
+        "Chia Network",
+        "XCH"
+      ]
+    },
+    {
+      "s": "BITFINEX:XCHUSD",
+      "f": [
+        "Chia Network",
+        "XCH"
       ]
     },
     {

@@ -663,6 +663,20 @@
       ]
     },
     {
+      "s": "BITTREX:ARDXBTC",
+      "f": [
+        "ArdCoin",
+        "ARDX"
+      ]
+    },
+    {
+      "s": "BITTREX:ARDXUSD",
+      "f": [
+        "ArdCoin",
+        "ARDX"
+      ]
+    },
+    {
       "s": "BITTREX:ARDRBTC",
       "f": [
         "Ardor",
@@ -2224,20 +2238,6 @@
       ]
     },
     {
-      "s": "BITFINEX:XCHBTC",
-      "f": [
-        "CryptoFranc",
-        "XCH"
-      ]
-    },
-    {
-      "s": "BITFINEX:XCHUSD",
-      "f": [
-        "CryptoFranc",
-        "XCH"
-      ]
-    },
-    {
       "s": "BINANCE:CHZBTC",
       "f": [
         "Chiliz",
@@ -2690,6 +2690,20 @@
       "f": [
         "CRYPTO20",
         "C20"
+      ]
+    },
+    {
+      "s": "BITFINEX:XCHBTC",
+      "f": [
+        "CryptoFranc",
+        "XCH"
+      ]
+    },
+    {
+      "s": "BITFINEX:XCHUSD",
+      "f": [
+        "CryptoFranc",
+        "XCH"
       ]
     },
     {
@@ -4636,6 +4650,20 @@
       "f": [
         "Google tokenized stock Bittrex",
         "GOOGL"
+      ]
+    },
+    {
+      "s": "BITFINEX:GNTBTC",
+      "f": [
+        "GreenTrust",
+        "GNT"
+      ]
+    },
+    {
+      "s": "BITFINEX:GNTUSD",
+      "f": [
+        "GreenTrust",
+        "GNT"
       ]
     },
     {

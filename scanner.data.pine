@@ -251,7 +251,7 @@ plot(volume*close*syminfo.pointvalue, title="Value.Traded")
 lengthKltChnl = 20
 multKltChnl = 1
 maKltChnl = ema(close, lengthKltChnl)
-rangemaKltChnl = rma(tr(true), lengthKltChnl)
+rangemaKltChnl = rma(atr(lengthKltChnl), lengthKltChnl)
 plot(maKltChnl + rangemaKltChnl * multKltChnl, title = "KltChnl.upper")
 plot(maKltChnl - rangemaKltChnl * multKltChnl, title = "KltChnl.lower")
 

@@ -733,6 +733,20 @@
       ]
     },
     {
+      "s": "BITTREX:ARDXBTC",
+      "f": [
+        "ArdCoin",
+        "ARDX"
+      ]
+    },
+    {
+      "s": "BITTREX:ARDXUSD",
+      "f": [
+        "ArdCoin",
+        "ARDX"
+      ]
+    },
+    {
       "s": "BITTREX:ARDRBTC",
       "f": [
         "Ardor",
@@ -1524,14 +1538,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"

@@ -1524,14 +1524,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -7782,6 +7782,20 @@
       ]
     },
     {
+      "s": "BITFINEX:OXYBTC",
+      "f": [
+        "Oxygen",
+        "OXY"
+      ]
+    },
+    {
+      "s": "BITFINEX:OXYUSD",
+      "f": [
+        "Oxygen",
+        "OXY"
+      ]
+    },
+    {
       "s": "BINANCE:CAKEBTC",
       "f": [
         "PancakeSwap",
@@ -8909,14 +8923,14 @@
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
@@ -10176,6 +10190,20 @@
       ]
     },
     {
+      "s": "BITTREX:TSMBTC",
+      "f": [
+        "Taiwan Semiconductor Mfg tokenized stock FTX",
+        "TSM"
+      ]
+    },
+    {
+      "s": "BITTREX:TSMUSD",
+      "f": [
+        "Taiwan Semiconductor Mfg tokenized stock FTX",
+        "TSM"
+      ]
+    },
+    {
       "s": "BITTREX:XTPBTC",
       "f": [
         "Tap",
@@ -10614,6 +10642,20 @@
       "f": [
         "Travala.com",
         "AVA"
+      ]
+    },
+    {
+      "s": "BITTREX:TFCBTC",
+      "f": [
+        "Triforce Protocol",
+        "TFC"
+      ]
+    },
+    {
+      "s": "BITTREX:TFCUSD",
+      "f": [
+        "Triforce Protocol",
+        "TFC"
       ]
     },
     {

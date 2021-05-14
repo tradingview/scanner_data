@@ -688,14 +688,14 @@ plot(allTimeHigh, title="High.All.Calc")
 plot(allTimeLow, title="Low.All.Calc")
 custom_lowest(x, l) =>
     res = x
-    max_bars_back(x, 366)
+    max_bars_back(x, 370)
     res := x
     for i = 0 to l
         res := min(res, x[i])
     res
 custom_highest(x, l) =>
     res = x
-    max_bars_back(x, 366)
+    max_bars_back(x, 370)
     for i = 0 to l
         res := max(res, x[i])
     res

@@ -6,7 +6,7 @@ const dstPath = "../cfd.json";
 const groups = [
     {url: "dxy_idc2", region: "Americas"},
     {url: "us_chicago_indices", region: "Americas", include: ["TVC:VIX"]},
-    {url: "us_ny_indices", exclude: ["TVC:SPX"]},
+    {url: "us_cfd_indices", exclude: ["TVC:SPX"]},
     {url: "japan_indices", region: "Asia"},
     {url: "shanghai_cfd_indices", region: "Asia"},
     {url: "hangseng_cfd_indices", region: "Asia"},

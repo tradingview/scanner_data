@@ -5,7 +5,7 @@ const {URL} = require('url');
 const dstPath = "../cfd.json";
 const groups = [
     {url: "dxy_idc2", region: "Americas"},
-    {url: "us_chicago_indices", region: "Americas", include: ["TVC:VIX"]},
+    {url: "cboe_cfd_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_cfd_indices", exclude: ["TVC:SPX"]},
     {url: "japan_indices", region: "Asia"},
     {url: "shanghai_cfd_indices", region: "Asia"},
@@ -118,7 +118,7 @@ const groups = [
         region: "Americas"
     },
     {
-        url: "singapore_tvc_indices",
+        url: "singapore_cfd_indices",
         include: ["TVC:STI"],
         region: "Asia"
     },

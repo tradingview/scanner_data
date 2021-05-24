@@ -957,6 +957,20 @@
       ]
     },
     {
+      "s": "HITBTC:BAKEBTC",
+      "f": [
+        "BakeryToken",
+        "BAKE"
+      ]
+    },
+    {
+      "s": "HITBTC:BAKEUSD",
+      "f": [
+        "BakeryToken",
+        "BAKE"
+      ]
+    },
+    {
       "s": "BINANCE:BALBTC",
       "f": [
         "Balancer",
@@ -10915,6 +10929,20 @@
       "f": [
         "Vertcoin",
         "VTC"
+      ]
+    },
+    {
+      "s": "HITBTC:VTHOBTC",
+      "f": [
+        "VeThor Token",
+        "VTHO"
+      ]
+    },
+    {
+      "s": "HITBTC:VTHOUSD",
+      "f": [
+        "VeThor Token",
+        "VTHO"
       ]
     },
     {

@@ -1034,6 +1034,20 @@
       ]
     },
     {
+      "s": "HITBTC:BAKEBTC",
+      "f": [
+        "BakeryToken",
+        "BAKE"
+      ]
+    },
+    {
+      "s": "HITBTC:BAKEUSD",
+      "f": [
+        "BakeryToken",
+        "BAKE"
+      ]
+    },
+    {
       "s": "BINANCE:BALBTC",
       "f": [
         "Balancer",
@@ -1552,14 +1566,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -8993,14 +9007,14 @@
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
@@ -11412,6 +11426,20 @@
       "f": [
         "Vertcoin",
         "VTC"
+      ]
+    },
+    {
+      "s": "HITBTC:VTHOBTC",
+      "f": [
+        "VeThor Token",
+        "VTHO"
+      ]
+    },
+    {
+      "s": "HITBTC:VTHOUSD",
+      "f": [
+        "VeThor Token",
+        "VTHO"
       ]
     },
     {

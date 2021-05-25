@@ -957,6 +957,20 @@
       ]
     },
     {
+      "s": "HITBTC:BAKEBTC",
+      "f": [
+        "BakeryToken",
+        "BAKE"
+      ]
+    },
+    {
+      "s": "HITBTC:BAKEUSD",
+      "f": [
+        "BakeryToken",
+        "BAKE"
+      ]
+    },
+    {
       "s": "BINANCE:BALBTC",
       "f": [
         "Balancer",
@@ -2263,6 +2277,20 @@
       "f": [
         "Chiliz",
         "CHZ"
+      ]
+    },
+    {
+      "s": "BITFINEX:CHEXBTC",
+      "f": [
+        "Chintai",
+        "CHEX"
+      ]
+    },
+    {
+      "s": "BITFINEX:CHEXUSD",
+      "f": [
+        "Chintai",
+        "CHEX"
       ]
     },
     {
@@ -6144,6 +6172,20 @@
       ]
     },
     {
+      "s": "HUOBI:MDXBTC",
+      "f": [
+        "Mdex",
+        "MDX"
+      ]
+    },
+    {
+      "s": "BINANCE:MDXUSD",
+      "f": [
+        "Mdex",
+        "MDX"
+      ]
+    },
+    {
       "s": "BINANCE:OMBTC",
       "f": [
         "MANTRA DAO",
@@ -8171,6 +8213,20 @@
       "f": [
         "Pundi X",
         "NPXS"
+      ]
+    },
+    {
+      "s": "HUOBI:PUNDIXBTC",
+      "f": [
+        "Pundi X[new]",
+        "PUNDIX"
+      ]
+    },
+    {
+      "s": "HITBTC:PUNDIXUSD",
+      "f": [
+        "Pundi X[new]",
+        "PUNDIX"
       ]
     },
     {
@@ -10887,6 +10943,20 @@
       "f": [
         "Vertcoin",
         "VTC"
+      ]
+    },
+    {
+      "s": "HITBTC:VTHOBTC",
+      "f": [
+        "VeThor Token",
+        "VTHO"
+      ]
+    },
+    {
+      "s": "HITBTC:VTHOUSD",
+      "f": [
+        "VeThor Token",
+        "VTHO"
       ]
     },
     {

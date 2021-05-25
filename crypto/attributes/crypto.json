@@ -1552,13 +1552,6 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
-      "f": [
-        "BitShares",
-        "BTS"
-      ]
-    },
-    {
       "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
@@ -1566,7 +1559,7 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1574,6 +1567,13 @@
     },
     {
       "s": "BINANCE:BTSUSD",
+      "f": [
+        "BitShares",
+        "BTS"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -6491,6 +6491,20 @@
       "f": [
         "Maker",
         "MKR"
+      ]
+    },
+    {
+      "s": "HUOBI:MDXBTC",
+      "f": [
+        "Mandala Exchange Token",
+        "MDX"
+      ]
+    },
+    {
+      "s": "BINANCE:MDXUSD",
+      "f": [
+        "Mandala Exchange Token",
+        "MDX"
       ]
     },
     {

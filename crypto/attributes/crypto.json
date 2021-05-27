@@ -1566,14 +1566,14 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -8678,6 +8678,20 @@
       ]
     },
     {
+      "s": "BITFINEX:QTFBTC",
+      "f": [
+        "Quantfury Token",
+        "QTF"
+      ]
+    },
+    {
+      "s": "BITFINEX:QTFUSD",
+      "f": [
+        "Quantfury Token",
+        "QTF"
+      ]
+    },
+    {
       "s": "BINANCE:QSPBTC",
       "f": [
         "Quantstamp",
@@ -9035,14 +9049,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"

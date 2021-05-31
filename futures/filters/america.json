@@ -4590,6 +4590,13 @@
       ]
     },
     {
+      "s": "CME:GEM2031",
+      "f": [
+        null,
+        "CME:GE"
+      ]
+    },
+    {
       "s": "CME:GEN2021",
       "f": [
         null,
@@ -5143,6 +5150,13 @@
       ]
     },
     {
+      "s": "CME:NKDM2024",
+      "f": [
+        null,
+        "CME:NKD"
+      ]
+    },
+    {
       "s": "CME:NKDU2021",
       "f": [
         null,
@@ -5570,6 +5584,13 @@
       ]
     },
     {
+      "s": "CME:WDCX2023",
+      "f": [
+        null,
+        "CME:WDC"
+      ]
+    },
+    {
       "f": [
         "Metals",
         "COMEX_MINI:MGC"
@@ -5781,13 +5802,6 @@
     },
     {
       "s": "COMEX_MINI:QCK2026",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCM2021",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6159,13 +6173,6 @@
     },
     {
       "s": "COMEX:GCJ2023",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCK2021",
       "f": [
         null,
         "COMEX:GC"
@@ -10995,13 +11002,6 @@
       ]
     },
     {
-      "s": "NYMEX:PAK2021",
-      "f": [
-        null,
-        "NYMEX:PA"
-      ]
-    },
-    {
       "s": "NYMEX:PAM2021",
       "f": [
         null,
@@ -11059,13 +11059,6 @@
     },
     {
       "s": "NYMEX:PLJ2022",
-      "f": [
-        null,
-        "NYMEX:PL"
-      ]
-    },
-    {
-      "s": "NYMEX:PLK2021",
       "f": [
         null,
         "NYMEX:PL"

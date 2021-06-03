@@ -7,7 +7,7 @@ const groups = [
     {url: "iceusa_cfd_indices", region: "Americas"},
     {url: "cboe_cfd_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_cfd_indices", exclude: ["TVC:SPX"]},
-    {url: "japan_indices", region: "Asia"},
+    {url: "japan_cfd_indices", region: "Asia"},
     {url: "shanghai_cfd_indices", region: "Asia"},
     {url: "hangseng_cfd_indices", region: "Asia"},
     {url: "european_cfd_indices", region: "Europe"},

@@ -1,0 +1,4342 @@
+{
+  "symbols": [
+    {
+      "s": "BER:01H"
+    },
+    {
+      "s": "BER:02M"
+    },
+    {
+      "s": "BER:05Y"
+    },
+    {
+      "s": "BER:07G"
+    },
+    {
+      "s": "BER:096"
+    },
+    {
+      "s": "BER:0CG"
+    },
+    {
+      "s": "BER:0CI"
+    },
+    {
+      "s": "BER:0HV"
+    },
+    {
+      "s": "BER:0JR"
+    },
+    {
+      "s": "BER:0M7"
+    },
+    {
+      "s": "BER:0PY"
+    },
+    {
+      "s": "BER:0Q3"
+    },
+    {
+      "s": "BER:0QF"
+    },
+    {
+      "s": "BER:0S6"
+    },
+    {
+      "s": "BER:0U6"
+    },
+    {
+      "s": "BER:0VVB"
+    },
+    {
+      "s": "BER:0W0"
+    },
+    {
+      "s": "BER:0WH"
+    },
+    {
+      "s": "BER:0WP"
+    },
+    {
+      "s": "BER:0YU"
+    },
+    {
+      "s": "BER:0ZC"
+    },
+    {
+      "s": "BER:12DA"
+    },
+    {
+      "s": "BER:185"
+    },
+    {
+      "s": "BER:18I"
+    },
+    {
+      "s": "BER:18V"
+    },
+    {
+      "s": "BER:1COV"
+    },
+    {
+      "s": "BER:1F9"
+    },
+    {
+      "s": "BER:1FC"
+    },
+    {
+      "s": "BER:1HM"
+    },
+    {
+      "s": "BER:1J2"
+    },
+    {
+      "s": "BER:1KT"
+    },
+    {
+      "s": "BER:1MA"
+    },
+    {
+      "s": "BER:1N8"
+    },
+    {
+      "s": "BER:1NBA"
+    },
+    {
+      "s": "BER:1OK"
+    },
+    {
+      "s": "BER:1PC"
+    },
+    {
+      "s": "BER:1Q5"
+    },
+    {
+      "s": "BER:1QZ"
+    },
+    {
+      "s": "BER:1SI"
+    },
+    {
+      "s": "BER:1TU"
+    },
+    {
+      "s": "BER:1TY"
+    },
+    {
+      "s": "BER:1WE"
+    },
+    {
+      "s": "BER:1WR"
+    },
+    {
+      "s": "BER:1YD"
+    },
+    {
+      "s": "BER:1YO"
+    },
+    {
+      "s": "BER:1ZB"
+    },
+    {
+      "s": "BER:27S"
+    },
+    {
+      "s": "BER:2B5"
+    },
+    {
+      "s": "BER:2C0"
+    },
+    {
+      "s": "BER:2CU"
+    },
+    {
+      "s": "BER:2E5"
+    },
+    {
+      "s": "BER:2EM"
+    },
+    {
+      "s": "BER:2FE"
+    },
+    {
+      "s": "BER:2GB"
+    },
+    {
+      "s": "BER:2HP"
+    },
+    {
+      "s": "BER:2HQ"
+    },
+    {
+      "s": "BER:2HRA"
+    },
+    {
+      "s": "BER:2II"
+    },
+    {
+      "s": "BER:2INV"
+    },
+    {
+      "s": "BER:2JM"
+    },
+    {
+      "s": "BER:2KD"
+    },
+    {
+      "s": "BER:2M6"
+    },
+    {
+      "s": "BER:2NJ"
+    },
+    {
+      "s": "BER:2ON"
+    },
+    {
+      "s": "BER:2OY"
+    },
+    {
+      "s": "BER:2PN"
+    },
+    {
+      "s": "BER:2PP"
+    },
+    {
+      "s": "BER:2Q8"
+    },
+    {
+      "s": "BER:2QO"
+    },
+    {
+      "s": "BER:2QU"
+    },
+    {
+      "s": "BER:2S3"
+    },
+    {
+      "s": "BER:2X0"
+    },
+    {
+      "s": "BER:2XT"
+    },
+    {
+      "s": "BER:30T"
+    },
+    {
+      "s": "BER:33L"
+    },
+    {
+      "s": "BER:35G"
+    },
+    {
+      "s": "BER:39K"
+    },
+    {
+      "s": "BER:3AD1"
+    },
+    {
+      "s": "BER:3AD2"
+    },
+    {
+      "s": "BER:3AI"
+    },
+    {
+      "s": "BER:3E2"
+    },
+    {
+      "s": "BER:3E7"
+    },
+    {
+      "s": "BER:3HM"
+    },
+    {
+      "s": "BER:3IT"
+    },
+    {
+      "s": "BER:3KO"
+    },
+    {
+      "s": "BER:3LN"
+    },
+    {
+      "s": "BER:3LV"
+    },
+    {
+      "s": "BER:3ND"
+    },
+    {
+      "s": "BER:3PQ"
+    },
+    {
+      "s": "BER:3QD"
+    },
+    {
+      "s": "BER:3RB"
+    },
+    {
+      "s": "BER:3RCA"
+    },
+    {
+      "s": "BER:3RT"
+    },
+    {
+      "s": "BER:3S9"
+    },
+    {
+      "s": "BER:3V64"
+    },
+    {
+      "s": "BER:3XH"
+    },
+    {
+      "s": "BER:3YB"
+    },
+    {
+      "s": "BER:41L"
+    },
+    {
+      "s": "BER:472"
+    },
+    {
+      "s": "BER:47I"
+    },
+    {
+      "s": "BER:48Z"
+    },
+    {
+      "s": "BER:4A91"
+    },
+    {
+      "s": "BER:4AB"
+    },
+    {
+      "s": "BER:4BY"
+    },
+    {
+      "s": "BER:4D3"
+    },
+    {
+      "s": "BER:4DS"
+    },
+    {
+      "s": "BER:4F1"
+    },
+    {
+      "s": "BER:4I1"
+    },
+    {
+      "s": "BER:4K8"
+    },
+    {
+      "s": "BER:4KI"
+    },
+    {
+      "s": "BER:4LG"
+    },
+    {
+      "s": "BER:4MGN"
+    },
+    {
+      "s": "BER:4OJ"
+    },
+    {
+      "s": "BER:4OR1"
+    },
+    {
+      "s": "BER:4PG"
+    },
+    {
+      "s": "BER:4PN"
+    },
+    {
+      "s": "BER:4S0"
+    },
+    {
+      "s": "BER:4SK"
+    },
+    {
+      "s": "BER:4XT"
+    },
+    {
+      "s": "BER:59N"
+    },
+    {
+      "s": "BER:5AP"
+    },
+    {
+      "s": "BER:5CV"
+    },
+    {
+      "s": "BER:5EA"
+    },
+    {
+      "s": "BER:5G5"
+    },
+    {
+      "s": "BER:5GH"
+    },
+    {
+      "s": "BER:5Q5"
+    },
+    {
+      "s": "BER:5UM"
+    },
+    {
+      "s": "BER:5UR"
+    },
+    {
+      "s": "BER:5VD"
+    },
+    {
+      "s": "BER:5XB"
+    },
+    {
+      "s": "BER:5Z0"
+    },
+    {
+      "s": "BER:5ZM"
+    },
+    {
+      "s": "BER:60A"
+    },
+    {
+      "s": "BER:639"
+    },
+    {
+      "s": "BER:66B"
+    },
+    {
+      "s": "BER:68V"
+    },
+    {
+      "s": "BER:690D"
+    },
+    {
+      "s": "BER:6BE"
+    },
+    {
+      "s": "BER:6D81"
+    },
+    {
+      "s": "BER:6EQ"
+    },
+    {
+      "s": "BER:6LY"
+    },
+    {
+      "s": "BER:6MK"
+    },
+    {
+      "s": "BER:6N5"
+    },
+    {
+      "s": "BER:6P8"
+    },
+    {
+      "s": "BER:6Z1"
+    },
+    {
+      "s": "BER:703"
+    },
+    {
+      "s": "BER:724"
+    },
+    {
+      "s": "BER:7AA"
+    },
+    {
+      "s": "BER:7DB"
+    },
+    {
+      "s": "BER:7DG"
+    },
+    {
+      "s": "BER:7GB"
+    },
+    {
+      "s": "BER:7GG"
+    },
+    {
+      "s": "BER:7HP"
+    },
+    {
+      "s": "BER:7NX"
+    },
+    {
+      "s": "BER:7PI"
+    },
+    {
+      "s": "BER:7SN"
+    },
+    {
+      "s": "BER:7TC"
+    },
+    {
+      "s": "BER:7VS"
+    },
+    {
+      "s": "BER:81R"
+    },
+    {
+      "s": "BER:8BO"
+    },
+    {
+      "s": "BER:8DEA"
+    },
+    {
+      "s": "BER:8GA"
+    },
+    {
+      "s": "BER:8GC"
+    },
+    {
+      "s": "BER:8GM"
+    },
+    {
+      "s": "BER:8L8C"
+    },
+    {
+      "s": "BER:8NI"
+    },
+    {
+      "s": "BER:8NX"
+    },
+    {
+      "s": "BER:8PO"
+    },
+    {
+      "s": "BER:8S0"
+    },
+    {
+      "s": "BER:8TI"
+    },
+    {
+      "s": "BER:8TRA"
+    },
+    {
+      "s": "BER:93M1"
+    },
+    {
+      "s": "BER:9AA"
+    },
+    {
+      "s": "BER:9AE"
+    },
+    {
+      "s": "BER:9TC"
+    },
+    {
+      "s": "BER:9TS"
+    },
+    {
+      "s": "BER:A07"
+    },
+    {
+      "s": "BER:A1G"
+    },
+    {
+      "s": "BER:A1OS"
+    },
+    {
+      "s": "BER:A1T"
+    },
+    {
+      "s": "BER:A3P"
+    },
+    {
+      "s": "BER:A4A"
+    },
+    {
+      "s": "BER:A4Y"
+    },
+    {
+      "s": "BER:A58"
+    },
+    {
+      "s": "BER:A62"
+    },
+    {
+      "s": "BER:A6T"
+    },
+    {
+      "s": "BER:A7A"
+    },
+    {
+      "s": "BER:AAD"
+    },
+    {
+      "s": "BER:AAG"
+    },
+    {
+      "s": "BER:AAM"
+    },
+    {
+      "s": "BER:AAQ1"
+    },
+    {
+      "s": "BER:AB9"
+    },
+    {
+      "s": "BER:ABEA"
+    },
+    {
+      "s": "BER:ABEC"
+    },
+    {
+      "s": "BER:ABG"
+    },
+    {
+      "s": "BER:ABL"
+    },
+    {
+      "s": "BER:ABR"
+    },
+    {
+      "s": "BER:ABW"
+    },
+    {
+      "s": "BER:ACO1"
+    },
+    {
+      "s": "BER:ACO2"
+    },
+    {
+      "s": "BER:ACT"
+    },
+    {
+      "s": "BER:ACWN"
+    },
+    {
+      "s": "BER:ACX"
+    },
+    {
+      "s": "BER:ADB"
+    },
+    {
+      "s": "BER:ADE"
+    },
+    {
+      "s": "BER:ADJ"
+    },
+    {
+      "s": "BER:ADL"
+    },
+    {
+      "s": "BER:ADM"
+    },
+    {
+      "s": "BER:ADN1"
+    },
+    {
+      "s": "BER:ADP"
+    },
+    {
+      "s": "BER:ADS"
+    },
+    {
+      "s": "BER:ADV"
+    },
+    {
+      "s": "BER:AEC1"
+    },
+    {
+      "s": "BER:AEIN"
+    },
+    {
+      "s": "BER:AEND"
+    },
+    {
+      "s": "BER:AEP"
+    },
+    {
+      "s": "BER:AES"
+    },
+    {
+      "s": "BER:AFL"
+    },
+    {
+      "s": "BER:AFT"
+    },
+    {
+      "s": "BER:AFW"
+    },
+    {
+      "s": "BER:AFX"
+    },
+    {
+      "s": "BER:AG1"
+    },
+    {
+      "s": "BER:AGB2"
+    },
+    {
+      "s": "BER:AGJ"
+    },
+    {
+      "s": "BER:AH9"
+    },
+    {
+      "s": "BER:AHOG"
+    },
+    {
+      "s": "BER:AIL"
+    },
+    {
+      "s": "BER:AINN"
+    },
+    {
+      "s": "BER:AIR"
+    },
+    {
+      "s": "BER:AIXA"
+    },
+    {
+      "s": "BER:AIY"
+    },
+    {
+      "s": "BER:AJ91"
+    },
+    {
+      "s": "BER:AK1"
+    },
+    {
+      "s": "BER:AK3"
+    },
+    {
+      "s": "BER:AKX"
+    },
+    {
+      "s": "BER:ALD"
+    },
+    {
+      "s": "BER:ALG"
+    },
+    {
+      "s": "BER:ALI"
+    },
+    {
+      "s": "BER:ALS"
+    },
+    {
+      "s": "BER:ALV"
+    },
+    {
+      "s": "BER:ALZC"
+    },
+    {
+      "s": "BER:AM3D"
+    },
+    {
+      "s": "BER:AMD"
+    },
+    {
+      "s": "BER:AMG"
+    },
+    {
+      "s": "BER:AMI"
+    },
+    {
+      "s": "BER:AMMN"
+    },
+    {
+      "s": "BER:AMZ"
+    },
+    {
+      "s": "BER:ANGA"
+    },
+    {
+      "s": "BER:ANL"
+    },
+    {
+      "s": "BER:AO1B"
+    },
+    {
+      "s": "BER:AOF"
+    },
+    {
+      "s": "BER:AOMD"
+    },
+    {
+      "s": "BER:AP2"
+    },
+    {
+      "s": "BER:AP3"
+    },
+    {
+      "s": "BER:AP6"
+    },
+    {
+      "s": "BER:APC"
+    },
+    {
+      "s": "BER:APM"
+    },
+    {
+      "s": "BER:APPH"
+    },
+    {
+      "s": "BER:AR4"
+    },
+    {
+      "s": "BER:ARL"
+    },
+    {
+      "s": "BER:ARRD"
+    },
+    {
+      "s": "BER:ART"
+    },
+    {
+      "s": "BER:ASG"
+    },
+    {
+      "s": "BER:ASI1"
+    },
+    {
+      "s": "BER:ASKN"
+    },
+    {
+      "s": "BER:ASL"
+    },
+    {
+      "s": "BER:ASME"
+    },
+    {
+      "s": "BER:AT1"
+    },
+    {
+      "s": "BER:ATD"
+    },
+    {
+      "s": "BER:AU2"
+    },
+    {
+      "s": "BER:AUD"
+    },
+    {
+      "s": "BER:AUS"
+    },
+    {
+      "s": "BER:AV1"
+    },
+    {
+      "s": "BER:AVES"
+    },
+    {
+      "s": "BER:AWC"
+    },
+    {
+      "s": "BER:AWM"
+    },
+    {
+      "s": "BER:AXA"
+    },
+    {
+      "s": "BER:AXL1"
+    },
+    {
+      "s": "BER:AXP"
+    },
+    {
+      "s": "BER:AZ2"
+    },
+    {
+      "s": "BER:AZP"
+    },
+    {
+      "s": "BER:AZU"
+    },
+    {
+      "s": "BER:AZZ2"
+    },
+    {
+      "s": "BER:B3X"
+    },
+    {
+      "s": "BER:B4B"
+    },
+    {
+      "s": "BER:B4B3"
+    },
+    {
+      "s": "BER:B5A"
+    },
+    {
+      "s": "BER:B5H"
+    },
+    {
+      "s": "BER:B7E"
+    },
+    {
+      "s": "BER:B7J"
+    },
+    {
+      "s": "BER:B8A"
+    },
+    {
+      "s": "BER:B8F"
+    },
+    {
+      "s": "BER:BAC"
+    },
+    {
+      "s": "BER:BAS"
+    },
+    {
+      "s": "BER:BAYN"
+    },
+    {
+      "s": "BER:BB2"
+    },
+    {
+      "s": "BER:BBDB"
+    },
+    {
+      "s": "BER:BBK"
+    },
+    {
+      "s": "BER:BBY"
+    },
+    {
+      "s": "BER:BC8"
+    },
+    {
+      "s": "BER:BCO"
+    },
+    {
+      "s": "BER:BCY"
+    },
+    {
+      "s": "BER:BDT"
+    },
+    {
+      "s": "BER:BEI"
+    },
+    {
+      "s": "BER:BEZ"
+    },
+    {
+      "s": "BER:BFSA"
+    },
+    {
+      "s": "BER:BGT"
+    },
+    {
+      "s": "BER:BGW"
+    },
+    {
+      "s": "BER:BHJC"
+    },
+    {
+      "s": "BER:BI1"
+    },
+    {
+      "s": "BER:BIG1"
+    },
+    {
+      "s": "BER:BIJ"
+    },
+    {
+      "s": "BER:BIL"
+    },
+    {
+      "s": "BER:BIO"
+    },
+    {
+      "s": "BER:BIO3"
+    },
+    {
+      "s": "BER:BIRG"
+    },
+    {
+      "s": "BER:BJ6"
+    },
+    {
+      "s": "BER:BJEB"
+    },
+    {
+      "s": "BER:BJI"
+    },
+    {
+      "s": "BER:BKHT"
+    },
+    {
+      "s": "BER:BL8"
+    },
+    {
+      "s": "BER:BLQA"
+    },
+    {
+      "s": "BER:BM8"
+    },
+    {
+      "s": "BER:BMT"
+    },
+    {
+      "s": "BER:BMW"
+    },
+    {
+      "s": "BER:BMW3"
+    },
+    {
+      "s": "BER:BN9"
+    },
+    {
+      "s": "BER:BNN"
+    },
+    {
+      "s": "BER:BNP"
+    },
+    {
+      "s": "BER:BNR"
+    },
+    {
+      "s": "BER:BNT1"
+    },
+    {
+      "s": "BER:BOP"
+    },
+    {
+      "s": "BER:BOSS"
+    },
+    {
+      "s": "BER:BOX"
+    },
+    {
+      "s": "BER:BOY"
+    },
+    {
+      "s": "BER:BPE5"
+    },
+    {
+      "s": "BER:BRE"
+    },
+    {
+      "s": "BER:BRH"
+    },
+    {
+      "s": "BER:BRL1"
+    },
+    {
+      "s": "BER:BRM"
+    },
+    {
+      "s": "BER:BRYN"
+    },
+    {
+      "s": "BER:BRZ0"
+    },
+    {
+      "s": "BER:BSD2"
+    },
+    {
+      "s": "BER:BSL"
+    },
+    {
+      "s": "BER:BSN"
+    },
+    {
+      "s": "BER:BSP"
+    },
+    {
+      "s": "BER:BST"
+    },
+    {
+      "s": "BER:BSX"
+    },
+    {
+      "s": "BER:BTBB"
+    },
+    {
+      "s": "BER:BTL"
+    },
+    {
+      "s": "BER:BTQ"
+    },
+    {
+      "s": "BER:BU3"
+    },
+    {
+      "s": "BER:BUWA"
+    },
+    {
+      "s": "BER:BVB"
+    },
+    {
+      "s": "BER:BWB"
+    },
+    {
+      "s": "BER:BWQ"
+    },
+    {
+      "s": "BER:BX1B"
+    },
+    {
+      "s": "BER:BY6"
+    },
+    {
+      "s": "BER:BYNN"
+    },
+    {
+      "s": "BER:BYW"
+    },
+    {
+      "s": "BER:BYW6"
+    },
+    {
+      "s": "BER:BZ1"
+    },
+    {
+      "s": "BER:BZF1"
+    },
+    {
+      "s": "BER:C0M"
+    },
+    {
+      "s": "BER:C0Q"
+    },
+    {
+      "s": "BER:C0V"
+    },
+    {
+      "s": "BER:C1V"
+    },
+    {
+      "s": "BER:C2L"
+    },
+    {
+      "s": "BER:C4C"
+    },
+    {
+      "s": "BER:C4S1"
+    },
+    {
+      "s": "BER:C53"
+    },
+    {
+      "s": "BER:C6O"
+    },
+    {
+      "s": "BER:C6T"
+    },
+    {
+      "s": "BER:C9F"
+    },
+    {
+      "s": "BER:CAR"
+    },
+    {
+      "s": "BER:CAT1"
+    },
+    {
+      "s": "BER:CBHD"
+    },
+    {
+      "s": "BER:CBK"
+    },
+    {
+      "s": "BER:CC1"
+    },
+    {
+      "s": "BER:CCAP"
+    },
+    {
+      "s": "BER:CCC3"
+    },
+    {
+      "s": "BER:CCW"
+    },
+    {
+      "s": "BER:CDM1"
+    },
+    {
+      "s": "BER:CDS"
+    },
+    {
+      "s": "BER:CE2"
+    },
+    {
+      "s": "BER:CEA"
+    },
+    {
+      "s": "BER:CEC"
+    },
+    {
+      "s": "BER:CEC1"
+    },
+    {
+      "s": "BER:CEK"
+    },
+    {
+      "s": "BER:CF9"
+    },
+    {
+      "s": "BER:CFC"
+    },
+    {
+      "s": "BER:CFX"
+    },
+    {
+      "s": "BER:CG4"
+    },
+    {
+      "s": "BER:CGL"
+    },
+    {
+      "s": "BER:CGN"
+    },
+    {
+      "s": "BER:CH1A"
+    },
+    {
+      "s": "BER:CHL"
+    },
+    {
+      "s": "BER:CHU"
+    },
+    {
+      "s": "BER:CHV"
+    },
+    {
+      "s": "BER:CHZ"
+    },
+    {
+      "s": "BER:CI9"
+    },
+    {
+      "s": "BER:CIE1"
+    },
+    {
+      "s": "BER:CIG"
+    },
+    {
+      "s": "BER:CIS"
+    },
+    {
+      "s": "BER:CIT"
+    },
+    {
+      "s": "BER:CJW1"
+    },
+    {
+      "s": "BER:CL2"
+    },
+    {
+      "s": "BER:CLIQ"
+    },
+    {
+      "s": "BER:CLRN"
+    },
+    {
+      "s": "BER:CMC"
+    },
+    {
+      "s": "BER:CNWK"
+    },
+    {
+      "s": "BER:CO3A"
+    },
+    {
+      "s": "BER:CO9"
+    },
+    {
+      "s": "BER:COK"
+    },
+    {
+      "s": "BER:CON"
+    },
+    {
+      "s": "BER:COP"
+    },
+    {
+      "s": "BER:CORE"
+    },
+    {
+      "s": "BER:COY"
+    },
+    {
+      "s": "BER:COZ"
+    },
+    {
+      "s": "BER:CP9"
+    },
+    {
+      "s": "BER:CPA"
+    },
+    {
+      "s": "BER:CPF"
+    },
+    {
+      "s": "BER:CPM"
+    },
+    {
+      "s": "BER:CPP"
+    },
+    {
+      "s": "BER:CPX"
+    },
+    {
+      "s": "BER:CQD"
+    },
+    {
+      "s": "BER:CR6"
+    },
+    {
+      "s": "BER:CRIN"
+    },
+    {
+      "s": "BER:CRP"
+    },
+    {
+      "s": "BER:CRZK"
+    },
+    {
+      "s": "BER:CSC"
+    },
+    {
+      "s": "BER:CSG"
+    },
+    {
+      "s": "BER:CSH"
+    },
+    {
+      "s": "BER:CSQ"
+    },
+    {
+      "s": "BER:CTO"
+    },
+    {
+      "s": "BER:CTP2"
+    },
+    {
+      "s": "BER:CTX"
+    },
+    {
+      "s": "BER:CU2"
+    },
+    {
+      "s": "BER:CUM"
+    },
+    {
+      "s": "BER:CUP"
+    },
+    {
+      "s": "BER:CVA"
+    },
+    {
+      "s": "BER:CVS"
+    },
+    {
+      "s": "BER:CWC"
+    },
+    {
+      "s": "BER:CWN"
+    },
+    {
+      "s": "BER:CXGH"
+    },
+    {
+      "s": "BER:CXR"
+    },
+    {
+      "s": "BER:CXU"
+    },
+    {
+      "s": "BER:CXX"
+    },
+    {
+      "s": "BER:CY1K"
+    },
+    {
+      "s": "BER:CYR"
+    },
+    {
+      "s": "BER:CYTH"
+    },
+    {
+      "s": "BER:CYY"
+    },
+    {
+      "s": "BER:D2MN"
+    },
+    {
+      "s": "BER:D6H"
+    },
+    {
+      "s": "BER:D7C"
+    },
+    {
+      "s": "BER:D7N"
+    },
+    {
+      "s": "BER:DAI"
+    },
+    {
+      "s": "BER:DAM"
+    },
+    {
+      "s": "BER:DAP"
+    },
+    {
+      "s": "BER:DAR"
+    },
+    {
+      "s": "BER:DB1"
+    },
+    {
+      "s": "BER:DBAN"
+    },
+    {
+      "s": "BER:DBD"
+    },
+    {
+      "s": "BER:DBI"
+    },
+    {
+      "s": "BER:DBK"
+    },
+    {
+      "s": "BER:DC4"
+    },
+    {
+      "s": "BER:DC6"
+    },
+    {
+      "s": "BER:DC6C"
+    },
+    {
+      "s": "BER:DC7"
+    },
+    {
+      "s": "BER:DCA"
+    },
+    {
+      "s": "BER:DCO"
+    },
+    {
+      "s": "BER:DDN"
+    },
+    {
+      "s": "BER:DEF"
+    },
+    {
+      "s": "BER:DEQ"
+    },
+    {
+      "s": "BER:DEX"
+    },
+    {
+      "s": "BER:DEZ"
+    },
+    {
+      "s": "BER:DFTK"
+    },
+    {
+      "s": "BER:DFV"
+    },
+    {
+      "s": "BER:DGN"
+    },
+    {
+      "s": "BER:DGR"
+    },
+    {
+      "s": "BER:DHER"
+    },
+    {
+      "s": "BER:DIC"
+    },
+    {
+      "s": "BER:DIE"
+    },
+    {
+      "s": "BER:DIN"
+    },
+    {
+      "s": "BER:DIS"
+    },
+    {
+      "s": "BER:DLG"
+    },
+    {
+      "s": "BER:DLX"
+    },
+    {
+      "s": "BER:DLY"
+    },
+    {
+      "s": "BER:DMP"
+    },
+    {
+      "s": "BER:DMRE"
+    },
+    {
+      "s": "BER:DNQ"
+    },
+    {
+      "s": "BER:DO2"
+    },
+    {
+      "s": "BER:DOD"
+    },
+    {
+      "s": "BER:DOQ"
+    },
+    {
+      "s": "BER:DOV"
+    },
+    {
+      "s": "BER:DPW"
+    },
+    {
+      "s": "BER:DQW1"
+    },
+    {
+      "s": "BER:DR0"
+    },
+    {
+      "s": "BER:DRI"
+    },
+    {
+      "s": "BER:DRW3"
+    },
+    {
+      "s": "BER:DRW8"
+    },
+    {
+      "s": "BER:DSG"
+    },
+    {
+      "s": "BER:DSM2"
+    },
+    {
+      "s": "BER:DT3"
+    },
+    {
+      "s": "BER:DTD2"
+    },
+    {
+      "s": "BER:DTE"
+    },
+    {
+      "s": "BER:DUE"
+    },
+    {
+      "s": "BER:DVL"
+    },
+    {
+      "s": "BER:DWD"
+    },
+    {
+      "s": "BER:DWNI"
+    },
+    {
+      "s": "BER:DWS"
+    },
+    {
+      "s": "BER:DY2"
+    },
+    {
+      "s": "BER:DY6"
+    },
+    {
+      "s": "BER:DYH"
+    },
+    {
+      "s": "BER:E0P"
+    },
+    {
+      "s": "BER:E2F"
+    },
+    {
+      "s": "BER:E3X1"
+    },
+    {
+      "s": "BER:E4C"
+    },
+    {
+      "s": "BER:E8X"
+    },
+    {
+      "s": "BER:EAD"
+    },
+    {
+      "s": "BER:EAR"
+    },
+    {
+      "s": "BER:EB2"
+    },
+    {
+      "s": "BER:EBA"
+    },
+    {
+      "s": "BER:EBK"
+    },
+    {
+      "s": "BER:EBO"
+    },
+    {
+      "s": "BER:ECF"
+    },
+    {
+      "s": "BER:ECJ"
+    },
+    {
+      "s": "BER:ECK"
+    },
+    {
+      "s": "BER:ECV"
+    },
+    {
+      "s": "BER:ECX"
+    },
+    {
+      "s": "BER:ED01"
+    },
+    {
+      "s": "BER:ED4"
+    },
+    {
+      "s": "BER:EDC"
+    },
+    {
+      "s": "BER:EDL"
+    },
+    {
+      "s": "BER:EFF"
+    },
+    {
+      "s": "BER:EFX"
+    },
+    {
+      "s": "BER:EG4"
+    },
+    {
+      "s": "BER:EIN3"
+    },
+    {
+      "s": "BER:EIX"
+    },
+    {
+      "s": "BER:EJT1"
+    },
+    {
+      "s": "BER:EJXB"
+    },
+    {
+      "s": "BER:EK7"
+    },
+    {
+      "s": "BER:EKT"
+    },
+    {
+      "s": "BER:ELAA"
+    },
+    {
+      "s": "BER:ELB"
+    },
+    {
+      "s": "BER:ELG"
+    },
+    {
+      "s": "BER:ELX"
+    },
+    {
+      "s": "BER:EM3A"
+    },
+    {
+      "s": "BER:EM7A"
+    },
+    {
+      "s": "BER:EMH"
+    },
+    {
+      "s": "BER:EMR"
+    },
+    {
+      "s": "BER:ENA"
+    },
+    {
+      "s": "BER:ENI"
+    },
+    {
+      "s": "BER:ENL"
+    },
+    {
+      "s": "BER:ENR"
+    },
+    {
+      "s": "BER:ENUR"
+    },
+    {
+      "s": "BER:EO5"
+    },
+    {
+      "s": "BER:EOAN"
+    },
+    {
+      "s": "BER:EOT"
+    },
+    {
+      "s": "BER:EQ6"
+    },
+    {
+      "s": "BER:EQS"
+    },
+    {
+      "s": "BER:ERCB"
+    },
+    {
+      "s": "BER:ERCG"
+    },
+    {
+      "s": "BER:ERT"
+    },
+    {
+      "s": "BER:ERWE"
+    },
+    {
+      "s": "BER:ESY"
+    },
+    {
+      "s": "BER:ETE"
+    },
+    {
+      "s": "BER:ETG"
+    },
+    {
+      "s": "BER:ETY"
+    },
+    {
+      "s": "BER:EUK3"
+    },
+    {
+      "s": "BER:EUZ"
+    },
+    {
+      "s": "BER:EV1"
+    },
+    {
+      "s": "BER:EVD"
+    },
+    {
+      "s": "BER:EVK"
+    },
+    {
+      "s": "BER:EVN"
+    },
+    {
+      "s": "BER:EVT"
+    },
+    {
+      "s": "BER:EW1"
+    },
+    {
+      "s": "BER:EWL"
+    },
+    {
+      "s": "BER:EX9"
+    },
+    {
+      "s": "BER:EXC"
+    },
+    {
+      "s": "BER:EXL"
+    },
+    {
+      "s": "BER:EYWN"
+    },
+    {
+      "s": "BER:EZ5"
+    },
+    {
+      "s": "BER:EZQ"
+    },
+    {
+      "s": "BER:F03"
+    },
+    {
+      "s": "BER:F3A"
+    },
+    {
+      "s": "BER:F3C"
+    },
+    {
+      "s": "BER:F6H"
+    },
+    {
+      "s": "BER:FAA"
+    },
+    {
+      "s": "BER:FAS"
+    },
+    {
+      "s": "BER:FB2A"
+    },
+    {
+      "s": "BER:FBEN"
+    },
+    {
+      "s": "BER:FC9"
+    },
+    {
+      "s": "BER:FDO"
+    },
+    {
+      "s": "BER:FDX"
+    },
+    {
+      "s": "BER:FE7"
+    },
+    {
+      "s": "BER:FEV"
+    },
+    {
+      "s": "BER:FEX"
+    },
+    {
+      "s": "BER:FEY2"
+    },
+    {
+      "s": "BER:FF24"
+    },
+    {
+      "s": "BER:FFO1"
+    },
+    {
+      "s": "BER:FFV"
+    },
+    {
+      "s": "BER:FHL"
+    },
+    {
+      "s": "BER:FIE"
+    },
+    {
+      "s": "BER:FIV"
+    },
+    {
+      "s": "BER:FMC1"
+    },
+    {
+      "s": "BER:FME"
+    },
+    {
+      "s": "BER:FMV"
+    },
+    {
+      "s": "BER:FNI"
+    },
+    {
+      "s": "BER:FNTN"
+    },
+    {
+      "s": "BER:FO5"
+    },
+    {
+      "s": "BER:FOO"
+    },
+    {
+      "s": "BER:FPE"
+    },
+    {
+      "s": "BER:FPE3"
+    },
+    {
+      "s": "BER:FPH"
+    },
+    {
+      "s": "BER:FPLB"
+    },
+    {
+      "s": "BER:FPMB"
+    },
+    {
+      "s": "BER:FQT"
+    },
+    {
+      "s": "BER:FR7"
+    },
+    {
+      "s": "BER:FRA"
+    },
+    {
+      "s": "BER:FRE"
+    },
+    {
+      "s": "BER:FRK"
+    },
+    {
+      "s": "BER:FRS"
+    },
+    {
+      "s": "BER:FRU"
+    },
+    {
+      "s": "BER:FSNT"
+    },
+    {
+      "s": "BER:FTE"
+    },
+    {
+      "s": "BER:FTK"
+    },
+    {
+      "s": "BER:FUO"
+    },
+    {
+      "s": "BER:FYB"
+    },
+    {
+      "s": "BER:FZM"
+    },
+    {
+      "s": "BER:G1A"
+    },
+    {
+      "s": "BER:G1P"
+    },
+    {
+      "s": "BER:G24"
+    },
+    {
+      "s": "BER:G3C"
+    },
+    {
+      "s": "BER:G5NA"
+    },
+    {
+      "s": "BER:G6P"
+    },
+    {
+      "s": "BER:GAP"
+    },
+    {
+      "s": "BER:GBF"
+    },
+    {
+      "s": "BER:GBY"
+    },
+    {
+      "s": "BER:GDX"
+    },
+    {
+      "s": "BER:GEC"
+    },
+    {
+      "s": "BER:GFG"
+    },
+    {
+      "s": "BER:GFT"
+    },
+    {
+      "s": "BER:GGS"
+    },
+    {
+      "s": "BER:GHFH"
+    },
+    {
+      "s": "BER:GIB"
+    },
+    {
+      "s": "BER:GIH"
+    },
+    {
+      "s": "BER:GIL"
+    },
+    {
+      "s": "BER:GIS"
+    },
+    {
+      "s": "BER:GKS"
+    },
+    {
+      "s": "BER:GLJ"
+    },
+    {
+      "s": "BER:GLO"
+    },
+    {
+      "s": "BER:GLW"
+    },
+    {
+      "s": "BER:GME"
+    },
+    {
+      "s": "BER:GMM"
+    },
+    {
+      "s": "BER:GMZ"
+    },
+    {
+      "s": "BER:GOB"
+    },
+    {
+      "s": "BER:GOS"
+    },
+    {
+      "s": "BER:GPL"
+    },
+    {
+      "s": "BER:GRM"
+    },
+    {
+      "s": "BER:GS2C"
+    },
+    {
+      "s": "BER:GS7"
+    },
+    {
+      "s": "BER:GSC1"
+    },
+    {
+      "s": "BER:GTK"
+    },
+    {
+      "s": "BER:GTQ1"
+    },
+    {
+      "s": "BER:GTR"
+    },
+    {
+      "s": "BER:GTY"
+    },
+    {
+      "s": "BER:GU8"
+    },
+    {
+      "s": "BER:GUG"
+    },
+    {
+      "s": "BER:GUI"
+    },
+    {
+      "s": "BER:GUJB"
+    },
+    {
+      "s": "BER:GWI2"
+    },
+    {
+      "s": "BER:GWW"
+    },
+    {
+      "s": "BER:GXE"
+    },
+    {
+      "s": "BER:GXI"
+    },
+    {
+      "s": "BER:GY5"
+    },
+    {
+      "s": "BER:GYC"
+    },
+    {
+      "s": "BER:GZF"
+    },
+    {
+      "s": "BER:H24"
+    },
+    {
+      "s": "BER:H2O"
+    },
+    {
+      "s": "BER:H5E"
+    },
+    {
+      "s": "BER:H9W"
+    },
+    {
+      "s": "BER:H9Y"
+    },
+    {
+      "s": "BER:HA5"
+    },
+    {
+      "s": "BER:HAEK"
+    },
+    {
+      "s": "BER:HAG"
+    },
+    {
+      "s": "BER:HAL"
+    },
+    {
+      "s": "BER:HAR"
+    },
+    {
+      "s": "BER:HAS"
+    },
+    {
+      "s": "BER:HAW"
+    },
+    {
+      "s": "BER:HBC1"
+    },
+    {
+      "s": "BER:HBH"
+    },
+    {
+      "s": "BER:HBM"
+    },
+    {
+      "s": "BER:HCG"
+    },
+    {
+      "s": "BER:HCL"
+    },
+    {
+      "s": "BER:HDD"
+    },
+    {
+      "s": "BER:HDI"
+    },
+    {
+      "s": "BER:HE9"
+    },
+    {
+      "s": "BER:HEE"
+    },
+    {
+      "s": "BER:HEI"
+    },
+    {
+      "s": "BER:HEN"
+    },
+    {
+      "s": "BER:HEN3"
+    },
+    {
+      "s": "BER:HFF"
+    },
+    {
+      "s": "BER:HFG"
+    },
+    {
+      "s": "BER:HGEA"
+    },
+    {
+      "s": "BER:HGR"
+    },
+    {
+      "s": "BER:HHFA"
+    },
+    {
+      "s": "BER:HHH"
+    },
+    {
+      "s": "BER:HI91"
+    },
+    {
+      "s": "BER:HIUC"
+    },
+    {
+      "s": "BER:HKP"
+    },
+    {
+      "s": "BER:HLAG"
+    },
+    {
+      "s": "BER:HLE"
+    },
+    {
+      "s": "BER:HLG"
+    },
+    {
+      "s": "BER:HLPN"
+    },
+    {
+      "s": "BER:HMI"
+    },
+    {
+      "s": "BER:HMSB"
+    },
+    {
+      "s": "BER:HMU"
+    },
+    {
+      "s": "BER:HN9"
+    },
+    {
+      "s": "BER:HNK1"
+    },
+    {
+      "s": "BER:HNL"
+    },
+    {
+      "s": "BER:HNM"
+    },
+    {
+      "s": "BER:HNR1"
+    },
+    {
+      "s": "BER:HO1"
+    },
+    {
+      "s": "BER:HO7"
+    },
+    {
+      "s": "BER:HOC"
+    },
+    {
+      "s": "BER:HOT"
+    },
+    {
+      "s": "BER:HOU"
+    },
+    {
+      "s": "BER:HP3"
+    },
+    {
+      "s": "BER:HPBK"
+    },
+    {
+      "s": "BER:HPD"
+    },
+    {
+      "s": "BER:HPHA"
+    },
+    {
+      "s": "BER:HRPK"
+    },
+    {
+      "s": "BER:HRS"
+    },
+    {
+      "s": "BER:HRZ"
+    },
+    {
+      "s": "BER:HRZA"
+    },
+    {
+      "s": "BER:HS2"
+    },
+    {
+      "s": "BER:HSY"
+    },
+    {
+      "s": "BER:HSZ"
+    },
+    {
+      "s": "BER:HU3"
+    },
+    {
+      "s": "BER:HUKI"
+    },
+    {
+      "s": "BER:HUP1"
+    },
+    {
+      "s": "BER:HVP0"
+    },
+    {
+      "s": "BER:HXCK"
+    },
+    {
+      "s": "BER:HYQ"
+    },
+    {
+      "s": "BER:I8D"
+    },
+    {
+      "s": "BER:I8R"
+    },
+    {
+      "s": "BER:I8U"
+    },
+    {
+      "s": "BER:IBE1"
+    },
+    {
+      "s": "BER:IBM"
+    },
+    {
+      "s": "BER:IBU"
+    },
+    {
+      "s": "BER:IC2"
+    },
+    {
+      "s": "BER:IC8"
+    },
+    {
+      "s": "BER:ICK"
+    },
+    {
+      "s": "BER:IDP"
+    },
+    {
+      "s": "BER:IEE"
+    },
+    {
+      "s": "BER:IES"
+    },
+    {
+      "s": "BER:IF0"
+    },
+    {
+      "s": "BER:IFA"
+    },
+    {
+      "s": "BER:IFF"
+    },
+    {
+      "s": "BER:IFX"
+    },
+    {
+      "s": "BER:IGQ5"
+    },
+    {
+      "s": "BER:IHY2"
+    },
+    {
+      "s": "BER:IKF"
+    },
+    {
+      "s": "BER:IL2"
+    },
+    {
+      "s": "BER:ILM1"
+    },
+    {
+      "s": "BER:ILT"
+    },
+    {
+      "s": "BER:ILU"
+    },
+    {
+      "s": "BER:IMU"
+    },
+    {
+      "s": "BER:INH"
+    },
+    {
+      "s": "BER:INL"
+    },
+    {
+      "s": "BER:INN1"
+    },
+    {
+      "s": "BER:INP"
+    },
+    {
+      "s": "BER:INR"
+    },
+    {
+      "s": "BER:INS"
+    },
+    {
+      "s": "BER:INW1"
+    },
+    {
+      "s": "BER:IPG"
+    },
+    {
+      "s": "BER:IPOK"
+    },
+    {
+      "s": "BER:IPZ"
+    },
+    {
+      "s": "BER:IQL"
+    },
+    {
+      "s": "BER:IS7"
+    },
+    {
+      "s": "BER:IS8"
+    },
+    {
+      "s": "BER:ISHA"
+    },
+    {
+      "s": "BER:ITB"
+    },
+    {
+      "s": "BER:ITN"
+    },
+    {
+      "s": "BER:ITU"
+    },
+    {
+      "s": "BER:IUI1"
+    },
+    {
+      "s": "BER:IUR"
+    },
+    {
+      "s": "BER:IVKA"
+    },
+    {
+      "s": "BER:IVS"
+    },
+    {
+      "s": "BER:IVSD"
+    },
+    {
+      "s": "BER:IVU"
+    },
+    {
+      "s": "BER:IVX"
+    },
+    {
+      "s": "BER:IX1"
+    },
+    {
+      "s": "BER:IXD1"
+    },
+    {
+      "s": "BER:IXX"
+    },
+    {
+      "s": "BER:IYYA"
+    },
+    {
+      "s": "BER:J2B"
+    },
+    {
+      "s": "BER:JAT"
+    },
+    {
+      "s": "BER:JDC"
+    },
+    {
+      "s": "BER:JDE"
+    },
+    {
+      "s": "BER:JEN"
+    },
+    {
+      "s": "BER:JEP"
+    },
+    {
+      "s": "BER:JIX"
+    },
+    {
+      "s": "BER:JM2"
+    },
+    {
+      "s": "BER:JMT2"
+    },
+    {
+      "s": "BER:JNJ"
+    },
+    {
+      "s": "BER:JNP"
+    },
+    {
+      "s": "BER:JSI"
+    },
+    {
+      "s": "BER:JST"
+    },
+    {
+      "s": "BER:JUN3"
+    },
+    {
+      "s": "BER:K1R"
+    },
+    {
+      "s": "BER:K8A"
+    },
+    {
+      "s": "BER:KA8"
+    },
+    {
+      "s": "BER:KAO"
+    },
+    {
+      "s": "BER:KBX"
+    },
+    {
+      "s": "BER:KC4"
+    },
+    {
+      "s": "BER:KCO"
+    },
+    {
+      "s": "BER:KCY"
+    },
+    {
+      "s": "BER:KEK"
+    },
+    {
+      "s": "BER:KEK1"
+    },
+    {
+      "s": "BER:KEL"
+    },
+    {
+      "s": "BER:KEM"
+    },
+    {
+      "s": "BER:KEY"
+    },
+    {
+      "s": "BER:KFI1"
+    },
+    {
+      "s": "BER:KG5"
+    },
+    {
+      "s": "BER:KGX"
+    },
+    {
+      "s": "BER:KHNZ"
+    },
+    {
+      "s": "BER:KI9A"
+    },
+    {
+      "s": "BER:KIN2"
+    },
+    {
+      "s": "BER:KIR"
+    },
+    {
+      "s": "BER:KLA"
+    },
+    {
+      "s": "BER:KMY"
+    },
+    {
+      "s": "BER:KOG"
+    },
+    {
+      "s": "BER:KOU"
+    },
+    {
+      "s": "BER:KP5"
+    },
+    {
+      "s": "BER:KRN"
+    },
+    {
+      "s": "BER:KSB"
+    },
+    {
+      "s": "BER:KSB3"
+    },
+    {
+      "s": "BER:KSC"
+    },
+    {
+      "s": "BER:KTA"
+    },
+    {
+      "s": "BER:KTEK"
+    },
+    {
+      "s": "BER:KTF"
+    },
+    {
+      "s": "BER:KU2"
+    },
+    {
+      "s": "BER:KUK"
+    },
+    {
+      "s": "BER:KUY"
+    },
+    {
+      "s": "BER:KW2"
+    },
+    {
+      "s": "BER:KWG"
+    },
+    {
+      "s": "BER:KWS"
+    },
+    {
+      "s": "BER:L1OA"
+    },
+    {
+      "s": "BER:L5E"
+    },
+    {
+      "s": "BER:LAR"
+    },
+    {
+      "s": "BER:LB3A"
+    },
+    {
+      "s": "BER:LCLA"
+    },
+    {
+      "s": "BER:LCR"
+    },
+    {
+      "s": "BER:LEG"
+    },
+    {
+      "s": "BER:LEI"
+    },
+    {
+      "s": "BER:LELA"
+    },
+    {
+      "s": "BER:LEN"
+    },
+    {
+      "s": "BER:LEO"
+    },
+    {
+      "s": "BER:LEV"
+    },
+    {
+      "s": "BER:LHA"
+    },
+    {
+      "s": "BER:LHL"
+    },
+    {
+      "s": "BER:LIN"
+    },
+    {
+      "s": "BER:LLD"
+    },
+    {
+      "s": "BER:LLY"
+    },
+    {
+      "s": "BER:LMIA"
+    },
+    {
+      "s": "BER:LMO"
+    },
+    {
+      "s": "BER:LNLB"
+    },
+    {
+      "s": "BER:LNSX"
+    },
+    {
+      "s": "BER:LO24"
+    },
+    {
+      "s": "BER:LOM"
+    },
+    {
+      "s": "BER:LOR"
+    },
+    {
+      "s": "BER:LPK"
+    },
+    {
+      "s": "BER:LRS1"
+    },
+    {
+      "s": "BER:LS4C"
+    },
+    {
+      "s": "BER:LSX"
+    },
+    {
+      "s": "BER:LTD"
+    },
+    {
+      "s": "BER:LU2"
+    },
+    {
+      "s": "BER:LUS"
+    },
+    {
+      "s": "BER:LV2B"
+    },
+    {
+      "s": "BER:LXS"
+    },
+    {
+      "s": "BER:LY0"
+    },
+    {
+      "s": "BER:LYF"
+    },
+    {
+      "s": "BER:LYV"
+    },
+    {
+      "s": "BER:M0Y"
+    },
+    {
+      "s": "BER:M12"
+    },
+    {
+      "s": "BER:M2V"
+    },
+    {
+      "s": "BER:M3BK"
+    },
+    {
+      "s": "BER:M3V"
+    },
+    {
+      "s": "BER:M4B"
+    },
+    {
+      "s": "BER:M4I"
+    },
+    {
+      "s": "BER:M4N"
+    },
+    {
+      "s": "BER:M5M1"
+    },
+    {
+      "s": "BER:M5Z"
+    },
+    {
+      "s": "BER:M6Q"
+    },
+    {
+      "s": "BER:M7U"
+    },
+    {
+      "s": "BER:M8G"
+    },
+    {
+      "s": "BER:M8H"
+    },
+    {
+      "s": "BER:M8V"
+    },
+    {
+      "s": "BER:MA10"
+    },
+    {
+      "s": "BER:MAK"
+    },
+    {
+      "s": "BER:MAN"
+    },
+    {
+      "s": "BER:MAN3"
+    },
+    {
+      "s": "BER:MAQ"
+    },
+    {
+      "s": "BER:MBB"
+    },
+    {
+      "s": "BER:MBC"
+    },
+    {
+      "s": "BER:MBK"
+    },
+    {
+      "s": "BER:MBQ"
+    },
+    {
+      "s": "BER:MCE"
+    },
+    {
+      "s": "BER:MCP"
+    },
+    {
+      "s": "BER:MDG1"
+    },
+    {
+      "s": "BER:MDN"
+    },
+    {
+      "s": "BER:MDO"
+    },
+    {
+      "s": "BER:ME1"
+    },
+    {
+      "s": "BER:MED"
+    },
+    {
+      "s": "BER:MEIA"
+    },
+    {
+      "s": "BER:MF6"
+    },
+    {
+      "s": "BER:MGG"
+    },
+    {
+      "s": "BER:MHL"
+    },
+    {
+      "s": "BER:MLB1"
+    },
+    {
+      "s": "BER:MLL"
+    },
+    {
+      "s": "BER:MLP"
+    },
+    {
+      "s": "BER:MMM"
+    },
+    {
+      "s": "BER:MOH"
+    },
+    {
+      "s": "BER:MOR"
+    },
+    {
+      "s": "BER:MOS"
+    },
+    {
+      "s": "BER:MPCK"
+    },
+    {
+      "s": "BER:MPN"
+    },
+    {
+      "s": "BER:MRK"
+    },
+    {
+      "s": "BER:MRL"
+    },
+    {
+      "s": "BER:MSAG"
+    },
+    {
+      "s": "BER:MSF"
+    },
+    {
+      "s": "BER:MSK"
+    },
+    {
+      "s": "BER:MSQ"
+    },
+    {
+      "s": "BER:MTA"
+    },
+    {
+      "s": "BER:MTE"
+    },
+    {
+      "s": "BER:MTLA"
+    },
+    {
+      "s": "BER:MTT"
+    },
+    {
+      "s": "BER:MTX"
+    },
+    {
+      "s": "BER:MUB"
+    },
+    {
+      "s": "BER:MUM"
+    },
+    {
+      "s": "BER:MUV2"
+    },
+    {
+      "s": "BER:MUX"
+    },
+    {
+      "s": "BER:MVIN"
+    },
+    {
+      "s": "BER:MVV1"
+    },
+    {
+      "s": "BER:MWB"
+    },
+    {
+      "s": "BER:MWZ"
+    },
+    {
+      "s": "BER:MX4A"
+    },
+    {
+      "s": "BER:MXHN"
+    },
+    {
+      "s": "BER:MXI"
+    },
+    {
+      "s": "BER:MYD"
+    },
+    {
+      "s": "BER:MYH"
+    },
+    {
+      "s": "BER:MYRK"
+    },
+    {
+      "s": "BER:MZX"
+    },
+    {
+      "s": "BER:N1C"
+    },
+    {
+      "s": "BER:N3Y"
+    },
+    {
+      "s": "BER:N4G"
+    },
+    {
+      "s": "BER:N7T"
+    },
+    {
+      "s": "BER:N8C"
+    },
+    {
+      "s": "BER:NA9"
+    },
+    {
+      "s": "BER:NAQ"
+    },
+    {
+      "s": "BER:NB11"
+    },
+    {
+      "s": "BER:NB2"
+    },
+    {
+      "s": "BER:NBG6"
+    },
+    {
+      "s": "BER:NBO"
+    },
+    {
+      "s": "BER:NC5A"
+    },
+    {
+      "s": "BER:NCB"
+    },
+    {
+      "s": "BER:NCGB"
+    },
+    {
+      "s": "BER:NCGC"
+    },
+    {
+      "s": "BER:NCYD"
+    },
+    {
+      "s": "BER:NDA"
+    },
+    {
+      "s": "BER:NDX1"
+    },
+    {
+      "s": "BER:NEF"
+    },
+    {
+      "s": "BER:NEM"
+    },
+    {
+      "s": "BER:NEQ"
+    },
+    {
+      "s": "BER:NESR"
+    },
+    {
+      "s": "BER:NF4"
+    },
+    {
+      "s": "BER:NFC"
+    },
+    {
+      "s": "BER:NFN"
+    },
+    {
+      "s": "BER:NFS"
+    },
+    {
+      "s": "BER:NGLB"
+    },
+    {
+      "s": "BER:NI7"
+    },
+    {
+      "s": "BER:NIIN"
+    },
+    {
+      "s": "BER:NK7"
+    },
+    {
+      "s": "BER:NKE"
+    },
+    {
+      "s": "BER:NMI"
+    },
+    {
+      "s": "BER:NMM"
+    },
+    {
+      "s": "BER:NN6"
+    },
+    {
+      "s": "BER:NNGF"
+    },
+    {
+      "s": "BER:NOA3"
+    },
+    {
+      "s": "BER:NOEJ"
+    },
+    {
+      "s": "BER:NOVC"
+    },
+    {
+      "s": "BER:NPG"
+    },
+    {
+      "s": "BER:NRE"
+    },
+    {
+      "s": "BER:NRN"
+    },
+    {
+      "s": "BER:NTA"
+    },
+    {
+      "s": "BER:NTG"
+    },
+    {
+      "s": "BER:NTH"
+    },
+    {
+      "s": "BER:NUVA"
+    },
+    {
+      "s": "BER:NVD"
+    },
+    {
+      "s": "BER:NVJP"
+    },
+    {
+      "s": "BER:NWJ"
+    },
+    {
+      "s": "BER:NWO"
+    },
+    {
+      "s": "BER:NWT"
+    },
+    {
+      "s": "BER:NXR"
+    },
+    {
+      "s": "BER:NXU"
+    },
+    {
+      "s": "BER:O1F"
+    },
+    {
+      "s": "BER:O2C"
+    },
+    {
+      "s": "BER:O2D"
+    },
+    {
+      "s": "BER:O3P"
+    },
+    {
+      "s": "BER:O4B"
+    },
+    {
+      "s": "BER:O4H"
+    },
+    {
+      "s": "BER:O5H"
+    },
+    {
+      "s": "BER:O5Q"
+    },
+    {
+      "s": "BER:OBS"
+    },
+    {
+      "s": "BER:OCN"
+    },
+    {
+      "s": "BER:ODDB"
+    },
+    {
+      "s": "BER:OEWA"
+    },
+    {
+      "s": "BER:OFP"
+    },
+    {
+      "s": "BER:OHB"
+    },
+    {
+      "s": "BER:OHCB"
+    },
+    {
+      "s": "BER:OMV"
+    },
+    {
+      "s": "BER:OPC"
+    },
+    {
+      "s": "BER:ORC"
+    },
+    {
+      "s": "BER:ORG"
+    },
+    {
+      "s": "BER:OS1"
+    },
+    {
+      "s": "BER:OSP2"
+    },
+    {
+      "s": "BER:OSR"
+    },
+    {
+      "s": "BER:OTA"
+    },
+    {
+      "s": "BER:OTE"
+    },
+    {
+      "s": "BER:OWX"
+    },
+    {
+      "s": "BER:OYC"
+    },
+    {
+      "s": "BER:P4JC"
+    },
+    {
+      "s": "BER:P4O"
+    },
+    {
+      "s": "BER:PA8"
+    },
+    {
+      "s": "BER:PA9"
+    },
+    {
+      "s": "BER:PAE"
+    },
+    {
+      "s": "BER:PAH3"
+    },
+    {
+      "s": "BER:PAL"
+    },
+    {
+      "s": "BER:PAN"
+    },
+    {
+      "s": "BER:PAR"
+    },
+    {
+      "s": "BER:PAT"
+    },
+    {
+      "s": "BER:PBB"
+    },
+    {
+      "s": "BER:PBY"
+    },
+    {
+      "s": "BER:PC6"
+    },
+    {
+      "s": "BER:PCE1"
+    },
+    {
+      "s": "BER:PCG"
+    },
+    {
+      "s": "BER:PCX"
+    },
+    {
+      "s": "BER:PD2"
+    },
+    {
+      "s": "BER:PDA"
+    },
+    {
+      "s": "BER:PEO"
+    },
+    {
+      "s": "BER:PEP"
+    },
+    {
+      "s": "BER:PER"
+    },
+    {
+      "s": "BER:PES"
+    },
+    {
+      "s": "BER:PFE"
+    },
+    {
+      "s": "BER:PFV"
+    },
+    {
+      "s": "BER:PGN"
+    },
+    {
+      "s": "BER:PHI1"
+    },
+    {
+      "s": "BER:PHM7"
+    },
+    {
+      "s": "BER:PJC"
+    },
+    {
+      "s": "BER:PKY1"
+    },
+    {
+      "s": "BER:PLL"
+    },
+    {
+      "s": "BER:PLUN"
+    },
+    {
+      "s": "BER:PMAG"
+    },
+    {
+      "s": "BER:PMTA"
+    },
+    {
+      "s": "BER:PNE3"
+    },
+    {
+      "s": "BER:PNP"
+    },
+    {
+      "s": "BER:PO0"
+    },
+    {
+      "s": "BER:POH1"
+    },
+    {
+      "s": "BER:PP9"
+    },
+    {
+      "s": "BER:PPQ"
+    },
+    {
+      "s": "BER:PPX"
+    },
+    {
+      "s": "BER:PRG"
+    },
+    {
+      "s": "BER:PRL"
+    },
+    {
+      "s": "BER:PRRB"
+    },
+    {
+      "s": "BER:PRU"
+    },
+    {
+      "s": "BER:PRY"
+    },
+    {
+      "s": "BER:PSAN"
+    },
+    {
+      "s": "BER:PSG"
+    },
+    {
+      "s": "BER:PSH"
+    },
+    {
+      "s": "BER:PSM"
+    },
+    {
+      "s": "BER:PTX"
+    },
+    {
+      "s": "BER:PU11"
+    },
+    {
+      "s": "BER:PU4"
+    },
+    {
+      "s": "BER:PUM"
+    },
+    {
+      "s": "BER:PW5"
+    },
+    {
+      "s": "BER:PWO"
+    },
+    {
+      "s": "BER:PZS"
+    },
+    {
+      "s": "BER:QB7"
+    },
+    {
+      "s": "BER:QBY"
+    },
+    {
+      "s": "BER:QCI"
+    },
+    {
+      "s": "BER:QDI"
+    },
+    {
+      "s": "BER:QFRA"
+    },
+    {
+      "s": "BER:QHI"
+    },
+    {
+      "s": "BER:QIA"
+    },
+    {
+      "s": "BER:QIN"
+    },
+    {
+      "s": "BER:QTS"
+    },
+    {
+      "s": "BER:QY6"
+    },
+    {
+      "s": "BER:R35"
+    },
+    {
+      "s": "BER:R66"
+    },
+    {
+      "s": "BER:R6C"
+    },
+    {
+      "s": "BER:R6C3"
+    },
+    {
+      "s": "BER:RAA"
+    },
+    {
+      "s": "BER:RAG"
+    },
+    {
+      "s": "BER:RAW"
+    },
+    {
+      "s": "BER:RCMN"
+    },
+    {
+      "s": "BER:RDEB"
+    },
+    {
+      "s": "BER:RDO"
+    },
+    {
+      "s": "BER:RE21"
+    },
+    {
+      "s": "BER:REP"
+    },
+    {
+      "s": "BER:RGO"
+    },
+    {
+      "s": "BER:RHF"
+    },
+    {
+      "s": "BER:RHK"
+    },
+    {
+      "s": "BER:RHM"
+    },
+    {
+      "s": "BER:RI1"
+    },
+    {
+      "s": "BER:RIG2"
+    },
+    {
+      "s": "BER:RIO1"
+    },
+    {
+      "s": "BER:RITN"
+    },
+    {
+      "s": "BER:RLF"
+    },
+    {
+      "s": "BER:RMB"
+    },
+    {
+      "s": "BER:RN7"
+    },
+    {
+      "s": "BER:RNL"
+    },
+    {
+      "s": "BER:RNY"
+    },
+    {
+      "s": "BER:ROI"
+    },
+    {
+      "s": "BER:RRJ"
+    },
+    {
+      "s": "BER:RRTL"
+    },
+    {
+      "s": "BER:RRU"
+    },
+    {
+      "s": "BER:RS1"
+    },
+    {
+      "s": "BER:RS3"
+    },
+    {
+      "s": "BER:RSH"
+    },
+    {
+      "s": "BER:RSL2"
+    },
+    {
+      "s": "BER:RSO"
+    },
+    {
+      "s": "BER:RTC"
+    },
+    {
+      "s": "BER:RTV"
+    },
+    {
+      "s": "BER:RV6"
+    },
+    {
+      "s": "BER:RWE"
+    },
+    {
+      "s": "BER:RWL"
+    },
+    {
+      "s": "BER:RY4C"
+    },
+    {
+      "s": "BER:RY8"
+    },
+    {
+      "s": "BER:RYE"
+    },
+    {
+      "s": "BER:RYS1"
+    },
+    {
+      "s": "BER:S05"
+    },
+    {
+      "s": "BER:S0U"
+    },
+    {
+      "s": "BER:S4A"
+    },
+    {
+      "s": "BER:S64"
+    },
+    {
+      "s": "BER:S6IA"
+    },
+    {
+      "s": "BER:S6L"
+    },
+    {
+      "s": "BER:S6P"
+    },
+    {
+      "s": "BER:S8A"
+    },
+    {
+      "s": "BER:S92"
+    },
+    {
+      "s": "BER:S9I"
+    },
+    {
+      "s": "BER:SAE"
+    },
+    {
+      "s": "BER:SANT"
+    },
+    {
+      "s": "BER:SAP"
+    },
+    {
+      "s": "BER:SAX"
+    },
+    {
+      "s": "BER:SAYN"
+    },
+    {
+      "s": "BER:SBS"
+    },
+    {
+      "s": "BER:SBX"
+    },
+    {
+      "s": "BER:SC2"
+    },
+    {
+      "s": "BER:SCB"
+    },
+    {
+      "s": "BER:SCD1"
+    },
+    {
+      "s": "BER:SCE"
+    },
+    {
+      "s": "BER:SCNR"
+    },
+    {
+      "s": "BER:SCT"
+    },
+    {
+      "s": "BER:SD1"
+    },
+    {
+      "s": "BER:SDF"
+    },
+    {
+      "s": "BER:SF3"
+    },
+    {
+      "s": "BER:SFD1"
+    },
+    {
+      "s": "BER:SFE"
+    },
+    {
+      "s": "BER:SFQ"
+    },
+    {
+      "s": "BER:SGE"
+    },
+    {
+      "s": "BER:SGF"
+    },
+    {
+      "s": "BER:SGJH"
+    },
+    {
+      "s": "BER:SGL"
+    },
+    {
+      "s": "BER:SGM"
+    },
+    {
+      "s": "BER:SHA"
+    },
+    {
+      "s": "BER:SHD"
+    },
+    {
+      "s": "BER:SHF"
+    },
+    {
+      "s": "BER:SHJ"
+    },
+    {
+      "s": "BER:SHL"
+    },
+    {
+      "s": "BER:SHM"
+    },
+    {
+      "s": "BER:SHO"
+    },
+    {
+      "s": "BER:SHS"
+    },
+    {
+      "s": "BER:SHWK"
+    },
+    {
+      "s": "BER:SHX"
+    },
+    {
+      "s": "BER:SIE"
+    },
+    {
+      "s": "BER:SII"
+    },
+    {
+      "s": "BER:SIS"
+    },
+    {
+      "s": "BER:SIT4"
+    },
+    {
+      "s": "BER:SIX2"
+    },
+    {
+      "s": "BER:SIX3"
+    },
+    {
+      "s": "BER:SIY"
+    },
+    {
+      "s": "BER:SJJ"
+    },
+    {
+      "s": "BER:SKB"
+    },
+    {
+      "s": "BER:SKI"
+    },
+    {
+      "s": "BER:SLL"
+    },
+    {
+      "s": "BER:SLT"
+    },
+    {
+      "s": "BER:SMHN"
+    },
+    {
+      "s": "BER:SMWN"
+    },
+    {
+      "s": "BER:SMZ1"
+    },
+    {
+      "s": "BER:SND"
+    },
+    {
+      "s": "BER:SNG"
+    },
+    {
+      "s": "BER:SNH"
+    },
+    {
+      "s": "BER:SNM"
+    },
+    {
+      "s": "BER:SNQB"
+    },
+    {
+      "s": "BER:SNW"
+    },
+    {
+      "s": "BER:SOBA"
+    },
+    {
+      "s": "BER:SOT"
+    },
+    {
+      "s": "BER:SOW"
+    },
+    {
+      "s": "BER:SPAC"
+    },
+    {
+      "s": "BER:SPM"
+    },
+    {
+      "s": "BER:SQ3"
+    },
+    {
+      "s": "BER:SQU"
+    },
+    {
+      "s": "BER:SR9"
+    },
+    {
+      "s": "BER:SRB"
+    },
+    {
+      "s": "BER:SRI"
+    },
+    {
+      "s": "BER:SRT"
+    },
+    {
+      "s": "BER:SRT3"
+    },
+    {
+      "s": "BER:ST5"
+    },
+    {
+      "s": "BER:STM"
+    },
+    {
+      "s": "BER:STO3"
+    },
+    {
+      "s": "BER:SUR"
+    },
+    {
+      "s": "BER:SUSE"
+    },
+    {
+      "s": "BER:SVE"
+    },
+    {
+      "s": "BER:SW1"
+    },
+    {
+      "s": "BER:SWA"
+    },
+    {
+      "s": "BER:SWF"
+    },
+    {
+      "s": "BER:SWG"
+    },
+    {
+      "s": "BER:SWL"
+    },
+    {
+      "s": "BER:SWN"
+    },
+    {
+      "s": "BER:SY1"
+    },
+    {
+      "s": "BER:SYAB"
+    },
+    {
+      "s": "BER:SYK"
+    },
+    {
+      "s": "BER:SYM"
+    },
+    {
+      "s": "BER:SYP"
+    },
+    {
+      "s": "BER:SYT"
+    },
+    {
+      "s": "BER:SYV"
+    },
+    {
+      "s": "BER:SYY"
+    },
+    {
+      "s": "BER:SYZ"
+    },
+    {
+      "s": "BER:SZ1"
+    },
+    {
+      "s": "BER:SZG"
+    },
+    {
+      "s": "BER:SZU"
+    },
+    {
+      "s": "BER:T1L"
+    },
+    {
+      "s": "BER:T3T1"
+    },
+    {
+      "s": "BER:T5O"
+    },
+    {
+      "s": "BER:T5W"
+    },
+    {
+      "s": "BER:T6A"
+    },
+    {
+      "s": "BER:T6R"
+    },
+    {
+      "s": "BER:T77"
+    },
+    {
+      "s": "BER:T9W"
+    },
+    {
+      "s": "BER:T9Z"
+    },
+    {
+      "s": "BER:TA1"
+    },
+    {
+      "s": "BER:TC1"
+    },
+    {
+      "s": "BER:TCID"
+    },
+    {
+      "s": "BER:TCO0"
+    },
+    {
+      "s": "BER:TEE"
+    },
+    {
+      "s": "BER:TEG"
+    },
+    {
+      "s": "BER:TEQ"
+    },
+    {
+      "s": "BER:TEX"
+    },
+    {
+      "s": "BER:TEY"
+    },
+    {
+      "s": "BER:TF7A"
+    },
+    {
+      "s": "BER:TGHN"
+    },
+    {
+      "s": "BER:TGR"
+    },
+    {
+      "s": "BER:TGT"
+    },
+    {
+      "s": "BER:TII"
+    },
+    {
+      "s": "BER:TIMA"
+    },
+    {
+      "s": "BER:TJX"
+    },
+    {
+      "s": "BER:TKA"
+    },
+    {
+      "s": "BER:TKE"
+    },
+    {
+      "s": "BER:TL0"
+    },
+    {
+      "s": "BER:TLG"
+    },
+    {
+      "s": "BER:TLIK"
+    },
+    {
+      "s": "BER:TLS"
+    },
+    {
+      "s": "BER:TLX"
+    },
+    {
+      "s": "BER:TLY"
+    },
+    {
+      "s": "BER:TM5"
+    },
+    {
+      "s": "BER:TMV"
+    },
+    {
+      "s": "BER:TN8"
+    },
+    {
+      "s": "BER:TNE5"
+    },
+    {
+      "s": "BER:TNTC"
+    },
+    {
+      "s": "BER:TOTB"
+    },
+    {
+      "s": "BER:TPE"
+    },
+    {
+      "s": "BER:TPQ"
+    },
+    {
+      "s": "BER:TQI"
+    },
+    {
+      "s": "BER:TQIR"
+    },
+    {
+      "s": "BER:TR4"
+    },
+    {
+      "s": "BER:TR7"
+    },
+    {
+      "s": "BER:TR9"
+    },
+    {
+      "s": "BER:TRU"
+    },
+    {
+      "s": "BER:TRVC"
+    },
+    {
+      "s": "BER:TSI"
+    },
+    {
+      "s": "BER:TT8"
+    },
+    {
+      "s": "BER:TTEB"
+    },
+    {
+      "s": "BER:TTK"
+    },
+    {
+      "s": "BER:TTO"
+    },
+    {
+      "s": "BER:TTR1"
+    },
+    {
+      "s": "BER:TU0"
+    },
+    {
+      "s": "BER:TUF"
+    },
+    {
+      "s": "BER:TUI1"
+    },
+    {
+      "s": "BER:TWR"
+    },
+    {
+      "s": "BER:TYG"
+    },
+    {
+      "s": "BER:TYIA"
+    },
+    {
+      "s": "BER:U3I"
+    },
+    {
+      "s": "BER:U6Z"
+    },
+    {
+      "s": "BER:U9R"
+    },
+    {
+      "s": "BER:U9RA"
+    },
+    {
+      "s": "BER:UAL1"
+    },
+    {
+      "s": "BER:UB5"
+    },
+    {
+      "s": "BER:UBK"
+    },
+    {
+      "s": "BER:UCCP"
+    },
+    {
+      "s": "BER:UDC"
+    },
+    {
+      "s": "BER:UEI"
+    },
+    {
+      "s": "BER:UG5A"
+    },
+    {
+      "s": "BER:UG6"
+    },
+    {
+      "s": "BER:ULC"
+    },
+    {
+      "s": "BER:ULS"
+    },
+    {
+      "s": "BER:UMDK"
+    },
+    {
+      "s": "BER:UN01"
+    },
+    {
+      "s": "BER:UN4"
+    },
+    {
+      "s": "BER:UN9"
+    },
+    {
+      "s": "BER:UNH"
+    },
+    {
+      "s": "BER:UNJ"
+    },
+    {
+      "s": "BER:UNP"
+    },
+    {
+      "s": "BER:UNS1"
+    },
+    {
+      "s": "BER:UNVB"
+    },
+    {
+      "s": "BER:UOF"
+    },
+    {
+      "s": "BER:UPAB"
+    },
+    {
+      "s": "BER:UQ1"
+    },
+    {
+      "s": "BER:UR3"
+    },
+    {
+      "s": "BER:US8A"
+    },
+    {
+      "s": "BER:USS"
+    },
+    {
+      "s": "BER:USX1"
+    },
+    {
+      "s": "BER:USY1"
+    },
+    {
+      "s": "BER:UT8"
+    },
+    {
+      "s": "BER:UTDI"
+    },
+    {
+      "s": "BER:UTG"
+    },
+    {
+      "s": "BER:UUEC"
+    },
+    {
+      "s": "BER:UUU"
+    },
+    {
+      "s": "BER:UWS"
+    },
+    {
+      "s": "BER:UZU"
+    },
+    {
+      "s": "BER:V1L"
+    },
+    {
+      "s": "BER:V3S"
+    },
+    {
+      "s": "BER:V3V"
+    },
+    {
+      "s": "BER:V6C"
+    },
+    {
+      "s": "BER:VAR1"
+    },
+    {
+      "s": "BER:VAS"
+    },
+    {
+      "s": "BER:VB0"
+    },
+    {
+      "s": "BER:VBK"
+    },
+    {
+      "s": "BER:VBX"
+    },
+    {
+      "s": "BER:VEE"
+    },
+    {
+      "s": "BER:VEO"
+    },
+    {
+      "s": "BER:VFP"
+    },
+    {
+      "s": "BER:VG8"
+    },
+    {
+      "s": "BER:VH2"
+    },
+    {
+      "s": "BER:VIA"
+    },
+    {
+      "s": "BER:VIB3"
+    },
+    {
+      "s": "BER:VIH1"
+    },
+    {
+      "s": "BER:VIR"
+    },
+    {
+      "s": "BER:VNA"
+    },
+    {
+      "s": "BER:VNX"
+    },
+    {
+      "s": "BER:VODI"
+    },
+    {
+      "s": "BER:VOL1"
+    },
+    {
+      "s": "BER:VOL3"
+    },
+    {
+      "s": "BER:VOS"
+    },
+    {
+      "s": "BER:VOW"
+    },
+    {
+      "s": "BER:VOW3"
+    },
+    {
+      "s": "BER:VQT"
+    },
+    {
+      "s": "BER:VROS"
+    },
+    {
+      "s": "BER:VRS"
+    },
+    {
+      "s": "BER:VSC"
+    },
+    {
+      "s": "BER:VTCB"
+    },
+    {
+      "s": "BER:VTWR"
+    },
+    {
+      "s": "BER:VTX"
+    },
+    {
+      "s": "BER:VVD"
+    },
+    {
+      "s": "BER:VVU"
+    },
+    {
+      "s": "BER:VVV3"
+    },
+    {
+      "s": "BER:VWSB"
+    },
+    {
+      "s": "BER:VX1"
+    },
+    {
+      "s": "BER:W3U"
+    },
+    {
+      "s": "BER:W8A"
+    },
+    {
+      "s": "BER:WAC"
+    },
+    {
+      "s": "BER:WAF"
+    },
+    {
+      "s": "BER:WB2"
+    },
+    {
+      "s": "BER:WBAH"
+    },
+    {
+      "s": "BER:WCH"
+    },
+    {
+      "s": "BER:WCMK"
+    },
+    {
+      "s": "BER:WCQ1"
+    },
+    {
+      "s": "BER:WDC"
+    },
+    {
+      "s": "BER:WDL"
+    },
+    {
+      "s": "BER:WDP"
+    },
+    {
+      "s": "BER:WEW"
+    },
+    {
+      "s": "BER:WFS"
+    },
+    {
+      "s": "BER:WHR"
+    },
+    {
+      "s": "BER:WHT2"
+    },
+    {
+      "s": "BER:WIB"
+    },
+    {
+      "s": "BER:WIG1"
+    },
+    {
+      "s": "BER:WILC"
+    },
+    {
+      "s": "BER:WIS"
+    },
+    {
+      "s": "BER:WMB"
+    },
+    {
+      "s": "BER:WMT"
+    },
+    {
+      "s": "BER:WSO1"
+    },
+    {
+      "s": "BER:WSU"
+    },
+    {
+      "s": "BER:WSX"
+    },
+    {
+      "s": "BER:WUW"
+    },
+    {
+      "s": "BER:WYR"
+    },
+    {
+      "s": "BER:X2S"
+    },
+    {
+      "s": "BER:XCQ"
+    },
+    {
+      "s": "BER:XD4"
+    },
+    {
+      "s": "BER:XDH"
+    },
+    {
+      "s": "BER:XER2"
+    },
+    {
+      "s": "BER:XGR2"
+    },
+    {
+      "s": "BER:XHSB"
+    },
+    {
+      "s": "BER:XIX"
+    },
+    {
+      "s": "BER:XLS"
+    },
+    {
+      "s": "BER:XONA"
+    },
+    {
+      "s": "BER:XQB"
+    },
+    {
+      "s": "BER:XS4"
+    },
+    {
+      "s": "BER:YCP"
+    },
+    {
+      "s": "BER:YEL"
+    },
+    {
+      "s": "BER:YIJ"
+    },
+    {
+      "s": "BER:YIT"
+    },
+    {
+      "s": "BER:YKK"
+    },
+    {
+      "s": "BER:YM9A"
+    },
+    {
+      "s": "BER:YMA"
+    },
+    {
+      "s": "BER:YOC"
+    },
+    {
+      "s": "BER:YP9"
+    },
+    {
+      "s": "BER:YRB"
+    },
+    {
+      "s": "BER:YSM"
+    },
+    {
+      "s": "BER:YSN"
+    },
+    {
+      "s": "BER:YXP"
+    },
+    {
+      "s": "BER:YZCA"
+    },
+    {
+      "s": "BER:ZAL"
+    },
+    {
+      "s": "BER:ZDO"
+    },
+    {
+      "s": "BER:ZEG"
+    },
+    {
+      "s": "BER:ZGY"
+    },
+    {
+      "s": "BER:ZIL2"
+    },
+    {
+      "s": "BER:ZIM"
+    },
+    {
+      "s": "BER:ZO1"
+    },
+    {
+      "s": "BER:ZOE"
+    },
+    {
+      "s": "BER:ZSOL"
+    },
+    {
+      "s": "BER:ZT1A"
+    },
+    {
+      "s": "BER:ZVL"
+    },
+    {
+      "s": "BER:ZY3"
+    },
+    {
+      "s": "BER:ZYD"
+    },
+    {
+      "s": "BER:ZZA"
+    }
+  ]
+}

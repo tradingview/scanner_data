@@ -978,6 +978,20 @@
       ]
     },
     {
+      "s": "BINANCE:ATABTC",
+      "f": [
+        "Automata Network",
+        "ATA"
+      ]
+    },
+    {
+      "s": "BINANCE:ATAUSD",
+      "f": [
+        "Automata Network",
+        "ATA"
+      ]
+    },
+    {
       "s": "BINANCE:AVAXBTC",
       "f": [
         "Avalanche",
@@ -1566,14 +1580,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -6578,6 +6592,20 @@
       ]
     },
     {
+      "s": "HITBTC:MASKBTC",
+      "f": [
+        "Mask Network",
+        "MASK"
+      ]
+    },
+    {
+      "s": "HITBTC:MASKUSD",
+      "f": [
+        "Mask Network",
+        "MASK"
+      ]
+    },
+    {
       "s": "BITTREX:GUPBTC",
       "f": [
         "Matchpool",
@@ -8251,6 +8279,20 @@
       ]
     },
     {
+      "s": "BITTREX:PPAYBTC",
+      "f": [
+        "Plasma Finance",
+        "PPAY"
+      ]
+    },
+    {
+      "s": "BITTREX:PPAYUSD",
+      "f": [
+        "Plasma Finance",
+        "PPAY"
+      ]
+    },
+    {
       "s": "HITBTC:PLTCBTC",
       "f": [
         "PlatonCoin",
@@ -9063,14 +9105,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"

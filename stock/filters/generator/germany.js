@@ -55,29 +55,14 @@ function loadSymbols(exchange, fields, searchTypes, searchSubTypes) {
 const modelStocks = {};
 loadSymbols(modelExchange, "symbol", selectedTypes).forEach(s => modelStocks[s.f[0]] = true);
 
-function hasDataAny(s) {
-    let empty = true;
-    for (let i = 1; i < s.f.length; i++) {
-        if (s.f[i]) {
-            empty = false;
-            break;
-        }
-    }
-    return !empty;
-}
-
 function hasDataAll(s) {
-    for (let i = 1; i < s.f.length; i++) {
-        if (!s.f[i]) {
-            return false;
-        }
-    }
-    return true;
+    return s.f.findIndex(val => !val) == -1;
 }
 
 config.forEach(c => {
     const symbols = loadSymbols(c.exchange, "symbol," + fieldsNotNull, selectedTypes, selectedSubTypes).filter(s => {
-        const isModel = !!modelStocks[s.f[0]];
+        const symbolName = s.f.find(val => typeof val === 'string');
+        const isModel = !!modelStocks[symbolName];
         const hasD = hasDataAll(s);
         return isModel || hasD;
     }).map(s => ({"s": s.s}));

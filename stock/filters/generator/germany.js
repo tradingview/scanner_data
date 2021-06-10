@@ -11,6 +11,26 @@ const config = [
     {
         "exchange": "SWB",
         "path": "../germany.stuttgart.json"
+    },
+    {
+        "exchange": "BER",
+        "path": "../germany.berlin.json"
+    },
+    {
+        "exchange": "HAM",
+        "path": "../germany.hamburg.json"
+    },
+    {
+        "exchange": "HAN",
+        "path": "../germany.hannover.json"
+    },
+    {
+        "exchange": "DUS",
+        "path": "../germany.dusseldorf.json"
+    },
+    {
+        "exchange": "MUN",
+        "path": "../germany.munchen.json"
     }
 ];
 const selectedTypes = "stock";

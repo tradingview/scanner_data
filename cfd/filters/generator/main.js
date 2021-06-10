@@ -5,17 +5,20 @@ const {URL} = require('url');
 const dstPath = "../cfd.json";
 const groups = [
     {url: "iceusa_cfd_indices", region: "Americas"},
-    {url: "us_chicago_indices", region: "Americas", include: ["TVC:VIX"]},
-    {url: "us_ny_indices", exclude: ["TVC:SPX"]},
-    {url: "japan_indices", region: "Asia"},
-    {url: "china_indices", region: "Asia"},
+    {url: "cboe_cfd_indices", region: "Americas", include: ["TVC:VIX"]},
+    {url: "us_cfd_indices", exclude: ["TVC:SPX"]},
+    {url: "japan_cfd_indices", region: "Asia"},
+    {url: "shanghai_cfd_indices", region: "Asia"},
     {url: "hangseng_cfd_indices", region: "Asia"},
-    {url: "european_indices", region: "Europe"},
-    {url: "british_indices", region: "Europe"},
-    {url: "spanish_indices", region: "Europe"},
+    {url: "european_cfd_indices", region: "Europe"},
+    {url: "euronext_primary_cfd_indices", region: "Europe"},
+    {url: "swiss_cfd_indices", region: "Europe"},
+    {url: "xetra_cfd_indices", region: "Europe"},
+    {url: "british_cfd_indices", region: "Europe"},
+    {url: "bme_cfd_indices", region: "Europe"},
     {url: "government_bonds", sector: "bond", excludePattern: /^TVC\:GI/},
     {url: "government_bonds_nodaily", sector: "bond", excludePattern: /^TVC\:GI/},
-    {url: "euro_bonds", sector: "bond", region: "Europe"},
+    {url: "euro_bonds_cfd", sector: "bond", region: "Europe"},
     {url: "canadian_bonds", sector: "bond", region: "Americas"},
     {
         url: "forex_tvc",
@@ -75,7 +78,7 @@ const groups = [
         region: "Pacific"
     },
     {
-        url: "korean_tvc_indices",
+        url: "korea_main_cfd_indices",
         include: ["TVC:KOSPI"],
         region: "Asia"
     },
@@ -115,7 +118,7 @@ const groups = [
         region: "Americas"
     },
     {
-        url: "singapore_tvc_indices",
+        url: "singapore_cfd_indices",
         include: ["TVC:STI"],
         region: "Asia"
     },

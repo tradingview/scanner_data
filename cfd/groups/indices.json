@@ -22,7 +22,7 @@
       "f": []
     },
     {
-      "s": "/british_indices",
+      "s": "/british_cfd_indices",
       "f": []
     },
     {
@@ -38,7 +38,7 @@
       "f": []
     },
     {
-      "s": "/china_indices",
+      "s": "/shanghai_cfd_indices",
       "f": []
     },
     {
@@ -62,7 +62,7 @@
       "f": []
     },
     {
-      "s": "/euro_bonds",
+      "s": "/euro_bonds_cfd",
       "f": []
     },
     {
@@ -78,7 +78,11 @@
       "f": []
     },
     {
-      "s": "/european_indices",
+      "s": "/european_cfd_indices",
+      "f": []
+    },
+    {
+      "s": "/euronext_primary_cfd_indices",
       "f": []
     },
     {
@@ -122,11 +126,11 @@
       "f": []
     },
     {
-      "s": "/japan_indices",
+      "s": "/japan_cfd_indices",
       "f": []
     },
     {
-      "s": "/korean_tvc_indices",
+      "s": "/korea_main_cfd_indices",
       "f": []
     },
     {
@@ -145,6 +149,10 @@
       "s": "/moex_primary_indices",
       "f": []
     },
+    {
+      "s": "/nasdaq_cfd_indices",
+      "f": []
+    },    
     {
       "s": "/nigerian_indices",
       "f": []
@@ -186,7 +194,7 @@
       "f": []
     },
     {
-      "s": "/singapore_tvc_indices",
+      "s": "/singapore_cfd_indices",
       "f": []
     },
     {
@@ -194,7 +202,7 @@
       "f": []
     },
     {
-      "s": "/spanish_indices",
+      "s": "/bme_cfd_indices",
       "f": []
     },
     {
@@ -203,6 +211,10 @@
     },
     {
       "s": "/swiss_indices",
+      "f": []
+    },
+    {
+      "s": "/swiss_cfd_indices",
       "f": []
     },
     {
@@ -222,11 +234,11 @@
       "f": []
     },
     {
-      "s": "/us_chicago_indices",
+      "s": "/cboe_cfd_indices",
       "f": []
     },
     {
-      "s": "/us_ny_indices",
+      "s": "/us_cfd_indices",
       "f": []
     },
     {
@@ -239,6 +251,10 @@
     },
     {
       "s": "/xetra_indices",
+      "f": []
+    },
+    {
+      "s": "/xetra_cfd_indices",
       "f": []
     },
     {

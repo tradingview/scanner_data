@@ -600,6 +600,13 @@
       "s": "CBOT:UB1!"
     },
     {
+      "s": "CBOT:UBH2022",
+      "f": [
+        null,
+        "CBOT:UB"
+      ]
+    },
+    {
       "s": "CBOT:UBM2021",
       "f": [
         null,
@@ -626,6 +633,13 @@
         "CBOT:ZB"
       ],
       "s": "CBOT:ZB1!"
+    },
+    {
+      "s": "CBOT:ZBH2022",
+      "f": [
+        null,
+        "CBOT:ZB"
+      ]
     },
     {
       "s": "CBOT:ZBM2021",
@@ -1144,6 +1158,13 @@
         "CBOT:ZN"
       ],
       "s": "CBOT:ZN1!"
+    },
+    {
+      "s": "CBOT:ZNH2022",
+      "f": [
+        null,
+        "CBOT:ZN"
+      ]
     },
     {
       "s": "CBOT:ZNM2021",
@@ -2070,6 +2091,13 @@
       ]
     },
     {
+      "s": "CME_MINI:EMDU2022",
+      "f": [
+        null,
+        "CME_MINI:EMD"
+      ]
+    },
+    {
       "s": "CME_MINI:EMDZ2021",
       "f": [
         null,
@@ -2127,6 +2155,13 @@
     },
     {
       "s": "CME_MINI:ESU2022",
+      "f": [
+        null,
+        "CME_MINI:ES"
+      ]
+    },
+    {
+      "s": "CME_MINI:ESU2023",
       "f": [
         null,
         "CME_MINI:ES"
@@ -2197,6 +2232,13 @@
     },
     {
       "s": "CME_MINI:FTUU2021",
+      "f": [
+        null,
+        "CME_MINI:FTU"
+      ]
+    },
+    {
+      "s": "CME_MINI:FTUU2022",
       "f": [
         null,
         "CME_MINI:FTU"
@@ -2413,6 +2455,13 @@
       ]
     },
     {
+      "s": "CME_MINI:NQU2022",
+      "f": [
+        null,
+        "CME_MINI:NQ"
+      ]
+    },
+    {
       "s": "CME_MINI:NQZ2021",
       "f": [
         null,
@@ -2449,6 +2498,13 @@
     },
     {
       "s": "CME_MINI:RS1U2021",
+      "f": [
+        null,
+        "CME_MINI:RS1"
+      ]
+    },
+    {
+      "s": "CME_MINI:RS1U2022",
       "f": [
         null,
         "CME_MINI:RS1"
@@ -5507,6 +5563,13 @@
       ]
     },
     {
+      "s": "CME:SPU2023",
+      "f": [
+        null,
+        "CME:SP"
+      ]
+    },
+    {
       "s": "CME:SPZ2021",
       "f": [
         null,
@@ -6891,6 +6954,13 @@
         "EUREX:FGBL"
       ],
       "s": "EUREX:FGBL1!"
+    },
+    {
+      "s": "EUREX:FGBLH2022",
+      "f": [
+        null,
+        "EUREX:FGBL"
+      ]
     },
     {
       "s": "EUREX:FGBLM2021",

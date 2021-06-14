@@ -1580,14 +1580,14 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -5238,6 +5238,20 @@
       "f": [
         "HEX",
         "HEX"
+      ]
+    },
+    {
+      "s": "HUOBI:HITBTC",
+      "f": [
+        "HitChain",
+        "HIT"
+      ]
+    },
+    {
+      "s": "HITBTC:HITUSD",
+      "f": [
+        "HitChain",
+        "HIT"
       ]
     },
     {
@@ -9119,14 +9133,14 @@
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
@@ -9564,6 +9578,20 @@
       "f": [
         "SingularityNET",
         "AGI"
+      ]
+    },
+    {
+      "s": "BINANCE:AGIXBTC",
+      "f": [
+        "SingularityNET",
+        "AGIX"
+      ]
+    },
+    {
+      "s": "BINANCE:AGIXUSD",
+      "f": [
+        "SingularityNET",
+        "AGIX"
       ]
     },
     {
@@ -10824,6 +10852,20 @@
       "f": [
         "TON Crystal",
         "TON"
+      ]
+    },
+    {
+      "s": "BINANCE:TORNBTC",
+      "f": [
+        "Tornado Cash",
+        "TORN"
+      ]
+    },
+    {
+      "s": "BINANCE:TORNUSD",
+      "f": [
+        "Tornado Cash",
+        "TORN"
       ]
     },
     {

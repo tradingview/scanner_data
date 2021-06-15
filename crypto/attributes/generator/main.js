@@ -160,6 +160,7 @@ const excludeSymbols = [
     "BITTREX:BCCBTC",
     "HITBTC:BCCBTC",
     "HITBTC:BCCUSD",
+    "HITBTC:HITBTC",
     "BITFINEX:BCCBTC",
     "BITFINEX:BCCUSD",
     "BTCE:NVCUSD",

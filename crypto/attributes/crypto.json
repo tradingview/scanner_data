@@ -1580,13 +1580,6 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
-      "f": [
-        "BitShares",
-        "BTS"
-      ]
-    },
-    {
       "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
@@ -1594,7 +1587,7 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1602,6 +1595,13 @@
     },
     {
       "s": "BINANCE:BTSUSD",
+      "f": [
+        "BitShares",
+        "BTS"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -9133,14 +9133,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"

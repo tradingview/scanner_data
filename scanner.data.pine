@@ -699,14 +699,32 @@ custom_highest(x, l) =>
     for i = 0 to l
         res := max(res, x[i])
     res
-bar_index_52wago = valuewhen(time < timenow - 1000*60*60*24*7*52, bar_index, 1)
-diff = bar_index - bar_index_52wago
-index = bar_index > 0 ? bar_index : 1
-len = diff > 0 ? diff : index
-lowest_52w = custom_lowest(low, len)
-highest_52w = custom_highest(high, len)
+fastSearchN(xs, x) => // xs - sorted, ascending
+    len = 1024
+    size = floor(len / 2)
+    k = size
+    for i = 0 to 15
+        size := floor(size / 2)
+        if (x <= xs[k]?1:0) * (x > xs[k+1]?1:0) > 0
+            break
+        if ((xs[k] < x)?1:0) + (na(xs[k])?1:0) > 0
+            k := k - size
+        else
+            k := k + size
+        if size == 0
+            if na(xs[k])?1:0 + (1 - (x <= xs[k] ?1:0) * (x > xs[k+1]?1:0)) > 0
+                k := na
+            break
+    k
+
+
+countOfBarsYearAgo = fastSearchN(time, timenow - 1000*60*60*24*7*52)
+
+highest_52w = custom_highest(high, countOfBarsYearAgo)
 plot(highest_52w, title="price_52_week_high")
+lowest_52w = custom_lowest(low, countOfBarsYearAgo)
 plot(lowest_52w, title="price_52_week_low")
+
 plot(nz(highest(high, 126), allTimeHigh), title="High.6M")
 plot(nz(lowest(low, 126), allTimeLow), title="Low.6M")
 plot(nz(highest(high, 63), allTimeHigh), title="High.3M")

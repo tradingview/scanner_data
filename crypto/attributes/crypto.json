@@ -1580,14 +1580,14 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1773,20 +1773,6 @@
       "f": [
         "Blockpass",
         "PASS"
-      ]
-    },
-    {
-      "s": "BINANCE:STXBTC",
-      "f": [
-        "Stacks",
-        "STX"
-      ]
-    },
-    {
-      "s": "BINANCE:STXUSD",
-      "f": [
-        "Stacks",
-        "STX"
       ]
     },
     {
@@ -9914,6 +9900,20 @@
       "f": [
         "StableUSD",
         "USDS"
+      ]
+    },
+    {
+      "s": "BINANCE:STXBTC",
+      "f": [
+        "Stacks",
+        "STX"
+      ]
+    },
+    {
+      "s": "BINANCE:STXUSD",
+      "f": [
+        "Stacks",
+        "STX"
       ]
     },
     {

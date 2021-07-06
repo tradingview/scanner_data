@@ -1160,6 +1160,20 @@
       ]
     },
     {
+      "s": "BINANCE:BONDBTC",
+      "f": [
+        "BarnBridge",
+        "BOND"
+      ]
+    },
+    {
+      "s": "BINANCE:BONDUSD",
+      "f": [
+        "BarnBridge",
+        "BOND"
+      ]
+    },
+    {
       "s": "BINANCE:BATBTC",
       "f": [
         "Basic Attention Token",
@@ -1580,14 +1594,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"

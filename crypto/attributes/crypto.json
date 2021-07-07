@@ -1608,14 +1608,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -8944,6 +8944,20 @@
       ]
     },
     {
+      "s": "BITTREX:RGTBTC",
+      "f": [
+        "Rari Governance Token",
+        "RGT"
+      ]
+    },
+    {
+      "s": "BITTREX:RGTUSD",
+      "f": [
+        "Rari Governance Token",
+        "RGT"
+      ]
+    },
+    {
       "s": "HITBTC:RARIBTC",
       "f": [
         "Rarible",
@@ -9564,6 +9578,20 @@
       "f": [
         "SIBCoin",
         "SIB"
+      ]
+    },
+    {
+      "s": "BITTREX:SIGNABTC",
+      "f": [
+        "Signum",
+        "SIGNA"
+      ]
+    },
+    {
+      "s": "BITTREX:SIGNAUSD",
+      "f": [
+        "Signum",
+        "SIGNA"
       ]
     },
     {

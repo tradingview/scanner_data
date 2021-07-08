@@ -152,7 +152,7 @@
     {
       "s": "/nasdaq_cfd_indices",
       "f": []
-    },
+    },    
     {
       "s": "/nigerian_indices",
       "f": []
@@ -222,6 +222,26 @@
       "f": []
     },
     {
+      "s": "/tallinn_indices",
+      "f": []
+    },
+    {
+      "s": "/telaviv_indices",
+      "f": []
+    },
+    {
+      "s": "/toronto_indices",
+      "f": []
+    },
+    {
+      "s": "/cboe_cfd_indices",
+      "f": []
+    },
+    {
+      "s": "/us_cfd_indices",
+      "f": []
+    },
+    {
       "s": "/vilnius_indices",
       "f": []
     },
@@ -235,6 +255,14 @@
     },
     {
       "s": "/xetra_cfd_indices",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=CBOE&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=DJ&typespecs=main&alias=1",
       "f": []
     },
     {

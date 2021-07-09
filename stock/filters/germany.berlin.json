@@ -913,9 +913,6 @@
       "s": "BER:BNU"
     },
     {
-      "s": "BER:BO8"
-    },
-    {
       "s": "BER:BOSS"
     },
     {
@@ -1094,6 +1091,9 @@
     },
     {
       "s": "BER:CMN1"
+    },
+    {
+      "s": "BER:CNO"
     },
     {
       "s": "BER:CNWK"
@@ -1843,6 +1843,9 @@
       "s": "BER:H24"
     },
     {
+      "s": "BER:H2D"
+    },
+    {
       "s": "BER:H2O"
     },
     {
@@ -1922,9 +1925,6 @@
     },
     {
       "s": "BER:HI91"
-    },
-    {
-      "s": "BER:HIUC"
     },
     {
       "s": "BER:HLAG"
@@ -2311,9 +2311,6 @@
       "s": "BER:LCM"
     },
     {
-      "s": "BER:LCO"
-    },
-    {
       "s": "BER:LCR"
     },
     {
@@ -2399,6 +2396,9 @@
     },
     {
       "s": "BER:LWE"
+    },
+    {
+      "s": "BER:LX4A"
     },
     {
       "s": "BER:LXS"
@@ -2488,9 +2488,6 @@
       "s": "BER:MCP"
     },
     {
-      "s": "BER:MCX"
-    },
-    {
       "s": "BER:MDG1"
     },
     {
@@ -2519,6 +2516,9 @@
     },
     {
       "s": "BER:MLB1"
+    },
+    {
+      "s": "BER:MLI"
     },
     {
       "s": "BER:MLL"
@@ -2576,9 +2576,6 @@
     },
     {
       "s": "BER:MUB"
-    },
-    {
-      "s": "BER:MUF"
     },
     {
       "s": "BER:MUM"
@@ -2752,9 +2749,6 @@
       "s": "BER:NXU"
     },
     {
-      "s": "BER:NYT"
-    },
-    {
       "s": "BER:O2C"
     },
     {
@@ -2794,6 +2788,9 @@
       "s": "BER:OHCB"
     },
     {
+      "s": "BER:OHP"
+    },
+    {
       "s": "BER:OMV"
     },
     {
@@ -2825,6 +2822,9 @@
     },
     {
       "s": "BER:P4O"
+    },
+    {
+      "s": "BER:P5P"
     },
     {
       "s": "BER:PA8"
@@ -2893,6 +2893,9 @@
       "s": "BER:PG5"
     },
     {
+      "s": "BER:PG81"
+    },
+    {
       "s": "BER:PGN"
     },
     {
@@ -2939,9 +2942,6 @@
     },
     {
       "s": "BER:PPX"
-    },
-    {
-      "s": "BER:PQN"
     },
     {
       "s": "BER:PRG"
@@ -3325,10 +3325,10 @@
       "s": "BER:SRT3"
     },
     {
-      "s": "BER:SS1A"
+      "s": "BER:ST5"
     },
     {
-      "s": "BER:ST5"
+      "s": "BER:ST9"
     },
     {
       "s": "BER:STLA"
@@ -3647,9 +3647,6 @@
     },
     {
       "s": "BER:UUU"
-    },
-    {
-      "s": "BER:UVV"
     },
     {
       "s": "BER:UWS"

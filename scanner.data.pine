@@ -653,29 +653,7 @@ plot((C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high) ? 1 : 0, title =
 // study(title="VWAP", shorttitle="VWAP", overlay=true)
 plot(vwap(hlc3), title="VWAP")
 
-// performance
-rateOfreturn(v1, v2) => (v1 - v2) * 100 / abs(v2)
-rr(bb) =>
-    rof = rateOfreturn(close, close[bb])
-    rof
-plot(rr(5), title="Perf.W")
-//plot(rr(10), title="Perf.2W")
-//plot(rr(15), title="Perf.3W")
-plot(rr(21), title="Perf.1M")
-plot(rr(63), title="Perf.3M")
-plot(rr(126), title="Perf.6M")
-//plot(rr(189), title="Perf.9M")
-plot(rr(251), title="Perf.Y")
-var lastYearClose = float(na)
-if year > year[1]
-    lastYearClose := close[1]
-plot(rateOfreturn(close, lastYearClose), title="Perf.YTD")
 
-// volatility
-volatility(bb) => sma((high-low)/abs(low) * 100, bb)
-plot(volatility(5), title="Volatility.W")
-plot(volatility(21), title="Volatility.M")
-plot(tr(true)*100/abs(low), title="Volatility.D")
 
 // high & low
 var allTimeHigh = float(na)
@@ -686,6 +664,7 @@ plot(allTimeHigh, title="High.All")
 plot(allTimeLow, title="Low.All")
 plot(allTimeHigh, title="High.All.Calc")
 plot(allTimeLow, title="Low.All.Calc")
+
 custom_lowest(x, l) =>
     res = x
     max_bars_back(x, 366)
@@ -693,28 +672,102 @@ custom_lowest(x, l) =>
     for i = 0 to l
         res := min(res, x[i])
     res
+
 custom_highest(x, l) =>
     res = x
     max_bars_back(x, 366)
     for i = 0 to l
         res := max(res, x[i])
     res
-bar_index_52wago = valuewhen(time < timenow - 1000*60*60*24*7*52, bar_index, 1)
-diff = bar_index - bar_index_52wago
+
+fastSearchN(xs, x) => // xs - sorted, ascending
+    max_bars_back(xs, 512)
+    len = 1024
+    size = floor(len / 2)
+    k = size
+    for i = 0 to 15
+        size := floor(size / 2)
+        if (x <= xs[k]?1:0) * (x > xs[k+1]?1:0) > 0
+            break
+        if ((xs[k] < x)?1:0) + (na(xs[k])?1:0) > 0
+            k := k - size
+        else
+            k := k + size
+        if size == 0
+            if na(xs[k])?1:0 + (1 - (x <= xs[k] ?1:0) * (x > xs[k+1]?1:0)) > 0
+                k := na
+            break
+    k
+
 index = bar_index > 0 ? bar_index : 1
-len = diff > 0 ? diff : index
-lowest_52w = custom_lowest(low, len)
-highest_52w = custom_highest(high, len)
-plot(highest_52w, title="price_52_week_high")
-plot(lowest_52w, title="price_52_week_low")
-plot(nz(highest(high, 126), allTimeHigh), title="High.6M")
-plot(nz(lowest(low, 126), allTimeLow), title="Low.6M")
-plot(nz(highest(high, 63), allTimeHigh), title="High.3M")
-plot(nz(lowest(low, 63), allTimeLow), title="Low.3M")
-plot(nz(highest(high, 21), allTimeHigh), title="High.1M")
-plot(nz(lowest(low, 21), allTimeLow), title="Low.1M")
-plot(nz(highest(high, 5), allTimeHigh), title="High.5D")
-plot(nz(lowest(low, 5), allTimeLow), title="Low.5D")
+weeks52 = 7*52
+countOfBars52WeekAgo = nz(fastSearchN(time, timenow - 1000*60*60*24*weeks52),index)
+countOfBars52WeekAgo := countOfBars52WeekAgo >= weeks52 ? weeks52 : countOfBars52WeekAgo
+
+month6 = 180
+countOfBars6MonthAgo = nz(fastSearchN(time, timenow - 1000*60*60*24*month6),index)
+countOfBars6MonthAgo := countOfBars6MonthAgo >= month6 ? month6 : countOfBars6MonthAgo
+
+month3 = 90
+countOfBars3MonthAgo = nz(fastSearchN(time, timenow - 1000*60*60*24*90),index)
+countOfBars3MonthAgo := countOfBars3MonthAgo >= month3 ? month3 : countOfBars3MonthAgo
+
+month1 = 30
+countOfBars1MonthAgo = nz(fastSearchN(time, timenow - 1000*60*60*24*30),index)
+countOfBars1MonthAgo := countOfBars1MonthAgo >= month1 ? month1 : countOfBars1MonthAgo
+
+week1 = 7
+countOfBarsWeekAgo = nz(fastSearchN(time, timenow - 1000*60*60*24*week1),index)
+countOfBarsWeekAgo := countOfBarsWeekAgo >= week1 ? week1 : countOfBarsWeekAgo
+
+plot(custom_lowest(low, countOfBars52WeekAgo), title="price_52_week_low")
+plot(custom_highest(high, countOfBars52WeekAgo), title="price_52_week_high")
+
+plot(nz(custom_highest(high, countOfBars6MonthAgo), allTimeHigh), title="High.6M")
+plot(nz(custom_lowest(low, countOfBars6MonthAgo), allTimeLow), title="Low.6M")
+
+plot(nz(custom_highest(high, countOfBars3MonthAgo), allTimeHigh), title="High.3M")
+plot(nz(custom_lowest(low, countOfBars3MonthAgo), allTimeLow), title="Low.3M")
+
+plot(nz(custom_highest(high, countOfBars1MonthAgo), allTimeHigh), title="High.1M")
+plot(nz(custom_lowest(low, countOfBars1MonthAgo), allTimeLow), title="Low.1M")
+
+plot(nz(custom_highest(high, countOfBarsWeekAgo), allTimeHigh), title="High.5D")
+plot(nz(custom_lowest(low, countOfBarsWeekAgo), allTimeLow), title="Low.5D")
+
+
+// volatility
+volatility(bb) =>
+    low_x = low
+    high_x = high
+    max_bars_back(low_x, 366)
+    max_bars_back(high_x, 366)
+    sum = 0.0
+    for i = 0 to bb - 1
+        sum := sum + (high_x[i]-low_x[i])/abs(low_x[i]) * 100 / bb
+    sum
+
+plot(volatility(countOfBarsWeekAgo), title="Volatility.W")
+plot(volatility(countOfBars1MonthAgo),title="Volatility.M")
+plot(tr(true)*100/abs(low), title="Volatility.D")
+
+// performance
+rateOfreturn(v1, v2) => (v1 - v2) * 100 / abs(v2)
+rr(bb) =>
+    close_x = close
+    max_bars_back(close_x, 366)
+    rof = rateOfreturn(close_x, close_x[bb])
+    rof
+
+plot(rr(countOfBarsWeekAgo), title="Perf.W")
+plot(rr(countOfBars1MonthAgo), title="Perf.1M")
+plot(rr(countOfBars3MonthAgo), title="Perf.3M")
+plot(rr(countOfBars6MonthAgo), title="Perf.6M")
+plot(rr(countOfBars52WeekAgo), title="Perf.Y")
+var lastYearClose = float(na)
+if year > year[1]
+    lastYearClose := close[1]
+plot(rateOfreturn(close, lastYearClose), title="Perf.YTD")
 
 // business day
 plot(time_tradingday/1000, title="time_business_day")

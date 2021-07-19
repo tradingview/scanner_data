@@ -1622,14 +1622,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -3222,6 +3222,20 @@
       "f": [
         "Decred",
         "DCR"
+      ]
+    },
+    {
+      "s": "HITBTC:DFCBTC",
+      "f": [
+        "DeFi City",
+        "DFC"
+      ]
+    },
+    {
+      "s": "HITBTC:DFCUSD",
+      "f": [
+        "DeFi City",
+        "DFC"
       ]
     },
     {
@@ -9245,14 +9259,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
@@ -12259,6 +12273,20 @@
       "f": [
         "YOU COIN",
         "YOU"
+      ]
+    },
+    {
+      "s": "POLONIEX:YFXBTC",
+      "f": [
+        "Your Future Exchange",
+        "YFX"
+      ]
+    },
+    {
+      "s": "POLONIEX:YFXUSD",
+      "f": [
+        "Your Future Exchange",
+        "YFX"
       ]
     },
     {

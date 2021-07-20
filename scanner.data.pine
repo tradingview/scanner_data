@@ -718,34 +718,34 @@ weeks52 = 7*52
 weeks52_ago = timenow - 1000*60*60*24*weeks52
 countOfBars52WeekAgo = nz(fastSearchN(time, weeks52_ago),0)
 [lowest_52w, highest_52w] = MinMax(countOfBars52WeekAgo, weeks52_ago)
-plot(highest_52w, title="price_52_week_high")
 plot(lowest_52w, title="price_52_week_low")
+plot(highest_52w, title="price_52_week_high")
 
 month6 = 180
 months6_ago = timenow - 1000*60*60*24*month6
 countOfBars6MonthAgo = nz(fastSearchN(time, months6_ago),0)
 [lowest_6M, highest_6M] = MinMax(countOfBars6MonthAgo, months6_ago)
-plot(highest_6M, title="Low.6M")
-plot(lowest_6M, title="High.6M")
+plot(lowest_6M, title="Low.6M")
+plot(highest_6M, title="High.6M")
 
 month3 = 90
 months3_ago = timenow - 1000*60*60*24*month3
 countOfBars3MonthAgo = nz(fastSearchN(time, months3_ago),0)
-[highest_3M, lowest_3M] = MinMax(countOfBars3MonthAgo, months3_ago)
+[lowest_3M, highest_3M] = MinMax(countOfBars3MonthAgo, months3_ago)
 plot(lowest_3M, title="Low.3M")
 plot(highest_3M, title="High.3M")
 
 month1 = 30
 month_ago = timenow - 1000*60*60*24*month1
 countOfBars1MonthAgo = nz(fastSearchN(time, month_ago),0)
-[highest_1M, lowest_1M] = MinMax(countOfBars1MonthAgo, month_ago)
+[lowest_1M, highest_1M] = MinMax(countOfBars1MonthAgo, month_ago)
 plot(lowest_1M, title="Low.1M")
 plot(highest_1M, title="High.1M")
 
 week1 = 7
 week_ago = timenow - 1000*60*60*24*week1
 countOfBarsWeekAgo = nz(fastSearchN(time, week_ago),0)
-[highest_1w, lowest_1w] = MinMax(countOfBarsWeekAgo, week_ago)
+[lowest_1w, highest_1w] = MinMax(countOfBarsWeekAgo, week_ago)
 plot(lowest_1w, title="Low.5D")
 plot(highest_1w, title="High.5D")
 

@@ -662,92 +662,88 @@ plot(allTimeHigh, title="High.All")
 plot(allTimeLow, title="Low.All")
 plot(allTimeHigh, title="High.All.Calc")
 plot(allTimeLow, title="Low.All.Calc")
-custom_lowest(x, l) =>
-    if x == 0
-        0
+custom_lowest(x, len) =>
+    if len == 0
+        na
+    else if len == 1
+        x
     else
+        _len = len
+        if na(x[len+1]) != true
+            _len := _len - 1
         res = x
         max_bars_back(x, 366)
         res := x
-        for i = 0 to l
+        for i = 0 to _len
             res := min(res, x[i])
         res
-custom_highest(x, l) =>
-    if x == 0
-        0
+custom_highest(x, len) =>
+    if len == 0
+        na
+    else if len == 1
+        x
     else
+        _len = len
+        if na(x[len+1]) != true
+            _len := _len - 1
         res = x
         max_bars_back(x, 366)
-        for i = 0 to l
+        for i = 0 to _len
             res := max(res, x[i])
         res
 
 fastSearchN(xs, x) => // xs - sorted, ascending
-    max_bars_back(xs, 512)
-    len = 1024
-    size = floor(len / 2)
-    k = size
-    for i = 0 to 15
-        size := floor(size / 2)
-        if (x <= xs[k]?1:0) * (x > xs[k+1]?1:0) > 0
-            break
-        if ((xs[k] < x)?1:0) + (na(xs[k])?1:0) > 0
-            k := k - size
-        else
-            k := k + size
-        if size == 0
-            if na(xs[k])?1:0 + (1 - (x <= xs[k] ?1:0) * (x > xs[k+1]?1:0)) > 0
-                k := na
-            break
-    k
+    max_bars_back(xs, 366)
+    left  = 0
+    right = min(bar_index,366)
+    mid = 0
+    if xs < x
+        0
+    else
+        for i = 0 to 9
+            mid := ceil((left+right) / 2)
+            if left == right
+                break
+            else if xs[mid] < x
+                right := mid
+                continue
+            else if xs[mid] > x
+                left := mid
+                continue
+            else
+                break
+        mid
 
-MinMax(countOfBarsAgo, timeAgo) =>
-    highestPrice = float(na)
-    lowestPrice  = float(na)
-    customHighest = custom_highest(high, countOfBarsAgo)
-    customLowest  = custom_lowest(low, countOfBarsAgo)
-    if countOfBarsAgo != 0
-        highestPrice := customHighest
-        lowestPrice  := customLowest
-    else if time > timeAgo
-        highestPrice := allTimeHigh
-        lowestPrice  := allTimeLow
-    [lowestPrice,highestPrice]
 
 weeks52 = 7*52
 weeks52_ago = timenow - 1000*60*60*24*weeks52
-countOfBars52WeekAgo = nz(fastSearchN(time, weeks52_ago),0)
-[lowest_52w, highest_52w] = MinMax(countOfBars52WeekAgo, weeks52_ago)
-plot(lowest_52w, title="price_52_week_low")
-plot(highest_52w, title="price_52_week_high")
+countOfBars52WeekAgo = fastSearchN(time, weeks52_ago)
+plot(custom_lowest(low, countOfBars52WeekAgo), title="price_52_week_low")
+plot(custom_highest(high, countOfBars52WeekAgo), title="price_52_week_high")
 
 month6 = 180
 months6_ago = timenow - 1000*60*60*24*month6
-countOfBars6MonthAgo = nz(fastSearchN(time, months6_ago),0)
-[lowest_6M, highest_6M] = MinMax(countOfBars6MonthAgo, months6_ago)
-plot(lowest_6M, title="Low.6M")
-plot(highest_6M, title="High.6M")
+countOfBars6MonthAgo = fastSearchN(time, months6_ago)
+plot(custom_lowest(low, countOfBars6MonthAgo), title="Low.6M")
+plot(custom_highest(high, countOfBars6MonthAgo), title="High.6M")
 
 month3 = 90
 months3_ago = timenow - 1000*60*60*24*month3
-countOfBars3MonthAgo = nz(fastSearchN(time, months3_ago),0)
-[lowest_3M, highest_3M] = MinMax(countOfBars3MonthAgo, months3_ago)
-plot(lowest_3M, title="Low.3M")
-plot(highest_3M, title="High.3M")
+countOfBars3MonthAgo = fastSearchN(time, months3_ago)
+plot(custom_lowest(low, countOfBars3MonthAgo), title="Low.3M")
+plot(custom_highest(high, countOfBars3MonthAgo), title="High.3M")
 
 month1 = 30
 month_ago = timenow - 1000*60*60*24*month1
-countOfBars1MonthAgo = nz(fastSearchN(time, month_ago),0)
-[lowest_1M, highest_1M] = MinMax(countOfBars1MonthAgo, month_ago)
-plot(lowest_1M, title="Low.1M")
-plot(highest_1M, title="High.1M")
+countOfBars1MonthAgo = fastSearchN(time, month_ago)
+plot(custom_lowest(low, countOfBars1MonthAgo), title="Low.1M")
+plot(custom_highest(high, countOfBars1MonthAgo), title="High.1M")
 
 week1 = 7
 week_ago = timenow - 1000*60*60*24*week1
-countOfBarsWeekAgo = nz(fastSearchN(time, week_ago),0)
-[lowest_1w, highest_1w] = MinMax(countOfBarsWeekAgo, week_ago)
-plot(lowest_1w, title="Low.5D")
-plot(highest_1w, title="High.5D")
+countOfBarsWeekAgo = fastSearchN(time, week_ago)
+plot(custom_lowest(low, countOfBarsWeekAgo), title="Low.5D")
+plot(custom_highest(high, countOfBarsWeekAgo), title="High.5D")
 
 // volatility
 volatility(bb) =>
@@ -756,7 +752,7 @@ volatility(bb) =>
     else
         c = cum((high-low)/abs(low) * 100 / bb)
         max_bars_back(c, 366)
-        c - c[bb-1]
+        c - nz(c[bb-1])
 
 plot(volatility(countOfBarsWeekAgo), title="Volatility.W")
 plot(volatility(countOfBars1MonthAgo),title="Volatility.M")

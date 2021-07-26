@@ -4331,6 +4331,20 @@
       ]
     },
     {
+      "s": "BITTREX:FNXBTC",
+      "f": [
+        "FinNexus",
+        "FNX"
+      ]
+    },
+    {
+      "s": "BITTREX:FNXUSD",
+      "f": [
+        "FinNexus",
+        "FNX"
+      ]
+    },
+    {
       "s": "HITBTC:FTXBTC",
       "f": [
         "FintruX Network",
@@ -8916,6 +8930,20 @@
       ]
     },
     {
+      "s": "BINANCE:QUICKBTC",
+      "f": [
+        "QuickSwap",
+        "QUICK"
+      ]
+    },
+    {
+      "s": "BINANCE:QUICKUSD",
+      "f": [
+        "QuickSwap",
+        "QUICK"
+      ]
+    },
+    {
       "s": "BITFINEX:EXRDBTC",
       "f": [
         "Radix",
@@ -9259,14 +9287,14 @@
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"

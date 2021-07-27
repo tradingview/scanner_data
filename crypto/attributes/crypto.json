@@ -1608,13 +1608,6 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
-      "f": [
-        "BitShares",
-        "BTS"
-      ]
-    },
-    {
       "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
@@ -1622,7 +1615,7 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1630,6 +1623,13 @@
     },
     {
       "s": "BINANCE:BTSUSD",
+      "f": [
+        "BitShares",
+        "BTS"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -2550,6 +2550,20 @@
       "f": [
         "Coin Artist",
         "COIN"
+      ]
+    },
+    {
+      "s": "BINANCE:C98BTC",
+      "f": [
+        "Coin98",
+        "C98"
+      ]
+    },
+    {
+      "s": "BINANCE:C98USD",
+      "f": [
+        "Coin98",
+        "C98"
       ]
     },
     {
@@ -9287,14 +9301,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
@@ -10950,6 +10964,20 @@
       "f": [
         "THORChain",
         "RUNE"
+      ]
+    },
+    {
+      "s": "HUOBI:TTBTC",
+      "f": [
+        "Thunder Token",
+        "TT"
+      ]
+    },
+    {
+      "s": "HITBTC:TTUSD",
+      "f": [
+        "Thunder Token",
+        "TT"
       ]
     },
     {

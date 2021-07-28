@@ -258,14 +258,6 @@
       "f": []
     },
     {
-      "s": "/crypto_market_caps2",
-      "f": []
-    },
-    {
-      "s": "/crypto_market_caps_internal",
-      "f": []
-    },
-    {
       "s": "?perm=*&domain=tv&prefix=CBOE&typespecs=main",
       "f": []
     },
@@ -275,6 +267,10 @@
     },
     {
       "s": "?perm=*&domain=tv&prefix=SP&typespecs=main&alias=1",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=CRYPTOCAP",
       "f": []
     }
   ]

@@ -34,10 +34,6 @@
       "f": []
     },
     {
-      "s": "/canadian_bonds",
-      "f": []
-    },
-    {
       "s": "/shanghai_cfd_indices",
       "f": []
     },
@@ -95,14 +91,6 @@
     },
     {
       "s": "/gain",
-      "f": []
-    },
-    {
-      "s": "/government_bonds",
-      "f": []
-    },
-    {
-      "s": "/government_bonds_nodaily",
       "f": []
     },
     {
@@ -270,6 +258,21 @@
       "f": []
     },
     {
+      "s": "/refinitiv_bonds",
+      "f": []
+    },
+    {
+      "s": "/refinitiv_bonds_yield",
+      "f": []
+    },
+    {
+      "s": "/refinitiv_bonds_rrps",
+      "f": []
+    },
+    {
+      "s": "/refinitiv_bonds_rrps_yield",
+      "f": []
+    },
       "s": "?perm=*&domain=tv&prefix=CRYPTOCAP",
       "f": []
     }

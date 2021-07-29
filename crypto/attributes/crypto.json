@@ -1608,13 +1608,6 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
-      "f": [
-        "BitShares",
-        "BTS"
-      ]
-    },
-    {
       "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
@@ -1622,7 +1615,7 @@
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1630,6 +1623,13 @@
     },
     {
       "s": "POLONIEX:BTSUSD",
+      "f": [
+        "BitShares",
+        "BTS"
+      ]
+    },
+    {
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -2553,6 +2553,20 @@
       ]
     },
     {
+      "s": "BINANCE:C98BTC",
+      "f": [
+        "Coin98",
+        "C98"
+      ]
+    },
+    {
+      "s": "BINANCE:C98USD",
+      "f": [
+        "Coin98",
+        "C98"
+      ]
+    },
+    {
       "s": "HITBTC:CLTBTC",
       "f": [
         "CoinLoan",
@@ -3019,6 +3033,20 @@
       "f": [
         "CyberVein",
         "CVT"
+      ]
+    },
+    {
+      "s": "HITBTC:DACXIBTC",
+      "f": [
+        "Dacxi",
+        "DACXI"
+      ]
+    },
+    {
+      "s": "HITBTC:DACXIUSD",
+      "f": [
+        "Dacxi",
+        "DACXI"
       ]
     },
     {
@@ -3694,6 +3722,20 @@
       ]
     },
     {
+      "s": "HITBTC:XECBTC",
+      "f": [
+        "eCash",
+        "XEC"
+      ]
+    },
+    {
+      "s": "HITBTC:XECUSD",
+      "f": [
+        "eCash",
+        "XEC"
+      ]
+    },
+    {
       "s": "HUOBI:EKOBTC",
       "f": [
         "EchoLink",
@@ -4331,6 +4373,20 @@
       ]
     },
     {
+      "s": "BITTREX:FNXBTC",
+      "f": [
+        "FinNexus",
+        "FNX"
+      ]
+    },
+    {
+      "s": "BITTREX:FNXUSD",
+      "f": [
+        "FinNexus",
+        "FNX"
+      ]
+    },
+    {
       "s": "HITBTC:FTXBTC",
       "f": [
         "FintruX Network",
@@ -4958,6 +5014,20 @@
       "f": [
         "Golden Ratio Coin",
         "GOLDR"
+      ]
+    },
+    {
+      "s": "BITTREX:GPYXBTC",
+      "f": [
+        "GoldenPyrex",
+        "GPYX"
+      ]
+    },
+    {
+      "s": "BITTREX:GPYXUSD",
+      "f": [
+        "GoldenPyrex",
+        "GPYX"
       ]
     },
     {
@@ -8916,6 +8986,20 @@
       ]
     },
     {
+      "s": "BINANCE:QUICKBTC",
+      "f": [
+        "QuickSwap",
+        "QUICK"
+      ]
+    },
+    {
+      "s": "BINANCE:QUICKUSD",
+      "f": [
+        "QuickSwap",
+        "QUICK"
+      ]
+    },
+    {
       "s": "BITFINEX:EXRDBTC",
       "f": [
         "Radix",
@@ -9259,14 +9343,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
@@ -10925,6 +11009,20 @@
       ]
     },
     {
+      "s": "HUOBI:TTBTC",
+      "f": [
+        "Thunder Token",
+        "TT"
+      ]
+    },
+    {
+      "s": "HITBTC:TTUSD",
+      "f": [
+        "Thunder Token",
+        "TT"
+      ]
+    },
+    {
       "s": "HITBTC:TVBTC",
       "f": [
         "Ti-Value",
@@ -12273,6 +12371,20 @@
       "f": [
         "YF Link",
         "YFL"
+      ]
+    },
+    {
+      "s": "BITFINEX:YGGBTC",
+      "f": [
+        "Yield Guild Games",
+        "YGG"
+      ]
+    },
+    {
+      "s": "BITFINEX:YGGUSD",
+      "f": [
+        "Yield Guild Games",
+        "YGG"
       ]
     },
     {

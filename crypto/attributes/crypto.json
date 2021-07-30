@@ -1608,14 +1608,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -2522,6 +2522,20 @@
       "f": [
         "CloudCoin",
         "CCE"
+      ]
+    },
+    {
+      "s": "BINANCE:CLVBTC",
+      "f": [
+        "Clover Finance",
+        "CLV"
+      ]
+    },
+    {
+      "s": "BINANCE:CLVUSD",
+      "f": [
+        "Clover Finance",
+        "CLV"
       ]
     },
     {
@@ -7030,6 +7044,20 @@
       "f": [
         "MIMOSA",
         "MIMO"
+      ]
+    },
+    {
+      "s": "HITBTC:MINABTC",
+      "f": [
+        "Mina",
+        "MINA"
+      ]
+    },
+    {
+      "s": "HITBTC:MINAUSD",
+      "f": [
+        "Mina",
+        "MINA"
       ]
     },
     {

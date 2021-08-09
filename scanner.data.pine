@@ -751,10 +751,17 @@ plot(custom_highest(high, countOfBarsWeekAgo), title="High.5D")
 
 // volatility
 volatility(bb) =>
-    if bb == 0
+    bb2 = bb
+    if bar_index == 0
+        bb2 := 365
+    if bb2 == 0
         na
     else
-        c = sum((high-low)/abs(low) * 100 / bb, bb)
+        s = sum((high-low)/abs(low) * 100 / bb2, bb2)
+        if bb == 0
+            na
+        else
+            s
 
 plot(volatility(countOfBarsWeekAgoThisBar), title="Volatility.W")
 plot(volatility(countOfBars1MonthAgoThisBar),title="Volatility.M")

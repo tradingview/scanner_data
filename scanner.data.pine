@@ -735,13 +735,17 @@ plot(custom_highest(high, countOfBars3MonthAgo), title="High.3M")
 
 month1 = 30
 month_ago = timenow - 1000*60*60*24*month1
+month_ago_this_bar = time - 1000*60*60*24*month1
 countOfBars1MonthAgo = fastSearchN(time, month_ago)
+countOfBars1MonthAgoThisBar = fastSearchN(time, month_ago_this_bar)
 plot(custom_lowest(low, countOfBars1MonthAgo), title="Low.1M")
 plot(custom_highest(high, countOfBars1MonthAgo), title="High.1M")
 
 week1 = 7
 week_ago = timenow - 1000*60*60*24*week1
+week_ago_this_bar = time - 1000*60*60*24*week1
 countOfBarsWeekAgo = fastSearchN(time, week_ago)
+countOfBarsWeekAgoThisBar = fastSearchN(time, week_ago_this_bar)
 plot(custom_lowest(low, countOfBarsWeekAgo), title="Low.5D")
 plot(custom_highest(high, countOfBarsWeekAgo), title="High.5D")
 
@@ -750,12 +754,10 @@ volatility(bb) =>
     if bb == 0
         na
     else
-        c = cum((high-low)/abs(low) * 100 / bb)
-        max_bars_back(c, 366)
-        c - nz(c[bb-1])
+        c = sum((high-low)/abs(low) * 100 / bb, bb)
 
-plot(volatility(countOfBarsWeekAgo), title="Volatility.W")
-plot(volatility(countOfBars1MonthAgo),title="Volatility.M")
+plot(volatility(countOfBarsWeekAgoThisBar), title="Volatility.W")
+plot(volatility(countOfBars1MonthAgoThisBar),title="Volatility.M")
 plot(tr(true)*100/abs(low), title="Volatility.D")
 
 // performance

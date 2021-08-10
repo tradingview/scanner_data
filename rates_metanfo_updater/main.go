@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
+	"fmt"
 	"io/ioutil"
 )
 
@@ -58,16 +59,19 @@ func writeQfJSON(path string, qf []map[string]interface{}) error {
 func syncFundamentalPriceType() error {
 	metaMap, err := readMetaJSON(*pathMetainfo)
 	if err != nil {
-		return err
+		return fmt.Errorf("error reading meta json, %w", err)
 	}
 
 	qfMap, err := readQfJSON(*pathQF)
 	if err != nil {
-		return err
+		return fmt.Errorf("error reading qf json, %w", err)
 	}
 
 	for _, field := range qfMap {
-		name := field["name"].(string)
+		name, ok := field["name"].(string)
+		if !ok {
+			return fmt.Errorf("expected name to be string, but it is %T", field["name"])
+		}
 		if _, ok := metaMap[name]; ok {
 			field["type"] = "fundamental_price"
 		}
@@ -75,7 +79,7 @@ func syncFundamentalPriceType() error {
 
 	err = writeQfJSON(*pathQF, qfMap)
 	if err != nil {
-		return err
+		return fmt.Errorf("error writing new qf json, %w", err)
 	}
 	return nil
 }

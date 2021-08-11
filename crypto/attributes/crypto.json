@@ -481,6 +481,20 @@
       ]
     },
     {
+      "s": "HUOBI:ACHBTC",
+      "f": [
+        "Alchemy Pay",
+        "ACH"
+      ]
+    },
+    {
+      "s": "HITBTC:ACHUSD",
+      "f": [
+        "Alchemy Pay",
+        "ACH"
+      ]
+    },
+    {
       "s": "BINANCE:ALGOBTC",
       "f": [
         "Algorand",
@@ -1608,14 +1622,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -3733,6 +3747,20 @@
       "f": [
         "EasyFi",
         "EASY"
+      ]
+    },
+    {
+      "s": "BINANCE:EZBTC",
+      "f": [
+        "EasyFi",
+        "EZ"
+      ]
+    },
+    {
+      "s": "BINANCE:EZUSD",
+      "f": [
+        "EasyFi",
+        "EZ"
       ]
     },
     {
@@ -9371,14 +9399,14 @@
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"

@@ -425,6 +425,20 @@
       ]
     },
     {
+      "s": "HUOBI:ACHBTC",
+      "f": [
+        "Alchemy Pay",
+        "ACH"
+      ]
+    },
+    {
+      "s": "HITBTC:ACHUSD",
+      "f": [
+        "Alchemy Pay",
+        "ACH"
+      ]
+    },
+    {
       "s": "BINANCE:ALGOBTC",
       "f": [
         "Algorand",
@@ -3565,6 +3579,20 @@
       "f": [
         "EasyFi",
         "EASY"
+      ]
+    },
+    {
+      "s": "BINANCE:EZBTC",
+      "f": [
+        "EasyFi",
+        "EZ"
+      ]
+    },
+    {
+      "s": "BINANCE:EZUSD",
+      "f": [
+        "EasyFi",
+        "EZ"
       ]
     },
     {

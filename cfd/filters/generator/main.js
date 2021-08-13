@@ -4,7 +4,7 @@ const {URL} = require('url');
 
 const dstPath = "../cfd.json";
 const groups = [
-    {url: "iceusa_cfd_indices", region: "Americas"},
+    {url: "dxy_idc2", region: "Americas"},
     {url: "cboe_cfd_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_cfd_indices", exclude: ["TVC:SPX"]},
     {url: "japan_cfd_indices", region: "Asia"},
@@ -16,10 +16,11 @@ const groups = [
     {url: "xetra_cfd_indices", region: "Europe"},
     {url: "british_cfd_indices", region: "Europe"},
     {url: "bme_cfd_indices", region: "Europe"},
-    {url: "government_bonds", sector: "bond", excludePattern: /^TVC\:GI/},
-    {url: "government_bonds_nodaily", sector: "bond", excludePattern: /^TVC\:GI/},
+    {url: "refinitiv_bonds", sector: "bond"},
+    {url: "refinitiv_bonds_yield", sector: "bond"},
+    {url: "refinitiv_bonds_rrps", sector: "bond"},
+    {url: "refinitiv_bonds_rrps_yield", sector: "bond"},
     {url: "euro_bonds_cfd", sector: "bond", region: "Europe"},
-    {url: "canadian_bonds", sector: "bond", region: "Americas"},
     {
         url: "forex_tvc",
         exclude: ["TVC:USOIL", "TVC:UKOIL"]

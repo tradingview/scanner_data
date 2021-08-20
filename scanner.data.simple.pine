@@ -148,6 +148,7 @@ plot(HullMA9, title = "HullMA9")
 AO = sma(hl2, 5) - sma(hl2, 34)
 plot(AO, title = "AO")
 plot(AO[1], title = "AO[1]")
+plot(AO[2], title = "AO[2]")
 
 // Pivot Points
 pivotX_open = float(na)

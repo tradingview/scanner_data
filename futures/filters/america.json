@@ -460,6 +460,13 @@
       ]
     },
     {
+      "s": "CBOT:EHU2024",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
       "s": "CBOT:EHV2021",
       "f": [
         null,
@@ -1559,6 +1566,13 @@
       ]
     },
     {
+      "s": "CBOT:ZQQ2026",
+      "f": [
+        null,
+        "CBOT:ZQ"
+      ]
+    },
+    {
       "s": "CBOT:ZQU2021",
       "f": [
         null,
@@ -2532,13 +2546,6 @@
       ]
     },
     {
-      "s": "CME:6AQ2021",
-      "f": [
-        null,
-        "CME:6A"
-      ]
-    },
-    {
       "s": "CME:6AU2021",
       "f": [
         null,
@@ -2701,13 +2708,6 @@
     },
     {
       "s": "CME:6BM2026",
-      "f": [
-        null,
-        "CME:6B"
-      ]
-    },
-    {
-      "s": "CME:6BQ2021",
       "f": [
         null,
         "CME:6B"
@@ -2882,13 +2882,6 @@
       ]
     },
     {
-      "s": "CME:6CQ2021",
-      "f": [
-        null,
-        "CME:6C"
-      ]
-    },
-    {
       "s": "CME:6CU2021",
       "f": [
         null,
@@ -3057,13 +3050,6 @@
       ]
     },
     {
-      "s": "CME:6EQ2021",
-      "f": [
-        null,
-        "CME:6E"
-      ]
-    },
-    {
       "s": "CME:6EU2021",
       "f": [
         null,
@@ -3226,13 +3212,6 @@
     },
     {
       "s": "CME:6JM2026",
-      "f": [
-        null,
-        "CME:6J"
-      ]
-    },
-    {
-      "s": "CME:6JQ2021",
       "f": [
         null,
         "CME:6J"
@@ -3841,13 +3820,6 @@
       ]
     },
     {
-      "s": "CME:6MQ2021",
-      "f": [
-        null,
-        "CME:6M"
-      ]
-    },
-    {
       "s": "CME:6MQ2022",
       "f": [
         null,
@@ -4163,13 +4135,6 @@
       ]
     },
     {
-      "s": "CME:6ZQ2021",
-      "f": [
-        null,
-        "CME:6Z"
-      ]
-    },
-    {
       "s": "CME:6ZQ2022",
       "f": [
         null,
@@ -4234,6 +4199,13 @@
     },
     {
       "s": "CME:BTCF2022",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCG2022",
       "f": [
         null,
         "CME:BTC"
@@ -4395,6 +4367,13 @@
     },
     {
       "s": "CME:DCQ2022",
+      "f": [
+        null,
+        "CME:DC"
+      ]
+    },
+    {
+      "s": "CME:DCQ2023",
       "f": [
         null,
         "CME:DC"
@@ -4618,13 +4597,6 @@
       ]
     },
     {
-      "s": "CME:GEQ2021",
-      "f": [
-        null,
-        "CME:GE"
-      ]
-    },
-    {
       "s": "CME:GEU2021",
       "f": [
         null,
@@ -4821,6 +4793,13 @@
       ]
     },
     {
+      "s": "CME:GFQ2022",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
       "s": "CME:GFU2021",
       "f": [
         null,
@@ -4885,13 +4864,6 @@
     },
     {
       "s": "CME:HEN2022",
-      "f": [
-        null,
-        "CME:HE"
-      ]
-    },
-    {
-      "s": "CME:HEQ2021",
       "f": [
         null,
         "CME:HE"
@@ -5039,6 +5011,13 @@
     },
     {
       "s": "CME:LEG2022",
+      "f": [
+        null,
+        "CME:LE"
+      ]
+    },
+    {
+      "s": "CME:LEG2023",
       "f": [
         null,
         "CME:LE"
@@ -5577,6 +5556,13 @@
       ]
     },
     {
+      "s": "CME:WDCX2023",
+      "f": [
+        null,
+        "CME:WDC"
+      ]
+    },
+    {
       "f": [
         "Metals",
         "COMEX_MINI:MGC"
@@ -5837,6 +5823,13 @@
     },
     {
       "s": "COMEX_MINI:QCQ2022",
+      "f": [
+        null,
+        "COMEX_MINI:QC"
+      ]
+    },
+    {
+      "s": "COMEX_MINI:QCQ2023",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6235,6 +6228,13 @@
       ]
     },
     {
+      "s": "COMEX:GCX2021",
+      "f": [
+        null,
+        "COMEX:GC"
+      ]
+    },
+    {
       "s": "COMEX:GCZ2021",
       "f": [
         null,
@@ -6459,6 +6459,13 @@
       ]
     },
     {
+      "s": "COMEX:HGQ2023",
+      "f": [
+        null,
+        "COMEX:HG"
+      ]
+    },
+    {
       "s": "COMEX:HGU2021",
       "f": [
         null,
@@ -6627,6 +6634,13 @@
       ]
     },
     {
+      "s": "COMEX:LEDQ2022",
+      "f": [
+        null,
+        "COMEX:LED"
+      ]
+    },
+    {
       "s": "COMEX:LEDU2021",
       "f": [
         null,
@@ -6761,6 +6775,13 @@
     },
     {
       "s": "COMEX:SIV2021",
+      "f": [
+        null,
+        "COMEX:SI"
+      ]
+    },
+    {
+      "s": "COMEX:SIX2021",
       "f": [
         null,
         "COMEX:SI"
@@ -10876,6 +10897,13 @@
       ]
     },
     {
+      "s": "NYMEX:PAX2021",
+      "f": [
+        null,
+        "NYMEX:PA"
+      ]
+    },
+    {
       "s": "NYMEX:PAZ2021",
       "f": [
         null,
@@ -10933,6 +10961,13 @@
     },
     {
       "s": "NYMEX:PLV2022",
+      "f": [
+        null,
+        "NYMEX:PL"
+      ]
+    },
+    {
+      "s": "NYMEX:PLX2021",
       "f": [
         null,
         "NYMEX:PL"

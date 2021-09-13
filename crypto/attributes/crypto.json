@@ -4128,6 +4128,20 @@
       ]
     },
     {
+      "s": "HITBTC:EQXBTC",
+      "f": [
+        "EQIFI",
+        "EQX"
+      ]
+    },
+    {
+      "s": "HITBTC:EQXUSD",
+      "f": [
+        "EQIFI",
+        "EQX"
+      ]
+    },
+    {
       "s": "HITBTC:ERGBTC",
       "f": [
         "Ergo",
@@ -9483,14 +9497,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"

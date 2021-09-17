@@ -75,6 +75,20 @@
       ]
     },
     {
+      "s": "FTX:BVOLBTC",
+      "f": [
+        "1x Long Bitcoin Implied Volatility Token",
+        "BVOL"
+      ]
+    },
+    {
+      "s": "FTX:BVOLUSD",
+      "f": [
+        "1x Long Bitcoin Implied Volatility Token",
+        "BVOL"
+      ]
+    },
+    {
       "s": "BITTREX:4ARTBTC",
       "f": [
         "4ART Coin",
@@ -254,6 +268,20 @@
       "f": [
         "Advanced Micro Devices tokenized stock FTX",
         "AMD"
+      ]
+    },
+    {
+      "s": "HUOBI:AGLDBTC",
+      "f": [
+        "Adventure Gold",
+        "AGLD"
+      ]
+    },
+    {
+      "s": "FTX:AGLDUSD",
+      "f": [
+        "Adventure Gold",
+        "AGLD"
       ]
     },
     {
@@ -688,6 +716,20 @@
       "f": [
         "Amp",
         "AMP"
+      ]
+    },
+    {
+      "s": "KUCOIN:AMPLBTC",
+      "f": [
+        "Ampleforth",
+        "AMPL"
+      ]
+    },
+    {
+      "s": "FTX:AMPLUSD",
+      "f": [
+        "Ampleforth",
+        "AMPL"
       ]
     },
     {
@@ -1636,13 +1678,6 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
-      "f": [
-        "BitShares",
-        "BTS"
-      ]
-    },
-    {
       "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
@@ -1650,7 +1685,7 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1658,6 +1693,13 @@
     },
     {
       "s": "BINANCE:BTSUSD",
+      "f": [
+        "BitShares",
+        "BTS"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -5976,6 +6018,20 @@
       ]
     },
     {
+      "s": "FTX:IBVOLBTC",
+      "f": [
+        "Inverse Bitcoin Volatility Token",
+        "IBVOL"
+      ]
+    },
+    {
+      "s": "FTX:IBVOLUSD",
+      "f": [
+        "Inverse Bitcoin Volatility Token",
+        "IBVOL"
+      ]
+    },
+    {
       "s": "BITTREX:IONBTC",
       "f": [
         "ION",
@@ -7464,6 +7520,20 @@
       "f": [
         "MovieBloc",
         "MBL"
+      ]
+    },
+    {
+      "s": "HUOBI:MTABTC",
+      "f": [
+        "mStable Governance Token: Meta (MTA)",
+        "MTA"
+      ]
+    },
+    {
+      "s": "FTX:MTAUSD",
+      "f": [
+        "mStable Governance Token: Meta (MTA)",
+        "MTA"
       ]
     },
     {
@@ -9525,14 +9595,14 @@
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"

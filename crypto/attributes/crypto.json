@@ -1678,14 +1678,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
+      "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSBTC",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -9263,6 +9263,20 @@
       "f": [
         "Radix",
         "EXRD"
+      ]
+    },
+    {
+      "s": "BITFINEX:XRDBTC",
+      "f": [
+        "Radix Protocol",
+        "XRD"
+      ]
+    },
+    {
+      "s": "BITFINEX:XRDUSD",
+      "f": [
+        "Radix Protocol",
+        "XRD"
       ]
     },
     {

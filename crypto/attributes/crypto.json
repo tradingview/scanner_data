@@ -5675,6 +5675,20 @@
       ]
     },
     {
+      "s": "BITFINEX:HMTBTC",
+      "f": [
+        "Human",
+        "HMT"
+      ]
+    },
+    {
+      "s": "FTX:HMTUSD",
+      "f": [
+        "Human",
+        "HMT"
+      ]
+    },
+    {
       "s": "BITTREX:HMQBTC",
       "f": [
         "Humaniq",
@@ -9637,14 +9651,14 @@
       ]
     },
     {
-      "s": "HITBTC:REVUSD",
+      "s": "BITTREX:REVUSD",
       "f": [
         "Revain",
         "REV"
       ]
     },
     {
-      "s": "BITTREX:REVUSD",
+      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"

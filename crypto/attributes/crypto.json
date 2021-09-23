@@ -1692,14 +1692,14 @@
       ]
     },
     {
-      "s": "BINANCE:BTSUSD",
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -5854,6 +5854,20 @@
       "f": [
         "IHT Real Estate Protocol",
         "IHT"
+      ]
+    },
+    {
+      "s": "BINANCE:ILVBTC",
+      "f": [
+        "Illuvium",
+        "ILV"
+      ]
+    },
+    {
+      "s": "BINANCE:ILVUSD",
+      "f": [
+        "Illuvium",
+        "ILV"
       ]
     },
     {

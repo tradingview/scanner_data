@@ -265,6 +265,7 @@ let dstSymbols = [];
 
 const unDesirableExchanges = [
     "BITFINEX"
+    "HITBTC"
 ];
 
 function isUnDesirableExchange(exc) {

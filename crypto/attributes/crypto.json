@@ -131,20 +131,6 @@
       ]
     },
     {
-      "s": "HITBTC:LENDBTC",
-      "f": [
-        "Aave",
-        "LEND"
-      ]
-    },
-    {
-      "s": "HITBTC:LENDUSD",
-      "f": [
-        "Aave",
-        "LEND"
-      ]
-    },
-    {
       "s": "HITBTC:GHSTBTC",
       "f": [
         "Aavegotchi",
@@ -4044,20 +4030,6 @@
       ]
     },
     {
-      "s": "HITBTC:ERDBTC",
-      "f": [
-        "Elrond",
-        "ERD"
-      ]
-    },
-    {
-      "s": "HITBTC:ERDUSD",
-      "f": [
-        "Elrond",
-        "ERD"
-      ]
-    },
-    {
       "s": "HITBTC:EMCBTC",
       "f": [
         "Emercoin",
@@ -4367,6 +4339,20 @@
     },
     {
       "s": "HITBTC:IQUSD",
+      "f": [
+        "Everipedia",
+        "IQ"
+      ]
+    },
+    {
+      "s": "BITFINEX:IQXBTC",
+      "f": [
+        "Everipedia",
+        "IQ"
+      ]
+    },
+    {
+      "s": "BITFINEX:IQXUSD",
       "f": [
         "Everipedia",
         "IQ"
@@ -9658,21 +9644,7 @@
       ]
     },
     {
-      "s": "HITBTC:REVBTC",
-      "f": [
-        "Revain",
-        "REV"
-      ]
-    },
-    {
       "s": "BITTREX:REVUSD",
-      "f": [
-        "Revain",
-        "REV"
-      ]
-    },
-    {
-      "s": "HITBTC:REVUSD",
       "f": [
         "Revain",
         "REV"

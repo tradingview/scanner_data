@@ -513,6 +513,8 @@ plot(recTotal, title="Recommend.All")
 
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
 
+C_PriceAvg = sma(close,50)
+
 C_Len = (14)
 C_Factor = (2.0)
 C_ShadowPercent = (5)
@@ -526,8 +528,8 @@ C_SmallBody = C_Body < C_BodyAvg
 C_LongBody = C_Body > C_BodyAvg
 C_UpShadow = high - C_BodyHi
 C_DnShadow = C_BodyLo - low
-C_DownTrend = DownTrend
-C_UpTrend = UpTrend
+C_DownTrend = close < C_PriceAvg
+C_UpTrend = close > C_PriceAvg
 C_HasUpShadow = C_UpShadow > C_ShadowPercent / 100 * C_Body
 C_HasDnShadow = C_DnShadow > C_ShadowPercent / 100 * C_Body
 C_WhiteBody = open < close

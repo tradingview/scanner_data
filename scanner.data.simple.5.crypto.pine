@@ -748,7 +748,7 @@ if calcMaxHolesPerDayPercent() > 35
 plot(realtiveVolume10d, title="relative_volume_intraday", linewidth = 2)
 
 
-study("24H Volume", format=format.volume)
+// study("24H Volume", format=format.volume)
 
 price = input(close)
 

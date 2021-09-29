@@ -749,25 +749,12 @@ plot(realtiveVolume10d, title="relative_volume_intraday", linewidth = 2)
 
 // study("24H Volume", format=format.volume)
 
-price = input(close)
-
-purifyCurrency(cur) => cur == "Default" ? "" : cur
-currency = purifyCurrency(input(title = "Currency", defval="USD", options=["Default", "USD", "EUR", "CAD", "JPY", "GBP", "HKD", "CNY", "NZD", "RUB"]))
+price = close
+currency = "USD"
 
 msIn24h = 24*60*60*1000
-maxBufferSize = if timeframe.isminutes or timeframe.isseconds
-    24*60
-else if timeframe.isdaily
-    24*60/5
-else
-    24
-    
-cumVolTF = if timeframe.isminutes or timeframe.isseconds
-    "1"
-else if timeframe.isdaily
-    "5"
-else
-    "60"
+maxBufferSize = 24*60
+cumVolTF = "1"
 
 cum24hVol(s) =>
     src = s

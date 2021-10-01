@@ -1664,13 +1664,6 @@
       ]
     },
     {
-      "s": "BINANCE:BTSBTC",
-      "f": [
-        "BitShares",
-        "BTS"
-      ]
-    },
-    {
       "s": "POLONIEX:BTSBTC",
       "f": [
         "BitShares",
@@ -1678,7 +1671,7 @@
       ]
     },
     {
-      "s": "POLONIEX:BTSUSD",
+      "s": "BINANCE:BTSBTC",
       "f": [
         "BitShares",
         "BTS"
@@ -1686,6 +1679,13 @@
     },
     {
       "s": "BINANCE:BTSUSD",
+      "f": [
+        "BitShares",
+        "BTS"
+      ]
+    },
+    {
+      "s": "POLONIEX:BTSUSD",
       "f": [
         "BitShares",
         "BTS"
@@ -1983,6 +1983,20 @@
       "f": [
         "Bondly",
         "BONDLY"
+      ]
+    },
+    {
+      "s": "BINANCE:FIDABTC",
+      "f": [
+        "Bonfida",
+        "FIDA"
+      ]
+    },
+    {
+      "s": "FTX:FIDAUSD",
+      "f": [
+        "Bonfida",
+        "FIDA"
       ]
     },
     {
@@ -3719,6 +3733,20 @@
       "f": [
         "DomRaider",
         "DRT"
+      ]
+    },
+    {
+      "s": "BITFINEX:DORABTC",
+      "f": [
+        "Dora Factory",
+        "DORA"
+      ]
+    },
+    {
+      "s": "BITFINEX:DORAUSD",
+      "f": [
+        "Dora Factory",
+        "DORA"
       ]
     },
     {

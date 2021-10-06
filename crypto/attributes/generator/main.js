@@ -102,7 +102,7 @@ function doRequest(method, url, options) {
         url: url,
         options: options
     });
-    var res = spawnSync(process.execPath, [require.resolve('./node_modules/sync-request/lib/worker.js')], {input: req});
+    var res = spawnSync(process.execPath, [require.resolve('./node_modules/sync-request/lib/worker.js')], {input: req, maxBuffer: 1024*1024*50});
     console.log("res.status = " + res.status)
     if (res.status !== 0 && res.status != null) {
         throw new Error(res.stderr.toString());

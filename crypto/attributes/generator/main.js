@@ -87,7 +87,12 @@ function scan(req, loc) {
 }
 
 function getCMCNewAPICall(url) {
-    const result = requestSync("GET", url);
+    let result;
+    try {
+        result = requestSync("GET", url);
+    } catch (error) {
+        console.error(error)
+    }
     const data = JSON.parse(result.getBody());
     if (data.status.error_code != 0) {
         console.error("can't get data (BTC), err=%j", data.status.error_message);

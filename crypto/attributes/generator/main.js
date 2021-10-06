@@ -90,7 +90,7 @@ function scan(req, loc) {
 var spawnSync = require('child_process').spawnSync;
 var HttpResponse = require('http-response-object');
 
-function doRequest(method, url, options) {
+function doRequestLocal(method, url, options) {
     if (!spawnSync) {
         throw new Error(
             'Sync-request requires node version 0.12 or later.  If you need to use it with an older version of node\n' +
@@ -104,7 +104,7 @@ function doRequest(method, url, options) {
     });
     var res = spawnSync(process.execPath, [require.resolve('./node_modules/sync-request/lib/worker.js')], {input: req, maxBuffer: 1024*1024*50});
     console.log("res.status = " + res.status)
-    if (res.status !== 0 && res.status != null) {
+    if (res.status !== 0) {
         throw new Error(res.stderr.toString());
     }
     if (res.error) {
@@ -121,8 +121,7 @@ function doRequest(method, url, options) {
 }
 
 function getCMCNewAPICall(url) {
-    const result = doRequest("GET", url);
-    //const result = requestSync("GET", url);
+    const result = doRequestLocal("GET", url);
     const data = JSON.parse(result.getBody());
     if (data.status.error_code != 0) {
         console.error("can't get data (BTC), err=%j", data.status.error_message);

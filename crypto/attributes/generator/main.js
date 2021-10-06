@@ -1,5 +1,6 @@
 const requestSync = require("sync-request");
 const fs = require("fs");
+const JSON = require("./node_modules/sync-request/lib/json-buffer");
 const argv = require('minimist')(process.argv.slice(2));
 
 const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
@@ -86,13 +87,27 @@ function scan(req, loc) {
     return resp;
 }
 
-function getCMCNewAPICall(url) {
-    let result;
-    try {
-        result = requestSync("GET", url);
-    } catch (error) {
-        console.error(error)
+var spawnSync = require('child_process').spawnSync;
+
+function doRequest(method, url, options) {
+    if (!spawnSync) {
+        throw new Error(
+            'Sync-request requires node version 0.12 or later.  If you need to use it with an older version of node\n' +
+            'you can `npm install spawn-sync@2.2.0`, which was the last version to support older versions of node.'
+        );
     }
+    var req = JSON.stringify({
+        method: method,
+        url: url,
+        options: options
+    });
+    var res = spawnSync(process.execPath, [require.resolve('./node_modules/sync-request/lib/worker.js')], {input: req});
+    console.error("res.status = " + res.status)
+}
+
+function getCMCNewAPICall(url) {
+    doRequest("GET", url);
+    const result = requestSync("GET", url);
     const data = JSON.parse(result.getBody());
     if (data.status.error_code != 0) {
         console.error("can't get data (BTC), err=%j", data.status.error_message);

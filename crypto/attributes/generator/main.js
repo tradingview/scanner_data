@@ -88,6 +88,7 @@ function scan(req, loc) {
 }
 
 var spawnSync = require('child_process').spawnSync;
+var HttpResponse = require('http-response-object');
 
 function doRequest(method, url, options) {
     if (!spawnSync) {
@@ -102,12 +103,26 @@ function doRequest(method, url, options) {
         options: options
     });
     var res = spawnSync(process.execPath, [require.resolve('./node_modules/sync-request/lib/worker.js')], {input: req});
-    console.error("res.status = " + res.status)
+    console.log("res.status = " + res.status)
+    if (res.status !== 0 && res.status != null) {
+        throw new Error(res.stderr.toString());
+    }
+    if (res.error) {
+        console.error(res.error)
+        if (typeof res.error === 'string') res.error = new Error(res.error);
+        throw res.error;
+    }
+    var response = JSON.parse(res.stdout);
+    if (response.success) {
+        return new HttpResponse(response.response.statusCode, response.response.headers, response.response.body, response.response.url);
+    } else {
+        throw new Error(response.error.message || response.error || response);
+    }
 }
 
 function getCMCNewAPICall(url) {
-    doRequest("GET", url);
-    const result = requestSync("GET", url);
+    const result = doRequest("GET", url);
+    //const result = requestSync("GET", url);
     const data = JSON.parse(result.getBody());
     if (data.status.error_code != 0) {
         console.error("can't get data (BTC), err=%j", data.status.error_message);

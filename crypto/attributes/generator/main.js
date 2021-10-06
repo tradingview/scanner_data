@@ -1,5 +1,6 @@
 const requestSync = require("sync-request");
 const fs = require("fs");
+const JSON = require("./node_modules/sync-request/lib/json-buffer");
 const argv = require('minimist')(process.argv.slice(2));
 
 const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
@@ -86,8 +87,41 @@ function scan(req, loc) {
     return resp;
 }
 
+var spawnSync = require('child_process').spawnSync;
+var HttpResponse = require('http-response-object');
+
+function doRequestLocal(method, url, options) {
+    if (!spawnSync) {
+        throw new Error(
+            'Sync-request requires node version 0.12 or later.  If you need to use it with an older version of node\n' +
+            'you can `npm install spawn-sync@2.2.0`, which was the last version to support older versions of node.'
+        );
+    }
+    var req = JSON.stringify({
+        method: method,
+        url: url,
+        options: options
+    });
+    var res = spawnSync(process.execPath, [require.resolve('./node_modules/sync-request/lib/worker.js')], {input: req, maxBuffer: 1024*1024*50});
+    console.log("res.status = " + res.status)
+    if (res.status !== 0) {
+        throw new Error(res.stderr.toString());
+    }
+    if (res.error) {
+        console.error(res.error)
+        if (typeof res.error === 'string') res.error = new Error(res.error);
+        throw res.error;
+    }
+    var response = JSON.parse(res.stdout);
+    if (response.success) {
+        return new HttpResponse(response.response.statusCode, response.response.headers, response.response.body, response.response.url);
+    } else {
+        throw new Error(response.error.message || response.error || response);
+    }
+}
+
 function getCMCNewAPICall(url) {
-    const result = requestSync("GET", url);
+    const result = doRequestLocal("GET", url);
     const data = JSON.parse(result.getBody());
     if (data.status.error_code != 0) {
         console.error("can't get data (BTC), err=%j", data.status.error_message);

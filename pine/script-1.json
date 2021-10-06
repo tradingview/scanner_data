@@ -1,0 +1,83 @@
+[
+	{
+		"inputs": [
+			{
+				"id": "text",
+				"type": "text",
+				"defval": "change(high)~(-change(low))~rma(tr,#0)~fixnan(100*rma($0\u003e$1\u0026\u0026$0\u003e0?$0:0,#0)/$2)~fixnan(100*rma($1\u003e$0\u0026\u0026$1\u003e0?$1:0,#0)/$2)~$3!$4;s2:$0(i:#0):s2~$0~$1~$2+$3~100*rma(abs($2-$3)/($4==0?1:$4),#1)~$5!$2!$3;rma(tr(1.0),14)~s3:$1(i:14,i:14):s3~$1~$2~$3~$5@1~$6@1~$0!$4!$5!$6!$7!$8;s6:$2():s6~$3~$4~$5~$6~$7~$8~$9!$10!$11!$12!$13!$14",
+				"isFake": false
+			},
+			{
+				"id": "pineId",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			},
+			{
+				"id": "pineVersion",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			}
+		],
+		"description": "ScannerData1",
+		"id": "Script$pine_id_undefined@tv-scripting-101",
+		"plots": [
+			{
+				"id": "plot_0",
+				"type": "line"
+			},
+			{
+				"id": "plot_1",
+				"type": "line"
+			},
+			{
+				"id": "plot_2",
+				"type": "line"
+			},
+			{
+				"id": "plot_3",
+				"type": "line"
+			},
+			{
+				"id": "plot_4",
+				"type": "line"
+			},
+			{
+				"id": "plot_5",
+				"type": "line"
+			}
+		],
+		"version": "",
+		"isTVScriptStubToCompile": false,
+		"isTVScriptStrategy": false,
+		"TVScriptSourceCode": "",
+		"fullId": "",
+		"styles": {
+			"plot_0": {
+				"title": "ATR",
+				"isHidden": false
+			},
+			"plot_1": {
+				"title": "ADX",
+				"isHidden": false
+			},
+			"plot_2": {
+				"title": "ADX+DI",
+				"isHidden": false
+			},
+			"plot_3": {
+				"title": "ADX-DI",
+				"isHidden": false
+			},
+			"plot_4": {
+				"title": "ADX+DI[1]",
+				"isHidden": false
+			},
+			"plot_5": {
+				"title": "ADX-DI[1]",
+				"isHidden": false
+			}
+		}
+	}
+]

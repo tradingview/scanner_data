@@ -1,0 +1,98 @@
+//@version=4
+study(title="ScannerData4", shorttitle="_SD4_")
+
+// Awesome Oscillator
+AO = sma(hl2, 5) - sma(hl2, 34)
+plot(AO, title = "AO")
+plot(AO[1], title = "AO[1]")
+plot(AO[2], title = "AO[2]")
+
+// Pivot Points
+pivotX_open = float(na)
+pivotX_open := nz(pivotX_open[1],open)
+pivotX_high = float(na)
+pivotX_high := nz(pivotX_high[1],high)
+pivotX_low = float(na)
+pivotX_low := nz(pivotX_low[1],low)
+
+pivotX_prev_open = float(na)
+pivotX_prev_open := nz(pivotX_prev_open[1])
+pivotX_prev_high = float(na)
+pivotX_prev_high := nz(pivotX_prev_high[1])
+pivotX_prev_low = float(na)
+pivotX_prev_low := nz(pivotX_prev_low[1])
+pivotX_prev_close = float(na)
+pivotX_prev_close := nz(pivotX_prev_close[1])
+
+pivotXGetCurDate()=>
+    result = month(time)
+    if timeframe.isintraday
+        result := timeframe.multiplier <= 15 ? dayofmonth(time) : weekofyear(time)
+    else
+        if timeframe.isweekly or timeframe.ismonthly
+            result := year(time)
+    result
+
+fNeg(value) => value <= 0 ? na : value
+
+pivotX_Interval = pivotXGetCurDate()
+if pivotX_Interval != pivotX_Interval[1]
+    pivotX_prev_open := pivotX_open
+    pivotX_prev_close := close[1]
+    pivotX_prev_high := pivotX_high
+    pivotX_prev_low := pivotX_low
+
+    pivotX_open := open
+    pivotX_high := high
+    pivotX_low := low
+else
+    pivotX_high := max(pivotX_high, high)
+    pivotX_low := min(pivotX_low, low)
+
+// Classic
+pivotX_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_prev_close)/3
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Classic.Middle')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_low), title = 'Pivot.M.Classic.R1')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_high), title = 'Pivot.M.Classic.S1')
+plot(fNeg(pivotX_Median + 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.R2')
+plot(fNeg(pivotX_Median - 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.S2')
+plot(fNeg(pivotX_Median + 2*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.R3')
+plot(fNeg(pivotX_Median - 2*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Classic.S3')
+
+// Fibonacci
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Fibonacci.Middle')
+plot(fNeg(pivotX_Median + 0.382 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R1')
+plot(fNeg(pivotX_Median - 0.382 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S1')
+plot(fNeg(pivotX_Median + 0.618 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R2')
+plot(fNeg(pivotX_Median - 0.618 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S2')
+plot(fNeg(pivotX_Median + 1 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.R3')
+plot(fNeg(pivotX_Median - 1 * (pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Fibonacci.S3')
+
+// Woodie
+pivotX_Woodie_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_open * 2)/4
+plot(fNeg(pivotX_Woodie_Median), title = 'Pivot.M.Woodie.Middle')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_low), title = 'Pivot.M.Woodie.R1')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_high), title = 'Pivot.M.Woodie.S1')
+plot(fNeg(pivotX_Woodie_Median + 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Woodie.R2')
+plot(fNeg(pivotX_Woodie_Median - 1*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Woodie.S2')
+plot(fNeg(pivotX_prev_high + 2*(pivotX_Woodie_Median - pivotX_prev_low)), title = 'Pivot.M.Woodie.R3')
+plot(fNeg(pivotX_prev_low - 2*(pivotX_prev_high - pivotX_Woodie_Median)), title = 'Pivot.M.Woodie.S3')
+
+// Demark
+pivotX_Demark_X = pivotX_prev_high + pivotX_prev_low*2 + pivotX_prev_close
+if pivotX_prev_close == pivotX_prev_open
+    pivotX_Demark_X := pivotX_prev_high + pivotX_prev_low + pivotX_prev_close*2
+if pivotX_prev_close > pivotX_prev_open
+    pivotX_Demark_X := pivotX_prev_high*2 + pivotX_prev_low + pivotX_prev_close
+plot(fNeg(pivotX_Demark_X/4), title = 'Pivot.M.Demark.Middle')
+plot(fNeg(pivotX_Demark_X/2 - pivotX_prev_low), title = 'Pivot.M.Demark.R1')
+plot(fNeg(pivotX_Demark_X/2 - pivotX_prev_high), title = 'Pivot.M.Demark.S1')
+
+// Camarilla
+plot(fNeg(pivotX_Median), title = 'Pivot.M.Camarilla.Middle')
+plot(fNeg(pivotX_prev_close + 1.1/12.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R1')
+plot(fNeg(pivotX_prev_close - 1.1/12.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S1')
+plot(fNeg(pivotX_prev_close + 1.1/6.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R2')
+plot(fNeg(pivotX_prev_close - 1.1/6.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S2')
+plot(fNeg(pivotX_prev_close + 1.1/4.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.R3')
+plot(fNeg(pivotX_prev_close - 1.1/4.0*(pivotX_prev_high - pivotX_prev_low)), title = 'Pivot.M.Camarilla.S3')

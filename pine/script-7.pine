@@ -1,0 +1,218 @@
+//@version=4
+study(title="ScannerData7", shorttitle="_SD7_")
+
+recOther = .0
+recOtherC = .0
+recRSI = rsi(close,14)
+
+calcRecommendMA(left,right)=> na(left) or na(right) ? na : (left == right ? 0 : ( left < right ? 1 : -1 ))
+calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
+
+lengthStoch = 14
+smoothKStoch = 3
+smoothDStoch = 3
+kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch = sma(kStoch, smoothDStoch)
+
+CCI=cci(close, 20)
+Mom = close - close[10]
+
+if not(na(recRSI) or na(recRSI[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+
+if not(na(kStoch) or na(dStoch) or na(kStoch[1]) or na(dStoch[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+
+recCCI = CCI
+if not(na(recCCI) or na(recCCI[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
+
+dirmov(len) =>
+	up = change(high)
+	down = -change(low)
+	truerange = rma(tr, len)
+	plus = fixnan(100 * rma(up > down and up > 0 ? up : 0, len) / truerange)
+	minus = fixnan(100 * rma(down > up and down > 0 ? down : 0, len) / truerange)
+	[plus, minus]
+
+adx(dilen, adxlen) =>
+	[plus, minus] = dirmov(dilen)
+	sum = plus + minus
+	adx = 100 * rma(abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
+	[adx, plus, minus]
+
+[adxValue, adxPlus, adxMinus] = adx(14, 14)
+sourceMACD = close
+fastLengthMACD = 12
+slowLengthMACD = 26
+signalLengthMACD = 9
+fastMAMACD = ema(sourceMACD, fastLengthMACD)
+slowMAMACD = ema(sourceMACD, slowLengthMACD)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = ema(macdMACD, signalLengthMACD)
+
+if not(na(adxValue) or na(adxPlus[1]) or na(adxMinus[1]) or na(adxPlus) or na(adxMinus))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+
+AO = sma(hl2, 5) - sma(hl2, 34)
+
+if not(na(AO) or na(AO[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+
+if not(na(Mom) or na(Mom[1]))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+
+if not(na(macdMACD) or na(signalMACD))
+    recOtherC := recOtherC + 1
+    recOther := recOther + calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
+
+StochRSI()=>
+    rsi1 = rsi(close, 14)
+    K = sma(stoch(rsi1, rsi1, rsi1, 14), 3)
+    D = sma(K, 3)
+    [K, D]
+[Stoch_RSI_K, Stoch_RSI_D] = StochRSI()
+
+PriceAvg = ema( close, 50 )
+DownTrend = close < PriceAvg
+UpTrend = close > PriceAvg
+
+recStoch_RSI = float(na)
+if not(na(DownTrend) or na(UpTrend) or na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
+    recStoch_RSI := calcRecommend(
+     DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1],
+     UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
+plot(recStoch_RSI, title="Rec.Stoch.RSI")
+if not na(recStoch_RSI)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recStoch_RSI
+
+WR_period = 14
+WR = (highest(high,WR_period)-close)/(highest(high,WR_period)-lowest(low,WR_period)) * -100
+BullPower = high - ema(close, 13)
+BearPower = low - ema(close, 13)
+
+recWR = float(na)
+if not(na(WR) or na(WR[1]))
+    recWR := calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
+plot(recWR, title="Rec.WR")
+if not na(recWR)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recWR
+
+recBBPower = float(na)
+if not(na(UpTrend) or na(DownTrend) or na(BearPower) or na(BearPower[1]) or na(BullPower) or na(BullPower[1]))
+    recBBPower := calcRecommend(
+     UpTrend and BearPower < 0 and BearPower > BearPower[1],
+     DownTrend and BullPower > 0 and BullPower < BullPower[1])
+plot(recBBPower, title="Rec.BBPower")
+if not na(recBBPower)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recBBPower
+
+tl()=> close[1] < low ? close[1]: low
+uo(ShortLen, MiddlLen, LongLen) =>
+    Value1 = sum( tr, ShortLen )
+    Value2 = sum( tr, MiddlLen )
+    Value3 = sum( tr, LongLen )
+    Value4 = sum( close - tl(), ShortLen )
+    Value5 = sum( close - tl(), MiddlLen )
+    Value6 = sum( close - tl(), LongLen )
+    UO = float(na)
+    if Value1 != 0 and Value2 != 0 and Value3 != 0
+    	var0 = LongLen / ShortLen
+    	var1 = LongLen / MiddlLen
+    	Value7 = ( Value4 / Value1 ) * ( var0 )
+    	Value8 = ( Value5 / Value2 ) * ( var1 )
+    	Value9 = ( Value6 / Value3 )
+    	UO := ( Value7 + Value8 + Value9 ) / ( var0 + var1 + 1 )
+    UO
+UO = uo(7,14,28)
+if not na(UO)
+    UO := UO * 100
+
+recUO = float(na)
+if not(na(UO))
+    recUO := calcRecommend(UO > 70, UO < 30)
+plot(recUO, title="Rec.UO")
+if not na(recUO)
+    recOtherC := recOtherC + 1
+    recOther := recOther + recUO
+
+recOther := recOtherC > 0 ? recOther / recOtherC : na
+plot(recOther, title="Recommend.Other")
+
+// calculate trading recommendation based on SMA/EMA
+recMA = .0
+recMAC = .0
+
+SMA5=sma(close, 5)
+SMA10=sma(close, 10)
+SMA20=sma(close, 20)
+SMA30=sma(close, 30)
+SMA50=sma(close, 50)
+SMA100=sma(close, 100)
+SMA200=sma(close, 200)
+
+EMA5=ema(close, 5)
+EMA10=ema(close, 10)
+EMA20=ema(close, 20)
+EMA30=ema(close, 30)
+EMA50=ema(close, 50)
+EMA100=ema(close, 100)
+EMA200=ema(close, 200)
+
+if not na(close)
+	if not na(SMA10)
+        recMA := recMA + calcRecommendMA(SMA10, close)
+        recMAC := recMAC + 1
+	if not na(SMA20)
+        recMA := recMA + calcRecommendMA(SMA20, close)
+        recMAC := recMAC + 1
+    if not na(SMA30)
+        recMA := recMA + calcRecommendMA(SMA30, close)
+        recMAC := recMAC + 1
+    if not na(SMA50)
+        recMA := recMA + calcRecommendMA(SMA50, close)
+        recMAC := recMAC + 1
+	if not na(SMA100)
+        recMA := recMA + calcRecommendMA(SMA100, close)
+        recMAC := recMAC + 1
+    if not na(SMA200)
+        recMA := recMA + calcRecommendMA(SMA200, close)
+        recMAC := recMAC + 1
+    if not na(EMA10)
+        recMA := recMA + calcRecommendMA(EMA10, close)
+        recMAC := recMAC + 1
+    if not na(EMA20)
+        recMA := recMA + calcRecommendMA(EMA20, close)
+        recMAC := recMAC + 1
+    if not na(EMA30)
+        recMA := recMA + calcRecommendMA(EMA30, close)
+        recMAC := recMAC + 1
+    if not na(EMA50)
+        recMA := recMA + calcRecommendMA(EMA50, close)
+        recMAC := recMAC + 1
+    if not na(EMA100)
+        recMA := recMA + calcRecommendMA(EMA100, close)
+        recMAC := recMAC + 1
+    if not na(EMA200)
+        recMA := recMA + calcRecommendMA(EMA200, close)
+        recMAC := recMAC + 1
+
+recTotal = .0
+recTotalC = .0
+if not na(recMA)
+    recTotal := recTotal + recMA
+    recTotalC := recTotalC + 1
+if not na(recOther)
+    recTotal := recTotal + recOther
+    recTotalC := recTotalC + 1
+recTotal := recTotalC > 0 ? recTotal / recTotalC : na
+plot(recTotal, title="Recommend.All")

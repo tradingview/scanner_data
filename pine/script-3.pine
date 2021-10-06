@@ -1,0 +1,59 @@
+//@version=4
+study(title="ScannerData3", shorttitle="_SD3_")
+
+// study(title="Exponential Moving Average", shorttitle="EMA", overlay=true)
+EMA5=ema(close, 5)
+plot(EMA5, title="EMA5")
+EMA10=ema(close, 10)
+plot(EMA10, title="EMA10")
+EMA20=ema(close, 20)
+plot(EMA20, title="EMA20")
+EMA30=ema(close, 30)
+plot(EMA30, title="EMA30")
+EMA50=ema(close, 50)
+plot(EMA50, title="EMA50")
+EMA100=ema(close, 100)
+plot(EMA100, title="EMA100")
+EMA200=ema(close, 200)
+plot(EMA200, title="EMA200")
+
+
+// study(title="Stochastic", shorttitle="Stoch")
+lengthStoch = 14
+smoothKStoch = 3
+smoothDStoch = 3
+kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch = sma(kStoch, smoothDStoch)
+plot(kStoch, title="Stoch.K")
+plot(dStoch, title="Stoch.D")
+plot(kStoch[1], title="Stoch.K[1]")
+plot(dStoch[1], title="Stoch.D[1]")
+
+// average volume
+AvgVol = sma(volume,10)
+plot(AvgVol, title="average_volume_10d_calc")
+plot(volume/sma(volume[1],10), title="relative_volume_10d_calc")
+plot(sma(volume,30), title="average_volume_30d_calc")
+plot(sma(volume,60), title="average_volume_60d_calc")
+plot(sma(volume,90), title="average_volume_90d_calc")
+
+// Commodity Channel Index
+CCI=cci(close, 20)
+plot(CCI, title = "CCI20")
+plot(CCI[1], title = "CCI20[1]")
+//plot(cci(close, 100), title = "CCI100")
+
+// Donchian Channels
+donchLen = 20
+donchUpper = highest(donchLen)
+donchLower = lowest(donchLen)
+plot(donchLower, title = "DonchCh20.Lower")
+plot(donchUpper, title = "DonchCh20.Upper")
+plot(avg(donchUpper, donchLower), title="DonchCh20.Middle")
+
+// Hull Moving Average
+hullMALength = 9
+hullMA_n2ma=2*wma(close,round(hullMALength/2))
+hullMA_nma=wma(close,hullMALength)
+HullMA9 = wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength)))
+plot(HullMA9, title = "HullMA9")

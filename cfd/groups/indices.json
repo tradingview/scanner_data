@@ -262,11 +262,15 @@
       "f": []
     },
     {
-      "s": "?perm=*&domain=tv&prefix=DJCFD&typespecs=main",
+      "s": "?perm=*&domain=tv&prefix=DJ&typespecs=main&alias=1",
       "f": []
     },
     {
-      "s": "?perm=*&domain=tv&prefix=SPCFD&typespecs=main",
+      "s": "?perm=*&domain=tv&prefix=SP&typespecs=main&alias=1",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=CRYPTOCAP",
       "f": []
     }
   ]

@@ -1531,6 +1531,20 @@
       ]
     },
     {
+      "s": "BITTREX:BTRBTC",
+      "f": [
+        "Btrips",
+        "BTR"
+      ]
+    },
+    {
+      "s": "BITTREX:BTRUSD",
+      "f": [
+        "Btrips",
+        "BTR"
+      ]
+    },
+    {
       "s": "HUOBI:KANBTC",
       "f": [
         "BitKan",
@@ -1794,20 +1808,6 @@
       "f": [
         "Blockpass",
         "PASS"
-      ]
-    },
-    {
-      "s": "BINANCE:STXBTC",
-      "f": [
-        "Stacks",
-        "STX"
-      ]
-    },
-    {
-      "s": "BINANCE:STXUSD",
-      "f": [
-        "Stacks",
-        "STX"
       ]
     },
     {
@@ -4989,20 +4989,6 @@
       ]
     },
     {
-      "s": "BINANCE:GRTBTC",
-      "f": [
-        "The Graph",
-        "GRT"
-      ]
-    },
-    {
-      "s": "BINANCE:GRTUSD",
-      "f": [
-        "The Graph",
-        "GRT"
-      ]
-    },
-    {
       "s": "BITTREX:GNOBTC",
       "f": [
         "Gnosis",
@@ -5420,6 +5406,20 @@
       "f": [
         "HEX",
         "HEX"
+      ]
+    },
+    {
+      "s": "HUOBI:HITBTC",
+      "f": [
+        "HitChain",
+        "HIT"
+      ]
+    },
+    {
+      "s": "HITBTC:HITUSD",
+      "f": [
+        "HitChain",
+        "HIT"
       ]
     },
     {
@@ -6620,20 +6620,6 @@
       ]
     },
     {
-      "s": "BITTREX:LUNABTC",
-      "f": [
-        "Terra",
-        "LUNA"
-      ]
-    },
-    {
-      "s": "BINANCE:LUNAUSD",
-      "f": [
-        "Terra",
-        "LUNA"
-      ]
-    },
-    {
       "s": "HUOBI:LUNBTC",
       "f": [
         "Lunyr",
@@ -6771,20 +6757,6 @@
       "f": [
         "Mask Network",
         "MASK"
-      ]
-    },
-    {
-      "s": "BINANCE:MATICBTC",
-      "f": [
-        "Polygon",
-        "MATIC"
-      ]
-    },
-    {
-      "s": "BINANCE:MATICUSD",
-      "f": [
-        "Polygon",
-        "MATIC"
       ]
     },
     {
@@ -8685,6 +8657,20 @@
       ]
     },
     {
+      "s": "BINANCE:MATICBTC",
+      "f": [
+        "Polygon",
+        "MATIC"
+      ]
+    },
+    {
+      "s": "BINANCE:MATICUSD",
+      "f": [
+        "Polygon",
+        "MATIC"
+      ]
+    },
+    {
       "s": "HUOBI:POLYBTC",
       "f": [
         "Polymath",
@@ -10176,6 +10162,20 @@
       ]
     },
     {
+      "s": "BINANCE:STXBTC",
+      "f": [
+        "Stacks",
+        "STX"
+      ]
+    },
+    {
+      "s": "BINANCE:STXUSD",
+      "f": [
+        "Stacks",
+        "STX"
+      ]
+    },
+    {
       "s": "HUOBI:FISBTC",
       "f": [
         "Stafi",
@@ -10778,6 +10778,20 @@
       ]
     },
     {
+      "s": "BITTREX:LUNABTC",
+      "f": [
+        "Terra",
+        "LUNA"
+      ]
+    },
+    {
+      "s": "BINANCE:LUNAUSD",
+      "f": [
+        "Terra",
+        "LUNA"
+      ]
+    },
+    {
       "s": "BITTREX:SDTBTC",
       "f": [
         "Terra SDT",
@@ -10901,6 +10915,20 @@
       "f": [
         "The Force Protocol",
         "FOR"
+      ]
+    },
+    {
+      "s": "BINANCE:GRTBTC",
+      "f": [
+        "The Graph",
+        "GRT"
+      ]
+    },
+    {
+      "s": "BINANCE:GRTUSD",
+      "f": [
+        "The Graph",
+        "GRT"
       ]
     },
     {

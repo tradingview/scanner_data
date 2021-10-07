@@ -1,6 +1,6 @@
-const requestSync = require("sync-request"),
-    fs = require("fs");
+const fs = require("fs");
 const {URL} = require('url');
+const syncreq = require("../../../jscommon/sync-request");
 
 const continuesPath = "./america_continues.json";
 const groupsPath = "../../groups/list.json";
@@ -73,7 +73,13 @@ groups.forEach(function (path) {
     const urlO = new URL(url);
     urlO.searchParams.append('fields', 'symbol');
     url = urlO.toString();
-    const response = requestSync("GET", url);
+
+    let spawnSync = require('child_process').spawnSync;
+    let HttpResponse = require('http-response-object');
+    let JSON = require("./node_modules/sync-request/lib/json-buffer");
+    let worker = require.resolve('./node_modules/sync-request/lib/worker.js')
+
+    const response = syncreq.doRequestSync("GET", url, undefined, spawnSync, HttpResponse, worker, JSON);
     if (response.statusCode != 200) {
         throw Error(url + ':' + response.statusCode);
     }

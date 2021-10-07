@@ -1,6 +1,5 @@
 const requestSync = require("sync-request");
 const fs = require("fs");
-const JSON = require("./node_modules/sync-request/lib/json-buffer");
 const argv = require('minimist')(process.argv.slice(2));
 
 const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
@@ -91,6 +90,7 @@ var spawnSync = require('child_process').spawnSync;
 var HttpResponse = require('http-response-object');
 
 function doRequestLocal(method, url, options) {
+    const JSON = require("./node_modules/sync-request/lib/json-buffer");
     if (!spawnSync) {
         throw new Error(
             'Sync-request requires node version 0.12 or later.  If you need to use it with an older version of node\n' +

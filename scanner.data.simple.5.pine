@@ -754,7 +754,7 @@ currency = "USD"
 
 msIn24h = 24*60*60*1000
 maxBufferSize = 24*60
-cumVolTF = "1"
+cumVolTF = "5"
 
 cum24hVol(s) =>
     src = s

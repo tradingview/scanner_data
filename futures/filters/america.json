@@ -1580,6 +1580,13 @@
       ]
     },
     {
+      "s": "CBOT:ZQV2026",
+      "f": [
+        null,
+        "CBOT:ZQ"
+      ]
+    },
+    {
       "s": "CBOT:ZQX2021",
       "f": [
         null,
@@ -4170,6 +4177,13 @@
       ]
     },
     {
+      "s": "CME:BTCJ2022",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
       "s": "CME:BTCV2021",
       "f": [
         null,
@@ -4751,6 +4765,13 @@
       ]
     },
     {
+      "s": "CME:GFV2022",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
       "s": "CME:GFX2021",
       "f": [
         null,
@@ -4969,6 +4990,13 @@
     },
     {
       "s": "CME:LEJ2022",
+      "f": [
+        null,
+        "CME:LE"
+      ]
+    },
+    {
+      "s": "CME:LEJ2023",
       "f": [
         null,
         "CME:LE"
@@ -5486,6 +5514,13 @@
       ]
     },
     {
+      "s": "CME:WDCX2023",
+      "f": [
+        null,
+        "CME:WDC"
+      ]
+    },
+    {
       "f": [
         "Metals",
         "COMEX_MINI:MGC"
@@ -5801,6 +5836,13 @@
       ]
     },
     {
+      "s": "COMEX_MINI:QCV2023",
+      "f": [
+        null,
+        "COMEX_MINI:QC"
+      ]
+    },
+    {
       "s": "COMEX_MINI:QCX2021",
       "f": [
         null,
@@ -5920,6 +5962,13 @@
       ]
     },
     {
+      "s": "COMEX_MINI:QIU2023",
+      "f": [
+        null,
+        "COMEX_MINI:QI"
+      ]
+    },
+    {
       "s": "COMEX_MINI:QIZ2021",
       "f": [
         null,
@@ -6030,6 +6079,13 @@
         "COMEX:GC"
       ],
       "s": "COMEX:GC1!"
+    },
+    {
+      "s": "COMEX:GCF2022",
+      "f": [
+        null,
+        "COMEX:GC"
+      ]
     },
     {
       "s": "COMEX:GCG2022",
@@ -6410,6 +6466,13 @@
       ]
     },
     {
+      "s": "COMEX:HGV2023",
+      "f": [
+        null,
+        "COMEX:HG"
+      ]
+    },
+    {
       "s": "COMEX:HGX2021",
       "f": [
         null,
@@ -6543,6 +6606,13 @@
       ]
     },
     {
+      "s": "COMEX:LEDV2022",
+      "f": [
+        null,
+        "COMEX:LED"
+      ]
+    },
+    {
       "s": "COMEX:LEDX2021",
       "f": [
         null,
@@ -6642,6 +6712,13 @@
     },
     {
       "s": "COMEX:SIU2022",
+      "f": [
+        null,
+        "COMEX:SI"
+      ]
+    },
+    {
+      "s": "COMEX:SIU2023",
       "f": [
         null,
         "COMEX:SI"
@@ -10645,6 +10722,13 @@
       "s": "NYMEX:PA1!"
     },
     {
+      "s": "NYMEX:PAF2022",
+      "f": [
+        null,
+        "NYMEX:PA"
+      ]
+    },
+    {
       "s": "NYMEX:PAH2022",
       "f": [
         null,
@@ -10702,6 +10786,13 @@
     },
     {
       "s": "NYMEX:PLF2022",
+      "f": [
+        null,
+        "NYMEX:PL"
+      ]
+    },
+    {
+      "s": "NYMEX:PLF2023",
       "f": [
         null,
         "NYMEX:PL"

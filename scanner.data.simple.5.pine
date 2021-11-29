@@ -779,8 +779,6 @@ cum24hVol(s) =>
             cumSum -= nz(src[bar_index - i])
     cumSum
 
-syminfoCurrency = syminfo.currency == "USDJ" ? "USD" : syminfo.currency
-
 getCurrencyPair()=>
     result = ""
     if not (currency == "" or currency == syminfoCurrency)
@@ -796,7 +794,7 @@ getCurrencyPair()=>
 
 getCurRate() =>
     curPair = getCurrencyPair()
-    curPair != "" ? security(curPair, "D", close[1], lookahead=barmerge.lookahead_on) : 1
+    curPair != "" ? security(curPair, "D", close[1], lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) : 1
 
 getCurrencyMult() =>
     if currency == "" or currency == syminfoCurrency // same currency as main instrument has
@@ -804,6 +802,6 @@ getCurrencyMult() =>
     else
         syminfoCurrency == "GBX" or syminfoCurrency == "ZAC" ? 100 : 1
 
-vol24h = security(syminfo.tickerid, cumVolTF, cum24hVol(price*volume), lookahead = barmerge.lookahead_off)
+vol24h = cum24hVol(price*volume)
 
 plot(vol24h * getCurRate() * getCurrencyMult(), title = "24h_volume", style = plot.style_columns)

@@ -49,6 +49,16 @@ const scanRequestForPairs = {
             right: "DSHBTC"
         },
         {
+            left: "name",
+            operation: "nequal",
+            right: "JSTBTC"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "JSTUSD"
+        },
+        {
             left: "exchange",
             operation: "not_in_range",
             right: [

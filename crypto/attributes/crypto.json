@@ -89,6 +89,20 @@
       ]
     },
     {
+      "s": "BITTREX:1PECOBTC",
+      "f": [
+        "1peco",
+        "1PECO"
+      ]
+    },
+    {
+      "s": "BITTREX:1PECOUSD",
+      "f": [
+        "1peco",
+        "1PECO"
+      ]
+    },
+    {
       "s": "FTX:BVOLBTC",
       "f": [
         "1x Long Bitcoin Implied Volatility Token",
@@ -3166,6 +3180,34 @@
       "f": [
         "CoTrader",
         "COT"
+      ]
+    },
+    {
+      "s": "OKEX:CQTBTC",
+      "f": [
+        "Covalent",
+        "CQT"
+      ]
+    },
+    {
+      "s": "FTX:CQTUSD",
+      "f": [
+        "Covalent",
+        "CQT"
+      ]
+    },
+    {
+      "s": "BITTREX:COVNBTC",
+      "f": [
+        "Covenant",
+        "COVN"
+      ]
+    },
+    {
+      "s": "BITTREX:COVNUSD",
+      "f": [
+        "Covenant",
+        "COVN"
       ]
     },
     {
@@ -6260,6 +6302,20 @@
       "f": [
         "imbrex",
         "REX"
+      ]
+    },
+    {
+      "s": "BINANCE:IMXBTC",
+      "f": [
+        "Immutable X",
+        "IMX"
+      ]
+    },
+    {
+      "s": "FTX:IMXUSD",
+      "f": [
+        "Immutable X",
+        "IMX"
       ]
     },
     {

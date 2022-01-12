@@ -124,10 +124,10 @@ plot(sma(volume,60), title="average_volume_60d_calc")
 plot(sma(volume,90), title="average_volume_90d_calc")
 
 // Commodity Channel Index
-CCI=cci(close, 20)
+CCI=cci(hlc3, 20)
 plot(CCI, title = "CCI20")
 plot(CCI[1], title = "CCI20[1]")
-//plot(cci(close, 100), title = "CCI100")
+//plot(cci(hlc3, 100), title = "CCI100")
 
 // Donchian Channels
 donchLen = 20

@@ -749,7 +749,6 @@ plot(realtiveVolume10d, title="relative_volume_intraday", linewidth = 2)
 
 // study(title="24H Volume", format=format.volume)
 
-price = close
 currency = "USD"
 
 msIn24h = 24*60*60*1000
@@ -804,6 +803,6 @@ getCurrencyMult() =>
     else
         syminfoCurrency == "GBX" or syminfoCurrency == "ZAC" ? 100 : 1
 
-vol24h = cum24hVol(price*volume)
+vol24h = cum24hVol(volume)
 
 plot(vol24h * getCurRate() * getCurrencyMult(), title = "24h_volume", style = plot.style_columns)

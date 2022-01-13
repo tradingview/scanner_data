@@ -37,7 +37,6 @@ const config = [
 const typesToSubtypes = new Map([
     ["stock", ["common", "preferred", "dr"]],
     ["structured", [""]],
-    ["fund", ["etf"]]
 ]);
 
 const selectedTypes = function (){

@@ -89,6 +89,20 @@
       ]
     },
     {
+      "s": "BITTREX:1PECOBTC",
+      "f": [
+        "1peco",
+        "1PECO"
+      ]
+    },
+    {
+      "s": "BITTREX:1PECOUSD",
+      "f": [
+        "1peco",
+        "1PECO"
+      ]
+    },
+    {
       "s": "FTX:BVOLBTC",
       "f": [
         "1x Long Bitcoin Implied Volatility Token",
@@ -3166,6 +3180,34 @@
       "f": [
         "CoTrader",
         "COT"
+      ]
+    },
+    {
+      "s": "OKEX:CQTBTC",
+      "f": [
+        "Covalent",
+        "CQT"
+      ]
+    },
+    {
+      "s": "FTX:CQTUSD",
+      "f": [
+        "Covalent",
+        "CQT"
+      ]
+    },
+    {
+      "s": "BITTREX:COVNBTC",
+      "f": [
+        "Covenant",
+        "COVN"
+      ]
+    },
+    {
+      "s": "BITTREX:COVNUSD",
+      "f": [
+        "Covenant",
+        "COVN"
       ]
     },
     {
@@ -6263,6 +6305,20 @@
       ]
     },
     {
+      "s": "BINANCE:IMXBTC",
+      "f": [
+        "Immutable X",
+        "IMX"
+      ]
+    },
+    {
+      "s": "FTX:IMXUSD",
+      "f": [
+        "Immutable X",
+        "IMX"
+      ]
+    },
+    {
       "s": "HITBTC:IDHBTC",
       "f": [
         "indaHash",
@@ -7880,6 +7936,20 @@
       ]
     },
     {
+      "s": "BINANCE:GLMRBTC",
+      "f": [
+        "Moonbeam",
+        "GLMR"
+      ]
+    },
+    {
+      "s": "BINANCE:GLMRUSD",
+      "f": [
+        "Moonbeam",
+        "GLMR"
+      ]
+    },
+    {
       "s": "BINANCE:MOVRBTC",
       "f": [
         "Moonriver",
@@ -8850,6 +8920,20 @@
       "f": [
         "PancakeSwap",
         "CAKE"
+      ]
+    },
+    {
+      "s": "BITFINEX:PNGBTC",
+      "f": [
+        "Pangolin",
+        "PNG"
+      ]
+    },
+    {
+      "s": "BITFINEX:PNGUSD",
+      "f": [
+        "Pangolin",
+        "PNG"
       ]
     },
     {

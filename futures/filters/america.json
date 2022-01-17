@@ -2546,13 +2546,6 @@
       "s": "CME:6A1!"
     },
     {
-      "s": "CME:6AF2022",
-      "f": [
-        null,
-        "CME:6A"
-      ]
-    },
-    {
       "s": "CME:6AG2022",
       "f": [
         null,
@@ -2719,13 +2712,6 @@
         "CME:6B"
       ],
       "s": "CME:6B1!"
-    },
-    {
-      "s": "CME:6BF2022",
-      "f": [
-        null,
-        "CME:6B"
-      ]
     },
     {
       "s": "CME:6BG2022",
@@ -3071,13 +3057,6 @@
       "s": "CME:6E1!"
     },
     {
-      "s": "CME:6EF2022",
-      "f": [
-        null,
-        "CME:6E"
-      ]
-    },
-    {
       "s": "CME:6EG2022",
       "f": [
         null,
@@ -3244,13 +3223,6 @@
         "CME:6J"
       ],
       "s": "CME:6J1!"
-    },
-    {
-      "s": "CME:6JF2022",
-      "f": [
-        null,
-        "CME:6J"
-      ]
     },
     {
       "s": "CME:6JG2022",
@@ -3848,13 +3820,6 @@
       "s": "CME:6M1!"
     },
     {
-      "s": "CME:6MF2022",
-      "f": [
-        null,
-        "CME:6M"
-      ]
-    },
-    {
       "s": "CME:6MF2023",
       "f": [
         null,
@@ -4163,13 +4128,6 @@
       "s": "CME:6Z1!"
     },
     {
-      "s": "CME:6ZF2022",
-      "f": [
-        null,
-        "CME:6Z"
-      ]
-    },
-    {
       "s": "CME:6ZF2023",
       "f": [
         null,
@@ -4332,6 +4290,13 @@
     },
     {
       "s": "CME:BTCM2022",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
+      "s": "CME:BTCN2022",
       "f": [
         null,
         "CME:BTC"
@@ -4857,6 +4822,13 @@
     },
     {
       "s": "CME:GFF2022",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
+      "s": "CME:GFF2023",
       "f": [
         null,
         "CME:GF"
@@ -6558,6 +6530,13 @@
     },
     {
       "s": "COMEX:LEDF2022",
+      "f": [
+        null,
+        "COMEX:LED"
+      ]
+    },
+    {
+      "s": "COMEX:LEDF2023",
       "f": [
         null,
         "COMEX:LED"
@@ -11135,6 +11114,13 @@
       ]
     },
     {
+      "s": "NYMEX:PAJ2022",
+      "f": [
+        null,
+        "NYMEX:PA"
+      ]
+    },
+    {
       "s": "NYMEX:PAM2022",
       "f": [
         null,
@@ -11192,6 +11178,13 @@
     },
     {
       "s": "NYMEX:PLJ2022",
+      "f": [
+        null,
+        "NYMEX:PL"
+      ]
+    },
+    {
+      "s": "NYMEX:PLJ2023",
       "f": [
         null,
         "NYMEX:PL"

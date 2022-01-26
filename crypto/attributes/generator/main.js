@@ -49,6 +49,16 @@ const scanRequestForPairs = {
             right: "DSHBTC"
         },
         {
+            left: "name",
+            operation: "nequal",
+            right: "BTTBTC"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "BTTUSD"
+        },
+        {
             left: "exchange",
             operation: "not_in_range",
             right: [

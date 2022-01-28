@@ -51,6 +51,16 @@ const scanRequestForPairs = {
         {
             left: "name",
             operation: "nequal",
+            right: "JSTBTC"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "JSTUSD"
+        },
+        {
+            left: "name",
+            operation: "nequal",
             right: "BTTBTC"
         },
         {

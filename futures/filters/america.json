@@ -4688,6 +4688,13 @@
       ]
     },
     {
+      "s": "CME:GEQ2022",
+      "f": [
+        null,
+        "CME:GE"
+      ]
+    },
+    {
       "s": "CME:GEU2022",
       "f": [
         null,
@@ -5661,13 +5668,6 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCG2022",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCG2023",
       "f": [
         null,
@@ -6109,13 +6109,6 @@
       "s": "COMEX:GC1!"
     },
     {
-      "s": "COMEX:GCF2022",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCG2022",
       "f": [
         null,
@@ -6268,13 +6261,6 @@
         "COMEX:HG"
       ],
       "s": "COMEX:HG1!"
-    },
-    {
-      "s": "COMEX:HGF2022",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
     },
     {
       "s": "COMEX:HGF2023",
@@ -6660,13 +6646,6 @@
         "COMEX:SI"
       ],
       "s": "COMEX:SI1!"
-    },
-    {
-      "s": "COMEX:SIF2022",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
     },
     {
       "s": "COMEX:SIF2023",
@@ -11126,13 +11105,6 @@
         "NYMEX:PA"
       ],
       "s": "NYMEX:PA1!"
-    },
-    {
-      "s": "NYMEX:PAF2022",
-      "f": [
-        null,
-        "NYMEX:PA"
-      ]
     },
     {
       "s": "NYMEX:PAG2022",

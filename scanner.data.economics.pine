@@ -1,0 +1,480 @@
+// this indicator should be applied
+// on daily ECONOMICS:${COUNTRY}10Y (58 contries) OR INBR (76)
+// or monthly M2 (132)
+// or quarterly GDPYY (184) or yearly GDP
+// or to something else? or manually selected per country?
+// TODO: decide on main symbol
+
+//@version=5
+indicator("economic screener")
+
+expr = close
+// expr = bar_index // to test how much data and if it is full or cropped
+country_code = str.substring(syminfo.ticker, 0, 2)
+
+// econ_aa = request.security(syminfo.prefix + ":" + country_code + "AA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=21
+// plot(econ_aa, title="economics.AA")
+// econ_ahe = request.security(syminfo.prefix + ":" + country_code + "AHE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=190
+// plot(econ_ahe, title="economics.AHE")
+// econ_acr = request.security(syminfo.prefix + ":" + country_code + "ACR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=272
+// plot(econ_acr, title="economics.ACR")
+// econ_awh = request.security(syminfo.prefix + ":" + country_code + "AWH", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=191
+// plot(econ_awh, title="economics.AWH")
+// econ_aho = request.security(syminfo.prefix + ":" + country_code + "AHO", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=272
+// plot(econ_aho, title="economics.AHO")
+// econ_bi = request.security(syminfo.prefix + ":" + country_code + "BI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=358
+// plot(econ_bi, title="economics.BI")
+// econ_blr = request.security(syminfo.prefix + ":" + country_code + "BLR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+// plot(econ_blr, title="economics.BLR")
+// econ_bcoi = request.security(syminfo.prefix + ":" + country_code + "BCOI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=889
+// plot(econ_bcoi, title="economics.BCOI")
+// econ_boi = request.security(syminfo.prefix + ":" + country_code + "BOI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=476
+// plot(econ_boi, title="economics.BOI")
+// econ_bot = request.security(syminfo.prefix + ":" + country_code + "BOT", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=863
+// plot(econ_bot, title="economics.BOT")
+// econ_cag = request.security(syminfo.prefix + ":" + country_code + "CAG", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=41
+// plot(econ_cag, title="economics.CAG")
+// econ_ca = request.security(syminfo.prefix + ":" + country_code + "CA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=247
+// plot(econ_ca, title="economics.CA")
+// econ_br = request.security(syminfo.prefix + ":" + country_code + "BR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=137
+// plot(econ_br, title="economics.BR")
+// econ_bp = request.security(syminfo.prefix + ":" + country_code + "BP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=744
+// plot(econ_bp, title="economics.BP")
+econ_cap = request.security(syminfo.prefix + ":" + country_code + "CAP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=660
+plot(econ_cap, title="economics.CAP")
+econ_car = request.security(syminfo.prefix + ":" + country_code + "CAR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=563
+plot(econ_car, title="economics.CAR")
+econ_bbs = request.security(syminfo.prefix + ":" + country_code + "BBS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2556
+plot(econ_bbs, title="economics.BBS")
+// econ_cci = request.security(syminfo.prefix + ":" + country_code + "CCI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=620
+// plot(econ_cci, title="economics.CCI")
+// econ_ccp = request.security(syminfo.prefix + ":" + country_code + "CCP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=780
+// plot(econ_ccp, title="economics.CCP")
+// econ_ccos = request.security(syminfo.prefix + ":" + country_code + "CCOS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=929
+// plot(econ_ccos, title="economics.CCOS")
+// econ_ccpi = request.security(syminfo.prefix + ":" + country_code + "CCPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=648
+// plot(econ_ccpi, title="economics.CCPI")
+// econ_ccr = request.security(syminfo.prefix + ":" + country_code + "CCR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=946
+// plot(econ_ccr, title="economics.CCR")
+// econ_cf = request.security(syminfo.prefix + ":" + country_code + "CF", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=523
+// plot(econ_cf, title="economics.CF")
+// econ_ci = request.security(syminfo.prefix + ":" + country_code + "CI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=273
+// plot(econ_ci, title="economics.CI")
+// econ_cbbs = request.security(syminfo.prefix + ":" + country_code + "CBBS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=999
+// plot(econ_cbbs, title="economics.CBBS")
+// econ_cfnai = request.security(syminfo.prefix + ":" + country_code + "CFNAI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=658
+// plot(econ_cfnai, title="economics.CFNAI")
+// econ_cir = request.security(syminfo.prefix + ":" + country_code + "CIR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=779
+// plot(econ_cir, title="economics.CIR")
+// econ_cn = request.security(syminfo.prefix + ":" + country_code + "CN", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=273
+// plot(econ_cn, title="economics.CN")
+// econ_corpi = request.security(syminfo.prefix + ":" + country_code + "CORPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=26
+// plot(econ_corpi, title="economics.CORPI")
+// econ_consts = request.security(syminfo.prefix + ":" + country_code + "CONSTS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=695
+// plot(econ_consts, title="economics.CONSTS")
+econ_coi = request.security(syminfo.prefix + ":" + country_code + "COI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1055
+plot(econ_coi, title="economics.COI")
+// econ_corr = request.security(syminfo.prefix + ":" + country_code + "CORR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=26
+// plot(econ_corr, title="economics.CORR")
+// econ_cop = request.security(syminfo.prefix + ":" + country_code + "COP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=862
+// plot(econ_cop, title="economics.COP")
+// econ_cor = request.security(syminfo.prefix + ":" + country_code + "COR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1803
+// plot(econ_cor, title="economics.COR")
+// econ_cpim = request.security(syminfo.prefix + ":" + country_code + "CPIM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=457
+// plot(econ_cpim, title="economics.CPIM")
+// econ_cpihu = request.security(syminfo.prefix + ":" + country_code + "CPIHU", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=660
+// plot(econ_cpihu, title="economics.CPIHU")
+// econ_cpcepi = request.security(syminfo.prefix + ":" + country_code + "CPCEPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+// plot(econ_cpcepi, title="economics.CPCEPI")
+econ_cpi = request.security(syminfo.prefix + ":" + country_code + "CPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+plot(econ_cpi, title="economics.CPI")
+// econ_cpit = request.security(syminfo.prefix + ":" + country_code + "CPIT", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+// plot(econ_cpit, title="economics.CPIT")
+// econ_cpitm = request.security(syminfo.prefix + ":" + country_code + "CPITM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=457
+// plot(econ_cpitm, title="economics.CPITM")
+econ_cjc = request.security(syminfo.prefix + ":" + country_code + "CJC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2873
+plot(econ_cjc, title="economics.CJC")
+// econ_cpmi = request.security(syminfo.prefix + ":" + country_code + "CPMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=660
+// plot(econ_cpmi, title="economics.CPMI")
+// econ_cosc = request.security(syminfo.prefix + ":" + country_code + "COSC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2049
+// plot(econ_cosc, title="economics.COSC")
+// econ_cppi = request.security(syminfo.prefix + ":" + country_code + "CPPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=141
+// plot(econ_cppi, title="economics.CPPI")
+// econ_cpr = request.security(syminfo.prefix + ":" + country_code + "CPR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=287
+// plot(econ_cpr, title="economics.CPR")
+// econ_cs = request.security(syminfo.prefix + ":" + country_code + "CS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+// plot(econ_cs, title="economics.CS")
+// econ_cshpi = request.security(syminfo.prefix + ":" + country_code + "CSHPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=263
+// plot(econ_cshpi, title="economics.CSHPI")
+// econ_csc = request.security(syminfo.prefix + ":" + country_code + "CSC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=505
+// plot(econ_csc, title="economics.CSC")
+// econ_cshpimm = request.security(syminfo.prefix + ":" + country_code + "CSHPIMM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=262
+// plot(econ_cshpimm, title="economics.CSHPIMM")
+// econ_cshpiyy = request.security(syminfo.prefix + ":" + country_code + "CSHPIYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=251
+// plot(econ_cshpiyy, title="economics.CSHPIYY")
+econ_10y = request.security(syminfo.prefix + ":" + country_code + "10Y", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=10000
+plot(econ_10y, title="economics.10Y")
+// econ_ctr = request.security(syminfo.prefix + ":" + country_code + "CTR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=112
+// plot(econ_ctr, title="economics.CTR")
+// econ_css = request.security(syminfo.prefix + ":" + country_code + "CSS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=359
+// plot(econ_css, title="economics.CSS")
+// econ_dfmi = request.security(syminfo.prefix + ":" + country_code + "DFMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=212
+// plot(econ_dfmi, title="economics.DFMI")
+// econ_cu = request.security(syminfo.prefix + ":" + country_code + "CU", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=660
+// plot(econ_cu, title="economics.CU")
+// econ_dfsi = request.security(syminfo.prefix + ":" + country_code + "DFSI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=181
+// plot(econ_dfsi, title="economics.DFSI")
+// econ_dfsri = request.security(syminfo.prefix + ":" + country_code + "DFSRI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=181
+// plot(econ_dfsri, title="economics.DFSRI")
+// econ_dgo = request.security(syminfo.prefix + ":" + country_code + "DGO", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=358
+// plot(econ_dgo, title="economics.DGO")
+// econ_dfp = request.security(syminfo.prefix + ":" + country_code + "DFP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2052
+// plot(econ_dfp, title="economics.DFP")
+// econ_dgoet = request.security(syminfo.prefix + ":" + country_code + "DGOET", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=358
+// plot(econ_dgoet, title="economics.DGOET")
+// econ_dgoed = request.security(syminfo.prefix + ":" + country_code + "DGOED", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=358
+// plot(econ_dgoed, title="economics.DGOED")
+// econ_ds = request.security(syminfo.prefix + ":" + country_code + "DS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=246
+// plot(econ_ds, title="economics.DS")
+// econ_ed = request.security(syminfo.prefix + ":" + country_code + "ED", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=74
+// plot(econ_ed, title="economics.ED")
+// econ_dpi = request.security(syminfo.prefix + ":" + country_code + "DPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+// plot(econ_dpi, title="economics.DPI")
+// econ_edbr = request.security(syminfo.prefix + ":" + country_code + "EDBR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=12
+// plot(econ_edbr, title="economics.EDBR")
+// econ_ec = request.security(syminfo.prefix + ":" + country_code + "EC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=250
+// plot(econ_ec, title="economics.EC")
+// econ_dfs = request.security(syminfo.prefix + ":" + country_code + "DFS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2052
+// plot(econ_dfs, title="economics.DFS")
+// econ_emci = request.security(syminfo.prefix + ":" + country_code + "EMCI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=159
+// plot(econ_emci, title="economics.EMCI")
+econ_emp = request.security(syminfo.prefix + ":" + country_code + "EMP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=888
+plot(econ_emp, title="economics.EMP")
+// econ_ehs = request.security(syminfo.prefix + ":" + country_code + "EHS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=648
+// plot(econ_ehs, title="economics.EHS")
+// econ_eoi = request.security(syminfo.prefix + ":" + country_code + "EOI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=252
+// plot(econ_eoi, title="economics.EOI")
+// econ_emr = request.security(syminfo.prefix + ":" + country_code + "EMR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=888
+// plot(econ_emr, title="economics.EMR")
+// econ_ep = request.security(syminfo.prefix + ":" + country_code + "EP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=418
+// plot(econ_ep, title="economics.EP")
+// econ_fer = request.security(syminfo.prefix + ":" + country_code + "FER", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=930
+// plot(econ_fer, title="economics.FER")
+// econ_fdi = request.security(syminfo.prefix + ":" + country_code + "FDI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=111
+// plot(econ_fdi, title="economics.FDI")
+// econ_fe = request.security(syminfo.prefix + ":" + country_code + "FE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=816
+// plot(econ_fe, title="economics.FE")
+// econ_exp = request.security(syminfo.prefix + ":" + country_code + "EXP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=863
+// plot(econ_exp, title="economics.EXP")
+// econ_fbi = request.security(syminfo.prefix + ":" + country_code + "FBI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=527
+// plot(econ_fbi, title="economics.FBI")
+// econ_gbp = request.security(syminfo.prefix + ":" + country_code + "GBP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=73
+// plot(econ_gbp, title="economics.GBP")
+// econ_fo = request.security(syminfo.prefix + ":" + country_code + "FO", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=364
+// plot(econ_fo, title="economics.FO")
+// econ_gasp = request.security(syminfo.prefix + ":" + country_code + "GASP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=372
+// plot(econ_gasp, title="economics.GASP")
+// econ_foet = request.security(syminfo.prefix + ":" + country_code + "FOET", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=358
+// plot(econ_foet, title="economics.FOET")
+// econ_fte = request.security(syminfo.prefix + ":" + country_code + "FTE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=648
+// plot(econ_fte, title="economics.FTE")
+// econ_fi = request.security(syminfo.prefix + ":" + country_code + "FI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1296
+// plot(econ_fi, title="economics.FI")
+// econ_gcr = request.security(syminfo.prefix + ":" + country_code + "GCR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=13
+// plot(econ_gcr, title="economics.GCR")
+// econ_gci = request.security(syminfo.prefix + ":" + country_code + "GCI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=13
+// plot(econ_gci, title="economics.GCI")
+// econ_gdg = request.security(syminfo.prefix + ":" + country_code + "GDG", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=81
+// plot(econ_gdg, title="economics.GDG")
+// econ_gbv = request.security(syminfo.prefix + ":" + country_code + "GBV", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=816
+// plot(econ_gbv, title="economics.GBV")
+// econ_gd = request.security(syminfo.prefix + ":" + country_code + "GD", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=960
+// plot(econ_gd, title="economics.GD")
+econ_gdp = request.security(syminfo.prefix + ":" + country_code + "GDP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=61
+plot(econ_gdp, title="economics.GDP")
+econ_gdpa = request.security(syminfo.prefix + ":" + country_code + "GDPA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdpa, title="economics.GDPA")
+econ_gdpc = request.security(syminfo.prefix + ":" + country_code + "GDPC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdpc, title="economics.GDPC")
+econ_gdpcp = request.security(syminfo.prefix + ":" + country_code + "GDPCP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+plot(econ_gdpcp, title="economics.GDPCP")
+econ_gdpd = request.security(syminfo.prefix + ":" + country_code + "GDPD", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+plot(econ_gdpd, title="economics.GDPD")
+econ_gdpman = request.security(syminfo.prefix + ":" + country_code + "GDPMAN", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdpman, title="economics.GDPMAN")
+econ_gdpmin = request.security(syminfo.prefix + ":" + country_code + "GDPMIN", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdpmin, title="economics.GDPMIN")
+econ_gdppa = request.security(syminfo.prefix + ":" + country_code + "GDPPA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdppa, title="economics.GDPPA")
+econ_gdppc = request.security(syminfo.prefix + ":" + country_code + "GDPPC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=61
+plot(econ_gdppc, title="economics.GDPPC")
+econ_gdppcp = request.security(syminfo.prefix + ":" + country_code + "GDPPCP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=31
+plot(econ_gdppcp, title="economics.GDPPCP")
+econ_gdps = request.security(syminfo.prefix + ":" + country_code + "GDPS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdps, title="economics.GDPS")
+econ_gdpqq = request.security(syminfo.prefix + ":" + country_code + "GDPQQ", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=299
+plot(econ_gdpqq, title="economics.GDPQQ")
+econ_gdpt = request.security(syminfo.prefix + ":" + country_code + "GDPT", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdpt, title="economics.GDPT")
+econ_gdpsa = request.security(syminfo.prefix + ":" + country_code + "GDPSA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+plot(econ_gdpsa, title="economics.GDPSA")
+econ_gdpu = request.security(syminfo.prefix + ":" + country_code + "GDPU", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=67
+plot(econ_gdpu, title="economics.GDPU")
+econ_gfcf = request.security(syminfo.prefix + ":" + country_code + "GFCF", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=107
+plot(econ_gfcf, title="economics.GFCF")
+econ_gdpyy = request.security(syminfo.prefix + ":" + country_code + "GDPYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=296
+plot(econ_gdpyy, title="economics.GDPYY")
+// econ_gnp = request.security(syminfo.prefix + ":" + country_code + "GNP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=287
+// plot(econ_gnp, title="economics.GNP")
+// econ_gres = request.security(syminfo.prefix + ":" + country_code + "GRES", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=87
+// plot(econ_gres, title="economics.GRES")
+// econ_gs = request.security(syminfo.prefix + ":" + country_code + "GS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=246
+// plot(econ_gs, title="economics.GS")
+// econ_gr = request.security(syminfo.prefix + ":" + country_code + "GR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=504
+// plot(econ_gr, title="economics.GR")
+// econ_gsc = request.security(syminfo.prefix + ":" + country_code + "GSC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=28
+// plot(econ_gsc, title="economics.GSC")
+// econ_gpa = request.security(syminfo.prefix + ":" + country_code + "GPA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=996
+// plot(econ_gpa, title="economics.GPA")
+// econ_gsg = request.security(syminfo.prefix + ":" + country_code + "GSG", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=51
+// plot(econ_gsg, title="economics.GSG")
+// econ_gss = request.security(syminfo.prefix + ":" + country_code + "GSS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=36
+// plot(econ_gss, title="economics.GSS")
+// econ_gsp = request.security(syminfo.prefix + ":" + country_code + "GSP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+// plot(econ_gsp, title="economics.GSP")
+// econ_gsch = request.security(syminfo.prefix + ":" + country_code + "GSCH", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1673
+// plot(econ_gsch, title="economics.GSCH")
+// econ_gsw = request.security(syminfo.prefix + ":" + country_code + "GSW", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=36
+// plot(econ_gsw, title="economics.GSW")
+// econ_hb = request.security(syminfo.prefix + ":" + country_code + "HB", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=51
+// plot(econ_hb, title="economics.HB")
+// econ_gpro = request.security(syminfo.prefix + ":" + country_code + "GPRO", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2052
+// plot(econ_gpro, title="economics.GPRO")
+// econ_gtb = request.security(syminfo.prefix + ":" + country_code + "GTB", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=804
+// plot(econ_gtb, title="economics.GTB")
+// econ_hdg = request.security(syminfo.prefix + ":" + country_code + "HDG", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=286
+// plot(econ_hdg, title="economics.HDG")
+// econ_hmi = request.security(syminfo.prefix + ":" + country_code + "HMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=445
+// plot(econ_hmi, title="economics.HMI")
+// econ_hor = request.security(syminfo.prefix + ":" + country_code + "HOR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=227
+// plot(econ_hor, title="economics.HOR")
+// econ_hosp = request.security(syminfo.prefix + ":" + country_code + "HOSP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=39
+// plot(econ_hosp, title="economics.HOSP")
+// econ_hpi = request.security(syminfo.prefix + ":" + country_code + "HPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=371
+// plot(econ_hpi, title="economics.HPI")
+// econ_ic = request.security(syminfo.prefix + ":" + country_code + "IC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+// plot(econ_ic, title="economics.IC")
+// econ_hst = request.security(syminfo.prefix + ":" + country_code + "HST", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+// plot(econ_hst, title="economics.HST")
+// econ_hos = request.security(syminfo.prefix + ":" + country_code + "HOS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1499
+// plot(econ_hos, title="economics.HOS")
+// econ_ie = request.security(syminfo.prefix + ":" + country_code + "IE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=103
+// plot(econ_ie, title="economics.IE")
+// econ_imp = request.security(syminfo.prefix + ":" + country_code + "IMP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=863
+// plot(econ_imp, title="economics.IMP")
+// econ_intr = request.security(syminfo.prefix + ":" + country_code + "INTR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=815
+// plot(econ_intr, title="economics.INTR")
+// econ_ipa = request.security(syminfo.prefix + ":" + country_code + "IPA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=39
+// plot(econ_ipa, title="economics.IPA")
+// econ_ipri = request.security(syminfo.prefix + ":" + country_code + "IPRI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=422
+// plot(econ_ipri, title="economics.IPRI")
+// econ_irmm = request.security(syminfo.prefix + ":" + country_code + "IRMM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+// plot(econ_irmm, title="economics.IRMM")
+// econ_ipyy = request.security(syminfo.prefix + ":" + country_code + "IPYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1224
+// plot(econ_ipyy, title="economics.IPYY")
+// econ_iryy = request.security(syminfo.prefix + ":" + country_code + "IRYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1285
+// plot(econ_iryy, title="economics.IRYY")
+// econ_ipmm = request.security(syminfo.prefix + ":" + country_code + "IPMM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1235
+// plot(econ_ipmm, title="economics.IPMM")
+// econ_isp = request.security(syminfo.prefix + ":" + country_code + "ISP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=39
+// plot(econ_isp, title="economics.ISP")
+// econ_jc = request.security(syminfo.prefix + ":" + country_code + "JC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=337
+// plot(econ_jc, title="economics.JC")
+// econ_ijc = request.security(syminfo.prefix + ":" + country_code + "IJC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2874
+// plot(econ_ijc, title="economics.IJC")
+// econ_jo = request.security(syminfo.prefix + ":" + country_code + "JO", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=253
+// plot(econ_jo, title="economics.JO")
+// econ_jv = request.security(syminfo.prefix + ":" + country_code + "JV", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=253
+// plot(econ_jv, title="economics.JV")
+// econ_lmic = request.security(syminfo.prefix + ":" + country_code + "LMIC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=64
+// plot(econ_lmic, title="economics.LMIC")
+// econ_lei = request.security(syminfo.prefix + ":" + country_code + "LEI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=516
+// plot(econ_lei, title="economics.LEI")
+// econ_kfmi = request.security(syminfo.prefix + ":" + country_code + "KFMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=247
+// plot(econ_kfmi, title="economics.KFMI")
+// econ_lfpr = request.security(syminfo.prefix + ":" + country_code + "LFPR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=889
+// plot(econ_lfpr, title="economics.LFPR")
+// econ_lc = request.security(syminfo.prefix + ":" + country_code + "LC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+// plot(econ_lc, title="economics.LC")
+// econ_lmici = request.security(syminfo.prefix + ":" + country_code + "LMICI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=64
+// plot(econ_lmici, title="economics.LMICI")
+// econ_lmif = request.security(syminfo.prefix + ":" + country_code + "LMIF", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=40
+// plot(econ_lmif, title="economics.LMIF")
+// econ_jc4w = request.security(syminfo.prefix + ":" + country_code + "JC4W", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2871
+// plot(econ_jc4w, title="economics.JC4W")
+// econ_lmitp = request.security(syminfo.prefix + ":" + country_code + "LMITP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=64
+// plot(econ_lmitp, title="economics.LMITP")
+// econ_lmiwp = request.security(syminfo.prefix + ":" + country_code + "LMIWP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=64
+// plot(econ_lmiwp, title="economics.LMIWP")
+// econ_lps = request.security(syminfo.prefix + ":" + country_code + "LPS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+// plot(econ_lps, title="economics.LPS")
+econ_m1 = request.security(syminfo.prefix + ":" + country_code + "M1", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+plot(econ_m1, title="economics.M1")
+econ_ltur = request.security(syminfo.prefix + ":" + country_code + "LTUR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=888
+plot(econ_ltur, title="economics.LTUR")
+econ_m0 = request.security(syminfo.prefix + ":" + country_code + "M0", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+plot(econ_m0, title="economics.M0")
+econ_m2 = request.security(syminfo.prefix + ":" + country_code + "M2", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+plot(econ_m2, title="economics.M2")
+// econ_mce = request.security(syminfo.prefix + ":" + country_code + "MCE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=616
+// plot(econ_mce, title="economics.MCE")
+// econ_md = request.security(syminfo.prefix + ":" + country_code + "MD", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=27
+// plot(econ_md, title="economics.MD")
+// econ_mcec = request.security(syminfo.prefix + ":" + country_code + "MCEC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=620
+// plot(econ_mcec, title="economics.MCEC")
+// econ_me = request.security(syminfo.prefix + ":" + country_code + "ME", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=72
+// plot(econ_me, title="economics.ME")
+// econ_inbr = request.security(syminfo.prefix + ":" + country_code + "INBR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=9417
+// plot(econ_inbr, title="economics.INBR")
+// econ_mie1y = request.security(syminfo.prefix + ":" + country_code + "MIE1Y", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=529
+// plot(econ_mie1y, title="economics.MIE1Y")
+// econ_mie5y = request.security(syminfo.prefix + ":" + country_code + "MIE5Y", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=424
+// plot(econ_mie5y, title="economics.MIE5Y")
+// econ_mip = request.security(syminfo.prefix + ":" + country_code + "MIP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1224
+// plot(econ_mip, title="economics.MIP")
+// econ_mapl = request.security(syminfo.prefix + ":" + country_code + "MAPL", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1673
+// plot(econ_mapl, title="economics.MAPL")
+// econ_mmi = request.security(syminfo.prefix + ":" + country_code + "MMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1674
+// plot(econ_mmi, title="economics.MMI")
+// econ_mprmm = request.security(syminfo.prefix + ":" + country_code + "MPRMM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=4
+// plot(econ_mprmm, title="economics.MPRMM")
+// econ_mpryy = request.security(syminfo.prefix + ":" + country_code + "MPRYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1224
+// plot(econ_mpryy, title="economics.MPRYY")
+// econ_mw = request.security(syminfo.prefix + ":" + country_code + "MW", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=83
+// plot(econ_mw, title="economics.MW")
+// econ_mp = request.security(syminfo.prefix + ":" + country_code + "MP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=996
+// plot(econ_mp, title="economics.MP")
+// econ_ndcgoea = request.security(syminfo.prefix + ":" + country_code + "NDCGOEA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=358
+// plot(econ_ndcgoea, title="economics.NDCGOEA")
+// econ_mri = request.security(syminfo.prefix + ":" + country_code + "MRI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1674
+// plot(econ_mri, title="economics.MRI")
+// econ_mr = request.security(syminfo.prefix + ":" + country_code + "MR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1671
+// plot(econ_mr, title="economics.MR")
+// econ_nfp = request.security(syminfo.prefix + ":" + country_code + "NFP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=996
+// plot(econ_nfp, title="economics.NFP")
+// econ_nhs = request.security(syminfo.prefix + ":" + country_code + "NHS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=708
+// plot(econ_nhs, title="economics.NHS")
+// econ_nhsmm = request.security(syminfo.prefix + ":" + country_code + "NHSMM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=707
+// plot(econ_nhsmm, title="economics.NHSMM")
+// econ_ngsc = request.security(syminfo.prefix + ":" + country_code + "NGSC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1466
+// plot(econ_ngsc, title="economics.NGSC")
+// econ_nmpmi = request.security(syminfo.prefix + ":" + country_code + "NMPMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=295
+// plot(econ_nmpmi, title="economics.NMPMI")
+// econ_no = request.security(syminfo.prefix + ":" + country_code + "NO", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=358
+// plot(econ_no, title="economics.NO")
+// econ_nurs = request.security(syminfo.prefix + ":" + country_code + "NURS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=22
+// plot(econ_nurs, title="economics.NURS")
+// econ_nyesmi = request.security(syminfo.prefix + ":" + country_code + "NYESMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=247
+// plot(econ_nyesmi, title="economics.NYESMI")
+// econ_npp = request.security(syminfo.prefix + ":" + country_code + "NPP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=996
+// plot(econ_npp, title="economics.NPP")
+// econ_oe = request.security(syminfo.prefix + ":" + country_code + "OE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=395
+// plot(econ_oe, title="economics.OE")
+// econ_pdg = request.security(syminfo.prefix + ":" + country_code + "PDG", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=26
+// plot(econ_pdg, title="economics.PDG")
+// econ_pcepi = request.security(syminfo.prefix + ":" + country_code + "PCEPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+// plot(econ_pcepi, title="economics.PCEPI")
+// econ_phsimm = request.security(syminfo.prefix + ":" + country_code + "PHSIMM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=251
+// plot(econ_phsimm, title="economics.PHSIMM")
+// econ_phsiyy = request.security(syminfo.prefix + ":" + country_code + "PHSIYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=240
+// plot(econ_phsiyy, title="economics.PHSIYY")
+// econ_pfmi = request.security(syminfo.prefix + ":" + country_code + "PFMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=645
+// plot(econ_pfmi, title="economics.PFMI")
+// econ_pitr = request.security(syminfo.prefix + ":" + country_code + "PITR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=17
+// plot(econ_pitr, title="economics.PITR")
+econ_pop = request.security(syminfo.prefix + ":" + country_code + "POP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=121
+plot(econ_pop, title="economics.POP")
+// econ_pi = request.security(syminfo.prefix + ":" + country_code + "PI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=755
+// plot(econ_pi, title="economics.PI")
+// econ_ppi = request.security(syminfo.prefix + ":" + country_code + "PPI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=146
+// plot(econ_ppi, title="economics.PPI")
+// econ_pind = request.security(syminfo.prefix + ":" + country_code + "PIND", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=1674
+// plot(econ_pind, title="economics.PIND")
+// econ_pri = request.security(syminfo.prefix + ":" + country_code + "PRI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=272
+// plot(econ_pri, title="economics.PRI")
+// econ_ppiyy = request.security(syminfo.prefix + ":" + country_code + "PPIYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+// plot(econ_ppiyy, title="economics.PPIYY")
+// econ_prod = request.security(syminfo.prefix + ":" + country_code + "PROD", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=288
+// plot(econ_prod, title="economics.PROD")
+// econ_ps = request.security(syminfo.prefix + ":" + country_code + "PS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=756
+// plot(econ_ps, title="economics.PS")
+// econ_psc = request.security(syminfo.prefix + ":" + country_code + "PSC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+// plot(econ_psc, title="economics.PSC")
+// econ_ram = request.security(syminfo.prefix + ":" + country_code + "RAM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=12
+// plot(econ_ram, title="economics.RAM")
+// econ_pte = request.security(syminfo.prefix + ":" + country_code + "PTE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=648
+// plot(econ_pte, title="economics.PTE")
+// econ_puac = request.security(syminfo.prefix + ":" + country_code + "PUAC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=91
+// plot(econ_puac, title="economics.PUAC")
+// econ_raw = request.security(syminfo.prefix + ":" + country_code + "RAW", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=12
+// plot(econ_raw, title="economics.RAW")
+// econ_psp = request.security(syminfo.prefix + ":" + country_code + "PSP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=755
+// plot(econ_psp, title="economics.PSP")
+// econ_rfmi = request.security(syminfo.prefix + ":" + country_code + "RFMI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=339
+// plot(econ_rfmi, title="economics.RFMI")
+// econ_rfmsi = request.security(syminfo.prefix + ":" + country_code + "RFMSI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=339
+// plot(econ_rfmsi, title="economics.RFMSI")
+// econ_rfsi = request.security(syminfo.prefix + ":" + country_code + "RFSI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=339
+// plot(econ_rfsi, title="economics.RFSI")
+// econ_rcr = request.security(syminfo.prefix + ":" + country_code + "RCR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=2052
+// plot(econ_rcr, title="economics.RCR")
+// econ_rsmm = request.security(syminfo.prefix + ":" + country_code + "RSMM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=359
+// plot(econ_rsmm, title="economics.RSMM")
+// econ_riea = request.security(syminfo.prefix + ":" + country_code + "RIEA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=359
+// plot(econ_riea, title="economics.RIEA")
+// econ_rsea = request.security(syminfo.prefix + ":" + country_code + "RSEA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=359
+// plot(econ_rsea, title="economics.RSEA")
+// econ_rsyy = request.security(syminfo.prefix + ":" + country_code + "RSYY", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=348
+// plot(econ_rsyy, title="economics.RSYY")
+// econ_ri = request.security(syminfo.prefix + ":" + country_code + "RI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=885
+// plot(econ_ri, title="economics.RI")
+// econ_sfhp = request.security(syminfo.prefix + ":" + country_code + "SFHP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=648
+// plot(econ_sfhp, title="economics.SFHP")
+// econ_sp = request.security(syminfo.prefix + ":" + country_code + "SP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=636
+// plot(econ_sp, title="economics.SP")
+// econ_ssr = request.security(syminfo.prefix + ":" + country_code + "SSR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=23
+// plot(econ_ssr, title="economics.SSR")
+// econ_ssrc = request.security(syminfo.prefix + ":" + country_code + "SSRC", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=23
+// plot(econ_ssrc, title="economics.SSRC")
+// econ_str = request.security(syminfo.prefix + ":" + country_code + "STR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=8
+// plot(econ_str, title="economics.STR")
+// econ_ssre = request.security(syminfo.prefix + ":" + country_code + "SSRE", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=23
+// plot(econ_ssre, title="economics.SSRE")
+// econ_ti = request.security(syminfo.prefix + ":" + country_code + "TI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=18
+// plot(econ_ti, title="economics.TI")
+// econ_tot = request.security(syminfo.prefix + ":" + country_code + "TOT", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=220
+// plot(econ_tot, title="economics.TOT")
+// econ_tr = request.security(syminfo.prefix + ":" + country_code + "TR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=272
+// plot(econ_tr, title="economics.TR")
+// econ_ta = request.security(syminfo.prefix + ":" + country_code + "TA", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=307
+// plot(econ_ta, title="economics.TA")
+// econ_tvs = request.security(syminfo.prefix + ":" + country_code + "TVS", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=348
+// plot(econ_tvs, title="economics.TVS")
+// econ_up = request.security(syminfo.prefix + ":" + country_code + "UP", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=888
+// plot(econ_up, title="economics.UP")
+// econ_ur = request.security(syminfo.prefix + ":" + country_code + "UR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=889
+// plot(econ_ur, title="economics.UR")
+// econ_wes = request.security(syminfo.prefix + ":" + country_code + "WES", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=71
+// plot(econ_wes, title="economics.WES")
+// econ_wag = request.security(syminfo.prefix + ":" + country_code + "WAG", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=696
+// plot(econ_wag, title="economics.WAG")
+// econ_wi = request.security(syminfo.prefix + ":" + country_code + "WI", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=359
+// plot(econ_wi, title="economics.WI")
+// econ_wg = request.security(syminfo.prefix + ":" + country_code + "WG", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=744
+// plot(econ_wg, title="economics.WG")
+// econ_rr = request.security(syminfo.prefix + ":" + country_code + "RR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=6837
+// plot(econ_rr, title="economics.RR")
+// econ_yur = request.security(syminfo.prefix + ":" + country_code + "YUR", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=888
+// plot(econ_yur, title="economics.YUR")
+// econ_wm = request.security(syminfo.prefix + ":" + country_code + "WM", timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true) // , currency=currency?  bars=864
+// plot(econ_wm, title="economics.WM")

@@ -33,11 +33,24 @@ const config = [
         "path": "../germany.munchen.json"
     }
 ];
-const selectedTypes = "stock";
-const selectedSubTypes = [
-    "common",
-    "preferred",
-    "dr"];
+
+const typesToSubtypes = new Map([
+    ["stock", ["common", "preferred", "dr"]],
+    ["structured", [""]],
+]);
+
+const selectedTypes = function (){
+    let types = ""
+    typesToSubtypes.forEach((subtypes, type, m) => {
+        if (types === "") {
+            types += type
+        } else {
+            types += "," + type
+        }
+    });
+    return types
+}();
+
 const fieldsNotNull = "earnings_release_date,earnings_release_next_date,dividend_ex_date_upcoming,dividend_ex_date_recent";
 
 const udfProxy = "http://udf-proxy.tradingview.com:8094/symbols";
@@ -80,12 +93,17 @@ function hasDataAll(s) {
 }
 
 config.forEach(c => {
-    const symbols = loadSymbols(c.exchange, "symbol," + fieldsNotNull, selectedTypes, selectedSubTypes).filter(s => {
-        const symbolName = s.f.find(val => typeof val === 'string');
-        const isModel = !!modelStocks[symbolName];
-        const hasD = hasDataAll(s);
-        return isModel || hasD;
-    }).map(s => ({"s": s.s}));
+    let symbols = [];
+    typesToSubtypes.forEach((subtypes, type, m) => {
+        const syms = loadSymbols(c.exchange, "symbol," + fieldsNotNull, type, subtypes).filter(s => {
+            const symbolName = s.f.find(val => typeof val === 'string');
+            const isModel = !!modelStocks[symbolName];
+            const hasD = hasDataAll(s);
+            return isModel || hasD;
+        }).map(s => ({"s": s.s}));
+        symbols = symbols.concat(syms);
+    });
+
     if (symbols.length) {
         symbols.sort(function (l, r) {
             return l.s.localeCompare(r.s);

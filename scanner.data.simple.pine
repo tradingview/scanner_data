@@ -124,10 +124,10 @@ plot(sma(volume,60), title="average_volume_60d_calc")
 plot(sma(volume,90), title="average_volume_90d_calc")
 
 // Commodity Channel Index
-CCI=cci(close, 20)
+CCI=cci(hlc3, 20)
 plot(CCI, title = "CCI20")
 plot(CCI[1], title = "CCI20[1]")
-//plot(cci(close, 100), title = "CCI100")
+//plot(cci(hlc3, 100), title = "CCI100")
 
 // Donchian Channels
 donchLen = 20
@@ -513,6 +513,8 @@ plot(recTotal, title="Recommend.All")
 
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
 
+C_PriceAvg = sma(close,50)
+
 C_Len = (14)
 C_Factor = (2.0)
 C_ShadowPercent = (5)
@@ -521,13 +523,13 @@ C_ShadowEqualsPercent = (100)
 C_BodyHi = max( close, open )
 C_BodyLo = min( close, open )
 C_Body = C_BodyHi - C_BodyLo
-C_BodyAvg = ema( C_Body, C_Len )
+C_BodyAvg = sma( C_Body, C_Len )
 C_SmallBody = C_Body < C_BodyAvg
 C_LongBody = C_Body > C_BodyAvg
 C_UpShadow = high - C_BodyHi
 C_DnShadow = C_BodyLo - low
-C_DownTrend = DownTrend
-C_UpTrend = UpTrend
+C_DownTrend = close < C_PriceAvg
+C_UpTrend = close > C_PriceAvg
 C_HasUpShadow = C_UpShadow > C_ShadowPercent / 100 * C_Body
 C_HasDnShadow = C_DnShadow > C_ShadowPercent / 100 * C_Body
 C_WhiteBody = open < close
@@ -597,8 +599,8 @@ plot(C_GravestoneDoji ? 1 : 0, title = "Candle.Doji.Gravestone")
 
 
 // study("Harami")
-plot((C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_IsInsideBar) ? 1 : 0, title = "Candle.Harami.Bullish")
-plot((C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_IsInsideBar) ? 1 : 0, title = "Candle.Harami.Bearish")
+plot((C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_WhiteBody and C_SmallBody and high <= C_BodyHi[1] and low >= C_BodyLo[1]) ? 1 : 0, title = "Candle.Harami.Bullish")
+plot((C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_BlackBody and C_SmallBody and high <= C_BodyHi[1] and low >= C_BodyLo[1]) ? 1 : 0, title = "Candle.Harami.Bearish")
 
 
 //study("Long Shadows")

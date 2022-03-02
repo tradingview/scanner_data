@@ -167,18 +167,25 @@ pivotX_prev_low := nz(pivotX_prev_low[1])
 pivotX_prev_close = float(na)
 pivotX_prev_close := nz(pivotX_prev_close[1])
 
-pivotXGetCurDate()=>
-    result = month(time)
+pivotXGetCurTF()=>
+    result = "1M"
     if timeframe.isintraday
-        result := timeframe.multiplier <= 15 ? dayofmonth(time) : weekofyear(time)
+        result := timeframe.multiplier <= 15 ? "1D" : "1W"
     else
         if timeframe.isweekly or timeframe.ismonthly
-            result := year(time)
+            result := "12M"
     result
 
 fNeg(value) => value <= 0 ? na : value
 
-pivotX_Interval = pivotXGetCurDate()
+pp_resolution = pivotXGetCurTF()
+[sec_open, sec_high, sec_low] = security(syminfo.tickerid, pp_resolution, [open, high, low], lookahead = barmerge.lookahead_on)
+pivotX_open := sec_open[1]
+pivotX_high := sec_high[1]
+pivotX_low := sec_low[1]
+
+pivotX_Interval = time(pp_resolution)
+
 if pivotX_Interval != pivotX_Interval[1]
     pivotX_prev_open := pivotX_open
     pivotX_prev_close := close[1]

@@ -70,5 +70,9 @@
   {
     "name": "lp_time",
     "type": "time"
+  },
+  {
+    "name": "provider_id",
+    "type": "text"
   }
 ]

@@ -638,5 +638,9 @@
     {
         "name": "total_liabilities_fy",
         "type": "fundamental_price"
+    },
+    {
+        "name": "provider_id",
+        "type": "text"
     }
 ]

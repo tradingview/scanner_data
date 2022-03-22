@@ -1,0 +1,43 @@
+[
+	{
+		"inputs": [
+			{
+				"id": "text",
+				"type": "text",
+				"defval": "v:max_bars_back(#0,4999):v~0~min(n,4999)~0~if_(#0\u003c#1){i:0}_{v:for(0;14;1){$3=ceil(($1+$2)/2)~$3+1~v:ifelif_($1==$2){break~}elif(#0@$3\u003c#1){$2=$3~continue~}elif(#0@$3\u003e#1){$1=$3~continue~}elif(#0@$6==#1){$1=$3~continue~}_{break~}~}~$3};(#0-#1)*100/abs(#1);if_(#0==0){f_na}_{v:max_bars_back(close,4999):v~$1(close,close@#0)~$2};timestamp('UTC',year(time_tradingday),month(time_tradingday)-3,dayofmonth(time_tradingday),0,0,0)~$0(time_tradingday,$0)~$2($1)~$2;$3()~$4",
+				"isFake": false
+			},
+			{
+				"id": "pineId",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			},
+			{
+				"id": "pineVersion",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			}
+		],
+		"description": "ScannerData",
+		"id": "Script$pine_id_undefined@tv-scripting-101",
+		"plots": [
+			{
+				"id": "plot_0",
+				"type": "line"
+			}
+		],
+		"version": "",
+		"isTVScriptStubToCompile": false,
+		"isTVScriptStrategy": false,
+		"TVScriptSourceCode": "",
+		"fullId": "",
+		"styles": {
+			"plot_0": {
+				"title": "Perf.3M",
+				"isHidden": false
+			}
+		}
+	}
+]

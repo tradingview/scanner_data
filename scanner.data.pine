@@ -792,25 +792,25 @@ plot(ta.tr(true) * 100 / math.abs(low), title='Volatility.D')
 rateOfreturn(v1, v2) =>
 	(v1 - v2) * 100 / math.abs(v2)
 rr(_bb, maxbarsback) =>
-	bb = _bb
-	if bar_index == 0
-		bb += math.round(close[maxbarsback] * 0)  // max_bars_back
-	if bb == 0
-		na
-	else
-		rof = rateOfreturn(close, close[bb])
-		rof
+    bb = _bb
+    if bar_index == 0
+        bb := bb + math.round(close[maxbarsback] * 0) // max_bars_back
+    if bb == 0
+        na
+    else
+        rof = rateOfreturn(close, close[bb])
+        rof
 
-plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
-plot(rr(countOfBars1MonthAgo, month1), title='Perf.1M')
-plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')
-plot(rr(countOfBars6MonthAgo, month6), title='Perf.6M')
-plot(rr(countOfBars52WeekAgo, weeks52), title='Perf.Y')
-plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
+
+year_ago = timestamp("UTC", year(time_tradingday)-1, month(time_tradingday), dayofmonth(time_tradingday), 0, 0, 0)
+countOfBarsYearAgo = fastSearchN(time_tradingday, year_ago, 4999)
+
+plot(rr(fNeg(countOfBarsYearAgo-1), 4999), title="Perf.Y")
 var lastYearClose = float(na)
 if year > year[1]
-	lastYearClose := close[1]
-plot(rateOfreturn(close, lastYearClose), title='Perf.YTD')
+    lastYearClose := close
+plot(rateOfreturn(close, lastYearClose), title="Perf.YTD")
+plot(rr(countOfBars5YearAgo, years5), title="Perf.5Y")
 
 // business day
 plot(time_tradingday / 1000, title='time_business_day')

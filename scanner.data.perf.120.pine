@@ -1,0 +1,42 @@
+//@version=4
+study(title="ScannerData", shorttitle="_SD_")
+
+fastSearchN(xs, x) => // xs - sorted, ascending
+    max_bars_back(xs, 4999)
+    left  = 0
+    right = min(bar_index,4999)
+    mid = 0
+    if xs < x
+        0
+    else
+        for i = 0 to 14
+            mid := ceil((left+right) / 2)
+            if left == right
+                break
+            else if xs[mid] < x
+                right := mid
+                continue
+            else if xs[mid] > x
+                left := mid
+                continue
+            else if xs[mid+1] == x
+                left := mid
+                continue
+            else
+                break
+        mid
+
+months6_ago = timestamp("UTC", year(time_tradingday), month(time_tradingday)-3, dayofmonth(time_tradingday), 0, 0, 0)
+countOfBars6MonthAgo = fastSearchN(time_tradingday, months6_ago)
+
+// performance
+rateOfreturn(v1, v2) => (v1 - v2) * 100 / abs(v2)
+rr(bb) =>
+    if bb == 0
+        na
+    else
+        max_bars_back(close, 4999)
+        rof = rateOfreturn(close, close[bb])
+        rof
+
+plot(rr(countOfBars6MonthAgo), title="Perf.3M")

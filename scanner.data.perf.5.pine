@@ -1,0 +1,51 @@
+//@version=4
+study(title="ScannerData", shorttitle="_SD_")
+
+fastSearchN(xs, x) => // xs - sorted, ascending
+    max_bars_back(xs, 4999)
+    left  = 0
+    right = min(bar_index,4999)
+    mid = 0
+    if xs < x
+        0
+    else
+        for i = 0 to 14
+            mid := ceil((left+right) / 2)
+            if left == right
+                break
+            else if xs[mid] < x
+                right := mid
+                continue
+            else if xs[mid] > x
+                left := mid
+                continue
+            else if xs[mid+1] == x
+                left := mid
+                continue
+            else
+                break
+        mid
+
+// performance
+rateOfreturn(v1, v2) => (v1 - v2) * 100 / abs(v2)
+rr(bb) =>
+    if bb == 0
+        na
+    else
+        max_bars_back(close, 4999)
+        rof = rateOfreturn(close, close[bb])
+        rof
+
+
+td = time_tradingday
+lenght = 5
+var a = array.new_float(lenght, na)
+if td != td[1]
+    for i = lenght-1 to 1
+        array.set(a, i, array.get(a, i-1))
+    array.set(a, 0, td)
+	
+	
+countOfBarsWeekhAgo = fastSearchN(time_tradingday,  array.get(a, 4))
+plot(rr(countOfBarsWeekhAgo), title="Perf.W")
+

@@ -730,8 +730,6 @@ fastSearchN(_xs, x, maxbarsback) => // xs - sorted, ascending
 years5 = 365*4+366
 years5_ago = timenow - 1000*60*60*24*years5
 countOfBars5YearAgo = fastSearchN(time, years5_ago, years5)
-plot(custom_lowest(low, countOfBars5YearAgo, years5), title="Low.5Y")
-plot(custom_highest(high, countOfBars5YearAgo, years5), title="High.5Y")
 
 weeks52 = 7*52
 weeks52_ago = timenow - 1000*60*60*24*weeks52

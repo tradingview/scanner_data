@@ -139,9 +139,9 @@ plot(avg(donchUpper, donchLower), title="DonchCh20.Middle")
 
 // Hull Moving Average
 hullMALength = 9
-hullMA_n2ma=2*wma(close,round(hullMALength/2))
+hullMA_n2ma=2*wma(close, hullMALength/2)
 hullMA_nma=wma(close,hullMALength)
-HullMA9 = wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength)))
+HullMA9 = wma(hullMA_n2ma - hullMA_nma, floor(sqrt(hullMALength)))
 plot(HullMA9, title = "HullMA9")
 
 // Awesome Oscillator
@@ -434,7 +434,7 @@ recOtherC = .0
 recRSI = RSI
 if not(na(recRSI) or na(recRSI[1]))
     recOtherC := recOtherC + 1
-    recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] > recRSI, recRSI > 70 and recRSI[1] < recRSI)
+    recOther := recOther + calcRecommend(recRSI < 30 and recRSI[1] < recRSI, recRSI > 70 and recRSI[1] > recRSI)
 
 if not(na(kStoch) or na(dStoch) or na(kStoch[1]) or na(dStoch[1]))
     recOtherC := recOtherC + 1
@@ -451,11 +451,11 @@ if not(na(adxValue) or na(adxPlus[1]) or na(adxMinus[1]) or na(adxPlus) or na(ad
 
 if not(na(AO) or na(AO[1]))
     recOtherC := recOtherC + 1
-    recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1]))
+    recOther := recOther + calcRecommend(crossover(AO,0) or (AO > 0 and AO[1] > 0 and AO > AO[1] and AO[2] > AO[1]), crossunder(AO,0) or (AO < 0 and AO[1] < 0 and AO < AO[1] and AO[2] < AO[1]))
 
 if not(na(Mom) or na(Mom[1]))
     recOtherC := recOtherC + 1
-    recOther := recOther + calcRecommend(Mom < Mom[1], Mom > Mom[1])
+    recOther := recOther + calcRecommend(Mom > Mom[1], Mom < Mom[1])
 
 if not(na(macdMACD) or na(signalMACD))
     recOtherC := recOtherC + 1
@@ -752,28 +752,37 @@ plot(custom_lowest(low, countOfBars3MonthAgo, month3), title="Low.3M")
 plot(custom_highest(high, countOfBars3MonthAgo, month3), title="High.3M")
 
 month1 = 30
+month_ago_this_bar = time - 1000*60*60*24*month1
 month_ago = timenow - 1000*60*60*24*month1
 countOfBars1MonthAgo = fastSearchN(time, month_ago, month1)
+countOfBars1MonthAgoThisBar = fastSearchN(time, month_ago_this_bar, month1)
 plot(custom_lowest(low, countOfBars1MonthAgo, month1), title="Low.1M")
 plot(custom_highest(high, countOfBars1MonthAgo, month1), title="High.1M")
 
 week1 = 7
 week_ago = timenow - 1000*60*60*24*week1
+week_ago_this_bar = time - 1000*60*60*24*week1
 countOfBarsWeekAgo = fastSearchN(time, week_ago, week1)
+countOfBarsWeekAgoThisBar = fastSearchN(time, week_ago_this_bar, week1)
 plot(custom_lowest(low, countOfBarsWeekAgo, week1), title="Low.5D")
 plot(custom_highest(high, countOfBarsWeekAgo, week1), title="High.5D")
 
 // volatility
 volatility(bb) =>
-    if bb == 0
+    bb2 = bb
+    if bar_index == 0
+        bb2 := 365
+    if bb2 == 0
         na
     else
-        c = cum((high-low)/abs(low) * 100 / bb)
-        max_bars_back(c, 366)
-        c - nz(c[bb-1])
+        s = sum((high-low)/abs(low) * 100 / bb2, bb2)
+        if bb == 0
+            na
+        else
+            s
 
-plot(volatility(countOfBarsWeekAgo), title="Volatility.W")
-plot(volatility(countOfBars1MonthAgo),title="Volatility.M")
+plot(volatility(countOfBarsWeekAgoThisBar), title="Volatility.W")
+plot(volatility(countOfBars1MonthAgoThisBar),title="Volatility.M")
 plot(tr(true)*100/abs(low), title="Volatility.D")
 
 // performance

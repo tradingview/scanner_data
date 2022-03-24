@@ -74,5 +74,9 @@
 	{
 		"name": "all_time_open",
 		"type": "price"
-	}
+	},
+  {
+    "name": "provider_id",
+    "type": "text"
+  }
 ]

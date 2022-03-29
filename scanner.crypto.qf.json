@@ -78,5 +78,9 @@
 	{
 		"name": "all_time_open",
 		"type": "price"
-	}
+	},
+  {
+      "name": "crypto_total_rank",
+      "type": "number"
+  }
 ]

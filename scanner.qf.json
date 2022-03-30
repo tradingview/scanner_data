@@ -644,7 +644,15 @@
 		"type": "fundamental_price"
 	},
 	{
-	    "name": "provider-id",
-	    "type": "text"
+	        "name": "provider-id",
+	        "type": "text"
+        },
+        {
+                "name": "free_cash_flow",
+                "type": "price"
+        },
+        {
+                "name": "cash_n_short_term_invest_fq",
+                "type": "price"
 	}
 ]

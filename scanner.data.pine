@@ -167,18 +167,18 @@ pivotX_prev_low := nz(pivotX_prev_low[1])
 pivotX_prev_close = float(na)
 pivotX_prev_close := nz(pivotX_prev_close[1])
 
-pivotXGetCurDate()=>
-    result = month(time)
+pivotXGetCurTF()=>
+    result = "1M"
     if timeframe.isintraday
-        result := timeframe.multiplier <= 15 ? dayofmonth(time) : weekofyear(time)
+        result := timeframe.multiplier <= 15 ? "1D" : "1W"
     else
         if timeframe.isweekly or timeframe.ismonthly
-            result := year(time)
+            result := "12M"
     result
 
 fNeg(value) => value <= 0 ? na : value
 
-pivotX_Interval = pivotXGetCurDate()
+pivotX_Interval = time(pivotXGetCurTF())
 if pivotX_Interval != pivotX_Interval[1]
     pivotX_prev_open := pivotX_open
     pivotX_prev_close := close[1]

@@ -74,5 +74,233 @@
   {
     "name": "crypto_total_rank",
     "type": "number"
+  },
+  {
+    "name": "block-height",
+    "type": "number"
+  },
+  {
+    "name": "block-interval-mean",
+    "type": "number"
+  },
+  {
+    "name": "block-interval-median",
+    "type": "number"
+  },
+  {
+    "name": "block-size-mean",
+    "type": "number"
+  },
+  {
+    "name": "block-size-total",
+    "type": "number"
+  },
+  {
+    "name": "blocks-mined",
+    "type": "number"
+  },
+  {
+    "name": "circulating-supply",
+    "type": "number"
+  },
+  {
+    "name": "difficulty",
+    "type": "number"
+  },
+  {
+    "name": "fees-mean",
+    "type": "number"
+  },
+  {
+    "name": "fees-median",
+    "type": "number"
+  },
+  {
+    "name": "fees-total",
+    "type": "number"
+  },
+  {
+    "name": "fees-mean-usd",
+    "type": "number"
+  },
+  {
+    "name": "fees-median-usd",
+    "type": "number"
+  },
+  {
+    "name": "fees-total-usd",
+    "type": "number"
+  },
+  {
+    "name": "gas-limit-mean",
+    "type": "number"
+  },
+  {
+    "name": "gas-limit-median",
+    "type": "number"
+  },
+  {
+    "name": "gas-limit-total",
+    "type": "number"
+  },
+  {
+    "name": "gas-price-mean",
+    "type": "number"
+  },
+  {
+    "name": "gas-price-median",
+    "type": "number"
+  },
+  {
+    "name": "gas-price-mean-usd",
+    "type": "number"
+  },
+  {
+    "name": "gas-price-median-usd",
+    "type": "number"
+  },
+  {
+    "name": "gas-used-mean",
+    "type": "number"
+  },
+  {
+    "name": "gas-used-median",
+    "type": "number"
+  },
+  {
+    "name": "gas-used-total",
+    "type": "number"
+  },
+  {
+    "name": "hash-rate",
+    "type": "number"
+  },
+  {
+    "name": "market-cap",
+    "type": "number"
+  },
+  {
+    "name": "new-deposits",
+    "type": "number"
+  },
+  {
+    "name": "new-validators",
+    "type": "number"
+  },
+  {
+    "name": "new-value-staked",
+    "type": "number"
+  },
+  {
+    "name": "phase0-staking-goal",
+    "type": "number"
+  },
+  {
+    "name": "price-drawdown",
+    "type": "number"
+  },
+  {
+    "name": "receiving-addresses",
+    "type": "number"
+  },
+  {
+    "name": "sending-addresses",
+    "type": "number"
+  },
+  {
+    "name": "sopr",
+    "type": "number"
+  },
+  {
+    "name": "supply-active-1year-ago",
+    "type": "number"
+  },
+  {
+    "name": "total-deposits",
+    "type": "number"
+  },
+  {
+    "name": "total-validators",
+    "type": "number"
+  },
+  {
+    "name": "total-value-staked",
+    "type": "number"
+  },
+  {
+    "name": "total-value-staked-usd",
+    "type": "number"
+  },
+  {
+    "name": "transaction-count",
+    "type": "number"
+  },
+  {
+    "name": "transaction-rate",
+    "type": "number"
+  },
+  {
+    "name": "transaction-size-mean",
+    "type": "number"
+  },
+  {
+    "name": "transaction-size-total",
+    "type": "number"
+  },
+  {
+    "name": "transfer-rate",
+    "type": "number"
+  },
+  {
+    "name": "uniswap-liquidity",
+    "type": "number"
+  },
+  {
+    "name": "uniswap-liquidity-usd",
+    "type": "number"
+  },
+  {
+    "name": "uniswap-transactions",
+    "type": "number"
+  },
+  {
+    "name": "uniswap-volume",
+    "type": "number"
+  },
+  {
+    "name": "utxo-all",
+    "type": "number"
+  },
+  {
+    "name": "utxo-created",
+    "type": "number"
+  },
+  {
+    "name": "utxo-spent",
+    "type": "number"
+  },
+  {
+    "name": "utxo-value-created-mean",
+    "type": "number"
+  },
+  {
+    "name": "utxo-value-created-median",
+    "type": "number"
+  },
+  {
+    "name": "utxo-value-created-total",
+    "type": "number"
+  },
+  {
+    "name": "utxo-value-spent-mean",
+    "type": "number"
+  },
+  {
+    "name": "utxo-value-spent-median",
+    "type": "number"
+  },
+  {
+    "name": "utxo-value-spent-total",
+    "type": "number"
   }
 ]

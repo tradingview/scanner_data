@@ -654,5 +654,9 @@
         {
                 "name": "cash_n_short_term_invest_fq",
                 "type": "price"
+        },
+        {
+                "name": "cash_n_equivalents_fq",
+                "type": "price"
 	}
 ]

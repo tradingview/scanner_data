@@ -4,9 +4,14 @@ const {URL} = require('url');
 
 const dstPath = "../cfd.json";
 const groups = [
+<<<<<<< HEAD
     {url: "iceusa_cfd_indices", region: "Americas"},
+=======
+//    {url: "dxy_idc2", region: "Americas"},
+>>>>>>> a1d81ec4... BS-13285: update main.js, change bonds to prefix
     {url: "cboe_cfd_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_cfd_indices", exclude: ["TVC:SPX"]},
+    {url: "nasdaq_cfd_indices"}, //remove me
     {url: "japan_cfd_indices", region: "Asia"},
     {url: "shanghai_cfd_indices", region: "Asia"},
     {url: "hangseng_cfd_indices", region: "Asia"},
@@ -16,10 +21,14 @@ const groups = [
     {url: "xetra_cfd_indices", region: "Europe"},
     {url: "british_cfd_indices", region: "Europe"},
     {url: "bme_cfd_indices", region: "Europe"},
-    {url: "refinitiv_bonds", sector: "bond"},
-    {url: "refinitiv_bonds_yield", sector: "bond"},
-    {url: "refinitiv_bonds_rrps", sector: "bond"},
-    {url: "refinitiv_bonds_rrps_yield", sector: "bond"},
+    // {url: "refinitiv_bonds", sector: "bond"},
+    // {url: "refinitiv_bonds_yield", sector: "bond"},
+    // {url: "refinitiv_bonds_rrps", sector: "bond"},
+    // {url: "refinitiv_bonds_rrps_yield", sector: "bond"},
+    {
+        url2: "prefix=TVC&type=bond",
+        sector: "bond"
+    },
     {url: "euro_bonds_cfd", sector: "bond", region: "Europe"},
     {
         url: "forex_tvc",
@@ -44,8 +53,8 @@ const groups = [
         include: ["FOREXCOM:HGOUSD", "FOREXCOM:COTUSD"]
     },
     {
-        url2: "prefix=SPCFD&typespecs=main",
-        include: ["SPCFD:SPX"],
+        url2: "prefix=SP&alias=1&typespecs=main",
+        include: ["SP:SPX"],
         region: "Americas"
     },
     {
@@ -114,8 +123,8 @@ const groups = [
         region: "Europe"
     },
     {
-        url2: "prefix=DJCFD&typespecs=main",
-        include: ["DJCFD:DJI"],
+        url2: "prefix=DJ&alias=1&typespecs=main",
+        include: ["DJ:DJI"],
         region: "Americas"
     },
     {
@@ -165,11 +174,11 @@ const groups = [
     },
     {
         "url": "bahrain_indices",
-        "include": ["BAHRAIN:BSEX"],
+        "include": ["BAHRAIN:BHBX"],
         "region": "Middle East"
     },
     {
-        "url": "belgrade_indices",
+        "url": "belgrade_indices?kind=delay",
         "include": ["BELEX:BELEX15"],
         "region": "Europe"
     },
@@ -224,7 +233,7 @@ const groups = [
         "region": "Middle East"
     },
     {
-        "url": "shenzhen_indices",
+        "url": "shenzhen_main_indices",
         "include": ["SZSE:399001"],
         "region": "Asia"
     },
@@ -281,7 +290,8 @@ const groups = [
 
 const types = {
     "cfd": true,
-    "index": true
+    "index": true,
+    "bond": true
 };
 
 const symbols = [];
@@ -321,8 +331,14 @@ groups.forEach(function (gr) {
     if (response.statusCode != 200) {
         throw Error(url + ':' + response.statusCode);
     }
+    fields_list = JSON.parse(response.getBody()).fields;
+    symbol_index = fields_list.indexOf("symbol");
+    type_index = fields_list.indexOf("type");
+    description_index = fields_list.indexOf("description");
+    country_index = fields_list.indexOf("country");
+    symbol_proname_index = fields_list.indexOf("symbol-proname");
     JSON.parse(response.getBody()).symbols.forEach(function (s) {
-        if (types[s.f[1]]) {
+        if (types[s.f[type_index]]) {
             let skip = false;
             if (include && !include[s.s]) {
                 skip = true;
@@ -341,8 +357,14 @@ groups.forEach(function (gr) {
                     s.sector = gr.sector;
                 }
 
-                const dolly = Object.assign({}, s);
-                dolly.s = s.f[4] || s.s;
+                let dolly = Object.assign({}, s);
+                dolly.f = Object.assign({}, s.f);
+                dolly.f[0] = s.f[symbol_index];
+                dolly.f[1] = s.f[type_index];
+                dolly.f[2] = s.f[description_index];
+                dolly.f[3] = s.f[country_index];
+                dolly.f[4] = s.f[symbol_proname_index];
+                
 
                 symbols.push(dolly);
 
@@ -353,12 +375,12 @@ groups.forEach(function (gr) {
 });
 
 const bondsMarks = [
-    "TREASURY NOTE", "BOND", "Bond", "T-Note", "EURO BUND", "UK 10Y Gilt"
+    "TREASURY NOTE", "BOND", "Bond", "Bonds", "T-Note", "EURO BUND", "UK 10Y Gilt"
 ];
 
 const indexMarks = [
     "INDEX", "NASDAQ", "RUSSELL", "S&P", "DOW JONES", "DOW-JONES", "STOXX", "Australia", "Swiss", "Germany", "Europe", "France",
-    "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE",
+    "Hong Kong", "Japan", "Netherlands", "NIKKEI", "FTSE", "Singapore", "CAC", "HANG SENG", "SHANGHAI COMPOSITE", "NYSE COMPOSITE", "PHLX",
     "Bund", "IBEX 35", "DAX PERFORMANCE", "US Wall St 30", "US Nas 100", "UK 100", "US Russ 2000", "AEX", "US SPX 500", "DAX", "NYSE AMERICAN COMPOSITE"
 ];
 
@@ -371,19 +393,20 @@ const energyMarks = [
 ];
 
 const agricultureMarks = [
-    "Sugar", "Corn", "Soybeans", "Wheat", "Cotton"
+    "Sugar", "Corn", "Soybeans", "Wheat", "Cotton", "COTTON"
 ];
 
 const regionMarks = {
-    "Middle East": ["TURKEY"],
-    "Asia": ["CHINA", "HONG KONG", "Hong Kong", "INDIA", "INDONESIA", "JAPAN", "KOREA", "MALAYSIA", "SINGAPORE", "Singapore", "THAILAND", "TAIWAN"],
-    "Europe": ["EURO CURRENCY INDEX", "BRITISH POUND CURRENCY INDEX", "SWISS FRANC CURRENCY INDEX", "BELGIUM", "FRANCE",
-               "GERMAN", "DENMARK", "Germany", "IRELAND", "ITALY", "NETHERLANDS", "Netherlands", "NORWAY", "PORTUGAL",
-               "SPAIN", "Swiss", "UK ", "SWEDEN", "GREECE", "POLAND"],
-    "Americas": ["NYSE", "NASDAQ", "S&P 500", "US ", "THOMSON REUTERS", "CANADIAN DOLLAR CURRENCY INDEX", "US GOVERNMENT BONDS", "DOW JONES", "DOW-JONES", "RUSSELL", "PHLX", "BR GOVERNMENT BONDS"],
-    "Africa": ["SOUTH AFRICA"],
-    "Pacific": ["AUSTRALIA", "Australia", "NEW ZEALAND "],
-    "": ["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD", "SILVER", "PLATINUM", "PALLADIUM", "Heating Oil", "Cotton", "Crude Oil"]
+    "Middle East": ["Turkey"],
+    "Asia": ["China", "Hong Kong", "India", "Indonesia", "Japan", "JAPANESE YEN WCO", "Korea", "Malaysia", "MALAYSIA", "Singapore", "Thailand", "Taiwan", "Philippines", "Vietnam"],
+    "Europe": ["EUROS WCO", "BRITISH POUNDS WCO", "SWISS FRANCS WCO", "Belgium", "France", "Ukraine", "Russian Federation",
+               "Denmark", "Germany", "Ireland", "Italy", "Netherlands", "Norway", "Portugal", "Iceland", "Lithuania", "Latvia", "Romania", "Slovakia",
+               "Spain", "Swiss", "United Kingdom", "Sweden", "Greece", "Poland", "Austria", "Switzerland", "Czech", "Euro", "Finland", "Hungary"],
+    "Americas": ["NYSE", "NASDAQ", "S&P 500", "US ", "U.S.", "THOMSON REUTERS", "CANADIAN DOLLARS WCO", "US GOVERNMENT BONDS", "DOW JONES",
+                "DOW-JONES", "RUSSELL", "PHLX", "BR GOVERNMENT BONDS","Canada", "Colombia", "Chile", "Brazil", "Peru", "United States"],
+    "Africa": ["South Africa"],
+    "Pacific": ["Australia", "AUSTRALIAN WCO", "New Zealand ", "NEW ZEAL AND WCO"],
+    "": ["CRUDE OIL", "Corn", "Natural Gas", "Soybeans", "Sugar", "Wheat", "Copper", "GOLD", "SILVER", "PLATINUM", "PALLADIUM", "Heating Oil", "Cotton", "COTTON", "Crude Oil"]
 };
 
 
@@ -486,7 +509,7 @@ const majorIndices = [
     {"s": "DFM:DFMGI", "cc": "AE"},
     {"s": "TADAWUL:TASI", "cc": "SA"},
     {"s": "QSE:GNRI", "cc": "QA"},
-    {"s": "BAHRAIN:BSEX", "cc": "BH"},
+    {"s": "BAHRAIN:BHBX", "cc": "BH"},
     {"s": "NSENG:NSE30", "cc": "NG"},
     {"s": "EGX:EGX30", "cc": "EG"},
     {"s": "BMFBOVESPA:IBOV", "cc": "BR"},
@@ -515,24 +538,24 @@ const currencyIndices = [
 ).concat(currencyIndices).forEach((s, i) => indicesPriorities[s] = i);
 
 const bondsRegionsPriority = [
-    "US",
-    "CANADIAN",
+    "United States",
+    "Canada",
     // UK, Germany, France, Spain, Italy, потом по алфавиту
-    "UK",
-    "GERMAN",
-    "FRANCE",
-    "SPAIN",
-    "ITALY",
+    "United Kingdom",
+    "Germany",
+    "France",
+    "Spain",
+    "Italy",
     //  japan, korea, china, india, hong kong, singapore, malaysia, indonesia, thailand, потом по алфавиту
-    "JAPAN",
-    "KOREA",
-    "CHINA",
-    "INDIA",
-    "HONG KONG",
-    "SINGAPORE",
-    "MALAYSIA",
-    "INDONESIA",
-    "THAILAND"
+    "Japan",
+    "Korea",
+    "China",
+    "India",
+    "Hong Kong",
+    "Singapore",
+    "Malaysia",
+    "Indonesia",
+    "Thailand"
 ];
 
 function calcHash(name, limit) {
@@ -592,67 +615,71 @@ const symbolsCountryCode = {};
 majorIndices.forEach(s => symbolsCountryCode[s.s] = s.cc);
 
 const countryCodeByName = {
-    "SOUTH AFRICA": "ZA",
-    "ARGENTINA": "AR",
-    "AUSTRALIA": "AU",
-    "AUSTRIA": "AT",
-    "BELGIUM": "BE",
-    "BAHRAIN": "BH",
-    "BRAZIL": "BR",
+    "South Africa": "ZA",
+    "Argentina": "AR",
+    "Australia": "AU",
+    "Austria": "AT",
+    "Belgium": "BE",
+    "Bahrain": "BH",
+    "Brazil": "BR",
     "CBOE": "US",
-    "CANADIAN": "CA",
-    "CHILE": "CL",
-    "CHINA": "CN",
-    "COLOMBIA": "CO",
-    "CZECH REPUBLIC": "CZ",
-    "DENMARK": "DK",
-    "EGYPT": "EG",
-    "ESTONIA": "EE",
+    "Canada": "CA",
+    "Chile": "CL",
+    "China": "CN",
+    "Colombia": "CO",
+    "Czech": "CZ",
+    "Denmark": "DK",
+    "Egypt": "EG",
+    "Estonia": "EE",
+    "Euro": "EU",
     "EURO": "EU",
-    "FINLAND": "FI",
-    "FRANCE": "FR",
-    "GERMAN": "DE",
-    "GREECE": "GR",
-    "HONG KONG": "HK",
-    "HUNGARY": "HU",
-    "ICELAND": "IS",
-    "INDIA": "IN",
-    "INDONESIA": "ID",
-    "IRAN": "IR",
-    "IRELAND": "IE",
-    "ISRAEL": "IL",
-    "ITALY": "IT",
-    "JAPAN": "JP",
-    "KOREA": "KR",
-    "LATVIA": "LV",
-    "LITHUANIA": "LT",
-    "LUXEMBOURG": "LU",
-    "MALAYSIA": "MY",
-    "MEXICO": "MX",
-    "NETHERLANDS": "NL",
-    "NEW ZEALAND": "NZ",
-    "NIGERIA": "NG",
-    "NORWAY": "NO",
+    "Finland": "FI",
+    "France": "FR",
+    "Germany": "DE",
+    "Greece": "GR",
+    "Hong Kong": "HK",
+    "Hungary": "HU",
+    "Iceland": "IS",
+    "India": "IN",
+    "Indonesia": "ID",
+    "Iran": "IR",
+    "Ireland": "IE",
+    "Israel": "IL",
+    "Italy": "IT",
+    "Japan": "JP",
+    "Korea": "KR",
+    "Latvia": "LV",
+    "Lithuania": "LT",
+    "Luxembourg": "LU",
+    "Malaysia": "MY",
+    "Mexico": "MX",
+    "Netherlands": "NL",
+    "New Zealand": "NZ",
+    "Nigeria": "NG",
+    "Norway": "NO",
     "NOTH KOREA": "KP",
-    "PORTUGAL GOVERNMENT": "PT",
-    "PERU": "PE",
-    "POLAND": "PL",
-    "QATAR": "QA",
-    "ROMANIA": "RO",
-    "RUSSIA": "RU",
+    "Portugal": "PT",
+    "Peru": "PE",
+    "Philippines": "PH",
+    "Poland": "PL",
+    "Qatar": "QA",
+    "Romania": "RO",
+    "Russia": "RU",
     "SAUDI ARABIA": "SA",
-    "SERBIA": "RS",
-    "SINGAPORE": "SG",
-    "SPAIN": "ES",
-    "SWEDEN": "SE",
-    "SWITZERLAND": "CH",
-    "TAIWAN": "TW",
-    "THAILAND": "TH",
-    "TURKEY": "TR",
-    "UK ": "UK",
-    "US ": "US",
+    "Serbia": "RS",
+    "Singapore": "SG",
+    "Slovakia": "SK",
+    "Spain": "ES",
+    "Sweden": "SE",
+    "Switzerland": "CH",
+    "Taiwan": "TW",
+    "Thailand": "TH",
+    "Turkey": "TR",
+    "Ukraine": "UA",
+    "United Kingdom": "UK",
+    "United States ": "US",
     "UNITED ARAB EMIRATES": "AE",
-    "VIETNAM": "VN",
+    "Vietnam": "VN",
     "WORLDWIDE": "WW",
     "BR": "BR",
 };

@@ -14,6 +14,10 @@
       "f": []
     },
     {
+      "s": "/bme_cfd_indices",
+      "f": []
+    },
+    {
       "s": "/bme_indices",
       "f": []
     },
@@ -34,7 +38,7 @@
       "f": []
     },
     {
-      "s": "/shanghai_cfd_indices",
+      "s": "/cboe_cfd_indices",
       "f": []
     },
     {
@@ -47,10 +51,6 @@
     },
     {
       "s": "/dubai_indices",
-      "f": []
-    },
-    {
-      "s": "/iceusa_cfd_indices",
       "f": []
     },
     {
@@ -70,15 +70,15 @@
       "f": []
     },
     {
+      "s": "/euronext_primary_cfd_indices",
+      "f": []
+    },
+    {
       "s": "/euronext_primary_paris_indices",
       "f": []
     },
     {
       "s": "/european_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/euronext_primary_cfd_indices",
       "f": []
     },
     {
@@ -91,6 +91,10 @@
     },
     {
       "s": "/gain",
+      "f": []
+    },
+    {
+      "s": "/hangseng_cfd_indices",
       "f": []
     },
     {
@@ -118,6 +122,10 @@
       "f": []
     },
     {
+      "s": "/johannesburg_cfd_indices",
+      "f": []
+    },
+    {
       "s": "/korea_main_cfd_indices",
       "f": []
     },
@@ -140,7 +148,7 @@
     {
       "s": "/nasdaq_cfd_indices",
       "f": []
-    },    
+    },
     {
       "s": "/nigerian_indices",
       "f": []
@@ -150,11 +158,11 @@
       "f": []
     },
     {
-      "s": "/nzx_indices",
+      "s": "/nzx_cfd_indices",
       "f": []
     },
     {
-      "s": "/nzx_cfd_indices",
+      "s": "/nzx_indices",
       "f": []
     },
     {
@@ -178,7 +186,7 @@
       "f": []
     },
     {
-      "s": "/shanghai_indices",
+      "s": "/shanghai_cfd_indices",
       "f": []
     },
     {
@@ -190,23 +198,15 @@
       "f": []
     },
     {
-      "s": "/johannesburg_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/bme_cfd_indices",
-      "f": []
-    },
-    {
       "s": "/stockholm_basic_indices",
       "f": []
     },
     {
-      "s": "/swiss_indices",
+      "s": "/swiss_cfd_indices",
       "f": []
     },
     {
-      "s": "/swiss_cfd_indices",
+      "s": "/swiss_indices",
       "f": []
     },
     {
@@ -226,10 +226,6 @@
       "f": []
     },
     {
-      "s": "/cboe_cfd_indices",
-      "f": []
-    },
-    {
       "s": "/us_cfd_indices",
       "f": []
     },
@@ -242,11 +238,11 @@
       "f": []
     },
     {
-      "s": "/xetra_indices",
+      "s": "/xetra_cfd_indices",
       "f": []
     },
     {
-      "s": "/xetra_cfd_indices",
+      "s": "/xetra_indices",
       "f": []
     },
     {
@@ -254,31 +250,15 @@
       "f": []
     },
     {
-      "s": "?perm=*&domain=tv&prefix=DJ&typespecs=main&alias=1",
+      "s": "?perm=*&domain=tv&prefix=DJ&alias=1&typespecs=main",
       "f": []
     },
     {
-      "s": "?perm=*&domain=tv&prefix=SP&typespecs=main&alias=1",
+      "s": "?perm=*&domain=tv&prefix=SP&alias=1&typespecs=main",
       "f": []
     },
     {
-      "s": "/refinitiv_bonds",
-      "f": []
-    },
-    {
-      "s": "/refinitiv_bonds_yield",
-      "f": []
-    },
-    {
-      "s": "/refinitiv_bonds_rrps",
-      "f": []
-    },
-    {
-      "s": "/refinitiv_bonds_rrps_yield",
-      "f": []
-    },
-    {
-      "s": "?perm=*&domain=tv&prefix=CRYPTOCAP",
+      "s": "?perm=*&domain=tv&prefix=TVC&type=bond",
       "f": []
     }
   ]

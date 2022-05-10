@@ -4,10 +4,11 @@ const {URL} = require('url');
 
 const dstPath = "../cfd.json";
 const groups = [
-//    {url: "dxy_idc2", region: "Americas"},
     {url: "cboe_cfd_indices", region: "Americas", include: ["TVC:VIX"]},
     {url: "us_cfd_indices", exclude: ["TVC:SPX"]},
-    {url: "nasdaq_cfd_indices"}, //remove me
+    {url: "nasdaq_cfd_indices"},
+    {url: "iceusa_cfd_indices"},
+    {url: "shanghai_indices", region: "Asia", include: ["SSE:000001"]},
     {url: "japan_cfd_indices", region: "Asia"},
     {url: "shanghai_cfd_indices", region: "Asia"},
     {url: "hangseng_cfd_indices", region: "Asia"},
@@ -17,10 +18,6 @@ const groups = [
     {url: "xetra_cfd_indices", region: "Europe"},
     {url: "british_cfd_indices", region: "Europe"},
     {url: "bme_cfd_indices", region: "Europe"},
-    // {url: "refinitiv_bonds", sector: "bond"},
-    // {url: "refinitiv_bonds_yield", sector: "bond"},
-    // {url: "refinitiv_bonds_rrps", sector: "bond"},
-    // {url: "refinitiv_bonds_rrps_yield", sector: "bond"},
     {
         url2: "prefix=TVC&type=bond",
         sector: "bond"
@@ -282,6 +279,10 @@ const groups = [
     //     "include": ["SET:SET"], // TODO : uncomment after release
     //     "region": "Asia"
     // },
+    {
+        url2: "prefix=CRYPTOCAP&type=index",
+        include: ["CRYPTOCAP:TOTAL", "CRYPTOCAP:TOTALDEFI", "CRYPTOCAP:DEFIETH"],
+    },
 ];
 
 const types = {
@@ -473,7 +474,7 @@ const majorIndices = [
     {"s": "TVC:FTMIB", "cc": "IT"},
     {"s": "TVC:NI225", "cc": "JP"},
     {"s": "TVC:KOSPI", "cc": "KR"},
-    {"s": "TVC:SHCOMP", "cc": "CN"},
+    {"s": "SSE:000001", "cc": "CN"},
     {"s": "SZSE:399001", "cc": "CN"},
     {"s": "HSI:HSI", "cc": "HK"},
     {"s": "TVC:STI", "cc": "SG"},

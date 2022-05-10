@@ -140,6 +140,36 @@
     {
       "f": [
         "index",
+        null,
+        null,
+        null,
+        null
+      ],
+      "s": "CRYPTOCAP:DEFIETH"
+    },
+    {
+      "f": [
+        "index",
+        null,
+        null,
+        null,
+        null
+      ],
+      "s": "CRYPTOCAP:TOTAL"
+    },
+    {
+      "f": [
+        "index",
+        null,
+        null,
+        null,
+        null
+      ],
+      "s": "CRYPTOCAP:TOTALDEFI"
+    },
+    {
+      "f": [
+        "index",
         "Middle East",
         40,
         "AE",
@@ -506,6 +536,16 @@
         null
       ],
       "s": "SP:SPX"
+    },
+    {
+      "f": [
+        "index",
+        "Asia",
+        11,
+        "CN",
+        null
+      ],
+      "s": "SSE:000001"
     },
     {
       "f": [
@@ -3666,6 +3706,16 @@
         336454416040
       ],
       "s": "TVC:DK30Y"
+    },
+    {
+      "f": [
+        "currency",
+        "Americas",
+        52,
+        null,
+        null
+      ],
+      "s": "TVC:DXY"
     },
     {
       "f": [

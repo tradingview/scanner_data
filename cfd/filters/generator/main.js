@@ -10,7 +10,6 @@ const groups = [
     {url: "iceusa_cfd_indices"},
     {url: "shanghai_indices", region: "Asia", include: ["SSE:000001"]},
     {url: "japan_cfd_indices", region: "Asia"},
-    {url: "shanghai_cfd_indices", region: "Asia"},
     {url: "hangseng_cfd_indices", region: "Asia"},
     {url: "european_cfd_indices", region: "Europe"},
     {url: "euronext_primary_cfd_indices", region: "Europe"},

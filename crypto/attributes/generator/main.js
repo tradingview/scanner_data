@@ -212,6 +212,8 @@ const excludeSymbols = [
     "BITFINEX:IOSUSD",
     "BITFINEX:AMPBTC",
     "BITFINEX:AMPUSD",
+    "BITFINEX:USTBTC",
+    "BITFINEX:USTUSD",
     "OKCOIN:USDCUSD"
 ];
 

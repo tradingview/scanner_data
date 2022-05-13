@@ -11,7 +11,7 @@
       "f": [
         "index",
         "Pacific",
-        14,
+        15,
         "AU",
         null
       ],
@@ -21,7 +21,7 @@
       "f": [
         "index",
         "Middle East",
-        42,
+        43,
         "BH",
         null
       ],
@@ -31,7 +31,7 @@
       "f": [
         "index",
         "Americas",
-        47,
+        48,
         "AR",
         null
       ],
@@ -41,7 +41,7 @@
       "f": [
         "index",
         "Americas",
-        49,
+        50,
         "CL",
         null
       ],
@@ -51,7 +51,7 @@
       "f": [
         "index",
         "Europe",
-        30,
+        31,
         "RS",
         null
       ],
@@ -61,7 +61,7 @@
       "f": [
         "index",
         "Europe",
-        34,
+        35,
         "TR",
         null
       ],
@@ -71,7 +71,7 @@
       "f": [
         "index",
         "Europe",
-        20,
+        21,
         "ES",
         null
       ],
@@ -81,7 +81,7 @@
       "f": [
         "index",
         "Americas",
-        45,
+        46,
         "BR",
         null
       ],
@@ -91,7 +91,7 @@
       "f": [
         "index",
         "Americas",
-        46,
+        47,
         "MX",
         null
       ],
@@ -101,7 +101,7 @@
       "f": [
         "index",
         "Asia",
-        38,
+        39,
         "IN",
         null
       ],
@@ -111,7 +111,7 @@
       "f": [
         "index",
         "Americas",
-        48,
+        49,
         "CO",
         null
       ],
@@ -121,7 +121,7 @@
       "f": [
         "index",
         "Americas",
-        50,
+        51,
         "PE",
         null
       ],
@@ -140,8 +140,38 @@
     {
       "f": [
         "index",
+        null,
+        null,
+        null,
+        null
+      ],
+      "s": "CRYPTOCAP:DEFIETH"
+    },
+    {
+      "f": [
+        "index",
+        null,
+        null,
+        null,
+        null
+      ],
+      "s": "CRYPTOCAP:TOTAL"
+    },
+    {
+      "f": [
+        "index",
+        null,
+        null,
+        null,
+        null
+      ],
+      "s": "CRYPTOCAP:TOTALDEFI"
+    },
+    {
+      "f": [
+        "index",
         "Middle East",
-        39,
+        40,
         "AE",
         null
       ],
@@ -161,7 +191,7 @@
       "f": [
         "index",
         "Middle East",
-        44,
+        45,
         "EG",
         null
       ],
@@ -171,7 +201,7 @@
       "f": [
         "index",
         "Europe",
-        23,
+        24,
         "NL",
         null
       ],
@@ -181,7 +211,7 @@
       "f": [
         "index",
         "Europe",
-        24,
+        25,
         "BE",
         null
       ],
@@ -211,7 +241,7 @@
       "f": [
         "index",
         "Asia",
-        17,
+        18,
         "MY",
         null
       ],
@@ -241,7 +271,7 @@
       "f": [
         "index",
         "Europe",
-        22,
+        23,
         "PL",
         null
       ],
@@ -251,7 +281,7 @@
       "f": [
         "index",
         "Asia",
-        12,
+        13,
         "HK",
         null
       ],
@@ -261,7 +291,7 @@
       "f": [
         "index",
         "Asia",
-        18,
+        19,
         "ID",
         null
       ],
@@ -271,7 +301,7 @@
       "f": [
         "index",
         "Europe",
-        25,
+        26,
         "RU",
         null
       ],
@@ -281,7 +311,7 @@
       "f": [
         "index",
         "Asia",
-        37,
+        38,
         "IN",
         null
       ],
@@ -291,7 +321,7 @@
       "f": [
         "index",
         "Pacific",
-        15,
+        16,
         "NZ",
         null
       ],
@@ -411,7 +441,7 @@
       "f": [
         "index",
         "Europe",
-        29,
+        30,
         "DK",
         null
       ],
@@ -421,7 +451,7 @@
       "f": [
         "index",
         "Europe",
-        26,
+        27,
         "FI",
         null
       ],
@@ -431,7 +461,7 @@
       "f": [
         "index",
         "Europe",
-        27,
+        28,
         "IS",
         null
       ],
@@ -441,7 +471,7 @@
       "f": [
         "index",
         "Europe",
-        31,
+        32,
         "LV",
         null
       ],
@@ -451,7 +481,7 @@
       "f": [
         "index",
         "Europe",
-        28,
+        29,
         "SE",
         null
       ],
@@ -461,7 +491,7 @@
       "f": [
         "index",
         "Europe",
-        32,
+        33,
         "EE",
         null
       ],
@@ -471,7 +501,7 @@
       "f": [
         "index",
         "Europe",
-        33,
+        34,
         "LT",
         null
       ],
@@ -481,7 +511,7 @@
       "f": [
         "index",
         "Middle East",
-        41,
+        42,
         "QA",
         null
       ],
@@ -491,7 +521,7 @@
       "f": [
         "index",
         "Europe",
-        21,
+        22,
         "CH",
         null
       ],
@@ -515,13 +545,23 @@
         "CN",
         null
       ],
+      "s": "SSE:000001"
+    },
+    {
+      "f": [
+        "index",
+        "Asia",
+        12,
+        "CN",
+        null
+      ],
       "s": "SZSE:399001"
     },
     {
       "f": [
         "index",
         "Middle East",
-        40,
+        41,
         "SA",
         null
       ],
@@ -531,7 +571,7 @@
       "f": [
         "index",
         "Middle East",
-        35,
+        36,
         "IL",
         null
       ],
@@ -1261,7 +1301,7 @@
       "f": [
         "currency",
         "Pacific",
-        57,
+        58,
         null,
         null
       ],
@@ -1771,7 +1811,7 @@
       "f": [
         "currency",
         "Europe",
-        53,
+        54,
         null,
         null
       ],
@@ -2409,16 +2449,6 @@
     },
     {
       "f": [
-        "index",
-        "Asia",
-        null,
-        null,
-        null
-      ],
-      "s": "TVC:CHCOMP"
-    },
-    {
-      "f": [
         "bond",
         "Americas",
         239404316012,
@@ -2821,7 +2851,7 @@
       "f": [
         "currency",
         "Americas",
-        56,
+        57,
         null,
         null
       ],
@@ -3669,6 +3699,16 @@
     },
     {
       "f": [
+        "currency",
+        "Americas",
+        52,
+        null,
+        null
+      ],
+      "s": "TVC:DXY"
+    },
+    {
+      "f": [
         "bond",
         "Europe",
         5011,
@@ -4401,7 +4441,7 @@
       "f": [
         "currency",
         "Europe",
-        52,
+        53,
         null,
         null
       ],
@@ -7741,7 +7781,7 @@
       "f": [
         "currency",
         "Asia",
-        55,
+        56,
         null,
         null
       ],
@@ -8266,16 +8306,6 @@
         1232433216040
       ],
       "s": "TVC:MY30Y"
-    },
-    {
-      "f": [
-        "index",
-        "Americas",
-        null,
-        null,
-        null
-      ],
-      "s": "TVC:NDQ"
     },
     {
       "f": [
@@ -10351,7 +10381,7 @@
       "f": [
         "index",
         "Africa",
-        36,
+        37,
         "ZA",
         null
       ],
@@ -10991,7 +11021,7 @@
       "f": [
         "index",
         "Asia",
-        13,
+        14,
         "SG",
         null
       ],
@@ -11001,7 +11031,7 @@
       "f": [
         "index",
         "Europe",
-        19,
+        20,
         "EU",
         null
       ],
@@ -11021,7 +11051,7 @@
       "f": [
         "currency",
         "Europe",
-        54,
+        55,
         null,
         null
       ],
@@ -11151,25 +11181,9 @@
       "f": [
         "bond",
         "Asia",
-<<<<<<< HEAD
-        11,
-        "CN",
-        null
-      ],
-      "s": "TVC:CHCOMP"
-    },
-    {
-      "f": [
-        "Metals",
-        "",
-        null,
-        null,
-        null
-=======
         15020,
         "TH",
         1939324016020
->>>>>>> a1d81ec4... BS-13285: update main.js, change bonds to prefix
       ],
       "s": "TVC:TH10"
     },
@@ -12237,7 +12251,7 @@
       "f": [
         "currency",
         "Pacific",
-        58,
+        59,
         null,
         null
       ],
@@ -12247,7 +12261,7 @@
       "f": [
         "index",
         "Asia",
-        16,
+        17,
         "TW",
         null
       ],

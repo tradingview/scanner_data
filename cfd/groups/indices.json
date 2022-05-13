@@ -2,270 +2,63 @@
   "fields": [],
   "symbols": [
     {
-      "s": "/asx_indices",
-      "f": []
-    },
-    {
-      "s": "/bahrain_indices",
-      "f": []
-    },
-    {
       "s": "/belgrade_indices?kind=delay",
       "f": []
     },
     {
-      "s": "/bme_cfd_indices",
+      "s": "?perm=*&domain=tv&prefix=ASX&type=index&typespecs=main",
       "f": []
     },
     {
-      "s": "/bme_indices",
+      "s": "?perm=*&domain=tv&prefix=BAHRAIN&type=index",
       "f": []
     },
     {
-      "s": "/bovespa_indices",
+      "s": "?perm=*&domain=tv&prefix=BCBA&type=index&typespecs=main",
       "f": []
     },
     {
-      "s": "/british_cfd_indices",
+      "s": "?perm=*&domain=tv&prefix=BCS&type=index",
       "f": []
     },
     {
-      "s": "/bse_indices",
+      "s": "?perm=*&domain=tv&prefix=BIST&type=index&typespecs=main",
       "f": []
     },
     {
-      "s": "/buenosaires_indices",
+      "s": "?perm=*&domain=tv&prefix=BME&type=index&typespecs=main",
       "f": []
     },
     {
-<<<<<<< HEAD
-      "s": "/canadian_bonds",
+      "s": "?perm=*&domain=tv&prefix=BMFBOVESPA&type=index&typespecs=main",
       "f": []
     },
     {
-      "s": "/shanghai_cfd_indices",
-=======
-      "s": "/cboe_cfd_indices",
->>>>>>> a1d81ec4... BS-13285: update main.js, change bonds to prefix
+      "s": "?perm=*&domain=tv&prefix=BMV&type=index&typespecs=main",
       "f": []
     },
     {
-      "s": "/colombia_indices",
+      "s": "?perm=*&domain=tv&prefix=BSE&type=index&typespecs=main",
       "f": []
     },
     {
-      "s": "/copenhagen_indices",
+      "s": "?perm=*&domain=tv&prefix=BVC&type=index",
       "f": []
     },
     {
-      "s": "/dubai_indices",
+      "s": "?perm=*&domain=tv&prefix=BVL&type=index",
       "f": []
     },
     {
-      "s": "/egyptian_indices",
-      "f": []
-    },
-    {
-      "s": "/euro_bonds_cfd",
-      "f": []
-    },
-    {
-      "s": "/euronext_primary_amsterdam_indices",
-      "f": []
-    },
-    {
-      "s": "/euronext_primary_brussels_indices",
-      "f": []
-    },
-    {
-      "s": "/euronext_primary_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/euronext_primary_paris_indices",
-      "f": []
-    },
-    {
-      "s": "/european_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/forex_tvc",
-      "f": []
-    },
-    {
-      "s": "/fxcm_cfd?domain=tvbs",
-      "f": []
-    },
-    {
-      "s": "/gain",
-      "f": []
-    },
-    {
-<<<<<<< HEAD
-      "s": "/government_bonds",
-      "f": []
-    },
-    {
-      "s": "/government_bonds_nodaily",
-=======
-      "s": "/hangseng_cfd_indices",
->>>>>>> a1d81ec4... BS-13285: update main.js, change bonds to prefix
-      "f": []
-    },
-    {
-      "s": "/hangseng_indices",
-      "f": []
-    },
-    {
-      "s": "/helsinki_basic_indices",
-      "f": []
-    },
-    {
-      "s": "/iceland_indices",
-      "f": []
-    },
-    {
-      "s": "/indonesia_indices",
-      "f": []
-    },
-    {
-      "s": "/istanbul_indices",
-      "f": []
-    },
-    {
-      "s": "/japan_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/johannesburg_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/korea_main_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/lima_indices",
-      "f": []
-    },
-    {
-      "s": "/malaysia_ftse_indices",
-      "f": []
-    },
-    {
-      "s": "/mexico_indices",
-      "f": []
-    },
-    {
-      "s": "/moex_primary_indices",
-      "f": []
-    },
-    {
-      "s": "/nasdaq_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/nigerian_indices",
-      "f": []
-    },
-    {
-      "s": "/nse_indices",
-      "f": []
-    },
-    {
-      "s": "/nzx_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/nzx_indices",
-      "f": []
-    },
-    {
-      "s": "/oanda",
-      "f": []
-    },
-    {
-      "s": "/qatar_indices",
-      "f": []
-    },
-    {
-      "s": "/riga_indices",
-      "f": []
-    },
-    {
-      "s": "/santiago_indices",
-      "f": []
-    },
-    {
-      "s": "/saudi_indices",
-      "f": []
-    },
-    {
-<<<<<<< HEAD
-      "s": "/shenzhen_indices",
-=======
-      "s": "/shanghai_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/shenzhen_main_indices",
->>>>>>> a1d81ec4... BS-13285: update main.js, change bonds to prefix
-      "f": []
-    },
-    {
-      "s": "/singapore_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/stockholm_basic_indices",
-      "f": []
-    },
-    {
-      "s": "/swiss_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/swiss_indices",
-      "f": []
-    },
-    {
-      "s": "/taiwan_indices",
-      "f": []
-    },
-    {
-      "s": "/tallinn_indices",
-      "f": []
-    },
-    {
-      "s": "/telaviv_indices",
-      "f": []
-    },
-    {
-      "s": "/us_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/vilnius_indices",
-      "f": []
-    },
-    {
-      "s": "/warsaw_indices",
-      "f": []
-    },
-    {
-      "s": "/xetra_cfd_indices",
-      "f": []
-    },
-    {
-      "s": "/xetra_indices",
-      "f": []
-    },
-    {
-<<<<<<< HEAD
-      "s": "?perm=*&domain=tv&prefix=CRYPTOCAP",
-=======
       "s": "?perm=*&domain=tv&prefix=CBOE&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=CRYPTOCAP&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=DFM&type=index",
       "f": []
     },
     {
@@ -273,16 +66,175 @@
       "f": []
     },
     {
+      "s": "?perm=*&domain=tv&prefix=EGX&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=EURONEXT&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=FOREXCOM",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=FTSEMYX&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=FX",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=GPW",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=HSI&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=IDX&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=MOEX&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=NSE&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=NSENG&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=NZX&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OANDA",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OMXCOP&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OMXHEX&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OMXICE&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OMXRSE&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OMXSTO&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OMXTSE&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=OMXVSE&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=QSE&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=SIX&type=index&typespecs=main",
+      "f": []
+    },
+    {
       "s": "?perm=*&domain=tv&prefix=SP&alias=1&typespecs=main",
       "f": []
     },
     {
-      "s": "?perm=*&domain=tv&prefix=TSX&typespecs=main",
+      "s": "?perm=*&domain=tv&prefix=SSE&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=SZSE&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TADAWUL&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TASE&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TSX&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC",
       "f": []
     },
     {
       "s": "?perm=*&domain=tv&prefix=TVC&type=bond",
->>>>>>> a1d81ec4... BS-13285: update main.js, change bonds to prefix
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC&type=cfd",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC&type=cfd",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TVC&type=index&typespecs=main",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=TWSE&type=index",
+      "f": []
+    },
+    {
+      "s": "?perm=*&domain=tv&prefix=XETR&type=index&typespecs=main",
       "f": []
     }
   ]

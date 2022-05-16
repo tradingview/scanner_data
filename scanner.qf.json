@@ -658,5 +658,9 @@
     {
         "name": "cash_n_equivalents_fq",
         "type": "price"
+    },
+    {
+        "name": "country_code",
+        "type": "text"
     }
 ]

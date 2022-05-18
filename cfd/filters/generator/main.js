@@ -209,7 +209,7 @@ const groups = [
     },
     {
         url2: "prefix=IDX&type=index",
-        include: ["IDX:COMPOSITE"],
+        include: ["IDX:COMPOSITE","IDX:IDX30"],
         region: "Asia"
     },
     {
@@ -249,7 +249,7 @@ const groups = [
     },
     {
         url2: "prefix=TWSE&type=index",
-        include: ["TWSE:TAIEX"],
+        include: ["TWSE:TAIEX","TWSE:TW50"],
         region: "Asia"
     },
     {
@@ -296,6 +296,21 @@ const groups = [
         url2: "prefix=CRYPTOCAP&type=index",
         include: ["CRYPTOCAP:TOTAL", "CRYPTOCAP:TOTALDEFI", "CRYPTOCAP:DEFIETH"],
     },
+    {
+        url2: "prefix=BET&type=index",
+        include: ["BET:BUX"],
+        region: "Europe"
+    },
+    {
+        url2: "prefix=ATHEX&type=index",
+        include: ["ATHEX:GD"],
+        region: "Europe"
+    },
+    {
+        url2: "prefix=BVB&type=index",
+        include: ["BVB:BET"],
+        region: "Europe"
+    }
 ];
 
 const types = {
@@ -527,7 +542,12 @@ const majorIndices = [
     {"s": "BCBA:IMV", "cc": "AR"},
     {"s": "BVC:ICAP", "cc": "CO"},
     {"s": "BCS:SP_IPSA", "cc": "CL"},
-    {"s": "BVL:SPBLPGPT", "cc": "PE"}
+    {"s": "BVL:SPBLPGPT", "cc": "PE"},
+    {"s": "TWSE:TW50", "cc": "TW"},
+    {"s": "BET:BUX", "cc": "HU"},
+    {"s": "ATHEX:GD", "cc": "GR"},
+    {"s": "BVB:BET", "cc": "RO"},
+    {"s": "IDX:IDX30", "cc": "ID"}
 ];
 
 const indicesPriorities = {};

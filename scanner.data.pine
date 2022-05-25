@@ -789,28 +789,35 @@ plot(volatility(countOfBars1MonthAgoThisBar), title='Volatility.M')
 plot(ta.tr(true) * 100 / math.abs(low), title='Volatility.D')
 
 // performance
-rateOfreturn(v1, v2) =>
-	(v1 - v2) * 100 / math.abs(v2)
-rr(_bb, maxbarsback) =>
-	bb = _bb
-	if bar_index == 0
-		bb += math.round(close[maxbarsback] * 0)  // max_bars_back
-	if bb == 0
-		na
-	else
-		rof = rateOfreturn(close, close[bb])
-		rof
+rateOfreturn(v1, v2) => (v1 - v2) * 100 / math.abs(v2)
 
-plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
-plot(rr(countOfBars1MonthAgo, month1), title='Perf.1M')
-plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')
-plot(rr(countOfBars6MonthAgo, month6), title='Perf.6M')
-plot(rr(countOfBars52WeekAgo, weeks52), title='Perf.Y')
-plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
-var lastYearClose = float(na)
+calcPerfByDate(year_ago, month_ago, day_ago) => 
+    unix_month_ago = timestamp("UTC", year(time_tradingday)-year_ago, month(time_tradingday)-month_ago, dayofmonth(time_tradingday)-day_ago, 0, 0, 0)+1
+    var ttArr = array.new_float()
+    var openArr = array.new_float()
+    if time_tradingday > time_tradingday[1] or na(time_tradingday[1])
+        array.push(ttArr, time_tradingday)
+        array.push(openArr, open)
+    array_pos = array.binary_search_leftmost(ttArr, unix_month_ago)
+    rateOfreturn(close, array.get(openArr, array_pos))
+    
+calcPerfByDay(day_ago) =>
+	calcPerfByDate(0, 0, day_ago)
+calcPerfByMonth(month_ago) =>
+	calcPerfByDate(0, month_ago, 0)
+calcPerfByYear(year_ago) =>
+	calcPerfByDate(year_ago, 0, 0)
+
+plot(calcPerfByDay(7), title="Perf.W")
+plot(calcPerfByMonth(1), title="Perf.1M")
+plot(calcPerfByMonth(3), title="Perf.3M")
+plot(calcPerfByMonth(6), title="Perf.6M")
+plot(calcPerfByYear(1), title="Perf.Y")
+plot(calcPerfByYear(5), title="Perf.5Y")
+var lastYearOpen = float(na)
 if year > year[1]
-	lastYearClose := close[1]
-plot(rateOfreturn(close, lastYearClose), title='Perf.YTD')
+	lastYearOpen := open[1]
+plot(rateOfreturn(close, lastYearOpen), title='Perf.YTD')
 
 // business day
 plot(time_tradingday / 1000, title='time_business_day')

@@ -649,14 +649,18 @@
         },
         {
                 "name": "free_cash_flow",
-                "type": "price"
+                "type": "fundamental_price"
         },
         {
                 "name": "cash_n_short_term_invest_fq",
-                "type": "price"
+                "type": "fundamental_price"
         },
         {
                 "name": "cash_n_equivalents_fq",
-                "type": "price"
+                "type": "fundamental_price"
+        },
+        {
+                "name": "cash_n_equivalents_fy",
+                "type": "fundamental_price"
 	}
 ]

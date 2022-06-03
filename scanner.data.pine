@@ -788,11 +788,11 @@ rateOfreturn(v1, v2) =>
 rr(_bb, maxbarsback) =>
 	bb = _bb
 	if bar_index == 0
-		bb += math.round(close[maxbarsback] * 0)  // max_bars_back
+		bb += math.round(open[maxbarsback] * 0)  // max_bars_back
 	if bb == 0
 		na
 	else
-		rof = rateOfreturn(close, close[bb])
+		rof = rateOfreturn(close, open[bb])
 		rof
 
 plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
@@ -801,10 +801,10 @@ plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')
 plot(rr(countOfBars6MonthAgo, month6), title='Perf.6M')
 plot(rr(countOfBars52WeekAgo, weeks52), title='Perf.Y')
 plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
-var lastYearClose = float(na)
+var lastYearOpen = float(na)
 if year > year[1]
-	lastYearClose := close[1]
-plot(rateOfreturn(close, lastYearClose), title='Perf.YTD')
+	lastYearOpen := open[1]
+plot(rateOfreturn(close, lastYearOpen), title='Perf.YTD')
 
 // business day
 plot(time_tradingday / 1000, title='time_business_day')

@@ -652,7 +652,23 @@
         "type": "fundamental_price"
     },
     {
+        "name": "free_cash_flow_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "free_cash_flow_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "free_cash_flow_ttm",
+        "type": "fundamental_price"
+    },
+    {
         "name": "cash_n_short_term_invest_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_n_short_term_invest_fy",
         "type": "fundamental_price"
     },
     {
@@ -664,7 +680,7 @@
         "type": "fundamental_price"
     },
     {
-        "name": "country_code",
+        "name": "country_code_fund",
         "type": "text"
     }
 ]

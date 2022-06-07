@@ -1,0 +1,67 @@
+[
+	{
+		"inputs": [
+			{
+				"id": "text",
+				"type": "text",
+				"defval": "na(#0)||na(#1)?i_na:#0==#1?0:#0\u003c#1?1:(-1);#0?1:#1?(-1):0;avg(lowest(#0),highest(#0));$2(i:9)~$2(i:26)~avg($0,$1)~$2(i:52)~$0!$1!$2!$3;sma(close,10)~sma(close,20)~sma(close,30)~sma(close,50)~sma(close,100)~sma(close,200)~ema(close,10)~ema(close,20)~ema(close,30)~ema(close,50)~ema(close,100)~ema(close,200)~2*wma(close,4)~wma(close,9)~wma($12-$13,3)~0.0~0.0~if(!na(close)){if(!na($0)){$15=$15+$0($0,close)~$16=$16+1~$16}~if(!na($1)){$15=$15+$0($1,close)~$16=$16+1~$16}~if(!na($2)){$15=$15+$0($2,close)~$16=$16+1~$16}~if(!na($3)){$15=$15+$0($3,close)~$16=$16+1~$16}~if(!na($4)){$15=$15+$0($4,close)~$16=$16+1~$16}~if(!na($5)){$15=$15+$0($5,close)~$16=$16+1~$16}~if(!na($6)){$15=$15+$0($6,close)~$16=$16+1~$16}~if(!na($7)){$15=$15+$0($7,close)~$16=$16+1~$16}~if(!na($8)){$15=$15+$0($8,close)~$16=$16+1~$16}~if(!na($9)){$15=$15+$0($9,close)~$16=$16+1~$16}~if(!na($10)){$15=$15+$0($10,close)~$16=$16+1~$16}~if(!na($11)){$15=$15+$0($11,close)~$16=$16+1~$16}}~vwma(close,20)~s4:$3():s4~$43~$44~$45~$46~$0($14,close)~if(!na($51)){$15=$15+$51~$16=$16+1~$16}~$0($42,close)~if(!na($54)){$15=$15+$54~$16=$16+1~$16}~f_na~if(!(na($49)||na($50)||na(close)||na(close@1)||na($48)||na($47))){$57=$1($49\u003e$50\u0026\u0026close\u003e$49\u0026\u0026close\u003c$48\u0026\u0026close@1\u003c$47\u0026\u0026close\u003e$47,$50\u003e$49\u0026\u0026close\u003c$50\u0026\u0026close\u003e$48\u0026\u0026close@1\u003e$47\u0026\u0026close\u003c$47)~$57}~$57~if(!na($57)){$15=$15+$57~$16=$16+1~$16}~$15=$16\u003e0?$15/$16:f_na~$15~$51!$54!$60!$63;s4:$4():s4~$5~$6~$7~$8~$9!$10!$11!$12",
+				"isFake": false
+			},
+			{
+				"id": "pineId",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			},
+			{
+				"id": "pineVersion",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			}
+		],
+		"description": "ScannerData6",
+		"id": "Script$pine_id_undefined@tv-scripting-101",
+		"plots": [
+			{
+				"id": "plot_0",
+				"type": "line"
+			},
+			{
+				"id": "plot_1",
+				"type": "line"
+			},
+			{
+				"id": "plot_2",
+				"type": "line"
+			},
+			{
+				"id": "plot_3",
+				"type": "line"
+			}
+		],
+		"version": "",
+		"isTVScriptStubToCompile": false,
+		"isTVScriptStrategy": false,
+		"TVScriptSourceCode": "",
+		"fullId": "",
+		"styles": {
+			"plot_0": {
+				"title": "Rec.HullMA9",
+				"isHidden": false
+			},
+			"plot_1": {
+				"title": "Rec.VWMA",
+				"isHidden": false
+			},
+			"plot_2": {
+				"title": "Rec.Ichimoku",
+				"isHidden": false
+			},
+			"plot_3": {
+				"title": "Recommend.MA",
+				"isHidden": false
+			}
+		}
+	}
+]

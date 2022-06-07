@@ -1,0 +1,60 @@
+//@version=4
+study(title="ScannerData2", shorttitle="_SD2_")
+
+// study(shorttitle="BB", title="Bollinger Bands", overlay=true)
+lengthBB = 20
+srcBB = close
+multBB = 2
+basisBB = sma(srcBB, lengthBB)
+devBB = multBB * stdev(srcBB, lengthBB)
+upperBB = basisBB + devBB
+lowerBB = basisBB - devBB
+plot(basisBB, title="BB.basis")
+plot(upperBB, title="BB.upper")
+plot(lowerBB, title="BB.lower")
+
+
+// study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
+sourceMACD = close
+fastLengthMACD = 12
+slowLengthMACD = 26
+signalLengthMACD = 9
+fastMAMACD = ema(sourceMACD, fastLengthMACD)
+slowMAMACD = ema(sourceMACD, slowLengthMACD)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = ema(macdMACD, signalLengthMACD)
+histMACD = macdMACD - signalMACD
+plot(histMACD, title="MACD.hist")
+plot(macdMACD, title="MACD.macd")
+plot(signalMACD, title="MACD.signal")
+
+
+//study(title="Momentum", shorttitle="Mom")
+Mom = close - close[10]
+plot(Mom, title="Mom")
+plot(Mom[1], title="Mom[1]")
+
+
+//study(title="Relative Strength Index", shorttitle="RSI")
+RSI=rsi(close,14)
+plot(RSI, title="RSI")
+plot(rsi(close,7), title="RSI7")
+plot(RSI[1], title="RSI[1]")
+plot(rsi(close,7)[1], title="RSI7[1]")
+
+
+// study(title="Moving Average", shorttitle="MA", overlay=true)
+SMA5=sma(close, 5)
+plot(SMA5, title="SMA5")
+SMA10=sma(close, 10)
+plot(SMA10, title="SMA10")
+SMA20=sma(close, 20)
+plot(SMA20, title="SMA20")
+SMA30=sma(close, 30)
+plot(SMA30, title="SMA30")
+SMA50=sma(close, 50)
+plot(SMA50, title="SMA50")
+SMA100=sma(close, 100)
+plot(SMA100, title="SMA100")
+SMA200=sma(close, 200)
+plot(SMA200, title="SMA200")

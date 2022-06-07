@@ -1,5 +1,6 @@
 const requestSync = require("sync-request");
 const fs = require("fs");
+const syncreq = require("../../../jscommon/sync-request");
 const argv = require('minimist')(process.argv.slice(2));
 
 const API_URL = argv.u || argv.url || "https://pro-api.coinmarketcap.com";
@@ -48,6 +49,26 @@ const scanRequestForPairs = {
             right: "DSHBTC"
         },
         {
+            left: "name",
+            operation: "nequal",
+            right: "JSTBTC"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "JSTUSD"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "BTTBTC"
+        },
+        {
+            left: "name",
+            operation: "nequal",
+            right: "BTTUSD"
+        },
+        {
             left: "exchange",
             operation: "not_in_range",
             right: [
@@ -87,7 +108,11 @@ function scan(req, loc) {
 }
 
 function getCMCNewAPICall(url) {
-    const result = requestSync("GET", url);
+    let spawnSync = require('child_process').spawnSync;
+    let HttpResponse = require('http-response-object');
+    let JSON = require("./node_modules/sync-request/lib/json-buffer");
+    let worker = require.resolve('./node_modules/sync-request/lib/worker.js')
+    const result = syncreq.doRequestSync("GET", url, undefined, spawnSync, HttpResponse, worker, JSON);
     const data = JSON.parse(result.getBody());
     if (data.status.error_code != 0) {
         console.error("can't get data (BTC), err=%j", data.status.error_message);
@@ -264,7 +289,8 @@ const explicitCoinNames = {
 let dstSymbols = [];
 
 const unDesirableExchanges = [
-    "BITFINEX"
+    "BITFINEX",
+    "HITBTC"
 ];
 
 function isUnDesirableExchange(exc) {

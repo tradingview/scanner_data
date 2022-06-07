@@ -1,0 +1,130 @@
+//@version=4
+study(title="ScannerData6", shorttitle="_SD6_")
+
+PriceAvg = ema( close, 50 )
+DownTrend = close < PriceAvg
+UpTrend = close > PriceAvg
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+sourceMACD = close
+fastLengthMACD = 12
+slowLengthMACD = 26
+signalLengthMACD = 9
+fastMAMACD = ema(sourceMACD, fastLengthMACD)
+slowMAMACD = ema(sourceMACD, slowLengthMACD)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = ema(macdMACD, signalLengthMACD)
+
+Mom = close - close[10]
+
+RSI=rsi(close,14)
+
+SMA5=sma(close, 5)
+SMA10=sma(close, 10)
+SMA20=sma(close, 20)
+SMA30=sma(close, 30)
+SMA50=sma(close, 50)
+SMA100=sma(close, 100)
+SMA200=sma(close, 200)
+
+EMA5=ema(close, 5)
+EMA10=ema(close, 10)
+EMA20=ema(close, 20)
+EMA30=ema(close, 30)
+EMA50=ema(close, 50)
+EMA100=ema(close, 100)
+EMA200=ema(close, 200)
+
+lengthStoch = 14
+smoothKStoch = 3
+smoothDStoch = 3
+kStoch = sma(stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch = sma(kStoch, smoothDStoch)
+
+hullMALength = 9
+hullMA_n2ma=2*wma(close,round(hullMALength/2))
+hullMA_nma=wma(close,hullMALength)
+HullMA9 = wma(hullMA_n2ma - hullMA_nma, round(sqrt(hullMALength)))
+
+CCI=cci(close, 20)
+
+calcRecommendMA(left,right)=> na(left) or na(right) ? na : (left == right ? 0 : ( left < right ? 1 : -1 ))
+calcRecommend(buy,sell)=> buy ? 1 : ( sell ? -1 : 0 )
+
+// calculate trading recommendation based on SMA/EMA
+recMA = .0
+recMAC = .0
+
+if not na(close)
+	if not na(SMA10)
+        recMA := recMA + calcRecommendMA(SMA10, close)
+        recMAC := recMAC + 1
+	if not na(SMA20)
+        recMA := recMA + calcRecommendMA(SMA20, close)
+        recMAC := recMAC + 1
+    if not na(SMA30)
+        recMA := recMA + calcRecommendMA(SMA30, close)
+        recMAC := recMAC + 1
+    if not na(SMA50)
+        recMA := recMA + calcRecommendMA(SMA50, close)
+        recMAC := recMAC + 1
+	if not na(SMA100)
+        recMA := recMA + calcRecommendMA(SMA100, close)
+        recMAC := recMAC + 1
+    if not na(SMA200)
+        recMA := recMA + calcRecommendMA(SMA200, close)
+        recMAC := recMAC + 1
+    if not na(EMA10)
+        recMA := recMA + calcRecommendMA(EMA10, close)
+        recMAC := recMAC + 1
+    if not na(EMA20)
+        recMA := recMA + calcRecommendMA(EMA20, close)
+        recMAC := recMAC + 1
+    if not na(EMA30)
+        recMA := recMA + calcRecommendMA(EMA30, close)
+        recMAC := recMAC + 1
+    if not na(EMA50)
+        recMA := recMA + calcRecommendMA(EMA50, close)
+        recMAC := recMAC + 1
+    if not na(EMA100)
+        recMA := recMA + calcRecommendMA(EMA100, close)
+        recMAC := recMAC + 1
+    if not na(EMA200)
+        recMA := recMA + calcRecommendMA(EMA200, close)
+        recMAC := recMAC + 1
+
+VWMA = vwma(close, 20)
+
+donchian(len) => avg(lowest(len), highest(len))
+ichimoku_cloud()=>
+    conversionLine = donchian(9)
+    baseLine = donchian(26)
+    leadLine1 = avg(conversionLine, baseLine)
+    leadLine2 = donchian(52)
+    [conversionLine, baseLine, leadLine1, leadLine2]
+[IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud()
+
+recHullMA9 = calcRecommendMA(HullMA9, close)
+plot(recHullMA9, title="Rec.HullMA9")
+if not na(recHullMA9)
+    recMA := recMA + recHullMA9
+    recMAC := recMAC + 1
+
+recVWMA = calcRecommendMA(VWMA, close)
+plot(recVWMA, title="Rec.VWMA")
+if not na(recVWMA)
+    recMA := recMA + recVWMA
+    recMAC := recMAC + 1
+
+recIC = float(na)
+if not (na(IC_Lead1) or na(IC_Lead2) or na(close) or na(close[1]) or na(IC_BLine) or na(IC_CLine))
+    recIC := calcRecommend(
+     IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine,
+     IC_Lead2 > IC_Lead1 and close < IC_Lead2 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+plot(recIC, title="Rec.Ichimoku")
+if not na(recIC)
+    recMA := recMA + recIC
+    recMAC := recMAC + 1
+
+recMA := recMAC > 0 ? recMA / recMAC : na
+plot(recMA, title="Recommend.MA")

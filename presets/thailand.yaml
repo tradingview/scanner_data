@@ -21,7 +21,7 @@ presets:
     sortOrder: asc
   options:
     active_symbols_only: true
-- name: small_cap
+- name: large_cap
   filter:
   - left: is_primary
     operation: equal
@@ -42,7 +42,7 @@ presets:
     sortOrder: desc
   options:
     active_symbols_only: true
-- name: large_cap
+- name: small_cap
   filter:
   - left: is_primary
     operation: equal

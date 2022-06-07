@@ -27,7 +27,7 @@ presets:
     sortOrder: asc
   options:
     active_symbols_only: true
-- name: small_cap
+- name: large_cap
   filter:
   - left: exchange
     operation: in_range
@@ -54,7 +54,7 @@ presets:
     sortOrder: desc
   options:
     active_symbols_only: true
-- name: large_cap
+- name: small_cap
   filter:
   - left: exchange
     operation: in_range

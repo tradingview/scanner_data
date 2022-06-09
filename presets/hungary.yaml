@@ -431,3 +431,45 @@ presets:
     sortOrder: asc
   options:
     active_symbols_only: true
+- name: pre-market-gainers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: premarket_change
+    operation: greater
+    right: 0
+  - left: premarket_change
+    operation: nempty
+  sort:
+    sortBy: premarket_change
+    sortOrder: desc
+  options:
+    active_symbols_only: true
+- name: pre-market-losers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: premarket_change
+    operation: less
+    right: 0
+  - left: premarket_change
+    operation: nempty
+  sort:
+    sortBy: premarket_change
+    sortOrder: asc
+  options:
+    active_symbols_only: true

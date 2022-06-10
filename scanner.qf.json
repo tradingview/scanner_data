@@ -536,6 +536,10 @@
 		"type": "price"
 	},
 	{
+		"name": "all_time_open",
+		"type": "price"
+	},
+	{
 		"name": "dividend_ex_date_recent",
 		"type": "time"
 	},
@@ -638,5 +642,45 @@
 	{
 		"name": "total_liabilities_fy",
 		"type": "fundamental_price"
-	}
+	},
+	{
+	        "name": "provider-id",
+	        "type": "text"
+        },
+        {
+                "name": "free_cash_flow",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "free_cash_flow_fq",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "free_cash_flow_fy",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "free_cash_flow_ttm",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "cash_n_short_term_invest_fq",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "cash_n_short_term_invest_fy",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "cash_n_equivalents_fq",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "cash_n_equivalents_fy",
+                "type": "fundamental_price"
+        },
+        {
+                "name": "country_code_fund",
+                "type": "text"
+        }
 ]

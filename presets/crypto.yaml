@@ -1,0 +1,31 @@
+---
+presets:
+- name: market-cap-rank
+  filter:
+  - left: name
+    operation: match
+    right: USD$
+  - left: sector
+    operation: nempty
+  - left: market_cap_calc
+    operation: nempty
+  sort:
+    sortBy: market_cap_calc
+    sortOrder: desc
+  options: {}
+- name: top-defi
+  filter:
+  - left: typespecs
+    operation: has
+    right: defi
+  - left: name
+    operation: match
+    right: USD$
+  - left: sector
+    operation: nempty
+  - left: market_cap_calc
+    operation: nempty
+  sort:
+    sortBy: market_cap_calc
+    sortOrder: desc
+  options: {}

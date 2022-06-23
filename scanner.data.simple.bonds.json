@@ -1,0 +1,59 @@
+[
+	{
+		"inputs": [
+			{
+				"id": "text",
+				"type": "text",
+				"defval": "close~$0;#0~$0~$1-$1@1~$2/$1@1*100~$1!$2!$3;v^t:str.substring(ticker,0,str.length(ticker):i-1):t~t:syminfo.prefix+':'+$2~sym($3,period,period,0,0,1,'NONE',0)|$0()|s3:$1($5):s3~$7~$8~$9~$10!$11!$12",
+				"isFake": false
+			},
+			{
+				"id": "pineId",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			},
+			{
+				"id": "pineVersion",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			}
+		],
+		"description": "Bond Yield to price",
+		"id": "Script$pine_id_undefined@tv-scripting-101",
+		"plots": [
+			{
+				"id": "plot_0",
+				"type": "line"
+			},
+			{
+				"id": "plot_1",
+				"type": "line"
+			},
+			{
+				"id": "plot_2",
+				"type": "line"
+			}
+		],
+		"version": "",
+		"isTVScriptStubToCompile": false,
+		"isTVScriptStrategy": false,
+		"TVScriptSourceCode": "",
+		"fullId": "",
+		"styles": {
+			"plot_0": {
+				"title": "Bond Price",
+				"isHidden": false
+			},
+			"plot_1": {
+				"title": "Bond Change",
+				"isHidden": false
+			},
+			"plot_2": {
+				"title": "Bond Change %",
+				"isHidden": false
+			}
+		}
+	}
+]

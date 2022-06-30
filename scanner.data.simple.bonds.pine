@@ -1,0 +1,9 @@
+//@version=5
+indicator("Bond Yield to price")
+
+var bond_ticker = str.substring(syminfo.ticker, 0, str.length(syminfo.ticker) - 1)
+bond_price = request.security(syminfo.prefix + ":" + bond_ticker, timeframe.period, close, ignore_invalid_symbol=true)
+plot(bond_price, title="Bond Price")
+change_abs = bond_price - bond_price[1]
+plot(change_abs, title="Bond Change")
+plot(change_abs / bond_price[1] * 100, title="Bond Change %")

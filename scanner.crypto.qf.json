@@ -310,5 +310,9 @@
   {
     "name": "utxo_value_spent_total",
     "type": "number"
-  }
+  },
+	{
+		"name": "daily-bar",
+		"type": "map"
+	}
 ]

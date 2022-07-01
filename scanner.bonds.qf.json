@@ -66,6 +66,10 @@
     {
         "name": "term-to-maturity",
         "type": "text"
+    },
+    {
+        "name": "daily-bar",
+        "type": "map"
     }
   ]
   

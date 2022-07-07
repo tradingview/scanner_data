@@ -682,5 +682,9 @@
     {
         "name": "country_code_fund",
         "type": "text"
-    }
+    },
+	{
+		"name": "daily-bar",
+		"type": "map"
+	}
 ]

@@ -1,0 +1,2 @@
+// study(title="VWAP", shorttitle="VWAP", overlay=true)
+plot(ta.vwap(hlc3), title='VWAP')

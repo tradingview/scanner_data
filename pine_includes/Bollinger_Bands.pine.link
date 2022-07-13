@@ -1,0 +1,11 @@
+// study(shorttitle="BB", title="Bollinger Bands", overlay=true)
+lengthBB = 20
+srcBB = close
+multBB = 2
+basisBB = ta.sma(srcBB, lengthBB)
+devBB = multBB * ta.stdev(srcBB, lengthBB)
+upperBB = basisBB + devBB
+lowerBB = basisBB - devBB
+plot(basisBB, title='BB.basis')
+plot(upperBB, title='BB.upper')
+plot(lowerBB, title='BB.lower')

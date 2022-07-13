@@ -1,0 +1,3 @@
+// study("My Parabolic SAR", overlay=true)
+PSAR = ta.sar(0.02, 0.02, 0.2)
+plot(PSAR, title='P.SAR')

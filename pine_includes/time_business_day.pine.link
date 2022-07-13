@@ -1,0 +1,2 @@
+// business day
+plot(time_tradingday / 1000, title='time_business_day')

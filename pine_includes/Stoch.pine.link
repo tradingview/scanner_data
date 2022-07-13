@@ -1,0 +1,10 @@
+// study(title="Stochastic", shorttitle="Stoch")
+lengthStoch = 14
+smoothKStoch = 3
+smoothDStoch = 3
+kStoch = ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch = ta.sma(kStoch, smoothDStoch)
+plot(kStoch, title='Stoch.K')
+plot(dStoch, title='Stoch.D')
+plot(kStoch[1], title='Stoch.K[1]')
+plot(dStoch[1], title='Stoch.D[1]')

@@ -1,0 +1,2 @@
+// Rate Of Change (ROC)
+plot(ta.roc(close, 9), title='ROC')

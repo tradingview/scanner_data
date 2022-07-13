@@ -1,0 +1,4 @@
+// study("My Chaikin Money Flow")
+lenCMF = 20
+accdistRaw = not(close == low and close == high or high == low) ? (close - low - (high - close)) / (high - low) * volume : 0
+plot(math.sum(accdistRaw, lenCMF) / math.sum(volume, lenCMF), title='ChaikinMoneyFlow')

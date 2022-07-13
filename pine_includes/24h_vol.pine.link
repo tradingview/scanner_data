@@ -1,0 +1,37 @@
+// 24h volume
+
+price = close
+currency = "USD"
+
+msIn24h = 24*60*60*1000
+maxBufferSize = 24*60/5
+cumVolTF = "5"
+
+cum24hVol(s) =>
+    src = s
+    if bar_index==0
+        src := src[maxBufferSize+1] * time[maxBufferSize+1] * 0
+    var cumSum = 0.
+    var int firstBarTimeIndex = na
+    if na(firstBarTimeIndex) // 24 H have not elapsed yet
+        sum = 0.
+        for i = 0 to maxBufferSize
+            if (time - time[i]) >= msIn24h
+                firstBarTimeIndex := bar_index - i + 1
+                break
+            sum += src[i]
+        cumSum := sum
+    else
+        cumSum += nz(src)
+        for i = firstBarTimeIndex to bar_index
+            if (time - time[bar_index - i]) < msIn24h
+                firstBarTimeIndex := i
+                break
+            cumSum -= nz(src[bar_index - i])
+            if cumSum <= 0
+                cumSum := 0
+    cumSum
+
+expr = syminfo.volumetype == "quote" ? volume : price*volume
+vol24h = request.security(syminfo.tickerid, cumVolTF, cum24hVol(expr), lookahead = barmerge.lookahead_off, currency = currency, ignore_invalid_symbol=true)
+plot(vol24h, title = "24h_vol", style = plot.style_columns)

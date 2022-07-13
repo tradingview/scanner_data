@@ -1,0 +1,7 @@
+// study("My Keltner Channels", overlay=true)
+lengthKltChnl = 20
+multKltChnl = 1
+maKltChnl = ta.ema(close, lengthKltChnl)
+rangemaKltChnl = ta.rma(ta.tr(true), lengthKltChnl)
+plot(maKltChnl + rangemaKltChnl * multKltChnl, title='KltChnl.upper')
+plot(maKltChnl - rangemaKltChnl * multKltChnl, title='KltChnl.lower')

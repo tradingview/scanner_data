@@ -1,0 +1,2 @@
+// Average Day Range
+plot(ta.sma(high, 14) - ta.sma(low, 14), title='ADR')

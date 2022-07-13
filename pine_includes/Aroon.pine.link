@@ -1,0 +1,4 @@
+// study("Aroon")
+Aroon_length = 14
+plot(100 * (ta.highestbars(high, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Up')
+plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Down')

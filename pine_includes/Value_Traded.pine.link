@@ -1,0 +1,2 @@
+// value traded (dollar volume)
+plot(volume * close * syminfo.pointvalue, title='Value.Traded')

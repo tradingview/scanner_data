@@ -1,0 +1,10 @@
+// Stochastic RSI
+StochRSI() =>
+	rsi1 = ta.rsi(close, 14)
+	K = ta.sma(ta.stoch(rsi1, rsi1, rsi1, 14), 3)
+	D = ta.sma(K, 3)
+	[K, D]
+
+[Stoch_RSI_K, Stoch_RSI_D] = StochRSI()
+plot(Stoch_RSI_K, title='Stoch.RSI.K')
+plot(Stoch_RSI_D, title='Stoch.RSI.D')

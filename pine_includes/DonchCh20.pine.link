@@ -1,0 +1,7 @@
+// Donchian Channels
+donchLen = 20
+donchUpper = ta.highest(donchLen)
+donchLower = ta.lowest(donchLen)
+plot(donchLower, title='DonchCh20.Lower')
+plot(donchUpper, title='DonchCh20.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh20.Middle')

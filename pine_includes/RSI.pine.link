@@ -1,0 +1,6 @@
+//study(title="Relative Strength Index", shorttitle="RSI")
+RSI = ta.rsi(close, 14)
+plot(RSI, title='RSI')
+plot(ta.rsi(close, 7), title='RSI7')
+plot(RSI[1], title='RSI[1]')
+plot(ta.rsi(close, 7)[1], title='RSI7[1]')

@@ -1,0 +1,5 @@
+// Commodity Channel Index
+CCI = ta.cci(hlc3, 20)
+plot(CCI, title='CCI20')
+plot(CCI[1], title='CCI20[1]')
+//plot(cci(hlc3, 100), title = "CCI100")

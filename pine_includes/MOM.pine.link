@@ -1,0 +1,4 @@
+//study(title="Momentum", shorttitle="Mom")
+Mom = close - close[10]
+plot(Mom, title='Mom')
+plot(Mom[1], title='Mom[1]')

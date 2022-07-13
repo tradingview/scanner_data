@@ -1,0 +1,13 @@
+// study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
+sourceMACD = close
+fastLengthMACD = 12
+slowLengthMACD = 26
+signalLengthMACD = 9
+fastMAMACD = ta.ema(sourceMACD, fastLengthMACD)
+slowMAMACD = ta.ema(sourceMACD, slowLengthMACD)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = ta.ema(macdMACD, signalLengthMACD)
+histMACD = macdMACD - signalMACD
+plot(histMACD, title='MACD.hist')
+plot(macdMACD, title='MACD.macd')
+plot(signalMACD, title='MACD.signal')

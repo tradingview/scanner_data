@@ -1,0 +1,3 @@
+// Volume Weighted Moving Average (VWMA)
+VWMA = ta.vwma(close, 20)
+plot(VWMA, title='VWMA')

@@ -1,0 +1,4 @@
+// Williams Percent Range
+WR_period = 14
+WR = (ta.highest(high, WR_period) - close) / (ta.highest(high, WR_period) - ta.lowest(low, WR_period)) * -100
+plot(WR, title='W.R')

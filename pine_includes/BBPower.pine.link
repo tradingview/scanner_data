@@ -1,0 +1,4 @@
+// Bull / Bear Power
+BullPower = high - ta.ema(close, 13)
+BearPower = low - ta.ema(close, 13)
+plot(BullPower + BearPower, title='BBPower')

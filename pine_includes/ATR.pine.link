@@ -1,0 +1,2 @@
+// study(title="Average True Range", shorttitle="ATR", overlay=false)
+plot(ta.rma(ta.tr(true), 14), title='ATR')

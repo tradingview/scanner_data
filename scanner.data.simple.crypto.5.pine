@@ -788,6 +788,8 @@ cum24hVol(s) =>
                 firstBarTimeIndex := i
                 break
             cumSum -= nz(src[bar_index - i])
+            if cumSum <= 0
+                cumSum := 0
     cumSum
 
 expr = syminfo.volumetype == "quote" ? volume : price*volume

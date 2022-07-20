@@ -86,5 +86,9 @@
 	{
 		"name": "all_time_open",
 		"type": "price"
-	}
+	},
+  {
+      "name": "daily-bar",
+      "type": "map"
+  }
 ]

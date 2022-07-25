@@ -78,5 +78,9 @@
   {
     "name": "provider-id",
     "type": "text"
+  },
+  {
+      "name": "daily-bar",
+      "type": "map"
   }
 ]

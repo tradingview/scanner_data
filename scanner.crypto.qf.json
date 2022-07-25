@@ -74,5 +74,9 @@
   {
     "name": "crypto_total_rank",
     "type": "number"
+  },
+  {
+      "name": "daily-bar",
+      "type": "map"
   }
 ]

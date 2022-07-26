@@ -1545,20 +1545,6 @@
       ]
     },
     {
-      "s": "HITBTC:BITBTC",
-      "f": [
-        "BitRewards",
-        "BIT"
-      ]
-    },
-    {
-      "s": "BYBIT:BITUSD",
-      "f": [
-        "Inverse Perpetual",
-        "BIT"
-      ]
-    },
-    {
       "s": "HITBTC:BDPBTC",
       "f": [
         "BidiPass",
@@ -1962,6 +1948,13 @@
       "f": [
         "Bitpanda Ecosystem Token",
         "BEST"
+      ]
+    },
+    {
+      "s": "HITBTC:BITBTC",
+      "f": [
+        "BitRewards",
+        "BIT"
       ]
     },
     {
@@ -6858,6 +6851,13 @@
       ]
     },
     {
+      "s": "BYBIT:BITUSD",
+      "f": [
+        "Inverse Perpetual",
+        "BIT"
+      ]
+    },
+    {
       "s": "BINANCE:IOSTBTC",
       "f": [
         "IOStoken",
@@ -8507,6 +8507,20 @@
       "f": [
         "Moss Coin",
         "MOC"
+      ]
+    },
+    {
+      "s": "HITBTC:MBLBTC",
+      "f": [
+        "MovieBloc",
+        "MBL"
+      ]
+    },
+    {
+      "s": "HITBTC:MBLUSD",
+      "f": [
+        "MovieBloc",
+        "MBL"
       ]
     },
     {

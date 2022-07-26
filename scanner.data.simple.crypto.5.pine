@@ -788,8 +788,43 @@ cum24hVol(s) =>
                 firstBarTimeIndex := i
                 break
             cumSum -= nz(src[bar_index - i])
+            if cumSum <= 0
+                cumSum := 0
     cumSum
 
 expr = syminfo.volumetype == "quote" ? volume : price*volume
 vol24h = request.security(syminfo.tickerid, cumVolTF, cum24hVol(expr), lookahead = barmerge.lookahead_off, currency = currency, ignore_invalid_symbol=true)
 plot(vol24h, title = "24h_vol", style = plot.style_columns)
+
+// 24h volume prev period (needed for 24h vol change)
+
+cum24hVolPrevPeriod(v24h) =>
+    src = v24h
+    if bar_index == 0
+        src := src[maxBufferSize+1] * time[maxBufferSize+1] * 0
+
+    int BB24h = na
+    for i = 0 to maxBufferSize
+        if (time - time[i]) >= msIn24h
+            BB24h := i
+            break
+
+    src[BB24h]
+
+vol24hPrev = cum24hVolPrevPeriod(vol24h)
+
+plot(vol24hPrev, title = "24h_vol_prev", style = plot.style_columns)
+
+// 24h volume change abs
+
+float vol24hChangeAbs = na
+if not na(vol24h) and not na(vol24hPrev)
+    vol24hChangeAbs := vol24h - vol24hPrev
+plot(vol24hChangeAbs, title = "24h_vol_change_abs", style = plot.style_columns)
+
+// 24h volume change
+
+float vol24hChange = na
+if not na(vol24hChangeAbs) and vol24hPrev != 0
+    vol24hChange := (vol24hChangeAbs / math.abs(vol24hPrev)) * 100
+plot(vol24hChange, title = "24h_vol_change", style = plot.style_columns)

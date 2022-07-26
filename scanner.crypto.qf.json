@@ -75,10 +75,10 @@
     "name": "provider-id",
     "type": "text"
   },
-	{
-		"name": "all_time_open",
-		"type": "price"
-	},
+  {
+    "name": "all_time_open",
+    "type": "price"
+  },
   {
     "name": "crypto_total_rank",
     "type": "number"
@@ -142,5 +142,9 @@
   {
     "name": "large_tx_volume_usd",
     "type": "number"
+  },
+  {
+    "name": "volume-type",
+    "type": "text"
   }
 ]

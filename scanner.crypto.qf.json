@@ -76,11 +76,7 @@
     "type": "number"
   },
   {
-      "name": "daily-bar",
-      "type": "map"
-  },
-  {
-    "name": "crypto_categories",
-    "type": "set"
+    "name": "daily-bar",
+    "type": "map"
   }
 ]

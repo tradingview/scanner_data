@@ -809,7 +809,7 @@ plot(rr(countOfBars52WeekAgo, weeks52), title='Perf.Y')
 plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
 var lastYearOpen = open
 if year > year[1]
-	lastYearOpen := open[1]
+	lastYearOpen := open
 plot(rateOfreturn(close, lastYearOpen), title='Perf.YTD')
 
 // business day

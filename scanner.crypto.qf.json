@@ -146,5 +146,21 @@
   {
     "name": "volume-type",
     "type": "text"
+  },
+  {
+    "name": "close",
+    "type": "number"
+  },
+  {
+    "name": "market_cap",
+    "type": "number"
+  },
+  {
+    "name": "circulating_supply",
+    "type": "number"
+  },
+  {
+    "name": "market_cap_calc",
+    "type": "number"
   }
 ]

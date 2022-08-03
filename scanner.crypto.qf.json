@@ -1,0 +1,82 @@
+[
+  {
+    "name": "pricescale",
+    "type": "number"
+  },
+  {
+    "name": "minmov",
+    "type": "number"
+  },
+  {
+    "name": "minmove2",
+    "type": "number"
+  },
+  {
+    "name": "fractional",
+    "type": "text"
+  },
+  {
+    "name": "sector",
+    "type": "text"
+  },
+  {
+    "name": "country",
+    "type": "text"
+  },
+  {
+    "name": "current_session",
+    "type": "text"
+  },
+  {
+    "name": "rtc",
+    "type": "price"
+  },
+  {
+    "name": "bid",
+    "type": "price"
+  },
+  {
+    "name": "ask",
+    "type": "price"
+  },
+  {
+    "name": "total_shares_outstanding",
+    "type": "number"
+  },
+  {
+    "name": "total_shares_diluted",
+    "type": "number"
+  },
+  {
+    "name": "total_value_traded",
+    "type": "number"
+  },
+  {
+    "name": "crypto_code",
+    "type": "text"
+  },
+  {
+    "name": "all_time_high",
+    "type": "price"
+  },
+  {
+    "name": "all_time_low",
+    "type": "price"
+  },
+  {
+    "name": "all_time_open",
+    "type": "price"
+  },
+  {
+    "name": "provider-id",
+    "type": "text"
+  },
+  {
+    "name": "crypto_total_rank",
+    "type": "number"
+  },
+  {
+      "name": "daily-bar",
+      "type": "map"
+  }
+]

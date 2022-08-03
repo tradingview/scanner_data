@@ -149,10 +149,10 @@
   },
   {
     "name": "market_cap",
-    "type": "number"
+    "type": "fundamental_price"
   },
   {
     "name": "market_cap_calc",
-    "type": "number"
+    "type": "fundamental_price"
   }
 ]

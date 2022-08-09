@@ -846,10 +846,7 @@ plot(perfYTD_USD, title='Perf.YTD.USD')
 
 // Perf.All
 
-var float firstOpenUSD = na
-firstOpenUSDSeek = request.security(syminfo.tickerid, "D", open, lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
-if na(firstOpenUSD) and not na(firstOpenUSDSeek)
-    firstOpenUSD := firstOpenUSDSeek
+var float firstOpenUSD = request.security(syminfo.tickerid, "D", open, lookahead = barmerge.lookahead_on, currency = "USD", ignore_invalid_symbol=true)
 
 lastCloseUSD = request.security(syminfo.tickerid, "D", close, lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
 

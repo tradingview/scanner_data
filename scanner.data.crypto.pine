@@ -801,16 +801,65 @@ rr(_bb, maxbarsback) =>
 		rof = rateOfreturn(close, open[bb])
 		rof
 
-plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
-plot(rr(countOfBars1MonthAgo, month1), title='Perf.1M')
-plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')
-plot(rr(countOfBars6MonthAgo, month6), title='Perf.6M')
-plot(rr(countOfBars52WeekAgo, weeks52), title='Perf.Y')
-plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
-var lastYearOpen = open
-if year > year[1]
-	lastYearOpen := open
-plot(rateOfreturn(close, lastYearOpen), title='Perf.YTD')
+// Perf.<W | 1M | 3M | 6M | Y | 5Y | YTD>
+
+perfW = rr(countOfBarsWeekAgo, week1)
+perfW_USD = request.security(syminfo.tickerid, "D", rr(countOfBarsWeekAgo, week1), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+plot(perfW, title='Perf.W')
+plot(perfW_USD, title='Perf.W.USD')
+
+perf1M = rr(countOfBars1MonthAgo, month1)
+perf1M_USD = request.security(syminfo.tickerid, "D", rr(countOfBars1MonthAgo, month1), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+plot(perf1M, title='Perf.1M')
+plot(perf1M, title='Perf.1M.USD')
+
+perf3M = rr(countOfBars3MonthAgo, month3)
+perf3M_USD = request.security(syminfo.tickerid, "D", rr(countOfBars3MonthAgo, month3), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+plot(perf3M, title='Perf.3M')
+plot(perf3M_USD, title='Perf.3M.USD')
+
+perf6M = rr(countOfBars6MonthAgo, month6)
+perf6M_USD = request.security(syminfo.tickerid, "D", rr(countOfBars6MonthAgo, month6), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+plot(perf6M, title='Perf.6M')
+plot(perf6M_USD, title='Perf.6M.USD')
+
+perfY = rr(countOfBars52WeekAgo, weeks52)
+perfY_USD = request.security(syminfo.tickerid, "D", rr(countOfBars52WeekAgo, weeks52), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+plot(perfY, title='Perf.Y')
+plot(perfY_USD, title='Perf.Y.USD')
+
+perf5Y = rr(countOfBars5YearAgo, years5)
+perf5Y_USD = request.security(syminfo.tickerid, "D", rr(countOfBars5YearAgo, years5), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+plot(perf5Y, title='Perf.5Y')
+plot(perf5Y_USD, title='Perf.5Y.USD')
+
+perfYTD() =>
+    var lastYearOpen = float(na)
+    if year > year[1]
+        lastYearOpen := open
+    rateOfreturn(close, lastYearOpen)
+
+perfYTD = perfYTD()
+perfYTD_USD = request.security(syminfo.tickerid, "D", perfYTD(), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+plot(perfYTD, title='Perf.YTD')
+plot(perfYTD_USD, title='Perf.YTD.USD')
+
+// Perf.All
+
+var float firstOpenUSD = na
+firstOpenUSDSeek = request.security(syminfo.tickerid, "D", open, lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+if na(firstOpenUSD) and not na(firstOpenUSDSeek)
+    firstOpenUSD := firstOpenUSDSeek
+
+lastCloseUSD = request.security(syminfo.tickerid, "D", close, lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+
+float perfAllUSD = na
+if barstate.islast and not na(firstOpenUSD) and not na(lastCloseUSD) and firstOpenUSD > 0
+    perfAllUSD := (lastCloseUSD - firstOpenUSD) * 100 / math.abs(firstOpenUSD)
+
+plot(firstOpenUSD, title='debug.first_open_usd', style = plot.style_columns)
+plot(lastCloseUSD, title='debug.last_close_usd', style = plot.style_columns)
+plot(perfAllUSD, title='Perf.All.USD', style = plot.style_columns)
 
 // business day
 plot(time_tradingday / 1000, title='time_business_day')

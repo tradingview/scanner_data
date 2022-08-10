@@ -794,7 +794,6 @@ cum24hVol(s) =>
 
 expr = syminfo.volumetype == "quote" ? volume : price*volume
 vol24h = request.security(syminfo.tickerid, cumVolTF, cum24hVol(expr), lookahead = barmerge.lookahead_off, currency = currency, ignore_invalid_symbol=true)
-plot(vol24h, title = "24h_vol", style = plot.style_columns)
 
 // 24h volume prev period (needed for 24h vol change)
 

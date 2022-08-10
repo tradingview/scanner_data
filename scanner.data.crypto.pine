@@ -811,7 +811,7 @@ plot(perfW_USD, title='Perf.W.USD')
 perf1M = rr(countOfBars1MonthAgo, month1)
 perf1M_USD = request.security(syminfo.tickerid, "D", rr(countOfBars1MonthAgo, month1), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
 plot(perf1M, title='Perf.1M')
-plot(perf1M, title='Perf.1M.USD')
+plot(perf1M_USD, title='Perf.1M.USD')
 
 perf3M = rr(countOfBars3MonthAgo, month3)
 perf3M_USD = request.security(syminfo.tickerid, "D", rr(countOfBars3MonthAgo, month3), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)

@@ -8,18 +8,18 @@ plot(ta.rma(ta.tr(true), 14), title='ATR')
 
 // study("Average Directional Index", shorttitle="ADX")
 dirmov(len) =>
-    up = ta.change(high)
-    down = -ta.change(low)
-    truerange = ta.rma(ta.tr, len)
-    plus = fixnan(100 * ta.rma(up > down and up > 0 ? up : 0, len) / truerange)
-    minus = fixnan(100 * ta.rma(down > up and down > 0 ? down : 0, len) / truerange)
-    [plus, minus]
+	up = ta.change(high)
+	down = -ta.change(low)
+	truerange = ta.rma(ta.tr, len)
+	plus = fixnan(100 * ta.rma(up > down and up > 0 ? up : 0, len) / truerange)
+	minus = fixnan(100 * ta.rma(down > up and down > 0 ? down : 0, len) / truerange)
+	[plus, minus]
 
 adx(dilen, adxlen) =>
-    [plus, minus] = dirmov(dilen)
-    sum = plus + minus
-    adx = 100 * ta.rma(math.abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
-    [adx, plus, minus]
+	[plus, minus] = dirmov(dilen)
+	sum = plus + minus
+	adx = 100 * ta.rma(math.abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
+	[adx, plus, minus]
 
 [adxValue, adxPlus, adxMinus] = adx(14, 14)
 plot(adxValue, title='ADX')
@@ -168,37 +168,30 @@ pivotX_prev_close = float(na)
 pivotX_prev_close := nz(pivotX_prev_close[1])
 
 pivotXGetCurTF() =>
-    result = '1M'
-    if timeframe.isintraday
-        result := timeframe.multiplier <= 15 ? '1D' : '1W'
-    else
-        if timeframe.isweekly or timeframe.ismonthly
-            result := '12M'
-    result
+	result = '1M'
+	if timeframe.isintraday
+		result := timeframe.multiplier <= 15 ? '1D' : '1W'
+	else
+		if timeframe.isweekly or timeframe.ismonthly
+			result := '12M'
+	result
 
 fNeg(value) =>
-    value <= 0 ? na : value
+	value <= 0 ? na : value
 
-pp_resolution = pivotXGetCurTF()
-[sec_open, sec_high, sec_low] = request.security(syminfo.tickerid, pp_resolution, [open, high, low], lookahead=barmerge.lookahead_on)
-pivotX_open := sec_open[1]
-pivotX_high := sec_high[1]
-pivotX_low := sec_low[1]
-
-pivotX_Interval = time(pp_resolution)
-
+pivotX_Interval = time(pivotXGetCurTF())
 if pivotX_Interval != pivotX_Interval[1]
-    pivotX_prev_open := pivotX_open
-    pivotX_prev_close := close[1]
-    pivotX_prev_high := pivotX_high
-    pivotX_prev_low := pivotX_low
+	pivotX_prev_open := pivotX_open
+	pivotX_prev_close := close[1]
+	pivotX_prev_high := pivotX_high
+	pivotX_prev_low := pivotX_low
 
-    pivotX_open := open
-    pivotX_high := high
-    pivotX_low := low
+	pivotX_open := open
+	pivotX_high := high
+	pivotX_low := low
 else
-    pivotX_high := math.max(pivotX_high, high)
-    pivotX_low := math.min(pivotX_low, low)
+	pivotX_high := math.max(pivotX_high, high)
+	pivotX_low := math.min(pivotX_low, low)
 
 // Classic
 pivotX_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_prev_close) / 3
@@ -232,9 +225,9 @@ plot(fNeg(pivotX_prev_low - 2 * (pivotX_prev_high - pivotX_Woodie_Median)), titl
 // Demark
 pivotX_Demark_X = pivotX_prev_high + pivotX_prev_low * 2 + pivotX_prev_close
 if pivotX_prev_close == pivotX_prev_open
-    pivotX_Demark_X := pivotX_prev_high + pivotX_prev_low + pivotX_prev_close * 2
+	pivotX_Demark_X := pivotX_prev_high + pivotX_prev_low + pivotX_prev_close * 2
 if pivotX_prev_close > pivotX_prev_open
-    pivotX_Demark_X := pivotX_prev_high * 2 + pivotX_prev_low + pivotX_prev_close
+	pivotX_Demark_X := pivotX_prev_high * 2 + pivotX_prev_low + pivotX_prev_close
 plot(fNeg(pivotX_Demark_X / 4), title='Pivot.M.Demark.Middle')
 plot(fNeg(pivotX_Demark_X / 2 - pivotX_prev_low), title='Pivot.M.Demark.R1')
 plot(fNeg(pivotX_Demark_X / 2 - pivotX_prev_high), title='Pivot.M.Demark.S1')
@@ -284,10 +277,10 @@ plot(math.sum(accdistRaw, lenCMF) / math.sum(volume, lenCMF), title='ChaikinMone
 
 // Stochastic RSI
 StochRSI() =>
-    rsi1 = ta.rsi(close, 14)
-    K = ta.sma(ta.stoch(rsi1, rsi1, rsi1, 14), 3)
-    D = ta.sma(K, 3)
-    [K, D]
+	rsi1 = ta.rsi(close, 14)
+	K = ta.sma(ta.stoch(rsi1, rsi1, rsi1, 14), 3)
+	D = ta.sma(K, 3)
+	[K, D]
 
 [Stoch_RSI_K, Stoch_RSI_D] = StochRSI()
 plot(Stoch_RSI_K, title='Stoch.RSI.K')
@@ -312,38 +305,38 @@ plot(BullPower + BearPower, title='BBPower')
 
 // Ultimate Oscillator
 tl() =>
-    close[1] < low ? close[1] : low
+	close[1] < low ? close[1] : low
 uo(ShortLen, MiddlLen, LongLen) =>
-    Value1 = math.sum(ta.tr, ShortLen)
-    Value2 = math.sum(ta.tr, MiddlLen)
-    Value3 = math.sum(ta.tr, LongLen)
-    Value4 = math.sum(close - tl(), ShortLen)
-    Value5 = math.sum(close - tl(), MiddlLen)
-    Value6 = math.sum(close - tl(), LongLen)
-    UO = float(na)
-    if Value1 != 0 and Value2 != 0 and Value3 != 0
-        var0 = LongLen / ShortLen
-        var1 = LongLen / MiddlLen
-        Value7 = Value4 / Value1 * var0
-        Value8 = Value5 / Value2 * var1
-        Value9 = Value6 / Value3
-        UO := (Value7 + Value8 + Value9) / (var0 + var1 + 1)
-    UO
+	Value1 = math.sum(ta.tr, ShortLen)
+	Value2 = math.sum(ta.tr, MiddlLen)
+	Value3 = math.sum(ta.tr, LongLen)
+	Value4 = math.sum(close - tl(), ShortLen)
+	Value5 = math.sum(close - tl(), MiddlLen)
+	Value6 = math.sum(close - tl(), LongLen)
+	UO = float(na)
+	if Value1 != 0 and Value2 != 0 and Value3 != 0
+		var0 = LongLen / ShortLen
+		var1 = LongLen / MiddlLen
+		Value7 = Value4 / Value1 * var0
+		Value8 = Value5 / Value2 * var1
+		Value9 = Value6 / Value3
+		UO := (Value7 + Value8 + Value9) / (var0 + var1 + 1)
+	UO
 UO = uo(7, 14, 28)
 if not na(UO)
-    UO *= 100
+	UO *= 100
 plot(UO, title='UO')
 
 
 // Ichimoku Cloud
 donchian(len) =>
-    math.avg(ta.lowest(len), ta.highest(len))
+	math.avg(ta.lowest(len), ta.highest(len))
 ichimoku_cloud() =>
-    conversionLine = donchian(9)
-    baseLine = donchian(26)
-    leadLine1 = math.avg(conversionLine, baseLine)
-    leadLine2 = donchian(52)
-    [conversionLine, baseLine, leadLine1, leadLine2]
+	conversionLine = donchian(9)
+	baseLine = donchian(26)
+	leadLine1 = math.avg(conversionLine, baseLine)
+	leadLine2 = donchian(52)
+	[conversionLine, baseLine, leadLine1, leadLine2]
 [IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud()
 IC_displacement = 25
 plot(IC_CLine, title='Ichimoku.CLine')
@@ -369,71 +362,72 @@ UpTrend = close > PriceAvg
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 calcRecommendMA(left, right) =>
-    na(left) or na(right) ? na : left == right ? 0 : left < right ? 1 : -1
+	na(left) or na(right) ? na : left == right ? 0 : left < right ? 1 : -1
 calcRecommend(buy, sell) =>
-    buy ? 1 : sell ? -1 : 0
+	buy ? 1 : sell ? -1 : 0
 
 // calculate trading recommendation based on SMA/EMA
 recMA = .0
 recMAC = .0
 
 if not na(close)
-    if not na(SMA10)
-        recMA += calcRecommendMA(SMA10, close)
-        recMAC += 1
-    if not na(SMA20)
-        recMA += calcRecommendMA(SMA20, close)
-        recMAC += 1
-    if not na(SMA30)
-        recMA += calcRecommendMA(SMA30, close)
-        recMAC += 1
-    if not na(SMA50)
-        recMA += calcRecommendMA(SMA50, close)
-        recMAC += 1
-    if not na(SMA100)
-        recMA += calcRecommendMA(SMA100, close)
-        recMAC += 1
-    if not na(SMA200)
-        recMA += calcRecommendMA(SMA200, close)
-        recMAC += 1
-    if not na(EMA10)
-        recMA += calcRecommendMA(EMA10, close)
-        recMAC += 1
-    if not na(EMA20)
-        recMA += calcRecommendMA(EMA20, close)
-        recMAC += 1
-    if not na(EMA30)
-        recMA += calcRecommendMA(EMA30, close)
-        recMAC += 1
-    if not na(EMA50)
-        recMA += calcRecommendMA(EMA50, close)
-        recMAC += 1
-    if not na(EMA100)
-        recMA += calcRecommendMA(EMA100, close)
-        recMAC += 1
-    if not na(EMA200)
-        recMA += calcRecommendMA(EMA200, close)
-        recMAC += 1
+	if not na(SMA10)
+		recMA += calcRecommendMA(SMA10, close)
+		recMAC += 1
+	if not na(SMA20)
+		recMA += calcRecommendMA(SMA20, close)
+		recMAC += 1
+	if not na(SMA30)
+		recMA += calcRecommendMA(SMA30, close)
+		recMAC += 1
+	if not na(SMA50)
+		recMA += calcRecommendMA(SMA50, close)
+		recMAC += 1
+	if not na(SMA100)
+		recMA += calcRecommendMA(SMA100, close)
+		recMAC += 1
+	if not na(SMA200)
+		recMA += calcRecommendMA(SMA200, close)
+		recMAC += 1
+	if not na(EMA10)
+		recMA += calcRecommendMA(EMA10, close)
+		recMAC += 1
+	if not na(EMA20)
+		recMA += calcRecommendMA(EMA20, close)
+		recMAC += 1
+	if not na(EMA30)
+		recMA += calcRecommendMA(EMA30, close)
+		recMAC += 1
+	if not na(EMA50)
+		recMA += calcRecommendMA(EMA50, close)
+		recMAC += 1
+	if not na(EMA100)
+		recMA += calcRecommendMA(EMA100, close)
+		recMAC += 1
+	if not na(EMA200)
+		recMA += calcRecommendMA(EMA200, close)
+		recMAC += 1
 
 recHullMA9 = calcRecommendMA(HullMA9, close)
 plot(recHullMA9, title='Rec.HullMA9')
 if not na(recHullMA9)
-    recMA += recHullMA9
-    recMAC += 1
+	recMA += recHullMA9
+	recMAC += 1
 
 recVWMA = calcRecommendMA(VWMA, close)
 plot(recVWMA, title='Rec.VWMA')
 if not na(recVWMA)
-    recMA += recVWMA
-    recMAC += 1
+	recMA += recVWMA
+	recMAC += 1
 
 recIC = float(na)
 if not(na(IC_Lead1) or na(IC_Lead2) or na(close) or na(close[1]) or na(IC_BLine) or na(IC_CLine))
-    recIC := calcRecommend(IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine, IC_Lead2 > IC_Lead1 and close < IC_Lead2 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+	recIC := calcRecommend(IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine, IC_Lead2 > IC_Lead1 and close < IC_Lead2 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+	recIC
 plot(recIC, title='Rec.Ichimoku')
 if not na(recIC)
-    recMA += recIC
-    recMAC += 1
+	recMA += recIC
+	recMAC += 1
 
 recMA := recMAC > 0 ? recMA / recMAC : na
 plot(recMA, title='Recommend.MA')
@@ -443,65 +437,69 @@ recOtherC = .0
 
 recRSI = RSI
 if not(na(recRSI) or na(recRSI[1]))
-    recOtherC += 1
-    recOther += calcRecommend(recRSI < 30 and recRSI[1] < recRSI, recRSI > 70 and recRSI[1] > recRSI)
+	recOtherC += 1
+	recOther += calcRecommend(recRSI < 30 and recRSI[1] < recRSI, recRSI > 70 and recRSI[1] > recRSI)
 
 if not(na(kStoch) or na(dStoch) or na(kStoch[1]) or na(dStoch[1]))
-    recOtherC += 1
-    recOther += calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+	recOtherC += 1
+	recOther += calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
 
 recCCI = CCI
 if not(na(recCCI) or na(recCCI[1]))
-    recOtherC += 1
-    recOther += calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
+	recOtherC += 1
+	recOther += calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
 
 if not(na(adxValue) or na(adxPlus[1]) or na(adxMinus[1]) or na(adxPlus) or na(adxMinus))
-    recOtherC += 1
-    recOther += calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+	recOtherC += 1
+	recOther += calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
 
 if not(na(AO) or na(AO[1]))
-    recOtherC += 1
-    recOther += calcRecommend(ta.crossover(AO, 0) or AO > 0 and AO[1] > 0 and AO > AO[1] and AO[2] > AO[1], ta.crossunder(AO, 0) or AO < 0 and AO[1] < 0 and AO < AO[1] and AO[2] < AO[1])
+	recOtherC += 1
+	recOther += calcRecommend(ta.crossover(AO, 0) or AO > 0 and AO[1] > 0 and AO > AO[1] and AO[2] > AO[1], ta.crossunder(AO, 0) or AO < 0 and AO[1] < 0 and AO < AO[1] and AO[2] < AO[1])
 
 if not(na(Mom) or na(Mom[1]))
-    recOtherC += 1
-    recOther += calcRecommend(Mom > Mom[1], Mom < Mom[1])
+	recOtherC += 1
+	recOther += calcRecommend(Mom > Mom[1], Mom < Mom[1])
 
 if not(na(macdMACD) or na(signalMACD))
-    recOtherC += 1
-    recOther += calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
+	recOtherC += 1
+	recOther += calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
 
 recStoch_RSI = float(na)
 if not(na(DownTrend) or na(UpTrend) or na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
-    recStoch_RSI := calcRecommend(DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1], UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
+	recStoch_RSI := calcRecommend(DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1], UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
+	recStoch_RSI
 plot(recStoch_RSI, title='Rec.Stoch.RSI')
 if not na(recStoch_RSI)
-    recOtherC += 1
-    recOther += recStoch_RSI
+	recOtherC += 1
+	recOther += recStoch_RSI
 
 recWR = float(na)
 if not(na(WR) or na(WR[1]))
-    recWR := calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
+	recWR := calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
+	recWR
 plot(recWR, title='Rec.WR')
 if not na(recWR)
-    recOtherC += 1
-    recOther += recWR
+	recOtherC += 1
+	recOther += recWR
 
 recBBPower = float(na)
 if not(na(UpTrend) or na(DownTrend) or na(BearPower) or na(BearPower[1]) or na(BullPower) or na(BullPower[1]))
-    recBBPower := calcRecommend(UpTrend and BearPower < 0 and BearPower > BearPower[1], DownTrend and BullPower > 0 and BullPower < BullPower[1])
+	recBBPower := calcRecommend(UpTrend and BearPower < 0 and BearPower > BearPower[1], DownTrend and BullPower > 0 and BullPower < BullPower[1])
+	recBBPower
 plot(recBBPower, title='Rec.BBPower')
 if not na(recBBPower)
-    recOtherC += 1
-    recOther += recBBPower
+	recOtherC += 1
+	recOther += recBBPower
 
 recUO = float(na)
 if not na(UO)
-    recUO := calcRecommend(UO > 70, UO < 30)
+	recUO := calcRecommend(UO > 70, UO < 30)
+	recUO
 plot(recUO, title='Rec.UO')
 if not na(recUO)
-    recOtherC += 1
-    recOther += recUO
+	recOtherC += 1
+	recOther += recUO
 
 recOther := recOtherC > 0 ? recOther / recOtherC : na
 plot(recOther, title='Recommend.Other')
@@ -509,11 +507,11 @@ plot(recOther, title='Recommend.Other')
 recTotal = .0
 recTotalC = .0
 if not na(recMA)
-    recTotal += recMA
-    recTotalC += 1
+	recTotal += recMA
+	recTotalC += 1
 if not na(recOther)
-    recTotal += recOther
-    recTotalC += 1
+	recTotal += recOther
+	recTotalC += 1
 recTotal := recTotalC > 0 ? recTotal / recTotalC : na
 plot(recTotal, title='Recommend.All')
 
@@ -549,11 +547,11 @@ C_ShadowEquals = C_UpShadow == C_DnShadow or math.abs(C_UpShadow - C_DnShadow) /
 C_oHammer = false
 C_oHangingMan = false
 if C_SmallBody and C_Body > 0 and C_BodyLo > hl2 and C_DnShadow >= C_Factor * C_Body and not C_HasUpShadow
-    if C_DownTrend
-        C_oHammer := true
-    else
-        if C_UpTrend
-            C_oHangingMan := true
+	if C_DownTrend
+		C_oHammer := true
+	else
+		if C_UpTrend
+			C_oHangingMan := true
 
 plot(C_oHammer ? 1 : 0, title='Candle.Hammer')
 plot(C_oHangingMan ? 1 : 0, title='Candle.HangingMan')
@@ -561,11 +559,11 @@ plot(C_oHangingMan ? 1 : 0, title='Candle.HangingMan')
 C_oInvertedHammer = false
 C_oShootingStar = false
 if C_SmallBody and C_Body > 0 and C_BodyHi < hl2 and C_UpShadow >= C_Factor * C_Body and not C_HasDnShadow
-    if C_DownTrend
-        C_oInvertedHammer := true
-    else
-        if C_UpTrend
-            C_oShootingStar := true
+	if C_DownTrend
+		C_oInvertedHammer := true
+	else
+		if C_UpTrend
+			C_oShootingStar := true
 
 plot(C_oInvertedHammer ? 1 : 0, title='Candle.InvertedHammer')
 plot(C_oShootingStar ? 1 : 0, title='Candle.ShootingStar')
@@ -575,11 +573,11 @@ plot(C_oShootingStar ? 1 : 0, title='Candle.ShootingStar')
 C_oMorningStar = false
 C_oEveningStar = false
 if C_LongBody[2] and C_SmallBody[1] and C_LongBody
-    if C_DownTrend and C_BlackBody[2] and C_BodyHi[1] < C_BodyLo[2] and C_WhiteBody and C_BodyHi >= C_BodyMiddle[2] and C_BodyHi < C_BodyHi[2] and C_BodyHi[1] < C_BodyLo
-        C_oMorningStar := true
-    else
-        if C_UpTrend and C_WhiteBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_BlackBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo > C_BodyLo[2] and C_BodyLo[1] > C_BodyHi
-            C_oEveningStar := true
+	if C_DownTrend and C_BlackBody[2] and C_BodyHi[1] < C_BodyLo[2] and C_WhiteBody and C_BodyHi >= C_BodyMiddle[2] and C_BodyHi < C_BodyHi[2] and C_BodyHi[1] < C_BodyLo
+		C_oMorningStar := true
+	else
+		if C_UpTrend and C_WhiteBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_BlackBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo > C_BodyLo[2] and C_BodyLo[1] > C_BodyHi
+			C_oEveningStar := true
 plot(C_oMorningStar ? 1 : 0, title='Candle.MorningStar')
 plot(C_oEveningStar ? 1 : 0, title='Candle.EveningStar')
 
@@ -629,10 +627,10 @@ C_3WSld3WCrw_HaveNotDnShadow = C_Range * C_3WSld3WCrwShadowPercent / 100 > C_DnS
 C_o3WhiteSoldiers = false
 C_o3BlackCrows = false
 if C_LongBody and C_LongBody[1] and C_LongBody[2]
-    if C_WhiteBody and C_WhiteBody[1] and C_WhiteBody[2]
-        C_o3WhiteSoldiers := close > close[1] and close[1] > close[2] and open < close[1] and open > open[1] and open[1] < close[2] and open[1] > open[2] and C_3WSld3WCrw_HaveNotUpShadow and C_3WSld3WCrw_HaveNotUpShadow[1] and C_3WSld3WCrw_HaveNotUpShadow[2]
-    if C_BlackBody and C_BlackBody[1] and C_BlackBody[2]
-        C_o3BlackCrows := close < close[1] and close[1] < close[2] and open > close[1] and open < open[1] and open[1] > close[2] and open[1] < open[2] and C_3WSld3WCrw_HaveNotDnShadow and C_3WSld3WCrw_HaveNotDnShadow[1] and C_3WSld3WCrw_HaveNotDnShadow[2]
+	if C_WhiteBody and C_WhiteBody[1] and C_WhiteBody[2]
+		C_o3WhiteSoldiers := close > close[1] and close[1] > close[2] and open < close[1] and open > open[1] and open[1] < close[2] and open[1] > open[2] and C_3WSld3WCrw_HaveNotUpShadow and C_3WSld3WCrw_HaveNotUpShadow[1] and C_3WSld3WCrw_HaveNotUpShadow[2]
+	if C_BlackBody and C_BlackBody[1] and C_BlackBody[2]
+		C_o3BlackCrows := close < close[1] and close[1] < close[2] and open > close[1] and open < open[1] and open[1] > close[2] and open[1] < open[2] and C_3WSld3WCrw_HaveNotDnShadow and C_3WSld3WCrw_HaveNotDnShadow[1] and C_3WSld3WCrw_HaveNotDnShadow[2]
 plot(C_o3WhiteSoldiers ? 1 : 0, title='Candle.3WhiteSoldiers')
 plot(C_o3BlackCrows ? 1 : 0, title='Candle.3BlackCrows')
 
@@ -661,6 +659,161 @@ plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high ? 1 : 0, title='Ca
 
 // study(title="VWAP", shorttitle="VWAP", overlay=true)
 plot(ta.vwap(hlc3), title='VWAP')
+
+// high & low
+var allTimeHigh = float(na)
+allTimeHigh := math.max(nz(allTimeHigh[1], high), high)
+var allTimeLow = float(na)
+allTimeLow := math.min(nz(allTimeLow[1], low), low)
+var firstOpen = open
+plot(allTimeHigh, title='High.All')
+plot(allTimeLow, title='Low.All')
+plot(allTimeHigh, title='High.All.Calc')
+plot(allTimeLow, title='Low.All.Calc')
+plot(firstOpen, title='Open.All.Calc')
+custom_lowest(_x, len, maxbarsback) =>
+	x = _x
+	if bar_index == 0
+		x += x[maxbarsback] * 0  // max_bars_back
+	if len == 0
+		na
+	else if len == 1
+		x
+	else
+		_len = len
+		if na(x[len + 1]) != true
+			_len -= 1
+			_len
+		res = x
+		res := x
+		for i = 0 to _len by 1
+			res := math.min(res, x[i])
+		res
+custom_highest(_x, len, maxbarsback) =>
+	x = _x
+	if bar_index == 0
+		x += x[maxbarsback] * 0  // max_bars_back
+	if len == 0
+		na
+	else if len == 1
+		x
+	else
+		_len = len
+		if na(x[len + 1]) != true
+			_len -= 1
+		res = x
+		for i = 0 to _len by 1
+			res := math.max(res, x[i])
+		res
+
+fastSearchN(_xs, x, maxbarsback) =>  // xs - sorted, ascending
+	xs = _xs
+	if bar_index == 0
+		xs += xs[maxbarsback] * 0  // max_bars_back
+	left = 0
+	right = math.min(bar_index, maxbarsback)
+	mid = 0
+	if xs < x
+		0
+	else
+		for i = 0 to 9 by 1
+			mid := math.ceil((left + right) / 2)
+			if left == right
+				break
+			else if xs[mid] < x
+				right := mid
+				continue
+			else if xs[mid] > x
+				left := mid
+				continue
+			else
+				break
+		mid
+
+
+
+years5 = 365 * 4 + 366
+years5_ago = timenow - 1000 * 60 * 60 * 24 * years5
+countOfBars5YearAgo = fastSearchN(time, years5_ago, years5)
+
+weeks52 = 7 * 52
+weeks52_ago = timenow - 1000 * 60 * 60 * 24 * weeks52
+countOfBars52WeekAgo = fastSearchN(time, weeks52_ago, weeks52)
+plot(custom_lowest(low, countOfBars52WeekAgo, weeks52), title='price_52_week_low')
+plot(custom_highest(high, countOfBars52WeekAgo, weeks52), title='price_52_week_high')
+
+month6 = 180
+months6_ago = timenow - 1000 * 60 * 60 * 24 * month6
+countOfBars6MonthAgo = fastSearchN(time, months6_ago, month6)
+plot(custom_lowest(low, countOfBars6MonthAgo, month6), title='Low.6M')
+plot(custom_highest(high, countOfBars6MonthAgo, month6), title='High.6M')
+
+month3 = 90
+months3_ago = timenow - 1000 * 60 * 60 * 24 * month3
+countOfBars3MonthAgo = fastSearchN(time, months3_ago, month3)
+plot(custom_lowest(low, countOfBars3MonthAgo, month3), title='Low.3M')
+plot(custom_highest(high, countOfBars3MonthAgo, month3), title='High.3M')
+
+month1 = 30
+month_ago_this_bar = time - 1000 * 60 * 60 * 24 * month1
+month_ago = timenow - 1000 * 60 * 60 * 24 * month1
+countOfBars1MonthAgo = fastSearchN(time, month_ago, month1)
+countOfBars1MonthAgoThisBar = fastSearchN(time, month_ago_this_bar, month1)
+plot(custom_lowest(low, countOfBars1MonthAgo, month1), title='Low.1M')
+plot(custom_highest(high, countOfBars1MonthAgo, month1), title='High.1M')
+
+week1 = 7
+week_ago = timenow - 1000 * 60 * 60 * 24 * week1
+week_ago_this_bar = time - 1000 * 60 * 60 * 24 * week1
+countOfBarsWeekAgo = fastSearchN(time, week_ago, week1)
+countOfBarsWeekAgoThisBar = fastSearchN(time, week_ago_this_bar, week1)
+plot(custom_lowest(low, countOfBarsWeekAgo, week1), title='Low.5D')
+plot(custom_highest(high, countOfBarsWeekAgo, week1), title='High.5D')
+
+// volatility
+volatility(bb) =>
+	bb2 = bb
+	if bar_index == 0
+		bb2 := 365
+	if bb2 == 0
+		na
+	else
+		s = math.sum((high - low) / math.abs(low) * 100 / bb2, bb2)
+		if bb == 0
+			na
+		else
+			s
+
+plot(volatility(countOfBarsWeekAgoThisBar), title='Volatility.W')
+plot(volatility(countOfBars1MonthAgoThisBar), title='Volatility.M')
+plot(ta.tr(true) * 100 / math.abs(low), title='Volatility.D')
+
+// performance
+rateOfreturn(v1, v2) =>
+	(v1 - v2) * 100 / math.abs(v2)
+rr(_bb, maxbarsback) =>
+	bb = _bb
+	if bar_index == 0
+		bb += math.round(open[maxbarsback] * 0)  // max_bars_back
+	if bb == 0
+		na
+	else
+		rof = rateOfreturn(close, open[bb])
+		rof
+
+plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
+plot(rr(countOfBars1MonthAgo, month1), title='Perf.1M')
+plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')
+plot(rr(countOfBars6MonthAgo, month6), title='Perf.6M')
+plot(rr(countOfBars52WeekAgo, weeks52), title='Perf.Y')
+plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
+var lastYearOpen = float(na)
+if year > year[1]
+	lastYearOpen := open[1]
+plot(rateOfreturn(close, lastYearOpen), title='Perf.YTD')
+
+// business day
+plot(time_tradingday / 1000, title='time_business_day')
 
 // Bond Yield to price
 var bond_ticker = str.substring(syminfo.ticker, 0, str.length(syminfo.ticker) - 1)

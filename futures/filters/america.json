@@ -1825,13 +1825,6 @@
       ]
     },
     {
-      "s": "CBOT:ZSQ2022",
-      "f": [
-        null,
-        "CBOT:ZS"
-      ]
-    },
-    {
       "s": "CBOT:ZSQ2023",
       "f": [
         null,
@@ -4233,6 +4226,13 @@
       ]
     },
     {
+      "s": "CME:BTCG2023",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
       "s": "CME:BTCH2023",
       "f": [
         null,
@@ -4829,6 +4829,13 @@
     },
     {
       "s": "CME:GFQ2022",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
+      "s": "CME:GFQ2023",
       "f": [
         null,
         "CME:GF"

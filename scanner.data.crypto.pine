@@ -860,3 +860,10 @@ plot(perfAllUSD, title='Perf.All.USD', style = plot.style_columns)
 
 // business day
 plot(time_tradingday / 1000, title='time_business_day')
+
+// volume in base and quote currencies
+volBase = syminfo.volumetype != "quote" ? volume : (close != 0 ? volume / close : na)
+volQuote = syminfo.volumetype == "quote" ? volume : volume * close
+
+plot(volBase, title = "volume_base", style = plot.style_columns)
+plot(volQuote, title = "volume_quote", style = plot.style_columns)

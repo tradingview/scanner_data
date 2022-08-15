@@ -796,6 +796,13 @@ expr = syminfo.volumetype == "quote" ? volume : price*volume
 vol24h = request.security(syminfo.tickerid, cumVolTF, cum24hVol(expr), lookahead = barmerge.lookahead_off, currency = currency, ignore_invalid_symbol=true)
 plot(vol24h, title = "24h_vol", style = plot.style_columns)
 
+// volume in base and quote currencies
+volBase = syminfo.volumetype != "quote" ? volume : (close != 0 ? volume / close : na)
+volQuote = syminfo.volumetype == "quote" ? volume : volume * close
+
+plot(volBase, title = "volume_base", style = plot.style_columns)
+plot(volQuote, title = "volume_quote", style = plot.style_columns)
+
 // 24h volume prev period (needed for 24h vol change)
 
 cum24hVolPrevPeriod(v24h) =>
@@ -806,10 +813,8 @@ cum24hVolPrevPeriod(v24h) =>
     int BB24h = na
     for i = 0 to maxBufferSize
         if (time - time[i]) >= msIn24h
-            if (time - time[i]) == msIn24h
-                BB24h := i
+            BB24h := i
             break
-        BB24h := i
 
     src[BB24h]
 

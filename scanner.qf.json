@@ -694,5 +694,17 @@
   {
       "name": "total_revenue_fq_h",
       "type": "num_slice"
+  },
+  {
+      "name": "earnings_per_share_basic_fy_h",
+      "type": "num_slice"
+  },
+  {
+      "name": "net_income_fy_h",
+      "type": "num_slice"
+  },
+  {
+      "name": "free_cash_flow_fy_h",
+      "type": "num_slice"
   }
 ]

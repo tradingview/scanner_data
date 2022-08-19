@@ -82,5 +82,9 @@
   {
     "name": "volume-type",
     "type": "text"
+  },
+  {
+    "name": "crypto_categories",
+    "type": "set"
   }
 ]

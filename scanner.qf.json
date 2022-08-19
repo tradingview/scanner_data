@@ -682,5 +682,13 @@
     {
         "name": "country_code_fund",
         "type": "text"
+    },
+	{
+        "name": "total_revenue_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "total_revenue_fq_h",
+        "type": "num_slice"
     }
 ]

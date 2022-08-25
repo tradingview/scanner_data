@@ -686,5 +686,13 @@
 		{
 				"name": "daily-bar",
 				"type": "map"
+        },
+        {
+            "name": "total_revenue_fy_h",
+            "type": "num_slice"
+        },
+        {
+            "name": "total_revenue_fq_h",
+            "type": "num_slice"
         }
 ]

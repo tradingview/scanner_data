@@ -154,5 +154,9 @@
   {
     "name": "market_cap_calc",
     "type": "fundamental_price"
+  },
+  {
+    "name": "crypto_categories",
+    "type": "set"
   }
 ]

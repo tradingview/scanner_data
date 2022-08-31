@@ -80,6 +80,62 @@
     "type": "map"
   },
   {
+    "name": "circulating_supply",
+    "type": "number"
+  },
+  {
+    "name": "total_supply",
+    "type": "number"
+  },
+  {
+    "name": "max_supply",
+    "type": "number"
+  },
+  {
+    "name": "tvl",
+    "type": "number"
+  },
+  {
+    "name": "addresses_total",
+    "type": "number"
+  },
+  {
+    "name": "addresses_zero_balance",
+    "type": "number"
+  },
+  {
+    "name": "addresses_active",
+    "type": "number"
+  },
+  {
+    "name": "addresses_new",
+    "type": "number"
+  },
+  {
+    "name": "avg_balance",
+    "type": "number"
+  },
+  {
+    "name": "txs_count",
+    "type": "number"
+  },
+  {
+    "name": "txs_volume",
+    "type": "number"
+  },
+  {
+    "name": "txs_volume_usd",
+    "type": "number"
+  },
+  {
+    "name": "large_tx_count",
+    "type": "number"
+  },
+  {
+    "name": "large_tx_volume_usd",
+    "type": "number"
+  },
+  {
     "name": "volume-type",
     "type": "text"
   },

@@ -813,8 +813,10 @@ cum24hVolPrevPeriod(v24h) =>
     int BB24h = na
     for i = 0 to maxBufferSize
         if (time - time[i]) >= msIn24h
-            BB24h := i
+            if (time - time[i]) == msIn24h
+                BB24h := i
             break
+        BB24h := i
 
     src[BB24h]
 

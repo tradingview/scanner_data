@@ -1,1 +1,4507 @@
-
+{
+  "symbols": [
+    {
+      "s": "TRADEGATE:02M"
+    },
+    {
+      "s": "TRADEGATE:04Q"
+    },
+    {
+      "s": "TRADEGATE:07G"
+    },
+    {
+      "s": "TRADEGATE:096"
+    },
+    {
+      "s": "TRADEGATE:0AW"
+    },
+    {
+      "s": "TRADEGATE:0B2"
+    },
+    {
+      "s": "TRADEGATE:0CG"
+    },
+    {
+      "s": "TRADEGATE:0FF"
+    },
+    {
+      "s": "TRADEGATE:0HV"
+    },
+    {
+      "s": "TRADEGATE:0OE"
+    },
+    {
+      "s": "TRADEGATE:0PY"
+    },
+    {
+      "s": "TRADEGATE:0Q3"
+    },
+    {
+      "s": "TRADEGATE:0QF"
+    },
+    {
+      "s": "TRADEGATE:0QL"
+    },
+    {
+      "s": "TRADEGATE:0R6"
+    },
+    {
+      "s": "TRADEGATE:0S6"
+    },
+    {
+      "s": "TRADEGATE:0TA"
+    },
+    {
+      "s": "TRADEGATE:0V6"
+    },
+    {
+      "s": "TRADEGATE:0VVB"
+    },
+    {
+      "s": "TRADEGATE:0WF"
+    },
+    {
+      "s": "TRADEGATE:0WP"
+    },
+    {
+      "s": "TRADEGATE:0XI"
+    },
+    {
+      "s": "TRADEGATE:0YU"
+    },
+    {
+      "s": "TRADEGATE:0ZC"
+    },
+    {
+      "s": "TRADEGATE:10J"
+    },
+    {
+      "s": "TRADEGATE:12DA"
+    },
+    {
+      "s": "TRADEGATE:13B"
+    },
+    {
+      "s": "TRADEGATE:185"
+    },
+    {
+      "s": "TRADEGATE:18I"
+    },
+    {
+      "s": "TRADEGATE:1COV"
+    },
+    {
+      "s": "TRADEGATE:1ES"
+    },
+    {
+      "s": "TRADEGATE:1F9"
+    },
+    {
+      "s": "TRADEGATE:1FC"
+    },
+    {
+      "s": "TRADEGATE:1FH"
+    },
+    {
+      "s": "TRADEGATE:1GIA"
+    },
+    {
+      "s": "TRADEGATE:1HM"
+    },
+    {
+      "s": "TRADEGATE:1KR"
+    },
+    {
+      "s": "TRADEGATE:1KT"
+    },
+    {
+      "s": "TRADEGATE:1MA"
+    },
+    {
+      "s": "TRADEGATE:1N8"
+    },
+    {
+      "s": "TRADEGATE:1NBA"
+    },
+    {
+      "s": "TRADEGATE:1NR"
+    },
+    {
+      "s": "TRADEGATE:1PK"
+    },
+    {
+      "s": "TRADEGATE:1Q5"
+    },
+    {
+      "s": "TRADEGATE:1QZ"
+    },
+    {
+      "s": "TRADEGATE:1RG"
+    },
+    {
+      "s": "TRADEGATE:1RH"
+    },
+    {
+      "s": "TRADEGATE:1SI"
+    },
+    {
+      "s": "TRADEGATE:1TU"
+    },
+    {
+      "s": "TRADEGATE:1TY"
+    },
+    {
+      "s": "TRADEGATE:1U1"
+    },
+    {
+      "s": "TRADEGATE:1WR"
+    },
+    {
+      "s": "TRADEGATE:1YD"
+    },
+    {
+      "s": "TRADEGATE:1ZB"
+    },
+    {
+      "s": "TRADEGATE:22T"
+    },
+    {
+      "s": "TRADEGATE:27S"
+    },
+    {
+      "s": "TRADEGATE:2C0"
+    },
+    {
+      "s": "TRADEGATE:2CP"
+    },
+    {
+      "s": "TRADEGATE:2CU"
+    },
+    {
+      "s": "TRADEGATE:2EM"
+    },
+    {
+      "s": "TRADEGATE:2FB"
+    },
+    {
+      "s": "TRADEGATE:2FE"
+    },
+    {
+      "s": "TRADEGATE:2G1"
+    },
+    {
+      "s": "TRADEGATE:2GB"
+    },
+    {
+      "s": "TRADEGATE:2HP"
+    },
+    {
+      "s": "TRADEGATE:2HQ"
+    },
+    {
+      "s": "TRADEGATE:2HRA"
+    },
+    {
+      "s": "TRADEGATE:2II"
+    },
+    {
+      "s": "TRADEGATE:2INV"
+    },
+    {
+      "s": "TRADEGATE:2KD"
+    },
+    {
+      "s": "TRADEGATE:2M6"
+    },
+    {
+      "s": "TRADEGATE:2NJ"
+    },
+    {
+      "s": "TRADEGATE:2NN"
+    },
+    {
+      "s": "TRADEGATE:2ON"
+    },
+    {
+      "s": "TRADEGATE:2OY"
+    },
+    {
+      "s": "TRADEGATE:2PO"
+    },
+    {
+      "s": "TRADEGATE:2PP"
+    },
+    {
+      "s": "TRADEGATE:2QO"
+    },
+    {
+      "s": "TRADEGATE:2S3"
+    },
+    {
+      "s": "TRADEGATE:2X0"
+    },
+    {
+      "s": "TRADEGATE:2XT"
+    },
+    {
+      "s": "TRADEGATE:30L3"
+    },
+    {
+      "s": "TRADEGATE:33L"
+    },
+    {
+      "s": "TRADEGATE:39K"
+    },
+    {
+      "s": "TRADEGATE:3AD1"
+    },
+    {
+      "s": "TRADEGATE:3AG1"
+    },
+    {
+      "s": "TRADEGATE:3AI"
+    },
+    {
+      "s": "TRADEGATE:3BA"
+    },
+    {
+      "s": "TRADEGATE:3E2"
+    },
+    {
+      "s": "TRADEGATE:3E4"
+    },
+    {
+      "s": "TRADEGATE:3FF"
+    },
+    {
+      "s": "TRADEGATE:3HC"
+    },
+    {
+      "s": "TRADEGATE:3HM"
+    },
+    {
+      "s": "TRADEGATE:3IT"
+    },
+    {
+      "s": "TRADEGATE:3IX"
+    },
+    {
+      "s": "TRADEGATE:3JDA"
+    },
+    {
+      "s": "TRADEGATE:3KO"
+    },
+    {
+      "s": "TRADEGATE:3LN"
+    },
+    {
+      "s": "TRADEGATE:3NR"
+    },
+    {
+      "s": "TRADEGATE:3QD"
+    },
+    {
+      "s": "TRADEGATE:3RB"
+    },
+    {
+      "s": "TRADEGATE:3RCA"
+    },
+    {
+      "s": "TRADEGATE:3RH"
+    },
+    {
+      "s": "TRADEGATE:3RT"
+    },
+    {
+      "s": "TRADEGATE:3S9"
+    },
+    {
+      "s": "TRADEGATE:3V64"
+    },
+    {
+      "s": "TRADEGATE:42W"
+    },
+    {
+      "s": "TRADEGATE:44B"
+    },
+    {
+      "s": "TRADEGATE:47I"
+    },
+    {
+      "s": "TRADEGATE:48Z"
+    },
+    {
+      "s": "TRADEGATE:4AB"
+    },
+    {
+      "s": "TRADEGATE:4DS"
+    },
+    {
+      "s": "TRADEGATE:4F1"
+    },
+    {
+      "s": "TRADEGATE:4I1"
+    },
+    {
+      "s": "TRADEGATE:4JP"
+    },
+    {
+      "s": "TRADEGATE:4K8"
+    },
+    {
+      "s": "TRADEGATE:4LT1"
+    },
+    {
+      "s": "TRADEGATE:4MGN"
+    },
+    {
+      "s": "TRADEGATE:4PG"
+    },
+    {
+      "s": "TRADEGATE:4PN"
+    },
+    {
+      "s": "TRADEGATE:4S0"
+    },
+    {
+      "s": "TRADEGATE:4SP"
+    },
+    {
+      "s": "TRADEGATE:4XT"
+    },
+    {
+      "s": "TRADEGATE:53L"
+    },
+    {
+      "s": "TRADEGATE:53U"
+    },
+    {
+      "s": "TRADEGATE:55M"
+    },
+    {
+      "s": "TRADEGATE:56S1"
+    },
+    {
+      "s": "TRADEGATE:5AP"
+    },
+    {
+      "s": "TRADEGATE:5BG"
+    },
+    {
+      "s": "TRADEGATE:5CV"
+    },
+    {
+      "s": "TRADEGATE:5EA"
+    },
+    {
+      "s": "TRADEGATE:5G5"
+    },
+    {
+      "s": "TRADEGATE:5GH"
+    },
+    {
+      "s": "TRADEGATE:5IA"
+    },
+    {
+      "s": "TRADEGATE:5O7"
+    },
+    {
+      "s": "TRADEGATE:5Q5"
+    },
+    {
+      "s": "TRADEGATE:5UR"
+    },
+    {
+      "s": "TRADEGATE:5WO"
+    },
+    {
+      "s": "TRADEGATE:5XB"
+    },
+    {
+      "s": "TRADEGATE:5ZM"
+    },
+    {
+      "s": "TRADEGATE:639"
+    },
+    {
+      "s": "TRADEGATE:67X"
+    },
+    {
+      "s": "TRADEGATE:68V"
+    },
+    {
+      "s": "TRADEGATE:690D"
+    },
+    {
+      "s": "TRADEGATE:6D81"
+    },
+    {
+      "s": "TRADEGATE:6EQ"
+    },
+    {
+      "s": "TRADEGATE:6MK"
+    },
+    {
+      "s": "TRADEGATE:6UP"
+    },
+    {
+      "s": "TRADEGATE:6Z1"
+    },
+    {
+      "s": "TRADEGATE:703"
+    },
+    {
+      "s": "TRADEGATE:724"
+    },
+    {
+      "s": "TRADEGATE:751"
+    },
+    {
+      "s": "TRADEGATE:7AA"
+    },
+    {
+      "s": "TRADEGATE:7DB"
+    },
+    {
+      "s": "TRADEGATE:7DG"
+    },
+    {
+      "s": "TRADEGATE:7FH"
+    },
+    {
+      "s": "TRADEGATE:7GB"
+    },
+    {
+      "s": "TRADEGATE:7HP"
+    },
+    {
+      "s": "TRADEGATE:7PZ"
+    },
+    {
+      "s": "TRADEGATE:7SN"
+    },
+    {
+      "s": "TRADEGATE:7TC"
+    },
+    {
+      "s": "TRADEGATE:7VS"
+    },
+    {
+      "s": "TRADEGATE:7XP"
+    },
+    {
+      "s": "TRADEGATE:7YC"
+    },
+    {
+      "s": "TRADEGATE:81R"
+    },
+    {
+      "s": "TRADEGATE:847"
+    },
+    {
+      "s": "TRADEGATE:85S"
+    },
+    {
+      "s": "TRADEGATE:8BO"
+    },
+    {
+      "s": "TRADEGATE:8GM"
+    },
+    {
+      "s": "TRADEGATE:8L8C"
+    },
+    {
+      "s": "TRADEGATE:8NI"
+    },
+    {
+      "s": "TRADEGATE:8SP"
+    },
+    {
+      "s": "TRADEGATE:8TI"
+    },
+    {
+      "s": "TRADEGATE:8TRA"
+    },
+    {
+      "s": "TRADEGATE:8ZU"
+    },
+    {
+      "s": "TRADEGATE:93M1"
+    },
+    {
+      "s": "TRADEGATE:9BFA"
+    },
+    {
+      "s": "TRADEGATE:9MW"
+    },
+    {
+      "s": "TRADEGATE:9TC"
+    },
+    {
+      "s": "TRADEGATE:9TG"
+    },
+    {
+      "s": "TRADEGATE:9TS"
+    },
+    {
+      "s": "TRADEGATE:9VC"
+    },
+    {
+      "s": "TRADEGATE:9YM"
+    },
+    {
+      "s": "TRADEGATE:A1B"
+    },
+    {
+      "s": "TRADEGATE:A1G"
+    },
+    {
+      "s": "TRADEGATE:A1OS"
+    },
+    {
+      "s": "TRADEGATE:A4S"
+    },
+    {
+      "s": "TRADEGATE:A4Y"
+    },
+    {
+      "s": "TRADEGATE:A58"
+    },
+    {
+      "s": "TRADEGATE:A6T"
+    },
+    {
+      "s": "TRADEGATE:A7A"
+    },
+    {
+      "s": "TRADEGATE:AAD"
+    },
+    {
+      "s": "TRADEGATE:AAG"
+    },
+    {
+      "s": "TRADEGATE:AAQ1"
+    },
+    {
+      "s": "TRADEGATE:AB9"
+    },
+    {
+      "s": "TRADEGATE:ABEA"
+    },
+    {
+      "s": "TRADEGATE:ABEC"
+    },
+    {
+      "s": "TRADEGATE:ABG"
+    },
+    {
+      "s": "TRADEGATE:ABL"
+    },
+    {
+      "s": "TRADEGATE:ABO"
+    },
+    {
+      "s": "TRADEGATE:ABR"
+    },
+    {
+      "s": "TRADEGATE:ABS2"
+    },
+    {
+      "s": "TRADEGATE:ABW"
+    },
+    {
+      "s": "TRADEGATE:ABX"
+    },
+    {
+      "s": "TRADEGATE:ACO4"
+    },
+    {
+      "s": "TRADEGATE:ACO5"
+    },
+    {
+      "s": "TRADEGATE:ACR"
+    },
+    {
+      "s": "TRADEGATE:ACT"
+    },
+    {
+      "s": "TRADEGATE:ACWN"
+    },
+    {
+      "s": "TRADEGATE:ACX"
+    },
+    {
+      "s": "TRADEGATE:AD8"
+    },
+    {
+      "s": "TRADEGATE:ADB"
+    },
+    {
+      "s": "TRADEGATE:ADE"
+    },
+    {
+      "s": "TRADEGATE:ADJ"
+    },
+    {
+      "s": "TRADEGATE:ADL"
+    },
+    {
+      "s": "TRADEGATE:ADM"
+    },
+    {
+      "s": "TRADEGATE:ADN1"
+    },
+    {
+      "s": "TRADEGATE:ADP"
+    },
+    {
+      "s": "TRADEGATE:ADS"
+    },
+    {
+      "s": "TRADEGATE:ADV"
+    },
+    {
+      "s": "TRADEGATE:AE4"
+    },
+    {
+      "s": "TRADEGATE:AEC1"
+    },
+    {
+      "s": "TRADEGATE:AEIN"
+    },
+    {
+      "s": "TRADEGATE:AEND"
+    },
+    {
+      "s": "TRADEGATE:AEO"
+    },
+    {
+      "s": "TRADEGATE:AEP"
+    },
+    {
+      "s": "TRADEGATE:AES"
+    },
+    {
+      "s": "TRADEGATE:AEZ"
+    },
+    {
+      "s": "TRADEGATE:AFL"
+    },
+    {
+      "s": "TRADEGATE:AFR"
+    },
+    {
+      "s": "TRADEGATE:AFT"
+    },
+    {
+      "s": "TRADEGATE:AFW"
+    },
+    {
+      "s": "TRADEGATE:AFX"
+    },
+    {
+      "s": "TRADEGATE:AG1"
+    },
+    {
+      "s": "TRADEGATE:AGB2"
+    },
+    {
+      "s": "TRADEGATE:AGJ"
+    },
+    {
+      "s": "TRADEGATE:AH9"
+    },
+    {
+      "s": "TRADEGATE:AHC"
+    },
+    {
+      "s": "TRADEGATE:AHOG"
+    },
+    {
+      "s": "TRADEGATE:AI3A"
+    },
+    {
+      "s": "TRADEGATE:AIL"
+    },
+    {
+      "s": "TRADEGATE:AINN"
+    },
+    {
+      "s": "TRADEGATE:AIR"
+    },
+    {
+      "s": "TRADEGATE:AIXA"
+    },
+    {
+      "s": "TRADEGATE:AIY"
+    },
+    {
+      "s": "TRADEGATE:AJ91"
+    },
+    {
+      "s": "TRADEGATE:AJI"
+    },
+    {
+      "s": "TRADEGATE:AK1"
+    },
+    {
+      "s": "TRADEGATE:AK3"
+    },
+    {
+      "s": "TRADEGATE:AKG"
+    },
+    {
+      "s": "TRADEGATE:AKX"
+    },
+    {
+      "s": "TRADEGATE:ALD"
+    },
+    {
+      "s": "TRADEGATE:ALE"
+    },
+    {
+      "s": "TRADEGATE:ALG"
+    },
+    {
+      "s": "TRADEGATE:ALI"
+    },
+    {
+      "s": "TRADEGATE:ALS"
+    },
+    {
+      "s": "TRADEGATE:ALV"
+    },
+    {
+      "s": "TRADEGATE:ALZC"
+    },
+    {
+      "s": "TRADEGATE:AM3D"
+    },
+    {
+      "s": "TRADEGATE:AMC"
+    },
+    {
+      "s": "TRADEGATE:AMD"
+    },
+    {
+      "s": "TRADEGATE:AMG"
+    },
+    {
+      "s": "TRADEGATE:AMI"
+    },
+    {
+      "s": "TRADEGATE:AMMN"
+    },
+    {
+      "s": "TRADEGATE:AMZ"
+    },
+    {
+      "s": "TRADEGATE:AND"
+    },
+    {
+      "s": "TRADEGATE:ANGA"
+    },
+    {
+      "s": "TRADEGATE:ANI"
+    },
+    {
+      "s": "TRADEGATE:ANL"
+    },
+    {
+      "s": "TRADEGATE:AOF"
+    },
+    {
+      "s": "TRADEGATE:AOMD"
+    },
+    {
+      "s": "TRADEGATE:AOS"
+    },
+    {
+      "s": "TRADEGATE:AP2"
+    },
+    {
+      "s": "TRADEGATE:AP3"
+    },
+    {
+      "s": "TRADEGATE:APC"
+    },
+    {
+      "s": "TRADEGATE:APM"
+    },
+    {
+      "s": "TRADEGATE:APPH"
+    },
+    {
+      "s": "TRADEGATE:AR4"
+    },
+    {
+      "s": "TRADEGATE:ARC"
+    },
+    {
+      "s": "TRADEGATE:ARL"
+    },
+    {
+      "s": "TRADEGATE:ARRD"
+    },
+    {
+      "s": "TRADEGATE:ART"
+    },
+    {
+      "s": "TRADEGATE:ARW"
+    },
+    {
+      "s": "TRADEGATE:ASAA"
+    },
+    {
+      "s": "TRADEGATE:ASG"
+    },
+    {
+      "s": "TRADEGATE:ASI1"
+    },
+    {
+      "s": "TRADEGATE:ASME"
+    },
+    {
+      "s": "TRADEGATE:AT1"
+    },
+    {
+      "s": "TRADEGATE:ATD"
+    },
+    {
+      "s": "TRADEGATE:AUD"
+    },
+    {
+      "s": "TRADEGATE:AUS"
+    },
+    {
+      "s": "TRADEGATE:AV3"
+    },
+    {
+      "s": "TRADEGATE:AVS"
+    },
+    {
+      "s": "TRADEGATE:AWC"
+    },
+    {
+      "s": "TRADEGATE:AWM"
+    },
+    {
+      "s": "TRADEGATE:AXA"
+    },
+    {
+      "s": "TRADEGATE:AXI"
+    },
+    {
+      "s": "TRADEGATE:AXJ"
+    },
+    {
+      "s": "TRADEGATE:AXTZ"
+    },
+    {
+      "s": "TRADEGATE:AYJ"
+    },
+    {
+      "s": "TRADEGATE:AZ2"
+    },
+    {
+      "s": "TRADEGATE:AZU"
+    },
+    {
+      "s": "TRADEGATE:B15A"
+    },
+    {
+      "s": "TRADEGATE:B4B"
+    },
+    {
+      "s": "TRADEGATE:B4B3"
+    },
+    {
+      "s": "TRADEGATE:B5A"
+    },
+    {
+      "s": "TRADEGATE:B7A"
+    },
+    {
+      "s": "TRADEGATE:B7E"
+    },
+    {
+      "s": "TRADEGATE:B8A"
+    },
+    {
+      "s": "TRADEGATE:B8F"
+    },
+    {
+      "s": "TRADEGATE:BAC"
+    },
+    {
+      "s": "TRADEGATE:BAS"
+    },
+    {
+      "s": "TRADEGATE:BAYN"
+    },
+    {
+      "s": "TRADEGATE:BBDC"
+    },
+    {
+      "s": "TRADEGATE:BBK"
+    },
+    {
+      "s": "TRADEGATE:BBY"
+    },
+    {
+      "s": "TRADEGATE:BC8"
+    },
+    {
+      "s": "TRADEGATE:BCO"
+    },
+    {
+      "s": "TRADEGATE:BCY"
+    },
+    {
+      "s": "TRADEGATE:BDT"
+    },
+    {
+      "s": "TRADEGATE:BEI"
+    },
+    {
+      "s": "TRADEGATE:BEZ"
+    },
+    {
+      "s": "TRADEGATE:BFSA"
+    },
+    {
+      "s": "TRADEGATE:BGT"
+    },
+    {
+      "s": "TRADEGATE:BGW"
+    },
+    {
+      "s": "TRADEGATE:BI1"
+    },
+    {
+      "s": "TRADEGATE:BIG1"
+    },
+    {
+      "s": "TRADEGATE:BIJ"
+    },
+    {
+      "s": "TRADEGATE:BIKE"
+    },
+    {
+      "s": "TRADEGATE:BIO"
+    },
+    {
+      "s": "TRADEGATE:BIO3"
+    },
+    {
+      "s": "TRADEGATE:BIRG"
+    },
+    {
+      "s": "TRADEGATE:BJEB"
+    },
+    {
+      "s": "TRADEGATE:BK2"
+    },
+    {
+      "s": "TRADEGATE:BKHT"
+    },
+    {
+      "s": "TRADEGATE:BKN"
+    },
+    {
+      "s": "TRADEGATE:BL8"
+    },
+    {
+      "s": "TRADEGATE:BLQA"
+    },
+    {
+      "s": "TRADEGATE:BM8"
+    },
+    {
+      "s": "TRADEGATE:BMT"
+    },
+    {
+      "s": "TRADEGATE:BMW"
+    },
+    {
+      "s": "TRADEGATE:BMW3"
+    },
+    {
+      "s": "TRADEGATE:BN9"
+    },
+    {
+      "s": "TRADEGATE:BNN"
+    },
+    {
+      "s": "TRADEGATE:BNP"
+    },
+    {
+      "s": "TRADEGATE:BNR"
+    },
+    {
+      "s": "TRADEGATE:BO5"
+    },
+    {
+      "s": "TRADEGATE:BOA"
+    },
+    {
+      "s": "TRADEGATE:BOSS"
+    },
+    {
+      "s": "TRADEGATE:BOX"
+    },
+    {
+      "s": "TRADEGATE:BOY"
+    },
+    {
+      "s": "TRADEGATE:BPE5"
+    },
+    {
+      "s": "TRADEGATE:BRM"
+    },
+    {
+      "s": "TRADEGATE:BROC"
+    },
+    {
+      "s": "TRADEGATE:BRYN"
+    },
+    {
+      "s": "TRADEGATE:BSD2"
+    },
+    {
+      "s": "TRADEGATE:BSI"
+    },
+    {
+      "s": "TRADEGATE:BSL"
+    },
+    {
+      "s": "TRADEGATE:BSN"
+    },
+    {
+      "s": "TRADEGATE:BSP"
+    },
+    {
+      "s": "TRADEGATE:BST"
+    },
+    {
+      "s": "TRADEGATE:BSX"
+    },
+    {
+      "s": "TRADEGATE:BTL"
+    },
+    {
+      "s": "TRADEGATE:BU3"
+    },
+    {
+      "s": "TRADEGATE:BUWA"
+    },
+    {
+      "s": "TRADEGATE:BUZ1"
+    },
+    {
+      "s": "TRADEGATE:BV3"
+    },
+    {
+      "s": "TRADEGATE:BVB"
+    },
+    {
+      "s": "TRADEGATE:BWB"
+    },
+    {
+      "s": "TRADEGATE:BYW"
+    },
+    {
+      "s": "TRADEGATE:BYW6"
+    },
+    {
+      "s": "TRADEGATE:BZF1"
+    },
+    {
+      "s": "TRADEGATE:BZZ"
+    },
+    {
+      "s": "TRADEGATE:C0M"
+    },
+    {
+      "s": "TRADEGATE:C0Y"
+    },
+    {
+      "s": "TRADEGATE:C1V"
+    },
+    {
+      "s": "TRADEGATE:C38"
+    },
+    {
+      "s": "TRADEGATE:C3RY"
+    },
+    {
+      "s": "TRADEGATE:C6O"
+    },
+    {
+      "s": "TRADEGATE:C9F"
+    },
+    {
+      "s": "TRADEGATE:CAC1"
+    },
+    {
+      "s": "TRADEGATE:CAI"
+    },
+    {
+      "s": "TRADEGATE:CAP"
+    },
+    {
+      "s": "TRADEGATE:CAR"
+    },
+    {
+      "s": "TRADEGATE:CAT1"
+    },
+    {
+      "s": "TRADEGATE:CB1A"
+    },
+    {
+      "s": "TRADEGATE:CBHD"
+    },
+    {
+      "s": "TRADEGATE:CBK"
+    },
+    {
+      "s": "TRADEGATE:CCAP"
+    },
+    {
+      "s": "TRADEGATE:CCC3"
+    },
+    {
+      "s": "TRADEGATE:CDM1"
+    },
+    {
+      "s": "TRADEGATE:CDS"
+    },
+    {
+      "s": "TRADEGATE:CE2"
+    },
+    {
+      "s": "TRADEGATE:CEA"
+    },
+    {
+      "s": "TRADEGATE:CEC"
+    },
+    {
+      "s": "TRADEGATE:CEK"
+    },
+    {
+      "s": "TRADEGATE:CFX"
+    },
+    {
+      "s": "TRADEGATE:CGM"
+    },
+    {
+      "s": "TRADEGATE:CGN"
+    },
+    {
+      "s": "TRADEGATE:CH1A"
+    },
+    {
+      "s": "TRADEGATE:CHV"
+    },
+    {
+      "s": "TRADEGATE:CIE1"
+    },
+    {
+      "s": "TRADEGATE:CIS"
+    },
+    {
+      "s": "TRADEGATE:CIT"
+    },
+    {
+      "s": "TRADEGATE:CJ6"
+    },
+    {
+      "s": "TRADEGATE:CL2"
+    },
+    {
+      "s": "TRADEGATE:CLH"
+    },
+    {
+      "s": "TRADEGATE:CLIQ"
+    },
+    {
+      "s": "TRADEGATE:CMC"
+    },
+    {
+      "s": "TRADEGATE:CMS"
+    },
+    {
+      "s": "TRADEGATE:CNN1"
+    },
+    {
+      "s": "TRADEGATE:CNW"
+    },
+    {
+      "s": "TRADEGATE:CO3A"
+    },
+    {
+      "s": "TRADEGATE:COC"
+    },
+    {
+      "s": "TRADEGATE:COK"
+    },
+    {
+      "s": "TRADEGATE:CON"
+    },
+    {
+      "s": "TRADEGATE:COP"
+    },
+    {
+      "s": "TRADEGATE:CORE"
+    },
+    {
+      "s": "TRADEGATE:COY"
+    },
+    {
+      "s": "TRADEGATE:COZ"
+    },
+    {
+      "s": "TRADEGATE:CPA"
+    },
+    {
+      "s": "TRADEGATE:CPF"
+    },
+    {
+      "s": "TRADEGATE:CPK"
+    },
+    {
+      "s": "TRADEGATE:CPM"
+    },
+    {
+      "s": "TRADEGATE:CQD"
+    },
+    {
+      "s": "TRADEGATE:CR6A"
+    },
+    {
+      "s": "TRADEGATE:CRIN"
+    },
+    {
+      "s": "TRADEGATE:CRZK"
+    },
+    {
+      "s": "TRADEGATE:CSC"
+    },
+    {
+      "s": "TRADEGATE:CSG"
+    },
+    {
+      "s": "TRADEGATE:CSH"
+    },
+    {
+      "s": "TRADEGATE:CSQ"
+    },
+    {
+      "s": "TRADEGATE:CTO"
+    },
+    {
+      "s": "TRADEGATE:CTP2"
+    },
+    {
+      "s": "TRADEGATE:CTX"
+    },
+    {
+      "s": "TRADEGATE:CU2"
+    },
+    {
+      "s": "TRADEGATE:CUBB"
+    },
+    {
+      "s": "TRADEGATE:CUM"
+    },
+    {
+      "s": "TRADEGATE:CUP"
+    },
+    {
+      "s": "TRADEGATE:CVA"
+    },
+    {
+      "s": "TRADEGATE:CVS"
+    },
+    {
+      "s": "TRADEGATE:CVZ"
+    },
+    {
+      "s": "TRADEGATE:CWC"
+    },
+    {
+      "s": "TRADEGATE:CWN"
+    },
+    {
+      "s": "TRADEGATE:CXR"
+    },
+    {
+      "s": "TRADEGATE:CXU"
+    },
+    {
+      "s": "TRADEGATE:CXX"
+    },
+    {
+      "s": "TRADEGATE:CY1K"
+    },
+    {
+      "s": "TRADEGATE:CYR"
+    },
+    {
+      "s": "TRADEGATE:CYTH"
+    },
+    {
+      "s": "TRADEGATE:D2G"
+    },
+    {
+      "s": "TRADEGATE:D2MN"
+    },
+    {
+      "s": "TRADEGATE:D4S"
+    },
+    {
+      "s": "TRADEGATE:D6H"
+    },
+    {
+      "s": "TRADEGATE:D9W"
+    },
+    {
+      "s": "TRADEGATE:DAM"
+    },
+    {
+      "s": "TRADEGATE:DAP"
+    },
+    {
+      "s": "TRADEGATE:DAR"
+    },
+    {
+      "s": "TRADEGATE:DB1"
+    },
+    {
+      "s": "TRADEGATE:DBAN"
+    },
+    {
+      "s": "TRADEGATE:DBK"
+    },
+    {
+      "s": "TRADEGATE:DC4"
+    },
+    {
+      "s": "TRADEGATE:DC7"
+    },
+    {
+      "s": "TRADEGATE:DCO"
+    },
+    {
+      "s": "TRADEGATE:DDN"
+    },
+    {
+      "s": "TRADEGATE:DEF"
+    },
+    {
+      "s": "TRADEGATE:DEQ"
+    },
+    {
+      "s": "TRADEGATE:DEX"
+    },
+    {
+      "s": "TRADEGATE:DEZ"
+    },
+    {
+      "s": "TRADEGATE:DFTK"
+    },
+    {
+      "s": "TRADEGATE:DFV"
+    },
+    {
+      "s": "TRADEGATE:DG2"
+    },
+    {
+      "s": "TRADEGATE:DGR"
+    },
+    {
+      "s": "TRADEGATE:DHER"
+    },
+    {
+      "s": "TRADEGATE:DHR"
+    },
+    {
+      "s": "TRADEGATE:DIC"
+    },
+    {
+      "s": "TRADEGATE:DIE"
+    },
+    {
+      "s": "TRADEGATE:DIO"
+    },
+    {
+      "s": "TRADEGATE:DIP"
+    },
+    {
+      "s": "TRADEGATE:DKI"
+    },
+    {
+      "s": "TRADEGATE:DL7A"
+    },
+    {
+      "s": "TRADEGATE:DLX"
+    },
+    {
+      "s": "TRADEGATE:DMP"
+    },
+    {
+      "s": "TRADEGATE:DMRE"
+    },
+    {
+      "s": "TRADEGATE:DMW2"
+    },
+    {
+      "s": "TRADEGATE:DNO"
+    },
+    {
+      "s": "TRADEGATE:DNQ"
+    },
+    {
+      "s": "TRADEGATE:DO2"
+    },
+    {
+      "s": "TRADEGATE:DOD"
+    },
+    {
+      "s": "TRADEGATE:DOV"
+    },
+    {
+      "s": "TRADEGATE:DP4A"
+    },
+    {
+      "s": "TRADEGATE:DP4B"
+    },
+    {
+      "s": "TRADEGATE:DP5"
+    },
+    {
+      "s": "TRADEGATE:DPU"
+    },
+    {
+      "s": "TRADEGATE:DPW"
+    },
+    {
+      "s": "TRADEGATE:DR0"
+    },
+    {
+      "s": "TRADEGATE:DR3"
+    },
+    {
+      "s": "TRADEGATE:DRW3"
+    },
+    {
+      "s": "TRADEGATE:DRW8"
+    },
+    {
+      "s": "TRADEGATE:DSE"
+    },
+    {
+      "s": "TRADEGATE:DSG"
+    },
+    {
+      "s": "TRADEGATE:DSM2"
+    },
+    {
+      "s": "TRADEGATE:DT3"
+    },
+    {
+      "s": "TRADEGATE:DTD2"
+    },
+    {
+      "s": "TRADEGATE:DTE"
+    },
+    {
+      "s": "TRADEGATE:DTG"
+    },
+    {
+      "s": "TRADEGATE:DUB1"
+    },
+    {
+      "s": "TRADEGATE:DUE"
+    },
+    {
+      "s": "TRADEGATE:DUL"
+    },
+    {
+      "s": "TRADEGATE:DW1"
+    },
+    {
+      "s": "TRADEGATE:DWD"
+    },
+    {
+      "s": "TRADEGATE:DWH"
+    },
+    {
+      "s": "TRADEGATE:DWNI"
+    },
+    {
+      "s": "TRADEGATE:DWS"
+    },
+    {
+      "s": "TRADEGATE:DY2"
+    },
+    {
+      "s": "TRADEGATE:DY6"
+    },
+    {
+      "s": "TRADEGATE:DYH"
+    },
+    {
+      "s": "TRADEGATE:E0P"
+    },
+    {
+      "s": "TRADEGATE:E2F"
+    },
+    {
+      "s": "TRADEGATE:E3B"
+    },
+    {
+      "s": "TRADEGATE:E3X1"
+    },
+    {
+      "s": "TRADEGATE:E4C"
+    },
+    {
+      "s": "TRADEGATE:E6Z"
+    },
+    {
+      "s": "TRADEGATE:EAD"
+    },
+    {
+      "s": "TRADEGATE:EB2"
+    },
+    {
+      "s": "TRADEGATE:EB9"
+    },
+    {
+      "s": "TRADEGATE:EBA"
+    },
+    {
+      "s": "TRADEGATE:EBE"
+    },
+    {
+      "s": "TRADEGATE:EBK"
+    },
+    {
+      "s": "TRADEGATE:EBO"
+    },
+    {
+      "s": "TRADEGATE:ECF"
+    },
+    {
+      "s": "TRADEGATE:ECJ"
+    },
+    {
+      "s": "TRADEGATE:ECK"
+    },
+    {
+      "s": "TRADEGATE:ECV"
+    },
+    {
+      "s": "TRADEGATE:ECX"
+    },
+    {
+      "s": "TRADEGATE:ED4"
+    },
+    {
+      "s": "TRADEGATE:EDC"
+    },
+    {
+      "s": "TRADEGATE:EDL"
+    },
+    {
+      "s": "TRADEGATE:EFC1"
+    },
+    {
+      "s": "TRADEGATE:EFF"
+    },
+    {
+      "s": "TRADEGATE:EFX"
+    },
+    {
+      "s": "TRADEGATE:EI4"
+    },
+    {
+      "s": "TRADEGATE:EII"
+    },
+    {
+      "s": "TRADEGATE:EIN3"
+    },
+    {
+      "s": "TRADEGATE:EIX"
+    },
+    {
+      "s": "TRADEGATE:EJR"
+    },
+    {
+      "s": "TRADEGATE:EJT1"
+    },
+    {
+      "s": "TRADEGATE:EJXB"
+    },
+    {
+      "s": "TRADEGATE:EKT"
+    },
+    {
+      "s": "TRADEGATE:ELAA"
+    },
+    {
+      "s": "TRADEGATE:ELB"
+    },
+    {
+      "s": "TRADEGATE:ELG"
+    },
+    {
+      "s": "TRADEGATE:ELXC"
+    },
+    {
+      "s": "TRADEGATE:EM4"
+    },
+    {
+      "s": "TRADEGATE:EMH"
+    },
+    {
+      "s": "TRADEGATE:EMR"
+    },
+    {
+      "s": "TRADEGATE:ENA"
+    },
+    {
+      "s": "TRADEGATE:ENGL"
+    },
+    {
+      "s": "TRADEGATE:ENI"
+    },
+    {
+      "s": "TRADEGATE:ENL"
+    },
+    {
+      "s": "TRADEGATE:ENR"
+    },
+    {
+      "s": "TRADEGATE:ENUR"
+    },
+    {
+      "s": "TRADEGATE:EO5"
+    },
+    {
+      "s": "TRADEGATE:EOAN"
+    },
+    {
+      "s": "TRADEGATE:EOB"
+    },
+    {
+      "s": "TRADEGATE:EOT"
+    },
+    {
+      "s": "TRADEGATE:EQ6"
+    },
+    {
+      "s": "TRADEGATE:EQS"
+    },
+    {
+      "s": "TRADEGATE:ER7"
+    },
+    {
+      "s": "TRADEGATE:ERCB"
+    },
+    {
+      "s": "TRADEGATE:ERCG"
+    },
+    {
+      "s": "TRADEGATE:ERT"
+    },
+    {
+      "s": "TRADEGATE:ERWE"
+    },
+    {
+      "s": "TRADEGATE:ESF0"
+    },
+    {
+      "s": "TRADEGATE:ESL"
+    },
+    {
+      "s": "TRADEGATE:ETE"
+    },
+    {
+      "s": "TRADEGATE:ETG"
+    },
+    {
+      "s": "TRADEGATE:ETY"
+    },
+    {
+      "s": "TRADEGATE:EUZ"
+    },
+    {
+      "s": "TRADEGATE:EVD"
+    },
+    {
+      "s": "TRADEGATE:EVK"
+    },
+    {
+      "s": "TRADEGATE:EVT"
+    },
+    {
+      "s": "TRADEGATE:EW1"
+    },
+    {
+      "s": "TRADEGATE:EW3"
+    },
+    {
+      "s": "TRADEGATE:EWL"
+    },
+    {
+      "s": "TRADEGATE:EX9"
+    },
+    {
+      "s": "TRADEGATE:EXC"
+    },
+    {
+      "s": "TRADEGATE:EXL"
+    },
+    {
+      "s": "TRADEGATE:F03"
+    },
+    {
+      "s": "TRADEGATE:F3A"
+    },
+    {
+      "s": "TRADEGATE:F3C"
+    },
+    {
+      "s": "TRADEGATE:FA9"
+    },
+    {
+      "s": "TRADEGATE:FAA"
+    },
+    {
+      "s": "TRADEGATE:FAS"
+    },
+    {
+      "s": "TRADEGATE:FAU"
+    },
+    {
+      "s": "TRADEGATE:FB2A"
+    },
+    {
+      "s": "TRADEGATE:FC9"
+    },
+    {
+      "s": "TRADEGATE:FDO"
+    },
+    {
+      "s": "TRADEGATE:FDX"
+    },
+    {
+      "s": "TRADEGATE:FE7"
+    },
+    {
+      "s": "TRADEGATE:FEV"
+    },
+    {
+      "s": "TRADEGATE:FEY2"
+    },
+    {
+      "s": "TRADEGATE:FF24"
+    },
+    {
+      "s": "TRADEGATE:FFH"
+    },
+    {
+      "s": "TRADEGATE:FFV"
+    },
+    {
+      "s": "TRADEGATE:FFX"
+    },
+    {
+      "s": "TRADEGATE:FHL"
+    },
+    {
+      "s": "TRADEGATE:FIE"
+    },
+    {
+      "s": "TRADEGATE:FIV"
+    },
+    {
+      "s": "TRADEGATE:FJI"
+    },
+    {
+      "s": "TRADEGATE:FMC1"
+    },
+    {
+      "s": "TRADEGATE:FME"
+    },
+    {
+      "s": "TRADEGATE:FMQ"
+    },
+    {
+      "s": "TRADEGATE:FMV"
+    },
+    {
+      "s": "TRADEGATE:FNTN"
+    },
+    {
+      "s": "TRADEGATE:FO4N"
+    },
+    {
+      "s": "TRADEGATE:FO5"
+    },
+    {
+      "s": "TRADEGATE:FOO"
+    },
+    {
+      "s": "TRADEGATE:FPE"
+    },
+    {
+      "s": "TRADEGATE:FPE3"
+    },
+    {
+      "s": "TRADEGATE:FPH"
+    },
+    {
+      "s": "TRADEGATE:FPMB"
+    },
+    {
+      "s": "TRADEGATE:FQT"
+    },
+    {
+      "s": "TRADEGATE:FRA"
+    },
+    {
+      "s": "TRADEGATE:FRE"
+    },
+    {
+      "s": "TRADEGATE:FRK"
+    },
+    {
+      "s": "TRADEGATE:FRS"
+    },
+    {
+      "s": "TRADEGATE:FRU"
+    },
+    {
+      "s": "TRADEGATE:FSNT"
+    },
+    {
+      "s": "TRADEGATE:FTE"
+    },
+    {
+      "s": "TRADEGATE:FTK"
+    },
+    {
+      "s": "TRADEGATE:FU7"
+    },
+    {
+      "s": "TRADEGATE:FUC"
+    },
+    {
+      "s": "TRADEGATE:FUH"
+    },
+    {
+      "s": "TRADEGATE:FUO"
+    },
+    {
+      "s": "TRADEGATE:FUP"
+    },
+    {
+      "s": "TRADEGATE:FV8"
+    },
+    {
+      "s": "TRADEGATE:FWV"
+    },
+    {
+      "s": "TRADEGATE:FYB"
+    },
+    {
+      "s": "TRADEGATE:G14"
+    },
+    {
+      "s": "TRADEGATE:G1A"
+    },
+    {
+      "s": "TRADEGATE:G1P"
+    },
+    {
+      "s": "TRADEGATE:G1U"
+    },
+    {
+      "s": "TRADEGATE:G24"
+    },
+    {
+      "s": "TRADEGATE:G5NA"
+    },
+    {
+      "s": "TRADEGATE:G9Y"
+    },
+    {
+      "s": "TRADEGATE:GAG"
+    },
+    {
+      "s": "TRADEGATE:GAP"
+    },
+    {
+      "s": "TRADEGATE:GBF"
+    },
+    {
+      "s": "TRADEGATE:GBY"
+    },
+    {
+      "s": "TRADEGATE:GCP"
+    },
+    {
+      "s": "TRADEGATE:GDX"
+    },
+    {
+      "s": "TRADEGATE:GEY"
+    },
+    {
+      "s": "TRADEGATE:GF8"
+    },
+    {
+      "s": "TRADEGATE:GFG"
+    },
+    {
+      "s": "TRADEGATE:GFT"
+    },
+    {
+      "s": "TRADEGATE:GGS"
+    },
+    {
+      "s": "TRADEGATE:GHK"
+    },
+    {
+      "s": "TRADEGATE:GHO"
+    },
+    {
+      "s": "TRADEGATE:GIH"
+    },
+    {
+      "s": "TRADEGATE:GIL"
+    },
+    {
+      "s": "TRADEGATE:GIS"
+    },
+    {
+      "s": "TRADEGATE:GKS"
+    },
+    {
+      "s": "TRADEGATE:GLE"
+    },
+    {
+      "s": "TRADEGATE:GLJ"
+    },
+    {
+      "s": "TRADEGATE:GLO"
+    },
+    {
+      "s": "TRADEGATE:GLW"
+    },
+    {
+      "s": "TRADEGATE:GME"
+    },
+    {
+      "s": "TRADEGATE:GMM"
+    },
+    {
+      "s": "TRADEGATE:GMZ"
+    },
+    {
+      "s": "TRADEGATE:GOB"
+    },
+    {
+      "s": "TRADEGATE:GOS"
+    },
+    {
+      "s": "TRADEGATE:GPT"
+    },
+    {
+      "s": "TRADEGATE:GRM"
+    },
+    {
+      "s": "TRADEGATE:GS2C"
+    },
+    {
+      "s": "TRADEGATE:GS71"
+    },
+    {
+      "s": "TRADEGATE:GSC1"
+    },
+    {
+      "s": "TRADEGATE:GTK"
+    },
+    {
+      "s": "TRADEGATE:GTQ1"
+    },
+    {
+      "s": "TRADEGATE:GTR"
+    },
+    {
+      "s": "TRADEGATE:GTX"
+    },
+    {
+      "s": "TRADEGATE:GTY"
+    },
+    {
+      "s": "TRADEGATE:GU81"
+    },
+    {
+      "s": "TRADEGATE:GUG"
+    },
+    {
+      "s": "TRADEGATE:GUI"
+    },
+    {
+      "s": "TRADEGATE:GVP1"
+    },
+    {
+      "s": "TRADEGATE:GWW"
+    },
+    {
+      "s": "TRADEGATE:GXE"
+    },
+    {
+      "s": "TRADEGATE:GXI"
+    },
+    {
+      "s": "TRADEGATE:GYC"
+    },
+    {
+      "s": "TRADEGATE:GZF"
+    },
+    {
+      "s": "TRADEGATE:H0Q"
+    },
+    {
+      "s": "TRADEGATE:H24"
+    },
+    {
+      "s": "TRADEGATE:H2O"
+    },
+    {
+      "s": "TRADEGATE:H5E"
+    },
+    {
+      "s": "TRADEGATE:H6D0"
+    },
+    {
+      "s": "TRADEGATE:H6W"
+    },
+    {
+      "s": "TRADEGATE:H9W"
+    },
+    {
+      "s": "TRADEGATE:H9Y"
+    },
+    {
+      "s": "TRADEGATE:HA6"
+    },
+    {
+      "s": "TRADEGATE:HAEK"
+    },
+    {
+      "s": "TRADEGATE:HAG"
+    },
+    {
+      "s": "TRADEGATE:HAL"
+    },
+    {
+      "s": "TRADEGATE:HAM1"
+    },
+    {
+      "s": "TRADEGATE:HAR"
+    },
+    {
+      "s": "TRADEGATE:HAS"
+    },
+    {
+      "s": "TRADEGATE:HAW"
+    },
+    {
+      "s": "TRADEGATE:HBC1"
+    },
+    {
+      "s": "TRADEGATE:HBH"
+    },
+    {
+      "s": "TRADEGATE:HCL"
+    },
+    {
+      "s": "TRADEGATE:HDD"
+    },
+    {
+      "s": "TRADEGATE:HDI"
+    },
+    {
+      "s": "TRADEGATE:HDM"
+    },
+    {
+      "s": "TRADEGATE:HEI"
+    },
+    {
+      "s": "TRADEGATE:HEN"
+    },
+    {
+      "s": "TRADEGATE:HEN3"
+    },
+    {
+      "s": "TRADEGATE:HF5"
+    },
+    {
+      "s": "TRADEGATE:HFF"
+    },
+    {
+      "s": "TRADEGATE:HFG"
+    },
+    {
+      "s": "TRADEGATE:HGEA"
+    },
+    {
+      "s": "TRADEGATE:HGR"
+    },
+    {
+      "s": "TRADEGATE:HHFA"
+    },
+    {
+      "s": "TRADEGATE:HHHA"
+    },
+    {
+      "s": "TRADEGATE:HI91"
+    },
+    {
+      "s": "TRADEGATE:HIA1"
+    },
+    {
+      "s": "TRADEGATE:HIK"
+    },
+    {
+      "s": "TRADEGATE:HLAG"
+    },
+    {
+      "s": "TRADEGATE:HLE"
+    },
+    {
+      "s": "TRADEGATE:HLG"
+    },
+    {
+      "s": "TRADEGATE:HLX"
+    },
+    {
+      "s": "TRADEGATE:HMI"
+    },
+    {
+      "s": "TRADEGATE:HMSB"
+    },
+    {
+      "s": "TRADEGATE:HN9"
+    },
+    {
+      "s": "TRADEGATE:HNL"
+    },
+    {
+      "s": "TRADEGATE:HNM"
+    },
+    {
+      "s": "TRADEGATE:HNR1"
+    },
+    {
+      "s": "TRADEGATE:HO1"
+    },
+    {
+      "s": "TRADEGATE:HO7"
+    },
+    {
+      "s": "TRADEGATE:HOJ"
+    },
+    {
+      "s": "TRADEGATE:HOT"
+    },
+    {
+      "s": "TRADEGATE:HOU"
+    },
+    {
+      "s": "TRADEGATE:HP3A"
+    },
+    {
+      "s": "TRADEGATE:HPBK"
+    },
+    {
+      "s": "TRADEGATE:HPC"
+    },
+    {
+      "s": "TRADEGATE:HPHA"
+    },
+    {
+      "s": "TRADEGATE:HRPK"
+    },
+    {
+      "s": "TRADEGATE:HRS"
+    },
+    {
+      "s": "TRADEGATE:HRZ"
+    },
+    {
+      "s": "TRADEGATE:HRZA"
+    },
+    {
+      "s": "TRADEGATE:HS2"
+    },
+    {
+      "s": "TRADEGATE:HSY"
+    },
+    {
+      "s": "TRADEGATE:HTG"
+    },
+    {
+      "s": "TRADEGATE:HU3"
+    },
+    {
+      "s": "TRADEGATE:HUKI"
+    },
+    {
+      "s": "TRADEGATE:HUM"
+    },
+    {
+      "s": "TRADEGATE:HUN2"
+    },
+    {
+      "s": "TRADEGATE:HXCK"
+    },
+    {
+      "s": "TRADEGATE:HY7"
+    },
+    {
+      "s": "TRADEGATE:HYB"
+    },
+    {
+      "s": "TRADEGATE:HYQ"
+    },
+    {
+      "s": "TRADEGATE:I5G"
+    },
+    {
+      "s": "TRADEGATE:I8M"
+    },
+    {
+      "s": "TRADEGATE:I8R"
+    },
+    {
+      "s": "TRADEGATE:IBE1"
+    },
+    {
+      "s": "TRADEGATE:IBM"
+    },
+    {
+      "s": "TRADEGATE:IBU"
+    },
+    {
+      "s": "TRADEGATE:IC2"
+    },
+    {
+      "s": "TRADEGATE:IC8"
+    },
+    {
+      "s": "TRADEGATE:IDI"
+    },
+    {
+      "s": "TRADEGATE:IDP"
+    },
+    {
+      "s": "TRADEGATE:IES"
+    },
+    {
+      "s": "TRADEGATE:IF0"
+    },
+    {
+      "s": "TRADEGATE:IFF"
+    },
+    {
+      "s": "TRADEGATE:IFX"
+    },
+    {
+      "s": "TRADEGATE:IJ7"
+    },
+    {
+      "s": "TRADEGATE:IJ8"
+    },
+    {
+      "s": "TRADEGATE:ILM1"
+    },
+    {
+      "s": "TRADEGATE:ILT"
+    },
+    {
+      "s": "TRADEGATE:ILU"
+    },
+    {
+      "s": "TRADEGATE:IMU"
+    },
+    {
+      "s": "TRADEGATE:INH"
+    },
+    {
+      "s": "TRADEGATE:INL"
+    },
+    {
+      "s": "TRADEGATE:INN1"
+    },
+    {
+      "s": "TRADEGATE:INP"
+    },
+    {
+      "s": "TRADEGATE:INR"
+    },
+    {
+      "s": "TRADEGATE:INS"
+    },
+    {
+      "s": "TRADEGATE:INW"
+    },
+    {
+      "s": "TRADEGATE:IOC"
+    },
+    {
+      "s": "TRADEGATE:IPG"
+    },
+    {
+      "s": "TRADEGATE:IPHB"
+    },
+    {
+      "s": "TRADEGATE:IS7"
+    },
+    {
+      "s": "TRADEGATE:IS8"
+    },
+    {
+      "s": "TRADEGATE:ISHA"
+    },
+    {
+      "s": "TRADEGATE:ISU"
+    },
+    {
+      "s": "TRADEGATE:ITB"
+    },
+    {
+      "s": "TRADEGATE:ITN"
+    },
+    {
+      "s": "TRADEGATE:ITU"
+    },
+    {
+      "s": "TRADEGATE:IUI1"
+    },
+    {
+      "s": "TRADEGATE:IUR"
+    },
+    {
+      "s": "TRADEGATE:IVS"
+    },
+    {
+      "s": "TRADEGATE:IVSD"
+    },
+    {
+      "s": "TRADEGATE:IVU"
+    },
+    {
+      "s": "TRADEGATE:IVX"
+    },
+    {
+      "s": "TRADEGATE:IX1"
+    },
+    {
+      "s": "TRADEGATE:IXD1"
+    },
+    {
+      "s": "TRADEGATE:IXX"
+    },
+    {
+      "s": "TRADEGATE:J5A"
+    },
+    {
+      "s": "TRADEGATE:J6I"
+    },
+    {
+      "s": "TRADEGATE:JAP"
+    },
+    {
+      "s": "TRADEGATE:JAT"
+    },
+    {
+      "s": "TRADEGATE:JAW"
+    },
+    {
+      "s": "TRADEGATE:JDC"
+    },
+    {
+      "s": "TRADEGATE:JDE"
+    },
+    {
+      "s": "TRADEGATE:JEN"
+    },
+    {
+      "s": "TRADEGATE:JM2"
+    },
+    {
+      "s": "TRADEGATE:JNJ"
+    },
+    {
+      "s": "TRADEGATE:JNP"
+    },
+    {
+      "s": "TRADEGATE:JSI"
+    },
+    {
+      "s": "TRADEGATE:JST"
+    },
+    {
+      "s": "TRADEGATE:JUN3"
+    },
+    {
+      "s": "TRADEGATE:K1R"
+    },
+    {
+      "s": "TRADEGATE:K2Y"
+    },
+    {
+      "s": "TRADEGATE:K8A"
+    },
+    {
+      "s": "TRADEGATE:KA8"
+    },
+    {
+      "s": "TRADEGATE:KABN"
+    },
+    {
+      "s": "TRADEGATE:KAO"
+    },
+    {
+      "s": "TRADEGATE:KB1B"
+    },
+    {
+      "s": "TRADEGATE:KBX"
+    },
+    {
+      "s": "TRADEGATE:KC4"
+    },
+    {
+      "s": "TRADEGATE:KCO"
+    },
+    {
+      "s": "TRADEGATE:KDB"
+    },
+    {
+      "s": "TRADEGATE:KEK"
+    },
+    {
+      "s": "TRADEGATE:KEL"
+    },
+    {
+      "s": "TRADEGATE:KEM"
+    },
+    {
+      "s": "TRADEGATE:KEY"
+    },
+    {
+      "s": "TRADEGATE:KFI1"
+    },
+    {
+      "s": "TRADEGATE:KGX"
+    },
+    {
+      "s": "TRADEGATE:KHE"
+    },
+    {
+      "s": "TRADEGATE:KHNZ"
+    },
+    {
+      "s": "TRADEGATE:KIN2"
+    },
+    {
+      "s": "TRADEGATE:KIR"
+    },
+    {
+      "s": "TRADEGATE:KLA"
+    },
+    {
+      "s": "TRADEGATE:KLI1"
+    },
+    {
+      "s": "TRADEGATE:KLN"
+    },
+    {
+      "s": "TRADEGATE:KMY"
+    },
+    {
+      "s": "TRADEGATE:KOA"
+    },
+    {
+      "s": "TRADEGATE:KOG"
+    },
+    {
+      "s": "TRADEGATE:KOM1"
+    },
+    {
+      "s": "TRADEGATE:KPI1"
+    },
+    {
+      "s": "TRADEGATE:KRN"
+    },
+    {
+      "s": "TRADEGATE:KRZ"
+    },
+    {
+      "s": "TRADEGATE:KSB"
+    },
+    {
+      "s": "TRADEGATE:KSB3"
+    },
+    {
+      "s": "TRADEGATE:KSC"
+    },
+    {
+      "s": "TRADEGATE:KST"
+    },
+    {
+      "s": "TRADEGATE:KTA"
+    },
+    {
+      "s": "TRADEGATE:KTEK"
+    },
+    {
+      "s": "TRADEGATE:KTF"
+    },
+    {
+      "s": "TRADEGATE:KTN"
+    },
+    {
+      "s": "TRADEGATE:KU1"
+    },
+    {
+      "s": "TRADEGATE:KU2"
+    },
+    {
+      "s": "TRADEGATE:KWG"
+    },
+    {
+      "s": "TRADEGATE:KWI"
+    },
+    {
+      "s": "TRADEGATE:KWS"
+    },
+    {
+      "s": "TRADEGATE:KYR"
+    },
+    {
+      "s": "TRADEGATE:L1OA"
+    },
+    {
+      "s": "TRADEGATE:L60"
+    },
+    {
+      "s": "TRADEGATE:LA3A"
+    },
+    {
+      "s": "TRADEGATE:LAR"
+    },
+    {
+      "s": "TRADEGATE:LB3A"
+    },
+    {
+      "s": "TRADEGATE:LCO"
+    },
+    {
+      "s": "TRADEGATE:LCQ"
+    },
+    {
+      "s": "TRADEGATE:LCR"
+    },
+    {
+      "s": "TRADEGATE:LDZA"
+    },
+    {
+      "s": "TRADEGATE:LEG"
+    },
+    {
+      "s": "TRADEGATE:LEI"
+    },
+    {
+      "s": "TRADEGATE:LEN"
+    },
+    {
+      "s": "TRADEGATE:LEO"
+    },
+    {
+      "s": "TRADEGATE:LHA"
+    },
+    {
+      "s": "TRADEGATE:LIK"
+    },
+    {
+      "s": "TRADEGATE:LIN"
+    },
+    {
+      "s": "TRADEGATE:LLD"
+    },
+    {
+      "s": "TRADEGATE:LLY"
+    },
+    {
+      "s": "TRADEGATE:LMIA"
+    },
+    {
+      "s": "TRADEGATE:LMO"
+    },
+    {
+      "s": "TRADEGATE:LOM"
+    },
+    {
+      "s": "TRADEGATE:LOR"
+    },
+    {
+      "s": "TRADEGATE:LPK"
+    },
+    {
+      "s": "TRADEGATE:LS4C"
+    },
+    {
+      "s": "TRADEGATE:LSX"
+    },
+    {
+      "s": "TRADEGATE:LTEC"
+    },
+    {
+      "s": "TRADEGATE:LU2"
+    },
+    {
+      "s": "TRADEGATE:LUS1"
+    },
+    {
+      "s": "TRADEGATE:LV2B"
+    },
+    {
+      "s": "TRADEGATE:LWE"
+    },
+    {
+      "s": "TRADEGATE:LXI"
+    },
+    {
+      "s": "TRADEGATE:LXS"
+    },
+    {
+      "s": "TRADEGATE:LY0"
+    },
+    {
+      "s": "TRADEGATE:M0YN"
+    },
+    {
+      "s": "TRADEGATE:M12"
+    },
+    {
+      "s": "TRADEGATE:M3BK"
+    },
+    {
+      "s": "TRADEGATE:M3C"
+    },
+    {
+      "s": "TRADEGATE:M3V"
+    },
+    {
+      "s": "TRADEGATE:M4I"
+    },
+    {
+      "s": "TRADEGATE:M4N"
+    },
+    {
+      "s": "TRADEGATE:M5Z"
+    },
+    {
+      "s": "TRADEGATE:M6P"
+    },
+    {
+      "s": "TRADEGATE:M6Q"
+    },
+    {
+      "s": "TRADEGATE:M7U"
+    },
+    {
+      "s": "TRADEGATE:M8G"
+    },
+    {
+      "s": "TRADEGATE:M8V"
+    },
+    {
+      "s": "TRADEGATE:MA10"
+    },
+    {
+      "s": "TRADEGATE:MAK"
+    },
+    {
+      "s": "TRADEGATE:MAQ"
+    },
+    {
+      "s": "TRADEGATE:MARA"
+    },
+    {
+      "s": "TRADEGATE:MAT1"
+    },
+    {
+      "s": "TRADEGATE:MBB"
+    },
+    {
+      "s": "TRADEGATE:MBG"
+    },
+    {
+      "s": "TRADEGATE:MBI"
+    },
+    {
+      "s": "TRADEGATE:MBK"
+    },
+    {
+      "s": "TRADEGATE:MBQ"
+    },
+    {
+      "s": "TRADEGATE:MCE"
+    },
+    {
+      "s": "TRADEGATE:MCP"
+    },
+    {
+      "s": "TRADEGATE:MDG1"
+    },
+    {
+      "s": "TRADEGATE:MDN"
+    },
+    {
+      "s": "TRADEGATE:MDO"
+    },
+    {
+      "s": "TRADEGATE:MEA"
+    },
+    {
+      "s": "TRADEGATE:MED"
+    },
+    {
+      "s": "TRADEGATE:MES"
+    },
+    {
+      "s": "TRADEGATE:MEX"
+    },
+    {
+      "s": "TRADEGATE:MFU"
+    },
+    {
+      "s": "TRADEGATE:MFZ"
+    },
+    {
+      "s": "TRADEGATE:MGE"
+    },
+    {
+      "s": "TRADEGATE:MGG"
+    },
+    {
+      "s": "TRADEGATE:MH6"
+    },
+    {
+      "s": "TRADEGATE:MHL"
+    },
+    {
+      "s": "TRADEGATE:MIE1"
+    },
+    {
+      "s": "TRADEGATE:MIH"
+    },
+    {
+      "s": "TRADEGATE:MILA"
+    },
+    {
+      "s": "TRADEGATE:MK2A"
+    },
+    {
+      "s": "TRADEGATE:MLB1"
+    },
+    {
+      "s": "TRADEGATE:MLL"
+    },
+    {
+      "s": "TRADEGATE:MLP"
+    },
+    {
+      "s": "TRADEGATE:MM7"
+    },
+    {
+      "s": "TRADEGATE:MMM"
+    },
+    {
+      "s": "TRADEGATE:MOH"
+    },
+    {
+      "s": "TRADEGATE:MOR"
+    },
+    {
+      "s": "TRADEGATE:MP2"
+    },
+    {
+      "s": "TRADEGATE:MPCK"
+    },
+    {
+      "s": "TRADEGATE:MPN"
+    },
+    {
+      "s": "TRADEGATE:MQG0"
+    },
+    {
+      "s": "TRADEGATE:MRK"
+    },
+    {
+      "s": "TRADEGATE:MRX"
+    },
+    {
+      "s": "TRADEGATE:MSAG"
+    },
+    {
+      "s": "TRADEGATE:MSF"
+    },
+    {
+      "s": "TRADEGATE:MSN"
+    },
+    {
+      "s": "TRADEGATE:MSQ"
+    },
+    {
+      "s": "TRADEGATE:MTA"
+    },
+    {
+      "s": "TRADEGATE:MTE"
+    },
+    {
+      "s": "TRADEGATE:MTLA"
+    },
+    {
+      "s": "TRADEGATE:MTO"
+    },
+    {
+      "s": "TRADEGATE:MTS1"
+    },
+    {
+      "s": "TRADEGATE:MTT"
+    },
+    {
+      "s": "TRADEGATE:MTX"
+    },
+    {
+      "s": "TRADEGATE:MTZ"
+    },
+    {
+      "s": "TRADEGATE:MUB"
+    },
+    {
+      "s": "TRADEGATE:MUM"
+    },
+    {
+      "s": "TRADEGATE:MUR1"
+    },
+    {
+      "s": "TRADEGATE:MUV2"
+    },
+    {
+      "s": "TRADEGATE:MUX"
+    },
+    {
+      "s": "TRADEGATE:MVIN"
+    },
+    {
+      "s": "TRADEGATE:MVV1"
+    },
+    {
+      "s": "TRADEGATE:MW7"
+    },
+    {
+      "s": "TRADEGATE:MWB"
+    },
+    {
+      "s": "TRADEGATE:MWI"
+    },
+    {
+      "s": "TRADEGATE:MWZ"
+    },
+    {
+      "s": "TRADEGATE:MX4A"
+    },
+    {
+      "s": "TRADEGATE:MXHN"
+    },
+    {
+      "s": "TRADEGATE:MYD"
+    },
+    {
+      "s": "TRADEGATE:MYM"
+    },
+    {
+      "s": "TRADEGATE:MZ8"
+    },
+    {
+      "s": "TRADEGATE:MZA"
+    },
+    {
+      "s": "TRADEGATE:MZX"
+    },
+    {
+      "s": "TRADEGATE:N4G"
+    },
+    {
+      "s": "TRADEGATE:N7T"
+    },
+    {
+      "s": "TRADEGATE:N9B"
+    },
+    {
+      "s": "TRADEGATE:NA9"
+    },
+    {
+      "s": "TRADEGATE:NAQ"
+    },
+    {
+      "s": "TRADEGATE:NB2"
+    },
+    {
+      "s": "TRADEGATE:NBC"
+    },
+    {
+      "s": "TRADEGATE:NBG6"
+    },
+    {
+      "s": "TRADEGATE:NC5A"
+    },
+    {
+      "s": "TRADEGATE:NCB"
+    },
+    {
+      "s": "TRADEGATE:NCYD"
+    },
+    {
+      "s": "TRADEGATE:NDA"
+    },
+    {
+      "s": "TRADEGATE:NDX1"
+    },
+    {
+      "s": "TRADEGATE:NEF"
+    },
+    {
+      "s": "TRADEGATE:NEM"
+    },
+    {
+      "s": "TRADEGATE:NF4"
+    },
+    {
+      "s": "TRADEGATE:NFC"
+    },
+    {
+      "s": "TRADEGATE:NFN"
+    },
+    {
+      "s": "TRADEGATE:NFS"
+    },
+    {
+      "s": "TRADEGATE:NGLB"
+    },
+    {
+      "s": "TRADEGATE:NIB"
+    },
+    {
+      "s": "TRADEGATE:NIIN"
+    },
+    {
+      "s": "TRADEGATE:NKE"
+    },
+    {
+      "s": "TRADEGATE:NKN"
+    },
+    {
+      "s": "TRADEGATE:NMI"
+    },
+    {
+      "s": "TRADEGATE:NMM"
+    },
+    {
+      "s": "TRADEGATE:NN6"
+    },
+    {
+      "s": "TRADEGATE:NNGF"
+    },
+    {
+      "s": "TRADEGATE:NNL"
+    },
+    {
+      "s": "TRADEGATE:NOA3"
+    },
+    {
+      "s": "TRADEGATE:NOEJ"
+    },
+    {
+      "s": "TRADEGATE:NOH1"
+    },
+    {
+      "s": "TRADEGATE:NOU"
+    },
+    {
+      "s": "TRADEGATE:NOVC"
+    },
+    {
+      "s": "TRADEGATE:NP5"
+    },
+    {
+      "s": "TRADEGATE:NPS"
+    },
+    {
+      "s": "TRADEGATE:NPW1"
+    },
+    {
+      "s": "TRADEGATE:NPX"
+    },
+    {
+      "s": "TRADEGATE:NQG"
+    },
+    {
+      "s": "TRADEGATE:NRA"
+    },
+    {
+      "s": "TRADEGATE:NRN"
+    },
+    {
+      "s": "TRADEGATE:NSE"
+    },
+    {
+      "s": "TRADEGATE:NT5"
+    },
+    {
+      "s": "TRADEGATE:NTA"
+    },
+    {
+      "s": "TRADEGATE:NTG"
+    },
+    {
+      "s": "TRADEGATE:NTH"
+    },
+    {
+      "s": "TRADEGATE:NTO"
+    },
+    {
+      "s": "TRADEGATE:NTT"
+    },
+    {
+      "s": "TRADEGATE:NUO"
+    },
+    {
+      "s": "TRADEGATE:NUVA"
+    },
+    {
+      "s": "TRADEGATE:NVD"
+    },
+    {
+      "s": "TRADEGATE:NVJP"
+    },
+    {
+      "s": "TRADEGATE:NVM"
+    },
+    {
+      "s": "TRADEGATE:NWJ"
+    },
+    {
+      "s": "TRADEGATE:NWO"
+    },
+    {
+      "s": "TRADEGATE:NWT"
+    },
+    {
+      "s": "TRADEGATE:NXR"
+    },
+    {
+      "s": "TRADEGATE:NXS"
+    },
+    {
+      "s": "TRADEGATE:NXU"
+    },
+    {
+      "s": "TRADEGATE:NY7"
+    },
+    {
+      "s": "TRADEGATE:NYKA"
+    },
+    {
+      "s": "TRADEGATE:O2C"
+    },
+    {
+      "s": "TRADEGATE:O2D"
+    },
+    {
+      "s": "TRADEGATE:O3P"
+    },
+    {
+      "s": "TRADEGATE:O5Q"
+    },
+    {
+      "s": "TRADEGATE:OBS"
+    },
+    {
+      "s": "TRADEGATE:OC5"
+    },
+    {
+      "s": "TRADEGATE:OCN"
+    },
+    {
+      "s": "TRADEGATE:ODP1"
+    },
+    {
+      "s": "TRADEGATE:OEMA"
+    },
+    {
+      "s": "TRADEGATE:OEWA"
+    },
+    {
+      "s": "TRADEGATE:OHB"
+    },
+    {
+      "s": "TRADEGATE:OIC"
+    },
+    {
+      "s": "TRADEGATE:OLL"
+    },
+    {
+      "s": "TRADEGATE:OLN"
+    },
+    {
+      "s": "TRADEGATE:OM4"
+    },
+    {
+      "s": "TRADEGATE:OMV"
+    },
+    {
+      "s": "TRADEGATE:ONK"
+    },
+    {
+      "s": "TRADEGATE:OPC"
+    },
+    {
+      "s": "TRADEGATE:ORC"
+    },
+    {
+      "s": "TRADEGATE:OSA"
+    },
+    {
+      "s": "TRADEGATE:OSP2"
+    },
+    {
+      "s": "TRADEGATE:OTA"
+    },
+    {
+      "s": "TRADEGATE:OYC"
+    },
+    {
+      "s": "TRADEGATE:P4N"
+    },
+    {
+      "s": "TRADEGATE:P4O"
+    },
+    {
+      "s": "TRADEGATE:P5P"
+    },
+    {
+      "s": "TRADEGATE:P6K0"
+    },
+    {
+      "s": "TRADEGATE:PA8"
+    },
+    {
+      "s": "TRADEGATE:PA9"
+    },
+    {
+      "s": "TRADEGATE:PAE"
+    },
+    {
+      "s": "TRADEGATE:PAH3"
+    },
+    {
+      "s": "TRADEGATE:PAL"
+    },
+    {
+      "s": "TRADEGATE:PAR"
+    },
+    {
+      "s": "TRADEGATE:PAT"
+    },
+    {
+      "s": "TRADEGATE:PBB"
+    },
+    {
+      "s": "TRADEGATE:PBY"
+    },
+    {
+      "s": "TRADEGATE:PC8"
+    },
+    {
+      "s": "TRADEGATE:PCE1"
+    },
+    {
+      "s": "TRADEGATE:PCG"
+    },
+    {
+      "s": "TRADEGATE:PCR"
+    },
+    {
+      "s": "TRADEGATE:PCX"
+    },
+    {
+      "s": "TRADEGATE:PCZ"
+    },
+    {
+      "s": "TRADEGATE:PD2"
+    },
+    {
+      "s": "TRADEGATE:PDA"
+    },
+    {
+      "s": "TRADEGATE:PEO"
+    },
+    {
+      "s": "TRADEGATE:PEP"
+    },
+    {
+      "s": "TRADEGATE:PER"
+    },
+    {
+      "s": "TRADEGATE:PES"
+    },
+    {
+      "s": "TRADEGATE:PFE"
+    },
+    {
+      "s": "TRADEGATE:PFV"
+    },
+    {
+      "s": "TRADEGATE:PGN"
+    },
+    {
+      "s": "TRADEGATE:PGV"
+    },
+    {
+      "s": "TRADEGATE:PHI1"
+    },
+    {
+      "s": "TRADEGATE:PHM7"
+    },
+    {
+      "s": "TRADEGATE:PKN"
+    },
+    {
+      "s": "TRADEGATE:PLL"
+    },
+    {
+      "s": "TRADEGATE:PLUN"
+    },
+    {
+      "s": "TRADEGATE:PMAG"
+    },
+    {
+      "s": "TRADEGATE:PMTA"
+    },
+    {
+      "s": "TRADEGATE:PNE3"
+    },
+    {
+      "s": "TRADEGATE:PNP"
+    },
+    {
+      "s": "TRADEGATE:PNT"
+    },
+    {
+      "s": "TRADEGATE:PO0"
+    },
+    {
+      "s": "TRADEGATE:POH1"
+    },
+    {
+      "s": "TRADEGATE:PP9"
+    },
+    {
+      "s": "TRADEGATE:PPQ"
+    },
+    {
+      "s": "TRADEGATE:PPX"
+    },
+    {
+      "s": "TRADEGATE:PRG"
+    },
+    {
+      "s": "TRADEGATE:PRL"
+    },
+    {
+      "s": "TRADEGATE:PRRB"
+    },
+    {
+      "s": "TRADEGATE:PRU"
+    },
+    {
+      "s": "TRADEGATE:PRY"
+    },
+    {
+      "s": "TRADEGATE:PSAN"
+    },
+    {
+      "s": "TRADEGATE:PSE"
+    },
+    {
+      "s": "TRADEGATE:PSG"
+    },
+    {
+      "s": "TRADEGATE:PSH"
+    },
+    {
+      "s": "TRADEGATE:PSM"
+    },
+    {
+      "s": "TRADEGATE:PTX"
+    },
+    {
+      "s": "TRADEGATE:PU11"
+    },
+    {
+      "s": "TRADEGATE:PU7"
+    },
+    {
+      "s": "TRADEGATE:PUM"
+    },
+    {
+      "s": "TRADEGATE:PWC"
+    },
+    {
+      "s": "TRADEGATE:PWO"
+    },
+    {
+      "s": "TRADEGATE:PZS"
+    },
+    {
+      "s": "TRADEGATE:PZX"
+    },
+    {
+      "s": "TRADEGATE:QAA"
+    },
+    {
+      "s": "TRADEGATE:QB7"
+    },
+    {
+      "s": "TRADEGATE:QBY"
+    },
+    {
+      "s": "TRADEGATE:QCI"
+    },
+    {
+      "s": "TRADEGATE:QDI"
+    },
+    {
+      "s": "TRADEGATE:QH9"
+    },
+    {
+      "s": "TRADEGATE:QIA"
+    },
+    {
+      "s": "TRADEGATE:QNT2"
+    },
+    {
+      "s": "TRADEGATE:QTS"
+    },
+    {
+      "s": "TRADEGATE:R35"
+    },
+    {
+      "s": "TRADEGATE:R66"
+    },
+    {
+      "s": "TRADEGATE:R6C0"
+    },
+    {
+      "s": "TRADEGATE:RAA"
+    },
+    {
+      "s": "TRADEGATE:RAG"
+    },
+    {
+      "s": "TRADEGATE:RAW"
+    },
+    {
+      "s": "TRADEGATE:RB8"
+    },
+    {
+      "s": "TRADEGATE:RCF"
+    },
+    {
+      "s": "TRADEGATE:RCMN"
+    },
+    {
+      "s": "TRADEGATE:RCVR"
+    },
+    {
+      "s": "TRADEGATE:RDEB"
+    },
+    {
+      "s": "TRADEGATE:RDO"
+    },
+    {
+      "s": "TRADEGATE:RE21"
+    },
+    {
+      "s": "TRADEGATE:REP"
+    },
+    {
+      "s": "TRADEGATE:REW"
+    },
+    {
+      "s": "TRADEGATE:RG3"
+    },
+    {
+      "s": "TRADEGATE:RGO"
+    },
+    {
+      "s": "TRADEGATE:RHK"
+    },
+    {
+      "s": "TRADEGATE:RHM"
+    },
+    {
+      "s": "TRADEGATE:RHSR"
+    },
+    {
+      "s": "TRADEGATE:RI1"
+    },
+    {
+      "s": "TRADEGATE:RIO1"
+    },
+    {
+      "s": "TRADEGATE:RIR"
+    },
+    {
+      "s": "TRADEGATE:RITN"
+    },
+    {
+      "s": "TRADEGATE:RJF"
+    },
+    {
+      "s": "TRADEGATE:RK8"
+    },
+    {
+      "s": "TRADEGATE:RKQ"
+    },
+    {
+      "s": "TRADEGATE:RLF"
+    },
+    {
+      "s": "TRADEGATE:RMB"
+    },
+    {
+      "s": "TRADEGATE:RN7"
+    },
+    {
+      "s": "TRADEGATE:RNL"
+    },
+    {
+      "s": "TRADEGATE:RNY"
+    },
+    {
+      "s": "TRADEGATE:ROI"
+    },
+    {
+      "s": "TRADEGATE:ROM"
+    },
+    {
+      "s": "TRADEGATE:ROP"
+    },
+    {
+      "s": "TRADEGATE:RPU"
+    },
+    {
+      "s": "TRADEGATE:RRTL"
+    },
+    {
+      "s": "TRADEGATE:RRU"
+    },
+    {
+      "s": "TRADEGATE:RS1"
+    },
+    {
+      "s": "TRADEGATE:RSH"
+    },
+    {
+      "s": "TRADEGATE:RSL2"
+    },
+    {
+      "s": "TRADEGATE:RSO"
+    },
+    {
+      "s": "TRADEGATE:RTC"
+    },
+    {
+      "s": "TRADEGATE:RTZ"
+    },
+    {
+      "s": "TRADEGATE:RV6"
+    },
+    {
+      "s": "TRADEGATE:RWE"
+    },
+    {
+      "s": "TRADEGATE:RWL"
+    },
+    {
+      "s": "TRADEGATE:RY4C"
+    },
+    {
+      "s": "TRADEGATE:RYC"
+    },
+    {
+      "s": "TRADEGATE:RYSD"
+    },
+    {
+      "s": "TRADEGATE:S0U"
+    },
+    {
+      "s": "TRADEGATE:S4AA"
+    },
+    {
+      "s": "TRADEGATE:S64"
+    },
+    {
+      "s": "TRADEGATE:S6IA"
+    },
+    {
+      "s": "TRADEGATE:S6P"
+    },
+    {
+      "s": "TRADEGATE:S8T"
+    },
+    {
+      "s": "TRADEGATE:S92"
+    },
+    {
+      "s": "TRADEGATE:S9I"
+    },
+    {
+      "s": "TRADEGATE:SAE"
+    },
+    {
+      "s": "TRADEGATE:SAP"
+    },
+    {
+      "s": "TRADEGATE:SAX"
+    },
+    {
+      "s": "TRADEGATE:SAYN"
+    },
+    {
+      "s": "TRADEGATE:SB1"
+    },
+    {
+      "s": "TRADEGATE:SBS"
+    },
+    {
+      "s": "TRADEGATE:SBX"
+    },
+    {
+      "s": "TRADEGATE:SC8"
+    },
+    {
+      "s": "TRADEGATE:SCE"
+    },
+    {
+      "s": "TRADEGATE:SCT"
+    },
+    {
+      "s": "TRADEGATE:SD1"
+    },
+    {
+      "s": "TRADEGATE:SD5"
+    },
+    {
+      "s": "TRADEGATE:SDF"
+    },
+    {
+      "s": "TRADEGATE:SDRC"
+    },
+    {
+      "s": "TRADEGATE:SE4"
+    },
+    {
+      "s": "TRADEGATE:SE7"
+    },
+    {
+      "s": "TRADEGATE:SEH"
+    },
+    {
+      "s": "TRADEGATE:SEJ1"
+    },
+    {
+      "s": "TRADEGATE:SEW"
+    },
+    {
+      "s": "TRADEGATE:SF3"
+    },
+    {
+      "s": "TRADEGATE:SFE"
+    },
+    {
+      "s": "TRADEGATE:SFQ"
+    },
+    {
+      "s": "TRADEGATE:SFT"
+    },
+    {
+      "s": "TRADEGATE:SGE"
+    },
+    {
+      "s": "TRADEGATE:SGF"
+    },
+    {
+      "s": "TRADEGATE:SGL"
+    },
+    {
+      "s": "TRADEGATE:SGM"
+    },
+    {
+      "s": "TRADEGATE:SHA"
+    },
+    {
+      "s": "TRADEGATE:SHD"
+    },
+    {
+      "s": "TRADEGATE:SHF"
+    },
+    {
+      "s": "TRADEGATE:SHG"
+    },
+    {
+      "s": "TRADEGATE:SHL"
+    },
+    {
+      "s": "TRADEGATE:SHM"
+    },
+    {
+      "s": "TRADEGATE:SHWK"
+    },
+    {
+      "s": "TRADEGATE:SIE"
+    },
+    {
+      "s": "TRADEGATE:SII"
+    },
+    {
+      "s": "TRADEGATE:SIS"
+    },
+    {
+      "s": "TRADEGATE:SIX2"
+    },
+    {
+      "s": "TRADEGATE:SIX3"
+    },
+    {
+      "s": "TRADEGATE:SJ3"
+    },
+    {
+      "s": "TRADEGATE:SJJ"
+    },
+    {
+      "s": "TRADEGATE:SJL"
+    },
+    {
+      "s": "TRADEGATE:SK3"
+    },
+    {
+      "s": "TRADEGATE:SKB"
+    },
+    {
+      "s": "TRADEGATE:SKM"
+    },
+    {
+      "s": "TRADEGATE:SLL"
+    },
+    {
+      "s": "TRADEGATE:SLS"
+    },
+    {
+      "s": "TRADEGATE:SMA"
+    },
+    {
+      "s": "TRADEGATE:SMHN"
+    },
+    {
+      "s": "TRADEGATE:SMM"
+    },
+    {
+      "s": "TRADEGATE:SND"
+    },
+    {
+      "s": "TRADEGATE:SNG"
+    },
+    {
+      "s": "TRADEGATE:SNO"
+    },
+    {
+      "s": "TRADEGATE:SNW"
+    },
+    {
+      "s": "TRADEGATE:SOBA"
+    },
+    {
+      "s": "TRADEGATE:SOH1"
+    },
+    {
+      "s": "TRADEGATE:SON1"
+    },
+    {
+      "s": "TRADEGATE:SOT"
+    },
+    {
+      "s": "TRADEGATE:SOU"
+    },
+    {
+      "s": "TRADEGATE:SOW"
+    },
+    {
+      "s": "TRADEGATE:SP1"
+    },
+    {
+      "s": "TRADEGATE:SPM"
+    },
+    {
+      "s": "TRADEGATE:SPU"
+    },
+    {
+      "s": "TRADEGATE:SQ3"
+    },
+    {
+      "s": "TRADEGATE:SQU"
+    },
+    {
+      "s": "TRADEGATE:SR9"
+    },
+    {
+      "s": "TRADEGATE:SRB"
+    },
+    {
+      "s": "TRADEGATE:SRT"
+    },
+    {
+      "s": "TRADEGATE:SRT3"
+    },
+    {
+      "s": "TRADEGATE:ST5"
+    },
+    {
+      "s": "TRADEGATE:STM"
+    },
+    {
+      "s": "TRADEGATE:STO3"
+    },
+    {
+      "s": "TRADEGATE:SUK"
+    },
+    {
+      "s": "TRADEGATE:SUMA"
+    },
+    {
+      "s": "TRADEGATE:SUR"
+    },
+    {
+      "s": "TRADEGATE:SUSE"
+    },
+    {
+      "s": "TRADEGATE:SV4"
+    },
+    {
+      "s": "TRADEGATE:SVE"
+    },
+    {
+      "s": "TRADEGATE:SWA"
+    },
+    {
+      "s": "TRADEGATE:SWC"
+    },
+    {
+      "s": "TRADEGATE:SWD"
+    },
+    {
+      "s": "TRADEGATE:SWF"
+    },
+    {
+      "s": "TRADEGATE:SWG"
+    },
+    {
+      "s": "TRADEGATE:SWMC"
+    },
+    {
+      "s": "TRADEGATE:SWN"
+    },
+    {
+      "s": "TRADEGATE:SWS"
+    },
+    {
+      "s": "TRADEGATE:SY1"
+    },
+    {
+      "s": "TRADEGATE:SYAB"
+    },
+    {
+      "s": "TRADEGATE:SYK"
+    },
+    {
+      "s": "TRADEGATE:SYM"
+    },
+    {
+      "s": "TRADEGATE:SYP"
+    },
+    {
+      "s": "TRADEGATE:SYT"
+    },
+    {
+      "s": "TRADEGATE:SYV"
+    },
+    {
+      "s": "TRADEGATE:SYY"
+    },
+    {
+      "s": "TRADEGATE:SYZ"
+    },
+    {
+      "s": "TRADEGATE:SZ2"
+    },
+    {
+      "s": "TRADEGATE:SZG"
+    },
+    {
+      "s": "TRADEGATE:SZU"
+    },
+    {
+      "s": "TRADEGATE:T1L"
+    },
+    {
+      "s": "TRADEGATE:T3T1"
+    },
+    {
+      "s": "TRADEGATE:T5O"
+    },
+    {
+      "s": "TRADEGATE:T5W"
+    },
+    {
+      "s": "TRADEGATE:T6A"
+    },
+    {
+      "s": "TRADEGATE:T77"
+    },
+    {
+      "s": "TRADEGATE:T9Z"
+    },
+    {
+      "s": "TRADEGATE:TA1"
+    },
+    {
+      "s": "TRADEGATE:TBH"
+    },
+    {
+      "s": "TRADEGATE:TCO0"
+    },
+    {
+      "s": "TRADEGATE:TDB"
+    },
+    {
+      "s": "TRADEGATE:TDK"
+    },
+    {
+      "s": "TRADEGATE:TEG"
+    },
+    {
+      "s": "TRADEGATE:TEL1"
+    },
+    {
+      "s": "TRADEGATE:TEQ"
+    },
+    {
+      "s": "TRADEGATE:TEX"
+    },
+    {
+      "s": "TRADEGATE:TEY"
+    },
+    {
+      "s": "TRADEGATE:TF7A"
+    },
+    {
+      "s": "TRADEGATE:TGHN"
+    },
+    {
+      "s": "TRADEGATE:TGR"
+    },
+    {
+      "s": "TRADEGATE:TGT"
+    },
+    {
+      "s": "TRADEGATE:TII"
+    },
+    {
+      "s": "TRADEGATE:TIJ"
+    },
+    {
+      "s": "TRADEGATE:TIMA"
+    },
+    {
+      "s": "TRADEGATE:TJX"
+    },
+    {
+      "s": "TRADEGATE:TKA"
+    },
+    {
+      "s": "TRADEGATE:TKD"
+    },
+    {
+      "s": "TRADEGATE:TKE"
+    },
+    {
+      "s": "TRADEGATE:TKK1"
+    },
+    {
+      "s": "TRADEGATE:TKY"
+    },
+    {
+      "s": "TRADEGATE:TL0"
+    },
+    {
+      "s": "TRADEGATE:TLIK"
+    },
+    {
+      "s": "TRADEGATE:TLS"
+    },
+    {
+      "s": "TRADEGATE:TLX"
+    },
+    {
+      "s": "TRADEGATE:TM5"
+    },
+    {
+      "s": "TRADEGATE:TMJ"
+    },
+    {
+      "s": "TRADEGATE:TMV"
+    },
+    {
+      "s": "TRADEGATE:TN8"
+    },
+    {
+      "s": "TRADEGATE:TNE5"
+    },
+    {
+      "s": "TRADEGATE:TNIE"
+    },
+    {
+      "s": "TRADEGATE:TNTC"
+    },
+    {
+      "s": "TRADEGATE:TOM"
+    },
+    {
+      "s": "TRADEGATE:TOR1"
+    },
+    {
+      "s": "TRADEGATE:TOTB"
+    },
+    {
+      "s": "TRADEGATE:TPE"
+    },
+    {
+      "s": "TRADEGATE:TQI"
+    },
+    {
+      "s": "TRADEGATE:TQIR"
+    },
+    {
+      "s": "TRADEGATE:TR1"
+    },
+    {
+      "s": "TRADEGATE:TR4"
+    },
+    {
+      "s": "TRADEGATE:TR9"
+    },
+    {
+      "s": "TRADEGATE:TRS"
+    },
+    {
+      "s": "TRADEGATE:TRU"
+    },
+    {
+      "s": "TRADEGATE:TRVC"
+    },
+    {
+      "s": "TRADEGATE:TSE1"
+    },
+    {
+      "s": "TRADEGATE:TT8"
+    },
+    {
+      "s": "TRADEGATE:TTA"
+    },
+    {
+      "s": "TRADEGATE:TTEB"
+    },
+    {
+      "s": "TRADEGATE:TTK"
+    },
+    {
+      "s": "TRADEGATE:TTO"
+    },
+    {
+      "s": "TRADEGATE:TTR1"
+    },
+    {
+      "s": "TRADEGATE:TU0"
+    },
+    {
+      "s": "TRADEGATE:TUI1"
+    },
+    {
+      "s": "TRADEGATE:TUO"
+    },
+    {
+      "s": "TRADEGATE:TWL"
+    },
+    {
+      "s": "TRADEGATE:TWR"
+    },
+    {
+      "s": "TRADEGATE:TWW"
+    },
+    {
+      "s": "TRADEGATE:TYC1"
+    },
+    {
+      "s": "TRADEGATE:TYG"
+    },
+    {
+      "s": "TRADEGATE:TYIA"
+    },
+    {
+      "s": "TRADEGATE:U6Z"
+    },
+    {
+      "s": "TRADEGATE:U9R"
+    },
+    {
+      "s": "TRADEGATE:U9RA"
+    },
+    {
+      "s": "TRADEGATE:UAL1"
+    },
+    {
+      "s": "TRADEGATE:UB5"
+    },
+    {
+      "s": "TRADEGATE:UBK"
+    },
+    {
+      "s": "TRADEGATE:UCCP"
+    },
+    {
+      "s": "TRADEGATE:UDC"
+    },
+    {
+      "s": "TRADEGATE:UEN"
+    },
+    {
+      "s": "TRADEGATE:UK2"
+    },
+    {
+      "s": "TRADEGATE:ULC"
+    },
+    {
+      "s": "TRADEGATE:UMDK"
+    },
+    {
+      "s": "TRADEGATE:UN01"
+    },
+    {
+      "s": "TRADEGATE:UN9"
+    },
+    {
+      "s": "TRADEGATE:UNH"
+    },
+    {
+      "s": "TRADEGATE:UNP"
+    },
+    {
+      "s": "TRADEGATE:UNS1"
+    },
+    {
+      "s": "TRADEGATE:UNVB"
+    },
+    {
+      "s": "TRADEGATE:UOF"
+    },
+    {
+      "s": "TRADEGATE:UPAB"
+    },
+    {
+      "s": "TRADEGATE:UQ1"
+    },
+    {
+      "s": "TRADEGATE:UR3"
+    },
+    {
+      "s": "TRADEGATE:US8"
+    },
+    {
+      "s": "TRADEGATE:USS"
+    },
+    {
+      "s": "TRADEGATE:USX1"
+    },
+    {
+      "s": "TRADEGATE:USY1"
+    },
+    {
+      "s": "TRADEGATE:UT8"
+    },
+    {
+      "s": "TRADEGATE:UTDI"
+    },
+    {
+      "s": "TRADEGATE:UUU"
+    },
+    {
+      "s": "TRADEGATE:UVV"
+    },
+    {
+      "s": "TRADEGATE:UWA"
+    },
+    {
+      "s": "TRADEGATE:UWS"
+    },
+    {
+      "s": "TRADEGATE:UZU"
+    },
+    {
+      "s": "TRADEGATE:V1L"
+    },
+    {
+      "s": "TRADEGATE:V3S"
+    },
+    {
+      "s": "TRADEGATE:V3V"
+    },
+    {
+      "s": "TRADEGATE:V6C"
+    },
+    {
+      "s": "TRADEGATE:VAN"
+    },
+    {
+      "s": "TRADEGATE:VAR1"
+    },
+    {
+      "s": "TRADEGATE:VAS"
+    },
+    {
+      "s": "TRADEGATE:VBK"
+    },
+    {
+      "s": "TRADEGATE:VEE"
+    },
+    {
+      "s": "TRADEGATE:VEO"
+    },
+    {
+      "s": "TRADEGATE:VEZ"
+    },
+    {
+      "s": "TRADEGATE:VFP"
+    },
+    {
+      "s": "TRADEGATE:VG8"
+    },
+    {
+      "s": "TRADEGATE:VH2"
+    },
+    {
+      "s": "TRADEGATE:VIA"
+    },
+    {
+      "s": "TRADEGATE:VIB3"
+    },
+    {
+      "s": "TRADEGATE:VIH1"
+    },
+    {
+      "s": "TRADEGATE:VIP"
+    },
+    {
+      "s": "TRADEGATE:VNA"
+    },
+    {
+      "s": "TRADEGATE:VNX"
+    },
+    {
+      "s": "TRADEGATE:VODI"
+    },
+    {
+      "s": "TRADEGATE:VOS"
+    },
+    {
+      "s": "TRADEGATE:VOW"
+    },
+    {
+      "s": "TRADEGATE:VOW3"
+    },
+    {
+      "s": "TRADEGATE:VQT"
+    },
+    {
+      "s": "TRADEGATE:VROS"
+    },
+    {
+      "s": "TRADEGATE:VRS"
+    },
+    {
+      "s": "TRADEGATE:VSC"
+    },
+    {
+      "s": "TRADEGATE:VTSC"
+    },
+    {
+      "s": "TRADEGATE:VTWR"
+    },
+    {
+      "s": "TRADEGATE:VTY"
+    },
+    {
+      "s": "TRADEGATE:VUL"
+    },
+    {
+      "s": "TRADEGATE:VVD"
+    },
+    {
+      "s": "TRADEGATE:VVU"
+    },
+    {
+      "s": "TRADEGATE:VVV3"
+    },
+    {
+      "s": "TRADEGATE:VWSB"
+    },
+    {
+      "s": "TRADEGATE:VX1"
+    },
+    {
+      "s": "TRADEGATE:W3U"
+    },
+    {
+      "s": "TRADEGATE:W8A"
+    },
+    {
+      "s": "TRADEGATE:WAC"
+    },
+    {
+      "s": "TRADEGATE:WAF"
+    },
+    {
+      "s": "TRADEGATE:WB2"
+    },
+    {
+      "s": "TRADEGATE:WCH"
+    },
+    {
+      "s": "TRADEGATE:WCMK"
+    },
+    {
+      "s": "TRADEGATE:WDC"
+    },
+    {
+      "s": "TRADEGATE:WDL1"
+    },
+    {
+      "s": "TRADEGATE:WDP"
+    },
+    {
+      "s": "TRADEGATE:WEW"
+    },
+    {
+      "s": "TRADEGATE:WFA"
+    },
+    {
+      "s": "TRADEGATE:WFC"
+    },
+    {
+      "s": "TRADEGATE:WFS"
+    },
+    {
+      "s": "TRADEGATE:WHR"
+    },
+    {
+      "s": "TRADEGATE:WI4"
+    },
+    {
+      "s": "TRADEGATE:WIB"
+    },
+    {
+      "s": "TRADEGATE:WIG1"
+    },
+    {
+      "s": "TRADEGATE:WM1"
+    },
+    {
+      "s": "TRADEGATE:WMB"
+    },
+    {
+      "s": "TRADEGATE:WMT"
+    },
+    {
+      "s": "TRADEGATE:WNL"
+    },
+    {
+      "s": "TRADEGATE:WO6"
+    },
+    {
+      "s": "TRADEGATE:WOO"
+    },
+    {
+      "s": "TRADEGATE:WOSB"
+    },
+    {
+      "s": "TRADEGATE:WPOB"
+    },
+    {
+      "s": "TRADEGATE:WPS"
+    },
+    {
+      "s": "TRADEGATE:WR1"
+    },
+    {
+      "s": "TRADEGATE:WSU"
+    },
+    {
+      "s": "TRADEGATE:WTY"
+    },
+    {
+      "s": "TRADEGATE:WUW"
+    },
+    {
+      "s": "TRADEGATE:WYR"
+    },
+    {
+      "s": "TRADEGATE:X9P"
+    },
+    {
+      "s": "TRADEGATE:XAD6"
+    },
+    {
+      "s": "TRADEGATE:XCA"
+    },
+    {
+      "s": "TRADEGATE:XCQ"
+    },
+    {
+      "s": "TRADEGATE:XD4"
+    },
+    {
+      "s": "TRADEGATE:XER2"
+    },
+    {
+      "s": "TRADEGATE:XGH"
+    },
+    {
+      "s": "TRADEGATE:XGR2"
+    },
+    {
+      "s": "TRADEGATE:XMF"
+    },
+    {
+      "s": "TRADEGATE:XONA"
+    },
+    {
+      "s": "TRADEGATE:XPH"
+    },
+    {
+      "s": "TRADEGATE:XQB"
+    },
+    {
+      "s": "TRADEGATE:XS4"
+    },
+    {
+      "s": "TRADEGATE:XTP"
+    },
+    {
+      "s": "TRADEGATE:XY6"
+    },
+    {
+      "s": "TRADEGATE:YAAA"
+    },
+    {
+      "s": "TRADEGATE:YCP"
+    },
+    {
+      "s": "TRADEGATE:YEL"
+    },
+    {
+      "s": "TRADEGATE:YHA"
+    },
+    {
+      "s": "TRADEGATE:YIT"
+    },
+    {
+      "s": "TRADEGATE:YMA"
+    },
+    {
+      "s": "TRADEGATE:YOC"
+    },
+    {
+      "s": "TRADEGATE:YOU"
+    },
+    {
+      "s": "TRADEGATE:YPH"
+    },
+    {
+      "s": "TRADEGATE:YSN"
+    },
+    {
+      "s": "TRADEGATE:Z0Y"
+    },
+    {
+      "s": "TRADEGATE:ZAL"
+    },
+    {
+      "s": "TRADEGATE:ZEG"
+    },
+    {
+      "s": "TRADEGATE:ZGY"
+    },
+    {
+      "s": "TRADEGATE:ZIL2"
+    },
+    {
+      "s": "TRADEGATE:ZIM"
+    },
+    {
+      "s": "TRADEGATE:ZOE"
+    },
+    {
+      "s": "TRADEGATE:ZSV"
+    },
+    {
+      "s": "TRADEGATE:ZT1A"
+    },
+    {
+      "s": "TRADEGATE:ZYA"
+    },
+    {
+      "s": "TRADEGATE:ZZA"
+    }
+  ]
+}

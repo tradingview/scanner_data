@@ -32,6 +32,10 @@ const config = [
     {
         "exchange": "MUN",
         "path": "../germany.munchen.json"
+    },
+    {
+        "exchange": "TRADEGATE",
+        "path": "../germany.tradegate.json"
     }
 ];
 

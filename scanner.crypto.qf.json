@@ -150,5 +150,65 @@
   {
     "name": "market_cap_calc",
     "type": "fundamental_price"
+  },
+  {
+    "name": "total_addresses_with_balance",
+    "type": "number"
+  },
+  {
+    "name": "twitter_positive",
+    "type": "number"
+  },
+  {
+    "name": "twitter_negative",
+    "type": "number"
+  },
+  {
+    "name": "telegram_positive",
+    "type": "number"
+  },
+  {
+    "name": "telegram_negative",
+    "type": "number"
+  },
+  {
+    "name": "telegram_members",
+    "type": "number"
+  },
+  {
+    "name": "github_commits",
+    "type": "number"
+  },
+  {
+    "name": "average_transaction_usd",
+    "type": "fundamental_price"
+  },
+  {
+    "name": "active_addresses_ratio",
+    "type": "percent"
+  },
+  {
+    "name": "in_the_money_addresses_percentage",
+    "type": "percent"
+  },
+  {
+    "name": "at_the_money_addresses_percentage",
+    "type": "percent"
+  },
+  {
+    "name": "out_the_money_addresses_percentage",
+    "type": "percent"
+  },
+  {
+    "name": "profit_addresses_percentage",
+    "type": "percent"
+  },
+  {
+    "name": "break_even_addresses_percentage",
+    "type": "percent"
+  },
+  {
+    "name": "losses_addresses_percentage",
+    "type": "percent"
   }
 ]

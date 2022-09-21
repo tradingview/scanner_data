@@ -718,5 +718,9 @@
     {
         "name": "net_income_bef_disc_oper_fy",
         "type": "fundamental_price"
+    },
+    {
+        "name": "kind",
+        "type": "text"
     }
 ]

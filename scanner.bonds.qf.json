@@ -48,20 +48,16 @@
       "type": "price"
     },
     {
-      "name": "rtc_time",
-      "type": "time"
-    },
-    {
-      "name": "lp_time",
-      "type": "time"
-    },
-    {
       "name": "provider-id",
       "type": "text"
     },
     {
       "name": "all_time_open",
       "type": "price"
+    },
+    {
+      "name": "daily-bar",
+      "type": "map"
     },
     {
       "name": "term-to-maturity",

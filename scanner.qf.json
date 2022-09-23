@@ -688,6 +688,10 @@
         "type": "text"
     },
     {
+        "name": "daily-bar",
+        "type": "map"
+    },
+    {
         "name": "total_revenue_fy_h",
         "type": "num_slice"
     },

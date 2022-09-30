@@ -149,7 +149,7 @@ plot(volume * close * syminfo.pointvalue, title='Value.Traded')
 
 // study("My Keltner Channels", overlay=true)
 lengthKltChnl = 20
-multKltChnl = 1
+multKltChnl = 2
 maKltChnl = ta.ema(close, lengthKltChnl)
 rangemaKltChnl = ta.rma(ta.tr(true), lengthKltChnl)
 plot(maKltChnl + rangemaKltChnl * multKltChnl, title='KltChnl.upper')

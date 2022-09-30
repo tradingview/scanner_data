@@ -1,6 +1,6 @@
 // volume in base and quote currencies
-volBase = syminfo.volumetype != "quote" ? volume : (close != 0 ? volume / close : na)
-volQuote = syminfo.volumetype == "quote" ? volume : volume * close
+volBase = syminfo.volumetype == "base" ? volume : ( syminfo.volumetype == "quote" and close != 0 ? volume / close : na )
+volQuote = syminfo.volumetype == "quote" ? volume : ( syminfo.volumetype == "base" ? volume * close : na ) 
 plot(volBase, title = "volume_base", style = plot.style_columns)
 plot(volQuote, title = "volume_quote", style = plot.style_columns)
 

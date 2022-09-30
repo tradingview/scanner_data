@@ -64,20 +64,12 @@
     "type": "price"
   },
   {
-    "name": "rtc_time",
-    "type": "time"
-  },
-  {
-    "name": "lp_time",
-    "type": "time"
+    "name": "all_time_open",
+    "type": "price"
   },
   {
     "name": "provider-id",
     "type": "text"
-  },
-  {
-    "name": "all_time_open",
-    "type": "price"
   },
   {
     "name": "crypto_total_rank",
@@ -148,16 +140,16 @@
     "type": "text"
   },
   {
+    "name": "crypto_categories",
+    "type": "set"
+  },
+  {
     "name": "market_cap",
     "type": "fundamental_price"
   },
   {
     "name": "market_cap_calc",
     "type": "fundamental_price"
-  },
-  {
-    "name": "crypto_categories",
-    "type": "set"
   },
   {
     "name": "total_addresses_with_balance",

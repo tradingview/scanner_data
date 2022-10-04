@@ -20,4 +20,3 @@ var lastYearOpen = open
 if year > year[1]
 	lastYearOpen := open
 plot(rateOfreturn(close, lastYearOpen), title='Perf.YTD')
-

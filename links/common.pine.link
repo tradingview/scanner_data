@@ -149,7 +149,7 @@ plot(volume * close * syminfo.pointvalue, title='Value.Traded')
 
 // study("My Keltner Channels", overlay=true)
 lengthKltChnl = 20
-multKltChnl = 2
+multKltChnl = 1
 maKltChnl = ta.ema(close, lengthKltChnl)
 rangemaKltChnl = ta.rma(ta.tr(true), lengthKltChnl)
 plot(maKltChnl + rangemaKltChnl * multKltChnl, title='KltChnl.upper')
@@ -503,4 +503,3 @@ plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high ? 1 : 0, title='Ca
 
 // study(title="VWAP", shorttitle="VWAP", overlay=true)
 plot(ta.vwap(hlc3), title='VWAP')
-

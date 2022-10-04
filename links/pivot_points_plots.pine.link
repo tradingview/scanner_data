@@ -1,0 +1,48 @@
+// Classic
+pivotX_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_prev_close) / 3
+plot(fNeg(pivotX_Median), title='Pivot.M.Classic.Middle')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_low), title='Pivot.M.Classic.R1')
+plot(fNeg(pivotX_Median * 2 - pivotX_prev_high), title='Pivot.M.Classic.S1')
+plot(fNeg(pivotX_Median + 1 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Classic.R2')
+plot(fNeg(pivotX_Median - 1 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Classic.S2')
+plot(fNeg(pivotX_Median + 2 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Classic.R3')
+plot(fNeg(pivotX_Median - 2 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Classic.S3')
+
+// Fibonacci
+plot(fNeg(pivotX_Median), title='Pivot.M.Fibonacci.Middle')
+plot(fNeg(pivotX_Median + 0.382 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Fibonacci.R1')
+plot(fNeg(pivotX_Median - 0.382 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Fibonacci.S1')
+plot(fNeg(pivotX_Median + 0.618 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Fibonacci.R2')
+plot(fNeg(pivotX_Median - 0.618 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Fibonacci.S2')
+plot(fNeg(pivotX_Median + 1 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Fibonacci.R3')
+plot(fNeg(pivotX_Median - 1 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Fibonacci.S3')
+
+// Woodie
+pivotX_Woodie_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_open * 2) / 4
+plot(fNeg(pivotX_Woodie_Median), title='Pivot.M.Woodie.Middle')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_low), title='Pivot.M.Woodie.R1')
+plot(fNeg(pivotX_Woodie_Median * 2 - pivotX_prev_high), title='Pivot.M.Woodie.S1')
+plot(fNeg(pivotX_Woodie_Median + 1 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Woodie.R2')
+plot(fNeg(pivotX_Woodie_Median - 1 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Woodie.S2')
+plot(fNeg(pivotX_prev_high + 2 * (pivotX_Woodie_Median - pivotX_prev_low)), title='Pivot.M.Woodie.R3')
+plot(fNeg(pivotX_prev_low - 2 * (pivotX_prev_high - pivotX_Woodie_Median)), title='Pivot.M.Woodie.S3')
+
+// Demark
+pivotX_Demark_X = pivotX_prev_high + pivotX_prev_low * 2 + pivotX_prev_close
+if pivotX_prev_close == pivotX_prev_open
+	pivotX_Demark_X := pivotX_prev_high + pivotX_prev_low + pivotX_prev_close * 2
+if pivotX_prev_close > pivotX_prev_open
+	pivotX_Demark_X := pivotX_prev_high * 2 + pivotX_prev_low + pivotX_prev_close
+plot(fNeg(pivotX_Demark_X / 4), title='Pivot.M.Demark.Middle')
+plot(fNeg(pivotX_Demark_X / 2 - pivotX_prev_low), title='Pivot.M.Demark.R1')
+plot(fNeg(pivotX_Demark_X / 2 - pivotX_prev_high), title='Pivot.M.Demark.S1')
+
+// Camarilla
+plot(fNeg(pivotX_Median), title='Pivot.M.Camarilla.Middle')
+plot(fNeg(pivotX_prev_close + 1.1 / 12.0 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Camarilla.R1')
+plot(fNeg(pivotX_prev_close - 1.1 / 12.0 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Camarilla.S1')
+plot(fNeg(pivotX_prev_close + 1.1 / 6.0 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Camarilla.R2')
+plot(fNeg(pivotX_prev_close - 1.1 / 6.0 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Camarilla.S2')
+plot(fNeg(pivotX_prev_close + 1.1 / 4.0 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Camarilla.R3')
+plot(fNeg(pivotX_prev_close - 1.1 / 4.0 * (pivotX_prev_high - pivotX_prev_low)), title='Pivot.M.Camarilla.S3')
+

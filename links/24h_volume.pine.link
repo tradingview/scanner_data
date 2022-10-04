@@ -1,0 +1,85 @@
+// 24h volume
+price = close
+currency = "USD"
+msIn24h = 24*60*60*1000
+maxBufferSize = 24*60/5
+cumVolTF = "5"
+cum24hVol(s) =>
+	src = s
+	if bar_index==0
+		src := src[maxBufferSize+1] * time[maxBufferSize+1] * 0
+	var cumSum = 0.
+	var int firstBarTimeIndex = na
+	if na(firstBarTimeIndex) // 24 H have not elapsed yet
+		sum = 0.
+		for i = 0 to maxBufferSize
+			if (time - time[i]) >= msIn24h
+				firstBarTimeIndex := bar_index - i + 1
+				break
+			sum += src[i]
+		cumSum := sum
+	else
+		cumSum += nz(src)
+		for i = firstBarTimeIndex to bar_index
+			if (time - time[bar_index - i]) < msIn24h
+				firstBarTimeIndex := i
+				break
+			cumSum -= nz(src[bar_index - i])
+			if cumSum <= 0
+				cumSum := 0
+	cumSum
+expr = syminfo.volumetype == "quote" ? volume : ( syminfo.volumetype == "base" ? price*volume : na )
+vol24h = request.security(syminfo.tickerid, cumVolTF, cum24hVol(expr), lookahead = barmerge.lookahead_off, currency = currency, ignore_invalid_symbol=true)
+plot(vol24h, title = "24h_vol", style = plot.style_columns)
+
+// volume in base and quote currencies
+volBase = syminfo.volumetype != "quote" ? volume : (close != 0 ? volume / close : na)
+volQuote = syminfo.volumetype == "quote" ? volume : volume * close
+plot(volBase, title = "volume_base", style = plot.style_columns)
+plot(volQuote, title = "volume_quote", style = plot.style_columns)
+
+// 24h prev value (generic)
+prev24hVal(source) =>
+	src = source
+	if bar_index == 0
+		src := src[maxBufferSize+1] * time[maxBufferSize+1] * 0
+	int BB24h = na
+	for i = 0 to maxBufferSize
+		if (time - time[i]) >= msIn24h
+			if (time - time[i]) == msIn24h
+				BB24h := i
+			break
+		BB24h := i
+	src[BB24h]
+
+// 24h vol prev value
+vol24hPrev = prev24hVal(vol24h)
+plot(vol24hPrev, title = "24h_vol_prev", style = plot.style_columns)
+
+// 24h volume change abs
+float vol24hChangeAbs = na
+if not na(vol24h) and not na(vol24hPrev)
+	vol24hChangeAbs := vol24h - vol24hPrev
+plot(vol24hChangeAbs, title = "24h_vol_change_abs", style = plot.style_columns)
+
+// 24h volume change
+float vol24hChange = na
+if not na(vol24hChangeAbs) and vol24hPrev != 0
+	vol24hChange := (vol24hChangeAbs / math.abs(vol24hPrev)) * 100
+plot(vol24hChange, title = "24h_vol_change", style = plot.style_columns)
+
+// 24h close prev value
+close24hPrev = prev24hVal(close)
+plot(close24hPrev, title = "24h_close_prev", style = plot.style_columns)
+
+// 24h close change abs
+float close24hChangeAbs = na
+if not na(close) and not na(close24hPrev)
+	close24hChangeAbs := close - close24hPrev
+plot(close24hChangeAbs, title = "24h_close_change_abs", style = plot.style_columns)
+
+// 24h close change
+float close24hChange = na
+if not na(close24hChangeAbs) and close24hPrev != 0
+	close24hChange := (close24hChangeAbs / math.abs(close24hPrev)) * 100
+plot(close24hChange, title = "24h_close_change", style = plot.style_columns)

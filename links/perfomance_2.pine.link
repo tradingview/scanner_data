@@ -28,8 +28,11 @@ perf6M = rr(countOfBars6MonthAgo, month6)
 perf6M_USD = request.security(syminfo.tickerid, "D", rr(countOfBars6MonthAgo, month6), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
 plot(perf6M, title='Perf.6M')
 plot(perf6M_USD, title='Perf.6M.USD')
-perfY = rr(countOfBars52WeekAgo, weeks52)
-perfY_USD = request.security(syminfo.tickerid, "D", rr(countOfBars52WeekAgo, weeks52), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
+oneYear = 365
+oneYearAgo = timenow - 1000 * 60 * 60 * 24 * oneYear
+barsCountOneYear = fastSearchN(time, oneYearAgo, oneYear)
+perfY = rr(barsCountOneYear, oneYear)
+perfY_USD = request.security(syminfo.tickerid, "D", rr(barsCountOneYear, oneYear), lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
 plot(perfY, title='Perf.Y')
 plot(perfY_USD, title='Perf.Y.USD')
 perf5Y = rr(countOfBars5YearAgo, years5)

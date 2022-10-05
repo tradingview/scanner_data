@@ -1,0 +1,88 @@
+---
+presets:
+- name: global_large_cap
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: market_cap_basic
+    operation: greater
+    right: 23000000000
+  - left: is_primary
+    operation: equal
+    right: true
+  options:
+    active_symbols_only: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam

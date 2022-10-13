@@ -74,7 +74,8 @@ const scanRequestForPairs = {
             right: [
                 "COINBASE",
                 "KRAKEN",
-                "WEX"
+                "WEX",
+                "CRYPTO"
                 //, "BITFINEX"
             ]
         },

@@ -1,0 +1,26 @@
+// performance
+rateOfreturn(v1, v2) =>
+	(v1 - v2) * 100 / math.abs(v2)
+rr(_bb, maxbarsback) =>
+	bb = _bb
+	if bar_index == 0
+		bb += math.round(open[maxbarsback] * 0)  // max_bars_back
+	if bb == 0
+		na
+	else
+		rof = rateOfreturn(close, open[bb])
+		rof
+plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
+plot(rr(countOfBars1MonthAgo, month1), title='Perf.1M')
+plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')
+plot(rr(countOfBars6MonthAgo, month6), title='Perf.6M')
+oneYear = 365
+oneYearAgo = timenow - 1000 * 60 * 60 * 24 * oneYear
+barsCountOneYear = fastSearchN(time, oneYearAgo, oneYear)
+plot(rr(barsCountOneYear, oneYear), title='Perf.Y')
+plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
+var lastYearOpen = open
+if year > year[1]
+	lastYearOpen := open
+plot(rateOfreturn(close, lastYearOpen), title='Perf.YTD')
+

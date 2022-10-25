@@ -488,6 +488,13 @@
       ]
     },
     {
+      "s": "CBOT:EHX2025",
+      "f": [
+        null,
+        "CBOT:EH"
+      ]
+    },
+    {
       "s": "CBOT:EHZ2022",
       "f": [
         null,
@@ -1580,6 +1587,13 @@
       ]
     },
     {
+      "s": "CBOT:ZQV2027",
+      "f": [
+        null,
+        "CBOT:ZQ"
+      ]
+    },
+    {
       "s": "CBOT:ZQX2022",
       "f": [
         null,
@@ -2518,13 +2532,6 @@
       ]
     },
     {
-      "s": "CME:6AV2022",
-      "f": [
-        null,
-        "CME:6A"
-      ]
-    },
-    {
       "s": "CME:6AX2022",
       "f": [
         null,
@@ -2687,13 +2694,6 @@
     },
     {
       "s": "CME:6BU2027",
-      "f": [
-        null,
-        "CME:6B"
-      ]
-    },
-    {
-      "s": "CME:6BV2022",
       "f": [
         null,
         "CME:6B"
@@ -2868,13 +2868,6 @@
       ]
     },
     {
-      "s": "CME:6CV2022",
-      "f": [
-        null,
-        "CME:6C"
-      ]
-    },
-    {
       "s": "CME:6CX2022",
       "f": [
         null,
@@ -3043,13 +3036,6 @@
       ]
     },
     {
-      "s": "CME:6EV2022",
-      "f": [
-        null,
-        "CME:6E"
-      ]
-    },
-    {
       "s": "CME:6EX2022",
       "f": [
         null,
@@ -3212,13 +3198,6 @@
     },
     {
       "s": "CME:6JU2027",
-      "f": [
-        null,
-        "CME:6J"
-      ]
-    },
-    {
-      "s": "CME:6JV2022",
       "f": [
         null,
         "CME:6J"
@@ -3666,6 +3645,13 @@
       ]
     },
     {
+      "s": "CME:6LX2027",
+      "f": [
+        null,
+        "CME:6L"
+      ]
+    },
+    {
       "s": "CME:6LZ2022",
       "f": [
         null,
@@ -3772,13 +3758,6 @@
     },
     {
       "s": "CME:6MU2023",
-      "f": [
-        null,
-        "CME:6M"
-      ]
-    },
-    {
-      "s": "CME:6MV2022",
       "f": [
         null,
         "CME:6M"
@@ -4107,13 +4086,6 @@
       ]
     },
     {
-      "s": "CME:6ZV2022",
-      "f": [
-        null,
-        "CME:6Z"
-      ]
-    },
-    {
       "s": "CME:6ZV2023",
       "f": [
         null,
@@ -4380,6 +4352,13 @@
       ]
     },
     {
+      "s": "CME:DCV2024",
+      "f": [
+        null,
+        "CME:DC"
+      ]
+    },
+    {
       "s": "CME:DCX2022",
       "f": [
         null,
@@ -4640,13 +4619,6 @@
     },
     {
       "s": "CME:GEU2032",
-      "f": [
-        null,
-        "CME:GE"
-      ]
-    },
-    {
-      "s": "CME:GEV2022",
       "f": [
         null,
         "CME:GE"
@@ -4990,6 +4962,13 @@
     },
     {
       "s": "CME:LEJ2023",
+      "f": [
+        null,
+        "CME:LE"
+      ]
+    },
+    {
+      "s": "CME:LEJ2024",
       "f": [
         null,
         "CME:LE"
@@ -5437,35 +5416,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:MGCG2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCG2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:MGCG2024",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCG2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCG2024_RS",
       "f": [
         null,
         "COMEX_MINI:MGC"
@@ -5479,35 +5430,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:MGCJ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCJ2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:MGCJ2024",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCJ2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCJ2024_RS",
       "f": [
         null,
         "COMEX_MINI:MGC"
@@ -5521,35 +5444,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:MGCM2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCM2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:MGCM2024",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCM2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCM2024_RS",
       "f": [
         null,
         "COMEX_MINI:MGC"
@@ -5563,35 +5458,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:MGCQ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCQ2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:MGCQ2024",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCQ2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCQ2024_RS",
       "f": [
         null,
         "COMEX_MINI:MGC"
@@ -5605,35 +5472,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:MGCV2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCV2022_RS",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:MGCV2023",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCV2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCV2023_RS",
       "f": [
         null,
         "COMEX_MINI:MGC"
@@ -5647,35 +5486,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:MGCZ2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCZ2022_RS",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:MGCZ2023",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCZ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:MGC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:MGCZ2023_RS",
       "f": [
         null,
         "COMEX_MINI:MGC"
@@ -5696,35 +5507,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCF2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCF2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCF2024",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCF2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCF2024_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5738,35 +5521,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCG2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCG2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCG2024",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCG2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCG2024_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5780,35 +5535,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCH2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCH2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCH2024",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCH2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCH2024_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5822,35 +5549,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCH2025_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCH2025_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCH2026",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCH2026_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCH2026_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5864,35 +5563,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCH2027_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCH2027_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCJ2023",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCJ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCJ2023_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5906,35 +5577,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCJ2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCJ2024_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCK2023",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2023_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5948,35 +5591,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCK2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2024_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCK2025",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2025_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2025_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -5990,35 +5605,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCK2026_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2026_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCK2027",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2027_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCK2027_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6032,35 +5619,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCM2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCM2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCM2024",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCM2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCM2024_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6074,35 +5633,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCN2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCN2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCN2024",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCN2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCN2024_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6116,35 +5647,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCN2025_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCN2025_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCN2026",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCN2026_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCN2026_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6158,35 +5661,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCN2027_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCN2027_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCQ2023",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCQ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCQ2023_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6200,35 +5675,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCQ2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCQ2024_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCU2023",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2023_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6242,35 +5689,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCU2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2024_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCU2025",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2025_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2025_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6284,35 +5703,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCU2026_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2026_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCU2027",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2027_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCU2027_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6326,35 +5717,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCV2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCV2022_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCV2023",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCV2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCV2023_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6368,35 +5731,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCV2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCV2024_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCX2022",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCX2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCX2022_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6410,35 +5745,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCX2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCX2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCZ2022",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2022_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6452,35 +5759,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCZ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCZ2024",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2024_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6494,35 +5773,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QCZ2025_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2025_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QCZ2026",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2026_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QC"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QCZ2026_RS",
       "f": [
         null,
         "COMEX_MINI:QC"
@@ -6543,35 +5794,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QIF2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIF2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIF2024",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIF2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIF2024_RS",
       "f": [
         null,
         "COMEX_MINI:QI"
@@ -6585,35 +5808,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QIH2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIH2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIH2024",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIH2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIH2024_RS",
       "f": [
         null,
         "COMEX_MINI:QI"
@@ -6627,35 +5822,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QIK2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIK2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIK2024",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIK2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIK2024_RS",
       "f": [
         null,
         "COMEX_MINI:QI"
@@ -6669,35 +5836,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QIN2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIN2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIN2024",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIN2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIN2024_RS",
       "f": [
         null,
         "COMEX_MINI:QI"
@@ -6711,35 +5850,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QIU2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIU2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIU2024",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIU2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIU2024_RS",
       "f": [
         null,
         "COMEX_MINI:QI"
@@ -6753,35 +5864,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QIZ2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIZ2022_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QIZ2023",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIZ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QI"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QIZ2023_RS",
       "f": [
         null,
         "COMEX_MINI:QI"
@@ -6802,35 +5885,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QOG2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOG2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QOG2024",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOG2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOG2024_RS",
       "f": [
         null,
         "COMEX_MINI:QO"
@@ -6844,35 +5899,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QOJ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOJ2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QOJ2024",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOJ2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOJ2024_RS",
       "f": [
         null,
         "COMEX_MINI:QO"
@@ -6886,35 +5913,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QOM2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOM2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QOM2024",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOM2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOM2024_RS",
       "f": [
         null,
         "COMEX_MINI:QO"
@@ -6928,35 +5927,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QOQ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOQ2023_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QOQ2024",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOQ2024_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOQ2024_RS",
       "f": [
         null,
         "COMEX_MINI:QO"
@@ -6970,35 +5941,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QOV2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOV2022_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QOV2023",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOV2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOV2023_RS",
       "f": [
         null,
         "COMEX_MINI:QO"
@@ -7012,35 +5955,7 @@
       ]
     },
     {
-      "s": "COMEX_MINI:QOZ2022_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOZ2022_RS",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
       "s": "COMEX_MINI:QOZ2023",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOZ2023_OI",
-      "f": [
-        null,
-        "COMEX_MINI:QO"
-      ]
-    },
-    {
-      "s": "COMEX_MINI:QOZ2023_RS",
       "f": [
         null,
         "COMEX_MINI:QO"
@@ -7061,35 +5976,7 @@
       ]
     },
     {
-      "s": "COMEX:GCF2023_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCF2023_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCG2023",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCG2023_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCG2023_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7103,35 +5990,7 @@
       ]
     },
     {
-      "s": "COMEX:GCG2024_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCG2024_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCJ2023",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCJ2023_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCJ2023_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7145,35 +6004,7 @@
       ]
     },
     {
-      "s": "COMEX:GCJ2024_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCJ2024_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCM2023",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2023_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2023_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7187,35 +6018,7 @@
       ]
     },
     {
-      "s": "COMEX:GCM2024_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2024_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCM2025",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2025_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2025_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7229,35 +6032,7 @@
       ]
     },
     {
-      "s": "COMEX:GCM2026_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2026_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCM2027",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2027_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2027_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7271,35 +6046,7 @@
       ]
     },
     {
-      "s": "COMEX:GCM2028_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCM2028_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCQ2023",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCQ2023_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCQ2023_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7313,35 +6060,7 @@
       ]
     },
     {
-      "s": "COMEX:GCQ2024_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCQ2024_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCV2022",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCV2022_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCV2022_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7355,35 +6074,7 @@
       ]
     },
     {
-      "s": "COMEX:GCV2023_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCV2023_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCX2022",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCX2022_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCX2022_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7397,35 +6088,7 @@
       ]
     },
     {
-      "s": "COMEX:GCZ2022_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2022_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCZ2023",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2023_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2023_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7439,35 +6102,7 @@
       ]
     },
     {
-      "s": "COMEX:GCZ2024_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2024_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCZ2025",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2025_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2025_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7481,35 +6116,7 @@
       ]
     },
     {
-      "s": "COMEX:GCZ2026_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2026_RS",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
       "s": "COMEX:GCZ2027",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2027_OI",
-      "f": [
-        null,
-        "COMEX:GC"
-      ]
-    },
-    {
-      "s": "COMEX:GCZ2027_RS",
       "f": [
         null,
         "COMEX:GC"
@@ -7530,35 +6137,7 @@
       ]
     },
     {
-      "s": "COMEX:HGF2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGF2023_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGF2024",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGF2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGF2024_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7572,35 +6151,7 @@
       ]
     },
     {
-      "s": "COMEX:HGG2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGG2023_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGG2024",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGG2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGG2024_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7614,35 +6165,7 @@
       ]
     },
     {
-      "s": "COMEX:HGH2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGH2023_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGH2024",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGH2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGH2024_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7656,35 +6179,7 @@
       ]
     },
     {
-      "s": "COMEX:HGH2025_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGH2025_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGH2026",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGH2026_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGH2026_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7698,35 +6193,7 @@
       ]
     },
     {
-      "s": "COMEX:HGH2027_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGH2027_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGJ2023",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGJ2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGJ2023_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7740,35 +6207,7 @@
       ]
     },
     {
-      "s": "COMEX:HGJ2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGJ2024_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGK2023",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2023_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7782,35 +6221,7 @@
       ]
     },
     {
-      "s": "COMEX:HGK2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2024_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGK2025",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2025_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2025_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7824,35 +6235,7 @@
       ]
     },
     {
-      "s": "COMEX:HGK2026_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2026_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGK2027",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2027_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGK2027_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7866,35 +6249,7 @@
       ]
     },
     {
-      "s": "COMEX:HGM2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGM2023_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGM2024",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGM2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGM2024_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7908,35 +6263,7 @@
       ]
     },
     {
-      "s": "COMEX:HGN2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGN2023_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGN2024",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGN2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGN2024_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7950,35 +6277,7 @@
       ]
     },
     {
-      "s": "COMEX:HGN2025_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGN2025_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGN2026",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGN2026_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGN2026_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -7992,35 +6291,7 @@
       ]
     },
     {
-      "s": "COMEX:HGN2027_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGN2027_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGQ2023",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGQ2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGQ2023_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8034,35 +6305,7 @@
       ]
     },
     {
-      "s": "COMEX:HGQ2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGQ2024_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGU2023",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2023_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8076,35 +6319,7 @@
       ]
     },
     {
-      "s": "COMEX:HGU2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2024_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGU2025",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2025_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2025_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8118,35 +6333,7 @@
       ]
     },
     {
-      "s": "COMEX:HGU2026_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2026_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGU2027",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2027_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGU2027_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8160,35 +6347,7 @@
       ]
     },
     {
-      "s": "COMEX:HGV2022_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGV2022_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGV2023",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGV2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGV2023_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8202,35 +6361,7 @@
       ]
     },
     {
-      "s": "COMEX:HGV2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGV2024_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGX2022",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGX2022_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGX2022_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8244,35 +6375,7 @@
       ]
     },
     {
-      "s": "COMEX:HGX2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGX2023_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGZ2022",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2022_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2022_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8286,35 +6389,7 @@
       ]
     },
     {
-      "s": "COMEX:HGZ2023_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2023_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGZ2024",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2024_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2024_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8328,20 +6403,6 @@
       ]
     },
     {
-      "s": "COMEX:HGZ2025_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2025_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGZ2026",
       "f": [
         null,
@@ -8349,35 +6410,7 @@
       ]
     },
     {
-      "s": "COMEX:HGZ2026_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2026_RS",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
       "s": "COMEX:HGZ2027",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2027_OI",
-      "f": [
-        null,
-        "COMEX:HG"
-      ]
-    },
-    {
-      "s": "COMEX:HGZ2027_RS",
       "f": [
         null,
         "COMEX:HG"
@@ -8398,35 +6431,7 @@
       ]
     },
     {
-      "s": "COMEX:LEDF2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDF2023_RS",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDG2023",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDG2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDG2023_RS",
       "f": [
         null,
         "COMEX:LED"
@@ -8440,35 +6445,7 @@
       ]
     },
     {
-      "s": "COMEX:LEDH2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDH2023_RS",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDJ2023",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDJ2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDJ2023_RS",
       "f": [
         null,
         "COMEX:LED"
@@ -8482,35 +6459,7 @@
       ]
     },
     {
-      "s": "COMEX:LEDK2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDK2023_RS",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDM2023",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDM2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDM2023_RS",
       "f": [
         null,
         "COMEX:LED"
@@ -8524,35 +6473,7 @@
       ]
     },
     {
-      "s": "COMEX:LEDN2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDN2023_RS",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDQ2023",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDQ2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDQ2023_RS",
       "f": [
         null,
         "COMEX:LED"
@@ -8566,35 +6487,7 @@
       ]
     },
     {
-      "s": "COMEX:LEDU2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDU2023_RS",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDV2022",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDV2022_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDV2022_RS",
       "f": [
         null,
         "COMEX:LED"
@@ -8608,20 +6501,6 @@
       ]
     },
     {
-      "s": "COMEX:LEDV2023_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDV2023_RS",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDX2022",
       "f": [
         null,
@@ -8629,35 +6508,7 @@
       ]
     },
     {
-      "s": "COMEX:LEDX2022_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDX2022_RS",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
       "s": "COMEX:LEDZ2022",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDZ2022_OI",
-      "f": [
-        null,
-        "COMEX:LED"
-      ]
-    },
-    {
-      "s": "COMEX:LEDZ2022_RS",
       "f": [
         null,
         "COMEX:LED"
@@ -8678,35 +6529,7 @@
       ]
     },
     {
-      "s": "COMEX:SIF2023_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIF2023_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIF2024",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIF2024_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIF2024_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -8720,35 +6543,7 @@
       ]
     },
     {
-      "s": "COMEX:SIH2023_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIH2023_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIH2024",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIH2024_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIH2024_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -8762,35 +6557,7 @@
       ]
     },
     {
-      "s": "COMEX:SIK2023_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIK2023_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIK2024",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIK2024_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIK2024_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -8804,35 +6571,7 @@
       ]
     },
     {
-      "s": "COMEX:SIN2023_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIN2023_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIN2024",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIN2024_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIN2024_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -8846,35 +6585,7 @@
       ]
     },
     {
-      "s": "COMEX:SIN2025_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIN2025_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIN2026",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIN2026_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIN2026_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -8888,35 +6599,7 @@
       ]
     },
     {
-      "s": "COMEX:SIN2027_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIN2027_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIU2023",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIU2023_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIU2023_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -8930,35 +6613,7 @@
       ]
     },
     {
-      "s": "COMEX:SIU2024_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIU2024_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIV2022",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIV2022_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIV2022_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -8972,35 +6627,7 @@
       ]
     },
     {
-      "s": "COMEX:SIX2022_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIX2022_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIZ2022",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2022_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2022_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -9014,35 +6641,7 @@
       ]
     },
     {
-      "s": "COMEX:SIZ2023_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2023_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIZ2024",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2024_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2024_RS",
       "f": [
         null,
         "COMEX:SI"
@@ -9056,35 +6655,7 @@
       ]
     },
     {
-      "s": "COMEX:SIZ2025_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2025_RS",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
       "s": "COMEX:SIZ2026",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2026_OI",
-      "f": [
-        null,
-        "COMEX:SI"
-      ]
-    },
-    {
-      "s": "COMEX:SIZ2026_RS",
       "f": [
         null,
         "COMEX:SI"

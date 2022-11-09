@@ -1,0 +1,779 @@
+[
+	{
+		"inputs": [
+			{
+				"id": "text",
+				"type": "text",
+				"defval": "#0~#1~#2~#3~#4~#5~#6~#7~#8~#9~#10~#11~#12~#13~#14~#15~#16~#17~#18~#19~#20~#21~#22~#23~#24~#25~#26~#27~#28~#29~#30~#31~#32~#33~#34~#35~#36~#37~#38~#39~#40~#41~#42~#43~#44~#45~#46~#47~#48~#49~#50~#51~#52~#53~#54~#55~#56~#57~#58~#59~#60~#61~#62~#63~#64~#65~#66~#67~#68~#69~#70~#71~#72~#73~#74~#75~#76~#77~#78~#79~#80~#81~#82~#83~#84~#85~#86~#87~#88~#89~#90~#91~#92~$0!$1!$2!$3!$4!$5!$6!$7!$8!$9!$10!$11!$12!$13!$14!$15!$16!$17!$18!$19!$20!$21!$22!$23!$24!$25!$26!$27!$28!$29!$30!$31!$32!$33!$34!$35!$36!$37!$38!$39!$40!$41!$42!$43!$44!$45!$46!$47!$48!$49!$50!$51!$52!$53!$54!$55!$56!$57!$58!$59!$60!$61!$62!$63!$64!$65!$66!$67!$68!$69!$70!$71!$72!$73!$74!$75!$76!$77!$78!$79!$80!$81!$82!$83!$84!$85!$86!$87!$88!$89!$90!$91!$92;close~$0;t:str.substring(ticker,0,2):t~t:syminfo.prefix+':'+$2+'GDP'~sym($3,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GDPYY'~sym($7,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'MGDPYY'~sym($11,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GDPQQ'~sym($15,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GDPPC'~sym($19,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GDPPCP'~sym($23,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'EMP'~sym($27,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'EMR'~sym($31,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'FTE'~sym($35,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'LFPR'~sym($39,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'LC'~sym($43,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'LTUR'~sym($47,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'PTE'~sym($51,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'POP'~sym($55,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'RAM'~sym($59,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'RAW'~sym($63,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'UP'~sym($67,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'UR'~sym($71,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'WG'~sym($75,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'YUR'~sym($79,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CCP'~sym($83,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'EP'~sym($87,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'FI'~sym($91,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'IPRI'~sym($95,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'IE'~sym($99,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'IRMM'~sym($103,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'IRYY'~sym($107,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'HIRMM'~sym($111,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'HIRYY'~sym($115,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'PPIYY'~sym($119,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'PPI'~sym($123,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'PPIMM'~sym($127,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'HB'~sym($131,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'HOSP'~sym($135,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'ICUB'~sym($139,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'MD'~sym($143,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'NURS'~sym($147,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'LR'~sym($151,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CRR'~sym($155,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'DIR'~sym($159,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'INBR'~sym($163,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'INTR'~sym($167,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'LG'~sym($171,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'PDG'~sym($175,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CAG'~sym($179,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'TOT'~sym($183,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'TI'~sym($187,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'TA'~sym($191,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'WES'~sym($195,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'NGIR'~sym($199,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'NGI'~sym($203,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'COP'~sym($207,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'COIR'~sym($211,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'AA'~sym($215,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GBP'~sym($219,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GDG'~sym($223,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GSG'~sym($227,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'ME'~sym($231,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CAP'~sym($235,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CAR'~sym($239,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CEP'~sym($243,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GCI'~sym($247,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GCR'~sym($251,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CORPI'~sym($255,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CORR'~sym($259,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'COR'~sym($263,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'EDBR'~sym($267,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'ELP'~sym($271,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'IPYY'~sym($275,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'IPMM'~sym($279,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'ISP'~sym($283,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'MPRYY'~sym($287,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'MIP'~sym($291,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'SP'~sym($295,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'TVS'~sym($299,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CPI'~sym($303,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'BLR'~sym($307,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CCI'~sym($311,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'HICP'~sym($315,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'GASP'~sym($319,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'HDG'~sym($323,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'RSYY'~sym($327,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'RSMM'~sym($331,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'COUT'~sym($335,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'HOR'~sym($339,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CPIHU'~sym($343,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'CTR'~sym($347,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'PITR'~sym($351,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'STR'~sym($355,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'SSR'~sym($359,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'SSRC'~sym($363,period,period,0,1,1,'NONE',0)|$1()|t:syminfo.prefix+':'+$2+'SSRE'~sym($367,period,period,0,1,1,'NONE',0)|$1()|t:$2+'10Y'~sym($371,period,period,0,1,1,'NONE',0)|$1()|s93:$0($5,$9,$13,$17,$21,$25,$29,$33,$37,$41,$45,$49,$53,$57,$61,$65,$69,$73,$77,$81,$85,$89,$93,$97,$101,$105,$109,$113,$117,$121,$125,$129,$133,$137,$141,$145,$149,$153,$157,$161,$165,$169,$173,$177,$181,$185,$189,$193,$197,$201,$205,$209,$213,$217,$221,$225,$229,$233,$237,$241,$245,$249,$253,$257,$261,$265,$269,$273,$277,$281,$285,$289,$293,$297,$301,$305,$309,$313,$317,$321,$325,$329,$333,$337,$341,$345,$349,$353,$357,$361,$365,$369,$373):s93~$375~$376~$377~$378~$379~$380~$381~$382~$383~$384~$385~$386~$387~$388~$389~$390~$391~$392~$393~$394~$395~$396~$397~$398~$399~$400~$401~$402~$403~$404~$405~$406~$407~$408~$409~$410~$411~$412~$413~$414~$415~$416~$417~$418~$419~$420~$421~$422~$423~$424~$425~$426~$427~$428~$429~$430~$431~$432~$433~$434~$435~$436~$437~$438~$439~$440~$441~$442~$443~$444~$445~$446~$447~$448~$449~$450~$451~$452~$453~$454~$455~$456~$457~$458~$459~$460~$461~$462~$463~$464~$465~$466~$467~$468!$469!$470!$471!$472!$473!$474!$475!$476!$477!$478!$479!$480!$481!$482!$483!$484!$485!$486!$487!$488!$489!$490!$491!$492!$493!$494!$495!$496!$497!$498!$499!$500!$501!$502!$503!$504!$505!$506!$507!$508!$509!$510!$511!$512!$513!$514!$515!$516!$517!$518!$519!$520!$521!$522!$523!$524!$525!$526!$527!$528!$529!$530!$531!$532!$533!$534!$535!$536!$537!$538!$539!$540!$541!$542!$543!$544!$545!$546!$547!$548!$549!$550!$551!$552!$553!$554!$555!$556!$557!$558!$559!$560",
+				"isFake": false
+			},
+			{
+				"id": "pineId",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			},
+			{
+				"id": "pineVersion",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			}
+		],
+		"description": "economic screener",
+		"id": "Internal$pine_id_undefined@tv-scripting-101",
+		"plots": [
+			{
+				"id": "plot_0",
+				"type": "line"
+			},
+			{
+				"id": "plot_1",
+				"type": "line"
+			},
+			{
+				"id": "plot_2",
+				"type": "line"
+			},
+			{
+				"id": "plot_3",
+				"type": "line"
+			},
+			{
+				"id": "plot_4",
+				"type": "line"
+			},
+			{
+				"id": "plot_5",
+				"type": "line"
+			},
+			{
+				"id": "plot_6",
+				"type": "line"
+			},
+			{
+				"id": "plot_7",
+				"type": "line"
+			},
+			{
+				"id": "plot_8",
+				"type": "line"
+			},
+			{
+				"id": "plot_9",
+				"type": "line"
+			},
+			{
+				"id": "plot_10",
+				"type": "line"
+			},
+			{
+				"id": "plot_11",
+				"type": "line"
+			},
+			{
+				"id": "plot_12",
+				"type": "line"
+			},
+			{
+				"id": "plot_13",
+				"type": "line"
+			},
+			{
+				"id": "plot_14",
+				"type": "line"
+			},
+			{
+				"id": "plot_15",
+				"type": "line"
+			},
+			{
+				"id": "plot_16",
+				"type": "line"
+			},
+			{
+				"id": "plot_17",
+				"type": "line"
+			},
+			{
+				"id": "plot_18",
+				"type": "line"
+			},
+			{
+				"id": "plot_19",
+				"type": "line"
+			},
+			{
+				"id": "plot_20",
+				"type": "line"
+			},
+			{
+				"id": "plot_21",
+				"type": "line"
+			},
+			{
+				"id": "plot_22",
+				"type": "line"
+			},
+			{
+				"id": "plot_23",
+				"type": "line"
+			},
+			{
+				"id": "plot_24",
+				"type": "line"
+			},
+			{
+				"id": "plot_25",
+				"type": "line"
+			},
+			{
+				"id": "plot_26",
+				"type": "line"
+			},
+			{
+				"id": "plot_27",
+				"type": "line"
+			},
+			{
+				"id": "plot_28",
+				"type": "line"
+			},
+			{
+				"id": "plot_29",
+				"type": "line"
+			},
+			{
+				"id": "plot_30",
+				"type": "line"
+			},
+			{
+				"id": "plot_31",
+				"type": "line"
+			},
+			{
+				"id": "plot_32",
+				"type": "line"
+			},
+			{
+				"id": "plot_33",
+				"type": "line"
+			},
+			{
+				"id": "plot_34",
+				"type": "line"
+			},
+			{
+				"id": "plot_35",
+				"type": "line"
+			},
+			{
+				"id": "plot_36",
+				"type": "line"
+			},
+			{
+				"id": "plot_37",
+				"type": "line"
+			},
+			{
+				"id": "plot_38",
+				"type": "line"
+			},
+			{
+				"id": "plot_39",
+				"type": "line"
+			},
+			{
+				"id": "plot_40",
+				"type": "line"
+			},
+			{
+				"id": "plot_41",
+				"type": "line"
+			},
+			{
+				"id": "plot_42",
+				"type": "line"
+			},
+			{
+				"id": "plot_43",
+				"type": "line"
+			},
+			{
+				"id": "plot_44",
+				"type": "line"
+			},
+			{
+				"id": "plot_45",
+				"type": "line"
+			},
+			{
+				"id": "plot_46",
+				"type": "line"
+			},
+			{
+				"id": "plot_47",
+				"type": "line"
+			},
+			{
+				"id": "plot_48",
+				"type": "line"
+			},
+			{
+				"id": "plot_49",
+				"type": "line"
+			},
+			{
+				"id": "plot_50",
+				"type": "line"
+			},
+			{
+				"id": "plot_51",
+				"type": "line"
+			},
+			{
+				"id": "plot_52",
+				"type": "line"
+			},
+			{
+				"id": "plot_53",
+				"type": "line"
+			},
+			{
+				"id": "plot_54",
+				"type": "line"
+			},
+			{
+				"id": "plot_55",
+				"type": "line"
+			},
+			{
+				"id": "plot_56",
+				"type": "line"
+			},
+			{
+				"id": "plot_57",
+				"type": "line"
+			},
+			{
+				"id": "plot_58",
+				"type": "line"
+			},
+			{
+				"id": "plot_59",
+				"type": "line"
+			},
+			{
+				"id": "plot_60",
+				"type": "line"
+			},
+			{
+				"id": "plot_61",
+				"type": "line"
+			},
+			{
+				"id": "plot_62",
+				"type": "line"
+			},
+			{
+				"id": "plot_63",
+				"type": "line"
+			},
+			{
+				"id": "plot_64",
+				"type": "line"
+			},
+			{
+				"id": "plot_65",
+				"type": "line"
+			},
+			{
+				"id": "plot_66",
+				"type": "line"
+			},
+			{
+				"id": "plot_67",
+				"type": "line"
+			},
+			{
+				"id": "plot_68",
+				"type": "line"
+			},
+			{
+				"id": "plot_69",
+				"type": "line"
+			},
+			{
+				"id": "plot_70",
+				"type": "line"
+			},
+			{
+				"id": "plot_71",
+				"type": "line"
+			},
+			{
+				"id": "plot_72",
+				"type": "line"
+			},
+			{
+				"id": "plot_73",
+				"type": "line"
+			},
+			{
+				"id": "plot_74",
+				"type": "line"
+			},
+			{
+				"id": "plot_75",
+				"type": "line"
+			},
+			{
+				"id": "plot_76",
+				"type": "line"
+			},
+			{
+				"id": "plot_77",
+				"type": "line"
+			},
+			{
+				"id": "plot_78",
+				"type": "line"
+			},
+			{
+				"id": "plot_79",
+				"type": "line"
+			},
+			{
+				"id": "plot_80",
+				"type": "line"
+			},
+			{
+				"id": "plot_81",
+				"type": "line"
+			},
+			{
+				"id": "plot_82",
+				"type": "line"
+			},
+			{
+				"id": "plot_83",
+				"type": "line"
+			},
+			{
+				"id": "plot_84",
+				"type": "line"
+			},
+			{
+				"id": "plot_85",
+				"type": "line"
+			},
+			{
+				"id": "plot_86",
+				"type": "line"
+			},
+			{
+				"id": "plot_87",
+				"type": "line"
+			},
+			{
+				"id": "plot_88",
+				"type": "line"
+			},
+			{
+				"id": "plot_89",
+				"type": "line"
+			},
+			{
+				"id": "plot_90",
+				"type": "line"
+			},
+			{
+				"id": "plot_91",
+				"type": "line"
+			},
+			{
+				"id": "plot_92",
+				"type": "line"
+			}
+		],
+		"version": "",
+		"isTVScriptStubToCompile": false,
+		"isTVScriptStrategy": false,
+		"TVScriptSourceCode": "",
+		"fullId": "",
+		"styles": {
+			"plot_0": {
+				"title": "economics.GDP",
+				"isHidden": false
+			},
+			"plot_1": {
+				"title": "economics.GDPYY",
+				"isHidden": false
+			},
+			"plot_10": {
+				"title": "economics.LC",
+				"isHidden": false
+			},
+			"plot_11": {
+				"title": "economics.LTUR",
+				"isHidden": false
+			},
+			"plot_12": {
+				"title": "economics.PTE",
+				"isHidden": false
+			},
+			"plot_13": {
+				"title": "economics.POP",
+				"isHidden": false
+			},
+			"plot_14": {
+				"title": "economics.RAM",
+				"isHidden": false
+			},
+			"plot_15": {
+				"title": "economics.RAW",
+				"isHidden": false
+			},
+			"plot_16": {
+				"title": "economics.UP",
+				"isHidden": false
+			},
+			"plot_17": {
+				"title": "economics.UR",
+				"isHidden": false
+			},
+			"plot_18": {
+				"title": "economics.WG",
+				"isHidden": false
+			},
+			"plot_19": {
+				"title": "economics.YUR",
+				"isHidden": false
+			},
+			"plot_2": {
+				"title": "economics.MGDPYY",
+				"isHidden": false
+			},
+			"plot_20": {
+				"title": "economics.CCP",
+				"isHidden": false
+			},
+			"plot_21": {
+				"title": "economics.EP",
+				"isHidden": false
+			},
+			"plot_22": {
+				"title": "economics.FI",
+				"isHidden": false
+			},
+			"plot_23": {
+				"title": "economics.IPRI",
+				"isHidden": false
+			},
+			"plot_24": {
+				"title": "economics.IE",
+				"isHidden": false
+			},
+			"plot_25": {
+				"title": "economics.IRMM",
+				"isHidden": false
+			},
+			"plot_26": {
+				"title": "economics.IRYY",
+				"isHidden": false
+			},
+			"plot_27": {
+				"title": "economics.HIRMM",
+				"isHidden": false
+			},
+			"plot_28": {
+				"title": "economics.HIRYY",
+				"isHidden": false
+			},
+			"plot_29": {
+				"title": "economics.PPIYY",
+				"isHidden": false
+			},
+			"plot_3": {
+				"title": "economics.GDPQQ",
+				"isHidden": false
+			},
+			"plot_30": {
+				"title": "economics.PPI",
+				"isHidden": false
+			},
+			"plot_31": {
+				"title": "economics.PPIMM",
+				"isHidden": false
+			},
+			"plot_32": {
+				"title": "economics.HB",
+				"isHidden": false
+			},
+			"plot_33": {
+				"title": "economics.HOSP",
+				"isHidden": false
+			},
+			"plot_34": {
+				"title": "economics.ICUB",
+				"isHidden": false
+			},
+			"plot_35": {
+				"title": "economics.MD",
+				"isHidden": false
+			},
+			"plot_36": {
+				"title": "economics.NURS",
+				"isHidden": false
+			},
+			"plot_37": {
+				"title": "economics.LR",
+				"isHidden": false
+			},
+			"plot_38": {
+				"title": "economics.CRR",
+				"isHidden": false
+			},
+			"plot_39": {
+				"title": "economics.DIR",
+				"isHidden": false
+			},
+			"plot_4": {
+				"title": "economics.GDPPC",
+				"isHidden": false
+			},
+			"plot_40": {
+				"title": "economics.INBR",
+				"isHidden": false
+			},
+			"plot_41": {
+				"title": "economics.INTR",
+				"isHidden": false
+			},
+			"plot_42": {
+				"title": "economics.LG",
+				"isHidden": false
+			},
+			"plot_43": {
+				"title": "economics.PDG",
+				"isHidden": false
+			},
+			"plot_44": {
+				"title": "economics.CAG",
+				"isHidden": false
+			},
+			"plot_45": {
+				"title": "economics.TOT",
+				"isHidden": false
+			},
+			"plot_46": {
+				"title": "economics.TI",
+				"isHidden": false
+			},
+			"plot_47": {
+				"title": "economics.TA",
+				"isHidden": false
+			},
+			"plot_48": {
+				"title": "economics.WES",
+				"isHidden": false
+			},
+			"plot_49": {
+				"title": "economics.NGIR",
+				"isHidden": false
+			},
+			"plot_5": {
+				"title": "economics.GDPPCP",
+				"isHidden": false
+			},
+			"plot_50": {
+				"title": "economics.NGI",
+				"isHidden": false
+			},
+			"plot_51": {
+				"title": "economics.COP",
+				"isHidden": false
+			},
+			"plot_52": {
+				"title": "economics.COIR",
+				"isHidden": false
+			},
+			"plot_53": {
+				"title": "economics.AA",
+				"isHidden": false
+			},
+			"plot_54": {
+				"title": "economics.GBP",
+				"isHidden": false
+			},
+			"plot_55": {
+				"title": "economics.GDG",
+				"isHidden": false
+			},
+			"plot_56": {
+				"title": "economics.GSG",
+				"isHidden": false
+			},
+			"plot_57": {
+				"title": "economics.ME",
+				"isHidden": false
+			},
+			"plot_58": {
+				"title": "economics.CAP",
+				"isHidden": false
+			},
+			"plot_59": {
+				"title": "economics.CAR",
+				"isHidden": false
+			},
+			"plot_6": {
+				"title": "economics.EMP",
+				"isHidden": false
+			},
+			"plot_60": {
+				"title": "economics.CEP",
+				"isHidden": false
+			},
+			"plot_61": {
+				"title": "economics.GCI",
+				"isHidden": false
+			},
+			"plot_62": {
+				"title": "economics.GCR",
+				"isHidden": false
+			},
+			"plot_63": {
+				"title": "economics.CORPI",
+				"isHidden": false
+			},
+			"plot_64": {
+				"title": "economics.CORR",
+				"isHidden": false
+			},
+			"plot_65": {
+				"title": "economics.COR",
+				"isHidden": false
+			},
+			"plot_66": {
+				"title": "economics.EDBR",
+				"isHidden": false
+			},
+			"plot_67": {
+				"title": "economics.ELP",
+				"isHidden": false
+			},
+			"plot_68": {
+				"title": "economics.IPYY",
+				"isHidden": false
+			},
+			"plot_69": {
+				"title": "economics.IPMM",
+				"isHidden": false
+			},
+			"plot_7": {
+				"title": "economics.EMR",
+				"isHidden": false
+			},
+			"plot_70": {
+				"title": "economics.ISP",
+				"isHidden": false
+			},
+			"plot_71": {
+				"title": "economics.MPRYY",
+				"isHidden": false
+			},
+			"plot_72": {
+				"title": "economics.MIP",
+				"isHidden": false
+			},
+			"plot_73": {
+				"title": "economics.SP",
+				"isHidden": false
+			},
+			"plot_74": {
+				"title": "economics.TVS",
+				"isHidden": false
+			},
+			"plot_75": {
+				"title": "economics.CPI",
+				"isHidden": false
+			},
+			"plot_76": {
+				"title": "economics.BLR",
+				"isHidden": false
+			},
+			"plot_77": {
+				"title": "economics.CCI",
+				"isHidden": false
+			},
+			"plot_78": {
+				"title": "economics.HICP",
+				"isHidden": false
+			},
+			"plot_79": {
+				"title": "economics.GASP",
+				"isHidden": false
+			},
+			"plot_8": {
+				"title": "economics.FTE",
+				"isHidden": false
+			},
+			"plot_80": {
+				"title": "economics.HDG",
+				"isHidden": false
+			},
+			"plot_81": {
+				"title": "economics.RSYY",
+				"isHidden": false
+			},
+			"plot_82": {
+				"title": "economics.RSMM",
+				"isHidden": false
+			},
+			"plot_83": {
+				"title": "economics.COUT",
+				"isHidden": false
+			},
+			"plot_84": {
+				"title": "economics.HOR",
+				"isHidden": false
+			},
+			"plot_85": {
+				"title": "economics.CPIHU",
+				"isHidden": false
+			},
+			"plot_86": {
+				"title": "economics.CTR",
+				"isHidden": false
+			},
+			"plot_87": {
+				"title": "economics.PITR",
+				"isHidden": false
+			},
+			"plot_88": {
+				"title": "economics.STR",
+				"isHidden": false
+			},
+			"plot_89": {
+				"title": "economics.SSR",
+				"isHidden": false
+			},
+			"plot_9": {
+				"title": "economics.LFPR",
+				"isHidden": false
+			},
+			"plot_90": {
+				"title": "economics.SSRC",
+				"isHidden": false
+			},
+			"plot_91": {
+				"title": "economics.SSRE",
+				"isHidden": false
+			},
+			"plot_92": {
+				"title": "economics.10Y",
+				"isHidden": false
+			}
+		}
+	}
+]

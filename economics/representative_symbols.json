@@ -1,0 +1,607 @@
+{
+    "symbols": [
+        {
+           "s": "ECONOMICS:GQCOP"
+        },
+        {
+           "s": "ECONOMICS:MEIRMM"
+        },
+        {
+           "s": "ECONOMICS:MWM2"
+        },
+        {
+           "s": "ECONOMICS:AZCOP"
+        },
+        {
+           "s": "ECONOMICS:DJIRYY"
+        },
+        {
+           "s": "ECONOMICS:HNIRYY"
+        },
+        {
+           "s": "ECONOMICS:KIGDPPC"
+        },
+        {
+           "s": "ECONOMICS:PSIRYY"
+        },
+        {
+           "s": "ECONOMICS:SEINBR"
+        },
+        {
+           "s": "ECONOMICS:SVREM"
+        },
+        {
+           "s": "ECONOMICS:TOGDP"
+        },
+        {
+           "s": "ECONOMICS:BBTA"
+        },
+        {
+           "s": "ECONOMICS:ESINBR"
+        },
+        {
+           "s": "ECONOMICS:TZINTR"
+        },
+        {
+           "s": "ECONOMICS:PGCOP"
+        },
+        {
+           "s": "ECONOMICS:PHFER"
+        },
+        {
+           "s": "ECONOMICS:SZIRYY"
+        },
+        {
+           "s": "ECONOMICS:TTIRYY"
+        },
+        {
+           "s": "ECONOMICS:TWINBR"
+        },
+        {
+           "s": "ECONOMICS:UGFER"
+        },
+        {
+           "s": "ECONOMICS:GLGDP"
+        },
+        {
+           "s": "ECONOMICS:NPIRYY"
+        },
+        {
+           "s": "ECONOMICS:GDGDPPC"
+        },
+        {
+           "s": "ECONOMICS:UYIRYY"
+        },
+        {
+           "s": "ECONOMICS:UZCOP"
+        },
+        {
+           "s": "ECONOMICS:CRMW"
+        },
+        {
+           "s": "ECONOMICS:DZINTR"
+        },
+        {
+           "s": "ECONOMICS:FOIMP"
+        },
+        {
+           "s": "ECONOMICS:GMIRYY"
+        },
+        {
+           "s": "ECONOMICS:PKIRYY"
+        },
+        {
+           "s": "ECONOMICS:QARRR"
+        },
+        {
+           "s": "ECONOMICS:SNCPIHU"
+        },
+        {
+           "s": "ECONOMICS:BZCBBS"
+        },
+        {
+           "s": "ECONOMICS:CNINBR"
+        },
+        {
+           "s": "ECONOMICS:MMCOP"
+        },
+        {
+           "s": "ECONOMICS:NLBR"
+        },
+        {
+           "s": "ECONOMICS:SDCOP"
+        },
+        {
+           "s": "ECONOMICS:VEDIR"
+        },
+        {
+           "s": "ECONOMICS:BWINTR"
+        },
+        {
+           "s": "ECONOMICS:HRINBR"
+        },
+        {
+           "s": "ECONOMICS:KRINBR"
+        },
+        {
+           "s": "ECONOMICS:NIIMP"
+        },
+        {
+           "s": "ECONOMICS:PAIMP"
+        },
+        {
+           "s": "ECONOMICS:RWIRYY"
+        },
+        {
+           "s": "ECONOMICS:SGINBR"
+        },
+        {
+           "s": "ECONOMICS:CMCOP"
+        },
+        {
+           "s": "ECONOMICS:KHIRYY"
+        },
+        {
+           "s": "ECONOMICS:BRINBR"
+        },
+        {
+           "s": "ECONOMICS:ININBR"
+        },
+        {
+           "s": "ECONOMICS:MGDIR"
+        },
+        {
+           "s": "ECONOMICS:TJCOP"
+        },
+        {
+           "s": "ECONOMICS:VCGDPPC"
+        },
+        {
+           "s": "ECONOMICS:AMIRMM"
+        },
+        {
+           "s": "ECONOMICS:BNCOP"
+        },
+        {
+           "s": "ECONOMICS:MVM2"
+        },
+        {
+           "s": "ECONOMICS:GYIRYY"
+        },
+        {
+           "s": "ECONOMICS:KMINTR"
+        },
+        {
+           "s": "ECONOMICS:CZINBR"
+        },
+        {
+           "s": "ECONOMICS:ERGRES"
+        },
+        {
+           "s": "ECONOMICS:GAIRYY"
+        },
+        {
+           "s": "ECONOMICS:HTINTR"
+        },
+        {
+           "s": "ECONOMICS:JPDIR"
+        },
+        {
+           "s": "ECONOMICS:PRUR"
+        },
+        {
+           "s": "ECONOMICS:BMRSYY"
+        },
+        {
+           "s": "ECONOMICS:CICOP"
+        },
+        {
+           "s": "ECONOMICS:LCGDPPC"
+        },
+        {
+           "s": "ECONOMICS:NCCPI"
+        },
+        {
+           "s": "ECONOMICS:SADIR"
+        },
+        {
+           "s": "ECONOMICS:BFCPI"
+        },
+        {
+           "s": "ECONOMICS:GHM2"
+        },
+        {
+           "s": "ECONOMICS:CDCOP"
+        },
+        {
+           "s": "ECONOMICS:HKINBR"
+        },
+        {
+           "s": "ECONOMICS:ISINBR"
+        },
+        {
+           "s": "ECONOMICS:MAM3"
+        },
+        {
+           "s": "ECONOMICS:SLIRYY"
+        },
+        {
+           "s": "ECONOMICS:TLIRYY"
+        },
+        {
+           "s": "ECONOMICS:ADGDPPC"
+        },
+        {
+           "s": "ECONOMICS:AWIRYY"
+        },
+        {
+           "s": "ECONOMICS:WWSPI"
+        },
+        {
+           "s": "ECONOMICS:MKIRMM"
+        },
+        {
+           "s": "ECONOMICS:ROINBR"
+        },
+        {
+           "s": "ECONOMICS:COINBR"
+        },
+        {
+           "s": "ECONOMICS:GWIRYY"
+        },
+        {
+           "s": "ECONOMICS:SIUR"
+        },
+        {
+           "s": "ECONOMICS:TDCOP"
+        },
+        {
+           "s": "ECONOMICS:THINBR"
+        },
+        {
+           "s": "ECONOMICS:MLIRYY"
+        },
+        {
+           "s": "ECONOMICS:NOINBR"
+        },
+        {
+           "s": "ECONOMICS:LYCOP"
+        },
+        {
+           "s": "ECONOMICS:MXMW"
+        },
+        {
+           "s": "ECONOMICS:SSCPIT"
+        },
+        {
+           "s": "ECONOMICS:UAINBR"
+        },
+        {
+           "s": "ECONOMICS:ZAINBR"
+        },
+        {
+           "s": "ECONOMICS:DKLR"
+        },
+        {
+           "s": "ECONOMICS:KYFI"
+        },
+        {
+           "s": "ECONOMICS:GECOP"
+        },
+        {
+           "s": "ECONOMICS:LRIRYY"
+        },
+        {
+           "s": "ECONOMICS:NACPI"
+        },
+        {
+           "s": "ECONOMICS:NZDIR"
+        },
+        {
+           "s": "ECONOMICS:SBGDP"
+        },
+        {
+           "s": "ECONOMICS:SMISP"
+        },
+        {
+           "s": "ECONOMICS:ALCPI"
+        },
+        {
+           "s": "ECONOMICS:ARDIR"
+        },
+        {
+           "s": "ECONOMICS:SYIRYY"
+        },
+        {
+           "s": "ECONOMICS:FIINBR"
+        },
+        {
+           "s": "ECONOMICS:LBLB"
+        },
+        {
+           "s": "ECONOMICS:LUSP"
+        },
+        {
+           "s": "ECONOMICS:LVINBR"
+        },
+        {
+           "s": "ECONOMICS:PYMW"
+        },
+        {
+           "s": "ECONOMICS:RUINBR"
+        },
+        {
+           "s": "ECONOMICS:BYM3"
+        },
+        {
+           "s": "ECONOMICS:CGCOP"
+        },
+        {
+           "s": "ECONOMICS:DOTA"
+        },
+        {
+           "s": "ECONOMICS:ECINBR"
+        },
+        {
+           "s": "ECONOMICS:GNIRYY"
+        },
+        {
+           "s": "ECONOMICS:ILINBR"
+        },
+        {
+           "s": "ECONOMICS:PTIMP"
+        },
+        {
+           "s": "ECONOMICS:SOIRYY"
+        },
+        {
+           "s": "ECONOMICS:AOCOP"
+        },
+        {
+           "s": "ECONOMICS:CYCPI"
+        },
+        {
+           "s": "ECONOMICS:TRLR"
+        },
+        {
+           "s": "ECONOMICS:LIIRYY"
+        },
+        {
+           "s": "ECONOMICS:LTCPI"
+        },
+        {
+           "s": "ECONOMICS:BSFER"
+        },
+        {
+           "s": "ECONOMICS:EECPI"
+        },
+        {
+           "s": "ECONOMICS:BTFER"
+        },
+        {
+           "s": "ECONOMICS:USINBR"
+        },
+        {
+           "s": "ECONOMICS:IECAR"
+        },
+        {
+           "s": "ECONOMICS:NGINBR"
+        },
+        {
+           "s": "ECONOMICS:TGIRYY"
+        },
+        {
+           "s": "ECONOMICS:ATCPI"
+        },
+        {
+           "s": "ECONOMICS:FRMPRYY"
+        },
+        {
+           "s": "ECONOMICS:CHINBR"
+        },
+        {
+           "s": "ECONOMICS:FJIRYY"
+        },
+        {
+           "s": "ECONOMICS:IMISP"
+        },
+        {
+           "s": "ECONOMICS:YECOP"
+        },
+        {
+           "s": "ECONOMICS:AFIRYY"
+        },
+        {
+           "s": "ECONOMICS:BIIRYY"
+        },
+        {
+           "s": "ECONOMICS:BGINBR"
+        },
+        {
+           "s": "ECONOMICS:IDINBR"
+        },
+        {
+           "s": "ECONOMICS:LKCRR"
+        },
+        {
+           "s": "ECONOMICS:MRINTR"
+        },
+        {
+           "s": "ECONOMICS:MTEMP"
+        },
+        {
+           "s": "ECONOMICS:TMCOP"
+        },
+        {
+           "s": "ECONOMICS:AEINBR"
+        },
+        {
+           "s": "ECONOMICS:AUCBBS"
+        },
+        {
+           "s": "ECONOMICS:KEBLR"
+        },
+        {
+           "s": "ECONOMICS:LSIRYY"
+        },
+        {
+           "s": "ECONOMICS:MCPOP"
+        },
+        {
+           "s": "ECONOMICS:MDIRMM"
+        },
+        {
+           "s": "ECONOMICS:WSDIR"
+        },
+        {
+           "s": "ECONOMICS:BJIRYY"
+        },
+        {
+           "s": "ECONOMICS:DMGDPPC"
+        },
+        {
+           "s": "ECONOMICS:IRIRYY"
+        },
+        {
+           "s": "ECONOMICS:MNCOP"
+        },
+        {
+           "s": "ECONOMICS:VNINBR"
+        },
+        {
+           "s": "ECONOMICS:CLINBR"
+        },
+        {
+           "s": "ECONOMICS:ETIRMM"
+        },
+        {
+           "s": "ECONOMICS:CFIRYY"
+        },
+        {
+           "s": "ECONOMICS:CUCOP"
+        },
+        {
+           "s": "ECONOMICS:GBINBR"
+        },
+        {
+           "s": "ECONOMICS:KZINBR"
+        },
+        {
+           "s": "ECONOMICS:SKCIR"
+        },
+        {
+           "s": "ECONOMICS:AGGDPPC"
+        },
+        {
+           "s": "ECONOMICS:BAM3"
+        },
+        {
+           "s": "ECONOMICS:GRCPI"
+        },
+        {
+           "s": "ECONOMICS:JMM1"
+        },
+        {
+           "s": "ECONOMICS:LAIRYY"
+        },
+        {
+           "s": "ECONOMICS:SCFER"
+        },
+        {
+           "s": "ECONOMICS:STINTR"
+        },
+        {
+           "s": "ECONOMICS:VUIRYY"
+        },
+        {
+           "s": "ECONOMICS:BEIRMM"
+        },
+        {
+           "s": "ECONOMICS:EUINBR"
+        },
+        {
+           "s": "ECONOMICS:ZWFI"
+        },
+        {
+           "s": "ECONOMICS:TNDIR"
+        },
+        {
+           "s": "ECONOMICS:ZMDIR"
+        },
+        {
+           "s": "ECONOMICS:MYINBR"
+        },
+        {
+           "s": "ECONOMICS:MZDIR"
+        },
+        {
+           "s": "ECONOMICS:GTCPI"
+        },
+        {
+           "s": "ECONOMICS:HUINBR"
+        },
+        {
+           "s": "ECONOMICS:DEPSC"
+        },
+        {
+           "s": "ECONOMICS:EGINBR"
+        },
+        {
+           "s": "ECONOMICS:KWINBR"
+        },
+        {
+           "s": "ECONOMICS:XKBBS"
+        },
+        {
+           "s": "ECONOMICS:JOINTR"
+        },
+        {
+           "s": "ECONOMICS:KGIMP"
+        },
+        {
+           "s": "ECONOMICS:KPPOP"
+        },
+        {
+           "s": "ECONOMICS:MOM2"
+        },
+        {
+           "s": "ECONOMICS:MUCPI"
+        },
+        {
+           "s": "ECONOMICS:RSINBR"
+        },
+        {
+           "s": "ECONOMICS:BDEXP"
+        },
+        {
+           "s": "ECONOMICS:CADIR"
+        },
+        {
+           "s": "ECONOMICS:CVPSC"
+        },
+        {
+           "s": "ECONOMICS:IQCOP"
+        },
+        {
+           "s": "ECONOMICS:ITCA"
+        },
+        {
+           "s": "ECONOMICS:NEIRYY"
+        },
+        {
+           "s": "ECONOMICS:OMCOP"
+        },
+        {
+           "s": "ECONOMICS:PEINBR"
+        },
+        {
+           "s": "ECONOMICS:BHINBR"
+        },
+        {
+           "s": "ECONOMICS:BOCPI"
+        },
+        {
+           "s": "ECONOMICS:PLINBR"
+        }
+    ]
+}

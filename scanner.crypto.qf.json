@@ -206,5 +206,13 @@
   {
     "name": "losses_addresses_percentage",
     "type": "percent"
+  },
+  {
+    "name": "24h_vol_cmc",
+    "type": "fundamental_price"
+  },
+  {
+    "name": "24h_vol_change_cmc",
+    "type": "number"
   }
 ]

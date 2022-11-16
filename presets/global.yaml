@@ -1,6 +1,6 @@
 ---
 presets:
-- name: global_large_cap
+- name: worlds_largest_companies
   filter:
   - left: market_cap_basic
     operation: nempty
@@ -28,6 +28,1773 @@ presets:
   sort:
     sortBy: market_cap_basic
     sortOrder: desc
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_non_us_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: country
+    operation: nequal
+    right: United States
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: market_cap_basic
+    operation: greater
+    right: 14000000000
+  - left: is_primary
+    operation: equal
+    right: true
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_employers
+  filter:
+  - left: number_of_employees
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: number_of_employees
+    operation: greater
+    right: 50000
+  - left: is_primary
+    operation: equal
+    right: true
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: number_of_employees
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_highest_revenue
+  filter:
+  - left: total_revenue
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: total_revenue
+    operation: greater
+    right: 20000000000
+  - left: is_primary
+    operation: equal
+    right: true
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: total_revenue
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_highest_earnings
+  filter:
+  - left: gross_profit
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: gross_profit
+    operation: greater
+    right: 4000000000
+  - left: is_primary
+    operation: equal
+    right: true
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: gross_profit
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_highest_dividends
+  filter:
+  - left: dividend_yield_recent
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: dividend_yield_recent
+    operation: greater
+    right: 9
+  - left: is_primary
+    operation: equal
+    right: true
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: dividend_yield_recent
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_oil_and_gas_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Oil & Gas Pipelines
+    - Oil & Gas Production
+    - Oil Refining/Marketing
+    - Oilfield Services/Equipment
+    - Gas Distributors
+    - Integrated Oil
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_semiconductors_producers
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Semiconductors
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_telecommunication_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Major Telecommunications
+    - Specialty Telecommunications
+    - Telecommunications Equipment
+    - Wireless Telecommunications
+    - Cable/Satellite TV
+    - Broadcasting
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_tech_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Information Technology Services
+    - Electronic Components
+    - Electronics/Appliances
+    - Computer Processing Hardware
+    - Internet Software/Services
+    - Data Processing Services
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_biotech_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Biotechnology
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_finance_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Finance/Rental/Leasing
+    - Financial Conglomerates
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_banks
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Investment Banks/Brokers
+    - Major Banks
+    - Regional Banks
+    - Savings Banks
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_e_commerce_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Internet Retail
+    - Electronics/Appliance Stores
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_software_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Internet Software/Services
+    - Packaged Software
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_automakers
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Motor Vehicles
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_hotels_and_resorts
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Hotels/Resorts/Cruise lines
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_restaurant_chains
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Restaurants
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_stores
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Department Stores
+    - Discount Stores
+    - Electronics/Appliance Stores
+    - Specialty Stores
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_beverage_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - 'Beverages: Alcoholic'
+    - 'Beverages: Non-Alcoholic'
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+  - america
+  - argentina
+  - australia
+  - bahrain
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - korea
+  - ksa
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: worlds_largest_food_companies
+  filter:
+  - left: market_cap_basic
+    operation: nempty
+  - left: type
+    operation: in_range
+    right:
+    - dr
+    - stock
+  - left: typespecs
+    operation: has
+    right:
+    - ''
+    - common
+    - foreign-issuer
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: industry
+    operation: in_range
+    right:
+    - Food Distributors
+    - Food Retail
+    - 'Food: Major Diversified'
+    - 'Food: Meat/Fish/Dairy'
+    - 'Food: Specialty/Candy'
+  options:
+    active_symbols_only: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
   markets:
   - america
   - argentina

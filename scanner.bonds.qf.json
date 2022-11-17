@@ -74,6 +74,9 @@
     {
       "name": "country_code",
       "type": "text"
+    },
+    {
+      "name": "popularity_rank",
+      "type": "number"
     }
   ]
-  

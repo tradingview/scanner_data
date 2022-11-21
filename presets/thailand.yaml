@@ -2,12 +2,15 @@
 presets:
 - name: all_stocks
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -18,12 +21,15 @@ presets:
     active_symbols_only: true
 - name: large_cap
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -34,12 +40,15 @@ presets:
     active_symbols_only: true
 - name: small_cap
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -50,12 +59,15 @@ presets:
     active_symbols_only: true
 - name: largest_employers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -68,12 +80,15 @@ presets:
     active_symbols_only: true
 - name: high_dividend
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -87,12 +102,15 @@ presets:
     active_symbols_only: true
 - name: highest_net_income
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -103,15 +121,23 @@ presets:
     active_symbols_only: true
 - name: gainers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 1
+    - 10000
   - left: change
     operation: greater
     right: 0
@@ -122,15 +148,23 @@ presets:
     active_symbols_only: true
 - name: losers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 1
+    - 10000
   - left: change
     operation: less
     right: 0
@@ -141,15 +175,23 @@ presets:
     active_symbols_only: true
 - name: volume_leaders
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 1
+    - 10000
   sort:
     sortBy: volume
     sortOrder: desc
@@ -157,12 +199,15 @@ presets:
     active_symbols_only: true
 - name: unusual_volume
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -173,12 +218,15 @@ presets:
     active_symbols_only: true
 - name: most_volatile
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -189,12 +237,15 @@ presets:
     active_symbols_only: true
 - name: high_beta
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -207,12 +258,15 @@ presets:
     active_symbols_only: true
 - name: best_performing
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -225,12 +279,15 @@ presets:
     active_symbols_only: true
 - name: highest_revenue
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -241,12 +298,15 @@ presets:
     active_symbols_only: true
 - name: most_expensive
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -259,12 +319,15 @@ presets:
     active_symbols_only: true
 - name: penny_stocks
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -275,12 +338,15 @@ presets:
     active_symbols_only: true
 - name: overbought
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -294,12 +360,15 @@ presets:
     active_symbols_only: true
 - name: oversold
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -313,12 +382,15 @@ presets:
     active_symbols_only: true
 - name: all_time_high
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -332,12 +404,15 @@ presets:
     active_symbols_only: true
 - name: all_time_low
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -351,12 +426,15 @@ presets:
     active_symbols_only: true
 - name: above_52wk_high
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -370,12 +448,15 @@ presets:
     active_symbols_only: true
 - name: below_52wk_low
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -389,12 +470,15 @@ presets:
     active_symbols_only: true
 - name: highest_cash
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -405,12 +489,15 @@ presets:
     active_symbols_only: true
 - name: pre-market-gainers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -426,12 +513,15 @@ presets:
     active_symbols_only: true
 - name: pre-market-losers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -447,12 +537,15 @@ presets:
     active_symbols_only: true
 - name: pre_market_most_active
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -465,12 +558,15 @@ presets:
     active_symbols_only: true
 - name: pre_market_gappers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -483,12 +579,15 @@ presets:
     active_symbols_only: true
 - name: after_hours_gainers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -504,12 +603,15 @@ presets:
     active_symbols_only: true
 - name: after_hours_losers
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock
@@ -525,12 +627,15 @@ presets:
     active_symbols_only: true
 - name: active_after_hours
   filter:
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: foreign
   - left: type
     operation: equal
     right: stock

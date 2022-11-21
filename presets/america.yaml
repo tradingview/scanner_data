@@ -2,12 +2,21 @@
 presets:
 - name: all_stocks
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -18,12 +27,21 @@ presets:
     active_symbols_only: true
 - name: large_cap
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -34,12 +52,21 @@ presets:
     active_symbols_only: true
 - name: small_cap
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -50,12 +77,21 @@ presets:
     active_symbols_only: true
 - name: largest_employers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -68,12 +104,21 @@ presets:
     active_symbols_only: true
 - name: high_dividend
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -87,12 +132,21 @@ presets:
     active_symbols_only: true
 - name: highest_net_income
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -103,15 +157,29 @@ presets:
     active_symbols_only: true
 - name: gainers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 2
+    - 10000
   - left: change
     operation: greater
     right: 0
@@ -122,15 +190,29 @@ presets:
     active_symbols_only: true
 - name: losers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 2
+    - 10000
   - left: change
     operation: less
     right: 0
@@ -141,15 +223,29 @@ presets:
     active_symbols_only: true
 - name: volume_leaders
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 2
+    - 10000
   sort:
     sortBy: volume
     sortOrder: desc
@@ -157,12 +253,21 @@ presets:
     active_symbols_only: true
 - name: unusual_volume
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -173,12 +278,21 @@ presets:
     active_symbols_only: true
 - name: most_volatile
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -189,12 +303,21 @@ presets:
     active_symbols_only: true
 - name: high_beta
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -207,12 +330,21 @@ presets:
     active_symbols_only: true
 - name: best_performing
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -225,12 +357,21 @@ presets:
     active_symbols_only: true
 - name: highest_revenue
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -241,12 +382,21 @@ presets:
     active_symbols_only: true
 - name: most_expensive
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -259,12 +409,21 @@ presets:
     active_symbols_only: true
 - name: penny_stocks
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -275,12 +434,21 @@ presets:
     active_symbols_only: true
 - name: overbought
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -294,12 +462,21 @@ presets:
     active_symbols_only: true
 - name: oversold
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -313,12 +490,21 @@ presets:
     active_symbols_only: true
 - name: all_time_high
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -332,12 +518,21 @@ presets:
     active_symbols_only: true
 - name: all_time_low
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -351,12 +546,21 @@ presets:
     active_symbols_only: true
 - name: above_52wk_high
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -370,12 +574,21 @@ presets:
     active_symbols_only: true
 - name: below_52wk_low
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -389,12 +602,21 @@ presets:
     active_symbols_only: true
 - name: highest_cash
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -405,12 +627,21 @@ presets:
     active_symbols_only: true
 - name: pre-market-gainers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -426,12 +657,21 @@ presets:
     active_symbols_only: true
 - name: pre-market-losers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -447,12 +687,21 @@ presets:
     active_symbols_only: true
 - name: pre_market_most_active
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -465,12 +714,21 @@ presets:
     active_symbols_only: true
 - name: pre_market_gappers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -483,12 +741,21 @@ presets:
     active_symbols_only: true
 - name: after_hours_gainers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -504,12 +771,21 @@ presets:
     active_symbols_only: true
 - name: after_hours_losers
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -525,12 +801,21 @@ presets:
     active_symbols_only: true
 - name: active_after_hours
   filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common
   - left: typespecs
     operation: has_none_of
-    right: foreign-issuer
+    right: preferred
   - left: type
     operation: equal
     right: stock
@@ -538,6 +823,31 @@ presets:
     operation: nempty
   sort:
     sortBy: postmarket_volume
+    sortOrder: desc
+  options:
+    active_symbols_only: true
+- name: pink-sheet-stocks
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: typespecs
+    operation: has_none_of
+    right: preferred
+  - left: type
+    operation: equal
+    right: stock
+  - left: exchange
+    operation: equal
+    right: OTC
+  - left: submarket
+    operation: equal
+    right: PINK
+  sort:
+    sortBy: market_cap_basic
     sortOrder: desc
   options:
     active_symbols_only: true

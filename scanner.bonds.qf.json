@@ -16,15 +16,11 @@
       "type": "text"
     },
     {
-      "name": "region",
+      "name": "sector",
       "type": "text"
     },
     {
       "name": "country",
-      "type": "text"
-    },
-    {
-      "name": "country_code",
       "type": "text"
     },
     {
@@ -74,9 +70,6 @@
     {
       "name": "country_code",
       "type": "text"
-    },
-    {
-      "name": "popularity_rank",
-      "type": "number"
     }
   ]
+  

@@ -851,3 +851,127 @@ presets:
     sortOrder: desc
   options:
     active_symbols_only: true
+- name: futures_all
+  filter:
+  - left: typespecs
+    operation: has
+    right: continuous
+  symbols:
+    query:
+      types:
+        - futures
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: futures_agricultural
+  filter:
+  - left: typespecs
+    operation: has
+    right: continuous
+  - left: sector
+    operation: equal
+    right: Agricultural
+  symbols:
+    query:
+      types:
+        - futures
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: futures_energy
+  filter:
+  - left: typespecs
+    operation: has
+    right: continuous
+  - left: sector
+    operation: equal
+    right: Energy
+  symbols:
+    query:
+      types:
+        - futures
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: futures_currencies
+  filter:
+  - left: typespecs
+    operation: has
+    right: continuous
+  - left: sector
+    operation: equal
+    right: Currencies
+  symbols:
+    query:
+      types:
+        - futures
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: futures_metals
+  filter:
+  - left: typespecs
+    operation: has
+    right: continuous
+  - left: sector
+    operation: equal
+    right: Metals
+  symbols:
+    query:
+      types:
+        - futures
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: futures_world_indices
+  filter:
+  - left: typespecs
+    operation: has
+    right: continuous
+  - left: sector
+    operation: equal
+    right: Indexes
+  symbols:
+    query:
+      types:
+        - futures
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: futures_interest_rates
+  filter:
+  - left: typespecs
+    operation: has
+    right: continuous
+  - left: sector
+    operation: equal
+    right: Financials
+  symbols:
+    query:
+      types:
+        - futures
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: indices_us
+  filter:
+  - left: sector
+    operation: empty
+  symbols:
+    query:
+      types:
+        - index
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: indices_snp_sectors
+  filter:
+  - left: sector
+    operation: nempty
+  symbols:
+    query:
+      types:
+        - index
+  sort:
+    sortBy: index_priority
+    sortOrder: asc

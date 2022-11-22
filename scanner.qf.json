@@ -216,6 +216,10 @@
         "type": "fundamental_price"
     },
     {
+        "name": "earnings_per_share_basic_fy_h",
+        "type": "num_slice"
+    },
+    {
         "name": "preferred_dividends",
         "type": "number"
     },
@@ -682,5 +686,129 @@
     {
         "name": "country_code_fund",
         "type": "text"
+    },
+    {
+        "name": "daily-bar",
+        "type": "map"
+    },
+    {
+        "name": "total_revenue_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "total_revenue_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "total_revenue_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "sell_gen_admin_exp_other_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "sell_gen_admin_exp_other_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "research_and_dev_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "research_and_dev_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "oper_income_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_income_bef_disc_oper_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_revenue_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "gross_profit_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "gross_profit_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "gross_profit_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "ebitda_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "ebitda_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "ebitda_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "net_income_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "net_income_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "net_income_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "free_cash_flow_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "free_cash_flow_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "free_cash_flow_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "earnings_per_share_diluted_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "earnings_per_share_diluted_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "earnings_per_share_diluted_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "dps_common_stock_prim_issue_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "total_assets_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "total_assets_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "total_debt_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "total_debt_fy_h",
+        "type": "num_slice"
     }
 ]

@@ -1,9 +1,6 @@
 presets:
 - name: Americas
   filter:
-  - left: typespecs
-    operation: has
-    right: yield
   - left: index_priority
     operation: nempty
   - left: country_code
@@ -20,9 +17,6 @@ presets:
     sortOrder: asc
 - name: Europe
   filter:
-  - left: typespecs
-    operation: has
-    right: yield
   - left: index_priority
     operation: nempty
   - left: country_code
@@ -61,9 +55,6 @@ presets:
 
 - name: Pacific
   filter:
-  - left: typespecs
-    operation: has
-    right: yield
   - left: index_priority
     operation: nempty
   - left: country_code
@@ -77,9 +68,6 @@ presets:
 
 - name: Middle_East
   filter:
-  - left: typespecs
-    operation: has
-    right: yield
   - left: index_priority
     operation: nempty
   - left: country_code
@@ -92,15 +80,35 @@ presets:
 
 - name: Africa
   filter:
-  - left: typespecs
-    operation: has
-    right: yield
   - left: index_priority
     operation: nempty
   - left: country_code
     operation: in_range
     right: 
       - ZA
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+
+- name: Asia
+  filter:
+  - left: index_priority
+    operation: nempty
+  - left: country_code
+    operation: in_range
+    right: 
+      - CN
+      - HK
+      - ID
+      - IN
+      - JP
+      - KR
+      - MY
+      - PH
+      - SG
+      - TH
+      - TW
+      - VN
   sort:
     sortBy: index_priority
     sortOrder: asc

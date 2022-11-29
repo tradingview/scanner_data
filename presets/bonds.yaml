@@ -1,0 +1,106 @@
+presets:
+- name: Americas
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: index_priority
+    operation: nempty
+  - left: country_code
+    operation: in_range
+    right: 
+      - BR
+      - CA
+      - CL
+      - CO
+      - PE
+      - US
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: Europe
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: index_priority
+    operation: nempty
+  - left: country_code
+    operation: in_range
+    right: 
+      - AT
+      - BE
+      - CH
+      - CZ
+      - DE
+      - DK
+      - ES
+      - EU
+      - FI
+      - FR
+      - GB
+      - GR
+      - HU
+      - IE
+      - IS
+      - IT
+      - LT
+      - LV
+      - NL
+      - NO
+      - PL
+      - PT
+      - RO
+      - RU
+      - SE
+      - SK
+      - UA
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+
+- name: Pacific
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: index_priority
+    operation: nempty
+  - left: country_code
+    operation: in_range
+    right: 
+      - AU
+      - NZ
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+
+- name: Middle_East
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: index_priority
+    operation: nempty
+  - left: country_code
+    operation: in_range
+    right: 
+      - TR
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+
+- name: Africa
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: index_priority
+    operation: nempty
+  - left: country_code
+    operation: in_range
+    right: 
+      - ZA
+  sort:
+    sortBy: index_priority
+    sortOrder: asc

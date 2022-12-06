@@ -556,3 +556,25 @@ presets:
     sortOrder: desc
   options:
     active_symbols_only: true
+- name: market_sectors
+  filter:
+      - left: description
+        operation: nempty
+  symbols:
+    query:
+      types:
+        - sector
+  sort:
+    sortBy: description
+    sortOrder: asc
+- name: market_industries
+  filter:
+    - left: description
+      operation: nempty
+  symbols:
+    query:
+      types:
+        - industry
+  sort:
+    sortBy: description
+    sortOrder: asc

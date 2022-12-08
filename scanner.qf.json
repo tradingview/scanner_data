@@ -128,10 +128,6 @@
         "type": "number"
     },
     {
-        "name": "price_free_cash_flow_ttm",
-        "type": "number"
-    },
-    {
         "name": "price_free_cash_flow_current",
         "type": "number"
     },
@@ -810,5 +806,37 @@
     {
         "name": "total_debt_fy_h",
         "type": "num_slice"
+    },
+	{
+        "name": "gross_profit_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_revenue_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "enterprise_value_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebit_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "eanings_per_share_forecat_next_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_operating_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "working_capital_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "diluted_shares_outstanding_fq",
+        "type": "fundamental_price"
     }
 ]

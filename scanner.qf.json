@@ -807,7 +807,7 @@
         "name": "total_debt_fy_h",
         "type": "num_slice"
     },
-	{
+    {
         "name": "gross_profit_ttm",
         "type": "fundamental_price"
     },
@@ -833,6 +833,46 @@
     },
     {
         "name": "diluted_shares_outstanding_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_current_liabilities_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_debt_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_assets_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "shrhldrs_equity_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "shrhldrs_equity_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "return_on_assets_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "return_on_equity_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "return_on_invested_capital_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "dividend_payout_ratio_ttm",
         "type": "fundamental_price"
     }
 ]

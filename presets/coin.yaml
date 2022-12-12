@@ -1,0 +1,33 @@
+---
+presets:
+- name: coin_market_cap_rank
+  sort:
+    sortBy: crypto_total_rank
+    sortOrder: asc
+- name: coin_defi
+  filter:
+  - left: crypto_categories
+    operation: has
+    right: defi
+  - left: tvl
+    operation: egreater
+    right: 1000000
+  sort:
+    sortBy: tvl
+    sortOrder: desc
+- name: coin_gainers
+  filter:
+  - left: 24h_close_change|5
+    operation: greater
+    right: 0
+  sort:
+    sortBy: 24h_close_change|5
+    sortOrder: desc
+- name: coin_losers
+  filter:
+  - left: 24h_close_change|5
+    operation: less
+    right: 0
+  sort:
+    sortBy: 24h_close_change|5
+    sortOrder: asc

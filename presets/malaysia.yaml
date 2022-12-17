@@ -14,11 +14,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: name
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: large_cap
   filter:
   - left: is_primary
@@ -33,11 +34,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: small_cap
   filter:
   - left: is_primary
@@ -52,11 +54,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: largest_employers
   filter:
   - left: is_primary
@@ -73,11 +76,12 @@ presets:
     right: stock
   - left: market_cap_basic
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: number_of_employees
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: high_dividend
   filter:
   - left: is_primary
@@ -95,11 +99,12 @@ presets:
   - left: dividend_yield_recent
     operation: greater
     right: 0
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: dividend_yield_recent
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: highest_net_income
   filter:
   - left: is_primary
@@ -114,11 +119,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: net_income
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: gainers
   filter:
   - left: is_primary
@@ -141,11 +147,12 @@ presets:
   - left: change
     operation: greater
     right: 0
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: change
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: losers
   filter:
   - left: is_primary
@@ -168,11 +175,12 @@ presets:
   - left: change
     operation: less
     right: 0
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: change
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: volume_leaders
   filter:
   - left: is_primary
@@ -192,11 +200,12 @@ presets:
     right:
     - 0.01
     - 10000
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: volume
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: unusual_volume
   filter:
   - left: is_primary
@@ -211,11 +220,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: relative_volume_10d_calc
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: most_volatile
   filter:
   - left: is_primary
@@ -230,11 +240,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: Volatility.D
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: high_beta
   filter:
   - left: is_primary
@@ -251,11 +262,12 @@ presets:
     right: stock
   - left: market_cap_basic
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: beta_1_year
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: best_performing
   filter:
   - left: is_primary
@@ -272,11 +284,12 @@ presets:
     right: stock
   - left: market_cap_basic
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: Perf.Y
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: highest_revenue
   filter:
   - left: is_primary
@@ -291,11 +304,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: total_revenue
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: most_expensive
   filter:
   - left: is_primary
@@ -312,11 +326,12 @@ presets:
     right: stock
   - left: market_cap_basic
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: close
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: penny_stocks
   filter:
   - left: is_primary
@@ -331,11 +346,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: close
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: overbought
   filter:
   - left: is_primary
@@ -353,11 +369,12 @@ presets:
   - left: RSI
     operation: greater
     right: 70
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: RSI
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: oversold
   filter:
   - left: is_primary
@@ -375,11 +392,12 @@ presets:
   - left: RSI
     operation: less
     right: 30
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: RSI
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: all_time_high
   filter:
   - left: is_primary
@@ -397,11 +415,12 @@ presets:
   - left: High.All
     operation: eless
     right: high
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: name
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: all_time_low
   filter:
   - left: is_primary
@@ -419,11 +438,12 @@ presets:
   - left: Low.All
     operation: egreater
     right: low
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: name
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: above_52wk_high
   filter:
   - left: is_primary
@@ -441,11 +461,12 @@ presets:
   - left: price_52_week_high
     operation: eless
     right: high
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: name
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: below_52wk_low
   filter:
   - left: is_primary
@@ -463,11 +484,12 @@ presets:
   - left: price_52_week_low
     operation: egreater
     right: low
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: name
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: highest_cash
   filter:
   - left: is_primary
@@ -482,11 +504,12 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: cash_n_short_term_invest_fq
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: pre-market-gainers
   filter:
   - left: is_primary
@@ -506,11 +529,12 @@ presets:
     right: 0
   - left: premarket_change
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: premarket_change
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: pre-market-losers
   filter:
   - left: is_primary
@@ -530,11 +554,12 @@ presets:
     right: 0
   - left: premarket_change
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: premarket_change
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: pre_market_most_active
   filter:
   - left: is_primary
@@ -551,11 +576,12 @@ presets:
     right: stock
   - left: premarket_volume
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: premarket_volume
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: pre_market_gappers
   filter:
   - left: is_primary
@@ -572,11 +598,12 @@ presets:
     right: stock
   - left: premarket_gap
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: premarket_gap
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: after_hours_gainers
   filter:
   - left: is_primary
@@ -596,11 +623,12 @@ presets:
     right: 0
   - left: postmarket_change
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: postmarket_change
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: after_hours_losers
   filter:
   - left: is_primary
@@ -620,11 +648,12 @@ presets:
     right: 0
   - left: postmarket_change
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: postmarket_change
     sortOrder: asc
-  options:
-    active_symbols_only: true
 - name: active_after_hours
   filter:
   - left: is_primary
@@ -641,30 +670,31 @@ presets:
     right: stock
   - left: postmarket_volume
     operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
   sort:
     sortBy: postmarket_volume
     sortOrder: desc
-  options:
-    active_symbols_only: true
 - name: market_sectors
   filter:
-      - left: description
-        operation: nempty
+  - left: description
+    operation: nempty
   symbols:
     query:
       types:
-        - sector
+      - sector
   sort:
     sortBy: description
     sortOrder: asc
 - name: market_industries
   filter:
-    - left: description
-      operation: nempty
+  - left: description
+    operation: nempty
   symbols:
     query:
       types:
-        - industry
+      - industry
   sort:
     sortBy: description
     sortOrder: asc

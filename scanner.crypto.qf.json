@@ -80,11 +80,6 @@
     "type": "map"
   },
   {
-    "name": "update-time",
-    "type": "number",
-    "extract_from": "daily-bar" 
-  },
-  {
     "name": "circulating_supply",
     "type": "number"
   },
@@ -223,10 +218,5 @@
   {
     "name": "24h_vol_change_cmc",
     "type": "number"
-  },
-  {
-    "name": "centralization",
-    "type": "text",
-    "extract_from": "exchange-info" 
   }
 ]

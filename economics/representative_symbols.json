@@ -1,607 +1,2829 @@
 {
+    "fields": [
+      "typespecs",
+      "group",
+      "popularity_rank",
+      "timezone",
+      "symbol",
+      "symbol-primaryname",
+      "description",
+      "exchange-listed",
+      "type"
+    ],
     "symbols": [
-        {
-           "s": "ECONOMICS:GQCOP"
-        },
-        {
-           "s": "ECONOMICS:MEIRMM"
-        },
-        {
-           "s": "ECONOMICS:MWM2"
-        },
-        {
-           "s": "ECONOMICS:AZCOP"
-        },
-        {
-           "s": "ECONOMICS:DJIRYY"
-        },
-        {
-           "s": "ECONOMICS:HNIRYY"
-        },
-        {
-           "s": "ECONOMICS:KIGDPPC"
-        },
-        {
-           "s": "ECONOMICS:PSIRYY"
-        },
-        {
-           "s": "ECONOMICS:SEINBR"
-        },
-        {
-           "s": "ECONOMICS:SVREM"
-        },
-        {
-           "s": "ECONOMICS:TOGDP"
-        },
-        {
-           "s": "ECONOMICS:BBTA"
-        },
-        {
-           "s": "ECONOMICS:ESINBR"
-        },
-        {
-           "s": "ECONOMICS:TZINTR"
-        },
-        {
-           "s": "ECONOMICS:PGCOP"
-        },
-        {
-           "s": "ECONOMICS:PHFER"
-        },
-        {
-           "s": "ECONOMICS:SZIRYY"
-        },
-        {
-           "s": "ECONOMICS:TTIRYY"
-        },
-        {
-           "s": "ECONOMICS:TWINBR"
-        },
-        {
-           "s": "ECONOMICS:UGFER"
-        },
-        {
-           "s": "ECONOMICS:GLGDP"
-        },
-        {
-           "s": "ECONOMICS:NPIRYY"
-        },
-        {
-           "s": "ECONOMICS:GDGDPPC"
-        },
-        {
-           "s": "ECONOMICS:UYIRYY"
-        },
-        {
-           "s": "ECONOMICS:UZCOP"
-        },
-        {
-           "s": "ECONOMICS:CRMW"
-        },
-        {
-           "s": "ECONOMICS:DZINTR"
-        },
-        {
-           "s": "ECONOMICS:FOIMP"
-        },
-        {
-           "s": "ECONOMICS:GMIRYY"
-        },
-        {
-           "s": "ECONOMICS:PKIRYY"
-        },
-        {
-           "s": "ECONOMICS:QARRR"
-        },
-        {
-           "s": "ECONOMICS:SNCPIHU"
-        },
-        {
-           "s": "ECONOMICS:BZCBBS"
-        },
-        {
-           "s": "ECONOMICS:CNINBR"
-        },
-        {
-           "s": "ECONOMICS:MMCOP"
-        },
-        {
-           "s": "ECONOMICS:NLBR"
-        },
-        {
-           "s": "ECONOMICS:SDCOP"
-        },
-        {
-           "s": "ECONOMICS:VEDIR"
-        },
-        {
-           "s": "ECONOMICS:BWINTR"
-        },
-        {
-           "s": "ECONOMICS:HRINBR"
-        },
-        {
-           "s": "ECONOMICS:KRINBR"
-        },
-        {
-           "s": "ECONOMICS:NIIMP"
-        },
-        {
-           "s": "ECONOMICS:PAIMP"
-        },
-        {
-           "s": "ECONOMICS:RWIRYY"
-        },
-        {
-           "s": "ECONOMICS:SGINBR"
-        },
-        {
-           "s": "ECONOMICS:CMCOP"
-        },
-        {
-           "s": "ECONOMICS:KHIRYY"
-        },
-        {
-           "s": "ECONOMICS:BRINBR"
-        },
-        {
-           "s": "ECONOMICS:ININBR"
-        },
-        {
-           "s": "ECONOMICS:MGDIR"
-        },
-        {
-           "s": "ECONOMICS:TJCOP"
-        },
-        {
-           "s": "ECONOMICS:VCGDPPC"
-        },
-        {
-           "s": "ECONOMICS:AMIRMM"
-        },
-        {
-           "s": "ECONOMICS:BNCOP"
-        },
-        {
-           "s": "ECONOMICS:MVM2"
-        },
-        {
-           "s": "ECONOMICS:GYIRYY"
-        },
-        {
-           "s": "ECONOMICS:KMINTR"
-        },
-        {
-           "s": "ECONOMICS:CZINBR"
-        },
-        {
-           "s": "ECONOMICS:ERGRES"
-        },
-        {
-           "s": "ECONOMICS:GAIRYY"
-        },
-        {
-           "s": "ECONOMICS:HTINTR"
-        },
-        {
-           "s": "ECONOMICS:JPDIR"
-        },
-        {
-           "s": "ECONOMICS:PRUR"
-        },
-        {
-           "s": "ECONOMICS:BMRSYY"
-        },
-        {
-           "s": "ECONOMICS:CICOP"
-        },
-        {
-           "s": "ECONOMICS:LCGDPPC"
-        },
-        {
-           "s": "ECONOMICS:NCCPI"
-        },
-        {
-           "s": "ECONOMICS:SADIR"
-        },
-        {
-           "s": "ECONOMICS:BFCPI"
-        },
-        {
-           "s": "ECONOMICS:GHM2"
-        },
-        {
-           "s": "ECONOMICS:CDCOP"
-        },
-        {
-           "s": "ECONOMICS:HKINBR"
-        },
-        {
-           "s": "ECONOMICS:ISINBR"
-        },
-        {
-           "s": "ECONOMICS:MAM3"
-        },
-        {
-           "s": "ECONOMICS:SLIRYY"
-        },
-        {
-           "s": "ECONOMICS:TLIRYY"
-        },
-        {
-           "s": "ECONOMICS:ADGDPPC"
-        },
-        {
-           "s": "ECONOMICS:AWIRYY"
-        },
-        {
-           "s": "ECONOMICS:WWSPI"
-        },
-        {
-           "s": "ECONOMICS:MKIRMM"
-        },
-        {
-           "s": "ECONOMICS:ROINBR"
-        },
-        {
-           "s": "ECONOMICS:COINBR"
-        },
-        {
-           "s": "ECONOMICS:GWIRYY"
-        },
-        {
-           "s": "ECONOMICS:SIUR"
-        },
-        {
-           "s": "ECONOMICS:TDCOP"
-        },
-        {
-           "s": "ECONOMICS:THINBR"
-        },
-        {
-           "s": "ECONOMICS:MLIRYY"
-        },
-        {
-           "s": "ECONOMICS:NOINBR"
-        },
-        {
-           "s": "ECONOMICS:LYCOP"
-        },
-        {
-           "s": "ECONOMICS:MXMW"
-        },
-        {
-           "s": "ECONOMICS:SSCPIT"
-        },
-        {
-           "s": "ECONOMICS:UAINBR"
-        },
-        {
-           "s": "ECONOMICS:ZAINBR"
-        },
-        {
-           "s": "ECONOMICS:DKLR"
-        },
-        {
-           "s": "ECONOMICS:KYFI"
-        },
-        {
-           "s": "ECONOMICS:GECOP"
-        },
-        {
-           "s": "ECONOMICS:LRIRYY"
-        },
-        {
-           "s": "ECONOMICS:NACPI"
-        },
-        {
-           "s": "ECONOMICS:NZDIR"
-        },
-        {
-           "s": "ECONOMICS:SBGDP"
-        },
-        {
-           "s": "ECONOMICS:SMISP"
-        },
-        {
-           "s": "ECONOMICS:ALCPI"
-        },
-        {
-           "s": "ECONOMICS:ARDIR"
-        },
-        {
-           "s": "ECONOMICS:SYIRYY"
-        },
-        {
-           "s": "ECONOMICS:FIINBR"
-        },
-        {
-           "s": "ECONOMICS:LBLB"
-        },
-        {
-           "s": "ECONOMICS:LUSP"
-        },
-        {
-           "s": "ECONOMICS:LVINBR"
-        },
-        {
-           "s": "ECONOMICS:PYMW"
-        },
-        {
-           "s": "ECONOMICS:RUINBR"
-        },
-        {
-           "s": "ECONOMICS:BYM3"
-        },
-        {
-           "s": "ECONOMICS:CGCOP"
-        },
-        {
-           "s": "ECONOMICS:DOTA"
-        },
-        {
-           "s": "ECONOMICS:ECINBR"
-        },
-        {
-           "s": "ECONOMICS:GNIRYY"
-        },
-        {
-           "s": "ECONOMICS:ILINBR"
-        },
-        {
-           "s": "ECONOMICS:PTIMP"
-        },
-        {
-           "s": "ECONOMICS:SOIRYY"
-        },
-        {
-           "s": "ECONOMICS:AOCOP"
-        },
-        {
-           "s": "ECONOMICS:CYCPI"
-        },
-        {
-           "s": "ECONOMICS:TRLR"
-        },
-        {
-           "s": "ECONOMICS:LIIRYY"
-        },
-        {
-           "s": "ECONOMICS:LTCPI"
-        },
-        {
-           "s": "ECONOMICS:BSFER"
-        },
-        {
-           "s": "ECONOMICS:EECPI"
-        },
-        {
-           "s": "ECONOMICS:BTFER"
-        },
-        {
-           "s": "ECONOMICS:USINBR"
-        },
-        {
-           "s": "ECONOMICS:IECAR"
-        },
-        {
-           "s": "ECONOMICS:NGINBR"
-        },
-        {
-           "s": "ECONOMICS:TGIRYY"
-        },
-        {
-           "s": "ECONOMICS:ATCPI"
-        },
-        {
-           "s": "ECONOMICS:FRMPRYY"
-        },
-        {
-           "s": "ECONOMICS:CHINBR"
-        },
-        {
-           "s": "ECONOMICS:FJIRYY"
-        },
-        {
-           "s": "ECONOMICS:IMISP"
-        },
-        {
-           "s": "ECONOMICS:YECOP"
-        },
-        {
-           "s": "ECONOMICS:AFIRYY"
-        },
-        {
-           "s": "ECONOMICS:BIIRYY"
-        },
-        {
-           "s": "ECONOMICS:BGINBR"
-        },
-        {
-           "s": "ECONOMICS:IDINBR"
-        },
-        {
-           "s": "ECONOMICS:LKCRR"
-        },
-        {
-           "s": "ECONOMICS:MRINTR"
-        },
-        {
-           "s": "ECONOMICS:MTEMP"
-        },
-        {
-           "s": "ECONOMICS:TMCOP"
-        },
-        {
-           "s": "ECONOMICS:AEINBR"
-        },
-        {
-           "s": "ECONOMICS:AUCBBS"
-        },
-        {
-           "s": "ECONOMICS:KEBLR"
-        },
-        {
-           "s": "ECONOMICS:LSIRYY"
-        },
-        {
-           "s": "ECONOMICS:MCPOP"
-        },
-        {
-           "s": "ECONOMICS:MDIRMM"
-        },
-        {
-           "s": "ECONOMICS:WSDIR"
-        },
-        {
-           "s": "ECONOMICS:BJIRYY"
-        },
-        {
-           "s": "ECONOMICS:DMGDPPC"
-        },
-        {
-           "s": "ECONOMICS:IRIRYY"
-        },
-        {
-           "s": "ECONOMICS:MNCOP"
-        },
-        {
-           "s": "ECONOMICS:VNINBR"
-        },
-        {
-           "s": "ECONOMICS:CLINBR"
-        },
-        {
-           "s": "ECONOMICS:ETIRMM"
-        },
-        {
-           "s": "ECONOMICS:CFIRYY"
-        },
-        {
-           "s": "ECONOMICS:CUCOP"
-        },
-        {
-           "s": "ECONOMICS:GBINBR"
-        },
-        {
-           "s": "ECONOMICS:KZINBR"
-        },
-        {
-           "s": "ECONOMICS:SKCIR"
-        },
-        {
-           "s": "ECONOMICS:AGGDPPC"
-        },
-        {
-           "s": "ECONOMICS:BAM3"
-        },
-        {
-           "s": "ECONOMICS:GRCPI"
-        },
-        {
-           "s": "ECONOMICS:JMM1"
-        },
-        {
-           "s": "ECONOMICS:LAIRYY"
-        },
-        {
-           "s": "ECONOMICS:SCFER"
-        },
-        {
-           "s": "ECONOMICS:STINTR"
-        },
-        {
-           "s": "ECONOMICS:VUIRYY"
-        },
-        {
-           "s": "ECONOMICS:BEIRMM"
-        },
-        {
-           "s": "ECONOMICS:EUINBR"
-        },
-        {
-           "s": "ECONOMICS:ZWFI"
-        },
-        {
-           "s": "ECONOMICS:TNDIR"
-        },
-        {
-           "s": "ECONOMICS:ZMDIR"
-        },
-        {
-           "s": "ECONOMICS:MYINBR"
-        },
-        {
-           "s": "ECONOMICS:MZDIR"
-        },
-        {
-           "s": "ECONOMICS:GTCPI"
-        },
-        {
-           "s": "ECONOMICS:HUINBR"
-        },
-        {
-           "s": "ECONOMICS:DEPSC"
-        },
-        {
-           "s": "ECONOMICS:EGINBR"
-        },
-        {
-           "s": "ECONOMICS:KWINBR"
-        },
-        {
-           "s": "ECONOMICS:XKBBS"
-        },
-        {
-           "s": "ECONOMICS:JOINTR"
-        },
-        {
-           "s": "ECONOMICS:KGIMP"
-        },
-        {
-           "s": "ECONOMICS:KPPOP"
-        },
-        {
-           "s": "ECONOMICS:MOM2"
-        },
-        {
-           "s": "ECONOMICS:MUCPI"
-        },
-        {
-           "s": "ECONOMICS:RSINBR"
-        },
-        {
-           "s": "ECONOMICS:BDEXP"
-        },
-        {
-           "s": "ECONOMICS:CADIR"
-        },
-        {
-           "s": "ECONOMICS:CVPSC"
-        },
-        {
-           "s": "ECONOMICS:IQCOP"
-        },
-        {
-           "s": "ECONOMICS:ITCA"
-        },
-        {
-           "s": "ECONOMICS:NEIRYY"
-        },
-        {
-           "s": "ECONOMICS:OMCOP"
-        },
-        {
-           "s": "ECONOMICS:PEINBR"
-        },
-        {
-           "s": "ECONOMICS:BHINBR"
-        },
-        {
-           "s": "ECONOMICS:BOCPI"
-        },
-        {
-           "s": "ECONOMICS:PLINBR"
-        }
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GQ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ME\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=DJ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=HN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KI\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PS\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SV\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BB\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ES\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PH\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=UG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GL\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NP\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GD\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=UY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=UZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=DZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=FO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PK\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=QA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NL\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SD\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=VE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=HR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NI\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=RW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KH\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TJ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=VC\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MV\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ER\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=HT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=JP\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CI\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LC\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NC\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BF\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GH\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CD\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=HK\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IS\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SL\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TL\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AD\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=WW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MK\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=RO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SI\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TD\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TH\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ML\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MX\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SS\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=UA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ZA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=DK\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SB\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AL\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=FI\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LB\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LV\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=RU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=DO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=EC\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IL\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LI\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BS\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=EE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=US\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=FR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CH\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=FJ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=YE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AF\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BI\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ID\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LK\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LS\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MC\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MD\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=WS\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BJ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=DM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=VN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CL\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ET\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CF\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GB\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SK\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=AG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GR\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=JM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=LA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=SC\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ST\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=VU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=EU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ZW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=TN\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ZM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MY\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MZ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=HU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=DE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=EG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KW\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=XK\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=JO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KG\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=KP\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=MU\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=RS\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BD\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CA\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=CV\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IQ\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=IT\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=NE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=OM\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PE\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BH\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=BO\"}}"
+      },
+      {
+        "f": [
+          "",
+          "tradingeconomics",
+          5.709845123895545,
+          "Etc/UTC",
+          "CONST1",
+          null,
+          "SIMULATED",
+          "SIMULATED",
+          "economic"
+        ],
+        "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=PL\"}}"
+      }
     ]
 }

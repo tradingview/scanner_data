@@ -2,8 +2,9 @@
 indicator("economic screener")
 
 expr = close
-country_code = str.substring(syminfo.ticker, 0, 2)
-econ_prefix = syminfo.prefix + ":" + country_code
+var string country = str.match(syminfo.tickerid, "country=[A-Z][A-Z]")
+country_code = str.substring(country, 8, 10)
+econ_prefix = "ECONOMICS:" + country_code
 
 get_econ(econ_code) => econ = request.security(econ_prefix + econ_code, timeframe.period, expr, lookahead=barmerge.lookahead_on, ignore_invalid_symbol=true)
 

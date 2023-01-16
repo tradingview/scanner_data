@@ -4380,6 +4380,13 @@
       ]
     },
     {
+      "s": "CME:BTCN2023",
+      "f": [
+        null,
+        "CME:BTC"
+      ]
+    },
+    {
       "s": "CME:BTCU2023",
       "f": [
         null,
@@ -4899,6 +4906,13 @@
     },
     {
       "s": "CME:GFF2023",
+      "f": [
+        null,
+        "CME:GF"
+      ]
+    },
+    {
+      "s": "CME:GFF2024",
       "f": [
         null,
         "CME:GF"
@@ -9064,13 +9078,6 @@
     },
     {
       "s": "NYMEX:CLK2024",
-      "f": [
-        null,
-        "NYMEX:CL"
-      ]
-    },
-    {
-      "s": "NYMEX:CLK2025",
       "f": [
         null,
         "NYMEX:CL"

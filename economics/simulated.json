@@ -1,0 +1,43 @@
+{
+    "fields": [
+        "typespecs",
+        "group",
+        "popularity_rank",
+        "timezone",
+        "symbol",
+        "symbol-primaryname",
+        "description",
+        "exchange-listed",
+        "type"
+    ],
+    "symbols": [
+        {
+            "f": [
+                "",
+                "tradingeconomics",
+                5.709845123895545,
+                "Etc/UTC",
+                "CONST1",
+                null,
+                "SIMULATED US",
+                "SIMULATED",
+                "economic"
+            ],
+            "s": "%7B%22symbol%22%3A%22SIMULATED%3ACONST1%22%2C%22type%22%3A%22Script%40tv-scripting-101%21%22%2C%22inputs%22%3A%7B%22text%22%3A%22close%22%2C%22pineId%22%3A%22country%3DUS%22%7D%7D"
+        },
+        {
+            "f": [
+                "",
+                "tradingeconomics",
+                5.709845123895545,
+                "Etc/UTC",
+                "CONST1",
+                null,
+                "SIMULATED RU",
+                "SIMULATED",
+                "economic"
+            ],
+            "s": "%7B%22symbol%22%3A%22SIMULATED%3ACONST1%22%2C%22type%22%3A%22Script%40tv-scripting-101%21%22%2C%22inputs%22%3A%7B%22text%22%3A%22close%22%2C%22pineId%22%3A%22country%3DRU%22%7D%7D"
+        }
+    ]
+}

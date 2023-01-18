@@ -23,6 +23,20 @@
         "SIMULATED",
         "economic"
       ],
+      "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=GQ\"}}"
+    },
+    {
+      "f": [
+        "",
+        "tradingeconomics",
+        5.709845123895545,
+        "Etc/UTC",
+        "CONST1",
+        null,
+        "SIMULATED",
+        "SIMULATED",
+        "economic"
+      ],
       "s": "={\"symbol\":\"SIMULATED:CONST1\",\"type\":\"Script@tv-scripting-101!\",\"inputs\":{\"text\":\"open~high~low~close~volume~$0!$1!$2!$3!$4;s5:$0():s5~$1~$2~$3~$4~$5~$6!$7!$8!$9!$10\",\"pineId\":\"country=ME\"}}"
     },
     {

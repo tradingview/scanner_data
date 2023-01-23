@@ -684,8 +684,9 @@
         "type": "text"
     },
     {
-        "name": "daily-bar",
-        "type": "map"
+        "name": "update-time",
+        "type": "number",
+        "extract_from": "daily-bar" 
     },
     {
         "name": "total_revenue_fy_h",

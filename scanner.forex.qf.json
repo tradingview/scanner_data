@@ -80,8 +80,9 @@
     "type": "price"
   },
   {
-    "name": "daily-bar",
-    "type": "map"
+    "name": "update-time",
+    "type": "number",
+    "extract_from": "daily-bar" 
   },
   {
     "name": "kind",

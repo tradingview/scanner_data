@@ -684,8 +684,9 @@
         "type": "text"
     },
     {
-        "name": "daily-bar",
-        "type": "map"
+        "name": "update-time",
+        "type": "number",
+        "extract_from": "daily-bar" 
     },
     {
         "name": "total_revenue_fy_h",
@@ -808,7 +809,47 @@
         "type": "num_slice"
     },
     {
-        "name": "price_free_cash_flow_ttm",
+        "name": "price_target_high",
+        "type": "number"
+    },
+    {
+        "name": "price_target_low",
+        "type": "number"
+    },
+    {
+        "name": "price_target_median",
+        "type": "number"
+    },
+    {
+        "name": "price_target_average",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_buy",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_sell",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_hold",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_under",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_over",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_total",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_mark",
         "type": "number"
     }
 ]

@@ -31,3 +31,31 @@ presets:
   sort:
     sortBy: 24h_close_change|5
     sortOrder: asc
+- name: coin_most_traded
+  sort:
+    sortBy: 24h_vol_cmc
+    sortOrder: desc
+- name: coin_large_cap
+  filter:
+  - left: market_cap_calc
+    operation: greater
+    right: 1000000000
+  sort:
+    sortBy: market_cap_calc
+    sortOrder: desc
+- name: coin_small_cap
+  filter:
+  - left: market_cap_calc
+    operation: less
+    right: 100000000
+  sort:
+    sortBy: market_cap_calc
+    sortOrder: desc
+- name: coin_narrow_supply
+  sort:
+    sortBy: circulating_supply
+    sortOrder: desc
+- name: coin_most_expensive
+  sort:
+    sortBy: close
+    sortOrder: desc

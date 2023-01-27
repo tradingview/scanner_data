@@ -1,75 +1,87 @@
 [
-    {
-      "name": "pricescale",
-      "type": "number"
-    },
-    {
-      "name": "minmov",
-      "type": "number"
-    },
-    {
-      "name": "minmove2",
-      "type": "number"
-    },
-    {
-      "name": "fractional",
-      "type": "text"
-    },
-    {
-      "name": "sector",
-      "type": "text"
-    },
-    {
-      "name": "country",
-      "type": "text"
-    },
-    {
-      "name": "current_session",
-      "type": "text"
-    },
-    {
-      "name": "rtc",
-      "type": "price"
-    },
-    {
-      "name": "bid",
-      "type": "price"
-    },
-    {
-      "name": "ask",
-      "type": "price"
-    },
-    {
-      "name": "all_time_high",
-      "type": "price"
-    },
-    {
-      "name": "all_time_low",
-      "type": "price"
-    },
-    {
-      "name": "provider-id",
-      "type": "text"
-    },
-    {
-      "name": "all_time_open",
-      "type": "price"
-    },
-    {
-      "name": "daily-bar",
-      "type": "map"
-    },
-    {
-      "name": "term-to-maturity",
-      "type": "text"
-    },
-    {
-      "name": "index_priority",
-      "type": "number"
-    },
-    {
-      "name": "country_code",
-      "type": "text"
-    }
-  ]
-  
+  {
+    "name": "pricescale",
+    "type": "number"
+  },
+  {
+    "name": "minmov",
+    "type": "number"
+  },
+  {
+    "name": "minmove2",
+    "type": "number"
+  },
+  {
+    "name": "fractional",
+    "type": "text"
+  },
+  {
+    "name": "sector",
+    "type": "text"
+  },
+  {
+    "name": "region",
+    "type": "text"
+  },
+  {
+    "name": "current_session",
+    "type": "text"
+  },
+  {
+    "name": "rtc",
+    "type": "price"
+  },
+  {
+    "name": "bid",
+    "type": "price"
+  },
+  {
+    "name": "ask",
+    "type": "price"
+  },
+  {
+    "name": "all_time_high",
+    "type": "price"
+  },
+  {
+    "name": "all_time_low",
+    "type": "price"
+  },
+  {
+    "name": "provider-id",
+    "type": "text"
+  },
+  {
+    "name": "all_time_open",
+    "type": "price"
+  },
+  {
+    "name": "update-time",
+    "type": "number",
+    "extract_from": "daily-bar" 
+  },
+  {
+    "name": "term-to-maturity",
+    "type": "text"
+  },
+  {
+    "name": "index_priority",
+    "type": "number"
+  },
+  {
+    "name": "forex_priority",
+    "type": "number"
+  },
+  {
+    "name": "country_code",
+    "type": "text"
+  },
+  {
+    "name": "popularity_rank",
+    "type": "number"
+  },
+  {
+    "name": "Bond.Currency",
+    "type": "text"
+  }
+]

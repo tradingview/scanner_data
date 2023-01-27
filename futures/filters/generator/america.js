@@ -69,7 +69,7 @@ function isExpired(parseRes) {
 }
 
 groups.forEach(function (path) {
-    let url = "http://udf-proxy.tradingview.com:8094/symbols?domain=tv&prefix=" + path;
+    let url = "http://udf-proxy.tradingview.com:8094/symbols?domain=tv&symbol=%21%24%7C%5Cd%7B4%2C%7D%24&prefix=" + path; //symbol=!$%7C\d{4,}
     const urlO = new URL(url);
     urlO.searchParams.append('fields', 'symbol');
     url = urlO.toString();

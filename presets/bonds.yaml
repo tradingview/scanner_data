@@ -1,0 +1,98 @@
+---
+presets:
+- name: bonds_all
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: bonds_all_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+- name: bonds_all_10y_yield
+  filter:
+  - left: term-to-maturity
+    operation: equal
+    right: P10Y
+  - left: typespecs
+    operation: has
+    right: yield
+- name: bonds_major_10y_yield
+  filter:
+  - left: term-to-maturity
+    operation: equal
+    right: P10Y
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: in_range
+    right:
+    - AR
+    - AU
+    - BR
+    - CA
+    - CN
+    - EU
+    - FR
+    - DE
+    - IN
+    - ID
+    - IT
+    - JP
+    - MX
+    - RU
+    - SA
+    - ZA
+    - KR
+    - TR
+    - GB
+    - US
+- name: bonds_americas_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: region
+    operation: equal
+    right: Americas
+- name: bonds_europe_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: region
+    operation: equal
+    right: Europe
+- name: bonds_asia_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: region
+    operation: equal
+    right: Asia
+- name: bonds_pacific_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: region
+    operation: equal
+    right: Pacific
+- name: bonds_middle_east_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: region
+    operation: equal
+    right: Middle East
+- name: bonds_africa_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: region
+    operation: equal
+    right: Africa

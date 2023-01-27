@@ -71,16 +71,17 @@
     "name": "all_time_low",
     "type": "price"
   },
-	{
-		"name": "all_time_open",
-		"type": "price"
-	},
+  {
+    "name": "all_time_open",
+    "type": "price"
+  },
   {
     "name": "provider-id",
     "type": "text"
   },
   {
-    "name": "daily-bar",
-    "type": "map"
+    "name": "update-time",
+    "type": "number",
+    "extract_from": "daily-bar" 
   }
 ]

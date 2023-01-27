@@ -76,8 +76,9 @@
     "type": "number"
   },
   {
-    "name": "daily-bar",
-    "type": "map"
+    "name": "update-time",
+    "type": "number",
+    "extract_from": "daily-bar" 
   },
   {
     "name": "circulating_supply",
@@ -148,10 +149,6 @@
     "type": "fundamental_price"
   },
   {
-    "name": "market_cap_calc",
-    "type": "fundamental_price"
-  },
-  {
     "name": "total_addresses_with_balance",
     "type": "number"
   },
@@ -218,5 +215,10 @@
   {
     "name": "24h_vol_change_cmc",
     "type": "number"
+  },
+  {
+    "name": "centralization",
+    "type": "text",
+    "extract_from": "exchange-info" 
   }
 ]

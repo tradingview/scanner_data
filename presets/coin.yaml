@@ -50,7 +50,7 @@ presets:
     right: 100000000
   sort:
     sortBy: market_cap_calc
-    sortOrder: desc
+    sortOrder: asc
 - name: coin_narrow_supply
   sort:
     sortBy: circulating_supply

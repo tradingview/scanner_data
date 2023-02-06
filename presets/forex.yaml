@@ -1,6 +1,9 @@
 ---
 presets:
 - name: forex_rates_all
+  filter:
+    - left: name
+      operation: nempty
   symbols:
     query:
       types:
@@ -10,6 +13,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_major
   filter:
+    - left: forex_priority
+      operation: nempty
     - left: sector
       operation: equal
       right: Major
@@ -22,6 +27,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_minor
   filter:
+  - left: forex_minor_priority
+    operation: nempty
   - left: sector
     operation: equal
     right: Minor
@@ -34,6 +41,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_exotic
   filter:
+  - left: forex_exotic_priority
+    operation: nempty
   - left: sector
     operation: equal
     right: Exotic
@@ -46,6 +55,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_americas
   filter:
+    - left: forex_priority
+      operation: nempty
     - left: country,country2
       operation: equal
       right: Americas
@@ -58,6 +69,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_europe
   filter:
+    - left: forex_priority
+      operation: nempty
     - left: country,country2
       operation: equal
       right: Europe
@@ -70,6 +83,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_asia
   filter:
+    - left: forex_priority
+      operation: nempty
     - left: country,country2
       operation: equal
       right: Asia
@@ -82,6 +97,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_pacific
   filter:
+    - left: forex_priority
+      operation: nempty
     - left: country,country2
       operation: equal
       right: Pacific
@@ -94,6 +111,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_middle_east
   filter:
+    - left: forex_priority
+      operation: nempty
     - left: country,country2
       operation: equal
       right: Middle East
@@ -106,6 +125,8 @@ presets:
     sortOrder: asc
 - name: forex_rates_africa
   filter:
+    - left: forex_priority
+      operation: nempty
     - left: country,country2
       operation: equal
       right: Africa

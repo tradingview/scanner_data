@@ -62,6 +62,8 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: market_cap_basic
+    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
@@ -207,6 +209,8 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: market_cap_basic
+    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
@@ -224,6 +228,8 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: market_cap_basic
+    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
@@ -258,6 +264,8 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: market_cap_basic
+    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
@@ -564,6 +572,9 @@ presets:
     sortBy: postmarket_volume
     sortOrder: desc
 - name: market_sectors
+  filter:
+  - left: description
+    operation: nempty
   symbols:
     query:
       types:
@@ -572,6 +583,9 @@ presets:
     sortBy: description
     sortOrder: asc
 - name: market_industries
+  filter:
+  - left: description
+    operation: nempty
   symbols:
     query:
       types:

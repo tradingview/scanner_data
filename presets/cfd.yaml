@@ -1,22 +1,29 @@
 ---
 presets:
 - name: cfd_all
+  filter:
+  - left: type
+    operation: in_range
+    right:
+    - commodity
+    - index
+  - left: typespecs
+    operation: has
+    right: cfd
   sort:
     sortBy: name
     sortOrder: asc
-  symbols:
-    query:
-      types:
-        - cfd
 - name: cfd_agricultural
   filter:
   - left: sector
     operation: equal
     right: Agricultural
-  symbols:
-    query:
-      types:
-        - cfd
+  - left: type
+    operation: equal
+    right: commodity
+  - left: typespecs
+    operation: has
+    right: cfd
   sort:
     sortBy: name
     sortOrder: asc
@@ -25,10 +32,12 @@ presets:
   - left: sector
     operation: equal
     right: Energy
-  symbols:
-    query:
-      types:
-        - cfd
+  - left: type
+    operation: equal
+    right: commodity
+  - left: typespecs
+    operation: has
+    right: cfd
   sort:
     sortBy: name
     sortOrder: asc
@@ -37,10 +46,16 @@ presets:
   - left: sector
     operation: equal
     right: Metals
+  - left: type
+    operation: equal
+    right: commodity
+  - left: typespecs
+    operation: has
+    right: cfd
   symbols:
     query:
       types:
-        - cfd
+      - cfd
   sort:
     sortBy: name
     sortOrder: asc
@@ -49,10 +64,12 @@ presets:
   - left: sector
     operation: equal
     right: index
-  symbols:
-    query:
-      types:
-        - cfd
+  - left: typespecs
+    operation: has
+    right: cfd
+  - left: type
+    operation: equal
+    right: index
   sort:
     sortBy: name
     sortOrder: asc

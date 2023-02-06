@@ -2,6 +2,8 @@
 presets:
 - name: worlds_largest_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -87,6 +89,8 @@ presets:
   - vietnam
 - name: worlds_non_us_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: country
     operation: nequal
     right: United States
@@ -175,6 +179,8 @@ presets:
   - vietnam
 - name: worlds_largest_employers
   filter:
+  - left: number_of_employees
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -260,6 +266,8 @@ presets:
   - vietnam
 - name: worlds_highest_revenue
   filter:
+  - left: total_revenue
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -345,6 +353,8 @@ presets:
   - vietnam
 - name: worlds_highest_earnings
   filter:
+  - left: gross_profit
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -430,6 +440,8 @@ presets:
   - vietnam
 - name: worlds_highest_dividends
   filter:
+  - left: dividend_yield_recent
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -515,6 +527,8 @@ presets:
   - vietnam
 - name: worlds_largest_oil_and_gas_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -606,6 +620,8 @@ presets:
   - vietnam
 - name: worlds_largest_semiconductors_producers
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -692,6 +708,8 @@ presets:
   - vietnam
 - name: worlds_largest_telecommunication_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -783,6 +801,8 @@ presets:
   - vietnam
 - name: worlds_largest_tech_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -874,6 +894,8 @@ presets:
   - vietnam
 - name: worlds_largest_biotech_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -960,6 +982,8 @@ presets:
   - vietnam
 - name: worlds_largest_finance_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1047,6 +1071,8 @@ presets:
   - vietnam
 - name: worlds_largest_banks
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1136,6 +1162,8 @@ presets:
   - vietnam
 - name: worlds_largest_e_commerce_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1223,6 +1251,8 @@ presets:
   - vietnam
 - name: worlds_largest_software_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1310,6 +1340,8 @@ presets:
   - vietnam
 - name: worlds_largest_automakers
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1396,6 +1428,8 @@ presets:
   - vietnam
 - name: worlds_largest_hotels_and_resorts
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1482,6 +1516,8 @@ presets:
   - vietnam
 - name: worlds_largest_restaurant_chains
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1568,6 +1604,8 @@ presets:
   - vietnam
 - name: worlds_largest_stores
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1657,6 +1695,8 @@ presets:
   - vietnam
 - name: worlds_largest_beverage_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:
@@ -1744,6 +1784,8 @@ presets:
   - vietnam
 - name: worlds_largest_food_companies
   filter:
+  - left: market_cap_basic
+    operation: nempty
   - left: type
     operation: in_range
     right:

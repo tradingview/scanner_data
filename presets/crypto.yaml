@@ -12,6 +12,7 @@ presets:
   sort:
     sortBy: market_cap_calc
     sortOrder: desc
+  options: {}
 - name: top-defi
   filter:
   - left: typespecs
@@ -27,3 +28,4 @@ presets:
   sort:
     sortBy: market_cap_calc
     sortOrder: desc
+  options: {}

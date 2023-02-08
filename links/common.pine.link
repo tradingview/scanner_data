@@ -155,6 +155,7 @@ atrlength = input(10, "ATR Length")
 rangemaKltChnl = ta.atr(atrlength)
 plot(maKltChnl + rangemaKltChnl * multKltChnl, title='KltChnl.upper')
 plot(maKltChnl - rangemaKltChnl * multKltChnl, title='KltChnl.lower')
+plot(maKltChnl, title='KltChnl.basis')
 
 // study("My Parabolic SAR", overlay=true)
 PSAR = ta.sar(0.02, 0.02, 0.2)

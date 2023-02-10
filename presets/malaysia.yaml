@@ -77,6 +77,9 @@ presets:
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: number_of_employees
     sortOrder: desc
@@ -261,6 +264,9 @@ presets:
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: beta_1_year
     sortOrder: desc
@@ -281,6 +287,9 @@ presets:
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: Perf.Y
     sortOrder: desc
@@ -321,6 +330,9 @@ presets:
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: close
     sortOrder: desc

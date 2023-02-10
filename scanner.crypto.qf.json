@@ -145,6 +145,18 @@
     "type": "set"
   },
   {
+    "name": "crypto_blockchain_ecosystems",
+    "type": "set"
+  },
+  {
+    "name": "crypto_consensus_algorithms",
+    "type": "set"
+  },
+  {
+    "name": "crypto_common_categories",
+    "type": "set"
+  },
+  {
     "name": "market_cap",
     "type": "fundamental_price"
   },

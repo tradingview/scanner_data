@@ -11,9 +11,9 @@ presets:
     right: defi
   - left: tvl
     operation: egreater
-    right: 1000000
+    right: 1
   sort:
-    sortBy: tvl
+    sortBy: market_cap_calc
     sortOrder: desc
 - name: coin_gainers
   filter:
@@ -58,4 +58,32 @@ presets:
 - name: coin_most_expensive
   sort:
     sortBy: close
+    sortOrder: desc
+- name: coin_development_activity
+  filter:
+  - left: github_commits
+    operation: greater
+    right: 1
+  sort:
+    sortBy: github_commits
+    sortOrder: desc
+- name: coin_highest_supply
+  sort:
+    sortBy: circulating_supply
+    sortOrder: desc
+- name: coin_most_addresses_active
+  filter:
+  - left: addresses_active
+    operation: greater
+    right: 1
+  sort:
+    sortBy: addresses_active
+    sortOrder: desc
+- name: coin_most_addresses_with_balance
+  filter:
+  - left: total_addresses_with_balance
+    operation: greater
+    right: 1
+  sort:
+    sortBy: total_addresses_with_balance
     sortOrder: desc

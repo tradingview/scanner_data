@@ -78,9 +78,6 @@ presets:
   - left: sector
     operation: equal
     right: index
-  - left: sector
-    operation: equal
-    right: index
   - left: index_priority
     operation: nempty
   - left: country_code

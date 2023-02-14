@@ -78,6 +78,31 @@ presets:
   - left: sector
     operation: equal
     right: index
+  - left: index_priority
+    operation: nempty
+  - left: country_code
+    operation: in_range
+    right:
+    - AR
+    - AU
+    - BR
+    - CA
+    - CN
+    - FR
+    - DE
+    - IN
+    - ID
+    - IT
+    - JP
+    - KR
+    - MX
+    - RU
+    - SA
+    - ZA
+    - TR
+    - GB
+    - US
+    - EU
   sort:
     sortBy: index_priority
     sortOrder: asc

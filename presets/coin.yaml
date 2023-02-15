@@ -87,3 +87,14 @@ presets:
   sort:
     sortBy: total_addresses_with_balance
     sortOrder: desc
+- name: coin_total_value_locked
+  filter:
+  - left: crypto_categories
+    operation: has
+    right: defi
+  - left: tvl
+    operation: egreater
+    right: 1
+  sort:
+    sortBy: tvl
+    sortOrder: desc

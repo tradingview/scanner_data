@@ -98,11 +98,12 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: market_cap_basic
-    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: number_of_employees
     sortOrder: desc
@@ -332,11 +333,12 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: market_cap_basic
-    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: beta_1_year
     sortOrder: desc
@@ -360,11 +362,12 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: market_cap_basic
-    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: Perf.Y
     sortOrder: desc
@@ -414,11 +417,12 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: market_cap_basic
-    operation: nempty
   - left: active_symbol
     operation: equal
     right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
   sort:
     sortBy: close
     sortOrder: desc
@@ -1007,9 +1011,6 @@ presets:
     sortBy: index_priority
     sortOrder: asc
 - name: market_sectors
-  filter:
-  - left: description
-    operation: nempty
   symbols:
     query:
       types:
@@ -1018,9 +1019,6 @@ presets:
     sortBy: description
     sortOrder: asc
 - name: market_industries
-  filter:
-  - left: description
-    operation: nempty
   symbols:
     query:
       types:

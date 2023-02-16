@@ -32,7 +32,7 @@ const groups = [
         region: "Asia"
     },
     {
-        url2: "prefix=TVC&type=cfd",
+        url2: "prefix=TVC",
         include: ["TVC:FTMIB","TVC:SX5E","TVC:SXXP","TVC:AEX","TVC:CAC40","TVC:SSMI","TVC:DEU40","TVC:UKX","TVC:IBEX35"],
         region: "Europe"
     },
@@ -41,7 +41,7 @@ const groups = [
         sector: "bond"
     },
     {
-        url2: "prefix=TVC&type=cfd",
+        url2: "prefix=TVC",
         include: ["TVC:EUBUND"],
         sector: "bond",
         region: "Europe"
@@ -316,7 +316,8 @@ const groups = [
 const types = {
     "cfd": true,
     "index": true,
-    "bond": true
+    "bond": true,
+    "commodity": true
 };
 
 const symbols = [];

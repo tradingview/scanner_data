@@ -98,3 +98,23 @@ presets:
   sort:
     sortBy: tvl
     sortOrder: desc
+- name: coin_most_volatile
+  sort:
+    sortBy: Volatility.M
+    sortOrder: desc
+- name: coin_most_transactions
+  filter:
+  - left: txs_count
+    operation: greater
+    right: 1
+  sort:
+    sortBy: txs_count
+    sortOrder: desc
+- name: coin_highest_transaction_volume
+  filter:
+  - left: txs_volume_usd
+    operation: greater
+    right: 1
+  sort:
+    sortBy: txs_volume_usd
+    sortOrder: desc

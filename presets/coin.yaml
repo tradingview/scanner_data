@@ -102,7 +102,7 @@ presets:
   sort:
     sortBy: Volatility.M
     sortOrder: desc
-- name: coin_most_transaction
+- name: coin_most_transactions
   filter:
   - left: txs_count
     operation: greater

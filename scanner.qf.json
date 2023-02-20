@@ -809,7 +809,143 @@
         "type": "num_slice"
     },
     {
+        "name": "gross_profit_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "enterprise_value_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebit_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_forecast_next_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_operating_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "working_capital_fq",
+        "type": "fundamental_price"
+    },
+    {
         "name": "diluted_shares_outstanding_fq",
         "type": "fundamental_price"
+    },
+    {
+        "name": "total_current_liabilities_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_debt_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_assets_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "shrhldrs_equity_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "shrhldrs_equity_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "return_on_assets_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "return_on_equity_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "return_on_invested_capital_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "dividend_payout_ratio_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "price_target_high",
+        "type": "number"
+    },
+    {
+        "name": "price_target_low",
+        "type": "number"
+    },
+    {
+        "name": "price_target_median",
+        "type": "number"
+    },
+    {
+        "name": "price_target_average",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_buy",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_sell",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_hold",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_under",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_over",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_total",
+        "type": "number"
+    },
+    {
+        "name": "recommendation_mark",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_1w",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_1m",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_3m",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_6m",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_ytd",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_1y",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_5y",
+        "type": "number"
     }
 ]

@@ -23,18 +23,32 @@ plot(adxPlus, title='ADX+DI')
 plot(adxMinus, title='ADX-DI')
 plot(adxPlus[1], title='ADX+DI[1]')
 plot(adxMinus[1], title='ADX-DI[1]')
+[adxValue9, adxPlus9, adxMinus9] = adx(9, 9)
+plot(adxValue9, title='ADX_9')
+plot(adxPlus9, title='ADX+DI_9')
+plot(adxMinus9, title='ADX-DI_9')
+plot(adxPlus9[1], title='ADX+DI_9[1]')
+plot(adxMinus9[1], title='ADX-DI_9[1]')
 
 // study(shorttitle="BB", title="Bollinger Bands", overlay=true)
-lengthBB = 20
+lengthBB20 = 20
+lengthBB50 = 50
 srcBB = close
 multBB = 2
-basisBB = ta.sma(srcBB, lengthBB)
-devBB = multBB * ta.stdev(srcBB, lengthBB)
-upperBB = basisBB + devBB
-lowerBB = basisBB - devBB
-plot(basisBB, title='BB.basis')
-plot(upperBB, title='BB.upper')
-plot(lowerBB, title='BB.lower')
+basisBB20 = ta.sma(srcBB, lengthBB20)
+devBB20 = multBB * ta.stdev(srcBB, lengthBB20)
+upperBB20 = basisBB20 + devBB20
+lowerBB20 = basisBB20 - devBB20
+plot(basisBB20, title='BB.basis')
+plot(upperBB20, title='BB.upper')
+plot(lowerBB20, title='BB.lower')
+basisBB50 = ta.sma(srcBB, lengthBB50)
+devBB50 = multBB * ta.stdev(srcBB, lengthBB50)
+upperBB50 = basisBB50 + devBB50
+lowerBB50 = basisBB50 - devBB50
+plot(basisBB50, title='BB.basis_50')
+plot(upperBB50, title='BB.upper_50')
+plot(lowerBB50, title='BB.lower_50')
 
 // study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
 sourceMACD = close
@@ -54,12 +68,19 @@ plot(signalMACD, title='MACD.signal')
 Mom = close - close[10]
 plot(Mom, title='Mom')
 plot(Mom[1], title='Mom[1]')
+Mom14 = close - close[14]
+plot(Mom14, title='Mom_14')
+plot(Mom14[1], title='Mom_14[1]')
 
 //study(title="Relative Strength Index", shorttitle="RSI")
 RSI = ta.rsi(close, 14)
 plot(RSI, title='RSI')
-plot(ta.rsi(close, 7), title='RSI7')
 plot(RSI[1], title='RSI[1]')
+plot(ta.rsi(close, 2), title='RSI2')
+plot(ta.rsi(close, 2)[1], title='RSI2[1]')
+plot(ta.rsi(close, 3), title='RSI3')
+plot(ta.rsi(close, 3)[1], title='RSI3[1]')
+plot(ta.rsi(close, 7), title='RSI7')
 plot(ta.rsi(close, 7)[1], title='RSI7[1]')
 
 // study(title="Moving Average", shorttitle="MA", overlay=true)
@@ -69,28 +90,48 @@ SMA10 = ta.sma(close, 10)
 plot(SMA10, title='SMA10')
 SMA20 = ta.sma(close, 20)
 plot(SMA20, title='SMA20')
+SMA25 = ta.sma(close, 25)
+plot(SMA25, title='SMA25')
 SMA30 = ta.sma(close, 30)
 plot(SMA30, title='SMA30')
 SMA50 = ta.sma(close, 50)
 plot(SMA50, title='SMA50')
+SMA75 = ta.sma(close, 75)
+plot(SMA75, title='SMA75')
 SMA100 = ta.sma(close, 100)
 plot(SMA100, title='SMA100')
+SMA150 = ta.sma(close, 150)
+plot(SMA150, title='SMA150')
 SMA200 = ta.sma(close, 200)
 plot(SMA200, title='SMA200')
 
 // study(title="Exponential Moving Average", shorttitle="EMA", overlay=true)
+EMA3 = ta.ema(close, 3)
+plot(EMA3, title='EMA3')
 EMA5 = ta.ema(close, 5)
 plot(EMA5, title='EMA5')
+EMA8 = ta.ema(close, 8)
+plot(EMA8, title='EMA8')
+EMA9 = ta.ema(close, 9)
+plot(EMA9, title='EMA9')
 EMA10 = ta.ema(close, 10)
 plot(EMA10, title='EMA10')
+EMA12 = ta.ema(close, 12)
+plot(EMA12, title='EMA12')
+EMA13 = ta.ema(close, 13)
+plot(EMA13, title='EMA13')
 EMA20 = ta.ema(close, 20)
 plot(EMA20, title='EMA20')
+EMA21 = ta.ema(close, 21)
+plot(EMA21, title='EMA21')
 EMA30 = ta.ema(close, 30)
 plot(EMA30, title='EMA30')
 EMA50 = ta.ema(close, 50)
 plot(EMA50, title='EMA50')
 EMA100 = ta.ema(close, 100)
 plot(EMA100, title='EMA100')
+EMA150 = ta.ema(close, 150)
+plot(EMA150, title='EMA150')
 EMA200 = ta.ema(close, 200)
 plot(EMA200, title='EMA200')
 
@@ -104,6 +145,15 @@ plot(kStoch, title='Stoch.K')
 plot(dStoch, title='Stoch.D')
 plot(kStoch[1], title='Stoch.K[1]')
 plot(dStoch[1], title='Stoch.D[1]')
+lengthStoch := 14
+smoothKStoch := 1
+smoothDStoch := 3
+kStoch_14_1_3 = ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
+dStoch_14_1_3 = ta.sma(kStoch_14_1_3, smoothDStoch)
+plot(kStoch_14_1_3, title='Stoch.K_14_1_3')
+plot(dStoch_14_1_3, title='Stoch.D_14_1_3')
+plot(kStoch_14_1_3[1], title='Stoch.K[1]_14_1_3')
+plot(dStoch_14_1_3[1], title='Stoch.D[1]_14_1_3')
 
 // average volume
 AvgVol = ta.sma(volume, 10)
@@ -222,18 +272,24 @@ plot(UO, title='UO')
 // Ichimoku Cloud
 donchian(len) =>
 	math.avg(ta.lowest(len), ta.highest(len))
-ichimoku_cloud() =>
-	conversionLine = donchian(9)
-	baseLine = donchian(26)
+ichimoku_cloud(v1, v2, v3) =>
+	conversionLine = donchian(v1)
+	baseLine = donchian(v2)
 	leadLine1 = math.avg(conversionLine, baseLine)
-	leadLine2 = donchian(52)
+	leadLine2 = donchian(v3)
 	[conversionLine, baseLine, leadLine1, leadLine2]
-[IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud()
+[IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud(9, 26, 52)
 IC_displacement = 25
 plot(IC_CLine, title='Ichimoku.CLine')
 plot(IC_BLine, title='Ichimoku.BLine')
 plot(IC_Lead1[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead1')
 plot(IC_Lead2[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead2')
+[IC_CLine_20_60_120_30, IC_BLine_20_60_120_30, IC_Lead1_20_60_120_30, IC_Lead2_20_60_120_30] = ichimoku_cloud(20, 60, 120)
+IC_displacement := 30
+plot(IC_CLine_20_60_120_30, title='Ichimoku.CLine_20_60_120_30')
+plot(IC_BLine_20_60_120_30, title='Ichimoku.BLine_20_60_120_30')
+plot(IC_Lead1_20_60_120_30[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead1_20_60_120_30')
+plot(IC_Lead2_20_60_120_30[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead2_20_60_120_30')
 
 // Volume Weighted Moving Average (VWMA)
 VWMA = ta.vwma(close, 20)
@@ -263,23 +319,53 @@ if not na(close)
 	if not na(SMA20)
 		recMA += calcRecommendMA(SMA20, close)
 		recMAC += 1
+	if not na(SMA25)
+		recMA += calcRecommendMA(SMA25, close)
+		recMAC += 1
 	if not na(SMA30)
 		recMA += calcRecommendMA(SMA30, close)
 		recMAC += 1
 	if not na(SMA50)
 		recMA += calcRecommendMA(SMA50, close)
 		recMAC += 1
+	if not na(SMA75)
+		recMA += calcRecommendMA(SMA75, close)
+		recMAC += 1
 	if not na(SMA100)
 		recMA += calcRecommendMA(SMA100, close)
+		recMAC += 1
+	if not na(SMA150)
+		recMA += calcRecommendMA(SMA150, close)
 		recMAC += 1
 	if not na(SMA200)
 		recMA += calcRecommendMA(SMA200, close)
 		recMAC += 1
+	if not na(EMA3)
+		recMA += calcRecommendMA(EMA3, close)
+		recMAC += 1
+	if not na(EMA5)
+		recMA += calcRecommendMA(EMA5, close)
+		recMAC += 1
+	if not na(EMA8)
+		recMA += calcRecommendMA(EMA8, close)
+		recMAC += 1
+	if not na(EMA9)
+		recMA += calcRecommendMA(EMA9, close)
+		recMAC += 1
 	if not na(EMA10)
 		recMA += calcRecommendMA(EMA10, close)
 		recMAC += 1
+	if not na(EMA12)
+		recMA += calcRecommendMA(EMA12, close)
+		recMAC += 1
+	if not na(EMA13)
+		recMA += calcRecommendMA(EMA13, close)
+		recMAC += 1
 	if not na(EMA20)
 		recMA += calcRecommendMA(EMA20, close)
+		recMAC += 1
+	if not na(EMA21)
+		recMA += calcRecommendMA(EMA21, close)
 		recMAC += 1
 	if not na(EMA30)
 		recMA += calcRecommendMA(EMA30, close)
@@ -289,6 +375,9 @@ if not na(close)
 		recMAC += 1
 	if not na(EMA100)
 		recMA += calcRecommendMA(EMA100, close)
+		recMAC += 1
+	if not na(EMA150)
+		recMA += calcRecommendMA(EMA150, close)
 		recMAC += 1
 	if not na(EMA200)
 		recMA += calcRecommendMA(EMA200, close)

@@ -114,3 +114,11 @@ presets:
   sort:
     sortBy: index_priority
     sortOrder: asc
+- name: indices_all
+  filter:
+  - left: sector
+    operation: equal
+    right: index
+  sort:
+    sortBy: index_priority
+    sortOrder: asc

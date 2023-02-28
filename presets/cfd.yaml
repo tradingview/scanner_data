@@ -73,6 +73,18 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: cfd_bond_and_interest_rates
+  filter:
+  - left: sector
+    operation: equal
+    right: bond
+  symbols:
+    query:
+      types:
+      - bond
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: indices_major
   filter:
   - left: sector
@@ -111,6 +123,14 @@ presets:
   - left: sector
     operation: equal
     right: currency
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: indices_all
+  filter:
+  - left: sector
+    operation: equal
+    right: index
   sort:
     sortBy: index_priority
     sortOrder: asc

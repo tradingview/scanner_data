@@ -118,3 +118,35 @@ presets:
   sort:
     sortBy: txs_volume_usd
     sortOrder: desc
+- name: coin_all_time_high
+  filter:
+  - left: High.All
+    operation: equal
+    right: high
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: coin_all_time_low
+  filter:
+  - left: Low.All
+    operation: equal
+    right: low
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: coin_52_week_high
+  filter:
+  - left: price_52_week_high
+    operation: equal
+    right: high
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: coin_52_week_low
+  filter:
+  - left: price_52_week_low
+    operation: equal
+    right: low
+  sort:
+    sortBy: name
+    sortOrder: asc

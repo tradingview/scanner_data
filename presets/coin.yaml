@@ -121,7 +121,7 @@ presets:
 - name: coin_all_time_high
   filter:
   - left: High.All
-    operation: equal
+    operation: eless
     right: high
   sort:
     sortBy: name
@@ -129,7 +129,7 @@ presets:
 - name: coin_all_time_low
   filter:
   - left: Low.All
-    operation: equal
+    operation: egreater
     right: low
   sort:
     sortBy: name
@@ -137,7 +137,7 @@ presets:
 - name: coin_52_week_high
   filter:
   - left: price_52_week_high
-    operation: equal
+    operation: eless
     right: high
   sort:
     sortBy: name
@@ -145,7 +145,7 @@ presets:
 - name: coin_52_week_low
   filter:
   - left: price_52_week_low
-    operation: equal
+    operation: egreater
     right: low
   sort:
     sortBy: name

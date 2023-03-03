@@ -124,7 +124,7 @@ presets:
     operation: eless
     right: high
   sort:
-    sortBy: name
+    sortBy: base_currency
     sortOrder: asc
 - name: coin_all_time_low
   filter:
@@ -132,7 +132,7 @@ presets:
     operation: egreater
     right: low
   sort:
-    sortBy: name
+    sortBy: base_currency
     sortOrder: asc
 - name: coin_52_week_high
   filter:
@@ -140,7 +140,7 @@ presets:
     operation: eless
     right: high
   sort:
-    sortBy: name
+    sortBy: base_currency
     sortOrder: asc
 - name: coin_52_week_low
   filter:
@@ -148,5 +148,5 @@ presets:
     operation: egreater
     right: low
   sort:
-    sortBy: name
+    sortBy: base_currency
     sortOrder: asc

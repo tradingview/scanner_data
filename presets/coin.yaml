@@ -6,7 +6,7 @@ presets:
     sortOrder: asc
 - name: coin_defi
   filter:
-  - left: crypto_categories
+  - left: crypto_common_categories
     operation: has
     right: defi
   - left: tvl
@@ -51,10 +51,10 @@ presets:
   sort:
     sortBy: market_cap_calc
     sortOrder: asc
-- name: coin_narrow_supply
+- name: coin_lowest_supply
   sort:
     sortBy: circulating_supply
-    sortOrder: desc
+    sortOrder: asc
 - name: coin_most_expensive
   sort:
     sortBy: close
@@ -89,7 +89,7 @@ presets:
     sortOrder: desc
 - name: coin_total_value_locked
   filter:
-  - left: crypto_categories
+  - left: crypto_common_categories
     operation: has
     right: defi
   - left: tvl

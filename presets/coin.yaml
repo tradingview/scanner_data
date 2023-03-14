@@ -6,7 +6,7 @@ presets:
     sortOrder: asc
 - name: coin_defi
   filter:
-  - left: crypto_categories
+  - left: crypto_common_categories
     operation: has
     right: defi
   - left: tvl
@@ -89,7 +89,7 @@ presets:
     sortOrder: desc
 - name: coin_total_value_locked
   filter:
-  - left: crypto_categories
+  - left: crypto_common_categories
     operation: has
     right: defi
   - left: tvl

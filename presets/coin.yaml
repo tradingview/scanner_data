@@ -51,10 +51,10 @@ presets:
   sort:
     sortBy: market_cap_calc
     sortOrder: asc
-- name: coin_narrow_supply
+- name: coin_lowest_supply
   sort:
     sortBy: circulating_supply
-    sortOrder: desc
+    sortOrder: asc
 - name: coin_most_expensive
   sort:
     sortBy: close

@@ -947,5 +947,21 @@
     {
         "name": "market_cap_perf_5y",
         "type": "number"
+    },
+    {
+        "name": "dividends_yield_current",
+        "type": "final_percent"
+    },
+    {
+        "name": "dividends_yield_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "dividends_yield_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "price_earnings_growth_ttm",
+        "type": "number"
     }
 ]

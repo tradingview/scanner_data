@@ -49,7 +49,7 @@
   },
   {
     "name": "total_value_traded",
-    "type": "number"
+    "type": "fundamental_price"
   },
   {
     "name": "crypto_code",
@@ -94,7 +94,7 @@
   },
   {
     "name": "tvl",
-    "type": "number"
+    "type": "fundamental_price"
   },
   {
     "name": "addresses_total",
@@ -114,7 +114,7 @@
   },
   {
     "name": "avg_balance",
-    "type": "number"
+    "type": "fundamental_price"
   },
   {
     "name": "txs_count",
@@ -126,7 +126,7 @@
   },
   {
     "name": "txs_volume_usd",
-    "type": "number"
+    "type": "fundamental_price"
   },
   {
     "name": "large_tx_count",
@@ -134,7 +134,7 @@
   },
   {
     "name": "large_tx_volume_usd",
-    "type": "number"
+    "type": "fundamental_price"
   },
   {
     "name": "volume-type",

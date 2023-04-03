@@ -1,24 +1,24 @@
 // high & low
-ath_and_date() =>
-	ath = high
-	ath_date = time
-	if nz(ath[1], high) > ath
-		ath := nz(ath[1], high)
+ath_and_date(_x, _xt) =>
+	ath = _x
+	ath_date = _xt/1000
+	if nz(ath[1], ath) > ath
+		ath := nz(ath[1], ath)
 		ath_date := ath_date[1]
 	[ath, ath_date]
-atl_and_date() =>
-	atl = low
-	atl_date = time
-	if nz(atl[1], low) < atl
-		atl := nz(atl[1], low)
+atl_and_date(_x, _xt) =>
+	atl = _x
+	atl_date = _xt/1000
+	if nz(atl[1], atl) < atl
+		atl := nz(atl[1], atl)
 		atl_date := atl_date[1]
 	[atl, atl_date]
-[allTimeHigh, allTimeHighDate] = ath_and_date()
+[allTimeHigh, allTimeHighDate] = ath_and_date(high, time)
 plot(allTimeHigh, title='High.All')
 plot(allTimeHighDate, title='High.All.Date')
 plot(allTimeHigh, title='High.All.Calc')
 plot(allTimeHighDate, title='High.All.Calc.Date')
-[allTimeLow, allTimeLowDate] = atl_and_date()
+[allTimeLow, allTimeLowDate] = atl_and_date(low, time)
 plot(allTimeLow, title='Low.All')
 plot(allTimeLowDate, title='Low.All.Date')
 plot(allTimeLow, title='Low.All.Calc')
@@ -26,14 +26,16 @@ plot(allTimeLowDate, title='Low.All.Calc.Date')
 
 var firstOpen = open
 plot(firstOpen, title='Open.All.Calc')
-custom_lowest_and_date(_x, len, maxbarsback) =>
+custom_lowest_and_date(_x, _xt, len, maxbarsback) =>
 	x = _x
+	xt = _xt/1000
 	if bar_index == 0
 		x += x[maxbarsback] * 0  // max_bars_back
+		xt += xt[maxbarsback] * 0  // max_bars_back
 	if len == 0
 		[na, na]
 	else if len == 1
-		[x, time]
+		[x, xt]
 	else
 		_len = len
 		if na(x[len + 1]) != true
@@ -41,31 +43,33 @@ custom_lowest_and_date(_x, len, maxbarsback) =>
 			_len
 		res = x
 		res := x
-		date_i = 0
+		date = xt
 		for i = 0 to _len by 1
 			if x[i] < res
 				res := x[i]
-				date_i := i
-		[res, time[date_i]]
-custom_highest_and_date(_x, len, maxbarsback) =>
+				date := xt[i]
+		[res, date]
+custom_highest_and_date(_x, _xt, len, maxbarsback) =>
 	x = _x
+	xt = _xt/1000
 	if bar_index == 0
 		x += x[maxbarsback] * 0  // max_bars_back
+		xt += xt[maxbarsback] * 0  // max_bars_back
 	if len == 0
 		[na, na]
 	else if len == 1
-		[x, time]
+		[x, xt]
 	else
 		_len = len
 		if na(x[len + 1]) != true
 			_len -= 1
 		res = x
-		date_i = 0
+		date = xt
 		for i = 0 to _len by 1
 			if x[i] > res
 				res := x[i]
-				date_i := i
-		[res, time[date_i]]
+				date := xt[i]
+		[res, date]
 fastSearchN(_xs, x, maxbarsback) =>  // xs - sorted, ascending
 	xs = _xs
 	if bar_index == 0
@@ -95,28 +99,28 @@ countOfBars5YearAgo = fastSearchN(time, years5_ago, years5)
 weeks52 = 7 * 52
 weeks52_ago = timenow - 1000 * 60 * 60 * 24 * weeks52
 countOfBars52WeekAgo = fastSearchN(time, weeks52_ago, weeks52)
-[weeks52_low, weeks52_low_date] = custom_lowest_and_date(low, countOfBars52WeekAgo, weeks52)
+[weeks52_low, weeks52_low_date] = custom_lowest_and_date(low, time, countOfBars52WeekAgo, weeks52)
 plot(weeks52_low, title='price_52_week_low')
 plot(weeks52_low_date, title='price_52_week_low_date')
-[weeks52_high, weeks52_high_date] = custom_highest_and_date(high, countOfBars52WeekAgo, weeks52)
+[weeks52_high, weeks52_high_date] = custom_highest_and_date(high, time, countOfBars52WeekAgo, weeks52)
 plot(weeks52_high, title='price_52_week_high')
 plot(weeks52_high_date, title='price_52_week_high_date')
 month6 = 180
 months6_ago = timenow - 1000 * 60 * 60 * 24 * month6
 countOfBars6MonthAgo = fastSearchN(time, months6_ago, month6)
-[months6_low, months6_low_date] = custom_lowest_and_date(low, countOfBars6MonthAgo, month6)
+[months6_low, months6_low_date] = custom_lowest_and_date(low, time, countOfBars6MonthAgo, month6)
 plot(months6_low, title='Low.6M')
 plot(months6_low_date, title='Low.6M.Date')
-[months6_high, months6_high_date] = custom_highest_and_date(high, countOfBars6MonthAgo, month6)
+[months6_high, months6_high_date] = custom_highest_and_date(high, time, countOfBars6MonthAgo, month6)
 plot(months6_high, title='High.6M')
 plot(months6_high_date, title='High.6M.Date')
 month3 = 90
 months3_ago = timenow - 1000 * 60 * 60 * 24 * month3
 countOfBars3MonthAgo = fastSearchN(time, months3_ago, month3)
-[months3_low, months3_low_date] = custom_lowest_and_date(low, countOfBars3MonthAgo, month3)
+[months3_low, months3_low_date] = custom_lowest_and_date(low, time, countOfBars3MonthAgo, month3)
 plot(months3_low, title='Low.3M')
 plot(months3_low_date, title='Low.3M.Date')
-[months3_high, months3_high_date] = custom_highest_and_date(high, countOfBars3MonthAgo, month3)
+[months3_high, months3_high_date] = custom_highest_and_date(high, time, countOfBars3MonthAgo, month3)
 plot(months3_high, title='High.3M')
 plot(months3_high_date, title='High.3M.Date')
 month1 = 30
@@ -124,10 +128,10 @@ month_ago_this_bar = time - 1000 * 60 * 60 * 24 * month1
 month_ago = timenow - 1000 * 60 * 60 * 24 * month1
 countOfBars1MonthAgo = fastSearchN(time, month_ago, month1)
 countOfBars1MonthAgoThisBar = fastSearchN(time, month_ago_this_bar, month1)
-[month1_low, month1_low_date] = custom_lowest_and_date(low, countOfBars1MonthAgo, month1)
+[month1_low, month1_low_date] = custom_lowest_and_date(low, time, countOfBars1MonthAgo, month1)
 plot(month1_low, title='Low.1M')
 plot(month1_low_date, title='Low.1M.Date')
-[month1_high, month1_high_date] = custom_highest_and_date(high, countOfBars1MonthAgo, month1)
+[month1_high, month1_high_date] = custom_highest_and_date(high, time, countOfBars1MonthAgo, month1)
 plot(month1_high, title='High.1M')
 plot(month1_high_date, title='High.1M.Date')
 week1 = 7
@@ -135,9 +139,9 @@ week_ago = timenow - 1000 * 60 * 60 * 24 * week1
 week_ago_this_bar = time - 1000 * 60 * 60 * 24 * week1
 countOfBarsWeekAgo = fastSearchN(time, week_ago, week1)
 countOfBarsWeekAgoThisBar = fastSearchN(time, week_ago_this_bar, week1)
-[week1_low] = custom_lowest_and_date(low, countOfBarsWeekAgo, week1)
+[week1_low] = custom_lowest_and_date(low, time, countOfBarsWeekAgo, week1)
 plot(week1_low, title='Low.5D')
-[week1_high] = custom_highest_and_date(high, countOfBarsWeekAgo, week1)
+[week1_high] = custom_highest_and_date(high, time, countOfBarsWeekAgo, week1)
 plot(week1_high, title='High.5D')
 // volatility
 volatility(bb) =>

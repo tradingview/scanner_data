@@ -959,5 +959,9 @@
     {
         "name": "price_earnings_growth_ttm",
         "type": "number"
+    },
+    {
+        "name": "fiscal_period_fy_h",
+        "type": "num_slice"
     }
 ]

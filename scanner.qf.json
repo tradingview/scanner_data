@@ -959,5 +959,21 @@
     {
         "name": "price_earnings_growth_ttm",
         "type": "number"
+    },
+    {
+        "name": "cash_f_investing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_financing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "fiscal_period_end_fq",
+        "type": "time"
+    },
+    {
+        "name": "fiscal_period_end_fh",
+        "type": "time"
     }
 ]

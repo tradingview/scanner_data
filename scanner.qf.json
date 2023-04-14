@@ -975,5 +975,9 @@
     {
         "name": "fiscal_period_end_fh",
         "type": "time"
+    },
+    {
+        "name": "last_report_frequency",
+        "type": "number"
     }
 ]

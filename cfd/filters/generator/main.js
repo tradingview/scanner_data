@@ -316,7 +316,7 @@ const groups = [
 const types = {
     "cfd": true,
     "index": true,
-    "bond": true
+    "bond": true,
     "commodity": true
 };
 

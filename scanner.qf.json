@@ -963,5 +963,81 @@
     {
         "name": "fiscal_period_fy_h",
         "type": "num_slice"
+    },
+    {
+        "name": "cash_f_investing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_financing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "fiscal_period_end_fq",
+        "type": "time"
+    },
+    {
+        "name": "fiscal_period_end_fh",
+        "type": "time"
+    },
+    {
+        "name": "last_report_frequency",
+        "type": "number"
+    },
+    {
+        "name": "oper_income_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_income_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "current_ratio_fq",
+        "type": "number"
+    },
+    {
+        "name": "gross_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "gross_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "net_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "net_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "operating_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "operating_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "pre_tax_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "quick_ratio_fq",
+        "type": "number"
+    },
+    {
+        "name": "return_on_assets_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_equity_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_invested_capital_fq",
+        "type": "final_percent"
     }
 ]

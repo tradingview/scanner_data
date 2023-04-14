@@ -317,6 +317,7 @@ const types = {
     "cfd": true,
     "index": true,
     "bond": true
+    "commodity": true
 };
 
 const symbols = [];

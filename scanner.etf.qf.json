@@ -971,5 +971,113 @@
     {
         "name": "all_time_low_day",
         "type": "time"
+    },
+    {
+        "name": "asset_class",
+        "type": "text"
+    },
+    {
+        "name": "country",
+        "type": "text"
+    },
+    {
+        "name": "etf_fund_currency",
+        "type": "text"
+    },
+    {
+        "name": "segment",
+        "type": "text"
+    },
+    {
+        "name": "category",
+        "type": "text"
+    },
+    {
+        "name": "focus",
+        "type": "text"
+    },
+    {
+        "name": "niche",
+        "type": "text"
+    },
+    {
+        "name": "strategy",
+        "type": "text"
+    },
+    {
+        "name": "selection_criteria",
+        "type": "text"
+    },
+    {
+        "name": "weighting_scheme",
+        "type": "text"
+    },
+    {
+        "name": "dividend_treatment",
+        "type": "text"
+    },
+    {
+        "name": "issuer",
+        "type": "text"
+    },
+    {
+        "name": "brand",
+        "type": "text"
+    },
+    {
+        "name": "index_provider",
+        "type": "text"
+    },
+    {
+        "name": "nav",
+        "type": "price"
+    },
+    {
+        "name": "aum",
+        "type": "price"
+    },
+    {
+        "name": "expense_ratio",
+        "type": "number"
+    },
+    {
+        "name": "launch_date",
+        "type": "time"
+    },
+    {
+        "name": "k1_form",
+        "type": "number"
+    },
+    {
+        "name": "actively_managed",
+        "type": "number"
+    },
+    {
+        "name": "inverse_flag",
+        "type": "number"
+    },
+    {
+        "name": "leveraged_flag",
+        "type": "number"
+    },
+    {
+        "name": "leverage_ratio",
+        "type": "number"
+    },
+    {
+        "name": "holds_derivatives_flag",
+        "type": "number"
+    },
+    {
+        "name": "currency_hedged_flag",
+        "type": "number"
+    },
+    {
+        "name": "ucits_compliant_flag",
+        "type": "number"
+    },
+    {
+        "name": "transparent_holding_flag",
+        "type": "number"
     }
 ]

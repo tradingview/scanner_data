@@ -505,11 +505,3 @@ plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high ? 1 : 0, title='Ca
 
 // study(title="VWAP", shorttitle="VWAP", overlay=true)
 plot(ta.vwap(hlc3), title='VWAP')
-
-// first bar's timestamp in pine history
-first_bar_time(_t) => 
-	var float fb = na
-	if na(fb)
-		fb := _t/1000
-	fb
-plot(first_bar_time(time), title='first_bar_time')

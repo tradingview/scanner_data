@@ -164,3 +164,10 @@ plot(volatility(countOfBarsWeekAgoThisBar), title='Volatility.W')
 plot(volatility(countOfBars1MonthAgoThisBar), title='Volatility.M')
 plot(ta.tr(true) * 100 / math.abs(low), title='Volatility.D')
 
+// first bar's timestamp in pine history
+first_bar_time(_t) => 
+	var float fb = na
+	if na(fb)
+		fb := _t/1000
+	fb
+plot(first_bar_time(time), title='first_bar_time')

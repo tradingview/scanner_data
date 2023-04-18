@@ -87,5 +87,13 @@
   {
     "name": "kind",
     "type": "text"
+  },
+  {
+      "name": "all_time_high_day",
+      "type": "time"
+  },
+  {
+      "name": "all_time_low_day",
+      "type": "time"
   }
 ]

@@ -1031,5 +1031,13 @@
     {
         "name": "book_value_per_share_fy",
         "type": "fundamental_price"
+    },
+    {
+        "name": "all_time_high_day",
+        "type": "time"
+    },
+    {
+        "name": "all_time_low_day",
+        "type": "time"
     }
 ]

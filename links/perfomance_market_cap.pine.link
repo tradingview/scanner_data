@@ -1,0 +1,29 @@
+// Market cap performance for stocks
+symbolName = input.symbol("", title = "Symbol", defval="", confirm = false, __optional = true)
+getFund() => "MARKET_CAP_BASIC"
+getDailyRes() => "D"
+getSymbolName() => symbolName == "" ? syminfo.tickerid : symbolName
+makeTicker() => __financial_tickerid(getSymbolName(), getFund(), getDailyRes())
+getFundTF() => timeframe.isintraday ? "1D" : timeframe.period
+mkt_cap = request.security(makeTicker(), getFundTF(), close, ignore_invalid_symbol = true)
+
+// Perf.<W | 1M | 3M | 6M | Y | 5Y | YTD>
+perfW_mkt_cap = rr(mkt_cap, mkt_cap, countOfBarsWeekAgo, week1)
+plot(perfW_mkt_cap, title='Perf.W.MarketCap')
+
+perf1M_mkt_cap = rr(mkt_cap, mkt_cap, countOfBars1MonthAgo, month1)
+plot(perf1M_mkt_cap, title='Perf.1M.MarketCap')
+
+perf3M_mkt_cap = rr(mkt_cap, mkt_cap, countOfBars3MonthAgo, month3) 
+plot(perf3M_mkt_cap, title='Perf.3M.MarketCap')
+
+perf6M_mkt_cap = rr(mkt_cap, mkt_cap, countOfBars6MonthAgo, month6)
+plot(perf6M_mkt_cap, title='Perf.6M.MarketCap')
+
+perfY_mkt_cap = rr(mkt_cap, mkt_cap, barsCountOneYear, oneYear)
+plot(perfY_mkt_cap, title='Perf.Y.MarketCap')
+
+perf5Y_mkt_cap = rr(mkt_cap, mkt_cap, countOfBars5YearAgo, years5) 
+plot(perf5Y_mkt_cap, title='Perf.5Y.MarketCap')
+
+plot(perfYTD(mkt_cap, mkt_cap), title='Perf.YTD.MarketCap')

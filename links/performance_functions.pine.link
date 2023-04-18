@@ -1,0 +1,17 @@
+// Performance helper functions
+rateOfreturn(v1, v2) =>
+	(v1 - v2) * 100 / math.abs(v2)
+rr(cl, op, _bb, maxbarsback) =>
+	bb = _bb
+	if bar_index == 0
+		bb += math.round(op[maxbarsback] * 0)  // max_bars_back
+	if bb == 0
+		na
+	else
+		rof = rateOfreturn(cl, op[bb])
+		rof
+perfYTD(cl, op) =>
+	var lastYearOpen = op
+	if year > year[1]
+		lastYearOpen := op
+	rateOfreturn(cl, lastYearOpen)

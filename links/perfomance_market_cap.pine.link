@@ -27,3 +27,6 @@ perf5Y_mkt_cap = rr(mkt_cap, mkt_cap, countOfBars5YearAgo, years5)
 plot(perf5Y_mkt_cap, title='Perf.5Y.MarketCap')
 
 plot(perfYTD(mkt_cap, mkt_cap), title='Perf.YTD.MarketCap')
+
+//del_after_HBS-3128
+plot(mkt_cap), title='pr_amer'

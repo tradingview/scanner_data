@@ -11,3 +11,6 @@ plot(rr(close, open, countOfBars6MonthAgo, month6), title='Perf.6M')
 plot(rr(close, open, barsCountOneYear, oneYear), title='Perf.Y')
 plot(rr(close, open, countOfBars5YearAgo, years5), title='Perf.5Y')
 plot(perfYTD, title='Perf.YTD')
+
+//del_after_HBS-3128
+plot(mkt_cap), title='pr_amer'

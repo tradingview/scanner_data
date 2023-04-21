@@ -941,6 +941,14 @@
         "type": "fundamental_price"
     },
     {
+        "name": "total_equity_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capital_expenditures_ttm",
+        "type": "fundamental_price"
+    },
+    {
         "name": "current_ratio_fq",
         "type": "number"
     },

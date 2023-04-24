@@ -232,5 +232,13 @@
     "name": "centralization",
     "type": "text",
     "extract_from": "exchange-info" 
+  },
+  {
+    "name": "all_time_high_day",
+    "type": "time"
+  },
+  {
+    "name": "all_time_low_day",
+    "type": "time"
   }
 ]

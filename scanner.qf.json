@@ -32,10 +32,6 @@
         "type": "fundamental_price"
     },
     {
-        "name": "price_earnings_ttm",
-        "type": "number"
-    },
-    {
         "name": "price_earnings_current",
         "type": "number"
     },
@@ -113,10 +109,6 @@
     },
     {
         "name": "debt_to_equity_fq",
-        "type": "number"
-    },
-    {
-        "name": "price_book_fq",
         "type": "number"
     },
     {
@@ -284,20 +276,12 @@
         "type": "fundamental_price"
     },
     {
-        "name": "enterprise_value_ebitda_ttm",
-        "type": "number"
-    },
-    {
         "name": "enterprise_value_ebitda_current",
         "type": "number"
     },
     {
         "name": "enterprise_value_fq",
         "type": "fundamental_price"
-    },
-    {
-        "name": "price_revenue_ttm",
-        "type": "number"
     },
     {
         "name": "price_sales_current",
@@ -380,15 +364,7 @@
         "type": "number"
     },
     {
-        "name": "price_book_ratio",
-        "type": "number"
-    },
-    {
         "name": "price_annual_book",
-        "type": "number"
-    },
-    {
-        "name": "price_sales_ratio",
         "type": "number"
     },
     {
@@ -959,5 +935,109 @@
     {
         "name": "price_earnings_growth_ttm",
         "type": "number"
+    },
+    {
+        "name": "fiscal_period_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "cash_f_investing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_financing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "fiscal_period_end_fq",
+        "type": "time"
+    },
+    {
+        "name": "fiscal_period_end_fh",
+        "type": "time"
+    },
+    {
+        "name": "last_report_frequency",
+        "type": "number"
+    },
+    {
+        "name": "oper_income_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_income_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "current_ratio_fq",
+        "type": "number"
+    },
+    {
+        "name": "gross_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "gross_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "net_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "net_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "operating_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "operating_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "pre_tax_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "quick_ratio_fq",
+        "type": "number"
+    },
+    {
+        "name": "return_on_assets_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_equity_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_invested_capital_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "revenue_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "revenue_per_share_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_value_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_value_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "all_time_high_day",
+        "type": "time"
+    },
+    {
+        "name": "all_time_low_day",
+        "type": "time"
     }
 ]

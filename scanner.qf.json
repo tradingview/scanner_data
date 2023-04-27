@@ -1039,5 +1039,13 @@
     {
         "name": "all_time_low_day",
         "type": "time"
+    },
+    {
+        "name": "total_equity_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capital_expenditures_ttm",
+        "type": "fundamental_price"
     }
 ]

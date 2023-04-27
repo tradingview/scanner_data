@@ -977,10 +977,6 @@
         "type": "text"
     },
     {
-        "name": "country",
-        "type": "text"
-    },
-    {
         "name": "etf_fund_currency",
         "type": "text"
     },
@@ -1017,6 +1013,18 @@
         "type": "text"
     },
     {
+        "name": "indicated_annual_dividend",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "next_dividend_date",
+        "type": "time"
+    },
+    {
+        "name": "dividends_frequency",
+        "type": "text"
+    },
+    {
         "name": "issuer",
         "type": "text"
     },
@@ -1030,11 +1038,11 @@
     },
     {
         "name": "nav",
-        "type": "price"
+        "type": "fundamental_price"
     },
     {
         "name": "aum",
-        "type": "price"
+        "type": "fundamental_price"
     },
     {
         "name": "expense_ratio",
@@ -1065,6 +1073,10 @@
         "type": "number"
     },
     {
+        "name": "leverage",
+        "type": "text"
+    },
+    {
         "name": "holds_derivatives_flag",
         "type": "number"
     },
@@ -1079,5 +1091,9 @@
     {
         "name": "transparent_holding_flag",
         "type": "number"
+    },
+    {
+        "name": "holdings_region",
+        "type": "text"
     }
 ]

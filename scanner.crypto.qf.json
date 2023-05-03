@@ -232,5 +232,9 @@
     "name": "centralization",
     "type": "text",
     "extract_from": "exchange-info" 
+  },
+  {
+    "name": "source-logoid",
+    "type": "text"
   }
 ]

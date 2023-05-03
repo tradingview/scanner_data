@@ -23,7 +23,7 @@ countSumOfInterval(history, _bb, maxbarsback) =>
     bb = _bb
     if bar_index == 0
         bb+=math.round(history[maxbarsback]*0)
-    var sum = 0.
+    sum = 0.
     for i = 0 to bb by 1
         sum += history[i]
     sum
@@ -36,6 +36,13 @@ etfYTD(history) =>
     if year > year[1]
         lastYearOpen := history
     countYTD(history,lastYearOpen)
+
+countFundFlowsYTD(history) =>
+    var sum = 0.
+    sum += history
+    if year > year[1]
+        sum := history
+    sum
 
 plot(countETF(nav, countOfBars1MonthAgo, month1), title="nav_perf.1M")
 plot(countETF(nav, countOfBars3MonthAgo, month3), title="nav_perf.3M")
@@ -63,6 +70,6 @@ plot(countSumOfInterval(fund_flows, countOfBars3MonthAgo, month3), title="fund_f
 plot(countSumOfInterval(fund_flows, barsCountOneYear, oneYear), title="fund_flows.1Y")
 plot(countSumOfInterval(fund_flows, countOfBars3YearsAgo, threeYears), title="fund_flows.3Y")
 plot(countSumOfInterval(fund_flows, countOfBars5YearAgo, years5), title="fund_flows.5Y")
-plot(etfYTD(fund_flows), title="fund_flows.YTD")
+plot(countFundFlowsYTD(fund_flows), title="fund_flows.YTD")
 
 plot((close-nav)/nav, title="nav_discount_premium")

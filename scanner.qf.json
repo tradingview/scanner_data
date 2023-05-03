@@ -1011,5 +1011,13 @@
     {
         "name": "book_value_per_share_fy",
         "type": "fundamental_price"
+    },
+    {
+        "name": "capital_expenditures_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "source-logoid",
+        "type": "text"
     }
 ]

@@ -32,10 +32,6 @@
         "type": "fundamental_price"
     },
     {
-        "name": "price_earnings_ttm",
-        "type": "number"
-    },
-    {
         "name": "price_earnings_current",
         "type": "number"
     },
@@ -113,14 +109,6 @@
     },
     {
         "name": "debt_to_equity_fq",
-        "type": "number"
-    },
-    {
-        "name": "price_earnings_to_growth_ttm",
-        "type": "number"
-    },
-    {
-        "name": "price_book_fq",
         "type": "number"
     },
     {
@@ -288,20 +276,12 @@
         "type": "fundamental_price"
     },
     {
-        "name": "enterprise_value_ebitda_ttm",
-        "type": "number"
-    },
-    {
         "name": "enterprise_value_ebitda_current",
         "type": "number"
     },
     {
         "name": "enterprise_value_fq",
         "type": "fundamental_price"
-    },
-    {
-        "name": "price_revenue_ttm",
-        "type": "number"
     },
     {
         "name": "price_sales_current",
@@ -384,15 +364,7 @@
         "type": "number"
     },
     {
-        "name": "price_book_ratio",
-        "type": "number"
-    },
-    {
         "name": "price_annual_book",
-        "type": "number"
-    },
-    {
-        "name": "price_sales_ratio",
         "type": "number"
     },
     {
@@ -862,19 +834,19 @@
     },
     {
         "name": "return_on_assets_fy",
-        "type": "fundamental_price"
+        "type": "final_percent"
     },
     {
         "name": "return_on_equity_fy",
-        "type": "fundamental_price"
+        "type": "final_percent"
     },
     {
         "name": "return_on_invested_capital_fy",
-        "type": "fundamental_price"
+        "type": "final_percent"
     },
     {
         "name": "dividend_payout_ratio_ttm",
-        "type": "fundamental_price"
+        "type": "final_percent"
     },
     {
         "name": "price_target_high",
@@ -947,5 +919,249 @@
     {
         "name": "market_cap_perf_5y",
         "type": "number"
+    },
+    {
+        "name": "dividends_yield_current",
+        "type": "final_percent"
+    },
+    {
+        "name": "dividends_yield_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "dividends_yield_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "price_earnings_growth_ttm",
+        "type": "number"
+    },
+    {
+        "name": "fiscal_period_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "cash_f_investing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_financing_activities_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "fiscal_period_end_fq",
+        "type": "time"
+    },
+    {
+        "name": "fiscal_period_end_fh",
+        "type": "time"
+    },
+    {
+        "name": "last_report_frequency",
+        "type": "number"
+    },
+    {
+        "name": "oper_income_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_income_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "current_ratio_fq",
+        "type": "number"
+    },
+    {
+        "name": "gross_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "gross_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "net_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "net_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "operating_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "operating_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "pre_tax_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "quick_ratio_fq",
+        "type": "number"
+    },
+    {
+        "name": "return_on_assets_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_equity_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_invested_capital_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "revenue_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "revenue_per_share_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_value_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_value_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "asset_class",
+        "type": "text"
+    },
+    {
+        "name": "etf_fund_currency",
+        "type": "text"
+    },
+    {
+        "name": "segment",
+        "type": "text"
+    },
+    {
+        "name": "category",
+        "type": "text"
+    },
+    {
+        "name": "focus",
+        "type": "text"
+    },
+    {
+        "name": "niche",
+        "type": "text"
+    },
+    {
+        "name": "strategy",
+        "type": "text"
+    },
+    {
+        "name": "selection_criteria",
+        "type": "text"
+    },
+    {
+        "name": "weighting_scheme",
+        "type": "text"
+    },
+    {
+        "name": "dividend_treatment",
+        "type": "text"
+    },
+    {
+        "name": "indicated_annual_dividend",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "next_dividend_date",
+        "type": "time"
+    },
+    {
+        "name": "dividends_frequency",
+        "type": "text"
+    },
+    {
+        "name": "issuer",
+        "type": "text"
+    },
+    {
+        "name": "brand",
+        "type": "text"
+    },
+    {
+        "name": "index_provider",
+        "type": "text"
+    },
+    {
+        "name": "nav",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "aum",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "expense_ratio",
+        "type": "number"
+    },
+    {
+        "name": "launch_date",
+        "type": "time"
+    },
+    {
+        "name": "k1_form",
+        "type": "number"
+    },
+    {
+        "name": "actively_managed",
+        "type": "number"
+    },
+    {
+        "name": "inverse_flag",
+        "type": "number"
+    },
+    {
+        "name": "leveraged_flag",
+        "type": "number"
+    },
+    {
+        "name": "leverage_ratio",
+        "type": "number"
+    },
+    {
+        "name": "leverage",
+        "type": "text"
+    },
+    {
+        "name": "holds_derivatives_flag",
+        "type": "number"
+    },
+    {
+        "name": "currency_hedged_flag",
+        "type": "number"
+    },
+    {
+        "name": "all_time_high_day",
+        "type": "time"
+    },
+    {
+        "name": "all_time_low_day",
+        "type": "time"
+    },
+    {
+        "name": "ucits_compliant_flag",
+        "type": "number"
+    },
+    {
+        "name": "transparent_holding_flag",
+        "type": "number"
+    },
+    {
+        "name": "holdings_region",
+        "type": "text"
     }
 ]

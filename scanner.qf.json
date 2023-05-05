@@ -1033,6 +1033,118 @@
         "type": "fundamental_price"
     },
     {
+        "name": "asset_class",
+        "type": "text"
+    },
+    {
+        "name": "etf_fund_currency",
+        "type": "text"
+    },
+    {
+        "name": "segment",
+        "type": "text"
+    },
+    {
+        "name": "category",
+        "type": "text"
+    },
+    {
+        "name": "focus",
+        "type": "text"
+    },
+    {
+        "name": "niche",
+        "type": "text"
+    },
+    {
+        "name": "strategy",
+        "type": "text"
+    },
+    {
+        "name": "selection_criteria",
+        "type": "text"
+    },
+    {
+        "name": "weighting_scheme",
+        "type": "text"
+    },
+    {
+        "name": "dividend_treatment",
+        "type": "text"
+    },
+    {
+        "name": "indicated_annual_dividend",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "next_dividend_date",
+        "type": "time"
+    },
+    {
+        "name": "dividends_frequency",
+        "type": "text"
+    },
+    {
+        "name": "issuer",
+        "type": "text"
+    },
+    {
+        "name": "brand",
+        "type": "text"
+    },
+    {
+        "name": "index_provider",
+        "type": "text"
+    },
+    {
+        "name": "nav",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "aum",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "expense_ratio",
+        "type": "number"
+    },
+    {
+        "name": "launch_date",
+        "type": "time"
+    },
+    {
+        "name": "k1_form",
+        "type": "number"
+    },
+    {
+        "name": "actively_managed",
+        "type": "number"
+    },
+    {
+        "name": "inverse_flag",
+        "type": "number"
+    },
+    {
+        "name": "leveraged_flag",
+        "type": "number"
+    },
+    {
+        "name": "leverage_ratio",
+        "type": "number"
+    },
+    {
+        "name": "leverage",
+        "type": "text"
+    },
+    {
+        "name": "holds_derivatives_flag",
+        "type": "number"
+    },
+    {
+        "name": "currency_hedged_flag",
+        "type": "number"
+    },
+    {
         "name": "all_time_high_day",
         "type": "time"
     },
@@ -1050,6 +1162,18 @@
     },
     {
         "name": "source-logoid",
+        "type": "text"
+    },
+    {
+        "name": "ucits_compliant_flag",
+        "type": "number"
+    },
+    {
+        "name": "transparent_holding_flag",
+        "type": "number"
+    },
+    {
+        "name": "holdings_region",
         "type": "text"
     }
 ]

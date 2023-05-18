@@ -1054,15 +1054,11 @@
     },
     {
         "name": "k1_form",
-        "type": "number"
+        "type": "text"
     },
     {
         "name": "actively_managed",
-        "type": "number"
-    },
-    {
-        "name": "inverse_flag",
-        "type": "number"
+        "type": "text"
     },
     {
         "name": "leveraged_flag",
@@ -1070,7 +1066,7 @@
     },
     {
         "name": "leverage_ratio",
-        "type": "number"
+        "type": "text"
     },
     {
         "name": "leverage",
@@ -1078,22 +1074,46 @@
     },
     {
         "name": "holds_derivatives_flag",
-        "type": "number"
+        "type": "text"
     },
     {
         "name": "currency_hedged_flag",
-        "type": "number"
+        "type": "text"
     },
     {
         "name": "ucits_compliant_flag",
-        "type": "number"
+        "type": "text"
     },
     {
         "name": "transparent_holding_flag",
-        "type": "number"
+        "type": "text"
     },
     {
         "name": "holdings_region",
         "type": "text"
+    },
+    {
+        "name": "weight_top_10",
+        "type": "final_percent"
+    },
+    {
+        "name": "weight_top_25",
+        "type": "final_percent"
+    },
+    {
+        "name": "weight_top_50",
+        "type": "final_percent"
+    },
+    {
+        "name": "beta_1_year",
+        "type": "number"
+    },
+    {
+        "name": "beta_3_year",
+        "type": "number"
+    },
+    {
+        "name": "beta_5_year",
+        "type": "number"
     }
 ]

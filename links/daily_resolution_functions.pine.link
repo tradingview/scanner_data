@@ -1,0 +1,4 @@
+// Open interest
+ticker_oi = str.format("{0}_{1}", ticker.standard(syminfo.tickerid), "OI")
+open_interest = request.security(ticker_oi, "D", close, ignore_invalid_symbol = true)
+plot(open_interest, title="open_interest")

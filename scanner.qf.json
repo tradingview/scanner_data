@@ -943,5 +943,9 @@
     {
         "name": "market_cap_perf_5y",
         "type": "number"
+    },
+    {
+        "name": "source-logoid",
+        "type": "text"
     }
 ]

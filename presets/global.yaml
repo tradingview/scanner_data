@@ -38,6 +38,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -53,17 +54,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -76,10 +81,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -126,6 +133,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -141,17 +149,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -164,10 +176,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -186,7 +200,7 @@ presets:
     - ''
     - common
     - foreign-issuer
-  - left: number_of_employees
+  - left: number_of_employees_fy
     operation: greater
     right: 50000
   - left: is_primary
@@ -196,7 +210,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: number_of_employees
+    sortBy: number_of_employees_fy
     sortOrder: desc
   price_conversion:
     to_currency: USD
@@ -211,6 +225,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -226,17 +241,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -249,10 +268,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -271,7 +292,7 @@ presets:
     - ''
     - common
     - foreign-issuer
-  - left: total_revenue
+  - left: total_revenue_fy
     operation: greater
     right: 20000000000
   - left: is_primary
@@ -281,7 +302,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: total_revenue
+    sortBy: total_revenue_fy
     sortOrder: desc
   price_conversion:
     to_currency: USD
@@ -296,6 +317,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -311,17 +333,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -334,10 +360,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -356,7 +384,7 @@ presets:
     - ''
     - common
     - foreign-issuer
-  - left: net_income
+  - left: net_income_fy
     operation: egreater
     right: 3000000000
   - left: is_primary
@@ -366,7 +394,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: net_income
+    sortBy: net_income_fy
     sortOrder: desc
   price_conversion:
     to_currency: USD
@@ -381,6 +409,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -396,17 +425,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -419,10 +452,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -441,7 +476,7 @@ presets:
     - ''
     - common
     - foreign-issuer
-  - left: dividend_yield_recent
+  - left: dividends_yield
     operation: greater
     right: 9
   - left: is_primary
@@ -451,7 +486,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: dividend_yield_recent
+    sortBy: dividends_yield
     sortOrder: desc
   price_conversion:
     to_currency: USD
@@ -466,6 +501,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -481,17 +517,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -504,10 +544,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -557,6 +599,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -572,17 +615,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -595,10 +642,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -643,6 +692,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -658,17 +708,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -681,10 +735,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -734,6 +790,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -749,17 +806,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -772,10 +833,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -825,6 +888,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -840,17 +904,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -863,10 +931,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -911,6 +981,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -926,17 +997,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -949,10 +1024,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -998,6 +1075,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1013,17 +1091,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1036,10 +1118,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1087,6 +1171,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1102,17 +1187,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1125,10 +1214,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1174,6 +1265,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1189,17 +1281,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1212,10 +1308,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1261,6 +1359,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1276,17 +1375,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1299,10 +1402,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1347,6 +1452,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1362,17 +1468,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1385,10 +1495,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1433,6 +1545,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1448,17 +1561,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1471,10 +1588,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1519,6 +1638,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1534,17 +1654,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1557,10 +1681,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1608,6 +1734,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1623,17 +1750,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1646,10 +1777,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1695,6 +1828,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1710,17 +1844,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1733,10 +1871,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk
@@ -1785,6 +1925,7 @@ presets:
   - chile
   - china
   - colombia
+  - cyprus
   - denmark
   - egypt
   - estonia
@@ -1800,17 +1941,21 @@ presets:
   - israel
   - italy
   - japan
+  - kenya
   - korea
   - ksa
+  - kuwait
   - latvia
   - lithuania
   - luxembourg
   - malaysia
   - mexico
+  - morocco
   - netherlands
   - newzealand
   - nigeria
   - norway
+  - pakistan
   - peru
   - philippines
   - poland
@@ -1823,10 +1968,12 @@ presets:
   - singapore
   - slovakia
   - spain
+  - srilanka
   - sweden
   - switzerland
   - taiwan
   - thailand
+  - tunisia
   - turkey
   - uae
   - uk

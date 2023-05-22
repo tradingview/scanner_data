@@ -893,6 +893,34 @@
         "type": "number"
     },
     {
+        "name": "market_cap_perf_1w",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_1m",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_3m",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_6m",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_ytd",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_1y",
+        "type": "number"
+    },
+    {
+        "name": "market_cap_perf_5y",
+        "type": "number"
+    },
+    {
         "name": "dividends_yield_current",
         "type": "final_percent"
     },
@@ -938,14 +966,6 @@
     },
     {
         "name": "net_income_ttm",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "total_equity_fq",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "capital_expenditures_ttm",
         "type": "fundamental_price"
     },
     {
@@ -1010,6 +1030,22 @@
     },
     {
         "name": "book_value_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "all_time_high_day",
+        "type": "time"
+    },
+    {
+        "name": "all_time_low_day",
+        "type": "time"
+    },
+    {
+        "name": "total_equity_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capital_expenditures_ttm",
         "type": "fundamental_price"
     },
     {

@@ -169,6 +169,13 @@ if lastBarTime < timenow - 10 * msInOneDay
     aumPerf5Y := na
     aumPerfYTD := na
 
+plot(fund_flows1M, title="fund_flows.1M")
+plot(fund_flows3M, title="fund_flows.3M")
+plot(fund_flows1Y, title="fund_flows.1Y")
+plot(fund_flows3Y, title="fund_flows.3Y")
+plot(fund_flows5Y, title="fund_flows.5Y")
+plot(fund_flowsYTD, title="fund_flows.YTD")
+
 plot(navTotalReturn1M, title="nav_total_return.1M")
 plot(navTotalReturn3M, title="nav_total_return.3M")
 plot(navTotalReturn1Y, title="nav_total_return.1Y")

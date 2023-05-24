@@ -13,21 +13,18 @@ threeYears = 365 * 3
 threeYears_ago = timenow - 1000 * 60 * 60 * 24 * threeYears
 countOfBars3YearsAgo = fastSearchN(time, threeYears_ago, threeYears)
 
-countETF(history, _bb, maxbarsback) =>
-    bb = _bb
-    if bar_index == 0
-        bb+=math.round(history[maxbarsback]*0)
-    (history - history[bb])/history[bb]
+msInOneDay = 86400000
 
-countSumOfInterval(history, _bb, maxbarsback) =>
+countETF(history, _bb, maxbarsback, restrictionMs, additionalDaysSearchInterval) =>
     bb = _bb
     if bar_index == 0
         bb+=math.round(history[maxbarsback]*0)
-    sum = 0.
-    for i = 0 to bb by 1
-        if not na(history[i])
-            sum += history[i]
-    sum
+    var float res = na
+    if time[bb] < timenow - restrictionMs - additionalDaysSearchInterval * msInOneDay or time[bb] > timenow - restrictionMs
+        res := na
+    else
+        res := (history - history[bb])/history[bb]
+    res
 
 countYTD(history, lastYearOpen) =>
     (history-lastYearOpen)/lastYearOpen
@@ -38,20 +35,17 @@ etfYTD(history) =>
         lastYearOpen := history
     countYTD(history,lastYearOpen)
 
-countFundFlowsYTD(history) =>
-    var sum = 0.
-    if not na(history)
-        sum += history
-        if year > year[1]
-            sum := history
-    sum
+var int firstBar = time
 
-perf(_bb, maxbarsback) =>
+perf(_bb, maxbarsback, restrictionMs) =>
     bb = _bb
     if bar_index == 0
         bb+=math.round(close[maxbarsback]*0)
     sum = 0.
     for i = 0 to bb by 1
+        if firstBar > timenow - restrictionMs
+            sum := na
+            break
         if not na(close[i])
             sum += close[i]
     sum
@@ -69,7 +63,7 @@ var float fund_flows1M = na
 if not na(fund_flows1M)
     fund_flows_prev := fund_flows1M
 
-fund_flows1M := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars1MonthAgo, month1), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
+fund_flows1M := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars1MonthAgo, month1, 30*msInOneDay), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
 if na(fund_flows1M)
     fund_flows1M := fund_flows_prev
 
@@ -78,7 +72,7 @@ var float fund_flows3M = na
 if not na(fund_flows3M)
     fund_flows_prev3M := fund_flows3M
 
-fund_flows3M := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars3MonthAgo, month3), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
+fund_flows3M := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars3MonthAgo, month3, 90*msInOneDay), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
 if na(fund_flows3M)
     fund_flows3M := fund_flows_prev3M
 
@@ -87,7 +81,7 @@ var float fund_flows1Y = na
 if not na(fund_flows1Y)
     fund_flows_prev1Y := fund_flows1Y
 
-fund_flows1Y := request.security(makeFundFlowsTicker(), getFundTF(),perf(barsCountOneYear, oneYear), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
+fund_flows1Y := request.security(makeFundFlowsTicker(), getFundTF(),perf(barsCountOneYear, oneYear, 365*msInOneDay), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
 if na(fund_flows1Y)
     fund_flows1Y := fund_flows_prev1Y
 
@@ -96,7 +90,7 @@ var float fund_flows3Y = na
 if not na(fund_flows3Y)
     fund_flows_prev3Y := fund_flows3Y
 
-fund_flows3Y := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars3YearsAgo, threeYears), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
+fund_flows3Y := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars3YearsAgo, threeYears, (3*365)*msInOneDay), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
 if na(fund_flows3Y)
     fund_flows3Y := fund_flows_prev3Y
 
@@ -105,7 +99,7 @@ var float fund_flows5Y = na
 if not na(fund_flows5Y)
     fund_flows_prev5Y := fund_flows5Y
 
-fund_flows5Y := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars5YearAgo, years5), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
+fund_flows5Y := request.security(makeFundFlowsTicker(), getFundTF(),perf(countOfBars5YearAgo, years5, (5*365)*msInOneDay), ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
 if na(fund_flows5Y)
     fund_flows5Y := fund_flows_prev5Y
 
@@ -118,39 +112,82 @@ fund_flowsYTD := request.security(makeFundFlowsTicker(), getFundTF(), perfYTD(),
 if na(fund_flowsYTD)
     fund_flowsYTD := fund_flows_prevYTD
 
-plot(fund_flows1M, title="fund_flows.1M")
-plot(fund_flows3M, title="fund_flows.3M")
-plot(fund_flows1Y, title="fund_flows.1Y")
-plot(fund_flows3Y, title="fund_flows.3Y")
-plot(fund_flows5Y, title="fund_flows.5Y")
-plot(fund_flowsYTD, title="fund_flows.YTD")
+var int lastBarTime = na
+if not na(time)
+    lastBarTime := time
 
-plot(countETF(nav, countOfBars1MonthAgo, month1), title="nav_perf.1M")
-plot(countETF(nav, countOfBars3MonthAgo, month3), title="nav_perf.3M")
-plot(countETF(nav, barsCountOneYear, oneYear), title="nav_perf.1Y")
-plot(countETF(nav, countOfBars3YearsAgo, threeYears), title="nav_perf.3Y")
-plot(countETF(nav, countOfBars5YearAgo, years5), title="nav_perf.5Y")
-plot(etfYTD(nav), title="nav_perf.YTD")
+oneMonthRestriction = 30 * msInOneDay
+threeMonthsRestriction = 90 * msInOneDay
+oneYearRestriction = 365 * msInOneDay
+threeYearsRestriction = 3 * 365 * msInOneDay
+fiveYearsRestriction = 5 * 365 * msInOneDay
 
-plot(countETF(nav_all, countOfBars1MonthAgo, month1), title="nav_total_return.1M")
-plot(countETF(nav_all, countOfBars3MonthAgo, month3), title="nav_total_return.3M")
-plot(countETF(nav_all, barsCountOneYear, oneYear), title="nav_total_return.1Y")
-plot(countETF(nav_all, countOfBars3YearsAgo, threeYears), title="nav_total_return.3Y")
-plot(countETF(nav_all, countOfBars5YearAgo, years5), title="nav_total_return.5Y")
-plot(etfYTD(nav_all), title="nav_total_return.YTD")
+oneMonthExtraDaysSearchRange = 6
+threeMonthsExtraDaysSearchRange = 18
+oneYearExtraDaysSearchRange = 73
+threeYearsExtraDaysSearchRange = 219
+fiveYearsExtraDaysSearchRange = 365
 
-plot(countETF(aum, countOfBars1MonthAgo, month1), title="aum_perf.1M")
-plot(countETF(aum, countOfBars3MonthAgo, month3), title="aum_perf.3M")
-plot(countETF(aum, barsCountOneYear, oneYear), title="aum_perf.1Y")
-plot(countETF(aum, countOfBars3YearsAgo, threeYears), title="aum_perf.3Y")
-plot(countETF(aum, countOfBars5YearAgo, years5), title="aum_perf.5Y")
-plot(etfYTD(aum), title="aum_perf.YTD")
+navTotalReturn1M = countETF(nav_all, countOfBars1MonthAgo, month1, oneMonthRestriction, oneMonthExtraDaysSearchRange)
+navTotalReturn3M = countETF(nav_all, countOfBars3MonthAgo, month3, threeMonthsRestriction, threeMonthsExtraDaysSearchRange)
+navTotalReturn1Y = countETF(nav_all, barsCountOneYear, oneYear, oneYearRestriction, oneYearExtraDaysSearchRange)
+navTotalReturn3Y = countETF(nav_all, countOfBars3YearsAgo, threeYears, threeYearsRestriction, threeYearsExtraDaysSearchRange)
+navTotalReturn5Y = countETF(nav_all, countOfBars5YearAgo, years5, fiveYearsRestriction, fiveYearsExtraDaysSearchRange)
+navTotalReturnYTD = etfYTD(nav_all)
 
-//plot(countSumOfInterval(fund_flows, countOfBars1MonthAgo, month1), title="fund_flows.1M")
-//plot(countSumOfInterval(fund_flows, countOfBars3MonthAgo, month3), title="fund_flows.3M")
-//plot(countSumOfInterval(fund_flows, barsCountOneYear, oneYear), title="fund_flows.1Y")
-//plot(countSumOfInterval(fund_flows, countOfBars3YearsAgo, threeYears), title="fund_flows.3Y")
-//plot(countSumOfInterval(fund_flows, countOfBars5YearAgo, years5), title="fund_flows.5Y")
-//plot(countFundFlowsYTD(fund_flows), title="fund_flows.YTD")
+navPerf1M = countETF(nav, countOfBars1MonthAgo, month1, oneMonthRestriction, oneMonthExtraDaysSearchRange)
+navPerf3M = countETF(nav, countOfBars3MonthAgo, month3, threeMonthsRestriction, threeMonthsExtraDaysSearchRange)
+navPerf1Y = countETF(nav, barsCountOneYear, oneYear, oneYearRestriction, oneYearExtraDaysSearchRange)
+navPerf3Y = countETF(nav, countOfBars3YearsAgo, threeYears, threeYearsRestriction, threeYearsExtraDaysSearchRange)
+navPerf5Y = countETF(nav, countOfBars5YearAgo, years5, fiveYearsRestriction, fiveYearsExtraDaysSearchRange)
+navPerfYTD = etfYTD(nav)
+
+aumPerf1M = countETF(aum, countOfBars1MonthAgo, month1, oneMonthRestriction, oneMonthExtraDaysSearchRange)
+aumPerf3M = countETF(aum, countOfBars3MonthAgo, month3, threeMonthsRestriction, threeMonthsExtraDaysSearchRange)
+aumPerf1Y = countETF(aum, barsCountOneYear, oneYear, oneYearRestriction, oneYearExtraDaysSearchRange)
+aumPerf3Y = countETF(aum, countOfBars3YearsAgo, threeYears, threeYearsRestriction, threeYearsExtraDaysSearchRange)
+aumPerf5Y = countETF(aum, countOfBars5YearAgo, years5, fiveYearsRestriction, fiveYearsExtraDaysSearchRange)
+aumPerfYTD = etfYTD(aum)
+
+if lastBarTime < timenow - 10 * msInOneDay
+    navTotalReturn1M := na
+    navTotalReturn3M := na
+    navTotalReturn1Y := na
+    navTotalReturn3Y := na
+    navTotalReturn5Y := na
+    navTotalReturnYTD := na
+    navPerf1M := na
+    navPerf3M := na
+    navPerf1Y := na
+    navPerf3Y := na
+    navPerf5Y := na
+    navPerfYTD := na
+    aumPerf1M := na
+    aumPerf3M := na
+    aumPerf1Y := na
+    aumPerf3Y := na
+    aumPerf5Y := na
+    aumPerfYTD := na
+
+plot(navTotalReturn1M, title="nav_total_return.1M")
+plot(navTotalReturn3M, title="nav_total_return.3M")
+plot(navTotalReturn1Y, title="nav_total_return.1Y")
+plot(navTotalReturn3Y, title="nav_total_return.3Y")
+plot(navTotalReturn5Y, title="nav_total_return.5Y")
+plot(navTotalReturnYTD, title="nav_total_return.YTD")
+
+plot(navPerf1M, title="nav_perf.1M")
+plot(navPerf3M, title="nav_perf.3M")
+plot(navPerf1Y, title="nav_perf.1Y")
+plot(navPerf3Y, title="nav_perf.3Y")
+plot(navPerf5Y, title="nav_perf.5Y")
+plot(navPerfYTD, title="nav_perf.YTD")
+
+plot(aumPerf1M, title="aum_perf.1M")
+plot(aumPerf3M, title="aum_perf.3M")
+plot(aumPerf1Y, title="aum_perf.1Y")
+plot(aumPerf3Y, title="aum_perf.3Y")
+plot(aumPerf5Y, title="aum_perf.5Y")
+plot(aumPerfYTD, title="aum_perf.YTD")
 
 plot((close-nav)/nav, title="nav_discount_premium")

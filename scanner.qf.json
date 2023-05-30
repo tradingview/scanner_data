@@ -1177,26 +1177,6 @@
         "type": "final_percent"
     },
     {
-        "name": "beta_1_year",
-        "type": "number"
-    },
-    {
-        "name": "beta_3_year",
-        "type": "number"
-    },
-    {
-        "name": "beta_5_year",
-        "type": "number"
-    },
-    {
-        "name": "all_time_high_day",
-        "type": "time"
-    },
-    {
-        "name": "all_time_low_day",
-        "type": "time"
-    },
-    {
         "name": "total_equity_fq",
         "type": "fundamental_price"
     },
@@ -1207,17 +1187,6 @@
     {
         "name": "source-logoid",
         "type": "text"
-    },
-    {
-        "name": "ucits_compliant_flag",
-        "type": "number"
-    },
-    {
-        "name": "transparent_holding_flag",
-        "type": "number"
-    },
-    {
-        "name": "holdings_region",
-        "type": "text"
+    
     }
 ]

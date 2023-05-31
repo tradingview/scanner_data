@@ -1039,5 +1039,9 @@
     {
         "name": "all_time_low_day",
         "type": "time"
+    },
+    {
+        "name": "nav",
+        "type": "fundamental_price"
     }
 ]

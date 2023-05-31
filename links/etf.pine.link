@@ -196,5 +196,3 @@ plot(aumPerf1Y, title="aum_perf.1Y")
 plot(aumPerf3Y, title="aum_perf.3Y")
 plot(aumPerf5Y, title="aum_perf.5Y")
 plot(aumPerfYTD, title="aum_perf.YTD")
-
-plot((close-nav)/nav, title="nav_discount_premium")

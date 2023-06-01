@@ -13,7 +13,7 @@ threeYears = 365 * 3
 fiveYears = 365 * 5
 
 startFrom(daysBack)=>
-    time("D", syminfo.session, timezone='America/New_York') - daysBack * msInOneDay
+    time_close("D", syminfo.session, timezone='America/New_York') - daysBack * msInOneDay
 
 sum(daysBack)=>
 	var firstBar = time
@@ -25,6 +25,19 @@ sum(daysBack)=>
 			sum = 0.
 			for i = 0 to bar_index
 				if time[i] < startT
+					break
+				sum += close[i]
+			sum
+
+sumYTD()=>
+	var firstBar = time
+    if barstate.islast
+		if year(timenow, "America/New_York") == year(firstBar, "America/New_York")
+			na
+		else
+			sum = 0.
+			for i = 0 to bar_index
+				if year[i] < year
 					break
 				sum += close[i]
 			sum
@@ -42,54 +55,84 @@ perf(daysBack, perfMaxDaysForValid)=>
 					break
 
 			perf = if time[lastI] - startT < (perfMaxDaysForValid * msInOneDay)
-				(close - close[lastI]) / close[lastI]
+				if (close[lastI] < 0 and close > 0) or close[lastI] == 0
+					na
+				else
+					(close - close[lastI]) / math.abs(close[lastI])
 
 			perf
+
+perfYTD()=>
+    if barstate.islast
+		if year(timenow, "America/New_York") > year
+			na
+		else
+			lastI = 0
+			for i = 0 to bar_index
+				if year[i] < year
+					lastI := i - 1
+					break
+
+			perf = if (close[lastI] < 0 and close > 0) or close[lastI] == 0
+				na
+			else
+				(close - close[lastI]) / math.abs(close[lastI])
+
+			perf
+
 
 fund_flows1M = request.security(makeFundFlowsTicker(), getFundTF(), sum(oneMonth), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows3M = request.security(makeFundFlowsTicker(), getFundTF(), sum(threeMonthes), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows1Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(oneYear), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows3Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(threeYears), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows5Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(fiveYears), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+fund_flowsYTD = request.security(makeFundFlowsTicker(), getFundTF(), sumYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 navPerf1M = request.security(makeNavTicker(), getFundTF(), perf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerf3M = request.security(makeNavTicker(), getFundTF(), perf(threeMonthes, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerf1Y = request.security(makeNavTicker(), getFundTF(), perf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerf3Y = request.security(makeNavTicker(), getFundTF(), perf(threeYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerf5Y = request.security(makeNavTicker(), getFundTF(), perf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+navPerfYTD = request.security(makeNavTicker(), getFundTF(), perfYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 aumPerf1M = request.security(makeAumTicker(), getFundTF(), perf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerf3M = request.security(makeAumTicker(), getFundTF(), perf(threeMonthes, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerf1Y = request.security(makeAumTicker(), getFundTF(), perf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerf3Y = request.security(makeAumTicker(), getFundTF(), perf(threeYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerf5Y = request.security(makeAumTicker(), getFundTF(), perf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+aumPerfYTD = request.security(makeAumTicker(), getFundTF(), perfYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 navTotalReturn1M = request.security(makeNavAllTicker(), getFundTF(), perf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn3M = request.security(makeNavAllTicker(), getFundTF(), perf(threeMonthes, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn1Y = request.security(makeNavAllTicker(), getFundTF(), perf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn3Y = request.security(makeNavAllTicker(), getFundTF(), perf(threeYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn5Y = request.security(makeNavAllTicker(), getFundTF(), perf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+navTotalReturnYTD = request.security(makeNavAllTicker(), getFundTF(), perfYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(fund_flows1M, title="fund_flows.1M")
 plot(fund_flows3M, title="fund_flows.3M")
 plot(fund_flows1Y, title="fund_flows.1Y")
 plot(fund_flows3Y, title="fund_flows.3Y")
 plot(fund_flows5Y, title="fund_flows.5Y")
+plot(fund_flowsYTD, title="fund_flows.YTD")
 
 plot(navTotalReturn1M, title="nav_total_return.1M")
 plot(navTotalReturn3M, title="nav_total_return.3M")
 plot(navTotalReturn1Y, title="nav_total_return.1Y")
 plot(navTotalReturn3Y, title="nav_total_return.3Y")
 plot(navTotalReturn5Y, title="nav_total_return.5Y")
+plot(navTotalReturnYTD, title="nav_total_return.YTD")
 
 plot(navPerf1M, title="nav_perf.1M")
 plot(navPerf3M, title="nav_perf.3M")
 plot(navPerf1Y, title="nav_perf.1Y")
 plot(navPerf3Y, title="nav_perf.3Y")
 plot(navPerf5Y, title="nav_perf.5Y")
+plot(navPerfYTD, title="nav_perf.YTD")
 
 plot(aumPerf1M, title="aum_perf.1M")
 plot(aumPerf3M, title="aum_perf.3M")
 plot(aumPerf1Y, title="aum_perf.1Y")
 plot(aumPerf3Y, title="aum_perf.3Y")
 plot(aumPerf5Y, title="aum_perf.5Y")
+plot(aumPerfYTD, title="aum_perf.YTD")

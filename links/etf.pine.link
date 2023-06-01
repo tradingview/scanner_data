@@ -8,7 +8,7 @@ msInOneDay = 86400000
 
 oneMonth = 30
 threeMonthes = 90
-//oneYear = 365
+// oneYear = 365
 threeYears = 365 * 3
 fiveYears = 365 * 5
 
@@ -16,7 +16,7 @@ startFrom(daysBack)=>
     time_close("D", syminfo.session, timezone='America/New_York') - daysBack * msInOneDay
 
 sum(daysBack)=>
-	var firstBar = time
+	var firstBar = time	
     if barstate.islast
 		startT = startFrom(daysBack)
 		if startT < firstBar
@@ -30,8 +30,9 @@ sum(daysBack)=>
 			sum
 
 sumYTD()=>
+	max_bars_back(time, 365)
 	var firstBar = time
-    if barstate.islast
+	if barstate.islast
 		if year(timenow, "America/New_York") == year(firstBar, "America/New_York")
 			na
 		else
@@ -63,6 +64,7 @@ perf(daysBack, perfMaxDaysForValid)=>
 			perf
 
 perfYTD()=>
+	max_bars_back(time, 365)
     if barstate.islast
 		if year(timenow, "America/New_York") > year
 			na

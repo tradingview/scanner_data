@@ -44,4 +44,3 @@ plot(perfAllUSD, title='Perf.All.USD', style = plot.style_columns)
 
 // business day
 plot(time_tradingday / 1000, title='time_business_day')
-

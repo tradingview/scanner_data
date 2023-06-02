@@ -8,9 +8,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -28,9 +25,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -48,9 +42,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -68,9 +59,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -91,9 +79,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -114,9 +99,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -134,17 +116,9 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
-  - left: close
-    operation: in_range
-    right:
-    - 0.01
-    - 10000
   - left: change
     operation: greater
     right: 0
@@ -162,17 +136,9 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
-  - left: close
-    operation: in_range
-    right:
-    - 0.01
-    - 10000
   - left: change
     operation: less
     right: 0
@@ -190,17 +156,9 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
-  - left: close
-    operation: in_range
-    right:
-    - 0.01
-    - 10000
   - left: active_symbol
     operation: equal
     right: true
@@ -215,9 +173,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -235,9 +190,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -255,9 +207,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -278,9 +227,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -301,9 +247,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -321,9 +264,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -344,9 +284,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -364,9 +301,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -387,9 +321,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -410,9 +341,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -433,9 +361,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -456,9 +381,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -479,9 +401,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -502,9 +421,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -522,9 +438,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -547,9 +460,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -572,9 +482,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -594,9 +501,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -616,9 +520,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -641,9 +542,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock
@@ -666,9 +564,6 @@ presets:
   - left: typespecs
     operation: has
     right: common
-  - left: typespecs
-    operation: has
-    right: sharia
   - left: type
     operation: equal
     right: stock

@@ -123,5 +123,9 @@
     {
         "name": "strike",
         "type": "price"
+    },
+    {
+        "name": "option-type",
+        "type": "text"
     }
 ]

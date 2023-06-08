@@ -1,6 +1,9 @@
 // Performance helper functions
 rateOfreturn(v1, v2) =>
-	(v1 - v2) * 100 / math.abs(v2)
+	if v2 < 0 and v1 > 0
+		na
+	else
+		(v1 - v2) * 100 / math.abs(v2)
 rr(cl, op, _bb, maxbarsback) =>
 	bb = _bb
 	if bar_index == 0

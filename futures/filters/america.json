@@ -600,6 +600,13 @@
       "s": "CBOT:UB1!"
     },
     {
+      "s": "CBOT:UBH2024",
+      "f": [
+        null,
+        "CBOT:UB"
+      ]
+    },
+    {
       "s": "CBOT:UBM2023",
       "f": [
         null,
@@ -626,6 +633,13 @@
         "CBOT:ZB"
       ],
       "s": "CBOT:ZB1!"
+    },
+    {
+      "s": "CBOT:ZBH2024",
+      "f": [
+        null,
+        "CBOT:ZB"
+      ]
     },
     {
       "s": "CBOT:ZBM2023",
@@ -1144,6 +1158,13 @@
         "CBOT:ZN"
       ],
       "s": "CBOT:ZN1!"
+    },
+    {
+      "s": "CBOT:ZNH2024",
+      "f": [
+        null,
+        "CBOT:ZN"
+      ]
     },
     {
       "s": "CBOT:ZNM2023",
@@ -2925,6 +2946,13 @@
     },
     {
       "s": "CME:6CM2027",
+      "f": [
+        null,
+        "CME:6C"
+      ]
+    },
+    {
+      "s": "CME:6CM2028",
       "f": [
         null,
         "CME:6C"

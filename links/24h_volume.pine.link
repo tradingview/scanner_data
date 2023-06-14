@@ -81,6 +81,8 @@ plot(close24hChangeAbs, title = "24h_close_change_abs", style = plot.style_colum
 
 // 24h close change
 float close24hChange = na
-if not na(close24hChangeAbs) and close24hPrev != 0
+if na(close24hChangeAbs) or close24hPrev == 0 or (close24hPrev < 0 and close > 0)
+	na
+else
 	close24hChange := (close24hChangeAbs / math.abs(close24hPrev)) * 100
 plot(close24hChange, title = "24h_close_change", style = plot.style_columns)

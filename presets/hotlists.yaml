@@ -5217,7 +5217,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5250,7 +5250,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5283,7 +5283,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5316,7 +5316,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5349,7 +5349,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5382,7 +5382,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5417,7 +5417,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5452,7 +5452,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -5487,7 +5487,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTBRU
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8374,7 +8374,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8407,7 +8407,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8440,7 +8440,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8473,7 +8473,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8506,7 +8506,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8539,7 +8539,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8574,7 +8574,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8609,7 +8609,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -8644,7 +8644,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTPAR
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16609,7 +16609,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16642,7 +16642,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16675,7 +16675,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16708,7 +16708,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16741,7 +16741,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16774,7 +16774,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16809,7 +16809,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16844,7 +16844,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -16879,7 +16879,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTAMS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18134,7 +18134,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18167,7 +18167,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18200,7 +18200,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18233,7 +18233,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18266,7 +18266,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18299,7 +18299,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18334,7 +18334,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18369,7 +18369,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true
@@ -18404,7 +18404,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: EURONEXTLIS
+    right: EURONEXT
   - left: active_symbol
     operation: equal
     right: true

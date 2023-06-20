@@ -953,15 +953,15 @@
         "type": "time"
     },
     {
+        "name": "fiscal_period_end_fh",
+        "type": "time"
+    },
+    {
         "name": "all_time_high_day",
         "type": "time"
     },
     {
         "name": "all_time_low_day",
-        "type": "time"
-    },
-    {
-        "name": "fiscal_period_end_fh",
         "type": "time"
     },
     {
@@ -1187,6 +1187,5 @@
     {
         "name": "source-logoid",
         "type": "text"
-    
     }
 ]

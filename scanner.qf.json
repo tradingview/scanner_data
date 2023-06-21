@@ -957,6 +957,14 @@
         "type": "time"
     },
     {
+        "name": "all_time_high_day",
+        "type": "time"
+    },
+    {
+        "name": "all_time_low_day",
+        "type": "time"
+    },
+    {
         "name": "last_report_frequency",
         "type": "number"
     },
@@ -1033,12 +1041,140 @@
         "type": "fundamental_price"
     },
     {
-        "name": "all_time_high_day",
+        "name": "asset_class",
+        "type": "text"
+    },
+    {
+        "name": "etf_fund_currency",
+        "type": "text"
+    },
+    {
+        "name": "segment",
+        "type": "text"
+    },
+    {
+        "name": "category",
+        "type": "text"
+    },
+    {
+        "name": "focus",
+        "type": "text"
+    },
+    {
+        "name": "niche",
+        "type": "text"
+    },
+    {
+        "name": "strategy",
+        "type": "text"
+    },
+    {
+        "name": "selection_criteria",
+        "type": "text"
+    },
+    {
+        "name": "weighting_scheme",
+        "type": "text"
+    },
+    {
+        "name": "dividend_treatment",
+        "type": "text"
+    },
+    {
+        "name": "indicated_annual_dividend",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "next_dividend_date",
         "type": "time"
     },
     {
-        "name": "all_time_low_day",
+        "name": "dividends_frequency",
+        "type": "text"
+    },
+    {
+        "name": "issuer",
+        "type": "text"
+    },
+    {
+        "name": "brand",
+        "type": "text"
+    },
+    {
+        "name": "index_provider",
+        "type": "text"
+    },
+    {
+        "name": "nav",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "aum",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "expense_ratio",
+        "type": "number"
+    },
+    {
+        "name": "launch_date",
         "type": "time"
+    },
+    {
+        "name": "k1_form",
+        "type": "text"
+    },
+    {
+        "name": "actively_managed",
+        "type": "text"
+    },
+    {
+        "name": "inverse_flag",
+        "type": "number"
+    },
+    {
+        "name": "leveraged_flag",
+        "type": "text"
+    },
+    {
+        "name": "leverage_ratio",
+        "type": "text"
+    },
+    {
+        "name": "leverage",
+        "type": "text"
+    },
+    {
+        "name": "holds_derivatives_flag",
+        "type": "text"
+    },
+    {
+        "name": "currency_hedged_flag",
+        "type": "text"
+    },
+    {
+        "name": "ucits_compliant_flag",
+        "type": "text"
+    },
+    {
+        "name": "transparent_holding_flag",
+        "type": "text"
+    },
+    {
+        "name": "holdings_region",
+        "type": "text"
+    },
+    {
+        "name": "weight_top_10",
+        "type": "final_percent"
+    },
+    {
+        "name": "weight_top_25",
+        "type": "final_percent"
+    },
+    {
+        "name": "weight_top_50",
+        "type": "final_percent"
     },
     {
         "name": "total_equity_fq",

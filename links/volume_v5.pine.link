@@ -79,4 +79,3 @@ realtiveVolume10d = calcRVolume()
 if calcMaxHolesPerDayPercent() > 35
 	realtiveVolume10d := na
 plot(realtiveVolume10d, title='relative_volume_intraday', linewidth=2)
-

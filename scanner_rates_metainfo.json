@@ -431,5 +431,14 @@
   "treasury_stock_common_fy": "rates_fy",
   "unusual_expense_inc_fq": "rates_fq",
   "unusual_expense_inc_fy": "rates_fy",
-  "unusual_expense_inc_ttm": "rates_ttm"
+  "unusual_expense_inc_ttm": "rates_ttm",
+  "nav" : "rates_time_series",
+  "aum" : "rates_time_series",
+  "fund_flows.1M": "rates_time_series",
+  "fund_flows.3M": "rates_time_series",
+  "fund_flows.1Y": "rates_time_series",
+  "fund_flows.3Y": "rates_time_series",
+  "fund_flows.5Y": "rates_time_series",
+  "fund_flows.YTD": "rates_time_series",
+  "indicated_annual_dividend": "rates_current"
 }

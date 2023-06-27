@@ -1,5 +1,5 @@
 ---
-cache_policy: private, max-age=10
+cache_control: private, max-age=10
 presets:
 - name: US_volume_gainers
   filter:
@@ -135,7 +135,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -171,7 +171,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -455,7 +455,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -488,7 +488,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -760,7 +760,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -793,7 +793,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -1065,7 +1065,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -1098,7 +1098,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -1370,7 +1370,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -1403,7 +1403,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -1675,7 +1675,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -1708,7 +1708,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -1980,7 +1980,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -2013,7 +2013,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -2285,7 +2285,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -2318,7 +2318,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -2590,7 +2590,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -2623,7 +2623,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -2895,7 +2895,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -2928,7 +2928,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -3200,7 +3200,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -3233,7 +3233,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -3505,7 +3505,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -3538,7 +3538,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -3810,7 +3810,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -3843,7 +3843,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -4115,7 +4115,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -4148,7 +4148,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -4420,7 +4420,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -4453,7 +4453,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -4725,7 +4725,7 @@ presets:
     operation: greater
     right: 2000000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -4758,7 +4758,7 @@ presets:
     operation: greater
     right: 2000000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5030,7 +5030,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5063,7 +5063,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5335,7 +5335,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5368,7 +5368,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5628,7 +5628,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5658,7 +5658,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5918,7 +5918,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -5951,7 +5951,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -6223,7 +6223,7 @@ presets:
     operation: greater
     right: 50
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -6256,7 +6256,7 @@ presets:
     operation: greater
     right: 50
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -6528,7 +6528,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -6561,7 +6561,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -6833,7 +6833,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -6866,7 +6866,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7106,7 +7106,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7131,7 +7131,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7339,7 +7339,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7364,7 +7364,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7592,7 +7592,7 @@ presets:
     - 0.1
     - 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7622,7 +7622,7 @@ presets:
     - 0.1
     - 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7882,7 +7882,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -7915,7 +7915,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -8187,7 +8187,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -8220,7 +8220,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -8492,7 +8492,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -8525,7 +8525,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -8797,7 +8797,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -8830,7 +8830,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -9102,7 +9102,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -9135,7 +9135,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -9407,7 +9407,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -9440,7 +9440,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -9712,7 +9712,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -9745,7 +9745,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10017,7 +10017,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10050,7 +10050,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10322,7 +10322,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10355,7 +10355,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10627,7 +10627,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10660,7 +10660,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10932,7 +10932,7 @@ presets:
     operation: greater
     right: 150000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -10965,7 +10965,7 @@ presets:
     operation: greater
     right: 150000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -11237,7 +11237,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -11270,7 +11270,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -11542,7 +11542,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -11575,7 +11575,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -11847,7 +11847,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -11880,7 +11880,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -12152,7 +12152,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -12185,7 +12185,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -12457,7 +12457,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -12490,7 +12490,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -12762,7 +12762,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -12795,7 +12795,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -13067,7 +13067,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -13100,7 +13100,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -13372,7 +13372,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -13405,7 +13405,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -13677,7 +13677,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -13710,7 +13710,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -13982,7 +13982,7 @@ presets:
     operation: greater
     right: 6200
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -14015,7 +14015,7 @@ presets:
     operation: greater
     right: 6200
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -14287,7 +14287,7 @@ presets:
     operation: greater
     right: 5000000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -14320,7 +14320,7 @@ presets:
     operation: greater
     right: 5000000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -14592,7 +14592,7 @@ presets:
     operation: greater
     right: 1
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -14625,7 +14625,7 @@ presets:
     operation: greater
     right: 1
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -14897,7 +14897,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -14930,7 +14930,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -15202,7 +15202,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -15235,7 +15235,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -15507,7 +15507,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -15540,7 +15540,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -15812,7 +15812,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -15845,7 +15845,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -16117,7 +16117,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -16150,7 +16150,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -16422,7 +16422,7 @@ presets:
     operation: greater
     right: 1000000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -16455,7 +16455,7 @@ presets:
     operation: greater
     right: 1000000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -16727,7 +16727,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -16760,7 +16760,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17032,7 +17032,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17065,7 +17065,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17337,7 +17337,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17370,7 +17370,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17642,7 +17642,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17675,7 +17675,7 @@ presets:
     operation: greater
     right: 3000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17947,7 +17947,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -17980,7 +17980,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -18252,7 +18252,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -18285,7 +18285,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -18557,7 +18557,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -18590,7 +18590,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -18862,7 +18862,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -18895,7 +18895,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -19135,7 +19135,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -19160,7 +19160,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -19400,7 +19400,7 @@ presets:
     operation: greater
     right: 500
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -19433,7 +19433,7 @@ presets:
     operation: greater
     right: 500
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -19705,7 +19705,7 @@ presets:
     operation: greater
     right: 1
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -19738,7 +19738,7 @@ presets:
     operation: greater
     right: 1
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20010,7 +20010,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20043,7 +20043,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20315,7 +20315,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20348,7 +20348,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20620,7 +20620,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20653,7 +20653,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20925,7 +20925,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -20958,7 +20958,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -21230,7 +21230,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -21263,7 +21263,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -21535,7 +21535,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -21568,7 +21568,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -21840,7 +21840,7 @@ presets:
     operation: greater
     right: 1
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -21873,7 +21873,7 @@ presets:
     operation: greater
     right: 1
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -22145,7 +22145,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -22178,7 +22178,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -22450,7 +22450,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -22483,7 +22483,7 @@ presets:
     operation: greater
     right: 0
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -22755,7 +22755,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -22788,7 +22788,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -23060,7 +23060,7 @@ presets:
     operation: greater
     right: 150000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -23093,7 +23093,7 @@ presets:
     operation: greater
     right: 150000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -23365,7 +23365,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -23398,7 +23398,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -23670,7 +23670,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -23703,7 +23703,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -23975,7 +23975,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -24008,7 +24008,7 @@ presets:
     operation: greater
     right: 100
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -24248,7 +24248,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -24273,7 +24273,7 @@ presets:
     operation: equal
     right: stock
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -24513,7 +24513,7 @@ presets:
     operation: greater
     right: 100000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -24546,7 +24546,7 @@ presets:
     operation: greater
     right: 100000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -24818,7 +24818,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -24851,7 +24851,7 @@ presets:
     operation: greater
     right: 1000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -25123,7 +25123,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -25156,7 +25156,7 @@ presets:
     operation: greater
     right: 10000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -25428,7 +25428,7 @@ presets:
     operation: greater
     right: 2000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -25461,7 +25461,7 @@ presets:
     operation: greater
     right: 2000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -25733,7 +25733,7 @@ presets:
     operation: greater
     right: 500
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -25766,7 +25766,7 @@ presets:
     operation: greater
     right: 500
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26038,7 +26038,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26071,7 +26071,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26343,7 +26343,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26376,7 +26376,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26648,7 +26648,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26681,7 +26681,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26953,7 +26953,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range
@@ -26986,7 +26986,7 @@ presets:
     operation: greater
     right: 5000
   columns:
-  - range
+  - change_from_open
   - volume
   sort:
     sortBy: range

@@ -95,6 +95,7 @@ const scanRequestForPairs = {
 
 function scan(req, loc) {
     loc = loc || defaultScannerLocation;
+    console.error("scanner url: https://scanner.xstaging.tv/crypto/scan2");
     const resp = requestSync("POST", `https://scanner.xstaging.tv/crypto/scan2`, {
         json: req
     });

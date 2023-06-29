@@ -3,10 +3,7 @@ makeNavTicker() => __financial_tickerid(syminfo.tickerid, "NAV", "D")
 makeNavAllTicker() => __financial_tickerid(syminfo.tickerid, "NAV_ALL", "D")
 makeAumTicker() => __financial_tickerid(syminfo.tickerid, "AUM", "D")
 
-threeMonthes = 90
 //oneYear = 365
-threeYears = 365 * 3
-
 
 sum(daysBack)=>
 	var firstBar = time	
@@ -39,28 +36,28 @@ sumYTD()=>
 
 
 fund_flows1M = request.security(makeFundFlowsTicker(), getFundTF(), sum(oneMonth), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
-fund_flows3M = request.security(makeFundFlowsTicker(), getFundTF(), sum(threeMonthes), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+fund_flows3M = request.security(makeFundFlowsTicker(), getFundTF(), sum(threeMonths), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows1Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(oneYear), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows3Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(threeYears), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows5Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(fiveYears), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flowsYTD = request.security(makeFundFlowsTicker(), getFundTF(), sumYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 navPerf1M = request.security(makeNavTicker(), getFundTF(), fundPerf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
-navPerf3M = request.security(makeNavTicker(), getFundTF(), fundPerf(threeMonthes, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+navPerf3M = request.security(makeNavTicker(), getFundTF(), fundPerf(threeMonths, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerf1Y = request.security(makeNavTicker(), getFundTF(), fundPerf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerf3Y = request.security(makeNavTicker(), getFundTF(), fundPerf(threeYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerf5Y = request.security(makeNavTicker(), getFundTF(), fundPerf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navPerfYTD = request.security(makeNavTicker(), getFundTF(), fundPerfYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 aumPerf1M = request.security(makeAumTicker(), getFundTF(), fundPerf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
-aumPerf3M = request.security(makeAumTicker(), getFundTF(), fundPerf(threeMonthes, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+aumPerf3M = request.security(makeAumTicker(), getFundTF(), fundPerf(threeMonths, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerf1Y = request.security(makeAumTicker(), getFundTF(), fundPerf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerf3Y = request.security(makeAumTicker(), getFundTF(), fundPerf(threeYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerf5Y = request.security(makeAumTicker(), getFundTF(), fundPerf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 aumPerfYTD = request.security(makeAumTicker(), getFundTF(), fundPerfYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 navTotalReturn1M = request.security(makeNavAllTicker(), getFundTF(), fundPerf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
-navTotalReturn3M = request.security(makeNavAllTicker(), getFundTF(), fundPerf(threeMonthes, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+navTotalReturn3M = request.security(makeNavAllTicker(), getFundTF(), fundPerf(threeMonths, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn1Y = request.security(makeNavAllTicker(), getFundTF(), fundPerf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn3Y = request.security(makeNavAllTicker(), getFundTF(), fundPerf(threeYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn5Y = request.security(makeNavAllTicker(), getFundTF(), fundPerf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)

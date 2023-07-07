@@ -140,6 +140,7 @@ presets:
     sortBy: index_priority
     sortOrder: asc
 - name: bonds_eu_yield
+  filter:
   - left: country_code
     operation: equal
     right:
@@ -198,6 +199,7 @@ presets:
     sortBy: index_priority
     sortOrder: asc
 - name: bonds_india_yield
+  filter:
   - left: country_code
     operation: equal
     right: IN
@@ -205,6 +207,7 @@ presets:
     sortBy: index_priority
     sortOrder: asc
 - name: bonds_japan_yield
+  filter:
   - left: country_code
     operation: equal
     right: JP

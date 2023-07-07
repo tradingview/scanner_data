@@ -7,7 +7,7 @@ makeAumTicker() => __financial_tickerid(syminfo.tickerid, "AUM", "D")
 
 sum(daysBack)=>
 	var firstBar = time	
-    if barstate.ishistory
+    if true
 		startT = startFrom(daysBack)
 		if startT < firstBar
 			na
@@ -23,7 +23,7 @@ sumYTD()=>
 	max_bars_back(time, 2*oneYear)
 	max_bars_back(close, 2*oneYear)
 	var firstBar = time
-	if barstate.ishistory
+	if true
 		if year(timenow, syminfo.timezone) == year(firstBar, syminfo.timezone)
 			na
 		else

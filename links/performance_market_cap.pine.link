@@ -14,7 +14,7 @@ startFrom(daysBack)=>
     time_close("D", syminfo.session, syminfo.timezone) - daysBack * msInOneDay
 
 fundPerf(daysBack, perfMaxDaysForValid)=>
-    if barstate.ishistory
+    if true
 		startT = startFrom(daysBack)
 		if time[0] < startT
 			na
@@ -36,7 +36,7 @@ fundPerf(daysBack, perfMaxDaysForValid)=>
 fundPerfYTD()=>
 	max_bars_back(time, 2*oneYear)
 	max_bars_back(close, 2*oneYear)
-    if barstate.ishistory
+    if true
         lastI = 0
         for i = 0 to bar_index
             if year(time[i], syminfo.timezone) < year

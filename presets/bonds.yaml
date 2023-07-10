@@ -142,7 +142,7 @@ presets:
 - name: bonds_eu_yield
   filter:
   - left: country_code
-    operation: equal
+    operation: in_range
     right:
     - AT
     - BE

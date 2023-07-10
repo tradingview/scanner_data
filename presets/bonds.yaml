@@ -125,6 +125,9 @@ presets:
     sortOrder: asc
 - name: bonds_usa_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: equal
     right: US
@@ -133,6 +136,9 @@ presets:
     sortOrder: asc
 - name: bonds_uk_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: equal
     right: GB
@@ -141,6 +147,9 @@ presets:
     sortOrder: asc
 - name: bonds_eu_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: in_range
     right:
@@ -176,6 +185,9 @@ presets:
     sortOrder: asc
 - name: bonds_germany_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: equal
     right: DE
@@ -184,6 +196,9 @@ presets:
     sortOrder: asc
 - name: bonds_france_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: equal
     right: FR
@@ -192,6 +207,9 @@ presets:
     sortOrder: asc
 - name: bonds_china_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: equal
     right: CN
@@ -200,6 +218,9 @@ presets:
     sortOrder: asc
 - name: bonds_india_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: equal
     right: IN
@@ -208,6 +229,9 @@ presets:
     sortOrder: asc
 - name: bonds_japan_yield
   filter:
+  - left: typespecs
+    operation: has
+    right: yield
   - left: country_code
     operation: equal
     right: JP

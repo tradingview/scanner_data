@@ -1,0 +1,73 @@
+// Market cap performance for stocks
+makeMCTicker() => __financial_tickerid(syminfo.tickerid, "MARKET_CAP_BASIC", "D")
+getFundTF() => timeframe.isintraday ? "1D" : timeframe.period
+
+oneWeek = 7
+oneMonth = 30
+threeMonths = 90
+sixMonths = 180
+threeYears = 365 * 3
+fiveYears = 1825
+msInOneDay = 86400000
+
+startFrom(daysBack)=>
+    time_close("D", syminfo.session, syminfo.timezone) - daysBack * msInOneDay
+
+fundPerf(daysBack, perfMaxDaysForValid)=>
+    if barstate.islast
+		startT = startFrom(daysBack)
+		if time[0] < startT
+			na
+		else
+			lastI = 0
+			for i = 0 to bar_index
+				if time[i] < startT
+					lastI := i - 1
+					break
+
+			perf = if time[lastI] - startT < (perfMaxDaysForValid * msInOneDay)
+				if (close[lastI] < 0 and close > 0) or close[lastI] == 0
+					na
+				else
+					(close - close[lastI]) * 100 / math.abs(close[lastI])
+
+			perf
+
+fundPerfYTD()=>
+	max_bars_back(time, 2*oneYear)
+	max_bars_back(close, 2*oneYear)
+    if barstate.islast
+        lastI = 0
+        for i = 0 to bar_index
+            if year(time[i], syminfo.timezone) < year
+                lastI := i - 1
+                break
+
+        perf = if (close[lastI] < 0 and close > 0) or close[lastI] == 0
+            na
+        else
+            (close - close[lastI]) * 100 / math.abs(close[lastI])
+
+        perf
+
+// Perf.<1W | 1M | 3M | 6M | Y | 5Y | YTD>
+MCPerf1W = request.security(makeMCTicker(), getFundTF(), fundPerf(oneWeek, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+plot(MCPerf1W, title="Perf.1W.MarketCap")
+
+MCPerf1M = request.security(makeMCTicker(), getFundTF(), fundPerf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+plot(MCPerf1M, title="Perf.1M.MarketCap")
+
+MCPerf3M = request.security(makeMCTicker(), getFundTF(), fundPerf(threeMonths, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+plot(MCPerf3M, title="Perf.3M.MarketCap")
+
+MCPerf6M = request.security(makeMCTicker(), getFundTF(), fundPerf(sixMonths, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+plot(MCPerf6M, title="Perf.6M.MarketCap")
+
+MCPerf1Y = request.security(makeMCTicker(), getFundTF(), fundPerf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+plot(MCPerf1Y, title="Perf.1Y.MarketCap")
+
+MCPerf5Y = request.security(makeMCTicker(), getFundTF(), fundPerf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+plot(MCPerf5Y, title="Perf.5Y.MarketCap")
+
+MCPerfYTD = request.security(makeMCTicker(), getFundTF(), fundPerfYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+plot(MCPerfYTD, title="Perf.YTD.MarketCap")

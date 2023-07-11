@@ -893,34 +893,6 @@
         "type": "number"
     },
     {
-        "name": "market_cap_perf_1w",
-        "type": "number"
-    },
-    {
-        "name": "market_cap_perf_1m",
-        "type": "number"
-    },
-    {
-        "name": "market_cap_perf_3m",
-        "type": "number"
-    },
-    {
-        "name": "market_cap_perf_6m",
-        "type": "number"
-    },
-    {
-        "name": "market_cap_perf_ytd",
-        "type": "number"
-    },
-    {
-        "name": "market_cap_perf_1y",
-        "type": "number"
-    },
-    {
-        "name": "market_cap_perf_5y",
-        "type": "number"
-    },
-    {
         "name": "dividends_yield_current",
         "type": "final_percent"
     },
@@ -954,6 +926,14 @@
     },
     {
         "name": "fiscal_period_end_fh",
+        "type": "time"
+    },
+    {
+        "name": "all_time_high_day",
+        "type": "time"
+    },
+    {
+        "name": "all_time_low_day",
         "type": "time"
     },
     {
@@ -1033,10 +1013,6 @@
         "type": "fundamental_price"
     },
     {
-        "name": "all_time_high_day",
-        "type": "time"
-    },
-    {
         "name": "asset_class",
         "type": "text"
     },
@@ -1082,10 +1058,6 @@
     },
     {
         "name": "next_dividend_date",
-        "type": "time"
-    },
-    {
-        "name": "all_time_low_day",
         "type": "time"
     },
     {

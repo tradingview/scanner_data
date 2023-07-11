@@ -213,7 +213,9 @@ const excludeSymbols = [
     "BITFINEX:IOSBTC",
     "BITFINEX:IOSUSD",
     "OKCOIN:USDCUSD",
-    "BITFINEX:IOTUSD"
+    "BITFINEX:IOTUSD",
+    "POLONIEX:STRUSD",
+    "BITFINEX:WBTUSD"
 ];
 
 function skipSymbol(s) {

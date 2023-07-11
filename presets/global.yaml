@@ -208,9 +208,6 @@ presets:
   - left: is_primary
     operation: equal
     right: true
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: number_of_employees_fy
     sortOrder: desc
@@ -299,9 +296,6 @@ presets:
     operation: greater
     right: 20000000000
   - left: is_primary
-    operation: equal
-    right: true
-  - left: active_symbol
     operation: equal
     right: true
   sort:
@@ -394,9 +388,6 @@ presets:
   - left: is_primary
     operation: equal
     right: true
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: net_income_fy
     sortOrder: desc
@@ -485,9 +476,6 @@ presets:
     operation: greater
     right: 9
   - left: is_primary
-    operation: equal
-    right: true
-  - left: active_symbol
     operation: equal
     right: true
   sort:

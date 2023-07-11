@@ -98,9 +98,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   - left: market_cap_basic
     operation: greater
     right: 0
@@ -130,9 +127,6 @@ presets:
   - left: dividends_yield
     operation: greater
     right: 0
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: dividends_yield
     sortOrder: desc
@@ -156,9 +150,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: net_income_fy
     sortOrder: desc
@@ -333,9 +324,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   - left: market_cap_basic
     operation: greater
     right: 0
@@ -391,9 +379,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: total_revenue_fy
     sortOrder: desc
@@ -646,9 +631,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: cash_n_short_term_invest_fq
     sortOrder: desc

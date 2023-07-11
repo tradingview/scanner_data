@@ -1,0 +1,67 @@
+[
+    {
+        "name": "source-logoid",
+        "type": "text"
+    },
+    {
+        "name": "pricescale",
+        "type": "number"
+    },
+    {
+        "name": "minmov",
+        "type": "number"
+    },
+    {
+        "name": "minmove2",
+        "type": "number"
+    },
+    {
+        "name": "fractional",
+        "type": "text"
+    },
+    {
+        "name": "sector",
+        "type": "text"
+    },
+    {
+        "name": "current_session",
+        "type": "text"
+    },
+    {
+        "name": "fundamental_currency_code",
+        "type": "text"
+    },
+    {
+        "name": "all_time_high",
+        "type": "price"
+    },
+    {
+        "name": "all_time_low",
+        "type": "price"
+    },
+    {
+        "name": "all_time_open",
+        "type": "price"
+    },
+    {
+        "name": "root",
+        "type": "text"
+    },
+    {
+        "name": "provider-id",
+        "type": "text"
+    },
+    {
+        "name": "update-time",
+        "type": "number",
+        "extract_from": "daily-bar" 
+    },
+    {
+        "name": "all_time_high_day",
+        "type": "time"
+    },
+    {
+        "name": "all_time_low_day",
+        "type": "time"
+    }
+]

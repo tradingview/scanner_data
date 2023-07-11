@@ -1,0 +1,1739 @@
+[
+	{
+		"inputs": [
+			{
+				"id": "text",
+				"type": "text",
+				"defval": "change(high)~(-change(low))~rma(tr,#0)~fixnan(100*rma($0\u003e$1\u0026\u0026$0\u003e0?$0:0,#0)/$2)~fixnan(100*rma($1\u003e$0\u0026\u0026$1\u003e0?$1:0,#0)/$2)~$3!$4;s2:$0(i:#0):s2~$0+$1~100*rma(abs($0-$1)/($2==0?1:$2),#1)~$3!$0!$1;rsi(close,14)~sma(stoch($0,$0,$0,14),3)~sma($1,3)~$1!$2;close@1\u003clow?close@1:low;sum(tr,#0)~sum(tr,#1)~sum(tr,#2)~sum(close-$3(),#0)~sum(close-$3(),#1)~sum(close-$3(),#2)~na():f~v:if($0!=0\u0026\u0026$1!=0\u0026\u0026$2!=0){i:#2/#0~i:#2/#1~($3/$0)*$7~($4/$1)*$8~$5/$2~$6=($9+$10+$11)/($7+$8+1)~}~$6;avg(lowest(#0),highest(#0));$5(i:#0)~$5(i:#1)~avg($0,$1)~$5(i:#2)~$0!$1!$2!$3;na(#0)||na(#1)?na():f:#0==#1?0:#0\u003c#1?1:(-1);#0?1:#1?(-1):0;t:'1M'~v:if_(isintraday){$0=t:interval\u003c=15?'1D':'1W'~}_{v:if(isweekly||ismonthly){$0=t:'12M'~}~}~t:$0;#0\u003c=0?na():f:#0;#0~#1/1000~#2~v:if(nz($0@1,$0)\u003e$0){$0=nz($0@1,$0)~$1=$1@1~v:if($2@1\u003c$2){$2=$2@1~}~}~$0!$1!$2;#0~#1/1000~v:if(nz($0@1,$0)\u003c$0){$0=nz($0@1,$0)~$1=$1@1~}~$0!$1;#0~#1/1000~v:if(n==0){$0=$0+$0@#3*0~$1=$1+$1@#3*0~}~s2:ifelif_(#2==0){na():f!na():f}elif(#2==1){$0!$1}_{#2~#2+1~v:if(na($0@$8)!=1.0){$7=$7-1~}~$0~$10=$0~$1~v:for(0;$7;1){v:if($0@$12\u003c$10){$10=$0@$12~$11=$1@$12~}~}~$10!$11};#0~#1/1000~v:if(n==0){$0=$0+$0@#3*0~$1=$1+$1@#3*0~}~s2:ifelif_(#2==0){na():f!na():f}elif(#2==1){$0!$1}_{#2~#2+1~v:if(na($0@$8)!=1.0){$7=$7-1~}~$0~$1~v:for(0;$7;1){v:if($0@$12\u003e$10){$10=$0@$12~$11=$1@$12~}~}~$10!$11};#0~v:if(n==0){$0=$0+$0@#2*0~}~0~min(n,#2)~0~if_($0\u003c#1){i:0}_{v:for(0;9;1){$4=ceil(($2+$3)/2)~v:ifelif_($2==$3){break~}elif($0@$4\u003c#1){$3=$4~continue~}elif($0@$4\u003e#1){$2=$4~continue~}_{break~}~}~$4};#0~v:if(n==0){$0=365~}~if_($0==0){na():f}_{sum(((high-low)/abs(low))*100/$0,$0)~if_(#0==0){na():f}_{$3}};v^na():f~v:if(na($0):b){$0=#0/1000~}~$0;if_(#1\u003c0\u0026\u0026#0\u003e0){na():f}_{(#0-#1)*100/abs(#1)};#2~v:if(n==0){$0=$0+round(#1@#3*0)~}~if_($0==0){na():f}_{$18(#0,#1@$0)~$3};v^#1~year~v:if(year\u003e$1@1){$0=#1~}~$18(#0,$0);rma(tr(1.0),14)~s3:$1(i:14,i:14):s3~$2@1~$3@1~s3:$1(i:9,i:9):s3~$7@1~$8@1~close~sma($11,20)~2*stdev($11,20,1.0)~$12+$13~$12-$13~sma($11,50)~2*stdev($11,50,1.0)~$16+$17~$16-$17~ema($11,12)~ema($11,26)~$20-$21~ema($22,9)~$22-$23~close-close@10~$25@1~close-close@14~$27@1~rsi(close,14)~$29@1~rsi(close,2)~$31@1~rsi(close,3)~$33@1~rsi(close,7)~$35@1~sma(close,5)~sma(close,10)~sma(close,20)~sma(close,25)~sma(close,30)~sma(close,50)~sma(close,75)~sma(close,100)~sma(close,150)~sma(close,200)~ema(close,3)~ema(close,5)~ema(close,8)~ema(close,9)~ema(close,10)~ema(close,12)~ema(close,13)~ema(close,20)~ema(close,21)~ema(close,30)~ema(close,50)~ema(close,100)~ema(close,150)~ema(close,200)~sma(stoch(close,high,low,14),3)~sma($61,3)~$61@1~$62@1~sma(stoch(close,high,low,14),1)~sma($65,3)~$65@1~$66@1~sma(volume,10)~volume/sma(volume@1,10)~sma(volume,30)~sma(volume,60)~sma(volume,90)~cci(hlc3,20)~$74@1~highest(20)~lowest(20)~avg($76,$77)~2*wma(close,4)~wma(close,9)~wma($79-$80,3)~sma(hl2,5)-sma(hl2,34)~$82@1~$82@2~100*(highestbars(high,15)+14)/14~100*(lowestbars(low,15)+14)/14~(volume*close)*syminfo.pointvalue~atr(#1)~$54+$88*2~$54-$88*2~sar(0.02,0.02,0.2)~sum(hlc3\u003ehlc3@1?hlc3*volume:0,14)~sum(hlc3\u003chlc3@1?hlc3*volume:0,14)~100.0-100.0/(1.0+$92/$93)~!(close==low\u0026\u0026close==high||high==low)?((close-low-(high-close))/(high-low))*volume:0~sum($95,20)/sum(volume,20)~s2:$2():s2~((highest(high,14)-close)/(highest(high,14)-lowest(low,14)))*(-100)~roc(close,9)~high-ema(close,13)~low-ema(close,13)~$101+$102~$4(i:7,i:14,i:28)~v:if(!na($104)){$104=$104*100~}~$104~s4:$6(i:9,i:26,i:52):s4~$109@25~25~$110@25~s4:$6(i:20,i:60,i:120):s4~$116@30~30~$117@30~vwma(close,20)~sma(high,14)-sma(low,14)~close\u003c$57~close\u003e$57~0.0~0.0~v:if(!na(close)){v:if(!na($38)){$125=$125+$7($38,close)~$126=$126+1~}~v:if(!na($39)){$125=$125+$7($39,close)~$126=$126+1~}~v:if(!na($40)){$125=$125+$7($40,close)~$126=$126+1~}~v:if(!na($41)){$125=$125+$7($41,close)~$126=$126+1~}~v:if(!na($42)){$125=$125+$7($42,close)~$126=$126+1~}~v:if(!na($43)){$125=$125+$7($43,close)~$126=$126+1~}~v:if(!na($44)){$125=$125+$7($44,close)~$126=$126+1~}~v:if(!na($45)){$125=$125+$7($45,close)~$126=$126+1~}~v:if(!na($46)){$125=$125+$7($46,close)~$126=$126+1~}~v:if(!na($47)){$125=$125+$7($47,close)~$126=$126+1~}~v:if(!na($48)){$125=$125+$7($48,close)~$126=$126+1~}~v:if(!na($49)){$125=$125+$7($49,close)~$126=$126+1~}~v:if(!na($50)){$125=$125+$7($50,close)~$126=$126+1~}~v:if(!na($51)){$125=$125+$7($51,close)~$126=$126+1~}~v:if(!na($52)){$125=$125+$7($52,close)~$126=$126+1~}~v:if(!na($53)){$125=$125+$7($53,close)~$126=$126+1~}~v:if(!na($54)){$125=$125+$7($54,close)~$126=$126+1~}~v:if(!na($55)){$125=$125+$7($55,close)~$126=$126+1~}~v:if(!na($56)){$125=$125+$7($56,close)~$126=$126+1~}~v:if(!na($57)){$125=$125+$7($57,close)~$126=$126+1~}~v:if(!na($58)){$125=$125+$7($58,close)~$126=$126+1~}~v:if(!na($59)){$125=$125+$7($59,close)~$126=$126+1~}~v:if(!na($60)){$125=$125+$7($60,close)~$126=$126+1~}~}~$7($81,close)~v:if(!na($151)){$125=$125+$151~$126=$126+1~}~$7($121,close)~v:if(!na($153)){$125=$125+$153~$126=$126+1~}~na():f~v:if(!(na($109)||na($110)||na(close)||na(close@1)||na($108)||na($107))){$155=$8($109\u003e$110\u0026\u0026close\u003e$109\u0026\u0026close\u003c$108\u0026\u0026close@1\u003c$107\u0026\u0026close\u003e$107,$110\u003e$109\u0026\u0026close\u003c$110\u0026\u0026close\u003e$108\u0026\u0026close@1\u003e$107\u0026\u0026close\u003c$107)~}~$155~v:if(!na($155)){$125=$125+$155~$126=$126+1~}~$125=$126\u003e0?$125/$126:na():f~$125~0.0~0.0~$29~v:if(!(na($162)||na($162@1))){$161=$161+1~$160=$160+$8($162\u003c30\u0026\u0026$162@1\u003c$162,$162\u003e70\u0026\u0026$162@1\u003e$162)~}~v:if(!(na($61)||na($62)||na($61@1)||na($62@1))){$161=$161+1~$160=$160+$8($61\u003c20\u0026\u0026$62\u003c20\u0026\u0026$61\u003e$62\u0026\u0026$61@1\u003c$62@1,$61\u003e80\u0026\u0026$62\u003e80\u0026\u0026$61\u003c$62\u0026\u0026$61@1\u003e$62@1)~}~$74~v:if(!(na($165)||na($165@1))){$161=$161+1~$160=$160+$8($165\u003c(-100)\u0026\u0026$165\u003e$165@1,$165\u003e100\u0026\u0026$165\u003c$165@1)~}~v:if(!(na($1)||na($2@1)||na($3@1)||na($2)||na($3))){$161=$161+1~$160=$160+$8($1\u003e20\u0026\u0026$2@1\u003c$3@1\u0026\u0026$2\u003e$3,$1\u003e20\u0026\u0026$2@1\u003e$3@1\u0026\u0026$2\u003c$3)~}~v:if(!(na($82)||na($82@1))){$161=$161+1~$160=$160+$8(crossover($82,0)||$82\u003e0\u0026\u0026$82@1\u003e0\u0026\u0026$82\u003e$82@1\u0026\u0026$82@2\u003e$82@1,crossunder($82,0)||$82\u003c0\u0026\u0026$82@1\u003c0\u0026\u0026$82\u003c$82@1\u0026\u0026$82@2\u003c$82@1)~}~v:if(!(na($25)||na($25@1))){$161=$161+1~$160=$160+$8($25\u003e$25@1,$25\u003c$25@1)~}~v:if(!(na($22)||na($23))){$161=$161+1~$160=$160+$8($22\u003e$23,$22\u003c$23)~}~na():f~v:if(!(na($123)||na($124)||na($97)||na($98)||na($97@1)||na($98@1))){$171=$8($123\u0026\u0026$97\u003c20\u0026\u0026$98\u003c20\u0026\u0026$97\u003e$98\u0026\u0026$97@1\u003c$98@1,$124\u0026\u0026$97\u003e80\u0026\u0026$98\u003e80\u0026\u0026$97\u003c$98\u0026\u0026$97@1\u003e$98@1)~}~$171~v:if(!na($171)){$161=$161+1~$160=$160+$171~}~na():f~v:if(!(na($99)||na($99@1))){$175=$8($99\u003c(-80)\u0026\u0026$99\u003e$99@1,$99\u003e(-20)\u0026\u0026$99\u003c$99@1)~}~$175~v:if(!na($175)){$161=$161+1~$160=$160+$175~}~na():f~v:if(!(na($124)||na($123)||na($102)||na($102@1)||na($101)||na($101@1))){$179=$8($124\u0026\u0026$102\u003c0\u0026\u0026$102\u003e$102@1,$123\u0026\u0026$101\u003e0\u0026\u0026$101\u003c$101@1)~}~$179~v:if(!na($179)){$161=$161+1~$160=$160+$179~}~na():f~v:if(!na($104)){$183=$8($104\u003e70,$104\u003c30)~}~$183~v:if(!na($183)){$161=$161+1~$160=$160+$183~}~$160=$161\u003e0?$160/$161:na():f~$160~0.0~0.0~v:if(!na($125)){$188=$188+$125~$189=$189+1~}~v:if(!na($160)){$188=$188+$160~$189=$189+1~}~$188=$189\u003e0?$188/$189:na():f~$188~max(close,open)~min(close,open)~$193-$194~sma($195,14)~$195\u003c$196~$195\u003e$196~high-$193~$194-low~close\u003c$42~close\u003e$42~$199\u003e0*$195~$200\u003e0*$195~open\u003cclose~open\u003eclose~high-low~$195/2+$194~$199==$200||(abs($199-$200)/$200)*100\u003c100\u0026\u0026(abs($200-$199)/$199)*100\u003c100~0.0~0.0~v:if($197\u0026\u0026$195\u003e0\u0026\u0026$194\u003ehl2\u0026\u0026$200\u003e=2.0*$195\u0026\u0026!$203){v:if_($201){$210=1.0~}_{v:if($202){$211=1.0~}~}~}~$210?1:0~$211?1:0~0.0~0.0~v:if($197\u0026\u0026$195\u003e0\u0026\u0026$193\u003chl2\u0026\u0026$199\u003e=2.0*$195\u0026\u0026!$204){v:if_($201){$217=1.0~}_{v:if($202){$218=1.0~}~}~}~$217?1:0~$218?1:0~0.0~0.0~v:if($198@2\u0026\u0026$197@1\u0026\u0026$198){v:if_($201\u0026\u0026$206@2\u0026\u0026$193@1\u003c$194@2\u0026\u0026$205\u0026\u0026$193\u003e=$208@2\u0026\u0026$193\u003c$193@2\u0026\u0026$193@1\u003c$194){$224=1.0~}_{v:if($202\u0026\u0026$205@2\u0026\u0026$194@1\u003e$193@2\u0026\u0026$206\u0026\u0026$194\u003c=$208@2\u0026\u0026$194\u003e$194@2\u0026\u0026$194@1\u003e$193){$225=1.0~}~}~}~$224?1:0~$225?1:0~$198\u0026\u0026$199\u003c=0*$195\u0026\u0026$200\u003c=0*$195~$231\u0026\u0026$205~$231\u0026\u0026$206~$233?1:0~$232?1:0~$207\u003e0\u0026\u0026$195\u003c=$207*5/100~$236\u0026\u0026$209~$236\u0026\u0026$199\u003c=$195~$236\u0026\u0026$200\u003c=$195~$237\u0026\u0026!$238\u0026\u0026!$239?1:0~$238?1:0~$239?1:0~$198@1\u0026\u0026$206@1\u0026\u0026$201@1\u0026\u0026$205\u0026\u0026$197\u0026\u0026high\u003c=$193@1\u0026\u0026low\u003e=$194@1?1:0~$198@1\u0026\u0026$205@1\u0026\u0026$202@1\u0026\u0026$206\u0026\u0026$197\u0026\u0026high\u003c=$193@1\u0026\u0026low\u003e=$194@1?1:0~$200\u003e($207/100)*75?1:0~$199\u003e($207/100)*75?1:0~$200\u003e=($207/100)*34\u0026\u0026$199\u003e=($207/100)*34\u0026\u0026!$236~$247\u0026\u0026$205?1:0~$247\u0026\u0026$206?1:0~$207*5/100\u003e$199~$207*5/100\u003e$200~0.0~0.0~v:if($198\u0026\u0026$198@1\u0026\u0026$198@2){v:if($205\u0026\u0026$205@1\u0026\u0026$205@2){$252=close\u003eclose@1\u0026\u0026close@1\u003eclose@2\u0026\u0026open\u003cclose@1\u0026\u0026open\u003eopen@1\u0026\u0026open@1\u003cclose@2\u0026\u0026open@1\u003eopen@2\u0026\u0026$250\u0026\u0026$250@1\u0026\u0026$250@2~}~v:if($206\u0026\u0026$206@1\u0026\u0026$206@2){$253=close\u003cclose@1\u0026\u0026close@1\u003cclose@2\u0026\u0026open\u003eclose@1\u0026\u0026open\u003copen@1\u0026\u0026open@1\u003eclose@2\u0026\u0026open@1\u003copen@2\u0026\u0026$251\u0026\u0026$251@1\u0026\u0026$251@2~}~}~$252?1:0~$253?1:0~$201\u0026\u0026$205\u0026\u0026$198\u0026\u0026$206@1\u0026\u0026$197@1\u0026\u0026close\u003e=open@1\u0026\u0026open\u003c=close@1\u0026\u0026(close\u003eopen@1||open\u003cclose@1)?1:0~$202\u0026\u0026$206\u0026\u0026$198\u0026\u0026$205@1\u0026\u0026$197@1\u0026\u0026close\u003c=open@1\u0026\u0026open\u003e=close@1\u0026\u0026(close\u003copen@1||open\u003eclose@1)?1:0~$201@2\u0026\u0026$206@2\u0026\u0026$236@1\u0026\u0026low@2\u003ehigh@1\u0026\u0026$205\u0026\u0026high@1\u003clow?1:0~$202@2\u0026\u0026$205@2\u0026\u0026$236@1\u0026\u0026high@2\u003clow@1\u0026\u0026$206\u0026\u0026low@1\u003ehigh?1:0~$237@2\u0026\u0026$237@1\u0026\u0026$237~$193@1\u003c$194~$194@1\u003e$193~$263\u0026\u0026$201@2\u0026\u0026$265@1\u0026\u0026$264?1:0~$263\u0026\u0026$202@2\u0026\u0026$264@1\u0026\u0026$265?1:0~$233@1\u0026\u0026$232\u0026\u0026high@1\u003clow?1:0~$232@1\u0026\u0026$233\u0026\u0026low@1\u003ehigh?1:0~vwap(hlc3)~na():f~$271=nz($271@1,open)~na():f~$272=nz($272@1,high)~na():f~$273=nz($273@1,low)~na():f~$274=nz($274@1)~na():f~$275=nz($275@1)~na():f~$276=nz($276@1)~na():f~$277=nz($277@1)~timeV5($9():t)~v:if_($278!=$278@1){$274=$271~$277=close@1~$275=$272~$276=$273~$271=open~$272=high~$273=low~}_{$272=max($272,high)~$273=min($273,low)~}~($275+$276+$277)/3~$10($280)~$10($280*2-$276)~$10($280*2-$275)~$10($280+1*($275-$276))~$10($280-1*($275-$276))~$10($280+2*($275-$276))~$10($280-2*($275-$276))~$10($280)~$10($280+0.382*($275-$276))~$10($280-0.382*($275-$276))~$10($280+0.618*($275-$276))~$10($280-0.618*($275-$276))~$10($280+1*($275-$276))~$10($280-1*($275-$276))~($275+$276+$271*2)/4~$10($295)~$10($295*2-$276)~$10($295*2-$275)~$10($295+1*($275-$276))~$10($295-1*($275-$276))~$10($275+2*($295-$276))~$10($276-2*($275-$295))~$275+$276*2+$277~v:if($277==$274){$303=$275+$276+$277*2~}~v:if($277\u003e$274){$303=$275*2+$276+$277~}~$10($303/4)~$10($303/2-$276)~$10($303/2-$275)~$10($280)~$10($277+0.09166666666666667*($275-$276))~$10($277-0.09166666666666667*($275-$276))~$10($277+0.18333333333333335*($275-$276))~$10($277-0.18333333333333335*($275-$276))~$10($277+0.275*($275-$276))~$10($277-0.275*($275-$276))~s3:$11(high,time,low):s3~s2:$12(low,time):s2~v^open~timenow-157766400000~$15(time,$322,i:1826)~timenow-31449600000~$15(time,$324,i:364)~s2:$13(low,time,$325,i:364):s2~s2:$14(high,time,$325,i:364):s2~timenow-15552000000~$15(time,$330,i:180)~s2:$13(low,time,$331,i:180):s2~s2:$14(high,time,$331,i:180):s2~timenow-7776000000~$15(time,$336,i:90)~s2:$13(low,time,$337,i:90):s2~s2:$14(high,time,$337,i:90):s2~time-2592000000~timenow-2592000000~$15(time,$343,i:30)~$15(time,$342,i:30)~s2:$13(low,time,$344,i:30):s2~s2:$14(high,time,$344,i:30):s2~timenow-604800000~time-604800000~$15(time,$350,i:7)~$15(time,$351,i:7)~s2:$13(low,time,$352,i:7):s2~s2:$14(high,time,$352,i:7):s2~$16($353)~$16($345)~tr(1.0)*100/abs(low)~$17(time)~timenow-31536000000~$15(time,$362,i:365)~$20(close,open)~$19(close,open,$352,i:7)~$19(close,open,$344,i:30)~$19(close,open,$337,i:90)~$19(close,open,$331,i:180)~$19(close,open,$363,i:365)~$19(close,open,$323,i:1826)~time_tradingday/1000~#0~$0!$1!$2!$3!$4!$5!$6!$7!$8!$9!$10!$12!$14!$15!$16!$18!$19!$24!$22!$23!$25!$26!$27!$28!$29!$30!$31!$32!$33!$34!$35!$36!$37!$38!$39!$40!$41!$42!$43!$44!$45!$46!$47!$48!$49!$50!$51!$52!$53!$54!$55!$56!$57!$58!$59!$60!$61!$62!$63!$64!$65!$66!$67!$68!$69!$70!$71!$72!$73!$74!$75!$77!$76!$78!$81!$82!$83!$84!$85!$86!$87!$89!$90!$54!$91!$94!$96!$97!$98!$99!$100!$103!$106!$107!$108!$111!$113!$114!$115!$118!$120!$121!$122!$151!$153!$157!$159!$173!$177!$181!$185!$187!$192!$215!$216!$222!$223!$229!$230!$234!$235!$240!$241!$242!$243!$244!$245!$246!$248!$249!$257!$258!$259!$260!$261!$262!$266!$267!$268!$269!$270!$281!$282!$283!$284!$285!$286!$287!$288!$289!$290!$291!$292!$293!$294!$296!$297!$298!$299!$300!$301!$302!$306!$307!$308!$309!$310!$311!$312!$313!$314!$315!$316!$317!$316!$317!$318!$319!$320!$319!$320!$321!$326!$327!$328!$329!$332!$333!$334!$335!$338!$339!$340!$341!$346!$347!$348!$349!$354!$356!$358!$359!$360!$361!$365!$366!$367!$368!$369!$370!$364!$371!$372!$112!$112!$119!$119;close~$0;i:input('in_0',10)~t:str.format(t:'{0}_{1}',t:ticker.standard(tickerid):t,t:'OI'):t~sym($24,'D','D',0,0,1,'NONE',0)|$22()|s217:$21($26,i:$23):s217~$28!$29!$30!$31!$32!$33!$34!$35!$36!$37!$38!$39!$40!$41!$42!$43!$44!$45!$46!$47!$48!$49!$50!$51!$52!$53!$54!$55!$56!$57!$58!$59!$60!$61!$62!$63!$64!$65!$66!$67!$68!$69!$70!$71!$72!$73!$74!$75!$76!$111!$78!$79!$80!$81!$82!$83!$84!$85!$86!$87!$88!$89!$90!$91!$92!$93!$94!$95!$96!$97!$98!$99!$100!$101!$102!$103!$104!$105!$106!$107!$108!$109!$110!$111!$112!$113!$114!$115!$116!$117!$118!$119!$120!$121!$122!$123\u003c\u003c$241!$124\u003c\u003c$242!$125!$126!$127\u003c\u003c$243!$128\u003c\u003c$244!$129!$130!$131!$132!$133!$134!$135!$136!$137!$138!$139!$140!$141!$142!$143!$144!$145!$146!$147!$148!$149!$150!$151!$152!$153!$154!$155!$156!$157!$158!$159!$160!$161!$162!$163!$164!$165!$166!$167!$168!$169!$170!$171!$172!$173!$174!$175!$176!$177!$178!$179!$180!$181!$182!$183!$184!$185!$186!$187!$188!$189!$190!$191!$192!$193!$194!$195!$196!$197!$198!$199!$202!$203!$202!$203!$204!$207!$208!$207!$208!$209!$210!$211!$212!$213!$214!$215!$216!$217!$218!$219!$220!$221!$222!$223!$224!$225!$226!$227!$228!$229!$230!$231!$232!$233!$234!$235!$236!$237!$238!$239!$240",
+				"isFake": false
+			},
+			{
+				"id": "pineId",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			},
+			{
+				"id": "pineVersion",
+				"type": "text",
+				"defval": "",
+				"isFake": false
+			}
+		],
+		"description": "ScannerData",
+		"id": "Script$pine_id_undefined@tv-scripting-101",
+		"plots": [
+			{
+				"id": "plot_0",
+				"type": "line"
+			},
+			{
+				"id": "plot_1",
+				"type": "line"
+			},
+			{
+				"id": "plot_2",
+				"type": "line"
+			},
+			{
+				"id": "plot_3",
+				"type": "line"
+			},
+			{
+				"id": "plot_4",
+				"type": "line"
+			},
+			{
+				"id": "plot_5",
+				"type": "line"
+			},
+			{
+				"id": "plot_6",
+				"type": "line"
+			},
+			{
+				"id": "plot_7",
+				"type": "line"
+			},
+			{
+				"id": "plot_8",
+				"type": "line"
+			},
+			{
+				"id": "plot_9",
+				"type": "line"
+			},
+			{
+				"id": "plot_10",
+				"type": "line"
+			},
+			{
+				"id": "plot_11",
+				"type": "line"
+			},
+			{
+				"id": "plot_12",
+				"type": "line"
+			},
+			{
+				"id": "plot_13",
+				"type": "line"
+			},
+			{
+				"id": "plot_14",
+				"type": "line"
+			},
+			{
+				"id": "plot_15",
+				"type": "line"
+			},
+			{
+				"id": "plot_16",
+				"type": "line"
+			},
+			{
+				"id": "plot_17",
+				"type": "line"
+			},
+			{
+				"id": "plot_18",
+				"type": "line"
+			},
+			{
+				"id": "plot_19",
+				"type": "line"
+			},
+			{
+				"id": "plot_20",
+				"type": "line"
+			},
+			{
+				"id": "plot_21",
+				"type": "line"
+			},
+			{
+				"id": "plot_22",
+				"type": "line"
+			},
+			{
+				"id": "plot_23",
+				"type": "line"
+			},
+			{
+				"id": "plot_24",
+				"type": "line"
+			},
+			{
+				"id": "plot_25",
+				"type": "line"
+			},
+			{
+				"id": "plot_26",
+				"type": "line"
+			},
+			{
+				"id": "plot_27",
+				"type": "line"
+			},
+			{
+				"id": "plot_28",
+				"type": "line"
+			},
+			{
+				"id": "plot_29",
+				"type": "line"
+			},
+			{
+				"id": "plot_30",
+				"type": "line"
+			},
+			{
+				"id": "plot_31",
+				"type": "line"
+			},
+			{
+				"id": "plot_32",
+				"type": "line"
+			},
+			{
+				"id": "plot_33",
+				"type": "line"
+			},
+			{
+				"id": "plot_34",
+				"type": "line"
+			},
+			{
+				"id": "plot_35",
+				"type": "line"
+			},
+			{
+				"id": "plot_36",
+				"type": "line"
+			},
+			{
+				"id": "plot_37",
+				"type": "line"
+			},
+			{
+				"id": "plot_38",
+				"type": "line"
+			},
+			{
+				"id": "plot_39",
+				"type": "line"
+			},
+			{
+				"id": "plot_40",
+				"type": "line"
+			},
+			{
+				"id": "plot_41",
+				"type": "line"
+			},
+			{
+				"id": "plot_42",
+				"type": "line"
+			},
+			{
+				"id": "plot_43",
+				"type": "line"
+			},
+			{
+				"id": "plot_44",
+				"type": "line"
+			},
+			{
+				"id": "plot_45",
+				"type": "line"
+			},
+			{
+				"id": "plot_46",
+				"type": "line"
+			},
+			{
+				"id": "plot_47",
+				"type": "line"
+			},
+			{
+				"id": "plot_48",
+				"type": "line"
+			},
+			{
+				"id": "plot_49",
+				"type": "line"
+			},
+			{
+				"id": "plot_50",
+				"type": "line"
+			},
+			{
+				"id": "plot_51",
+				"type": "line"
+			},
+			{
+				"id": "plot_52",
+				"type": "line"
+			},
+			{
+				"id": "plot_53",
+				"type": "line"
+			},
+			{
+				"id": "plot_54",
+				"type": "line"
+			},
+			{
+				"id": "plot_55",
+				"type": "line"
+			},
+			{
+				"id": "plot_56",
+				"type": "line"
+			},
+			{
+				"id": "plot_57",
+				"type": "line"
+			},
+			{
+				"id": "plot_58",
+				"type": "line"
+			},
+			{
+				"id": "plot_59",
+				"type": "line"
+			},
+			{
+				"id": "plot_60",
+				"type": "line"
+			},
+			{
+				"id": "plot_61",
+				"type": "line"
+			},
+			{
+				"id": "plot_62",
+				"type": "line"
+			},
+			{
+				"id": "plot_63",
+				"type": "line"
+			},
+			{
+				"id": "plot_64",
+				"type": "line"
+			},
+			{
+				"id": "plot_65",
+				"type": "line"
+			},
+			{
+				"id": "plot_66",
+				"type": "line"
+			},
+			{
+				"id": "plot_67",
+				"type": "line"
+			},
+			{
+				"id": "plot_68",
+				"type": "line"
+			},
+			{
+				"id": "plot_69",
+				"type": "line"
+			},
+			{
+				"id": "plot_70",
+				"type": "line"
+			},
+			{
+				"id": "plot_71",
+				"type": "line"
+			},
+			{
+				"id": "plot_72",
+				"type": "line"
+			},
+			{
+				"id": "plot_73",
+				"type": "line"
+			},
+			{
+				"id": "plot_74",
+				"type": "line"
+			},
+			{
+				"id": "plot_75",
+				"type": "line"
+			},
+			{
+				"id": "plot_76",
+				"type": "line"
+			},
+			{
+				"id": "plot_77",
+				"type": "line"
+			},
+			{
+				"id": "plot_78",
+				"type": "line"
+			},
+			{
+				"id": "plot_79",
+				"type": "line"
+			},
+			{
+				"id": "plot_80",
+				"type": "line"
+			},
+			{
+				"id": "plot_81",
+				"type": "line"
+			},
+			{
+				"id": "plot_82",
+				"type": "line"
+			},
+			{
+				"id": "plot_83",
+				"type": "line"
+			},
+			{
+				"id": "plot_84",
+				"type": "line"
+			},
+			{
+				"id": "plot_85",
+				"type": "line"
+			},
+			{
+				"id": "plot_86",
+				"type": "line"
+			},
+			{
+				"id": "plot_87",
+				"type": "line"
+			},
+			{
+				"id": "plot_88",
+				"type": "line"
+			},
+			{
+				"id": "plot_89",
+				"type": "line"
+			},
+			{
+				"id": "plot_90",
+				"type": "line"
+			},
+			{
+				"id": "plot_91",
+				"type": "line"
+			},
+			{
+				"id": "plot_92",
+				"type": "line"
+			},
+			{
+				"id": "plot_93",
+				"type": "line"
+			},
+			{
+				"id": "plot_94",
+				"type": "line"
+			},
+			{
+				"id": "plot_95",
+				"type": "line"
+			},
+			{
+				"id": "plot_96",
+				"type": "line"
+			},
+			{
+				"id": "plot_97",
+				"type": "line"
+			},
+			{
+				"id": "plot_98",
+				"type": "line"
+			},
+			{
+				"id": "plot_99",
+				"type": "line"
+			},
+			{
+				"id": "plot_100",
+				"type": "line"
+			},
+			{
+				"id": "plot_101",
+				"type": "line"
+			},
+			{
+				"id": "plot_102",
+				"type": "line"
+			},
+			{
+				"id": "plot_103",
+				"type": "line"
+			},
+			{
+				"id": "plot_104",
+				"type": "line"
+			},
+			{
+				"id": "plot_105",
+				"type": "line"
+			},
+			{
+				"id": "plot_106",
+				"type": "line"
+			},
+			{
+				"id": "plot_107",
+				"type": "line"
+			},
+			{
+				"id": "plot_108",
+				"type": "line"
+			},
+			{
+				"id": "plot_109",
+				"type": "line"
+			},
+			{
+				"id": "plot_110",
+				"type": "line"
+			},
+			{
+				"id": "plot_111",
+				"type": "line"
+			},
+			{
+				"id": "plot_112",
+				"type": "line"
+			},
+			{
+				"id": "plot_113",
+				"type": "line"
+			},
+			{
+				"id": "plot_114",
+				"type": "line"
+			},
+			{
+				"id": "plot_115",
+				"type": "line"
+			},
+			{
+				"id": "plot_116",
+				"type": "line"
+			},
+			{
+				"id": "plot_117",
+				"type": "line"
+			},
+			{
+				"id": "plot_118",
+				"type": "line"
+			},
+			{
+				"id": "plot_119",
+				"type": "line"
+			},
+			{
+				"id": "plot_120",
+				"type": "line"
+			},
+			{
+				"id": "plot_121",
+				"type": "line"
+			},
+			{
+				"id": "plot_122",
+				"type": "line"
+			},
+			{
+				"id": "plot_123",
+				"type": "line"
+			},
+			{
+				"id": "plot_124",
+				"type": "line"
+			},
+			{
+				"id": "plot_125",
+				"type": "line"
+			},
+			{
+				"id": "plot_126",
+				"type": "line"
+			},
+			{
+				"id": "plot_127",
+				"type": "line"
+			},
+			{
+				"id": "plot_128",
+				"type": "line"
+			},
+			{
+				"id": "plot_129",
+				"type": "line"
+			},
+			{
+				"id": "plot_130",
+				"type": "line"
+			},
+			{
+				"id": "plot_131",
+				"type": "line"
+			},
+			{
+				"id": "plot_132",
+				"type": "line"
+			},
+			{
+				"id": "plot_133",
+				"type": "line"
+			},
+			{
+				"id": "plot_134",
+				"type": "line"
+			},
+			{
+				"id": "plot_135",
+				"type": "line"
+			},
+			{
+				"id": "plot_136",
+				"type": "line"
+			},
+			{
+				"id": "plot_137",
+				"type": "line"
+			},
+			{
+				"id": "plot_138",
+				"type": "line"
+			},
+			{
+				"id": "plot_139",
+				"type": "line"
+			},
+			{
+				"id": "plot_140",
+				"type": "line"
+			},
+			{
+				"id": "plot_141",
+				"type": "line"
+			},
+			{
+				"id": "plot_142",
+				"type": "line"
+			},
+			{
+				"id": "plot_143",
+				"type": "line"
+			},
+			{
+				"id": "plot_144",
+				"type": "line"
+			},
+			{
+				"id": "plot_145",
+				"type": "line"
+			},
+			{
+				"id": "plot_146",
+				"type": "line"
+			},
+			{
+				"id": "plot_147",
+				"type": "line"
+			},
+			{
+				"id": "plot_148",
+				"type": "line"
+			},
+			{
+				"id": "plot_149",
+				"type": "line"
+			},
+			{
+				"id": "plot_150",
+				"type": "line"
+			},
+			{
+				"id": "plot_151",
+				"type": "line"
+			},
+			{
+				"id": "plot_152",
+				"type": "line"
+			},
+			{
+				"id": "plot_153",
+				"type": "line"
+			},
+			{
+				"id": "plot_154",
+				"type": "line"
+			},
+			{
+				"id": "plot_155",
+				"type": "line"
+			},
+			{
+				"id": "plot_156",
+				"type": "line"
+			},
+			{
+				"id": "plot_157",
+				"type": "line"
+			},
+			{
+				"id": "plot_158",
+				"type": "line"
+			},
+			{
+				"id": "plot_159",
+				"type": "line"
+			},
+			{
+				"id": "plot_160",
+				"type": "line"
+			},
+			{
+				"id": "plot_161",
+				"type": "line"
+			},
+			{
+				"id": "plot_162",
+				"type": "line"
+			},
+			{
+				"id": "plot_163",
+				"type": "line"
+			},
+			{
+				"id": "plot_164",
+				"type": "line"
+			},
+			{
+				"id": "plot_165",
+				"type": "line"
+			},
+			{
+				"id": "plot_166",
+				"type": "line"
+			},
+			{
+				"id": "plot_167",
+				"type": "line"
+			},
+			{
+				"id": "plot_168",
+				"type": "line"
+			},
+			{
+				"id": "plot_169",
+				"type": "line"
+			},
+			{
+				"id": "plot_170",
+				"type": "line"
+			},
+			{
+				"id": "plot_171",
+				"type": "line"
+			},
+			{
+				"id": "plot_172",
+				"type": "line"
+			},
+			{
+				"id": "plot_173",
+				"type": "line"
+			},
+			{
+				"id": "plot_174",
+				"type": "line"
+			},
+			{
+				"id": "plot_175",
+				"type": "line"
+			},
+			{
+				"id": "plot_176",
+				"type": "line"
+			},
+			{
+				"id": "plot_177",
+				"type": "line"
+			},
+			{
+				"id": "plot_178",
+				"type": "line"
+			},
+			{
+				"id": "plot_179",
+				"type": "line"
+			},
+			{
+				"id": "plot_180",
+				"type": "line"
+			},
+			{
+				"id": "plot_181",
+				"type": "line"
+			},
+			{
+				"id": "plot_182",
+				"type": "line"
+			},
+			{
+				"id": "plot_183",
+				"type": "line"
+			},
+			{
+				"id": "plot_184",
+				"type": "line"
+			},
+			{
+				"id": "plot_185",
+				"type": "line"
+			},
+			{
+				"id": "plot_186",
+				"type": "line"
+			},
+			{
+				"id": "plot_187",
+				"type": "line"
+			},
+			{
+				"id": "plot_188",
+				"type": "line"
+			},
+			{
+				"id": "plot_189",
+				"type": "line"
+			},
+			{
+				"id": "plot_190",
+				"type": "line"
+			},
+			{
+				"id": "plot_191",
+				"type": "line"
+			},
+			{
+				"id": "plot_192",
+				"type": "line"
+			},
+			{
+				"id": "plot_193",
+				"type": "line"
+			},
+			{
+				"id": "plot_194",
+				"type": "line"
+			},
+			{
+				"id": "plot_195",
+				"type": "line"
+			},
+			{
+				"id": "plot_196",
+				"type": "line"
+			},
+			{
+				"id": "plot_197",
+				"type": "line"
+			},
+			{
+				"id": "plot_198",
+				"type": "line"
+			},
+			{
+				"id": "plot_199",
+				"type": "line"
+			},
+			{
+				"id": "plot_200",
+				"type": "line"
+			},
+			{
+				"id": "plot_201",
+				"type": "line"
+			},
+			{
+				"id": "plot_202",
+				"type": "line"
+			},
+			{
+				"id": "plot_203",
+				"type": "line"
+			},
+			{
+				"id": "plot_204",
+				"type": "line"
+			},
+			{
+				"id": "plot_205",
+				"type": "line"
+			},
+			{
+				"id": "plot_206",
+				"type": "line"
+			},
+			{
+				"id": "plot_207",
+				"type": "line"
+			},
+			{
+				"id": "plot_208",
+				"type": "line"
+			},
+			{
+				"id": "plot_209",
+				"type": "line"
+			},
+			{
+				"id": "plot_210",
+				"type": "line"
+			},
+			{
+				"id": "plot_211",
+				"type": "line"
+			},
+			{
+				"id": "plot_212",
+				"type": "line"
+			}
+		],
+		"version": "",
+		"isTVScriptStubToCompile": false,
+		"isTVScriptStrategy": false,
+		"TVScriptSourceCode": "",
+		"fullId": "",
+		"styles": {
+			"plot_0": {
+				"title": "ATR",
+				"isHidden": false
+			},
+			"plot_1": {
+				"title": "ADX",
+				"isHidden": false
+			},
+			"plot_10": {
+				"title": "ADX-DI_9[1]",
+				"isHidden": false
+			},
+			"plot_100": {
+				"title": "Ichimoku.Lead2_20_60_120_30",
+				"isHidden": false
+			},
+			"plot_101": {
+				"title": "VWMA",
+				"isHidden": false
+			},
+			"plot_102": {
+				"title": "ADR",
+				"isHidden": false
+			},
+			"plot_103": {
+				"title": "Rec.HullMA9",
+				"isHidden": false
+			},
+			"plot_104": {
+				"title": "Rec.VWMA",
+				"isHidden": false
+			},
+			"plot_105": {
+				"title": "Rec.Ichimoku",
+				"isHidden": false
+			},
+			"plot_106": {
+				"title": "Recommend.MA",
+				"isHidden": false
+			},
+			"plot_107": {
+				"title": "Rec.Stoch.RSI",
+				"isHidden": false
+			},
+			"plot_108": {
+				"title": "Rec.WR",
+				"isHidden": false
+			},
+			"plot_109": {
+				"title": "Rec.BBPower",
+				"isHidden": false
+			},
+			"plot_11": {
+				"title": "BB.basis",
+				"isHidden": false
+			},
+			"plot_110": {
+				"title": "Rec.UO",
+				"isHidden": false
+			},
+			"plot_111": {
+				"title": "Recommend.Other",
+				"isHidden": false
+			},
+			"plot_112": {
+				"title": "Recommend.All",
+				"isHidden": false
+			},
+			"plot_113": {
+				"title": "Candle.Hammer",
+				"isHidden": false
+			},
+			"plot_114": {
+				"title": "Candle.HangingMan",
+				"isHidden": false
+			},
+			"plot_115": {
+				"title": "Candle.InvertedHammer",
+				"isHidden": false
+			},
+			"plot_116": {
+				"title": "Candle.ShootingStar",
+				"isHidden": false
+			},
+			"plot_117": {
+				"title": "Candle.MorningStar",
+				"isHidden": false
+			},
+			"plot_118": {
+				"title": "Candle.EveningStar",
+				"isHidden": false
+			},
+			"plot_119": {
+				"title": "Candle.Marubozu.Black",
+				"isHidden": false
+			},
+			"plot_12": {
+				"title": "BB.upper",
+				"isHidden": false
+			},
+			"plot_120": {
+				"title": "Candle.Marubozu.White",
+				"isHidden": false
+			},
+			"plot_121": {
+				"title": "Candle.Doji",
+				"isHidden": false
+			},
+			"plot_122": {
+				"title": "Candle.Doji.Dragonfly",
+				"isHidden": false
+			},
+			"plot_123": {
+				"title": "Candle.Doji.Gravestone",
+				"isHidden": false
+			},
+			"plot_124": {
+				"title": "Candle.Harami.Bullish",
+				"isHidden": false
+			},
+			"plot_125": {
+				"title": "Candle.Harami.Bearish",
+				"isHidden": false
+			},
+			"plot_126": {
+				"title": "Candle.LongShadow.Lower",
+				"isHidden": false
+			},
+			"plot_127": {
+				"title": "Candle.LongShadow.Upper",
+				"isHidden": false
+			},
+			"plot_128": {
+				"title": "Candle.SpinningTop.White",
+				"isHidden": false
+			},
+			"plot_129": {
+				"title": "Candle.SpinningTop.Black",
+				"isHidden": false
+			},
+			"plot_13": {
+				"title": "BB.lower",
+				"isHidden": false
+			},
+			"plot_130": {
+				"title": "Candle.3WhiteSoldiers",
+				"isHidden": false
+			},
+			"plot_131": {
+				"title": "Candle.3BlackCrows",
+				"isHidden": false
+			},
+			"plot_132": {
+				"title": "Candle.Engulfing.Bullish",
+				"isHidden": false
+			},
+			"plot_133": {
+				"title": "Candle.Engulfing.Bearish",
+				"isHidden": false
+			},
+			"plot_134": {
+				"title": "Candle.AbandonedBaby.Bullish",
+				"isHidden": false
+			},
+			"plot_135": {
+				"title": "Candle.AbandonedBaby.Bearish",
+				"isHidden": false
+			},
+			"plot_136": {
+				"title": "Candle.TriStar.Bullish",
+				"isHidden": false
+			},
+			"plot_137": {
+				"title": "Candle.TriStar.Bearish",
+				"isHidden": false
+			},
+			"plot_138": {
+				"title": "Candle.Kicking.Bullish",
+				"isHidden": false
+			},
+			"plot_139": {
+				"title": "Candle.Kicking.Bearish",
+				"isHidden": false
+			},
+			"plot_14": {
+				"title": "BB.basis_50",
+				"isHidden": false
+			},
+			"plot_140": {
+				"title": "VWAP",
+				"isHidden": false
+			},
+			"plot_141": {
+				"title": "Pivot.M.Classic.Middle",
+				"isHidden": false
+			},
+			"plot_142": {
+				"title": "Pivot.M.Classic.R1",
+				"isHidden": false
+			},
+			"plot_143": {
+				"title": "Pivot.M.Classic.S1",
+				"isHidden": false
+			},
+			"plot_144": {
+				"title": "Pivot.M.Classic.R2",
+				"isHidden": false
+			},
+			"plot_145": {
+				"title": "Pivot.M.Classic.S2",
+				"isHidden": false
+			},
+			"plot_146": {
+				"title": "Pivot.M.Classic.R3",
+				"isHidden": false
+			},
+			"plot_147": {
+				"title": "Pivot.M.Classic.S3",
+				"isHidden": false
+			},
+			"plot_148": {
+				"title": "Pivot.M.Fibonacci.Middle",
+				"isHidden": false
+			},
+			"plot_149": {
+				"title": "Pivot.M.Fibonacci.R1",
+				"isHidden": false
+			},
+			"plot_15": {
+				"title": "BB.upper_50",
+				"isHidden": false
+			},
+			"plot_150": {
+				"title": "Pivot.M.Fibonacci.S1",
+				"isHidden": false
+			},
+			"plot_151": {
+				"title": "Pivot.M.Fibonacci.R2",
+				"isHidden": false
+			},
+			"plot_152": {
+				"title": "Pivot.M.Fibonacci.S2",
+				"isHidden": false
+			},
+			"plot_153": {
+				"title": "Pivot.M.Fibonacci.R3",
+				"isHidden": false
+			},
+			"plot_154": {
+				"title": "Pivot.M.Fibonacci.S3",
+				"isHidden": false
+			},
+			"plot_155": {
+				"title": "Pivot.M.Woodie.Middle",
+				"isHidden": false
+			},
+			"plot_156": {
+				"title": "Pivot.M.Woodie.R1",
+				"isHidden": false
+			},
+			"plot_157": {
+				"title": "Pivot.M.Woodie.S1",
+				"isHidden": false
+			},
+			"plot_158": {
+				"title": "Pivot.M.Woodie.R2",
+				"isHidden": false
+			},
+			"plot_159": {
+				"title": "Pivot.M.Woodie.S2",
+				"isHidden": false
+			},
+			"plot_16": {
+				"title": "BB.lower_50",
+				"isHidden": false
+			},
+			"plot_160": {
+				"title": "Pivot.M.Woodie.R3",
+				"isHidden": false
+			},
+			"plot_161": {
+				"title": "Pivot.M.Woodie.S3",
+				"isHidden": false
+			},
+			"plot_162": {
+				"title": "Pivot.M.Demark.Middle",
+				"isHidden": false
+			},
+			"plot_163": {
+				"title": "Pivot.M.Demark.R1",
+				"isHidden": false
+			},
+			"plot_164": {
+				"title": "Pivot.M.Demark.S1",
+				"isHidden": false
+			},
+			"plot_165": {
+				"title": "Pivot.M.Camarilla.Middle",
+				"isHidden": false
+			},
+			"plot_166": {
+				"title": "Pivot.M.Camarilla.R1",
+				"isHidden": false
+			},
+			"plot_167": {
+				"title": "Pivot.M.Camarilla.S1",
+				"isHidden": false
+			},
+			"plot_168": {
+				"title": "Pivot.M.Camarilla.R2",
+				"isHidden": false
+			},
+			"plot_169": {
+				"title": "Pivot.M.Camarilla.S2",
+				"isHidden": false
+			},
+			"plot_17": {
+				"title": "MACD.hist",
+				"isHidden": false
+			},
+			"plot_170": {
+				"title": "Pivot.M.Camarilla.R3",
+				"isHidden": false
+			},
+			"plot_171": {
+				"title": "Pivot.M.Camarilla.S3",
+				"isHidden": false
+			},
+			"plot_172": {
+				"title": "High.All",
+				"isHidden": false
+			},
+			"plot_173": {
+				"title": "High.All.Date",
+				"isHidden": false
+			},
+			"plot_174": {
+				"title": "High.All.Calc",
+				"isHidden": false
+			},
+			"plot_175": {
+				"title": "High.All.Calc.Date",
+				"isHidden": false
+			},
+			"plot_176": {
+				"title": "Low.After.High.All",
+				"isHidden": false
+			},
+			"plot_177": {
+				"title": "Low.All",
+				"isHidden": false
+			},
+			"plot_178": {
+				"title": "Low.All.Date",
+				"isHidden": false
+			},
+			"plot_179": {
+				"title": "Low.All.Calc",
+				"isHidden": false
+			},
+			"plot_18": {
+				"title": "MACD.macd",
+				"isHidden": false
+			},
+			"plot_180": {
+				"title": "Low.All.Calc.Date",
+				"isHidden": false
+			},
+			"plot_181": {
+				"title": "Open.All.Calc",
+				"isHidden": false
+			},
+			"plot_182": {
+				"title": "price_52_week_low",
+				"isHidden": false
+			},
+			"plot_183": {
+				"title": "price_52_week_low_date",
+				"isHidden": false
+			},
+			"plot_184": {
+				"title": "price_52_week_high",
+				"isHidden": false
+			},
+			"plot_185": {
+				"title": "price_52_week_high_date",
+				"isHidden": false
+			},
+			"plot_186": {
+				"title": "Low.6M",
+				"isHidden": false
+			},
+			"plot_187": {
+				"title": "Low.6M.Date",
+				"isHidden": false
+			},
+			"plot_188": {
+				"title": "High.6M",
+				"isHidden": false
+			},
+			"plot_189": {
+				"title": "High.6M.Date",
+				"isHidden": false
+			},
+			"plot_19": {
+				"title": "MACD.signal",
+				"isHidden": false
+			},
+			"plot_190": {
+				"title": "Low.3M",
+				"isHidden": false
+			},
+			"plot_191": {
+				"title": "Low.3M.Date",
+				"isHidden": false
+			},
+			"plot_192": {
+				"title": "High.3M",
+				"isHidden": false
+			},
+			"plot_193": {
+				"title": "High.3M.Date",
+				"isHidden": false
+			},
+			"plot_194": {
+				"title": "Low.1M",
+				"isHidden": false
+			},
+			"plot_195": {
+				"title": "Low.1M.Date",
+				"isHidden": false
+			},
+			"plot_196": {
+				"title": "High.1M",
+				"isHidden": false
+			},
+			"plot_197": {
+				"title": "High.1M.Date",
+				"isHidden": false
+			},
+			"plot_198": {
+				"title": "Low.5D",
+				"isHidden": false
+			},
+			"plot_199": {
+				"title": "High.5D",
+				"isHidden": false
+			},
+			"plot_2": {
+				"title": "ADX+DI",
+				"isHidden": false
+			},
+			"plot_20": {
+				"title": "Mom",
+				"isHidden": false
+			},
+			"plot_200": {
+				"title": "Volatility.W",
+				"isHidden": false
+			},
+			"plot_201": {
+				"title": "Volatility.M",
+				"isHidden": false
+			},
+			"plot_202": {
+				"title": "Volatility.D",
+				"isHidden": false
+			},
+			"plot_203": {
+				"title": "first_bar_time",
+				"isHidden": false
+			},
+			"plot_204": {
+				"title": "Perf.W",
+				"isHidden": false
+			},
+			"plot_205": {
+				"title": "Perf.1M",
+				"isHidden": false
+			},
+			"plot_206": {
+				"title": "Perf.3M",
+				"isHidden": false
+			},
+			"plot_207": {
+				"title": "Perf.6M",
+				"isHidden": false
+			},
+			"plot_208": {
+				"title": "Perf.Y",
+				"isHidden": false
+			},
+			"plot_209": {
+				"title": "Perf.5Y",
+				"isHidden": false
+			},
+			"plot_21": {
+				"title": "Mom[1]",
+				"isHidden": false
+			},
+			"plot_210": {
+				"title": "Perf.YTD",
+				"isHidden": false
+			},
+			"plot_211": {
+				"title": "time_business_day",
+				"isHidden": false
+			},
+			"plot_212": {
+				"title": "open_interest",
+				"isHidden": false
+			},
+			"plot_22": {
+				"title": "Mom_14",
+				"isHidden": false
+			},
+			"plot_23": {
+				"title": "Mom_14[1]",
+				"isHidden": false
+			},
+			"plot_24": {
+				"title": "RSI",
+				"isHidden": false
+			},
+			"plot_25": {
+				"title": "RSI[1]",
+				"isHidden": false
+			},
+			"plot_26": {
+				"title": "RSI2",
+				"isHidden": false
+			},
+			"plot_27": {
+				"title": "RSI2[1]",
+				"isHidden": false
+			},
+			"plot_28": {
+				"title": "RSI3",
+				"isHidden": false
+			},
+			"plot_29": {
+				"title": "RSI3[1]",
+				"isHidden": false
+			},
+			"plot_3": {
+				"title": "ADX-DI",
+				"isHidden": false
+			},
+			"plot_30": {
+				"title": "RSI7",
+				"isHidden": false
+			},
+			"plot_31": {
+				"title": "RSI7[1]",
+				"isHidden": false
+			},
+			"plot_32": {
+				"title": "SMA5",
+				"isHidden": false
+			},
+			"plot_33": {
+				"title": "SMA10",
+				"isHidden": false
+			},
+			"plot_34": {
+				"title": "SMA20",
+				"isHidden": false
+			},
+			"plot_35": {
+				"title": "SMA25",
+				"isHidden": false
+			},
+			"plot_36": {
+				"title": "SMA30",
+				"isHidden": false
+			},
+			"plot_37": {
+				"title": "SMA50",
+				"isHidden": false
+			},
+			"plot_38": {
+				"title": "SMA75",
+				"isHidden": false
+			},
+			"plot_39": {
+				"title": "SMA100",
+				"isHidden": false
+			},
+			"plot_4": {
+				"title": "ADX+DI[1]",
+				"isHidden": false
+			},
+			"plot_40": {
+				"title": "SMA150",
+				"isHidden": false
+			},
+			"plot_41": {
+				"title": "SMA200",
+				"isHidden": false
+			},
+			"plot_42": {
+				"title": "EMA3",
+				"isHidden": false
+			},
+			"plot_43": {
+				"title": "EMA5",
+				"isHidden": false
+			},
+			"plot_44": {
+				"title": "EMA8",
+				"isHidden": false
+			},
+			"plot_45": {
+				"title": "EMA9",
+				"isHidden": false
+			},
+			"plot_46": {
+				"title": "EMA10",
+				"isHidden": false
+			},
+			"plot_47": {
+				"title": "EMA12",
+				"isHidden": false
+			},
+			"plot_48": {
+				"title": "EMA13",
+				"isHidden": false
+			},
+			"plot_49": {
+				"title": "EMA20",
+				"isHidden": false
+			},
+			"plot_5": {
+				"title": "ADX-DI[1]",
+				"isHidden": false
+			},
+			"plot_50": {
+				"title": "EMA21",
+				"isHidden": false
+			},
+			"plot_51": {
+				"title": "EMA30",
+				"isHidden": false
+			},
+			"plot_52": {
+				"title": "EMA50",
+				"isHidden": false
+			},
+			"plot_53": {
+				"title": "EMA100",
+				"isHidden": false
+			},
+			"plot_54": {
+				"title": "EMA150",
+				"isHidden": false
+			},
+			"plot_55": {
+				"title": "EMA200",
+				"isHidden": false
+			},
+			"plot_56": {
+				"title": "Stoch.K",
+				"isHidden": false
+			},
+			"plot_57": {
+				"title": "Stoch.D",
+				"isHidden": false
+			},
+			"plot_58": {
+				"title": "Stoch.K[1]",
+				"isHidden": false
+			},
+			"plot_59": {
+				"title": "Stoch.D[1]",
+				"isHidden": false
+			},
+			"plot_6": {
+				"title": "ADX_9",
+				"isHidden": false
+			},
+			"plot_60": {
+				"title": "Stoch.K_14_1_3",
+				"isHidden": false
+			},
+			"plot_61": {
+				"title": "Stoch.D_14_1_3",
+				"isHidden": false
+			},
+			"plot_62": {
+				"title": "Stoch.K[1]_14_1_3",
+				"isHidden": false
+			},
+			"plot_63": {
+				"title": "Stoch.D[1]_14_1_3",
+				"isHidden": false
+			},
+			"plot_64": {
+				"title": "average_volume_10d_calc",
+				"isHidden": false
+			},
+			"plot_65": {
+				"title": "relative_volume_10d_calc",
+				"isHidden": false
+			},
+			"plot_66": {
+				"title": "average_volume_30d_calc",
+				"isHidden": false
+			},
+			"plot_67": {
+				"title": "average_volume_60d_calc",
+				"isHidden": false
+			},
+			"plot_68": {
+				"title": "average_volume_90d_calc",
+				"isHidden": false
+			},
+			"plot_69": {
+				"title": "CCI20",
+				"isHidden": false
+			},
+			"plot_7": {
+				"title": "ADX+DI_9",
+				"isHidden": false
+			},
+			"plot_70": {
+				"title": "CCI20[1]",
+				"isHidden": false
+			},
+			"plot_71": {
+				"title": "DonchCh20.Lower",
+				"isHidden": false
+			},
+			"plot_72": {
+				"title": "DonchCh20.Upper",
+				"isHidden": false
+			},
+			"plot_73": {
+				"title": "DonchCh20.Middle",
+				"isHidden": false
+			},
+			"plot_74": {
+				"title": "HullMA9",
+				"isHidden": false
+			},
+			"plot_75": {
+				"title": "AO",
+				"isHidden": false
+			},
+			"plot_76": {
+				"title": "AO[1]",
+				"isHidden": false
+			},
+			"plot_77": {
+				"title": "AO[2]",
+				"isHidden": false
+			},
+			"plot_78": {
+				"title": "Aroon.Up",
+				"isHidden": false
+			},
+			"plot_79": {
+				"title": "Aroon.Down",
+				"isHidden": false
+			},
+			"plot_8": {
+				"title": "ADX-DI_9",
+				"isHidden": false
+			},
+			"plot_80": {
+				"title": "Value.Traded",
+				"isHidden": false
+			},
+			"plot_81": {
+				"title": "KltChnl.upper",
+				"isHidden": false
+			},
+			"plot_82": {
+				"title": "KltChnl.lower",
+				"isHidden": false
+			},
+			"plot_83": {
+				"title": "KltChnl.basis",
+				"isHidden": false
+			},
+			"plot_84": {
+				"title": "P.SAR",
+				"isHidden": false
+			},
+			"plot_85": {
+				"title": "MoneyFlow",
+				"isHidden": false
+			},
+			"plot_86": {
+				"title": "ChaikinMoneyFlow",
+				"isHidden": false
+			},
+			"plot_87": {
+				"title": "Stoch.RSI.K",
+				"isHidden": false
+			},
+			"plot_88": {
+				"title": "Stoch.RSI.D",
+				"isHidden": false
+			},
+			"plot_89": {
+				"title": "W.R",
+				"isHidden": false
+			},
+			"plot_9": {
+				"title": "ADX+DI_9[1]",
+				"isHidden": false
+			},
+			"plot_90": {
+				"title": "ROC",
+				"isHidden": false
+			},
+			"plot_91": {
+				"title": "BBPower",
+				"isHidden": false
+			},
+			"plot_92": {
+				"title": "UO",
+				"isHidden": false
+			},
+			"plot_93": {
+				"title": "Ichimoku.CLine",
+				"isHidden": false
+			},
+			"plot_94": {
+				"title": "Ichimoku.BLine",
+				"isHidden": false
+			},
+			"plot_95": {
+				"title": "Ichimoku.Lead1",
+				"isHidden": false
+			},
+			"plot_96": {
+				"title": "Ichimoku.Lead2",
+				"isHidden": false
+			},
+			"plot_97": {
+				"title": "Ichimoku.CLine_20_60_120_30",
+				"isHidden": false
+			},
+			"plot_98": {
+				"title": "Ichimoku.BLine_20_60_120_30",
+				"isHidden": false
+			},
+			"plot_99": {
+				"title": "Ichimoku.Lead1_20_60_120_30",
+				"isHidden": false
+			}
+		}
+	}
+]

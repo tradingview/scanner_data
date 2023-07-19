@@ -1,5 +1,5 @@
 ---
-cache_control: private, max-age=10
+cache_control: public, max-age=10
 presets:
 - name: US_volume_gainers
   filter:

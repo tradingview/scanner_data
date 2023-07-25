@@ -5,6 +5,8 @@ presets:
   - left: typespecs
     operation: has
     right: continuous
+  - left: sector
+    operation: nempty
   symbols:
     query:
       types:

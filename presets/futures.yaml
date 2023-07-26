@@ -7,10 +7,6 @@ presets:
     right: continuous
   - left: sector
     operation: nempty
-  symbols:
-    query:
-      types:
-      - futures
   sort:
     sortBy: name
     sortOrder: asc
@@ -22,10 +18,6 @@ presets:
   - left: sector
     operation: equal
     right: Agricultural
-  symbols:
-    query:
-      types:
-      - futures
   sort:
     sortBy: name
     sortOrder: asc
@@ -37,10 +29,6 @@ presets:
   - left: sector
     operation: equal
     right: Energy
-  symbols:
-    query:
-      types:
-      - futures
   sort:
     sortBy: name
     sortOrder: asc
@@ -52,10 +40,6 @@ presets:
   - left: sector
     operation: equal
     right: Currencies
-  symbols:
-    query:
-      types:
-      - futures
   sort:
     sortBy: name
     sortOrder: asc
@@ -67,10 +51,6 @@ presets:
   - left: sector
     operation: equal
     right: Metals
-  symbols:
-    query:
-      types:
-      - futures
   sort:
     sortBy: name
     sortOrder: asc
@@ -82,10 +62,6 @@ presets:
   - left: sector
     operation: equal
     right: Indexes
-  symbols:
-    query:
-      types:
-      - futures
   sort:
     sortBy: name
     sortOrder: asc
@@ -97,10 +73,6 @@ presets:
   - left: sector
     operation: equal
     right: Financials
-  symbols:
-    query:
-      types:
-      - futures
   sort:
     sortBy: name
     sortOrder: asc

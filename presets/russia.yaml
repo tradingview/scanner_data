@@ -585,6 +585,7 @@ presets:
    sortBy: market_cap_basic
    sortOrder: desc
 - name: country_page_indices_ru
-  symbols:
-    tickers:
-    - MOEX:IMOEX
+	symbols:
+	  tickers:
+	  - MOEX:IMOEX
+	  - MOEX:RTSI

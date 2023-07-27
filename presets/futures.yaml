@@ -76,3 +76,9 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_page_futures_commodities_ar
+  symbols:
+    tickers:
+      - MATBAROFEX:SOY.CME1!
+      - MATBAROFEX:SOJ.ROS1!
+      - MATBAROFEX:SOJ.MIN1!

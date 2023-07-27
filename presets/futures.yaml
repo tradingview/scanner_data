@@ -79,6 +79,6 @@ presets:
 - name: country_page_futures_commodities_ar
   symbols:
     tickers:
-      - MATBAROFEX:SOY.CME1!
-      - MATBAROFEX:SOJ.ROS1!
-      - MATBAROFEX:SOJ.MIN1!
+      - "MATBAROFEX:SOY.CME1!"
+      - "MATBAROFEX:SOJ.ROS1!"
+      - "MATBAROFEX:SOJ.MIN1!"

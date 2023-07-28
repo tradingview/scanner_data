@@ -28430,6 +28430,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28470,6 +28473,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28510,6 +28516,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28550,6 +28559,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28590,6 +28602,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28630,6 +28645,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28672,6 +28690,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28714,6 +28735,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:
@@ -28756,6 +28780,9 @@ presets:
     operation: has_none_of
     right: 
     - odd
+  - left: name
+    operation: nmatch
+    right: ".R$"
   - left: close
     operation: in_range
     right:

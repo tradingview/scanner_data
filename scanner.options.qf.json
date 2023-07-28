@@ -28,6 +28,10 @@
         "type": "text"
     },
     {
+        "name": "all_time_open",
+        "type": "price"
+    },
+    {
         "name": "root",
         "type": "text"
     },
@@ -39,22 +43,6 @@
         "name": "update-time",
         "type": "number",
         "extract_from": "daily-bar" 
-    },
-    {
-        "name": "price_target_high",
-        "type": "number"
-    },
-    {
-        "name": "price_target_low",
-        "type": "number"
-    },
-    {
-        "name": "price_target_median",
-        "type": "number"
-    },
-    {
-        "name": "price_target_average",
-        "type": "number"
     },
     {
         "name": "source-logoid",

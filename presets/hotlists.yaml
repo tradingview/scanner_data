@@ -6674,7 +6674,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   columns:
   - volume
   sort:
@@ -6707,7 +6707,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   columns:
   - change
   sort:
@@ -6740,7 +6740,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   columns:
   - change
   sort:
@@ -6773,7 +6773,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   columns:
   - change_from_open
   sort:
@@ -6806,7 +6806,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   columns:
   - change_from_open
   sort:
@@ -6839,7 +6839,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   - left: gap_up
     operation: nempty
   columns:
@@ -6874,7 +6874,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   - left: gap_down
     operation: nempty
   columns:
@@ -6909,7 +6909,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   - left: gap_up_abs
     operation: nempty
   columns:
@@ -6944,7 +6944,7 @@ presets:
     - odd
   - left: volume
     operation: greater
-    right: 1000
+    right: 100
   - left: gap_down_abs
     operation: nempty
   columns:

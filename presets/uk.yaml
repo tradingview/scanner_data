@@ -696,3 +696,12 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_gb
+  symbols:
+    tickers:
+      - FTSE:UKX
+      - FTSE:MCX
+      - FTSE:ASX
+      - FTSE:AIM5
+      - FTSE:AIM1
+      - FTSE:AXX

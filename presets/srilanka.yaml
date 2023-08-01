@@ -584,3 +584,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_lk
+  symbols:
+    tickers:
+      - CSELK:ASI
+      - CSELK:S&PSL20
+      - CSELK:SPCSEDFP
+      - CSELK:SPCSEBP
+      - CSELK:SPCSEEIP
+      - CSELK:SPCSECGP
+      - CSELK:SPCSEHSP
+      - CSELK:SPCSEPLP
+      - CSELK:SPCSERMP
+      - CSELK:SPCSECAP
+      - CSELK:SPCSEFRP

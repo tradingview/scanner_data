@@ -573,3 +573,9 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: country_page_indices_bd
+  symbols:
+    tickers:
+      - DSEBD:DSEX
+      - DSEBD:DSES
+      - DSEBD:DS30

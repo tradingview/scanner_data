@@ -584,3 +584,14 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_cy
+  symbols:
+    tickers:
+      - CSECY:FTSE20
+      - CSECY:MAIN
+      - CSECY:GEN
+      - CSECY:ALTE
+      - CSECY:FIN
+      - CSECY:INVE
+      - CSECY:ECM
+      - CSECY:HOTEL

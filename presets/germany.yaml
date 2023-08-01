@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_de
+  symbols:
+    tickers:
+      - XETR:DAX
+      - XETR:SDXK
+      - XETR:PXAP
+      - XETR:CLXP
+      - XETR:HKDX
+      - XETR:MKDX
+      - XETR:TDXP
+      - XETR:CXPV
+      - XETR:CXPP
+      - XETR:3BV6
+      - XETR:CXPB

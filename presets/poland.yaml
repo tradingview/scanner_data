@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_pl
+  symbols:
+    tickers:
+      - GPW:WIG
+      - GPW:WIG20
+      - GPW:WIG30
+      - GPW:MWIG40
+      - GPW:SWIG80
+      - NEWCONNECT:NCINDEX
+      - GPW:WIG.MS_FIN
+      - GPW:WIG_BANKI
+      - GPW:WIG_ENERG
+      - GPW:WIGTECH
+      - GPW:WIG_ESG

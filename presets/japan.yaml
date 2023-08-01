@@ -603,3 +603,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_jp
+  symbols:
+    tickers:
+      - TVC:NI225
+      - TSE:TOPIX
+      - TSE:I0500
+      - TSE:TOPIX100
+      - TSE:TOPIX500
+      - TSE:TOPIX1000
+      - TSE:LARGE70
+      - TSE:MID400
+      - TSE:SMALL
+      - TSE:T17FIN
+      - TSE:RE

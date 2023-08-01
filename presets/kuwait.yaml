@@ -584,3 +584,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_kw
+  symbols:
+    tickers:
+      - KSE:BKP
+      - KSE:BKM50
+      - KSE:BKM
+      - KSE:BKA
+      - KSE:BKFS
+      - KSE:BKE
+      - KSE:BKI
+      - KSE:BKHC
+      - KSE:BKBM
+      - KSE:BKRE
+      - KSE:BKCS

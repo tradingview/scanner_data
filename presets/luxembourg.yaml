@@ -599,3 +599,9 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_lu
+  symbols:
+    tickers:
+      - LUXSE:LUXG
+      - LUXSE:LUXX
+      - LUXSE:LUXXR

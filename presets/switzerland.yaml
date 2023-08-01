@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_ch
+  symbols:
+    tickers:
+      - SIX:SMI
+      - SIX:SSIP
+      - SIX:SLCIX
+      - SIX:SMCIX
+      - SIX:SSCIX
+      - SIX:C8300P
+      - SIX:C4500P
+      - SIX:C5300P
+      - SIX:C5500P
+      - SIX:C0500P
+      - SIX:REALX

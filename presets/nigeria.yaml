@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_ng
+  symbols:
+    tickers:
+      - NSENG:NGX30
+      - NSENG:NGX50
+      - NSENG:ASI
+      - NSENG:NGXPREMIUM
+      - NSENG:NGXPENSION
+      - NSENG:NGXBNK
+      - NSENG:NGXOILGAS
+      - NSENG:NGXINS
+      - NSENG:NGXCNSMRGDS
+      - NSENG:NGXASEM
+      - NSENG:NGXLOTUSISLM

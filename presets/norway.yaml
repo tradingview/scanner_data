@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_no
+  symbols:
+    tickers:
+      - OSL:OSEBX
+      - OSL:OBX
+      - OSL:OBXP
+      - OSL:OSEAX
+      - OSL:OSEMX
+      - OSL:OSESX
+      - OSL:OFING
+      - OSL:OENG
+      - OSL:OING
+      - OSL:OHCG
+      - OSL:OREG

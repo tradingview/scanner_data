@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_fr
+  symbols:
+    tickers:
+      - EURONEXT:PX1
+      - EURONEXT:PX4
+      - EURONEXT:CACT
+      - EURONEXT:PAX
+      - EURONEXT:CACLG
+      - EURONEXT:CACMD
+      - EURONEXT:CACS
+      - EURONEXT:CACMS
+      - EURONEXT:CN20
+      - EURONEXT:FRFIN
+      - EURONEXT:FRRE

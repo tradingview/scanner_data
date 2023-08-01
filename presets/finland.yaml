@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_fi
+  symbols:
+    tickers:
+      - OMXHEX:OMXH25
+      - OMXHEX:OMXHLCPI
+      - OMXHEX:OMXHMCPI
+      - OMXHEX:OMXHSCPI
+      - OMXHEX:OMXHBPI
+      - OMXHEX:HX30PI
+      - OMXHEX:HX60PI
+      - OMXHEX:HX50PI
+      - OMXHEX:HX20PI
+      - OMXHEX:HX55PI
+      - OMXHEX:HX35PI

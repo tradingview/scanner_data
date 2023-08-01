@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_kr
+  symbols:
+    tickers:
+      - KRX:KOSPI
+      - KRX:KOSPI50
+      - KRX:KOSPI200
+      - KRX:KOSPI2
+      - KRX:KOSPI3
+      - KRX:KOSPI4
+      - KRX:KOSDAQ
+      - KRX:KOSDAQ150
+      - KRX:KRXSECTOR4
+      - KRX:KRXSECTOR6
+      - KRX:KRXSECTOR3

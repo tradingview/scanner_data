@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_ar
+  symbols:
+    tickers:
+      - BCBA:IMV
+      - MATBAROFEX:RFX20
+      - BCBA:IAB
+      - BCBA:MONEDA
+      - BCBA:SPBYMAIG40
+      - BCBA:SPBYMAIG10
+      - BCBA:SPBYMAIG20
+      - BCBA:SPBYMAIG15
+      - BCBA:SPBYUEAP
+      - BCBA:SPBYMAIG60
+      - BCBA:SPBYMAIG30

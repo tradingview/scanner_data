@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_sa
+  symbols:
+    tickers:
+      - TADAWUL:TASI
+      - TADAWUL:MT30
+      - TADAWUL:NOMUC
+      - TADAWUL:TDFI
+      - TADAWUL:TBNI
+      - TADAWUL:TENI
+      - TADAWUL:TCGI
+      - TADAWUL:THEI
+      - TADAWUL:TMTI
+      - TADAWUL:TRMI
+      - TADAWUL:TFSI

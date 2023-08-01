@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_page_indices_vn
+  symbols:
+    tickers:
+      - HOSE:VNINDEX
+      - HOSE:VN30
+      - HOSE:VN100
+      - HNX:HNXINDEX
+      - HOSE:VNALLSHARE
+      - HOSE:VNMIDCAP
+      - HOSE:VNSMALLCAP
+      - HOSE:VNFIN
+      - HOSE:VNIND
+      - HOSE:VNCOND
+      - HOSE:VNREAL

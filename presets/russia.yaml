@@ -584,19 +584,3 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_ru
-  symbols:
-    tickers:
-    - MOEX:IMOEX
-    - MOEX:RTSI
-- name: country_page_indices_ru_filter
-  filter:
-  - left: name
-    operation: in_range
-    right:
-    - MOEX10
-    - RTSI
-  symbols:
-    query:
-      types:
-      - index

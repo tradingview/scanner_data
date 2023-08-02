@@ -44,7 +44,7 @@ presets:
   - 20
   markets: 
   - america
-- name: US_percent_wrong_gainers
+- name: US_percent_change_gainers
   filter:
   - left: exchange
     operation: in_range
@@ -436,7 +436,7 @@ presets:
   - 20
   markets: 
   - america
-- name: AMEX_percent_wrong_gainers
+- name: AMEX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -804,7 +804,7 @@ presets:
   - 20
   markets: 
   - america
-- name: NASDAQ_percent_wrong_gainers
+- name: NASDAQ_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -1172,7 +1172,7 @@ presets:
   - 20
   markets: 
   - america
-- name: NYSE_percent_wrong_gainers
+- name: NYSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -1540,7 +1540,7 @@ presets:
   - 20
   markets: 
   - america
-- name: OTC_percent_wrong_gainers
+- name: OTC_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -1908,7 +1908,7 @@ presets:
   - 20
   markets: 
   - japan
-- name: TSE_percent_wrong_gainers
+- name: TSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -2276,7 +2276,7 @@ presets:
   - 20
   markets: 
   - japan
-- name: NAG_percent_wrong_gainers
+- name: NAG_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -2644,7 +2644,7 @@ presets:
   - 20
   markets: 
   - canada
-- name: TSX_percent_wrong_gainers
+- name: TSX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -3012,7 +3012,7 @@ presets:
   - 20
   markets: 
   - canada
-- name: TSXV_percent_wrong_gainers
+- name: TSXV_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -3380,7 +3380,7 @@ presets:
   - 20
   markets: 
   - canada
-- name: CSE_percent_wrong_gainers
+- name: CSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -3748,7 +3748,7 @@ presets:
   - 20
   markets: 
   - canada
-- name: NEO_percent_wrong_gainers
+- name: NEO_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -4116,7 +4116,7 @@ presets:
   - 20
   markets: 
   - china
-- name: SSE_percent_wrong_gainers
+- name: SSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -4484,7 +4484,7 @@ presets:
   - 20
   markets: 
   - china
-- name: SZSE_percent_wrong_gainers
+- name: SZSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -4852,7 +4852,7 @@ presets:
   - 20
   markets: 
   - chile
-- name: BCS_percent_wrong_gainers
+- name: BCS_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -5220,7 +5220,7 @@ presets:
   - 20
   markets: 
   - argentina
-- name: BCBA_percent_wrong_gainers
+- name: BCBA_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -5588,7 +5588,7 @@ presets:
   - 20
   markets: 
   - australia
-- name: ASX_percent_wrong_gainers
+- name: ASX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -5956,7 +5956,7 @@ presets:
   - 20
   markets: 
   - bahrain
-- name: BAHRAIN_percent_wrong_gainers
+- name: BAHRAIN_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6324,7 +6324,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_percent_wrong_gainers
+- name: EURONEXTBRU_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6685,7 +6685,7 @@ presets:
   - 20
   markets: 
   - brazil
-- name: BMFBOVESPA_percent_wrong_gainers
+- name: BMFBOVESPA_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6997,7 +6997,7 @@ presets:
   - 20
   markets: 
   - colombia
-- name: BVC_percent_wrong_gainers
+- name: BVC_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -7365,7 +7365,7 @@ presets:
   - 20
   markets: 
   - cyprus
-- name: CSECY_percent_wrong_gainers
+- name: CSECY_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -7733,7 +7733,7 @@ presets:
   - 20
   markets: 
   - denmark
-- name: OMXCOP_percent_wrong_gainers
+- name: OMXCOP_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -8101,7 +8101,7 @@ presets:
   - 20
   markets: 
   - egypt
-- name: EGX_percent_wrong_gainers
+- name: EGX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -8461,7 +8461,7 @@ presets:
   - 20
   markets: 
   - estonia
-- name: OMXTSE_percent_wrong_gainers
+- name: OMXTSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -8757,7 +8757,7 @@ presets:
   - 20
   markets: 
   - latvia
-- name: OMXRSE_percent_wrong_gainers
+- name: OMXRSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -9058,7 +9058,7 @@ presets:
   - 20
   markets: 
   - lithuania
-- name: OMXVSE_percent_wrong_gainers
+- name: OMXVSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -9402,7 +9402,7 @@ presets:
   - 20
   markets: 
   - iceland
-- name: OMXICE_percent_wrong_gainers
+- name: OMXICE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -9770,7 +9770,7 @@ presets:
   - 20
   markets: 
   - finland
-- name: OMXHEX_percent_wrong_gainers
+- name: OMXHEX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10138,7 +10138,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_percent_wrong_gainers
+- name: EURONEXTPAR_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10506,7 +10506,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: BER_percent_wrong_gainers
+- name: BER_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10874,7 +10874,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: DUS_percent_wrong_gainers
+- name: DUS_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -11242,7 +11242,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: FWB_percent_wrong_gainers
+- name: FWB_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -11610,7 +11610,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: HAM_percent_wrong_gainers
+- name: HAM_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -11978,7 +11978,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: HAN_percent_wrong_gainers
+- name: HAN_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -12346,7 +12346,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: MUN_percent_wrong_gainers
+- name: MUN_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -12714,7 +12714,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: SWB_percent_wrong_gainers
+- name: SWB_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -13082,7 +13082,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: TRADEGATE_percent_wrong_gainers
+- name: TRADEGATE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -13450,7 +13450,7 @@ presets:
   - 20
   markets: 
   - germany
-- name: XETR_percent_wrong_gainers
+- name: XETR_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -13818,7 +13818,7 @@ presets:
   - 20
   markets: 
   - greece
-- name: ATHEX_percent_wrong_gainers
+- name: ATHEX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -14186,7 +14186,7 @@ presets:
   - 20
   markets: 
   - hongkong
-- name: HKEX_percent_wrong_gainers
+- name: HKEX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -14554,7 +14554,7 @@ presets:
   - 20
   markets: 
   - hungary
-- name: BET_percent_wrong_gainers
+- name: BET_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -14922,7 +14922,7 @@ presets:
   - 20
   markets: 
   - india
-- name: BSE_percent_wrong_gainers
+- name: BSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -15290,7 +15290,7 @@ presets:
   - 20
   markets: 
   - india
-- name: NSE_percent_wrong_gainers
+- name: NSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -15658,7 +15658,7 @@ presets:
   - 20
   markets: 
   - indonesia
-- name: IDX_percent_wrong_gainers
+- name: IDX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -16026,7 +16026,7 @@ presets:
   - 20
   markets: 
   - israel
-- name: TASE_percent_wrong_gainers
+- name: TASE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -16394,7 +16394,7 @@ presets:
   - 20
   markets: 
   - italy
-- name: MIL_percent_wrong_gainers
+- name: MIL_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -16762,7 +16762,7 @@ presets:
   - 20
   markets: 
   - kenya
-- name: NSEKE_percent_wrong_gainers
+- name: NSEKE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -17130,7 +17130,7 @@ presets:
   - 20
   markets: 
   - kuwait
-- name: KSE_percent_wrong_gainers
+- name: KSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -17498,7 +17498,7 @@ presets:
   - 20
   markets: 
   - luxembourg
-- name: LUXSE_percent_wrong_gainers
+- name: LUXSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -17864,7 +17864,7 @@ presets:
   - 20
   markets: 
   - malaysia
-- name: MYX_percent_wrong_gainers
+- name: MYX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -18216,7 +18216,7 @@ presets:
   - 20
   markets: 
   - mexico
-- name: BMV_percent_wrong_gainers
+- name: BMV_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -18584,7 +18584,7 @@ presets:
   - 20
   markets: 
   - morocco
-- name: CSEMA_percent_wrong_gainers
+- name: CSEMA_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -18952,7 +18952,7 @@ presets:
   - 20
   markets: 
   - newzealand
-- name: NZX_percent_wrong_gainers
+- name: NZX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -19320,7 +19320,7 @@ presets:
   - 20
   markets: 
   - nigeria
-- name: NSENG_percent_wrong_gainers
+- name: NSENG_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -19688,7 +19688,7 @@ presets:
   - 20
   markets: 
   - pakistan
-- name: PSX_percent_wrong_gainers
+- name: PSX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20056,7 +20056,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_percent_wrong_gainers
+- name: EURONEXTAMS_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20424,7 +20424,7 @@ presets:
   - 20
   markets: 
   - peru
-- name: BVL_percent_wrong_gainers
+- name: BVL_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20792,7 +20792,7 @@ presets:
   - 20
   markets: 
   - philippines
-- name: PSE_percent_wrong_gainers
+- name: PSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -21160,7 +21160,7 @@ presets:
   - 20
   markets: 
   - poland
-- name: GPW_percent_wrong_gainers
+- name: GPW_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -21528,7 +21528,7 @@ presets:
   - 20
   markets: 
   - poland
-- name: NEWCONNECT_percent_wrong_gainers
+- name: NEWCONNECT_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -21896,7 +21896,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_percent_wrong_gainers
+- name: EURONEXTLIS_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -22264,7 +22264,7 @@ presets:
   - 20
   markets: 
   - qatar
-- name: QSE_percent_wrong_gainers
+- name: QSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -22632,7 +22632,7 @@ presets:
   - 20
   markets: 
   - romania
-- name: BVB_percent_wrong_gainers
+- name: BVB_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -22992,7 +22992,7 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_percent_wrong_gainers
+- name: MOEX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -23296,7 +23296,7 @@ presets:
   - 20
   markets: 
   - ksa
-- name: TADAWUL_percent_wrong_gainers
+- name: TADAWUL_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -23664,7 +23664,7 @@ presets:
   - 20
   markets: 
   - serbia
-- name: BELEX_percent_wrong_gainers
+- name: BELEX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -24032,7 +24032,7 @@ presets:
   - 20
   markets: 
   - singapore
-- name: SGX_percent_wrong_gainers
+- name: SGX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -24400,7 +24400,7 @@ presets:
   - 20
   markets: 
   - slovakia
-- name: BSSE_percent_wrong_gainers
+- name: BSSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -24768,7 +24768,7 @@ presets:
   - 20
   markets: 
   - rsa
-- name: JSE_percent_wrong_gainers
+- name: JSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -25136,7 +25136,7 @@ presets:
   - 20
   markets: 
   - korea
-- name: KRX_percent_wrong_gainers
+- name: KRX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -25504,7 +25504,7 @@ presets:
   - 20
   markets: 
   - spain
-- name: BME_percent_wrong_gainers
+- name: BME_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -25872,7 +25872,7 @@ presets:
   - 20
   markets: 
   - srilanka
-- name: CSELK_percent_wrong_gainers
+- name: CSELK_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -26240,7 +26240,7 @@ presets:
   - 20
   markets: 
   - sweden
-- name: NGM_percent_wrong_gainers
+- name: NGM_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -26608,7 +26608,7 @@ presets:
   - 20
   markets: 
   - sweden
-- name: OMXSTO_percent_wrong_gainers
+- name: OMXSTO_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -26976,7 +26976,7 @@ presets:
   - 20
   markets: 
   - switzerland
-- name: BX_percent_wrong_gainers
+- name: BX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -27344,7 +27344,7 @@ presets:
   - 20
   markets: 
   - switzerland
-- name: SIX_percent_wrong_gainers
+- name: SIX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -27712,7 +27712,7 @@ presets:
   - 20
   markets: 
   - taiwan
-- name: TPEX_percent_wrong_gainers
+- name: TPEX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -28080,7 +28080,7 @@ presets:
   - 20
   markets: 
   - taiwan
-- name: TWSE_percent_wrong_gainers
+- name: TWSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -28451,7 +28451,7 @@ presets:
   - 20
   markets: 
   - thailand
-- name: SET_percent_wrong_gainers
+- name: SET_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -28843,7 +28843,7 @@ presets:
   - 20
   markets: 
   - tunisia
-- name: BVMT_percent_wrong_gainers
+- name: BVMT_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -29203,7 +29203,7 @@ presets:
   - 20
   markets: 
   - turkey
-- name: BIST_percent_wrong_gainers
+- name: BIST_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -29507,7 +29507,7 @@ presets:
   - 20
   markets: 
   - uae
-- name: ADX_percent_wrong_gainers
+- name: ADX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -29875,7 +29875,7 @@ presets:
   - 20
   markets: 
   - uae
-- name: DFM_percent_wrong_gainers
+- name: DFM_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -30243,7 +30243,7 @@ presets:
   - 20
   markets: 
   - uk
-- name: LSE_percent_wrong_gainers
+- name: LSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -30611,7 +30611,7 @@ presets:
   - 20
   markets: 
   - uk
-- name: LSIN_percent_wrong_gainers
+- name: LSIN_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -30979,7 +30979,7 @@ presets:
   - 20
   markets: 
   - venezuela
-- name: BVCV_percent_wrong_gainers
+- name: BVCV_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -31347,7 +31347,7 @@ presets:
   - 20
   markets: 
   - vietnam
-- name: HNX_percent_wrong_gainers
+- name: HNX_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -31715,7 +31715,7 @@ presets:
   - 20
   markets: 
   - vietnam
-- name: HOSE_percent_wrong_gainers
+- name: HOSE_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -32083,7 +32083,7 @@ presets:
   - 20
   markets: 
   - vietnam
-- name: UPCOM_percent_wrong_gainers
+- name: UPCOM_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -32451,7 +32451,7 @@ presets:
   - 20
   markets: 
   - norway
-- name: OSL_percent_wrong_gainers
+- name: OSL_percent_change_gainers
   filter:
   - left: exchange
     operation: equal

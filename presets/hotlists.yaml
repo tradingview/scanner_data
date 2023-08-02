@@ -22960,11 +22960,11 @@ presets:
   - 20
   markets: 
   - romania
-- name: MOEX_volume_gainers
+- name: MOEX1_volume_gainers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -22992,11 +22992,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_percent_change_gainers
+- name: MOEX1_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -23024,11 +23024,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_percent_change_losers
+- name: MOEX1_percent_change_losers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -23056,11 +23056,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_percent_range_gainers
+- name: MOEX1_percent_range_gainers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -23088,11 +23088,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_percent_range_losers
+- name: MOEX1_percent_range_losers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -23120,11 +23120,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_percent_gap_gainers
+- name: MOEX1_percent_gap_gainers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -23154,11 +23154,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_percent_gap_losers
+- name: MOEX1_percent_gap_losers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -23188,11 +23188,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_gap_gainers
+- name: MOEX1_gap_gainers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true
@@ -23222,11 +23222,11 @@ presets:
   - 20
   markets: 
   - russia
-- name: MOEX_gap_losers
+- name: MOEX1_gap_losers
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: MOEX1
   - left: active_symbol
     operation: equal
     right: true

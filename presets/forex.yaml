@@ -116,3 +116,993 @@ presets:
   sort:
     sortBy: forex_priority
     sortOrder: asc
+- name: country_top_forex_us
+  symbols:
+    tickers:
+      - FX_IDC:EURUSD
+      - FX_IDC:JPYUSD
+      - FX_IDC:GBPUSD
+      - FX_IDC:CHFUSD
+      - FX_IDC:AUDUSD
+      - FX_IDC:NZDUSD
+      - FX_IDC:CADUSD
+      - FX_IDC:MXNUSD
+      - FX_IDC:BRLUSD
+      - FX_IDC:INRUSD
+      - FX_IDC:CNYUSD
+      - FX_IDC:SGDUSD
+- name: country_top_forex_ae
+  symbols:
+    tickers:
+      - FX_IDC:USDAED
+      - FX_IDC:EURAED
+      - FX_IDC:JPYAED
+      - FX_IDC:GBPAED
+      - FX_IDC:CHFAED
+      - FX_IDC:AUDAED
+      - FX_IDC:NZDAED
+      - FX_IDC:OMRAED
+      - FX_IDC:INRAED
+      - FX_IDC:CNYAED
+      - FX_IDC:CADAED
+      - FX_IDC:SARAED
+- name: country_top_forex_ar
+  symbols:
+    tickers:
+      - FX_IDC:USDARS
+      - FX_IDC:EURARS
+      - FX_IDC:JPYARS
+      - FX_IDC:GBPARS
+      - FX_IDC:CHFARS
+      - FX_IDC:AUDARS
+      - FX_IDC:NZDARS
+      - FX_IDC:CADARS
+      - FX_IDC:MXNARS
+      - FX_IDC:BRLARS
+      - FX_IDC:COPARS
+      - FX_IDC:CNYARS
+- name: country_top_forex_at
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:HUFEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_bd
+  symbols:
+    tickers:
+      - FX_IDC:USDBDT
+      - FX_IDC:EURBDT
+      - FX_IDC:JPYBDT
+      - FX_IDC:GBPBDT
+      - FX_IDC:CHFBDT
+      - FX_IDC:CADBDT
+      - FX_IDC:HKDBDT
+      - FX_IDC:SGDBDT
+      - FX_IDC:AUDBDT
+      - FX_IDC:CNYBDT
+      - FX_IDC:NZDBDT
+      - FX_IDC:ZARBDT
+- name: country_top_forex_be
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_bh
+  symbols:
+    tickers:
+      - FX_IDC:USDBHD
+      - FX_IDC:EURBHD
+      - FX_IDC:JPYBHD
+      - FX_IDC:GBPBHD
+      - FX_IDC:CHFBHD
+      - FX_IDC:NZDBHD
+      - FX_IDC:CADBHD
+      - FX_IDC:OMRBHD
+      - FX_IDC:CNYBHD
+      - FX_IDC:AUDBHD
+      - FX_IDC:MXNBHD
+      - FX_IDC:ZARBHD
+- name: country_top_forex_br
+  symbols:
+    tickers:
+      - FX_IDC:USDBRL
+      - FX_IDC:EURBRL
+      - FX_IDC:JPYBRL
+      - FX_IDC:GBPBRL
+      - FX_IDC:CHFBRL
+      - FX_IDC:AUDBRL
+      - FX_IDC:NZDBRL
+      - FX_IDC:CLPBRL
+      - FX_IDC:MXNBRL
+      - FX_IDC:COPBRL
+      - FX_IDC:ARSBRL
+      - FX_IDC:CNYBRL
+- name: country_top_forex_ca
+  symbols:
+    tickers:
+      - FX_IDC:USDCAD
+      - FX_IDC:EURCAD
+      - FX_IDC:JPYCAD
+      - FX_IDC:GBPCAD
+      - FX_IDC:CHFCAD
+      - FX_IDC:AUDCAD
+      - FX_IDC:NZDCAD
+      - FX_IDC:DKKCAD
+      - FX_IDC:NOKCAD
+      - FX_IDC:INRCAD
+      - FX_IDC:CNYCAD
+      - FX_IDC:SEKCAD
+- name: country_top_forex_ch
+  symbols:
+    tickers:
+      - FX_IDC:USDCHF
+      - FX_IDC:EURCHF
+      - FX_IDC:JPYCHF
+      - FX_IDC:GBPCHF
+      - FX_IDC:AUDCHF
+      - FX_IDC:NZDCHF
+      - FX_IDC:PLNCHF
+      - FX_IDC:CADCHF
+      - FX_IDC:CZKCHF
+      - FX_IDC:DKKCHF
+      - FX_IDC:NOKCHF
+      - FX_IDC:SEKCHF
+- name: country_top_forex_cl
+  symbols:
+    tickers:
+      - FX_IDC:USDCLP
+      - FX_IDC:EURCLP
+      - FX_IDC:JPYCLP
+      - FX_IDC:GBPCLP
+      - FX_IDC:CHFCLP
+      - FX_IDC:AUDCLP
+      - FX_IDC:NZDCLP
+      - FX_IDC:CNYCLP
+      - FX_IDC:BRLCLP
+      - FX_IDC:ARSCLP
+      - FX_IDC:COPCLP
+      - FX_IDC:PENCLP
+- name: country_top_forex_cn
+  symbols:
+    tickers:
+      - FX_IDC:USDCNY
+      - FX_IDC:EURCNY
+      - FX_IDC:JPYCNY
+      - FX_IDC:GBPCNY
+      - FX_IDC:CHFCNY
+      - FX_IDC:AUDCNY
+      - FX_IDC:NZDCNY
+      - FX_IDC:HKDCNY
+      - FX_IDC:INRCNY
+      - FX_IDC:RUBCNY
+      - FX_IDC:MYRCNY
+      - FX_IDC:KRWCNY
+- name: country_top_forex_co
+  symbols:
+    tickers:
+      - FX_IDC:USDCOP
+      - FX_IDC:EURCOP
+      - FX_IDC:JPYCOP
+      - FX_IDC:GBPCOP
+      - FX_IDC:CHFCOP
+      - FX_IDC:AUDCOP
+      - FX_IDC:NZDCOP
+      - FX_IDC:MXNCOP
+      - FX_IDC:BRLCOP
+      - FX_IDC:ARSCOP
+      - FX_IDC:CLPCOP
+      - FX_IDC:PENCOP
+- name: country_top_forex_cy
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:ILSEUR
+      - FX_IDC:BGNEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_cz
+  symbols:
+    tickers:
+      - FX_IDC:USDCZK
+      - FX_IDC:EURCZK
+      - FX_IDC:JPYCZK
+      - FX_IDC:GBPCZK
+      - FX_IDC:CHFCZK
+      - FX_IDC:AUDCZK
+      - FX_IDC:NZDCZK
+      - FX_IDC:PLNCZK
+      - FX_IDC:CADCZK
+      - FX_IDC:CNYCZK
+      - FX_IDC:HUFCZK
+      - FX_IDC:TRYCZK
+- name: country_top_forex_de
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_dk
+  symbols:
+    tickers:
+      - FX_IDC:USDDKK
+      - FX_IDC:EURDKK
+      - FX_IDC:JPYDKK
+      - FX_IDC:GBPDKK
+      - FX_IDC:CHFDKK
+      - FX_IDC:AUDDKK
+      - FX_IDC:NZDDKK
+      - FX_IDC:CNYDKK
+      - FX_IDC:PLNDKK
+      - FX_IDC:CZKDKK
+      - FX_IDC:SEKDKK
+      - FX_IDC:NOKDKK
+- name: country_top_forex_ee
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:SEKEUR
+      - FX_IDC:NOKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_eg
+  symbols:
+    tickers:
+      - FX_IDC:USDEGP
+      - FX_IDC:EUREGP
+      - FX_IDC:JPYEGP
+      - FX_IDC:GBPEGP
+      - FX_IDC:CHFEGP
+      - FX_IDC:AUDEGP
+      - FX_IDC:NZDEGP
+      - FX_IDC:CNYEGP
+      - FX_IDC:ZAREGP
+      - FX_IDC:MXNEGP
+      - FX_IDC:PKREGP
+      - FX_IDC:CADEGP
+- name: country_top_forex_es
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:MXNEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_fi
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:SEKEUR
+      - FX_IDC:NOKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_fr
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_gb
+  symbols:
+    tickers:
+      - FX_IDC:USDGBP
+      - FX_IDC:EURGBP
+      - FX_IDC:EURGBP
+      - FX_IDC:CHFGBP
+      - FX_IDC:AUDGBP
+      - FX_IDC:NZDGBP
+      - FX_IDC:CADGBP
+      - FX_IDC:INRGBP
+      - FX_IDC:SEKGBP
+      - FX_IDC:CNYGBP
+      - FX_IDC:DKKGBP
+      - FX_IDC:NOKGBP
+- name: country_top_forex_gr
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:ILSEUR
+      - FX_IDC:BGNEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_hk
+  symbols:
+    tickers:
+      - FX_IDC:USDHKD
+      - FX_IDC:EURHKD
+      - FX_IDC:JPYHKD
+      - FX_IDC:GBPHKD
+      - FX_IDC:CHFHKD
+      - FX_IDC:AUDHKD
+      - FX_IDC:INRHKD
+      - FX_IDC:CNYHKD
+      - FX_IDC:SGDHKD
+      - FX_IDC:THBHKD
+      - FX_IDC:MYRHKD
+      - FX_IDC:TWDHKD
+- name: country_top_forex_hu
+  symbols:
+    tickers:
+      - FX_IDC:USDHUF
+      - FX_IDC:EURHUF
+      - FX_IDC:JPYHUF
+      - FX_IDC:GBPHUF
+      - FX_IDC:CHFHUF
+      - FX_IDC:AUDHUF
+      - FX_IDC:NZDHUF
+      - FX_IDC:CZKHUF
+      - FX_IDC:TRYHUF
+      - FX_IDC:CNYHUF
+      - FX_IDC:CADHUF
+      - FX_IDC:PLNHUF
+- name: country_top_forex_id
+  symbols:
+    tickers:
+      - FX_IDC:USDIDR
+      - FX_IDC:EURIDR
+      - FX_IDC:JPYIDR
+      - FX_IDC:GBPIDR
+      - FX_IDC:CHFIDR
+      - FX_IDC:AUDIDR
+      - FX_IDC:NZDIDR
+      - FX_IDC:INRIDR
+      - FX_IDC:MYRIDR
+      - FX_IDC:SGDIDR
+      - FX_IDC:THBIDR
+      - FX_IDC:PHPIDR
+- name: country_top_forex_il
+  symbols:
+    tickers:
+      - FX_IDC:USDILS
+      - FX_IDC:EURILS
+      - FX_IDC:JPYILS
+      - FX_IDC:GBPILS
+      - FX_IDC:CHFILS
+      - FX_IDC:AUDILS
+      - FX_IDC:NZDILS
+      - FX_IDC:CNYILS
+      - FX_IDC:CADILS
+      - FX_IDC:HKDILS
+      - FX_IDC:SEKILS
+      - FX_IDC:PLNILS
+- name: country_top_forex_in
+  symbols:
+    tickers:
+      - FX_IDC:USDINR
+      - FX_IDC:EURINR
+      - FX_IDC:JPYINR
+      - FX_IDC:GBPINR
+      - FX_IDC:CHFINR
+      - FX_IDC:AUDINR
+      - FX_IDC:NZDINR
+      - FX_IDC:CNYINR
+      - FX_IDC:THBINR
+      - FX_IDC:MYRINR
+      - FX_IDC:SGDINR
+      - FX_IDC:PKRINR
+- name: country_top_forex_is
+  symbols:
+    tickers:
+      - FX_IDC:USDISK
+      - FX_IDC:EURISK
+      - FX_IDC:JPYISK
+      - FX_IDC:GBPISK
+      - FX_IDC:CHFISK
+      - FX_IDC:AUDISK
+      - FX_IDC:NZDISK
+      - FX_IDC:DKKISK
+      - FX_IDC:NOKISK
+      - FX_IDC:SEKISK
+      - FX_IDC:CADISK
+      - FX_IDC:CNYISK
+- name: country_top_forex_it
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:HUFEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_jp
+  symbols:
+    tickers:
+      - FX_IDC:USDJPY
+      - FX_IDC:EURJPY
+      - FX_IDC:GBPJPY
+      - FX_IDC:CHFJPY
+      - FX_IDC:AUDJPY
+      - FX_IDC:NZDJPY
+      - FX_IDC:CNYJPY
+      - FX_IDC:INRJPY
+      - FX_IDC:SGDJPY
+      - FX_IDC:TWDJPY
+      - FX_IDC:HKDJPY
+      - FX_IDC:KRWJPY
+- name: country_top_forex_ke
+  symbols:
+    tickers:
+      - FX_IDC:USDKES
+      - FX_IDC:EURKES
+      - FX_IDC:JPYKES
+      - FX_IDC:GBPKES
+      - FX_IDC:CHFKES
+      - FX_IDC:AUDKES
+      - FX_IDC:NZDKES
+      - FX_IDC:ZARKES
+      - FX_IDC:CNYKES
+      - FX_IDC:CADKES
+      - FX_IDC:OMRKES
+      - FX_IDC:INRKES
+- name: country_top_forex_kr
+  symbols:
+    tickers:
+      - FX_IDC:USDKRW
+      - FX_IDC:EURKRW
+      - FX_IDC:JPYKRW
+      - FX_IDC:GBPKRW
+      - FX_IDC:CHFKRW
+      - FX_IDC:AUDKRW
+      - FX_IDC:NZDKRW
+      - FX_IDC:CNYKRW
+      - FX_IDC:MYRKRW
+      - FX_IDC:TWDKRW
+      - FX_IDC:HKDKRW
+      - FX_IDC:SGDKRW
+- name: country_top_forex_kw
+  symbols:
+    tickers:
+      - FX_IDC:USDKWD
+      - FX_IDC:EURKWD
+      - FX_IDC:JPYKWD
+      - FX_IDC:GBPKWD
+      - FX_IDC:CHFKWD
+      - FX_IDC:AUDKWD
+      - FX_IDC:NZDKWD
+      - FX_IDC:PKRKWD
+      - FX_IDC:SGDKWD
+      - FX_IDC:CADKWD
+      - FX_IDC:CNYKWD
+      - FX_IDC:AEDKWD
+- name: country_top_forex_lk
+  symbols:
+    tickers:
+      - FX_IDC:USDLKR
+      - FX_IDC:EURLKR
+      - FX_IDC:JPYLKR
+      - FX_IDC:GBPLKR
+      - FX_IDC:CHFLKR
+      - FX_IDC:AUDLKR
+      - FX_IDC:NZDLKR
+      - FX_IDC:CADLKR
+      - FX_IDC:CNYLKR
+      - FX_IDC:SGDLKR
+      - FX_IDC:AEDLKR
+      - FX_IDC:SARLKR
+- name: country_top_forex_lv
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:SEKEUR
+      - FX_IDC:NOKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_lt
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:SEKEUR
+      - FX_IDC:NOKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_lu
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_ma
+  symbols:
+    tickers:
+      - FX_IDC:USDMAD
+      - FX_IDC:EURMAD
+      - FX_IDC:JPYMAD
+      - FX_IDC:GBPMAD
+      - FX_IDC:CHFMAD
+      - FX_IDC:AUDMAD
+      - FX_IDC:NZDMAD
+      - FX_IDC:ZARMAD
+      - FX_IDC:AEDMAD
+      - FX_IDC:CADMAD
+      - FX_IDC:MXNMAD
+      - FX_IDC:CNYMAD
+- name: country_top_forex_mx
+  symbols:
+    tickers:
+      - FX_IDC:USDMXN
+      - FX_IDC:EURMXN
+      - FX_IDC:JPYMXN
+      - FX_IDC:GBPMXN
+      - FX_IDC:CHFMXN
+      - FX_IDC:AUDMXN
+      - FX_IDC:NZDMXN
+      - FX_IDC:CADMXN
+      - FX_IDC:BRLMXN
+      - FX_IDC:ARSMXN
+      - FX_IDC:COPMXN
+      - FX_IDC:CNYMXN
+- name: country_top_forex_my
+  symbols:
+    tickers:
+      - FX_IDC:USDMYR
+      - FX_IDC:EURMYR
+      - FX_IDC:JPYMYR
+      - FX_IDC:GBPMYR
+      - FX_IDC:CHFMYR
+      - FX_IDC:AUDMYR
+      - FX_IDC:NZDMYR
+      - FX_IDC:CNYMYR
+      - FX_IDC:THBMYR
+      - FX_IDC:IDRMYR
+      - FX_IDC:HKDMYR
+      - FX_IDC:SGDMYR
+- name: country_top_forex_ng
+  symbols:
+    tickers:
+      - FX_IDC:USDNGN
+      - FX_IDC:EURNGN
+      - FX_IDC:JPYNGN
+      - FX_IDC:GBPNGN
+      - FX_IDC:CHFNGN
+      - FX_IDC:AUDNGN
+      - FX_IDC:NZDNGN
+      - FX_IDC:ZARNGN
+      - FX_IDC:GHSNGN
+      - FX_IDC:CNYNGN
+      - FX_IDC:BRLNGN
+      - FX_IDC:CADNGN
+- name: country_top_forex_nl
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_no
+  symbols:
+    tickers:
+      - FX_IDC:USDNOK
+      - FX_IDC:EURNOK
+      - FX_IDC:JPYNOK
+      - FX_IDC:GBPNOK
+      - FX_IDC:CHFNOK
+      - FX_IDC:AUDNOK
+      - FX_IDC:NZDNOK
+      - FX_IDC:CADNOK
+      - FX_IDC:SEKNOK
+      - FX_IDC:DKKNOK
+      - FX_IDC:CNYNOK
+      - FX_IDC:RUBNOK
+- name: country_top_forex_nz
+  symbols:
+    tickers:
+      - FX_IDC:USDNZD
+      - FX_IDC:EURNZD
+      - FX_IDC:JPYNZD
+      - FX_IDC:GBPNZD
+      - FX_IDC:CHFNZD
+      - FX_IDC:AUDNZD
+      - FX_IDC:CADNZD
+      - FX_IDC:SGDNZD
+      - FX_IDC:HKDNZD
+      - FX_IDC:IDRNZD
+      - FX_IDC:CNYNZD
+      - FX_IDC:INRNZD
+- name: country_top_forex_pe
+  symbols:
+    tickers:
+      - FX_IDC:USDPEN
+      - FX_IDC:EURPEN
+      - FX_IDC:JPYPEN
+      - FX_IDC:GBPPEN
+      - FX_IDC:CHFPEN
+      - FX_IDC:AUDPEN
+      - FX_IDC:NZDPEN
+      - FX_IDC:CADPEN
+      - FX_IDC:COPPEN
+      - FX_IDC:CLPPEN
+      - FX_IDC:ARSPEN
+      - FX_IDC:MXNPEN
+- name: country_top_forex_ph
+  symbols:
+    tickers:
+      - FX_IDC:USDPHP
+      - FX_IDC:EURPHP
+      - FX_IDC:JPYPHP
+      - FX_IDC:GBPPHP
+      - FX_IDC:CHFPHP
+      - FX_IDC:AUDPHP
+      - FX_IDC:NZDPHP
+      - FX_IDC:INRPHP
+      - FX_IDC:CNYPHP
+      - FX_IDC:IDRPHP
+      - FX_IDC:MYRPHP
+      - FX_IDC:TWDPHP
+- name: country_top_forex_pk
+  symbols:
+    tickers:
+      - FX_IDC:USDPKR
+      - FX_IDC:EURPKR
+      - FX_IDC:JPYPKR
+      - FX_IDC:GBPPKR
+      - FX_IDC:CHFPKR
+      - FX_IDC:AUDPKR
+      - FX_IDC:NZDPKR
+      - FX_IDC:INRPKR
+      - FX_IDC:CNYPKR
+      - FX_IDC:AEDPKR
+      - FX_IDC:EGPPKR
+      - FX_IDC:KWDPKR
+- name: country_top_forex_pl
+  symbols:
+    tickers:
+      - FX_IDC:USDPLN
+      - FX_IDC:EURPLN
+      - FX_IDC:JPYPLN
+      - FX_IDC:GBPPLN
+      - FX_IDC:CHFPLN
+      - FX_IDC:AUDPLN
+      - FX_IDC:NZDPLN
+      - FX_IDC:CZKPLN
+      - FX_IDC:NOKPLN
+      - FX_IDC:SEKPLN
+      - FX_IDC:DKKPLN
+      - FX_IDC:RUBPLN
+- name: country_top_forex_pt
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:RUBEUR
+      - FX_IDC:BRLEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_qa
+  symbols:
+    tickers:
+      - FX_IDC:USDQAR
+      - FX_IDC:EURQAR
+      - FX_IDC:JPYQAR
+      - FX_IDC:GBPQAR
+      - FX_IDC:CHFQAR
+      - FX_IDC:AUDQAR
+      - FX_IDC:NZDQAR
+      - FX_IDC:AEDQAR
+      - FX_IDC:OMRQAR
+      - FX_IDC:BHDQAR
+      - FX_IDC:PKRQAR
+      - FX_IDC:CNYQAR
+- name: country_top_forex_ro
+  symbols:
+    tickers:
+      - FX_IDC:USDRON
+      - FX_IDC:EURRON
+      - FX_IDC:JPYRON
+      - FX_IDC:GBPRON
+      - FX_IDC:CHFRON
+      - FX_IDC:AUDRON
+      - FX_IDC:NZDRON
+      - FX_IDC:CNYRON
+      - FX_IDC:CADRON
+      - FX_IDC:MXNRON
+      - FX_IDC:ZARRON
+      - FX_IDC:RONUSD
+- name: country_top_forex_ru
+  symbols:
+    tickers:
+      - MOEX:USDRUB_TOM
+      - MOEX:EURRUB_TOM
+      - FX_IDC:JPYRUB
+      - FX_IDC:GBPRUB
+      - FX_IDC:CHFRUB
+      - FX_IDC:INRRUB
+      - MOEX:CNYRUB_TOM
+      - MOEX:AMDRUB_TOM
+      - MOEX:KZTRUB_TOM
+      - MOEX:TRYRUB_TOM
+      - FX_IDC:GELRUB
+      - MOEX:HKDRUB_TOM
+- name: country_top_forex_rs
+  symbols:
+    tickers:
+      - FX_IDC:USDRSD
+      - FX_IDC:EURRSD
+      - FX_IDC:JPYRSD
+      - FX_IDC:GBPRSD
+      - FX_IDC:CHFRSD
+      - FX_IDC:AUDRSD
+      - FX_IDC:NZDRSD
+      - FX_IDC:BAMRSD
+      - FX_IDC:HUFRSD
+      - FX_IDC:RONRSD
+      - FX_IDC:BGNRSD
+      - FX_IDC:RUBRSD
+- name: country_top_forex_sa
+  symbols:
+    tickers:
+      - FX_IDC:USDSAR
+      - FX_IDC:EURSAR
+      - FX_IDC:JPYSAR
+      - FX_IDC:GBPSAR
+      - FX_IDC:CHFSAR
+      - FX_IDC:AUDSAR
+      - FX_IDC:NZDSAR
+      - FX_IDC:CADSAR
+      - FX_IDC:AEDSAR
+      - FX_IDC:CNYSAR
+      - FX_IDC:SEKSAR
+      - FX_IDC:SGDSAR
+- name: country_top_forex_se
+  symbols:
+    tickers:
+      - FX_IDC:USDSEK
+      - FX_IDC:EURSEK
+      - FX_IDC:JPYSEK
+      - FX_IDC:GBPSEK
+      - FX_IDC:CHFSEK
+      - FX_IDC:AUDSEK
+      - FX_IDC:NZDSEK
+      - FX_IDC:NOKSEK
+      - FX_IDC:DKKSEK
+      - FX_IDC:CADSEK
+      - FX_IDC:PLNSEK
+      - FX_IDC:CNYSEK
+- name: country_top_forex_sg
+  symbols:
+    tickers:
+      - FX_IDC:USDSGD
+      - FX_IDC:EURSGD
+      - FX_IDC:JPYSGD
+      - FX_IDC:GBPSGD
+      - FX_IDC:CHFSGD
+      - FX_IDC:AUDSGD
+      - FX_IDC:NZDSGD
+      - FX_IDC:HKDSGD
+      - FX_IDC:IDRSGD
+      - FX_IDC:TWDSGD
+      - FX_IDC:MYRSGD
+      - FX_IDC:CNYSGD
+- name: country_top_forex_sk
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:NZDEUR
+      - FX_IDC:CADEUR
+      - FX_IDC:TRYEUR
+      - FX_IDC:PLNEUR
+      - FX_IDC:HUFEUR
+      - FX_IDC:CZKEUR
+      - FX_IDC:CNYEUR
+- name: country_top_forex_th
+  symbols:
+    tickers:
+      - FX_IDC:USDTHB
+      - FX_IDC:EURTHB
+      - FX_IDC:JPYTHB
+      - FX_IDC:GBPTHB
+      - FX_IDC:CHFTHB
+      - FX_IDC:AUDTHB
+      - FX_IDC:NZDTHB
+      - FX_IDC:MYRTHB
+      - FX_IDC:IDRTHB
+      - FX_IDC:SGDTHB
+      - FX_IDC:KRWTHB
+      - FX_IDC:CNYTHB
+- name: country_top_forex_tn
+  symbols:
+    tickers:
+      - FX_IDC:USDTND
+      - FX_IDC:EURTND
+      - FX_IDC:JPYTND
+      - FX_IDC:GBPTND
+      - FX_IDC:CHFTND
+      - FX_IDC:AUDTND
+      - FX_IDC:NZDTND
+      - FX_IDC:ZARTND
+      - FX_IDC:CADTND
+      - FX_IDC:CNYTND
+      - FX_IDC:THBTND
+      - FX_IDC:MXNTND
+- name: country_top_forex_tr
+  symbols:
+    tickers:
+      - FX_IDC:USDTRY
+      - FX_IDC:EURTRY
+      - FX_IDC:JPYTRY
+      - FX_IDC:GBPTRY
+      - FX_IDC:CHFTRY
+      - FX_IDC:AUDTRY
+      - FX_IDC:NZDTRY
+      - FX_IDC:CNYTRY
+      - FX_IDC:CADTRY
+      - FX_IDC:SGDTRY
+      - FX_IDC:MXNTRY
+      - FX_IDC:AEDTRY
+- name: country_top_forex_tw
+  symbols:
+    tickers:
+      - FX_IDC:USDTWD
+      - FX_IDC:EURTWD
+      - FX_IDC:JPYTWD
+      - FX_IDC:GBPTWD
+      - FX_IDC:CHFTWD
+      - FX_IDC:AUDTWD
+      - FX_IDC:NZDTWD
+      - FX_IDC:THBTWD
+      - FX_IDC:MYRTWD
+      - FX_IDC:IDRTWD
+      - FX_IDC:HKDTWD
+      - FX_IDC:SGDTWD
+- name: country_top_forex_ve
+  symbols:
+    tickers:
+      - FX_IDC:USDVES
+      - FX_IDC:EURVES
+      - FX_IDC:JPYVES
+      - FX_IDC:GBPVES
+      - FX_IDC:CHFVES
+      - FX_IDC:AUDVES
+      - FX_IDC:NZDVES
+      - FX_IDC:PENVES
+      - FX_IDC:BRLVES
+      - FX_IDC:MXNVES
+      - FX_IDC:CLPVES
+      - FX_IDC:ARSVES
+- name: country_top_forex_vn
+  symbols:
+    tickers:
+      - FX_IDC:USDVND
+      - FX_IDC:EURVND
+      - FX_IDC:JPYVND
+      - FX_IDC:GBPVND
+      - FX_IDC:CHFVND
+      - FX_IDC:AUDVND
+      - FX_IDC:NZDVND
+      - FX_IDC:CNYVND
+      - FX_IDC:PHPVND
+      - FX_IDC:HKDVND
+      - FX_IDC:SGDVND
+      - FX_IDC:CADVND
+- name: country_top_forex_za
+  symbols:
+    tickers:
+      - FX_IDC:USDZAR
+      - FX_IDC:EURZAR
+      - FX_IDC:JPYZAR
+      - FX_IDC:GBPZAR
+      - FX_IDC:CHFZAR
+      - FX_IDC:AUDZAR
+      - FX_IDC:NZDZAR
+      - FX_IDC:EGPZAR
+      - FX_IDC:CADZAR
+      - FX_IDC:AEDZAR
+      - FX_IDC:CNYZAR
+      - FX_IDC:KESZAR

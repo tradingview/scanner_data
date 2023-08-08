@@ -76,3 +76,188 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_top_futures_commodities_us
+  symbols:
+    tickers:
+      - COMEX:GC1!
+      - COMEX:SI1!
+      - COMEX:HG1!
+      - NYMEX:PL1!
+      - NYMEX:CL1!
+      - NYMEX:NG1!
+      - NYMEX:RB1!
+      - NYMEX:HO1!
+      - CBOT:ZW1!
+      - CBOT:ZC1!
+      - ICEUS:KC1!
+      - ICEUS:CC1!
+- name: country_top_futures_commodities_ae
+  symbols:
+    tickers:
+      - DFM:OMOIL1!
+- name: country_top_futures_commodities_ar
+  symbols:
+    tickers:
+      - MATBAROFEX:ORO1!
+      - MATBAROFEX:WTI1!
+      - MATBAROFEX:SOJ.ROS1!
+      - MATBAROFEX:MAI.ROS1!
+      - MATBAROFEX:SOY.CME1!
+      - MATBAROFEX:TRI.ROS1!
+      - MATBAROFEX:CRN.CME1!
+      - MATBAROFEX:MAI.MIN1!
+      - MATBAROFEX:TRI.MIN1!
+      - MATBAROFEX:SOJ.MIN1!
+- name: country_top_futures_commodities_br
+  symbols:
+    tickers:
+      - BMFBOVESPA:OZ11!
+      - BMFBOVESPA:ETH1!
+      - BMFBOVESPA:CCM1!
+      - BMFBOVESPA:BGI1!
+      - BMFBOVESPA:ICF1!
+      - BMFBOVESPA:SJC1!
+      - BMFBOVESPA:SOY1!
+- name: country_top_futures_commodities_cn
+  symbols:
+    tickers:
+      - SHFE:AU1!
+      - SHFE:AG1!
+      - SHFE:HC1!
+      - SHFE:RB1!
+      - SHFE:AL1!
+      - SHFE:CU1!
+      - SHFE:ZN1!
+      - SHFE:PB1!
+      - SHFE:FU1!
+      - SHFE:BU1!
+      - SHFE:RU1!
+      - SHFE:SP1!
+- name: country_top_futures_commodities_hk
+  symbols:
+    tickers:
+      - HKEX:GDR1!
+      - HKEX:SIU1!
+      - HKEX:LUS1!
+      - HKEX:LUA1!
+      - HKEX:FEM1!
+      - HKEX:LUP1!
+      - HKEX:LUN1!
+      - HKEX:LUC1!
+      - HKEX:LUZ1!
+      - HKEX:LRS1!
+      - HKEX:FEQ1!
+      - HKEX:LRC1!
+- name: country_top_futures_commodities_hu
+  symbols:
+    tickers:
+      - BET:REPC1!
+      - BET:NAPR1!
+      - BET:TABU1!
+      - BET:EUBU1!
+      - BET:TARP1!
+      - BET:TKUK1!
+- name: country_top_futures_commodities_in
+  symbols:
+    tickers:
+      - MCX:GOLD1!
+      - MCX:SILVER1!
+      - MCX:COPPER1!
+      - MCX:ZINC1!
+      - MCX:CRUDEOIL1!
+      - MCX:NATURALGAS1!
+      - NCDEX:TMCFGRNZM1!
+      - NCDEX:JEERAUNJHA1!
+      - NCDEX:GUARSEED101!
+      - NCDEX:DHANIYA1!
+      - MCX:MENTHAOIL1!
+      - NCDEX:CASTOR1!
+- name: country_top_futures_commodities_jp
+  symbols:
+    tickers:
+      - TOCOM:TGD1!
+      - TOCOM:TSI1!
+      - TOCOM:TCL1!
+      - TOCOM:LNG1!
+      - TOCOM:GSOL1!
+      - TOCOM:THU1!
+      - TOCOM:THO1!
+      - TOCOM:TWBL1!
+      - TOCOM:TRB1!
+      - TOCOM:TGCN1!
+      - TOCOM:TGSB1!
+      - TOCOM:TGAB1!
+- name: country_top_futures_commodities_my
+  symbols:
+    tickers:
+      - MYX:FGLD1!
+      - MYX:FTIN1!
+      - MYX:FCPO1!
+      - MYX:FEPO1!
+      - MYX:FUPO1!
+      - MYX:FPOL1!
+      - MYX:FPKO1!
+- name: country_top_futures_commodities_nz
+  symbols:
+    tickers:
+      - NZX:MKP1!
+      - NZX:WMP1!
+      - NZX:SMP1!
+      - NZX:BTR1!
+      - NZX:AMF1!
+- name: country_top_futures_commodities_ru
+  symbols:
+    tickers:
+      - MOEX:GD1!
+      - MOEX:SV1!
+      - MOEX:NL1!
+      - MOEX:PD1!
+      - MOEX:CO1!
+      - MOEX:PT1!
+      - MOEX:AM1!
+      - MOEX:ZN1!
+      - MOEX:NG1!
+      - MOEX:BR1!
+      - MOEX:W41!
+      - MOEX:SA1!
+- name: country_top_futures_commodities_sg
+  symbols:
+    tickers:
+      - SGX:FEF1!
+      - SGX:LICF1!
+      - SGX:COMF1!
+      - SGX:BZNF1!
+      - ICESG:BM1!
+      - SGX:TF1!
+      - SGX:GOF1!
+      - SGX:3MF1!
+      - SGX:EE1!
+      - SGX:ACF1!
+      - SGX:MTF1!
+      - SGX:TF1!
+- name: country_top_futures_commodities_th
+  symbols:
+    tickers:
+      - TFEX:GO1!
+      - TFEX:GF1!
+      - TFEX:GF101!
+      - TFEX:GD1!
+      - TFEX:SVF1!
+      - TFEX:RSS31!
+      - TFEX:RSS3D1!
+      - TFEX:JRF1!
+- name: country_top_futures_commodities_tr
+  symbols:
+    tickers:
+      - BIST:XAUUSD1!
+      - BIST:XAGUSD1!
+      - BIST:XAUTRY1!
+      - BIST:XPTUSD1!
+      - BIST:XPDUSD1!
+      - BIST:ELCBASY1!
+- name: country_top_futures_commodities_tw
+  symbols:
+    tickers:
+      - TAIFEX:GDF1!
+      - TAIFEX:TGF1!
+      - TAIFEX:BRF1!

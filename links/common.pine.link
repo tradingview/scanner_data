@@ -319,53 +319,23 @@ if not na(close)
 	if not na(SMA20)
 		recMA += calcRecommendMA(SMA20, close)
 		recMAC += 1
-	if not na(SMA25)
-		recMA += calcRecommendMA(SMA25, close)
-		recMAC += 1
 	if not na(SMA30)
 		recMA += calcRecommendMA(SMA30, close)
 		recMAC += 1
 	if not na(SMA50)
 		recMA += calcRecommendMA(SMA50, close)
 		recMAC += 1
-	if not na(SMA75)
-		recMA += calcRecommendMA(SMA75, close)
-		recMAC += 1
 	if not na(SMA100)
 		recMA += calcRecommendMA(SMA100, close)
-		recMAC += 1
-	if not na(SMA150)
-		recMA += calcRecommendMA(SMA150, close)
 		recMAC += 1
 	if not na(SMA200)
 		recMA += calcRecommendMA(SMA200, close)
 		recMAC += 1
-	if not na(EMA3)
-		recMA += calcRecommendMA(EMA3, close)
-		recMAC += 1
-	if not na(EMA5)
-		recMA += calcRecommendMA(EMA5, close)
-		recMAC += 1
-	if not na(EMA8)
-		recMA += calcRecommendMA(EMA8, close)
-		recMAC += 1
-	if not na(EMA9)
-		recMA += calcRecommendMA(EMA9, close)
-		recMAC += 1
 	if not na(EMA10)
 		recMA += calcRecommendMA(EMA10, close)
 		recMAC += 1
-	if not na(EMA12)
-		recMA += calcRecommendMA(EMA12, close)
-		recMAC += 1
-	if not na(EMA13)
-		recMA += calcRecommendMA(EMA13, close)
-		recMAC += 1
 	if not na(EMA20)
 		recMA += calcRecommendMA(EMA20, close)
-		recMAC += 1
-	if not na(EMA21)
-		recMA += calcRecommendMA(EMA21, close)
 		recMAC += 1
 	if not na(EMA30)
 		recMA += calcRecommendMA(EMA30, close)
@@ -375,9 +345,6 @@ if not na(close)
 		recMAC += 1
 	if not na(EMA100)
 		recMA += calcRecommendMA(EMA100, close)
-		recMAC += 1
-	if not na(EMA150)
-		recMA += calcRecommendMA(EMA150, close)
 		recMAC += 1
 	if not na(EMA200)
 		recMA += calcRecommendMA(EMA200, close)

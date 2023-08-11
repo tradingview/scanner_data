@@ -613,3 +613,46 @@ presets:
       - NSE:INDIAVIX
       - NSE:BANKNIFTY
       - NSE:CNXFINANCE
+- name: country_top_economics_key_in
+  symbols:
+    tickers:
+      - ECONOMICS:INGDP
+      - ECONOMICS:INFYGDPG
+      - ECONOMICS:INGDPCP
+      - ECONOMICS:ININTR
+      - ECONOMICS:INIRYY
+      - ECONOMICS:INUR
+      - ECONOMICS:INCA
+      - ECONOMICS:INCAG
+      - ECONOMICS:INGDG
+      - ECONOMICS:INBOT
+      - ECONOMICS:INPOP
+- name: country_top_economics_gdp_in
+  symbols:
+    tickers:
+      - ECONOMICS:INGDP
+      - ECONOMICS:INGNP
+      - ECONOMICS:INGDPCP
+      - ECONOMICS:INFYGDPG
+      - ECONOMICS:INGDPQQ
+- name: country_top_economics_government_in
+  symbols:
+    tickers:
+      - ECONOMICS:INGDG
+      - ECONOMICS:INGSP
+      - ECONOMICS:INGSG
+      - ECONOMICS:INGBV
+      - ECONOMICS:INGBP
+- name: country_top_economics_business_in
+  symbols:
+    tickers:
+      - ECONOMICS:INCORR
+- name: country_top_economics_taxes_in
+  symbols:
+    tickers:
+      - ECONOMICS:INPITR
+      - ECONOMICS:INCTR
+      - ECONOMICS:INSSR
+      - ECONOMICS:INSSRC
+      - ECONOMICS:INSSRE
+      - ECONOMICS:INSTR

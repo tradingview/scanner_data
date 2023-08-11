@@ -617,3 +617,50 @@ presets:
       - TSE:SMALL
       - TSE:T17FIN
       - TSE:RE
+- name: country_top_economics_key_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPGDP
+      - ECONOMICS:JPFYGDPG
+      - ECONOMICS:JPGDPCP
+      - ECONOMICS:JPINTR
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:JPUR
+      - ECONOMICS:JPCA
+      - ECONOMICS:JPCAG
+      - ECONOMICS:JPGDG
+      - ECONOMICS:JPBOT
+      - ECONOMICS:JPPOP
+- name: country_top_economics_gdp_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPGDP
+      - ECONOMICS:JPGNP
+      - ECONOMICS:JPGDPCP
+      - ECONOMICS:JPFYGDPG
+      - ECONOMICS:JPGDPQQ
+- name: country_top_economics_government_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPGDG
+      - ECONOMICS:JPGSP
+      - ECONOMICS:JPGSG
+      - ECONOMICS:JPGBV
+      - ECONOMICS:JPGBP
+- name: country_top_economics_business_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPCPR
+      - ECONOMICS:JPNO
+      - ECONOMICS:JPLEI
+      - ECONOMICS:JPCORR
+      - ECONOMICS:JPBR
+- name: country_top_economics_taxes_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPPITR
+      - ECONOMICS:JPCTR
+      - ECONOMICS:JPSSR
+      - ECONOMICS:JPSSRC
+      - ECONOMICS:JPSSRE
+      - ECONOMICS:JPSTR

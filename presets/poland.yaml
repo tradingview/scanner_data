@@ -613,3 +613,48 @@ presets:
       - GPW:WIG_ENERG
       - GPW:WIGTECH
       - GPW:WIG_ESG
+- name: country_top_economics_key_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLGDP
+      - ECONOMICS:PLFYGDPG
+      - ECONOMICS:PLGDPCP
+      - ECONOMICS:PLINTR
+      - ECONOMICS:PLIRYY
+      - ECONOMICS:PLUR
+      - ECONOMICS:PLCA
+      - ECONOMICS:PLCAG
+      - ECONOMICS:PLGDG
+      - ECONOMICS:PLBOT
+      - ECONOMICS:PLPOP
+- name: country_top_economics_gdp_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLGDP
+      - ECONOMICS:PLGDPCP
+      - ECONOMICS:PLFYGDPG
+      - ECONOMICS:PLGDPQQ
+- name: country_top_economics_government_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLGD
+      - ECONOMICS:PLGDG
+      - ECONOMICS:PLGSP
+      - ECONOMICS:PLGSG
+      - ECONOMICS:PLGBV
+      - ECONOMICS:PLGBP
+- name: country_top_economics_business_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLCPR
+      - ECONOMICS:PLNO
+      - ECONOMICS:PLCORR
+- name: country_top_economics_taxes_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLPITR
+      - ECONOMICS:PLCTR
+      - ECONOMICS:PLSSR
+      - ECONOMICS:PLSSRC
+      - ECONOMICS:PLSSRE
+      - ECONOMICS:PLSTR

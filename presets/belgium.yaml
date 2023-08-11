@@ -613,3 +613,50 @@ presets:
       - EURONEXT:BEBMP
       - EURONEXT:BERE
       - EURONEXT:BECSP
+- name: country_top_economics_key_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEGDP
+      - ECONOMICS:BEFYGDPG
+      - ECONOMICS:BEGDPCP
+      - ECONOMICS:BEINTR
+      - ECONOMICS:BEIRYY
+      - ECONOMICS:BEUR
+      - ECONOMICS:BECA
+      - ECONOMICS:BECAG
+      - ECONOMICS:BEGDG
+      - ECONOMICS:BEBOT
+      - ECONOMICS:BEPOP
+- name: country_top_economics_gdp_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEGDP
+      - ECONOMICS:BEGNP
+      - ECONOMICS:BEGDPCP
+      - ECONOMICS:BEFYGDPG
+      - ECONOMICS:BEGDPQQ
+- name: country_top_economics_government_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEGD
+      - ECONOMICS:BEGDG
+      - ECONOMICS:BEGSP
+      - ECONOMICS:BEGSG
+      - ECONOMICS:BEGBV
+      - ECONOMICS:BEGBP
+- name: country_top_economics_business_be
+  symbols:
+    tickers:
+      - ECONOMICS:BECPR
+      - ECONOMICS:BENO
+      - ECONOMICS:BECORR
+      - ECONOMICS:BEBR
+- name: country_top_economics_taxes_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEPITR
+      - ECONOMICS:BECTR
+      - ECONOMICS:BESSR
+      - ECONOMICS:BESSRC
+      - ECONOMICS:BESSRE
+      - ECONOMICS:BESTR

@@ -705,3 +705,51 @@ presets:
       - FTSE:AIM5
       - FTSE:AIM1
       - FTSE:AXX
+- name: country_top_economics_key_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBGDP
+      - ECONOMICS:GBFYGDPG
+      - ECONOMICS:GBGDPCP
+      - ECONOMICS:GBINTR
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:GBUR
+      - ECONOMICS:GBCA
+      - ECONOMICS:GBCAG
+      - ECONOMICS:GBGDG
+      - ECONOMICS:GBBOT
+      - ECONOMICS:GBPOP
+- name: country_top_economics_gdp_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBGDP
+      - ECONOMICS:GBGNP
+      - ECONOMICS:GBGDPCP
+      - ECONOMICS:GBFYGDPG
+      - ECONOMICS:GBGDPQQ
+- name: country_top_economics_government_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBGD
+      - ECONOMICS:GBGDG
+      - ECONOMICS:GBGSP
+      - ECONOMICS:GBGSG
+      - ECONOMICS:GBGBV
+      - ECONOMICS:GBGBP
+- name: country_top_economics_business_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBCPR
+      - ECONOMICS:GBNO
+      - ECONOMICS:GBLEI
+      - ECONOMICS:GBCORR
+      - ECONOMICS:GBBR
+- name: country_top_economics_taxes_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBPITR
+      - ECONOMICS:GBCTR
+      - ECONOMICS:GBSSR
+      - ECONOMICS:GBSSRC
+      - ECONOMICS:GBSSRE
+      - ECONOMICS:GBSTR

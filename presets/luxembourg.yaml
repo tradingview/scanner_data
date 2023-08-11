@@ -605,3 +605,47 @@ presets:
       - LUXSE:LUXG
       - LUXSE:LUXX
       - LUXSE:LUXXR
+- name: country_top_economics_key_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUGDP
+      - ECONOMICS:LUFYGDPG
+      - ECONOMICS:LUGDPCP
+      - ECONOMICS:LUINTR
+      - ECONOMICS:LUIRYY
+      - ECONOMICS:LUUR
+      - ECONOMICS:LUCA
+      - ECONOMICS:LUCAG
+      - ECONOMICS:LUGDG
+      - ECONOMICS:LUBOT
+      - ECONOMICS:LUPOP
+- name: country_top_economics_gdp_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUGDP
+      - ECONOMICS:LUGDPCP
+      - ECONOMICS:LUFYGDPG
+      - ECONOMICS:LUGDPQQ
+- name: country_top_economics_government_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUGDG
+      - ECONOMICS:LUGSP
+      - ECONOMICS:LUGSG
+      - ECONOMICS:LUGBV
+      - ECONOMICS:LUGBP
+- name: country_top_economics_business_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUNO
+      - ECONOMICS:LUCORR
+      - ECONOMICS:LUBR
+- name: country_top_economics_taxes_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUPITR
+      - ECONOMICS:LUCTR
+      - ECONOMICS:LUSSR
+      - ECONOMICS:LUSSRC
+      - ECONOMICS:LUSSRE
+      - ECONOMICS:LUSTR

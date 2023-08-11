@@ -610,3 +610,45 @@ presets:
       - BVC:ICSC
       - BVC:IIRC
       - BVC:INAV
+- name: country_top_economics_key_co
+  symbols:
+    tickers:
+      - ECONOMICS:COGDP
+      - ECONOMICS:COFYGDPG
+      - ECONOMICS:COGDPCP
+      - ECONOMICS:COINTR
+      - ECONOMICS:COIRYY
+      - ECONOMICS:COUR
+      - ECONOMICS:COCA
+      - ECONOMICS:COCAG
+      - ECONOMICS:COGDG
+      - ECONOMICS:COBOT
+      - ECONOMICS:COPOP
+- name: country_top_economics_gdp_co
+  symbols:
+    tickers:
+      - ECONOMICS:COGDP
+      - ECONOMICS:COGDPCP
+      - ECONOMICS:COFYGDPG
+      - ECONOMICS:COGDPQQ
+- name: country_top_economics_government_co
+  symbols:
+    tickers:
+      - ECONOMICS:COGDG
+      - ECONOMICS:COGSP
+      - ECONOMICS:COGBV
+      - ECONOMICS:COGBP
+- name: country_top_economics_business_co
+  symbols:
+    tickers:
+      - ECONOMICS:COLEI
+      - ECONOMICS:COCORR
+- name: country_top_economics_taxes_co
+  symbols:
+    tickers:
+      - ECONOMICS:COPITR
+      - ECONOMICS:COCTR
+      - ECONOMICS:COSSR
+      - ECONOMICS:COSSRC
+      - ECONOMICS:COSSRE
+      - ECONOMICS:COSTR

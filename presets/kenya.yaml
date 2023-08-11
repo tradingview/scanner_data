@@ -584,3 +584,45 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_economics_key_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEGDP
+      - ECONOMICS:KEFYGDPG
+      - ECONOMICS:KEGDPCP
+      - ECONOMICS:KEINTR
+      - ECONOMICS:KEIRYY
+      - ECONOMICS:KEUR
+      - ECONOMICS:KECA
+      - ECONOMICS:KECAG
+      - ECONOMICS:KEGDG
+      - ECONOMICS:KEBOT
+      - ECONOMICS:KEPOP
+- name: country_top_economics_gdp_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEGDP
+      - ECONOMICS:KEGDPCP
+      - ECONOMICS:KEFYGDPG
+      - ECONOMICS:KEGDPQQ
+- name: country_top_economics_government_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEGD
+      - ECONOMICS:KEGDG
+      - ECONOMICS:KEGSP
+      - ECONOMICS:KEGBV
+      - ECONOMICS:KEGBP
+- name: country_top_economics_business_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KECORR
+- name: country_top_economics_taxes_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEPITR
+      - ECONOMICS:KECTR
+      - ECONOMICS:KESSR
+      - ECONOMICS:KESSRC
+      - ECONOMICS:KESSRE
+      - ECONOMICS:KESTR

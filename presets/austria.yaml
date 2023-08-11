@@ -573,3 +573,48 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: country_top_economics_key_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATGDP
+      - ECONOMICS:ATFYGDPG
+      - ECONOMICS:ATGDPCP
+      - ECONOMICS:ATINTR
+      - ECONOMICS:ATIRYY
+      - ECONOMICS:ATUR
+      - ECONOMICS:ATCA
+      - ECONOMICS:ATCAG
+      - ECONOMICS:ATGDG
+      - ECONOMICS:ATBOT
+      - ECONOMICS:ATPOP
+- name: country_top_economics_gdp_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATGDP
+      - ECONOMICS:ATGNP
+      - ECONOMICS:ATGDPCP
+      - ECONOMICS:ATFYGDPG
+      - ECONOMICS:ATGDPQQ
+- name: country_top_economics_government_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATGD
+      - ECONOMICS:ATGDG
+      - ECONOMICS:ATGSP
+      - ECONOMICS:ATGSG
+      - ECONOMICS:ATGBV
+      - ECONOMICS:ATGBP
+- name: country_top_economics_business_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATNO
+      - ECONOMICS:ATCORR
+- name: country_top_economics_taxes_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATPITR
+      - ECONOMICS:ATCTR
+      - ECONOMICS:ATSSR
+      - ECONOMICS:ATSSRC
+      - ECONOMICS:ATSSRE
+      - ECONOMICS:ATSTR

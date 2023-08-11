@@ -603,3 +603,48 @@ presets:
   symbols:
     tickers:
       - JSE:J200
+- name: country_top_economics_key_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAGDP
+      - ECONOMICS:ZAFYGDPG
+      - ECONOMICS:ZAGDPCP
+      - ECONOMICS:ZAINTR
+      - ECONOMICS:ZAIRYY
+      - ECONOMICS:ZAUR
+      - ECONOMICS:ZACA
+      - ECONOMICS:ZACAG
+      - ECONOMICS:ZAGDG
+      - ECONOMICS:ZABOT
+      - ECONOMICS:ZAPOP
+- name: country_top_economics_gdp_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAGDP
+      - ECONOMICS:ZAGNP
+      - ECONOMICS:ZAGDPCP
+      - ECONOMICS:ZAFYGDPG
+      - ECONOMICS:ZAGDPQQ
+- name: country_top_economics_government_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAGD
+      - ECONOMICS:ZAGDG
+      - ECONOMICS:ZAGSP
+      - ECONOMICS:ZAGBV
+      - ECONOMICS:ZAGBP
+- name: country_top_economics_business_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZALEI
+      - ECONOMICS:ZACORR
+      - ECONOMICS:ZABR
+- name: country_top_economics_taxes_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAPITR
+      - ECONOMICS:ZACTR
+      - ECONOMICS:ZASSR
+      - ECONOMICS:ZASSRC
+      - ECONOMICS:ZASSRE
+      - ECONOMICS:ZASTR

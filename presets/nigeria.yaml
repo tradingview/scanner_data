@@ -613,3 +613,42 @@ presets:
       - NSENG:NGXCNSMRGDS
       - NSENG:NGXASEM
       - NSENG:NGXLOTUSISLM
+- name: country_top_economics_key_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGGDP
+      - ECONOMICS:NGFYGDPG
+      - ECONOMICS:NGGDPCP
+      - ECONOMICS:NGINTR
+      - ECONOMICS:NGIRYY
+      - ECONOMICS:NGUR
+      - ECONOMICS:NGCA
+      - ECONOMICS:NGCAG
+      - ECONOMICS:NGGDG
+      - ECONOMICS:NGBOT
+      - ECONOMICS:NGPOP
+- name: country_top_economics_gdp_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGGDP
+      - ECONOMICS:NGGDPCP
+      - ECONOMICS:NGFYGDPG
+      - ECONOMICS:NGGDPQQ
+- name: country_top_economics_government_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGGD
+      - ECONOMICS:NGGDG
+      - ECONOMICS:NGGSP
+      - ECONOMICS:NGGBV
+      - ECONOMICS:NGGBP
+- name: country_top_economics_business_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGCORR
+- name: country_top_economics_taxes_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGPITR
+      - ECONOMICS:NGCTR
+      - ECONOMICS:NGSTR

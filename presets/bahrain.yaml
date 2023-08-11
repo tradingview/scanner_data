@@ -613,3 +613,43 @@ presets:
       - BAHRAIN:BHB_MTRL
       - BAHRAIN:BHB_REST
       - BAHRAIN:BHB_STPL
+- name: country_top_economics_key_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHGDP
+      - ECONOMICS:BHGDPCP
+      - ECONOMICS:BHINTR
+      - ECONOMICS:BHIRYY
+      - ECONOMICS:BHUR
+      - ECONOMICS:BHCA
+      - ECONOMICS:BHCAG
+      - ECONOMICS:BHGDG
+      - ECONOMICS:BHBOT
+      - ECONOMICS:BHPOP
+- name: country_top_economics_gdp_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHGDP
+      - ECONOMICS:BHGDPCP
+      - ECONOMICS:BHGDPQQ
+- name: country_top_economics_government_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHGD
+      - ECONOMICS:BHGDG
+      - ECONOMICS:BHGSP
+      - ECONOMICS:BHGBV
+      - ECONOMICS:BHGBP
+- name: country_top_economics_business_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHCORR
+- name: country_top_economics_taxes_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHPITR
+      - ECONOMICS:BHCTR
+      - ECONOMICS:BHSSR
+      - ECONOMICS:BHSSRC
+      - ECONOMICS:BHSSRE
+      - ECONOMICS:BHSTR

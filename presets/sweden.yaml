@@ -613,3 +613,49 @@ presets:
       - OMXSTO:SX50PI
       - OMXSTO:SX20PI
       - OMXSTO:SX35PI
+- name: country_top_economics_key_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEGDP
+      - ECONOMICS:SEFYGDPG
+      - ECONOMICS:SEGDPCP
+      - ECONOMICS:SEINTR
+      - ECONOMICS:SEIRYY
+      - ECONOMICS:SEUR
+      - ECONOMICS:SECA
+      - ECONOMICS:SECAG
+      - ECONOMICS:SEGDG
+      - ECONOMICS:SEBOT
+      - ECONOMICS:SEPOP
+- name: country_top_economics_gdp_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEGDP
+      - ECONOMICS:SEGNP
+      - ECONOMICS:SEGDPCP
+      - ECONOMICS:SEFYGDPG
+      - ECONOMICS:SEGDPQQ
+- name: country_top_economics_government_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEGD
+      - ECONOMICS:SEGDG
+      - ECONOMICS:SEGSP
+      - ECONOMICS:SEGSG
+      - ECONOMICS:SEGBV
+      - ECONOMICS:SEGBP
+- name: country_top_economics_business_se
+  symbols:
+    tickers:
+      - ECONOMICS:SENO
+      - ECONOMICS:SECORR
+      - ECONOMICS:SEBR
+- name: country_top_economics_taxes_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEPITR
+      - ECONOMICS:SECTR
+      - ECONOMICS:SESSR
+      - ECONOMICS:SESSRC
+      - ECONOMICS:SESSRE
+      - ECONOMICS:SESTR

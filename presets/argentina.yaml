@@ -613,3 +613,45 @@ presets:
       - BCBA:SPBYUEAP
       - BCBA:SPBYMAIG60
       - BCBA:SPBYMAIG30
+- name: country_top_economics_key_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARGDP
+      - ECONOMICS:ARFYGDPG
+      - ECONOMICS:ARGDPCP
+      - ECONOMICS:ARINTR
+      - ECONOMICS:ARIRYY
+      - ECONOMICS:ARUR
+      - ECONOMICS:ARCA
+      - ECONOMICS:ARCAG
+      - ECONOMICS:ARGDG
+      - ECONOMICS:ARBOT
+      - ECONOMICS:ARPOP
+- name: country_top_economics_gdp_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARGDP
+      - ECONOMICS:ARGDPCP
+      - ECONOMICS:ARFYGDPG
+      - ECONOMICS:ARGDPQQ
+- name: country_top_economics_government_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARGDG
+      - ECONOMICS:ARGSP
+      - ECONOMICS:ARGBV
+      - ECONOMICS:ARGBP
+- name: country_top_economics_business_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARLEI
+      - ECONOMICS:ARCORR
+- name: country_top_economics_taxes_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARPITR
+      - ECONOMICS:ARCTR
+      - ECONOMICS:ARSSR
+      - ECONOMICS:ARSSRC
+      - ECONOMICS:ARSSRE
+      - ECONOMICS:ARSTR

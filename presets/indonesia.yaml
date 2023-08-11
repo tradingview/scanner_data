@@ -613,3 +613,45 @@ presets:
       - IDX:IDXHEALTH
       - IDX:IDXBASIC
       - IDX:IDXPROPERT
+- name: country_top_economics_key_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDGDP
+      - ECONOMICS:IDFYGDPG
+      - ECONOMICS:IDGDPCP
+      - ECONOMICS:IDINTR
+      - ECONOMICS:IDIRYY
+      - ECONOMICS:IDUR
+      - ECONOMICS:IDCA
+      - ECONOMICS:IDCAG
+      - ECONOMICS:IDGDG
+      - ECONOMICS:IDBOT
+      - ECONOMICS:IDPOP
+- name: country_top_economics_gdp_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDGDP
+      - ECONOMICS:IDGNP
+      - ECONOMICS:IDGDPCP
+      - ECONOMICS:IDFYGDPG
+      - ECONOMICS:IDGDPQQ
+- name: country_top_economics_government_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDGDG
+      - ECONOMICS:IDGSP
+      - ECONOMICS:IDGBV
+      - ECONOMICS:IDGBP
+- name: country_top_economics_business_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDCORR
+- name: country_top_economics_taxes_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDPITR
+      - ECONOMICS:IDCTR
+      - ECONOMICS:IDSSR
+      - ECONOMICS:IDSSRC
+      - ECONOMICS:IDSSRE
+      - ECONOMICS:IDSTR

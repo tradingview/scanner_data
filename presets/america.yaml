@@ -1039,3 +1039,53 @@ presets:
       - TVC:DXY
       - CBOE:VIX
       - SP:OEX
+- name: country_top_economics_key_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:USFYGDPG
+      - ECONOMICS:USGDPCP
+      - ECONOMICS:USINTR
+      - ECONOMICS:USIRYY
+      - ECONOMICS:USUR
+      - ECONOMICS:USCA
+      - ECONOMICS:USCAG
+      - ECONOMICS:USGDG
+      - ECONOMICS:USBOT
+      - ECONOMICS:USPOP
+- name: country_top_economics_gdp_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:USGNP
+      - ECONOMICS:USGDPCP
+      - ECONOMICS:USFYGDPG
+      - ECONOMICS:USGDPQQ
+      - ECONOMICS:USWEI
+- name: country_top_economics_government_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGD
+      - ECONOMICS:USGDG
+      - ECONOMICS:USGSP
+      - ECONOMICS:USGSG
+      - ECONOMICS:USGBV
+      - ECONOMICS:USGBP
+- name: country_top_economics_business_us
+  symbols:
+    tickers:
+      - ECONOMICS:USCPR
+      - ECONOMICS:USNO
+      - ECONOMICS:USLEI
+      - ECONOMICS:USWI
+      - ECONOMICS:USCORR
+      - ECONOMICS:USBR
+- name: country_top_economics_taxes_us
+  symbols:
+    tickers:
+      - ECONOMICS:USPITR
+      - ECONOMICS:USCTR
+      - ECONOMICS:USSSR
+      - ECONOMICS:USSSRC
+      - ECONOMICS:USSSRE
+      - ECONOMICS:USSTR

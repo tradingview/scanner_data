@@ -603,3 +603,48 @@ presets:
   symbols:
     tickers:
       - TVC:STI
+- name: country_top_economics_key_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGGDP
+      - ECONOMICS:SGFYGDPG
+      - ECONOMICS:SGGDPCP
+      - ECONOMICS:SGINTR
+      - ECONOMICS:SGIRYY
+      - ECONOMICS:SGUR
+      - ECONOMICS:SGCA
+      - ECONOMICS:SGCAG
+      - ECONOMICS:SGGDG
+      - ECONOMICS:SGBOT
+      - ECONOMICS:SGPOP
+- name: country_top_economics_gdp_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGGDP
+      - ECONOMICS:SGGNP
+      - ECONOMICS:SGGDPCP
+      - ECONOMICS:SGFYGDPG
+      - ECONOMICS:SGGDPQQ
+- name: country_top_economics_government_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGGD
+      - ECONOMICS:SGGDG
+      - ECONOMICS:SGGSP
+      - ECONOMICS:SGGBV
+      - ECONOMICS:SGGBP
+- name: country_top_economics_business_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGLEI
+      - ECONOMICS:SGCORR
+      - ECONOMICS:SGBR
+- name: country_top_economics_taxes_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGPITR
+      - ECONOMICS:SGCTR
+      - ECONOMICS:SGSSR
+      - ECONOMICS:SGSSRC
+      - ECONOMICS:SGSSRE
+      - ECONOMICS:SGSTR

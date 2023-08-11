@@ -613,3 +613,47 @@ presets:
       - ATHEX:DAP
       - ATHEX:DPY
       - ATHEX:DEM
+- name: country_top_economics_key_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRGDP
+      - ECONOMICS:GRFYGDPG
+      - ECONOMICS:GRGDPCP
+      - ECONOMICS:GRINTR
+      - ECONOMICS:GRIRYY
+      - ECONOMICS:GRUR
+      - ECONOMICS:GRCA
+      - ECONOMICS:GRCAG
+      - ECONOMICS:GRGDG
+      - ECONOMICS:GRBOT
+      - ECONOMICS:GRPOP
+- name: country_top_economics_gdp_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRGDP
+      - ECONOMICS:GRGDPCP
+      - ECONOMICS:GRFYGDPG
+      - ECONOMICS:GRGDPQQ
+- name: country_top_economics_government_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRGD
+      - ECONOMICS:GRGDG
+      - ECONOMICS:GRGSP
+      - ECONOMICS:GRGSG
+      - ECONOMICS:GRGBV
+      - ECONOMICS:GRGBP
+- name: country_top_economics_business_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRNO
+      - ECONOMICS:GRCORR
+- name: country_top_economics_taxes_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRPITR
+      - ECONOMICS:GRCTR
+      - ECONOMICS:GRSSR
+      - ECONOMICS:GRSSRC
+      - ECONOMICS:GRSSRE
+      - ECONOMICS:GRSTR

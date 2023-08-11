@@ -598,3 +598,43 @@ presets:
       - CSEMA:SDT
       - CSEMA:MINES
       - CSEMA:SPI
+- name: country_top_economics_key_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAGDP
+      - ECONOMICS:MAFYGDPG
+      - ECONOMICS:MAGDPCP
+      - ECONOMICS:MAINTR
+      - ECONOMICS:MAIRYY
+      - ECONOMICS:MAUR
+      - ECONOMICS:MACA
+      - ECONOMICS:MACAG
+      - ECONOMICS:MAGDG
+      - ECONOMICS:MABOT
+      - ECONOMICS:MAPOP
+- name: country_top_economics_gdp_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAGDP
+      - ECONOMICS:MAGDPCP
+      - ECONOMICS:MAFYGDPG
+      - ECONOMICS:MAGDPQQ
+- name: country_top_economics_government_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAGDG
+      - ECONOMICS:MAGSP
+      - ECONOMICS:MAGBP
+- name: country_top_economics_business_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MACORR
+- name: country_top_economics_taxes_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAPITR
+      - ECONOMICS:MACTR
+      - ECONOMICS:MASSR
+      - ECONOMICS:MASSRC
+      - ECONOMICS:MASSRE
+      - ECONOMICS:MASTR

@@ -613,3 +613,50 @@ presets:
       - OSL:OING
       - OSL:OHCG
       - OSL:OREG
+- name: country_top_economics_key_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOGDP
+      - ECONOMICS:NOFYGDPG
+      - ECONOMICS:NOGDPCP
+      - ECONOMICS:NOINTR
+      - ECONOMICS:NOIRYY
+      - ECONOMICS:NOUR
+      - ECONOMICS:NOCA
+      - ECONOMICS:NOCAG
+      - ECONOMICS:NOGDG
+      - ECONOMICS:NOBOT
+      - ECONOMICS:NOPOP
+- name: country_top_economics_gdp_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOGDP
+      - ECONOMICS:NOGNP
+      - ECONOMICS:NOGDPCP
+      - ECONOMICS:NOFYGDPG
+      - ECONOMICS:NOGDPQQ
+- name: country_top_economics_government_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOGD
+      - ECONOMICS:NOGDG
+      - ECONOMICS:NOGSP
+      - ECONOMICS:NOGSG
+      - ECONOMICS:NOGBV
+      - ECONOMICS:NOGBP
+- name: country_top_economics_business_no
+  symbols:
+    tickers:
+      - ECONOMICS:NONO
+      - ECONOMICS:NOLEI
+      - ECONOMICS:NOCORR
+      - ECONOMICS:NOBR
+- name: country_top_economics_taxes_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOPITR
+      - ECONOMICS:NOCTR
+      - ECONOMICS:NOSSR
+      - ECONOMICS:NOSSRC
+      - ECONOMICS:NOSSRE
+      - ECONOMICS:NOSTR

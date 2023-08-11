@@ -613,3 +613,45 @@ presets:
       - BMV:SE02
       - BMV:SE06
       - BMV:SE05
+- name: country_top_economics_key_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXGDP
+      - ECONOMICS:MXFYGDPG
+      - ECONOMICS:MXGDPCP
+      - ECONOMICS:MXINTR
+      - ECONOMICS:MXIRYY
+      - ECONOMICS:MXUR
+      - ECONOMICS:MXCA
+      - ECONOMICS:MXCAG
+      - ECONOMICS:MXGDG
+      - ECONOMICS:MXBOT
+      - ECONOMICS:MXPOP
+- name: country_top_economics_gdp_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXGDP
+      - ECONOMICS:MXGDPCP
+      - ECONOMICS:MXFYGDPG
+      - ECONOMICS:MXGDPQQ
+- name: country_top_economics_government_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXGDG
+      - ECONOMICS:MXGSP
+      - ECONOMICS:MXGBV
+      - ECONOMICS:MXGBP
+- name: country_top_economics_business_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXLEI
+      - ECONOMICS:MXCORR
+- name: country_top_economics_taxes_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXPITR
+      - ECONOMICS:MXCTR
+      - ECONOMICS:MXSSR
+      - ECONOMICS:MXSSRC
+      - ECONOMICS:MXSSRE
+      - ECONOMICS:MXSTR

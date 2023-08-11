@@ -610,3 +610,46 @@ presets:
       - PSE:SVC
       - PSE:PRO
       - PSE:HDG
+- name: country_top_economics_key_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHGDP
+      - ECONOMICS:PHFYGDPG
+      - ECONOMICS:PHGDPCP
+      - ECONOMICS:PHINTR
+      - ECONOMICS:PHIRYY
+      - ECONOMICS:PHUR
+      - ECONOMICS:PHCA
+      - ECONOMICS:PHCAG
+      - ECONOMICS:PHGDG
+      - ECONOMICS:PHBOT
+      - ECONOMICS:PHPOP
+- name: country_top_economics_gdp_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHGDP
+      - ECONOMICS:PHGNP
+      - ECONOMICS:PHGDPCP
+      - ECONOMICS:PHFYGDPG
+      - ECONOMICS:PHGDPQQ
+- name: country_top_economics_government_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHGDG
+      - ECONOMICS:PHGSP
+      - ECONOMICS:PHGBV
+      - ECONOMICS:PHGBP
+- name: country_top_economics_business_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHLEI
+      - ECONOMICS:PHCORR
+- name: country_top_economics_taxes_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHPITR
+      - ECONOMICS:PHCTR
+      - ECONOMICS:PHSSR
+      - ECONOMICS:PHSSRC
+      - ECONOMICS:PHSSRE
+      - ECONOMICS:PHSTR

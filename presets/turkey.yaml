@@ -598,3 +598,48 @@ presets:
       - BIST:XSIST
       - BIST:XLBNK
       - BIST:X10XB
+- name: country_top_economics_key_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRGDP
+      - ECONOMICS:TRFYGDPG
+      - ECONOMICS:TRGDPCP
+      - ECONOMICS:TRINTR
+      - ECONOMICS:TRIRYY
+      - ECONOMICS:TRUR
+      - ECONOMICS:TRCA
+      - ECONOMICS:TRCAG
+      - ECONOMICS:TRGDG
+      - ECONOMICS:TRBOT
+      - ECONOMICS:TRPOP
+- name: country_top_economics_gdp_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRGDP
+      - ECONOMICS:TRGNP
+      - ECONOMICS:TRGDPCP
+      - ECONOMICS:TRFYGDPG
+      - ECONOMICS:TRGDPQQ
+- name: country_top_economics_government_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRGD
+      - ECONOMICS:TRGDG
+      - ECONOMICS:TRGSP
+      - ECONOMICS:TRGBV
+      - ECONOMICS:TRGBP
+- name: country_top_economics_business_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRLEI
+      - ECONOMICS:TRCORR
+      - ECONOMICS:TRBR
+- name: country_top_economics_taxes_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRPITR
+      - ECONOMICS:TRCTR
+      - ECONOMICS:TRSSR
+      - ECONOMICS:TRSSRC
+      - ECONOMICS:TRSSRE
+      - ECONOMICS:TRSTR

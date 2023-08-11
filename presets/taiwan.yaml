@@ -613,3 +613,48 @@ presets:
       - TWSE:TOU
       - TWSE:ELE
       - TWSE:FOO
+- name: country_top_economics_key_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWGDP
+      - ECONOMICS:TWFYGDPG
+      - ECONOMICS:TWGDPCP
+      - ECONOMICS:TWINTR
+      - ECONOMICS:TWIRYY
+      - ECONOMICS:TWUR
+      - ECONOMICS:TWCA
+      - ECONOMICS:TWCAG
+      - ECONOMICS:TWGDG
+      - ECONOMICS:TWBOT
+      - ECONOMICS:TWPOP
+- name: country_top_economics_gdp_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWGDP
+      - ECONOMICS:TWGNP
+      - ECONOMICS:TWGDPCP
+      - ECONOMICS:TWFYGDPG
+      - ECONOMICS:TWGDPQQ
+- name: country_top_economics_government_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWGDG
+      - ECONOMICS:TWGSP
+      - ECONOMICS:TWGBV
+      - ECONOMICS:TWGBP
+- name: country_top_economics_business_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWNO
+      - ECONOMICS:TWLEI
+      - ECONOMICS:TWCORR
+      - ECONOMICS:TWBR
+- name: country_top_economics_taxes_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWPITR
+      - ECONOMICS:TWCTR
+      - ECONOMICS:TWSSR
+      - ECONOMICS:TWSSRC
+      - ECONOMICS:TWSSRE
+      - ECONOMICS:TWSTR

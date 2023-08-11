@@ -613,3 +613,50 @@ presets:
       - OMXCOP:CX60PI
       - OMXCOP:CX50PI
       - OMXCOP:CX35PI
+- name: country_top_economics_key_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKGDP
+      - ECONOMICS:DKFYGDPG
+      - ECONOMICS:DKGDPCP
+      - ECONOMICS:DKINTR
+      - ECONOMICS:DKIRYY
+      - ECONOMICS:DKUR
+      - ECONOMICS:DKCA
+      - ECONOMICS:DKCAG
+      - ECONOMICS:DKGDG
+      - ECONOMICS:DKBOT
+      - ECONOMICS:DKPOP
+- name: country_top_economics_gdp_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKGDP
+      - ECONOMICS:DKGNP
+      - ECONOMICS:DKGDPCP
+      - ECONOMICS:DKFYGDPG
+      - ECONOMICS:DKGDPQQ
+- name: country_top_economics_government_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKGD
+      - ECONOMICS:DKGDG
+      - ECONOMICS:DKGSP
+      - ECONOMICS:DKGSG
+      - ECONOMICS:DKGBV
+      - ECONOMICS:DKGBP
+- name: country_top_economics_business_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKCPR
+      - ECONOMICS:DKNO
+      - ECONOMICS:DKCORR
+      - ECONOMICS:DKBR
+- name: country_top_economics_taxes_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKPITR
+      - ECONOMICS:DKCTR
+      - ECONOMICS:DKSSR
+      - ECONOMICS:DKSSRC
+      - ECONOMICS:DKSSRE
+      - ECONOMICS:DKSTR

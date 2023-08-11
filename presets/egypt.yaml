@@ -608,3 +608,42 @@ presets:
       - EGX:EGX70EWI
       - EGX:EGX100EWI
       - EGX:TAMAYUZ
+- name: country_top_economics_key_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGGDP
+      - ECONOMICS:EGGDPCP
+      - ECONOMICS:EGINTR
+      - ECONOMICS:EGIRYY
+      - ECONOMICS:EGUR
+      - ECONOMICS:EGCA
+      - ECONOMICS:EGCAG
+      - ECONOMICS:EGGDG
+      - ECONOMICS:EGBOT
+      - ECONOMICS:EGPOP
+- name: country_top_economics_gdp_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGGDP
+      - ECONOMICS:EGGDPCP
+      - ECONOMICS:EGGDPQQ
+- name: country_top_economics_government_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGGDG
+      - ECONOMICS:EGGSP
+      - ECONOMICS:EGGBV
+      - ECONOMICS:EGGBP
+- name: country_top_economics_business_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGCORR
+- name: country_top_economics_taxes_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGPITR
+      - ECONOMICS:EGCTR
+      - ECONOMICS:EGSSR
+      - ECONOMICS:EGSSRC
+      - ECONOMICS:EGSSRE
+      - ECONOMICS:EGSTR

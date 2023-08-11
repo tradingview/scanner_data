@@ -595,3 +595,46 @@ presets:
       - CSECY:INVE
       - CSECY:ECM
       - CSECY:HOTEL
+- name: country_top_economics_key_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYGDP
+      - ECONOMICS:CYFYGDPG
+      - ECONOMICS:CYGDPCP
+      - ECONOMICS:CYINTR
+      - ECONOMICS:CYIRYY
+      - ECONOMICS:CYUR
+      - ECONOMICS:CYCA
+      - ECONOMICS:CYCAG
+      - ECONOMICS:CYGDG
+      - ECONOMICS:CYBOT
+      - ECONOMICS:CYPOP
+- name: country_top_economics_gdp_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYGDP
+      - ECONOMICS:CYGNP
+      - ECONOMICS:CYGDPCP
+      - ECONOMICS:CYFYGDPG
+      - ECONOMICS:CYGDPQQ
+- name: country_top_economics_government_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYGDG
+      - ECONOMICS:CYGSP
+      - ECONOMICS:CYGSG
+      - ECONOMICS:CYGBV
+      - ECONOMICS:CYGBP
+- name: country_top_economics_business_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYCORR
+- name: country_top_economics_taxes_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYPITR
+      - ECONOMICS:CYCTR
+      - ECONOMICS:CYSSR
+      - ECONOMICS:CYSSRC
+      - ECONOMICS:CYSSRE
+      - ECONOMICS:CYSTR

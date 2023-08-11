@@ -603,3 +603,47 @@ presets:
   symbols:
     tickers:
       - BSSE:SAX
+- name: country_top_economics_key_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKGDP
+      - ECONOMICS:SKFYGDPG
+      - ECONOMICS:SKGDPCP
+      - ECONOMICS:SKINTR
+      - ECONOMICS:SKIRYY
+      - ECONOMICS:SKUR
+      - ECONOMICS:SKCA
+      - ECONOMICS:SKCAG
+      - ECONOMICS:SKGDG
+      - ECONOMICS:SKBOT
+      - ECONOMICS:SKPOP
+- name: country_top_economics_gdp_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKGDP
+      - ECONOMICS:SKGDPCP
+      - ECONOMICS:SKFYGDPG
+      - ECONOMICS:SKGDPQQ
+- name: country_top_economics_government_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKGD
+      - ECONOMICS:SKGDG
+      - ECONOMICS:SKGSP
+      - ECONOMICS:SKGSG
+      - ECONOMICS:SKGBV
+      - ECONOMICS:SKGBP
+- name: country_top_economics_business_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKNO
+      - ECONOMICS:SKCORR
+- name: country_top_economics_taxes_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKPITR
+      - ECONOMICS:SKCTR
+      - ECONOMICS:SKSSR
+      - ECONOMICS:SKSSRC
+      - ECONOMICS:SKSSRE
+      - ECONOMICS:SKSTR

@@ -613,3 +613,43 @@ presets:
       - BVL:SPBLEPT
       - BVL:SPBLCPT
       - BVL:SPBPGEPT
+- name: country_top_economics_key_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEGDP
+      - ECONOMICS:PEFYGDPG
+      - ECONOMICS:PEGDPCP
+      - ECONOMICS:PEINTR
+      - ECONOMICS:PEIRYY
+      - ECONOMICS:PEUR
+      - ECONOMICS:PECA
+      - ECONOMICS:PECAG
+      - ECONOMICS:PEGDG
+      - ECONOMICS:PEBOT
+      - ECONOMICS:PEPOP
+- name: country_top_economics_gdp_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEGDP
+      - ECONOMICS:PEGNP
+      - ECONOMICS:PEGDPCP
+      - ECONOMICS:PEFYGDPG
+      - ECONOMICS:PEGDPQQ
+- name: country_top_economics_government_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEGDG
+      - ECONOMICS:PEGSP
+      - ECONOMICS:PEGBV
+      - ECONOMICS:PEGBP
+- name: country_top_economics_business_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PELEI
+      - ECONOMICS:PECORR
+- name: country_top_economics_taxes_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEPITR
+      - ECONOMICS:PECTR
+      - ECONOMICS:PESTR

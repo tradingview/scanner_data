@@ -613,3 +613,50 @@ presets:
       - XETR:CXPP
       - XETR:3BV6
       - XETR:CXPB
+- name: country_top_economics_key_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEGDP
+      - ECONOMICS:DEFYGDPG
+      - ECONOMICS:DEGDPCP
+      - ECONOMICS:DEINTR
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:DEUR
+      - ECONOMICS:DECA
+      - ECONOMICS:DECAG
+      - ECONOMICS:DEGDG
+      - ECONOMICS:DEBOT
+      - ECONOMICS:DEPOP
+- name: country_top_economics_gdp_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEGDP
+      - ECONOMICS:DEGNP
+      - ECONOMICS:DEGDPCP
+      - ECONOMICS:DEFYGDPG
+      - ECONOMICS:DEGDPQQ
+- name: country_top_economics_government_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEGD
+      - ECONOMICS:DEGDG
+      - ECONOMICS:DEGSP
+      - ECONOMICS:DEGSG
+      - ECONOMICS:DEGBV
+      - ECONOMICS:DEGBP
+- name: country_top_economics_business_de
+  symbols:
+    tickers:
+      - ECONOMICS:DECPR
+      - ECONOMICS:DENO
+      - ECONOMICS:DECORR
+      - ECONOMICS:DEBR
+- name: country_top_economics_taxes_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEPITR
+      - ECONOMICS:DECTR
+      - ECONOMICS:DESSR
+      - ECONOMICS:DESSRC
+      - ECONOMICS:DESSRE
+      - ECONOMICS:DESTR

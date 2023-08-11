@@ -613,3 +613,41 @@ presets:
       - DFM:DFMMI
       - DFM:REITS
       - DFM:DFMCSI
+- name: country_top_economics_key_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEGDP
+      - ECONOMICS:AEGDPCP
+      - ECONOMICS:AEINTR
+      - ECONOMICS:AEIRYY
+      - ECONOMICS:AEUR
+      - ECONOMICS:AECA
+      - ECONOMICS:AECAG
+      - ECONOMICS:AEGDG
+      - ECONOMICS:AEBOT
+      - ECONOMICS:AEPOP
+- name: country_top_economics_gdp_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEGDP
+      - ECONOMICS:AEGDPCP
+      - ECONOMICS:AEGDPQQ
+- name: country_top_economics_government_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEGDG
+      - ECONOMICS:AEGSP
+      - ECONOMICS:AEGBP
+- name: country_top_economics_business_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AECORR
+- name: country_top_economics_taxes_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEPITR
+      - ECONOMICS:AECTR
+      - ECONOMICS:AESSR
+      - ECONOMICS:AESSRC
+      - ECONOMICS:AESSRE
+      - ECONOMICS:AESTR

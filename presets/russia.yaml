@@ -598,3 +598,49 @@ presets:
       - MOEX:MOEXMM
       - MOEX:MOEXFN
       - MOEX:MOEXCN
+- name: country_top_economics_key_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUGDP
+      - ECONOMICS:RUFYGDPG
+      - ECONOMICS:RUGDPCP
+      - ECONOMICS:RUINTR
+      - ECONOMICS:RUIRYY
+      - ECONOMICS:RUUR
+      - ECONOMICS:RUCA
+      - ECONOMICS:RUCAG
+      - ECONOMICS:RUGDG
+      - ECONOMICS:RUBOT
+      - ECONOMICS:RUPOP
+- name: country_top_economics_gdp_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUGDP
+      - ECONOMICS:RUGNP
+      - ECONOMICS:RUGDPCP
+      - ECONOMICS:RUFYGDPG
+      - ECONOMICS:RUGDPQQ
+- name: country_top_economics_government_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUGD
+      - ECONOMICS:RUGDG
+      - ECONOMICS:RUGSP
+      - ECONOMICS:RUGBV
+      - ECONOMICS:RUGBP
+- name: country_top_economics_business_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUCPR
+      - ECONOMICS:RULEI
+      - ECONOMICS:RUCORR
+      - ECONOMICS:RUBR
+- name: country_top_economics_taxes_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUPITR
+      - ECONOMICS:RUCTR
+      - ECONOMICS:RUSSR
+      - ECONOMICS:RUSSRC
+      - ECONOMICS:RUSSRE
+      - ECONOMICS:RUSTR

@@ -613,3 +613,44 @@ presets:
       - TADAWUL:TMTI
       - TADAWUL:TRMI
       - TADAWUL:TFSI
+- name: country_top_economics_key_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAGDP
+      - ECONOMICS:SAFYGDPG
+      - ECONOMICS:SAGDPCP
+      - ECONOMICS:SAINTR
+      - ECONOMICS:SAIRYY
+      - ECONOMICS:SAUR
+      - ECONOMICS:SACA
+      - ECONOMICS:SACAG
+      - ECONOMICS:SAGDG
+      - ECONOMICS:SABOT
+      - ECONOMICS:SAPOP
+- name: country_top_economics_gdp_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAGDP
+      - ECONOMICS:SAGDPCP
+      - ECONOMICS:SAFYGDPG
+      - ECONOMICS:SAGDPQQ
+- name: country_top_economics_government_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAGDG
+      - ECONOMICS:SAGSP
+      - ECONOMICS:SAGBV
+      - ECONOMICS:SAGBP
+- name: country_top_economics_business_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SACORR
+- name: country_top_economics_taxes_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAPITR
+      - ECONOMICS:SACTR
+      - ECONOMICS:SASSR
+      - ECONOMICS:SASSRC
+      - ECONOMICS:SASSRE
+      - ECONOMICS:SASTR

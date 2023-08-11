@@ -588,3 +588,46 @@ presets:
   symbols:
     tickers:
       - OMXTSE:OMXTGI
+- name: country_top_economics_key_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEGDP
+      - ECONOMICS:EEFYGDPG
+      - ECONOMICS:EEGDPCP
+      - ECONOMICS:EEINTR
+      - ECONOMICS:EEIRYY
+      - ECONOMICS:EEUR
+      - ECONOMICS:EECA
+      - ECONOMICS:EECAG
+      - ECONOMICS:EEGDG
+      - ECONOMICS:EEBOT
+      - ECONOMICS:EEPOP
+- name: country_top_economics_gdp_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEGDP
+      - ECONOMICS:EEGDPCP
+      - ECONOMICS:EEFYGDPG
+      - ECONOMICS:EEGDPQQ
+- name: country_top_economics_government_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEGDG
+      - ECONOMICS:EEGSP
+      - ECONOMICS:EEGSG
+      - ECONOMICS:EEGBV
+      - ECONOMICS:EEGBP
+- name: country_top_economics_business_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EECPR
+      - ECONOMICS:EECORR
+- name: country_top_economics_taxes_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEPITR
+      - ECONOMICS:EECTR
+      - ECONOMICS:EESSR
+      - ECONOMICS:EESSRC
+      - ECONOMICS:EESSRE
+      - ECONOMICS:EESTR

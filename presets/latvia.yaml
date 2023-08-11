@@ -588,3 +588,47 @@ presets:
   symbols:
     tickers:
       - OMXRSE:OMXRGI
+- name: country_top_economics_key_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVGDP
+      - ECONOMICS:LVFYGDPG
+      - ECONOMICS:LVGDPCP
+      - ECONOMICS:LVINTR
+      - ECONOMICS:LVIRYY
+      - ECONOMICS:LVUR
+      - ECONOMICS:LVCA
+      - ECONOMICS:LVCAG
+      - ECONOMICS:LVGDG
+      - ECONOMICS:LVBOT
+      - ECONOMICS:LVPOP
+- name: country_top_economics_gdp_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVGDP
+      - ECONOMICS:LVGNP
+      - ECONOMICS:LVGDPCP
+      - ECONOMICS:LVFYGDPG
+      - ECONOMICS:LVGDPQQ
+- name: country_top_economics_government_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVGD
+      - ECONOMICS:LVGDG
+      - ECONOMICS:LVGSP
+      - ECONOMICS:LVGSG
+      - ECONOMICS:LVGBV
+      - ECONOMICS:LVGBP
+- name: country_top_economics_business_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVCORR
+- name: country_top_economics_taxes_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVPITR
+      - ECONOMICS:LVCTR
+      - ECONOMICS:LVSSR
+      - ECONOMICS:LVSSRC
+      - ECONOMICS:LVSSRE
+      - ECONOMICS:LVSTR

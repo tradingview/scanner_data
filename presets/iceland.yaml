@@ -613,3 +613,47 @@ presets:
       - OMXICE:IX20PI
       - OMXICE:IX35PI
       - OMXICE:IX45PI
+- name: country_top_economics_key_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISGDP
+      - ECONOMICS:ISFYGDPG
+      - ECONOMICS:ISGDPCP
+      - ECONOMICS:ISINTR
+      - ECONOMICS:ISIRYY
+      - ECONOMICS:ISUR
+      - ECONOMICS:ISCA
+      - ECONOMICS:ISCAG
+      - ECONOMICS:ISGDG
+      - ECONOMICS:ISBOT
+      - ECONOMICS:ISPOP
+- name: country_top_economics_gdp_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISGDP
+      - ECONOMICS:ISGNP
+      - ECONOMICS:ISGDPCP
+      - ECONOMICS:ISFYGDPG
+      - ECONOMICS:ISGDPQQ
+- name: country_top_economics_government_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISGDG
+      - ECONOMICS:ISGSP
+      - ECONOMICS:ISGSG
+      - ECONOMICS:ISGBV
+      - ECONOMICS:ISGBP
+- name: country_top_economics_business_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISCORR
+      - ECONOMICS:ISBR
+- name: country_top_economics_taxes_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISPITR
+      - ECONOMICS:ISCTR
+      - ECONOMICS:ISSSR
+      - ECONOMICS:ISSSRC
+      - ECONOMICS:ISSSRE
+      - ECONOMICS:ISSTR

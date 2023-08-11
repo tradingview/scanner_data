@@ -613,3 +613,50 @@ presets:
       - OMXHEX:HX20PI
       - OMXHEX:HX55PI
       - OMXHEX:HX35PI
+- name: country_top_economics_key_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIGDP
+      - ECONOMICS:FIFYGDPG
+      - ECONOMICS:FIGDPCP
+      - ECONOMICS:FIINTR
+      - ECONOMICS:FIIRYY
+      - ECONOMICS:FIUR
+      - ECONOMICS:FICA
+      - ECONOMICS:FICAG
+      - ECONOMICS:FIGDG
+      - ECONOMICS:FIBOT
+      - ECONOMICS:FIPOP
+- name: country_top_economics_gdp_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIGDP
+      - ECONOMICS:FIGNP
+      - ECONOMICS:FIGDPCP
+      - ECONOMICS:FIFYGDPG
+      - ECONOMICS:FIGDPQQ
+- name: country_top_economics_government_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIGD
+      - ECONOMICS:FIGDG
+      - ECONOMICS:FIGSP
+      - ECONOMICS:FIGSG
+      - ECONOMICS:FIGBV
+      - ECONOMICS:FIGBP
+- name: country_top_economics_business_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FINO
+      - ECONOMICS:FILEI
+      - ECONOMICS:FICORR
+      - ECONOMICS:FIBR
+- name: country_top_economics_taxes_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIPITR
+      - ECONOMICS:FICTR
+      - ECONOMICS:FISSR
+      - ECONOMICS:FISSRC
+      - ECONOMICS:FISSRE
+      - ECONOMICS:FISTR

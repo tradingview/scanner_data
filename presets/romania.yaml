@@ -613,3 +613,47 @@ presets:
       - BVB:BETFI
       - BVB:BETAERO
       - BVB:BETNG
+- name: country_top_economics_key_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROGDP
+      - ECONOMICS:ROFYGDPG
+      - ECONOMICS:ROGDPCP
+      - ECONOMICS:ROINTR
+      - ECONOMICS:ROIRYY
+      - ECONOMICS:ROUR
+      - ECONOMICS:ROCA
+      - ECONOMICS:ROCAG
+      - ECONOMICS:ROGDG
+      - ECONOMICS:ROBOT
+      - ECONOMICS:ROPOP
+- name: country_top_economics_gdp_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROGDP
+      - ECONOMICS:ROGDPCP
+      - ECONOMICS:ROFYGDPG
+      - ECONOMICS:ROGDPQQ
+- name: country_top_economics_government_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROGD
+      - ECONOMICS:ROGDG
+      - ECONOMICS:ROGSP
+      - ECONOMICS:ROGSG
+      - ECONOMICS:ROGBV
+      - ECONOMICS:ROGBP
+- name: country_top_economics_business_ro
+  symbols:
+    tickers:
+      - ECONOMICS:RONO
+      - ECONOMICS:ROCORR
+- name: country_top_economics_taxes_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROPITR
+      - ECONOMICS:ROCTR
+      - ECONOMICS:ROSSR
+      - ECONOMICS:ROSSRC
+      - ECONOMICS:ROSSRE
+      - ECONOMICS:ROSTR

@@ -599,7 +599,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_vn
+- name: country_top_indices_vn
   symbols:
     tickers:
       - HOSE:VNINDEX

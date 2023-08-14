@@ -677,7 +677,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_br
+- name: country_top_indices_br
   symbols:
     tickers:
       - BMFBOVESPA:IBOV

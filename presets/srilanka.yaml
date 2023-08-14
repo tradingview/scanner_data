@@ -584,7 +584,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_lk
+- name: country_top_indices_lk
   symbols:
     tickers:
       - CSELK:ASI

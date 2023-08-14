@@ -584,7 +584,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_lv
+- name: country_top_indices_lv
   symbols:
     tickers:
       - OMXRSE:OMXRGI

@@ -584,17 +584,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_ma
+- name: country_top_indices_ma
   symbols:
     tickers:
       - CSEMA:MASI
-      - CSEMA:S&P
-      - CSEMA:MADX
+      - CSEMA:MSI20
+      - CSEMA:ESGI
       - CSEMA:MASIMS
-      - CSEMA:SF&AF
-      - CSEMA:BANK
-      - CSEMA:SANTE
-      - CSEMA:PHARM
-      - CSEMA:SDT
-      - CSEMA:MINES
-      - CSEMA:SPI
+      - CSEMA:MASIR
+      - CSEMA:MASRN
+      - CSEMA:MASIE
+      - CSEMA:MASID
+      - FTSE:FCSE
+      - FTSE:FCSELIQ
+      - CSEMA:S&P

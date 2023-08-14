@@ -605,7 +605,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_ca
+- name: country_top_indices_ca
   symbols:
     tickers:
       - TSX:TSX

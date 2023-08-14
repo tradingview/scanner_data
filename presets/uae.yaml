@@ -599,17 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_ae
+- name: country_top_indices_ae
   symbols:
     tickers:
-      - DFM:DFMGI
       - ADX:FADGI
-      - DFM:DFMSI
+      - DFM:DFMGI
       - ADX:FADX15
-      - DFM:DFMFI
-      - ADX:FADENI
-      - DFM:DFMII
-      - ADX:FADHCI
-      - DFM:DFMMI
+      - DFM:DFMSI
+      - ADX:FADBMI
       - DFM:REITS
-      - DFM:DFMCSI
+      - ADX:FADENI
+      - DFM:DFMREI
+      - ADX:FADGII
+      - DFM:DFMFI
+      - ADX:FADGMI

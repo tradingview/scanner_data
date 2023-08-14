@@ -599,7 +599,16 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_sg
+- name: country_top_indices_sg
   symbols:
     tickers:
       - TVC:STI
+      - SGX:SGX5L
+      - SGX:REIT
+      - SGX:SREITLSP
+      - SGX:AGREITSN
+      - SGX:SGLC50CN
+      - SGX:IECNCGP
+      - SGX:AIUS40PR
+      - SGX:IEEBNKPR
+      - SGX:HEALTHPR

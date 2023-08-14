@@ -584,8 +584,12 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_hu
+- name: country_top_indices_hu
   symbols:
     tickers:
       - BET:BUX
       - BET:BUMIX
+      - BET:NAVB
+      - BET:CETOP
+      - FTSE:WIHUN
+      - NASDAQ:NQHU

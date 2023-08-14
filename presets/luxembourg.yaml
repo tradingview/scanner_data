@@ -599,12 +599,20 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_lu
+- name: country_top_indices_lu
   symbols:
     tickers:
       - LUXSE:LUXG
       - LUXSE:LUXX
       - LUXSE:LUXXR
+      - LUXSE:RIFI
+      - LUXSE:LU1072809525_USD
+      - LUXSE:LU1072809368_USD
+      - LUXSE:LU1072874263_CNY
+      - LUXSE:LU1072810531_USD
+      - LUXSE:LU1072811265
+      - LUXSE:LU1072809954_USD
+      - LUXSE:LU1072810374_USD
 - name: country_top_economics_key_lu
   symbols:
     tickers:

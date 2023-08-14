@@ -603,7 +603,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_jp
+- name: country_top_indices_jp
   symbols:
     tickers:
       - TVC:NI225

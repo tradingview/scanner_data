@@ -689,7 +689,7 @@ presets:
   sort:
     sortBy: market_cap_basic
     sortOrder: desc
-- name: country_page_indices_th
+- name: country_top_indices_th
   symbols:
     tickers:
       - SET:SET

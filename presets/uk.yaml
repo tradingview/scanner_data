@@ -696,15 +696,21 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_gb
+- name: country_top_indices_gb
   symbols:
     tickers:
       - FTSE:UKX
+      - FTSE:UKXDUK
       - FTSE:MCX
+      - FTSE:MCIX
+      - FTSE:MCXNUK
+      - FTSE:NMX
+      - FTSE:NMIXNUK
       - FTSE:ASX
-      - FTSE:AIM5
-      - FTSE:AIM1
-      - FTSE:AXX
+      - FTSE:ASXX
+      - FTSE:NSX
+      - FTSE:SMX
+      - FTSE:SMXX
 - name: country_top_economics_key_gb
   symbols:
     tickers:

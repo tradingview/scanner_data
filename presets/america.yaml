@@ -1025,20 +1025,20 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_us
+- name: country_top_indices_us
   symbols:
     tickers:
-      - SP:SPX
+      - CBOE:SPX
       - NASDAQ:NDX
       - DJ:DJI
-      - TVC:RUT
       - NASDAQ:IXIC
+      - TVC:RUT
       - TVC:NYA
       - TVC:XAX
       - DJ:DJA
-      - TVC:DXY
+      - ICEUS:DXY
       - CBOE:VIX
-      - SP:OEX
+      - CBOE:OEX
 - name: country_top_economics_key_us
   symbols:
     tickers:

@@ -599,10 +599,20 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_it
+- name: country_top_indices_it
   symbols:
     tickers:
-      - TVC:FTMIB
+      - FTSE:ITLMS
+      - FTSE:ITLMSC
+      - FTSE:FTSEMIB
+      - FTSE:ITMC
+      - FTSE:ITSC
+      - FTSE:ITSTAR
+      - FTSE:ITBRANDS
+      - FTSE:ITGRW
+      - EURONEXT:MESGP
+      - FTSE:ITPIRPA
+      - FTSE:ITPIRMS
 - name: country_top_economics_key_it
   symbols:
     tickers:

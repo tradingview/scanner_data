@@ -599,11 +599,12 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_rs
+- name: country_top_indices_rs
   symbols:
     tickers:
       - BELEX:BELEX15
       - BELEX:BELEXLINE
+      - VIE:SRX
 - name: country_top_economics_key_rs
   symbols:
     tickers:

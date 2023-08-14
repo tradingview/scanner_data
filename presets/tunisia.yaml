@@ -584,7 +584,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_tn
+- name: country_top_indices_tn
   symbols:
     tickers:
       - BVMT:PX1

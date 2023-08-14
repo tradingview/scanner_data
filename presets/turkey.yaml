@@ -584,20 +584,20 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_page_indices_tr
+- name: country_top_indices_tr
   symbols:
     tickers:
       - BIST:XU100
-      - BIST:XU050
       - BIST:XU030
-      - BIST:XYUZO
+      - BIST:XU050
+      - BIST:XBANK
       - BIST:XK100
-      - BIST:XKTUM
       - BIST:XUTUM
       - BIST:XTUMY
-      - BIST:XSIST
       - BIST:XLBNK
       - BIST:X10XB
+      - BIST:XUSRD
+      - BIST:XYUZO
 - name: country_top_economics_key_tr
   symbols:
     tickers:

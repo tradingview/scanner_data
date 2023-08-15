@@ -183,6 +183,21 @@ presets:
       - FX_IDC:HUFEUR
       - FX_IDC:CZKEUR
       - FX_IDC:CNYEUR
+- name: country_top_forex_au
+  symbols:
+    tickers:
+      - FX_IDC:USDAUD
+      - FX_IDC:EURAUD
+      - FX_IDC:JPYAUD
+      - FX_IDC:GBPAUD
+      - FX_IDC:CHFAUD
+      - FX_IDC:CADAUD
+      - FX_IDC:NZDAUD
+      - FX_IDC:SGDAUD
+      - FX_IDC:IDRAUD
+      - FX_IDC:CNYAUD
+      - FX_IDC:PHPAUD
+      - FX_IDC:INRAUD
 - name: country_top_forex_bd
   symbols:
     tickers:

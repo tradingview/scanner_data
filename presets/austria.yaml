@@ -573,6 +573,20 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: country_top_indices_at
+  symbols:
+    tickers:
+      - VIE:TAX
+      - VIE:ATX
+      - VIE:ATPX
+      - VIE:ATF
+      - VIE:CXE
+      - VIE:SXE
+      - VIE:CCE
+      - VIE:MCE
+      - VIE:OIL
+      - VIE:RTX
+      - VIE:KTX
 - name: country_top_economics_key_at
   symbols:
     tickers:

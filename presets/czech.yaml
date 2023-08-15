@@ -573,6 +573,13 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: country_top_indices_cz
+  symbols:
+    tickers:
+      - PSECZ:PX
+      - PSECZ:PX-TR
+      - PSECZ:PX-TRNET
+      - PSECZ:PX
 - name: country_top_economics_key_cz
   symbols:
     tickers:

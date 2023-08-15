@@ -602,16 +602,17 @@ presets:
 - name: country_top_indices_sg
   symbols:
     tickers:
-      - TVC:STI
-      - SGX:SGX5L
+      - FTSEST:STI
       - SGX:REIT
-      - SGX:SREITLSP
-      - SGX:AGREITSN
-      - SGX:SGLC50CN
-      - SGX:IECNCGP
-      - SGX:AIUS40PR
-      - SGX:IEEBNKPR
-      - SGX:HEALTHPR
+      - FTSEST:FSTAS
+      - FTSEST:FSTLM
+      - FTSEST:FSTM
+      - FTSEST:FSTS
+      - FTSEST:FSTAS30
+      - FTSEST:FSTAS60
+      - FTSEST:FSTAS50
+      - FTSEST:FSTAS20
+      - FTSEST:FSTAS55
 - name: country_top_economics_key_sg
   symbols:
     tickers:

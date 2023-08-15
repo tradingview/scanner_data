@@ -1,34 +1,37 @@
 {
     "symbols": [
         {
-            "s": "TVC:STI"
-        },
-        {
-            "s": "SGX:SGX5L"
+            "s": "FTSEST:STI"
         },
         {
             "s": "SGX:REIT"
         },
         {
-            "s": "SGX:SREITLSP"
+            "s": "FTSEST:FSTAS"
         },
         {
-            "s": "SGX:AGREITSN"
+            "s": "FTSEST:FSTLM"
         },
         {
-            "s": "SGX:SGLC50CN"
+            "s": "FTSEST:FSTM"
         },
         {
-            "s": "SGX:IECNCGP"
+            "s": "FTSEST:FSTS"
         },
         {
-            "s": "SGX:AIUS40PR"
+            "s": "FTSEST:FSTAS30"
         },
         {
-            "s": "SGX:IEEBNKPR"
+            "s": "FTSEST:FSTAS60"
         },
         {
-            "s": "SGX:HEALTHPR"
+            "s": "FTSEST:FSTAS50"
+        },
+        {
+            "s": "FTSEST:FSTAS20"
+        },
+        {
+            "s": "FTSEST:FSTAS55"
         }
     ]
 }

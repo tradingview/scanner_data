@@ -602,9 +602,9 @@ presets:
 - name: country_top_indices_eg
   symbols:
     tickers:
+      - FTSE:WIEGY
       - EGX:EGX30
       - EGX:EGX30CAPPED
-      - EGX:EGX50
       - EGX:EGX70EWI
       - EGX:EGX100EWI
       - EGX:TAMAYUZ

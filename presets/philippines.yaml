@@ -604,6 +604,9 @@ presets:
     tickers:
       - PSE:PSEI
       - PSE:ALL
+      - FTSE:WIPHL
+      - FTSE:WIPHL.TR
+      - FTSE:WIPHLNTU
       - PSE:FIN
       - PSE:IND
       - PSE:M_O

@@ -602,17 +602,17 @@ presets:
 - name: country_top_indices_au
   symbols:
     tickers:
-      - ASX:XJO
       - ASX:XAO
+      - ASX:XJO
       - ASX:XVI
-      - ASX:XEJ
-      - ASX:XML
+      - ASX:XMD
       - ASX:XSO
-      - ASX:XHJ
+      - ASX:XFJ
+      - ASX:XEJ
       - ASX:XIJ
-      - ASX:XTL
-      - ASX:XFL
-      - ASX:XTO
+      - ASX:XNJ
+      - ASX:XHJ
+      - ASX:XMJ
 - name: country_top_economics_key_au
   symbols:
     tickers:

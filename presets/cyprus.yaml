@@ -587,13 +587,13 @@ presets:
 - name: country_top_indices_cy
   symbols:
     tickers:
+      - CSECY:FTSE20
       - CSECY:GEN
       - CSECY:MAIN
       - CSECY:ALTE
-      - CSECY:HOTEL
-      - CSECY:INVE
-      - CSECY:FTSE20
       - CSECY:FIN
+      - CSECY:INVE
+      - CSECY:HOTEL
       - CSECY:ECM
 - name: country_top_economics_key_cy
   symbols:

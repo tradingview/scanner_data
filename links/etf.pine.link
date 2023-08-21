@@ -58,6 +58,7 @@ aumPerfYTD = request.security(makeAumTicker(), getFundTF(), fundPerfYTD(), ignor
 
 navTotalReturn1M = request.security(makeNavAllTicker(), getFundTF(), fundPerf(oneMonth, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn3M = request.security(makeNavAllTicker(), getFundTF(), fundPerf(threeMonths, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+navTotalReturn6M = request.security(makeNavAllTicker(), getFundTF(), fundPerf(sixMonths, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn1Y = request.security(makeNavAllTicker(), getFundTF(), fundPerf(oneYear, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn3Y = request.security(makeNavAllTicker(), getFundTF(), fundPerf(threeYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 navTotalReturn5Y = request.security(makeNavAllTicker(), getFundTF(), fundPerf(fiveYears, 10), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
@@ -72,6 +73,7 @@ plot(fund_flowsYTD, title="fund_flows.YTD")
 
 plot(navTotalReturn1M, title="nav_total_return.1M")
 plot(navTotalReturn3M, title="nav_total_return.3M")
+plot(navTotalReturn6M, title="nav_total_return.6M")
 plot(navTotalReturn1Y, title="nav_total_return.1Y")
 plot(navTotalReturn3Y, title="nav_total_return.3Y")
 plot(navTotalReturn5Y, title="nav_total_return.5Y")

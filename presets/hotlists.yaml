@@ -32779,3 +32779,1107 @@ presets:
   - 20
   markets: 
   - norway
+- name: DSEBD_volume_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  columns:
+  - volume
+  sort:
+    sortBy: volume
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_change_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_change_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_range_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_range_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  - left: gap_up
+    operation: nempty
+  columns:
+  - gap_up
+  sort:
+    sortBy: gap_up
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  - left: gap_down
+    operation: nempty
+  columns:
+  - gap_down
+  sort:
+    sortBy: gap_down
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  - left: gap_up_abs
+    operation: nempty
+  columns:
+  - gap_up_abs
+  sort:
+    sortBy: gap_up_abs
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: greater
+    right: 27000
+  - left: gap_down_abs
+    operation: nempty
+  columns:
+  - gap_down_abs
+  sort:
+    sortBy: gap_down_abs
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: PSECZ_volume_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - volume
+  sort:
+    sortBy: volume
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_change_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_change_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_range_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_range_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_up
+    operation: nempty
+  columns:
+  - gap_up
+  sort:
+    sortBy: gap_up
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_down
+    operation: nempty
+  columns:
+  - gap_down
+  sort:
+    sortBy: gap_down
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_up_abs
+    operation: nempty
+  columns:
+  - gap_up_abs
+  sort:
+    sortBy: gap_up_abs
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_down_abs
+    operation: nempty
+  columns:
+  - gap_down_abs
+  sort:
+    sortBy: gap_down_abs
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: VIE_volume_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - volume
+  sort:
+    sortBy: volume
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_change_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_change_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_range_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_range_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_up
+    operation: nempty
+  columns:
+  - gap_up
+  sort:
+    sortBy: gap_up
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_down
+    operation: nempty
+  columns:
+  - gap_down
+  sort:
+    sortBy: gap_down
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_up_abs
+    operation: nempty
+  columns:
+  - gap_up_abs
+  sort:
+    sortBy: gap_up_abs
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: greater
+    right: 100
+  - left: gap_down_abs
+    operation: nempty
+  columns:
+  - gap_down_abs
+  sort:
+    sortBy: gap_down_abs
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria

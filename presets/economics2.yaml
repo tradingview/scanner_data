@@ -1,0 +1,2910 @@
+---
+- name: country_top_economics_key_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:USFYGDPG
+      - ECONOMICS:USGDPCP
+      - ECONOMICS:USINTR
+      - ECONOMICS:USIRYY
+      - ECONOMICS:USUR
+      - ECONOMICS:USCA
+      - ECONOMICS:USCAG
+      - ECONOMICS:USGDG
+      - ECONOMICS:USBOT
+      - ECONOMICS:USPOP
+- name: country_top_economics_gdp_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:USGNP
+      - ECONOMICS:USGDPCP
+      - ECONOMICS:USFYGDPG
+      - ECONOMICS:USGDPQQ
+      - ECONOMICS:USWEI
+- name: country_top_economics_government_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGD
+      - ECONOMICS:USGDG
+      - ECONOMICS:USGSP
+      - ECONOMICS:USGSG
+      - ECONOMICS:USGBV
+      - ECONOMICS:USGBP
+- name: country_top_economics_business_us
+  symbols:
+    tickers:
+      - ECONOMICS:USCPR
+      - ECONOMICS:USNO
+      - ECONOMICS:USLEI
+      - ECONOMICS:USWI
+      - ECONOMICS:USCORR
+      - ECONOMICS:USBR
+- name: country_top_economics_taxes_us
+  symbols:
+    tickers:
+      - ECONOMICS:USPITR
+      - ECONOMICS:USCTR
+      - ECONOMICS:USSSR
+      - ECONOMICS:USSSRC
+      - ECONOMICS:USSSRE
+      - ECONOMICS:USSTR
+- name: country_top_economics_key_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARGDP
+      - ECONOMICS:ARFYGDPG
+      - ECONOMICS:ARGDPCP
+      - ECONOMICS:ARINTR
+      - ECONOMICS:ARIRYY
+      - ECONOMICS:ARUR
+      - ECONOMICS:ARCA
+      - ECONOMICS:ARCAG
+      - ECONOMICS:ARGDG
+      - ECONOMICS:ARBOT
+      - ECONOMICS:ARPOP
+- name: country_top_economics_gdp_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARGDP
+      - ECONOMICS:ARGDPCP
+      - ECONOMICS:ARFYGDPG
+      - ECONOMICS:ARGDPQQ
+- name: country_top_economics_government_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARGDG
+      - ECONOMICS:ARGSP
+      - ECONOMICS:ARGBV
+      - ECONOMICS:ARGBP
+- name: country_top_economics_business_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARLEI
+      - ECONOMICS:ARCORR
+- name: country_top_economics_taxes_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARPITR
+      - ECONOMICS:ARCTR
+      - ECONOMICS:ARSSR
+      - ECONOMICS:ARSSRC
+      - ECONOMICS:ARSSRE
+      - ECONOMICS:ARSTR
+- name: country_top_economics_key_au
+  symbols:
+    tickers:
+      - ECONOMICS:AUGDP
+      - ECONOMICS:AUFYGDPG
+      - ECONOMICS:AUGDPCP
+      - ECONOMICS:AUINTR
+      - ECONOMICS:AUIRYY
+      - ECONOMICS:AUUR
+      - ECONOMICS:AUCA
+      - ECONOMICS:AUCAG
+      - ECONOMICS:AUGDG
+      - ECONOMICS:AUBOT
+      - ECONOMICS:AUPOP
+- name: country_top_economics_gdp_au
+  symbols:
+    tickers:
+      - ECONOMICS:AUGDP
+      - ECONOMICS:AUGNP
+      - ECONOMICS:AUGDPCP
+      - ECONOMICS:AUFYGDPG
+      - ECONOMICS:AUGDPQQ
+- name: country_top_economics_government_au
+  symbols:
+    tickers:
+      - ECONOMICS:AUGD
+      - ECONOMICS:AUGDG
+      - ECONOMICS:AUGSP
+      - ECONOMICS:AUGSG
+      - ECONOMICS:AUGBV
+      - ECONOMICS:AUGBP
+- name: country_top_economics_business_au
+  symbols:
+    tickers:
+      - ECONOMICS:AUCPR
+      - ECONOMICS:AUNO
+      - ECONOMICS:AULEI
+      - ECONOMICS:AUCORR
+      - ECONOMICS:AUBR
+- name: country_top_economics_taxes_au
+  symbols:
+    tickers:
+      - ECONOMICS:AUPITR
+      - ECONOMICS:AUCTR
+      - ECONOMICS:AUSSR
+      - ECONOMICS:AUSSRC
+      - ECONOMICS:AUSSRE
+      - ECONOMICS:AUSTR
+- name: country_top_economics_key_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATGDP
+      - ECONOMICS:ATFYGDPG
+      - ECONOMICS:ATGDPCP
+      - ECONOMICS:ATINTR
+      - ECONOMICS:ATIRYY
+      - ECONOMICS:ATUR
+      - ECONOMICS:ATCA
+      - ECONOMICS:ATCAG
+      - ECONOMICS:ATGDG
+      - ECONOMICS:ATBOT
+      - ECONOMICS:ATPOP
+- name: country_top_economics_gdp_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATGDP
+      - ECONOMICS:ATGNP
+      - ECONOMICS:ATGDPCP
+      - ECONOMICS:ATFYGDPG
+      - ECONOMICS:ATGDPQQ
+- name: country_top_economics_government_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATGD
+      - ECONOMICS:ATGDG
+      - ECONOMICS:ATGSP
+      - ECONOMICS:ATGSG
+      - ECONOMICS:ATGBV
+      - ECONOMICS:ATGBP
+- name: country_top_economics_business_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATNO
+      - ECONOMICS:ATCORR
+- name: country_top_economics_taxes_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATPITR
+      - ECONOMICS:ATCTR
+      - ECONOMICS:ATSSR
+      - ECONOMICS:ATSSRC
+      - ECONOMICS:ATSSRE
+      - ECONOMICS:ATSTR
+- name: country_top_economics_key_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHGDP
+      - ECONOMICS:BHGDPCP
+      - ECONOMICS:BHINTR
+      - ECONOMICS:BHIRYY
+      - ECONOMICS:BHUR
+      - ECONOMICS:BHCA
+      - ECONOMICS:BHCAG
+      - ECONOMICS:BHGDG
+      - ECONOMICS:BHBOT
+      - ECONOMICS:BHPOP
+- name: country_top_economics_gdp_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHGDP
+      - ECONOMICS:BHGDPCP
+      - ECONOMICS:BHGDPQQ
+- name: country_top_economics_government_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHGD
+      - ECONOMICS:BHGDG
+      - ECONOMICS:BHGSP
+      - ECONOMICS:BHGBV
+      - ECONOMICS:BHGBP
+- name: country_top_economics_business_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHCORR
+- name: country_top_economics_taxes_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHPITR
+      - ECONOMICS:BHCTR
+      - ECONOMICS:BHSSR
+      - ECONOMICS:BHSSRC
+      - ECONOMICS:BHSSRE
+      - ECONOMICS:BHSTR
+- name: country_top_economics_key_bd
+  symbols:
+    tickers:
+      - ECONOMICS:BDGDP
+      - ECONOMICS:BDGDPCP
+      - ECONOMICS:BDINTR
+      - ECONOMICS:BDIRYY
+      - ECONOMICS:BDUR
+      - ECONOMICS:BDCA
+      - ECONOMICS:BDCAG
+      - ECONOMICS:BDGDG
+      - ECONOMICS:BDBOT
+      - ECONOMICS:BDPOP
+- name: country_top_economics_gdp_bd
+  symbols:
+    tickers:
+      - ECONOMICS:BDGDP
+      - ECONOMICS:BDGNP
+      - ECONOMICS:BDGDPCP
+      - ECONOMICS:BDGDPQQ
+- name: country_top_economics_government_bd
+  symbols:
+    tickers:
+      - ECONOMICS:BDGDG
+      - ECONOMICS:BDGSP
+      - ECONOMICS:BDGBV
+      - ECONOMICS:BDGBP
+- name: country_top_economics_business_bd
+  symbols:
+    tickers:
+      - ECONOMICS:BDCORR
+- name: country_top_economics_taxes_bd
+  symbols:
+    tickers:
+      - ECONOMICS:BDPITR
+      - ECONOMICS:BDCTR
+      - ECONOMICS:BDSTR
+- name: country_top_economics_key_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEGDP
+      - ECONOMICS:BEFYGDPG
+      - ECONOMICS:BEGDPCP
+      - ECONOMICS:BEINTR
+      - ECONOMICS:BEIRYY
+      - ECONOMICS:BEUR
+      - ECONOMICS:BECA
+      - ECONOMICS:BECAG
+      - ECONOMICS:BEGDG
+      - ECONOMICS:BEBOT
+      - ECONOMICS:BEPOP
+- name: country_top_economics_gdp_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEGDP
+      - ECONOMICS:BEGNP
+      - ECONOMICS:BEGDPCP
+      - ECONOMICS:BEFYGDPG
+      - ECONOMICS:BEGDPQQ
+- name: country_top_economics_government_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEGD
+      - ECONOMICS:BEGDG
+      - ECONOMICS:BEGSP
+      - ECONOMICS:BEGSG
+      - ECONOMICS:BEGBV
+      - ECONOMICS:BEGBP
+- name: country_top_economics_business_be
+  symbols:
+    tickers:
+      - ECONOMICS:BECPR
+      - ECONOMICS:BENO
+      - ECONOMICS:BECORR
+      - ECONOMICS:BEBR
+- name: country_top_economics_taxes_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEPITR
+      - ECONOMICS:BECTR
+      - ECONOMICS:BESSR
+      - ECONOMICS:BESSRC
+      - ECONOMICS:BESSRE
+      - ECONOMICS:BESTR
+- name: country_top_economics_key_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRGDP
+      - ECONOMICS:BRFYGDPG
+      - ECONOMICS:BRGDPCP
+      - ECONOMICS:BRINTR
+      - ECONOMICS:BRIRYY
+      - ECONOMICS:BRUR
+      - ECONOMICS:BRCA
+      - ECONOMICS:BRCAG
+      - ECONOMICS:BRGDG
+      - ECONOMICS:BRBOT
+      - ECONOMICS:BRPOP
+- name: country_top_economics_gdp_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRGDP
+      - ECONOMICS:BRGNP
+      - ECONOMICS:BRGDPCP
+      - ECONOMICS:BRFYGDPG
+      - ECONOMICS:BRGDPQQ
+- name: country_top_economics_government_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRGD
+      - ECONOMICS:BRGDG
+      - ECONOMICS:BRGSP
+      - ECONOMICS:BRGBV
+      - ECONOMICS:BRGBP
+- name: country_top_economics_business_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRNO
+      - ECONOMICS:BRLEI
+      - ECONOMICS:BRCORR
+- name: country_top_economics_taxes_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRPITR
+      - ECONOMICS:BRCTR
+      - ECONOMICS:BRSSR
+      - ECONOMICS:BRSSRC
+      - ECONOMICS:BRSSRE
+      - ECONOMICS:BRSTR
+- name: country_top_economics_key_ca
+  symbols:
+    tickers:
+      - ECONOMICS:CAGDP
+      - ECONOMICS:CAFYGDPG
+      - ECONOMICS:CAGDPCP
+      - ECONOMICS:CAINTR
+      - ECONOMICS:CAIRYY
+      - ECONOMICS:CAUR
+      - ECONOMICS:CACA
+      - ECONOMICS:CACAG
+      - ECONOMICS:CAGDG
+      - ECONOMICS:CABOT
+      - ECONOMICS:CAPOP
+- name: country_top_economics_gdp_ca
+  symbols:
+    tickers:
+      - ECONOMICS:CAGDP
+      - ECONOMICS:CAGNP
+      - ECONOMICS:CAGDPCP
+      - ECONOMICS:CAFYGDPG
+      - ECONOMICS:CAGDPQQ
+- name: country_top_economics_government_ca
+  symbols:
+    tickers:
+      - ECONOMICS:CAGD
+      - ECONOMICS:CAGDG
+      - ECONOMICS:CAGSP
+      - ECONOMICS:CAGBV
+      - ECONOMICS:CAGBP
+- name: country_top_economics_business_ca
+  symbols:
+    tickers:
+      - ECONOMICS:CACPR
+      - ECONOMICS:CANO
+      - ECONOMICS:CALEI
+      - ECONOMICS:CACORR
+      - ECONOMICS:CABR
+- name: country_top_economics_taxes_ca
+  symbols:
+    tickers:
+      - ECONOMICS:CAPITR
+      - ECONOMICS:CACTR
+      - ECONOMICS:CASSR
+      - ECONOMICS:CASSRC
+      - ECONOMICS:CASSRE
+      - ECONOMICS:CASTR
+- name: country_top_economics_key_cl
+  symbols:
+    tickers:
+      - ECONOMICS:CLGDP
+      - ECONOMICS:CLFYGDPG
+      - ECONOMICS:CLGDPCP
+      - ECONOMICS:CLINTR
+      - ECONOMICS:CLIRYY
+      - ECONOMICS:CLUR
+      - ECONOMICS:CLCA
+      - ECONOMICS:CLCAG
+      - ECONOMICS:CLGDG
+      - ECONOMICS:CLBOT
+      - ECONOMICS:CLPOP
+- name: country_top_economics_gdp_cl
+  symbols:
+    tickers:
+      - ECONOMICS:CLGDP
+      - ECONOMICS:CLGNP
+      - ECONOMICS:CLGDPCP
+      - ECONOMICS:CLFYGDPG
+      - ECONOMICS:CLGDPQQ
+- name: country_top_economics_government_cl
+  symbols:
+    tickers:
+      - ECONOMICS:CLGDG
+      - ECONOMICS:CLGSP
+      - ECONOMICS:CLGBV
+      - ECONOMICS:CLGBP
+- name: country_top_economics_business_cl
+  symbols:
+    tickers:
+      - ECONOMICS:CLLEI
+      - ECONOMICS:CLCORR
+- name: country_top_economics_taxes_cl
+  symbols:
+    tickers:
+      - ECONOMICS:CLPITR
+      - ECONOMICS:CLCTR
+      - ECONOMICS:CLSSR
+      - ECONOMICS:CLSSRC
+      - ECONOMICS:CLSSRE
+      - ECONOMICS:CLSTR
+- name: country_top_economics_key_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNGDP
+      - ECONOMICS:CNFYGDPG
+      - ECONOMICS:CNGDPCP
+      - ECONOMICS:CNINTR
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:CNUR
+      - ECONOMICS:CNCA
+      - ECONOMICS:CNCAG
+      - ECONOMICS:CNGDG
+      - ECONOMICS:CNBOT
+      - ECONOMICS:CNPOP
+- name: country_top_economics_gdp_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNGDP
+      - ECONOMICS:CNGNP
+      - ECONOMICS:CNGDPCP
+      - ECONOMICS:CNFYGDPG
+      - ECONOMICS:CNGDPQQ
+- name: country_top_economics_government_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNGDG
+      - ECONOMICS:CNGSP
+      - ECONOMICS:CNGBV
+      - ECONOMICS:CNGBP
+- name: country_top_economics_business_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNCPR
+      - ECONOMICS:CNNO
+      - ECONOMICS:CNLEI
+      - ECONOMICS:CNCORR
+- name: country_top_economics_taxes_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNPITR
+      - ECONOMICS:CNCTR
+      - ECONOMICS:CNSSR
+      - ECONOMICS:CNSSRC
+      - ECONOMICS:CNSSRE
+      - ECONOMICS:CNSTR
+- name: country_top_economics_key_co
+  symbols:
+    tickers:
+      - ECONOMICS:COGDP
+      - ECONOMICS:COFYGDPG
+      - ECONOMICS:COGDPCP
+      - ECONOMICS:COINTR
+      - ECONOMICS:COIRYY
+      - ECONOMICS:COUR
+      - ECONOMICS:COCA
+      - ECONOMICS:COCAG
+      - ECONOMICS:COGDG
+      - ECONOMICS:COBOT
+      - ECONOMICS:COPOP
+- name: country_top_economics_gdp_co
+  symbols:
+    tickers:
+      - ECONOMICS:COGDP
+      - ECONOMICS:COGDPCP
+      - ECONOMICS:COFYGDPG
+      - ECONOMICS:COGDPQQ
+- name: country_top_economics_government_co
+  symbols:
+    tickers:
+      - ECONOMICS:COGDG
+      - ECONOMICS:COGSP
+      - ECONOMICS:COGBV
+      - ECONOMICS:COGBP
+- name: country_top_economics_business_co
+  symbols:
+    tickers:
+      - ECONOMICS:COLEI
+      - ECONOMICS:COCORR
+- name: country_top_economics_taxes_co
+  symbols:
+    tickers:
+      - ECONOMICS:COPITR
+      - ECONOMICS:COCTR
+      - ECONOMICS:COSSR
+      - ECONOMICS:COSSRC
+      - ECONOMICS:COSSRE
+      - ECONOMICS:COSTR
+- name: country_top_economics_key_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYGDP
+      - ECONOMICS:CYFYGDPG
+      - ECONOMICS:CYGDPCP
+      - ECONOMICS:CYINTR
+      - ECONOMICS:CYIRYY
+      - ECONOMICS:CYUR
+      - ECONOMICS:CYCA
+      - ECONOMICS:CYCAG
+      - ECONOMICS:CYGDG
+      - ECONOMICS:CYBOT
+      - ECONOMICS:CYPOP
+- name: country_top_economics_gdp_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYGDP
+      - ECONOMICS:CYGNP
+      - ECONOMICS:CYGDPCP
+      - ECONOMICS:CYFYGDPG
+      - ECONOMICS:CYGDPQQ
+- name: country_top_economics_government_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYGDG
+      - ECONOMICS:CYGSP
+      - ECONOMICS:CYGSG
+      - ECONOMICS:CYGBV
+      - ECONOMICS:CYGBP
+- name: country_top_economics_business_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYCORR
+- name: country_top_economics_taxes_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYPITR
+      - ECONOMICS:CYCTR
+      - ECONOMICS:CYSSR
+      - ECONOMICS:CYSSRC
+      - ECONOMICS:CYSSRE
+      - ECONOMICS:CYSTR
+- name: country_top_economics_key_cz
+  symbols:
+    tickers:
+      - ECONOMICS:CZGDP
+      - ECONOMICS:CZFYGDPG
+      - ECONOMICS:CZGDPCP
+      - ECONOMICS:CZINTR
+      - ECONOMICS:CZIRYY
+      - ECONOMICS:CZUR
+      - ECONOMICS:CZCA
+      - ECONOMICS:CZCAG
+      - ECONOMICS:CZGDG
+      - ECONOMICS:CZBOT
+      - ECONOMICS:CZPOP
+- name: country_top_economics_gdp_cz
+  symbols:
+    tickers:
+      - ECONOMICS:CZGDP
+      - ECONOMICS:CZGNP
+      - ECONOMICS:CZGDPCP
+      - ECONOMICS:CZFYGDPG
+      - ECONOMICS:CZGDPQQ
+- name: country_top_economics_government_cz
+  symbols:
+    tickers:
+      - ECONOMICS:CZGD
+      - ECONOMICS:CZGDG
+      - ECONOMICS:CZGSP
+      - ECONOMICS:CZGSG
+      - ECONOMICS:CZGBV
+      - ECONOMICS:CZGBP
+- name: country_top_economics_business_cz
+  symbols:
+    tickers:
+      - ECONOMICS:CZCPR
+      - ECONOMICS:CZNO
+      - ECONOMICS:CZCORR
+- name: country_top_economics_taxes_cz
+  symbols:
+    tickers:
+      - ECONOMICS:CZPITR
+      - ECONOMICS:CZCTR
+      - ECONOMICS:CZSSR
+      - ECONOMICS:CZSSRC
+      - ECONOMICS:CZSSRE
+      - ECONOMICS:CZSTR
+- name: country_top_economics_key_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKGDP
+      - ECONOMICS:DKFYGDPG
+      - ECONOMICS:DKGDPCP
+      - ECONOMICS:DKINTR
+      - ECONOMICS:DKIRYY
+      - ECONOMICS:DKUR
+      - ECONOMICS:DKCA
+      - ECONOMICS:DKCAG
+      - ECONOMICS:DKGDG
+      - ECONOMICS:DKBOT
+      - ECONOMICS:DKPOP
+- name: country_top_economics_gdp_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKGDP
+      - ECONOMICS:DKGNP
+      - ECONOMICS:DKGDPCP
+      - ECONOMICS:DKFYGDPG
+      - ECONOMICS:DKGDPQQ
+- name: country_top_economics_government_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKGD
+      - ECONOMICS:DKGDG
+      - ECONOMICS:DKGSP
+      - ECONOMICS:DKGSG
+      - ECONOMICS:DKGBV
+      - ECONOMICS:DKGBP
+- name: country_top_economics_business_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKCPR
+      - ECONOMICS:DKNO
+      - ECONOMICS:DKCORR
+      - ECONOMICS:DKBR
+- name: country_top_economics_taxes_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKPITR
+      - ECONOMICS:DKCTR
+      - ECONOMICS:DKSSR
+      - ECONOMICS:DKSSRC
+      - ECONOMICS:DKSSRE
+      - ECONOMICS:DKSTR
+- name: country_top_economics_key_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGGDP
+      - ECONOMICS:EGGDPCP
+      - ECONOMICS:EGINTR
+      - ECONOMICS:EGIRYY
+      - ECONOMICS:EGUR
+      - ECONOMICS:EGCA
+      - ECONOMICS:EGCAG
+      - ECONOMICS:EGGDG
+      - ECONOMICS:EGBOT
+      - ECONOMICS:EGPOP
+- name: country_top_economics_gdp_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGGDP
+      - ECONOMICS:EGGDPCP
+      - ECONOMICS:EGGDPQQ
+- name: country_top_economics_government_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGGDG
+      - ECONOMICS:EGGSP
+      - ECONOMICS:EGGBV
+      - ECONOMICS:EGGBP
+- name: country_top_economics_business_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGCORR
+- name: country_top_economics_taxes_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGPITR
+      - ECONOMICS:EGCTR
+      - ECONOMICS:EGSSR
+      - ECONOMICS:EGSSRC
+      - ECONOMICS:EGSSRE
+      - ECONOMICS:EGSTR
+- name: country_top_economics_key_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEGDP
+      - ECONOMICS:EEFYGDPG
+      - ECONOMICS:EEGDPCP
+      - ECONOMICS:EEINTR
+      - ECONOMICS:EEIRYY
+      - ECONOMICS:EEUR
+      - ECONOMICS:EECA
+      - ECONOMICS:EECAG
+      - ECONOMICS:EEGDG
+      - ECONOMICS:EEBOT
+      - ECONOMICS:EEPOP
+- name: country_top_economics_gdp_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEGDP
+      - ECONOMICS:EEGDPCP
+      - ECONOMICS:EEFYGDPG
+      - ECONOMICS:EEGDPQQ
+- name: country_top_economics_government_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEGDG
+      - ECONOMICS:EEGSP
+      - ECONOMICS:EEGSG
+      - ECONOMICS:EEGBV
+      - ECONOMICS:EEGBP
+- name: country_top_economics_business_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EECPR
+      - ECONOMICS:EECORR
+- name: country_top_economics_taxes_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEPITR
+      - ECONOMICS:EECTR
+      - ECONOMICS:EESSR
+      - ECONOMICS:EESSRC
+      - ECONOMICS:EESSRE
+      - ECONOMICS:EESTR
+- name: country_top_economics_key_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIGDP
+      - ECONOMICS:FIFYGDPG
+      - ECONOMICS:FIGDPCP
+      - ECONOMICS:FIINTR
+      - ECONOMICS:FIIRYY
+      - ECONOMICS:FIUR
+      - ECONOMICS:FICA
+      - ECONOMICS:FICAG
+      - ECONOMICS:FIGDG
+      - ECONOMICS:FIBOT
+      - ECONOMICS:FIPOP
+- name: country_top_economics_gdp_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIGDP
+      - ECONOMICS:FIGNP
+      - ECONOMICS:FIGDPCP
+      - ECONOMICS:FIFYGDPG
+      - ECONOMICS:FIGDPQQ
+- name: country_top_economics_government_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIGD
+      - ECONOMICS:FIGDG
+      - ECONOMICS:FIGSP
+      - ECONOMICS:FIGSG
+      - ECONOMICS:FIGBV
+      - ECONOMICS:FIGBP
+- name: country_top_economics_business_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FINO
+      - ECONOMICS:FILEI
+      - ECONOMICS:FICORR
+      - ECONOMICS:FIBR
+- name: country_top_economics_taxes_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIPITR
+      - ECONOMICS:FICTR
+      - ECONOMICS:FISSR
+      - ECONOMICS:FISSRC
+      - ECONOMICS:FISSRE
+      - ECONOMICS:FISTR
+- name: country_top_economics_key_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRGDP
+      - ECONOMICS:FRFYGDPG
+      - ECONOMICS:FRGDPCP
+      - ECONOMICS:FRINTR
+      - ECONOMICS:FRIRYY
+      - ECONOMICS:FRUR
+      - ECONOMICS:FRCA
+      - ECONOMICS:FRCAG
+      - ECONOMICS:FRGDG
+      - ECONOMICS:FRBOT
+      - ECONOMICS:FRPOP
+- name: country_top_economics_gdp_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRGDP
+      - ECONOMICS:FRGDPCP
+      - ECONOMICS:FRFYGDPG
+      - ECONOMICS:FRGDPQQ
+- name: country_top_economics_government_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRGD
+      - ECONOMICS:FRGDG
+      - ECONOMICS:FRGSP
+      - ECONOMICS:FRGSG
+      - ECONOMICS:FRGBV
+      - ECONOMICS:FRGBP
+- name: country_top_economics_business_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRNO
+      - ECONOMICS:FRCORR
+      - ECONOMICS:FRBR
+- name: country_top_economics_taxes_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRPITR
+      - ECONOMICS:FRCTR
+      - ECONOMICS:FRSSR
+      - ECONOMICS:FRSSRC
+      - ECONOMICS:FRSSRE
+      - ECONOMICS:FRSTR
+- name: country_top_economics_key_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEGDP
+      - ECONOMICS:DEFYGDPG
+      - ECONOMICS:DEGDPCP
+      - ECONOMICS:DEINTR
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:DEUR
+      - ECONOMICS:DECA
+      - ECONOMICS:DECAG
+      - ECONOMICS:DEGDG
+      - ECONOMICS:DEBOT
+      - ECONOMICS:DEPOP
+- name: country_top_economics_gdp_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEGDP
+      - ECONOMICS:DEGNP
+      - ECONOMICS:DEGDPCP
+      - ECONOMICS:DEFYGDPG
+      - ECONOMICS:DEGDPQQ
+- name: country_top_economics_government_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEGD
+      - ECONOMICS:DEGDG
+      - ECONOMICS:DEGSP
+      - ECONOMICS:DEGSG
+      - ECONOMICS:DEGBV
+      - ECONOMICS:DEGBP
+- name: country_top_economics_business_de
+  symbols:
+    tickers:
+      - ECONOMICS:DECPR
+      - ECONOMICS:DENO
+      - ECONOMICS:DECORR
+      - ECONOMICS:DEBR
+- name: country_top_economics_taxes_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEPITR
+      - ECONOMICS:DECTR
+      - ECONOMICS:DESSR
+      - ECONOMICS:DESSRC
+      - ECONOMICS:DESSRE
+      - ECONOMICS:DESTR
+- name: country_top_economics_key_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRGDP
+      - ECONOMICS:GRFYGDPG
+      - ECONOMICS:GRGDPCP
+      - ECONOMICS:GRINTR
+      - ECONOMICS:GRIRYY
+      - ECONOMICS:GRUR
+      - ECONOMICS:GRCA
+      - ECONOMICS:GRCAG
+      - ECONOMICS:GRGDG
+      - ECONOMICS:GRBOT
+      - ECONOMICS:GRPOP
+- name: country_top_economics_gdp_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRGDP
+      - ECONOMICS:GRGDPCP
+      - ECONOMICS:GRFYGDPG
+      - ECONOMICS:GRGDPQQ
+- name: country_top_economics_government_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRGD
+      - ECONOMICS:GRGDG
+      - ECONOMICS:GRGSP
+      - ECONOMICS:GRGSG
+      - ECONOMICS:GRGBV
+      - ECONOMICS:GRGBP
+- name: country_top_economics_business_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRNO
+      - ECONOMICS:GRCORR
+- name: country_top_economics_taxes_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRPITR
+      - ECONOMICS:GRCTR
+      - ECONOMICS:GRSSR
+      - ECONOMICS:GRSSRC
+      - ECONOMICS:GRSSRE
+      - ECONOMICS:GRSTR
+- name: country_top_economics_key_hk
+  symbols:
+    tickers:
+      - ECONOMICS:HKGDP
+      - ECONOMICS:HKFYGDPG
+      - ECONOMICS:HKGDPCP
+      - ECONOMICS:HKINTR
+      - ECONOMICS:HKIRYY
+      - ECONOMICS:HKUR
+      - ECONOMICS:HKCA
+      - ECONOMICS:HKCAG
+      - ECONOMICS:HKGDG
+      - ECONOMICS:HKBOT
+      - ECONOMICS:HKPOP
+- name: country_top_economics_gdp_hk
+  symbols:
+    tickers:
+      - ECONOMICS:HKGDP
+      - ECONOMICS:HKGNP
+      - ECONOMICS:HKGDPCP
+      - ECONOMICS:HKFYGDPG
+      - ECONOMICS:HKGDPQQ
+- name: country_top_economics_government_hk
+  symbols:
+    tickers:
+      - ECONOMICS:HKGDG
+      - ECONOMICS:HKGSP
+      - ECONOMICS:HKGBV
+      - ECONOMICS:HKGBP
+- name: country_top_economics_business_hk
+  symbols:
+    tickers:
+      - ECONOMICS:HKCORR
+      - ECONOMICS:HKBR
+- name: country_top_economics_taxes_hk
+  symbols:
+    tickers:
+      - ECONOMICS:HKPITR
+      - ECONOMICS:HKCTR
+- name: country_top_economics_key_hu
+  symbols:
+    tickers:
+      - ECONOMICS:HUGDP
+      - ECONOMICS:HUFYGDPG
+      - ECONOMICS:HUGDPCP
+      - ECONOMICS:HUINTR
+      - ECONOMICS:HUIRYY
+      - ECONOMICS:HUUR
+      - ECONOMICS:HUCA
+      - ECONOMICS:HUCAG
+      - ECONOMICS:HUGDG
+      - ECONOMICS:HUBOT
+      - ECONOMICS:HUPOP
+- name: country_top_economics_gdp_hu
+  symbols:
+    tickers:
+      - ECONOMICS:HUGDP
+      - ECONOMICS:HUGDPCP
+      - ECONOMICS:HUFYGDPG
+      - ECONOMICS:HUGDPQQ
+- name: country_top_economics_government_hu
+  symbols:
+    tickers:
+      - ECONOMICS:HUGD
+      - ECONOMICS:HUGDG
+      - ECONOMICS:HUGSP
+      - ECONOMICS:HUGSG
+      - ECONOMICS:HUGBV
+      - ECONOMICS:HUGBP
+- name: country_top_economics_business_hu
+  symbols:
+    tickers:
+      - ECONOMICS:HUNO
+      - ECONOMICS:HUCORR
+- name: country_top_economics_taxes_hu
+  symbols:
+    tickers:
+      - ECONOMICS:HUPITR
+      - ECONOMICS:HUCTR
+      - ECONOMICS:HUSSR
+      - ECONOMICS:HUSSRC
+      - ECONOMICS:HUSSRE
+      - ECONOMICS:HUSTR
+- name: country_top_economics_key_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISGDP
+      - ECONOMICS:ISFYGDPG
+      - ECONOMICS:ISGDPCP
+      - ECONOMICS:ISINTR
+      - ECONOMICS:ISIRYY
+      - ECONOMICS:ISUR
+      - ECONOMICS:ISCA
+      - ECONOMICS:ISCAG
+      - ECONOMICS:ISGDG
+      - ECONOMICS:ISBOT
+      - ECONOMICS:ISPOP
+- name: country_top_economics_gdp_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISGDP
+      - ECONOMICS:ISGNP
+      - ECONOMICS:ISGDPCP
+      - ECONOMICS:ISFYGDPG
+      - ECONOMICS:ISGDPQQ
+- name: country_top_economics_government_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISGDG
+      - ECONOMICS:ISGSP
+      - ECONOMICS:ISGSG
+      - ECONOMICS:ISGBV
+      - ECONOMICS:ISGBP
+- name: country_top_economics_business_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISCORR
+      - ECONOMICS:ISBR
+- name: country_top_economics_taxes_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISPITR
+      - ECONOMICS:ISCTR
+      - ECONOMICS:ISSSR
+      - ECONOMICS:ISSSRC
+      - ECONOMICS:ISSSRE
+      - ECONOMICS:ISSTR
+- name: country_top_economics_key_in
+  symbols:
+    tickers:
+      - ECONOMICS:INGDP
+      - ECONOMICS:INFYGDPG
+      - ECONOMICS:INGDPCP
+      - ECONOMICS:ININTR
+      - ECONOMICS:INIRYY
+      - ECONOMICS:INUR
+      - ECONOMICS:INCA
+      - ECONOMICS:INCAG
+      - ECONOMICS:INGDG
+      - ECONOMICS:INBOT
+      - ECONOMICS:INPOP
+- name: country_top_economics_gdp_in
+  symbols:
+    tickers:
+      - ECONOMICS:INGDP
+      - ECONOMICS:INGNP
+      - ECONOMICS:INGDPCP
+      - ECONOMICS:INFYGDPG
+      - ECONOMICS:INGDPQQ
+- name: country_top_economics_government_in
+  symbols:
+    tickers:
+      - ECONOMICS:INGDG
+      - ECONOMICS:INGSP
+      - ECONOMICS:INGSG
+      - ECONOMICS:INGBV
+      - ECONOMICS:INGBP
+- name: country_top_economics_business_in
+  symbols:
+    tickers:
+      - ECONOMICS:INCORR
+- name: country_top_economics_taxes_in
+  symbols:
+    tickers:
+      - ECONOMICS:INPITR
+      - ECONOMICS:INCTR
+      - ECONOMICS:INSSR
+      - ECONOMICS:INSSRC
+      - ECONOMICS:INSSRE
+      - ECONOMICS:INSTR
+- name: country_top_economics_key_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDGDP
+      - ECONOMICS:IDFYGDPG
+      - ECONOMICS:IDGDPCP
+      - ECONOMICS:IDINTR
+      - ECONOMICS:IDIRYY
+      - ECONOMICS:IDUR
+      - ECONOMICS:IDCA
+      - ECONOMICS:IDCAG
+      - ECONOMICS:IDGDG
+      - ECONOMICS:IDBOT
+      - ECONOMICS:IDPOP
+- name: country_top_economics_gdp_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDGDP
+      - ECONOMICS:IDGNP
+      - ECONOMICS:IDGDPCP
+      - ECONOMICS:IDFYGDPG
+      - ECONOMICS:IDGDPQQ
+- name: country_top_economics_government_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDGDG
+      - ECONOMICS:IDGSP
+      - ECONOMICS:IDGBV
+      - ECONOMICS:IDGBP
+- name: country_top_economics_business_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDCORR
+- name: country_top_economics_taxes_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDPITR
+      - ECONOMICS:IDCTR
+      - ECONOMICS:IDSSR
+      - ECONOMICS:IDSSRC
+      - ECONOMICS:IDSSRE
+      - ECONOMICS:IDSTR
+- name: country_top_economics_key_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILGDP
+      - ECONOMICS:ILFYGDPG
+      - ECONOMICS:ILGDPCP
+      - ECONOMICS:ILINTR
+      - ECONOMICS:ILIRYY
+      - ECONOMICS:ILUR
+      - ECONOMICS:ILCA
+      - ECONOMICS:ILCAG
+      - ECONOMICS:ILGDG
+      - ECONOMICS:ILBOT
+      - ECONOMICS:ILPOP
+- name: country_top_economics_gdp_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILGDP
+      - ECONOMICS:ILGNP
+      - ECONOMICS:ILGDPCP
+      - ECONOMICS:ILFYGDPG
+      - ECONOMICS:ILGDPQQ
+- name: country_top_economics_government_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILGDG
+      - ECONOMICS:ILGSP
+      - ECONOMICS:ILGSG
+      - ECONOMICS:ILGBV
+      - ECONOMICS:ILGBP
+- name: country_top_economics_business_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILLEI
+      - ECONOMICS:ILCORR
+- name: country_top_economics_taxes_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILPITR
+      - ECONOMICS:ILCTR
+      - ECONOMICS:ILSSR
+      - ECONOMICS:ILSSRC
+      - ECONOMICS:ILSSRE
+      - ECONOMICS:ILSTR
+- name: country_top_economics_key_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITGDP
+      - ECONOMICS:ITFYGDPG
+      - ECONOMICS:ITGDPCP
+      - ECONOMICS:ITINTR
+      - ECONOMICS:ITIRYY
+      - ECONOMICS:ITUR
+      - ECONOMICS:ITCA
+      - ECONOMICS:ITCAG
+      - ECONOMICS:ITGDG
+      - ECONOMICS:ITBOT
+      - ECONOMICS:ITPOP
+- name: country_top_economics_gdp_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITGDP
+      - ECONOMICS:ITGDPCP
+      - ECONOMICS:ITFYGDPG
+      - ECONOMICS:ITGDPQQ
+- name: country_top_economics_government_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITGD
+      - ECONOMICS:ITGDG
+      - ECONOMICS:ITGSP
+      - ECONOMICS:ITGSG
+      - ECONOMICS:ITGBV
+      - ECONOMICS:ITGBP
+- name: country_top_economics_business_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITNO
+      - ECONOMICS:ITCORR
+      - ECONOMICS:ITBR
+- name: country_top_economics_taxes_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITPITR
+      - ECONOMICS:ITCTR
+      - ECONOMICS:ITSSR
+      - ECONOMICS:ITSSRC
+      - ECONOMICS:ITSSRE
+      - ECONOMICS:ITSTR
+- name: country_top_economics_key_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPGDP
+      - ECONOMICS:JPFYGDPG
+      - ECONOMICS:JPGDPCP
+      - ECONOMICS:JPINTR
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:JPUR
+      - ECONOMICS:JPCA
+      - ECONOMICS:JPCAG
+      - ECONOMICS:JPGDG
+      - ECONOMICS:JPBOT
+      - ECONOMICS:JPPOP
+- name: country_top_economics_gdp_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPGDP
+      - ECONOMICS:JPGNP
+      - ECONOMICS:JPGDPCP
+      - ECONOMICS:JPFYGDPG
+      - ECONOMICS:JPGDPQQ
+- name: country_top_economics_government_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPGDG
+      - ECONOMICS:JPGSP
+      - ECONOMICS:JPGSG
+      - ECONOMICS:JPGBV
+      - ECONOMICS:JPGBP
+- name: country_top_economics_business_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPCPR
+      - ECONOMICS:JPNO
+      - ECONOMICS:JPLEI
+      - ECONOMICS:JPCORR
+      - ECONOMICS:JPBR
+- name: country_top_economics_taxes_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPPITR
+      - ECONOMICS:JPCTR
+      - ECONOMICS:JPSSR
+      - ECONOMICS:JPSSRC
+      - ECONOMICS:JPSSRE
+      - ECONOMICS:JPSTR
+- name: country_top_economics_key_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEGDP
+      - ECONOMICS:KEFYGDPG
+      - ECONOMICS:KEGDPCP
+      - ECONOMICS:KEINTR
+      - ECONOMICS:KEIRYY
+      - ECONOMICS:KEUR
+      - ECONOMICS:KECA
+      - ECONOMICS:KECAG
+      - ECONOMICS:KEGDG
+      - ECONOMICS:KEBOT
+      - ECONOMICS:KEPOP
+- name: country_top_economics_gdp_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEGDP
+      - ECONOMICS:KEGDPCP
+      - ECONOMICS:KEFYGDPG
+      - ECONOMICS:KEGDPQQ
+- name: country_top_economics_government_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEGD
+      - ECONOMICS:KEGDG
+      - ECONOMICS:KEGSP
+      - ECONOMICS:KEGBV
+      - ECONOMICS:KEGBP
+- name: country_top_economics_business_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KECORR
+- name: country_top_economics_taxes_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEPITR
+      - ECONOMICS:KECTR
+      - ECONOMICS:KESSR
+      - ECONOMICS:KESSRC
+      - ECONOMICS:KESSRE
+      - ECONOMICS:KESTR
+- name: country_top_economics_key_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRGDP
+      - ECONOMICS:KRFYGDPG
+      - ECONOMICS:KRGDPCP
+      - ECONOMICS:KRINTR
+      - ECONOMICS:KRIRYY
+      - ECONOMICS:KRUR
+      - ECONOMICS:KRCA
+      - ECONOMICS:KRCAG
+      - ECONOMICS:KRGDG
+      - ECONOMICS:KRBOT
+      - ECONOMICS:KRPOP
+- name: country_top_economics_gdp_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRGDP
+      - ECONOMICS:KRGNP
+      - ECONOMICS:KRGDPCP
+      - ECONOMICS:KRFYGDPG
+      - ECONOMICS:KRGDPQQ
+- name: country_top_economics_government_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRGDG
+      - ECONOMICS:KRGSP
+      - ECONOMICS:KRGSG
+      - ECONOMICS:KRGBV
+      - ECONOMICS:KRGBP
+- name: country_top_economics_business_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRNO
+      - ECONOMICS:KRLEI
+      - ECONOMICS:KRCORR
+      - ECONOMICS:KRBR
+- name: country_top_economics_taxes_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRPITR
+      - ECONOMICS:KRCTR
+      - ECONOMICS:KRSSR
+      - ECONOMICS:KRSSRC
+      - ECONOMICS:KRSSRE
+      - ECONOMICS:KRSTR
+- name: country_top_economics_key_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAGDP
+      - ECONOMICS:SAFYGDPG
+      - ECONOMICS:SAGDPCP
+      - ECONOMICS:SAINTR
+      - ECONOMICS:SAIRYY
+      - ECONOMICS:SAUR
+      - ECONOMICS:SACA
+      - ECONOMICS:SACAG
+      - ECONOMICS:SAGDG
+      - ECONOMICS:SABOT
+      - ECONOMICS:SAPOP
+- name: country_top_economics_gdp_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAGDP
+      - ECONOMICS:SAGDPCP
+      - ECONOMICS:SAFYGDPG
+      - ECONOMICS:SAGDPQQ
+- name: country_top_economics_government_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAGDG
+      - ECONOMICS:SAGSP
+      - ECONOMICS:SAGBV
+      - ECONOMICS:SAGBP
+- name: country_top_economics_business_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SACORR
+- name: country_top_economics_taxes_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAPITR
+      - ECONOMICS:SACTR
+      - ECONOMICS:SASSR
+      - ECONOMICS:SASSRC
+      - ECONOMICS:SASSRE
+      - ECONOMICS:SASTR
+- name: country_top_economics_key_kw
+  symbols:
+    tickers:
+      - ECONOMICS:KWGDP
+      - ECONOMICS:KWGDPCP
+      - ECONOMICS:KWINTR
+      - ECONOMICS:KWIRYY
+      - ECONOMICS:KWUR
+      - ECONOMICS:KWCA
+      - ECONOMICS:KWCAG
+      - ECONOMICS:KWGDG
+      - ECONOMICS:KWBOT
+      - ECONOMICS:KWPOP
+- name: country_top_economics_gdp_kw
+  symbols:
+    tickers:
+      - ECONOMICS:KWGDP
+      - ECONOMICS:KWGDPCP
+      - ECONOMICS:KWGDPQQ
+- name: country_top_economics_government_kw
+  symbols:
+    tickers:
+      - ECONOMICS:KWGDG
+      - ECONOMICS:KWGSP
+      - ECONOMICS:KWGBV
+      - ECONOMICS:KWGBP
+- name: country_top_economics_business_kw
+  symbols:
+    tickers:
+      - ECONOMICS:KWCORR
+- name: country_top_economics_taxes_kw
+  symbols:
+    tickers:
+      - ECONOMICS:KWPITR
+      - ECONOMICS:KWCTR
+      - ECONOMICS:KWSSR
+      - ECONOMICS:KWSSRC
+      - ECONOMICS:KWSSRE
+- name: country_top_economics_key_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVGDP
+      - ECONOMICS:LVFYGDPG
+      - ECONOMICS:LVGDPCP
+      - ECONOMICS:LVINTR
+      - ECONOMICS:LVIRYY
+      - ECONOMICS:LVUR
+      - ECONOMICS:LVCA
+      - ECONOMICS:LVCAG
+      - ECONOMICS:LVGDG
+      - ECONOMICS:LVBOT
+      - ECONOMICS:LVPOP
+- name: country_top_economics_gdp_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVGDP
+      - ECONOMICS:LVGNP
+      - ECONOMICS:LVGDPCP
+      - ECONOMICS:LVFYGDPG
+      - ECONOMICS:LVGDPQQ
+- name: country_top_economics_government_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVGD
+      - ECONOMICS:LVGDG
+      - ECONOMICS:LVGSP
+      - ECONOMICS:LVGSG
+      - ECONOMICS:LVGBV
+      - ECONOMICS:LVGBP
+- name: country_top_economics_business_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVCORR
+- name: country_top_economics_taxes_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVPITR
+      - ECONOMICS:LVCTR
+      - ECONOMICS:LVSSR
+      - ECONOMICS:LVSSRC
+      - ECONOMICS:LVSSRE
+      - ECONOMICS:LVSTR
+- name: country_top_economics_key_lt
+  symbols:
+    tickers:
+      - ECONOMICS:LTGDP
+      - ECONOMICS:LTFYGDPG
+      - ECONOMICS:LTGDPCP
+      - ECONOMICS:LTINTR
+      - ECONOMICS:LTIRYY
+      - ECONOMICS:LTUR
+      - ECONOMICS:LTCA
+      - ECONOMICS:LTCAG
+      - ECONOMICS:LTGDG
+      - ECONOMICS:LTBOT
+      - ECONOMICS:LTPOP
+- name: country_top_economics_gdp_lt
+  symbols:
+    tickers:
+      - ECONOMICS:LTGDP
+      - ECONOMICS:LTGNP
+      - ECONOMICS:LTGDPCP
+      - ECONOMICS:LTFYGDPG
+      - ECONOMICS:LTGDPQQ
+- name: country_top_economics_government_lt
+  symbols:
+    tickers:
+      - ECONOMICS:LTGD
+      - ECONOMICS:LTGDG
+      - ECONOMICS:LTGSP
+      - ECONOMICS:LTGSG
+      - ECONOMICS:LTGBV
+      - ECONOMICS:LTGBP
+- name: country_top_economics_business_lt
+  symbols:
+    tickers:
+      - ECONOMICS:LTCORR
+      - ECONOMICS:LTBR
+- name: country_top_economics_taxes_lt
+  symbols:
+    tickers:
+      - ECONOMICS:LTPITR
+      - ECONOMICS:LTCTR
+      - ECONOMICS:LTSSR
+      - ECONOMICS:LTSSRC
+      - ECONOMICS:LTSSRE
+      - ECONOMICS:LTSTR
+- name: country_top_economics_key_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUGDP
+      - ECONOMICS:LUFYGDPG
+      - ECONOMICS:LUGDPCP
+      - ECONOMICS:LUINTR
+      - ECONOMICS:LUIRYY
+      - ECONOMICS:LUUR
+      - ECONOMICS:LUCA
+      - ECONOMICS:LUCAG
+      - ECONOMICS:LUGDG
+      - ECONOMICS:LUBOT
+      - ECONOMICS:LUPOP
+- name: country_top_economics_gdp_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUGDP
+      - ECONOMICS:LUGDPCP
+      - ECONOMICS:LUFYGDPG
+      - ECONOMICS:LUGDPQQ
+- name: country_top_economics_government_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUGDG
+      - ECONOMICS:LUGSP
+      - ECONOMICS:LUGSG
+      - ECONOMICS:LUGBV
+      - ECONOMICS:LUGBP
+- name: country_top_economics_business_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUNO
+      - ECONOMICS:LUCORR
+      - ECONOMICS:LUBR
+- name: country_top_economics_taxes_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUPITR
+      - ECONOMICS:LUCTR
+      - ECONOMICS:LUSSR
+      - ECONOMICS:LUSSRC
+      - ECONOMICS:LUSSRE
+      - ECONOMICS:LUSTR
+- name: country_top_economics_key_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYGDP
+      - ECONOMICS:MYGDPCP
+      - ECONOMICS:MYINTR
+      - ECONOMICS:MYIRYY
+      - ECONOMICS:MYUR
+      - ECONOMICS:MYCA
+      - ECONOMICS:MYCAG
+      - ECONOMICS:MYGDG
+      - ECONOMICS:MYBOT
+      - ECONOMICS:MYPOP
+- name: country_top_economics_gdp_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYGDP
+      - ECONOMICS:MYGNP
+      - ECONOMICS:MYGDPCP
+      - ECONOMICS:MYGDPQQ
+- name: country_top_economics_government_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYGDG
+      - ECONOMICS:MYGSP
+      - ECONOMICS:MYGBV
+      - ECONOMICS:MYGBP
+- name: country_top_economics_business_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYLEI
+      - ECONOMICS:MYCORR
+      - ECONOMICS:MYBR
+- name: country_top_economics_taxes_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYPITR
+      - ECONOMICS:MYCTR
+      - ECONOMICS:MYSSR
+      - ECONOMICS:MYSSRC
+      - ECONOMICS:MYSSRE
+      - ECONOMICS:MYSTR
+- name: country_top_economics_key_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXGDP
+      - ECONOMICS:MXFYGDPG
+      - ECONOMICS:MXGDPCP
+      - ECONOMICS:MXINTR
+      - ECONOMICS:MXIRYY
+      - ECONOMICS:MXUR
+      - ECONOMICS:MXCA
+      - ECONOMICS:MXCAG
+      - ECONOMICS:MXGDG
+      - ECONOMICS:MXBOT
+      - ECONOMICS:MXPOP
+- name: country_top_economics_gdp_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXGDP
+      - ECONOMICS:MXGDPCP
+      - ECONOMICS:MXFYGDPG
+      - ECONOMICS:MXGDPQQ
+- name: country_top_economics_government_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXGDG
+      - ECONOMICS:MXGSP
+      - ECONOMICS:MXGBV
+      - ECONOMICS:MXGBP
+- name: country_top_economics_business_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXLEI
+      - ECONOMICS:MXCORR
+- name: country_top_economics_taxes_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXPITR
+      - ECONOMICS:MXCTR
+      - ECONOMICS:MXSSR
+      - ECONOMICS:MXSSRC
+      - ECONOMICS:MXSSRE
+      - ECONOMICS:MXSTR
+- name: country_top_economics_key_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAGDP
+      - ECONOMICS:MAFYGDPG
+      - ECONOMICS:MAGDPCP
+      - ECONOMICS:MAINTR
+      - ECONOMICS:MAIRYY
+      - ECONOMICS:MAUR
+      - ECONOMICS:MACA
+      - ECONOMICS:MACAG
+      - ECONOMICS:MAGDG
+      - ECONOMICS:MABOT
+      - ECONOMICS:MAPOP
+- name: country_top_economics_gdp_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAGDP
+      - ECONOMICS:MAGDPCP
+      - ECONOMICS:MAFYGDPG
+      - ECONOMICS:MAGDPQQ
+- name: country_top_economics_government_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAGDG
+      - ECONOMICS:MAGSP
+      - ECONOMICS:MAGBP
+- name: country_top_economics_business_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MACORR
+- name: country_top_economics_taxes_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAPITR
+      - ECONOMICS:MACTR
+      - ECONOMICS:MASSR
+      - ECONOMICS:MASSRC
+      - ECONOMICS:MASSRE
+      - ECONOMICS:MASTR
+- name: country_top_economics_key_nl
+  symbols:
+    tickers:
+      - ECONOMICS:NLGDP
+      - ECONOMICS:NLFYGDPG
+      - ECONOMICS:NLGDPCP
+      - ECONOMICS:NLINTR
+      - ECONOMICS:NLIRYY
+      - ECONOMICS:NLUR
+      - ECONOMICS:NLCA
+      - ECONOMICS:NLCAG
+      - ECONOMICS:NLGDG
+      - ECONOMICS:NLBOT
+      - ECONOMICS:NLPOP
+- name: country_top_economics_gdp_nl
+  symbols:
+    tickers:
+      - ECONOMICS:NLGDP
+      - ECONOMICS:NLGNP
+      - ECONOMICS:NLGDPCP
+      - ECONOMICS:NLFYGDPG
+      - ECONOMICS:NLGDPQQ
+- name: country_top_economics_government_nl
+  symbols:
+    tickers:
+      - ECONOMICS:NLGD
+      - ECONOMICS:NLGDG
+      - ECONOMICS:NLGSP
+      - ECONOMICS:NLGSG
+      - ECONOMICS:NLGBV
+      - ECONOMICS:NLGBP
+- name: country_top_economics_business_nl
+  symbols:
+    tickers:
+      - ECONOMICS:NLNO
+      - ECONOMICS:NLCORR
+      - ECONOMICS:NLBR
+- name: country_top_economics_taxes_nl
+  symbols:
+    tickers:
+      - ECONOMICS:NLPITR
+      - ECONOMICS:NLCTR
+      - ECONOMICS:NLSSR
+      - ECONOMICS:NLSSRC
+      - ECONOMICS:NLSSRE
+      - ECONOMICS:NLSTR
+- name: country_top_economics_key_nz
+  symbols:
+    tickers:
+      - ECONOMICS:NZGDP
+      - ECONOMICS:NZFYGDPG
+      - ECONOMICS:NZGDPCP
+      - ECONOMICS:NZINTR
+      - ECONOMICS:NZIRYY
+      - ECONOMICS:NZUR
+      - ECONOMICS:NZCA
+      - ECONOMICS:NZCAG
+      - ECONOMICS:NZGDG
+      - ECONOMICS:NZBOT
+      - ECONOMICS:NZPOP
+- name: country_top_economics_gdp_nz
+  symbols:
+    tickers:
+      - ECONOMICS:NZGDP
+      - ECONOMICS:NZGNP
+      - ECONOMICS:NZGDPCP
+      - ECONOMICS:NZFYGDPG
+      - ECONOMICS:NZGDPQQ
+- name: country_top_economics_government_nz
+  symbols:
+    tickers:
+      - ECONOMICS:NZGD
+      - ECONOMICS:NZGDG
+      - ECONOMICS:NZGSP
+      - ECONOMICS:NZGBV
+      - ECONOMICS:NZGBP
+- name: country_top_economics_business_nz
+  symbols:
+    tickers:
+      - ECONOMICS:NZCORR
+      - ECONOMICS:NZBR
+- name: country_top_economics_taxes_nz
+  symbols:
+    tickers:
+      - ECONOMICS:NZPITR
+      - ECONOMICS:NZCTR
+      - ECONOMICS:NZSSR
+      - ECONOMICS:NZSSRC
+      - ECONOMICS:NZSSRE
+      - ECONOMICS:NZSTR
+- name: country_top_economics_key_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGGDP
+      - ECONOMICS:NGFYGDPG
+      - ECONOMICS:NGGDPCP
+      - ECONOMICS:NGINTR
+      - ECONOMICS:NGIRYY
+      - ECONOMICS:NGUR
+      - ECONOMICS:NGCA
+      - ECONOMICS:NGCAG
+      - ECONOMICS:NGGDG
+      - ECONOMICS:NGBOT
+      - ECONOMICS:NGPOP
+- name: country_top_economics_gdp_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGGDP
+      - ECONOMICS:NGGDPCP
+      - ECONOMICS:NGFYGDPG
+      - ECONOMICS:NGGDPQQ
+- name: country_top_economics_government_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGGD
+      - ECONOMICS:NGGDG
+      - ECONOMICS:NGGSP
+      - ECONOMICS:NGGBV
+      - ECONOMICS:NGGBP
+- name: country_top_economics_business_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGCORR
+- name: country_top_economics_taxes_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGPITR
+      - ECONOMICS:NGCTR
+      - ECONOMICS:NGSTR
+- name: country_top_economics_key_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOGDP
+      - ECONOMICS:NOFYGDPG
+      - ECONOMICS:NOGDPCP
+      - ECONOMICS:NOINTR
+      - ECONOMICS:NOIRYY
+      - ECONOMICS:NOUR
+      - ECONOMICS:NOCA
+      - ECONOMICS:NOCAG
+      - ECONOMICS:NOGDG
+      - ECONOMICS:NOBOT
+      - ECONOMICS:NOPOP
+- name: country_top_economics_gdp_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOGDP
+      - ECONOMICS:NOGNP
+      - ECONOMICS:NOGDPCP
+      - ECONOMICS:NOFYGDPG
+      - ECONOMICS:NOGDPQQ
+- name: country_top_economics_government_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOGD
+      - ECONOMICS:NOGDG
+      - ECONOMICS:NOGSP
+      - ECONOMICS:NOGSG
+      - ECONOMICS:NOGBV
+      - ECONOMICS:NOGBP
+- name: country_top_economics_business_no
+  symbols:
+    tickers:
+      - ECONOMICS:NONO
+      - ECONOMICS:NOLEI
+      - ECONOMICS:NOCORR
+      - ECONOMICS:NOBR
+- name: country_top_economics_taxes_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOPITR
+      - ECONOMICS:NOCTR
+      - ECONOMICS:NOSSR
+      - ECONOMICS:NOSSRC
+      - ECONOMICS:NOSSRE
+      - ECONOMICS:NOSTR
+- name: country_top_economics_key_pk
+  symbols:
+    tickers:
+      - ECONOMICS:PKGDP
+      - ECONOMICS:PKGDPCP
+      - ECONOMICS:PKINTR
+      - ECONOMICS:PKIRYY
+      - ECONOMICS:PKUR
+      - ECONOMICS:PKCA
+      - ECONOMICS:PKCAG
+      - ECONOMICS:PKGDG
+      - ECONOMICS:PKBOT
+      - ECONOMICS:PKPOP
+- name: country_top_economics_gdp_pk
+  symbols:
+    tickers:
+      - ECONOMICS:PKGDP
+      - ECONOMICS:PKGNP
+      - ECONOMICS:PKGDPCP
+      - ECONOMICS:PKGDPQQ
+- name: country_top_economics_government_pk
+  symbols:
+    tickers:
+      - ECONOMICS:PKGD
+      - ECONOMICS:PKGDG
+      - ECONOMICS:PKGSP
+      - ECONOMICS:PKGBV
+      - ECONOMICS:PKGBP
+- name: country_top_economics_business_pk
+  symbols:
+    tickers:
+      - ECONOMICS:PKCORR
+- name: country_top_economics_taxes_pk
+  symbols:
+    tickers:
+      - ECONOMICS:PKPITR
+      - ECONOMICS:PKCTR
+      - ECONOMICS:PKSTR
+- name: country_top_economics_key_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEGDP
+      - ECONOMICS:PEFYGDPG
+      - ECONOMICS:PEGDPCP
+      - ECONOMICS:PEINTR
+      - ECONOMICS:PEIRYY
+      - ECONOMICS:PEUR
+      - ECONOMICS:PECA
+      - ECONOMICS:PECAG
+      - ECONOMICS:PEGDG
+      - ECONOMICS:PEBOT
+      - ECONOMICS:PEPOP
+- name: country_top_economics_gdp_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEGDP
+      - ECONOMICS:PEGNP
+      - ECONOMICS:PEGDPCP
+      - ECONOMICS:PEFYGDPG
+      - ECONOMICS:PEGDPQQ
+- name: country_top_economics_government_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEGDG
+      - ECONOMICS:PEGSP
+      - ECONOMICS:PEGBV
+      - ECONOMICS:PEGBP
+- name: country_top_economics_business_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PELEI
+      - ECONOMICS:PECORR
+- name: country_top_economics_taxes_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEPITR
+      - ECONOMICS:PECTR
+      - ECONOMICS:PESTR
+- name: country_top_economics_key_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHGDP
+      - ECONOMICS:PHFYGDPG
+      - ECONOMICS:PHGDPCP
+      - ECONOMICS:PHINTR
+      - ECONOMICS:PHIRYY
+      - ECONOMICS:PHUR
+      - ECONOMICS:PHCA
+      - ECONOMICS:PHCAG
+      - ECONOMICS:PHGDG
+      - ECONOMICS:PHBOT
+      - ECONOMICS:PHPOP
+- name: country_top_economics_gdp_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHGDP
+      - ECONOMICS:PHGNP
+      - ECONOMICS:PHGDPCP
+      - ECONOMICS:PHFYGDPG
+      - ECONOMICS:PHGDPQQ
+- name: country_top_economics_government_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHGDG
+      - ECONOMICS:PHGSP
+      - ECONOMICS:PHGBV
+      - ECONOMICS:PHGBP
+- name: country_top_economics_business_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHLEI
+      - ECONOMICS:PHCORR
+- name: country_top_economics_taxes_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHPITR
+      - ECONOMICS:PHCTR
+      - ECONOMICS:PHSSR
+      - ECONOMICS:PHSSRC
+      - ECONOMICS:PHSSRE
+      - ECONOMICS:PHSTR
+- name: country_top_economics_key_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLGDP
+      - ECONOMICS:PLFYGDPG
+      - ECONOMICS:PLGDPCP
+      - ECONOMICS:PLINTR
+      - ECONOMICS:PLIRYY
+      - ECONOMICS:PLUR
+      - ECONOMICS:PLCA
+      - ECONOMICS:PLCAG
+      - ECONOMICS:PLGDG
+      - ECONOMICS:PLBOT
+      - ECONOMICS:PLPOP
+- name: country_top_economics_gdp_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLGDP
+      - ECONOMICS:PLGDPCP
+      - ECONOMICS:PLFYGDPG
+      - ECONOMICS:PLGDPQQ
+- name: country_top_economics_government_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLGD
+      - ECONOMICS:PLGDG
+      - ECONOMICS:PLGSP
+      - ECONOMICS:PLGSG
+      - ECONOMICS:PLGBV
+      - ECONOMICS:PLGBP
+- name: country_top_economics_business_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLCPR
+      - ECONOMICS:PLNO
+      - ECONOMICS:PLCORR
+- name: country_top_economics_taxes_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLPITR
+      - ECONOMICS:PLCTR
+      - ECONOMICS:PLSSR
+      - ECONOMICS:PLSSRC
+      - ECONOMICS:PLSSRE
+      - ECONOMICS:PLSTR
+- name: country_top_economics_key_pt
+  symbols:
+    tickers:
+      - ECONOMICS:PTGDP
+      - ECONOMICS:PTFYGDPG
+      - ECONOMICS:PTGDPCP
+      - ECONOMICS:PTINTR
+      - ECONOMICS:PTIRYY
+      - ECONOMICS:PTUR
+      - ECONOMICS:PTCA
+      - ECONOMICS:PTCAG
+      - ECONOMICS:PTGDG
+      - ECONOMICS:PTBOT
+      - ECONOMICS:PTPOP
+- name: country_top_economics_gdp_pt
+  symbols:
+    tickers:
+      - ECONOMICS:PTGDP
+      - ECONOMICS:PTGNP
+      - ECONOMICS:PTGDPCP
+      - ECONOMICS:PTFYGDPG
+      - ECONOMICS:PTGDPQQ
+- name: country_top_economics_government_pt
+  symbols:
+    tickers:
+      - ECONOMICS:PTGD
+      - ECONOMICS:PTGDG
+      - ECONOMICS:PTGSP
+      - ECONOMICS:PTGSG
+      - ECONOMICS:PTGBV
+      - ECONOMICS:PTGBP
+- name: country_top_economics_business_pt
+  symbols:
+    tickers:
+      - ECONOMICS:PTNO
+      - ECONOMICS:PTLEI
+      - ECONOMICS:PTCORR
+- name: country_top_economics_taxes_pt
+  symbols:
+    tickers:
+      - ECONOMICS:PTPITR
+      - ECONOMICS:PTCTR
+      - ECONOMICS:PTSSR
+      - ECONOMICS:PTSSRC
+      - ECONOMICS:PTSSRE
+      - ECONOMICS:PTSTR
+- name: country_top_economics_key_qa
+  symbols:
+    tickers:
+      - ECONOMICS:QAGDP
+      - ECONOMICS:QAGDPCP
+      - ECONOMICS:QAINTR
+      - ECONOMICS:QAIRYY
+      - ECONOMICS:QAUR
+      - ECONOMICS:QACA
+      - ECONOMICS:QACAG
+      - ECONOMICS:QAGDG
+      - ECONOMICS:QABOT
+      - ECONOMICS:QAPOP
+- name: country_top_economics_gdp_qa
+  symbols:
+    tickers:
+      - ECONOMICS:QAGDP
+      - ECONOMICS:QAGDPCP
+      - ECONOMICS:QAGDPQQ
+- name: country_top_economics_government_qa
+  symbols:
+    tickers:
+      - ECONOMICS:QAGDG
+      - ECONOMICS:QAGSP
+      - ECONOMICS:QAGBV
+      - ECONOMICS:QAGBP
+- name: country_top_economics_business_qa
+  symbols:
+    tickers:
+      - ECONOMICS:QACORR
+- name: country_top_economics_taxes_qa
+  symbols:
+    tickers:
+      - ECONOMICS:QAPITR
+      - ECONOMICS:QACTR
+      - ECONOMICS:QASSR
+      - ECONOMICS:QASSRC
+      - ECONOMICS:QASSRE
+- name: country_top_economics_key_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROGDP
+      - ECONOMICS:ROFYGDPG
+      - ECONOMICS:ROGDPCP
+      - ECONOMICS:ROINTR
+      - ECONOMICS:ROIRYY
+      - ECONOMICS:ROUR
+      - ECONOMICS:ROCA
+      - ECONOMICS:ROCAG
+      - ECONOMICS:ROGDG
+      - ECONOMICS:ROBOT
+      - ECONOMICS:ROPOP
+- name: country_top_economics_gdp_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROGDP
+      - ECONOMICS:ROGDPCP
+      - ECONOMICS:ROFYGDPG
+      - ECONOMICS:ROGDPQQ
+- name: country_top_economics_government_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROGD
+      - ECONOMICS:ROGDG
+      - ECONOMICS:ROGSP
+      - ECONOMICS:ROGSG
+      - ECONOMICS:ROGBV
+      - ECONOMICS:ROGBP
+- name: country_top_economics_business_ro
+  symbols:
+    tickers:
+      - ECONOMICS:RONO
+      - ECONOMICS:ROCORR
+- name: country_top_economics_taxes_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROPITR
+      - ECONOMICS:ROCTR
+      - ECONOMICS:ROSSR
+      - ECONOMICS:ROSSRC
+      - ECONOMICS:ROSSRE
+      - ECONOMICS:ROSTR
+- name: country_top_economics_key_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAGDP
+      - ECONOMICS:ZAFYGDPG
+      - ECONOMICS:ZAGDPCP
+      - ECONOMICS:ZAINTR
+      - ECONOMICS:ZAIRYY
+      - ECONOMICS:ZAUR
+      - ECONOMICS:ZACA
+      - ECONOMICS:ZACAG
+      - ECONOMICS:ZAGDG
+      - ECONOMICS:ZABOT
+      - ECONOMICS:ZAPOP
+- name: country_top_economics_gdp_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAGDP
+      - ECONOMICS:ZAGNP
+      - ECONOMICS:ZAGDPCP
+      - ECONOMICS:ZAFYGDPG
+      - ECONOMICS:ZAGDPQQ
+- name: country_top_economics_government_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAGD
+      - ECONOMICS:ZAGDG
+      - ECONOMICS:ZAGSP
+      - ECONOMICS:ZAGBV
+      - ECONOMICS:ZAGBP
+- name: country_top_economics_business_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZALEI
+      - ECONOMICS:ZACORR
+      - ECONOMICS:ZABR
+- name: country_top_economics_taxes_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAPITR
+      - ECONOMICS:ZACTR
+      - ECONOMICS:ZASSR
+      - ECONOMICS:ZASSRC
+      - ECONOMICS:ZASSRE
+      - ECONOMICS:ZASTR
+- name: country_top_economics_key_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUGDP
+      - ECONOMICS:RUFYGDPG
+      - ECONOMICS:RUGDPCP
+      - ECONOMICS:RUINTR
+      - ECONOMICS:RUIRYY
+      - ECONOMICS:RUUR
+      - ECONOMICS:RUCA
+      - ECONOMICS:RUCAG
+      - ECONOMICS:RUGDG
+      - ECONOMICS:RUBOT
+      - ECONOMICS:RUPOP
+- name: country_top_economics_gdp_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUGDP
+      - ECONOMICS:RUGNP
+      - ECONOMICS:RUGDPCP
+      - ECONOMICS:RUFYGDPG
+      - ECONOMICS:RUGDPQQ
+- name: country_top_economics_government_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUGD
+      - ECONOMICS:RUGDG
+      - ECONOMICS:RUGSP
+      - ECONOMICS:RUGBV
+      - ECONOMICS:RUGBP
+- name: country_top_economics_business_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUCPR
+      - ECONOMICS:RULEI
+      - ECONOMICS:RUCORR
+      - ECONOMICS:RUBR
+- name: country_top_economics_taxes_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUPITR
+      - ECONOMICS:RUCTR
+      - ECONOMICS:RUSSR
+      - ECONOMICS:RUSSRC
+      - ECONOMICS:RUSSRE
+      - ECONOMICS:RUSTR
+- name: country_top_economics_key_rs
+  symbols:
+    tickers:
+      - ECONOMICS:RSGDP
+      - ECONOMICS:RSFYGDPG
+      - ECONOMICS:RSGDPCP
+      - ECONOMICS:RSINTR
+      - ECONOMICS:RSIRYY
+      - ECONOMICS:RSUR
+      - ECONOMICS:RSCA
+      - ECONOMICS:RSCAG
+      - ECONOMICS:RSGDG
+      - ECONOMICS:RSBOT
+      - ECONOMICS:RSPOP
+- name: country_top_economics_gdp_rs
+  symbols:
+    tickers:
+      - ECONOMICS:RSGDP
+      - ECONOMICS:RSGDPCP
+      - ECONOMICS:RSFYGDPG
+      - ECONOMICS:RSGDPQQ
+- name: country_top_economics_government_rs
+  symbols:
+    tickers:
+      - ECONOMICS:RSGD
+      - ECONOMICS:RSGDG
+      - ECONOMICS:RSGSP
+      - ECONOMICS:RSGSG
+      - ECONOMICS:RSGBP
+- name: country_top_economics_business_rs
+  symbols:
+    tickers:
+      - ECONOMICS:RSCORR
+- name: country_top_economics_taxes_rs
+  symbols:
+    tickers:
+      - ECONOMICS:RSPITR
+      - ECONOMICS:RSCTR
+      - ECONOMICS:RSSSR
+      - ECONOMICS:RSSSRC
+      - ECONOMICS:RSSSRE
+      - ECONOMICS:RSSTR
+- name: country_top_economics_key_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGGDP
+      - ECONOMICS:SGFYGDPG
+      - ECONOMICS:SGGDPCP
+      - ECONOMICS:SGINTR
+      - ECONOMICS:SGIRYY
+      - ECONOMICS:SGUR
+      - ECONOMICS:SGCA
+      - ECONOMICS:SGCAG
+      - ECONOMICS:SGGDG
+      - ECONOMICS:SGBOT
+      - ECONOMICS:SGPOP
+- name: country_top_economics_gdp_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGGDP
+      - ECONOMICS:SGGNP
+      - ECONOMICS:SGGDPCP
+      - ECONOMICS:SGFYGDPG
+      - ECONOMICS:SGGDPQQ
+- name: country_top_economics_government_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGGD
+      - ECONOMICS:SGGDG
+      - ECONOMICS:SGGSP
+      - ECONOMICS:SGGBV
+      - ECONOMICS:SGGBP
+- name: country_top_economics_business_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGLEI
+      - ECONOMICS:SGCORR
+      - ECONOMICS:SGBR
+- name: country_top_economics_taxes_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGPITR
+      - ECONOMICS:SGCTR
+      - ECONOMICS:SGSSR
+      - ECONOMICS:SGSSRC
+      - ECONOMICS:SGSSRE
+      - ECONOMICS:SGSTR
+- name: country_top_economics_key_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKGDP
+      - ECONOMICS:SKFYGDPG
+      - ECONOMICS:SKGDPCP
+      - ECONOMICS:SKINTR
+      - ECONOMICS:SKIRYY
+      - ECONOMICS:SKUR
+      - ECONOMICS:SKCA
+      - ECONOMICS:SKCAG
+      - ECONOMICS:SKGDG
+      - ECONOMICS:SKBOT
+      - ECONOMICS:SKPOP
+- name: country_top_economics_gdp_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKGDP
+      - ECONOMICS:SKGDPCP
+      - ECONOMICS:SKFYGDPG
+      - ECONOMICS:SKGDPQQ
+- name: country_top_economics_government_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKGD
+      - ECONOMICS:SKGDG
+      - ECONOMICS:SKGSP
+      - ECONOMICS:SKGSG
+      - ECONOMICS:SKGBV
+      - ECONOMICS:SKGBP
+- name: country_top_economics_business_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKNO
+      - ECONOMICS:SKCORR
+- name: country_top_economics_taxes_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKPITR
+      - ECONOMICS:SKCTR
+      - ECONOMICS:SKSSR
+      - ECONOMICS:SKSSRC
+      - ECONOMICS:SKSSRE
+      - ECONOMICS:SKSTR
+- name: country_top_economics_key_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESGDP
+      - ECONOMICS:ESFYGDPG
+      - ECONOMICS:ESGDPCP
+      - ECONOMICS:ESINTR
+      - ECONOMICS:ESIRYY
+      - ECONOMICS:ESUR
+      - ECONOMICS:ESCA
+      - ECONOMICS:ESCAG
+      - ECONOMICS:ESGDG
+      - ECONOMICS:ESBOT
+      - ECONOMICS:ESPOP
+- name: country_top_economics_gdp_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESGDP
+      - ECONOMICS:ESGDPCP
+      - ECONOMICS:ESFYGDPG
+      - ECONOMICS:ESGDPQQ
+- name: country_top_economics_government_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESGD
+      - ECONOMICS:ESGDG
+      - ECONOMICS:ESGSP
+      - ECONOMICS:ESGSG
+      - ECONOMICS:ESGBV
+      - ECONOMICS:ESGBP
+- name: country_top_economics_business_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESNO
+      - ECONOMICS:ESCORR
+      - ECONOMICS:ESBR
+- name: country_top_economics_taxes_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESPITR
+      - ECONOMICS:ESCTR
+      - ECONOMICS:ESSSR
+      - ECONOMICS:ESSSRC
+      - ECONOMICS:ESSSRE
+      - ECONOMICS:ESSTR
+- name: country_top_economics_key_lk
+  symbols:
+    tickers:
+      - ECONOMICS:LKGDP
+      - ECONOMICS:LKFYGDPG
+      - ECONOMICS:LKGDPCP
+      - ECONOMICS:LKINTR
+      - ECONOMICS:LKIRYY
+      - ECONOMICS:LKUR
+      - ECONOMICS:LKCA
+      - ECONOMICS:LKCAG
+      - ECONOMICS:LKGDG
+      - ECONOMICS:LKBOT
+      - ECONOMICS:LKPOP
+- name: country_top_economics_gdp_lk
+  symbols:
+    tickers:
+      - ECONOMICS:LKGDP
+      - ECONOMICS:LKGNP
+      - ECONOMICS:LKGDPCP
+      - ECONOMICS:LKFYGDPG
+      - ECONOMICS:LKGDPQQ
+- name: country_top_economics_government_lk
+  symbols:
+    tickers:
+      - ECONOMICS:LKGD
+      - ECONOMICS:LKGDG
+      - ECONOMICS:LKGSP
+      - ECONOMICS:LKGBV
+      - ECONOMICS:LKGBP
+- name: country_top_economics_business_lk
+  symbols:
+    tickers:
+      - ECONOMICS:LKCORR
+- name: country_top_economics_taxes_lk
+  symbols:
+    tickers:
+      - ECONOMICS:LKPITR
+      - ECONOMICS:LKCTR
+      - ECONOMICS:LKSSR
+      - ECONOMICS:LKSSRC
+      - ECONOMICS:LKSSRE
+      - ECONOMICS:LKSTR
+- name: country_top_economics_key_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEGDP
+      - ECONOMICS:SEFYGDPG
+      - ECONOMICS:SEGDPCP
+      - ECONOMICS:SEINTR
+      - ECONOMICS:SEIRYY
+      - ECONOMICS:SEUR
+      - ECONOMICS:SECA
+      - ECONOMICS:SECAG
+      - ECONOMICS:SEGDG
+      - ECONOMICS:SEBOT
+      - ECONOMICS:SEPOP
+- name: country_top_economics_gdp_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEGDP
+      - ECONOMICS:SEGNP
+      - ECONOMICS:SEGDPCP
+      - ECONOMICS:SEFYGDPG
+      - ECONOMICS:SEGDPQQ
+- name: country_top_economics_government_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEGD
+      - ECONOMICS:SEGDG
+      - ECONOMICS:SEGSP
+      - ECONOMICS:SEGSG
+      - ECONOMICS:SEGBV
+      - ECONOMICS:SEGBP
+- name: country_top_economics_business_se
+  symbols:
+    tickers:
+      - ECONOMICS:SENO
+      - ECONOMICS:SECORR
+      - ECONOMICS:SEBR
+- name: country_top_economics_taxes_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEPITR
+      - ECONOMICS:SECTR
+      - ECONOMICS:SESSR
+      - ECONOMICS:SESSRC
+      - ECONOMICS:SESSRE
+      - ECONOMICS:SESTR
+- name: country_top_economics_key_ch
+  symbols:
+    tickers:
+      - ECONOMICS:CHGDP
+      - ECONOMICS:CHFYGDPG
+      - ECONOMICS:CHGDPCP
+      - ECONOMICS:CHINTR
+      - ECONOMICS:CHIRYY
+      - ECONOMICS:CHUR
+      - ECONOMICS:CHCA
+      - ECONOMICS:CHCAG
+      - ECONOMICS:CHGDG
+      - ECONOMICS:CHBOT
+      - ECONOMICS:CHPOP
+- name: country_top_economics_gdp_ch
+  symbols:
+    tickers:
+      - ECONOMICS:CHGDP
+      - ECONOMICS:CHGDPCP
+      - ECONOMICS:CHFYGDPG
+      - ECONOMICS:CHGDPQQ
+- name: country_top_economics_government_ch
+  symbols:
+    tickers:
+      - ECONOMICS:CHGD
+      - ECONOMICS:CHGDG
+      - ECONOMICS:CHGSP
+      - ECONOMICS:CHGSG
+      - ECONOMICS:CHGBV
+      - ECONOMICS:CHGBP
+- name: country_top_economics_business_ch
+  symbols:
+    tickers:
+      - ECONOMICS:CHCORR
+      - ECONOMICS:CHBR
+- name: country_top_economics_taxes_ch
+  symbols:
+    tickers:
+      - ECONOMICS:CHPITR
+      - ECONOMICS:CHCTR
+      - ECONOMICS:CHSSR
+      - ECONOMICS:CHSSRC
+      - ECONOMICS:CHSSRE
+      - ECONOMICS:CHSTR
+- name: country_top_economics_key_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWGDP
+      - ECONOMICS:TWFYGDPG
+      - ECONOMICS:TWGDPCP
+      - ECONOMICS:TWINTR
+      - ECONOMICS:TWIRYY
+      - ECONOMICS:TWUR
+      - ECONOMICS:TWCA
+      - ECONOMICS:TWCAG
+      - ECONOMICS:TWGDG
+      - ECONOMICS:TWBOT
+      - ECONOMICS:TWPOP
+- name: country_top_economics_gdp_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWGDP
+      - ECONOMICS:TWGNP
+      - ECONOMICS:TWGDPCP
+      - ECONOMICS:TWFYGDPG
+      - ECONOMICS:TWGDPQQ
+- name: country_top_economics_government_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWGDG
+      - ECONOMICS:TWGSP
+      - ECONOMICS:TWGBV
+      - ECONOMICS:TWGBP
+- name: country_top_economics_business_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWNO
+      - ECONOMICS:TWLEI
+      - ECONOMICS:TWCORR
+      - ECONOMICS:TWBR
+- name: country_top_economics_taxes_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWPITR
+      - ECONOMICS:TWCTR
+      - ECONOMICS:TWSSR
+      - ECONOMICS:TWSSRC
+      - ECONOMICS:TWSSRE
+      - ECONOMICS:TWSTR
+- name: country_top_economics_key_th
+  symbols:
+    tickers:
+      - ECONOMICS:THGDP
+      - ECONOMICS:THFYGDPG
+      - ECONOMICS:THGDPCP
+      - ECONOMICS:THINTR
+      - ECONOMICS:THIRYY
+      - ECONOMICS:THUR
+      - ECONOMICS:THCA
+      - ECONOMICS:THCAG
+      - ECONOMICS:THGDG
+      - ECONOMICS:THBOT
+      - ECONOMICS:THPOP
+- name: country_top_economics_gdp_th
+  symbols:
+    tickers:
+      - ECONOMICS:THGDP
+      - ECONOMICS:THGNP
+      - ECONOMICS:THGDPCP
+      - ECONOMICS:THFYGDPG
+      - ECONOMICS:THGDPQQ
+- name: country_top_economics_government_th
+  symbols:
+    tickers:
+      - ECONOMICS:THGDG
+      - ECONOMICS:THGSP
+      - ECONOMICS:THGBV
+      - ECONOMICS:THGBP
+- name: country_top_economics_business_th
+  symbols:
+    tickers:
+      - ECONOMICS:THLEI
+      - ECONOMICS:THCORR
+- name: country_top_economics_taxes_th
+  symbols:
+    tickers:
+      - ECONOMICS:THPITR
+      - ECONOMICS:THCTR
+      - ECONOMICS:THSSR
+      - ECONOMICS:THSSRC
+      - ECONOMICS:THSSRE
+      - ECONOMICS:THSTR
+- name: country_top_economics_key_tn
+  symbols:
+    tickers:
+      - ECONOMICS:TNGDP
+      - ECONOMICS:TNFYGDPG
+      - ECONOMICS:TNGDPCP
+      - ECONOMICS:TNINTR
+      - ECONOMICS:TNIRYY
+      - ECONOMICS:TNUR
+      - ECONOMICS:TNCA
+      - ECONOMICS:TNCAG
+      - ECONOMICS:TNGDG
+      - ECONOMICS:TNBOT
+      - ECONOMICS:TNPOP
+- name: country_top_economics_gdp_tn
+  symbols:
+    tickers:
+      - ECONOMICS:TNGDP
+      - ECONOMICS:TNGDPCP
+      - ECONOMICS:TNFYGDPG
+      - ECONOMICS:TNGDPQQ
+- name: country_top_economics_government_tn
+  symbols:
+    tickers:
+      - ECONOMICS:TNGDG
+      - ECONOMICS:TNGSP
+      - ECONOMICS:TNGBP
+- name: country_top_economics_business_tn
+  symbols:
+    tickers:
+      - ECONOMICS:TNCORR
+- name: country_top_economics_taxes_tn
+  symbols:
+    tickers:
+      - ECONOMICS:TNPITR
+      - ECONOMICS:TNCTR
+      - ECONOMICS:TNSSR
+      - ECONOMICS:TNSSRC
+      - ECONOMICS:TNSSRE
+      - ECONOMICS:TNSTR
+- name: country_top_economics_key_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRGDP
+      - ECONOMICS:TRFYGDPG
+      - ECONOMICS:TRGDPCP
+      - ECONOMICS:TRINTR
+      - ECONOMICS:TRIRYY
+      - ECONOMICS:TRUR
+      - ECONOMICS:TRCA
+      - ECONOMICS:TRCAG
+      - ECONOMICS:TRGDG
+      - ECONOMICS:TRBOT
+      - ECONOMICS:TRPOP
+- name: country_top_economics_gdp_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRGDP
+      - ECONOMICS:TRGNP
+      - ECONOMICS:TRGDPCP
+      - ECONOMICS:TRFYGDPG
+      - ECONOMICS:TRGDPQQ
+- name: country_top_economics_government_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRGD
+      - ECONOMICS:TRGDG
+      - ECONOMICS:TRGSP
+      - ECONOMICS:TRGBV
+      - ECONOMICS:TRGBP
+- name: country_top_economics_business_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRLEI
+      - ECONOMICS:TRCORR
+      - ECONOMICS:TRBR
+- name: country_top_economics_taxes_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRPITR
+      - ECONOMICS:TRCTR
+      - ECONOMICS:TRSSR
+      - ECONOMICS:TRSSRC
+      - ECONOMICS:TRSSRE
+      - ECONOMICS:TRSTR
+- name: country_top_economics_key_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEGDP
+      - ECONOMICS:AEGDPCP
+      - ECONOMICS:AEINTR
+      - ECONOMICS:AEIRYY
+      - ECONOMICS:AEUR
+      - ECONOMICS:AECA
+      - ECONOMICS:AECAG
+      - ECONOMICS:AEGDG
+      - ECONOMICS:AEBOT
+      - ECONOMICS:AEPOP
+- name: country_top_economics_gdp_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEGDP
+      - ECONOMICS:AEGDPCP
+      - ECONOMICS:AEGDPQQ
+- name: country_top_economics_government_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEGDG
+      - ECONOMICS:AEGSP
+      - ECONOMICS:AEGBP
+- name: country_top_economics_business_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AECORR
+- name: country_top_economics_taxes_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEPITR
+      - ECONOMICS:AECTR
+      - ECONOMICS:AESSR
+      - ECONOMICS:AESSRC
+      - ECONOMICS:AESSRE
+      - ECONOMICS:AESTR
+- name: country_top_economics_key_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBGDP
+      - ECONOMICS:GBFYGDPG
+      - ECONOMICS:GBGDPCP
+      - ECONOMICS:GBINTR
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:GBUR
+      - ECONOMICS:GBCA
+      - ECONOMICS:GBCAG
+      - ECONOMICS:GBGDG
+      - ECONOMICS:GBBOT
+      - ECONOMICS:GBPOP
+- name: country_top_economics_gdp_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBGDP
+      - ECONOMICS:GBGNP
+      - ECONOMICS:GBGDPCP
+      - ECONOMICS:GBFYGDPG
+      - ECONOMICS:GBGDPQQ
+- name: country_top_economics_government_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBGD
+      - ECONOMICS:GBGDG
+      - ECONOMICS:GBGSP
+      - ECONOMICS:GBGSG
+      - ECONOMICS:GBGBV
+      - ECONOMICS:GBGBP
+- name: country_top_economics_business_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBCPR
+      - ECONOMICS:GBNO
+      - ECONOMICS:GBLEI
+      - ECONOMICS:GBCORR
+      - ECONOMICS:GBBR
+- name: country_top_economics_taxes_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBPITR
+      - ECONOMICS:GBCTR
+      - ECONOMICS:GBSSR
+      - ECONOMICS:GBSSRC
+      - ECONOMICS:GBSSRE
+      - ECONOMICS:GBSTR
+- name: country_top_economics_key_ve
+  symbols:
+    tickers:
+      - ECONOMICS:VEGDP
+      - ECONOMICS:VEINTR
+      - ECONOMICS:VEIRYY
+      - ECONOMICS:VEUR
+      - ECONOMICS:VECA
+      - ECONOMICS:VECAG
+      - ECONOMICS:VEGDG
+      - ECONOMICS:VEBOT
+      - ECONOMICS:VEPOP
+- name: country_top_economics_gdp_ve
+  symbols:
+    tickers:
+      - ECONOMICS:VEGDP
+      - ECONOMICS:VEGDPQQ
+- name: country_top_economics_government_ve
+  symbols:
+    tickers:
+      - ECONOMICS:VEGDG
+      - ECONOMICS:VEGBP
+- name: country_top_economics_business_ve
+  symbols:
+    tickers:
+      - ECONOMICS:VECORR
+- name: country_top_economics_taxes_ve
+  symbols:
+    tickers:
+      - ECONOMICS:VEPITR
+      - ECONOMICS:VECTR
+      - ECONOMICS:VESSR
+      - ECONOMICS:VESSRC
+      - ECONOMICS:VESSRE
+      - ECONOMICS:VESTR
+- name: country_top_economics_key_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNGDP
+      - ECONOMICS:VNFYGDPG
+      - ECONOMICS:VNGDPCP
+      - ECONOMICS:VNINTR
+      - ECONOMICS:VNIRYY
+      - ECONOMICS:VNUR
+      - ECONOMICS:VNCA
+      - ECONOMICS:VNCAG
+      - ECONOMICS:VNGDG
+      - ECONOMICS:VNBOT
+      - ECONOMICS:VNPOP
+- name: country_top_economics_gdp_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNGDP
+      - ECONOMICS:VNGNP
+      - ECONOMICS:VNGDPCP
+      - ECONOMICS:VNFYGDPG
+- name: country_top_economics_government_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNGDG
+      - ECONOMICS:VNGSP
+      - ECONOMICS:VNGBV
+      - ECONOMICS:VNGBP
+- name: country_top_economics_business_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNCORR
+- name: country_top_economics_taxes_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNPITR
+      - ECONOMICS:VNCTR
+      - ECONOMICS:VNSSR
+      - ECONOMICS:VNSSRC
+      - ECONOMICS:VNSSRE
+      - ECONOMICS:VNSTR

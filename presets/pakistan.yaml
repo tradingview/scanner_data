@@ -584,3 +584,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_pk
+  symbols:
+    tickers:
+      - PSX:KSE100
+      - PSX:ALLSHR
+      - PSX:KMIALLSHR
+      - PSX:KSE30
+      - PSX:KMI30
+      - PSX:BKTI
+      - PSX:OGTI
+      - PSX:PSXDIV20
+      - PSX:ACI
+      - PSX:MZNPI
+      - PSX:JSMFI

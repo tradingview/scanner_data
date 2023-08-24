@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_au
+  symbols:
+    tickers:
+      - ASX:XAO
+      - ASX:XJO
+      - ASX:XVI
+      - ASX:XMD
+      - ASX:XSO
+      - ASX:XFJ
+      - ASX:XEJ
+      - ASX:XIJ
+      - ASX:XNJ
+      - ASX:XHJ
+      - ASX:XMJ

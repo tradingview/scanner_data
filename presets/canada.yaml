@@ -605,3 +605,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_ca
+  symbols:
+    tickers:
+      - TSX:TSX
+      - TSX:TX20
+      - TSX:JX
+      - TSX:TX40
+      - TSX:TX60
+      - TSX:TTFS
+      - TSX:TTEN
+      - TSX:TTIN
+      - TSX:TTMT
+      - TSX:TTHC
+      - TSX:TTRE

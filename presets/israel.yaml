@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_il
+  symbols:
+    tickers:
+      - TASE:TA35
+      - TASE:TA125
+      - TASE:TA90
+      - TASE:TAALLSHARE
+      - TASE:TAGROWTH
+      - TASE:TELBOND60
+      - TASE:TAFINANCE
+      - TASE:TABANKS5
+      - TASE:TAOILGAS
+      - TASE:TABIOMED
+      - TASE:TAREALESTATE15

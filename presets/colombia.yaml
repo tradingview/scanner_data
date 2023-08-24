@@ -599,3 +599,14 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_co
+  symbols:
+    tickers:
+      - BVC:ICAP
+      - BVC:IEQY
+      - BVC:IRSK
+      - BVC:HCOL
+      - BVC:HM40
+      - BVC:ICSC
+      - BVC:IIRC
+      - BVC:INAV

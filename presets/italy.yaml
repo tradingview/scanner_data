@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_it
+  symbols:
+    tickers:
+      - FTSE:FTSEMIB
+      - FTSE:ITLMS
+      - FTSE:ITMC
+      - FTSE:ITSC
+      - FTSE:ITLMS30
+      - FTSE:ITLMS60
+      - FTSE:ITLMS50
+      - FTSE:ITLMS20
+      - FTSE:ITLMS55
+      - FTSE:ITLMS35
+      - FTSE:ITBRANDS

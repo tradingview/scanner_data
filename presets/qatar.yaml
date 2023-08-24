@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_qa
+  symbols:
+    tickers:
+      - QSE:GNRI
+      - QSE:QEAS
+      - FTSE:DQAS
+      - QSE:QERI
+      - QSE:QETR
+      - QSE:QIND
+      - QSE:QBNK
+      - QSE:QREA
+      - QSE:QCON
+      - QSE:QTRN
+      - QSE:QINS

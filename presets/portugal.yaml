@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_pt
+  symbols:
+    tickers:
+      - EURONEXT:PSI20
+      - EURONEXT:BVL
+      - EURONEXT:PTFIN
+      - EURONEXT:PTEB
+      - EURONEXT:PTOGP
+      - EURONEXT:PTINP
+      - EURONEXT:PTBMP
+      - EURONEXT:PTCSP
+      - EURONEXT:PTCGP
+      - EURONEXT:PTUTP
+      - EURONEXT:PTTLP

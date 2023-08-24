@@ -584,3 +584,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_tn
+  symbols:
+    tickers:
+      - BVMT:PX1
+      - BVMT:TUN20
+      - BVMT:INAAB
+      - BVMT:INAUE
+      - BVMT:INBCO
+      - BVMT:INBMC
+      - BVMT:INDAS
+      - BVMT:INDBQ
+      - BVMT:INDDI
+      - BVMT:INDIN
+      - BVMT:INSFI

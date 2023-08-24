@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_hk
+  symbols:
+    tickers:
+      - HSI:HSI
+      - HSI:HSTECH
+      - HSI:HSCEI
+      - HSI:HSC50
+      - HSI:HSLI
+      - HSI:HSMI
+      - HSI:HSSI
+      - HSI:HSCI.F
+      - HSI:HSCI.E
+      - HSI:HSI.C
+      - HSI:HSCI.H

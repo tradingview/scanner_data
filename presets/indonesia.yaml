@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_id
+  symbols:
+    tickers:
+      - IDX:COMPOSITE
+      - IDX:ISSI
+      - IDX:LQ45
+      - IDX:KOMPAS100
+      - IDX:PEFINDO25
+      - IDX:IDXFINANCE
+      - IDX:IDXENERGY
+      - IDX:IDXINDUST
+      - IDX:IDXHEALTH
+      - IDX:IDXBASIC
+      - IDX:IDXPROPERT

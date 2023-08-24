@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_cn
+  symbols:
+    tickers:
+      - SSE:000001
+      - SZSE:399001
+      - SZSE:399106
+      - SSE:000852
+      - FTSE:XIN9
+      - SSE:000002
+      - SSE:000132
+      - SSE:000300
+      - SSE:000985
+      - SSE:000044
+      - SSE:000045

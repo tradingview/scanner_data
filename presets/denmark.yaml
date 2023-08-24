@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_dk
+  symbols:
+    tickers:
+      - OMXCOP:OMXC25
+      - OMXCOP:OMXC20
+      - OMXCOP:OMXCBGI
+      - OMXCOP:OMXCPI
+      - OMXCOP:OMXCLCPI
+      - OMXCOP:OMXCMCPI
+      - OMXCOP:OMXCSCPI
+      - OMXCOP:CX30PI
+      - OMXCOP:CX60PI
+      - OMXCOP:CX50PI
+      - OMXCOP:CX35PI

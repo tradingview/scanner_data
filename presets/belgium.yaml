@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_be
+  symbols:
+    tickers:
+      - EURONEXT:BEL20
+      - EURONEXT:BELAS
+      - EURONEXT:BELM
+      - EURONEXT:BELS
+      - EURONEXT:BEFIP
+      - EURONEXT:BEOGP
+      - EURONEXT:BEINP
+      - EURONEXT:BEHCP
+      - EURONEXT:BEBMP
+      - EURONEXT:BERE
+      - EURONEXT:BECSP

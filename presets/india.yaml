@@ -599,3 +599,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_in
+  symbols:
+    tickers:
+      - NSE:NIFTY
+      - BSE:SENSEX
+      - BSE:LRGCAP
+      - BSE:MIDCAP
+      - BSE:SMLCAP
+      - NSE:CNX500
+      - NSE:CNXMIDCAP
+      - NSE:CNXSMALLCAP
+      - NSE:INDIAVIX
+      - NSE:BANKNIFTY
+      - NSE:CNXFINANCE

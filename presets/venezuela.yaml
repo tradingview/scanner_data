@@ -584,3 +584,9 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_ve
+  symbols:
+    tickers:
+      - BVCV:IBC
+      - BVCV:IFINANCIE
+      - BVCV:IINDUSTR

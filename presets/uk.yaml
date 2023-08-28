@@ -678,3 +678,36 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: typespecs
+    operation: has_none_of
+    right: cdi
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: exchange
+    operation: equal
+    right:
+    - LSE
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_gb
+  symbols:
+    tickers:
+      - FTSE:UKX
+      - FTSE:UKXDUK
+      - FTSE:MCX
+      - FTSE:MCIX
+      - FTSE:MCXNUK
+      - FTSE:NMX
+      - FTSE:NMIXNUK
+      - FTSE:ASX
+      - FTSE:ASXX
+      - FTSE:NSX
+      - FTSE:SMX
+      - FTSE:SMXX

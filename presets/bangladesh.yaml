@@ -66,7 +66,7 @@ presets:
     operation: greater
     right: 0
   sort:
-    sortBy: number_of_employees
+    sortBy: number_of_employees_fy
     sortOrder: desc
 - name: high_dividend
   filter:
@@ -79,11 +79,11 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: dividend_yield_recent
+  - left: dividends_yield
     operation: greater
     right: 0
   sort:
-    sortBy: dividend_yield_recent
+    sortBy: dividends_yield
     sortOrder: desc
 - name: highest_net_income
   filter:
@@ -97,7 +97,7 @@ presets:
     operation: equal
     right: stock
   sort:
-    sortBy: net_income
+    sortBy: net_income_fy
     sortOrder: desc
 - name: gainers
   filter:
@@ -239,7 +239,7 @@ presets:
     operation: equal
     right: stock
   sort:
-    sortBy: total_revenue
+    sortBy: total_revenue_fy
     sortOrder: desc
 - name: most_expensive
   filter:
@@ -573,3 +573,9 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: country_top_indices_bd
+  symbols:
+    tickers:
+      - DSEBD:DSEX
+      - DSEBD:DSES
+      - DSEBD:DS30

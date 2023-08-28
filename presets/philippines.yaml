@@ -588,3 +588,25 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_ph
+  symbols:
+    tickers:
+      - PSE:PSEI
+      - PSE:ALL
+      - PSE:FIN
+      - PSE:IND
+      - PSE:M_O
+      - PSE:SVC
+      - PSE:PRO
+      - PSE:HDG

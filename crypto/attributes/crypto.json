@@ -607,20 +607,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ALGBTC",
-      "f": [
-        "Algory Project",
-        "ALG"
-      ]
-    },
-    {
-      "s": "BITFINEX:ALGUSD",
-      "f": [
-        "Algory Project",
-        "ALG"
-      ]
-    },
-    {
       "s": "BITTREX:BABABTC",
       "f": [
         "Alibaba tokenized stock Bittrex",
@@ -6319,6 +6305,20 @@
       ]
     },
     {
+      "s": "BITFINEX:GOCBTC",
+      "f": [
+        "GoCrypto Token",
+        "GOC"
+      ]
+    },
+    {
+      "s": "BITFINEX:GOCUSD",
+      "f": [
+        "GoCrypto Token",
+        "GOC"
+      ]
+    },
+    {
       "s": "BITTREX:GLDBTC",
       "f": [
         "Goldario",
@@ -6666,20 +6666,6 @@
       "f": [
         "Helium",
         "HNT"
-      ]
-    },
-    {
-      "s": "BITFINEX:IOTBTC",
-      "f": [
-        "Helium IOT",
-        "IOT"
-      ]
-    },
-    {
-      "s": "BITFINEX:IOTUSD",
-      "f": [
-        "Helium IOT",
-        "IOT"
       ]
     },
     {
@@ -12731,20 +12717,6 @@
       ]
     },
     {
-      "s": "POLONIEX:STRBTC",
-      "f": [
-        "Staker",
-        "STR"
-      ]
-    },
-    {
-      "s": "POLONIEX:STRUSD",
-      "f": [
-        "Staker",
-        "STR"
-      ]
-    },
-    {
       "s": "HITBTC:STNDBTC",
       "f": [
         "Standard Protocol",
@@ -12857,14 +12829,14 @@
       ]
     },
     {
-      "s": "BITTREX:XLMBTC",
+      "s": "COINBASE:XLMBTC",
       "f": [
         "Stellar",
         "XLM"
       ]
     },
     {
-      "s": "BITTREX:XLMUSD",
+      "s": "COINBASE:XLMUSD",
       "f": [
         "Stellar",
         "XLM"
@@ -13421,6 +13393,20 @@
       "f": [
         "TEMCO",
         "TEMCO"
+      ]
+    },
+    {
+      "s": "BITFINEX:TENETBTC",
+      "f": [
+        "TENET",
+        "TENET"
+      ]
+    },
+    {
+      "s": "BITFINEX:TENETUSD",
+      "f": [
+        "TENET",
+        "TENET"
       ]
     },
     {
@@ -15101,20 +15087,6 @@
       "f": [
         "WeTrust",
         "TRST"
-      ]
-    },
-    {
-      "s": "BITFINEX:WBTBTC",
-      "f": [
-        "WhiteBIT Token",
-        "WBT"
-      ]
-    },
-    {
-      "s": "BITFINEX:WBTUSD",
-      "f": [
-        "WhiteBIT Token",
-        "WBT"
       ]
     },
     {

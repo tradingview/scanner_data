@@ -32,7 +32,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -75,7 +75,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -118,7 +118,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -161,7 +161,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -204,7 +204,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -247,7 +247,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -292,7 +292,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -337,7 +337,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -382,7 +382,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -424,7 +424,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -464,7 +464,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -504,7 +504,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -544,7 +544,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -584,7 +584,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -624,7 +624,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -666,7 +666,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -708,7 +708,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -750,7 +750,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -792,7 +792,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -832,7 +832,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -872,7 +872,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -912,7 +912,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -952,7 +952,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -992,7 +992,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -1034,7 +1034,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -1076,7 +1076,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -1118,7 +1118,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -1160,7 +1160,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -1200,7 +1200,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -1240,7 +1240,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -1280,7 +1280,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -1320,7 +1320,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -1360,7 +1360,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -1402,7 +1402,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -1444,7 +1444,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -1486,7 +1486,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -1528,7 +1528,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - volume
@@ -1568,7 +1568,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -1608,7 +1608,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -1648,7 +1648,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -1688,7 +1688,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -1728,7 +1728,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up
     operation: nempty
@@ -1770,7 +1770,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down
     operation: nempty
@@ -1812,7 +1812,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up_abs
     operation: nempty
@@ -1854,7 +1854,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down_abs
     operation: nempty
@@ -1896,7 +1896,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -1936,7 +1936,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -1976,7 +1976,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -2016,7 +2016,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -2056,7 +2056,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -2096,7 +2096,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -2138,7 +2138,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -2180,7 +2180,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -2222,7 +2222,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -2264,7 +2264,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -2304,7 +2304,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -2344,7 +2344,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -2384,7 +2384,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -2424,7 +2424,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -2464,7 +2464,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -2506,7 +2506,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -2548,7 +2548,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -2590,7 +2590,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -2632,7 +2632,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - volume
@@ -2672,7 +2672,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -2712,7 +2712,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -2752,7 +2752,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -2792,7 +2792,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -2832,7 +2832,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up
     operation: nempty
@@ -2874,7 +2874,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down
     operation: nempty
@@ -2916,7 +2916,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up_abs
     operation: nempty
@@ -2958,7 +2958,7 @@ presets:
     - 0.8
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down_abs
     operation: nempty
@@ -3000,7 +3000,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - volume
@@ -3040,7 +3040,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -3080,7 +3080,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -3120,7 +3120,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -3160,7 +3160,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -3200,7 +3200,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up
     operation: nempty
@@ -3242,7 +3242,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down
     operation: nempty
@@ -3284,7 +3284,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up_abs
     operation: nempty
@@ -3326,7 +3326,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down_abs
     operation: nempty
@@ -3368,7 +3368,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -3408,7 +3408,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -3448,7 +3448,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -3488,7 +3488,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -3528,7 +3528,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -3568,7 +3568,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -3610,7 +3610,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -3652,7 +3652,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -3694,7 +3694,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -3736,7 +3736,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -3776,7 +3776,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -3816,7 +3816,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -3856,7 +3856,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -3896,7 +3896,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -3936,7 +3936,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -3978,7 +3978,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -4020,7 +4020,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -4062,7 +4062,7 @@ presets:
     - 0.05
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -4104,7 +4104,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -4144,7 +4144,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -4184,7 +4184,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -4224,7 +4224,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -4264,7 +4264,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -4304,7 +4304,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -4346,7 +4346,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -4388,7 +4388,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -4430,7 +4430,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -4472,7 +4472,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -4512,7 +4512,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -4552,7 +4552,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -4592,7 +4592,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -4632,7 +4632,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -4672,7 +4672,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -4714,7 +4714,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -4756,7 +4756,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -4798,7 +4798,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -4840,7 +4840,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -4880,7 +4880,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -4920,7 +4920,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -4960,7 +4960,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -5000,7 +5000,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -5040,7 +5040,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -5082,7 +5082,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -5124,7 +5124,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -5166,7 +5166,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -5208,7 +5208,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -5248,7 +5248,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -5288,7 +5288,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -5328,7 +5328,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -5368,7 +5368,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -5408,7 +5408,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -5450,7 +5450,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -5492,7 +5492,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -5534,7 +5534,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -5576,7 +5576,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   columns:
   - volume
@@ -5616,7 +5616,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   columns:
   - change
@@ -5656,7 +5656,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   columns:
   - change
@@ -5696,7 +5696,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   columns:
   - change_from_open
@@ -5736,7 +5736,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   columns:
   - change_from_open
@@ -5776,7 +5776,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   - left: gap_up
     operation: nempty
@@ -5818,7 +5818,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   - left: gap_down
     operation: nempty
@@ -5860,7 +5860,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   - left: gap_up_abs
     operation: nempty
@@ -5902,7 +5902,7 @@ presets:
     - 0.15
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000000
   - left: gap_down_abs
     operation: nempty
@@ -5944,7 +5944,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - volume
@@ -5984,7 +5984,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -6024,7 +6024,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -6064,7 +6064,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -6104,7 +6104,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -6144,7 +6144,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up
     operation: nempty
@@ -6186,7 +6186,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down
     operation: nempty
@@ -6228,7 +6228,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up_abs
     operation: nempty
@@ -6270,7 +6270,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down_abs
     operation: nempty
@@ -6312,7 +6312,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -6352,7 +6352,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -6392,7 +6392,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -6432,7 +6432,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -6472,7 +6472,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -6512,7 +6512,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -6554,7 +6554,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -6596,7 +6596,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -6638,7 +6638,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -6673,7 +6673,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - volume
@@ -6706,7 +6706,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -6739,7 +6739,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -6772,7 +6772,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -6805,7 +6805,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -6838,7 +6838,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up
     operation: nempty
@@ -6873,7 +6873,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down
     operation: nempty
@@ -6908,7 +6908,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up_abs
     operation: nempty
@@ -6943,7 +6943,7 @@ presets:
     right: 
     - odd
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down_abs
     operation: nempty
@@ -6985,7 +6985,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - volume
@@ -7025,7 +7025,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -7065,7 +7065,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -7105,7 +7105,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -7145,7 +7145,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -7185,7 +7185,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up
     operation: nempty
@@ -7227,7 +7227,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down
     operation: nempty
@@ -7269,7 +7269,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up_abs
     operation: nempty
@@ -7311,7 +7311,7 @@ presets:
     - 1
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down_abs
     operation: nempty
@@ -7353,7 +7353,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   columns:
   - volume
@@ -7393,7 +7393,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   columns:
   - change
@@ -7433,7 +7433,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   columns:
   - change
@@ -7473,7 +7473,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   columns:
   - change_from_open
@@ -7513,7 +7513,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   columns:
   - change_from_open
@@ -7553,7 +7553,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   - left: gap_up
     operation: nempty
@@ -7595,7 +7595,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   - left: gap_down
     operation: nempty
@@ -7637,7 +7637,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   - left: gap_up_abs
     operation: nempty
@@ -7679,7 +7679,7 @@ presets:
     - 0.01
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 50
   - left: gap_down_abs
     operation: nempty
@@ -7721,7 +7721,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -7761,7 +7761,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -7801,7 +7801,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -7841,7 +7841,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -7881,7 +7881,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -7921,7 +7921,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -7963,7 +7963,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -8005,7 +8005,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -8047,7 +8047,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -8089,7 +8089,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -8129,7 +8129,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -8169,7 +8169,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -8209,7 +8209,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -8249,7 +8249,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -8289,7 +8289,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -8331,7 +8331,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -8373,7 +8373,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -8415,7 +8415,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -9390,7 +9390,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -9430,7 +9430,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -9470,7 +9470,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -9510,7 +9510,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -9550,7 +9550,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -9590,7 +9590,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -9632,7 +9632,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -9674,7 +9674,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -9716,7 +9716,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -9758,7 +9758,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -9798,7 +9798,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -9838,7 +9838,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -9878,7 +9878,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -9918,7 +9918,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -9958,7 +9958,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -10000,7 +10000,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -10042,7 +10042,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -10084,7 +10084,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -10126,7 +10126,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -10166,7 +10166,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -10206,7 +10206,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -10246,7 +10246,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -10286,7 +10286,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -10326,7 +10326,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -10368,7 +10368,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -10410,7 +10410,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -10452,7 +10452,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -10494,7 +10494,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - volume
@@ -10534,7 +10534,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -10574,7 +10574,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -10614,7 +10614,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -10654,7 +10654,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -10694,7 +10694,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up
     operation: nempty
@@ -10736,7 +10736,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down
     operation: nempty
@@ -10778,7 +10778,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up_abs
     operation: nempty
@@ -10820,7 +10820,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down_abs
     operation: nempty
@@ -10862,7 +10862,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -10902,7 +10902,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -10942,7 +10942,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -10982,7 +10982,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -11022,7 +11022,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -11062,7 +11062,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -11104,7 +11104,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -11146,7 +11146,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -11188,7 +11188,7 @@ presets:
     - 20
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -11230,7 +11230,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -11270,7 +11270,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -11310,7 +11310,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -11350,7 +11350,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -11390,7 +11390,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -11430,7 +11430,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -11472,7 +11472,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -11514,7 +11514,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -11556,7 +11556,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -11598,7 +11598,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -11638,7 +11638,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -11678,7 +11678,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -11718,7 +11718,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -11758,7 +11758,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -11798,7 +11798,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -11840,7 +11840,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -11882,7 +11882,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -11924,7 +11924,7 @@ presets:
     - 0.02
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -11966,7 +11966,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -12006,7 +12006,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -12046,7 +12046,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -12086,7 +12086,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -12126,7 +12126,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -12166,7 +12166,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -12208,7 +12208,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -12250,7 +12250,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -12292,7 +12292,7 @@ presets:
     - 0.3
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -12334,7 +12334,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -12374,7 +12374,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -12414,7 +12414,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -12454,7 +12454,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -12494,7 +12494,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -12534,7 +12534,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -12576,7 +12576,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -12618,7 +12618,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -12660,7 +12660,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -12702,7 +12702,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -12742,7 +12742,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -12782,7 +12782,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -12822,7 +12822,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -12862,7 +12862,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -12902,7 +12902,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -12944,7 +12944,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -12986,7 +12986,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -13028,7 +13028,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -13070,7 +13070,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - volume
@@ -13110,7 +13110,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change
@@ -13150,7 +13150,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change
@@ -13190,7 +13190,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change_from_open
@@ -13230,7 +13230,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change_from_open
@@ -13270,7 +13270,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_up
     operation: nempty
@@ -13312,7 +13312,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_down
     operation: nempty
@@ -13354,7 +13354,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_up_abs
     operation: nempty
@@ -13396,7 +13396,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_down_abs
     operation: nempty
@@ -13438,7 +13438,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -13478,7 +13478,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -13518,7 +13518,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -13558,7 +13558,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -13598,7 +13598,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -13638,7 +13638,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -13680,7 +13680,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -13722,7 +13722,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -13764,7 +13764,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -13806,7 +13806,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -13846,7 +13846,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -13886,7 +13886,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -13926,7 +13926,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -13966,7 +13966,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -14006,7 +14006,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -14048,7 +14048,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -14090,7 +14090,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -14132,7 +14132,7 @@ presets:
     - 0.9
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -14174,7 +14174,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -14214,7 +14214,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -14254,7 +14254,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -14294,7 +14294,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -14334,7 +14334,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -14374,7 +14374,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -14416,7 +14416,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -14458,7 +14458,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -14500,7 +14500,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -14542,7 +14542,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -14582,7 +14582,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -14622,7 +14622,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -14662,7 +14662,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -14702,7 +14702,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -14742,7 +14742,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -14784,7 +14784,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -14826,7 +14826,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -14868,7 +14868,7 @@ presets:
     - 200
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -14910,7 +14910,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -14950,7 +14950,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -14990,7 +14990,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -15030,7 +15030,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -15070,7 +15070,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -15110,7 +15110,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -15152,7 +15152,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -15194,7 +15194,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -15236,7 +15236,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -15278,7 +15278,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -15318,7 +15318,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -15358,7 +15358,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -15398,7 +15398,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -15438,7 +15438,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -15478,7 +15478,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -15520,7 +15520,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -15562,7 +15562,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -15604,7 +15604,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -15646,7 +15646,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -15686,7 +15686,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -15726,7 +15726,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -15766,7 +15766,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -15806,7 +15806,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -15846,7 +15846,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -15888,7 +15888,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -15930,7 +15930,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -15972,7 +15972,7 @@ presets:
     - 50
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -16014,7 +16014,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -16054,7 +16054,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -16094,7 +16094,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -16134,7 +16134,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -16174,7 +16174,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -16214,7 +16214,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -16256,7 +16256,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -16298,7 +16298,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -16340,7 +16340,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -16382,7 +16382,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -16422,7 +16422,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -16462,7 +16462,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -16502,7 +16502,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -16542,7 +16542,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -16582,7 +16582,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -16624,7 +16624,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -16666,7 +16666,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -16708,7 +16708,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -16750,7 +16750,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   columns:
   - volume
@@ -16790,7 +16790,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   columns:
   - change
@@ -16830,7 +16830,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   columns:
   - change
@@ -16870,7 +16870,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   columns:
   - change_from_open
@@ -16910,7 +16910,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   columns:
   - change_from_open
@@ -16950,7 +16950,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   - left: gap_up
     operation: nempty
@@ -16992,7 +16992,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   - left: gap_down
     operation: nempty
@@ -17034,7 +17034,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   - left: gap_up_abs
     operation: nempty
@@ -17076,7 +17076,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 6200
   - left: gap_down_abs
     operation: nempty
@@ -17118,7 +17118,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   columns:
   - volume
@@ -17158,7 +17158,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   columns:
   - change
@@ -17198,7 +17198,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   columns:
   - change
@@ -17238,7 +17238,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   columns:
   - change_from_open
@@ -17278,7 +17278,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   columns:
   - change_from_open
@@ -17318,7 +17318,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   - left: gap_up
     operation: nempty
@@ -17360,7 +17360,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   - left: gap_down
     operation: nempty
@@ -17402,7 +17402,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   - left: gap_up_abs
     operation: nempty
@@ -17444,7 +17444,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000000
   - left: gap_down_abs
     operation: nempty
@@ -17486,7 +17486,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - volume
@@ -17526,7 +17526,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change
@@ -17566,7 +17566,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change
@@ -17606,7 +17606,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change_from_open
@@ -17646,7 +17646,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change_from_open
@@ -17686,7 +17686,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_up
     operation: nempty
@@ -17728,7 +17728,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_down
     operation: nempty
@@ -17770,7 +17770,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_up_abs
     operation: nempty
@@ -17812,7 +17812,7 @@ presets:
     - 0.1
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_down_abs
     operation: nempty
@@ -17852,7 +17852,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -17890,7 +17890,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -17928,7 +17928,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -17966,7 +17966,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -18004,7 +18004,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -18042,7 +18042,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -18082,7 +18082,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -18122,7 +18122,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -18162,7 +18162,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -18204,7 +18204,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -18244,7 +18244,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -18284,7 +18284,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -18324,7 +18324,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -18364,7 +18364,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -18404,7 +18404,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -18446,7 +18446,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -18488,7 +18488,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -18530,7 +18530,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -18572,7 +18572,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - volume
@@ -18612,7 +18612,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -18652,7 +18652,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -18692,7 +18692,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -18732,7 +18732,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -18772,7 +18772,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up
     operation: nempty
@@ -18814,7 +18814,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down
     operation: nempty
@@ -18856,7 +18856,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up_abs
     operation: nempty
@@ -18898,7 +18898,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down_abs
     operation: nempty
@@ -18940,7 +18940,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -18980,7 +18980,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -19020,7 +19020,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -19060,7 +19060,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -19100,7 +19100,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -19140,7 +19140,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -19182,7 +19182,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -19224,7 +19224,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -19266,7 +19266,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -19308,7 +19308,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -19348,7 +19348,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -19388,7 +19388,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -19428,7 +19428,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -19468,7 +19468,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -19508,7 +19508,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -19550,7 +19550,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -19592,7 +19592,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -19634,7 +19634,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -19676,7 +19676,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   columns:
   - volume
@@ -19716,7 +19716,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   columns:
   - change
@@ -19756,7 +19756,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   columns:
   - change
@@ -19796,7 +19796,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   columns:
   - change_from_open
@@ -19836,7 +19836,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   columns:
   - change_from_open
@@ -19876,7 +19876,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   - left: gap_up
     operation: nempty
@@ -19918,7 +19918,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   - left: gap_down
     operation: nempty
@@ -19960,7 +19960,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   - left: gap_up_abs
     operation: nempty
@@ -20002,7 +20002,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000000
   - left: gap_down_abs
     operation: nempty
@@ -20044,7 +20044,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -20084,7 +20084,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -20124,7 +20124,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -20164,7 +20164,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -20204,7 +20204,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -20244,7 +20244,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -20286,7 +20286,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -20328,7 +20328,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -20370,7 +20370,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -20412,7 +20412,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -20452,7 +20452,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -20492,7 +20492,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -20532,7 +20532,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -20572,7 +20572,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -20612,7 +20612,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -20654,7 +20654,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -20696,7 +20696,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -20738,7 +20738,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -20780,7 +20780,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -20820,7 +20820,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -20860,7 +20860,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -20900,7 +20900,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -20940,7 +20940,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -20980,7 +20980,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -21022,7 +21022,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -21064,7 +21064,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -21106,7 +21106,7 @@ presets:
     - 10
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -21148,7 +21148,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - volume
@@ -21188,7 +21188,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -21228,7 +21228,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change
@@ -21268,7 +21268,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -21308,7 +21308,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   columns:
   - change_from_open
@@ -21348,7 +21348,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up
     operation: nempty
@@ -21390,7 +21390,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down
     operation: nempty
@@ -21432,7 +21432,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_up_abs
     operation: nempty
@@ -21474,7 +21474,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 3000
   - left: gap_down_abs
     operation: nempty
@@ -21516,7 +21516,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -21556,7 +21556,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -21596,7 +21596,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -21636,7 +21636,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -21676,7 +21676,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -21716,7 +21716,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -21758,7 +21758,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -21800,7 +21800,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -21842,7 +21842,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -21884,7 +21884,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -21924,7 +21924,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -21964,7 +21964,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -22004,7 +22004,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -22044,7 +22044,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -22084,7 +22084,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -22126,7 +22126,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -22168,7 +22168,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -22210,7 +22210,7 @@ presets:
     - 0.2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -22252,7 +22252,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -22292,7 +22292,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -22332,7 +22332,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -22372,7 +22372,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -22412,7 +22412,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -22452,7 +22452,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -22494,7 +22494,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -22536,7 +22536,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -22578,7 +22578,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -22620,7 +22620,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -22660,7 +22660,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -22700,7 +22700,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -22740,7 +22740,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -22780,7 +22780,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -22820,7 +22820,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -22862,7 +22862,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -22904,7 +22904,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -22946,7 +22946,7 @@ presets:
     - 0.01
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -23284,7 +23284,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - volume
@@ -23324,7 +23324,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change
@@ -23364,7 +23364,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change
@@ -23404,7 +23404,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change_from_open
@@ -23444,7 +23444,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change_from_open
@@ -23484,7 +23484,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_up
     operation: nempty
@@ -23526,7 +23526,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_down
     operation: nempty
@@ -23568,7 +23568,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_up_abs
     operation: nempty
@@ -23610,7 +23610,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_down_abs
     operation: nempty
@@ -23652,7 +23652,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - volume
@@ -23692,7 +23692,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change
@@ -23732,7 +23732,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change
@@ -23772,7 +23772,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change_from_open
@@ -23812,7 +23812,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change_from_open
@@ -23852,7 +23852,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_up
     operation: nempty
@@ -23894,7 +23894,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_down
     operation: nempty
@@ -23936,7 +23936,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_up_abs
     operation: nempty
@@ -23978,7 +23978,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_down_abs
     operation: nempty
@@ -24020,7 +24020,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -24060,7 +24060,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -24100,7 +24100,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -24140,7 +24140,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -24180,7 +24180,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -24220,7 +24220,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -24262,7 +24262,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -24304,7 +24304,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -24346,7 +24346,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -24388,7 +24388,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -24428,7 +24428,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -24468,7 +24468,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -24508,7 +24508,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -24548,7 +24548,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -24588,7 +24588,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -24630,7 +24630,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -24672,7 +24672,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -24714,7 +24714,7 @@ presets:
     - 0.001
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -24756,7 +24756,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -24796,7 +24796,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -24836,7 +24836,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -24876,7 +24876,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -24916,7 +24916,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -24956,7 +24956,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -24998,7 +24998,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -25040,7 +25040,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -25082,7 +25082,7 @@ presets:
     - 1
     - 20000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -25124,7 +25124,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -25164,7 +25164,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -25204,7 +25204,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -25244,7 +25244,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -25284,7 +25284,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -25324,7 +25324,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -25366,7 +25366,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -25408,7 +25408,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -25450,7 +25450,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -25492,7 +25492,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -25532,7 +25532,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -25572,7 +25572,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -25612,7 +25612,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -25652,7 +25652,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -25692,7 +25692,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -25734,7 +25734,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -25776,7 +25776,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -25818,7 +25818,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -25860,7 +25860,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -25900,7 +25900,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -25940,7 +25940,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -25980,7 +25980,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -26020,7 +26020,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -26060,7 +26060,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -26102,7 +26102,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -26144,7 +26144,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -26186,7 +26186,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -26228,7 +26228,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - volume
@@ -26268,7 +26268,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change
@@ -26308,7 +26308,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change
@@ -26348,7 +26348,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change_from_open
@@ -26388,7 +26388,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   columns:
   - change_from_open
@@ -26428,7 +26428,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_up
     operation: nempty
@@ -26470,7 +26470,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_down
     operation: nempty
@@ -26512,7 +26512,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_up_abs
     operation: nempty
@@ -26554,7 +26554,7 @@ presets:
     - 0.02
     - 500000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1
   - left: gap_down_abs
     operation: nempty
@@ -26596,7 +26596,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -26636,7 +26636,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -26676,7 +26676,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -26716,7 +26716,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -26756,7 +26756,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -26796,7 +26796,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -26838,7 +26838,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -26880,7 +26880,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -26922,7 +26922,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -26964,7 +26964,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - volume
@@ -27004,7 +27004,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -27044,7 +27044,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change
@@ -27084,7 +27084,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -27124,7 +27124,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   columns:
   - change_from_open
@@ -27164,7 +27164,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up
     operation: nempty
@@ -27206,7 +27206,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down
     operation: nempty
@@ -27248,7 +27248,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_up_abs
     operation: nempty
@@ -27290,7 +27290,7 @@ presets:
     - 100
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 0
   - left: gap_down_abs
     operation: nempty
@@ -27332,7 +27332,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -27372,7 +27372,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -27412,7 +27412,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -27452,7 +27452,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -27492,7 +27492,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -27532,7 +27532,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -27574,7 +27574,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -27616,7 +27616,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -27658,7 +27658,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -27700,7 +27700,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - volume
@@ -27740,7 +27740,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change
@@ -27780,7 +27780,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change
@@ -27820,7 +27820,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change_from_open
@@ -27860,7 +27860,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   columns:
   - change_from_open
@@ -27900,7 +27900,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_up
     operation: nempty
@@ -27942,7 +27942,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_down
     operation: nempty
@@ -27984,7 +27984,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_up_abs
     operation: nempty
@@ -28026,7 +28026,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 150000
   - left: gap_down_abs
     operation: nempty
@@ -28068,7 +28068,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -28108,7 +28108,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -28148,7 +28148,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -28188,7 +28188,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -28228,7 +28228,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -28268,7 +28268,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -28310,7 +28310,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -28352,7 +28352,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -28394,7 +28394,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -28439,7 +28439,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -28482,7 +28482,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -28525,7 +28525,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -28568,7 +28568,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -28611,7 +28611,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -28654,7 +28654,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -28699,7 +28699,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -28744,7 +28744,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -28789,7 +28789,7 @@ presets:
     - 1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -28831,7 +28831,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - volume
@@ -28871,7 +28871,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -28911,7 +28911,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change
@@ -28951,7 +28951,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -28991,7 +28991,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   columns:
   - change_from_open
@@ -29031,7 +29031,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up
     operation: nempty
@@ -29073,7 +29073,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down
     operation: nempty
@@ -29115,7 +29115,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_up_abs
     operation: nempty
@@ -29157,7 +29157,7 @@ presets:
     - 1.4
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100
   - left: gap_down_abs
     operation: nempty
@@ -29495,7 +29495,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   columns:
   - volume
@@ -29535,7 +29535,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   columns:
   - change
@@ -29575,7 +29575,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   columns:
   - change
@@ -29615,7 +29615,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   columns:
   - change_from_open
@@ -29655,7 +29655,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   columns:
   - change_from_open
@@ -29695,7 +29695,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   - left: gap_up
     operation: nempty
@@ -29737,7 +29737,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   - left: gap_down
     operation: nempty
@@ -29779,7 +29779,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   - left: gap_up_abs
     operation: nempty
@@ -29821,7 +29821,7 @@ presets:
     - 0.3
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 100000
   - left: gap_down_abs
     operation: nempty
@@ -29863,7 +29863,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - volume
@@ -29903,7 +29903,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -29943,7 +29943,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change
@@ -29983,7 +29983,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -30023,7 +30023,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   columns:
   - change_from_open
@@ -30063,7 +30063,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up
     operation: nempty
@@ -30105,7 +30105,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down
     operation: nempty
@@ -30147,7 +30147,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_up_abs
     operation: nempty
@@ -30189,7 +30189,7 @@ presets:
     - 0.1
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 1000
   - left: gap_down_abs
     operation: nempty
@@ -30231,7 +30231,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - volume
@@ -30271,7 +30271,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -30311,7 +30311,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change
@@ -30351,7 +30351,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -30391,7 +30391,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   columns:
   - change_from_open
@@ -30431,7 +30431,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up
     operation: nempty
@@ -30473,7 +30473,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down
     operation: nempty
@@ -30515,7 +30515,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_up_abs
     operation: nempty
@@ -30557,7 +30557,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 10000
   - left: gap_down_abs
     operation: nempty
@@ -30599,7 +30599,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   columns:
   - volume
@@ -30639,7 +30639,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   columns:
   - change
@@ -30679,7 +30679,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   columns:
   - change
@@ -30719,7 +30719,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   columns:
   - change_from_open
@@ -30759,7 +30759,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   columns:
   - change_from_open
@@ -30799,7 +30799,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   - left: gap_up
     operation: nempty
@@ -30841,7 +30841,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   - left: gap_down
     operation: nempty
@@ -30883,7 +30883,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   - left: gap_up_abs
     operation: nempty
@@ -30925,7 +30925,7 @@ presets:
     - 2
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 2000
   - left: gap_down_abs
     operation: nempty
@@ -30967,7 +30967,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - volume
@@ -31007,7 +31007,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change
@@ -31047,7 +31047,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change
@@ -31087,7 +31087,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change_from_open
@@ -31127,7 +31127,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   columns:
   - change_from_open
@@ -31167,7 +31167,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_up
     operation: nempty
@@ -31209,7 +31209,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_down
     operation: nempty
@@ -31251,7 +31251,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_up_abs
     operation: nempty
@@ -31293,7 +31293,7 @@ presets:
     - 1
     - 100000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 500
   - left: gap_down_abs
     operation: nempty
@@ -31335,7 +31335,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -31375,7 +31375,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -31415,7 +31415,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -31455,7 +31455,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -31495,7 +31495,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -31535,7 +31535,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -31577,7 +31577,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -31619,7 +31619,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -31661,7 +31661,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -31703,7 +31703,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -31743,7 +31743,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -31783,7 +31783,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -31823,7 +31823,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -31863,7 +31863,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -31903,7 +31903,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -31945,7 +31945,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -31987,7 +31987,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -32029,7 +32029,7 @@ presets:
     - 500
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -32071,7 +32071,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -32111,7 +32111,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -32151,7 +32151,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -32191,7 +32191,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -32231,7 +32231,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -32271,7 +32271,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -32313,7 +32313,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -32355,7 +32355,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -32397,7 +32397,7 @@ presets:
     - 700
     - 10000000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -32439,7 +32439,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - volume
@@ -32479,7 +32479,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -32519,7 +32519,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change
@@ -32559,7 +32559,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -32599,7 +32599,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   columns:
   - change_from_open
@@ -32639,7 +32639,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up
     operation: nempty
@@ -32681,7 +32681,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down
     operation: nempty
@@ -32723,7 +32723,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_up_abs
     operation: nempty
@@ -32765,7 +32765,7 @@ presets:
     - 0.5
     - 10000
   - left: volume
-    operation: greater
+    operation: egreater
     right: 5000
   - left: gap_down_abs
     operation: nempty
@@ -32779,3 +32779,1107 @@ presets:
   - 20
   markets: 
   - norway
+- name: DSEBD_volume_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  columns:
+  - volume
+  sort:
+    sortBy: volume
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_change_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_change_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_range_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_range_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  - left: gap_up
+    operation: nempty
+  columns:
+  - gap_up
+  sort:
+    sortBy: gap_up
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_percent_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  - left: gap_down
+    operation: nempty
+  columns:
+  - gap_down
+  sort:
+    sortBy: gap_down
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  - left: gap_up_abs
+    operation: nempty
+  columns:
+  - gap_up_abs
+  sort:
+    sortBy: gap_up_abs
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: DSEBD_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: DSEBD
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 0.3
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 27000
+  - left: gap_down_abs
+    operation: nempty
+  columns:
+  - gap_down_abs
+  sort:
+    sortBy: gap_down_abs
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - bangladesh
+- name: PSECZ_volume_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - volume
+  sort:
+    sortBy: volume
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_change_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_change_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_range_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_range_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_up
+    operation: nempty
+  columns:
+  - gap_up
+  sort:
+    sortBy: gap_up
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_percent_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_down
+    operation: nempty
+  columns:
+  - gap_down
+  sort:
+    sortBy: gap_down
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_up_abs
+    operation: nempty
+  columns:
+  - gap_up_abs
+  sort:
+    sortBy: gap_up_abs
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: PSECZ_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: PSECZ
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 50
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_down_abs
+    operation: nempty
+  columns:
+  - gap_down_abs
+  sort:
+    sortBy: gap_down_abs
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - czech
+- name: VIE_volume_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - volume
+  sort:
+    sortBy: volume
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_change_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_change_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change
+  sort:
+    sortBy: change
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_range_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_range_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  columns:
+  - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_up
+    operation: nempty
+  columns:
+  - gap_up
+  sort:
+    sortBy: gap_up
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_percent_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_down
+    operation: nempty
+  columns:
+  - gap_down
+  sort:
+    sortBy: gap_down
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_gap_gainers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_up_abs
+    operation: nempty
+  columns:
+  - gap_up_abs
+  sort:
+    sortBy: gap_up_abs
+    sortOrder: desc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria
+- name: VIE_gap_losers
+  filter:
+  - left: exchange
+    operation: equal
+    right: VIE
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: 
+    - common
+    - ''
+  - left: type
+    operation: in_range
+    right:
+    - stock
+    - dr
+  - left: typespecs
+    operation: has_none_of
+    right: 
+    - odd
+  - left: close
+    operation: in_range
+    right:
+    - 20
+    - 10000
+  - left: volume
+    operation: egreater
+    right: 100
+  - left: gap_down_abs
+    operation: nempty
+  columns:
+  - gap_down_abs
+  sort:
+    sortBy: gap_down_abs
+    sortOrder: asc
+  range:
+  - 0
+  - 20
+  markets: 
+  - austria

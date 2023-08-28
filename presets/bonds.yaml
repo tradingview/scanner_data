@@ -9,6 +9,9 @@ presets:
   - left: typespecs
     operation: has
     right: yield
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_all_10y_yield
   filter:
   - left: term-to-maturity
@@ -17,6 +20,9 @@ presets:
   - left: typespecs
     operation: has
     right: yield
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_major_10y_yield
   filter:
   - left: term-to-maturity
@@ -48,6 +54,9 @@ presets:
     - TR
     - GB
     - US
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_americas_yield
   filter:
   - left: typespecs
@@ -56,6 +65,9 @@ presets:
   - left: region
     operation: equal
     right: Americas
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_europe_yield
   filter:
   - left: typespecs
@@ -64,6 +76,9 @@ presets:
   - left: region
     operation: equal
     right: Europe
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_asia_yield
   filter:
   - left: typespecs
@@ -72,6 +87,9 @@ presets:
   - left: region
     operation: equal
     right: Asia
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_pacific_yield
   filter:
   - left: typespecs
@@ -80,6 +98,9 @@ presets:
   - left: region
     operation: equal
     right: Pacific
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_middle_east_yield
   filter:
   - left: typespecs
@@ -88,6 +109,9 @@ presets:
   - left: region
     operation: equal
     right: Middle East
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
 - name: bonds_africa_yield
   filter:
   - left: typespecs
@@ -96,3 +120,122 @@ presets:
   - left: region
     operation: equal
     right: Africa
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_usa_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: equal
+    right: US
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_uk_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: equal
+    right: GB
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_eu_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: in_range
+    right:
+    - AT
+    - BE
+    - BG
+    - HR
+    - CY
+    - CZ
+    - DK
+    - EE
+    - FI
+    - FR
+    - DE
+    - GR
+    - HU
+    - IE
+    - IT
+    - LV
+    - LT
+    - LU
+    - MT
+    - NL
+    - PL
+    - PT
+    - RO
+    - SK
+    - SI
+    - ES
+    - SE
+    - EU
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_germany_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: equal
+    right: DE
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_france_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: equal
+    right: FR
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_china_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: equal
+    right: CN
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_india_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: equal
+    right: IN
+  sort:
+    sortBy: index_priority
+    sortOrder: asc
+- name: bonds_japan_yield
+  filter:
+  - left: typespecs
+    operation: has
+    right: yield
+  - left: country_code
+    operation: equal
+    right: JP
+  sort:
+    sortBy: index_priority
+    sortOrder: asc

@@ -1,6 +1,13 @@
 ---
 presets:
 - name: forex_rates_all
+  filter:
+    - left: exchange
+      operation: equal
+      right: FX_IDC
+  - left: typespecs
+    operation: has_none_of
+    right: synthetic
   symbols:
     query:
       types:

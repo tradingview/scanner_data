@@ -14,9 +14,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: name
     sortOrder: asc
@@ -34,9 +31,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: desc
@@ -54,9 +48,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: asc

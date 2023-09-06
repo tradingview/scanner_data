@@ -1,0 +1,67 @@
+[
+    {
+        "name": "pricescale",
+        "type": "number"
+    },
+    {
+        "name": "minmov",
+        "type": "number"
+    },
+    {
+        "name": "minmove2",
+        "type": "number"
+    },
+    {
+        "name": "fractional",
+        "type": "text"
+    },
+    {
+        "name": "sector",
+        "type": "text"
+    },
+    {
+        "name": "country",
+        "type": "text"
+    },
+    {
+        "name": "industry",
+        "type": "text"
+    },
+    {
+        "name": "all_time_open",
+        "type": "price"
+    },
+    {
+        "name": "root",
+        "type": "text"
+    },
+    {
+        "name": "country_code_fund",
+        "type": "text"
+    },
+    {
+        "name": "update-time",
+        "type": "number",
+        "extract_from": "daily-bar" 
+    },
+    {
+        "name": "source-logoid",
+        "type": "text"
+    },
+    {
+        "name": "bid",
+        "type": "price"
+    },
+    {
+        "name": "ask",
+        "type": "price"
+    },
+    {
+        "name": "strike",
+        "type": "price"
+    },
+    {
+        "name": "option-type",
+        "type": "text"
+    }
+]

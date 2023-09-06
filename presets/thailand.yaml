@@ -678,3 +678,28 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: country_top_indices_th
+  symbols:
+    tickers:
+      - SET:SET
+      - SET:SET50
+      - SET:SET100
+      - SET:MAI
+      - SET:FINCIAL
+      - SET:ENERG
+      - SET:INDUS
+      - SET:HELTH
+      - SET:ETRON
+      - SET:TOURISM
+      - SET:FOOD

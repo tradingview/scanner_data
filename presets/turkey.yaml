@@ -573,3 +573,28 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_tr
+  symbols:
+    tickers:
+      - BIST:XU100
+      - BIST:XU030
+      - BIST:XU050
+      - BIST:XBANK
+      - BIST:XK100
+      - BIST:XUTUM
+      - BIST:XTUMY
+      - BIST:XLBNK
+      - BIST:X10XB
+      - BIST:XUSRD
+      - BIST:XYUZO

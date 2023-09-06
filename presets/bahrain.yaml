@@ -588,3 +588,28 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_bh
+  symbols:
+    tickers:
+      - BAHRAIN:BHBX
+      - BAHRAIN:BIX
+      - BAHRAIN:BHB_COMS
+      - BAHRAIN:BHB_DSCR
+      - BAHRAIN:BHB_FINS
+      - BAHRAIN:BHB_ENGY
+      - BAHRAIN:BHB_INDL
+      - BAHRAIN:BHB_HLTH
+      - BAHRAIN:BHB_MTRL
+      - BAHRAIN:BHB_REST
+      - BAHRAIN:BHB_STPL

@@ -588,3 +588,28 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_sa
+  symbols:
+    tickers:
+      - TADAWUL:TASI
+      - TADAWUL:MT30
+      - TADAWUL:NOMUC
+      - TADAWUL:TDFI
+      - TADAWUL:TBNI
+      - TADAWUL:TENI
+      - TADAWUL:TCGI
+      - TADAWUL:THEI
+      - TADAWUL:TMTI
+      - TADAWUL:TRMI
+      - TADAWUL:TFSI

@@ -678,3 +678,28 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_my
+  symbols:
+    tickers:
+      - FTSEMYX:FBMKLCI
+      - FTSEMYX:FBMACE
+      - FTSEMYX:FBMT100
+      - FTSEMYX:FBM70
+      - FTSEMYX:FBMSCAP
+      - MYX:FINANCE
+      - MYX:ENERGY
+      - MYX:IND-PROD
+      - MYX:HEALTH
+      - MYX:TECHNOLOGY
+      - MYX:PLANTATION

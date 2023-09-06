@@ -43,7 +43,7 @@ const regions = {
     "BYN": "Europe",
     "BZD": "Americas",
     "CAD": "Americas",
-    "CAX": "Americas",
+    "CAX": "",
     "CDF": "Africa",
     "CHF": "Europe",
     "CLP": "Americas",

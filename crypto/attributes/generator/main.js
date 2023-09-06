@@ -95,7 +95,8 @@ const scanRequestForPairs = {
 
 function scan(req, loc) {
     loc = loc || defaultScannerLocation;
-    const resp = requestSync("POST", `https://scanner${loc ? '-' + loc : ''}.tradingview.com/crypto/scan2`, {
+    console.error("scanner url: https://scanner.xstaging.tv/crypto/scan2");
+    const resp = requestSync("POST", `https://scanner.xstaging.tv/crypto/scan2`, {
         json: req
     });
     if (resp.statusCode != 200) {
@@ -211,7 +212,12 @@ const excludeSymbols = [
     "BITFINEX:MNABTC",
     "BITFINEX:IOSBTC",
     "BITFINEX:IOSUSD",
-    "OKCOIN:USDCUSD"
+    "OKCOIN:USDCUSD",
+    "BITFINEX:IOTUSD",
+    "POLONIEX:STRUSD",
+    "BITFINEX:WBTUSD",
+    "BITFINEX:ALGUSD",
+    "BITTREX:FNSAUSD"
 ];
 
 function skipSymbol(s) {

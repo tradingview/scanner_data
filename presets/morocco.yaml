@@ -66,7 +66,7 @@ presets:
     operation: greater
     right: 0
   sort:
-    sortBy: number_of_employees
+    sortBy: number_of_employees_fy
     sortOrder: desc
 - name: high_dividend
   filter:
@@ -79,11 +79,11 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: dividend_yield_recent
+  - left: dividends_yield
     operation: greater
     right: 0
   sort:
-    sortBy: dividend_yield_recent
+    sortBy: dividends_yield
     sortOrder: desc
 - name: highest_net_income
   filter:
@@ -97,7 +97,7 @@ presets:
     operation: equal
     right: stock
   sort:
-    sortBy: net_income
+    sortBy: net_income_fy
     sortOrder: desc
 - name: gainers
   filter:
@@ -239,7 +239,7 @@ presets:
     operation: equal
     right: stock
   sort:
-    sortBy: total_revenue
+    sortBy: total_revenue_fy
     sortOrder: desc
 - name: most_expensive
   filter:
@@ -573,3 +573,28 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_ma
+  symbols:
+    tickers:
+      - CSEMA:MASI
+      - CSEMA:MSI20
+      - CSEMA:SDT
+      - CSEMA:BANK
+      - CSEMA:ESGI
+      - CSEMA:MASIMS
+      - CSEMA:MASIR
+      - CSEMA:MASRN
+      - FTSE:FCSE
+      - FTSE:FCSELIQ
+      - CSEMA:S&P

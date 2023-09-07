@@ -579,3 +579,7 @@ presets:
   symbols:
     tickers:
       - OMXRSE:OMXRGI
+- name: country_top_indices_lv_empty_example
+  symbols:
+    tickers:
+      - EMPTY:LIST

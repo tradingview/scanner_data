@@ -6284,7 +6284,7 @@ presets:
   - 20
   markets: 
   - bahrain
-- name: EURONEXTBRU_volume_gainers
+- name: EURONEXT_BRU_volume_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6324,7 +6324,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_percent_change_gainers
+- name: EURONEXT_BRU_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6364,7 +6364,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_percent_change_losers
+- name: EURONEXT_BRU_percent_change_losers
   filter:
   - left: exchange
     operation: equal
@@ -6404,7 +6404,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_percent_range_gainers
+- name: EURONEXT_BRU_percent_range_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6444,7 +6444,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_percent_range_losers
+- name: EURONEXT_BRU_percent_range_losers
   filter:
   - left: exchange
     operation: equal
@@ -6484,7 +6484,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_percent_gap_gainers
+- name: EURONEXT_BRU_percent_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6526,7 +6526,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_percent_gap_losers
+- name: EURONEXT_BRU_percent_gap_losers
   filter:
   - left: exchange
     operation: equal
@@ -6568,7 +6568,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_gap_gainers
+- name: EURONEXT_BRU_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -6610,7 +6610,7 @@ presets:
   - 20
   markets: 
   - belgium
-- name: EURONEXTBRU_gap_losers
+- name: EURONEXT_BRU_gap_losers
   filter:
   - left: exchange
     operation: equal
@@ -10098,7 +10098,7 @@ presets:
   - 20
   markets: 
   - finland
-- name: EURONEXTPAR_volume_gainers
+- name: EURONEXT_PAR_volume_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10138,7 +10138,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_percent_change_gainers
+- name: EURONEXT_PAR_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10178,7 +10178,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_percent_change_losers
+- name: EURONEXT_PAR_percent_change_losers
   filter:
   - left: exchange
     operation: equal
@@ -10218,7 +10218,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_percent_range_gainers
+- name: EURONEXT_PAR_percent_range_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10258,7 +10258,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_percent_range_losers
+- name: EURONEXT_PAR_percent_range_losers
   filter:
   - left: exchange
     operation: equal
@@ -10298,7 +10298,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_percent_gap_gainers
+- name: EURONEXT_PAR_percent_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10340,7 +10340,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_percent_gap_losers
+- name: EURONEXT_PAR_percent_gap_losers
   filter:
   - left: exchange
     operation: equal
@@ -10382,7 +10382,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_gap_gainers
+- name: EURONEXT_PAR_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -10424,7 +10424,7 @@ presets:
   - 20
   markets: 
   - france
-- name: EURONEXTPAR_gap_losers
+- name: EURONEXT_PAR_gap_losers
   filter:
   - left: exchange
     operation: equal
@@ -20016,7 +20016,7 @@ presets:
   - 20
   markets: 
   - pakistan
-- name: EURONEXTAMS_volume_gainers
+- name: EURONEXT_AMS_volume_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20056,7 +20056,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_percent_change_gainers
+- name: EURONEXT_AMS_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20096,7 +20096,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_percent_change_losers
+- name: EURONEXT_AMS_percent_change_losers
   filter:
   - left: exchange
     operation: equal
@@ -20136,7 +20136,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_percent_range_gainers
+- name: EURONEXT_AMS_percent_range_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20176,7 +20176,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_percent_range_losers
+- name: EURONEXT_AMS_percent_range_losers
   filter:
   - left: exchange
     operation: equal
@@ -20216,7 +20216,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_percent_gap_gainers
+- name: EURONEXT_AMS_percent_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20258,7 +20258,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_percent_gap_losers
+- name: EURONEXT_AMS_percent_gap_losers
   filter:
   - left: exchange
     operation: equal
@@ -20300,7 +20300,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_gap_gainers
+- name: EURONEXT_AMS_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -20342,7 +20342,7 @@ presets:
   - 20
   markets: 
   - netherlands
-- name: EURONEXTAMS_gap_losers
+- name: EURONEXT_AMS_gap_losers
   filter:
   - left: exchange
     operation: equal
@@ -21856,7 +21856,7 @@ presets:
   - 20
   markets: 
   - poland
-- name: EURONEXTLIS_volume_gainers
+- name: EURONEXT_LIS_volume_gainers
   filter:
   - left: exchange
     operation: equal
@@ -21896,7 +21896,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_percent_change_gainers
+- name: EURONEXT_LIS_percent_change_gainers
   filter:
   - left: exchange
     operation: equal
@@ -21936,7 +21936,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_percent_change_losers
+- name: EURONEXT_LIS_percent_change_losers
   filter:
   - left: exchange
     operation: equal
@@ -21976,7 +21976,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_percent_range_gainers
+- name: EURONEXT_LIS_percent_range_gainers
   filter:
   - left: exchange
     operation: equal
@@ -22016,7 +22016,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_percent_range_losers
+- name: EURONEXT_LIS_percent_range_losers
   filter:
   - left: exchange
     operation: equal
@@ -22056,7 +22056,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_percent_gap_gainers
+- name: EURONEXT_LIS_percent_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -22098,7 +22098,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_percent_gap_losers
+- name: EURONEXT_LIS_percent_gap_losers
   filter:
   - left: exchange
     operation: equal
@@ -22140,7 +22140,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_gap_gainers
+- name: EURONEXT_LIS_gap_gainers
   filter:
   - left: exchange
     operation: equal
@@ -22182,7 +22182,7 @@ presets:
   - 20
   markets: 
   - portugal
-- name: EURONEXTLIS_gap_losers
+- name: EURONEXT_LIS_gap_losers
   filter:
   - left: exchange
     operation: equal

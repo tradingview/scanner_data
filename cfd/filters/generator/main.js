@@ -11,7 +11,7 @@ const groups = [
     },
     {
         url2: "prefix=TVC",
-        include: ["TVC:DJI", "TVC:MOVE", "TVC:NYA", "TVC:US3000", "TVC:US1000", "TVC:US2000", "TVC:TRJEFFCRB", "TVC:XAX", "TVC:XMI"]
+        include: ["TVC:DJI", "TVC:MOVE", "TVC:NYA", "TVC:RUA", "TVC:RUI", "TVC:RUT", "TVC:TRJEFFCRB", "TVC:XAX", "TVC:XMI"]
     },
     {
         url2: "prefix=TVC",

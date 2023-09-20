@@ -11,9 +11,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: name
     sortOrder: asc
@@ -28,9 +25,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: desc
@@ -45,9 +39,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: asc
@@ -62,9 +53,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   - left: market_cap_basic
     operation: greater
     right: 0
@@ -85,9 +73,6 @@ presets:
   - left: dividends_yield
     operation: greater
     right: 0
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: dividends_yield
     sortOrder: desc
@@ -102,9 +87,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: net_income_fy
     sortOrder: desc
@@ -225,9 +207,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   - left: market_cap_basic
     operation: greater
     right: 0
@@ -265,9 +244,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: total_revenue_fy
     sortOrder: desc
@@ -439,9 +415,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: cash_n_short_term_invest_fq
     sortOrder: desc
@@ -617,3 +590,17 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_kr
+  symbols:
+    tickers:
+      - KRX:KOSPI
+      - KRX:KOSPI50
+      - KRX:KOSPI200
+      - KRX:KOSPI2
+      - KRX:KOSPI3
+      - KRX:KOSPI4
+      - KRX:KOSDAQ
+      - KRX:KOSDAQ150
+      - KRX:KRXSECTOR4
+      - KRX:KRXSECTOR6
+      - KRX:KRXSECTOR3

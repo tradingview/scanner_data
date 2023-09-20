@@ -607,20 +607,6 @@
       ]
     },
     {
-      "s": "BITFINEX:ALGBTC",
-      "f": [
-        "Algory Project",
-        "ALG"
-      ]
-    },
-    {
-      "s": "BITFINEX:ALGUSD",
-      "f": [
-        "Algory Project",
-        "ALG"
-      ]
-    },
-    {
       "s": "BITTREX:BABABTC",
       "f": [
         "Alibaba tokenized stock Bittrex",
@@ -1108,6 +1094,20 @@
       "f": [
         "ARK Innovation ETF tokenized stock FTX",
         "ARKK"
+      ]
+    },
+    {
+      "s": "BINANCE:ARKMBTC",
+      "f": [
+        "Arkham",
+        "ARKM"
+      ]
+    },
+    {
+      "s": "BINANCE:ARKMUSD",
+      "f": [
+        "Arkham",
+        "ARKM"
       ]
     },
     {
@@ -3904,6 +3904,20 @@
       ]
     },
     {
+      "s": "BINANCE:CYBERBTC",
+      "f": [
+        "CyberConnect",
+        "CYBER"
+      ]
+    },
+    {
+      "s": "BINANCE:CYBERUSD",
+      "f": [
+        "CyberConnect",
+        "CYBER"
+      ]
+    },
+    {
       "s": "BITTREX:CVTBTC",
       "f": [
         "Cybervein",
@@ -5563,20 +5577,6 @@
       ]
     },
     {
-      "s": "HUOBI:FNSABTC",
-      "f": [
-        "FINSCHIA",
-        "FNSA"
-      ]
-    },
-    {
-      "s": "BITTREX:FNSAUSD",
-      "f": [
-        "FINSCHIA",
-        "FNSA"
-      ]
-    },
-    {
       "s": "HITBTC:FTXBTC",
       "f": [
         "FintruX Network",
@@ -6694,20 +6694,6 @@
       "f": [
         "Helium",
         "HNT"
-      ]
-    },
-    {
-      "s": "BITFINEX:IOTBTC",
-      "f": [
-        "Helium IOT",
-        "IOT"
-      ]
-    },
-    {
-      "s": "BITFINEX:IOTUSD",
-      "f": [
-        "Helium IOT",
-        "IOT"
       ]
     },
     {
@@ -8496,6 +8482,20 @@
       ]
     },
     {
+      "s": "BINANCE:MAVBTC",
+      "f": [
+        "Massive Protocol",
+        "MAV"
+      ]
+    },
+    {
+      "s": "BINANCE:MAVUSD",
+      "f": [
+        "Massive Protocol",
+        "MAV"
+      ]
+    },
+    {
       "s": "BITTREX:GUPBTC",
       "f": [
         "Matchpool",
@@ -10064,6 +10064,20 @@
       ]
     },
     {
+      "s": "BITFINEX:OPXBTC",
+      "f": [
+        "OPX Finance",
+        "OPX"
+      ]
+    },
+    {
+      "s": "BITFINEX:OPXUSD",
+      "f": [
+        "OPX Finance",
+        "OPX"
+      ]
+    },
+    {
       "s": "BITTREX:ORBSBTC",
       "f": [
         "Orbs",
@@ -10432,6 +10446,20 @@
       "f": [
         "Peercoin",
         "PPC"
+      ]
+    },
+    {
+      "s": "BINANCE:PENDLEBTC",
+      "f": [
+        "Pendle",
+        "PENDLE"
+      ]
+    },
+    {
+      "s": "BINANCE:PENDLEUSD",
+      "f": [
+        "Pendle",
+        "PENDLE"
       ]
     },
     {
@@ -12031,6 +12059,20 @@
       ]
     },
     {
+      "s": "BINANCE:SEIBTC",
+      "f": [
+        "Sei",
+        "SEI"
+      ]
+    },
+    {
+      "s": "BINANCE:SEIUSD",
+      "f": [
+        "Sei",
+        "SEI"
+      ]
+    },
+    {
       "s": "HITBTC:KEYBTC",
       "f": [
         "Selfkey",
@@ -12759,20 +12801,6 @@
       ]
     },
     {
-      "s": "POLONIEX:STRBTC",
-      "f": [
-        "Staker",
-        "STR"
-      ]
-    },
-    {
-      "s": "POLONIEX:STRUSD",
-      "f": [
-        "Staker",
-        "STR"
-      ]
-    },
-    {
       "s": "HITBTC:STNDBTC",
       "f": [
         "Standard Protocol",
@@ -12885,14 +12913,14 @@
       ]
     },
     {
-      "s": "BITTREX:XLMBTC",
+      "s": "COINBASE:XLMBTC",
       "f": [
         "Stellar",
         "XLM"
       ]
     },
     {
-      "s": "BITTREX:XLMUSD",
+      "s": "COINBASE:XLMUSD",
       "f": [
         "Stellar",
         "XLM"
@@ -13890,6 +13918,20 @@
       "f": [
         "Toko Token",
         "TKO"
+      ]
+    },
+    {
+      "s": "BITFINEX:TOMIBTC",
+      "f": [
+        "tomiNet",
+        "TOMI"
+      ]
+    },
+    {
+      "s": "BITFINEX:TOMIUSD",
+      "f": [
+        "tomiNet",
+        "TOMI"
       ]
     },
     {
@@ -15146,16 +15188,16 @@
       ]
     },
     {
-      "s": "BITFINEX:WBTBTC",
+      "s": "WHITEBIT:WBTBTC",
       "f": [
-        "WhiteBIT Token",
+        "WhiteBIT Coin",
         "WBT"
       ]
     },
     {
-      "s": "BITFINEX:WBTUSD",
+      "s": "WHITEBIT:WBTUSD",
       "f": [
-        "WhiteBIT Token",
+        "WhiteBIT Coin",
         "WBT"
       ]
     },
@@ -15241,6 +15283,20 @@
       "f": [
         "WINkLink",
         "WIN"
+      ]
+    },
+    {
+      "s": "BINANCE:WLDBTC",
+      "f": [
+        "Wolf Works DAO",
+        "WLD"
+      ]
+    },
+    {
+      "s": "BINANCE:WLDUSD",
+      "f": [
+        "Wolf Works DAO",
+        "WLD"
       ]
     },
     {

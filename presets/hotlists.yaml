@@ -36,6 +36,9 @@ presets:
     right: 10000
   columns:
   - volume
+  - update_mode
+  options:
+    x-userexchanges: nasdaq
   sort:
     sortBy: volume
     sortOrder: desc

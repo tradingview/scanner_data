@@ -2990,7 +2990,7 @@ presets:
       - ECONOMICS:DEGDP
       - ECONOMICS:GBGDP
       - ECONOMICS:RUGDP
-- name: locale_top_economics_gdp_pt
+- name: locale_top_economics_gdp_br
   symbols:
     tickers:
       - ECONOMICS:USGDP
@@ -2998,7 +2998,7 @@ presets:
       - ECONOMICS:JPGDP
       - ECONOMICS:DEGDP
       - ECONOMICS:GBGDP
-      - ECONOMICS:PTGDP
+      - ECONOMICS:BRGDP
 - name: locale_top_economics_gdp_id
   symbols:
     tickers:
@@ -3170,7 +3170,7 @@ presets:
       - ECONOMICS:DEINTR
       - ECONOMICS:GBINTR
       - ECONOMICS:RUINTR
-- name: locale_top_economics_interest_rate_pt
+- name: locale_top_economics_interest_rate_br
   symbols:
     tickers:
       - ECONOMICS:USINTR
@@ -3178,7 +3178,7 @@ presets:
       - ECONOMICS:JPINTR
       - ECONOMICS:DEINTR
       - ECONOMICS:GBINTR
-      - ECONOMICS:PTINTR
+      - ECONOMICS:BRINTR
 - name: locale_top_economics_interest_rate_id
   symbols:
     tickers:
@@ -3350,7 +3350,7 @@ presets:
       - ECONOMICS:DEIRYY
       - ECONOMICS:GBIRYY
       - ECONOMICS:RUIRYY
-- name: locale_top_economics_inflation_rate_pt
+- name: locale_top_economics_inflation_rate_br
   symbols:
     tickers:
       - ECONOMICS:USIRYY
@@ -3358,7 +3358,7 @@ presets:
       - ECONOMICS:JPIRYY
       - ECONOMICS:DEIRYY
       - ECONOMICS:GBIRYY
-      - ECONOMICS:PTIRYY
+      - ECONOMICS:BRIRYY
 - name: locale_top_economics_inflation_rate_id
   symbols:
     tickers:
@@ -3530,7 +3530,7 @@ presets:
       - ECONOMICS:DEUR
       - ECONOMICS:GBUR
       - ECONOMICS:RUUR
-- name: locale_top_economics_unemployment_rate_pt
+- name: locale_top_economics_unemployment_rate_br
   symbols:
     tickers:
       - ECONOMICS:USUR
@@ -3538,7 +3538,7 @@ presets:
       - ECONOMICS:JPUR
       - ECONOMICS:DEUR
       - ECONOMICS:GBUR
-      - ECONOMICS:PTUR
+      - ECONOMICS:BRUR
 - name: locale_top_economics_unemployment_rate_id
   symbols:
     tickers:

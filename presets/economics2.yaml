@@ -2909,3 +2909,723 @@ presets:
       - ECONOMICS:VNSSRC
       - ECONOMICS:VNSSRE
       - ECONOMICS:VNSTR
+- name: locale_top_economics_gdp_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:FRGDP
+- name: locale_top_economics_gdp_in
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:INGDP
+- name: locale_top_economics_gdp_de
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:FRGDP
+- name: locale_top_economics_gdp_fr
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:FRGDP
+- name: locale_top_economics_gdp_es
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:ESGDP
+- name: locale_top_economics_gdp_it
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:ITGDP
+- name: locale_top_economics_gdp_pl
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:PLGDP
+- name: locale_top_economics_gdp_tr
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:TRGDP
+- name: locale_top_economics_gdp_ru
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:RUGDP
+- name: locale_top_economics_gdp_pt
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:PTGDP
+- name: locale_top_economics_gdp_id
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:IDGDP
+- name: locale_top_economics_gdp_my
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:MYGDP
+- name: locale_top_economics_gdp_th
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:THGDP
+- name: locale_top_economics_gdp_vn
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:VNGDP
+- name: locale_top_economics_gdp_jp
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:FRGDP
+- name: locale_top_economics_gdp_kr
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:KRGDP
+- name: locale_top_economics_gdp_cn
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:FRGDP
+- name: locale_top_economics_gdp_tw
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:TWGDP
+- name: locale_top_economics_gdp_sa
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:SAGDP
+- name: locale_top_economics_gdp_il
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:CNGDP
+      - ECONOMICS:JPGDP
+      - ECONOMICS:DEGDP
+      - ECONOMICS:GBGDP
+      - ECONOMICS:ILGDP
+- name: locale_top_economics_interest_rate_us
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:FRINTR
+- name: locale_top_economics_interest_rate_in
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:ININTR
+- name: locale_top_economics_interest_rate_de
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:FRINTR
+- name: locale_top_economics_interest_rate_fr
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:FRINTR
+- name: locale_top_economics_interest_rate_es
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:ESINTR
+- name: locale_top_economics_interest_rate_it
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:ITINTR
+- name: locale_top_economics_interest_rate_pl
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:PLINTR
+- name: locale_top_economics_interest_rate_tr
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:TRINTR
+- name: locale_top_economics_interest_rate_ru
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:RUINTR
+- name: locale_top_economics_interest_rate_pt
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:PTINTR
+- name: locale_top_economics_interest_rate_id
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:IDINTR
+- name: locale_top_economics_interest_rate_my
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:MYINTR
+- name: locale_top_economics_interest_rate_th
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:THINTR
+- name: locale_top_economics_interest_rate_vn
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:VNINTR
+- name: locale_top_economics_interest_rate_jp
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:FRINTR
+- name: locale_top_economics_interest_rate_kr
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:KRINTR
+- name: locale_top_economics_interest_rate_cn
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:FRINTR
+- name: locale_top_economics_interest_rate_tw
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:TWINTR
+- name: locale_top_economics_interest_rate_sa
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:SAINTR
+- name: locale_top_economics_interest_rate_il
+  symbols:
+    tickers:
+      - ECONOMICS:USINTR
+      - ECONOMICS:CNINTR
+      - ECONOMICS:JPINTR
+      - ECONOMICS:DEINTR
+      - ECONOMICS:GBINTR
+      - ECONOMICS:ILINTR
+- name: locale_top_economics_inflation_rate_us
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:FRIRYY
+- name: locale_top_economics_inflation_rate_in
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:INIRYY
+- name: locale_top_economics_inflation_rate_de
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:FRIRYY
+- name: locale_top_economics_inflation_rate_fr
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:FRIRYY
+- name: locale_top_economics_inflation_rate_es
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:ESIRYY
+- name: locale_top_economics_inflation_rate_it
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:ITIRYY
+- name: locale_top_economics_inflation_rate_pl
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:PLIRYY
+- name: locale_top_economics_inflation_rate_tr
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:TRIRYY
+- name: locale_top_economics_inflation_rate_ru
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:RUIRYY
+- name: locale_top_economics_inflation_rate_pt
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:PTIRYY
+- name: locale_top_economics_inflation_rate_id
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:IDIRYY
+- name: locale_top_economics_inflation_rate_my
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:MYIRYY
+- name: locale_top_economics_inflation_rate_th
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:THIRYY
+- name: locale_top_economics_inflation_rate_vn
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:VNIRYY
+- name: locale_top_economics_inflation_rate_jp
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:FRIRYY
+- name: locale_top_economics_inflation_rate_kr
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:KRIRYY
+- name: locale_top_economics_inflation_rate_cn
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:FRIRYY
+- name: locale_top_economics_inflation_rate_tw
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:TWIRYY
+- name: locale_top_economics_inflation_rate_sa
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:SAIRYY
+- name: locale_top_economics_inflation_rate_il
+  symbols:
+    tickers:
+      - ECONOMICS:USIRYY
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:GBIRYY
+      - ECONOMICS:ILIRYY
+- name: locale_top_economics_unemployment_rate_us
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:FRUR
+- name: locale_top_economics_unemployment_rate_in
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:INUR
+- name: locale_top_economics_unemployment_rate_de
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:FRUR
+- name: locale_top_economics_unemployment_rate_fr
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:FRUR
+- name: locale_top_economics_unemployment_rate_es
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:ESUR
+- name: locale_top_economics_unemployment_rate_it
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:ITUR
+- name: locale_top_economics_unemployment_rate_pl
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:PLUR
+- name: locale_top_economics_unemployment_rate_tr
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:TRUR
+- name: locale_top_economics_unemployment_rate_ru
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:RUUR
+- name: locale_top_economics_unemployment_rate_pt
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:PTUR
+- name: locale_top_economics_unemployment_rate_id
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:IDUR
+- name: locale_top_economics_unemployment_rate_my
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:MYUR
+- name: locale_top_economics_unemployment_rate_th
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:THUR
+- name: locale_top_economics_unemployment_rate_vn
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:VNUR
+- name: locale_top_economics_unemployment_rate_jp
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:FRUR
+- name: locale_top_economics_unemployment_rate_kr
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:KRUR
+- name: locale_top_economics_unemployment_rate_cn
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:FRUR
+- name: locale_top_economics_unemployment_rate_tw
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:TWUR
+- name: locale_top_economics_unemployment_rate_sa
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:SAUR
+- name: locale_top_economics_unemployment_rate_il
+  symbols:
+    tickers:
+      - ECONOMICS:USUR
+      - ECONOMICS:CNUR
+      - ECONOMICS:JPUR
+      - ECONOMICS:DEUR
+      - ECONOMICS:GBUR
+      - ECONOMICS:ILUR

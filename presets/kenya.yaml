@@ -575,3 +575,7 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
+- name: country_top_indices_ke
+  symbols:
+    tickers:
+      - ""

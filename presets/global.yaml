@@ -2109,3 +2109,64 @@ presets:
   - uk
   - venezuela
   - vietnam
+- name: etfs_market_page_top
+  symbols:
+    tickers:
+      - AMEX:SPY
+      - AMEX:IVV
+      - AMEX:VOO
+      - NASDAQ:QQQ
+      - TSE:1306
+      - TSE:1305
+      - AMEX:GLD
+      - AMEX:SCHD
+      - AMEX:JEPI
+      - AMEX:DFAC
+      - AMEX:USFR
+- name: etfs_market_page_equity
+  symbols:
+    tickers:
+      - AMEX:VTI
+      - AMEX:IEFA
+      - TSE:1321
+      - AMEX:XLK
+      - AMEX:RSP
+      - AMEX:SCHX
+- name: etfs_market_page_fixed_income
+  symbols:
+    tickers:
+      - NASDAQ:BND
+      - AMEX:AGG
+      - AMEX:BIL
+      - AMEX:JPST
+      - AMEX:SCHO
+      - AMEX:MINT
+- name: etfs_market_page_commodities
+  symbols:
+    tickers:
+      - AMEX:IAU
+      - HAN:4GLD
+      - AMEX:GLDM
+      - NASDAQ:PDBC
+      - LSE:GLDW
+      - DUS:XGDU
+      - NASDAQ:FTGC
+      - AMEX:SGOL
+- name: etfs_market_page_asset_allocation
+  symbols:
+    tickers:
+      - TPEX:00751B
+      - ASX:AAA
+      - AMEX:AOR
+      - XETR:ZPRI
+      - TSX:VBAL
+      - NASDAQ:HNDL
+- name: etfs_market_page_sector
+  symbols:
+    tickers:
+      - AMEX:VGT
+      - AMEX:XLE
+      - SSE:588000
+      - AMEX:IYW
+      - AMEX:GDX
+      - AMEX:GUNR

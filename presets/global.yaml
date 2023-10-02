@@ -2170,3 +2170,199 @@ presets:
       - AMEX:IYW
       - AMEX:GDX
       - AMEX:GUNR
+- name: etfs_market_page_highest_return
+  filter:
+    - left: nav_total_return.1Y
+      operation: less
+      right: 600
+    - left: aum
+      operation: egreater
+      right: 1000000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_total_return.1Y
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_most_traded
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: Value.Traded
+    sortOrder: desc
+  markets:
+    - america
+- name: etfs_market_page_dividends
+  filter:
+    - left: aum
+      operation: egreater
+      right: 10000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: strategy
+      operation: in_range
+      right:
+        - '13'
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: dividends_yield
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam

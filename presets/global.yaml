@@ -2272,7 +2272,7 @@ presets:
   price_conversion:
     to_symbol: true
   sort:
-    sortBy: Value.Traded
+    sortBy: Value.Traded|1W
     sortOrder: desc
   markets:
     - america

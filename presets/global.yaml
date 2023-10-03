@@ -2145,11 +2145,9 @@ presets:
   symbols:
     tickers:
       - AMEX:IAU
-      - HAN:4GLD
       - AMEX:GLDM
       - NASDAQ:PDBC
       - LSE:GLDW
-      - DUS:XGDU
       - NASDAQ:FTGC
       - AMEX:SGOL
 - name: etfs_market_page_asset_allocation

@@ -2289,7 +2289,7 @@ presets:
     - left: strategy
       operation: in_range
       right:
-        - 13
+        - '13'
     - left: is_primary
       operation: equal
       right: true

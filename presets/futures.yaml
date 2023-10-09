@@ -472,7 +472,18 @@ presets:
 - name: country_top_futures_commodities_gb
   symbols:
     tickers:
-      - ""
+      - LME:AH1!
+      - LME:CA1!
+      - LME:HC1!
+      - LME:MD1!
+      - LME:NI1!
+      - LME:PB1!
+      - LME:SN1!
+      - LME:ZS1!
+      - LME:CO1!
+      - LME:SC1!
+      - LME:SR1!
+      - LME:LH1!
 - name: country_top_futures_commodities_ve
   symbols:
     tickers:
@@ -488,7 +499,18 @@ presets:
 - name: country_top_futures_commodities_au
   symbols:
     tickers:
-      - ""
+      - ASX24:BN1!
+      - ASX24:BQ1!
+      - ASX24:BS1!
+      - ASX24:BV1!
+      - ASX24:GN1!
+      - ASX24:GQ1!
+      - ASX24:GS1!
+      - ASX24:GV1!
+      - ASX24:GX1!
+      - ASX24:WM1!
+      - ASX24:UB1!
+      - ASX24:WK1!
 - name: country_top_futures_commodities_cz
   symbols:
     tickers:

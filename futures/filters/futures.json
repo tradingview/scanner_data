@@ -4891,6 +4891,13 @@
       "s": "DFM:AIRARB1!"
     },
     {
+      "s": "DFM:AIRARBF2024",
+      "f": [
+        null,
+        "DFM:AIRARB"
+      ]
+    },
+    {
       "s": "DFM:AIRARBV2023",
       "f": [
         null,
@@ -4917,6 +4924,13 @@
         "DFM:ARMX"
       ],
       "s": "DFM:ARMX1!"
+    },
+    {
+      "s": "DFM:ARMXF2024",
+      "f": [
+        null,
+        "DFM:ARMX"
+      ]
     },
     {
       "s": "DFM:ARMXV2023",
@@ -4947,6 +4961,13 @@
       "s": "DFM:DEWA1!"
     },
     {
+      "s": "DFM:DEWAF2024",
+      "f": [
+        null,
+        "DFM:DEWA"
+      ]
+    },
+    {
       "s": "DFM:DEWAV2023",
       "f": [
         null,
@@ -4973,6 +4994,13 @@
         "DFM:DEYAAR"
       ],
       "s": "DFM:DEYAAR1!"
+    },
+    {
+      "s": "DFM:DEYAARF2024",
+      "f": [
+        null,
+        "DFM:DEYAAR"
+      ]
     },
     {
       "s": "DFM:DEYAARV2023",
@@ -5003,6 +5031,13 @@
       "s": "DFM:DFM1!"
     },
     {
+      "s": "DFM:DFMF2024",
+      "f": [
+        null,
+        "DFM:DFM"
+      ]
+    },
+    {
       "s": "DFM:DFMV2023",
       "f": [
         null,
@@ -5029,6 +5064,13 @@
         "DFM:DIB"
       ],
       "s": "DFM:DIB1!"
+    },
+    {
+      "s": "DFM:DIBF2024",
+      "f": [
+        null,
+        "DFM:DIB"
+      ]
     },
     {
       "s": "DFM:DIBV2023",
@@ -5059,6 +5101,13 @@
       "s": "DFM:DIC1!"
     },
     {
+      "s": "DFM:DICF2024",
+      "f": [
+        null,
+        "DFM:DIC"
+      ]
+    },
+    {
       "s": "DFM:DICV2023",
       "f": [
         null,
@@ -5085,6 +5134,13 @@
         "DFM:DU"
       ],
       "s": "DFM:DU1!"
+    },
+    {
+      "s": "DFM:DUF2024",
+      "f": [
+        null,
+        "DFM:DU"
+      ]
     },
     {
       "s": "DFM:DUV2023",
@@ -5115,6 +5171,13 @@
       "s": "DFM:EMAAR1!"
     },
     {
+      "s": "DFM:EMAARF2024",
+      "f": [
+        null,
+        "DFM:EMAAR"
+      ]
+    },
+    {
       "s": "DFM:EMAARV2023",
       "f": [
         null,
@@ -5141,6 +5204,13 @@
         "DFM:EMPWR"
       ],
       "s": "DFM:EMPWR1!"
+    },
+    {
+      "s": "DFM:EMPWRF2024",
+      "f": [
+        null,
+        "DFM:EMPWR"
+      ]
     },
     {
       "s": "DFM:EMPWRV2023",
@@ -5171,6 +5241,13 @@
       "s": "DFM:EMRDEV1!"
     },
     {
+      "s": "DFM:EMRDEVF2024",
+      "f": [
+        null,
+        "DFM:EMRDEV"
+      ]
+    },
+    {
       "s": "DFM:EMRDEVV2023",
       "f": [
         null,
@@ -5199,6 +5276,13 @@
       "s": "DFM:ENBD1!"
     },
     {
+      "s": "DFM:ENBDF2024",
+      "f": [
+        null,
+        "DFM:ENBD"
+      ]
+    },
+    {
       "s": "DFM:ENBDV2023",
       "f": [
         null,
@@ -5225,6 +5309,13 @@
         "DFM:GFH"
       ],
       "s": "DFM:GFH1!"
+    },
+    {
+      "s": "DFM:GFHF2024",
+      "f": [
+        null,
+        "DFM:GFH"
+      ]
     },
     {
       "s": "DFM:GFHV2023",
@@ -5353,6 +5444,13 @@
       "s": "DFM:SALIK1!"
     },
     {
+      "s": "DFM:SALIKF2024",
+      "f": [
+        null,
+        "DFM:SALIK"
+      ]
+    },
+    {
       "s": "DFM:SALIKV2023",
       "f": [
         null,
@@ -5379,6 +5477,13 @@
         "DFM:SHUAA"
       ],
       "s": "DFM:SHUAA1!"
+    },
+    {
+      "s": "DFM:SHUAAF2024",
+      "f": [
+        null,
+        "DFM:SHUAA"
+      ]
     },
     {
       "s": "DFM:SHUAAV2023",
@@ -175075,6 +175180,13 @@
       "s": "EUREX:ZURQ1!"
     },
     {
+      "f": [
+        "",
+        "EUREX:ZURQ"
+      ],
+      "s": "EUREX:ZURQ1!"
+    },
+    {
       "s": "EUREX:ZURQF2024",
       "f": [
         null,
@@ -182639,6 +182751,552 @@
       "f": [
         null,
         "LME:ZS"
+      ]
+    },
+    {
+      "f": [
+        "",
+        "MSEI:EURINR"
+      ],
+      "s": "MSEI:EURINR1!"
+    },
+    {
+      "s": "MSEI:EURINRF2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRG2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRH2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRJ2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRK2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRM2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRN2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRQ2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRU2024",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRV2023",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRX2023",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "s": "MSEI:EURINRZ2023",
+      "f": [
+        null,
+        "MSEI:EURINR"
+      ]
+    },
+    {
+      "f": [
+        "",
+        "MSEI:EURUSD"
+      ],
+      "s": "MSEI:EURUSD1!"
+    },
+    {
+      "s": "MSEI:EURUSDF2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDG2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDH2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDJ2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDK2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDM2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDN2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDQ2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDU2024",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDV2023",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDX2023",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "s": "MSEI:EURUSDZ2023",
+      "f": [
+        null,
+        "MSEI:EURUSD"
+      ]
+    },
+    {
+      "f": [
+        "",
+        "MSEI:GBPINR"
+      ],
+      "s": "MSEI:GBPINR1!"
+    },
+    {
+      "s": "MSEI:GBPINRF2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRG2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRH2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRJ2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRK2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRM2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRN2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRQ2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRU2024",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRV2023",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRX2023",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "s": "MSEI:GBPINRZ2023",
+      "f": [
+        null,
+        "MSEI:GBPINR"
+      ]
+    },
+    {
+      "f": [
+        "",
+        "MSEI:GBPUSD"
+      ],
+      "s": "MSEI:GBPUSD1!"
+    },
+    {
+      "s": "MSEI:GBPUSDF2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDG2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDH2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDJ2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDK2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDM2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDN2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDQ2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDU2024",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDV2023",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDX2023",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "s": "MSEI:GBPUSDZ2023",
+      "f": [
+        null,
+        "MSEI:GBPUSD"
+      ]
+    },
+    {
+      "f": [
+        "",
+        "MSEI:USDINR"
+      ],
+      "s": "MSEI:USDINR1!"
+    },
+    {
+      "s": "MSEI:USDINRF2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRG2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRH2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRJ2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRK2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRM2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRN2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRQ2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRU2024",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRV2023",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRX2023",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "s": "MSEI:USDINRZ2023",
+      "f": [
+        null,
+        "MSEI:USDINR"
+      ]
+    },
+    {
+      "f": [
+        "",
+        "MSEI:USDJPY"
+      ],
+      "s": "MSEI:USDJPY1!"
+    },
+    {
+      "s": "MSEI:USDJPYF2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYG2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYH2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYJ2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYK2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYM2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYN2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYQ2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYU2024",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYV2023",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYX2023",
+      "f": [
+        null,
+        "MSEI:USDJPY"
+      ]
+    },
+    {
+      "s": "MSEI:USDJPYZ2023",
+      "f": [
+        null,
+        "MSEI:USDJPY"
       ]
     }
   ]

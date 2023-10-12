@@ -1,5 +1,13 @@
 [
     {
+        "name": "country",
+        "type": "text"
+    },
+    {
+        "name": "country_fund",
+        "type": "text"
+    },
+    {
         "name": "country_code",
         "type": "text"
     }

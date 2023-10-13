@@ -1213,3 +1213,39 @@ presets:
       - CME:6S1!
       - CME:6A1!
       - CME:6C1!
+- name: locale_top_futures_energy_se
+  symbols:
+    tickers:
+      - ICEEUR:BRN1!
+      - ICEEUR:GWM1!
+      - ICEEUR:WBS1!
+      - ICEEUR:UHU1!
+      - ICEEUR:UHO1!
+      - ICEEUR:ULS1!
+- name: locale_top_futures_metals_se
+  symbols:
+    tickers:
+      - COMEX:GC1!
+      - COMEX:SI1!
+      - LME:NI1!
+      - LME:CA1!
+      - LME:SN1!
+      - LME:AH1!
+- name: locale_top_futures_agricultural_se
+  symbols:
+    tickers:
+      - ICEEUR:RC1!
+      - ICEEUR:W1!
+      - ICEEUR:C1!
+      - ICEEUR:WHT1!
+      - CBOT:ZS1!
+      - CBOT:ZC1!
+- name: locale_top_futures_currency_se
+  symbols:
+    tickers:
+      - EUREX:FCEU1!
+      - EUREX:FCUY1!
+      - EUREX:FCAU1!
+      - EUREX:FCAY1!
+      - EUREX:FCEF1!
+      - EUREX:FCEP1!

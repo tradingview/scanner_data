@@ -3,10 +3,12 @@
   "fields": [],
   "symbols": [
     { "f": [], "s": "CBOE&type=index"},
+    { "f": [], "s": "ICEUS&type=index"},
     { "f": [], "s": "DJ&type=index&alias=1"},
     { "f": [], "s": "NASDAQ&type=index"},
     { "f": [], "s": "NYSE&type=index"},
     { "f": [], "s": "SP&type=index&alias=1"},
-    { "f": [], "s": "RUSSELL"}
+    { "f": [], "s": "RUSSELL"},
+    { "f": [], "s": "TVC&type=index&alias=1"}
   ]
 }

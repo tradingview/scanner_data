@@ -31,7 +31,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -39,6 +41,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -126,7 +129,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -134,6 +139,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -206,9 +212,6 @@ presets:
   - left: is_primary
     operation: equal
     right: true
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: number_of_employees_fy
     sortOrder: desc
@@ -218,7 +221,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -226,6 +231,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -298,9 +304,6 @@ presets:
   - left: is_primary
     operation: equal
     right: true
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: total_revenue_fy
     sortOrder: desc
@@ -310,7 +313,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -318,6 +323,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -390,9 +396,6 @@ presets:
   - left: is_primary
     operation: equal
     right: true
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: net_income_fy
     sortOrder: desc
@@ -402,7 +405,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -410,6 +415,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -482,9 +488,6 @@ presets:
   - left: is_primary
     operation: equal
     right: true
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: dividends_yield
     sortOrder: desc
@@ -494,7 +497,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -502,6 +507,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -592,7 +598,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -600,6 +608,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -685,7 +694,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -693,6 +704,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -783,7 +795,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -791,6 +805,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -881,7 +896,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -889,6 +906,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -974,7 +992,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -982,6 +1002,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1068,7 +1089,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1076,6 +1099,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1164,7 +1188,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1172,6 +1198,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1258,7 +1285,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1266,6 +1295,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1352,7 +1382,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1360,6 +1392,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1445,7 +1478,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1453,6 +1488,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1538,7 +1574,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1546,6 +1584,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1631,7 +1670,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1639,6 +1680,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1727,7 +1769,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1735,6 +1779,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1821,7 +1866,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1829,6 +1876,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1918,7 +1966,9 @@ presets:
   - america
   - argentina
   - australia
+  - austria
   - bahrain
+  - bangladesh
   - belgium
   - brazil
   - canada
@@ -1926,6 +1976,7 @@ presets:
   - china
   - colombia
   - cyprus
+  - czech
   - denmark
   - egypt
   - estonia
@@ -1979,3 +2030,337 @@ presets:
   - uk
   - venezuela
   - vietnam
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+  markets:
+  - america
+  - argentina
+  - australia
+  - austria
+  - bahrain
+  - bangladesh
+  - belgium
+  - brazil
+  - canada
+  - chile
+  - china
+  - colombia
+  - cyprus
+  - czech
+  - denmark
+  - egypt
+  - estonia
+  - finland
+  - france
+  - germany
+  - greece
+  - hongkong
+  - hungary
+  - iceland
+  - india
+  - indonesia
+  - israel
+  - italy
+  - japan
+  - kenya
+  - korea
+  - ksa
+  - kuwait
+  - latvia
+  - lithuania
+  - luxembourg
+  - malaysia
+  - mexico
+  - morocco
+  - netherlands
+  - newzealand
+  - nigeria
+  - norway
+  - pakistan
+  - peru
+  - philippines
+  - poland
+  - portugal
+  - qatar
+  - romania
+  - rsa
+  - russia
+  - serbia
+  - singapore
+  - slovakia
+  - spain
+  - srilanka
+  - sweden
+  - switzerland
+  - taiwan
+  - thailand
+  - tunisia
+  - turkey
+  - uae
+  - uk
+  - venezuela
+  - vietnam
+- name: etfs_market_page_top
+  symbols:
+    tickers:
+      - AMEX:SPY
+      - AMEX:IVV
+      - AMEX:VOO
+      - NASDAQ:QQQ
+      - TSE:1306
+      - TSE:1305
+      - AMEX:GLD
+      - AMEX:SCHD
+      - AMEX:JEPI
+      - AMEX:DFAC
+      - AMEX:USFR
+- name: etfs_market_page_equity
+  symbols:
+    tickers:
+      - AMEX:VTI
+      - AMEX:IEFA
+      - TSE:1321
+      - AMEX:XLK
+      - AMEX:RSP
+      - AMEX:SCHX
+- name: etfs_market_page_fixed_income
+  symbols:
+    tickers:
+      - NASDAQ:BND
+      - AMEX:AGG
+      - AMEX:BIL
+      - AMEX:JPST
+      - AMEX:SCHO
+      - AMEX:MINT
+- name: etfs_market_page_commodities
+  symbols:
+    tickers:
+      - AMEX:IAU
+      - AMEX:GLDM
+      - NASDAQ:PDBC
+      - LSE:GLDW
+      - NASDAQ:FTGC
+      - AMEX:SGOL
+- name: etfs_market_page_asset_allocation
+  symbols:
+    tickers:
+      - TPEX:00751B
+      - ASX:AAA
+      - AMEX:AOR
+      - XETR:ZPRI
+      - TSX:VBAL
+      - NASDAQ:HNDL
+- name: etfs_market_page_sector
+  symbols:
+    tickers:
+      - AMEX:VGT
+      - AMEX:XLE
+      - SSE:588000
+      - AMEX:IYW
+      - AMEX:GDX
+      - AMEX:GUNR
+- name: etfs_market_page_highest_return
+  filter:
+    - left: nav_total_return.1Y
+      operation: less
+      right: 600
+    - left: aum
+      operation: egreater
+      right: 1000000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_total_return.1Y
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_most_traded
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: Value.Traded|1W
+    sortOrder: desc
+  markets:
+    - america
+- name: etfs_market_page_dividends
+  filter:
+    - left: aum
+      operation: egreater
+      right: 10000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: strategy
+      operation: in_range
+      right:
+        - '13'
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: dividends_yield
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam

@@ -14,9 +14,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: name
     sortOrder: asc
@@ -34,9 +31,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: desc
@@ -54,9 +48,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: asc
@@ -74,9 +65,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   - left: market_cap_basic
     operation: greater
     right: 0
@@ -100,9 +88,6 @@ presets:
   - left: dividends_yield
     operation: greater
     right: 0
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: dividends_yield
     sortOrder: desc
@@ -120,9 +105,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: net_income_fy
     sortOrder: desc
@@ -261,9 +243,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   - left: market_cap_basic
     operation: greater
     right: 0
@@ -307,9 +286,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: total_revenue_fy
     sortOrder: desc
@@ -508,9 +484,6 @@ presets:
   - left: type
     operation: equal
     right: stock
-  - left: active_symbol
-    operation: equal
-    right: true
   sort:
     sortBy: cash_n_short_term_invest_fq
     sortOrder: desc
@@ -696,3 +669,36 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: typespecs
+    operation: has_none_of
+    right: cdi
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: exchange
+    operation: equal
+    right:
+    - LSE
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_gb
+  symbols:
+    tickers:
+      - FTSE:UKX
+      - FTSE:UKXDUK
+      - FTSE:MCX
+      - FTSE:MCIX
+      - FTSE:MCXNUK
+      - FTSE:NMX
+      - FTSE:NMIXNUK
+      - FTSE:ASX
+      - FTSE:ASXX
+      - FTSE:NSX
+      - FTSE:SMX
+      - FTSE:SMXX

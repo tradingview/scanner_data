@@ -1265,9 +1265,9 @@ presets:
 - name: locale_top_futures_currency_se
   symbols:
     tickers:
+      - EUREX:FCUS1!
+      - EUREX:FCSK1!
+      - EUREX:FCNS1!
       - EUREX:FCEU1!
       - EUREX:FCUY1!
-      - EUREX:FCAU1!
-      - EUREX:FCAY1!
-      - EUREX:FCEF1!
       - EUREX:FCEP1!

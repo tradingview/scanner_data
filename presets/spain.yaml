@@ -604,3 +604,43 @@ presets:
       - BME:INDIE
       - BME:IND30200
       - BME:IND20100
+- name: highest_revenue_per_employee_stocks_es
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+    - left: type
+      operation: equal
+      right: stock
+    - left: revenue_per_employee
+      operation: greater
+      right: 0
+  sort:
+    sortBy: revenue_per_employee
+    sortOrder: desc
+- name: highest_profit_per_employee_stocks_es
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+    - left: type
+      operation: equal
+      right: stock
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 0
+  sort:
+    sortBy: net_income_per_employee_fy
+    sortOrder: desc

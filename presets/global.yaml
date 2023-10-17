@@ -2381,6 +2381,8 @@ presets:
     - left: revenue_per_employee
       operation: greater
       right: 0
+  price_conversion:
+    to_currency: USD
   sort:
     sortBy: revenue_per_employee
     sortOrder: desc
@@ -2469,6 +2471,8 @@ presets:
     - left: net_income_per_employee_fy
       operation: greater
       right: 0
+  price_conversion:
+    to_currency: USD
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc

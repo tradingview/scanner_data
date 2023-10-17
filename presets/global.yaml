@@ -2364,3 +2364,179 @@ presets:
     - uk
     - venezuela
     - vietnam
+- name: highest_revenue_per_employee_stocks_world
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+    - left: type
+      operation: equal
+      right: stock
+    - left: revenue_per_employee
+      operation: greater
+      right: 0
+  sort:
+    sortBy: revenue_per_employee
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: highest_profit_per_employee_stocks_world
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+    - left: type
+      operation: equal
+      right: stock
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 0
+  sort:
+    sortBy: net_income_per_employee_fy
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam

@@ -2364,7 +2364,7 @@ presets:
     - uk
     - venezuela
     - vietnam
-- name: highest_revenue_per_employee_stocks_world
+- name: worlds_highest_revenue_per_employee_companies
   filter:
     - left: is_primary
       operation: equal
@@ -2381,11 +2381,11 @@ presets:
     - left: revenue_per_employee
       operation: greater
       right: 0
-  price_conversion:
-    to_currency: USD
   sort:
     sortBy: revenue_per_employee
     sortOrder: desc
+  price_conversion:
+    to_currency: USD
   markets:
     - america
     - argentina
@@ -2454,7 +2454,7 @@ presets:
     - uk
     - venezuela
     - vietnam
-- name: highest_profit_per_employee_stocks_world
+- name: worlds_highest_profit_per_employee_companies
   filter:
     - left: is_primary
       operation: equal
@@ -2471,11 +2471,11 @@ presets:
     - left: net_income_per_employee_fy
       operation: greater
       right: 0
-  price_conversion:
-    to_currency: USD
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
+  price_conversion:
+    to_currency: USD
   markets:
     - america
     - argentina

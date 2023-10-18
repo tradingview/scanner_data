@@ -596,7 +596,7 @@ presets:
       - BELEX:BELEX15
       - BELEX:BELEXLINE
       - VIE:SRX
-- name: highest_revenue_per_employee_stocks_rs
+- name: highest_revenue_per_employee
   filter:
     - left: is_primary
       operation: equal
@@ -616,7 +616,7 @@ presets:
   sort:
     sortBy: revenue_per_employee
     sortOrder: desc
-- name: highest_profit_per_employee_stocks_rs
+- name: highest_profit_per_employee
   filter:
     - left: is_primary
       operation: equal

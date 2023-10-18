@@ -2892,7 +2892,8 @@ presets:
   filter:
     - left: focus
       operation: in_range
-      right: 29
+      right:
+        - '29'
     - left: typespecs
       operation: has
       right:
@@ -3064,7 +3065,8 @@ presets:
   filter:
     - left: focus
       operation: in_range
-      right: 62
+      right:
+        - '62'
     - left: typespecs
       operation: has
       right:
@@ -3405,7 +3407,8 @@ presets:
   filter:
     - left: strategy
       operation: in_range
-      right: 13
+      right:
+        - '13'
     - left: nav_total_return.5Y
       operation: greater
       right: 0
@@ -3494,7 +3497,8 @@ presets:
   filter:
     - left: actively_managed
       operation: in_range
-      right: 1
+      right:
+        - '1'
     - left: typespecs
       operation: has
       right:
@@ -3666,7 +3670,8 @@ presets:
   filter:
     - left: category
       operation: in_range
-      right: 27
+      right:
+        - '27'
     - left: typespecs
       operation: has
       right:

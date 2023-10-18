@@ -604,7 +604,7 @@ presets:
       - NZX:G15G
       - NZX:G60G
       - NZX:G30G
-- name: highest_revenue_per_employee_stocks_nz
+- name: highest_revenue_per_employee
   filter:
     - left: is_primary
       operation: equal
@@ -624,7 +624,7 @@ presets:
   sort:
     sortBy: revenue_per_employee
     sortOrder: desc
-- name: highest_profit_per_employee_stocks_nz
+- name: highest_profit_per_employee
   filter:
     - left: is_primary
       operation: equal

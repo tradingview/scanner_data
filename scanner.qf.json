@@ -801,6 +801,22 @@
         "type": "fundamental_price"
     },
     {
+        "name": "earnings_release_trading_date_fq",
+        "type": "time"
+    },    
+    {
+        "name": "earnings_release_trading_date_fy",
+        "type": "time"
+    },    
+    {
+        "name": "earnings_release_next_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fy",
+        "type": "time"
+    },    
+    {
         "name": "cash_f_operating_activities_ttm",
         "type": "fundamental_price"
     },

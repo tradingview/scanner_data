@@ -28,6 +28,10 @@
         "type": "text"
     },
     {
+        "name": "isin",
+        "type": "text"
+    },
+    {
         "name": "market_cap_basic",
         "type": "fundamental_price"
     },
@@ -58,6 +62,22 @@
     {
         "name": "earnings_per_share_basic_ttm",
         "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_release_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_trading_date_fy",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fy",
+        "type": "time"
     },
     {
         "name": "return_on_assets",

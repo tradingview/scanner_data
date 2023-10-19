@@ -64,6 +64,22 @@
         "type": "fundamental_price"
     },
     {
+        "name": "earnings_release_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_trading_date_fy",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fy",
+        "type": "time"
+    },
+    {
         "name": "return_on_assets",
         "type": "percent"
     },

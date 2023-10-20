@@ -239,3 +239,485 @@ presets:
   sort:
     sortBy: index_priority
     sortOrder: asc
+- name: country_top_bonds_yield_us
+  symbols:
+    tickers:
+      - TVC:US01Y
+      - TVC:US02Y
+      - TVC:US05Y
+      - TVC:US10Y
+      - TVC:US20Y
+      - TVC:US30Y
+- name: country_top_bonds_yield_ar
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_au
+  symbols:
+    tickers:
+      - TVC:AU01Y
+      - TVC:AU02Y
+      - TVC:AU03Y
+      - TVC:AU05Y
+      - TVC:AU10Y
+      - TVC:AU30Y
+- name: country_top_bonds_yield_at
+  symbols:
+    tickers:
+      - TVC:AT01Y
+      - TVC:AT02Y
+      - TVC:AT10Y
+      - TVC:AT30Y
+      - TVC:AT95Y
+      - TVC:AT100Y
+- name: country_top_bonds_yield_bh
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_bd
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_be
+  symbols:
+    tickers:
+      - TVC:BE02Y
+      - TVC:BE05Y
+      - TVC:BE10Y
+      - TVC:BE20Y
+      - TVC:BE30Y
+      - TVC:BE50Y
+- name: country_top_bonds_yield_br
+  symbols:
+    tickers:
+      - TVC:BR01Y
+      - TVC:BR02Y
+      - TVC:BR03Y
+      - TVC:BR05Y
+      - TVC:BR08Y
+      - TVC:BR10Y
+- name: country_top_bonds_yield_ca
+  symbols:
+    tickers:
+      - TVC:CA01Y
+      - TVC:CA02Y
+      - TVC:CA05Y
+      - TVC:CA10Y
+      - TVC:CA20Y
+      - TVC:CA30Y
+- name: country_top_bonds_yield_cl
+  symbols:
+    tickers:
+      - TVC:CL02Y
+      - TVC:CL05Y
+      - TVC:CL08Y
+      - TVC:CL10Y
+      - TVC:CL20Y
+      - TVC:CL30Y
+- name: country_top_bonds_yield_cn
+  symbols:
+    tickers:
+      - TVC:CN01Y
+      - TVC:CN02Y
+      - TVC:CN05Y
+      - TVC:CN10Y
+      - TVC:CN20Y
+      - TVC:CN30Y
+- name: country_top_bonds_yield_co
+  symbols:
+    tickers:
+      - TVC:CO02Y
+      - TVC:CO04Y
+      - TVC:CO05Y
+      - TVC:CO10Y
+      - TVC:CO15Y
+- name: country_top_bonds_yield_cy
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_cz
+  symbols:
+    tickers:
+      - TVC:CZ01Y
+      - TVC:CZ02Y
+      - TVC:CZ03Y
+      - TVC:CZ05Y
+      - TVC:CZ10Y
+      - TVC:CZ20Y
+- name: country_top_bonds_yield_dk
+  symbols:
+    tickers:
+      - TVC:DK03MY
+      - TVC:DK06MY
+      - TVC:DK02Y
+      - TVC:DK05Y
+      - TVC:DK10Y
+      - TVC:DK30Y
+- name: country_top_bonds_yield_eg
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_ee
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_fi
+  symbols:
+    tickers:
+      - TVC:FI02Y
+      - TVC:FI04Y
+      - TVC:FI05Y
+      - TVC:FI10Y
+      - TVC:FI15Y
+      - TVC:FI30Y
+- name: country_top_bonds_yield_fr
+  symbols:
+    tickers:
+      - TVC:FR03MY
+      - TVC:FR02Y
+      - TVC:FR05Y
+      - TVC:FR10Y
+      - TVC:FR20Y
+      - TVC:FR30Y
+- name: country_top_bonds_yield_de
+  symbols:
+    tickers:
+      - TVC:DE03MY
+      - TVC:DE01Y
+      - TVC:DE02Y
+      - TVC:DE05Y
+      - TVC:DE10Y
+      - TVC:DE30Y
+- name: country_top_bonds_yield_gr
+  symbols:
+    tickers:
+      - TVC:GR01Y
+      - TVC:GR02Y
+      - TVC:GR05Y
+      - TVC:GR10Y
+      - TVC:GR20Y
+      - TVC:GR30Y
+- name: country_top_bonds_yield_hk
+  symbols:
+    tickers:
+      - TVC:HK01MY
+      - TVC:HK03MY
+      - TVC:HK02Y
+      - TVC:HK03Y
+      - TVC:HK05Y
+      - TVC:HK10Y
+- name: country_top_bonds_yield_hu
+  symbols:
+    tickers:
+      - TVC:HU03MY
+      - TVC:HU01Y
+      - TVC:HU03Y
+      - TVC:HU05Y
+      - TVC:HU10Y
+      - TVC:HU20Y
+- name: country_top_bonds_yield_is
+  symbols:
+    tickers:
+      - TVC:IS02Y
+      - TVC:IS05Y
+      - TVC:IS10Y
+- name: country_top_bonds_yield_in
+  symbols:
+    tickers:
+      - TVC:IN03MY
+      - TVC:IN01Y
+      - TVC:IN02Y
+      - TVC:IN05Y
+      - TVC:IN10Y
+      - TVC:IN30Y
+- name: country_top_bonds_yield_id
+  symbols:
+    tickers:
+      - TVC:ID01Y
+      - TVC:ID03Y
+      - TVC:ID05Y
+      - TVC:ID10Y
+      - TVC:ID20Y
+      - TVC:ID30Y
+- name: country_top_bonds_yield_il
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_it
+  symbols:
+    tickers:
+      - TVC:IT01Y
+      - TVC:IT02Y
+      - TVC:IT05Y
+      - TVC:IT10Y
+      - TVC:IT20Y
+      - TVC:IT30Y
+- name: country_top_bonds_yield_jp
+  symbols:
+    tickers:
+      - TVC:JP03MY
+      - TVC:JP02Y
+      - TVC:JP05Y
+      - TVC:JP10Y
+      - TVC:JP20Y
+      - TVC:JP30Y
+- name: country_top_bonds_yield_ke
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_kw
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_lv
+  symbols:
+    tickers:
+      - TVC:LV02Y
+      - TVC:LV03Y
+      - TVC:LV05Y
+- name: country_top_bonds_yield_lt
+  symbols:
+    tickers:
+      - TVC:LT03Y
+      - TVC:LT05Y
+      - TVC:LT10Y
+- name: country_top_bonds_yield_lu
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_my
+  symbols:
+    tickers:
+      - TVC:MY01Y
+      - TVC:MY03Y
+      - TVC:MY05Y
+      - TVC:MY10Y
+      - TVC:MY20Y
+      - TVC:MY30Y
+- name: country_top_bonds_yield_mx
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_ma
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_nl
+  symbols:
+    tickers:
+      - TVC:NL06MY
+      - TVC:NL02Y
+      - TVC:NL05Y
+      - TVC:NL10Y
+      - TVC:NL20Y
+      - TVC:NL30Y
+- name: country_top_bonds_yield_nz
+  symbols:
+    tickers:
+      - TVC:NZ03MY
+      - TVC:NZ01Y
+      - TVC:NZ02Y
+      - TVC:NZ05Y
+      - TVC:NZ10Y
+      - TVC:NZ20Y
+- name: country_top_bonds_yield_ng
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_no
+  symbols:
+    tickers:
+      - TVC:NO03MY
+      - TVC:NO01Y
+      - TVC:NO03Y
+      - TVC:NO05Y
+      - TVC:NO10Y
+      - TVC:NO20Y
+- name: country_top_bonds_yield_pk
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_pe
+  symbols:
+    tickers:
+      - TVC:PE02Y
+      - TVC:PE05Y
+      - TVC:PE10Y
+      - TVC:PE15Y
+      - TVC:PE20Y
+      - TVC:PE30Y
+- name: country_top_bonds_yield_ph
+  symbols:
+    tickers:
+      - TVC:PH03MY
+      - TVC:PH01Y
+      - TVC:PH02Y
+      - TVC:PH05Y
+      - TVC:PH10Y
+      - TVC:PH20Y
+- name: country_top_bonds_yield_pl
+  symbols:
+    tickers:
+      - TVC:PL01Y
+      - TVC:PL02MY
+      - TVC:PL02Y
+      - TVC:PL03Y
+      - TVC:PL05Y
+      - TVC:PL10Y
+- name: country_top_bonds_yield_pt
+  symbols:
+    tickers:
+      - TVC:PT01Y
+      - TVC:PT02Y
+      - TVC:PT05Y
+      - TVC:PT10Y
+      - TVC:PT20Y
+      - TVC:PT30Y
+- name: country_top_bonds_yield_qa
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_ro
+  symbols:
+    tickers:
+      - TVC:RO06MY
+      - TVC:RO01Y
+      - TVC:RO03Y
+      - TVC:RO05Y
+      - TVC:RO07Y
+      - TVC:RO10Y
+- name: country_top_bonds_yield_ru
+  symbols:
+    tickers:
+      - TVC:RU01Y
+      - TVC:RU02Y
+      - TVC:RU05Y
+      - TVC:RU10Y
+      - TVC:RU15Y
+      - TVC:RU20Y
+- name: country_top_bonds_yield_sa
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_rs
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_sg
+  symbols:
+    tickers:
+      - TVC:SG03MY
+      - TVC:SG06MY
+      - TVC:SG01Y
+      - TVC:SG02Y
+      - TVC:SG05Y
+      - TVC:SG10Y
+- name: country_top_bonds_yield_sk
+  symbols:
+    tickers:
+      - TVC:SK02Y
+      - TVC:SK05Y
+      - TVC:SK10Y
+      - TVC:SK18Y
+      - TVC:SK30Y
+      - TVC:SK50Y
+- name: country_top_bonds_yield_za
+  symbols:
+    tickers:
+      - TVC:ZA05Y
+      - TVC:ZA10Y
+      - TVC:ZA12Y
+      - TVC:ZA20Y
+      - TVC:ZA25Y
+      - TVC:ZA30Y
+- name: country_top_bonds_yield_kr
+  symbols:
+    tickers:
+      - TVC:KR01Y
+      - TVC:KR02Y
+      - TVC:KR03Y
+      - TVC:KR05Y
+      - TVC:KR10Y
+      - TVC:KR30Y
+- name: country_top_bonds_yield_es
+  symbols:
+    tickers:
+      - TVC:ES03MY
+      - TVC:ES06MY
+      - TVC:ES01Y
+      - TVC:ES02Y
+      - TVC:ES10Y
+      - TVC:ES30Y
+- name: country_top_bonds_yield_lk
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_se
+  symbols:
+    tickers:
+      - TVC:SE02MY
+      - TVC:SE03MY
+      - TVC:SE02Y
+      - TVC:SE05Y
+      - TVC:SE10Y
+      - TVC:SE20Y
+- name: country_top_bonds_yield_ch
+  symbols:
+    tickers:
+      - TVC:CH03MY
+      - TVC:CH02Y
+      - TVC:CH05Y
+      - TVC:CH07Y
+      - TVC:CH10Y
+      - TVC:CH30Y
+- name: country_top_bonds_yield_tw
+  symbols:
+    tickers:
+      - TVC:TW02Y
+      - TVC:TW05Y
+      - TVC:TW10Y
+      - TVC:TW20Y
+      - TVC:TW30Y
+- name: country_top_bonds_yield_th
+  symbols:
+    tickers:
+      - TVC:TH10Y
+      - TVC:TH15Y
+- name: country_top_bonds_yield_tn
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_tr
+  symbols:
+    tickers:
+      - TVC:TR01Y
+      - TVC:TR02Y
+      - TVC:TR03Y
+      - TVC:TR05Y
+      - TVC:TR10Y
+- name: country_top_bonds_yield_ae
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_gb
+  symbols:
+    tickers:
+      - TVC:GB03MY
+      - TVC:GB01Y
+      - TVC:GB02Y
+      - TVC:GB05Y
+      - TVC:GB10Y
+      - TVC:GB30Y
+- name: country_top_bonds_yield_ve
+  symbols:
+    tickers:
+      - ""
+- name: country_top_bonds_yield_vn
+  symbols:
+    tickers:
+      - TVC:VN01Y
+      - TVC:VN02Y
+      - TVC:VN05Y
+      - TVC:VN10Y
+      - TVC:VN20Y
+      - TVC:VN30Y

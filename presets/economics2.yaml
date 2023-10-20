@@ -8621,7 +8621,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cosm_co
+- name: country_related_economics_cnsm_co
   filter:
     - left: exchange
       operation: equal
@@ -8631,7 +8631,7 @@ presets:
       right: CO
     - left: economic-category-id
       operation: equal
-      right: cOsm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -8775,7 +8775,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_cy
+- name: country_related_economics_cnsm_cy
   filter:
     - left: exchange
       operation: equal
@@ -8785,7 +8785,7 @@ presets:
       right: CY
     - left: economic-category-id
       operation: equal
-      right: cYsm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -8929,7 +8929,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_cz
+- name: country_related_economics_cnsm_cz
   filter:
     - left: exchange
       operation: equal
@@ -8939,7 +8939,7 @@ presets:
       right: CZ
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -9083,7 +9083,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_dk
+- name: country_related_economics_cnsm_dk
   filter:
     - left: exchange
       operation: equal
@@ -9093,7 +9093,7 @@ presets:
       right: DK
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -9237,7 +9237,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_eg
+- name: country_related_economics_cnsm_eg
   filter:
     - left: exchange
       operation: equal
@@ -9247,7 +9247,7 @@ presets:
       right: EG
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -9391,7 +9391,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ee
+- name: country_related_economics_cnsm_ee
   filter:
     - left: exchange
       operation: equal
@@ -9401,7 +9401,7 @@ presets:
       right: EE
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -9545,7 +9545,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_fi
+- name: country_related_economics_cnsm_fi
   filter:
     - left: exchange
       operation: equal
@@ -9555,7 +9555,7 @@ presets:
       right: FI
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -9699,7 +9699,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_fr
+- name: country_related_economics_cnsm_fr
   filter:
     - left: exchange
       operation: equal
@@ -9709,7 +9709,7 @@ presets:
       right: FR
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -9853,7 +9853,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_de
+- name: country_related_economics_cnsm_de
   filter:
     - left: exchange
       operation: equal
@@ -9863,7 +9863,7 @@ presets:
       right: DE
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -10007,7 +10007,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_gr
+- name: country_related_economics_cnsm_gr
   filter:
     - left: exchange
       operation: equal
@@ -10017,7 +10017,7 @@ presets:
       right: GR
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -10161,7 +10161,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_hk
+- name: country_related_economics_cnsm_hk
   filter:
     - left: exchange
       operation: equal
@@ -10171,7 +10171,7 @@ presets:
       right: HK
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -10315,7 +10315,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_hu
+- name: country_related_economics_cnsm_hu
   filter:
     - left: exchange
       operation: equal
@@ -10325,7 +10325,7 @@ presets:
       right: HU
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -10469,7 +10469,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_is
+- name: country_related_economics_cnsm_is
   filter:
     - left: exchange
       operation: equal
@@ -10479,7 +10479,7 @@ presets:
       right: IS
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -10623,7 +10623,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_in
+- name: country_related_economics_cnsm_in
   filter:
     - left: exchange
       operation: equal
@@ -10633,7 +10633,7 @@ presets:
       right: IN
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -10777,7 +10777,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_id
+- name: country_related_economics_cnsm_id
   filter:
     - left: exchange
       operation: equal
@@ -10787,7 +10787,7 @@ presets:
       right: ID
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -10931,7 +10931,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_il
+- name: country_related_economics_cnsm_il
   filter:
     - left: exchange
       operation: equal
@@ -10941,7 +10941,7 @@ presets:
       right: IL
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -11085,7 +11085,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_it
+- name: country_related_economics_cnsm_it
   filter:
     - left: exchange
       operation: equal
@@ -11095,7 +11095,7 @@ presets:
       right: IT
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -11239,7 +11239,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_jp
+- name: country_related_economics_cnsm_jp
   filter:
     - left: exchange
       operation: equal
@@ -11249,7 +11249,7 @@ presets:
       right: JP
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -11393,7 +11393,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ke
+- name: country_related_economics_cnsm_ke
   filter:
     - left: exchange
       operation: equal
@@ -11403,7 +11403,7 @@ presets:
       right: KE
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -11547,7 +11547,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_kr
+- name: country_related_economics_cnsm_kr
   filter:
     - left: exchange
       operation: equal
@@ -11557,7 +11557,7 @@ presets:
       right: KR
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -11701,7 +11701,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_sa
+- name: country_related_economics_cnsm_sa
   filter:
     - left: exchange
       operation: equal
@@ -11711,7 +11711,7 @@ presets:
       right: SA
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -11855,7 +11855,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_kw
+- name: country_related_economics_cnsm_kw
   filter:
     - left: exchange
       operation: equal
@@ -11865,7 +11865,7 @@ presets:
       right: KW
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -12009,7 +12009,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_lv
+- name: country_related_economics_cnsm_lv
   filter:
     - left: exchange
       operation: equal
@@ -12019,7 +12019,7 @@ presets:
       right: LV
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -12163,7 +12163,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_lt
+- name: country_related_economics_cnsm_lt
   filter:
     - left: exchange
       operation: equal
@@ -12173,7 +12173,7 @@ presets:
       right: LT
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -12317,7 +12317,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_lu
+- name: country_related_economics_cnsm_lu
   filter:
     - left: exchange
       operation: equal
@@ -12327,7 +12327,7 @@ presets:
       right: LU
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -12471,7 +12471,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_my
+- name: country_related_economics_cnsm_my
   filter:
     - left: exchange
       operation: equal
@@ -12481,7 +12481,7 @@ presets:
       right: MY
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -12625,7 +12625,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_mx
+- name: country_related_economics_cnsm_mx
   filter:
     - left: exchange
       operation: equal
@@ -12635,7 +12635,7 @@ presets:
       right: MX
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -12779,7 +12779,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ma
+- name: country_related_economics_cnsm_ma
   filter:
     - left: exchange
       operation: equal
@@ -12789,7 +12789,7 @@ presets:
       right: MA
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -12933,7 +12933,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_nl
+- name: country_related_economics_cnsm_nl
   filter:
     - left: exchange
       operation: equal
@@ -12943,7 +12943,7 @@ presets:
       right: NL
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -13087,7 +13087,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_nz
+- name: country_related_economics_cnsm_nz
   filter:
     - left: exchange
       operation: equal
@@ -13097,7 +13097,7 @@ presets:
       right: NZ
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -13241,7 +13241,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ng
+- name: country_related_economics_cnsm_ng
   filter:
     - left: exchange
       operation: equal
@@ -13251,7 +13251,7 @@ presets:
       right: NG
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -13395,7 +13395,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_no
+- name: country_related_economics_cnsm_no
   filter:
     - left: exchange
       operation: equal
@@ -13405,7 +13405,7 @@ presets:
       right: "NO"
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -13549,7 +13549,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_pk
+- name: country_related_economics_cnsm_pk
   filter:
     - left: exchange
       operation: equal
@@ -13559,7 +13559,7 @@ presets:
       right: PK
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -13703,7 +13703,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_pe
+- name: country_related_economics_cnsm_pe
   filter:
     - left: exchange
       operation: equal
@@ -13713,7 +13713,7 @@ presets:
       right: PE
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -13857,7 +13857,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ph
+- name: country_related_economics_cnsm_ph
   filter:
     - left: exchange
       operation: equal
@@ -13867,7 +13867,7 @@ presets:
       right: PH
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -14011,7 +14011,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_pl
+- name: country_related_economics_cnsm_pl
   filter:
     - left: exchange
       operation: equal
@@ -14021,7 +14021,7 @@ presets:
       right: PL
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -14165,7 +14165,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_pt
+- name: country_related_economics_cnsm_pt
   filter:
     - left: exchange
       operation: equal
@@ -14175,7 +14175,7 @@ presets:
       right: PT
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -14319,7 +14319,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_qa
+- name: country_related_economics_cnsm_qa
   filter:
     - left: exchange
       operation: equal
@@ -14329,7 +14329,7 @@ presets:
       right: QA
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -14473,7 +14473,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ro
+- name: country_related_economics_cnsm_ro
   filter:
     - left: exchange
       operation: equal
@@ -14483,7 +14483,7 @@ presets:
       right: RO
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -14627,7 +14627,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_za
+- name: country_related_economics_cnsm_za
   filter:
     - left: exchange
       operation: equal
@@ -14637,7 +14637,7 @@ presets:
       right: ZA
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -14781,7 +14781,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ru
+- name: country_related_economics_cnsm_ru
   filter:
     - left: exchange
       operation: equal
@@ -14791,7 +14791,7 @@ presets:
       right: RU
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -14935,7 +14935,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_rs
+- name: country_related_economics_cnsm_rs
   filter:
     - left: exchange
       operation: equal
@@ -14945,7 +14945,7 @@ presets:
       right: RS
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -15089,7 +15089,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_sg
+- name: country_related_economics_cnsm_sg
   filter:
     - left: exchange
       operation: equal
@@ -15099,7 +15099,7 @@ presets:
       right: SG
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -15243,7 +15243,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_sk
+- name: country_related_economics_cnsm_sk
   filter:
     - left: exchange
       operation: equal
@@ -15253,7 +15253,7 @@ presets:
       right: SK
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -15397,7 +15397,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_es
+- name: country_related_economics_cnsm_es
   filter:
     - left: exchange
       operation: equal
@@ -15407,7 +15407,7 @@ presets:
       right: ES
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -15551,7 +15551,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_lk
+- name: country_related_economics_cnsm_lk
   filter:
     - left: exchange
       operation: equal
@@ -15561,7 +15561,7 @@ presets:
       right: LK
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -15705,7 +15705,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_se
+- name: country_related_economics_cnsm_se
   filter:
     - left: exchange
       operation: equal
@@ -15715,7 +15715,7 @@ presets:
       right: SE
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -15859,7 +15859,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ch
+- name: country_related_economics_cnsm_ch
   filter:
     - left: exchange
       operation: equal
@@ -15869,7 +15869,7 @@ presets:
       right: CH
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -16013,7 +16013,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_tw
+- name: country_related_economics_cnsm_tw
   filter:
     - left: exchange
       operation: equal
@@ -16023,7 +16023,7 @@ presets:
       right: TW
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -16167,7 +16167,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_th
+- name: country_related_economics_cnsm_th
   filter:
     - left: exchange
       operation: equal
@@ -16177,7 +16177,7 @@ presets:
       right: TH
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -16321,7 +16321,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_tn
+- name: country_related_economics_cnsm_tn
   filter:
     - left: exchange
       operation: equal
@@ -16331,7 +16331,7 @@ presets:
       right: TN
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -16475,7 +16475,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_tr
+- name: country_related_economics_cnsm_tr
   filter:
     - left: exchange
       operation: equal
@@ -16485,7 +16485,7 @@ presets:
       right: TR
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -16629,7 +16629,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ae
+- name: country_related_economics_cnsm_ae
   filter:
     - left: exchange
       operation: equal
@@ -16639,7 +16639,7 @@ presets:
       right: AE
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -16783,7 +16783,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_gb
+- name: country_related_economics_cnsm_gb
   filter:
     - left: exchange
       operation: equal
@@ -16793,7 +16793,7 @@ presets:
       right: GB
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -16937,7 +16937,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_ve
+- name: country_related_economics_cnsm_ve
   filter:
     - left: exchange
       operation: equal
@@ -16947,7 +16947,7 @@ presets:
       right: VE
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc
@@ -17091,7 +17091,7 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
-- name: country_related_economics_cysm_vn
+- name: country_related_economics_cnsm_vn
   filter:
     - left: exchange
       operation: equal
@@ -17101,7 +17101,7 @@ presets:
       right: VN
     - left: economic-category-id
       operation: equal
-      right: cysm
+      right: cnsm
   sort:
     sortBy: name
     sortOrder: asc

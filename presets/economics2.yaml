@@ -35,7 +35,7 @@ presets:
 - name: country_top_economics_labor_us
   symbols:
     tickers:
-#      - FRED:PAYEMS
+      - FRED:PAYEMS
       - ECONOMICS:USNFP
       - ECONOMICS:USIJC
       - ECONOMICS:USJO
@@ -803,6 +803,7 @@ presets:
       - ECONOMICS:EEWG
 - name: country_top_economics_prices_ee
   symbols:
+    tickers:
       - ECONOMICS:EEIRMM
       - ECONOMICS:EEIRYY
       - ECONOMICS:EECIR

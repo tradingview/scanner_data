@@ -704,7 +704,7 @@ presets:
       right: common
     - left: typespecs
       operation: has_none_of
-      right: preferred
+      right: foreign
     - left: type
       operation: equal
       right: stock
@@ -724,7 +724,7 @@ presets:
       right: common
     - left: typespecs
       operation: has_none_of
-      right: preferred
+      right: foreign
     - left: type
       operation: equal
       right: stock

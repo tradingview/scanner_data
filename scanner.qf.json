@@ -332,6 +332,22 @@
         "type": "time"
     },
     {
+        "name": "earnings_release_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_trading_date_fy",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fy",
+        "type": "time"
+    },
+    {
         "name": "earnings_per_share_fq",
         "type": "fundamental_price"
     },

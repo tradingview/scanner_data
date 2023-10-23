@@ -578,9 +578,6 @@ presets:
     - left: typespecs
       operation: has
       right: common
-    - left: typespecs
-      operation: has_none_of
-      right: preferred
     - left: type
       operation: equal
       right: stock
@@ -598,9 +595,6 @@ presets:
     - left: typespecs
       operation: has
       right: common
-    - left: typespecs
-      operation: has_none_of
-      right: preferred
     - left: type
       operation: equal
       right: stock

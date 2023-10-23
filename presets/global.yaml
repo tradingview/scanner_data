@@ -2366,21 +2366,23 @@ presets:
     - vietnam
 - name: worlds_highest_revenue_per_employee_companies
   filter:
+    - left: type
+      operation: in_range
+      right:
+        - dr
+        - stock
+    - left: typespecs
+      operation: has
+      right:
+        - ''
+        - common
+        - foreign-issuer
+    - left: revenue_per_employee
+      operation: greater
+      right: 1000000
     - left: is_primary
       operation: equal
       right: true
-    - left: typespecs
-      operation: has
-      right: common
-    - left: typespecs
-      operation: has_none_of
-      right: preferred
-    - left: type
-      operation: equal
-      right: stock
-    - left: revenue_per_employee
-      operation: greater
-      right: 0
   sort:
     sortBy: revenue_per_employee
     sortOrder: desc
@@ -2456,21 +2458,23 @@ presets:
     - vietnam
 - name: worlds_highest_profit_per_employee_companies
   filter:
+    - left: type
+      operation: in_range
+      right:
+        - dr
+        - stock
+    - left: typespecs
+      operation: has
+      right:
+        - ''
+        - common
+        - foreign-issuer
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 100000
     - left: is_primary
       operation: equal
       right: true
-    - left: typespecs
-      operation: has
-      right: common
-    - left: typespecs
-      operation: has_none_of
-      right: preferred
-    - left: type
-      operation: equal
-      right: stock
-    - left: net_income_per_employee_fy
-      operation: greater
-      right: 0
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc

@@ -35,7 +35,7 @@ presets:
 - name: country_top_economics_labor_us
   symbols:
     tickers:
-      - FRED:PAYEMS
+#      - FRED:PAYEMS
       - ECONOMICS:USNFP
       - ECONOMICS:USIJC
       - ECONOMICS:USJO

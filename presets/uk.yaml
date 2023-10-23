@@ -732,7 +732,7 @@ presets:
       right: common
     - left: typespecs
       operation: has_none_of
-      right: preferred
+      right: cdi
     - left: type
       operation: equal
       right: stock

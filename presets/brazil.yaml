@@ -682,3 +682,43 @@ presets:
       - BMFBOVESPA:IMAT
       - BMFBOVESPA:IMOB
       - BMFBOVESPA:ICON
+- name: highest_revenue_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: typespecs
+      operation: has_none_of
+      right: odd
+    - left: type
+      operation: equal
+      right: stock
+    - left: revenue_per_employee
+      operation: greater
+      right: 0
+  sort:
+    sortBy: revenue_per_employee
+    sortOrder: desc
+- name: highest_profit_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: typespecs
+      operation: has_none_of
+      right: odd
+    - left: type
+      operation: equal
+      right: stock
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 0
+  sort:
+    sortBy: net_income_per_employee_fy
+    sortOrder: desc

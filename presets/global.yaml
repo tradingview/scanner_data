@@ -2364,3 +2364,187 @@ presets:
     - uk
     - venezuela
     - vietnam
+- name: worlds_highest_revenue_per_employee_companies
+  filter:
+    - left: type
+      operation: in_range
+      right:
+        - dr
+        - stock
+    - left: typespecs
+      operation: has
+      right:
+        - ''
+        - common
+        - foreign-issuer
+    - left: revenue_per_employee
+      operation: greater
+      right: 1000000
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: revenue_per_employee
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: worlds_highest_profit_per_employee_companies
+  filter:
+    - left: type
+      operation: in_range
+      right:
+        - dr
+        - stock
+    - left: typespecs
+      operation: has
+      right:
+        - ''
+        - common
+        - foreign-issuer
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 100000
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: net_income_per_employee_fy
+    sortOrder: desc
+  price_conversion:
+    to_currency: USD
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam

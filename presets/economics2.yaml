@@ -32,6 +32,24 @@ presets:
       - ECONOMICS:USGD
       - ECONOMICS:USGDG
       - ECONOMICS:USGSG
+- name: country_top_economics_business_us
+  symbols:
+    tickers:
+      - ECONOMICS:USCPR
+      - ECONOMICS:USNO
+      - ECONOMICS:USLEI
+      - ECONOMICS:USWI
+      - ECONOMICS:USCORR
+      - ECONOMICS:USBR
+- name: country_top_economics_taxes_us
+  symbols:
+    tickers:
+      - ECONOMICS:USPITR
+      - ECONOMICS:USCTR
+      - ECONOMICS:USSSR
+      - ECONOMICS:USSSRC
+      - ECONOMICS:USSSRE
+      - ECONOMICS:USSTR
 - name: country_top_economics_labor_us
   symbols:
     tickers:
@@ -80,6 +98,20 @@ presets:
       - ECONOMICS:ARGBV
       - ECONOMICS:ARGDG
       - ECONOMICS:ARME
+- name: country_top_economics_business_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARLEI
+      - ECONOMICS:ARCORR
+- name: country_top_economics_taxes_ar
+  symbols:
+    tickers:
+      - ECONOMICS:ARPITR
+      - ECONOMICS:ARCTR
+      - ECONOMICS:ARSSR
+      - ECONOMICS:ARSSRC
+      - ECONOMICS:ARSSRE
+      - ECONOMICS:ARSTR
 - name: country_top_economics_labor_ar
   symbols:
     tickers:
@@ -130,6 +162,23 @@ presets:
       - ECONOMICS:AUGD
       - ECONOMICS:AUGDG
       - ECONOMICS:AUGSG
+- name: country_top_economics_business_au
+  symbols:
+    tickers:
+      - ECONOMICS:AUCPR
+      - ECONOMICS:AUNO
+      - ECONOMICS:AULEI
+      - ECONOMICS:AUCORR
+      - ECONOMICS:AUBR
+- name: country_top_economics_taxes_au
+  symbols:
+    tickers:
+      - ECONOMICS:AUPITR
+      - ECONOMICS:AUCTR
+      - ECONOMICS:AUSSR
+      - ECONOMICS:AUSSRC
+      - ECONOMICS:AUSSRE
+      - ECONOMICS:AUSTR
 - name: country_top_economics_labor_au
   symbols:
     tickers:
@@ -180,6 +229,20 @@ presets:
       - ECONOMICS:ATGD
       - ECONOMICS:ATGDG
       - ECONOMICS:ATGSG
+- name: country_top_economics_business_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATNO
+      - ECONOMICS:ATCORR
+- name: country_top_economics_taxes_at
+  symbols:
+    tickers:
+      - ECONOMICS:ATPITR
+      - ECONOMICS:ATCTR
+      - ECONOMICS:ATSSR
+      - ECONOMICS:ATSSRC
+      - ECONOMICS:ATSSRE
+      - ECONOMICS:ATSTR
 - name: country_top_economics_labor_at
   symbols:
     tickers:
@@ -225,6 +288,19 @@ presets:
       - ECONOMICS:BHGD
       - ECONOMICS:BHGDG
       - ECONOMICS:BHME
+- name: country_top_economics_business_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHCORR
+- name: country_top_economics_taxes_bh
+  symbols:
+    tickers:
+      - ECONOMICS:BHPITR
+      - ECONOMICS:BHCTR
+      - ECONOMICS:BHSSR
+      - ECONOMICS:BHSSRC
+      - ECONOMICS:BHSSRE
+      - ECONOMICS:BHSTR
 - name: country_top_economics_labor_bh
   symbols:
     tickers:
@@ -268,6 +344,16 @@ presets:
       - ECONOMICS:BDGBV
       - ECONOMICS:BDGDG
       - ECONOMICS:BDME
+- name: country_top_economics_business_bd
+  symbols:
+    tickers:
+      - ECONOMICS:BDCORR
+- name: country_top_economics_taxes_bd
+  symbols:
+    tickers:
+      - ECONOMICS:BDPITR
+      - ECONOMICS:BDCTR
+      - ECONOMICS:BDSTR
 - name: country_top_economics_labor_bd
   symbols:
     tickers:
@@ -315,6 +401,22 @@ presets:
       - ECONOMICS:BEGD
       - ECONOMICS:BEGDG
       - ECONOMICS:BEGSG
+- name: country_top_economics_business_be
+  symbols:
+    tickers:
+      - ECONOMICS:BECPR
+      - ECONOMICS:BENO
+      - ECONOMICS:BECORR
+      - ECONOMICS:BEBR
+- name: country_top_economics_taxes_be
+  symbols:
+    tickers:
+      - ECONOMICS:BEPITR
+      - ECONOMICS:BECTR
+      - ECONOMICS:BESSR
+      - ECONOMICS:BESSRC
+      - ECONOMICS:BESSRE
+      - ECONOMICS:BESTR
 - name: country_top_economics_labor_be
   symbols:
     tickers:
@@ -364,6 +466,21 @@ presets:
       - ECONOMICS:BRGD
       - ECONOMICS:BRGDG
       - ECONOMICS:BRME
+- name: country_top_economics_business_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRNO
+      - ECONOMICS:BRLEI
+      - ECONOMICS:BRCORR
+- name: country_top_economics_taxes_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRPITR
+      - ECONOMICS:BRCTR
+      - ECONOMICS:BRSSR
+      - ECONOMICS:BRSSRC
+      - ECONOMICS:BRSSRE
+      - ECONOMICS:BRSTR
 - name: country_top_economics_labor_br
   symbols:
     tickers:
@@ -413,6 +530,23 @@ presets:
       - ECONOMICS:CAGD
       - ECONOMICS:CAGDG
       - ECONOMICS:CAME
+- name: country_top_economics_business_ca
+  symbols:
+    tickers:
+      - ECONOMICS:CACPR
+      - ECONOMICS:CANO
+      - ECONOMICS:CALEI
+      - ECONOMICS:CACORR
+      - ECONOMICS:CABR
+- name: country_top_economics_taxes_ca
+  symbols:
+    tickers:
+      - ECONOMICS:CAPITR
+      - ECONOMICS:CACTR
+      - ECONOMICS:CASSR
+      - ECONOMICS:CASSRC
+      - ECONOMICS:CASSRE
+      - ECONOMICS:CASTR
 - name: country_top_economics_labor_ca
   symbols:
     tickers:
@@ -462,6 +596,20 @@ presets:
       - ECONOMICS:CLGBV
       - ECONOMICS:CLGDG
       - ECONOMICS:CLME
+- name: country_top_economics_business_cl
+  symbols:
+    tickers:
+      - ECONOMICS:CLLEI
+      - ECONOMICS:CLCORR
+- name: country_top_economics_taxes_cl
+  symbols:
+    tickers:
+      - ECONOMICS:CLPITR
+      - ECONOMICS:CLCTR
+      - ECONOMICS:CLSSR
+      - ECONOMICS:CLSSRC
+      - ECONOMICS:CLSSRE
+      - ECONOMICS:CLSTR
 - name: country_top_economics_labor_cl
   symbols:
     tickers:
@@ -510,6 +658,22 @@ presets:
       - ECONOMICS:CNGBV
       - ECONOMICS:CNGDG
       - ECONOMICS:CNME
+- name: country_top_economics_business_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNCPR
+      - ECONOMICS:CNNO
+      - ECONOMICS:CNLEI
+      - ECONOMICS:CNCORR
+- name: country_top_economics_taxes_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNPITR
+      - ECONOMICS:CNCTR
+      - ECONOMICS:CNSSR
+      - ECONOMICS:CNSSRC
+      - ECONOMICS:CNSSRE
+      - ECONOMICS:CNSTR
 - name: country_top_economics_labor_cn
   symbols:
     tickers:
@@ -557,6 +721,20 @@ presets:
       - ECONOMICS:COGBV
       - ECONOMICS:COGDG
       - ECONOMICS:COME
+- name: country_top_economics_business_co
+  symbols:
+    tickers:
+      - ECONOMICS:COLEI
+      - ECONOMICS:COCORR
+- name: country_top_economics_taxes_co
+  symbols:
+    tickers:
+      - ECONOMICS:COPITR
+      - ECONOMICS:COCTR
+      - ECONOMICS:COSSR
+      - ECONOMICS:COSSRC
+      - ECONOMICS:COSSRE
+      - ECONOMICS:COSTR
 - name: country_top_economics_labor_co
   symbols:
     tickers:
@@ -604,6 +782,19 @@ presets:
       - ECONOMICS:CYGBV
       - ECONOMICS:CYGDG
       - ECONOMICS:CYGSG
+- name: country_top_economics_business_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYCORR
+- name: country_top_economics_taxes_cy
+  symbols:
+    tickers:
+      - ECONOMICS:CYPITR
+      - ECONOMICS:CYCTR
+      - ECONOMICS:CYSSR
+      - ECONOMICS:CYSSRC
+      - ECONOMICS:CYSSRE
+      - ECONOMICS:CYSTR
 - name: country_top_economics_labor_cy
   symbols:
     tickers:
@@ -651,6 +842,21 @@ presets:
       - ECONOMICS:CZGD
       - ECONOMICS:CZGDG
       - ECONOMICS:CZGSG
+- name: country_top_economics_business_cz
+  symbols:
+    tickers:
+      - ECONOMICS:CZCPR
+      - ECONOMICS:CZNO
+      - ECONOMICS:CZCORR
+- name: country_top_economics_taxes_cz
+  symbols:
+    tickers:
+      - ECONOMICS:CZPITR
+      - ECONOMICS:CZCTR
+      - ECONOMICS:CZSSR
+      - ECONOMICS:CZSSRC
+      - ECONOMICS:CZSSRE
+      - ECONOMICS:CZSTR
 - name: country_top_economics_labor_cz
   symbols:
     tickers:
@@ -701,6 +907,22 @@ presets:
       - ECONOMICS:DKGD
       - ECONOMICS:DKGDG
       - ECONOMICS:DKGSG
+- name: country_top_economics_business_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKCPR
+      - ECONOMICS:DKNO
+      - ECONOMICS:DKCORR
+      - ECONOMICS:DKBR
+- name: country_top_economics_taxes_dk
+  symbols:
+    tickers:
+      - ECONOMICS:DKPITR
+      - ECONOMICS:DKCTR
+      - ECONOMICS:DKSSR
+      - ECONOMICS:DKSSRC
+      - ECONOMICS:DKSSRE
+      - ECONOMICS:DKSTR
 - name: country_top_economics_labor_dk
   symbols:
     tickers:
@@ -746,6 +968,19 @@ presets:
       - ECONOMICS:EGGBV
       - ECONOMICS:EGGDG
       - ECONOMICS:EGME
+- name: country_top_economics_business_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGCORR
+- name: country_top_economics_taxes_eg
+  symbols:
+    tickers:
+      - ECONOMICS:EGPITR
+      - ECONOMICS:EGCTR
+      - ECONOMICS:EGSSR
+      - ECONOMICS:EGSSRC
+      - ECONOMICS:EGSSRE
+      - ECONOMICS:EGSTR
 - name: country_top_economics_labor_eg
   symbols:
     tickers:
@@ -792,6 +1027,20 @@ presets:
       - ECONOMICS:EEGBV
       - ECONOMICS:EEGDG
       - ECONOMICS:EEGSG
+- name: country_top_economics_business_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EECPR
+      - ECONOMICS:EECORR
+- name: country_top_economics_taxes_ee
+  symbols:
+    tickers:
+      - ECONOMICS:EEPITR
+      - ECONOMICS:EECTR
+      - ECONOMICS:EESSR
+      - ECONOMICS:EESSRC
+      - ECONOMICS:EESSRE
+      - ECONOMICS:EESTR
 - name: country_top_economics_labor_ee
   symbols:
     tickers:
@@ -842,6 +1091,22 @@ presets:
       - ECONOMICS:FIGD
       - ECONOMICS:FIGDG
       - ECONOMICS:FIGSG
+- name: country_top_economics_business_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FINO
+      - ECONOMICS:FILEI
+      - ECONOMICS:FICORR
+      - ECONOMICS:FIBR
+- name: country_top_economics_taxes_fi
+  symbols:
+    tickers:
+      - ECONOMICS:FIPITR
+      - ECONOMICS:FICTR
+      - ECONOMICS:FISSR
+      - ECONOMICS:FISSRC
+      - ECONOMICS:FISSRE
+      - ECONOMICS:FISTR
 - name: country_top_economics_labor_fi
   symbols:
     tickers:
@@ -890,6 +1155,21 @@ presets:
       - ECONOMICS:FRGD
       - ECONOMICS:FRGDG
       - ECONOMICS:FRGSG
+- name: country_top_economics_business_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRNO
+      - ECONOMICS:FRCORR
+      - ECONOMICS:FRBR
+- name: country_top_economics_taxes_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRPITR
+      - ECONOMICS:FRCTR
+      - ECONOMICS:FRSSR
+      - ECONOMICS:FRSSRC
+      - ECONOMICS:FRSSRE
+      - ECONOMICS:FRSTR
 - name: country_top_economics_labor_fr
   symbols:
     tickers:
@@ -940,6 +1220,22 @@ presets:
       - ECONOMICS:DEGD
       - ECONOMICS:DEGDG
       - ECONOMICS:DEGSG
+- name: country_top_economics_business_de
+  symbols:
+    tickers:
+      - ECONOMICS:DECPR
+      - ECONOMICS:DENO
+      - ECONOMICS:DECORR
+      - ECONOMICS:DEBR
+- name: country_top_economics_taxes_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEPITR
+      - ECONOMICS:DECTR
+      - ECONOMICS:DESSR
+      - ECONOMICS:DESSRC
+      - ECONOMICS:DESSRE
+      - ECONOMICS:DESTR
 - name: country_top_economics_labor_de
   symbols:
     tickers:
@@ -989,6 +1285,20 @@ presets:
       - ECONOMICS:GRGD
       - ECONOMICS:GRGDG
       - ECONOMICS:GRGSG
+- name: country_top_economics_business_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRNO
+      - ECONOMICS:GRCORR
+- name: country_top_economics_taxes_gr
+  symbols:
+    tickers:
+      - ECONOMICS:GRPITR
+      - ECONOMICS:GRCTR
+      - ECONOMICS:GRSSR
+      - ECONOMICS:GRSSRC
+      - ECONOMICS:GRSSRE
+      - ECONOMICS:GRSTR
 - name: country_top_economics_labor_gr
   symbols:
     tickers:
@@ -1036,6 +1346,16 @@ presets:
       - ECONOMICS:HKGSP
       - ECONOMICS:HKGBV
       - ECONOMICS:HKGDG
+- name: country_top_economics_business_hk
+  symbols:
+    tickers:
+      - ECONOMICS:HKCORR
+      - ECONOMICS:HKBR
+- name: country_top_economics_taxes_hk
+  symbols:
+    tickers:
+      - ECONOMICS:HKPITR
+      - ECONOMICS:HKCTR
 - name: country_top_economics_labor_hk
   symbols:
     tickers:
@@ -1083,6 +1403,20 @@ presets:
       - ECONOMICS:HUGD
       - ECONOMICS:HUGDG
       - ECONOMICS:HUGSG
+- name: country_top_economics_business_hu
+  symbols:
+    tickers:
+      - ECONOMICS:HUNO
+      - ECONOMICS:HUCORR
+- name: country_top_economics_taxes_hu
+  symbols:
+    tickers:
+      - ECONOMICS:HUPITR
+      - ECONOMICS:HUCTR
+      - ECONOMICS:HUSSR
+      - ECONOMICS:HUSSRC
+      - ECONOMICS:HUSSRE
+      - ECONOMICS:HUSTR
 - name: country_top_economics_labor_hu
   symbols:
     tickers:
@@ -1132,6 +1466,20 @@ presets:
       - ECONOMICS:ISGBV
       - ECONOMICS:ISGDG
       - ECONOMICS:ISGSG
+- name: country_top_economics_business_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISCORR
+      - ECONOMICS:ISBR
+- name: country_top_economics_taxes_is
+  symbols:
+    tickers:
+      - ECONOMICS:ISPITR
+      - ECONOMICS:ISCTR
+      - ECONOMICS:ISSSR
+      - ECONOMICS:ISSSRC
+      - ECONOMICS:ISSSRE
+      - ECONOMICS:ISSTR
 - name: country_top_economics_labor_is
   symbols:
     tickers:
@@ -1180,6 +1528,19 @@ presets:
       - ECONOMICS:INGBV
       - ECONOMICS:INGDG
       - ECONOMICS:INGSG
+- name: country_top_economics_business_in
+  symbols:
+    tickers:
+      - ECONOMICS:INCORR
+- name: country_top_economics_taxes_in
+  symbols:
+    tickers:
+      - ECONOMICS:INPITR
+      - ECONOMICS:INCTR
+      - ECONOMICS:INSSR
+      - ECONOMICS:INSSRC
+      - ECONOMICS:INSSRE
+      - ECONOMICS:INSTR
 - name: country_top_economics_labor_in
   symbols:
     tickers:
@@ -1227,6 +1588,19 @@ presets:
       - ECONOMICS:IDGBV
       - ECONOMICS:IDGDG
       - ECONOMICS:IDME
+- name: country_top_economics_business_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDCORR
+- name: country_top_economics_taxes_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDPITR
+      - ECONOMICS:IDCTR
+      - ECONOMICS:IDSSR
+      - ECONOMICS:IDSSRC
+      - ECONOMICS:IDSSRE
+      - ECONOMICS:IDSTR
 - name: country_top_economics_labor_id
   symbols:
     tickers:
@@ -1274,6 +1648,20 @@ presets:
       - ECONOMICS:ILGBV
       - ECONOMICS:ILGDG
       - ECONOMICS:ILGSG
+- name: country_top_economics_business_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILLEI
+      - ECONOMICS:ILCORR
+- name: country_top_economics_taxes_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILPITR
+      - ECONOMICS:ILCTR
+      - ECONOMICS:ILSSR
+      - ECONOMICS:ILSSRC
+      - ECONOMICS:ILSSRE
+      - ECONOMICS:ILSTR
 - name: country_top_economics_labor_il
   symbols:
     tickers:
@@ -1321,6 +1709,21 @@ presets:
       - ECONOMICS:ITGD
       - ECONOMICS:ITGDG
       - ECONOMICS:ITGSG
+- name: country_top_economics_business_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITNO
+      - ECONOMICS:ITCORR
+      - ECONOMICS:ITBR
+- name: country_top_economics_taxes_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITPITR
+      - ECONOMICS:ITCTR
+      - ECONOMICS:ITSSR
+      - ECONOMICS:ITSSRC
+      - ECONOMICS:ITSSRE
+      - ECONOMICS:ITSTR
 - name: country_top_economics_labor_it
   symbols:
     tickers:
@@ -1368,6 +1771,23 @@ presets:
       - ECONOMICS:JPGBV
       - ECONOMICS:JPGDG
       - ECONOMICS:JPGSG
+- name: country_top_economics_business_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPCPR
+      - ECONOMICS:JPNO
+      - ECONOMICS:JPLEI
+      - ECONOMICS:JPCORR
+      - ECONOMICS:JPBR
+- name: country_top_economics_taxes_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPPITR
+      - ECONOMICS:JPCTR
+      - ECONOMICS:JPSSR
+      - ECONOMICS:JPSSRC
+      - ECONOMICS:JPSSRE
+      - ECONOMICS:JPSTR
 - name: country_top_economics_labor_jp
   symbols:
     tickers:
@@ -1417,6 +1837,19 @@ presets:
       - ECONOMICS:KEGD
       - ECONOMICS:KEGDG
       - ECONOMICS:KEME
+- name: country_top_economics_business_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KECORR
+- name: country_top_economics_taxes_ke
+  symbols:
+    tickers:
+      - ECONOMICS:KEPITR
+      - ECONOMICS:KECTR
+      - ECONOMICS:KESSR
+      - ECONOMICS:KESSRC
+      - ECONOMICS:KESSRE
+      - ECONOMICS:KESTR
 - name: country_top_economics_labor_ke
   symbols:
     tickers:
@@ -1461,6 +1894,22 @@ presets:
       - ECONOMICS:KRGBV
       - ECONOMICS:KRGDG
       - ECONOMICS:KRGSG
+- name: country_top_economics_business_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRNO
+      - ECONOMICS:KRLEI
+      - ECONOMICS:KRCORR
+      - ECONOMICS:KRBR
+- name: country_top_economics_taxes_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRPITR
+      - ECONOMICS:KRCTR
+      - ECONOMICS:KRSSR
+      - ECONOMICS:KRSSRC
+      - ECONOMICS:KRSSRE
+      - ECONOMICS:KRSTR
 - name: country_top_economics_labor_kr
   symbols:
     tickers:
@@ -1508,6 +1957,19 @@ presets:
       - ECONOMICS:SAGBV
       - ECONOMICS:SAGDG
       - ECONOMICS:SAME
+- name: country_top_economics_business_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SACORR
+- name: country_top_economics_taxes_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAPITR
+      - ECONOMICS:SACTR
+      - ECONOMICS:SASSR
+      - ECONOMICS:SASSRC
+      - ECONOMICS:SASSRE
+      - ECONOMICS:SASTR
 - name: country_top_economics_labor_sa
   symbols:
     tickers:
@@ -1551,6 +2013,18 @@ presets:
       - ECONOMICS:KWGBV
       - ECONOMICS:KWGDG
       - ECONOMICS:KWME
+- name: country_top_economics_business_kw
+  symbols:
+    tickers:
+      - ECONOMICS:KWCORR
+- name: country_top_economics_taxes_kw
+  symbols:
+    tickers:
+      - ECONOMICS:KWPITR
+      - ECONOMICS:KWCTR
+      - ECONOMICS:KWSSR
+      - ECONOMICS:KWSSRC
+      - ECONOMICS:KWSSRE
 - name: country_top_economics_labor_kw
   symbols:
     tickers:
@@ -1594,6 +2068,19 @@ presets:
       - ECONOMICS:LVGD
       - ECONOMICS:LVGDG
       - ECONOMICS:LVGSG
+- name: country_top_economics_business_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVCORR
+- name: country_top_economics_taxes_lv
+  symbols:
+    tickers:
+      - ECONOMICS:LVPITR
+      - ECONOMICS:LVCTR
+      - ECONOMICS:LVSSR
+      - ECONOMICS:LVSSRC
+      - ECONOMICS:LVSSRE
+      - ECONOMICS:LVSTR
 - name: country_top_economics_labor_lv
   symbols:
     tickers:
@@ -1643,6 +2130,20 @@ presets:
       - ECONOMICS:LTGD
       - ECONOMICS:LTGDG
       - ECONOMICS:LTGSG
+- name: country_top_economics_business_lt
+  symbols:
+    tickers:
+      - ECONOMICS:LTCORR
+      - ECONOMICS:LTBR
+- name: country_top_economics_taxes_lt
+  symbols:
+    tickers:
+      - ECONOMICS:LTPITR
+      - ECONOMICS:LTCTR
+      - ECONOMICS:LTSSR
+      - ECONOMICS:LTSSRC
+      - ECONOMICS:LTSSRE
+      - ECONOMICS:LTSTR
 - name: country_top_economics_labor_lt
   symbols:
     tickers:
@@ -1690,6 +2191,21 @@ presets:
       - ECONOMICS:LUGBV
       - ECONOMICS:LUGDG
       - ECONOMICS:LUGSG
+- name: country_top_economics_business_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUNO
+      - ECONOMICS:LUCORR
+      - ECONOMICS:LUBR
+- name: country_top_economics_taxes_lu
+  symbols:
+    tickers:
+      - ECONOMICS:LUPITR
+      - ECONOMICS:LUCTR
+      - ECONOMICS:LUSSR
+      - ECONOMICS:LUSSRC
+      - ECONOMICS:LUSSRE
+      - ECONOMICS:LUSTR
 - name: country_top_economics_labor_lu
   symbols:
     tickers:
@@ -1737,6 +2253,21 @@ presets:
       - ECONOMICS:MYGBV
       - ECONOMICS:MYGDG
       - ECONOMICS:MYME
+- name: country_top_economics_business_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYLEI
+      - ECONOMICS:MYCORR
+      - ECONOMICS:MYBR
+- name: country_top_economics_taxes_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYPITR
+      - ECONOMICS:MYCTR
+      - ECONOMICS:MYSSR
+      - ECONOMICS:MYSSRC
+      - ECONOMICS:MYSSRE
+      - ECONOMICS:MYSTR
 - name: country_top_economics_labor_my
   symbols:
     tickers:
@@ -1784,6 +2315,20 @@ presets:
       - ECONOMICS:MXGBV
       - ECONOMICS:MXGDG
       - ECONOMICS:MXME
+- name: country_top_economics_business_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXLEI
+      - ECONOMICS:MXCORR
+- name: country_top_economics_taxes_mx
+  symbols:
+    tickers:
+      - ECONOMICS:MXPITR
+      - ECONOMICS:MXCTR
+      - ECONOMICS:MXSSR
+      - ECONOMICS:MXSSRC
+      - ECONOMICS:MXSSRE
+      - ECONOMICS:MXSTR
 - name: country_top_economics_labor_mx
   symbols:
     tickers:
@@ -1829,6 +2374,19 @@ presets:
       - ECONOMICS:MAGSP
       - ECONOMICS:MAGDG
       - ECONOMICS:MAME
+- name: country_top_economics_business_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MACORR
+- name: country_top_economics_taxes_ma
+  symbols:
+    tickers:
+      - ECONOMICS:MAPITR
+      - ECONOMICS:MACTR
+      - ECONOMICS:MASSR
+      - ECONOMICS:MASSRC
+      - ECONOMICS:MASSRE
+      - ECONOMICS:MASTR
 - name: country_top_economics_labor_ma
   symbols:
     tickers:
@@ -1875,6 +2433,21 @@ presets:
       - ECONOMICS:NLGD
       - ECONOMICS:NLGDG
       - ECONOMICS:NLGSG
+- name: country_top_economics_business_nl
+  symbols:
+    tickers:
+      - ECONOMICS:NLNO
+      - ECONOMICS:NLCORR
+      - ECONOMICS:NLBR
+- name: country_top_economics_taxes_nl
+  symbols:
+    tickers:
+      - ECONOMICS:NLPITR
+      - ECONOMICS:NLCTR
+      - ECONOMICS:NLSSR
+      - ECONOMICS:NLSSRC
+      - ECONOMICS:NLSSRE
+      - ECONOMICS:NLSTR
 - name: country_top_economics_labor_nl
   symbols:
     tickers:
@@ -1925,6 +2498,20 @@ presets:
       - ECONOMICS:NZGD
       - ECONOMICS:NZGDG
       - ECONOMICS:NZME
+- name: country_top_economics_business_nz
+  symbols:
+    tickers:
+      - ECONOMICS:NZCORR
+      - ECONOMICS:NZBR
+- name: country_top_economics_taxes_nz
+  symbols:
+    tickers:
+      - ECONOMICS:NZPITR
+      - ECONOMICS:NZCTR
+      - ECONOMICS:NZSSR
+      - ECONOMICS:NZSSRC
+      - ECONOMICS:NZSSRE
+      - ECONOMICS:NZSTR
 - name: country_top_economics_labor_nz
   symbols:
     tickers:
@@ -1974,6 +2561,16 @@ presets:
       - ECONOMICS:NGGD
       - ECONOMICS:NGGDG
       - ECONOMICS:NGME
+- name: country_top_economics_business_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGCORR
+- name: country_top_economics_taxes_ng
+  symbols:
+    tickers:
+      - ECONOMICS:NGPITR
+      - ECONOMICS:NGCTR
+      - ECONOMICS:NGSTR
 - name: country_top_economics_labor_ng
   symbols:
     tickers:
@@ -2021,6 +2618,22 @@ presets:
       - ECONOMICS:NOGD
       - ECONOMICS:NOGDG
       - ECONOMICS:NOGSG
+- name: country_top_economics_business_no
+  symbols:
+    tickers:
+      - ECONOMICS:NONO
+      - ECONOMICS:NOLEI
+      - ECONOMICS:NOCORR
+      - ECONOMICS:NOBR
+- name: country_top_economics_taxes_no
+  symbols:
+    tickers:
+      - ECONOMICS:NOPITR
+      - ECONOMICS:NOCTR
+      - ECONOMICS:NOSSR
+      - ECONOMICS:NOSSRC
+      - ECONOMICS:NOSSRE
+      - ECONOMICS:NOSTR
 - name: country_top_economics_labor_no
   symbols:
     tickers:
@@ -2069,6 +2682,16 @@ presets:
       - ECONOMICS:PKGD
       - ECONOMICS:PKGDG
       - ECONOMICS:PKME
+- name: country_top_economics_business_pk
+  symbols:
+    tickers:
+      - ECONOMICS:PKCORR
+- name: country_top_economics_taxes_pk
+  symbols:
+    tickers:
+      - ECONOMICS:PKPITR
+      - ECONOMICS:PKCTR
+      - ECONOMICS:PKSTR
 - name: country_top_economics_labor_pk
   symbols:
     tickers:
@@ -2115,6 +2738,17 @@ presets:
       - ECONOMICS:PEGBV
       - ECONOMICS:PEGDG
       - ECONOMICS:PEME
+- name: country_top_economics_business_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PELEI
+      - ECONOMICS:PECORR
+- name: country_top_economics_taxes_pe
+  symbols:
+    tickers:
+      - ECONOMICS:PEPITR
+      - ECONOMICS:PECTR
+      - ECONOMICS:PESTR
 - name: country_top_economics_labor_pe
   symbols:
     tickers:
@@ -2162,6 +2796,20 @@ presets:
       - ECONOMICS:PHGBV
       - ECONOMICS:PHGDG
       - ECONOMICS:PHME
+- name: country_top_economics_business_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHLEI
+      - ECONOMICS:PHCORR
+- name: country_top_economics_taxes_ph
+  symbols:
+    tickers:
+      - ECONOMICS:PHPITR
+      - ECONOMICS:PHCTR
+      - ECONOMICS:PHSSR
+      - ECONOMICS:PHSSRC
+      - ECONOMICS:PHSSRE
+      - ECONOMICS:PHSTR
 - name: country_top_economics_labor_ph
   symbols:
     tickers:
@@ -2210,6 +2858,21 @@ presets:
       - ECONOMICS:PLGD
       - ECONOMICS:PLGDG
       - ECONOMICS:PLGSG
+- name: country_top_economics_business_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLCPR
+      - ECONOMICS:PLNO
+      - ECONOMICS:PLCORR
+- name: country_top_economics_taxes_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLPITR
+      - ECONOMICS:PLCTR
+      - ECONOMICS:PLSSR
+      - ECONOMICS:PLSSRC
+      - ECONOMICS:PLSSRE
+      - ECONOMICS:PLSTR
 - name: country_top_economics_labor_pl
   symbols:
     tickers:
@@ -2260,6 +2923,21 @@ presets:
       - ECONOMICS:PTGD
       - ECONOMICS:PTGDG
       - ECONOMICS:PTGSG
+- name: country_top_economics_business_pt
+  symbols:
+    tickers:
+      - ECONOMICS:PTNO
+      - ECONOMICS:PTLEI
+      - ECONOMICS:PTCORR
+- name: country_top_economics_taxes_pt
+  symbols:
+    tickers:
+      - ECONOMICS:PTPITR
+      - ECONOMICS:PTCTR
+      - ECONOMICS:PTSSR
+      - ECONOMICS:PTSSRC
+      - ECONOMICS:PTSSRE
+      - ECONOMICS:PTSTR
 - name: country_top_economics_labor_pt
   symbols:
     tickers:
@@ -2307,6 +2985,18 @@ presets:
       - ECONOMICS:QAGBV
       - ECONOMICS:QAGDG
       - ECONOMICS:QAME
+- name: country_top_economics_business_qa
+  symbols:
+    tickers:
+      - ECONOMICS:QACORR
+- name: country_top_economics_taxes_qa
+  symbols:
+    tickers:
+      - ECONOMICS:QAPITR
+      - ECONOMICS:QACTR
+      - ECONOMICS:QASSR
+      - ECONOMICS:QASSRC
+      - ECONOMICS:QASSRE
 - name: country_top_economics_labor_qa
   symbols:
     tickers:
@@ -2352,6 +3042,20 @@ presets:
       - ECONOMICS:ROGD
       - ECONOMICS:ROGDG
       - ECONOMICS:ROGSG
+- name: country_top_economics_business_ro
+  symbols:
+    tickers:
+      - ECONOMICS:RONO
+      - ECONOMICS:ROCORR
+- name: country_top_economics_taxes_ro
+  symbols:
+    tickers:
+      - ECONOMICS:ROPITR
+      - ECONOMICS:ROCTR
+      - ECONOMICS:ROSSR
+      - ECONOMICS:ROSSRC
+      - ECONOMICS:ROSSRE
+      - ECONOMICS:ROSTR
 - name: country_top_economics_labor_ro
   symbols:
     tickers:
@@ -2402,6 +3106,21 @@ presets:
       - ECONOMICS:ZAGD
       - ECONOMICS:ZAGDG
       - ECONOMICS:ZAME
+- name: country_top_economics_business_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZALEI
+      - ECONOMICS:ZACORR
+      - ECONOMICS:ZABR
+- name: country_top_economics_taxes_za
+  symbols:
+    tickers:
+      - ECONOMICS:ZAPITR
+      - ECONOMICS:ZACTR
+      - ECONOMICS:ZASSR
+      - ECONOMICS:ZASSRC
+      - ECONOMICS:ZASSRE
+      - ECONOMICS:ZASTR
 - name: country_top_economics_labor_za
   symbols:
     tickers:
@@ -2451,6 +3170,22 @@ presets:
       - ECONOMICS:RUGD
       - ECONOMICS:RUGDG
       - ECONOMICS:RUME
+- name: country_top_economics_business_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUCPR
+      - ECONOMICS:RULEI
+      - ECONOMICS:RUCORR
+      - ECONOMICS:RUBR
+- name: country_top_economics_taxes_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUPITR
+      - ECONOMICS:RUCTR
+      - ECONOMICS:RUSSR
+      - ECONOMICS:RUSSRC
+      - ECONOMICS:RUSSRE
+      - ECONOMICS:RUSTR
 - name: country_top_economics_labor_ru
   symbols:
     tickers:
@@ -2498,6 +3233,19 @@ presets:
       - ECONOMICS:RSGD
       - ECONOMICS:RSGDG
       - ECONOMICS:RSGSG
+- name: country_top_economics_business_rs
+  symbols:
+    tickers:
+      - ECONOMICS:RSCORR
+- name: country_top_economics_taxes_rs
+  symbols:
+    tickers:
+      - ECONOMICS:RSPITR
+      - ECONOMICS:RSCTR
+      - ECONOMICS:RSSSR
+      - ECONOMICS:RSSSRC
+      - ECONOMICS:RSSSRE
+      - ECONOMICS:RSSTR
 - name: country_top_economics_labor_rs
   symbols:
     tickers:
@@ -2547,6 +3295,21 @@ presets:
       - ECONOMICS:SGGD
       - ECONOMICS:SGGDG
       - ECONOMICS:SGME
+- name: country_top_economics_business_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGLEI
+      - ECONOMICS:SGCORR
+      - ECONOMICS:SGBR
+- name: country_top_economics_taxes_sg
+  symbols:
+    tickers:
+      - ECONOMICS:SGPITR
+      - ECONOMICS:SGCTR
+      - ECONOMICS:SGSSR
+      - ECONOMICS:SGSSRC
+      - ECONOMICS:SGSSRE
+      - ECONOMICS:SGSTR
 - name: country_top_economics_labor_sg
   symbols:
     tickers:
@@ -2594,6 +3357,20 @@ presets:
       - ECONOMICS:SKGD
       - ECONOMICS:SKGDG
       - ECONOMICS:SKGSG
+- name: country_top_economics_business_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKNO
+      - ECONOMICS:SKCORR
+- name: country_top_economics_taxes_sk
+  symbols:
+    tickers:
+      - ECONOMICS:SKPITR
+      - ECONOMICS:SKCTR
+      - ECONOMICS:SKSSR
+      - ECONOMICS:SKSSRC
+      - ECONOMICS:SKSSRE
+      - ECONOMICS:SKSTR
 - name: country_top_economics_labor_sk
   symbols:
     tickers:
@@ -2642,6 +3419,21 @@ presets:
       - ECONOMICS:ESGD
       - ECONOMICS:ESGDG
       - ECONOMICS:ESGSG
+- name: country_top_economics_business_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESNO
+      - ECONOMICS:ESCORR
+      - ECONOMICS:ESBR
+- name: country_top_economics_taxes_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESPITR
+      - ECONOMICS:ESCTR
+      - ECONOMICS:ESSSR
+      - ECONOMICS:ESSSRC
+      - ECONOMICS:ESSSRE
+      - ECONOMICS:ESSTR
 - name: country_top_economics_labor_es
   symbols:
     tickers:
@@ -2692,6 +3484,19 @@ presets:
       - ECONOMICS:LKGD
       - ECONOMICS:LKGDG
       - ECONOMICS:LKME
+- name: country_top_economics_business_lk
+  symbols:
+    tickers:
+      - ECONOMICS:LKCORR
+- name: country_top_economics_taxes_lk
+  symbols:
+    tickers:
+      - ECONOMICS:LKPITR
+      - ECONOMICS:LKCTR
+      - ECONOMICS:LKSSR
+      - ECONOMICS:LKSSRC
+      - ECONOMICS:LKSSRE
+      - ECONOMICS:LKSTR
 - name: country_top_economics_labor_lk
   symbols:
     tickers:
@@ -2741,6 +3546,21 @@ presets:
       - ECONOMICS:SEGD
       - ECONOMICS:SEGDG
       - ECONOMICS:SEGSG
+- name: country_top_economics_business_se
+  symbols:
+    tickers:
+      - ECONOMICS:SENO
+      - ECONOMICS:SECORR
+      - ECONOMICS:SEBR
+- name: country_top_economics_taxes_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEPITR
+      - ECONOMICS:SECTR
+      - ECONOMICS:SESSR
+      - ECONOMICS:SESSRC
+      - ECONOMICS:SESSRE
+      - ECONOMICS:SESTR
 - name: country_top_economics_labor_se
   symbols:
     tickers:
@@ -2789,6 +3609,20 @@ presets:
       - ECONOMICS:CHGD
       - ECONOMICS:CHGDG
       - ECONOMICS:CHGSG
+- name: country_top_economics_business_ch
+  symbols:
+    tickers:
+      - ECONOMICS:CHCORR
+      - ECONOMICS:CHBR
+- name: country_top_economics_taxes_ch
+  symbols:
+    tickers:
+      - ECONOMICS:CHPITR
+      - ECONOMICS:CHCTR
+      - ECONOMICS:CHSSR
+      - ECONOMICS:CHSSRC
+      - ECONOMICS:CHSSRE
+      - ECONOMICS:CHSTR
 - name: country_top_economics_labor_ch
   symbols:
     tickers:
@@ -2836,6 +3670,22 @@ presets:
       - ECONOMICS:TWGBV
       - ECONOMICS:TWGDG
       - ECONOMICS:TWME
+- name: country_top_economics_business_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWNO
+      - ECONOMICS:TWLEI
+      - ECONOMICS:TWCORR
+      - ECONOMICS:TWBR
+- name: country_top_economics_taxes_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWPITR
+      - ECONOMICS:TWCTR
+      - ECONOMICS:TWSSR
+      - ECONOMICS:TWSSRC
+      - ECONOMICS:TWSSRE
+      - ECONOMICS:TWSTR
 - name: country_top_economics_labor_tw
   symbols:
     tickers:
@@ -2884,6 +3734,20 @@ presets:
       - ECONOMICS:THGBV
       - ECONOMICS:THGDG
       - ECONOMICS:THME
+- name: country_top_economics_business_th
+  symbols:
+    tickers:
+      - ECONOMICS:THLEI
+      - ECONOMICS:THCORR
+- name: country_top_economics_taxes_th
+  symbols:
+    tickers:
+      - ECONOMICS:THPITR
+      - ECONOMICS:THCTR
+      - ECONOMICS:THSSR
+      - ECONOMICS:THSSRC
+      - ECONOMICS:THSSRE
+      - ECONOMICS:THSTR
 - name: country_top_economics_labor_th
   symbols:
     tickers:
@@ -2929,6 +3793,19 @@ presets:
       - ECONOMICS:TNGSP
       - ECONOMICS:TNGDG
       - ECONOMICS:TNME
+- name: country_top_economics_business_tn
+  symbols:
+    tickers:
+      - ECONOMICS:TNCORR
+- name: country_top_economics_taxes_tn
+  symbols:
+    tickers:
+      - ECONOMICS:TNPITR
+      - ECONOMICS:TNCTR
+      - ECONOMICS:TNSSR
+      - ECONOMICS:TNSSRC
+      - ECONOMICS:TNSSRE
+      - ECONOMICS:TNSTR
 - name: country_top_economics_labor_tn
   symbols:
     tickers:
@@ -2975,6 +3852,21 @@ presets:
       - ECONOMICS:TRGD
       - ECONOMICS:TRGDG
       - ECONOMICS:TRME
+- name: country_top_economics_business_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRLEI
+      - ECONOMICS:TRCORR
+      - ECONOMICS:TRBR
+- name: country_top_economics_taxes_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRPITR
+      - ECONOMICS:TRCTR
+      - ECONOMICS:TRSSR
+      - ECONOMICS:TRSSRC
+      - ECONOMICS:TRSSRE
+      - ECONOMICS:TRSTR
 - name: country_top_economics_labor_tr
   symbols:
     tickers:
@@ -3019,6 +3911,19 @@ presets:
       - ECONOMICS:AEGSP
       - ECONOMICS:AEGDG
       - ECONOMICS:AEME
+- name: country_top_economics_business_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AECORR
+- name: country_top_economics_taxes_ae
+  symbols:
+    tickers:
+      - ECONOMICS:AEPITR
+      - ECONOMICS:AECTR
+      - ECONOMICS:AESSR
+      - ECONOMICS:AESSRC
+      - ECONOMICS:AESSRE
+      - ECONOMICS:AESTR
 - name: country_top_economics_labor_ae
   symbols:
     tickers:
@@ -3062,6 +3967,23 @@ presets:
       - ECONOMICS:GBGD
       - ECONOMICS:GBGDG
       - ECONOMICS:GBGSG
+- name: country_top_economics_business_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBCPR
+      - ECONOMICS:GBNO
+      - ECONOMICS:GBLEI
+      - ECONOMICS:GBCORR
+      - ECONOMICS:GBBR
+- name: country_top_economics_taxes_gb
+  symbols:
+    tickers:
+      - ECONOMICS:GBPITR
+      - ECONOMICS:GBCTR
+      - ECONOMICS:GBSSR
+      - ECONOMICS:GBSSRC
+      - ECONOMICS:GBSSRE
+      - ECONOMICS:GBSTR
 - name: country_top_economics_labor_gb
   symbols:
     tickers:
@@ -3104,6 +4026,19 @@ presets:
     tickers:
       - ECONOMICS:VEGDG
       - ECONOMICS:VEME
+- name: country_top_economics_business_ve
+  symbols:
+    tickers:
+      - ECONOMICS:VECORR
+- name: country_top_economics_taxes_ve
+  symbols:
+    tickers:
+      - ECONOMICS:VEPITR
+      - ECONOMICS:VECTR
+      - ECONOMICS:VESSR
+      - ECONOMICS:VESSRC
+      - ECONOMICS:VESSRE
+      - ECONOMICS:VESTR
 - name: country_top_economics_labor_ve
   symbols:
     tickers:
@@ -3148,6 +4083,19 @@ presets:
       - ECONOMICS:VNGBV
       - ECONOMICS:VNGDG
       - ECONOMICS:VNME
+- name: country_top_economics_business_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNCORR
+- name: country_top_economics_taxes_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNPITR
+      - ECONOMICS:VNCTR
+      - ECONOMICS:VNSSR
+      - ECONOMICS:VNSSRC
+      - ECONOMICS:VNSSRE
+      - ECONOMICS:VNSTR
 - name: country_top_economics_labor_vn
   symbols:
     tickers:

@@ -2383,6 +2383,9 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
   sort:
     sortBy: revenue_per_employee
     sortOrder: desc
@@ -2475,6 +2478,9 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc

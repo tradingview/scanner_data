@@ -342,7 +342,8 @@ presets:
 - name: country_top_economics_business_br
   symbols:
     tickers:
-      - ECONOMICS:BRNO
+      - ECONOMICS:BRBCOI
+      - ECONOMICS:BRMPMI
       - ECONOMICS:BRLEI
       - ECONOMICS:BRCORR
 - name: country_top_economics_taxes_br

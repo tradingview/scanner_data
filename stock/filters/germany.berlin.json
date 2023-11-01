@@ -4,10 +4,10 @@
       "s": "BER:01H"
     },
     {
-      "s": "BER:04Q"
+      "s": "BER:02M"
     },
     {
-      "s": "BER:08T"
+      "s": "BER:04Q"
     },
     {
       "s": "BER:096"
@@ -16,13 +16,13 @@
       "s": "BER:0B2"
     },
     {
+      "s": "BER:0C2"
+    },
+    {
       "s": "BER:0CG"
     },
     {
-      "s": "BER:0DA"
-    },
-    {
-      "s": "BER:0FF"
+      "s": "BER:0H2"
     },
     {
       "s": "BER:0L5"
@@ -35,6 +35,9 @@
     },
     {
       "s": "BER:0QF"
+    },
+    {
+      "s": "BER:0S1"
     },
     {
       "s": "BER:0S6"
@@ -67,6 +70,9 @@
       "s": "BER:185"
     },
     {
+      "s": "BER:18RA"
+    },
+    {
       "s": "BER:1APS"
     },
     {
@@ -79,10 +85,10 @@
       "s": "BER:1FC"
     },
     {
-      "s": "BER:1FH"
+      "s": "BER:1J2"
     },
     {
-      "s": "BER:1J2"
+      "s": "BER:1MU"
     },
     {
       "s": "BER:1N8"
@@ -94,16 +100,10 @@
       "s": "BER:1NDA"
     },
     {
-      "s": "BER:1NR"
-    },
-    {
       "s": "BER:1OM"
     },
     {
       "s": "BER:1Q5"
-    },
-    {
-      "s": "BER:1QG"
     },
     {
       "s": "BER:1QZ"
@@ -118,10 +118,19 @@
       "s": "BER:1SXP"
     },
     {
+      "s": "BER:1T1"
+    },
+    {
       "s": "BER:1TY"
     },
     {
       "s": "BER:1U1"
+    },
+    {
+      "s": "BER:1UD"
+    },
+    {
+      "s": "BER:1WR"
     },
     {
       "s": "BER:1YD"
@@ -151,19 +160,19 @@
       "s": "BER:25E"
     },
     {
-      "s": "BER:26R"
-    },
-    {
       "s": "BER:27N"
     },
     {
-      "s": "BER:29B"
+      "s": "BER:2BH"
     },
     {
       "s": "BER:2BRE"
     },
     {
       "s": "BER:2BTC"
+    },
+    {
+      "s": "BER:2CU"
     },
     {
       "s": "BER:2DU"
@@ -181,6 +190,9 @@
       "s": "BER:2GI"
     },
     {
+      "s": "BER:2HL"
+    },
+    {
       "s": "BER:2HP"
     },
     {
@@ -194,6 +206,9 @@
     },
     {
       "s": "BER:2IS"
+    },
+    {
+      "s": "BER:2J2"
     },
     {
       "s": "BER:2JM"
@@ -241,22 +256,19 @@
       "s": "BER:30T"
     },
     {
-      "s": "BER:31L"
+      "s": "BER:33L"
     },
     {
-      "s": "BER:33L"
+      "s": "BER:35G"
     },
     {
       "s": "BER:35S"
     },
     {
-      "s": "BER:39YA"
+      "s": "BER:36Z"
     },
     {
-      "s": "BER:3AD1"
-    },
-    {
-      "s": "BER:3AD2"
+      "s": "BER:37W"
     },
     {
       "s": "BER:3AI"
@@ -316,6 +328,9 @@
       "s": "BER:3E2"
     },
     {
+      "s": "BER:3EC"
+    },
+    {
       "s": "BER:3GGL"
     },
     {
@@ -325,16 +340,25 @@
       "s": "BER:3HM"
     },
     {
+      "s": "BER:3I0"
+    },
+    {
       "s": "BER:3IND"
     },
     {
       "s": "BER:3IT"
     },
     {
+      "s": "BER:3IW"
+    },
+    {
       "s": "BER:3JL"
     },
     {
       "s": "BER:3JPN"
+    },
+    {
+      "s": "BER:3KO"
     },
     {
       "s": "BER:3LV"
@@ -415,9 +439,6 @@
       "s": "BER:41B"
     },
     {
-      "s": "BER:41Z0"
-    },
-    {
       "s": "BER:42G1"
     },
     {
@@ -445,6 +466,12 @@
       "s": "BER:4C9"
     },
     {
+      "s": "BER:4D7"
+    },
+    {
+      "s": "BER:4DH"
+    },
+    {
       "s": "BER:4DS"
     },
     {
@@ -454,16 +481,22 @@
       "s": "BER:4F1"
     },
     {
+      "s": "BER:4FB"
+    },
+    {
       "s": "BER:4GLD"
     },
     {
       "s": "BER:4I1"
     },
     {
-      "s": "BER:4K8"
+      "s": "BER:4LT1"
     },
     {
       "s": "BER:4MGN"
+    },
+    {
+      "s": "BER:4PG"
     },
     {
       "s": "BER:4PN"
@@ -472,16 +505,13 @@
       "s": "BER:4S0"
     },
     {
-      "s": "BER:4TC"
+      "s": "BER:4T0"
     },
     {
-      "s": "BER:4VK"
+      "s": "BER:54E"
     },
     {
       "s": "BER:56S1"
-    },
-    {
-      "s": "BER:5711"
     },
     {
       "s": "BER:5AP"
@@ -494,6 +524,9 @@
     },
     {
       "s": "BER:5G5"
+    },
+    {
+      "s": "BER:5JB"
     },
     {
       "s": "BER:5PN"
@@ -520,13 +553,10 @@
       "s": "BER:5ZM"
     },
     {
-      "s": "BER:62M"
-    },
-    {
-      "s": "BER:636"
-    },
-    {
       "s": "BER:639"
+    },
+    {
+      "s": "BER:68M"
     },
     {
       "s": "BER:68V"
@@ -539,6 +569,9 @@
     },
     {
       "s": "BER:6EQ"
+    },
+    {
+      "s": "BER:6JK"
     },
     {
       "s": "BER:6MK"
@@ -556,9 +589,6 @@
       "s": "BER:724"
     },
     {
-      "s": "BER:72T"
-    },
-    {
       "s": "BER:75S"
     },
     {
@@ -568,6 +598,9 @@
       "s": "BER:7AAN"
     },
     {
+      "s": "BER:7CPA"
+    },
+    {
       "s": "BER:7DB"
     },
     {
@@ -575,6 +608,12 @@
     },
     {
       "s": "BER:7HP"
+    },
+    {
+      "s": "BER:7LI"
+    },
+    {
+      "s": "BER:7MR"
     },
     {
       "s": "BER:7NX"
@@ -593,6 +632,12 @@
     },
     {
       "s": "BER:81D"
+    },
+    {
+      "s": "BER:847"
+    },
+    {
+      "s": "BER:85T"
     },
     {
       "s": "BER:87W"
@@ -625,10 +670,16 @@
       "s": "BER:98M"
     },
     {
+      "s": "BER:9AA"
+    },
+    {
       "s": "BER:9BA"
     },
     {
       "s": "BER:9BFA"
+    },
+    {
+      "s": "BER:9CF"
     },
     {
       "s": "BER:9JD"
@@ -646,6 +697,12 @@
       "s": "BER:9VC"
     },
     {
+      "s": "BER:A0B0"
+    },
+    {
+      "s": "BER:A19"
+    },
+    {
       "s": "BER:A1B"
     },
     {
@@ -655,7 +712,13 @@
       "s": "BER:A1OS"
     },
     {
-      "s": "BER:A3P"
+      "s": "BER:A2A"
+    },
+    {
+      "s": "BER:A3B"
+    },
+    {
+      "s": "BER:A3I"
     },
     {
       "s": "BER:A4Y"
@@ -715,10 +778,10 @@
       "s": "BER:ABX"
     },
     {
-      "s": "BER:ACO4"
+      "s": "BER:ACCA"
     },
     {
-      "s": "BER:ACO5"
+      "s": "BER:ACD"
     },
     {
       "s": "BER:ACR"
@@ -772,13 +835,19 @@
       "s": "BER:ADWA"
     },
     {
+      "s": "BER:AE9"
+    },
+    {
+      "s": "BER:AEBA"
+    },
+    {
       "s": "BER:AEC1"
     },
     {
       "s": "BER:AEIN"
     },
     {
-      "s": "BER:AES"
+      "s": "BER:AEP"
     },
     {
       "s": "BER:AFL"
@@ -797,9 +866,6 @@
     },
     {
       "s": "BER:AGJ"
-    },
-    {
-      "s": "BER:AGT"
     },
     {
       "s": "BER:AHC"
@@ -823,13 +889,13 @@
       "s": "BER:AIXA"
     },
     {
-      "s": "BER:AIY"
-    },
-    {
       "s": "BER:AJ91"
     },
     {
       "s": "BER:AK3"
+    },
+    {
+      "s": "BER:AKN"
     },
     {
       "s": "BER:ALC0"
@@ -883,9 +949,6 @@
       "s": "BER:ANI"
     },
     {
-      "s": "BER:ANP"
-    },
-    {
       "s": "BER:AOF"
     },
     {
@@ -905,6 +968,9 @@
     },
     {
       "s": "BER:APPH"
+    },
+    {
+      "s": "BER:AQY"
     },
     {
       "s": "BER:ARG1"
@@ -935,6 +1001,9 @@
     },
     {
       "s": "BER:AT1"
+    },
+    {
+      "s": "BER:AT4"
     },
     {
       "s": "BER:ATD"
@@ -982,9 +1051,6 @@
       "s": "BER:B4NX"
     },
     {
-      "s": "BER:B5V"
-    },
-    {
       "s": "BER:B7A"
     },
     {
@@ -1009,6 +1075,12 @@
       "s": "BER:BAYN"
     },
     {
+      "s": "BER:BBK"
+    },
+    {
+      "s": "BER:BC0"
+    },
+    {
       "s": "BER:BC8"
     },
     {
@@ -1024,6 +1096,9 @@
       "s": "BER:BEI"
     },
     {
+      "s": "BER:BEM"
+    },
+    {
       "s": "BER:BEZ"
     },
     {
@@ -1033,22 +1108,19 @@
       "s": "BER:BG4"
     },
     {
-      "s": "BER:BGA1"
-    },
-    {
       "s": "BER:BGT"
     },
     {
       "s": "BER:BGW"
     },
     {
+      "s": "BER:BHI"
+    },
+    {
       "s": "BER:BHJC"
     },
     {
       "s": "BER:BIG1"
-    },
-    {
-      "s": "BER:BIH"
     },
     {
       "s": "BER:BIJ"
@@ -1067,6 +1139,9 @@
     },
     {
       "s": "BER:BKHT"
+    },
+    {
+      "s": "BER:BL8"
     },
     {
       "s": "BER:BLQA"
@@ -1129,9 +1204,6 @@
       "s": "BER:BRE"
     },
     {
-      "s": "BER:BRL1"
-    },
-    {
       "s": "BER:BRM"
     },
     {
@@ -1139,9 +1211,6 @@
     },
     {
       "s": "BER:BRYN"
-    },
-    {
-      "s": "BER:BRZ0"
     },
     {
       "s": "BER:BSD2"
@@ -1168,6 +1237,9 @@
       "s": "BER:BTCE"
     },
     {
+      "s": "BER:BTO0"
+    },
+    {
       "s": "BER:BU3"
     },
     {
@@ -1180,7 +1252,13 @@
       "s": "BER:BWB"
     },
     {
+      "s": "BER:BWI"
+    },
+    {
       "s": "BER:BX1B"
+    },
+    {
+      "s": "BER:BX7"
     },
     {
       "s": "BER:BYF1"
@@ -1192,13 +1270,10 @@
       "s": "BER:BYW6"
     },
     {
+      "s": "BER:BZ9"
+    },
+    {
       "s": "BER:BZF1"
-    },
-    {
-      "s": "BER:BZZ"
-    },
-    {
-      "s": "BER:C0Y"
     },
     {
       "s": "BER:C1V"
@@ -1207,10 +1282,16 @@
       "s": "BER:C3RY"
     },
     {
-      "s": "BER:C9F"
+      "s": "BER:C4F"
     },
     {
-      "s": "BER:CAO"
+      "s": "BER:C67"
+    },
+    {
+      "s": "BER:C6G"
+    },
+    {
+      "s": "BER:C9F"
     },
     {
       "s": "BER:CAR"
@@ -1226,9 +1307,6 @@
     },
     {
       "s": "BER:CBK"
-    },
-    {
-      "s": "BER:CC5"
     },
     {
       "s": "BER:CCAP"
@@ -1267,6 +1345,9 @@
       "s": "BER:CFX"
     },
     {
+      "s": "BER:CFZ"
+    },
+    {
       "s": "BER:CGM"
     },
     {
@@ -1274,6 +1355,9 @@
     },
     {
       "s": "BER:CHG"
+    },
+    {
+      "s": "BER:CHQ1"
     },
     {
       "s": "BER:CHV"
@@ -1285,19 +1369,25 @@
       "s": "BER:CIS"
     },
     {
+      "s": "BER:CIT"
+    },
+    {
       "s": "BER:CLIQ"
     },
     {
       "s": "BER:CLP"
     },
     {
-      "s": "BER:CM2"
+      "s": "BER:CMAB"
     },
     {
       "s": "BER:CMC"
     },
     {
       "s": "BER:CMS"
+    },
+    {
+      "s": "BER:CNH"
     },
     {
       "s": "BER:CNJ"
@@ -1336,6 +1426,9 @@
       "s": "BER:CPA"
     },
     {
+      "s": "BER:CPK"
+    },
+    {
       "s": "BER:CPX"
     },
     {
@@ -1346,6 +1439,9 @@
     },
     {
       "s": "BER:CSC"
+    },
+    {
+      "s": "BER:CSG"
     },
     {
       "s": "BER:CSH"
@@ -1360,9 +1456,6 @@
       "s": "BER:CTP2"
     },
     {
-      "s": "BER:CUD"
-    },
-    {
       "s": "BER:CUM"
     },
     {
@@ -1372,19 +1465,25 @@
       "s": "BER:CVA"
     },
     {
+      "s": "BER:CVLC"
+    },
+    {
       "s": "BER:CVS"
     },
     {
       "s": "BER:CWC"
     },
     {
+      "s": "BER:CWN"
+    },
+    {
       "s": "BER:CXR"
     },
     {
-      "s": "BER:CXX"
+      "s": "BER:CY1K"
     },
     {
-      "s": "BER:CY1K"
+      "s": "BER:CY2"
     },
     {
       "s": "BER:CYR"
@@ -1394,6 +1493,12 @@
     },
     {
       "s": "BER:D2G"
+    },
+    {
+      "s": "BER:D2MN"
+    },
+    {
+      "s": "BER:D4S"
     },
     {
       "s": "BER:D6H"
@@ -1406,6 +1511,9 @@
     },
     {
       "s": "BER:DAM"
+    },
+    {
+      "s": "BER:DAO"
     },
     {
       "s": "BER:DAP"
@@ -1444,9 +1552,6 @@
       "s": "BER:DEZ"
     },
     {
-      "s": "BER:DFQ"
-    },
-    {
       "s": "BER:DFTK"
     },
     {
@@ -1481,6 +1586,9 @@
     },
     {
       "s": "BER:DMRE"
+    },
+    {
+      "s": "BER:DNO"
     },
     {
       "s": "BER:DNQ"
@@ -1519,6 +1627,9 @@
       "s": "BER:DUE"
     },
     {
+      "s": "BER:DUT"
+    },
+    {
       "s": "BER:DWD"
     },
     {
@@ -1535,9 +1646,6 @@
     },
     {
       "s": "BER:DYH"
-    },
-    {
-      "s": "BER:DYT1"
     },
     {
       "s": "BER:E0P"
@@ -1588,6 +1696,9 @@
       "s": "BER:ED4"
     },
     {
+      "s": "BER:ED9"
+    },
+    {
       "s": "BER:EDC"
     },
     {
@@ -1604,6 +1715,9 @@
     },
     {
       "s": "BER:EIX"
+    },
+    {
+      "s": "BER:EJR"
     },
     {
       "s": "BER:EJT1"
@@ -1648,13 +1762,16 @@
       "s": "BER:ENR"
     },
     {
-      "s": "BER:ENV"
-    },
-    {
       "s": "BER:EO5"
     },
     {
       "s": "BER:EOAN"
+    },
+    {
+      "s": "BER:EP5"
+    },
+    {
+      "s": "BER:EP9"
     },
     {
       "s": "BER:EQ6"
@@ -1681,6 +1798,9 @@
       "s": "BER:ERWE"
     },
     {
+      "s": "BER:ESD"
+    },
+    {
       "s": "BER:ESF0"
     },
     {
@@ -1700,6 +1820,9 @@
     },
     {
       "s": "BER:ETHC"
+    },
+    {
+      "s": "BER:ETY"
     },
     {
       "s": "BER:EUZ"
@@ -1756,6 +1879,9 @@
       "s": "BER:FB3S"
     },
     {
+      "s": "BER:FC6A"
+    },
+    {
       "s": "BER:FC9"
     },
     {
@@ -1777,10 +1903,19 @@
       "s": "BER:FF24"
     },
     {
+      "s": "BER:FF60"
+    },
+    {
       "s": "BER:FGA1"
     },
     {
+      "s": "BER:FI6"
+    },
+    {
       "s": "BER:FIE"
+    },
+    {
+      "s": "BER:FJG"
     },
     {
       "s": "BER:FMC1"
@@ -1837,10 +1972,19 @@
       "s": "BER:FSNT"
     },
     {
+      "s": "BER:FT2"
+    },
+    {
       "s": "BER:FTE"
     },
     {
       "s": "BER:FTK"
+    },
+    {
+      "s": "BER:FUJ1"
+    },
+    {
+      "s": "BER:FW2N"
     },
     {
       "s": "BER:FYB"
@@ -1852,9 +1996,6 @@
       "s": "BER:G1A"
     },
     {
-      "s": "BER:G1U"
-    },
-    {
       "s": "BER:G24"
     },
     {
@@ -1864,13 +2005,25 @@
       "s": "BER:G6P"
     },
     {
+      "s": "BER:GAH"
+    },
+    {
+      "s": "BER:GAN"
+    },
+    {
       "s": "BER:GAP"
+    },
+    {
+      "s": "BER:GAX"
     },
     {
       "s": "BER:GBE"
     },
     {
       "s": "BER:GBF"
+    },
+    {
+      "s": "BER:GCC"
     },
     {
       "s": "BER:GCP"
@@ -1936,6 +2089,9 @@
       "s": "BER:GRM"
     },
     {
+      "s": "BER:GRP"
+    },
+    {
       "s": "BER:GS2C"
     },
     {
@@ -1951,6 +2107,9 @@
       "s": "BER:GTR"
     },
     {
+      "s": "BER:GTT"
+    },
+    {
       "s": "BER:GTY"
     },
     {
@@ -1958,6 +2117,9 @@
     },
     {
       "s": "BER:GWI2"
+    },
+    {
+      "s": "BER:GWW"
     },
     {
       "s": "BER:GXI"
@@ -1979,6 +2141,9 @@
     },
     {
       "s": "BER:H2O"
+    },
+    {
+      "s": "BER:H5C"
     },
     {
       "s": "BER:H5E"
@@ -2005,9 +2170,6 @@
       "s": "BER:HAR"
     },
     {
-      "s": "BER:HAS"
-    },
-    {
       "s": "BER:HAW"
     },
     {
@@ -2015,6 +2177,9 @@
     },
     {
       "s": "BER:HBH"
+    },
+    {
+      "s": "BER:HC5"
     },
     {
       "s": "BER:HCL"
@@ -2038,6 +2203,12 @@
       "s": "BER:HEN3"
     },
     {
+      "s": "BER:HF7N"
+    },
+    {
+      "s": "BER:HFF"
+    },
+    {
       "s": "BER:HFG"
     },
     {
@@ -2051,6 +2222,9 @@
     },
     {
       "s": "BER:HHHA"
+    },
+    {
+      "s": "BER:HI91"
     },
     {
       "s": "BER:HIGH"
@@ -2113,16 +2287,34 @@
       "s": "BER:HS2"
     },
     {
+      "s": "BER:HSI"
+    },
+    {
+      "s": "BER:HSOA"
+    },
+    {
       "s": "BER:HSY"
     },
     {
       "s": "BER:HTG"
     },
     {
+      "s": "BER:HU3"
+    },
+    {
+      "s": "BER:HUEC"
+    },
+    {
       "s": "BER:HXCK"
     },
     {
+      "s": "BER:HXL"
+    },
+    {
       "s": "BER:HYQ"
+    },
+    {
+      "s": "BER:HZJ"
     },
     {
       "s": "BER:I8R"
@@ -2131,7 +2323,13 @@
       "s": "BER:I8U"
     },
     {
+      "s": "BER:IB6A"
+    },
+    {
       "s": "BER:IBE1"
+    },
+    {
+      "s": "BER:IBI"
     },
     {
       "s": "BER:IBM"
@@ -2158,13 +2356,7 @@
       "s": "BER:IFX"
     },
     {
-      "s": "BER:IJ7"
-    },
-    {
       "s": "BER:IJ8"
-    },
-    {
-      "s": "BER:IJU"
     },
     {
       "s": "BER:ILM1"
@@ -2174,6 +2366,9 @@
     },
     {
       "s": "BER:ILU"
+    },
+    {
+      "s": "BER:IMP"
     },
     {
       "s": "BER:INH"
@@ -2200,13 +2395,13 @@
       "s": "BER:IOS"
     },
     {
+      "s": "BER:IPG"
+    },
+    {
       "s": "BER:IPOK"
     },
     {
       "s": "BER:IS7"
-    },
-    {
-      "s": "BER:IS8"
     },
     {
       "s": "BER:ISHA"
@@ -2245,13 +2440,31 @@
       "s": "BER:IXX"
     },
     {
+      "s": "BER:J4D"
+    },
+    {
+      "s": "BER:J4V"
+    },
+    {
       "s": "BER:J5A"
+    },
+    {
+      "s": "BER:JAL"
     },
     {
       "s": "BER:JAT"
     },
     {
       "s": "BER:JAW"
+    },
+    {
+      "s": "BER:JB1"
+    },
+    {
+      "s": "BER:JBL"
+    },
+    {
+      "s": "BER:JCR"
     },
     {
       "s": "BER:JD3"
@@ -2266,13 +2479,22 @@
       "s": "BER:JEN"
     },
     {
+      "s": "BER:JM2"
+    },
+    {
       "s": "BER:JNJ"
     },
     {
       "s": "BER:JNP"
     },
     {
+      "s": "BER:JOE"
+    },
+    {
       "s": "BER:JST"
+    },
+    {
+      "s": "BER:JT5"
     },
     {
       "s": "BER:JUN3"
@@ -2281,10 +2503,16 @@
       "s": "BER:JUS1"
     },
     {
+      "s": "BER:JVC"
+    },
+    {
       "s": "BER:JY0"
     },
     {
       "s": "BER:JZ6"
+    },
+    {
+      "s": "BER:K6B"
     },
     {
       "s": "BER:KA8"
@@ -2305,6 +2533,12 @@
       "s": "BER:KDB"
     },
     {
+      "s": "BER:KEE"
+    },
+    {
+      "s": "BER:KEI"
+    },
+    {
       "s": "BER:KEK"
     },
     {
@@ -2312,9 +2546,6 @@
     },
     {
       "s": "BER:KEL"
-    },
-    {
-      "s": "BER:KEM"
     },
     {
       "s": "BER:KEY"
@@ -2335,6 +2566,9 @@
       "s": "BER:KI9A"
     },
     {
+      "s": "BER:KIK"
+    },
+    {
       "s": "BER:KIN2"
     },
     {
@@ -2350,16 +2584,22 @@
       "s": "BER:KMY"
     },
     {
-      "s": "BER:KO4"
+      "s": "BER:KOG"
     },
     {
-      "s": "BER:KOG"
+      "s": "BER:KOI"
+    },
+    {
+      "s": "BER:KOM1"
     },
     {
       "s": "BER:KOR3"
     },
     {
       "s": "BER:KOW"
+    },
+    {
+      "s": "BER:KPO"
     },
     {
       "s": "BER:KRN"
@@ -2395,7 +2635,7 @@
       "s": "BER:KWS"
     },
     {
-      "s": "BER:L0T"
+      "s": "BER:KY6"
     },
     {
       "s": "BER:L3W"
@@ -2410,7 +2650,7 @@
       "s": "BER:LAR"
     },
     {
-      "s": "BER:LCM"
+      "s": "BER:LCR"
     },
     {
       "s": "BER:LDF"
@@ -2425,9 +2665,6 @@
       "s": "BER:LEN"
     },
     {
-      "s": "BER:LH1"
-    },
-    {
       "s": "BER:LHA"
     },
     {
@@ -2437,22 +2674,37 @@
       "s": "BER:LIN"
     },
     {
+      "s": "BER:LKQ1"
+    },
+    {
       "s": "BER:LLD"
     },
     {
       "s": "BER:LLY"
     },
     {
+      "s": "BER:LMF"
+    },
+    {
       "s": "BER:LMIA"
     },
     {
+      "s": "BER:LMO"
+    },
+    {
       "s": "BER:LN3"
+    },
+    {
+      "s": "BER:LNE"
     },
     {
       "s": "BER:LOM"
     },
     {
       "s": "BER:LOR"
+    },
+    {
+      "s": "BER:LP3"
     },
     {
       "s": "BER:LPK"
@@ -2473,12 +2725,6 @@
       "s": "BER:LUS1"
     },
     {
-      "s": "BER:LV2B"
-    },
-    {
-      "s": "BER:LWE"
-    },
-    {
       "s": "BER:LXS"
     },
     {
@@ -2486,6 +2732,9 @@
     },
     {
       "s": "BER:LYF"
+    },
+    {
+      "s": "BER:M07"
     },
     {
       "s": "BER:M0YN"
@@ -2510,12 +2759,6 @@
     },
     {
       "s": "BER:M5Z"
-    },
-    {
-      "s": "BER:M6Q"
-    },
-    {
-      "s": "BER:M7K"
     },
     {
       "s": "BER:M7U"
@@ -2554,6 +2797,9 @@
       "s": "BER:MBZS"
     },
     {
+      "s": "BER:MCK"
+    },
+    {
       "s": "BER:MDG1"
     },
     {
@@ -2569,13 +2815,19 @@
       "s": "BER:MED"
     },
     {
+      "s": "BER:MGC"
+    },
+    {
       "s": "BER:MGG"
     },
     {
-      "s": "BER:MGJ"
+      "s": "BER:MHL"
     },
     {
-      "s": "BER:MHL"
+      "s": "BER:MHZ"
+    },
+    {
+      "s": "BER:MILA"
     },
     {
       "s": "BER:MIO"
@@ -2599,6 +2851,12 @@
       "s": "BER:MMM"
     },
     {
+      "s": "BER:MMO"
+    },
+    {
+      "s": "BER:MMPI"
+    },
+    {
       "s": "BER:MOH"
     },
     {
@@ -2606,6 +2864,9 @@
     },
     {
       "s": "BER:MPCK"
+    },
+    {
+      "s": "BER:MPN"
     },
     {
       "s": "BER:MRK"
@@ -2623,13 +2884,16 @@
       "s": "BER:MSF"
     },
     {
+      "s": "BER:MSQ"
+    },
+    {
       "s": "BER:MSSE"
     },
     {
-      "s": "BER:MTCE"
+      "s": "BER:MTE"
     },
     {
-      "s": "BER:MTE"
+      "s": "BER:MTS1"
     },
     {
       "s": "BER:MTT"
@@ -2647,13 +2911,13 @@
       "s": "BER:MUQ"
     },
     {
+      "s": "BER:MUR1"
+    },
+    {
       "s": "BER:MUV2"
     },
     {
       "s": "BER:MUX"
-    },
-    {
-      "s": "BER:MUY"
     },
     {
       "s": "BER:MV90"
@@ -2666,6 +2930,9 @@
     },
     {
       "s": "BER:MWB"
+    },
+    {
+      "s": "BER:MWI"
     },
     {
       "s": "BER:MWZ"
@@ -2683,13 +2950,19 @@
       "s": "BER:MZX"
     },
     {
+      "s": "BER:N1C"
+    },
+    {
       "s": "BER:N3A"
     },
     {
       "s": "BER:N4G"
     },
     {
-      "s": "BER:N4Q1"
+      "s": "BER:N9L"
+    },
+    {
+      "s": "BER:N9U"
     },
     {
       "s": "BER:NA9"
@@ -2722,10 +2995,16 @@
       "s": "BER:NCH2"
     },
     {
+      "s": "BER:ND5"
+    },
+    {
       "s": "BER:NDA"
     },
     {
       "s": "BER:NDX1"
+    },
+    {
+      "s": "BER:NEC1"
     },
     {
       "s": "BER:NEM"
@@ -2746,13 +3025,25 @@
       "s": "BER:NFS"
     },
     {
+      "s": "BER:NGI"
+    },
+    {
+      "s": "BER:NGK"
+    },
+    {
       "s": "BER:NGLB"
     },
     {
       "s": "BER:NGTE"
     },
     {
+      "s": "BER:NI3"
+    },
+    {
       "s": "BER:NI7"
+    },
+    {
+      "s": "BER:NIB"
     },
     {
       "s": "BER:NIIN"
@@ -2791,6 +3082,9 @@
       "s": "BER:NPG"
     },
     {
+      "s": "BER:NPX"
+    },
+    {
       "s": "BER:NRA"
     },
     {
@@ -2800,6 +3094,12 @@
       "s": "BER:NRN"
     },
     {
+      "s": "BER:NSK"
+    },
+    {
+      "s": "BER:NT4"
+    },
+    {
       "s": "BER:NTA"
     },
     {
@@ -2807,6 +3107,9 @@
     },
     {
       "s": "BER:NTH"
+    },
+    {
+      "s": "BER:NTN"
     },
     {
       "s": "BER:NUVA"
@@ -2830,9 +3133,6 @@
       "s": "BER:NWDA"
     },
     {
-      "s": "BER:NWK"
-    },
-    {
       "s": "BER:NWO"
     },
     {
@@ -2842,10 +3142,16 @@
       "s": "BER:NWT"
     },
     {
+      "s": "BER:NXG"
+    },
+    {
       "s": "BER:NXS"
     },
     {
       "s": "BER:NXU"
+    },
+    {
+      "s": "BER:NXZ"
     },
     {
       "s": "BER:NZB"
@@ -2860,13 +3166,22 @@
       "s": "BER:O4B"
     },
     {
+      "s": "BER:OA5"
+    },
+    {
       "s": "BER:OBS"
     },
     {
-      "s": "BER:OD8"
+      "s": "BER:ODF"
     },
     {
       "s": "BER:OEWA"
+    },
+    {
+      "s": "BER:OFP"
+    },
+    {
+      "s": "BER:OG9"
     },
     {
       "s": "BER:OHB"
@@ -2878,10 +3193,19 @@
       "s": "BER:OIZ"
     },
     {
+      "s": "BER:OK3"
+    },
+    {
       "s": "BER:OLJJ"
     },
     {
+      "s": "BER:OLL"
+    },
+    {
       "s": "BER:OLN"
+    },
+    {
+      "s": "BER:OMR1"
     },
     {
       "s": "BER:OMV"
@@ -2896,10 +3220,19 @@
       "s": "BER:ORC"
     },
     {
+      "s": "BER:ORL"
+    },
+    {
       "s": "BER:OS1"
     },
     {
+      "s": "BER:OSA"
+    },
+    {
       "s": "BER:OSG"
+    },
+    {
+      "s": "BER:OSK"
     },
     {
       "s": "BER:OSP2"
@@ -2941,19 +3274,22 @@
       "s": "BER:PBB"
     },
     {
+      "s": "BER:PBE"
+    },
+    {
       "s": "BER:PBY"
     },
     {
       "s": "BER:PCE1"
     },
     {
+      "s": "BER:PCU"
+    },
+    {
       "s": "BER:PCX"
     },
     {
       "s": "BER:PCZ"
-    },
-    {
-      "s": "BER:PD2"
     },
     {
       "s": "BER:PDA"
@@ -2977,6 +3313,9 @@
       "s": "BER:PFV"
     },
     {
+      "s": "BER:PG4"
+    },
+    {
       "s": "BER:PGN"
     },
     {
@@ -2989,16 +3328,19 @@
       "s": "BER:PHM7"
     },
     {
+      "s": "BER:PIV"
+    },
+    {
       "s": "BER:PKN"
+    },
+    {
+      "s": "BER:PL6"
     },
     {
       "s": "BER:PLG3"
     },
     {
       "s": "BER:PLGS"
-    },
-    {
-      "s": "BER:PLKA"
     },
     {
       "s": "BER:PLL"
@@ -3013,10 +3355,10 @@
       "s": "BER:PLUN"
     },
     {
-      "s": "BER:PNE3"
+      "s": "BER:PM8"
     },
     {
-      "s": "BER:PNT"
+      "s": "BER:PNE3"
     },
     {
       "s": "BER:PO0"
@@ -3043,7 +3385,13 @@
       "s": "BER:PPFB"
     },
     {
+      "s": "BER:PPQ"
+    },
+    {
       "s": "BER:PPX"
+    },
+    {
+      "s": "BER:PPY"
     },
     {
       "s": "BER:PRG"
@@ -3079,9 +3427,6 @@
       "s": "BER:PWO"
     },
     {
-      "s": "BER:PXK"
-    },
-    {
       "s": "BER:PYR"
     },
     {
@@ -3092,6 +3437,9 @@
     },
     {
       "s": "BER:QBY"
+    },
+    {
+      "s": "BER:QC1"
     },
     {
       "s": "BER:QCI"
@@ -3115,16 +3463,7 @@
       "s": "BER:QQQ5"
     },
     {
-      "s": "BER:QS2A"
-    },
-    {
       "s": "BER:R1B"
-    },
-    {
-      "s": "BER:R1Y"
-    },
-    {
-      "s": "BER:R3NK"
     },
     {
       "s": "BER:R66"
@@ -3187,10 +3526,16 @@
       "s": "BER:RIR"
     },
     {
-      "s": "BER:RK8"
+      "s": "BER:RLD"
     },
     {
       "s": "BER:RLF"
+    },
+    {
+      "s": "BER:RLS"
+    },
+    {
+      "s": "BER:RME"
     },
     {
       "s": "BER:RN7"
@@ -3205,7 +3550,10 @@
       "s": "BER:ROR"
     },
     {
-      "s": "BER:RPL"
+      "s": "BER:RPD"
+    },
+    {
+      "s": "BER:RPU"
     },
     {
       "s": "BER:RRTL"
@@ -3215,6 +3563,9 @@
     },
     {
       "s": "BER:RS1"
+    },
+    {
+      "s": "BER:RS6"
     },
     {
       "s": "BER:RSL2"
@@ -3232,13 +3583,13 @@
       "s": "BER:RWE"
     },
     {
+      "s": "BER:RWL"
+    },
+    {
       "s": "BER:RY4C"
     },
     {
       "s": "BER:RY8"
-    },
-    {
-      "s": "BER:RYC"
     },
     {
       "s": "BER:RYD"
@@ -3250,10 +3601,16 @@
       "s": "BER:S3CH"
     },
     {
+      "s": "BER:S3T"
+    },
+    {
       "s": "BER:S4AA"
     },
     {
       "s": "BER:S64"
+    },
+    {
+      "s": "BER:S6IA"
     },
     {
       "s": "BER:S6M"
@@ -3269,6 +3626,9 @@
     },
     {
       "s": "BER:S92"
+    },
+    {
+      "s": "BER:S94"
     },
     {
       "s": "BER:S9I"
@@ -3289,6 +3649,9 @@
       "s": "BER:SB1"
     },
     {
+      "s": "BER:SB3"
+    },
+    {
       "s": "BER:SBA"
     },
     {
@@ -3298,6 +3661,9 @@
       "s": "BER:SBAE"
     },
     {
+      "s": "BER:SBG1"
+    },
+    {
       "s": "BER:SBS"
     },
     {
@@ -3305,6 +3671,15 @@
     },
     {
       "s": "BER:SCE"
+    },
+    {
+      "s": "BER:SCL"
+    },
+    {
+      "s": "BER:SD2"
+    },
+    {
+      "s": "BER:SDA"
     },
     {
       "s": "BER:SDF"
@@ -3317,6 +3692,12 @@
     },
     {
       "s": "BER:SE4"
+    },
+    {
+      "s": "BER:SE7"
+    },
+    {
+      "s": "BER:SEH"
     },
     {
       "s": "BER:SEJ1"
@@ -3340,6 +3721,9 @@
       "s": "BER:SF3"
     },
     {
+      "s": "BER:SF5"
+    },
+    {
       "s": "BER:SFD1"
     },
     {
@@ -3347,6 +3731,9 @@
     },
     {
       "s": "BER:SFQ"
+    },
+    {
+      "s": "BER:SFT"
     },
     {
       "s": "BER:SG9"
@@ -3368,6 +3755,9 @@
     },
     {
       "s": "BER:SGYE"
+    },
+    {
+      "s": "BER:SH0"
     },
     {
       "s": "BER:SHA"
@@ -3415,6 +3805,9 @@
       "s": "BER:SIX3"
     },
     {
+      "s": "BER:SJ3"
+    },
+    {
       "s": "BER:SJAP"
     },
     {
@@ -3427,13 +3820,13 @@
       "s": "BER:SJJ"
     },
     {
-      "s": "BER:SJL"
-    },
-    {
       "s": "BER:SKB"
     },
     {
       "s": "BER:SKOR"
+    },
+    {
+      "s": "BER:SKS"
     },
     {
       "s": "BER:SLCT"
@@ -3443,6 +3836,9 @@
     },
     {
       "s": "BER:SLSA"
+    },
+    {
+      "s": "BER:SM1"
     },
     {
       "s": "BER:SMA"
@@ -3463,7 +3859,7 @@
       "s": "BER:SNG"
     },
     {
-      "s": "BER:SNO"
+      "s": "BER:SNS"
     },
     {
       "s": "BER:SNW"
@@ -3482,6 +3878,9 @@
     },
     {
       "s": "BER:SOW"
+    },
+    {
+      "s": "BER:SP1"
     },
     {
       "s": "BER:SPH1"
@@ -3520,7 +3919,13 @@
       "s": "BER:SRT3"
     },
     {
+      "s": "BER:SRU"
+    },
+    {
       "s": "BER:SRWE"
+    },
+    {
+      "s": "BER:SS1A"
     },
     {
       "s": "BER:SSLE"
@@ -3542,6 +3947,9 @@
     },
     {
       "s": "BER:SUBR"
+    },
+    {
+      "s": "BER:SUI"
     },
     {
       "s": "BER:SUR"
@@ -3592,9 +4000,6 @@
       "s": "BER:SYZ"
     },
     {
-      "s": "BER:SZ2"
-    },
-    {
       "s": "BER:SZG"
     },
     {
@@ -3619,9 +4024,6 @@
       "s": "BER:T6R"
     },
     {
-      "s": "BER:T7U"
-    },
-    {
       "s": "BER:T9T"
     },
     {
@@ -3631,25 +4033,31 @@
       "s": "BER:TA1"
     },
     {
+      "s": "BER:TAH"
+    },
+    {
       "s": "BER:TAI3"
     },
     {
-      "s": "BER:TAR"
+      "s": "BER:TBT"
     },
     {
       "s": "BER:TCO0"
     },
     {
-      "s": "BER:TEG"
+      "s": "BER:TDI"
     },
     {
-      "s": "BER:TEQ"
+      "s": "BER:TEG"
     },
     {
       "s": "BER:TEY"
     },
     {
       "s": "BER:TF7A"
+    },
+    {
+      "s": "BER:TGC"
     },
     {
       "s": "BER:TGHN"
@@ -3673,16 +4081,13 @@
       "s": "BER:TIP5"
     },
     {
-      "s": "BER:TIV"
-    },
-    {
       "s": "BER:TJX"
     },
     {
-      "s": "BER:TK41"
+      "s": "BER:TKA"
     },
     {
-      "s": "BER:TKA"
+      "s": "BER:TKD"
     },
     {
       "s": "BER:TKE"
@@ -3712,6 +4117,9 @@
       "s": "BER:TN0"
     },
     {
+      "s": "BER:TN1"
+    },
+    {
       "s": "BER:TN8"
     },
     {
@@ -3719,6 +4127,9 @@
     },
     {
       "s": "BER:TNIE"
+    },
+    {
+      "s": "BER:TOG"
     },
     {
       "s": "BER:TOTB"
@@ -3745,6 +4156,9 @@
       "s": "BER:TR9"
     },
     {
+      "s": "BER:TRU"
+    },
+    {
       "s": "BER:TRVC"
     },
     {
@@ -3769,7 +4183,16 @@
       "s": "BER:TUI1"
     },
     {
+      "s": "BER:TWL"
+    },
+    {
       "s": "BER:TXG"
+    },
+    {
+      "s": "BER:TXT"
+    },
+    {
+      "s": "BER:TZ1"
     },
     {
       "s": "BER:TZB0"
@@ -3791,6 +4214,9 @@
     },
     {
       "s": "BER:UEN"
+    },
+    {
+      "s": "BER:UI51"
     },
     {
       "s": "BER:ULC"
@@ -3817,7 +4243,13 @@
       "s": "BER:UNVB"
     },
     {
+      "s": "BER:UR3"
+    },
+    {
       "s": "BER:USLG"
+    },
+    {
+      "s": "BER:USS"
     },
     {
       "s": "BER:USX1"
@@ -3829,13 +4261,7 @@
       "s": "BER:UTDI"
     },
     {
-      "s": "BER:UUM"
-    },
-    {
       "s": "BER:UUU"
-    },
-    {
-      "s": "BER:UWA"
     },
     {
       "s": "BER:UWS"
@@ -3845,6 +4271,9 @@
     },
     {
       "s": "BER:UZU"
+    },
+    {
+      "s": "BER:V0Y"
     },
     {
       "s": "BER:V21A"
@@ -3875,6 +4304,9 @@
     },
     {
       "s": "BER:VBX"
+    },
+    {
+      "s": "BER:VC3"
     },
     {
       "s": "BER:VDOT"
@@ -3988,6 +4420,9 @@
       "s": "BER:WATT"
     },
     {
+      "s": "BER:WB2"
+    },
+    {
       "s": "BER:WCH"
     },
     {
@@ -3997,13 +4432,31 @@
       "s": "BER:WDP"
     },
     {
+      "s": "BER:WEA"
+    },
+    {
+      "s": "BER:WEJ"
+    },
+    {
       "s": "BER:WEW"
+    },
+    {
+      "s": "BER:WF4"
     },
     {
       "s": "BER:WFA"
     },
     {
+      "s": "BER:WHF4"
+    },
+    {
+      "s": "BER:WHR"
+    },
+    {
       "s": "BER:WIB"
+    },
+    {
+      "s": "BER:WIC"
     },
     {
       "s": "BER:WIG1"
@@ -4012,7 +4465,7 @@
       "s": "BER:WILC"
     },
     {
-      "s": "BER:WM1"
+      "s": "BER:WJ4"
     },
     {
       "s": "BER:WMB"
@@ -4039,6 +4492,9 @@
       "s": "BER:WSU"
     },
     {
+      "s": "BER:WT5"
+    },
+    {
       "s": "BER:WTH"
     },
     {
@@ -4046,6 +4502,9 @@
     },
     {
       "s": "BER:WYR"
+    },
+    {
+      "s": "BER:X5A"
     },
     {
       "s": "BER:XAD1"
@@ -4070,6 +4529,9 @@
     },
     {
       "s": "BER:XD4"
+    },
+    {
+      "s": "BER:XEB"
     },
     {
       "s": "BER:XER2"
@@ -4129,13 +4591,7 @@
       "s": "BER:XTP"
     },
     {
-      "s": "BER:XTY"
-    },
-    {
       "s": "BER:XY6"
-    },
-    {
-      "s": "BER:YAAA"
     },
     {
       "s": "BER:YCP"
@@ -4156,19 +4612,22 @@
       "s": "BER:YSN"
     },
     {
-      "s": "BER:Z0Y"
-    },
-    {
       "s": "BER:Z29"
     },
     {
       "s": "BER:ZAL"
     },
     {
+      "s": "BER:ZB1"
+    },
+    {
       "s": "BER:ZEG"
     },
     {
       "s": "BER:ZETH"
+    },
+    {
+      "s": "BER:ZGY"
     },
     {
       "s": "BER:ZIL2"

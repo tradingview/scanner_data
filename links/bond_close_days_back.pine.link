@@ -8,6 +8,11 @@ yearAgoYield = timenow - 1000 * 60 * 60 * 24 * yearYield
 countOfBars1DayAgoBond = fastSearchN(time, dayAgoYield, dayYield)
 countOfBars1MonthAgoBond = fastSearchN(time, monthAgoYield, monthYield)
 countOfBars1YearAgoBond = fastSearchN(time, yearAgoYield, yearYield)
-plot(close[countOfBars1DayAgoBond], title="close_1_days_back")
-plot(close[countOfBars1MonthAgoBond], title="close_30_days_back")
-plot(close[countOfBars1YearAgoBond], title="close_365_days_back")
+
+series = close
+if bar_index == 0
+    series += series[yearYield] * 0  // max_bars_back
+
+plot(series[countOfBars1DayAgoBond], title="close_1_days_back")
+plot(series[countOfBars1MonthAgoBond], title="close_30_days_back")
+plot(series[countOfBars1YearAgoBond], title="close_365_days_back")

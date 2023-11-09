@@ -648,3 +648,70 @@ presets:
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
+- name: etfs_country_page_highest_return
+  filter:
+    - left: nav_total_return.1Y
+      operation: less
+      right: 600
+    - left: aum
+      operation: egreater
+      right: 1000000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_total_return.1Y
+    sortOrder: desc
+- name: etfs_country_page_most_traded
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: Value.Traded|1W
+    sortOrder: desc
+- name: etfs_country_page_dividends
+  filter:
+    - left: aum
+      operation: egreater
+      right: 10000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: strategy
+      operation: in_range
+      right:
+        - '13'
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: dividends_yield
+    sortOrder: desc
+- name: etfs_country_page_sector_jp
+  symbols:
+    tickers:
+      - TSE:1343
+      - TSE:1476
+      - TSE:1488
+      - TSE:1345
+      - TSE:1595
+      - TSE:1398

@@ -643,3 +643,30 @@ presets:
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
+- name: etfs_country_page_highest_return
+  symbols:
+    tickers:
+      - ""
+- name: etfs_country_page_most_traded
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: Value.Traded|1W
+    sortOrder: desc
+- name: etfs_country_page_dividends
+  symbols:
+    tickers:
+      - ""
+- name: etfs_country_page_sector_za
+  symbols:
+    tickers:
+      - ""

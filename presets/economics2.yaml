@@ -4869,3 +4869,255 @@ presets:
       - ECONOMICS:DEUR
       - ECONOMICS:GBUR
       - ECONOMICS:SEUR
+- name: locale_top_economics_table_us
+  symbols:
+    tickers:
+      - ECONOMICS:USGDP
+      - ECONOMICS:USGDPYY
+      - ECONOMICS:USGDG
+      - ECONOMICS:USINTR
+      - ECONOMICS:USIRYY
+      - ECONOMICS:USUR
+      - ECONOMICS:USCOMPPMI
+      - ECONOMICS:USCAG
+      - ECONOMICS:USIPYY
+- name: locale_top_economics_table_in
+  symbols:
+    tickers:
+      - ECONOMICS:INGDP
+      - ECONOMICS:INGDPYY
+      - ECONOMICS:INGDG
+      - ECONOMICS:ININTR
+      - ECONOMICS:INIRYY
+      - ECONOMICS:INUR
+      - ECONOMICS:INCOMPPMI
+      - ECONOMICS:INCAG
+      - ECONOMICS:INIPYY
+- name: locale_top_economics_table_de
+  symbols:
+    tickers:
+      - ECONOMICS:DEGDP
+      - ECONOMICS:DEGDPYY
+      - ECONOMICS:DEGDG
+      - ECONOMICS:DEINTR
+      - ECONOMICS:DEIRYY
+      - ECONOMICS:DEUR
+      - ECONOMICS:DECOMPPMI
+      - ECONOMICS:DECAG
+      - ECONOMICS:DEIPYY
+- name: locale_top_economics_table_fr
+  symbols:
+    tickers:
+      - ECONOMICS:FRGDP
+      - ECONOMICS:FRGDPYY
+      - ECONOMICS:FRGDG
+      - ECONOMICS:FRINTR
+      - ECONOMICS:FRIRYY
+      - ECONOMICS:FRUR
+      - ECONOMICS:FRCOMPPMI
+      - ECONOMICS:FRCAG
+      - ECONOMICS:FRIPYY
+- name: locale_top_economics_table_es
+  symbols:
+    tickers:
+      - ECONOMICS:ESGDP
+      - ECONOMICS:ESGDPYY
+      - ECONOMICS:ESGDG
+      - ECONOMICS:ESINTR
+      - ECONOMICS:ESIRYY
+      - ECONOMICS:ESUR
+      - ECONOMICS:ESCOMPPMI
+      - ECONOMICS:ESCAG
+      - ECONOMICS:ESIPYY
+- name: locale_top_economics_table_it
+  symbols:
+    tickers:
+      - ECONOMICS:ITGDP
+      - ECONOMICS:ITGDPYY
+      - ECONOMICS:ITGDG
+      - ECONOMICS:ITINTR
+      - ECONOMICS:ITIRYY
+      - ECONOMICS:ITUR
+      - ECONOMICS:ITCOMPPMI
+      - ECONOMICS:ITCAG
+      - ECONOMICS:ITIPYY
+- name: locale_top_economics_table_pl
+  symbols:
+    tickers:
+      - ECONOMICS:PLGDP
+      - ECONOMICS:PLGDPYY
+      - ECONOMICS:PLGDG
+      - ECONOMICS:PLINTR
+      - ECONOMICS:PLIRYY
+      - ECONOMICS:PLUR
+      - ECONOMICS:PLMPMI
+      - ECONOMICS:PLCAG
+      - ECONOMICS:PLIPYY
+- name: locale_top_economics_table_tr
+  symbols:
+    tickers:
+      - ECONOMICS:TRGDP
+      - ECONOMICS:TRGDPYY
+      - ECONOMICS:TRGDG
+      - ECONOMICS:TRINTR
+      - ECONOMICS:TRIRYY
+      - ECONOMICS:TRUR
+      - ECONOMICS:TRMPMI
+      - ECONOMICS:TRCAG
+      - ECONOMICS:TRIPYY
+- name: locale_top_economics_table_ru
+  symbols:
+    tickers:
+      - ECONOMICS:RUGDP
+      - ECONOMICS:RUGDPYY
+      - ECONOMICS:RUGDG
+      - ECONOMICS:RUINTR
+      - ECONOMICS:RUIRYY
+      - ECONOMICS:RUUR
+      - ECONOMICS:RUCOMPPMI
+      - ECONOMICS:RUCAG
+      - ECONOMICS:RUIPYY
+- name: locale_top_economics_table_br
+  symbols:
+    tickers:
+      - ECONOMICS:BRGDP
+      - ECONOMICS:BRGDPYY
+      - ECONOMICS:BRGDG
+      - ECONOMICS:BRINTR
+      - ECONOMICS:BRIRYY
+      - ECONOMICS:BRUR
+      - ECONOMICS:BRCOMPPMI
+      - ECONOMICS:BRCAG
+      - ECONOMICS:BRIPYY
+- name: locale_top_economics_table_id
+  symbols:
+    tickers:
+      - ECONOMICS:IDGDP
+      - ECONOMICS:IDGDPYY
+      - ECONOMICS:IDGDG
+      - ECONOMICS:IDINTR
+      - ECONOMICS:IDIRYY
+      - ECONOMICS:IDUR
+      - ECONOMICS:IDMPMI
+      - ECONOMICS:IDCAG
+      - ECONOMICS:IDIPYY
+- name: locale_top_economics_table_my
+  symbols:
+    tickers:
+      - ECONOMICS:MYGDP
+      - ECONOMICS:MYGDPYY
+      - ECONOMICS:MYGDG
+      - ECONOMICS:MYINTR
+      - ECONOMICS:MYIRYY
+      - ECONOMICS:MYUR
+      - ECONOMICS:MYMPMI
+      - ECONOMICS:MYCAG
+      - ECONOMICS:MYIPYY
+- name: locale_top_economics_table_th
+  symbols:
+    tickers:
+      - ECONOMICS:THGDP
+      - ECONOMICS:THGDPYY
+      - ECONOMICS:THGDG
+      - ECONOMICS:THINTR
+      - ECONOMICS:THIRYY
+      - ECONOMICS:THUR
+      - ECONOMICS:THMPMI
+      - ECONOMICS:THCAG
+      - ECONOMICS:THIPYY
+- name: locale_top_economics_table_vn
+  symbols:
+    tickers:
+      - ECONOMICS:VNGDP
+      - ECONOMICS:VNGDPYY
+      - ECONOMICS:VNGDG
+      - ECONOMICS:VNINTR
+      - ECONOMICS:VNIRYY
+      - ECONOMICS:VNUR
+      - ECONOMICS:VNMPMI
+      - ECONOMICS:VNCAG
+      - ECONOMICS:VNIPYY
+- name: locale_top_economics_table_jp
+  symbols:
+    tickers:
+      - ECONOMICS:JPGDP
+      - ECONOMICS:JPGDPYY
+      - ECONOMICS:JPGDG
+      - ECONOMICS:JPINTR
+      - ECONOMICS:JPIRYY
+      - ECONOMICS:JPUR
+      - ECONOMICS:JPCOMPPMI
+      - ECONOMICS:JPCAG
+      - ECONOMICS:JPIPYY
+- name: locale_top_economics_table_kr
+  symbols:
+    tickers:
+      - ECONOMICS:KRGDP
+      - ECONOMICS:KRGDPYY
+      - ECONOMICS:KRGDG
+      - ECONOMICS:KRINTR
+      - ECONOMICS:KRIRYY
+      - ECONOMICS:KRUR
+      - ECONOMICS:KRMPMI
+      - ECONOMICS:KRCAG
+      - ECONOMICS:KRIPYY
+- name: locale_top_economics_table_cn
+  symbols:
+    tickers:
+      - ECONOMICS:CNGDP
+      - ECONOMICS:CNGDPYY
+      - ECONOMICS:CNGDG
+      - ECONOMICS:CNINTR
+      - ECONOMICS:CNIRYY
+      - ECONOMICS:CNUR
+      - ECONOMICS:CNCOMPPMI
+      - ECONOMICS:CNCAG
+      - ECONOMICS:CNIPYY
+- name: locale_top_economics_table_tw
+  symbols:
+    tickers:
+      - ECONOMICS:TWGDP
+      - ECONOMICS:TWGDPYY
+      - ECONOMICS:TWGDG
+      - ECONOMICS:TWINTR
+      - ECONOMICS:TWIRYY
+      - ECONOMICS:TWUR
+      - ECONOMICS:TWMPMI
+      - ECONOMICS:TWCAG
+      - ECONOMICS:TWIPYY
+- name: locale_top_economics_table_sa
+  symbols:
+    tickers:
+      - ECONOMICS:SAGDP
+      - ECONOMICS:SAGDPYY
+      - ECONOMICS:SAGDG
+      - ECONOMICS:SAINTR
+      - ECONOMICS:SAIRYY
+      - ECONOMICS:SAUR
+      - ECONOMICS:SAMPMI
+      - ECONOMICS:SACAG
+      - ECONOMICS:SAIPYY
+- name: locale_top_economics_table_il
+  symbols:
+    tickers:
+      - ECONOMICS:ILGDP
+      - ECONOMICS:ILGDPYY
+      - ECONOMICS:ILGDG
+      - ECONOMICS:ILINTR
+      - ECONOMICS:ILIRYY
+      - ECONOMICS:ILUR
+      - ECONOMICS:ILMPMI
+      - ECONOMICS:ILCAG
+      - ECONOMICS:ILIPYY
+- name: locale_top_economics_table_se
+  symbols:
+    tickers:
+      - ECONOMICS:SEGDP
+      - ECONOMICS:SEGDPYY
+      - ECONOMICS:SEGDG
+      - ECONOMICS:SEINTR
+      - ECONOMICS:SEIRYY
+      - ECONOMICS:SEUR
+      - ECONOMICS:SEMPMI
+      - ECONOMICS:SECAG
+      - ECONOMICS:SEIPYY

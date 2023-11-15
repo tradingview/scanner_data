@@ -740,7 +740,7 @@ presets:
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
-- name: etfs_country_page_highest_return
+- name: country_top_etfs_highest_return
   filter:
     - left: nav_total_return.1Y
       operation: less
@@ -758,7 +758,7 @@ presets:
   sort:
     sortBy: nav_total_return.1Y
     sortOrder: desc
-- name: etfs_country_page_most_traded
+- name: country_top_etfs_most_traded
   filter:
     - left: typespecs
       operation: has
@@ -773,11 +773,11 @@ presets:
   sort:
     sortBy: Value.Traded|1W
     sortOrder: desc
-- name: etfs_country_page_dividends
+- name: country_top_etfs_dividends
   symbols:
     tickers:
       - ""
-- name: etfs_country_page_sector_th
+- name: country_top_etfs_sector_th
   symbols:
     tickers:
       - SET:EBANK

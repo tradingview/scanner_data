@@ -28432,7 +28432,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28475,7 +28475,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28518,7 +28518,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28561,7 +28561,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28604,7 +28604,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28647,7 +28647,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28692,7 +28692,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28737,7 +28737,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:
@@ -28782,7 +28782,7 @@ presets:
     - odd
   - left: name
     operation: nmatch
-    right: ".R$"
+    right: "\\.R$"
   - left: close
     operation: in_range
     right:

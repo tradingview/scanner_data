@@ -1,6 +1,9 @@
 {
   "symbols": [
     {
+      "s": "MUN:016"
+    },
+    {
       "s": "MUN:01H"
     },
     {
@@ -16,9 +19,6 @@
       "s": "MUN:04Q"
     },
     {
-      "s": "MUN:08M"
-    },
-    {
       "s": "MUN:096"
     },
     {
@@ -28,7 +28,7 @@
       "s": "MUN:0CG"
     },
     {
-      "s": "MUN:0FD"
+      "s": "MUN:0CP1"
     },
     {
       "s": "MUN:0FF"
@@ -37,13 +37,13 @@
       "s": "MUN:0JA"
     },
     {
-      "s": "MUN:0KN"
-    },
-    {
       "s": "MUN:0MO"
     },
     {
-      "s": "MUN:0NR"
+      "s": "MUN:0OE"
+    },
+    {
+      "s": "MUN:0PY"
     },
     {
       "s": "MUN:0Q3"
@@ -52,13 +52,28 @@
       "s": "MUN:0QF"
     },
     {
+      "s": "MUN:0QQA"
+    },
+    {
+      "s": "MUN:0R6"
+    },
+    {
       "s": "MUN:0S6"
     },
     {
-      "s": "MUN:0VD"
+      "s": "MUN:0V6"
     },
     {
-      "s": "MUN:0WP"
+      "s": "MUN:0VF"
+    },
+    {
+      "s": "MUN:0VV"
+    },
+    {
+      "s": "MUN:0VVB"
+    },
+    {
+      "s": "MUN:0WJ"
     },
     {
       "s": "MUN:0YU"
@@ -76,16 +91,22 @@
       "s": "MUN:123F"
     },
     {
+      "s": "MUN:12A"
+    },
+    {
       "s": "MUN:12DA"
+    },
+    {
+      "s": "MUN:12F"
     },
     {
       "s": "MUN:14D"
     },
     {
-      "s": "MUN:185"
+      "s": "MUN:163"
     },
     {
-      "s": "MUN:1BF"
+      "s": "MUN:185"
     },
     {
       "s": "MUN:1COV"
@@ -97,10 +118,13 @@
       "s": "MUN:1FC"
     },
     {
-      "s": "MUN:1HO1"
+      "s": "MUN:1HI"
     },
     {
-      "s": "MUN:1JD"
+      "s": "MUN:1HTA"
+    },
+    {
+      "s": "MUN:1IQ"
     },
     {
       "s": "MUN:1JP"
@@ -109,7 +133,7 @@
       "s": "MUN:1KG"
     },
     {
-      "s": "MUN:1LNB"
+      "s": "MUN:1N4"
     },
     {
       "s": "MUN:1N8"
@@ -118,19 +142,16 @@
       "s": "MUN:1NBA"
     },
     {
-      "s": "MUN:1NR"
+      "s": "MUN:1OM"
     },
     {
-      "s": "MUN:1OM"
+      "s": "MUN:1PJ"
     },
     {
       "s": "MUN:1Q5"
     },
     {
       "s": "MUN:1QZ"
-    },
-    {
-      "s": "MUN:1RG"
     },
     {
       "s": "MUN:1RH"
@@ -140,6 +161,18 @@
     },
     {
       "s": "MUN:1SN"
+    },
+    {
+      "s": "MUN:1SXP"
+    },
+    {
+      "s": "MUN:1T1"
+    },
+    {
+      "s": "MUN:1T4"
+    },
+    {
+      "s": "MUN:1TU"
     },
     {
       "s": "MUN:1TY"
@@ -160,7 +193,7 @@
       "s": "MUN:21HX"
     },
     {
-      "s": "MUN:21T"
+      "s": "MUN:21Q"
     },
     {
       "s": "MUN:21XH"
@@ -178,19 +211,13 @@
       "s": "MUN:22T"
     },
     {
-      "s": "MUN:25D"
+      "s": "MUN:25F"
     },
     {
       "s": "MUN:27N"
     },
     {
-      "s": "MUN:28Q"
-    },
-    {
-      "s": "MUN:29B"
-    },
-    {
-      "s": "MUN:2AE"
+      "s": "MUN:2BH"
     },
     {
       "s": "MUN:2BTC"
@@ -208,9 +235,6 @@
       "s": "MUN:2FLY"
     },
     {
-      "s": "MUN:2G0"
-    },
-    {
       "s": "MUN:2GB"
     },
     {
@@ -218,6 +242,9 @@
     },
     {
       "s": "MUN:2GY"
+    },
+    {
+      "s": "MUN:2HL"
     },
     {
       "s": "MUN:2HP"
@@ -229,7 +256,19 @@
       "s": "MUN:2HRA"
     },
     {
+      "s": "MUN:2II"
+    },
+    {
+      "s": "MUN:2IL"
+    },
+    {
       "s": "MUN:2INV"
+    },
+    {
+      "s": "MUN:2IS"
+    },
+    {
+      "s": "MUN:2LE1"
     },
     {
       "s": "MUN:2M6"
@@ -256,10 +295,10 @@
       "s": "MUN:2SKE"
     },
     {
-      "s": "MUN:2UNI"
+      "s": "MUN:2UA"
     },
     {
-      "s": "MUN:2VO"
+      "s": "MUN:2UNI"
     },
     {
       "s": "MUN:2X0"
@@ -271,25 +310,19 @@
       "s": "MUN:2YO"
     },
     {
-      "s": "MUN:31L"
-    },
-    {
-      "s": "MUN:331"
+      "s": "MUN:33B"
     },
     {
       "s": "MUN:33L"
     },
     {
-      "s": "MUN:3AD2"
+      "s": "MUN:35G"
     },
     {
       "s": "MUN:3AG1"
     },
     {
       "s": "MUN:3AI"
-    },
-    {
-      "s": "MUN:3BA"
     },
     {
       "s": "MUN:3D6"
@@ -301,22 +334,25 @@
       "s": "MUN:3E2"
     },
     {
-      "s": "MUN:3E4"
-    },
-    {
       "s": "MUN:3HM"
     },
     {
       "s": "MUN:3IT"
     },
     {
-      "s": "MUN:3JDA"
+      "s": "MUN:3KO"
     },
     {
       "s": "MUN:3LV"
     },
     {
       "s": "MUN:3M0"
+    },
+    {
+      "s": "MUN:3PE"
+    },
+    {
+      "s": "MUN:3PK"
     },
     {
       "s": "MUN:3QD"
@@ -328,19 +364,28 @@
       "s": "MUN:3RCA"
     },
     {
+      "s": "MUN:3SX"
+    },
+    {
+      "s": "MUN:3T7"
+    },
+    {
       "s": "MUN:3V64"
     },
     {
-      "s": "MUN:3W7"
+      "s": "MUN:3VU"
     },
     {
-      "s": "MUN:3WC"
+      "s": "MUN:43C"
     },
     {
-      "s": "MUN:46GA"
+      "s": "MUN:44C1"
     },
     {
-      "s": "MUN:47V"
+      "s": "MUN:47Q"
+    },
+    {
+      "s": "MUN:485"
     },
     {
       "s": "MUN:48Z"
@@ -352,7 +397,13 @@
       "s": "MUN:4AB"
     },
     {
+      "s": "MUN:4BW"
+    },
+    {
       "s": "MUN:4DS"
+    },
+    {
+      "s": "MUN:4DX"
     },
     {
       "s": "MUN:4F1"
@@ -365,9 +416,6 @@
     },
     {
       "s": "MUN:4JP"
-    },
-    {
-      "s": "MUN:4K8"
     },
     {
       "s": "MUN:4LT1"
@@ -385,31 +433,28 @@
       "s": "MUN:4PN"
     },
     {
+      "s": "MUN:4RX0"
+    },
+    {
       "s": "MUN:4S0"
     },
     {
-      "s": "MUN:4SP"
+      "s": "MUN:4T0"
     },
     {
-      "s": "MUN:4TS"
-    },
-    {
-      "s": "MUN:53L"
+      "s": "MUN:53S"
     },
     {
       "s": "MUN:53U"
     },
     {
+      "s": "MUN:541"
+    },
+    {
       "s": "MUN:56S1"
     },
     {
-      "s": "MUN:59G"
-    },
-    {
       "s": "MUN:59K"
-    },
-    {
-      "s": "MUN:59M"
     },
     {
       "s": "MUN:59O"
@@ -418,16 +463,22 @@
       "s": "MUN:59R"
     },
     {
+      "s": "MUN:59X"
+    },
+    {
       "s": "MUN:59Z"
     },
     {
       "s": "MUN:5AP"
     },
     {
-      "s": "MUN:5BG"
+      "s": "MUN:5B9"
     },
     {
       "s": "MUN:5CV"
+    },
+    {
+      "s": "MUN:5EZ"
     },
     {
       "s": "MUN:5F6"
@@ -448,19 +499,37 @@
       "s": "MUN:5G5"
     },
     {
-      "s": "MUN:5K7"
+      "s": "MUN:5GD"
     },
     {
-      "s": "MUN:5O7"
+      "s": "MUN:5JB"
     },
     {
-      "s": "MUN:5P7"
+      "s": "MUN:5JP"
+    },
+    {
+      "s": "MUN:5K2"
     },
     {
       "s": "MUN:5Q5"
     },
     {
+      "s": "MUN:5R02"
+    },
+    {
+      "s": "MUN:5SPE"
+    },
+    {
       "s": "MUN:5UR"
+    },
+    {
+      "s": "MUN:5VD"
+    },
+    {
+      "s": "MUN:5XE"
+    },
+    {
+      "s": "MUN:5XU"
     },
     {
       "s": "MUN:5ZM"
@@ -469,7 +538,13 @@
       "s": "MUN:639"
     },
     {
+      "s": "MUN:63Z"
+    },
+    {
       "s": "MUN:67X"
+    },
+    {
+      "s": "MUN:68S"
     },
     {
       "s": "MUN:68V"
@@ -484,6 +559,9 @@
       "s": "MUN:6D81"
     },
     {
+      "s": "MUN:6DA"
+    },
+    {
       "s": "MUN:6EQ"
     },
     {
@@ -493,13 +571,10 @@
       "s": "MUN:6N5"
     },
     {
-      "s": "MUN:6OJ"
+      "s": "MUN:6P4"
     },
     {
-      "s": "MUN:6UP"
-    },
-    {
-      "s": "MUN:6XG"
+      "s": "MUN:6WV"
     },
     {
       "s": "MUN:6Z1"
@@ -511,19 +586,10 @@
       "s": "MUN:724"
     },
     {
-      "s": "MUN:751"
-    },
-    {
       "s": "MUN:75S"
     },
     {
       "s": "MUN:779"
-    },
-    {
-      "s": "MUN:7AA"
-    },
-    {
-      "s": "MUN:7C4"
     },
     {
       "s": "MUN:7DB"
@@ -532,16 +598,22 @@
       "s": "MUN:7DG"
     },
     {
-      "s": "MUN:7FH"
+      "s": "MUN:7EX"
+    },
+    {
+      "s": "MUN:7GG"
     },
     {
       "s": "MUN:7HP"
     },
     {
+      "s": "MUN:7IG"
+    },
+    {
       "s": "MUN:7NX"
     },
     {
-      "s": "MUN:7PS"
+      "s": "MUN:7PI"
     },
     {
       "s": "MUN:7SN"
@@ -553,6 +625,9 @@
       "s": "MUN:7VS"
     },
     {
+      "s": "MUN:7XH"
+    },
+    {
       "s": "MUN:7XP"
     },
     {
@@ -562,10 +637,10 @@
       "s": "MUN:847"
     },
     {
-      "s": "MUN:85S"
+      "s": "MUN:88Q"
     },
     {
-      "s": "MUN:88Q"
+      "s": "MUN:8A0"
     },
     {
       "s": "MUN:8A6"
@@ -574,19 +649,22 @@
       "s": "MUN:8B8"
     },
     {
-      "s": "MUN:8D7"
+      "s": "MUN:8BK"
     },
     {
       "s": "MUN:8GM"
     },
     {
+      "s": "MUN:8H1"
+    },
+    {
       "s": "MUN:8NI"
     },
     {
-      "s": "MUN:8SF"
+      "s": "MUN:8SP"
     },
     {
-      "s": "MUN:8SP"
+      "s": "MUN:8TC"
     },
     {
       "s": "MUN:8TI"
@@ -595,28 +673,28 @@
       "s": "MUN:8TRA"
     },
     {
-      "s": "MUN:8ZU"
+      "s": "MUN:8WF"
     },
     {
       "s": "MUN:90Q"
     },
     {
-      "s": "MUN:917"
-    },
-    {
       "s": "MUN:93M1"
     },
     {
-      "s": "MUN:9BFA"
+      "s": "MUN:97Q"
     },
     {
-      "s": "MUN:9C3"
+      "s": "MUN:97S"
     },
     {
-      "s": "MUN:9F7"
+      "s": "MUN:9BA"
     },
     {
-      "s": "MUN:9MW"
+      "s": "MUN:9JD"
+    },
+    {
+      "s": "MUN:9NY"
     },
     {
       "s": "MUN:9TG"
@@ -625,22 +703,22 @@
       "s": "MUN:9VC"
     },
     {
-      "s": "MUN:9X7"
-    },
-    {
-      "s": "MUN:A1B"
-    },
-    {
       "s": "MUN:A1G"
     },
     {
       "s": "MUN:A1OS"
     },
     {
+      "s": "MUN:A3I"
+    },
+    {
       "s": "MUN:A4Y"
     },
     {
       "s": "MUN:A58"
+    },
+    {
+      "s": "MUN:A61"
     },
     {
       "s": "MUN:A62"
@@ -662,9 +740,6 @@
     },
     {
       "s": "MUN:AAQ1"
-    },
-    {
-      "s": "MUN:AB4"
     },
     {
       "s": "MUN:AB9"
@@ -697,10 +772,7 @@
       "s": "MUN:ABX"
     },
     {
-      "s": "MUN:ACO4"
-    },
-    {
-      "s": "MUN:ACO5"
+      "s": "MUN:ACCA"
     },
     {
       "s": "MUN:ACR"
@@ -727,9 +799,6 @@
       "s": "MUN:ADJ"
     },
     {
-      "s": "MUN:ADL"
-    },
-    {
       "s": "MUN:ADM"
     },
     {
@@ -748,28 +817,31 @@
       "s": "MUN:ADV"
     },
     {
+      "s": "MUN:AE4"
+    },
+    {
+      "s": "MUN:AE9"
+    },
+    {
       "s": "MUN:AEC1"
     },
     {
       "s": "MUN:AEIN"
     },
     {
-      "s": "MUN:AEND"
+      "s": "MUN:AEO"
     },
     {
       "s": "MUN:AEZ"
     },
     {
-      "s": "MUN:AFG"
-    },
-    {
       "s": "MUN:AFL"
     },
     {
-      "s": "MUN:AFR0"
+      "s": "MUN:AFO1"
     },
     {
-      "s": "MUN:AFW"
+      "s": "MUN:AFR0"
     },
     {
       "s": "MUN:AFX"
@@ -782,9 +854,6 @@
     },
     {
       "s": "MUN:AGJ"
-    },
-    {
-      "s": "MUN:AH91"
     },
     {
       "s": "MUN:AHC"
@@ -808,19 +877,16 @@
       "s": "MUN:AIXA"
     },
     {
-      "s": "MUN:AIY"
-    },
-    {
       "s": "MUN:AJ91"
     },
     {
       "s": "MUN:AJI"
     },
     {
-      "s": "MUN:AK3"
+      "s": "MUN:AK1"
     },
     {
-      "s": "MUN:AKG"
+      "s": "MUN:AK3"
     },
     {
       "s": "MUN:ALC0"
@@ -842,9 +908,6 @@
     },
     {
       "s": "MUN:ALV"
-    },
-    {
-      "s": "MUN:ALZC"
     },
     {
       "s": "MUN:AMA"
@@ -871,22 +934,13 @@
       "s": "MUN:AN5"
     },
     {
-      "s": "MUN:AND"
-    },
-    {
       "s": "MUN:ANI"
-    },
-    {
-      "s": "MUN:ANK"
     },
     {
       "s": "MUN:AOF"
     },
     {
       "s": "MUN:AOMD"
-    },
-    {
-      "s": "MUN:AON"
     },
     {
       "s": "MUN:AOS"
@@ -907,19 +961,25 @@
       "s": "MUN:APPH"
     },
     {
+      "s": "MUN:AQ3"
+    },
+    {
       "s": "MUN:ARG1"
     },
     {
       "s": "MUN:ARK1"
     },
     {
-      "s": "MUN:ARL"
+      "s": "MUN:ARLN"
     },
     {
       "s": "MUN:ARRD"
     },
     {
       "s": "MUN:ART"
+    },
+    {
+      "s": "MUN:AS5"
     },
     {
       "s": "MUN:ASAA"
@@ -946,13 +1006,22 @@
       "s": "MUN:AUS"
     },
     {
+      "s": "MUN:AV3"
+    },
+    {
+      "s": "MUN:AV6"
+    },
+    {
+      "s": "MUN:AVLA"
+    },
+    {
       "s": "MUN:AVS"
     },
     {
       "s": "MUN:AWC"
     },
     {
-      "s": "MUN:AWN"
+      "s": "MUN:AWM"
     },
     {
       "s": "MUN:AX8"
@@ -967,10 +1036,10 @@
       "s": "MUN:AXJ"
     },
     {
-      "s": "MUN:AXL1"
+      "s": "MUN:AXTZ"
     },
     {
-      "s": "MUN:AXTZ"
+      "s": "MUN:AY3"
     },
     {
       "s": "MUN:AYJ"
@@ -979,10 +1048,10 @@
       "s": "MUN:AZ2"
     },
     {
-      "s": "MUN:AZU"
+      "s": "MUN:B2C"
     },
     {
-      "s": "MUN:B15A"
+      "s": "MUN:B3H"
     },
     {
       "s": "MUN:B4B"
@@ -991,10 +1060,19 @@
       "s": "MUN:B4B3"
     },
     {
+      "s": "MUN:B5X"
+    },
+    {
       "s": "MUN:B7A"
     },
     {
+      "s": "MUN:B7C0"
+    },
+    {
       "s": "MUN:B7E"
+    },
+    {
+      "s": "MUN:B81"
     },
     {
       "s": "MUN:B8A"
@@ -1012,7 +1090,16 @@
       "s": "MUN:BAYN"
     },
     {
+      "s": "MUN:BC0"
+    },
+    {
       "s": "MUN:BC8"
+    },
+    {
+      "s": "MUN:BCE1"
+    },
+    {
+      "s": "MUN:BCLN"
     },
     {
       "s": "MUN:BCO"
@@ -1036,7 +1123,7 @@
       "s": "MUN:BFSA"
     },
     {
-      "s": "MUN:BGA1"
+      "s": "MUN:BG3"
     },
     {
       "s": "MUN:BGT"
@@ -1046,9 +1133,6 @@
     },
     {
       "s": "MUN:BIG1"
-    },
-    {
-      "s": "MUN:BIH"
     },
     {
       "s": "MUN:BIJ"
@@ -1066,19 +1150,10 @@
       "s": "MUN:BIRG"
     },
     {
-      "s": "MUN:BJEB"
-    },
-    {
-      "s": "MUN:BK2"
-    },
-    {
       "s": "MUN:BKHT"
     },
     {
-      "s": "MUN:BKN"
-    },
-    {
-      "s": "MUN:BKY"
+      "s": "MUN:BL8"
     },
     {
       "s": "MUN:BLQA"
@@ -1088,9 +1163,6 @@
     },
     {
       "s": "MUN:BMT"
-    },
-    {
-      "s": "MUN:BMU"
     },
     {
       "s": "MUN:BMW"
@@ -1144,10 +1216,10 @@
       "s": "MUN:BRM"
     },
     {
-      "s": "MUN:BRYN"
+      "s": "MUN:BRNK"
     },
     {
-      "s": "MUN:BRZ0"
+      "s": "MUN:BRYN"
     },
     {
       "s": "MUN:BSD2"
@@ -1174,7 +1246,10 @@
       "s": "MUN:BTCE"
     },
     {
-      "s": "MUN:BU3"
+      "s": "MUN:BTO0"
+    },
+    {
+      "s": "MUN:BTQ"
     },
     {
       "s": "MUN:BUZ1"
@@ -1183,7 +1258,16 @@
       "s": "MUN:BVB"
     },
     {
+      "s": "MUN:BW9"
+    },
+    {
       "s": "MUN:BWB"
+    },
+    {
+      "s": "MUN:BWI"
+    },
+    {
+      "s": "MUN:BX7"
     },
     {
       "s": "MUN:BXT"
@@ -1198,7 +1282,7 @@
       "s": "MUN:BZF1"
     },
     {
-      "s": "MUN:BZZ"
+      "s": "MUN:BZY"
     },
     {
       "s": "MUN:C0Y"
@@ -1213,13 +1297,16 @@
       "s": "MUN:C43"
     },
     {
+      "s": "MUN:C67"
+    },
+    {
+      "s": "MUN:C6G"
+    },
+    {
       "s": "MUN:C9F"
     },
     {
-      "s": "MUN:CAC1"
-    },
-    {
-      "s": "MUN:CAI"
+      "s": "MUN:CA3"
     },
     {
       "s": "MUN:CAR"
@@ -1228,10 +1315,16 @@
       "s": "MUN:CAT1"
     },
     {
+      "s": "MUN:CB5"
+    },
+    {
       "s": "MUN:CBHD"
     },
     {
       "s": "MUN:CBK"
+    },
+    {
+      "s": "MUN:CBT"
     },
     {
       "s": "MUN:CCAP"
@@ -1246,7 +1339,13 @@
       "s": "MUN:CDM1"
     },
     {
+      "s": "MUN:CDW"
+    },
+    {
       "s": "MUN:CDZ0"
+    },
+    {
+      "s": "MUN:CE1"
     },
     {
       "s": "MUN:CE2"
@@ -1261,9 +1360,6 @@
       "s": "MUN:CEK"
     },
     {
-      "s": "MUN:CENB"
-    },
-    {
       "s": "MUN:CFC"
     },
     {
@@ -1276,7 +1372,16 @@
       "s": "MUN:CGN"
     },
     {
+      "s": "MUN:CGZ"
+    },
+    {
+      "s": "MUN:CH5"
+    },
+    {
       "s": "MUN:CHG"
+    },
+    {
+      "s": "MUN:CHR"
     },
     {
       "s": "MUN:CHV"
@@ -1288,13 +1393,22 @@
       "s": "MUN:CIS"
     },
     {
-      "s": "MUN:CL2"
+      "s": "MUN:CJ6"
     },
     {
-      "s": "MUN:CLH"
+      "s": "MUN:CJ8A"
+    },
+    {
+      "s": "MUN:CK0"
     },
     {
       "s": "MUN:CLIQ"
+    },
+    {
+      "s": "MUN:CLP"
+    },
+    {
+      "s": "MUN:CMAB"
     },
     {
       "s": "MUN:CMC"
@@ -1309,16 +1423,10 @@
       "s": "MUN:CNN1"
     },
     {
-      "s": "MUN:CNP"
-    },
-    {
       "s": "MUN:CO1S"
     },
     {
       "s": "MUN:CO3A"
-    },
-    {
-      "s": "MUN:COC"
     },
     {
       "s": "MUN:COK"
@@ -1333,31 +1441,31 @@
       "s": "MUN:CORE"
     },
     {
-      "s": "MUN:COUD"
+      "s": "MUN:COY"
     },
     {
-      "s": "MUN:COY"
+      "s": "MUN:COZ"
     },
     {
       "s": "MUN:CPA"
     },
     {
-      "s": "MUN:CPF"
-    },
-    {
-      "s": "MUN:CPM"
-    },
-    {
       "s": "MUN:CPX"
     },
     {
-      "s": "MUN:CRG"
+      "s": "MUN:CRC"
     },
     {
       "s": "MUN:CRIN"
     },
     {
+      "s": "MUN:CRP"
+    },
+    {
       "s": "MUN:CRZK"
+    },
+    {
+      "s": "MUN:CS6"
     },
     {
       "s": "MUN:CSC"
@@ -1378,9 +1486,6 @@
       "s": "MUN:CTZ"
     },
     {
-      "s": "MUN:CUD"
-    },
-    {
       "s": "MUN:CUM"
     },
     {
@@ -1390,25 +1495,31 @@
       "s": "MUN:CVA"
     },
     {
+      "s": "MUN:CVLC"
+    },
+    {
       "s": "MUN:CVS"
     },
     {
       "s": "MUN:CVZ"
     },
     {
-      "s": "MUN:CW2"
-    },
-    {
       "s": "MUN:CWC"
     },
     {
-      "s": "MUN:CWT"
+      "s": "MUN:CX91"
+    },
+    {
+      "s": "MUN:CXD"
     },
     {
       "s": "MUN:CXR"
     },
     {
       "s": "MUN:CY1K"
+    },
+    {
+      "s": "MUN:CY2"
     },
     {
       "s": "MUN:CYR"
@@ -1418,6 +1529,9 @@
     },
     {
       "s": "MUN:D2G"
+    },
+    {
+      "s": "MUN:D2MN"
     },
     {
       "s": "MUN:D4S"
@@ -1456,6 +1570,9 @@
       "s": "MUN:DC7"
     },
     {
+      "s": "MUN:DCC"
+    },
+    {
       "s": "MUN:DCO"
     },
     {
@@ -1480,9 +1597,6 @@
       "s": "MUN:DFV"
     },
     {
-      "s": "MUN:DG1"
-    },
-    {
       "s": "MUN:DG2"
     },
     {
@@ -1493,12 +1607,6 @@
     },
     {
       "s": "MUN:DHL"
-    },
-    {
-      "s": "MUN:DHR"
-    },
-    {
-      "s": "MUN:DIC"
     },
     {
       "s": "MUN:DIE"
@@ -1513,10 +1621,13 @@
       "s": "MUN:DKI"
     },
     {
-      "s": "MUN:DL7A"
+      "s": "MUN:DL8"
     },
     {
       "s": "MUN:DLX"
+    },
+    {
+      "s": "MUN:DMB"
     },
     {
       "s": "MUN:DMP"
@@ -1528,7 +1639,10 @@
       "s": "MUN:DNO"
     },
     {
-      "s": "MUN:DNQ"
+      "s": "MUN:DOD"
+    },
+    {
+      "s": "MUN:DOV"
     },
     {
       "s": "MUN:DP4A"
@@ -1537,22 +1651,13 @@
       "s": "MUN:DP4B"
     },
     {
-      "s": "MUN:DPU"
-    },
-    {
       "s": "MUN:DR0"
-    },
-    {
-      "s": "MUN:DR3"
     },
     {
       "s": "MUN:DRW3"
     },
     {
       "s": "MUN:DRW8"
-    },
-    {
-      "s": "MUN:DSE"
     },
     {
       "s": "MUN:DSG"
@@ -1571,6 +1676,9 @@
     },
     {
       "s": "MUN:DUE"
+    },
+    {
+      "s": "MUN:DUT"
     },
     {
       "s": "MUN:DW1"
@@ -1609,7 +1717,10 @@
       "s": "MUN:E4C"
     },
     {
-      "s": "MUN:E6Z"
+      "s": "MUN:E5M"
+    },
+    {
+      "s": "MUN:E7S"
     },
     {
       "s": "MUN:E8X"
@@ -1621,10 +1732,7 @@
       "s": "MUN:EAR"
     },
     {
-      "s": "MUN:EB2"
-    },
-    {
-      "s": "MUN:EB9"
+      "s": "MUN:EB0"
     },
     {
       "s": "MUN:EBA"
@@ -1666,6 +1774,15 @@
       "s": "MUN:EFIT"
     },
     {
+      "s": "MUN:EFX"
+    },
+    {
+      "s": "MUN:EGG"
+    },
+    {
+      "s": "MUN:EGZ"
+    },
+    {
       "s": "MUN:EI4"
     },
     {
@@ -1702,9 +1819,6 @@
       "s": "MUN:ELTC"
     },
     {
-      "s": "MUN:EM3A"
-    },
-    {
       "s": "MUN:EMH"
     },
     {
@@ -1726,16 +1840,13 @@
       "s": "MUN:ENR"
     },
     {
-      "s": "MUN:ENV"
-    },
-    {
       "s": "MUN:EO5"
     },
     {
       "s": "MUN:EOAN"
     },
     {
-      "s": "MUN:EOB"
+      "s": "MUN:EP5"
     },
     {
       "s": "MUN:EQS"
@@ -1750,6 +1861,9 @@
       "s": "MUN:ERCG"
     },
     {
+      "s": "MUN:ERE"
+    },
+    {
       "s": "MUN:ERO"
     },
     {
@@ -1759,6 +1873,9 @@
       "s": "MUN:ERWE"
     },
     {
+      "s": "MUN:ESD"
+    },
+    {
       "s": "MUN:ESF0"
     },
     {
@@ -1766,9 +1883,6 @@
     },
     {
       "s": "MUN:ESOL"
-    },
-    {
-      "s": "MUN:ET7"
     },
     {
       "s": "MUN:ETE"
@@ -1786,6 +1900,9 @@
       "s": "MUN:EUZ"
     },
     {
+      "s": "MUN:EV9"
+    },
+    {
       "s": "MUN:EVD"
     },
     {
@@ -1793,6 +1910,12 @@
     },
     {
       "s": "MUN:EVT"
+    },
+    {
+      "s": "MUN:EW1"
+    },
+    {
+      "s": "MUN:EWG"
     },
     {
       "s": "MUN:EWL"
@@ -1807,7 +1930,13 @@
       "s": "MUN:EYX"
     },
     {
-      "s": "MUN:F0T"
+      "s": "MUN:EZV"
+    },
+    {
+      "s": "MUN:F03"
+    },
+    {
+      "s": "MUN:F1YN"
     },
     {
       "s": "MUN:F3A"
@@ -1816,13 +1945,10 @@
       "s": "MUN:F3C"
     },
     {
-      "s": "MUN:FA9"
+      "s": "MUN:FA1"
     },
     {
       "s": "MUN:FAA"
-    },
-    {
-      "s": "MUN:FAG"
     },
     {
       "s": "MUN:FAS"
@@ -1834,10 +1960,10 @@
       "s": "MUN:FB2A"
     },
     {
-      "s": "MUN:FBLM"
+      "s": "MUN:FC9"
     },
     {
-      "s": "MUN:FC9"
+      "s": "MUN:FDN"
     },
     {
       "s": "MUN:FDO"
@@ -1855,13 +1981,10 @@
       "s": "MUN:FF24"
     },
     {
-      "s": "MUN:FFH"
+      "s": "MUN:FI6"
     },
     {
       "s": "MUN:FIE"
-    },
-    {
-      "s": "MUN:FJE"
     },
     {
       "s": "MUN:FJG"
@@ -1873,16 +1996,13 @@
       "s": "MUN:FJT"
     },
     {
-      "s": "MUN:FKG"
+      "s": "MUN:FKA"
     },
     {
       "s": "MUN:FMC1"
     },
     {
       "s": "MUN:FME"
-    },
-    {
-      "s": "MUN:FMQ"
     },
     {
       "s": "MUN:FMV"
@@ -1897,7 +2017,10 @@
       "s": "MUN:FOO"
     },
     {
-      "s": "MUN:FOT"
+      "s": "MUN:FOS"
+    },
+    {
+      "s": "MUN:FP3"
     },
     {
       "s": "MUN:FPE"
@@ -1921,9 +2044,6 @@
       "s": "MUN:FRE"
     },
     {
-      "s": "MUN:FRK"
-    },
-    {
       "s": "MUN:FRS"
     },
     {
@@ -1933,16 +2053,13 @@
       "s": "MUN:FS5A"
     },
     {
-      "s": "MUN:FS8"
-    },
-    {
-      "s": "MUN:FSNT"
-    },
-    {
-      "s": "MUN:FSRA"
+      "s": "MUN:FSG"
     },
     {
       "s": "MUN:FSX"
+    },
+    {
+      "s": "MUN:FT2"
     },
     {
       "s": "MUN:FTE"
@@ -1951,22 +2068,10 @@
       "s": "MUN:FTK"
     },
     {
-      "s": "MUN:FU7"
-    },
-    {
-      "s": "MUN:FUC"
-    },
-    {
       "s": "MUN:FUH"
     },
     {
       "s": "MUN:FUJ1"
-    },
-    {
-      "s": "MUN:FV8"
-    },
-    {
-      "s": "MUN:FWV"
     },
     {
       "s": "MUN:FYB"
@@ -1976,9 +2081,6 @@
     },
     {
       "s": "MUN:G1A"
-    },
-    {
-      "s": "MUN:G1U"
     },
     {
       "s": "MUN:G24"
@@ -1996,22 +2098,28 @@
       "s": "MUN:GAG"
     },
     {
+      "s": "MUN:GAH"
+    },
+    {
       "s": "MUN:GAP"
+    },
+    {
+      "s": "MUN:GAX"
     },
     {
       "s": "MUN:GBF"
     },
     {
+      "s": "MUN:GC6"
+    },
+    {
       "s": "MUN:GCP"
     },
     {
+      "s": "MUN:GCZB"
+    },
+    {
       "s": "MUN:GDX"
-    },
-    {
-      "s": "MUN:GEB"
-    },
-    {
-      "s": "MUN:GF8"
     },
     {
       "s": "MUN:GFG"
@@ -2020,10 +2128,7 @@
       "s": "MUN:GFT"
     },
     {
-      "s": "MUN:GGS"
-    },
-    {
-      "s": "MUN:GHK"
+      "s": "MUN:GH3"
     },
     {
       "s": "MUN:GIL"
@@ -2053,13 +2158,13 @@
       "s": "MUN:GMZ"
     },
     {
+      "s": "MUN:GNU1"
+    },
+    {
       "s": "MUN:GOB"
     },
     {
       "s": "MUN:GOS"
-    },
-    {
-      "s": "MUN:GRG"
     },
     {
       "s": "MUN:GRM"
@@ -2080,19 +2185,19 @@
       "s": "MUN:GTR"
     },
     {
-      "s": "MUN:GTX"
+      "s": "MUN:GTT"
     },
     {
       "s": "MUN:GTY"
-    },
-    {
-      "s": "MUN:GUG"
     },
     {
       "s": "MUN:GUI"
     },
     {
       "s": "MUN:GWI2"
+    },
+    {
+      "s": "MUN:GXD"
     },
     {
       "s": "MUN:GXI"
@@ -2113,9 +2218,6 @@
       "s": "MUN:H21V"
     },
     {
-      "s": "MUN:H24"
-    },
-    {
       "s": "MUN:H2O"
     },
     {
@@ -2131,6 +2233,9 @@
       "s": "MUN:H9Y"
     },
     {
+      "s": "MUN:HAA1"
+    },
+    {
       "s": "MUN:HAEK"
     },
     {
@@ -2140,19 +2245,10 @@
       "s": "MUN:HAL"
     },
     {
-      "s": "MUN:HAM1"
-    },
-    {
       "s": "MUN:HAR"
     },
     {
-      "s": "MUN:HAS"
-    },
-    {
       "s": "MUN:HAW"
-    },
-    {
-      "s": "MUN:HAY"
     },
     {
       "s": "MUN:HBC1"
@@ -2162,9 +2258,6 @@
     },
     {
       "s": "MUN:HCL"
-    },
-    {
-      "s": "MUN:HCM"
     },
     {
       "s": "MUN:HDD"
@@ -2191,6 +2284,9 @@
       "s": "MUN:HEN3"
     },
     {
+      "s": "MUN:HFF"
+    },
+    {
       "s": "MUN:HFG"
     },
     {
@@ -2206,7 +2302,10 @@
       "s": "MUN:HHHA"
     },
     {
-      "s": "MUN:HIA1"
+      "s": "MUN:HI4"
+    },
+    {
+      "s": "MUN:HI91"
     },
     {
       "s": "MUN:HIGH"
@@ -2224,6 +2323,9 @@
       "s": "MUN:HLG"
     },
     {
+      "s": "MUN:HLPN"
+    },
+    {
       "s": "MUN:HMI"
     },
     {
@@ -2239,10 +2341,10 @@
       "s": "MUN:HNM"
     },
     {
-      "s": "MUN:HNN"
+      "s": "MUN:HNR1"
     },
     {
-      "s": "MUN:HNR1"
+      "s": "MUN:HO2"
     },
     {
       "s": "MUN:HOT"
@@ -2251,22 +2353,16 @@
       "s": "MUN:HP3A"
     },
     {
-      "s": "MUN:HPBK"
-    },
-    {
       "s": "MUN:HPC"
     },
     {
       "s": "MUN:HPHA"
     },
     {
+      "s": "MUN:HRB"
+    },
+    {
       "s": "MUN:HRPK"
-    },
-    {
-      "s": "MUN:HRZ"
-    },
-    {
-      "s": "MUN:HRZA"
     },
     {
       "s": "MUN:HS0"
@@ -2284,19 +2380,19 @@
       "s": "MUN:HTG"
     },
     {
-      "s": "MUN:HUKI"
+      "s": "MUN:HTR"
+    },
+    {
+      "s": "MUN:HU3"
+    },
+    {
+      "s": "MUN:HUEC"
     },
     {
       "s": "MUN:HUM"
     },
     {
-      "s": "MUN:HUN2"
-    },
-    {
       "s": "MUN:HXCK"
-    },
-    {
-      "s": "MUN:HYB"
     },
     {
       "s": "MUN:HYQ"
@@ -2305,16 +2401,16 @@
       "s": "MUN:HZJ"
     },
     {
-      "s": "MUN:I5G"
+      "s": "MUN:HZS"
+    },
+    {
+      "s": "MUN:I5P"
+    },
+    {
+      "s": "MUN:I5U"
     },
     {
       "s": "MUN:I7B"
-    },
-    {
-      "s": "MUN:I8M"
-    },
-    {
-      "s": "MUN:I8MA"
     },
     {
       "s": "MUN:I8R"
@@ -2335,13 +2431,16 @@
       "s": "MUN:IBU"
     },
     {
+      "s": "MUN:IC2"
+    },
+    {
       "s": "MUN:IC8"
     },
     {
-      "s": "MUN:ID7"
+      "s": "MUN:ICA"
     },
     {
-      "s": "MUN:IDI"
+      "s": "MUN:ID7"
     },
     {
       "s": "MUN:IDP"
@@ -2362,13 +2461,10 @@
       "s": "MUN:IGLD"
     },
     {
-      "s": "MUN:IJ7"
+      "s": "MUN:IGQ5"
     },
     {
       "s": "MUN:IJ8"
-    },
-    {
-      "s": "MUN:IJU"
     },
     {
       "s": "MUN:ILM1"
@@ -2378,6 +2474,9 @@
     },
     {
       "s": "MUN:ILU"
+    },
+    {
+      "s": "MUN:IMP"
     },
     {
       "s": "MUN:IMV"
@@ -2410,19 +2509,16 @@
       "s": "MUN:IOS"
     },
     {
-      "s": "MUN:IPHB"
+      "s": "MUN:IPG"
     },
     {
       "s": "MUN:IPOK"
     },
     {
-      "s": "MUN:IQ3"
+      "s": "MUN:IS5"
     },
     {
       "s": "MUN:IS7"
-    },
-    {
-      "s": "MUN:IS8"
     },
     {
       "s": "MUN:ISHA"
@@ -2446,12 +2542,6 @@
       "s": "MUN:IUR"
     },
     {
-      "s": "MUN:IVS"
-    },
-    {
-      "s": "MUN:IVSD"
-    },
-    {
       "s": "MUN:IVU"
     },
     {
@@ -2470,13 +2560,7 @@
       "s": "MUN:IXX"
     },
     {
-      "s": "MUN:IZ6"
-    },
-    {
       "s": "MUN:J5A"
-    },
-    {
-      "s": "MUN:J6I"
     },
     {
       "s": "MUN:JAL"
@@ -2500,16 +2584,19 @@
       "s": "MUN:JEN"
     },
     {
-      "s": "MUN:JEVA"
+      "s": "MUN:JHJ"
     },
     {
-      "s": "MUN:JHJ"
+      "s": "MUN:JM2"
     },
     {
       "s": "MUN:JNJ"
     },
     {
       "s": "MUN:JNP"
+    },
+    {
+      "s": "MUN:JOHB"
     },
     {
       "s": "MUN:JST"
@@ -2521,16 +2608,28 @@
       "s": "MUN:JUN3"
     },
     {
+      "s": "MUN:JUS1"
+    },
+    {
+      "s": "MUN:JVC"
+    },
+    {
       "s": "MUN:JY0"
     },
     {
       "s": "MUN:JZ6"
     },
     {
-      "s": "MUN:KA8"
+      "s": "MUN:K1W"
     },
     {
-      "s": "MUN:KABN"
+      "s": "MUN:K6B"
+    },
+    {
+      "s": "MUN:K7X"
+    },
+    {
+      "s": "MUN:KA8"
     },
     {
       "s": "MUN:KAJ"
@@ -2545,10 +2644,7 @@
       "s": "MUN:KCO"
     },
     {
-      "s": "MUN:KDA"
-    },
-    {
-      "s": "MUN:KDB"
+      "s": "MUN:KEE"
     },
     {
       "s": "MUN:KEI"
@@ -2576,6 +2672,9 @@
     },
     {
       "s": "MUN:KHNZ"
+    },
+    {
+      "s": "MUN:KHP"
     },
     {
       "s": "MUN:KIK"
@@ -2617,13 +2716,16 @@
       "s": "MUN:KOY"
     },
     {
+      "s": "MUN:KPI1"
+    },
+    {
+      "s": "MUN:KR51"
+    },
+    {
+      "s": "MUN:KRH"
+    },
+    {
       "s": "MUN:KRN"
-    },
-    {
-      "s": "MUN:KRZ"
-    },
-    {
-      "s": "MUN:KS3"
     },
     {
       "s": "MUN:KSB"
@@ -2650,9 +2752,6 @@
       "s": "MUN:KTN"
     },
     {
-      "s": "MUN:KU1"
-    },
-    {
       "s": "MUN:KWG"
     },
     {
@@ -2665,28 +2764,25 @@
       "s": "MUN:KY4"
     },
     {
+      "s": "MUN:KY6"
+    },
+    {
       "s": "MUN:KYR"
     },
     {
-      "s": "MUN:L3AI"
-    },
-    {
-      "s": "MUN:L5E"
+      "s": "MUN:L3H"
     },
     {
       "s": "MUN:LAR"
     },
     {
+      "s": "MUN:LC1"
+    },
+    {
       "s": "MUN:LCO"
     },
     {
-      "s": "MUN:LCQ"
-    },
-    {
       "s": "MUN:LDF"
-    },
-    {
-      "s": "MUN:LDZA"
     },
     {
       "s": "MUN:LEG"
@@ -2698,7 +2794,10 @@
       "s": "MUN:LEN"
     },
     {
-      "s": "MUN:LFPB"
+      "s": "MUN:LFS"
+    },
+    {
+      "s": "MUN:LGR"
     },
     {
       "s": "MUN:LH1"
@@ -2713,6 +2812,9 @@
       "s": "MUN:LIN"
     },
     {
+      "s": "MUN:LIV"
+    },
+    {
       "s": "MUN:LLD"
     },
     {
@@ -2725,6 +2827,9 @@
       "s": "MUN:LNE"
     },
     {
+      "s": "MUN:LNR"
+    },
+    {
       "s": "MUN:LOM"
     },
     {
@@ -2732,6 +2837,9 @@
     },
     {
       "s": "MUN:LOR"
+    },
+    {
+      "s": "MUN:LP1"
     },
     {
       "s": "MUN:LPK"
@@ -2746,7 +2854,7 @@
       "s": "MUN:LSX"
     },
     {
-      "s": "MUN:LTEC"
+      "s": "MUN:LTD0"
     },
     {
       "s": "MUN:LU2"
@@ -2770,6 +2878,9 @@
       "s": "MUN:M12"
     },
     {
+      "s": "MUN:M1I"
+    },
+    {
       "s": "MUN:M3BK"
     },
     {
@@ -2791,9 +2902,6 @@
       "s": "MUN:M5Z"
     },
     {
-      "s": "MUN:M6Q"
-    },
-    {
       "s": "MUN:M7U"
     },
     {
@@ -2801,9 +2909,6 @@
     },
     {
       "s": "MUN:M8H0"
-    },
-    {
-      "s": "MUN:M8V"
     },
     {
       "s": "MUN:MA10"
@@ -2816,9 +2921,6 @@
     },
     {
       "s": "MUN:MARA"
-    },
-    {
-      "s": "MUN:MAT1"
     },
     {
       "s": "MUN:MBB"
@@ -2836,6 +2938,15 @@
       "s": "MUN:MBQ"
     },
     {
+      "s": "MUN:MCG"
+    },
+    {
+      "s": "MUN:MCK"
+    },
+    {
+      "s": "MUN:MCP"
+    },
+    {
       "s": "MUN:MDG1"
     },
     {
@@ -2845,22 +2956,16 @@
       "s": "MUN:MDO"
     },
     {
-      "s": "MUN:ME5A"
+      "s": "MUN:ME1"
     },
     {
       "s": "MUN:ME9"
-    },
-    {
-      "s": "MUN:MEA"
     },
     {
       "s": "MUN:MED"
     },
     {
       "s": "MUN:MES"
-    },
-    {
-      "s": "MUN:MEX"
     },
     {
       "s": "MUN:MFU"
@@ -2872,19 +2977,19 @@
       "s": "MUN:MGG"
     },
     {
-      "s": "MUN:MGJ"
-    },
-    {
-      "s": "MUN:MH6"
+      "s": "MUN:MH2"
     },
     {
       "s": "MUN:MHL"
     },
     {
-      "s": "MUN:MIB"
+      "s": "MUN:MHR"
     },
     {
-      "s": "MUN:MIE1"
+      "s": "MUN:MHZ"
+    },
+    {
+      "s": "MUN:MIB"
     },
     {
       "s": "MUN:MIH"
@@ -2896,10 +3001,13 @@
       "s": "MUN:MJ8"
     },
     {
-      "s": "MUN:MK2A"
+      "s": "MUN:MKT"
     },
     {
       "s": "MUN:MLB1"
+    },
+    {
+      "s": "MUN:MLI"
     },
     {
       "s": "MUN:MLL"
@@ -2908,7 +3016,7 @@
       "s": "MUN:MLP"
     },
     {
-      "s": "MUN:MM7"
+      "s": "MUN:MLU"
     },
     {
       "s": "MUN:MMM"
@@ -2917,19 +3025,28 @@
       "s": "MUN:MMO"
     },
     {
+      "s": "MUN:MMX"
+    },
+    {
+      "s": "MUN:MO7A"
+    },
+    {
       "s": "MUN:MOH"
     },
     {
-      "s": "MUN:MOR"
+      "s": "MUN:MOI"
     },
     {
-      "s": "MUN:MP2"
+      "s": "MUN:MOR"
     },
     {
       "s": "MUN:MPCK"
     },
     {
       "s": "MUN:MPO"
+    },
+    {
+      "s": "MUN:MPW"
     },
     {
       "s": "MUN:MRK"
@@ -2953,13 +3070,7 @@
       "s": "MUN:MSI"
     },
     {
-      "s": "MUN:MTCE"
-    },
-    {
       "s": "MUN:MTE"
-    },
-    {
-      "s": "MUN:MTO"
     },
     {
       "s": "MUN:MTS1"
@@ -2968,13 +3079,16 @@
       "s": "MUN:MTT"
     },
     {
-      "s": "MUN:MTW"
-    },
-    {
       "s": "MUN:MTX"
     },
     {
+      "s": "MUN:MU2"
+    },
+    {
       "s": "MUN:MUB"
+    },
+    {
+      "s": "MUN:MUD"
     },
     {
       "s": "MUN:MUM"
@@ -2987,9 +3101,6 @@
     },
     {
       "s": "MUN:MUX"
-    },
-    {
-      "s": "MUN:MV90"
     },
     {
       "s": "MUN:MVIN"
@@ -3022,7 +3133,16 @@
       "s": "MUN:MZX"
     },
     {
+      "s": "MUN:N14"
+    },
+    {
+      "s": "MUN:N1C"
+    },
+    {
       "s": "MUN:N4G"
+    },
+    {
+      "s": "MUN:N7I"
     },
     {
       "s": "MUN:N7T"
@@ -3043,9 +3163,6 @@
       "s": "MUN:NB5"
     },
     {
-      "s": "MUN:NBC"
-    },
-    {
       "s": "MUN:NBG6"
     },
     {
@@ -3058,9 +3175,6 @@
       "s": "MUN:NCH2"
     },
     {
-      "s": "MUN:NCYD"
-    },
-    {
       "s": "MUN:NDA"
     },
     {
@@ -3068,9 +3182,6 @@
     },
     {
       "s": "MUN:NEC1"
-    },
-    {
-      "s": "MUN:NEF"
     },
     {
       "s": "MUN:NEM"
@@ -3085,13 +3196,13 @@
       "s": "MUN:NFC"
     },
     {
-      "s": "MUN:NFG"
-    },
-    {
       "s": "MUN:NFN"
     },
     {
       "s": "MUN:NFS"
+    },
+    {
+      "s": "MUN:NFU"
     },
     {
       "s": "MUN:NGI"
@@ -3118,10 +3229,16 @@
       "s": "MUN:NIP"
     },
     {
+      "s": "MUN:NISA"
+    },
+    {
       "s": "MUN:NIU"
     },
     {
       "s": "MUN:NJ5"
+    },
+    {
+      "s": "MUN:NK1A"
     },
     {
       "s": "MUN:NKE"
@@ -3148,9 +3265,6 @@
       "s": "MUN:NOEJ"
     },
     {
-      "s": "MUN:NOU"
-    },
-    {
       "s": "MUN:NOV"
     },
     {
@@ -3160,16 +3274,7 @@
       "s": "MUN:NPS"
     },
     {
-      "s": "MUN:NPW1"
-    },
-    {
       "s": "MUN:NPX"
-    },
-    {
-      "s": "MUN:NQL1"
-    },
-    {
-      "s": "MUN:NR1A"
     },
     {
       "s": "MUN:NR7"
@@ -3184,10 +3289,10 @@
       "s": "MUN:NRN"
     },
     {
-      "s": "MUN:NSC"
+      "s": "MUN:NS1"
     },
     {
-      "s": "MUN:NSE"
+      "s": "MUN:NSC"
     },
     {
       "s": "MUN:NSK"
@@ -3211,10 +3316,7 @@
       "s": "MUN:NTO"
     },
     {
-      "s": "MUN:NTT"
-    },
-    {
-      "s": "MUN:NUO"
+      "s": "MUN:NUS"
     },
     {
       "s": "MUN:NUVA"
@@ -3229,7 +3331,10 @@
       "s": "MUN:NVM"
     },
     {
-      "s": "MUN:NWJ"
+      "s": "MUN:NWDA"
+    },
+    {
+      "s": "MUN:NWL"
     },
     {
       "s": "MUN:NWO"
@@ -3238,10 +3343,22 @@
       "s": "MUN:NWT"
     },
     {
+      "s": "MUN:NXG"
+    },
+    {
       "s": "MUN:NXS"
     },
     {
       "s": "MUN:NXU"
+    },
+    {
+      "s": "MUN:NY41"
+    },
+    {
+      "s": "MUN:NY4B"
+    },
+    {
+      "s": "MUN:NY7"
     },
     {
       "s": "MUN:NYKA"
@@ -3259,19 +3376,16 @@
       "s": "MUN:O4B"
     },
     {
-      "s": "MUN:O5Q"
-    },
-    {
       "s": "MUN:OBA"
     },
     {
       "s": "MUN:OBS"
     },
     {
-      "s": "MUN:OCN"
+      "s": "MUN:OCU"
     },
     {
-      "s": "MUN:OCU"
+      "s": "MUN:ODF"
     },
     {
       "s": "MUN:OEWA"
@@ -3280,13 +3394,7 @@
       "s": "MUN:OHB"
     },
     {
-      "s": "MUN:OHP"
-    },
-    {
       "s": "MUN:OIX"
-    },
-    {
-      "s": "MUN:OLD"
     },
     {
       "s": "MUN:OLJJ"
@@ -3296,6 +3404,9 @@
     },
     {
       "s": "MUN:OLN"
+    },
+    {
+      "s": "MUN:OLY1"
     },
     {
       "s": "MUN:OM4"
@@ -3319,6 +3430,9 @@
       "s": "MUN:ORC"
     },
     {
+      "s": "MUN:ORL"
+    },
+    {
       "s": "MUN:OS1"
     },
     {
@@ -3331,7 +3445,7 @@
       "s": "MUN:OSP2"
     },
     {
-      "s": "MUN:OXD"
+      "s": "MUN:OTX"
     },
     {
       "s": "MUN:P2U"
@@ -3341,6 +3455,9 @@
     },
     {
       "s": "MUN:P4O"
+    },
+    {
+      "s": "MUN:P5P"
     },
     {
       "s": "MUN:P7V"
@@ -3370,6 +3487,9 @@
       "s": "MUN:PAT"
     },
     {
+      "s": "MUN:PB8"
+    },
+    {
       "s": "MUN:PBB"
     },
     {
@@ -3379,19 +3499,19 @@
       "s": "MUN:PCE1"
     },
     {
-      "s": "MUN:PCR"
-    },
-    {
       "s": "MUN:PCX"
     },
     {
       "s": "MUN:PCZ"
     },
     {
-      "s": "MUN:PD2"
+      "s": "MUN:PDA"
     },
     {
-      "s": "MUN:PDA"
+      "s": "MUN:PE1"
+    },
+    {
+      "s": "MUN:PEG"
     },
     {
       "s": "MUN:PEO"
@@ -3406,16 +3526,19 @@
       "s": "MUN:PES"
     },
     {
-      "s": "MUN:PF6"
-    },
-    {
       "s": "MUN:PFE"
     },
     {
       "s": "MUN:PFV"
     },
     {
+      "s": "MUN:PG4"
+    },
+    {
       "s": "MUN:PGN"
+    },
+    {
+      "s": "MUN:PGR"
     },
     {
       "s": "MUN:PHI1"
@@ -3424,13 +3547,25 @@
       "s": "MUN:PHM7"
     },
     {
-      "s": "MUN:PKA"
+      "s": "MUN:PI7"
+    },
+    {
+      "s": "MUN:PIG"
+    },
+    {
+      "s": "MUN:PJR"
+    },
+    {
+      "s": "MUN:PJXB"
+    },
+    {
+      "s": "MUN:PJXC"
     },
     {
       "s": "MUN:PKN"
     },
     {
-      "s": "MUN:PLKA"
+      "s": "MUN:PL6"
     },
     {
       "s": "MUN:PLL"
@@ -3439,7 +3574,13 @@
       "s": "MUN:PLUN"
     },
     {
+      "s": "MUN:PND"
+    },
+    {
       "s": "MUN:PNE3"
+    },
+    {
+      "s": "MUN:PNK"
     },
     {
       "s": "MUN:PO0"
@@ -3487,10 +3628,10 @@
       "s": "MUN:PTX"
     },
     {
-      "s": "MUN:PU11"
+      "s": "MUN:PUM"
     },
     {
-      "s": "MUN:PUM"
+      "s": "MUN:PVH"
     },
     {
       "s": "MUN:PWO"
@@ -3502,7 +3643,7 @@
       "s": "MUN:PZS"
     },
     {
-      "s": "MUN:QAA"
+      "s": "MUN:Q23"
     },
     {
       "s": "MUN:QB7"
@@ -3511,13 +3652,19 @@
       "s": "MUN:QBY"
     },
     {
+      "s": "MUN:QC9"
+    },
+    {
       "s": "MUN:QCI"
     },
     {
-      "s": "MUN:QDI"
+      "s": "MUN:QGJ"
     },
     {
       "s": "MUN:QH9"
+    },
+    {
+      "s": "MUN:QHH"
     },
     {
       "s": "MUN:QIA"
@@ -3527,9 +3674,6 @@
     },
     {
       "s": "MUN:QSU"
-    },
-    {
-      "s": "MUN:QUC"
     },
     {
       "s": "MUN:R1B"
@@ -3553,6 +3697,9 @@
       "s": "MUN:RCF"
     },
     {
+      "s": "MUN:RCIB"
+    },
+    {
       "s": "MUN:RCVR"
     },
     {
@@ -3571,13 +3718,13 @@
       "s": "MUN:RE21"
     },
     {
+      "s": "MUN:RE8"
+    },
+    {
       "s": "MUN:REP"
     },
     {
-      "s": "MUN:RG3"
-    },
-    {
-      "s": "MUN:RGO"
+      "s": "MUN:RER1"
     },
     {
       "s": "MUN:RHK"
@@ -3586,22 +3733,10 @@
       "s": "MUN:RHM"
     },
     {
-      "s": "MUN:RHS"
-    },
-    {
       "s": "MUN:RIC1"
     },
     {
       "s": "MUN:RIO1"
-    },
-    {
-      "s": "MUN:RIR"
-    },
-    {
-      "s": "MUN:RITN"
-    },
-    {
-      "s": "MUN:RJF"
     },
     {
       "s": "MUN:RK8"
@@ -3613,13 +3748,13 @@
       "s": "MUN:RLF"
     },
     {
-      "s": "MUN:RMC"
-    },
-    {
       "s": "MUN:RN7"
     },
     {
       "s": "MUN:RNL"
+    },
+    {
+      "s": "MUN:ROF"
     },
     {
       "s": "MUN:ROI"
@@ -3628,13 +3763,22 @@
       "s": "MUN:ROM"
     },
     {
+      "s": "MUN:ROP"
+    },
+    {
       "s": "MUN:ROR"
     },
     {
-      "s": "MUN:RPL"
+      "s": "MUN:ROW"
+    },
+    {
+      "s": "MUN:RPD"
     },
     {
       "s": "MUN:RPU"
+    },
+    {
+      "s": "MUN:RRJ"
     },
     {
       "s": "MUN:RRTL"
@@ -3646,6 +3790,9 @@
       "s": "MUN:RS1"
     },
     {
+      "s": "MUN:RS6"
+    },
+    {
       "s": "MUN:RSL2"
     },
     {
@@ -3653,6 +3800,9 @@
     },
     {
       "s": "MUN:RTZ"
+    },
+    {
+      "s": "MUN:RW5"
     },
     {
       "s": "MUN:RWE"
@@ -3664,7 +3814,7 @@
       "s": "MUN:RY8"
     },
     {
-      "s": "MUN:RYC"
+      "s": "MUN:RYD"
     },
     {
       "s": "MUN:RYSD"
@@ -3673,10 +3823,19 @@
       "s": "MUN:RYU"
     },
     {
-      "s": "MUN:S0U"
+      "s": "MUN:S0K"
+    },
+    {
+      "s": "MUN:S0QA"
     },
     {
       "s": "MUN:S19"
+    },
+    {
+      "s": "MUN:S3T"
+    },
+    {
+      "s": "MUN:S3X"
     },
     {
       "s": "MUN:S4AA"
@@ -3686,6 +3845,12 @@
     },
     {
       "s": "MUN:S64"
+    },
+    {
+      "s": "MUN:S6IA"
+    },
+    {
+      "s": "MUN:S6M"
     },
     {
       "s": "MUN:S6P"
@@ -3700,7 +3865,7 @@
       "s": "MUN:S9I"
     },
     {
-      "s": "MUN:SAIR"
+      "s": "MUN:SA8A"
     },
     {
       "s": "MUN:SAP"
@@ -3721,6 +3886,15 @@
       "s": "MUN:SB3"
     },
     {
+      "s": "MUN:SB7"
+    },
+    {
+      "s": "MUN:SB9"
+    },
+    {
+      "s": "MUN:SBL"
+    },
+    {
       "s": "MUN:SBS"
     },
     {
@@ -3730,13 +3904,19 @@
       "s": "MUN:SBX"
     },
     {
-      "s": "MUN:SC8"
-    },
-    {
       "s": "MUN:SCE"
     },
     {
+      "s": "MUN:SCL"
+    },
+    {
+      "s": "MUN:SCQA"
+    },
+    {
       "s": "MUN:SD5"
+    },
+    {
+      "s": "MUN:SDA"
     },
     {
       "s": "MUN:SDF"
@@ -3787,13 +3967,13 @@
       "s": "MUN:SFT"
     },
     {
+      "s": "MUN:SFW"
+    },
+    {
       "s": "MUN:SGE"
     },
     {
       "s": "MUN:SGF"
-    },
-    {
-      "s": "MUN:SGI"
     },
     {
       "s": "MUN:SGL"
@@ -3826,9 +4006,6 @@
       "s": "MUN:SHF"
     },
     {
-      "s": "MUN:SHG"
-    },
-    {
       "s": "MUN:SHJ"
     },
     {
@@ -3841,6 +4018,9 @@
       "s": "MUN:SHWK"
     },
     {
+      "s": "MUN:SIA1"
+    },
+    {
       "s": "MUN:SIE"
     },
     {
@@ -3850,10 +4030,22 @@
       "s": "MUN:SIS"
     },
     {
+      "s": "MUN:SIT"
+    },
+    {
+      "s": "MUN:SIT4"
+    },
+    {
       "s": "MUN:SIX2"
     },
     {
       "s": "MUN:SIX3"
+    },
+    {
+      "s": "MUN:SJ3"
+    },
+    {
+      "s": "MUN:SJ7"
     },
     {
       "s": "MUN:SJ8"
@@ -3862,13 +4054,19 @@
       "s": "MUN:SJJ"
     },
     {
-      "s": "MUN:SK3"
+      "s": "MUN:SJM"
+    },
+    {
+      "s": "MUN:SJX"
     },
     {
       "s": "MUN:SKB"
     },
     {
       "s": "MUN:SKS"
+    },
+    {
+      "s": "MUN:SL3"
     },
     {
       "s": "MUN:SLCT"
@@ -3880,7 +4078,7 @@
       "s": "MUN:SLSA"
     },
     {
-      "s": "MUN:SMA"
+      "s": "MUN:SM1"
     },
     {
       "s": "MUN:SMC"
@@ -3895,16 +4093,16 @@
       "s": "MUN:SMO"
     },
     {
-      "s": "MUN:SMZ1"
-    },
-    {
       "s": "MUN:SND"
     },
     {
       "s": "MUN:SNG"
     },
     {
-      "s": "MUN:SNO"
+      "s": "MUN:SNIA"
+    },
+    {
+      "s": "MUN:SNM"
     },
     {
       "s": "MUN:SNW"
@@ -3919,10 +4117,10 @@
       "s": "MUN:SOK"
     },
     {
-      "s": "MUN:SON1"
+      "s": "MUN:SOL"
     },
     {
-      "s": "MUN:SOU"
+      "s": "MUN:SOT"
     },
     {
       "s": "MUN:SOW"
@@ -3937,7 +4135,13 @@
       "s": "MUN:SPM"
     },
     {
+      "s": "MUN:SPU"
+    },
+    {
       "s": "MUN:SQ3"
+    },
+    {
+      "s": "MUN:SQE"
     },
     {
       "s": "MUN:SQU"
@@ -3982,6 +4186,9 @@
       "s": "MUN:SUSE"
     },
     {
+      "s": "MUN:SVC"
+    },
+    {
       "s": "MUN:SVE"
     },
     {
@@ -3997,25 +4204,19 @@
       "s": "MUN:SWG"
     },
     {
-      "s": "MUN:SWS"
-    },
-    {
       "s": "MUN:SY1"
     },
     {
       "s": "MUN:SYAB"
     },
     {
-      "s": "MUN:SYK"
+      "s": "MUN:SYM"
     },
     {
       "s": "MUN:SYP"
     },
     {
       "s": "MUN:SYT"
-    },
-    {
-      "s": "MUN:SYU1"
     },
     {
       "s": "MUN:SYV"
@@ -4025,9 +4226,6 @@
     },
     {
       "s": "MUN:SYZ"
-    },
-    {
-      "s": "MUN:SZ2"
     },
     {
       "s": "MUN:SZ8"
@@ -4081,9 +4279,6 @@
       "s": "MUN:TCW"
     },
     {
-      "s": "MUN:TDB"
-    },
-    {
       "s": "MUN:TDK"
     },
     {
@@ -4093,10 +4288,10 @@
       "s": "MUN:TEG"
     },
     {
-      "s": "MUN:TEQ"
+      "s": "MUN:TEY"
     },
     {
-      "s": "MUN:TEY"
+      "s": "MUN:TF2"
     },
     {
       "s": "MUN:TF7A"
@@ -4126,16 +4321,10 @@
       "s": "MUN:TION"
     },
     {
-      "s": "MUN:TJN"
-    },
-    {
       "s": "MUN:TJS"
     },
     {
       "s": "MUN:TJX"
-    },
-    {
-      "s": "MUN:TK41"
     },
     {
       "s": "MUN:TKA"
@@ -4148,6 +4337,9 @@
     },
     {
       "s": "MUN:TKK1"
+    },
+    {
+      "s": "MUN:TKM"
     },
     {
       "s": "MUN:TKY"
@@ -4165,10 +4357,10 @@
       "s": "MUN:TLX"
     },
     {
-      "s": "MUN:TM5"
+      "s": "MUN:TLYB"
     },
     {
-      "s": "MUN:TMJ"
+      "s": "MUN:TM5"
     },
     {
       "s": "MUN:TMV"
@@ -4183,9 +4375,6 @@
       "s": "MUN:TNIE"
     },
     {
-      "s": "MUN:TOM"
-    },
-    {
       "s": "MUN:TOR1"
     },
     {
@@ -4195,16 +4384,19 @@
       "s": "MUN:TOTB"
     },
     {
-      "s": "MUN:TOY"
+      "s": "MUN:TPE"
     },
     {
-      "s": "MUN:TPE"
+      "s": "MUN:TPG"
     },
     {
       "s": "MUN:TQI"
     },
     {
       "s": "MUN:TQIR"
+    },
+    {
+      "s": "MUN:TQK"
     },
     {
       "s": "MUN:TR1"
@@ -4228,9 +4420,6 @@
       "s": "MUN:TT8"
     },
     {
-      "s": "MUN:TTEB"
-    },
-    {
       "s": "MUN:TTK"
     },
     {
@@ -4240,19 +4429,19 @@
       "s": "MUN:TTR1"
     },
     {
-      "s": "MUN:TU0"
-    },
-    {
       "s": "MUN:TUI1"
     },
     {
       "s": "MUN:TUO"
     },
     {
+      "s": "MUN:TW10"
+    },
+    {
       "s": "MUN:TWL"
     },
     {
-      "s": "MUN:TWW"
+      "s": "MUN:TXT"
     },
     {
       "s": "MUN:TY2B"
@@ -4261,16 +4450,10 @@
       "s": "MUN:TYC1"
     },
     {
-      "s": "MUN:TYIA"
-    },
-    {
-      "s": "MUN:TYU2"
+      "s": "MUN:TZ1"
     },
     {
       "s": "MUN:TZ6"
-    },
-    {
-      "s": "MUN:TZB0"
     },
     {
       "s": "MUN:U6Z"
@@ -4291,13 +4474,28 @@
       "s": "MUN:UDC"
     },
     {
+      "s": "MUN:UEI"
+    },
+    {
       "s": "MUN:UEN"
     },
     {
-      "s": "MUN:UK2"
+      "s": "MUN:UEO"
+    },
+    {
+      "s": "MUN:UF3"
+    },
+    {
+      "s": "MUN:UG6"
+    },
+    {
+      "s": "MUN:UGI"
     },
     {
       "s": "MUN:ULC"
+    },
+    {
+      "s": "MUN:UMB"
     },
     {
       "s": "MUN:UMDK"
@@ -4327,9 +4525,6 @@
       "s": "MUN:USLG"
     },
     {
-      "s": "MUN:USS"
-    },
-    {
       "s": "MUN:USX1"
     },
     {
@@ -4342,6 +4537,9 @@
       "s": "MUN:UUU"
     },
     {
+      "s": "MUN:UVD"
+    },
+    {
       "s": "MUN:UVV"
     },
     {
@@ -4349,6 +4547,12 @@
     },
     {
       "s": "MUN:UZU"
+    },
+    {
+      "s": "MUN:V0Y"
+    },
+    {
+      "s": "MUN:V1L"
     },
     {
       "s": "MUN:V21A"
@@ -4363,13 +4567,16 @@
       "s": "MUN:V6C"
     },
     {
-      "s": "MUN:VAN"
+      "s": "MUN:VA7A"
     },
     {
       "s": "MUN:VAR1"
     },
     {
       "s": "MUN:VAS"
+    },
+    {
+      "s": "MUN:VAW"
     },
     {
       "s": "MUN:VBK"
@@ -4390,9 +4597,6 @@
       "s": "MUN:VETH"
     },
     {
-      "s": "MUN:VEW"
-    },
-    {
       "s": "MUN:VEZ"
     },
     {
@@ -4405,13 +4609,13 @@
       "s": "MUN:VG8"
     },
     {
+      "s": "MUN:VGA"
+    },
+    {
       "s": "MUN:VGND"
     },
     {
       "s": "MUN:VH2"
-    },
-    {
-      "s": "MUN:VI6"
     },
     {
       "s": "MUN:VIA"
@@ -4447,9 +4651,6 @@
       "s": "MUN:VROS"
     },
     {
-      "s": "MUN:VRS"
-    },
-    {
       "s": "MUN:VS0L"
     },
     {
@@ -4457,6 +4658,9 @@
     },
     {
       "s": "MUN:VT0P"
+    },
+    {
+      "s": "MUN:VTM"
     },
     {
       "s": "MUN:VTRX"
@@ -4486,16 +4690,16 @@
       "s": "MUN:W3U"
     },
     {
+      "s": "MUN:W3W"
+    },
+    {
       "s": "MUN:W8A"
     },
     {
-      "s": "MUN:WA9"
+      "s": "MUN:WA4"
     },
     {
       "s": "MUN:WAC"
-    },
-    {
-      "s": "MUN:WAE"
     },
     {
       "s": "MUN:WAF"
@@ -4513,7 +4717,13 @@
       "s": "MUN:WCMK"
     },
     {
+      "s": "MUN:WD5A"
+    },
+    {
       "s": "MUN:WDP"
+    },
+    {
+      "s": "MUN:WEA"
     },
     {
       "s": "MUN:WEW"
@@ -4522,10 +4732,7 @@
       "s": "MUN:WFA"
     },
     {
-      "s": "MUN:WFC"
-    },
-    {
-      "s": "MUN:WI4"
+      "s": "MUN:WHR"
     },
     {
       "s": "MUN:WIB"
@@ -4537,16 +4744,10 @@
       "s": "MUN:WILC"
     },
     {
-      "s": "MUN:WM1"
-    },
-    {
       "s": "MUN:WMB"
     },
     {
       "s": "MUN:WMT"
-    },
-    {
-      "s": "MUN:WNL"
     },
     {
       "s": "MUN:WO6"
@@ -4555,31 +4756,31 @@
       "s": "MUN:WOLF"
     },
     {
-      "s": "MUN:WOO"
-    },
-    {
       "s": "MUN:WOSB"
     },
     {
       "s": "MUN:WPS"
     },
     {
-      "s": "MUN:WR1"
-    },
-    {
       "s": "MUN:WSU"
     },
     {
-      "s": "MUN:WTY"
+      "s": "MUN:WUW"
     },
     {
-      "s": "MUN:WUW"
+      "s": "MUN:WW1"
     },
     {
       "s": "MUN:WW4"
     },
     {
       "s": "MUN:WYR"
+    },
+    {
+      "s": "MUN:X5A"
+    },
+    {
+      "s": "MUN:X5Z1"
     },
     {
       "s": "MUN:X9P"
@@ -4609,9 +4810,6 @@
       "s": "MUN:XGDU"
     },
     {
-      "s": "MUN:XGH"
-    },
-    {
       "s": "MUN:XGR2"
     },
     {
@@ -4633,6 +4831,9 @@
       "s": "MUN:XPPT"
     },
     {
+      "s": "MUN:XR6"
+    },
+    {
       "s": "MUN:XS4"
     },
     {
@@ -4651,6 +4852,9 @@
       "s": "MUN:XY6"
     },
     {
+      "s": "MUN:Y1G"
+    },
+    {
       "s": "MUN:YAAA"
     },
     {
@@ -4663,10 +4867,10 @@
       "s": "MUN:YCP"
     },
     {
-      "s": "MUN:YHA"
+      "s": "MUN:YEC"
     },
     {
-      "s": "MUN:YIT"
+      "s": "MUN:YHA"
     },
     {
       "s": "MUN:YKH"
@@ -4678,6 +4882,9 @@
       "s": "MUN:YOC"
     },
     {
+      "s": "MUN:YOJ"
+    },
+    {
       "s": "MUN:YOU"
     },
     {
@@ -4687,7 +4894,7 @@
       "s": "MUN:YSN"
     },
     {
-      "s": "MUN:YWA"
+      "s": "MUN:YZ8"
     },
     {
       "s": "MUN:Z29"
@@ -4696,22 +4903,28 @@
       "s": "MUN:ZAL"
     },
     {
+      "s": "MUN:ZAS"
+    },
+    {
       "s": "MUN:ZEG"
     },
     {
       "s": "MUN:ZETH"
     },
     {
-      "s": "MUN:ZIL2"
+      "s": "MUN:ZGE"
     },
     {
-      "s": "MUN:ZIM"
+      "s": "MUN:ZGY"
+    },
+    {
+      "s": "MUN:ZIL2"
     },
     {
       "s": "MUN:ZOE"
     },
     {
-      "s": "MUN:ZOF"
+      "s": "MUN:ZSL"
     },
     {
       "s": "MUN:ZT1A"

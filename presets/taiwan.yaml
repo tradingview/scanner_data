@@ -604,3 +604,92 @@ presets:
       - TWSE:EPC
       - TWSE:BIM
       - TWSE:CHE
+- name: highest_revenue_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: type
+      operation: equal
+      right: stock
+    - left: revenue_per_employee
+      operation: greater
+      right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
+  sort:
+    sortBy: revenue_per_employee
+    sortOrder: desc
+- name: highest_profit_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: type
+      operation: equal
+      right: stock
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
+  sort:
+    sortBy: net_income_per_employee_fy
+    sortOrder: desc
+- name: etfs_country_page_highest_return
+  filter:
+    - left: nav_total_return.1Y
+      operation: less
+      right: 600
+    - left: aum
+      operation: egreater
+      right: 1000000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_total_return.1Y
+    sortOrder: desc
+- name: etfs_country_page_most_traded
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: Value.Traded|1W
+    sortOrder: desc
+- name: etfs_country_page_dividends
+  symbols:
+    tickers:
+      - ""
+- name: etfs_country_page_sector_tw
+  symbols:
+    tickers:
+      - TWSE:00929
+      - TWSE:00881
+      - TPEX:00723B
+      - TWSE:00892
+      - TWSE:00902
+      - TWSE:00876

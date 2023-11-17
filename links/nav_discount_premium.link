@@ -7,4 +7,4 @@ var finTicker = __financial_tickerid(getSymbolName(symbolName), "NAV", "D")
 nav = request.security(finTicker, "D", close, gaps=barmerge.gaps_on)
 nav_discount_premium = ((close / nav) - 1) * 100
 
-plot(nav_discount_premium, title = "Discount / Premium to NAV", style = plot.style_columns, color = nav_discount_premium >= 0 ? #22AB94 : #F7535F)
+plot(nav_discount_premium, title="nav_discount_premium")

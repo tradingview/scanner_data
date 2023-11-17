@@ -1175,5 +1175,29 @@
     {
         "name": "source-logoid",
         "type": "text"
+    },
+    {
+        "name": "debt_to_asset_fq",
+        "type": "number"
+    },
+    {
+        "name": "debt_to_asset_fy",
+        "type": "number"
+    },
+    {
+        "name": "asset_turnover_current",
+        "type": "number"
+    },
+    {
+        "name": "asset_turnover_fy",
+        "type": "number"
+    },
+    {
+        "name": "invent_turnover_current",
+        "type": "number"
+    },
+    {
+        "name": "invent_turnover_fy",
+        "type": "number"
     }
 ]

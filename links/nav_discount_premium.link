@@ -2,22 +2,9 @@
 symbolName = input.symbol("", title = "Symbol", confirm = false, __optional = true)
 getSymbolName(symbol) => symbol == "" ? syminfo.tickerid : symbol
 makeTicker(fund, symbol = "") => __financial_tickerid(getSymbolName(symbol), fund, "")
-last_bar() =>
-    if barstate.islast
-        close
-    else
-        na
+
 var finTicker = __financial_tickerid(getSymbolName(symbolName), "NAV", "D")
-nav = request.security(finTicker, "D", last_bar(), gaps=barmerge.gaps_on)
-plot(nav, title = "nav_0")
-plot(nav[1], title = "nav_1")
-r = ((close / nav) - 1) * 100
-plot(r, title = "r")
-series float nav_discount_premium = na
-plot(nav_discount_premium, title = "nav_discount_premium_0")
-plot(nav_discount_premium[1], title = "nav_discount_premium_1")
-if na(r)
-    nav_discount_premium := nav_discount_premium[1]
-else
-    nav_discount_premium := r
-plot(nav_discount_premium, title = "nav_discount_premium")
+nav = request.security(finTicker, "D", close, gaps=barmerge.gaps_on)
+nav_discount_premium = ((close / nav) - 1) * 100
+
+plot(nav_discount_premium, title = "Discount / Premium to NAV", style = plot.style_columns, color = nav_discount_premium >= 0 ? #22AB94 : #F7535F)

@@ -1175,5 +1175,9 @@
     {
         "name": "source-logoid",
         "type": "text"
+    },
+    {
+        "name": "nav_date",
+        "type": "time"
     }
 ]

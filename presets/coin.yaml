@@ -17,19 +17,19 @@ presets:
     sortOrder: desc
 - name: coin_gainers
   filter:
-  - left: 24h_close_change|5
+  - left: change
     operation: greater
     right: 0
   sort:
-    sortBy: 24h_close_change|5
+    sortBy: change
     sortOrder: desc
 - name: coin_losers
   filter:
-  - left: 24h_close_change|5
+  - left: change
     operation: less
     right: 0
   sort:
-    sortBy: 24h_close_change|5
+    sortBy: change
     sortOrder: asc
 - name: coin_most_traded
   sort:

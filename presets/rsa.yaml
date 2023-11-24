@@ -643,10 +643,6 @@ presets:
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
-- name: country_top_etfs_highest_return
-  symbols:
-    tickers:
-      - ""
 - name: country_top_etfs_most_traded
   filter:
     - left: typespecs
@@ -662,11 +658,3 @@ presets:
   sort:
     sortBy: Value.Traded|1W
     sortOrder: desc
-- name: country_top_etfs_dividends
-  symbols:
-    tickers:
-      - ""
-- name: country_top_etfs_sector_za
-  symbols:
-    tickers:
-      - ""

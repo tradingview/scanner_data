@@ -629,19 +629,7 @@ presets:
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
-- name: country_top_etfs_highest_return
-  symbols:
-    tickers:
-      - ""
 - name: country_top_etfs_most_traded
-  symbols:
-    tickers:
-      - ""
-- name: country_top_etfs_dividends
-  symbols:
-    tickers:
-      - ""
-- name: country_top_etfs_sector_lk
   symbols:
     tickers:
       - ""

@@ -95,16 +95,13 @@ const scanRequestForPairs = {
 
 function scan(req, loc) {
     loc = loc || defaultScannerLocation;
-    console.error("scanner url: https://scanner.xstaging.tv/crypto/scan2");
-    // const resp = requestSync("POST", `https://scanner.xstaging.tv/crypto/scan2`, {json: req});
-
+    
     let spawnSync = require('child_process').spawnSync;
     let HttpResponse = require('http-response-object');
     let JSON = require("./node_modules/sync-request/lib/json-buffer");
     let worker = require.resolve('./node_modules/sync-request/lib/worker.js')
 
-    const resp = syncreq.doRequestSync("POST", `https://scanner.xstaging.tv/crypto/scan2`, {json: req}, spawnSync, HttpResponse, worker, JSON);
-
+    const resp = syncreq.doRequestSync("POST", `https://scanner.tradingview.com/crypto/scan2`, {json: req}, spawnSync, HttpResponse, worker, JSON);
     if (resp.statusCode != 200) {
         if (resp.statusCode === 400) {
             throw Error(resp.getBody());
@@ -218,12 +215,14 @@ const excludeSymbols = [
     "BITFINEX:MNABTC",
     "BITFINEX:IOSBTC",
     "BITFINEX:IOSUSD",
+    "BITFINEX:AMPBTC",
+    "BITFINEX:AMPUSD",
     "OKCOIN:USDCUSD",
+    "HITBTC:USDDUSD",
     "BITFINEX:IOTUSD",
     "POLONIEX:STRUSD",
     "BITFINEX:WBTUSD",
-    "BITFINEX:ALGUSD",
-    "BITTREX:FNSAUSD"
+    "BITFINEX:ALGUSD"
 ];
 
 function skipSymbol(s) {

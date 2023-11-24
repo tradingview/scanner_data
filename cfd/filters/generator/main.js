@@ -293,10 +293,6 @@ const groups = [
         region: "Europe"
     },
     {
-        url2: "prefix=CRYPTOCAP&type=index",
-        include: ["CRYPTOCAP:TOTAL", "CRYPTOCAP:TOTALDEFI", "CRYPTOCAP:DEFIETH"],
-    },
-    {
         url2: "prefix=BET&type=index",
         include: ["BET:BUX"],
         region: "Europe"

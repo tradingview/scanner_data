@@ -604,3 +604,43 @@ presets:
       - XETR:D3CC
       - XETR:SDXK
       - XETR:CXPA
+- name: highest_revenue_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: type
+      operation: equal
+      right: stock
+    - left: revenue_per_employee
+      operation: greater
+      right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
+  sort:
+    sortBy: revenue_per_employee
+    sortOrder: desc
+- name: highest_profit_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: type
+      operation: equal
+      right: stock
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
+  sort:
+    sortBy: net_income_per_employee_fy
+    sortOrder: desc

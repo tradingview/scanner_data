@@ -1,11 +1,13 @@
-#include <links/common.pine.link>
-#include <links/pivot_points.pine.link>
-#include <links/pivot_points_plots.pine.link>
-#include <links/high_and_low.pine.link>
-#include <links/performance_functions.pine.link>
-#include <links/performance_stocks.pine.link>
-#include <links/business_day.pine.link>
-#include <links/daily_resolution_functions.pine.link>
-#include <links/performance_market_cap.pine.link>
-#include <links/etf.pine.link>
-#include <links/nav_discount_premium.link>
+//@version=5
+indicator(title='ScannerData', shorttitle='_SD_')
+
+// Discount / Premium to NAV
+symbolName = input.symbol("", title = "Symbol", confirm = false, __optional = true)
+getSymbolName(symbol) => symbol == "" ? syminfo.tickerid : symbol
+makeTicker(fund, symbol = "") => __financial_tickerid(getSymbolName(symbol), fund, "")
+
+var finTicker = __financial_tickerid(getSymbolName(symbolName), "NAV", "D")
+nav = request.security(finTicker, "D", close, gaps=barmerge.gaps_on, lookahead=barmerge.lookahead_on)
+nav_discount_premium = ((close / nav) - 1) * 100
+
+plot(nav_discount_premium, title = "nav_discount_premium")

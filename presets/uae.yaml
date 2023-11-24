@@ -645,24 +645,6 @@ presets:
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
-- name: country_top_etfs_highest_return
-  filter:
-    - left: nav_total_return.1Y
-      operation: less
-      right: 600
-    - left: typespecs
-      operation: has
-      right:
-        - etn
-        - etf
-    - left: is_primary
-      operation: equal
-      right: true
-  price_conversion:
-    to_currency: USD
-  sort:
-    sortBy: nav_total_return.1Y
-    sortOrder: desc
 - name: country_top_etfs_most_traded
   filter:
     - left: typespecs
@@ -678,11 +660,3 @@ presets:
   sort:
     sortBy: Value.Traded|1W
     sortOrder: desc
-- name: country_top_etfs_dividends
-  symbols:
-    tickers:
-      - ""
-- name: country_top_etfs_sector_ae
-  symbols:
-    tickers:
-      - ""

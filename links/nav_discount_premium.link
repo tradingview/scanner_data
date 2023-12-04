@@ -1,3 +1,6 @@
+//@version=5
+indicator(title='ScannerData', shorttitle='_SD_')
+
 // Discount / Premium to NAV
 symbolName = input.symbol("", title = "Symbol", confirm = false, __optional = true)
 getSymbolName(symbol) => symbol == "" ? syminfo.tickerid : symbol

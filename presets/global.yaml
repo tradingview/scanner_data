@@ -2822,7 +2822,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: aum
     sortOrder: desc
   markets:
     - america
@@ -2995,7 +2995,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: aum
     sortOrder: desc
   markets:
     - america
@@ -3082,7 +3082,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: aum
     sortOrder: desc
   markets:
     - america
@@ -3168,7 +3168,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: aum
     sortOrder: desc
   markets:
     - america
@@ -3427,7 +3427,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: aum
     sortOrder: desc
   markets:
     - america
@@ -3600,7 +3600,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: aum
     sortOrder: desc
   markets:
     - america
@@ -3757,3 +3757,23 @@ presets:
     - uk
     - venezuela
     - vietnam
+- name: etfs_market_highest_aum_growth
+  filter:
+    - left: aum
+      operation: egreater
+      right: 100000000
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum_perf.1M
+    sortOrder: desc
+  markets:
+    - america

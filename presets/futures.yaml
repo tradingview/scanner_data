@@ -139,7 +139,6 @@ presets:
 - name: country_top_futures_commodities_br
   symbols:
     tickers:
-      - BMFBOVESPA:OZ11!
       - BMFBOVESPA:ETH1!
       - BMFBOVESPA:CCM1!
       - BMFBOVESPA:BGI1!
@@ -851,7 +850,7 @@ presets:
 - name: locale_top_futures_metals_br
   symbols:
     tickers:
-      - BMFBOVESPA:OZ11!
+      - COMEX:GC1!
       - COMEX:SI1!
       - NYMEX:PL1!
       - COMEX:HG1!

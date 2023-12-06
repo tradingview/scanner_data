@@ -4,7 +4,7 @@
 			{
 				"id": "text",
 				"type": "text",
-				"defval": "t:#0==''?tickerid:#0;close~$0;#0~(close/$0-1)*100~$1@1~$1!$2;t:input('in_0','')~t:__financial_tickerid($0(t:$3):t,'NAV','D'):t~i:na():f~sym($4,'D','D',1,1,0,'NONE',0,0,$5)|$1()|s2:$2($7):s2~$9!$10",
+				"defval": "t:#0==''?tickerid:#0;close~$0;#0~(close/$0-1)*100~$1;t:input('in_0','')~t:__financial_tickerid($0(t:$3):t,'NAV','D'):t~i:na():f~sym($4,'D','D',1,1,0,'NONE',0,0,$5)|$1()|$2($7)~$9",
 				"isFake": false
 			},
 			{
@@ -26,10 +26,6 @@
 			{
 				"id": "plot_0",
 				"type": "line"
-			},
-			{
-				"id": "plot_1",
-				"type": "line"
 			}
 		],
 		"version": "",
@@ -40,10 +36,6 @@
 		"styles": {
 			"plot_0": {
 				"title": "nav_discount_premium_pine",
-				"isHidden": false
-			},
-			"plot_1": {
-				"title": "nav_discount_premium_pine_1",
 				"isHidden": false
 			}
 		}

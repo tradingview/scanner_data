@@ -1,6 +1,0 @@
-import TradingView/RelativeValue/2 as rv
-
-float pastVolume = rv.averageAtTime(volume, 10, "1D", true)
-float currentVolume = rv.calcCumulativeSeries(volume, timeframe.change("1D"), true)
-float relativeValue = currentVolume / pastVolume
-plot(relativeValue, "relative_volume_at_time")

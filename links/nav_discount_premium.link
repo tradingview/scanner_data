@@ -1,11 +1,24 @@
-//@version=5
-indicator(title='ScannerData', shorttitle='_SD_')
-
 // Discount / Premium to NAV
 symbolName = input.symbol("", title = "Symbol", confirm = false, __optional = true)
 getSymbolName(symbol) => symbol == "" ? syminfo.tickerid : symbol
 makeTicker(fund, symbol = "") => __financial_tickerid(getSymbolName(symbol), fund, "")
+
+last_bar() =>
+    if barstate.islast
+        close
+    else
+        na
+
 var finTicker = __financial_tickerid(getSymbolName(symbolName), "NAV", "D")
-nav = request.security(finTicker, "D", close, gaps=barmerge.gaps_on, lookahead=barmerge.lookahead_on)
-nav_discount_premium_pine = ((close / nav) - 1) * 100
+nav = request.security(finTicker, "D", last_bar(), gaps=barmerge.gaps_on)
+r = ((close / nav) - 1) * 100
+
+// nav_discount_premium_pine = ((close / nav) - 1) * 100
+
+series float nav_discount_premium_pine = na
+if na(r)
+    nav_discount_premium_pine := nav_discount_premium_pine[1] // propagate previous value to the end
+else
+    nav_discount_premium_pine := r
+
 plot(nav_discount_premium_pine, title = "nav_discount_premium_pine")

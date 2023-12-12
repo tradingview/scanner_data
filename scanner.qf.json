@@ -28,6 +28,10 @@
         "type": "text"
     },
     {
+        "name": "isin",
+        "type": "text"
+    },
+    {
         "name": "market_cap_basic",
         "type": "fundamental_price"
     },
@@ -329,6 +333,22 @@
     },
     {
         "name": "earnings_release_next_date",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_trading_date_fy",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fq",
+        "type": "time"
+    },
+    {
+        "name": "earnings_release_next_trading_date_fy",
         "type": "time"
     },
     {
@@ -1021,10 +1041,6 @@
         "type": "text"
     },
     {
-        "name": "segment",
-        "type": "text"
-    },
-    {
         "name": "category",
         "type": "text"
     },
@@ -1159,5 +1175,49 @@
     {
         "name": "source-logoid",
         "type": "text"
-    }
+    },
+    {
+        "name": "debt_to_asset_fq",
+        "type": "number"
+    },
+    {
+        "name": "debt_to_asset_fy",
+        "type": "number"
+    },
+    {
+        "name": "asset_turnover_current",
+        "type": "number"
+    },
+    {
+        "name": "asset_turnover_fy",
+        "type": "number"
+    },
+    {
+        "name": "invent_turnover_current",
+        "type": "number"
+    },
+    {
+        "name": "invent_turnover_fy",
+        "type": "number"
+    },
+    {
+        "name": "capital_expenditures_unchanged_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "capital_expenditures_unchanged_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "capital_expenditures_unchanged_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "earnings_publication_type_fq",
+        "type": "number"
+    },
+    {
+        "name": "earnings_publication_type_next_fq",
+        "type": "number"
+    }  
 ]

@@ -1211,5 +1211,13 @@
     {
         "name": "capital_expenditures_unchanged_ttm_h",
         "type": "num_slice"
-    }
+    },
+    {
+        "name": "earnings_publication_type_fq",
+        "type": "number"
+    },
+    {
+        "name": "earnings_publication_type_next_fq",
+        "type": "number"
+    }  
 ]

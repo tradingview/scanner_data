@@ -277,9 +277,7 @@ plot(PSAR, title='P.SAR')
 
 // study("My Money Flow")
 lenMF = 14
-posMF = math.sum(hlc3 > hlc3[1] ? hlc3 * volume : 0, lenMF)
-negMF = math.sum(hlc3 < hlc3[1] ? hlc3 * volume : 0, lenMF)
-plot(100.0 - 100.0 / (1.0 + posMF / negMF), title='MoneyFlow')
+plot(ta.mfi(hlc3, lenMF), title='MoneyFlow')
 
 // study("My Chaikin Money Flow")
 lenCMF = 20

@@ -1,5 +1,5 @@
 // Market cap performance for stocks
-fundTF = timeframe.isintraday ? "D" : timeframe.period
+var fundTF = timeframe.isintraday ? "D" : timeframe.period
 
 oneWeek = 7
 oneMonth = 30
@@ -12,10 +12,9 @@ msInOneDay = 86400000
 startFrom(daysBack)=>
     time_close("D", syminfo.session, syminfo.timezone) - daysBack * msInOneDay
 
-fundPerf(daysBack, perfMaxDaysForValid)=>
-    
+fundPerf(daysBack, perfMaxDaysForValid) =>
 	startT = startFrom(daysBack)
-	if time[0] < startT
+	if time < startT
 		na
 	else
 		lastI = 0
@@ -32,7 +31,7 @@ fundPerf(daysBack, perfMaxDaysForValid)=>
 
 		perf
 
-fundPerfYTD()=>
+fundPerfYTD() =>
 	max_bars_back(time, 2*oneYear)
 	max_bars_back(close, 2*oneYear)
     

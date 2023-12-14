@@ -1,12 +1,8 @@
 // Pivot Points
-pivotXGetCurTF() =>
-	result = '1M'
-	if timeframe.isintraday
-		result := timeframe.multiplier <= 15 ? '1D' : '1W'
-	else
-		if timeframe.isweekly or timeframe.ismonthly
-			result := '12M'
-	result
+var pivotXCurTF = if timeframe.isintraday
+	timeframe.multiplier <= 15 ? '1D' : '1W'
+else
+	timeframe.isweekly or timeframe.ismonthly ? '12M' : '1M'
 
 var pivotX_open = open
 var pivotX_high = high
@@ -15,7 +11,7 @@ var pivotX_prev_open = .0
 var pivotX_prev_high = .0
 var pivotX_prev_low = .0
 var pivotX_prev_close = .0
-pivotX_Interval = time(pivotXGetCurTF())
+pivotX_Interval = time(pivotXCurTF)
 if pivotX_Interval != pivotX_Interval[1]
 	pivotX_prev_open := pivotX_open
 	pivotX_prev_close := close[1]

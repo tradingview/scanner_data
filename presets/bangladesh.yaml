@@ -564,6 +564,17 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+    - left: typespecs
+      operation: has
+      right: common
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: country_top_indices_bd
   symbols:
     tickers:
@@ -584,6 +595,9 @@ presets:
     - left: revenue_per_employee
       operation: greater
       right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
   sort:
     sortBy: revenue_per_employee
     sortOrder: desc
@@ -601,6 +615,13 @@ presets:
     - left: net_income_per_employee_fy
       operation: greater
       right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 500
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
+- name: country_top_etfs_most_traded
+  symbols:
+    tickers:
+      - ""

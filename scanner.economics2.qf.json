@@ -1,5 +1,9 @@
 [
     {
+        "name": "pricescale",
+        "type": "number"
+    },
+    {
         "name": "country_code",
         "type": "text"
     }

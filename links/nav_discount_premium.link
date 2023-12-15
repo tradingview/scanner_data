@@ -3,7 +3,7 @@ symbolName = input.symbol("", title = "Symbol", confirm = false, __optional = tr
 getSymbolName(symbol) => symbol == "" ? syminfo.tickerid : symbol
 makeTicker(fund, symbol = "") => __financial_tickerid(getSymbolName(symbol), fund, "")
 var finTicker = __financial_tickerid(getSymbolName(symbolName), "NAV", "D")
-nav = request.security(finTicker, "D", close, gaps=barmerge.gaps_on)
+nav = request.security(finTicker, "D", close, ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
 var float nav_discount_premium_pine = na
 if not na(nav)
     nav_discount_premium_pine := ((close / nav) - 1) * 100

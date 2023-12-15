@@ -6,5 +6,21 @@
     {
         "name": "country_code",
         "type": "text"
+    },
+    {
+        "name": "economic-category-id",
+        "type": "text"
+    },
+    {
+        "name": "measure",
+        "type": "text"
+    },
+    {
+        "name": "value-unit-id",
+        "type": "text"
+    },
+    {
+        "name": "unit-id",
+        "type": "text"
     }
 ]

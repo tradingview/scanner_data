@@ -173,6 +173,20 @@
       ]
     },
     {
+      "s": "BINANCE:ACEBTC",
+      "f": [
+        "ACENT",
+        "ACE"
+      ]
+    },
+    {
+      "s": "BINANCE:ACEUSD",
+      "f": [
+        "ACENT",
+        "ACE"
+      ]
+    },
+    {
       "s": "HUOBI:ACTBTC",
       "f": [
         "Achain",
@@ -7740,20 +7754,6 @@
       ]
     },
     {
-      "s": "HITBTC:PAYBTC",
-      "f": [
-        "TenX",
-        "PAY"
-      ]
-    },
-    {
-      "s": "HITBTC:PAYUSD",
-      "f": [
-        "TenX",
-        "PAY"
-      ]
-    },
-    {
       "s": "HITBTC:PEAKBTC",
       "f": [
         "PEAKDEFI",
@@ -10194,6 +10194,20 @@
       "f": [
         "TENT",
         "TENT"
+      ]
+    },
+    {
+      "s": "HITBTC:PAYBTC",
+      "f": [
+        "TenX",
+        "PAY"
+      ]
+    },
+    {
+      "s": "HITBTC:PAYUSD",
+      "f": [
+        "TenX",
+        "PAY"
       ]
     },
     {

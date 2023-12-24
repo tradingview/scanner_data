@@ -564,6 +564,17 @@ presets:
   sort:
     sortBy: description
     sortOrder: asc
+- name: earning
+  filter:
+    - left: typespecs
+      operation: has
+      right: common
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: country_top_indices_bd
   symbols:
     tickers:
@@ -610,3 +621,7 @@ presets:
   sort:
     sortBy: net_income_per_employee_fy
     sortOrder: desc
+- name: country_top_etfs_most_traded
+  symbols:
+    tickers:
+      - ""

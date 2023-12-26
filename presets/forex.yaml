@@ -131,7 +131,7 @@ presets:
       - FX_IDC:GBPUSD
       - FX_IDC:CHFUSD
       - FX_IDC:AUDUSD
-      - FX_IDC:NZDUSD
+      - FX_IDC:CNYUSD
 - name: country_top_forex_ae
   symbols:
     tickers:
@@ -140,7 +140,7 @@ presets:
       - FX_IDC:JPYAED
       - FX_IDC:GBPAED
       - FX_IDC:CHFAED
-      - FX_IDC:AUDAED
+      - FX_IDC:CNYAED
 - name: country_top_forex_ar
   symbols:
     tickers:
@@ -149,7 +149,7 @@ presets:
       - FX_IDC:JPYARS
       - FX_IDC:GBPARS
       - FX_IDC:CHFARS
-      - FX_IDC:AUDARS
+      - FX_IDC:CNYARS
 - name: country_top_forex_at
   symbols:
     tickers:
@@ -158,7 +158,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_au
   symbols:
     tickers:
@@ -167,7 +167,7 @@ presets:
       - FX_IDC:JPYAUD
       - FX_IDC:GBPAUD
       - FX_IDC:CHFAUD
-      - FX_IDC:CADAUD
+      - FX_IDC:CNYAUD
 - name: country_top_forex_bd
   symbols:
     tickers:
@@ -176,7 +176,7 @@ presets:
       - FX_IDC:JPYBDT
       - FX_IDC:GBPBDT
       - FX_IDC:CHFBDT
-      - FX_IDC:CADBDT
+      - FX_IDC:CNYBDT
 - name: country_top_forex_be
   symbols:
     tickers:
@@ -185,7 +185,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_bh
   symbols:
     tickers:
@@ -194,7 +194,7 @@ presets:
       - FX_IDC:JPYBHD
       - FX_IDC:GBPBHD
       - FX_IDC:CHFBHD
-      - FX_IDC:NZDBHD
+      - FX_IDC:CNYBHD
 - name: country_top_forex_br
   symbols:
     tickers:
@@ -203,7 +203,7 @@ presets:
       - FX_IDC:JPYBRL
       - FX_IDC:GBPBRL
       - FX_IDC:CHFBRL
-      - FX_IDC:AUDBRL
+      - FX_IDC:CNYBRL
 - name: country_top_forex_ca
   symbols:
     tickers:
@@ -212,7 +212,7 @@ presets:
       - FX_IDC:JPYCAD
       - FX_IDC:GBPCAD
       - FX_IDC:CHFCAD
-      - FX_IDC:AUDCAD
+      - FX_IDC:CNYCAD
 - name: country_top_forex_ch
   symbols:
     tickers:
@@ -221,7 +221,7 @@ presets:
       - FX_IDC:JPYCHF
       - FX_IDC:GBPCHF
       - FX_IDC:AUDCHF
-      - FX_IDC:NZDCHF
+      - FX_IDC:CNYCHF
 - name: country_top_forex_cl
   symbols:
     tickers:
@@ -230,7 +230,7 @@ presets:
       - FX_IDC:JPYCLP
       - FX_IDC:GBPCLP
       - FX_IDC:CHFCLP
-      - FX_IDC:AUDCLP
+      - FX_IDC:CNYCLP
 - name: country_top_forex_cn
   symbols:
     tickers:
@@ -248,7 +248,7 @@ presets:
       - FX_IDC:JPYCOP
       - FX_IDC:GBPCOP
       - FX_IDC:CHFCOP
-      - FX_IDC:AUDCOP
+      - FX_IDC:CNYCOP
 - name: country_top_forex_cy
   symbols:
     tickers:
@@ -257,7 +257,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_cz
   symbols:
     tickers:
@@ -266,7 +266,7 @@ presets:
       - FX_IDC:JPYCZK
       - FX_IDC:GBPCZK
       - FX_IDC:CHFCZK
-      - FX_IDC:AUDCZK
+      - FX_IDC:CNYCZK
 - name: country_top_forex_de
   symbols:
     tickers:
@@ -275,7 +275,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_dk
   symbols:
     tickers:
@@ -284,7 +284,7 @@ presets:
       - FX_IDC:JPYDKK
       - FX_IDC:GBPDKK
       - FX_IDC:CHFDKK
-      - FX_IDC:AUDDKK
+      - FX_IDC:CNYDKK
 - name: country_top_forex_ee
   symbols:
     tickers:
@@ -293,7 +293,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_eg
   symbols:
     tickers:
@@ -302,7 +302,7 @@ presets:
       - FX_IDC:JPYEGP
       - FX_IDC:GBPEGP
       - FX_IDC:CHFEGP
-      - FX_IDC:AUDEGP
+      - FX_IDC:CNYEGP
 - name: country_top_forex_es
   symbols:
     tickers:
@@ -311,7 +311,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_fi
   symbols:
     tickers:
@@ -320,7 +320,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_fr
   symbols:
     tickers:
@@ -329,7 +329,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_gb
   symbols:
     tickers:
@@ -338,7 +338,7 @@ presets:
       - FX_IDC:JPYGBP
       - FX_IDC:CHFGBP
       - FX_IDC:AUDGBP
-      - FX_IDC:NZDGBP
+      - FX_IDC:CNYGBP
 - name: country_top_forex_gr
   symbols:
     tickers:
@@ -347,7 +347,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_hk
   symbols:
     tickers:
@@ -356,7 +356,7 @@ presets:
       - FX_IDC:JPYHKD
       - FX_IDC:GBPHKD
       - FX_IDC:CHFHKD
-      - FX_IDC:AUDHKD
+      - FX_IDC:CNYHKD
 - name: country_top_forex_hu
   symbols:
     tickers:
@@ -365,7 +365,7 @@ presets:
       - FX_IDC:JPYHUF
       - FX_IDC:GBPHUF
       - FX_IDC:CHFHUF
-      - FX_IDC:AUDHUF
+      - FX_IDC:CNYHUF
 - name: country_top_forex_id
   symbols:
     tickers:
@@ -374,7 +374,7 @@ presets:
       - FX_IDC:JPYIDR
       - FX_IDC:GBPIDR
       - FX_IDC:CHFIDR
-      - FX_IDC:AUDIDR
+      - FX_IDC:CNYIDR
 - name: country_top_forex_il
   symbols:
     tickers:
@@ -383,7 +383,7 @@ presets:
       - FX_IDC:JPYILS
       - FX_IDC:GBPILS
       - FX_IDC:CHFILS
-      - FX_IDC:AUDILS
+      - FX_IDC:CNYILS
 - name: country_top_forex_in
   symbols:
     tickers:
@@ -392,7 +392,7 @@ presets:
       - FX_IDC:JPYINR
       - FX_IDC:GBPINR
       - FX_IDC:CHFINR
-      - FX_IDC:AUDINR
+      - FX_IDC:CNYINR
 - name: country_top_forex_is
   symbols:
     tickers:
@@ -401,7 +401,7 @@ presets:
       - FX_IDC:JPYISK
       - FX_IDC:GBPISK
       - FX_IDC:CHFISK
-      - FX_IDC:AUDISK
+      - FX_IDC:CNYISK
 - name: country_top_forex_it
   symbols:
     tickers:
@@ -410,7 +410,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_jp
   symbols:
     tickers:
@@ -419,7 +419,7 @@ presets:
       - FX_IDC:GBPJPY
       - FX_IDC:CHFJPY
       - FX_IDC:AUDJPY
-      - FX_IDC:NZDJPY
+      - FX_IDC:CNYJPY
 - name: country_top_forex_ke
   symbols:
     tickers:
@@ -428,7 +428,7 @@ presets:
       - FX_IDC:JPYKES
       - FX_IDC:GBPKES
       - FX_IDC:CHFKES
-      - FX_IDC:AUDKES
+      - FX_IDC:CNYKES
 - name: country_top_forex_kr
   symbols:
     tickers:
@@ -437,7 +437,7 @@ presets:
       - FX_IDC:JPYKRW
       - FX_IDC:GBPKRW
       - FX_IDC:CHFKRW
-      - FX_IDC:AUDKRW
+      - FX_IDC:CNYKRW
 - name: country_top_forex_kw
   symbols:
     tickers:
@@ -446,7 +446,7 @@ presets:
       - FX_IDC:JPYKWD
       - FX_IDC:GBPKWD
       - FX_IDC:CHFKWD
-      - FX_IDC:AUDKWD
+      - FX_IDC:CNYKWD
 - name: country_top_forex_lk
   symbols:
     tickers:
@@ -455,7 +455,7 @@ presets:
       - FX_IDC:JPYLKR
       - FX_IDC:GBPLKR
       - FX_IDC:CHFLKR
-      - FX_IDC:AUDLKR
+      - FX_IDC:CNYLKR
 - name: country_top_forex_lv
   symbols:
     tickers:
@@ -464,7 +464,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_lt
   symbols:
     tickers:
@@ -473,7 +473,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_lu
   symbols:
     tickers:
@@ -482,7 +482,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_ma
   symbols:
     tickers:
@@ -491,7 +491,7 @@ presets:
       - FX_IDC:JPYMAD
       - FX_IDC:GBPMAD
       - FX_IDC:CHFMAD
-      - FX_IDC:AUDMAD
+      - FX_IDC:CNYMAD
 - name: country_top_forex_mx
   symbols:
     tickers:
@@ -500,7 +500,7 @@ presets:
       - FX_IDC:JPYMXN
       - FX_IDC:GBPMXN
       - FX_IDC:CHFMXN
-      - FX_IDC:AUDMXN
+      - FX_IDC:CNYMXN
 - name: country_top_forex_my
   symbols:
     tickers:
@@ -509,7 +509,7 @@ presets:
       - FX_IDC:JPYMYR
       - FX_IDC:GBPMYR
       - FX_IDC:CHFMYR
-      - FX_IDC:AUDMYR
+      - FX_IDC:CNYMYR
 - name: country_top_forex_ng
   symbols:
     tickers:
@@ -518,7 +518,7 @@ presets:
       - FX_IDC:JPYNGN
       - FX_IDC:GBPNGN
       - FX_IDC:CHFNGN
-      - FX_IDC:AUDNGN
+      - FX_IDC:CNYNGN
 - name: country_top_forex_nl
   symbols:
     tickers:
@@ -527,7 +527,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_no
   symbols:
     tickers:
@@ -536,7 +536,7 @@ presets:
       - FX_IDC:JPYNOK
       - FX_IDC:GBPNOK
       - FX_IDC:CHFNOK
-      - FX_IDC:AUDNOK
+      - FX_IDC:CNYNOK
 - name: country_top_forex_nz
   symbols:
     tickers:
@@ -545,7 +545,7 @@ presets:
       - FX_IDC:JPYNZD
       - FX_IDC:GBPNZD
       - FX_IDC:CHFNZD
-      - FX_IDC:AUDNZD
+      - FX_IDC:CNYNZD
 - name: country_top_forex_pe
   symbols:
     tickers:
@@ -554,7 +554,7 @@ presets:
       - FX_IDC:JPYPEN
       - FX_IDC:GBPPEN
       - FX_IDC:CHFPEN
-      - FX_IDC:AUDPEN
+      - FX_IDC:CNYPEN
 - name: country_top_forex_ph
   symbols:
     tickers:
@@ -563,7 +563,7 @@ presets:
       - FX_IDC:JPYPHP
       - FX_IDC:GBPPHP
       - FX_IDC:CHFPHP
-      - FX_IDC:AUDPHP
+      - FX_IDC:CNYPHP
 - name: country_top_forex_pk
   symbols:
     tickers:
@@ -572,7 +572,7 @@ presets:
       - FX_IDC:JPYPKR
       - FX_IDC:GBPPKR
       - FX_IDC:CHFPKR
-      - FX_IDC:AUDPKR
+      - FX_IDC:CNYPKR
 - name: country_top_forex_pl
   symbols:
     tickers:
@@ -581,7 +581,7 @@ presets:
       - FX_IDC:JPYPLN
       - FX_IDC:GBPPLN
       - FX_IDC:CHFPLN
-      - FX_IDC:AUDPLN
+      - FX_IDC:CNYPLN
 - name: country_top_forex_pt
   symbols:
     tickers:
@@ -590,7 +590,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_qa
   symbols:
     tickers:
@@ -599,7 +599,7 @@ presets:
       - FX_IDC:JPYQAR
       - FX_IDC:GBPQAR
       - FX_IDC:CHFQAR
-      - FX_IDC:AUDQAR
+      - FX_IDC:CNYQAR
 - name: country_top_forex_ro
   symbols:
     tickers:
@@ -608,7 +608,7 @@ presets:
       - FX_IDC:JPYRON
       - FX_IDC:GBPRON
       - FX_IDC:CHFRON
-      - FX_IDC:AUDRON
+      - FX_IDC:CNYRON
 - name: country_top_forex_ru
   symbols:
     tickers:
@@ -617,7 +617,7 @@ presets:
       - FX_IDC:JPYRUB
       - FX_IDC:GBPRUB
       - FX_IDC:CHFRUB
-      - FX_IDC:INRRUB
+      - MOEX:CNYRUB_TOM
 - name: country_top_forex_rs
   symbols:
     tickers:
@@ -626,7 +626,7 @@ presets:
       - FX_IDC:JPYRSD
       - FX_IDC:GBPRSD
       - FX_IDC:CHFRSD
-      - FX_IDC:AUDRSD
+      - FX_IDC:CNYRSD
 - name: country_top_forex_sa
   symbols:
     tickers:
@@ -635,7 +635,7 @@ presets:
       - FX_IDC:JPYSAR
       - FX_IDC:GBPSAR
       - FX_IDC:CHFSAR
-      - FX_IDC:AUDSAR
+      - FX_IDC:CNYSAR
 - name: country_top_forex_se
   symbols:
     tickers:
@@ -644,7 +644,7 @@ presets:
       - FX_IDC:JPYSEK
       - FX_IDC:GBPSEK
       - FX_IDC:CHFSEK
-      - FX_IDC:AUDSEK
+      - FX_IDC:CNYSEK
 - name: country_top_forex_sg
   symbols:
     tickers:
@@ -653,7 +653,7 @@ presets:
       - FX_IDC:JPYSGD
       - FX_IDC:GBPSGD
       - FX_IDC:CHFSGD
-      - FX_IDC:AUDSGD
+      - FX_IDC:CNYSGD
 - name: country_top_forex_sk
   symbols:
     tickers:
@@ -662,7 +662,7 @@ presets:
       - FX_IDC:GBPEUR
       - FX_IDC:CHFEUR
       - FX_IDC:AUDEUR
-      - FX_IDC:NZDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_th
   symbols:
     tickers:
@@ -671,7 +671,7 @@ presets:
       - FX_IDC:JPYTHB
       - FX_IDC:GBPTHB
       - FX_IDC:CHFTHB
-      - FX_IDC:AUDTHB
+      - FX_IDC:CNYTHB
 - name: country_top_forex_tn
   symbols:
     tickers:
@@ -680,7 +680,7 @@ presets:
       - FX_IDC:JPYTND
       - FX_IDC:GBPTND
       - FX_IDC:CHFTND
-      - FX_IDC:AUDTND
+      - FX_IDC:CNYTND
 - name: country_top_forex_tr
   symbols:
     tickers:
@@ -689,7 +689,7 @@ presets:
       - FX_IDC:JPYTRY
       - FX_IDC:GBPTRY
       - FX_IDC:CHFTRY
-      - FX_IDC:AUDTRY
+      - FX_IDC:CNYTRY
 - name: country_top_forex_tw
   symbols:
     tickers:
@@ -698,7 +698,7 @@ presets:
       - FX_IDC:JPYTWD
       - FX_IDC:GBPTWD
       - FX_IDC:CHFTWD
-      - FX_IDC:AUDTWD
+      - FX_IDC:CNYTWD
 - name: country_top_forex_ve
   symbols:
     tickers:
@@ -707,7 +707,7 @@ presets:
       - FX_IDC:JPYVES
       - FX_IDC:GBPVES
       - FX_IDC:CHFVES
-      - FX_IDC:AUDVES
+      - FX_IDC:CNYVES
 - name: country_top_forex_vn
   symbols:
     tickers:
@@ -716,7 +716,7 @@ presets:
       - FX_IDC:JPYVND
       - FX_IDC:GBPVND
       - FX_IDC:CHFVND
-      - FX_IDC:AUDVND
+      - FX_IDC:CNYVND
 - name: country_top_forex_za
   symbols:
     tickers:
@@ -725,4 +725,4 @@ presets:
       - FX_IDC:JPYZAR
       - FX_IDC:GBPZAR
       - FX_IDC:CHFZAR
-      - FX_IDC:AUDZAR
+      - FX_IDC:CNYZAR

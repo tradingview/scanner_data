@@ -4296,7 +4296,7 @@ presets:
     - uk
     - venezuela
     - vietnam
-- name: etfs_market_page_highest_premiun
+- name: etfs_market_page_highest_premium
   filter:
     - left: nav_discount_premium
       operation: egreater

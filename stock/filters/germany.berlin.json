@@ -1246,9 +1246,6 @@
       "s": "BER:DCO"
     },
     {
-      "s": "BER:DDN"
-    },
-    {
       "s": "BER:DEF"
     },
     {
@@ -1277,6 +1274,9 @@
     },
     {
       "s": "BER:DHL"
+    },
+    {
+      "s": "BER:DHLN"
     },
     {
       "s": "BER:DIE"
@@ -2002,9 +2002,6 @@
       "s": "BER:ID7"
     },
     {
-      "s": "BER:IDI"
-    },
-    {
       "s": "BER:IDP"
     },
     {
@@ -2276,9 +2273,6 @@
     },
     {
       "s": "BER:LCM"
-    },
-    {
-      "s": "BER:LCO"
     },
     {
       "s": "BER:LDF"
@@ -3521,9 +3515,6 @@
     },
     {
       "s": "BER:TCO0"
-    },
-    {
-      "s": "BER:TDB"
     },
     {
       "s": "BER:TDI"

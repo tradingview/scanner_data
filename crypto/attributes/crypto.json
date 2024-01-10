@@ -4877,6 +4877,20 @@
       ]
     },
     {
+      "s": "BINANCE:XAIBTC",
+      "f": [
+        "Grok",
+        "XAI"
+      ]
+    },
+    {
+      "s": "BINANCE:XAIUSD",
+      "f": [
+        "Grok",
+        "XAI"
+      ]
+    },
+    {
       "s": "BINANCE:GXSBTC",
       "f": [
         "GXChain",

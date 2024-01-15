@@ -2162,6 +2162,20 @@ presets:
       - AMEX:IYW
       - AMEX:GDX
       - AMEX:GUNR
+- name: etfs_market_page_bitcoin
+  symbols:
+    tickers:
+      - NASDAQ:IBIT
+      - AMEX:BITB
+      - AMEX:DEFI
+      - AMEX:ARKB
+      - AMEX:GBTC
+      - AMEX:FBTC
+      - AMEX:BTCW
+      - AMEX:BTCO
+      - NASDAQ:BRRR
+      - AMEX:HODL
+      - AMEX:EZBC
 - name: etfs_market_page_highest_return
   filter:
     - left: nav_total_return.1Y

@@ -96,9 +96,15 @@ const scanRequestForPairs = {
 function scan(req, loc) {
     loc = loc || defaultScannerLocation;
     console.error("scanner url: https://scanner.xstaging.tv/crypto/scan2");
-    const resp = requestSync("POST", `https://scanner.xstaging.tv/crypto/scan2`, {
-        json: req
-    });
+    // const resp = requestSync("POST", `https://scanner.xstaging.tv/crypto/scan2`, {json: req});
+
+    let spawnSync = require('child_process').spawnSync;
+    let HttpResponse = require('http-response-object');
+    let JSON = require("./node_modules/sync-request/lib/json-buffer");
+    let worker = require.resolve('./node_modules/sync-request/lib/worker.js')
+
+    const resp = syncreq.doRequestSync("POST", `https://scanner.xstaging.tv/crypto/scan2`, {json: req}, spawnSync, HttpResponse, worker, JSON);
+
     if (resp.statusCode != 200) {
         if (resp.statusCode === 400) {
             throw Error(resp.getBody());

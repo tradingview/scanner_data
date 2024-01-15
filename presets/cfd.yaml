@@ -49,3 +49,20 @@ presets:
   sort:
     sortBy: index_priority
     sortOrder: asc
+- name: crypto_dominance
+  sort:
+    sortBy: close
+    sortOrder: desc
+  filter:
+  - left: exchange
+    operation: equal
+    right: CRYPTOCAP
+  - left: description
+    operation: match
+    right: Dominance
+  - left: name
+    operation: nmatch
+    right: OTHERS.D|TOTALDEFI.D
+  range:
+  - 0
+  - 9

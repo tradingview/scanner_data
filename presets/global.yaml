@@ -2163,6 +2163,9 @@ presets:
       - AMEX:GDX
       - AMEX:GUNR
 - name: etfs_market_page_bitcoin
+  sort:
+    sortBy: Value.Traded
+    sortOrder: desc
   symbols:
     tickers:
       - NASDAQ:IBIT

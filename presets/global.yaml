@@ -4503,7 +4503,7 @@ presets:
     to_currency: USD
   sort:
     sortBy: weight_top_10
-    sortOrder: desc
+    sortOrder: asc
   markets:
     - america
     - argentina
@@ -4748,7 +4748,7 @@ presets:
   filter:
     - left: beta_3_year
       operation: less
-      right: 0
+      right: -0.1
     - left: typespecs
       operation: has
       right:
@@ -4761,7 +4761,7 @@ presets:
     to_currency: USD
   sort:
     sortBy: beta_3_year
-    sortOrder: desc
+    sortOrder: asc
   markets:
     - america
     - argentina

@@ -187,7 +187,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: volume
+    sortBy: Value.Traded
     sortOrder: desc
 - name: unusual_volume
   filter:

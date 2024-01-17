@@ -4662,7 +4662,7 @@ presets:
   filter:
     - left: beta_3_year
       operation: in_range
-      right: [0,1]
+      right: [0.01, 0.99]
     - left: typespecs
       operation: has
       right:

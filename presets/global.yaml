@@ -4747,8 +4747,8 @@ presets:
 - name: etfs_market_page_negative_beta
   filter:
     - left: beta_3_year
-      operation: less
-      right: -0.1
+      operation: in_range
+      right: [-100, -0.1]
     - left: typespecs
       operation: has
       right:

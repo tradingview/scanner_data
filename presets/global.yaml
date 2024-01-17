@@ -4503,7 +4503,7 @@ presets:
     to_currency: USD
   sort:
     sortBy: weight_top_10
-    sortOrder: desc
+    sortOrder: asc
   markets:
     - america
     - argentina
@@ -4662,7 +4662,7 @@ presets:
   filter:
     - left: beta_3_year
       operation: in_range
-      right: [0,1]
+      right: [0.01, 0.99]
     - left: typespecs
       operation: has
       right:
@@ -4747,8 +4747,8 @@ presets:
 - name: etfs_market_page_negative_beta
   filter:
     - left: beta_3_year
-      operation: less
-      right: 0
+      operation: in_range
+      right: [-100, -0.1]
     - left: typespecs
       operation: has
       right:
@@ -4761,7 +4761,7 @@ presets:
     to_currency: USD
   sort:
     sortBy: beta_3_year
-    sortOrder: desc
+    sortOrder: asc
   markets:
     - america
     - argentina

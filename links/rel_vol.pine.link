@@ -5,3 +5,13 @@ float pastVolume = rv.averageAtTime(volume, 9, "1D", true)
 float currentVolume = rv.calcCumulativeSeries(volume, timeframe.change("1D"), true)
 float relativeValue = currentVolume / pastVolume
 plot(relativeValue, "rel_vol_timenow")
+
+var start_time = time
+[lbi, bi, t, st, tn, cv, co] = request.security(syminfo.tickerid, "5", [last_bar_index, bar_index, time, start_time, timenow, ta.cum(volume), ta.cum(open)], calc_bars_count=3200, ignore_invalid_symbol=true)
+plot(lbi, "sec_last_bar_index")
+plot(bi, "sec_bar_index")
+plot(t, "sec_time_open")
+plot(st, "sec_start_time")
+plot(tn, "sec_time_now")
+plot(cv, "cumul_volume")
+plot(co, "cumul_open")

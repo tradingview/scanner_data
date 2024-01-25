@@ -1323,5 +1323,32 @@
     {
         "name": "fixed_assets_turnover_fy",
         "type": "number"
+    },
+    {
+        "name": "free_cash_flow_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "oper_income_per_employee_fy",
+        "type": "fundamental_price" }
+    ,{
+        "name": "total_debt_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_assets_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "research_and_dev_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_income_per_employee_fy",
+        "type": "fundamental_price"
     }
 ]

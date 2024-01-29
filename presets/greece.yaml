@@ -597,13 +597,13 @@ presets:
       - ATHEX:FTSE
       - ATHEX:FTSEM
       - ATHEX:HELMSI
-      - ATHEX:DXY
-      - ATHEX:DPA
-      - ATHEX:DYG
-      - ATHEX:DKY
-      - ATHEX:DAP
-      - ATHEX:DPY
-      - ATHEX:DEM
+      - ATHEX:FTSE_FS
+      - ATHEX:FTSE_EU
+      - ATHEX:FTSE_IN
+      - ATHEX:FTSE_CD
+      - ATHEX:FTSE_BM
+      - ATHEX:FTSE_RE
+      - ATHEX:FTSE_CS
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

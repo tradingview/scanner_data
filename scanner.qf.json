@@ -1334,8 +1334,9 @@
     },
     {
         "name": "oper_income_per_employee_fy",
-        "type": "fundamental_price" }
-    ,{
+        "type": "fundamental_price"
+    },
+    {
         "name": "total_debt_per_employee_fy",
         "type": "fundamental_price"
     },
@@ -1350,6 +1351,9 @@
     {
         "name": "net_income_per_employee_fy",
         "type": "fundamental_price"
+    },
+    {
+        "name": "issuance_of_stock_net_ttm",
+        "type": "fundamental_price"
     }
-
 ]

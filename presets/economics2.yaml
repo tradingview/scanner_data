@@ -25,7 +25,6 @@ presets:
       - ECONOMICS:USGDPQQ
 - name: country_top_economics_government_us
   symbols:
-    tickers:
       - ECONOMICS:USGR
       - ECONOMICS:USGSP
       - ECONOMICS:USGBV

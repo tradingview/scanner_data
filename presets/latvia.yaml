@@ -561,9 +561,7 @@ presets:
     query:
       types:
       - industry
-  sort:
-    sortBy: description
-    sortOrder: asc
+  sort: []
 - name: earning
   filter:
   - left: typespecs

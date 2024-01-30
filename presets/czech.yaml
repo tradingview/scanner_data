@@ -1,4 +1,5 @@
 ---
+presets:
 - name: all_stocks
   filter:
   - left: is_primary

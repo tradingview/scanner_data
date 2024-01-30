@@ -721,3 +721,12 @@ presets:
       - TVC:VN10Y
       - TVC:VN20Y
       - TVC:VN30Y
+- name: country_top_bonds_yield_eu
+  symbols:
+    tickers:
+      - TVC:EU01Y
+      - TVC:EU02Y
+      - TVC:EU05Y
+      - TVC:EU10Y
+      - TVC:EU20Y
+      - TVC:EU30Y

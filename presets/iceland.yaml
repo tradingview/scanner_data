@@ -101,6 +101,11 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 1
+    - 10000
   - left: change
     operation: greater
     right: 0
@@ -121,6 +126,11 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 1
+    - 10000
   - left: change
     operation: less
     right: 0
@@ -141,6 +151,11 @@ presets:
   - left: type
     operation: equal
     right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 1
+    - 10000
   - left: active_symbol
     operation: equal
     right: true
@@ -575,10 +590,20 @@ presets:
   sort:
    sortBy: market_cap_basic
    sortOrder: desc
-- name: country_top_indices_lv
+- name: country_top_indices_is
   symbols:
     tickers:
-      - OMXRSE:OMXRGI
+      - OMXICE:OMXI15
+      - OMXICE:OMXIPI
+      - OMXICE:OMXILCPI
+      - OMXICE:OMXIMCPI
+      - OMXICE:OMXISCGI
+      - OMXICE:IX30PI
+      - OMXICE:IX60PI
+      - OMXICE:IX50PI
+      - OMXICE:IX20PI
+      - OMXICE:IX35PI
+      - OMXICE:IX45PI
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

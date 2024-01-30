@@ -45,6 +45,8 @@ presets:
 - name: largest_employers
   filter:
   - left: is_primary
+    operation: equal
+    right: true
   - left: typespecs
     operation: has
     right: common

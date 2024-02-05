@@ -681,8 +681,12 @@ presets:
 - name: country_top_bonds_yield_th
   symbols:
     tickers:
+      - TVC:TH01Y
+      - TVC:TH02Y
+      - TVC:TH05Y
       - TVC:TH10Y
-      - TVC:TH15Y
+      - TVC:TH20Y
+      - TVC:TH50Y
 - name: country_top_bonds_yield_tn
   symbols:
     tickers:

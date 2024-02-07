@@ -6829,3 +6829,14 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_gdp_no
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: "NO"
+    - left: economic-category-id
+      operation: equal
+      right: gdp

@@ -1,10 +1,27 @@
-// Timenow without sec
+// Sec and Timenow
 import TradingView/RelativeValue/2 as rv
+float pastVolume1 = rv.averageAtTime(volume, 10, "1D", true)
+float currentVolume1 = rv.calcCumulativeSeries(volume, timeframe.change("1D"), true)
+float relativeValue1 = currentVolume1 / pastVolume1
+rv1 = request.security(syminfo.tickerid, "5", relativeValue1, calc_bars_count=3200, ignore_invalid_symbol=true)
+plot(rv1, "rel_vol_sec_timenow")
+// Sec without Timenow
+float pastVolume2 = rv.averageAtTime(volume, 10, "1D", true)
+float currentVolume2 = rv.calcCumulativeSeries(volume, timeframe.change("1D"), false)
+float relativeValue2 = currentVolume2 / pastVolume2
+rv2 = request.security(syminfo.tickerid, "5", relativeValue2, calc_bars_count=3200, ignore_invalid_symbol=true)
+plot(rv2, "rel_vol_sec")
+// Timenow without sec
+float pastVolume3 = rv.averageAtTime(volume, 10, "1D", true)
+float currentVolume3 = rv.calcCumulativeSeries(volume, timeframe.change("1D"), true)
+float relativeValue3 = currentVolume3 / pastVolume3
+plot(relativeValue3, "rel_vol_timenow")
+// Without sec and timenow
+float pastVolume4 = rv.averageAtTime(volume, 10, "1D", true)
+float currentVolume4 = rv.calcCumulativeSeries(volume, timeframe.change("1D"), false)
+float relativeValue4 = currentVolume4 / pastVolume4
+plot(relativeValue4, "rel_vol_raw")
 
-float pastVolume = rv.averageAtTime(volume, 9, "1D", true)
-float currentVolume = rv.calcCumulativeSeries(volume, timeframe.change("1D"), true)
-float relativeValue = currentVolume / pastVolume
-plot(relativeValue, "rel_vol_timenow")
 
 var start_time = time
 [lbi, bi, t, st, tn, cv, co] = request.security(syminfo.tickerid, "5", [last_bar_index, bar_index, time, start_time, timenow, ta.cum(volume), ta.cum(open)], calc_bars_count=3200, ignore_invalid_symbol=true)

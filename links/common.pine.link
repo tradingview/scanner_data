@@ -1,112 +1,6 @@
 //@version=5
 indicator(title='ScannerData', shorttitle='_SD_')
 
-// study(title="Average True Range", shorttitle="ATR", overlay=false)
-plot(ta.rma(ta.tr(true), 14), title='ATR')
-
-// study("Average Directional Index", shorttitle="ADX")
-dirmov(len) =>
-	up = ta.change(high)
-	down = -ta.change(low)
-	truerange = ta.rma(ta.tr, len)
-	plus = fixnan(100 * ta.rma(up > down and up > 0 ? up : 0, len) / truerange)
-	minus = fixnan(100 * ta.rma(down > up and down > 0 ? down : 0, len) / truerange)
-	[plus, minus]
-adx(dilen, adxlen) =>
-	[plus, minus] = dirmov(dilen)
-	sum = plus + minus
-	adx = 100 * ta.rma(math.abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
-	[adx, plus, minus]
-[adxValue, adxPlus, adxMinus] = adx(14, 14)
-plot(adxValue, title='ADX')
-plot(adxPlus, title='ADX+DI')
-plot(adxMinus, title='ADX-DI')
-plot(adxPlus[1], title='ADX+DI[1]')
-plot(adxMinus[1], title='ADX-DI[1]')
-[adxValue9, adxPlus9, adxMinus9] = adx(9, 9)
-plot(adxValue9, title='ADX_9')
-plot(adxPlus9, title='ADX+DI_9')
-plot(adxMinus9, title='ADX-DI_9')
-plot(adxPlus9[1], title='ADX+DI_9[1]')
-plot(adxMinus9[1], title='ADX-DI_9[1]')
-[adxValue20, adxPlus20, adxMinus20] = adx(20, 20)
-plot(adxValue20, title='ADX_20')
-plot(adxPlus20, title='ADX+DI_20')
-plot(adxMinus20, title='ADX-DI_20')
-plot(adxPlus20[1], title='ADX+DI_20[1]')
-plot(adxMinus20[1], title='ADX-DI_20[1]')
-[adxValue50, adxPlus50, adxMinus50] = adx(50, 50)
-plot(adxValue50, title='ADX_50')
-plot(adxPlus50, title='ADX+DI_50')
-plot(adxMinus50, title='ADX-DI_50')
-plot(adxPlus50[1], title='ADX+DI_50[1]')
-plot(adxMinus50[1], title='ADX-DI_50[1]')
-[adxValue100, adxPlus100, adxMinus100] = adx(100, 100)
-plot(adxValue100, title='ADX_100')
-plot(adxPlus100, title='ADX+DI_100')
-plot(adxMinus100, title='ADX-DI_100')
-plot(adxPlus100[1], title='ADX+DI_100[1]')
-plot(adxMinus100[1], title='ADX-DI_100[1]')
-
-// study(shorttitle="BB", title="Bollinger Bands", overlay=true)
-lengthBB20 = 20
-lengthBB50 = 50
-srcBB = close
-multBB = 2
-basisBB20 = ta.sma(srcBB, lengthBB20)
-devBB20 = multBB * ta.stdev(srcBB, lengthBB20)
-upperBB20 = basisBB20 + devBB20
-lowerBB20 = basisBB20 - devBB20
-plot(basisBB20, title='BB.basis')
-plot(upperBB20, title='BB.upper')
-plot(lowerBB20, title='BB.lower')
-basisBB50 = ta.sma(srcBB, lengthBB50)
-devBB50 = multBB * ta.stdev(srcBB, lengthBB50)
-upperBB50 = basisBB50 + devBB50
-lowerBB50 = basisBB50 - devBB50
-plot(basisBB50, title='BB.basis_50')
-plot(upperBB50, title='BB.upper_50')
-plot(lowerBB50, title='BB.lower_50')
-
-// study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
-sourceMACD = close
-fastLengthMACD = 12
-slowLengthMACD = 26
-signalLengthMACD = 9
-fastMAMACD = ta.ema(sourceMACD, fastLengthMACD)
-slowMAMACD = ta.ema(sourceMACD, slowLengthMACD)
-macdMACD = fastMAMACD - slowMAMACD
-signalMACD = ta.ema(macdMACD, signalLengthMACD)
-histMACD = macdMACD - signalMACD
-plot(histMACD, title='MACD.hist')
-plot(macdMACD, title='MACD.macd')
-plot(signalMACD, title='MACD.signal')
-
-//study(title="Momentum", shorttitle="Mom")
-Mom = close - close[10]
-plot(Mom, title='Mom')
-plot(Mom[1], title='Mom[1]')
-Mom14 = close - close[14]
-plot(Mom14, title='Mom_14')
-plot(Mom14[1], title='Mom_14[1]')
-
-//study(title="Relative Strength Index", shorttitle="RSI")
-RSI = ta.rsi(close, 14)
-plot(RSI, title='RSI')
-plot(RSI[1], title='RSI[1]')
-plot(ta.rsi(close, 2), title='RSI2')
-plot(ta.rsi(close, 2)[1], title='RSI2[1]')
-plot(ta.rsi(close, 3), title='RSI3')
-plot(ta.rsi(close, 3)[1], title='RSI3[1]')
-plot(ta.rsi(close, 5), title='RSI5')
-plot(ta.rsi(close, 5)[1], title='RSI5[1]')
-plot(ta.rsi(close, 7), title='RSI7')
-plot(ta.rsi(close, 7)[1], title='RSI7[1]')
-plot(ta.rsi(close, 9), title='RSI9')
-plot(ta.rsi(close, 9)[1], title='RSI9[1]')
-plot(ta.rsi(close, 21), title='RSI21')
-plot(ta.rsi(close, 21)[1], title='RSI21[1]')
-
 // study(title="Moving Average", shorttitle="MA", overlay=true)
 SMA3 = ta.sma(close, 3)
 plot(SMA3, title='SMA3')
@@ -199,20 +93,119 @@ plot(EMA250, title='EMA250')
 EMA300 = ta.ema(close, 300)
 plot(EMA300, title='EMA300')
 
+//study(title="Relative Strength Index", shorttitle="RSI")
+RSI = ta.rsi(close, 14)
+plot(RSI, title='RSI')
+plot(RSI[1], title='RSI[1]')
+RSI2 = ta.rsi(close, 2)
+plot(RSI2, title='RSI2')
+plot(RSI2[1], title='RSI2[1]')
+RSI3 = ta.rsi(close, 3)
+plot(RSI3, title='RSI3')
+plot(RSI3[1], title='RSI3[1]')
+RSI5 = ta.rsi(close, 5)
+plot(RSI5, title='RSI5')
+plot(RSI5[1], title='RSI5[1]')
+RSI7 = ta.rsi(close, 7)
+plot(RSI7, title='RSI7')
+plot(RSI7[1], title='RSI7[1]')
+RSI9 = ta.rsi(close, 9)
+plot(RSI9, title='RSI9')
+plot(RSI9[1], title='RSI9[1]')
+RSI21 = ta.rsi(close, 21)
+plot(RSI21, title='RSI21')
+plot(RSI21[1], title='RSI21[1]')
+
+// study(title="Average True Range", shorttitle="ATR", overlay=false)
+plot(ta.rma(ta.tr(true), 14), title='ATR')
+
+// study("Average Directional Index", shorttitle="ADX")
+dirmov(len) =>
+	up = ta.change(high)
+	down = -ta.change(low)
+	truerange = ta.rma(ta.tr, len)
+	plus = fixnan(100 * ta.rma(up > down and up > 0 ? up : 0, len) / truerange)
+	minus = fixnan(100 * ta.rma(down > up and down > 0 ? down : 0, len) / truerange)
+	[plus, minus]
+adx(dilen, adxlen) =>
+	[plus, minus] = dirmov(dilen)
+	sum = plus + minus
+	adx = 100 * ta.rma(math.abs(plus - minus) / (sum == 0 ? 1 : sum), adxlen)
+	[adx, plus, minus]
+[adxValue, adxPlus, adxMinus] = adx(14, 14)
+plot(adxValue, title='ADX')
+plot(adxPlus, title='ADX+DI')
+plot(adxMinus, title='ADX-DI')
+plot(adxPlus[1], title='ADX+DI[1]')
+plot(adxMinus[1], title='ADX-DI[1]')
+[adxValue9, adxPlus9, adxMinus9] = adx(9, 9)
+plot(adxValue9, title='ADX_9')
+plot(adxPlus9, title='ADX+DI_9')
+plot(adxMinus9, title='ADX-DI_9')
+plot(adxPlus9[1], title='ADX+DI_9[1]')
+plot(adxMinus9[1], title='ADX-DI_9[1]')
+[adxValue20, adxPlus20, adxMinus20] = adx(20, 20)
+plot(adxValue20, title='ADX_20')
+plot(adxPlus20, title='ADX+DI_20')
+plot(adxMinus20, title='ADX-DI_20')
+plot(adxPlus20[1], title='ADX+DI_20[1]')
+plot(adxMinus20[1], title='ADX-DI_20[1]')
+[adxValue50, adxPlus50, adxMinus50] = adx(50, 50)
+plot(adxValue50, title='ADX_50')
+plot(adxPlus50, title='ADX+DI_50')
+plot(adxMinus50, title='ADX-DI_50')
+plot(adxPlus50[1], title='ADX+DI_50[1]')
+plot(adxMinus50[1], title='ADX-DI_50[1]')
+[adxValue100, adxPlus100, adxMinus100] = adx(100, 100)
+plot(adxValue100, title='ADX_100')
+plot(adxPlus100, title='ADX+DI_100')
+plot(adxMinus100, title='ADX-DI_100')
+plot(adxPlus100[1], title='ADX+DI_100[1]')
+plot(adxMinus100[1], title='ADX-DI_100[1]')
+
+// study(shorttitle="BB", title="Bollinger Bands", overlay=true)
+devBB20 = 2 * ta.stdev(close, 20)
+upperBB20 = SMA20 + devBB20
+lowerBB20 = SMA20 - devBB20
+plot(SMA20, title='BB.basis')
+plot(upperBB20, title='BB.upper')
+plot(lowerBB20, title='BB.lower')
+devBB50 = 2 * ta.stdev(close, 50)
+upperBB50 = SMA50 + devBB50
+lowerBB50 = SMA50 - devBB50
+plot(SMA50, title='BB.basis_50')
+plot(upperBB50, title='BB.upper_50')
+plot(lowerBB50, title='BB.lower_50')
+
+// study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
+fastMAMACD = EMA12
+slowMAMACD = ta.ema(close, 26)
+macdMACD = fastMAMACD - slowMAMACD
+signalMACD = ta.ema(macdMACD, 9)
+histMACD = macdMACD - signalMACD
+plot(histMACD, title='MACD.hist')
+plot(macdMACD, title='MACD.macd')
+plot(signalMACD, title='MACD.signal')
+
+//study(title="Momentum", shorttitle="Mom")
+Mom = close - close[10]
+plot(Mom, title='Mom')
+plot(Mom[1], title='Mom[1]')
+Mom14 = close - close[14]
+plot(Mom14, title='Mom_14')
+plot(Mom14[1], title='Mom_14[1]')
+
 // study(title="Stochastic", shorttitle="Stoch")
 lengthStoch = 14
 smoothKStoch = 3
 smoothDStoch = 3
-kStoch = ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
+kStoch_14_1_3 = ta.stoch(close, high, low, lengthStoch)
+kStoch = ta.sma(kStoch_14_1_3, smoothKStoch)
 dStoch = ta.sma(kStoch, smoothDStoch)
 plot(kStoch, title='Stoch.K')
 plot(dStoch, title='Stoch.D')
 plot(kStoch[1], title='Stoch.K[1]')
 plot(dStoch[1], title='Stoch.D[1]')
-lengthStoch := 14
-smoothKStoch := 1
-smoothDStoch := 3
-kStoch_14_1_3 = ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch_14_1_3 = ta.sma(kStoch_14_1_3, smoothDStoch)
 plot(kStoch_14_1_3, title='Stoch.K_14_1_3')
 plot(dStoch_14_1_3, title='Stoch.D_14_1_3')
@@ -222,7 +215,7 @@ plot(dStoch_14_1_3[1], title='Stoch.D[1]_14_1_3')
 // average volume
 AvgVol = ta.sma(volume, 10)
 plot(AvgVol, title='average_volume_10d_calc')
-plot(volume / ta.sma(volume[1], 10), title='relative_volume_10d_calc')
+plot(volume / AvgVol[1], title='relative_volume_10d_calc')
 plot(ta.sma(volume, 30), title='average_volume_30d_calc')
 plot(ta.sma(volume, 60), title='average_volume_60d_calc')
 plot(ta.sma(volume, 90), title='average_volume_90d_calc')
@@ -262,11 +255,9 @@ plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length,
 plot(volume * close * syminfo.pointvalue, title='Value.Traded')
 
 // study("My Keltner Channels", overlay=true)
-lengthKltChnl = 20
 multKltChnl = 2
-maKltChnl = ta.ema(close, lengthKltChnl)
-atrlength = input(10, "ATR Length")
-rangemaKltChnl = ta.atr(atrlength)
+maKltChnl = EMA20
+rangemaKltChnl = ta.atr(10)
 plot(maKltChnl + rangemaKltChnl * multKltChnl, title='KltChnl.upper')
 plot(maKltChnl - rangemaKltChnl * multKltChnl, title='KltChnl.lower')
 plot(maKltChnl, title='KltChnl.basis')
@@ -285,26 +276,23 @@ accdistRaw = not(close == low and close == high or high == low) ? (close - low -
 plot(math.sum(accdistRaw, lenCMF) / math.sum(volume, lenCMF), title='ChaikinMoneyFlow')
 
 // Stochastic RSI
-StochRSI() =>
-	rsi1 = ta.rsi(close, 14)
-	K = ta.sma(ta.stoch(rsi1, rsi1, rsi1, 14), 3)
-	D = ta.sma(K, 3)
-	[K, D]
-[Stoch_RSI_K, Stoch_RSI_D] = StochRSI()
+Stoch_RSI_K = ta.sma(ta.stoch(RSI, RSI, RSI, 14), 3)
+Stoch_RSI_D = ta.sma(Stoch_RSI_K, 3)
 plot(Stoch_RSI_K, title='Stoch.RSI.K')
 plot(Stoch_RSI_D, title='Stoch.RSI.D')
 
 // Williams Percent Range
 WR_period = 14
-WR = (ta.highest(high, WR_period) - close) / (ta.highest(high, WR_period) - ta.lowest(low, WR_period)) * -100
+highest = ta.highest(high, WR_period)
+WR = (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
 plot(WR, title='W.R')
 
 // Rate Of Change (ROC)
 plot(ta.roc(close, 9), title='ROC')
 
 // Bull / Bear Power
-BullPower = high - ta.ema(close, 13)
-BearPower = low - ta.ema(close, 13)
+BullPower = high - EMA13
+BearPower = low - EMA13
 plot(BullPower + BearPower, title='BBPower')
 
 // Ultimate Oscillator
@@ -314,9 +302,10 @@ uo(ShortLen, MiddlLen, LongLen) =>
 	Value1 = math.sum(ta.tr, ShortLen)
 	Value2 = math.sum(ta.tr, MiddlLen)
 	Value3 = math.sum(ta.tr, LongLen)
-	Value4 = math.sum(close - tl(), ShortLen)
-	Value5 = math.sum(close - tl(), MiddlLen)
-	Value6 = math.sum(close - tl(), LongLen)
+	val = close - tl()
+	Value4 = math.sum(val, ShortLen)
+	Value5 = math.sum(val, MiddlLen)
+	Value6 = math.sum(val, LongLen)
 	UO = float(na)
 	if Value1 != 0 and Value2 != 0 and Value3 != 0
 		var0 = LongLen / ShortLen
@@ -344,24 +333,24 @@ ichimoku_cloud(v1, v2, v3) =>
 IC_displacement = 25
 plot(IC_CLine, title='Ichimoku.CLine')
 plot(IC_BLine, title='Ichimoku.BLine')
-plot(IC_Lead1[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead1')
-plot(IC_Lead2[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead2')
+plot(IC_Lead1[IC_displacement], title='Ichimoku.Lead1')
+plot(IC_Lead2[IC_displacement], title='Ichimoku.Lead2')
 [IC_CLine_20_60_120_30, IC_BLine_20_60_120_30, IC_Lead1_20_60_120_30, IC_Lead2_20_60_120_30] = ichimoku_cloud(20, 60, 120)
 IC_displacement := 30
 plot(IC_CLine_20_60_120_30, title='Ichimoku.CLine_20_60_120_30')
 plot(IC_BLine_20_60_120_30, title='Ichimoku.BLine_20_60_120_30')
-plot(IC_Lead1_20_60_120_30[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead1_20_60_120_30')
-plot(IC_Lead2_20_60_120_30[IC_displacement], offset=IC_displacement, title='Ichimoku.Lead2_20_60_120_30')
+plot(IC_Lead1_20_60_120_30[IC_displacement], title='Ichimoku.Lead1_20_60_120_30')
+plot(IC_Lead2_20_60_120_30[IC_displacement], title='Ichimoku.Lead2_20_60_120_30')
 
 // Volume Weighted Moving Average (VWMA)
 VWMA = ta.vwma(close, 20)
 plot(VWMA, title='VWMA')
 
 // Average Day Range
-plot(ta.sma(high, 14) - ta.sma(low, 14), title='ADR')
+plot(ta.sma(high - low, 14), title='ADR')
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-PriceAvg = ta.ema(close, 50)
+PriceAvg = EMA50
 DownTrend = close < PriceAvg
 UpTrend = close > PriceAvg
 
@@ -497,7 +486,7 @@ recTotal := recTotalC > 0 ? recTotal / recTotalC : na
 plot(recTotal, title='Recommend.All')
 
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
-C_PriceAvg = ta.sma(close, 50)
+C_PriceAvg = SMA50
 C_Len = 14
 C_Factor = 2.0
 C_ShadowPercent = 5

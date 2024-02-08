@@ -1,33 +1,29 @@
 // high & low
+var ath = high
+var ath_date = time/1000
+var low_after_ath = low
+if high > ath
+	ath := high
+	ath_date := time/1000
+	low_after_ath := low
+if low < low_after_ath
+	low_after_ath := low
 
-ath_and_date_and_lowest_after_ath(_x, _xt, _y) =>
-	ath = _x
-	ath_date = _xt/1000
-	low_after_ath = _y
-	if nz(ath[1], ath) > ath
-		ath := nz(ath[1], ath)
-		ath_date := ath_date[1]
-		if low_after_ath[1] < low_after_ath
-			low_after_ath := low_after_ath[1]
-	[ath, ath_date, low_after_ath]
-[allTimeHigh, allTimeHighDate, lowAfterAllTimeHigh] = ath_and_date_and_lowest_after_ath(high, time, low)
-plot(allTimeHigh, title='High.All')
-plot(allTimeHighDate, title='High.All.Date')
-plot(allTimeHigh, title='High.All.Calc')
-plot(allTimeHighDate, title='High.All.Calc.Date')
-plot(lowAfterAllTimeHigh, title='Low.After.High.All')
-atl_and_date(_x, _xt) =>
-	atl = _x
-	atl_date = _xt/1000
-	if nz(atl[1], atl) < atl
-		atl := nz(atl[1], atl)
-		atl_date := atl_date[1]
-	[atl, atl_date]
-[allTimeLow, allTimeLowDate] = atl_and_date(low, time)
-plot(allTimeLow, title='Low.All')
-plot(allTimeLowDate, title='Low.All.Date')
-plot(allTimeLow, title='Low.All.Calc')
-plot(allTimeLowDate, title='Low.All.Calc.Date')
+plot(ath, title='High.All')
+plot(ath_date, title='High.All.Date')
+plot(ath, title='High.All.Calc')
+plot(ath_date, title='High.All.Calc.Date')
+plot(low_after_ath, title='Low.After.High.All')
+
+var atl = low
+var atl_date = time/1000
+if low < atl
+	atl := low
+	atl_date := time/1000
+plot(atl, title='Low.All')
+plot(atl_date, title='Low.All.Date')
+plot(atl, title='Low.All.Calc')
+plot(atl_date, title='Low.All.Calc.Date')
 var firstOpen = open
 plot(firstOpen, title='Open.All.Calc')
 custom_lowest_and_date(_x, _xt, len, maxbarsback) =>
@@ -168,9 +164,5 @@ plot(volatility(countOfBars1MonthAgoThisBar), title='Volatility.M')
 plot(ta.tr(true) * 100 / math.abs(low), title='Volatility.D')
 
 // first bar's timestamp in pine history
-first_bar_time(_t) => 
-	var float fb = na
-	if na(fb)
-		fb := _t/1000
-	fb
-plot(first_bar_time(time), title='first_bar_time')
+var first_bar_time = time / 1000
+plot(first_bar_time, title='first_bar_time')

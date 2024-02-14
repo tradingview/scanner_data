@@ -5,6 +5,6 @@ plot(bond_price, title="Bond.Price")
 change_abs = bond_price - bond_price[1]
 plot(change_abs, title="Bond.Change")
 float change_percent = na
-if not(bond_price[1] < 0) and not(bond_price > 0)
+if not(bond_price[1] < 0) and not(bond_price < 0)
     change_percent := change_abs / bond_price[1] * 100
 plot(change_percent, title="Bond.Change.%")

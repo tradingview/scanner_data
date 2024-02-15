@@ -32,10 +32,10 @@ fundPerf(daysBack, perfMaxDaysForValid) =>
 		perf
 
 fundPerfYTD() =>
-	max_bars_back(time, 2*oneYear)
-	max_bars_back(close, 2*oneYear)
+	// max_bars_back(time, 2*oneYear)
+	// max_bars_back(close, 2*oneYear)
     
-    lastI = 0
+    lastI = 0 * time[2*oneYear] * close[2*oneYear]
     for i = 0 to bar_index
         if year(time[i], syminfo.timezone) < year
             lastI := i - 1

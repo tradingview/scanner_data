@@ -71,8 +71,8 @@ custom_highest_and_date(_x, _xt, len, maxbarsback) =>
 				date := xt[i]
 		[res, date]
 fastSearchTimeIndex(x, maxbarsback) =>
-	max_bars_back(time, maxbarsback)
-	left = 0
+	// max_bars_back(time, maxbarsback)
+	left = 0 * time[maxbarsback]
 	right = math.min(bar_index, maxbarsback)
 	mid = 0
 	if time < x

@@ -93,6 +93,9 @@ fastSearchN(_xs, x, maxbarsback) =>  // xs - sorted, ascending
 			else
 				break
 		mid
+years10 = (365 * 4 + 366) * 2
+years10_ago = timenow - 1000 * 60 * 60 * 24 * years10
+countOfBars10YearAgo = fastSearchN(time, years10_ago, years10)
 years5 = 365 * 4 + 366
 years5_ago = timenow - 1000 * 60 * 60 * 24 * years5
 countOfBars5YearAgo = fastSearchN(time, years5_ago, years5)

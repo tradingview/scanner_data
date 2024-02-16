@@ -364,10 +364,11 @@ plot(VWMA, title='VWMA')
 // Average Day Range (ADR)
 smaHigh = ta.sma(high, 14)
 smaLow = ta.sma(low, 14)
-plot(smaHigh - smaLow, title='ADR')
+ADR = smaHigh - smaLow
+plot(ADR, title='ADR')
 
 // Average Day Range Percent (ADRP)
-plot((smaHigh - smaLow) * 100 / math.abs(smaLow), title='ADRP')
+plot(ADR / close * 100, title='ADRP')
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 PriceAvg = ta.ema(close, 50)

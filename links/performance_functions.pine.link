@@ -5,8 +5,8 @@ rateOfreturn(ref) =>
 	else
 		(close - ref) * 100 / math.abs(ref)
 rr(bb, maxbarsback) =>
-	max_bars_back(open, maxbarsback)
-	bb == 0 ? na : rateOfreturn(open[bb])
+	// max_bars_back(open, maxbarsback)
+	open[maxbarsback] * 0 + bb == 0 ? na : rateOfreturn(open[bb])
 perfYTD() =>
 	var lastYearOpen = open
 	if year > year[1]

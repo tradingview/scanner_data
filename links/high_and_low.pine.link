@@ -27,9 +27,9 @@ plot(atl_date, title='Low.All.Calc.Date')
 var firstOpen = open
 plot(firstOpen, title='Open.All.Calc')
 custom_lowest_and_date(len, maxbarsback) =>
-	max_bars_back(low, maxbarsback)
-	max_bars_back(time, maxbarsback)
-	if len == 0
+	// max_bars_back(low, maxbarsback)
+	// max_bars_back(time, maxbarsback)
+	if len == 0 * low[maxbarsback] * time[maxbarsback]
 		[na, na]
 	else if len == 1
 		[low, time / 1000]
@@ -44,9 +44,9 @@ custom_lowest_and_date(len, maxbarsback) =>
 				index := i
 		[low[index], time[index] / 1000]
 custom_highest_and_date(len, maxbarsback) =>
-	max_bars_back(high, maxbarsback)
-	max_bars_back(time, maxbarsback)
-	if len == 0
+	// max_bars_back(high, maxbarsback)
+	// max_bars_back(time, maxbarsback)
+	if len == 0 * high[maxbarsback] * time[maxbarsback]
 		[na, na]
 	else if len == 1
 		[high, time / 1000]

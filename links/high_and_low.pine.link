@@ -70,24 +70,22 @@ custom_highest_and_date(_x, _xt, len, maxbarsback) =>
 				res := x[i]
 				date := xt[i]
 		[res, date]
-fastSearchN(_xs, x, maxbarsback) =>  // xs - sorted, ascending
-	xs = _xs
-	if bar_index == 0
-		xs += xs[maxbarsback] * 0  // max_bars_back
+fastSearchTimeIndex(x, maxbarsback) =>
+	max_bars_back(time, maxbarsback)
 	left = 0
 	right = math.min(bar_index, maxbarsback)
 	mid = 0
-	if xs < x
+	if time < x
 		0
 	else
 		for i = 0 to 9 by 1
 			mid := math.ceil((left + right) / 2)
 			if left == right
 				break
-			else if xs[mid] < x
+			else if time[mid] < x
 				right := mid
 				continue
-			else if xs[mid] > x
+			else if time[mid] > x
 				left := mid
 				continue
 			else
@@ -95,13 +93,13 @@ fastSearchN(_xs, x, maxbarsback) =>  // xs - sorted, ascending
 		mid
 years5 = 365 * 4 + 366
 years5_ago = timenow - 1000 * 60 * 60 * 24 * years5
-countOfBars5YearAgo = fastSearchN(time, years5_ago, years5)
+countOfBars5YearAgo = fastSearchTimeIndex(years5_ago, years5)
 years3 = 365 * 3
 years3_ago = timenow - 1000 * 60 * 60 * 24 * years3
-countOfBars3YearAgo = fastSearchN(time, years3_ago, years3)
+countOfBars3YearAgo = fastSearchTimeIndex(years3_ago, years3)
 weeks52 = 7 * 52
 weeks52_ago = timenow - 1000 * 60 * 60 * 24 * weeks52
-countOfBars52WeekAgo = fastSearchN(time, weeks52_ago, weeks52)
+countOfBars52WeekAgo = fastSearchTimeIndex(weeks52_ago, weeks52)
 [weeks52_low, weeks52_low_date] = custom_lowest_and_date(low, time, countOfBars52WeekAgo, weeks52)
 plot(weeks52_low, title='price_52_week_low')
 plot(weeks52_low_date, title='price_52_week_low_date')
@@ -110,7 +108,7 @@ plot(weeks52_high, title='price_52_week_high')
 plot(weeks52_high_date, title='price_52_week_high_date')
 month6 = 180
 months6_ago = timenow - 1000 * 60 * 60 * 24 * month6
-countOfBars6MonthAgo = fastSearchN(time, months6_ago, month6)
+countOfBars6MonthAgo = fastSearchTimeIndex(months6_ago, month6)
 [months6_low, months6_low_date] = custom_lowest_and_date(low, time, countOfBars6MonthAgo, month6)
 plot(months6_low, title='Low.6M')
 plot(months6_low_date, title='Low.6M.Date')
@@ -119,7 +117,7 @@ plot(months6_high, title='High.6M')
 plot(months6_high_date, title='High.6M.Date')
 month3 = 90
 months3_ago = timenow - 1000 * 60 * 60 * 24 * month3
-countOfBars3MonthAgo = fastSearchN(time, months3_ago, month3)
+countOfBars3MonthAgo = fastSearchTimeIndex(months3_ago, month3)
 [months3_low, months3_low_date] = custom_lowest_and_date(low, time, countOfBars3MonthAgo, month3)
 plot(months3_low, title='Low.3M')
 plot(months3_low_date, title='Low.3M.Date')
@@ -129,8 +127,8 @@ plot(months3_high_date, title='High.3M.Date')
 month1 = 30
 month_ago_this_bar = time - 1000 * 60 * 60 * 24 * month1
 month_ago = timenow - 1000 * 60 * 60 * 24 * month1
-countOfBars1MonthAgo = fastSearchN(time, month_ago, month1)
-countOfBars1MonthAgoThisBar = fastSearchN(time, month_ago_this_bar, month1)
+countOfBars1MonthAgo = fastSearchTimeIndex(month_ago, month1)
+countOfBars1MonthAgoThisBar = fastSearchTimeIndex(month_ago_this_bar, month1)
 [month1_low, month1_low_date] = custom_lowest_and_date(low, time, countOfBars1MonthAgo, month1)
 plot(month1_low, title='Low.1M')
 plot(month1_low_date, title='Low.1M.Date')
@@ -140,8 +138,8 @@ plot(month1_high_date, title='High.1M.Date')
 week1 = 7
 week_ago = timenow - 1000 * 60 * 60 * 24 * week1
 week_ago_this_bar = time - 1000 * 60 * 60 * 24 * week1
-countOfBarsWeekAgo = fastSearchN(time, week_ago, week1)
-countOfBarsWeekAgoThisBar = fastSearchN(time, week_ago_this_bar, week1)
+countOfBarsWeekAgo = fastSearchTimeIndex(week_ago, week1)
+countOfBarsWeekAgoThisBar = fastSearchTimeIndex(week_ago_this_bar, week1)
 [week1_low] = custom_lowest_and_date(low, time, countOfBarsWeekAgo, week1)
 plot(week1_low, title='Low.5D')
 [week1_high] = custom_highest_and_date(high, time, countOfBarsWeekAgo, week1)

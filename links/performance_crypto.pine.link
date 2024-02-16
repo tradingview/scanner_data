@@ -22,7 +22,7 @@ plot(perf6M, title='Perf.6M')
 plot(perf6M_USD, title='Perf.6M.USD')
 oneYear = 365
 oneYearAgo = timenow - 1000 * 60 * 60 * 24 * oneYear
-barsCountOneYear = fastSearchN(time, oneYearAgo, oneYear)
+barsCountOneYear = fastSearchTimeIndex(oneYearAgo, oneYear)
 perfY = rr(barsCountOneYear, oneYear)
 perfY_USD = request.security(syminfo.tickerid, "D", perfY, lookahead = barmerge.lookahead_off, currency = "USD", ignore_invalid_symbol=true)
 plot(perfY, title='Perf.Y')

@@ -28,7 +28,7 @@ sumYTD()=>
 		na
 	else
 		sum = 0.
-		for i = 1 to bar_index
+		for i = 0 to bar_index
 			if year(time[i], syminfo.timezone) < year
 				break
 			sum += close[i]

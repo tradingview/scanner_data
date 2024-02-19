@@ -38,8 +38,8 @@ fundPerfYTD()=>
 	max_bars_back(close, 2*oneYear)
     
     lastI = 0
-    for i = 0 to bar_index
-        if year(time[i], syminfo.timezone) < year
+    for i = 1 to bar_index
+        if year(time[i]) < year
             lastI := i - 1
             break
 

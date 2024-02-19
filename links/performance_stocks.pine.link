@@ -1,5 +1,5 @@
 // Performance for stocks
-// Perf.<W | 1M | 3M | 6M | Y | 5Y | YTD>
+// Perf.<W | 1M | 3M | 6M | Y | 5Y | 10Y | YTD>
 oneYear = 365
 oneYearAgo = timenow - 1000 * 60 * 60 * 24 * oneYear
 barsCountOneYear = fastSearchN(time, oneYearAgo, oneYear)
@@ -12,4 +12,5 @@ plot(rr(close, open, countOfBars6MonthAgo, month6), title='Perf.6M')
 plot(rr(close, open, barsCountOneYear, oneYear), title='Perf.Y')
 plot(rr(close, open, countOfBars3YearAgo, years3), title='Perf.3Y')
 plot(rr(close, open, countOfBars5YearAgo, years5), title='Perf.5Y')
+plot(rr(close, open, countOfBars10YearAgo, years10), title='Perf.10Y')
 plot(perfYTD, title='Perf.YTD')

@@ -37,7 +37,7 @@ fundPerfYTD() =>
     
     lastI = 0
     for i = 1 to bar_index
-        if year(time[i], syminfo.timezone) < year
+        if year(time[i]) < year
             lastI := i - 1
             break
 

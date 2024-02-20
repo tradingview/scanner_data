@@ -2,7 +2,7 @@
 // Perf.<W | 1M | 3M | 6M | Y | 5Y | 10Y | YTD>
 oneYear = 365
 oneYearAgo = timenow - 1000 * 60 * 60 * 24 * oneYear
-barsCountOneYear = fastSearchN(time, oneYearAgo, oneYear)
+barsCountOneYear = fastSearchTimeIndex(oneYearAgo, oneYear)
 perfYTD = perfYTD()
 plot((close - open[4]) / open[4] * 100, title='Perf.5D')
 plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')

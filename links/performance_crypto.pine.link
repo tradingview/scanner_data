@@ -17,7 +17,7 @@ plot(perf6M, title='Perf.6M')
 
 oneYear = 365
 oneYearAgo = timenow - 1000 * 60 * 60 * 24 * oneYear
-barsCountOneYear = fastSearchN(time, oneYearAgo, oneYear)
+barsCountOneYear = fastSearchTimeIndex(oneYearAgo, oneYear)
 perfY = rr(barsCountOneYear, oneYear)
 plot(perfY, title='Perf.Y')
 
@@ -39,7 +39,8 @@ plot(perf5Y_USD, title='Perf.5Y.USD')
 plot(perfYTD_USD, title='Perf.YTD.USD')
 
 // Perf.All
-[firstOpenUSD, lastCloseUSD] = request.security(syminfo.tickerid, "D", [open, close], lookahead = barmerge.lookahead_on, currency = "USD", ignore_invalid_symbol=true)
+[openUSD, lastCloseUSD] = request.security(syminfo.tickerid, "D", [open, close], lookahead = barmerge.lookahead_on, currency = "USD", ignore_invalid_symbol=true)
+var firstOpenUSD = openUSD
 float perfAllUSD = na
 if barstate.islast and not na(firstOpenUSD) and not na(lastCloseUSD) and firstOpenUSD > 0
 	perfAllUSD := (lastCloseUSD - firstOpenUSD) * 100 / math.abs(firstOpenUSD)

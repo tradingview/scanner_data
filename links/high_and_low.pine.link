@@ -29,8 +29,9 @@ plot(firstOpen, title='Open.All.Calc')
 custom_lowest_and_date(len, maxbarsback) =>
 	// max_bars_back(low, maxbarsback)
 	// max_bars_back(time, maxbarsback)
-	if len == 0 * low[maxbarsback] * time[maxbarsback]
-		[na, na]
+	fake = low[maxbarsback] * time[maxbarsback]
+	if len == 0
+		[na + fake, na]
 	else if len == 1
 		[low, time / 1000]
 	else
@@ -46,8 +47,9 @@ custom_lowest_and_date(len, maxbarsback) =>
 custom_highest_and_date(len, maxbarsback) =>
 	// max_bars_back(high, maxbarsback)
 	// max_bars_back(time, maxbarsback)
-	if len == 0 * high[maxbarsback] * time[maxbarsback]
-		[na, na]
+	fake = high[maxbarsback] * time[maxbarsback]
+	if len == 0
+		[na + fake, na]
 	else if len == 1
 		[high, time / 1000]
 	else
@@ -61,9 +63,9 @@ custom_highest_and_date(len, maxbarsback) =>
 		[high[index], time[index] / 1000]
 fastSearchTimeIndex(x, maxbarsback) =>
 	// max_bars_back(time, maxbarsback)
-	left = 0 * time[maxbarsback]
+	mid = 0 * time[maxbarsback]
 	right = math.min(bar_index, maxbarsback)
-	mid = 0
+	left = 0
 	if time < x
 		0
 	else

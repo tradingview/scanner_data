@@ -117,7 +117,11 @@ plot(RSI21, title='RSI21')
 plot(RSI21[1], title='RSI21[1]')
 
 // study(title="Average True Range", shorttitle="ATR", overlay=false)
-plot(ta.rma(ta.tr(true), 14), title='ATR')
+ATR = ta.rma(ta.tr(true), 14)
+plot(ATR, title='ATR')
+
+// Average True Range Percent (ATRP)
+plot(ATR / close * 100, title='ATRP')
 
 // study("Average Directional Index", shorttitle="ADX")
 dirmov(len) =>
@@ -346,8 +350,14 @@ plot(IC_Lead2_20_60_120_30[IC_displacement], title='Ichimoku.Lead2_20_60_120_30'
 VWMA = ta.vwma(close, 20)
 plot(VWMA, title='VWMA')
 
-// Average Day Range
-plot(ta.sma(high - low, 14), title='ADR')
+// Average Day Range (ADR)
+smaHigh = ta.sma(high, 14)
+smaLow = ta.sma(low, 14)
+ADR = smaHigh - smaLow
+plot(ADR, title='ADR')
+
+// Average Day Range Percent (ADRP)
+plot(ADR / close * 100, title='ADRP')
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 PriceAvg = EMA50

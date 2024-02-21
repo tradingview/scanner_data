@@ -6,19 +6,19 @@ maxBufferSize = 2*countOfFiveMinsInDay
 cumVolTF = "5"
 expr(offset, maxBufferSize) =>
 	if (syminfo.volumetype == "quote")
-		max_bars_back(volume, maxBufferSize)
-		volume[offset]
+		// max_bars_back(volume, maxBufferSize)
+		volume[offset] + 0 * volume[maxBufferSize]
 	else
 		if syminfo.volumetype == "base"
-			max_bars_back(close, maxBufferSize)
-			max_bars_back(volume, maxBufferSize)
-			close[offset] * volume[offset]
+			// max_bars_back(close, maxBufferSize)
+			// max_bars_back(volume, maxBufferSize)
+			close[offset] * volume[offset] + 0 * close[maxBufferSize] * volume[maxBufferSize]
 		else
 			na
 
 cum24hVol() =>
-	max_bars_back(time, maxBufferSize)
-	var cumSum = 0.
+	// max_bars_back(time, maxBufferSize)
+	var cumSum = 0. * time[maxBufferSize]
 	var int firstBarTimeIndex = na
 	if na(firstBarTimeIndex) // 24 H have not elapsed yet
 		sum = 0.
@@ -51,8 +51,8 @@ plot(volQuote, title = "volume_quote", style = plot.style_columns)
 // 24h prev value (generic)
 prev24hVal(source) =>
 	src = source
-	max_bars_back(src, maxBufferSize)
-	max_bars_back(time, maxBufferSize)
+	// max_bars_back(src, maxBufferSize)
+	// max_bars_back(time, maxBufferSize)
 	int BB24h = na
 	for i = 0 to countOfFiveMinsInDay
 		if (time - time[i]) >= msIn24h
@@ -60,7 +60,7 @@ prev24hVal(source) =>
 				BB24h := i
 			break
 		BB24h := i
-	src[BB24h]
+	src[BB24h] + 0 * src[maxBufferSize] * time[maxBufferSize]
 
 // 24h vol prev value
 vol24hPrev = prev24hVal(vol24h)

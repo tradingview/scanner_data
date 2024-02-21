@@ -29,7 +29,7 @@ plot(firstOpen, title='Open.All.Calc')
 custom_lowest_and_date(len, maxbarsback) =>
 	// max_bars_back(low, maxbarsback)
 	// max_bars_back(time, maxbarsback)
-	fake = low[maxbarsback] * time[maxbarsback]
+	fake = low[maxbarsback + 1] * time[maxbarsback + 1]
 	if len == 0
 		[na + fake, na]
 	else if len == 1
@@ -47,7 +47,7 @@ custom_lowest_and_date(len, maxbarsback) =>
 custom_highest_and_date(len, maxbarsback) =>
 	// max_bars_back(high, maxbarsback)
 	// max_bars_back(time, maxbarsback)
-	fake = high[maxbarsback] * time[maxbarsback]
+	fake = high[maxbarsback + 1] * time[maxbarsback + 1]
 	if len == 0
 		[na + fake, na]
 	else if len == 1

@@ -3188,6 +3188,9 @@ presets:
     - america
 - name: etfs_market_page_highest_yield
   filter:
+    - left: aum
+      operation: egreater
+      right: 100000000
     - left: dividends_yield
       operation: greater
       right: 0

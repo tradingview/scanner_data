@@ -2107,8 +2107,8 @@ presets:
   symbols:
     tickers:
       - AMEX:SPY
-      - AMEX:IVV
-      - AMEX:VOO
+      - NASDAQ:IBIT
+      - AMEX:VTI
       - NASDAQ:QQQ
       - TSE:1306
       - TSE:1305
@@ -2162,6 +2162,23 @@ presets:
       - AMEX:IYW
       - AMEX:GDX
       - AMEX:GUNR
+- name: etfs_market_page_bitcoin
+  sort:
+    sortBy: Value.Traded
+    sortOrder: desc
+  symbols:
+    tickers:
+      - NASDAQ:IBIT
+      - AMEX:BITB
+      - AMEX:DEFI
+      - AMEX:ARKB
+      - AMEX:GBTC
+      - AMEX:FBTC
+      - AMEX:BTCW
+      - AMEX:BTCO
+      - NASDAQ:BRRR
+      - AMEX:HODL
+      - AMEX:EZBC
 - name: etfs_market_page_highest_return
   filter:
     - left: nav_total_return.1Y
@@ -2565,92 +2582,6 @@ presets:
     to_currency: USD
   sort:
     sortBy: aum
-    sortOrder: desc
-  markets:
-    - america
-    - argentina
-    - australia
-    - austria
-    - bahrain
-    - bangladesh
-    - belgium
-    - brazil
-    - canada
-    - chile
-    - china
-    - colombia
-    - cyprus
-    - czech
-    - denmark
-    - egypt
-    - estonia
-    - finland
-    - france
-    - germany
-    - greece
-    - hongkong
-    - hungary
-    - iceland
-    - india
-    - indonesia
-    - israel
-    - italy
-    - japan
-    - kenya
-    - korea
-    - ksa
-    - kuwait
-    - latvia
-    - lithuania
-    - luxembourg
-    - malaysia
-    - mexico
-    - morocco
-    - netherlands
-    - newzealand
-    - nigeria
-    - norway
-    - pakistan
-    - peru
-    - philippines
-    - poland
-    - portugal
-    - qatar
-    - romania
-    - rsa
-    - russia
-    - serbia
-    - singapore
-    - slovakia
-    - spain
-    - srilanka
-    - sweden
-    - switzerland
-    - taiwan
-    - thailand
-    - tunisia
-    - turkey
-    - uae
-    - uk
-    - venezuela
-    - vietnam
-- name: etfs_market_page_highest_return_5y
-  filter:
-    - left: nav_total_return.5Y
-      operation: greater
-      right: 0
-    - left: typespecs
-      operation: has
-      right:
-        - etn
-        - etf
-    - left: is_primary
-      operation: equal
-      right: true
-  price_conversion:
-    to_currency: USD
-  sort:
-    sortBy: nav_total_return.5Y
     sortOrder: desc
   markets:
     - america
@@ -3257,6 +3188,9 @@ presets:
     - america
 - name: etfs_market_page_highest_yield
   filter:
+    - left: aum
+      operation: egreater
+      right: 100000000
     - left: dividends_yield
       operation: greater
       right: 0
@@ -3708,6 +3642,1125 @@ presets:
     to_currency: USD
   sort:
     sortBy: aum_perf.1M
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_total_market
+  filter:
+    - left: focus
+      operation: in_range
+      right:
+        - '52'
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_inverse
+  filter:
+    - left: leveraged_flag
+      operation: in_range
+      right:
+        - 'Inverse'
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_total_return.5Y
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_leveraged
+  filter:
+    - left: leveraged_flag
+      operation: in_range
+      right:
+        - 'Leveraged'
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_total_return.5Y
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_largest_inflows
+  filter:
+    - left: fund_flows.1Y
+      operation: greater
+      right: 0
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: fund_flows.1Y
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_largest_outflows
+  filter:
+    - left: fund_flows.1Y
+      operation: less
+      right: 0
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: fund_flows.1Y
+    sortOrder: asc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_highest_discount
+  filter:
+    - left: nav_discount_premium
+      operation: eless
+      right: 0
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_discount_premium
+    sortOrder: asc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_highest_premium
+  filter:
+    - left: nav_discount_premium
+      operation: egreater
+      right: 0
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: nav_discount_premium
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_monthly_distributions
+  filter:
+    - left: dividends_frequency
+      operation: in_range
+      right:
+        - 'Monthly'
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_highest_diversification
+  filter:
+    - left: weight_top_10
+      operation: less
+      right: 25
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: weight_top_10
+    sortOrder: asc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_highest_beta
+  filter:
+    - left: beta_3_year
+      operation: greater
+      right: 1
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: beta_3_year
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_lowest_beta
+  filter:
+    - left: beta_3_year
+      operation: in_range
+      right: [0.01, 0.99]
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: beta_3_year
+    sortOrder: asc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_negative_beta
+  filter:
+    - left: beta_3_year
+      operation: in_range
+      right: [-100, -0.1]
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: beta_3_year
+    sortOrder: asc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_highest_expense_ratio
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: expense_ratio
     sortOrder: desc
   markets:
     - america

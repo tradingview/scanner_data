@@ -2,8 +2,8 @@
 rVolAvgDays = 10
 var rVolBarDurationMS = timeframe.multiplier * 60 * 1000
 var rVolDayInBars = 24 * 60 / timeframe.multiplier
-var maxDetailedBars = (rVolAvgDays + 1) * rVolDayInBars
 rVolCalcSumVol(offset, daysBack, time1d) =>
+	maxDetailedBars = daysBack * rVolDayInBars
 	result = volume[maxDetailedBars] * time1d[maxDetailedBars] * 0
 	// expected intraday only!
 	maxDetailedUnixTime = maxDetailedBars * rVolBarDurationMS

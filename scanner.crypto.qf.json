@@ -248,5 +248,9 @@
   {
     "name": "dex_total_supply",
     "type": "number"
+  },
+  {
+      "name": "short-description",
+      "type": "text"
   }
 ]

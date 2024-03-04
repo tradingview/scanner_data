@@ -1355,5 +1355,9 @@
     {
         "name": "issuance_of_stock_net_ttm",
         "type": "fundamental_price"
+    },
+    {
+        "name": "short-description",
+        "type": "text"
     }
 ]

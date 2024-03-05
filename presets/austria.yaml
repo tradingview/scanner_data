@@ -587,8 +587,8 @@ presets:
       - VIE:CCE
       - VIE:MCE
       - VIE:OIL
-      - VIE:RTX
-      - VIE:KTX
+      - VIE:IAX
+      - VIE:NTX
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

@@ -588,7 +588,7 @@ presets:
       - PSX:PSXDIV20
       - PSX:ACI
       - PSX:MZNPI
-      - PSX:JSMFI
+      - PSX:UPP9
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

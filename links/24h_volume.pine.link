@@ -22,7 +22,7 @@ sum24hVol(src) =>
 var cumVol = 0.
 cumVol += nz(volume)
 expr = syminfo.volumetype == "quote" ? volume : close * volume 
-vol24h = request.security(syminfo.tickerid, sumVolTF, sum24hVol(expr * request.currency_rate(syminfo.currency, currency)))
+vol24h = request.security(syminfo.tickerid, sumVolTF, sum24hVol(expr * request.currency_rate(syminfo.currency, currency, ignore_invalid_currency = true)), ignore_invalid_symbol = true)
 if barstate.islast 
     if syminfo.volumetype == "tick" and syminfo.type == "crypto" or cumVol == 0
         vol24h := na

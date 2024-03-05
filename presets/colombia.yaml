@@ -595,11 +595,9 @@ presets:
     tickers:
       - BVC:ICAP
       - BVC:IEQY
-      - BVC:IRSK
-      - BVC:HCOL
-      - BVC:HM40
       - BVC:ICSC
       - BVC:IIRC
+      - BVC:HCOL
       - BVC:INAV
 - name: highest_revenue_per_employee
   filter:

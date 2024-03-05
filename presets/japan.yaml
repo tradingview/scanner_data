@@ -607,7 +607,7 @@ presets:
       - TSE:MID400
       - TSE:SMALL
       - TSE:T17FIN
-      - TSE:RE
+      - TSE:T17RE
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

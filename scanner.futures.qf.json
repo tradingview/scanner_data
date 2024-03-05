@@ -63,5 +63,9 @@
     {
         "name": "all_time_low_day",
         "type": "time"
+    },
+    {
+        "name": "short-description",
+        "type": "text"
     }
 ]

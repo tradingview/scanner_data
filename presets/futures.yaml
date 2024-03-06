@@ -139,7 +139,6 @@ presets:
 - name: country_top_futures_commodities_br
   symbols:
     tickers:
-      - BMFBOVESPA:OZ11!
       - BMFBOVESPA:ETH1!
       - BMFBOVESPA:CCM1!
       - BMFBOVESPA:BGI1!
@@ -851,7 +850,7 @@ presets:
 - name: locale_top_futures_metals_br
   symbols:
     tickers:
-      - BMFBOVESPA:OZ11!
+      - COMEX:GC1!
       - COMEX:SI1!
       - NYMEX:PL1!
       - COMEX:HG1!
@@ -1235,3 +1234,71 @@ presets:
       - CME:6S1!
       - CME:6A1!
       - CME:6C1!
+- name: locale_top_futures_energy_se
+  symbols:
+    tickers:
+      - ICEEUR:BRN1!
+      - ICEEUR:GWM1!
+      - ICEEUR:WBS1!
+      - ICEEUR:UHU1!
+      - ICEEUR:UHO1!
+      - ICEEUR:ULS1!
+- name: locale_top_futures_metals_se
+  symbols:
+    tickers:
+      - COMEX:GC1!
+      - COMEX:SI1!
+      - LME:NI1!
+      - LME:CA1!
+      - LME:SN1!
+      - LME:AH1!
+- name: locale_top_futures_agricultural_se
+  symbols:
+    tickers:
+      - ICEEUR:RC1!
+      - ICEEUR:W1!
+      - ICEEUR:C1!
+      - ICEEUR:WHT1!
+      - CBOT:ZS1!
+      - CBOT:ZC1!
+- name: locale_top_futures_currency_se
+  symbols:
+    tickers:
+      - EUREX:FCUS1!
+      - EUREX:FCSK1!
+      - EUREX:FCNS1!
+      - EUREX:FCEU1!
+      - EUREX:FCUY1!
+      - EUREX:FCEP1!
+- name: locale_top_futures_energy_ir
+  symbols:
+    tickers:
+      - ""
+- name: locale_top_futures_metals_ir
+  symbols:
+    tickers:
+      - ""
+- name: locale_top_futures_agricultural_ir
+  symbols:
+    tickers:
+      - ""
+- name: locale_top_futures_currency_ir
+  symbols:
+    tickers:
+      - ""
+- name: locale_top_futures_energy_hu
+  symbols:
+    tickers:
+      - ""
+- name: locale_top_futures_metals_hu
+  symbols:
+    tickers:
+      - ""
+- name: locale_top_futures_agricultural_hu
+  symbols:
+    tickers:
+      - ""
+- name: locale_top_futures_currency_hu
+  symbols:
+    tickers:
+      - ""

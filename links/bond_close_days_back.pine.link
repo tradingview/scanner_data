@@ -1,0 +1,15 @@
+// Bond Yield 1 | 30 | 365 days
+dayYield = 1
+monthYield = 30
+yearYield = 365
+dayAgoYield = timenow - 1000 * 60 * 60 * 24 * dayYield
+monthAgoYield = timenow - 1000 * 60 * 60 * 24 * monthYield
+yearAgoYield = timenow - 1000 * 60 * 60 * 24 * yearYield
+countOfBars1DayAgoBond = fastSearchTimeIndex(dayAgoYield, dayYield)
+countOfBars1MonthAgoBond = fastSearchTimeIndex(monthAgoYield, monthYield)
+countOfBars1YearAgoBond = fastSearchTimeIndex(yearAgoYield, yearYield)
+
+max_bars_back(close, yearYield)
+plot(close[countOfBars1DayAgoBond], title="close_1_days_back")
+plot(close[countOfBars1MonthAgoBond], title="close_30_days_back")
+plot(close[countOfBars1YearAgoBond], title="close_365_days_back")

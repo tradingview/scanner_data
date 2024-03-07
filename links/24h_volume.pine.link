@@ -3,43 +3,29 @@ currency = "USD"
 msIn24h = 24*60*60*1000
 countOfFiveMinsInDay = 24*60/5
 maxBufferSize = 2*countOfFiveMinsInDay
-cumVolTF = "5"
-expr(offset, maxBufferSize) =>
-	if (syminfo.volumetype == "quote")
-		max_bars_back(volume, maxBufferSize)
-		volume[offset]
-	else
-		if syminfo.volumetype == "base"
-			max_bars_back(close, maxBufferSize)
-			max_bars_back(volume, maxBufferSize)
-			close[offset] * volume[offset]
-		else
-			na
-
-cum24hVol() =>
-	max_bars_back(time, maxBufferSize)
-	var cumSum = 0.
-	var int firstBarTimeIndex = na
-	if na(firstBarTimeIndex) // 24 H have not elapsed yet
-		sum = 0.
-		for i = 0 to countOfFiveMinsInDay
-			if (time - time[i]) >= msIn24h
-				firstBarTimeIndex := bar_index - i + 1
-				break
-			sum += expr(i, maxBufferSize)
-		cumSum := sum
-	else
-		cumSum += nz(expr(0, maxBufferSize))
-		for i = firstBarTimeIndex to bar_index
-			if (time - time[bar_index - i]) < msIn24h
-				firstBarTimeIndex := i
-				break
-			cumSum -= nz(expr(bar_index - i, maxBufferSize))
-			if cumSum <= 0
-				cumSum := 0
-	cumSum
-
-vol24h = request.security(syminfo.tickerid, cumVolTF, cum24hVol(), lookahead = barmerge.lookahead_off, currency = currency, ignore_invalid_symbol=true)
+sumVolTF = "5"
+// rollOnTimeWhen is internal function from PineCoders/getSeries/1 library
+rollOnTimeWhen(series float src, simple int timeWindow, series bool cond = true, simple int minBars = 1) =>
+    var float[] sources = array.new_float(0)
+    var int[]   times   = array.new_int(0)
+    if cond
+        array.push(sources, src)
+        array.push(times,   time)
+    if array.size(sources) > 0
+        while time - array.get(times, 0) >= timeWindow and array.size(sources) > minBars
+            array.shift(sources)
+            array.shift(times)
+    float[] result = sources
+sum24hVol(src) =>
+    sourceValues = rollOnTimeWhen(src, msIn24h)
+    sourceValues.sum()
+var cumVol = 0.
+cumVol += nz(volume)
+expr = syminfo.volumetype == "quote" ? volume : close * volume
+vol24h = request.security(syminfo.tickerid, sumVolTF, sum24hVol(expr * request.currency_rate(syminfo.currency, currency, ignore_invalid_currency = true)), ignore_invalid_symbol = true)
+if barstate.islast
+    if syminfo.volumetype == "tick" and syminfo.type == "crypto" or cumVol == 0
+        vol24h := na
 plot(vol24h, title = "24h_vol", style = plot.style_columns)
 
 // volume in base and quote currencies

@@ -344,43 +344,43 @@
   },
   {
     "name": "dex_buy_volume_15m",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_1h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_4h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_12h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_24h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_15m",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_1h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_4h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_12h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_24h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_txs_count_15m",
@@ -421,5 +421,25 @@
   {
     "name": "dex_txs_count_uniq_24h",
     "type": "number"
+  },
+  {
+    "name": "dex_trading_volume_15m",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_1h",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_4h",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_12h",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_24h",
+    "type": "price"
   }
 ]

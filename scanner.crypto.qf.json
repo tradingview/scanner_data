@@ -234,6 +234,11 @@
     "extract_from": "exchange-info" 
   },
   {
+    "name": "blockchain-id",
+    "type": "text",
+    "extract_from": "exchange-info" 
+  },
+  {
     "name": "all_time_high_day",
     "type": "time"
   },

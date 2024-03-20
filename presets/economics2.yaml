@@ -17301,6 +17301,132 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_trd_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_bsnss_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ad
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AD
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ad
   filter:
     - left: exchange
@@ -17354,6 +17480,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_af
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AF
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -17427,6 +17567,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_af
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AF
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_af
   filter:
     - left: exchange
@@ -17455,6 +17609,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_ag
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AG
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_ag
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AG
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ag
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ag
   filter:
     - left: exchange
@@ -17469,6 +17665,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_ag
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AG
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_ag
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AG
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_ag
   filter:
     - left: exchange
@@ -17480,6 +17704,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_ag
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AG
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ag
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AG
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -17536,6 +17788,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_al
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AL
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -17679,6 +17945,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_am
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_am
   filter:
     - left: exchange
@@ -17819,6 +18099,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ao
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ao
   filter:
     - left: exchange
@@ -17889,6 +18183,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ao
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AO
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ao
   filter:
     - left: exchange
@@ -17917,6 +18225,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_aw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AW
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_prce_aw
   filter:
     - left: exchange
@@ -17928,6 +18250,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_aw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AW
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -17970,6 +18306,48 @@ presets:
     - left: economic-category-id
       operation: equal
       right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_bsnss_aw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AW
+    - left: economic-category-id
+      operation: equal
+      right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_aw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AW
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_aw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AW
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -18026,6 +18404,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_az
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -18099,6 +18491,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_az
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: AZ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_az
   filter:
     - left: exchange
@@ -18152,6 +18558,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ba
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BA
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -18295,6 +18715,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_bb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BB
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_bb
   filter:
     - left: exchange
@@ -18365,6 +18799,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BB
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bb
   filter:
     - left: exchange
@@ -18418,6 +18866,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bf
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BF
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -18491,6 +18953,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bf
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BF
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bf
   filter:
     - left: exchange
@@ -18544,6 +19020,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -18687,6 +19177,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_bi
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BI
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_bi
   filter:
     - left: exchange
@@ -18743,6 +19247,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_bi
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BI
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_bi
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BI
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bi
   filter:
     - left: exchange
@@ -18796,6 +19328,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BJ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -18869,6 +19415,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BJ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bj
   filter:
     - left: exchange
@@ -18925,6 +19485,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_bm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_bm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BM
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_bm
   filter:
     - left: exchange
@@ -18939,6 +19527,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_gov_bm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BM
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_bsnss_bm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BM
+    - left: economic-category-id
+      operation: equal
+      right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_cnsm_bm
   filter:
     - left: exchange
@@ -18950,6 +19566,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_bm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BM
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -19006,6 +19636,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BN
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -19079,6 +19723,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BN
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bn
   filter:
     - left: exchange
@@ -19132,6 +19790,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -19205,6 +19877,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BO
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bo
   filter:
     - left: exchange
@@ -19258,6 +19944,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bs
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BS
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -19401,6 +20101,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_bt
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BT
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_bt
   filter:
     - left: exchange
@@ -19471,6 +20185,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bt
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BT
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bt
   filter:
     - left: exchange
@@ -19524,6 +20252,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BW
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -19597,6 +20339,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BW
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bw
   filter:
     - left: exchange
@@ -19650,6 +20406,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_by
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BY
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -19723,6 +20493,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_by
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BY
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_by
   filter:
     - left: exchange
@@ -19776,6 +20560,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_bz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -19849,6 +20647,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_bz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: BZ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_bz
   filter:
     - left: exchange
@@ -19902,6 +20714,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_cd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CD
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -19975,6 +20801,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_cd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CD
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_cd
   filter:
     - left: exchange
@@ -20028,6 +20868,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_cf
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CF
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -20087,6 +20941,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_cf
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CF
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_cf
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CF
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_cf
   filter:
     - left: exchange
@@ -20140,6 +21022,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_cg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -20199,6 +21095,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_cg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CG
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_cg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CG
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_cg
   filter:
     - left: exchange
@@ -20252,6 +21176,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ci
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CI
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -20325,6 +21263,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ci
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CI
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ci
   filter:
     - left: exchange
@@ -20378,6 +21330,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_cm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -20448,6 +21414,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_cm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CM
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -20661,6 +21641,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_cu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CU
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_cu
   filter:
     - left: exchange
@@ -20801,6 +21795,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_cv
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CV
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_cv
   filter:
     - left: exchange
@@ -20871,6 +21879,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_cv
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: CV
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_cv
   filter:
     - left: exchange
@@ -20924,6 +21946,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_dj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DJ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -20983,6 +22019,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_dj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DJ
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_dj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DJ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_dj
   filter:
     - left: exchange
@@ -21011,6 +22075,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_dm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DM
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_dm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DM
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_dm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_dm
   filter:
     - left: exchange
@@ -21025,6 +22131,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_dm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DM
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_dm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DM
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_dm
   filter:
     - left: exchange
@@ -21036,6 +22170,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_dm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DM
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_dm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DM
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -21092,6 +22254,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_do
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -21165,6 +22341,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_do
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DO
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_do
   filter:
     - left: exchange
@@ -21218,6 +22408,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_dz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -21291,6 +22495,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_dz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: DZ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_dz
   filter:
     - left: exchange
@@ -21344,6 +22562,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ec
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: EC
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -21417,6 +22649,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ec
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: EC
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ec
   filter:
     - left: exchange
@@ -21473,6 +22719,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_er
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ER
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_er
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ER
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_er
   filter:
     - left: exchange
@@ -21512,6 +22786,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_er
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ER
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_er
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ER
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -21571,6 +22873,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_et
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ET
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_et
   filter:
     - left: exchange
@@ -21627,6 +22943,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_et
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ET
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_et
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ET
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_et
   filter:
     - left: exchange
@@ -21680,6 +23024,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_eu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: EU
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -21823,6 +23181,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_fj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: FJ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_fj
   filter:
     - left: exchange
@@ -21921,6 +23293,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_gdp_fo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: FO
+    - left: economic-category-id
+      operation: equal
+      right: gdp
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_lbr_fo
   filter:
     - left: exchange
@@ -21946,6 +23332,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_fo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: FO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_fo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: FO
+    - left: economic-category-id
+      operation: equal
+      right: mny
   sort:
     sortBy: name
     sortOrder: asc
@@ -22005,6 +23419,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_fo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: FO
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_fo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: FO
+    - left: economic-category-id
+      operation: equal
+      right: txs
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_gdp_ga
   filter:
     - left: exchange
@@ -22044,6 +23486,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ga
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GA
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -22103,6 +23559,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_ga
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GA
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ga
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GA
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ga
   filter:
     - left: exchange
@@ -22131,6 +23615,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_gd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GD
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_gd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GD
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GD
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_gd
   filter:
     - left: exchange
@@ -22145,6 +23671,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_gd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GD
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_gd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GD
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_gd
   filter:
     - left: exchange
@@ -22156,6 +23710,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_gd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GD
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_gd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GD
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -22212,6 +23794,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ge
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GE
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -22285,6 +23881,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ge
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GE
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ge
   filter:
     - left: exchange
@@ -22338,6 +23948,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gh
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GH
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -22453,6 +24077,132 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_trd_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_bsnss_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_gl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GL
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_gl
   filter:
     - left: exchange
@@ -22506,6 +24256,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -22565,6 +24329,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_gm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GM
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_gm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GM
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_gm
   filter:
     - left: exchange
@@ -22618,6 +24410,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GN
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -22691,6 +24497,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_gn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GN
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_gn
   filter:
     - left: exchange
@@ -22744,6 +24564,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gq
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GQ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -22803,6 +24637,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_gq
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GQ
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_gq
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GQ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_gq
   filter:
     - left: exchange
@@ -22856,6 +24718,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gt
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GT
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -22929,6 +24805,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_gt
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GT
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_gt
   filter:
     - left: exchange
@@ -22982,6 +24872,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GW
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -23055,6 +24959,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_gw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GW
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_gw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GW
+    - left: economic-category-id
+      operation: equal
+      right: txs
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_gdp_gy
   filter:
     - left: exchange
@@ -23094,6 +25026,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_gy
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GY
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -23153,6 +25099,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_gy
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GY
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_gy
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: GY
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_gy
   filter:
     - left: exchange
@@ -23206,6 +25180,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_hn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: HN
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -23349,6 +25337,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_hr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: HR
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_hr
   filter:
     - left: exchange
@@ -23489,6 +25491,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ht
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: HT
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ht
   filter:
     - left: exchange
@@ -23556,6 +25572,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ht
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: HT
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -23727,6 +25757,146 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_gdp_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: gdp
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_lbr_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_trd_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_bsnss_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_im
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IM
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_im
   filter:
     - left: exchange
@@ -23780,6 +25950,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_iq
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IQ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -23839,6 +26023,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_iq
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IQ
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_iq
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IQ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_iq
   filter:
     - left: exchange
@@ -23892,6 +26104,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ir
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IR
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -23965,6 +26191,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ir
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: IR
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ir
   filter:
     - left: exchange
@@ -24018,6 +26258,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_jm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: JM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -24091,6 +26345,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_jm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: JM
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_jm
   filter:
     - left: exchange
@@ -24144,6 +26412,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_jo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: JO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -24287,6 +26569,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_kg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_kg
   filter:
     - left: exchange
@@ -24427,6 +26723,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_kh
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KH
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_kh
   filter:
     - left: exchange
@@ -24497,6 +26807,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_kh
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KH
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_kh
   filter:
     - left: exchange
@@ -24525,6 +26849,90 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_trd_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_ki
   filter:
     - left: exchange
@@ -24536,6 +26944,48 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_ki
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KI
+    - left: economic-category-id
+      operation: equal
+      right: txs
   sort:
     sortBy: name
     sortOrder: asc
@@ -24578,6 +27028,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_km
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -24637,6 +27101,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_km
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KM
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_km
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KM
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_km
   filter:
     - left: exchange
@@ -24693,6 +27185,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_kp
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KP
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_kp
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KP
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_kp
   filter:
     - left: exchange
@@ -24707,6 +27227,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_gov_kp
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KP
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_kp
   filter:
     - left: exchange
@@ -24718,6 +27252,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_kp
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KP
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_kp
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KP
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -24777,6 +27339,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ky
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KY
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_ky
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KY
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_ky
   filter:
     - left: exchange
@@ -24802,6 +27392,48 @@ presets:
     - left: economic-category-id
       operation: equal
       right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_bsnss_ky
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KY
+    - left: economic-category-id
+      operation: equal
+      right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_ky
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KY
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ky
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KY
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -24858,6 +27490,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_kz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: KZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -25001,6 +27647,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_la
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LA
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_la
   filter:
     - left: exchange
@@ -25057,6 +27717,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_la
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LA
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_la
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LA
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_la
   filter:
     - left: exchange
@@ -25110,6 +27798,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_lb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LB
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -25183,6 +27885,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_lb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LB
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_lb
   filter:
     - left: exchange
@@ -25211,6 +27927,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_lc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LC
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_lc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LC
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_lc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LC
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_lc
   filter:
     - left: exchange
@@ -25225,6 +27983,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_lc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LC
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_lc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LC
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_lc
   filter:
     - left: exchange
@@ -25236,6 +28022,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_lc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LC
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_lc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LC
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -25295,6 +28109,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_li
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LI
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_li
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LI
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_li
   filter:
     - left: exchange
@@ -25334,6 +28176,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_li
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LI
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_li
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LI
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -25390,6 +28260,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_lr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LR
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -25463,6 +28347,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_lr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LR
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_lr
   filter:
     - left: exchange
@@ -25516,6 +28414,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ls
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LS
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -25575,6 +28487,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_ls
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LS
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ls
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LS
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ls
   filter:
     - left: exchange
@@ -25628,6 +28568,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ly
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LY
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -25687,6 +28641,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_ly
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LY
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ly
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: LY
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ly
   filter:
     - left: exchange
@@ -25729,6 +28711,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_prce_mc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MC
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_mc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MC
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_mc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MC
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_mc
   filter:
     - left: exchange
@@ -25740,6 +28764,62 @@ presets:
     - left: economic-category-id
       operation: equal
       right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_mc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MC
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_bsnss_mc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MC
+    - left: economic-category-id
+      operation: equal
+      right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_mc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MC
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_mc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MC
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -25796,6 +28876,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_md
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MD
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -25869,6 +28963,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_md
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MD
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_md
   filter:
     - left: exchange
@@ -25922,6 +29030,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_me
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ME
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -26065,6 +29187,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_mg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_mg
   filter:
     - left: exchange
@@ -26121,6 +29257,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_mg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MG
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_mg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MG
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_mg
   filter:
     - left: exchange
@@ -26174,6 +29338,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_mk
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MK
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -26317,6 +29495,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ml
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ML
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ml
   filter:
     - left: exchange
@@ -26387,6 +29579,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ml
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ML
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ml
   filter:
     - left: exchange
@@ -26440,6 +29646,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_mm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -26499,6 +29719,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_mm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MM
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_mm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MM
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_mm
   filter:
     - left: exchange
@@ -26552,6 +29800,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_mn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MN
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -26695,6 +29957,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_mo
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_mo
   filter:
     - left: exchange
@@ -26835,6 +30111,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_mr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MR
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_mr
   filter:
     - left: exchange
@@ -26891,6 +30181,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_mr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MR
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_mr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MR
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_mr
   filter:
     - left: exchange
@@ -26944,6 +30262,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_mt
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MT
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -27087,6 +30419,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_mu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MU
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_mu
   filter:
     - left: exchange
@@ -27227,6 +30573,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_mv
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MV
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_mv
   filter:
     - left: exchange
@@ -27297,6 +30657,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_mv
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MV
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_mv
   filter:
     - left: exchange
@@ -27350,6 +30724,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_mw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MW
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -27423,6 +30811,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_mw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MW
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_mw
   filter:
     - left: exchange
@@ -27476,6 +30878,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_mz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -27549,6 +30965,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_mz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: MZ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_mz
   filter:
     - left: exchange
@@ -27602,6 +31032,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_na
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NA
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -27675,6 +31119,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_na
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NA
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_na
   filter:
     - left: exchange
@@ -27731,6 +31189,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_nc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NC
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_nc
   filter:
     - left: exchange
@@ -27756,6 +31228,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_nc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NC
+    - left: economic-category-id
+      operation: equal
+      right: gov
   sort:
     sortBy: name
     sortOrder: asc
@@ -27801,6 +31287,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_txs_nc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NC
+    - left: economic-category-id
+      operation: equal
+      right: txs
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_gdp_ne
   filter:
     - left: exchange
@@ -27840,6 +31340,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ne
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NE
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -27913,6 +31427,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ne
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NE
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ne
   filter:
     - left: exchange
@@ -27966,6 +31494,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ni
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NI
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -28039,6 +31581,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ni
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NI
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ni
   filter:
     - left: exchange
@@ -28092,6 +31648,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_np
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: NP
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -28235,6 +31805,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_om
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: OM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_om
   filter:
     - left: exchange
@@ -28375,6 +31959,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_pa
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PA
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_pa
   filter:
     - left: exchange
@@ -28445,6 +32043,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_pa
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PA
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_pa
   filter:
     - left: exchange
@@ -28498,6 +32110,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_pg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -28557,6 +32183,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_pg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PG
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_pg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PG
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_pg
   filter:
     - left: exchange
@@ -28610,6 +32264,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_pr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PR
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -28753,6 +32421,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ps
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PS
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_ps
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PS
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_ps
   filter:
     - left: exchange
@@ -28795,6 +32491,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_ps
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PS
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_hse_ps
   filter:
     - left: exchange
@@ -28806,6 +32516,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_ps
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PS
+    - left: economic-category-id
+      operation: equal
+      right: txs
   sort:
     sortBy: name
     sortOrder: asc
@@ -28848,6 +32572,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_py
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PY
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -28921,6 +32659,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_py
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: PY
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_py
   filter:
     - left: exchange
@@ -28974,6 +32726,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_rw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: RW
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -29047,6 +32813,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_rw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: RW
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_rw
   filter:
     - left: exchange
@@ -29075,6 +32855,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_sb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SB
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_prce_sb
   filter:
     - left: exchange
@@ -29086,6 +32880,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SB
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -29103,6 +32911,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_sb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SB
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_sb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SB
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_sb
   filter:
     - left: exchange
@@ -29114,6 +32950,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_sb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SB
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_sb
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SB
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -29170,6 +33034,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SC
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -29243,6 +33121,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_sc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SC
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_sc
   filter:
     - left: exchange
@@ -29296,6 +33188,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SD
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -29366,6 +33272,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_sd
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SD
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -29579,6 +33499,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_sl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SL
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_sl
   filter:
     - left: exchange
@@ -29635,6 +33569,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_sl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SL
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_sl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SL
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_sl
   filter:
     - left: exchange
@@ -29646,6 +33608,62 @@ presets:
     - left: economic-category-id
       operation: equal
       right: txs
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gdp_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: gdp
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_lbr_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -29663,6 +33681,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_sm
   filter:
     - left: exchange
@@ -29674,6 +33720,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_sm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SM
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -29730,6 +33804,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SN
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -29803,6 +33891,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_sn
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SN
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_sn
   filter:
     - left: exchange
@@ -29859,6 +33961,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_so
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_so
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SO
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_trd_so
   filter:
     - left: exchange
@@ -29898,6 +34028,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_so
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SO
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_so
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SO
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -29957,6 +34115,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_sr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SR
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_sr
   filter:
     - left: exchange
@@ -30010,6 +34182,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_sr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SR
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_sr
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SR
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -30069,6 +34269,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ss
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SS
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ss
   filter:
     - left: exchange
@@ -30125,6 +34339,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_ss
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SS
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ss
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SS
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_ss
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SS
+    - left: economic-category-id
+      operation: equal
+      right: txs
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_gdp_st
   filter:
     - left: exchange
@@ -30164,6 +34420,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_st
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ST
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -30237,6 +34507,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_st
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ST
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_st
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ST
+    - left: economic-category-id
+      operation: equal
+      right: txs
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_gdp_sv
   filter:
     - left: exchange
@@ -30276,6 +34574,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sv
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SV
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -30349,6 +34661,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_sv
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SV
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_sv
   filter:
     - left: exchange
@@ -30402,6 +34728,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sy
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SY
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -30475,6 +34815,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_sy
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SY
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_sy
   filter:
     - left: exchange
@@ -30528,6 +34882,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_sz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: SZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -30671,6 +35039,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_td
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TD
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_td
   filter:
     - left: exchange
@@ -30727,6 +35109,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_td
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TD
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_td
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TD
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_td
   filter:
     - left: exchange
@@ -30780,6 +35190,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_tg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -30853,6 +35277,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_tg
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TG
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_tg
   filter:
     - left: exchange
@@ -30906,6 +35344,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_tj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TJ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -30979,6 +35431,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_tj
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TJ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_tj
   filter:
     - left: exchange
@@ -31032,6 +35498,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_tl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TL
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -31105,6 +35585,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_tl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TL
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_tl
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TL
+    - left: economic-category-id
+      operation: equal
+      right: txs
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_gdp_tm
   filter:
     - left: exchange
@@ -31144,6 +35652,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_tm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_tm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TM
+    - left: economic-category-id
+      operation: equal
+      right: mny
   sort:
     sortBy: name
     sortOrder: asc
@@ -31203,6 +35739,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_tm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TM
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_tm
   filter:
     - left: exchange
@@ -31231,6 +35781,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_to
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TO
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_to
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TO
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_to
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TO
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_to
   filter:
     - left: exchange
@@ -31245,6 +35837,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_to
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TO
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_to
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TO
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_to
   filter:
     - left: exchange
@@ -31256,6 +35876,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_to
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TO
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_to
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TO
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -31312,6 +35960,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_tt
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TT
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -31385,6 +36047,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_tt
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TT
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_tt
   filter:
     - left: exchange
@@ -31438,6 +36114,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_tz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -31511,6 +36201,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_tz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: TZ
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_tz
   filter:
     - left: exchange
@@ -31564,6 +36268,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ua
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: UA
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -31707,6 +36425,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ug
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: UG
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ug
   filter:
     - left: exchange
@@ -31844,6 +36576,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_uy
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: UY
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -31987,6 +36733,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_uz
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: UZ
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_uz
   filter:
     - left: exchange
@@ -32099,6 +36859,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_vc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VC
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_vc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VC
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_vc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VC
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_vc
   filter:
     - left: exchange
@@ -32113,6 +36915,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_vc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VC
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_vc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VC
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_vc
   filter:
     - left: exchange
@@ -32124,6 +36954,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_vc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VC
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_vc
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VC
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -32155,6 +37013,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_vu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VU
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_prce_vu
   filter:
     - left: exchange
@@ -32166,6 +37038,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_vu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VU
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -32183,6 +37069,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_vu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VU
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_vu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VU
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_vu
   filter:
     - left: exchange
@@ -32194,6 +37108,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_vu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VU
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_vu
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: VU
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -32225,6 +37167,48 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_lbr_ws
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WS
+    - left: economic-category-id
+      operation: equal
+      right: lbr
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_prce_ws
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WS
+    - left: economic-category-id
+      operation: equal
+      right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_ws
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WS
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ws
   filter:
     - left: exchange
@@ -32239,6 +37223,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_trd_ws
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WS
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_ws
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WS
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_ws
   filter:
     - left: exchange
@@ -32250,6 +37262,34 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_ws
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WS
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ws
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WS
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc
@@ -32309,6 +37349,62 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ww
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WW
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_mny_ww
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WW
+    - left: economic-category-id
+      operation: equal
+      right: mny
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_trd_ww
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WW
+    - left: economic-category-id
+      operation: equal
+      right: trd
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_gov_ww
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WW
+    - left: economic-category-id
+      operation: equal
+      right: gov
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_bsnss_ww
   filter:
     - left: exchange
@@ -32320,6 +37416,48 @@ presets:
     - left: economic-category-id
       operation: equal
       right: bsnss
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_cnsm_ww
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WW
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_ww
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WW
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_txs_ww
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: WW
+    - left: economic-category-id
+      operation: equal
+      right: txs
   sort:
     sortBy: name
     sortOrder: asc
@@ -32362,6 +37500,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_xk
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: XK
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -32505,6 +37657,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hlth_ye
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: YE
+    - left: economic-category-id
+      operation: equal
+      right: hlth
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_mny_ye
   filter:
     - left: exchange
@@ -32575,6 +37741,20 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_hse_ye
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: YE
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_ye
   filter:
     - left: exchange
@@ -32628,6 +37808,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_zm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ZM
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -32687,6 +37881,34 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: country_related_economics_cnsm_zm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ZM
+    - left: economic-category-id
+      operation: equal
+      right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_zm
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ZM
+    - left: economic-category-id
+      operation: equal
+      right: hse
+  sort:
+    sortBy: name
+    sortOrder: asc
 - name: country_related_economics_txs_zm
   filter:
     - left: exchange
@@ -32740,6 +37962,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: prce
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hlth_zw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ZW
+    - left: economic-category-id
+      operation: equal
+      right: hlth
   sort:
     sortBy: name
     sortOrder: asc
@@ -32810,6 +38046,20 @@ presets:
     - left: economic-category-id
       operation: equal
       right: cnsm
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: country_related_economics_hse_zw
+  filter:
+    - left: exchange
+      operation: equal
+      right: ECONOMICS
+    - left: country_code
+      operation: equal
+      right: ZW
+    - left: economic-category-id
+      operation: equal
+      right: hse
   sort:
     sortBy: name
     sortOrder: asc

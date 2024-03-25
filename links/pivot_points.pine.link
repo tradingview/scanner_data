@@ -1,29 +1,17 @@
 // Pivot Points
-pivotX_open = float(na)
-pivotX_open := nz(pivotX_open[1], open)
-pivotX_high = float(na)
-pivotX_high := nz(pivotX_high[1], high)
-pivotX_low = float(na)
-pivotX_low := nz(pivotX_low[1], low)
-pivotX_prev_open = float(na)
-pivotX_prev_open := nz(pivotX_prev_open[1])
-pivotX_prev_high = float(na)
-pivotX_prev_high := nz(pivotX_prev_high[1])
-pivotX_prev_low = float(na)
-pivotX_prev_low := nz(pivotX_prev_low[1])
-pivotX_prev_close = float(na)
-pivotX_prev_close := nz(pivotX_prev_close[1])
-pivotXGetCurTF() =>
-	result = '1M'
-	if timeframe.isintraday
-		result := timeframe.multiplier <= 15 ? '1D' : '1W'
-	else
-		if timeframe.isweekly or timeframe.ismonthly
-			result := '12M'
-	result
-fNeg(value) =>
-	value <= 0 ? na : value
-pivotX_Interval = time(pivotXGetCurTF())
+var pivotXCurTF = if timeframe.isintraday
+	timeframe.multiplier <= 15 ? '1D' : '1W'
+else
+	timeframe.isweekly or timeframe.ismonthly ? '12M' : '1M'
+
+var pivotX_open = open
+var pivotX_high = high
+var pivotX_low = low
+var pivotX_prev_open = .0
+var pivotX_prev_high = .0
+var pivotX_prev_low = .0
+var pivotX_prev_close = .0
+pivotX_Interval = time(pivotXCurTF)
 if pivotX_Interval != pivotX_Interval[1]
 	pivotX_prev_open := pivotX_open
 	pivotX_prev_close := close[1]
@@ -35,4 +23,3 @@ if pivotX_Interval != pivotX_Interval[1]
 else
 	pivotX_high := math.max(pivotX_high, high)
 	pivotX_low := math.min(pivotX_low, low)
-

@@ -1,3 +1,6 @@
+fNeg(value) =>
+	value <= 0 ? na : value
+
 // Classic
 pivotX_Median = (pivotX_prev_high + pivotX_prev_low + pivotX_prev_close) / 3
 plot(fNeg(pivotX_Median), title='Pivot.M.Classic.Middle')

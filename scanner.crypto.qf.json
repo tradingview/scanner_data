@@ -234,6 +234,11 @@
     "extract_from": "exchange-info" 
   },
   {
+    "name": "blockchain-id",
+    "type": "text",
+    "extract_from": "exchange-info" 
+  },
+  {
     "name": "all_time_high_day",
     "type": "time"
   },
@@ -248,6 +253,10 @@
   {
     "name": "dex_total_supply",
     "type": "number"
+  },
+  {
+    "name": "dex_created_time",
+    "type": "time"
   },
   {
     "name": "dex_total_liquidity",
@@ -335,43 +344,43 @@
   },
   {
     "name": "dex_buy_volume_15m",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_1h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_4h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_12h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_buy_volume_24h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_15m",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_1h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_4h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_12h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_sell_volume_24h",
-    "type": "number"
+    "type": "price"
   },
   {
     "name": "dex_txs_count_15m",
@@ -412,5 +421,29 @@
   {
     "name": "dex_txs_count_uniq_24h",
     "type": "number"
+  },
+  {
+    "name": "dex_trading_volume_15m",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_1h",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_4h",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_12h",
+    "type": "price"
+  },
+  {
+    "name": "dex_trading_volume_24h",
+    "type": "price"
+  },
+  {
+    "name": "short-description",
+    "type": "text"
   }
 ]

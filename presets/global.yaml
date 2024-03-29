@@ -4831,10 +4831,6 @@ presets:
     - venezuela
     - vietnam
 - name: index_components_market_pages
-  filter:
-    - left: is_primary
-      operation: equal
-      right: true
   price_conversion:
     to_currency: USD
   sort:

@@ -93,7 +93,7 @@
       "type": "text"
     },
     {
-      "name": "issuer",
+      "name": "bond_issuer",
       "type": "text"
     },
     {
@@ -113,11 +113,11 @@
       "type": "text"
     },
     {
-      "name": "issuer_cr_parent",
+      "name": "bond_issuer_cr_parent",
       "type": "text"
     },
     {
-      "name": "issuer_stock_symbol",
+      "name": "bond_issuer_stock_symbol",
       "type": "text"
     },
     {
@@ -142,10 +142,6 @@
     },
     {
       "name": "issue_date",
-      "type": "time"
-    },
-    {
-      "name": "maturity_date",
       "type": "time"
     },
     {
@@ -177,7 +173,7 @@
       "type": "text"
     },
     {
-      "name": "issuer_type",
+      "name": "bond_issuer_type",
       "type": "text"
     },
     {
@@ -233,10 +229,6 @@
       "type": "fundamental_price"
     },
     {
-      "name": "shariah_compliant",
-      "type": "text"
-    },
-    {
       "name": "nominal_value",
       "type": "fundamental_price"
     },
@@ -250,7 +242,7 @@
     },
     {
       "name": "amount_outstanding_ratio",
-      "type": "final_percent"
+      "type": "percent"
     },
     {
       "name": "coupon_type",
@@ -366,10 +358,6 @@
     },
     {
       "name": "make_whole_call_spread",
-      "type": "number"
-    },
-    {
-      "name": "days_to_maturity",
       "type": "number"
     },
     {

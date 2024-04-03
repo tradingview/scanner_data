@@ -1,4 +1,4 @@
-//@version=5
-indicator(title='ScannerData', shorttitle='_SD_')
-
+#include <links/common.pine.link>
+#include <links/pivot_points_2.pine.link>
+#include <links/pivot_points_plots.pine.link>
 #include <links/bond_yield.pine.link>

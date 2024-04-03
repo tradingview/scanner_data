@@ -600,10 +600,10 @@ presets:
     tickers:
       - NSEIX:NIFTY1!
       - NSE:BANKNIFTY1!
+      - NSE:FINNIFTY1!
       - BSE:BSX1!
       - BSE:BKX1!
       - MCX:MCXBULLDEX1!
-      - NSE:FINNIFTY1!
 - name: locale_top_futures_energy_de
   symbols:
     tickers:
@@ -690,10 +690,10 @@ presets:
     tickers:
       - EURONEXT:FCE1!
       - EURONEXT:FTI1!
-      - ICEEUR:ZCC1!
       - EUREX:FMFR1!
       - EURONEXT:XFC1!
       - EURONEXT:EPE1!
+      - ICEEUR:ZCC1!
 - name: locale_top_futures_energy_es
   symbols:
     tickers:
@@ -778,8 +778,8 @@ presets:
 - name: locale_top_futures_index_it
   symbols:
     tickers:
-      - ICEEUR:MWV1!
       - EUREX:FMIT1!
+      - ICEEUR:MWV1!
       - EUREX:FVS1!
       - EUREX:FSMI1!
       - EURONEXT:PSI1!
@@ -1363,11 +1363,11 @@ presets:
 - name: locale_top_futures_index_sa
   symbols:
     tickers:
-      - SGX:FNSA1!
-      - ADX:FADX15F1!
-      - DFM:DFMGI1!
       - EUREX:FMSA1!
+      - SGX:FNSA1!
+      - DFM:DFMGI1!
       - NASDAQDUBAI:MSCIAE1!
+      - SGX:SGP1!
       - CBOT:AW1!
 - name: locale_top_futures_energy_il
   symbols:

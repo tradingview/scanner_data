@@ -554,16 +554,24 @@ presets:
       types:
       - sector
   sort:
-    sortBy: description
-    sortOrder: asc
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: market_industries
   symbols:
     query:
       types:
       - industry
   sort:
-    sortBy: description
-    sortOrder: asc
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: market_company
+  filter:
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: earning
   filter:
   - left: typespecs

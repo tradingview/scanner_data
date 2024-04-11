@@ -2164,7 +2164,7 @@ presets:
       - AMEX:GUNR
 - name: etfs_market_page_bitcoin
   sort:
-    sortBy: Value.Traded
+    sortBy: aum
     sortOrder: desc
   symbols:
     tickers:

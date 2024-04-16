@@ -3,4 +3,5 @@
 #include <links/pivot_points_plots.pine.link>
 #include <links/high_and_low.pine.link>
 #include <links/performance_functions.pine.link>
-#include <links/performance_crypto.pine.link>
+#include <links/performance.pine.link>
+#include <links/business_day.pine.link>

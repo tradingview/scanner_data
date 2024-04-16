@@ -245,7 +245,7 @@
       "type": "percent"
     },
     {
-      "name": "coupon_type",
+      "name": "coupon_type_general",
       "type": "text"
     },
     {
@@ -277,7 +277,7 @@
       "type": "text"
     },
     {
-      "name": "current_coupon_type",
+      "name": "coupon_type_current",
       "type": "text"
     },
     {

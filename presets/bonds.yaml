@@ -452,6 +452,10 @@ presets:
       - TVC:IT10Y
       - TVC:IT20Y
       - TVC:IT30Y
+- name: country_top_bonds_yield_ir
+  symbols:
+    tickers:
+      - ""
 - name: country_top_bonds_yield_jp
   symbols:
     tickers:

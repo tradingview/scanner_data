@@ -60,16 +60,16 @@ countOfBars1YearAgoBond = fastSearchTimeIndex(yearAgoYield, yearYield)
 ```
 ### Рекомендуется схлопывать одинаковые секюрити в одну при помощи тюплов
 ```
-fund_flows1M = request.security(makeFundFlowsTicker(), getFundTF(), sum(oneMonth), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
-fund_flows3M = request.security(makeFundFlowsTicker(), getFundTF(), sum(threeMonths), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+fund_flows1M = request.security(makeFundFlowsTicker(), getFundTF(), sum(month1), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+fund_flows3M = request.security(makeFundFlowsTicker(), getFundTF(), sum(month3), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flows1Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(oneYear), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
-fund_flows3Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(threeYears), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
-fund_flows5Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(fiveYears), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+fund_flows3Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(years3), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+fund_flows5Y = request.security(makeFundFlowsTicker(), getFundTF(), sum(years5), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 fund_flowsYTD = request.security(makeFundFlowsTicker(), getFundTF(), sumYTD(), ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 ```
 стоит зарефакторить так
 ```
-[fund_flows1M, fund_flows3M, fund_flows1Y, fund_flows3Y, fund_flows5Y, fund_flowsYTD] = request.security(fundFlowsTicker, fundTF, [sum(oneMonth), sum(threeMonths), sum(oneYear), sum(threeYears), sum(fiveYears), sumYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[fund_flows1M, fund_flows3M, fund_flows1Y, fund_flows3Y, fund_flows5Y, fund_flowsYTD] = request.security(fundFlowsTicker, fundTF, [sum(month1), sum(month3), sum(oneYear), sum(years3), sum(years5), sumYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 ```
 ### Следует переиспользовать вычиcления
 ```

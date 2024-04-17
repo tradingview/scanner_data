@@ -26,8 +26,8 @@ fundPerf(daysBack, perfMaxDaysForValid) =>
 		perf
 
 fundPerfYTD() =>
-	max_bars_back(time, 2*oneYear)
-	max_bars_back(close, 2*oneYear)
+	max_bars_back(time, 2*years1)
+	max_bars_back(close, 2*years1)
     
     lastI = 0
     for i = 1 to bar_index
@@ -44,7 +44,7 @@ fundPerfYTD() =>
 
 MCTicker = __financial_tickerid(syminfo.tickerid, "MARKET_CAP_BASIC", "D")
 // Perf.<1W | 1M | 3M | 6M | Y | 5Y | 10Y | YTD>
-[MCPerf1W, MCPerf1M, MCPerf3M, MCPerf6M, MCPerf1Y, MCPerf5Y, MCPerf10Y, MCPerfYTD] = request.security(MCTicker, fundTF, [fundPerf(week1, 10), fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(month6, 10), fundPerf(oneYear, 10), fundPerf(years5, 10), fundPerf(years10, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[MCPerf1W, MCPerf1M, MCPerf3M, MCPerf6M, MCPerf1Y, MCPerf5Y, MCPerf10Y, MCPerfYTD] = request.security(MCTicker, fundTF, [fundPerf(week1, 10), fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(month6, 10), fundPerf(years1, 10), fundPerf(years5, 10), fundPerf(years10, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(MCPerf1W, title="Perf.1W.MarketCap")
 plot(MCPerf1M, title="Perf.1M.MarketCap")

@@ -43,8 +43,8 @@ fundPerfYTD() =>
     perf
 
 MCTicker = __financial_tickerid(syminfo.tickerid, "MARKET_CAP_BASIC", "D")
-// Perf.<1W | 1M | 3M | 6M | Y | 5Y | 10Y | YTD>
-[MCPerf1W, MCPerf1M, MCPerf3M, MCPerf6M, MCPerf1Y, MCPerf5Y, MCPerf10Y, MCPerfYTD] = request.security(MCTicker, fundTF, [fundPerf(week1, 10), fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(month6, 10), fundPerf(years1, 10), fundPerf(years5, 10), fundPerf(years10, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+// Perf.<1W | 1M | 3M | 6M | Y | 5Y | YTD>
+[MCPerf1W, MCPerf1M, MCPerf3M, MCPerf6M, MCPerf1Y, MCPerf5Y, MCPerfYTD] = request.security(MCTicker, fundTF, [fundPerf(week1, 10), fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(month6, 10), fundPerf(years1, 10), fundPerf(years5, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(MCPerf1W, title="Perf.1W.MarketCap")
 plot(MCPerf1M, title="Perf.1M.MarketCap")
@@ -52,5 +52,4 @@ plot(MCPerf3M, title="Perf.3M.MarketCap")
 plot(MCPerf6M, title="Perf.6M.MarketCap")
 plot(MCPerf1Y, title="Perf.1Y.MarketCap")
 plot(MCPerf5Y, title="Perf.5Y.MarketCap")
-plot(MCPerf10Y, title="Perf.10Y.MarketCap")
 plot(MCPerfYTD, title="Perf.YTD.MarketCap")

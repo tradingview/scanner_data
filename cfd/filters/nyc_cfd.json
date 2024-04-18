@@ -1,0 +1,1192 @@
+{
+    "fields": [
+      "sector",
+      "country",
+      "index_priority",
+      "country_code",
+      "forex_priority"
+    ],
+    "symbols": [
+      {
+        "f": [
+          "index",
+          "Pacific",
+          15,
+          "AU",
+          null
+        ],
+        "s": "ASX:XJO"
+      },
+      {
+        "f": [
+          "index",
+          "Middle East",
+          43,
+          "BH",
+          null
+        ],
+        "s": "BAHRAIN:BHBX"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          48,
+          "AR",
+          null
+        ],
+        "s": "BCBA:IMV"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          50,
+          "CL",
+          null
+        ],
+        "s": "BCS:SP_IPSA"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          31,
+          "RS",
+          null
+        ],
+        "s": "BELEX:BELEX15"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          35,
+          "TR",
+          null
+        ],
+        "s": "BIST:XU100"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          21,
+          "ES",
+          null
+        ],
+        "s": "BME:IBC"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          46,
+          "BR",
+          null
+        ],
+        "s": "BMFBOVESPA:IBOV"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          47,
+          "MX",
+          null
+        ],
+        "s": "BMV:ME"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          39,
+          "IN",
+          null
+        ],
+        "s": "BSE:SENSEX"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          49,
+          "CO",
+          null
+        ],
+        "s": "BVC:ICAP"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          51,
+          "PE",
+          null
+        ],
+        "s": "BVL:SPBLPGPT"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          3,
+          "US",
+          null
+        ],
+        "s": "CBOE:VIX"
+      },
+      {
+        "f": [
+          "index",
+          "Middle East",
+          40,
+          "AE",
+          null
+        ],
+        "s": "DFM:DFMGI"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          2,
+          "US",
+          null
+        ],
+        "s": "DJ:DJI"
+      },
+      {
+        "f": [
+          "index",
+          "Middle East",
+          45,
+          "EG",
+          null
+        ],
+        "s": "EGX:EGX30"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          24,
+          "NL",
+          null
+        ],
+        "s": "EURONEXT:AEX"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          25,
+          "BE",
+          null
+        ],
+        "s": "EURONEXT:BEL20"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          7,
+          "FR",
+          null
+        ],
+        "s": "EURONEXT:PX1"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          18,
+          "MY",
+          null
+        ],
+        "s": "FTSEMYX:FBMKLCI"
+      },
+      {
+        "f": [
+          "Energy",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "FX:UKOIL"
+      },
+      {
+        "f": [
+          "Energy",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "FX:USOIL"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          23,
+          "PL",
+          null
+        ],
+        "s": "GPW:WIG20"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          13,
+          "HK",
+          null
+        ],
+        "s": "HSI:HSI"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          19,
+          "ID",
+          null
+        ],
+        "s": "IDX:COMPOSITE"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          26,
+          "RU",
+          null
+        ],
+        "s": "MOEX:IMOEX"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          38,
+          "IN",
+          null
+        ],
+        "s": "NSE:NIFTY"
+      },
+      {
+        "f": [
+          "index",
+          "Pacific",
+          16,
+          "NZ",
+          null
+        ],
+        "s": "NZX:NZ50G"
+      },
+      {
+        "f": [
+          "index",
+          "Pacific",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:AU200AUD"
+      },
+      {
+        "f": [
+          "Agricultural",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:CORNUSD"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:DE30EUR"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:HK33HKD"
+      },
+      {
+        "f": [
+          "Energy",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:NATGASUSD"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:NL25EUR"
+      },
+      {
+        "f": [
+          "Agricultural",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:SOYBNUSD"
+      },
+      {
+        "f": [
+          "Agricultural",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:SUGARUSD"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:US30USD"
+      },
+      {
+        "f": [
+          "Agricultural",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:WHEATUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:XCUUSD"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          30,
+          "DK",
+          null
+        ],
+        "s": "OMXCOP:OMXC25"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          27,
+          "FI",
+          null
+        ],
+        "s": "OMXHEX:OMXH25"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          28,
+          "IS",
+          null
+        ],
+        "s": "OMXICE:OMXI10"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          32,
+          "LV",
+          null
+        ],
+        "s": "OMXRSE:OMXRGI"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          29,
+          "SE",
+          null
+        ],
+        "s": "OMXSTO:OMXS30"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          33,
+          "EE",
+          null
+        ],
+        "s": "OMXTSE:OMXTGI"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          34,
+          "LT",
+          null
+        ],
+        "s": "OMXVSE:OMXVGI"
+      },
+      {
+        "f": [
+          "index",
+          "Middle East",
+          42,
+          "QA",
+          null
+        ],
+        "s": "QSE:GNRI"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          22,
+          "CH",
+          null
+        ],
+        "s": "SIX:SMI"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          0,
+          "US",
+          null
+        ],
+        "s": "SP:SPX"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          11,
+          "CN",
+          null
+        ],
+        "s": "SSE:000001"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          12,
+          "CN",
+          null
+        ],
+        "s": "SZSE:399001"
+      },
+      {
+        "f": [
+          "index",
+          "Middle East",
+          41,
+          "SA",
+          null
+        ],
+        "s": "TADAWUL:TASI"
+      },
+      {
+        "f": [
+          "index",
+          "Middle East",
+          36,
+          "IL",
+          null
+        ],
+        "s": "TASE:TA35"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          4,
+          "CA",
+          null
+        ],
+        "s": "TSX:TSX"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:AEX"
+      },
+      {
+        "f": [
+          "currency",
+          "Pacific",
+          58,
+          null,
+          null
+        ],
+        "s": "TVC:AXY"
+      },
+      {
+        "f": [
+          "currency",
+          "Europe",
+          54,
+          null,
+          null
+        ],
+        "s": "TVC:BXY"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:CAC40"
+      },
+      {
+        "f": [
+          "currency",
+          "Americas",
+          57,
+          null,
+          null
+        ],
+        "s": "TVC:CXY"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:DEU40"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:DJI"
+      },
+      {
+        "f": [
+          "currency",
+          "Americas",
+          52,
+          null,
+          null
+        ],
+        "s": "TVC:DXY"
+      },
+      {
+        "f": [
+          "currency",
+          "Europe",
+          53,
+          null,
+          null
+        ],
+        "s": "TVC:EXY"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          8,
+          "IT",
+          null
+        ],
+        "s": "TVC:FTMIB"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:GOLD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:GOLDSILVER"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:HGX"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:HSI"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:IBEX35"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          1,
+          "US",
+          null
+        ],
+        "s": "TVC:IXIC"
+      },
+      {
+        "f": [
+          "currency",
+          "Asia",
+          56,
+          null,
+          null
+        ],
+        "s": "TVC:JXY"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          10,
+          "KR",
+          null
+        ],
+        "s": "TVC:KOSPI"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:MOVE"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          9,
+          "JP",
+          null
+        ],
+        "s": "TVC:NI225"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:NYA"
+      },
+      {
+        "f": [
+          "index",
+          "Pacific",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:NZ50G"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:OSX"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:PALLADIUM"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:PLATINUM"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:RUA"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:RUI"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:RUT"
+      },
+      {
+        "f": [
+          "index",
+          "Africa",
+          37,
+          "ZA",
+          null
+        ],
+        "s": "TVC:SA40"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:SILVER"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:SOX"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:SSMI"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          14,
+          "SG",
+          null
+        ],
+        "s": "TVC:STI"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          20,
+          "EU",
+          null
+        ],
+        "s": "TVC:SX5E"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:SXXP"
+      },
+      {
+        "f": [
+          "currency",
+          "Europe",
+          55,
+          null,
+          null
+        ],
+        "s": "TVC:SXY"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:TRJEFFCRB"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          5,
+          "GB",
+          null
+        ],
+        "s": "TVC:UKX"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:UTY"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:VIX"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:XAU"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:XAX"
+      },
+      {
+        "f": [
+          "index",
+          "Americas",
+          null,
+          null,
+          null
+        ],
+        "s": "TVC:XMI"
+      },
+      {
+        "f": [
+          "currency",
+          "Pacific",
+          59,
+          null,
+          null
+        ],
+        "s": "TVC:ZXY"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          17,
+          "TW",
+          null
+        ],
+        "s": "TWSE:TAIEX"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          6,
+          "DE",
+          null
+        ],
+        "s": "XETR:DAX"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          61,
+          "HU",
+          null
+        ],
+        "s": "BET:BUX"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          62,
+          "GR",
+          null
+        ],
+        "s": "ATHEX:GD"
+      },
+      {
+        "f": [
+          "index",
+          "Europe",
+          63,
+          "RO",
+          null
+        ],
+        "s": "BVB:BET"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          64,
+          "ID",
+          null
+        ],
+        "s": "IDX:IDX30"
+      },
+      {
+        "f": [
+          "index",
+          "Asia",
+          65,
+          "TW",
+          null
+        ],
+        "s": "TWSE:TW50"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "OANDA:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "FX:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "FX_IDC:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "BLACKBULL:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "CITYINDEX:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "EASYMARKETS:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "EIGHTCAP:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "FOREXCOM:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "FXOPEN:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "PEPPERSTONE:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "PHILLIPNOVA:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "SAXO:XAUUSD"
+      },
+      {
+        "f": [
+          "Metals",
+          "",
+          null,
+          null,
+          null
+        ],
+        "s": "SKILLING:XAUUSD"
+      }
+    ]
+  }
+  

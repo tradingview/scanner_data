@@ -1,5 +1,3 @@
-//oneYear = 365
-
 sum(daysBack)=>
 	var firstBar = time	
     
@@ -27,7 +25,7 @@ sumYTD()=>
 		sum
 
 fundFlowsTicker = __financial_tickerid(syminfo.tickerid, "FUND_FLOWS", "D")
-[fund_flows1M, fund_flows3M, fund_flows1Y, fund_flows3Y, fund_flows5Y, fund_flowsYTD] = request.security(fundFlowsTicker, fundTF, [sum(oneMonth), sum(threeMonths), sum(oneYear), sum(threeYears), sum(fiveYears), sumYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[fund_flows1M, fund_flows3M, fund_flows1Y, fund_flows3Y, fund_flows5Y, fund_flowsYTD] = request.security(fundFlowsTicker, fundTF, [sum(month1), sum(month3), sum(years1), sum(years3), sum(years5), sumYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(fund_flows1M, title="fund_flows.1M")
 plot(fund_flows3M, title="fund_flows.3M")
@@ -37,7 +35,7 @@ plot(fund_flows5Y, title="fund_flows.5Y")
 plot(fund_flowsYTD, title="fund_flows.YTD")
 
 navTicker = __financial_tickerid(syminfo.tickerid, "NAV", "D")
-[navPerf1M, navPerf3M, navPerf1Y, navPerf3Y, navPerf5Y, navPerfYTD] = request.security(navTicker, fundTF, [fundPerf(oneMonth, 10), fundPerf(threeMonths, 10), fundPerf(oneYear, 10), fundPerf(threeYears, 10), fundPerf(fiveYears, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[navPerf1M, navPerf3M, navPerf1Y, navPerf3Y, navPerf5Y, navPerfYTD] = request.security(navTicker, fundTF, [fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(years1, 10), fundPerf(years3, 10), fundPerf(years5, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(navPerf1M, title="nav_perf.1M")
 plot(navPerf3M, title="nav_perf.3M")
@@ -47,7 +45,7 @@ plot(navPerf5Y, title="nav_perf.5Y")
 plot(navPerfYTD, title="nav_perf.YTD")
 
 aumTicker = __financial_tickerid(syminfo.tickerid, "AUM", "D")
-[aumPerf1M, aumPerf3M, aumPerf1Y, aumPerf3Y, aumPerf5Y, aumPerfYTD] = request.security(aumTicker, fundTF, [fundPerf(oneMonth, 10), fundPerf(threeMonths, 10), fundPerf(oneYear, 10), fundPerf(threeYears, 10), fundPerf(fiveYears, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[aumPerf1M, aumPerf3M, aumPerf1Y, aumPerf3Y, aumPerf5Y, aumPerfYTD] = request.security(aumTicker, fundTF, [fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(years1, 10), fundPerf(years3, 10), fundPerf(years5, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(aumPerf1M, title="aum_perf.1M")
 plot(aumPerf3M, title="aum_perf.3M")
@@ -57,7 +55,7 @@ plot(aumPerf5Y, title="aum_perf.5Y")
 plot(aumPerfYTD, title="aum_perf.YTD")
 
 navAllTicker = __financial_tickerid(syminfo.tickerid, "NAV_ALL", "D")
-[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD] = request.security(navAllTicker, fundTF, [fundPerf(oneMonth, 10), fundPerf(threeMonths, 10), fundPerf(sixMonths, 10), fundPerf(oneYear, 10), fundPerf(threeYears, 10), fundPerf(fiveYears, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD] = request.security(navAllTicker, fundTF, [fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(month6, 10), fundPerf(years1, 10), fundPerf(years3, 10), fundPerf(years5, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(navTotalReturn1M, title="nav_total_return.1M")
 plot(navTotalReturn3M, title="nav_total_return.3M")

@@ -1,9 +1,9 @@
-#include <links/common.pine.link>
-#include <links/pivot_points.pine.link>
-#include <links/pivot_points_plots.pine.link>
+//@version=5
+indicator(title='ScannerData', shorttitle='_SD_')
+
 #include <links/high_and_low.pine.link>
 #include <links/performance_functions.pine.link>
-#include <links/performance_stocks.pine.link>
+#include <links/performance.pine.link>
 #include <links/business_day.pine.link>
 #include <links/bond_yield.pine.link>
 #include <links/bond_close_days_back.pine.link>

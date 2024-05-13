@@ -5248,3 +5248,105 @@ presets:
     - uk
     - venezuela
     - vietnam
+- name: etfs_market_page_country_top_us
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+- name: etfs_market_page_country_top_ca
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - canada
+- name: etfs_market_page_country_top_uk
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - uk
+- name: etfs_market_page_country_top_de
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - germany
+- name: etfs_market_page_country_top_jp
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - japan
+- name: etfs_market_page_country_top_au
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etn
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_symbol: true
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - australia

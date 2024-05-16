@@ -585,9 +585,13 @@ presets:
       operation: in_range
       right:
         - NSE
+        - BSE
     - left: typespecs
       operation: has_none_of
       right: preferred
+    - left: is_primary
+      operation: equal
+      right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: desc

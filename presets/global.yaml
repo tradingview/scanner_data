@@ -5259,7 +5259,7 @@ presets:
       operation: equal
       right: true
   price_conversion:
-    to_symbol: true
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc
@@ -5276,7 +5276,7 @@ presets:
       operation: equal
       right: true
   price_conversion:
-    to_symbol: true
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc
@@ -5293,7 +5293,7 @@ presets:
       operation: equal
       right: true
   price_conversion:
-    to_symbol: true
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc
@@ -5310,7 +5310,7 @@ presets:
       operation: equal
       right: true
   price_conversion:
-    to_symbol: true
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc
@@ -5327,7 +5327,7 @@ presets:
       operation: equal
       right: true
   price_conversion:
-    to_symbol: true
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc
@@ -5344,7 +5344,7 @@ presets:
       operation: equal
       right: true
   price_conversion:
-    to_symbol: true
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc

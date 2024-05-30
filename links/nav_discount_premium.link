@@ -1,0 +1,10 @@
+// Discount / Premium to NAV
+symbolName = input.symbol("", title = "Symbol", confirm = false, __optional = true)
+getSymbolName(symbol) => symbol == "" ? syminfo.tickerid : symbol
+makeTicker(fund, symbol = "") => __financial_tickerid(getSymbolName(symbol), fund, "")
+var finTicker = __financial_tickerid(getSymbolName(symbolName), "NAV", "D")
+nav = request.security(finTicker, "D", close, ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
+var float nav_discount_premium = na
+if not na(nav)
+    nav_discount_premium := ((close / nav) - 1) * 100
+plot(nav_discount_premium, title = "nav_discount_premium")

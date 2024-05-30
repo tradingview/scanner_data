@@ -255,6 +255,94 @@
     "type": "number"
   },
   {
+    "name": "dex_created_time",
+    "type": "time"
+  },
+  {
+    "name": "dex_total_liquidity",
+    "type": "number"
+  },
+  {
+    "name": "dex_buys_15m",
+    "type": "number"
+  },
+  {
+    "name": "dex_buys_1h",
+    "type": "number"
+  },
+  {
+    "name": "dex_buys_4h",
+    "type": "number"
+  },
+  {
+    "name": "dex_buys_12h",
+    "type": "number"
+  },
+  {
+    "name": "dex_buys_24h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sells_15m",
+    "type": "number"
+  },
+  {
+    "name": "dex_sells_1h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sells_4h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sells_12h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sells_24h",
+    "type": "number"
+  },
+  {
+    "name": "dex_buyers_15m",
+    "type": "number"
+  },
+  {
+    "name": "dex_buyers_1h",
+    "type": "number"
+  },
+  {
+    "name": "dex_buyers_4h",
+    "type": "number"
+  },
+  {
+    "name": "dex_buyers_12h",
+    "type": "number"
+  },
+  {
+    "name": "dex_buyers_24h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sellers_15m",
+    "type": "number"
+  },
+  {
+    "name": "dex_sellers_1h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sellers_4h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sellers_12h",
+    "type": "number"
+  },
+  {
+    "name": "dex_sellers_24h",
+    "type": "number"
+  },
+  {
     "name": "dex_buy_volume_15m",
     "type": "price"
   },
@@ -295,6 +383,46 @@
     "type": "price"
   },
   {
+    "name": "dex_txs_count_15m",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_1h",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_4h",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_12h",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_24h",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_uniq_15m",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_uniq_1h",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_uniq_4h",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_uniq_12h",
+    "type": "number"
+  },
+  {
+    "name": "dex_txs_count_uniq_24h",
+    "type": "number"
+  },
+  {
     "name": "dex_trading_volume_15m",
     "type": "price"
   },
@@ -313,5 +441,9 @@
   {
     "name": "dex_trading_volume_24h",
     "type": "price"
+  },
+  {
+    "name": "short-description",
+    "type": "text"
   }
 ]

@@ -1,7 +1,0 @@
-import TradingView/RelativeValue/2 as rv
-
-float pastVolume = rv.averageAtTime(volume, 10, "1D", true)
-float currentVolume = rv.calcCumulativeSeries(volume, timeframe.change("1D"), true)
-float relativeValue = currentVolume / pastVolume
-rv = request.security(syminfo.tickerid, "5", relativeValue, calc_bars_count=3200, ignore_invalid_symbol=true)
-plot(rv, "rel_vol_sec_timenow")

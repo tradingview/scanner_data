@@ -105,6 +105,10 @@
       "type": "text"
     },
     {
+      "name": "country",
+      "type": "text"
+    },
+    {
       "name": "sector",
       "type": "text"
     },
@@ -242,7 +246,7 @@
     },
     {
       "name": "amount_outstanding_ratio",
-      "type": "percent"
+      "type": "number"
     },
     {
       "name": "coupon_type_general",

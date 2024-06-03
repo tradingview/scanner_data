@@ -27,31 +27,31 @@ presets:
     operator: or
     operands:
       - expression:
-          - left: sinking_fund
-            operation: match
-            right:
-              - sinkable
+          left: sinking_fund
+          operation: match
+          right:
+            - sinkable
       - expression:
-          - left: exchange
-            operation: in_range
-            right:
-              - GETTEX
-              - VIE
+          left: exchange
+          operation: in_range
+          right:
+            - GETTEX
+            - VIE
 - name: filter2and
   filter2:
     operator: and
     operands:
       - expression:
-          - left: sinking_fund
-            operation: match
-            right:
-              - sinkable
+          left: sinking_fund
+          operation: match
+          right:
+            - sinkable
       - expression:
-          - left: exchange
-            operation: in_range
-            right:
-              - GETTEX
-              - VIE
+          left: exchange
+          operation: in_range
+          right:
+            - GETTEX
+            - VIE
 - name: index_filter
   index_filters:
   - name: sinking_fund

@@ -472,9 +472,7 @@ presets:
 - name: country_top_bonds_yield_lv
   symbols:
     tickers:
-      - TVC:LV02Y
-      - TVC:LV03Y
-      - TVC:LV05Y
+      - ""
 - name: country_top_bonds_yield_lt
   symbols:
     tickers:
@@ -527,7 +525,7 @@ presets:
 - name: country_top_bonds_yield_no
   symbols:
     tickers:
-      - TVC:NO03MY
+      - TVC:NO06MY
       - TVC:NO01Y
       - TVC:NO03Y
       - TVC:NO05Y

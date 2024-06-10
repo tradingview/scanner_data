@@ -371,5 +371,13 @@
     {
       "name": "accrued_coupon_interest",
       "type": "fundamental_price"
-    }
+    },
+    {
+      "name": "yield_to_maturity",
+      "type": "final_percent"
+    },
+    {
+      "name": "current_yield",
+      "type": "final_percent"
+    },
   ]

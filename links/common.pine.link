@@ -200,6 +200,10 @@ Mom14 = close - close[14]
 plot(Mom14, title='Mom_14')
 plot(Mom14[1], title='Mom_14[1]')
 
+Mom80 = close - close[80]
+plot(Mom80, title='Mom_80')
+plot(Mom80[1], title='Mom_80[1]')
+
 // study(title="Stochastic", shorttitle="Stoch")
 lengthStoch = 14
 smoothKStoch = 3

@@ -32,6 +32,7 @@ SMA40 = ta.sma(close, 40)
 plot(SMA40, title='SMA40')
 SMA50 = ta.sma(close, 50)
 plot(SMA50, title='SMA50')
+
 SMA75 = ta.sma(close, 75)
 plot(SMA75, title='SMA75')
 SMA100 = ta.sma(close, 100)
@@ -236,6 +237,13 @@ donchLower = ta.lowest(donchLen)
 plot(donchLower, title='DonchCh20.Lower')
 plot(donchUpper, title='DonchCh20.Upper')
 plot(math.avg(donchUpper, donchLower), title='DonchCh20.Middle')
+
+donchLen = 96
+donchUpper = ta.highest(donchLen)
+donchLower = ta.lowest(donchLen)
+plot(donchLower, title='DonchCh96.Lower')
+plot(donchUpper, title='DonchCh96.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh96.Middle')
 
 // Hull Moving Average
 hullMALength = 9

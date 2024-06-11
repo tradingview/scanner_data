@@ -233,6 +233,22 @@ plot(dStoch_5_1_3, title='Stoch5.D_5_1_3')
 plot(kStoch_5_1_3[1], title='Stoch5.K[1]_5_1_3')
 plot(dStoch_5_1_3[1], title='Stoch5.D[1]_5_1_3')
 
+lengthStoch = 9
+smoothKStoch = 3
+smoothDStoch = 3
+kStoch_9_1_3 = ta.stoch(close, high, low, lengthStoch)
+kStoch = ta.sma(kStoch_9_1_3, smoothKStoch)
+dStoch = ta.sma(kStoch, smoothDStoch)
+plot(kStoch, title='Stoch9.K')
+plot(dStoch, title='Stoch9.D')
+plot(kStoch[1], title='Stoch9.K[1]')
+plot(dStoch[1], title='Stoch9.D[1]')
+dStoch_9_1_3 = ta.sma(kStoch_9_1_3, smoothDStoch)
+plot(kStoch_9_1_3, title='Stoch9.K_5_1_3')
+plot(dStoch_9_1_3, title='Stoch9.D_5_1_3')
+plot(kStoch_9_1_3[1], title='Stoch9.K[1]_5_1_3')
+plot(dStoch_9_1_3[1], title='Stoch9.D[1]_5_1_3')
+
 // average volume
 AvgVol = ta.sma(volume, 10)
 plot(AvgVol, title='average_volume_10d_calc')

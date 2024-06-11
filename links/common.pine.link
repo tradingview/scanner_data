@@ -221,12 +221,12 @@ plot(dStoch_14_1_3, title='Stoch.D_14_1_3')
 plot(kStoch_14_1_3[1], title='Stoch.K[1]_14_1_3')
 plot(dStoch_14_1_3[1], title='Stoch.D[1]_14_1_3')
 
-lengthStoch = 5
-smoothKStoch = 3
-smoothDStoch = 3
+lengthStoch := 5
+smoothKStoch := 3
+smoothDStoch := 3
 kStoch_5_1_3 = ta.stoch(close, high, low, lengthStoch)
-kStoch = ta.sma(kStoch_5_1_3, smoothKStoch)
-dStoch = ta.sma(kStoch, smoothDStoch)
+kStoch := ta.sma(kStoch_5_1_3, smoothKStoch)
+dStoch := ta.sma(kStoch, smoothDStoch)
 plot(kStoch, title='Stoch5.K')
 plot(dStoch, title='Stoch5.D')
 plot(kStoch[1], title='Stoch5.K[1]')
@@ -237,12 +237,12 @@ plot(dStoch_5_1_3, title='Stoch5.D_5_1_3')
 plot(kStoch_5_1_3[1], title='Stoch5.K[1]_5_1_3')
 plot(dStoch_5_1_3[1], title='Stoch5.D[1]_5_1_3')
 
-lengthStoch = 9
-smoothKStoch = 3
-smoothDStoch = 3
+lengthStoch := 9
+smoothKStoch := 3
+smoothDStoch := 3
 kStoch_9_1_3 = ta.stoch(close, high, low, lengthStoch)
-kStoch = ta.sma(kStoch_9_1_3, smoothKStoch)
-dStoch = ta.sma(kStoch, smoothDStoch)
+kStoch := ta.sma(kStoch_9_1_3, smoothKStoch)
+dStoch := ta.sma(kStoch, smoothDStoch)
 plot(kStoch, title='Stoch9.K')
 plot(dStoch, title='Stoch9.D')
 plot(kStoch[1], title='Stoch9.K[1]')
@@ -266,11 +266,11 @@ CCI = ta.cci(hlc3, 20)
 plot(CCI, title='CCI20')
 plot(CCI[1], title='CCI20[1]')
 
-CCI = ta.cci(close, 20)
+CCI := ta.cci(close, 20)
 plot(CCI, title='CCCI20')
 plot(CCI[1], title='CCCI20[1]')
 
-CCI = ta.cci(close, 7)
+CCI := ta.cci(close, 7)
 plot(CCI, title='CCCI7')
 plot(CCI[1], title='CCCI7[1]')
 
@@ -282,16 +282,16 @@ plot(donchLower, title='DonchCh20.Lower')
 plot(donchUpper, title='DonchCh20.Upper')
 plot(math.avg(donchUpper, donchLower), title='DonchCh20.Middle')
 
-donchLen = 96
-donchUpper = ta.highest(donchLen)
-donchLower = ta.lowest(donchLen)
+donchLen := 96
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
 plot(donchLower, title='DonchCh96.Lower')
 plot(donchUpper, title='DonchCh96.Upper')
 plot(math.avg(donchUpper, donchLower), title='DonchCh96.Middle')
 
-donchLen = 13
-donchUpper = ta.highest(donchLen)
-donchLower = ta.lowest(donchLen)
+donchLen := 13
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
 plot(donchLower, title='DonchCh13.Lower')
 plot(donchUpper, title='DonchCh13.Upper')
 plot(math.avg(donchUpper, donchLower), title='DonchCh13.Middle')
@@ -303,11 +303,11 @@ hullMA_nma = ta.wma(close, hullMALength)
 HullMA9 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
 plot(HullMA9, title='HullMA9')
 
-hullMALength = 200
-hullMA_n2ma = 2 * ta.wma(close, hullMALength / 2)
-hullMA_nma = ta.wma(close, hullMALength)
-HullMA9 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
-plot(HullMA9, title='HullMA200')
+hullMALength := 200
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA200 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA200, title='HullMA200')
 
 // Awesome Oscillator
 AO = ta.sma(hl2, 5) - ta.sma(hl2, 34)
@@ -320,7 +320,7 @@ Aroon_length = 14
 plot(100 * (ta.highestbars(high, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Up')
 plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Down')
 
-Aroon_length = 25
+Aroon_length := 25
 plot(100 * (ta.highestbars(high, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon25.Up')
 plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon25.Down')
 
@@ -419,7 +419,7 @@ plot(IC_Lead2_20_60_120_30[IC_displacement], title='Ichimoku.Lead2_20_60_120_30'
 VWMA = ta.vwma(close, 20)
 plot(VWMA, title='VWMA')
 
-VWMA = ta.vwma(close, 200)
+VWMA := ta.vwma(close, 200)
 plot(VWMA, title='VWMA200')
 
 // Average Day Range (ADR)

@@ -392,6 +392,9 @@ plot(IC_Lead2_20_60_120_30[IC_displacement], title='Ichimoku.Lead2_20_60_120_30'
 VWMA = ta.vwma(close, 20)
 plot(VWMA, title='VWMA')
 
+VWMA = ta.vwma(close, 200)
+plot(VWMA, title='VWMA200')
+
 // Average Day Range (ADR)
 smaHigh = ta.sma(high, 14)
 smaLow = ta.sma(low, 14)

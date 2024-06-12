@@ -355,6 +355,24 @@ hullMA_nma := ta.wma(close, hullMALength)
 HullMA100 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
 plot(HullMA100, title='HullMA100')
 
+hullMALength := 20
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA20 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA20, title='HullMA20')
+
+hullMALength := 144
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA144 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA144, title='HullMA144')
+
+hullMALength := 256
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA256 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA256, title='HullMA256')
+
 // Awesome Oscillator
 AO = ta.sma(hl2, 5) - ta.sma(hl2, 34)
 plot(AO, title='AO')

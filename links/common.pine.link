@@ -121,6 +121,12 @@ plot(RSI21[1], title='RSI21[1]')
 ATR = ta.rma(ta.tr(true), 14)
 plot(ATR, title='ATR')
 
+ATR := ta.rma(ta.tr(true), 20)
+plot(ATR, title='ATR20')
+
+ATR := ta.rma(ta.tr(true), 1)
+plot(ATR, title='ATR1')
+
 // Average True Range Percent (ATRP)
 plot(ATR / close * 100, title='ATRP')
 

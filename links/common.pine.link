@@ -360,6 +360,11 @@ highest = ta.highest(high, WR_period)
 WR = (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
 plot(WR, title='W.R')
 
+WR_period := 10
+highest := ta.highest(high, WR_period)
+WR := (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
+plot(WR, title='W.R14')
+
 // Rate Of Change (ROC)
 plot(ta.roc(close, 9), title='ROC')
 

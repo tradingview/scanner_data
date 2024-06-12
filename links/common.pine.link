@@ -32,6 +32,7 @@ SMA40 = ta.sma(close, 40)
 plot(SMA40, title='SMA40')
 SMA50 = ta.sma(close, 50)
 plot(SMA50, title='SMA50')
+
 SMA75 = ta.sma(close, 75)
 plot(SMA75, title='SMA75')
 SMA100 = ta.sma(close, 100)
@@ -120,6 +121,12 @@ plot(RSI21[1], title='RSI21[1]')
 ATR = ta.rma(ta.tr(true), 14)
 plot(ATR, title='ATR')
 
+ATR := ta.rma(ta.tr(true), 20)
+plot(ATR, title='ATR20')
+
+ATR := ta.rma(ta.tr(true), 1)
+plot(ATR, title='ATR1')
+
 // Average True Range Percent (ATRP)
 plot(ATR / close * 100, title='ATRP')
 
@@ -199,6 +206,10 @@ Mom14 = close - close[14]
 plot(Mom14, title='Mom_14')
 plot(Mom14[1], title='Mom_14[1]')
 
+Mom80 = close - close[80]
+plot(Mom80, title='Mom_80')
+plot(Mom80[1], title='Mom_80[1]')
+
 // study(title="Stochastic", shorttitle="Stoch")
 lengthStoch = 14
 smoothKStoch = 3
@@ -216,6 +227,38 @@ plot(dStoch_14_1_3, title='Stoch.D_14_1_3')
 plot(kStoch_14_1_3[1], title='Stoch.K[1]_14_1_3')
 plot(dStoch_14_1_3[1], title='Stoch.D[1]_14_1_3')
 
+lengthStoch := 5
+smoothKStoch := 3
+smoothDStoch := 3
+kStoch_5_1_3 = ta.stoch(close, high, low, lengthStoch)
+kStoch := ta.sma(kStoch_5_1_3, smoothKStoch)
+dStoch := ta.sma(kStoch, smoothDStoch)
+plot(kStoch, title='Stoch5.K')
+plot(dStoch, title='Stoch5.D')
+plot(kStoch[1], title='Stoch5.K[1]')
+plot(dStoch[1], title='Stoch5.D[1]')
+dStoch_5_1_3 = ta.sma(kStoch_5_1_3, smoothDStoch)
+plot(kStoch_5_1_3, title='Stoch5.K_5_1_3')
+plot(dStoch_5_1_3, title='Stoch5.D_5_1_3')
+plot(kStoch_5_1_3[1], title='Stoch5.K[1]_5_1_3')
+plot(dStoch_5_1_3[1], title='Stoch5.D[1]_5_1_3')
+
+lengthStoch := 9
+smoothKStoch := 3
+smoothDStoch := 3
+kStoch_9_1_3 = ta.stoch(close, high, low, lengthStoch)
+kStoch := ta.sma(kStoch_9_1_3, smoothKStoch)
+dStoch := ta.sma(kStoch, smoothDStoch)
+plot(kStoch, title='Stoch9.K')
+plot(dStoch, title='Stoch9.D')
+plot(kStoch[1], title='Stoch9.K[1]')
+plot(dStoch[1], title='Stoch9.D[1]')
+dStoch_9_1_3 = ta.sma(kStoch_9_1_3, smoothDStoch)
+plot(kStoch_9_1_3, title='Stoch9.K_5_1_3')
+plot(dStoch_9_1_3, title='Stoch9.D_5_1_3')
+plot(kStoch_9_1_3[1], title='Stoch9.K[1]_5_1_3')
+plot(dStoch_9_1_3[1], title='Stoch9.D[1]_5_1_3')
+
 // average volume
 AvgVol = ta.sma(volume, 10)
 plot(AvgVol, title='average_volume_10d_calc')
@@ -229,6 +272,22 @@ CCI = ta.cci(hlc3, 20)
 plot(CCI, title='CCI20')
 plot(CCI[1], title='CCI20[1]')
 
+CCI := ta.cci(close, 20)
+plot(CCI, title='CCCI20')
+plot(CCI[1], title='CCCI20[1]')
+
+CCI := ta.cci(close, 7)
+plot(CCI, title='CCCI7')
+plot(CCI[1], title='CCCI7[1]')
+
+CCI := ta.cci(hlc3, 14)
+plot(CCI, title='CCI14')
+plot(CCI[1], title='CCI14[1]')
+
+CCI := ta.cci(hlc3, 100)
+plot(CCI, title='CCI100')
+plot(CCI[1], title='CCI100[1]')
+
 // Donchian Channels
 donchLen = 20
 donchUpper = ta.highest(donchLen)
@@ -237,12 +296,82 @@ plot(donchLower, title='DonchCh20.Lower')
 plot(donchUpper, title='DonchCh20.Upper')
 plot(math.avg(donchUpper, donchLower), title='DonchCh20.Middle')
 
+donchLen := 96
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
+plot(donchLower, title='DonchCh96.Lower')
+plot(donchUpper, title='DonchCh96.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh96.Middle')
+
+donchLen := 13
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
+plot(donchLower, title='DonchCh13.Lower')
+plot(donchUpper, title='DonchCh13.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh13.Middle')
+
+donchLen := 10
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
+plot(donchLower, title='DonchCh10.Lower')
+plot(donchUpper, title='DonchCh10.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh10.Middle')
+
+donchLen := 1
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
+plot(donchLower, title='DonchCh1.Lower')
+plot(donchUpper, title='DonchCh1.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh1.Middle')
+
 // Hull Moving Average
 hullMALength = 9
 hullMA_n2ma = 2 * ta.wma(close, hullMALength / 2)
 hullMA_nma = ta.wma(close, hullMALength)
 HullMA9 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
 plot(HullMA9, title='HullMA9')
+
+hullMALength := 200
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA200 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA200, title='HullMA200')
+
+hullMALength := 1728
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA1728 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA1728, title='HullMA1728')
+
+hullMALength := 50
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA50 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA50, title='HullMA50')
+
+hullMALength := 100
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA100 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA100, title='HullMA100')
+
+hullMALength := 20
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA20 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA20, title='HullMA20')
+
+hullMALength := 144
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA144 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA144, title='HullMA144')
+
+hullMALength := 256
+hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
+hullMA_nma := ta.wma(close, hullMALength)
+HullMA256 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA256, title='HullMA256')
 
 // Awesome Oscillator
 AO = ta.sma(hl2, 5) - ta.sma(hl2, 34)
@@ -254,6 +383,10 @@ plot(AO[2], title='AO[2]')
 Aroon_length = 14
 plot(100 * (ta.highestbars(high, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Up')
 plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Down')
+
+Aroon_length := 25
+plot(100 * (ta.highestbars(high, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon25.Up')
+plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon25.Down')
 
 // value traded (dollar volume)
 plot(volume * close * syminfo.pointvalue, title='Value.Traded')
@@ -274,6 +407,9 @@ plot(PSAR, title='P.SAR')
 lenMF = 14
 plot(ta.mfi(hlc3, lenMF), title='MoneyFlow')
 
+lenMF := 12
+plot(ta.mfi(hlc3, lenMF), title='MoneyFlow12')
+
 // study("My Chaikin Money Flow")
 lenCMF = 20
 accdistRaw = not(close == low and close == high or high == low) ? (close - low - (high - close)) / (high - low) * volume : 0
@@ -291,8 +427,23 @@ highest = ta.highest(high, WR_period)
 WR = (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
 plot(WR, title='W.R')
 
+WR_period := 10
+highest := ta.highest(high, WR_period)
+WR := (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
+plot(WR, title='W.R14')
+
+WR_period := 12
+highest := ta.highest(high, WR_period)
+WR := (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
+plot(WR, title='W.R12')
+
 // Rate Of Change (ROC)
 plot(ta.roc(close, 9), title='ROC')
+plot(ta.roc(close, 1), title='ROC1')
+plot(ta.roc(close, 14), title='ROC14')
+plot(ta.roc(close, 2), title='ROC2')
+plot(ta.roc(close, 12), title='ROC12')
+
 
 // Bull / Bear Power
 BullPower = high - EMA13
@@ -349,6 +500,12 @@ plot(IC_Lead2_20_60_120_30[IC_displacement], title='Ichimoku.Lead2_20_60_120_30'
 // Volume Weighted Moving Average (VWMA)
 VWMA = ta.vwma(close, 20)
 plot(VWMA, title='VWMA')
+
+VWMA := ta.vwma(close, 200)
+plot(VWMA, title='VWMA200')
+
+VWMA := ta.vwma(close, 50)
+plot(VWMA, title='VWMA50')
 
 // Average Day Range (ADR)
 smaHigh = ta.sma(high, 14)

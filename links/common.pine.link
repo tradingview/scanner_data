@@ -274,6 +274,10 @@ CCI := ta.cci(close, 7)
 plot(CCI, title='CCCI7')
 plot(CCI[1], title='CCCI7[1]')
 
+CCI := ta.cci(hlc3, 14)
+plot(CCI, title='CCI14')
+plot(CCI[1], title='CCI14[1]')
+
 // Donchian Channels
 donchLen = 20
 donchUpper = ta.highest(donchLen)

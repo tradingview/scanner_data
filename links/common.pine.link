@@ -320,8 +320,8 @@ plot(HullMA200, title='HullMA200')
 hullMALength := 1728
 hullMA_n2ma := 2 * ta.wma(close, hullMALength / 2)
 hullMA_nma := ta.wma(close, hullMALength)
-HullMA200 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
-plot(HullMA200, title='HullMA1728')
+HullMA1728 = ta.wma(hullMA_n2ma - hullMA_nma, math.floor(math.sqrt(hullMALength)))
+plot(HullMA1728, title='HullMA1728')
 
 // Awesome Oscillator
 AO = ta.sma(hl2, 5) - ta.sma(hl2, 34)

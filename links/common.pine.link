@@ -304,6 +304,20 @@ plot(donchLower, title='DonchCh13.Lower')
 plot(donchUpper, title='DonchCh13.Upper')
 plot(math.avg(donchUpper, donchLower), title='DonchCh13.Middle')
 
+donchLen := 10
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
+plot(donchLower, title='DonchCh10.Lower')
+plot(donchUpper, title='DonchCh10.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh10.Middle')
+
+donchLen := 1
+donchUpper := ta.highest(donchLen)
+donchLower := ta.lowest(donchLen)
+plot(donchLower, title='DonchCh1.Lower')
+plot(donchUpper, title='DonchCh1.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh1.Middle')
+
 // Hull Moving Average
 hullMALength = 9
 hullMA_n2ma = 2 * ta.wma(close, hullMALength / 2)

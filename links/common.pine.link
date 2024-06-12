@@ -349,6 +349,9 @@ plot(PSAR, title='P.SAR')
 lenMF = 14
 plot(ta.mfi(hlc3, lenMF), title='MoneyFlow')
 
+lenMF := 12
+plot(ta.mfi(hlc3, lenMF), title='MoneyFlow12')
+
 // study("My Chaikin Money Flow")
 lenCMF = 20
 accdistRaw = not(close == low and close == high or high == low) ? (close - low - (high - close)) / (high - low) * volume : 0

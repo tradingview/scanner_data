@@ -367,6 +367,7 @@ plot(WR, title='W.R14')
 
 // Rate Of Change (ROC)
 plot(ta.roc(close, 9), title='ROC')
+plot(ta.roc(close, 1), title='ROC1')
 
 // Bull / Bear Power
 BullPower = high - EMA13

@@ -386,6 +386,9 @@ plot(WR, title='W.R14')
 plot(ta.roc(close, 9), title='ROC')
 plot(ta.roc(close, 1), title='ROC1')
 plot(ta.roc(close, 14), title='ROC14')
+plot(ta.roc(close, 2), title='ROC2')
+plot(ta.roc(close, 12), title='ROC12')
+
 
 // Bull / Bear Power
 BullPower = high - EMA13

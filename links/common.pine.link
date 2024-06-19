@@ -4,6 +4,8 @@ indicator(title='ScannerData', shorttitle='_SD_')
 // study(title="Moving Average", shorttitle="MA", overlay=true)
 SMA3 = ta.sma(close, 3)
 plot(SMA3, title='SMA3')
+SMA5 = ta.sma(close, 5)
+plot(SMA5, title='SMA5')
 SMA6 = ta.sma(close, 6)
 plot(SMA6, title='SMA6')
 SMA7 = ta.sma(close, 7)
@@ -12,8 +14,6 @@ SMA8 = ta.sma(close, 8)
 plot(SMA8, title='SMA8')
 SMA9 = ta.sma(close, 9)
 plot(SMA9, title='SMA9')
-SMA5 = ta.sma(close, 5)
-plot(SMA5, title='SMA5')
 SMA10 = ta.sma(close, 10)
 plot(SMA10, title='SMA10')
 SMA12 = ta.sma(close, 12)
@@ -291,13 +291,13 @@ highest = ta.highest(high, WR_period)
 WR = (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
 plot(WR, title='W.R')
 
+// Rate Of Change (ROC)
+plot(ta.roc(close, 9), title='ROC')
+
 // Bull / Bear Power
 BullPower = high - EMA13
 BearPower = low - EMA13
 plot(BullPower + BearPower, title='BBPower')
-
-// Rate Of Change (ROC)
-plot(ta.roc(close, 9), title='ROC')
 
 // Ultimate Oscillator
 tl() =>

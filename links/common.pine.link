@@ -238,8 +238,8 @@ kStoch := ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch := ta.sma(kStoch, smoothDStoch)
 plot(kStoch, title='Stoch.K_8_3_3')
 plot(dStoch, title='Stoch.D_8_3_3')
-plot(kStoch[1], title='Stoch8.K_8_3_3[1]')
-plot(dStoch[1], title='Stoch8.D_8_3_3[1]')
+plot(kStoch[1], title='Stoch.K_8_3_3[1]')
+plot(dStoch[1], title='Stoch.D_8_3_3[1]')
 
 // average volume
 AvgVol = ta.sma(volume, 10)

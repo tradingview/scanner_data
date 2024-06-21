@@ -612,8 +612,8 @@ presets:
 - name: country_top_forex_ru
   symbols:
     tickers:
-      - MOEX:USDRUB_TOM
-      - MOEX:EURRUB_TOM
+      - FX_IDC:USDRUB
+      - FX_IDC:EURRUB
       - FX_IDC:JPYRUB
       - FX_IDC:GBPRUB
       - FX_IDC:CHFRUB

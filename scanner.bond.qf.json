@@ -1,0 +1,387 @@
+[
+    {
+      "name": "pricescale",
+      "type": "number"
+    },
+    {
+      "name": "minmov",
+      "type": "number"
+    },
+    {
+      "name": "minmove2",
+      "type": "number"
+    },
+    {
+      "name": "fractional",
+      "type": "text"
+    },
+    {
+      "name": "region",
+      "type": "text"
+    },
+    {
+      "name": "current_session",
+      "type": "text"
+    },
+    {
+      "name": "rtc",
+      "type": "price"
+    },
+    {
+      "name": "bid",
+      "type": "price"
+    },
+    {
+      "name": "ask",
+      "type": "price"
+    },
+    {
+      "name": "all_time_high",
+      "type": "price"
+    },
+    {
+      "name": "all_time_low",
+      "type": "price"
+    },
+    {
+      "name": "provider-id",
+      "type": "text"
+    },
+    {
+      "name": "all_time_open",
+      "type": "price"
+    },
+    {
+      "name": "update-time",
+      "type": "number",
+      "extract_from": "daily-bar"
+    },
+    {
+      "name": "term-to-maturity",
+      "type": "text"
+    },
+    {
+      "name": "index_priority",
+      "type": "number"
+    },
+    {
+      "name": "forex_priority",
+      "type": "number"
+    },
+    {
+      "name": "country_code",
+      "type": "text"
+    },
+    {
+      "name": "popularity_rank",
+      "type": "number"
+    },
+    {
+      "name": "Bond.Currency",
+      "type": "text"
+    },
+    {
+      "name": "all_time_high_day",
+      "type": "time"
+    },
+    {
+      "name": "all_time_low_day",
+      "type": "time"
+    },
+    {
+      "name": "source-logoid",
+      "type": "text"
+    },
+    {
+      "name": "bond_issuer",
+      "type": "text"
+    },
+    {
+      "name": "country_code_fund",
+      "type": "text"
+    },
+    {
+      "name": "country_fund",
+      "type": "text"
+    },
+    {
+      "name": "country",
+      "type": "text"
+    },
+    {
+      "name": "sector",
+      "type": "text"
+    },
+    {
+      "name": "industry",
+      "type": "text"
+    },
+    {
+      "name": "bond_issuer_cr_parent",
+      "type": "text"
+    },
+    {
+      "name": "bond_issuer_stock_symbol",
+      "type": "text"
+    },
+    {
+      "name": "duration_type",
+      "type": "text"
+    },
+    {
+      "name": "bond_type_gen",
+      "type": "text"
+    },
+    {
+      "name": "issue_status",
+      "type": "text"
+    },
+    {
+      "name": "fundamental_currency_code",
+      "type": "text"
+    },
+    {
+      "name": "seniority_level",
+      "type": "text"
+    },
+    {
+      "name": "issue_date",
+      "type": "time"
+    },
+    {
+      "name": "current_coupon",
+      "type": "final_percent"
+    },
+    {
+      "name": "sinking_fund",
+      "type": "text"
+    },
+    {
+      "name": "call_option",
+      "type": "text"
+    },
+    {
+      "name": "put_option",
+      "type": "text"
+    },
+    {
+      "name": "redemption_type",
+      "type": "text"
+    },
+    {
+      "name": "conversion_option",
+      "type": "text"
+    },
+    {
+      "name": "covenant",
+      "type": "text"
+    },
+    {
+      "name": "bond_issuer_type",
+      "type": "text"
+    },
+    {
+      "name": "offer_date",
+      "type": "time"
+    },
+    {
+      "name": "offer_price_pct",
+      "type": "final_percent"
+    },
+    {
+      "name": "ownership_form",
+      "type": "text"
+    },
+    {
+      "name": "credit_enhancement_type",
+      "type": "text"
+    },
+    {
+      "name": "credit_enhancement_status",
+      "type": "text"
+    },
+    {
+      "name": "pledge_status",
+      "type": "text"
+    },
+    {
+      "name": "maturity_type",
+      "type": "text"
+    },
+    {
+      "name": "inflation_protection",
+      "type": "text"
+    },
+    {
+      "name": "placement_type",
+      "type": "text"
+    },
+    {
+      "name": "offer_type",
+      "type": "text"
+    },
+    {
+      "name": "social_responsibility",
+      "type": "text"
+    },
+    {
+      "name": "denom_min",
+      "type": "fundamental_price"
+    },
+    {
+      "name": "denom_increment",
+      "type": "fundamental_price"
+    },
+    {
+      "name": "nominal_value",
+      "type": "fundamental_price"
+    },
+    {
+      "name": "issue_amount",
+      "type": "fundamental_price"
+    },
+    {
+      "name": "outstanding_amount",
+      "type": "fundamental_price"
+    },
+    {
+      "name": "amount_outstanding_ratio",
+      "type": "number"
+    },
+    {
+      "name": "coupon_type_general",
+      "type": "text"
+    },
+    {
+      "name": "coupon_change_type",
+      "type": "text"
+    },
+    {
+      "name": "coupon_date_prev",
+      "type": "time"
+    },
+    {
+      "name": "coupon_date_next",
+      "type": "time"
+    },
+    {
+      "name": "coupon_next_reset_date",
+      "type": "time"
+    },
+    {
+      "name": "bus_day_conv_method",
+      "type": "text"
+    },
+    {
+      "name": "coupon_exdate_gap",
+      "type": "text"
+    },
+    {
+      "name": "coupon_pmt_date_type",
+      "type": "text"
+    },
+    {
+      "name": "coupon_type_current",
+      "type": "text"
+    },
+    {
+      "name": "coupon_frequency",
+      "type": "text"
+    },
+    {
+      "name": "coupon_daycount_type",
+      "type": "text"
+    },
+    {
+      "name": "coupon_link",
+      "type": "text"
+    },
+    {
+      "name": "coupon_underlying_index",
+      "type": "text"
+    },
+    {
+      "name": "coupon_rate_floor",
+      "type": "final_percent"
+    },
+    {
+      "name": "coupon_rate_ceiling",
+      "type": "final_percent"
+    },
+    {
+      "name": "coupon_reset_frequency",
+      "type": "text"
+    },
+    {
+      "name": "premature_redemption",
+      "type": "text"
+    },
+    {
+      "name": "final_redemption_amount",
+      "type": "final_percent"
+    },
+    {
+      "name": "call_frequency",
+      "type": "text"
+    },
+    {
+      "name": "call_next_date",
+      "type": "time"
+    },
+    {
+      "name": "call_next_price",
+      "type": "final_percent"
+    },
+    {
+      "name": "put_frequency",
+      "type": "text"
+    },
+    {
+      "name": "put_next_date",
+      "type": "time"
+    },
+    {
+      "name": "put_next_price",
+      "type": "final_percent"
+    },
+    {
+      "name": "poison_put_option",
+      "type": "text"
+    },
+    {
+      "name": "make_whole_call_option",
+      "type": "text"
+    },
+    {
+      "name": "make_whole_call_start_date",
+      "type": "time"
+    },
+    {
+      "name": "make_whole_call_end_date",
+      "type": "time"
+    },
+    {
+      "name": "make_whole_call_spread",
+      "type": "number"
+    },
+    {
+      "name": "years_to_maturity",
+      "type": "number"
+    },
+    {
+      "name": "accrued_coupon_interest",
+      "type": "fundamental_price"
+    },
+    {
+      "name": "yield_to_maturity",
+      "type": "final_percent"
+    },
+    {
+      "name": "current_yield",
+      "type": "final_percent"
+    },
+    {
+      "name": "measure",
+      "type": "text"
+    }
+  ]

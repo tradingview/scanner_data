@@ -611,7 +611,7 @@ presets:
       - GPW:WIG_BANKI
       - GPW:WIG_ENERG
       - GPW:WIGTECHTR
-      - GPW:WIG_ESG
+      - GPW:WIG_GRY
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

@@ -415,5 +415,9 @@
     {
       "name": "bond_deepest_history_symbol",
       "type": "text"
+    },
+    {
+      "name": "coupon_currency",
+      "type": "text"
     }
   ]

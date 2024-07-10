@@ -1361,6 +1361,10 @@
         "type": "text"
     },
     {
+        "name": "subsessions",
+        "type": "interface_slice"
+    },
+    {
         "name": "issuance_of_stock_net_ttm",
         "type": "fundamental_price"
     }

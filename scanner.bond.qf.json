@@ -417,6 +417,18 @@
       "type": "text"
     },
     {
+      "name": "subsessions",
+      "type": "interface_slice"
+    },
+    {
+      "name": "perms",
+      "type": "interface_slice"
+    },
+    {
+      "name": "source2",
+      "type": "interface_slice"
+    },
+    {
       "name": "coupon_currency",
       "type": "text"
     }

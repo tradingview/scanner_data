@@ -601,17 +601,17 @@ presets:
 - name: country_top_indices_tw
   symbols:
     tickers:
-      - TWSE:TAIEX
+      - TWSE:IX0001
       - FTSE:TW50
       - FTSE:TW50C
-      - TPEX:STOCK
+      - TPEX:IX0043
       - TPEX:IX0118
       - TWSE:EMP99
-      - TWSE:FIN
-      - TWSE:GLC
-      - TWSE:EPC
-      - TWSE:BIM
-      - TWSE:CHE
+      - TWSE:IX0039
+      - TWSE:IX0022
+      - TWSE:IX0032
+      - TWSE:IX0021
+      - TWSE:IX0019
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

@@ -639,12 +639,5 @@
   	"fund_flows.3Y": "rates_time_series",
   	"fund_flows.5Y": "rates_time_series",
   	"fund_flows.YTD": "rates_time_series",
-  	"indicated_annual_dividend": "rates_current",
-  	"denom_min": "rates_current",
-    "denom_increment": "rates_current",
-    "nominal_value": "rates_current",
-    "issue_amount": "rates_current",
-    "outstanding_amount": "rates_current",
-    "accrued_coupon_interest": "rates_current",
-    "close_net": "rates_current"
+  	"indicated_annual_dividend": "rates_current"
 }

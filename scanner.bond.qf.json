@@ -417,15 +417,27 @@
       "type": "text"
     },
     {
-      "name": "subsessions",
+      "name": "bond_snp_rating_lt_h",
       "type": "interface_slice"
     },
     {
-      "name": "perms",
+      "name": "bond_issuer_snp_rating_lt_h",
       "type": "interface_slice"
     },
     {
-      "name": "source2",
+      "name": "bond_issuer_snp_rating_st_h",
+      "type": "interface_slice"
+    },
+    {
+      "name": "redemptions_h",
+      "type": "interface_slice"
+    },
+    {
+      "name": "bond_agents",
+      "type": "interface_slice"
+    },
+    {
+      "name": "use_of_proceeds",
       "type": "interface_slice"
     },
     {

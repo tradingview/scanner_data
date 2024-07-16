@@ -250,23 +250,23 @@
     },
     {
       "name": "denom_min",
-      "type": "price"
+      "type": "fundamental_price"
     },
     {
       "name": "denom_increment",
-      "type": "price"
+      "type": "fundamental_price"
     },
     {
       "name": "nominal_value",
-      "type": "price"
+      "type": "fundamental_price"
     },
     {
       "name": "issue_amount",
-      "type": "price"
+      "type": "fundamental_price"
     },
     {
       "name": "outstanding_amount",
-      "type": "price"
+      "type": "fundamental_price"
     },
     {
       "name": "amount_outstanding_ratio",
@@ -394,7 +394,7 @@
     },
     {
       "name": "accrued_coupon_interest",
-      "type": "price"
+      "type": "fundamental_price"
     },
     {
       "name": "yield_to_maturity",

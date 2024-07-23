@@ -418,27 +418,27 @@
     },
     {
       "name": "bond_snp_rating_lt_h",
-      "type": "interface_slice"
+      "type": "interface"
     },
     {
       "name": "bond_issuer_snp_rating_lt_h",
-      "type": "interface_slice"
+      "type": "interface"
     },
     {
       "name": "bond_issuer_snp_rating_st_h",
-      "type": "interface_slice"
+      "type": "interface"
     },
     {
       "name": "redemptions_h",
-      "type": "interface_slice"
+      "type": "interface"
     },
     {
       "name": "bond_agents",
-      "type": "interface_slice"
+      "type": "interface"
     },
     {
       "name": "use_of_proceeds",
-      "type": "interface_slice"
+      "type": "set"
     },
     {
       "name": "coupon_currency",

@@ -5350,3 +5350,18 @@ presets:
     sortOrder: desc
   markets:
     - australia
+- name: etfs_market_page_ethereum
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  symbols:
+    tickers:
+      - AMEX:QETH
+      - AMEX:CETH
+      - AMEX:FETH
+      - AMEX:EZET
+      - AMEX:ETHV
+      - NASDAQ:ETHA
+      - AMEX:ETHW
+      - AMEX:ETHE
+      - AMEX:ETH

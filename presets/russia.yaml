@@ -600,6 +600,10 @@ presets:
       - MOEX:MOEXMM
       - MOEX:MOEXFN
       - MOEX:MOEXCN
+  filter:
+  - left: type
+    operation: nequal
+    right: index
 - name: highest_revenue_per_employee
   filter:
     - left: typespecs

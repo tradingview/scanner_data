@@ -22964,7 +22964,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -22996,7 +22996,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -23028,7 +23028,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -23060,7 +23060,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -23092,7 +23092,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -23124,7 +23124,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -23158,7 +23158,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -23192,7 +23192,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true
@@ -23226,7 +23226,7 @@ presets:
   filter:
   - left: exchange
     operation: equal
-    right: MOEX
+    right: ALOR
   - left: active_symbol
     operation: equal
     right: true

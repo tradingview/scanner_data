@@ -6,5 +6,5 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: close
+    sortBy: yield_to_maturity
     sortOrder: desc

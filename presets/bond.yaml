@@ -1,2 +1,10 @@
 ---
-presets: []
+presets:
+- name: stocks_related_bonds
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc

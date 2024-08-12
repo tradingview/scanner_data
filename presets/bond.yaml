@@ -8,3 +8,147 @@ presets:
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
+- name: highest_yield_bonds
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 6
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: fundamental_currency_code
+      operation: in_range
+      right: USD
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right: [690, 700, 710, 720, 730, 740, 750]
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: short_term_bonds
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: duration_type
+      operation: in_range
+      right: short-term
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: fundamental_currency_code
+      operation: in_range
+      right: USD
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: bond_snp_rating_lt
+    sortOrder: desc
+- name: long_term_bonds
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: duration_type
+      operation: in_range
+      right: long-term
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: fundamental_currency_code
+      operation: in_range
+      right: USD
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: bond_snp_rating_lt
+    sortOrder: desc
+- name: zero_coupon_bonds
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: coupon_type_general
+      operation: in_range
+      right: zero
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: fundamental_currency_code
+      operation: in_range
+      right: USD
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: fixed_rate_bonds
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: coupon_type_general
+      operation: in_range
+      right: zero
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: fundamental_currency_code
+      operation: in_range
+      right: USD
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right: [690, 700, 710, 720, 730, 740, 750]
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: floating_rate_bonds
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: coupon_type_general
+      operation: in_range
+      right: variable
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: fundamental_currency_code
+      operation: in_range
+      right: USD
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right: [690, 700, 710, 720, 730, 740, 750]
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc

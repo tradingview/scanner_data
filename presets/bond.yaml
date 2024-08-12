@@ -24,7 +24,14 @@ presets:
       right: USD
     - left: bond_snp_rating_lt
       operation: in_range
-      right: [690, 700, 710, 720, 730, 740, 750]
+      right:
+      - 690
+      - 700
+      - 710
+      - 720
+      - 730
+      - 740
+      - 750
     - left: is_primary
       operation: equal
       right: true
@@ -119,7 +126,14 @@ presets:
       right: USD
     - left: bond_snp_rating_lt
       operation: in_range
-      right: [690, 700, 710, 720, 730, 740, 750]
+      right:
+        - 690
+        - 700
+        - 710
+        - 720
+        - 730
+        - 740
+        - 750
     - left: is_primary
       operation: equal
       right: true
@@ -145,7 +159,14 @@ presets:
       right: USD
     - left: bond_snp_rating_lt
       operation: in_range
-      right: [690, 700, 710, 720, 730, 740, 750]
+      right:
+        - 690
+        - 700
+        - 710
+        - 720
+        - 730
+        - 740
+        - 750
     - left: is_primary
       operation: equal
       right: true

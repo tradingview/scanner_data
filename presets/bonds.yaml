@@ -268,8 +268,8 @@ presets:
       - TVC:AT02Y
       - TVC:AT10Y
       - TVC:AT30Y
+      - TVC:AT50Y
       - TVC:AT95Y
-      - TVC:AT100Y
 - name: country_top_bonds_yield_bh
   symbols:
     tickers:
@@ -326,7 +326,6 @@ presets:
 - name: country_top_bonds_yield_co
   symbols:
     tickers:
-      - TVC:CO02Y
       - TVC:CO04Y
       - TVC:CO05Y
       - TVC:CO10Y
@@ -476,9 +475,7 @@ presets:
 - name: country_top_bonds_yield_lv
   symbols:
     tickers:
-      - TVC:LV02Y
-      - TVC:LV03Y
-      - TVC:LV05Y
+      - ""
 - name: country_top_bonds_yield_lt
   symbols:
     tickers:
@@ -531,7 +528,7 @@ presets:
 - name: country_top_bonds_yield_no
   symbols:
     tickers:
-      - TVC:NO03MY
+      - TVC:NO06MY
       - TVC:NO01Y
       - TVC:NO03Y
       - TVC:NO05Y

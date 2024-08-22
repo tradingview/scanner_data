@@ -32,6 +32,10 @@
         "type": "text"
     },
     {
+        "name": "isin-displayed",
+        "type": "text"
+    },
+    {
         "name": "market_cap_basic",
         "type": "fundamental_price"
     },
@@ -1177,7 +1181,191 @@
         "type": "text"
     },
     {
-        "name": "nav_date",
-        "type": "time"
+        "name": "debt_to_asset_fq",
+        "type": "number"
+    },
+    {
+        "name": "debt_to_asset_fy",
+        "type": "number"
+    },
+    {
+        "name": "asset_turnover_current",
+        "type": "number"
+    },
+    {
+        "name": "asset_turnover_fy",
+        "type": "number"
+    },
+    {
+        "name": "invent_turnover_current",
+        "type": "number"
+    },
+    {
+        "name": "invent_turnover_fy",
+        "type": "number"
+    },
+    {
+        "name": "capital_expenditures_unchanged_fq_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "capital_expenditures_unchanged_fy_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "capital_expenditures_unchanged_ttm_h",
+        "type": "num_slice"
+    },
+    {
+        "name": "earnings_publication_type_fq",
+        "type": "number"
+    },
+    {
+        "name": "earnings_publication_type_next_fq",
+        "type": "number"
+    },
+    {
+        "name": "interst_cover_fy",
+        "type": "number"
+    },
+    {
+        "name": "interst_cover_ttm",
+        "type": "number"
+    },
+    {
+        "name": "net_debt_to_ebitda_fq",
+        "type": "number"
+    },
+    {
+        "name": "net_debt_to_ebitda_fy",
+        "type": "number"
+    },
+    {
+        "name": "return_on_tang_equity_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_tang_equity_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_tang_assets_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_tang_assets_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "total_debt_to_capital_fq",
+        "type": "number"
+    },
+    {
+        "name": "total_debt_to_capital_fy",
+        "type": "number"
+    },
+    {
+        "name": "ebitda_interst_cover_fy",
+        "type": "number"
+    },
+    {
+        "name": "ebitda_interst_cover_ttm",
+        "type": "number"
+    },
+    {
+        "name": "ebitda_less_capex_interst_cover_fy",
+        "type": "number"
+    },
+    {
+        "name": "ebitda_less_capex_interst_cover_ttm",
+        "type": "number"
+    },
+    {
+        "name": "return_on_capital_employed_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_capital_employed_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_total_capital_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_total_capital_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "cash_dividend_coverage_ratio_fy",
+        "type": "number"
+    },
+    {
+        "name": "cash_dividend_coverage_ratio_ttm",
+        "type": "number"
+    },
+    {
+        "name": "total_assets_to_equity_fq",
+        "type": "number"
+    },
+    {
+        "name": "total_assets_to_equity_fy",
+        "type": "number"
+    },
+    {
+        "name": "receivables_turnover_fq",
+        "type": "number"
+    },
+    {
+        "name": "receivables_turnover_fy",
+        "type": "number"
+    },
+    {
+        "name": "fixed_assets_turnover_fq",
+        "type": "number"
+    },
+    {
+        "name": "fixed_assets_turnover_fy",
+        "type": "number"
+    },
+    {
+        "name": "free_cash_flow_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "oper_income_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_debt_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_assets_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "research_and_dev_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_income_per_employee_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "top_revenue_country_code",
+        "type": "text"
+    },   
+    {
+        "name": "issuance_of_stock_net_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "index_tracked",
+        "type": "text"
     }
 ]

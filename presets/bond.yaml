@@ -173,3 +173,103 @@ presets:
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
+- name: country_top_corporate_bonds_us
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: United States
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ar
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Argentina
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_at
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Austria
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ar
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Australia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_bh
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Bahrain
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc

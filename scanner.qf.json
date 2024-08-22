@@ -1357,7 +1357,15 @@
         "type": "fundamental_price"
     },
     {
+        "name": "top_revenue_country_code",
+        "type": "text"
+    },   
+    {
         "name": "issuance_of_stock_net_ttm",
         "type": "fundamental_price"
+    },
+    {
+        "name": "index_tracked",
+        "type": "text"
     }
 ]

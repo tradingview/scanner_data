@@ -667,3 +667,35 @@ presets:
   sort:
     sortBy: Value.Traded|1W
     sortOrder: desc
+- name: country_top_corporate_bonds_au
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - '690'
+        - '700'
+        - '710'
+        - '720'
+        - '730'
+        - '740'
+        - '750'
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: equal
+      right: australia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+  markets:
+    - bond

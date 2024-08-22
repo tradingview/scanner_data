@@ -152,3 +152,1263 @@ presets:
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
+- name: country_top_corporate_bonds_us
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: United States
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ar
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Argentina
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_at
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Austria
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_au
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Australia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_bh
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Bahrain
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_bd
+  symbols:
+    tickers:
+      - ""
+- name: country_top_corporate_bonds_be
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Belgium
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_br
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Brazil
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ca
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Canada
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_cl
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Chile
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_cn
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: China
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_co
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Colombia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_cy
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Cyprus
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_cz
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Czech Republic
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_dk
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Denmark
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_eg
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Egypt
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ee
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Estonia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_fi
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Finland
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_fr
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: France
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_de
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Germany
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_gr
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Greece
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_hk
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Hong Kong
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_hu
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Hungary
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_is
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Iceland
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_in
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: India
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_id
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Indonesia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_il
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Israel
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_it
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Italy
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_jp
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Japan
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ke
+  symbols:
+    tickers:
+      - ""
+- name: country_top_corporate_bonds_kr
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: South Korea
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_sa
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Saudi Arabia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_kw
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Kuwait
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_lv
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Latvia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_lt
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Lithuania
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_lu
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Luxembourg
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ma
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Malaysia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_mx
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Mexico
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ma
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Morocco
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_nl
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Netherlands
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_nz
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: New Zealand
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ng
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Nigeria
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_no
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Norway
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_pk
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Pakistan
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_pe
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Peru
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ph
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Philippines
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_pl
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Poland
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_pt
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Portugal
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_qa
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Qatar
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ro
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Romania
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_za
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: South Africa
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ru
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Russian Federation
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_rs
+  symbols:
+    tickers:
+      - ""
+- name: country_top_corporate_bonds_sg
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Singapore
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_sk
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Slovakia
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_es
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Spain
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_lk
+  symbols:
+    tickers:
+      - ""
+- name: country_top_corporate_bonds_se
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Sweden
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ch
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Switzerland
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_tw
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Taiwan
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_th
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Thailand
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_tn
+  symbols:
+    tickers:
+      - ""
+- name: country_top_corporate_bonds_tr
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Turkey
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ae
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: United Arab Emirates
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_gb
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: United Kingdom
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_ve
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Venezuela
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
+- name: country_top_corporate_bonds_vn
+  filter:
+    - left: bond_issuer_type
+      operation: in_range
+      right: corporate
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: country
+      operation: in_range
+      right: Vietnam
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc

@@ -184,9 +184,6 @@ presets:
     - left: outstanding_amount
       operation: egreater
       right: 100000000
-    - left: fundamental_currency_code
-      operation: in_range
-      right: USD
     - left: bond_snp_rating_lt
       operation: in_range
       right:
@@ -217,9 +214,6 @@ presets:
     - left: outstanding_amount
       operation: egreater
       right: 100000000
-    - left: fundamental_currency_code
-      operation: in_range
-      right: USD
     - left: bond_snp_rating_lt
       operation: in_range
       right:
@@ -250,9 +244,6 @@ presets:
     - left: outstanding_amount
       operation: egreater
       right: 100000000
-    - left: fundamental_currency_code
-      operation: in_range
-      right: USD
     - left: bond_snp_rating_lt
       operation: in_range
       right:

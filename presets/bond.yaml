@@ -274,25 +274,9 @@ presets:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_bd
-  filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
-    - left: outstanding_amount
-      operation: egreater
-      right: 100000000
-    - left: is_primary
-      operation: equal
-      right: true
-    - left: country
-      operation: in_range
-      right: Bangladesh
-  sort:
-    sortBy: yield_to_maturity
-    sortOrder: desc
+  symbols:
+    tickers:
+      - ""
 - name: country_top_corporate_bonds_be
   filter:
     - left: bond_issuer_type
@@ -754,25 +738,9 @@ presets:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ke
-  filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
-    - left: outstanding_amount
-      operation: egreater
-      right: 100000000
-    - left: is_primary
-      operation: equal
-      right: true
-    - left: country
-      operation: in_range
-      right: Kenya
-  sort:
-    sortBy: yield_to_maturity
-    sortOrder: desc
+  symbols:
+    tickers:
+      - ""
 - name: country_top_corporate_bonds_kr
   filter:
     - left: bond_issuer_type
@@ -1214,25 +1182,9 @@ presets:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_rs
-  filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
-    - left: outstanding_amount
-      operation: egreater
-      right: 100000000
-    - left: is_primary
-      operation: equal
-      right: true
-    - left: country
-      operation: in_range
-      right: Serbia
-  sort:
-    sortBy: yield_to_maturity
-    sortOrder: desc
+  symbols:
+    tickers:
+      - ""
 - name: country_top_corporate_bonds_sg
   filter:
     - left: bond_issuer_type
@@ -1294,25 +1246,9 @@ presets:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_lk
-  filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
-    - left: outstanding_amount
-      operation: egreater
-      right: 100000000
-    - left: is_primary
-      operation: equal
-      right: true
-    - left: country
-      operation: in_range
-      right: Sri Lanka
-  sort:
-    sortBy: yield_to_maturity
-    sortOrder: desc
+  symbols:
+    tickers:
+      - ""
 - name: country_top_corporate_bonds_se
   filter:
     - left: bond_issuer_type
@@ -1394,25 +1330,9 @@ presets:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_tn
-  filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
-    - left: outstanding_amount
-      operation: egreater
-      right: 100000000
-    - left: is_primary
-      operation: equal
-      right: true
-    - left: country
-      operation: in_range
-      right: Tunisia
-  sort:
-    sortBy: yield_to_maturity
-    sortOrder: desc
+  symbols:
+    tickers:
+      - ""
 - name: country_top_corporate_bonds_tr
   filter:
     - left: bond_issuer_type

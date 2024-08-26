@@ -22,16 +22,9 @@ presets:
   - left: fundamental_currency_code
     operation: in_range
     right: USD
-  - left: bond_snp_rating_lt
-    operation: in_range
-    right:
-    - '690'
-    - '700'
-    - '710'
-    - '720'
-    - '730'
-    - '740'
-    - '750'
+  - left: yield_to_maturity
+    operation: eless
+    right: 10
   - left: is_primary
     operation: equal
     right: true
@@ -124,16 +117,9 @@ presets:
   - left: fundamental_currency_code
     operation: in_range
     right: USD
-  - left: bond_snp_rating_lt
-    operation: in_range
-    right:
-      - '690'
-      - '700'
-      - '710'
-      - '720'
-      - '730'
-      - '740'
-      - '750'
+  - left: yield_to_maturity
+    operation: eless
+    right: 10
   - left: is_primary
     operation: equal
     right: true
@@ -157,16 +143,9 @@ presets:
   - left: fundamental_currency_code
     operation: in_range
     right: USD
-  - left: bond_snp_rating_lt
-    operation: in_range
-    right:
-      - '690'
-      - '700'
-      - '710'
-      - '720'
-      - '730'
-      - '740'
-      - '750'
+  - left: yield_to_maturity
+    operation: eless
+    right: 10
   - left: is_primary
     operation: equal
     right: true

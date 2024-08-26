@@ -52,7 +52,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: bond_snp_rating_lt
+    sortBy: yield_to_maturity
     sortOrder: desc
 - name: long_term_bonds
   filter:
@@ -75,7 +75,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: bond_snp_rating_lt
+    sortBy: yield_to_maturity
     sortOrder: desc
 - name: zero_coupon_bonds
   filter:

@@ -52,8 +52,8 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: yield_to_maturity
-    sortOrder: desc
+    sortBy: maturity_date
+    sortOrder: asc
 - name: long_term_bonds
   filter:
   - left: bond_issuer_type
@@ -75,7 +75,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: yield_to_maturity
+    sortBy: maturity_date
     sortOrder: desc
 - name: zero_coupon_bonds
   filter:

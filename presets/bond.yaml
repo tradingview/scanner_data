@@ -153,7 +153,7 @@ presets:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_us
-  index_filter:
+  index_filters:
     - name: bond_issuer_type
       values:
         - corporate

@@ -1120,12 +1120,12 @@ presets:
 - name: locale_top_futures_index_cn
   symbols:
     tickers:
-      - CFFEX:IF1!
-      - CFFEX:IH1!
-      - CFFEX:IC1!
-      - CFFEX:IM1!
       - HKEX:HSI1!
+      - HKEX:MHI1!
+      - HKEX:HTI1!
       - HKEX:HHI1!
+      - HKEX:MCA1!
+      - HKEX:CHH1!
 - name: locale_top_futures_energy_tw
   symbols:
     tickers:

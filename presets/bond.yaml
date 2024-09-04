@@ -174,10 +174,14 @@ presets:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ar
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Argentina
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -187,17 +191,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Argentina
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_at
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Austria
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -207,17 +212,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Austria
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_au
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Australia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -227,17 +233,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Australia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_bh
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Bahrain
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -247,9 +254,6 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Bahrain
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -258,10 +262,14 @@ presets:
     tickers:
       - ""
 - name: country_top_corporate_bonds_be
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Belgium
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -271,17 +279,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Belgium
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_br
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Brazil
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -291,17 +300,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Brazil
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ca
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Canada
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -311,17 +321,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Canada
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_cl
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Chile
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -331,17 +342,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Chile
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_cn
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - China
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -351,17 +363,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: China
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_co
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Colombia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -371,17 +384,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Colombia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_cy
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Cyprus
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -391,17 +405,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Cyprus
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_cz
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Czech Republic
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -411,17 +426,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Czech Republic
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_dk
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Denmark
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -431,17 +447,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Denmark
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_eg
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Egypt
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -451,17 +468,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Egypt
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ee
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Estonia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -471,17 +489,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Estonia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_fi
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Finland
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -491,17 +510,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Finland
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_fr
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - France
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -511,17 +531,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: France
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_de
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Germany
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -531,17 +552,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Germany
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_gr
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Greece
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -551,17 +573,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Greece
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_hk
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Hong Kong
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -571,17 +594,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Hong Kong
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_hu
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Hungary
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -591,17 +615,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Hungary
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_is
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Iceland
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -611,17 +636,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Iceland
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_in
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - India
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -631,17 +657,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: India
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_id
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Indonesia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -651,17 +678,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Indonesia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_il
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Israel
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -671,17 +699,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Israel
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_it
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Italy
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -691,17 +720,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Italy
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_jp
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Japan
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -711,9 +741,6 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Japan
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -722,10 +749,14 @@ presets:
     tickers:
       - ""
 - name: country_top_corporate_bonds_kr
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - South Korea
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -735,17 +766,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: South Korea
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_sa
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Saudi Arabia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -755,17 +787,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Saudi Arabia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_kw
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Kuwait
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -775,17 +808,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Kuwait
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_lv
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Latvia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -795,17 +829,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Latvia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_lt
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Lithuania
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -815,17 +850,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Lithuania
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_lu
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Luxembourg
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -835,17 +871,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Luxembourg
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ma
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Malaysia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -855,17 +892,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Malaysia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_mx
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Mexico
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -875,17 +913,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Mexico
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ma
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Morocco
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -895,17 +934,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Morocco
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_nl
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Netherlands
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -915,17 +955,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Netherlands
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_nz
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - New Zealand
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -935,17 +976,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: New Zealand
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ng
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Nigeria
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -955,17 +997,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Nigeria
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_no
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Norway
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -975,17 +1018,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Norway
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_pk
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Pakistan
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -995,17 +1039,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Pakistan
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_pe
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Peru
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1015,17 +1060,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Peru
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ph
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Philippines
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1035,17 +1081,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Philippines
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_pl
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Poland
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1055,17 +1102,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Poland
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_pt
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Portugal
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1075,17 +1123,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Portugal
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_qa
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Qatar
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1095,17 +1144,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Qatar
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ro
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Romania
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1115,17 +1165,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Romania
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_za
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - South Africa
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1135,17 +1186,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: South Africa
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ru
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Russian Federation
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1155,9 +1207,6 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Russian Federation
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1166,10 +1215,14 @@ presets:
     tickers:
       - ""
 - name: country_top_corporate_bonds_sg
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Singapore
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1179,17 +1232,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Singapore
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_sk
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Slovakia
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1199,17 +1253,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Slovakia
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_es
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Spain
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1219,9 +1274,6 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Spain
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1230,10 +1282,14 @@ presets:
     tickers:
       - ""
 - name: country_top_corporate_bonds_se
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Sweden
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1243,17 +1299,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Sweden
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ch
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Switzerland
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1263,17 +1320,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Switzerland
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_tw
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Taiwan
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1283,17 +1341,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Taiwan
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_th
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Thailand
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1303,9 +1362,6 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Thailand
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1314,10 +1370,14 @@ presets:
     tickers:
       - ""
 - name: country_top_corporate_bonds_tr
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Turkey
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1327,17 +1387,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Turkey
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ae
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - United Arab Emirates
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1347,17 +1408,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: United Arab Emirates
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_gb
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - United Kingdom
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1367,17 +1429,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: United Kingdom
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_ve
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Venezuela
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1387,17 +1450,18 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Venezuela
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
 - name: country_top_corporate_bonds_vn
+  index_filters:
+  - name: bond_issuer_type
+    values:
+    - corporate
+  - name: country
+    values:
+    - Vietnam
   filter:
-    - left: bond_issuer_type
-      operation: in_range
-      right: corporate
     - left: yield_to_maturity
       operation: egreater
       right: 1
@@ -1407,9 +1471,6 @@ presets:
     - left: is_primary
       operation: equal
       right: true
-    - left: country
-      operation: in_range
-      right: Vietnam
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc

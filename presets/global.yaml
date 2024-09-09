@@ -2653,7 +2653,7 @@ presets:
     - vietnam
 - name: etfs_market_page_biggest_losses
   filter:
-    - left: nav_total_return.5Y
+    - left: nav_total_return.3Y
       operation: less
       right: 0
     - left: typespecs
@@ -2667,7 +2667,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: nav_total_return.3Y
     sortOrder: asc
   markets:
     - america
@@ -3281,7 +3281,7 @@ presets:
       operation: in_range
       right:
         - '13'
-    - left: nav_total_return.5Y
+    - left: nav_total_return.3Y
       operation: greater
       right: 0
     - left: typespecs
@@ -3815,7 +3815,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: nav_total_return.3Y
     sortOrder: desc
   markets:
     - america
@@ -3902,7 +3902,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: nav_total_return.3Y
     sortOrder: desc
   markets:
     - america

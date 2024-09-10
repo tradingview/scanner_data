@@ -17,7 +17,7 @@ const types = {
 const symbols = [];
 
 function getUrl(gr) {
-    const udfProxyPath = "http://udf-proxy.tradingview.com:8094/symbols";
+    const udfProxyPath = "http://udf-nyc.xstaging.tv/hub0/symbols";
     if (gr.url2) {
         return udfProxyPath + '?perm=*&domain=tv&' + gr.url2;
     }

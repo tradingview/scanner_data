@@ -124,7 +124,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: yield_to_maturity
+    sortBy: current_coupon
     sortOrder: desc
 - name: floating_rate_bonds
   filter:
@@ -150,7 +150,7 @@ presets:
     operation: equal
     right: true
   sort:
-    sortBy: yield_to_maturity
+    sortBy: current_coupon
     sortOrder: desc
 - name: country_top_corporate_bonds_us
   index_filters:

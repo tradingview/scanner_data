@@ -6,7 +6,7 @@ msInOneDay = 86400000
 startFrom(daysBack)=>
     time_close("D", syminfo.session, syminfo.timezone) - daysBack * msInOneDay
 
-fundPerf(daysBack, perfMaxDaysForValid) =>
+fundPerfMC(daysBack, perfMaxDaysForValid) =>
 	startT = startFrom(daysBack)
 	if time < startT
 		na
@@ -25,7 +25,7 @@ fundPerf(daysBack, perfMaxDaysForValid) =>
 
 		perf
 
-fundPerfYTD() =>
+fundPerfYTDMC() =>
 	max_bars_back(time, 2*years1)
 	max_bars_back(close, 2*years1)
     
@@ -44,7 +44,7 @@ fundPerfYTD() =>
 
 MCTicker = __financial_tickerid(syminfo.tickerid, "MARKET_CAP_BASIC", "D")
 // Perf.<1W | 1M | 3M | 6M | Y | 5Y | YTD>
-[MCPerf1W, MCPerf1M, MCPerf3M, MCPerf6M, MCPerf1Y, MCPerf5Y, MCPerfYTD] = request.security(MCTicker, fundTF, [fundPerf(week1, 10), fundPerf(month1, 10), fundPerf(month3, 10), fundPerf(month6, 10), fundPerf(years1, 10), fundPerf(years5, 10), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[MCPerf1W, MCPerf1M, MCPerf3M, MCPerf6M, MCPerf1Y, MCPerf5Y, MCPerfYTD] = request.security(MCTicker, fundTF, [fundPerfMC(week1, 10), fundPerfMC(month1, 10), fundPerfMC(month3, 10), fundPerfMC(month6, 10), fundPerfMC(years1, 10), fundPerfMC(years5, 10), fundPerfYTDMC()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
 
 plot(MCPerf1W, title="Perf.1W.MarketCap")
 plot(MCPerf1M, title="Perf.1M.MarketCap")

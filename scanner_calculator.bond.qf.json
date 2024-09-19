@@ -435,5 +435,9 @@
     {
       "name": "coupon_currency",
       "type": "text"
+    },
+    {
+      "name": "principal_redemption_type",
+      "type": "text"
     }
   ]

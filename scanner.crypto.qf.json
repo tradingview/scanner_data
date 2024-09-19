@@ -445,5 +445,49 @@
   {
     "name": "short-description",
     "type": "text"
+  },
+  {
+    "name": "galaxyscore",
+    "type": "number"
+  },
+  {
+    "name": "altrank",
+    "type": "number"
+  },
+  {
+    "name": "socialdominance",
+    "type": "final_percent"
+  },
+  {
+    "name": "interactions",
+    "type": "number"
+  },
+  {
+    "name": "tweets",
+    "type": "number"
+  },
+  {
+    "name": "sentiment",
+    "type": "final_percent"
+  },
+  {
+    "name": "contributorscreated",
+    "type": "number"
+  },
+  {
+    "name": "contributorsactive",
+    "type": "number"
+  },
+  {
+    "name": "postscreated",
+    "type": "number"
+  },
+  {
+    "name": "postsactive",
+    "type": "number"
+  },
+  {
+    "name": "social_volume_24h",
+    "type": "number"
   }
 ]

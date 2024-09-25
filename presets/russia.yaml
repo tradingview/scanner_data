@@ -589,7 +589,17 @@ presets:
 - name: country_top_indices_ru
   symbols:
     tickers:
-      - ""
+      - RUS:IRUS
+      - RUS:IRUS2
+      - RUS:RTSI
+      - RUS:RUS10
+      - RUS:RUSBC
+      - RUS:RUSOG
+      - RUS:RUSEU
+      - RUS:RUSTL
+      - RUS:RUSMM
+      - RUS:RUSFN
+      - RUS:RUSCN
 - name: highest_revenue_per_employee
   filter:
     - left: typespecs

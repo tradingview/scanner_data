@@ -235,18 +235,18 @@ presets:
 - name: country_top_futures_commodities_ru
   symbols:
     tickers:
-      - ALOR:GD1!
-      - ALOR:SV1!
-      - ALOR:NL1!
-      - ALOR:PD1!
-      - ALOR:CO1!
-      - ALOR:PT1!
-      - ALOR:AM1!
-      - ALOR:ZN1!
-      - ALOR:NG1!
-      - ALOR:BR1!
-      - ALOR:W41!
-      - ALOR:SA1!
+      - RUS:GD1!
+      - RUS:SV1!
+      - RUS:NL1!
+      - RUS:PD1!
+      - RUS:CO1!
+      - RUS:PT1!
+      - RUS:AM1!
+      - RUS:ZN1!
+      - RUS:NG1!
+      - RUS:BR1!
+      - RUS:W41!
+      - RUS:SA1!
 - name: country_top_futures_commodities_sg
   symbols:
     tickers:
@@ -805,8 +805,8 @@ presets:
 - name: locale_top_futures_energy_ru
   symbols:
     tickers:
-      - ALOR:NG1!
-      - ALOR:BR1!
+      - RUS:NG1!
+      - RUS:BR1!
       - NYMEX:CL1!
       - NYMEX:RB1!
       - NYMEX:HO1!
@@ -814,17 +814,17 @@ presets:
 - name: locale_top_futures_metals_ru
   symbols:
     tickers:
-      - ALOR:GD1!
-      - ALOR:SV1!
-      - ALOR:PD1!
-      - ALOR:PT1!
-      - ALOR:NL1!
-      - ALOR:CO1!
+      - RUS:GD1!
+      - RUS:SV1!
+      - RUS:PD1!
+      - RUS:PT1!
+      - RUS:NL1!
+      - RUS:CO1!
 - name: locale_top_futures_agricultural_ru
   symbols:
     tickers:
-      - ALOR:SA1!
-      - ALOR:W41!
+      - RUS:SA1!
+      - RUS:W41!
       - ICEUS:KC1!
       - ICEUS:CT1!
       - CBOT:ZS1!
@@ -832,10 +832,10 @@ presets:
 - name: locale_top_futures_index_ru
   symbols:
     tickers:
-      - ALOR:RI1!
-      - ALOR:MX1!
-      - ALOR:MM1!
-      - ALOR:RM1!
+      - RUS:RI1!
+      - RUS:MX1!
+      - RUS:MM1!
+      - RUS:RM1!
       - CME_MINI:ES1!
       - CME_MINI:NQ1!
 - name: locale_top_futures_energy_br

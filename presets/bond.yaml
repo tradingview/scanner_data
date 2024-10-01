@@ -51,6 +51,9 @@ presets:
   - left: is_primary
     operation: equal
     right: true
+  - left: maturity_date
+    operation: in_day_range
+    right: [60, 366]
   sort:
     sortBy: maturity_date
     sortOrder: asc

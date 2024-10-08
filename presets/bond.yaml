@@ -28,6 +28,9 @@ presets:
   - left: is_primary
     operation: equal
     right: true
+  - left: time
+    operation: in_day_range
+    right: [-14,0]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -54,6 +57,9 @@ presets:
   - left: maturity_date
     operation: in_day_range
     right: [60, 366]
+  - left: time
+    operation: in_day_range
+    right: [-14,0]
   sort:
     sortBy: maturity_date
     sortOrder: asc
@@ -77,6 +83,9 @@ presets:
   - left: is_primary
     operation: equal
     right: true
+  - left: time
+    operation: in_day_range
+    right: [-14,0]
   sort:
     sortBy: maturity_date
     sortOrder: desc
@@ -100,6 +109,9 @@ presets:
   - left: is_primary
     operation: equal
     right: true
+  - left: time
+    operation: in_day_range
+    right: [-14,0]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -126,6 +138,9 @@ presets:
   - left: is_primary
     operation: equal
     right: true
+  - left: time
+    operation: in_day_range
+    right: [-14,0]
   sort:
     sortBy: current_coupon
     sortOrder: desc
@@ -152,6 +167,9 @@ presets:
   - left: is_primary
     operation: equal
     right: true
+  - left: time
+    operation: in_day_range
+    right: [-14,0]
   sort:
     sortBy: current_coupon
     sortOrder: desc

@@ -501,7 +501,7 @@ if not na(recVWMA)
 	recMAC += 1
 recIC = float(na)
 if not(na(IC_Lead1) or na(IC_Lead2) or na(close) or na(close[1]) or na(IC_BLine) or na(IC_CLine))
-	recIC := calcRecommend(IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine, IC_Lead2 > IC_Lead1 and close < IC_Lead2 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+	recIC := calcRecommend(IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine, IC_Lead2 > IC_Lead1 and close < IC_Lead1 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
 plot(recIC, title='Rec.Ichimoku')
 if not na(recIC)
 	recMA += recIC

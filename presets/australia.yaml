@@ -7,10 +7,17 @@ presets:
     right: true
   - left: typespecs
     operation: has
-    right: common
+    right:
+    - common
+    - preferred
+    - reit
+    - mutual
   - left: type
     operation: equal
-    right: stock
+    right:
+    - stock
+    - dr
+    - fund
   sort:
     sortBy: name
     sortOrder: asc

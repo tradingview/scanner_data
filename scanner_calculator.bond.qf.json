@@ -439,5 +439,9 @@
     {
       "name": "principal_redemption_type",
       "type": "text"
+    },
+    {
+      "name": "coupon_exdate_gap_sort",
+      "type": "number"
     }
   ]

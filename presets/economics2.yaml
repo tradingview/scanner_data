@@ -1617,6 +1617,70 @@ presets:
       - ECONOMICS:IDPPIYY
       - ECONOMICS:IDFI
       - ECONOMICS:IDCPI
+- name: country_top_economics_key_ie
+  symbols:
+    tickers:
+      - ECONOMICS:IEGDP
+      - ECONOMICS:IEFYGDPG
+      - ECONOMICS:IEGDPCP
+      - ECONOMICS:IEINTR
+      - ECONOMICS:IEIRYY
+      - ECONOMICS:IEUR
+      - ECONOMICS:IECA
+      - ECONOMICS:IECAG
+      - ECONOMICS:IEGDG
+      - ECONOMICS:IEBOT
+      - ECONOMICS:IEPOP
+- name: country_top_economics_gdp_ie
+  symbols:
+    tickers:
+      - ECONOMICS:IEGDP
+      - ECONOMICS:IEGDPCP
+      - ECONOMICS:IEGNP
+      - ECONOMICS:IEGDPPCP
+      - ECONOMICS:IEGDPYY
+      - ECONOMICS:IEGDPQQ
+- name: country_top_economics_government_ie
+  symbols:
+    tickers:
+      - ECONOMICS:IEGR
+      - ECONOMICS:IEGSP
+      - ECONOMICS:IEGBV
+      - ECONOMICS:IEGD
+      - ECONOMICS:IEGDG
+      - ECONOMICS:IEGSG
+- name: country_top_economics_business_ie
+  symbols:
+    tickers:
+      - ECONOMICS:IENO
+      - ECONOMICS:IECORR
+- name: country_top_economics_taxes_ie
+  symbols:
+    tickers:
+      - ECONOMICS:IEPITR
+      - ECONOMICS:IECTR
+      - ECONOMICS:IESSR
+      - ECONOMICS:IESSRC
+      - ECONOMICS:IESSRE
+      - ECONOMICS:IESTR
+- name: country_top_economics_labor_ie
+  symbols:
+    tickers:
+      - ECONOMICS:IEEMP
+      - ECONOMICS:IEUP
+      - ECONOMICS:IEUR
+      - ECONOMICS:IEMW
+      - ECONOMICS:IEWAG
+      - ECONOMICS:IEWG
+- name: country_top_economics_prices_ie
+  symbols:
+    tickers:
+      - ECONOMICS:IEIRMM
+      - ECONOMICS:IEIRYY
+      - ECONOMICS:IECIR
+      - ECONOMICS:IEPPIYY
+      - ECONOMICS:IEFI
+      - ECONOMICS:IECPI
 - name: country_top_economics_key_il
   symbols:
     tickers:

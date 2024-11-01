@@ -1,0 +1,658 @@
+---
+presets:
+- name: all_stocks
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: large_cap
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: small_cap
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: asc
+- name: largest_employers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: market_cap_basic
+    operation: greater
+    right: 0
+  sort:
+    sortBy: number_of_employees_fy
+    sortOrder: desc
+- name: high_dividend
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: dividends_yield
+    operation: greater
+    right: 0
+  sort:
+    sortBy: dividends_yield
+    sortOrder: desc
+- name: highest_net_income
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  sort:
+    sortBy: net_income_fy
+    sortOrder: desc
+- name: gainers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 0.2
+    - 10000
+  - left: change
+    operation: greater
+    right: 0
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: change
+    sortOrder: desc
+- name: losers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 0.2
+    - 10000
+  - left: change
+    operation: less
+    right: 0
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: change
+    sortOrder: asc
+- name: volume_leaders
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: close
+    operation: in_range
+    right:
+    - 0.2
+    - 10000
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: Value.Traded
+    sortOrder: desc
+- name: unusual_volume
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: relative_volume_10d_calc
+    sortOrder: desc
+- name: most_volatile
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: Volatility.D
+    sortOrder: desc
+- name: high_beta
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: market_cap_basic
+    operation: greater
+    right: 0
+  sort:
+    sortBy: beta_1_year
+    sortOrder: desc
+- name: best_performing
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
+  sort:
+    sortBy: Perf.Y
+    sortOrder: desc
+- name: highest_revenue
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  sort:
+    sortBy: total_revenue_fy
+    sortOrder: desc
+- name: most_expensive
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
+  - left: market_cap_basic
+    operation: greater
+    right: 0
+  sort:
+    sortBy: close
+    sortOrder: desc
+- name: penny_stocks
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: close
+    sortOrder: asc
+- name: overbought
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: RSI
+    operation: greater
+    right: 70
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: RSI
+    sortOrder: desc
+- name: oversold
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: RSI
+    operation: less
+    right: 30
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: RSI
+    sortOrder: asc
+- name: all_time_high
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: High.All
+    operation: eless
+    right: high
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: all_time_low
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: Low.All
+    operation: egreater
+    right: low
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: above_52wk_high
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: price_52_week_high
+    operation: eless
+    right: high
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: below_52wk_low
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: price_52_week_low
+    operation: egreater
+    right: low
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: name
+    sortOrder: asc
+- name: highest_cash
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  sort:
+    sortBy: cash_n_short_term_invest_fq
+    sortOrder: desc
+- name: pre-market-gainers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: premarket_change
+    operation: greater
+    right: 0
+  - left: premarket_change
+    operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: premarket_change
+    sortOrder: desc
+- name: pre-market-losers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: premarket_change
+    operation: less
+    right: 0
+  - left: premarket_change
+    operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: premarket_change
+    sortOrder: asc
+- name: pre_market_most_active
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: premarket_volume
+    operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: premarket_volume
+    sortOrder: desc
+- name: pre_market_gappers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: premarket_gap
+    operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: premarket_gap
+    sortOrder: desc
+- name: after_hours_gainers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: postmarket_change
+    operation: greater
+    right: 0
+  - left: postmarket_change
+    operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: postmarket_change
+    sortOrder: desc
+- name: after_hours_losers
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: postmarket_change
+    operation: less
+    right: 0
+  - left: postmarket_change
+    operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: postmarket_change
+    sortOrder: asc
+- name: active_after_hours
+  filter:
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: type
+    operation: equal
+    right: stock
+  - left: postmarket_volume
+    operation: nempty
+  - left: active_symbol
+    operation: equal
+    right: true
+  sort:
+    sortBy: postmarket_volume
+    sortOrder: desc
+- name: market_sectors
+  symbols:
+    query:
+      types:
+      - sector
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: market_industries
+  symbols:
+    query:
+      types:
+      - industry
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: market_company
+  filter:
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: earning
+  filter:
+  - left: typespecs
+    operation: has
+    right: common
+  - left: is_primary
+    operation: equal
+    right: true
+  sort:
+   sortBy: market_cap_basic
+   sortOrder: desc
+- name: country_top_indices_ie
+  symbols:
+    tickers:
+      - EURONEXT:ISE20
+      - EURONEXT:ISEQ
+      - EURONEXT:ISESM
+      - EURONEXT:ISEFI
+      - EURONEXT:ISEOG
+      - EURONEXT:ISEIN
+      - EURONEXT:ISETE
+      - EURONEXT:ISEHC
+      - EURONEXT:ISEBM
+      - EURONEXT:ISRE
+      - EURONEXT:ISECS
+- name: highest_revenue_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: type
+      operation: equal
+      right: stock
+    - left: revenue_per_employee
+      operation: greater
+      right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 100
+  sort:
+    sortBy: revenue_per_employee
+    sortOrder: desc
+- name: highest_profit_per_employee
+  filter:
+    - left: is_primary
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right: common
+    - left: type
+      operation: equal
+      right: stock
+    - left: net_income_per_employee_fy
+      operation: greater
+      right: 0
+    - left: number_of_employees_fy
+      operation: greater
+      right: 100
+  sort:
+    sortBy: net_income_per_employee_fy
+    sortOrder: desc
+- name: country_top_etfs_most_traded
+  symbols:
+    tickers:
+      - ""

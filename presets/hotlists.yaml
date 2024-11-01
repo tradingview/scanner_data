@@ -35723,3 +35723,371 @@ presets:
     - 20
   markets:
     - america
+- name: EURONEXTDUB_volume_gainers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+  columns:
+    - volume
+  sort:
+    sortBy: volume
+    sortOrder: desc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_percent_change_gainers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+  columns:
+    - change
+  sort:
+    sortBy: change
+    sortOrder: desc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_percent_change_losers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+  columns:
+    - change
+  sort:
+    sortBy: change
+    sortOrder: asc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_percent_range_gainers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+  columns:
+    - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: desc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_percent_range_losers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+  columns:
+    - change_from_open
+  sort:
+    sortBy: change_from_open
+    sortOrder: asc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_percent_gap_gainers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+    - left: gap_up
+      operation: nempty
+  columns:
+    - gap_up
+  sort:
+    sortBy: gap_up
+    sortOrder: desc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_percent_gap_losers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+    - left: gap_down
+      operation: nempty
+  columns:
+    - gap_down
+  sort:
+    sortBy: gap_down
+    sortOrder: asc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_gap_gainers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+    - left: gap_up_abs
+      operation: nempty
+  columns:
+    - gap_up_abs
+  sort:
+    sortBy: gap_up_abs
+    sortOrder: desc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland
+- name: EURONEXTDUB_gap_losers
+  filter:
+    - left: exchange
+      operation: equal
+      right: EURONEXT
+    - left: active_symbol
+      operation: equal
+      right: true
+    - left: typespecs
+      operation: has
+      right:
+        - common
+        - ''
+    - left: type
+      operation: in_range
+      right:
+        - stock
+        - dr
+    - left: typespecs
+      operation: has_none_of
+      right:
+        - odd
+    - left: close
+      operation: in_range
+      right:
+        - 0.2
+        - 10000
+    - left: volume
+      operation: egreater
+      right: 1000
+    - left: gap_down_abs
+      operation: nempty
+  columns:
+    - gap_down_abs
+  sort:
+    sortBy: gap_down_abs
+    sortOrder: asc
+  range:
+    - 0
+    - 20
+  markets:
+    - ireland

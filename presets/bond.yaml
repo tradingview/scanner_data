@@ -702,6 +702,27 @@ presets:
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
+- name: country_top_corporate_bonds_ie
+  index_filters:
+    - name: bond_issuer_type
+      values:
+        - corporate
+    - name: country
+      values:
+        - Ireland
+  filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
+    - left: outstanding_amount
+      operation: egreater
+      right: 100000000
+    - left: is_primary
+      operation: equal
+      right: true
+  sort:
+    sortBy: yield_to_maturity
+    sortOrder: desc
 - name: country_top_corporate_bonds_il
   index_filters:
   - name: bond_issuer_type

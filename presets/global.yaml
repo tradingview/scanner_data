@@ -2121,7 +2121,7 @@ presets:
   symbols:
     tickers:
       - AMEX:VTI
-      - AMEX:IEFA
+      - CBOE:IEFA
       - TSE:1321
       - AMEX:XLK
       - AMEX:RSP
@@ -2171,14 +2171,14 @@ presets:
       - NASDAQ:IBIT
       - AMEX:BITB
       - AMEX:DEFI
-      - AMEX:ARKB
+      - CBOE:ARKB
       - AMEX:GBTC
-      - AMEX:FBTC
-      - AMEX:BTCW
-      - AMEX:BTCO
+      - CBOE:FBTC
+      - CBOE:BTCW
+      - CBOE:BTCO
       - NASDAQ:BRRR
-      - AMEX:HODL
-      - AMEX:EZBC
+      - CBOE:HODL
+      - CBOE:EZBC
 - name: etfs_market_page_highest_return
   filter:
     - left: nav_total_return.1Y
@@ -5356,11 +5356,11 @@ presets:
     sortOrder: desc
   symbols:
     tickers:
-      - AMEX:QETH
-      - AMEX:CETH
-      - AMEX:FETH
-      - AMEX:EZET
-      - AMEX:ETHV
+      - CBOE:QETH
+      - CBOE:CETH
+      - CBOE:FETH
+      - CBOE:EZET
+      - CBOE:ETHV
       - NASDAQ:ETHA
       - AMEX:ETHW
       - AMEX:ETHE

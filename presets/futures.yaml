@@ -122,6 +122,7 @@ presets:
 - name: country_top_futures_commodities_ae
   symbols:
     tickers:
+      - ICEAD:ADM1!
       - DFM:OMOIL1!
 - name: country_top_futures_commodities_ar
   symbols:
@@ -303,7 +304,7 @@ presets:
 - name: country_top_futures_commodities_ca
   symbols:
     tickers:
-      - ""
+      - ICEUS:RS1!
 - name: country_top_futures_commodities_cl
   symbols:
     tickers:
@@ -1174,7 +1175,7 @@ presets:
       - ICEEUR:BRN1!
       - NYMEX:RB1!
       - NYMEX:HO1!
-      - NYMEX:AEZ1!
+      - ICEAD:ADM1!
 - name: locale_top_futures_metals_sa
   symbols:
     tickers:

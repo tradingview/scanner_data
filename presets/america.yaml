@@ -6,6 +6,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -29,6 +30,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -52,6 +54,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -75,6 +78,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -101,6 +105,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -127,6 +132,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -150,6 +156,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -184,6 +191,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -218,6 +226,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -249,6 +258,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -275,6 +285,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -301,6 +312,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -327,6 +339,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -356,6 +369,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -379,6 +393,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -408,6 +423,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -434,6 +450,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -463,6 +480,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -492,6 +510,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -521,6 +540,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -550,6 +570,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -579,6 +600,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -608,6 +630,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -631,6 +654,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -662,6 +686,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -693,6 +718,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -721,6 +747,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -749,6 +776,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -780,6 +808,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -811,6 +840,7 @@ presets:
     operation: in_range
     right:
     - AMEX
+    - CBOE
     - NASDAQ
     - NYSE
   - left: is_primary
@@ -1007,6 +1037,7 @@ presets:
       operation: in_range
       right:
         - AMEX
+        - CBOE
         - NASDAQ
         - NYSE
     - left: typespecs
@@ -1024,6 +1055,7 @@ presets:
     operation: in_range
     right:
       - AMEX
+      - CBOE
       - NASDAQ
       - NYSE
   - left: is_primary
@@ -1052,6 +1084,7 @@ presets:
       operation: in_range
       right:
         - AMEX
+        - CBOE
         - NASDAQ
         - NYSE
     - left: is_primary
@@ -1081,6 +1114,7 @@ presets:
       operation: in_range
       right:
         - AMEX
+        - CBOE
         - NASDAQ
         - NYSE
     - left: is_primary

@@ -451,5 +451,9 @@
     {
       "name": "coupon_exdate_gap_sort",
       "type": "number"
-    }
+    },
+    {
+      "name": "value-unit-id",
+      "type": "text"
+    } 
   ]

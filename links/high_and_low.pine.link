@@ -9,23 +9,23 @@ if high > ath
 if low < low_after_ath
 	low_after_ath := low
 
-plot(ath, title='High_All')
-plot(ath_date, title='High_All_Date')
-plot(ath, title='High_All_Calc')
-plot(ath_date, title='High_All_Calc_Date')
-plot(low_after_ath, title='Low_After_High_All')
+plot(ath, title='High.All')
+plot(ath_date, title='High.All.Date')
+plot(ath, title='High.All.Calc')
+plot(ath_date, title='High.All.Calc.Date')
+plot(low_after_ath, title='Low.After.High.All')
 
 var atl = low
 var atl_date = time/1000
 if low < atl
 	atl := low
 	atl_date := time/1000
-plot(atl, title='Low_All')
-plot(atl_date, title='Low_All_Date')
-plot(atl, title='Low_All_Calc')
-plot(atl_date, title='Low_All_Calc_Date')
+plot(atl, title='Low.All')
+plot(atl_date, title='Low.All.Date')
+plot(atl, title='Low.All.Calc')
+plot(atl_date, title='Low.All.Calc.Date')
 var firstOpen = open
-plot(firstOpen, title='Open_All_Calc')
+plot(firstOpen, title='Open.All.Calc')
 custom_lowest_and_date(len, maxbarsback) =>
 	// max_bars_back(low, maxbarsback)
 	// max_bars_back(time, maxbarsback)
@@ -104,40 +104,40 @@ month6 = 180
 months6_ago = timenow - 1000 * 60 * 60 * 24 * month6
 countOfBars6MonthAgo = fastSearchTimeIndex(months6_ago, month6)
 [months6_low, months6_low_date] = custom_lowest_and_date(countOfBars6MonthAgo, month6)
-plot(months6_low, title='Low_6M')
-plot(months6_low_date, title='Low_6M_Date')
+plot(months6_low, title='Low.6M')
+plot(months6_low_date, title='Low.6M.Date')
 [months6_high, months6_high_date] = custom_highest_and_date(countOfBars6MonthAgo, month6)
-plot(months6_high, title='High_6M')
-plot(months6_high_date, title='High_6M_Date')
+plot(months6_high, title='High.6M')
+plot(months6_high_date, title='High.6M.Date')
 month3 = 90
 months3_ago = timenow - 1000 * 60 * 60 * 24 * month3
 countOfBars3MonthAgo = fastSearchTimeIndex(months3_ago, month3)
 [months3_low, months3_low_date] = custom_lowest_and_date(countOfBars3MonthAgo, month3)
-plot(months3_low, title='Low_3M')
-plot(months3_low_date, title='Low_3M_Date')
+plot(months3_low, title='Low.3M')
+plot(months3_low_date, title='Low.3M.Date')
 [months3_high, months3_high_date] = custom_highest_and_date(countOfBars3MonthAgo, month3)
-plot(months3_high, title='High_3M')
-plot(months3_high_date, title='High_3M_Date')
+plot(months3_high, title='High.3M')
+plot(months3_high_date, title='High.3M.Date')
 month1 = 30
 month_ago_this_bar = time - 1000 * 60 * 60 * 24 * month1
 month_ago = timenow - 1000 * 60 * 60 * 24 * month1
 countOfBars1MonthAgo = fastSearchTimeIndex(month_ago, month1)
 countOfBars1MonthAgoThisBar = fastSearchTimeIndex(month_ago_this_bar, month1)
 [month1_low, month1_low_date] = custom_lowest_and_date(countOfBars1MonthAgo, month1)
-plot(month1_low, title='Low_1M')
-plot(month1_low_date, title='Low_1M_Date')
+plot(month1_low, title='Low.1M')
+plot(month1_low_date, title='Low.1M.Date')
 [month1_high, month1_high_date] = custom_highest_and_date(countOfBars1MonthAgo, month1)
-plot(month1_high, title='High_1M')
-plot(month1_high_date, title='High_1M_Date')
+plot(month1_high, title='High.1M')
+plot(month1_high_date, title='High.1M.Date')
 week1 = 7
 week_ago = timenow - 1000 * 60 * 60 * 24 * week1
 week_ago_this_bar = time - 1000 * 60 * 60 * 24 * week1
 countOfBarsWeekAgo = fastSearchTimeIndex(week_ago, week1)
 countOfBarsWeekAgoThisBar = fastSearchTimeIndex(week_ago_this_bar, week1)
 [week1_low] = custom_lowest_and_date(countOfBarsWeekAgo, week1)
-plot(week1_low, title='Low_5D')
+plot(week1_low, title='Low.5D')
 [week1_high] = custom_highest_and_date(countOfBarsWeekAgo, week1)
-plot(week1_high, title='High_5D')
+plot(week1_high, title='High.5D')
 // volatility
 volatility(bb) =>
 	bb2 = bb
@@ -151,9 +151,9 @@ volatility(bb) =>
 			na
 		else
 			s
-plot(volatility(countOfBarsWeekAgoThisBar), title='Volatility_W')
-plot(volatility(countOfBars1MonthAgoThisBar), title='Volatility_M')
-plot(ta.tr(true) * 100 / math.abs(low), title='Volatility_D')
+plot(volatility(countOfBarsWeekAgoThisBar), title='Volatility.W')
+plot(volatility(countOfBars1MonthAgoThisBar), title='Volatility.M')
+plot(ta.tr(true) * 100 / math.abs(low), title='Volatility.D')
 
 // first bar's timestamp in pine history
 var first_bar_time = time / 1000

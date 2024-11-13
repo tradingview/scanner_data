@@ -219,15 +219,15 @@ plot(adxMinus100[1], title='ADX-DI_100[1]')
 devBB20 = 2 * ta.stdev(close, 20)
 upperBB20 = SMA20 + devBB20
 lowerBB20 = SMA20 - devBB20
-plot(SMA20, title='BB_basis')
-plot(upperBB20, title='BB_upper')
-plot(lowerBB20, title='BB_lower')
+plot(SMA20, title='BB.basis')
+plot(upperBB20, title='BB.upper')
+plot(lowerBB20, title='BB.lower')
 devBB50 = 2 * ta.stdev(close, 50)
 upperBB50 = SMA50 + devBB50
 lowerBB50 = SMA50 - devBB50
-plot(SMA50, title='BB_basis_50')
-plot(upperBB50, title='BB_upper_50')
-plot(lowerBB50, title='BB_lower_50')
+plot(SMA50, title='BB.basis_50')
+plot(upperBB50, title='BB.upper_50')
+plot(lowerBB50, title='BB.lower_50')
 
 // study(title="Moving Average Convergence/Divergence", shorttitle="MACD")
 fastMAMACD = EMA12
@@ -235,9 +235,9 @@ slowMAMACD = ta.ema(close, 26)
 macdMACD = fastMAMACD - slowMAMACD
 signalMACD = ta.ema(macdMACD, 9)
 histMACD = macdMACD - signalMACD
-plot(histMACD, title='MACD_hist')
-plot(macdMACD, title='MACD_macd')
-plot(signalMACD, title='MACD_signal')
+plot(histMACD, title='MACD.hist')
+plot(macdMACD, title='MACD.macd')
+plot(signalMACD, title='MACD.signal')
 
 //study(title="Momentum", shorttitle="Mom")
 Mom = close - close[10]
@@ -254,39 +254,39 @@ smoothDStoch = 3
 kStoch_14_1_3 = ta.stoch(close, high, low, lengthStoch)
 kStoch = ta.sma(kStoch_14_1_3, smoothKStoch)
 dStoch = ta.sma(kStoch, smoothDStoch)
-plot(kStoch, title='Stoch_K')
-plot(dStoch, title='Stoch_D')
-plot(kStoch[1], title='Stoch_K[1]')
-plot(dStoch[1], title='Stoch_D[1]')
+plot(kStoch, title='Stoch.K')
+plot(dStoch, title='Stoch.D')
+plot(kStoch[1], title='Stoch.K[1]')
+plot(dStoch[1], title='Stoch.D[1]')
 dStoch_14_1_3 = ta.sma(kStoch_14_1_3, smoothDStoch)
-plot(kStoch_14_1_3, title='Stoch_K_14_1_3')
-plot(dStoch_14_1_3, title='Stoch_D_14_1_3')
-plot(kStoch_14_1_3[1], title='Stoch_K_14_1_3[1]')
-plot(dStoch_14_1_3[1], title='Stoch_D_14_1_3[1]')
+plot(kStoch_14_1_3, title='Stoch.K_14_1_3')
+plot(dStoch_14_1_3, title='Stoch.D_14_1_3')
+plot(kStoch_14_1_3[1], title='Stoch.K_14_1_3[1]')
+plot(dStoch_14_1_3[1], title='Stoch.D_14_1_3[1]')
 
 lengthStoch := 5
 kStoch := ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch := ta.sma(kStoch, smoothDStoch)
-plot(kStoch, title='Stoch_K_5_3_3')
-plot(dStoch, title='Stoch_D_5_3_3')
-plot(kStoch[1], title='Stoch_K_5_3_3[1]')
-plot(dStoch[1], title='Stoch_D_5_3_3[1]')
+plot(kStoch, title='Stoch.K_5_3_3')
+plot(dStoch, title='Stoch.D_5_3_3')
+plot(kStoch[1], title='Stoch.K_5_3_3[1]')
+plot(dStoch[1], title='Stoch.D_5_3_3[1]')
 
 lengthStoch := 6
 kStoch := ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch := ta.sma(kStoch, smoothDStoch)
-plot(kStoch, title='Stoch_K_6_3_3')
-plot(dStoch, title='Stoch_D_6_3_3')
-plot(kStoch[1], title='Stoch_K_6_3_3[1]')
-plot(dStoch[1], title='Stoch_D_6_3_3[1]')
+plot(kStoch, title='Stoch.K_6_3_3')
+plot(dStoch, title='Stoch.D_6_3_3')
+plot(kStoch[1], title='Stoch.K_6_3_3[1]')
+plot(dStoch[1], title='Stoch.D_6_3_3[1]')
 
 lengthStoch := 8
 kStoch := ta.sma(ta.stoch(close, high, low, lengthStoch), smoothKStoch)
 dStoch := ta.sma(kStoch, smoothDStoch)
-plot(kStoch, title='Stoch_K_8_3_3')
-plot(dStoch, title='Stoch_D_8_3_3')
-plot(kStoch[1], title='Stoch_K_8_3_3[1]')
-plot(dStoch[1], title='Stoch_D_8_3_3[1]')
+plot(kStoch, title='Stoch.K_8_3_3')
+plot(dStoch, title='Stoch.D_8_3_3')
+plot(kStoch[1], title='Stoch.K_8_3_3[1]')
+plot(dStoch[1], title='Stoch.D_8_3_3[1]')
 
 // average volume
 AvgVol = ta.sma(volume, 10)
@@ -305,9 +305,9 @@ plot(CCI[1], title='CCI20[1]')
 donchLen = 20
 donchUpper = ta.highest(donchLen)
 donchLower = ta.lowest(donchLen)
-plot(donchLower, title='DonchCh20_Lower')
-plot(donchUpper, title='DonchCh20_Upper')
-plot(math.avg(donchUpper, donchLower), title='DonchCh20_Middle')
+plot(donchLower, title='DonchCh20.Lower')
+plot(donchUpper, title='DonchCh20.Upper')
+plot(math.avg(donchUpper, donchLower), title='DonchCh20.Middle')
 
 // Hull Moving Average
 hullMovingAverage(lenght) =>
@@ -331,23 +331,23 @@ plot(AO[2], title='AO[2]')
 
 // study("Aroon")
 Aroon_length = 14
-plot(100 * (ta.highestbars(high, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon_Up')
-plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon_Down')
+plot(100 * (ta.highestbars(high, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Up')
+plot(100 * (ta.lowestbars(low, Aroon_length + 1) + Aroon_length) / Aroon_length, title='Aroon.Down')
 
 // value traded (dollar volume)
-plot(volume * close * syminfo.pointvalue, title='Value_Traded')
+plot(volume * close * syminfo.pointvalue, title='Value.Traded')
 
 // study("My Keltner Channels", overlay=true)
 multKltChnl = 2
 maKltChnl = EMA20
 rangemaKltChnl = ta.atr(10)
-plot(maKltChnl + rangemaKltChnl * multKltChnl, title='KltChnl_upper')
-plot(maKltChnl - rangemaKltChnl * multKltChnl, title='KltChnl_lower')
-plot(maKltChnl, title='KltChnl_basis')
+plot(maKltChnl + rangemaKltChnl * multKltChnl, title='KltChnl.upper')
+plot(maKltChnl - rangemaKltChnl * multKltChnl, title='KltChnl.lower')
+plot(maKltChnl, title='KltChnl.basis')
 
 // study("My Parabolic SAR", overlay=true)
 PSAR = ta.sar(0.02, 0.02, 0.2)
-plot(PSAR, title='P_SAR')
+plot(PSAR, title='P.SAR')
 
 // study("My Money Flow")
 lenMF = 14
@@ -361,14 +361,14 @@ plot(math.sum(accdistRaw, lenCMF) / math.sum(volume, lenCMF), title='ChaikinMone
 // Stochastic RSI
 Stoch_RSI_K = ta.sma(ta.stoch(RSI, RSI, RSI, 14), 3)
 Stoch_RSI_D = ta.sma(Stoch_RSI_K, 3)
-plot(Stoch_RSI_K, title='Stoch_RSI_K')
-plot(Stoch_RSI_D, title='Stoch_RSI_D')
+plot(Stoch_RSI_K, title='Stoch.RSI.K')
+plot(Stoch_RSI_D, title='Stoch.RSI.D')
 
 // Williams Percent Range
 WR_period = 14
 highest = ta.highest(high, WR_period)
 WR = (highest - close) / (highest - ta.lowest(low, WR_period)) * -100
-plot(WR, title='W_R')
+plot(WR, title='W.R')
 
 // Rate Of Change (ROC)
 plot(ta.roc(close, 9), title='ROC')
@@ -414,16 +414,16 @@ ichimoku_cloud(v1, v2, v3) =>
 	[conversionLine, baseLine, leadLine1, leadLine2]
 [IC_CLine, IC_BLine, IC_Lead1, IC_Lead2] = ichimoku_cloud(9, 26, 52)
 IC_displacement = 25
-plot(IC_CLine, title='Ichimoku_CLine')
-plot(IC_BLine, title='Ichimoku_BLine')
-plot(IC_Lead1[IC_displacement], title='Ichimoku_Lead1')
-plot(IC_Lead2[IC_displacement], title='Ichimoku_Lead2')
+plot(IC_CLine, title='Ichimoku.CLine')
+plot(IC_BLine, title='Ichimoku.BLine')
+plot(IC_Lead1[IC_displacement], title='Ichimoku.Lead1')
+plot(IC_Lead2[IC_displacement], title='Ichimoku.Lead2')
 [IC_CLine_20_60_120_30, IC_BLine_20_60_120_30, IC_Lead1_20_60_120_30, IC_Lead2_20_60_120_30] = ichimoku_cloud(20, 60, 120)
 IC_displacement := 30
-plot(IC_CLine_20_60_120_30, title='Ichimoku_CLine_20_60_120_30')
-plot(IC_BLine_20_60_120_30, title='Ichimoku_BLine_20_60_120_30')
-plot(IC_Lead1_20_60_120_30[IC_displacement], title='Ichimoku_Lead1_20_60_120_30')
-plot(IC_Lead2_20_60_120_30[IC_displacement], title='Ichimoku_Lead2_20_60_120_30')
+plot(IC_CLine_20_60_120_30, title='Ichimoku.CLine_20_60_120_30')
+plot(IC_BLine_20_60_120_30, title='Ichimoku.BLine_20_60_120_30')
+plot(IC_Lead1_20_60_120_30[IC_displacement], title='Ichimoku.Lead1_20_60_120_30')
+plot(IC_Lead2_20_60_120_30[IC_displacement], title='Ichimoku.Lead2_20_60_120_30')
 
 // Volume Weighted Moving Average (VWMA)
 VWMA = ta.vwma(close, 20)
@@ -490,24 +490,24 @@ if not na(close)
 		recMA += calcRecommendMA(EMA200, close)
 		recMAC += 1
 recHullMA9 = calcRecommendMA(HullMA9, close)
-plot(recHullMA9, title='Rec_HullMA9')
+plot(recHullMA9, title='Rec.HullMA9')
 if not na(recHullMA9)
 	recMA += recHullMA9
 	recMAC += 1
 recVWMA = calcRecommendMA(VWMA, close)
-plot(recVWMA, title='Rec_VWMA')
+plot(recVWMA, title='Rec.VWMA')
 if not na(recVWMA)
 	recMA += recVWMA
 	recMAC += 1
 recIC = float(na)
 if not(na(IC_Lead1) or na(IC_Lead2) or na(close) or na(close[1]) or na(IC_BLine) or na(IC_CLine))
 	recIC := calcRecommend(IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine, IC_Lead2 > IC_Lead1 and close < IC_Lead1 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
-plot(recIC, title='Rec_Ichimoku')
+plot(recIC, title='Rec.Ichimoku')
 if not na(recIC)
 	recMA += recIC
 	recMAC += 1
 recMA := recMAC > 0 ? recMA / recMAC : na
-plot(recMA, title='Recommend_MA')
+plot(recMA, title='Recommend.MA')
 recOther = .0
 recOtherC = .0
 recRSI = RSI
@@ -536,33 +536,33 @@ if not(na(macdMACD) or na(signalMACD))
 recStoch_RSI = float(na)
 if not(na(DownTrend) or na(UpTrend) or na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
 	recStoch_RSI := calcRecommend(DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1], UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
-plot(recStoch_RSI, title='Rec_Stoch_RSI')
+plot(recStoch_RSI, title='Rec.Stoch.RSI')
 if not na(recStoch_RSI)
 	recOtherC += 1
 	recOther += recStoch_RSI
 recWR = float(na)
 if not(na(WR) or na(WR[1]))
 	recWR := calcRecommend(WR < -80 and WR > WR[1], WR > -20 and WR < WR[1])
-plot(recWR, title='Rec_WR')
+plot(recWR, title='Rec.WR')
 if not na(recWR)
 	recOtherC += 1
 	recOther += recWR
 recBBPower = float(na)
 if not(na(UpTrend) or na(DownTrend) or na(BearPower) or na(BearPower[1]) or na(BullPower) or na(BullPower[1]))
 	recBBPower := calcRecommend(UpTrend and BearPower < 0 and BearPower > BearPower[1], DownTrend and BullPower > 0 and BullPower < BullPower[1])
-plot(recBBPower, title='Rec_BBPower')
+plot(recBBPower, title='Rec.BBPower')
 if not na(recBBPower)
 	recOtherC += 1
 	recOther += recBBPower
 recUO = float(na)
 if not na(UO)
 	recUO := calcRecommend(UO > 70, UO < 30)
-plot(recUO, title='Rec_UO')
+plot(recUO, title='Rec.UO')
 if not na(recUO)
 	recOtherC += 1
 	recOther += recUO
 recOther := recOtherC > 0 ? recOther / recOtherC : na
-plot(recOther, title='Recommend_Other')
+plot(recOther, title='Recommend.Other')
 recTotal = .0
 recTotalC = .0
 if not na(recMA)
@@ -572,7 +572,7 @@ if not na(recOther)
 	recTotal += recOther
 	recTotalC += 1
 recTotal := recTotalC > 0 ? recTotal / recTotalC : na
-plot(recTotal, title='Recommend_All')
+plot(recTotal, title='Recommend.All')
 
 //////////////////////////////////// Candle Patterns ////////////////////////////////////
 C_PriceAvg = SMA50
@@ -608,8 +608,8 @@ if C_SmallBody and C_Body > 0 and C_BodyLo > hl2 and C_DnShadow >= C_Factor * C_
 	else
 		if C_UpTrend
 			C_oHangingMan := true
-plot(C_oHammer ? 1 : 0, title='Candle_Hammer')
-plot(C_oHangingMan ? 1 : 0, title='Candle_HangingMan')
+plot(C_oHammer ? 1 : 0, title='Candle.Hammer')
+plot(C_oHangingMan ? 1 : 0, title='Candle.HangingMan')
 C_oInvertedHammer = false
 C_oShootingStar = false
 if C_SmallBody and C_Body > 0 and C_BodyHi < hl2 and C_UpShadow >= C_Factor * C_Body and not C_HasDnShadow
@@ -618,8 +618,8 @@ if C_SmallBody and C_Body > 0 and C_BodyHi < hl2 and C_UpShadow >= C_Factor * C_
 	else
 		if C_UpTrend
 			C_oShootingStar := true
-plot(C_oInvertedHammer ? 1 : 0, title='Candle_InvertedHammer')
-plot(C_oShootingStar ? 1 : 0, title='Candle_ShootingStar')
+plot(C_oInvertedHammer ? 1 : 0, title='Candle.InvertedHammer')
+plot(C_oShootingStar ? 1 : 0, title='Candle.ShootingStar')
 
 // study("Evening & Morning Stars")
 C_oMorningStar = false
@@ -630,16 +630,16 @@ if C_LongBody[2] and C_SmallBody[1] and C_LongBody
 	else
 		if C_UpTrend and C_WhiteBody[2] and C_BodyLo[1] > C_BodyHi[2] and C_BlackBody and C_BodyLo <= C_BodyMiddle[2] and C_BodyLo > C_BodyLo[2] and C_BodyLo[1] > C_BodyHi
 			C_oEveningStar := true
-plot(C_oMorningStar ? 1 : 0, title='Candle_MorningStar')
-plot(C_oEveningStar ? 1 : 0, title='Candle_EveningStar')
+plot(C_oMorningStar ? 1 : 0, title='Candle.MorningStar')
+plot(C_oEveningStar ? 1 : 0, title='Candle.EveningStar')
 
 // study("Marubozu")
 C_MarubozuShadowPercent = 5
 C_Marubozu = C_LongBody and C_UpShadow <= C_MarubozuShadowPercent / 100 * C_Body and C_DnShadow <= C_MarubozuShadowPercent / 100 * C_Body
 C_WhiteMarubozu = C_Marubozu and C_WhiteBody
 C_BlackMarubozu = C_Marubozu and C_BlackBody
-plot(C_BlackMarubozu ? 1 : 0, title='Candle_Marubozu_Black')
-plot(C_WhiteMarubozu ? 1 : 0, title='Candle_Marubozu_White')
+plot(C_BlackMarubozu ? 1 : 0, title='Candle.Marubozu.Black')
+plot(C_WhiteMarubozu ? 1 : 0, title='Candle.Marubozu.White')
 
 //study("Doji")
 C_DojiBodyPercent = 5
@@ -647,24 +647,24 @@ C_IsDojiBody = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
 C_Doji = C_IsDojiBody and C_ShadowEquals
 C_DragonflyDoji = C_IsDojiBody and C_UpShadow <= C_Body
 C_GravestoneDoji = C_IsDojiBody and C_DnShadow <= C_Body
-plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji ? 1 : 0, title='Candle_Doji')
-plot(C_DragonflyDoji ? 1 : 0, title='Candle_Doji_Dragonfly')
-plot(C_GravestoneDoji ? 1 : 0, title='Candle_Doji_Gravestone')
+plot(C_Doji and not C_DragonflyDoji and not C_GravestoneDoji ? 1 : 0, title='Candle.Doji')
+plot(C_DragonflyDoji ? 1 : 0, title='Candle.Doji.Dragonfly')
+plot(C_GravestoneDoji ? 1 : 0, title='Candle.Doji.Gravestone')
 
 // study("Harami")
-plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_WhiteBody and C_SmallBody and high <= C_BodyHi[1] and low >= C_BodyLo[1] ? 1 : 0, title='Candle_Harami_Bullish')
-plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_BlackBody and C_SmallBody and high <= C_BodyHi[1] and low >= C_BodyLo[1] ? 1 : 0, title='Candle_Harami_Bearish')
+plot(C_LongBody[1] and C_BlackBody[1] and C_DownTrend[1] and C_WhiteBody and C_SmallBody and high <= C_BodyHi[1] and low >= C_BodyLo[1] ? 1 : 0, title='Candle.Harami.Bullish')
+plot(C_LongBody[1] and C_WhiteBody[1] and C_UpTrend[1] and C_BlackBody and C_SmallBody and high <= C_BodyHi[1] and low >= C_BodyLo[1] ? 1 : 0, title='Candle.Harami.Bearish')
 
 //study("Long Shadows")
 C_LongShadowPercent = 75
-plot(C_DnShadow > C_Range / 100 * C_LongShadowPercent ? 1 : 0, title='Candle_LongShadow_Lower')
-plot(C_UpShadow > C_Range / 100 * C_LongShadowPercent ? 1 : 0, title='Candle_LongShadow_Upper')
+plot(C_DnShadow > C_Range / 100 * C_LongShadowPercent ? 1 : 0, title='Candle.LongShadow.Lower')
+plot(C_UpShadow > C_Range / 100 * C_LongShadowPercent ? 1 : 0, title='Candle.LongShadow.Upper')
 
 //study("Spinning Top")
 C_SpinningTopPercent = 34
 C_IsSpinningTop = C_DnShadow >= C_Range / 100 * C_SpinningTopPercent and C_UpShadow >= C_Range / 100 * C_SpinningTopPercent and not C_IsDojiBody
-plot(C_IsSpinningTop and C_WhiteBody ? 1 : 0, title='Candle_SpinningTop_White')
-plot(C_IsSpinningTop and C_BlackBody ? 1 : 0, title='Candle_SpinningTop_Black')
+plot(C_IsSpinningTop and C_WhiteBody ? 1 : 0, title='Candle.SpinningTop.White')
+plot(C_IsSpinningTop and C_BlackBody ? 1 : 0, title='Candle.SpinningTop.Black')
 
 // study("3 White Soldiers & 3 Black Crows")
 C_3WSld3WCrwShadowPercent = 5
@@ -677,27 +677,27 @@ if C_LongBody and C_LongBody[1] and C_LongBody[2]
 		C_o3WhiteSoldiers := close > close[1] and close[1] > close[2] and open < close[1] and open > open[1] and open[1] < close[2] and open[1] > open[2] and C_3WSld3WCrw_HaveNotUpShadow and C_3WSld3WCrw_HaveNotUpShadow[1] and C_3WSld3WCrw_HaveNotUpShadow[2]
 	if C_BlackBody and C_BlackBody[1] and C_BlackBody[2]
 		C_o3BlackCrows := close < close[1] and close[1] < close[2] and open > close[1] and open < open[1] and open[1] > close[2] and open[1] < open[2] and C_3WSld3WCrw_HaveNotDnShadow and C_3WSld3WCrw_HaveNotDnShadow[1] and C_3WSld3WCrw_HaveNotDnShadow[2]
-plot(C_o3WhiteSoldiers ? 1 : 0, title='Candle_3WhiteSoldiers')
-plot(C_o3BlackCrows ? 1 : 0, title='Candle_3BlackCrows')
+plot(C_o3WhiteSoldiers ? 1 : 0, title='Candle.3WhiteSoldiers')
+plot(C_o3BlackCrows ? 1 : 0, title='Candle.3BlackCrows')
 
 // study("Engulfing")
-plot(C_DownTrend and C_WhiteBody and C_LongBody and C_BlackBody[1] and C_SmallBody[1] and close >= open[1] and open <= close[1] and (close > open[1] or open < close[1]) ? 1 : 0, title='Candle_Engulfing_Bullish')
-plot(C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody[1] and close <= open[1] and open >= close[1] and (close < open[1] or open > close[1]) ? 1 : 0, title='Candle_Engulfing_Bearish')
+plot(C_DownTrend and C_WhiteBody and C_LongBody and C_BlackBody[1] and C_SmallBody[1] and close >= open[1] and open <= close[1] and (close > open[1] or open < close[1]) ? 1 : 0, title='Candle.Engulfing.Bullish')
+plot(C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody[1] and close <= open[1] and open >= close[1] and (close < open[1] or open > close[1]) ? 1 : 0, title='Candle.Engulfing.Bearish')
 
 // study("Abandoned Baby")
-plot(C_DownTrend[2] and C_BlackBody[2] and C_IsDojiBody[1] and low[2] > high[1] and C_WhiteBody and high[1] < low ? 1 : 0, title='Candle_AbandonedBaby_Bullish')
-plot(C_UpTrend[2] and C_WhiteBody[2] and C_IsDojiBody[1] and high[2] < low[1] and C_BlackBody and low[1] > high ? 1 : 0, title='Candle_AbandonedBaby_Bearish')
+plot(C_DownTrend[2] and C_BlackBody[2] and C_IsDojiBody[1] and low[2] > high[1] and C_WhiteBody and high[1] < low ? 1 : 0, title='Candle.AbandonedBaby.Bullish')
+plot(C_UpTrend[2] and C_WhiteBody[2] and C_IsDojiBody[1] and high[2] < low[1] and C_BlackBody and low[1] > high ? 1 : 0, title='Candle.AbandonedBaby.Bearish')
 
 // study("Tri-Star")
 C_3Dojis = C_Doji[2] and C_Doji[1] and C_Doji
 C_BodyGapUp = C_BodyHi[1] < C_BodyLo
 C_BodyGapDn = C_BodyLo[1] > C_BodyHi
-plot(C_3Dojis and C_DownTrend[2] and C_BodyGapDn[1] and C_BodyGapUp ? 1 : 0, title='Candle_TriStar_Bullish')
-plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn ? 1 : 0, title='Candle_TriStar_Bearish')
+plot(C_3Dojis and C_DownTrend[2] and C_BodyGapDn[1] and C_BodyGapUp ? 1 : 0, title='Candle.TriStar.Bullish')
+plot(C_3Dojis and C_UpTrend[2] and C_BodyGapUp[1] and C_BodyGapDn ? 1 : 0, title='Candle.TriStar.Bearish')
 
 // study("Kicking")
-plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low ? 1 : 0, title='Candle_Kicking_Bullish')
-plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high ? 1 : 0, title='Candle_Kicking_Bearish')
+plot(C_BlackMarubozu[1] and C_WhiteMarubozu and high[1] < low ? 1 : 0, title='Candle.Kicking.Bullish')
+plot(C_WhiteMarubozu[1] and C_BlackMarubozu and low[1] > high ? 1 : 0, title='Candle.Kicking.Bearish')
 
 // study(title="VWAP", shorttitle="VWAP", overlay=true)
 plot(ta.vwap(hlc3), title='VWAP')

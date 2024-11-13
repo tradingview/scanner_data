@@ -1151,39 +1151,39 @@
 				"isHidden": false
 			},
 			"plot_111": {
-				"title": "BB_basis",
+				"title": "BB.basis",
 				"isHidden": false
 			},
 			"plot_112": {
-				"title": "BB_upper",
+				"title": "BB.upper",
 				"isHidden": false
 			},
 			"plot_113": {
-				"title": "BB_lower",
+				"title": "BB.lower",
 				"isHidden": false
 			},
 			"plot_114": {
-				"title": "BB_basis_50",
+				"title": "BB.basis_50",
 				"isHidden": false
 			},
 			"plot_115": {
-				"title": "BB_upper_50",
+				"title": "BB.upper_50",
 				"isHidden": false
 			},
 			"plot_116": {
-				"title": "BB_lower_50",
+				"title": "BB.lower_50",
 				"isHidden": false
 			},
 			"plot_117": {
-				"title": "MACD_hist",
+				"title": "MACD.hist",
 				"isHidden": false
 			},
 			"plot_118": {
-				"title": "MACD_macd",
+				"title": "MACD.macd",
 				"isHidden": false
 			},
 			"plot_119": {
-				"title": "MACD_signal",
+				"title": "MACD.signal",
 				"isHidden": false
 			},
 			"plot_12": {
@@ -1207,27 +1207,27 @@
 				"isHidden": false
 			},
 			"plot_124": {
-				"title": "Stoch_K",
+				"title": "Stoch.K",
 				"isHidden": false
 			},
 			"plot_125": {
-				"title": "Stoch_D",
+				"title": "Stoch.D",
 				"isHidden": false
 			},
 			"plot_126": {
-				"title": "Stoch_K[1]",
+				"title": "Stoch.K[1]",
 				"isHidden": false
 			},
 			"plot_127": {
-				"title": "Stoch_D[1]",
+				"title": "Stoch.D[1]",
 				"isHidden": false
 			},
 			"plot_128": {
-				"title": "Stoch_K_14_1_3",
+				"title": "Stoch.K_14_1_3",
 				"isHidden": false
 			},
 			"plot_129": {
-				"title": "Stoch_D_14_1_3",
+				"title": "Stoch.D_14_1_3",
 				"isHidden": false
 			},
 			"plot_13": {
@@ -1235,43 +1235,43 @@
 				"isHidden": false
 			},
 			"plot_130": {
-				"title": "Stoch_K_14_1_3[1]",
+				"title": "Stoch.K_14_1_3[1]",
 				"isHidden": false
 			},
 			"plot_131": {
-				"title": "Stoch_D_14_1_3[1]",
+				"title": "Stoch.D_14_1_3[1]",
 				"isHidden": false
 			},
 			"plot_132": {
-				"title": "Stoch_K_5_3_3",
+				"title": "Stoch.K_5_3_3",
 				"isHidden": false
 			},
 			"plot_133": {
-				"title": "Stoch_D_5_3_3",
+				"title": "Stoch.D_5_3_3",
 				"isHidden": false
 			},
 			"plot_134": {
-				"title": "Stoch_K_5_3_3[1]",
+				"title": "Stoch.K_5_3_3[1]",
 				"isHidden": false
 			},
 			"plot_135": {
-				"title": "Stoch_D_5_3_3[1]",
+				"title": "Stoch.D_5_3_3[1]",
 				"isHidden": false
 			},
 			"plot_136": {
-				"title": "Stoch_K_6_3_3",
+				"title": "Stoch.K_6_3_3",
 				"isHidden": false
 			},
 			"plot_137": {
-				"title": "Stoch_D_6_3_3",
+				"title": "Stoch.D_6_3_3",
 				"isHidden": false
 			},
 			"plot_138": {
-				"title": "Stoch_K_6_3_3[1]",
+				"title": "Stoch.K_6_3_3[1]",
 				"isHidden": false
 			},
 			"plot_139": {
-				"title": "Stoch_D_6_3_3[1]",
+				"title": "Stoch.D_6_3_3[1]",
 				"isHidden": false
 			},
 			"plot_14": {
@@ -1279,19 +1279,19 @@
 				"isHidden": false
 			},
 			"plot_140": {
-				"title": "Stoch_K_8_3_3",
+				"title": "Stoch.K_8_3_3",
 				"isHidden": false
 			},
 			"plot_141": {
-				"title": "Stoch_D_8_3_3",
+				"title": "Stoch.D_8_3_3",
 				"isHidden": false
 			},
 			"plot_142": {
-				"title": "Stoch_K_8_3_3[1]",
+				"title": "Stoch.K_8_3_3[1]",
 				"isHidden": false
 			},
 			"plot_143": {
-				"title": "Stoch_D_8_3_3[1]",
+				"title": "Stoch.D_8_3_3[1]",
 				"isHidden": false
 			},
 			"plot_144": {
@@ -1327,15 +1327,15 @@
 				"isHidden": false
 			},
 			"plot_151": {
-				"title": "DonchCh20_Lower",
+				"title": "DonchCh20.Lower",
 				"isHidden": false
 			},
 			"plot_152": {
-				"title": "DonchCh20_Upper",
+				"title": "DonchCh20.Upper",
 				"isHidden": false
 			},
 			"plot_153": {
-				"title": "DonchCh20_Middle",
+				"title": "DonchCh20.Middle",
 				"isHidden": false
 			},
 			"plot_154": {
@@ -1367,31 +1367,31 @@
 				"isHidden": false
 			},
 			"plot_160": {
-				"title": "Aroon_Up",
+				"title": "Aroon.Up",
 				"isHidden": false
 			},
 			"plot_161": {
-				"title": "Aroon_Down",
+				"title": "Aroon.Down",
 				"isHidden": false
 			},
 			"plot_162": {
-				"title": "Value_Traded",
+				"title": "Value.Traded",
 				"isHidden": false
 			},
 			"plot_163": {
-				"title": "KltChnl_upper",
+				"title": "KltChnl.upper",
 				"isHidden": false
 			},
 			"plot_164": {
-				"title": "KltChnl_lower",
+				"title": "KltChnl.lower",
 				"isHidden": false
 			},
 			"plot_165": {
-				"title": "KltChnl_basis",
+				"title": "KltChnl.basis",
 				"isHidden": false
 			},
 			"plot_166": {
-				"title": "P_SAR",
+				"title": "P.SAR",
 				"isHidden": false
 			},
 			"plot_167": {
@@ -1403,7 +1403,7 @@
 				"isHidden": false
 			},
 			"plot_169": {
-				"title": "Stoch_RSI_K",
+				"title": "Stoch.RSI.K",
 				"isHidden": false
 			},
 			"plot_17": {
@@ -1411,11 +1411,11 @@
 				"isHidden": false
 			},
 			"plot_170": {
-				"title": "Stoch_RSI_D",
+				"title": "Stoch.RSI.D",
 				"isHidden": false
 			},
 			"plot_171": {
-				"title": "W_R",
+				"title": "W.R",
 				"isHidden": false
 			},
 			"plot_172": {
@@ -1431,23 +1431,23 @@
 				"isHidden": false
 			},
 			"plot_175": {
-				"title": "Ichimoku_CLine",
+				"title": "Ichimoku.CLine",
 				"isHidden": false
 			},
 			"plot_176": {
-				"title": "Ichimoku_BLine",
+				"title": "Ichimoku.BLine",
 				"isHidden": false
 			},
 			"plot_177": {
-				"title": "Ichimoku_Lead1",
+				"title": "Ichimoku.Lead1",
 				"isHidden": false
 			},
 			"plot_178": {
-				"title": "Ichimoku_Lead2",
+				"title": "Ichimoku.Lead2",
 				"isHidden": false
 			},
 			"plot_179": {
-				"title": "Ichimoku_CLine_20_60_120_30",
+				"title": "Ichimoku.CLine_20_60_120_30",
 				"isHidden": false
 			},
 			"plot_18": {
@@ -1455,15 +1455,15 @@
 				"isHidden": false
 			},
 			"plot_180": {
-				"title": "Ichimoku_BLine_20_60_120_30",
+				"title": "Ichimoku.BLine_20_60_120_30",
 				"isHidden": false
 			},
 			"plot_181": {
-				"title": "Ichimoku_Lead1_20_60_120_30",
+				"title": "Ichimoku.Lead1_20_60_120_30",
 				"isHidden": false
 			},
 			"plot_182": {
-				"title": "Ichimoku_Lead2_20_60_120_30",
+				"title": "Ichimoku.Lead2_20_60_120_30",
 				"isHidden": false
 			},
 			"plot_183": {
@@ -1479,19 +1479,19 @@
 				"isHidden": false
 			},
 			"plot_186": {
-				"title": "Rec_HullMA9",
+				"title": "Rec.HullMA9",
 				"isHidden": false
 			},
 			"plot_187": {
-				"title": "Rec_VWMA",
+				"title": "Rec.VWMA",
 				"isHidden": false
 			},
 			"plot_188": {
-				"title": "Rec_Ichimoku",
+				"title": "Rec.Ichimoku",
 				"isHidden": false
 			},
 			"plot_189": {
-				"title": "Recommend_MA",
+				"title": "Recommend.MA",
 				"isHidden": false
 			},
 			"plot_19": {
@@ -1499,43 +1499,43 @@
 				"isHidden": false
 			},
 			"plot_190": {
-				"title": "Rec_Stoch_RSI",
+				"title": "Rec.Stoch.RSI",
 				"isHidden": false
 			},
 			"plot_191": {
-				"title": "Rec_WR",
+				"title": "Rec.WR",
 				"isHidden": false
 			},
 			"plot_192": {
-				"title": "Rec_BBPower",
+				"title": "Rec.BBPower",
 				"isHidden": false
 			},
 			"plot_193": {
-				"title": "Rec_UO",
+				"title": "Rec.UO",
 				"isHidden": false
 			},
 			"plot_194": {
-				"title": "Recommend_Other",
+				"title": "Recommend.Other",
 				"isHidden": false
 			},
 			"plot_195": {
-				"title": "Recommend_All",
+				"title": "Recommend.All",
 				"isHidden": false
 			},
 			"plot_196": {
-				"title": "Candle_Hammer",
+				"title": "Candle.Hammer",
 				"isHidden": false
 			},
 			"plot_197": {
-				"title": "Candle_HangingMan",
+				"title": "Candle.HangingMan",
 				"isHidden": false
 			},
 			"plot_198": {
-				"title": "Candle_InvertedHammer",
+				"title": "Candle.InvertedHammer",
 				"isHidden": false
 			},
 			"plot_199": {
-				"title": "Candle_ShootingStar",
+				"title": "Candle.ShootingStar",
 				"isHidden": false
 			},
 			"plot_2": {
@@ -1547,43 +1547,43 @@
 				"isHidden": false
 			},
 			"plot_200": {
-				"title": "Candle_MorningStar",
+				"title": "Candle.MorningStar",
 				"isHidden": false
 			},
 			"plot_201": {
-				"title": "Candle_EveningStar",
+				"title": "Candle.EveningStar",
 				"isHidden": false
 			},
 			"plot_202": {
-				"title": "Candle_Marubozu_Black",
+				"title": "Candle.Marubozu.Black",
 				"isHidden": false
 			},
 			"plot_203": {
-				"title": "Candle_Marubozu_White",
+				"title": "Candle.Marubozu.White",
 				"isHidden": false
 			},
 			"plot_204": {
-				"title": "Candle_Doji",
+				"title": "Candle.Doji",
 				"isHidden": false
 			},
 			"plot_205": {
-				"title": "Candle_Doji_Dragonfly",
+				"title": "Candle.Doji.Dragonfly",
 				"isHidden": false
 			},
 			"plot_206": {
-				"title": "Candle_Doji_Gravestone",
+				"title": "Candle.Doji.Gravestone",
 				"isHidden": false
 			},
 			"plot_207": {
-				"title": "Candle_Harami_Bullish",
+				"title": "Candle.Harami.Bullish",
 				"isHidden": false
 			},
 			"plot_208": {
-				"title": "Candle_Harami_Bearish",
+				"title": "Candle.Harami.Bearish",
 				"isHidden": false
 			},
 			"plot_209": {
-				"title": "Candle_LongShadow_Lower",
+				"title": "Candle.LongShadow.Lower",
 				"isHidden": false
 			},
 			"plot_21": {
@@ -1591,43 +1591,43 @@
 				"isHidden": false
 			},
 			"plot_210": {
-				"title": "Candle_LongShadow_Upper",
+				"title": "Candle.LongShadow.Upper",
 				"isHidden": false
 			},
 			"plot_211": {
-				"title": "Candle_SpinningTop_White",
+				"title": "Candle.SpinningTop.White",
 				"isHidden": false
 			},
 			"plot_212": {
-				"title": "Candle_SpinningTop_Black",
+				"title": "Candle.SpinningTop.Black",
 				"isHidden": false
 			},
 			"plot_213": {
-				"title": "Candle_3WhiteSoldiers",
+				"title": "Candle.3WhiteSoldiers",
 				"isHidden": false
 			},
 			"plot_214": {
-				"title": "Candle_3BlackCrows",
+				"title": "Candle.3BlackCrows",
 				"isHidden": false
 			},
 			"plot_215": {
-				"title": "Candle_Engulfing_Bullish",
+				"title": "Candle.Engulfing.Bullish",
 				"isHidden": false
 			},
 			"plot_216": {
-				"title": "Candle_Engulfing_Bearish",
+				"title": "Candle.Engulfing.Bearish",
 				"isHidden": false
 			},
 			"plot_217": {
-				"title": "Candle_AbandonedBaby_Bullish",
+				"title": "Candle.AbandonedBaby.Bullish",
 				"isHidden": false
 			},
 			"plot_218": {
-				"title": "Candle_AbandonedBaby_Bearish",
+				"title": "Candle.AbandonedBaby.Bearish",
 				"isHidden": false
 			},
 			"plot_219": {
-				"title": "Candle_TriStar_Bullish",
+				"title": "Candle.TriStar.Bullish",
 				"isHidden": false
 			},
 			"plot_22": {
@@ -1635,15 +1635,15 @@
 				"isHidden": false
 			},
 			"plot_220": {
-				"title": "Candle_TriStar_Bearish",
+				"title": "Candle.TriStar.Bearish",
 				"isHidden": false
 			},
 			"plot_221": {
-				"title": "Candle_Kicking_Bullish",
+				"title": "Candle.Kicking.Bullish",
 				"isHidden": false
 			},
 			"plot_222": {
-				"title": "Candle_Kicking_Bearish",
+				"title": "Candle.Kicking.Bearish",
 				"isHidden": false
 			},
 			"plot_223": {
@@ -1651,27 +1651,27 @@
 				"isHidden": false
 			},
 			"plot_224": {
-				"title": "Pivot_M_Classic_Middle",
+				"title": "Pivot.M.Classic.Middle",
 				"isHidden": false
 			},
 			"plot_225": {
-				"title": "Pivot_M_Classic_R1",
+				"title": "Pivot.M.Classic.R1",
 				"isHidden": false
 			},
 			"plot_226": {
-				"title": "Pivot_M_Classic_S1",
+				"title": "Pivot.M.Classic.S1",
 				"isHidden": false
 			},
 			"plot_227": {
-				"title": "Pivot_M_Classic_R2",
+				"title": "Pivot.M.Classic.R2",
 				"isHidden": false
 			},
 			"plot_228": {
-				"title": "Pivot_M_Classic_S2",
+				"title": "Pivot.M.Classic.S2",
 				"isHidden": false
 			},
 			"plot_229": {
-				"title": "Pivot_M_Classic_R3",
+				"title": "Pivot.M.Classic.R3",
 				"isHidden": false
 			},
 			"plot_23": {
@@ -1679,43 +1679,43 @@
 				"isHidden": false
 			},
 			"plot_230": {
-				"title": "Pivot_M_Classic_S3",
+				"title": "Pivot.M.Classic.S3",
 				"isHidden": false
 			},
 			"plot_231": {
-				"title": "Pivot_M_Fibonacci_Middle",
+				"title": "Pivot.M.Fibonacci.Middle",
 				"isHidden": false
 			},
 			"plot_232": {
-				"title": "Pivot_M_Fibonacci_R1",
+				"title": "Pivot.M.Fibonacci.R1",
 				"isHidden": false
 			},
 			"plot_233": {
-				"title": "Pivot_M_Fibonacci_S1",
+				"title": "Pivot.M.Fibonacci.S1",
 				"isHidden": false
 			},
 			"plot_234": {
-				"title": "Pivot_M_Fibonacci_R2",
+				"title": "Pivot.M.Fibonacci.R2",
 				"isHidden": false
 			},
 			"plot_235": {
-				"title": "Pivot_M_Fibonacci_S2",
+				"title": "Pivot.M.Fibonacci.S2",
 				"isHidden": false
 			},
 			"plot_236": {
-				"title": "Pivot_M_Fibonacci_R3",
+				"title": "Pivot.M.Fibonacci.R3",
 				"isHidden": false
 			},
 			"plot_237": {
-				"title": "Pivot_M_Fibonacci_S3",
+				"title": "Pivot.M.Fibonacci.S3",
 				"isHidden": false
 			},
 			"plot_238": {
-				"title": "Pivot_M_Woodie_Middle",
+				"title": "Pivot.M.Woodie.Middle",
 				"isHidden": false
 			},
 			"plot_239": {
-				"title": "Pivot_M_Woodie_R1",
+				"title": "Pivot.M.Woodie.R1",
 				"isHidden": false
 			},
 			"plot_24": {
@@ -1723,43 +1723,43 @@
 				"isHidden": false
 			},
 			"plot_240": {
-				"title": "Pivot_M_Woodie_S1",
+				"title": "Pivot.M.Woodie.S1",
 				"isHidden": false
 			},
 			"plot_241": {
-				"title": "Pivot_M_Woodie_R2",
+				"title": "Pivot.M.Woodie.R2",
 				"isHidden": false
 			},
 			"plot_242": {
-				"title": "Pivot_M_Woodie_S2",
+				"title": "Pivot.M.Woodie.S2",
 				"isHidden": false
 			},
 			"plot_243": {
-				"title": "Pivot_M_Woodie_R3",
+				"title": "Pivot.M.Woodie.R3",
 				"isHidden": false
 			},
 			"plot_244": {
-				"title": "Pivot_M_Woodie_S3",
+				"title": "Pivot.M.Woodie.S3",
 				"isHidden": false
 			},
 			"plot_245": {
-				"title": "Pivot_M_Demark_Middle",
+				"title": "Pivot.M.Demark.Middle",
 				"isHidden": false
 			},
 			"plot_246": {
-				"title": "Pivot_M_Demark_R1",
+				"title": "Pivot.M.Demark.R1",
 				"isHidden": false
 			},
 			"plot_247": {
-				"title": "Pivot_M_Demark_S1",
+				"title": "Pivot.M.Demark.S1",
 				"isHidden": false
 			},
 			"plot_248": {
-				"title": "Pivot_M_Camarilla_Middle",
+				"title": "Pivot.M.Camarilla.Middle",
 				"isHidden": false
 			},
 			"plot_249": {
-				"title": "Pivot_M_Camarilla_R1",
+				"title": "Pivot.M.Camarilla.R1",
 				"isHidden": false
 			},
 			"plot_25": {
@@ -1767,23 +1767,23 @@
 				"isHidden": false
 			},
 			"plot_250": {
-				"title": "Pivot_M_Camarilla_S1",
+				"title": "Pivot.M.Camarilla.S1",
 				"isHidden": false
 			},
 			"plot_251": {
-				"title": "Pivot_M_Camarilla_R2",
+				"title": "Pivot.M.Camarilla.R2",
 				"isHidden": false
 			},
 			"plot_252": {
-				"title": "Pivot_M_Camarilla_S2",
+				"title": "Pivot.M.Camarilla.S2",
 				"isHidden": false
 			},
 			"plot_253": {
-				"title": "Pivot_M_Camarilla_R3",
+				"title": "Pivot.M.Camarilla.R3",
 				"isHidden": false
 			},
 			"plot_254": {
-				"title": "Pivot_M_Camarilla_S3",
+				"title": "Pivot.M.Camarilla.S3",
 				"isHidden": false
 			},
 			"plot_255": {

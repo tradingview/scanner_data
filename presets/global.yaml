@@ -5424,7 +5424,7 @@ presets:
       - AMEX:ETH
 - name: indices_africa
   sort:
-    sortBy: country
+    sortBy: country_code
     sortOrder: desc
   symbols:
     tickers:
@@ -5440,7 +5440,7 @@ presets:
       - CSEMA:MSI20
 - name: indices_middle_east
   sort:
-    sortBy: country
+    sortBy: country_code
     sortOrder: desc
   symbols:
     tickers:
@@ -5459,7 +5459,7 @@ presets:
       - ADX:FADX15
 - name: indices_pacific
   sort:
-    sortBy: country
+    sortBy: country_code
     sortOrder: desc
   symbols:
     tickers:
@@ -5469,7 +5469,7 @@ presets:
       - NZX:ALLG
 - name: indices_asia
   sort:
-    sortBy: country
+    sortBy: country_code
     sortOrder: desc
   symbols:
     tickers:
@@ -5529,7 +5529,7 @@ presets:
       - HNX:HNXINDEX
 - name: indices_europe
   sort:
-    sortBy: country
+    sortBy: country_code
     sortOrder: desc
   symbols:
     tickers:
@@ -5606,7 +5606,7 @@ presets:
       - OMXRSE:OMXRGI
 - name: indices_americas
   sort:
-    sortBy: country
+    sortBy: country_code
     sortOrder: desc
   symbols:
     tickers:

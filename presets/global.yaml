@@ -5423,44 +5423,35 @@ presets:
       - AMEX:ETHE
       - AMEX:ETH
 - name: indices_africa
-  sort:
-    sortBy: country_code
-    sortOrder: desc
   symbols:
     tickers:
-      - JSE:J200
-      - NSENG:ASI
-      - NSENG:NGX30
       - EGX:EGX30
       - EGX:EGX70EWI
       - EGX:EGX100EWI
-      - BVMT:PX1
-      - BVMT:TUN20
       - CSEMA:MASI
       - CSEMA:MSI20
+      - NSENG:ASI
+      - NSENG:NGX30
+      - JSE:J200
+      - BVMT:PX1
+      - BVMT:TUN20
 - name: indices_middle_east
-  sort:
-    sortBy: country_code
-    sortOrder: desc
   symbols:
     tickers:
-      - TADAWUL:TASI
-      - TADAWUL:MT30
       - BAHRAIN:BHBX
-      - QSE:GNRI
-      - QSE:QEAS
       - TASE:TA35
       - TASE:TA125
       - KSE:BKA
       - KSE:BKP
       - KSE:BKM
+      - QSE:GNRI
+      - QSE:QEAS
+      - TADAWUL:TASI
+      - TADAWUL:MT30
       - DFM:DFMGI
       - ADX:FADGI
       - ADX:FADX15
 - name: indices_pacific
-  sort:
-    sortBy: country_code
-    sortOrder: desc
   symbols:
     tickers:
       - ASX:XJO
@@ -5468,14 +5459,8 @@ presets:
       - NZX:NZ50G
       - NZX:ALLG
 - name: indices_asia
-  sort:
-    sortBy: country_code
-    sortOrder: desc
   symbols:
     tickers:
-      - PSE:PSEI
-      - PSE:ALL
-      - PSX:KSE100
       - DSEBD:DSEX
       - SSE:000001
       - SZSE:399001
@@ -5487,13 +5472,9 @@ presets:
       - SSE:000905
       - SSE:000016
       - FTSE:XIN9
-      - FTSEST:STI
       - HSI:HSI
       - HSI:HSTECH
       - HSI:HSCEI
-      - KRX:KOSPI
-      - KRX:KOSPI200
-      - KRX:KOSDAQ
       - NSE:NIFTY
       - NSE:BANKNIFTY
       - BSE:SENSEX
@@ -5502,99 +5483,103 @@ presets:
       - NSE:NIFTYJR
       - NSE:CNXSMALLCAP
       - NSE:CNX500
-      - CSELK:ASI
-      - CSELK:S&PSL20
       - IDX:COMPOSITE
       - IDX:IDX30
       - IDX:LQ45
-      - TWSE:IX0001
-      - FTSE:TW50
       - TVC:NI225
       - TSE:TOPIX
       - TSE:JPXNIKKEI400
       - TSE:MOS
       - TSE:I0500
-      - SET:SET
-      - SET:SET50
-      - SET:MAI
-      - SET:SET100
       - FTSEMYX:FBMKLCI
       - MYX:PLANTATION
       - FTSEMYX:FBMSCAP
       - FTSEMYX:FBM70
       - FTSEMYX:FBMEMAS
+      - PSX:KSE100
+      - PSE:PSEI
+      - PSE:ALL
+      - FTSEST:STI
+      - KRX:KOSPI
+      - KRX:KOSPI200
+      - KRX:KOSDAQ
+      - CSELK:ASI
+      - CSELK:S&PSL20
+      - TWSE:IX0001
+      - FTSE:TW50
+      - SET:SET
+      - SET:SET50
+      - SET:MAI
+      - SET:SET100
       - HOSE:VNINDEX
       - HOSE:VN30
       - HOSE:VN100
       - HNX:HNXINDEX
 - name: indices_europe
-  sort:
-    sortBy: country_code
-    sortOrder: desc
   symbols:
     tickers:
       - VIE:ATX
-      - OMXVSE:OMXVGI
       - EURONEXT:BEL20
       - EURONEXT:BELAS
-      - LUXSE:LUXX
       - CSECY:GEN
       - CSECY:FTSE20
-      - EURONEXT:AEX
-      - EURONEXT:AMX
-      - EURONEXT:AAX
       - PSECZ:PX
-      - OSL:OSEBX
-      - OSL:OBX
       - OMXCOP:OMXC25
       - OMXCOP:OMXC20
-      - GPW:WIG20
-      - GPW:WIG
-      - GPW:MWIG40
-      - GPW:SWIG80
       - OMXTSE:OMXTGI
-      - EURONEXT:PSI20
-      - EURONEXT:BVL
       - TVC:SX5E
       - TVC:SXXP
       - EURONEXT:N100
-      - BVB:BET
       - OMXHEX:OMXH25
-      - RUS:IRUS
-      - RUS:RTSI
       - EURONEXT:PX1
       - EURONEXT:CACT
       - EURONEXT:PX4
       - EURONEXT:PAX
-      - BELEX:BELEX15
       - XETR:DAX
       - XETR:MDAX
       - XETR:3XJN
       - XETR:TDXP
       - XETR:SDXP
-      - XETR:DAXK
-      - BSSE:SAX
       - ATHEX:GD
       - ATHEX:FTSE
+      - BET:BUX
+      - OMXICE:OMXIPI
+      - OMXICE:OMXI15
+      - EURONEXT:ISEQ
+      - EURONEXT:ISE20
+      - FTSE:FTSEMIB
+      - FTSE:ITLMS
+      - OMXRSE:OMXRGI
+      - OMXVSE:OMXVGI
+      - LUXSE:LUXX
+      - EURONEXT:AEX
+      - EURONEXT:AMX
+      - EURONEXT:AAX
+      - OSL:OSEBX
+      - OSL:OBX
+      - GPW:WIG20
+      - GPW:WIG
+      - GPW:MWIG40
+      - GPW:SWIG80
+      - EURONEXT:PSI20
+      - EURONEXT:BVL
+      - BVB:BET
+      - RUS:IRUS
+      - RUS:RTSI
+      - BELEX:BELEX15
+      - BSSE:SAX
       - BME:IBC
       - BME:LXC
-      - BET:BUX
       - OMXSTO:OMXS30
       - OMXSTO:OMXSPI
       - OMXSTO:OMXSCAPPI
       - OMXSTO:OMXSSCPI
-      - OMXICE:OMXIPI
-      - OMXICE:OMXI15
       - SIX:SMI
       - SIX:SPIX
-      - EURONEXT:ISEQ
-      - EURONEXT:ISE20
       - BIST:XU100
       - BIST:XU030
       - BIST:XUTUM
       - BIST:XBANK
-      - FTSE:FTSEMIB
-      - FTSE:ITLMS
       - FTSE:UKX
       - FTSE:MCX
       - CBOEEU:BUK100P
@@ -5603,11 +5588,7 @@ presets:
       - FTSE:ASX
       - FTSE:AIM5
       - FTSE:NMX
-      - OMXRSE:OMXRGI
 - name: indices_americas
-  sort:
-    sortBy: country_code
-    sortOrder: desc
   symbols:
     tickers:
       - CBOE:SPX
@@ -5635,13 +5616,13 @@ presets:
       - TSX:JX
       - BCBA:IMV
       - BCBA:IAB
-      - BMV:ME
-      - BMV:IN
       - BMFBOVESPA:IBOV
       - BMFBOVESPA:IFIX
       - BMFBOVESPA:IBXL
       - BMFBOVESPA:SMLL
-      - BVL:SPBLPGPT
       - BCS:SP_IPSA
-      - BVCV:IBC
       - BVC:ICAP
+      - BMV:ME
+      - BMV:IN
+      - BVL:SPBLPGPT
+      - BVCV:IBC

@@ -236,6 +236,10 @@
       "name": "maturity_type",
       "type": "text"
     },
+    {      
+      "name": "maturity-date",
+      "type": "number"
+    },
     {
       "name": "inflation_protection",
       "type": "text"

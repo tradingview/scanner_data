@@ -624,6 +624,10 @@
         "type": "number"
     },
     {
+        "name": "daily-summary-ast",
+        "type": "text"
+    },
+    {
         "name": "dividend_payout_ratio_percent_fq",
         "type": "percent"
     },

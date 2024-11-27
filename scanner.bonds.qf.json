@@ -61,6 +61,10 @@
     "extract_from": "daily-bar" 
   },
   {
+    "name": "daily-summary-ast",
+    "type": "text"
+  },
+  {
     "name": "term-to-maturity",
     "type": "text"
   },

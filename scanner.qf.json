@@ -685,6 +685,10 @@
         "extract_from": "daily-bar" 
     },
     {
+        "name": "daily-summary-ast",
+        "type": "text"
+    },   
+    {
         "name": "total_revenue_fy_h",
         "type": "num_slice"
     },

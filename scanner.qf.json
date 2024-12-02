@@ -1367,5 +1367,9 @@
     {
         "name": "index_tracked",
         "type": "text"
+    },
+    {
+        "name": "fiscal_period_end_fh_h",
+        "type": "num_slice"
     }
 ]

@@ -172,6 +172,10 @@
         "type": "fundamental_price"
     },
     {
+        "name": "revenue_per_employee_fy",
+        "type": "fundamental_price"
+    },    
+    {
         "name": "return_on_invested_capital",
         "type": "percent"
     },

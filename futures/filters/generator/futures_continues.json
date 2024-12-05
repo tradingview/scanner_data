@@ -205,6 +205,8 @@
     {"f":["Energy"],"s":"TAIFEX:BRF1!"},
     {"f":["Energy"],"s":"TOCOM:TCL1!"},
     {"f":["Energy"],"s":"TOCOM:THO1!"},
+    {"f":["Energy"],"s":"ICEENDEX:ECF1!"},
+    {"f":["Energy"],"s":"ICEENDEX:TFM1!"},
     {"f":["Financials"],"s":"ASX24:LT1!"},
     {"f":["Financials"],"s":"ASX24:XT1!"},
     {"f":["Financials"],"s":"ASX24:YT1!"},
@@ -6201,6 +6203,9 @@
     {"f":[""],"s":"ASX24:UB1!"},
     {"f":[""],"s":"ASX24:VT1!"},
     {"f":[""],"s":"ASX24:WK1!"},
-    {"f":[""],"s":"ASX24:WM1!"}
+    {"f":[""],"s":"ICEENDEX:BPB1!"},
+    {"f":[""],"s":"ICEENDEX:DPB1!"},
+    {"f":[""],"s":"ICEENDEX:GNM1!"},
+    {"f":[""],"s":"ICEENDEX:IGA1!"}
   ]
 }

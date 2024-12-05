@@ -300,7 +300,7 @@ presets:
 - name: country_top_futures_commodities_be
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:BPB1!
 - name: country_top_futures_commodities_ca
   symbols:
     tickers:
@@ -340,7 +340,7 @@ presets:
 - name: country_top_futures_commodities_de
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:GNM1!
 - name: country_top_futures_commodities_gr
   symbols:
     tickers:
@@ -364,7 +364,7 @@ presets:
 - name: country_top_futures_commodities_it
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:IGA1!
 - name: country_top_futures_commodities_ke
   symbols:
     tickers:
@@ -396,7 +396,8 @@ presets:
 - name: country_top_futures_commodities_nl
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:DPB1!
+      - ICEENDEX:TFM1!
 - name: country_top_futures_commodities_ng
   symbols:
     tickers:
@@ -598,7 +599,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_de
   symbols:
@@ -634,7 +635,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_fr
   symbols:
@@ -670,7 +671,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_es
   symbols:
@@ -706,7 +707,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_it
   symbols:
@@ -742,7 +743,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_pl
   symbols:
@@ -1246,7 +1247,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_se
   symbols:

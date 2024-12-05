@@ -300,7 +300,9 @@ presets:
 - name: country_top_futures_commodities_be
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:BPB1!
+      - ICEENDEX:BEB1!
+      - ICEENDEX:BEP1!
 - name: country_top_futures_commodities_ca
   symbols:
     tickers:
@@ -336,11 +338,15 @@ presets:
 - name: country_top_futures_commodities_fr
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:FNA1!
+      - ICEENDEX:FNB1!
+      - ICEENDEX:PEG1!
 - name: country_top_futures_commodities_de
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:GNM1!
+      - ICEENDEX:GAB1!
+      - ICEENDEX:GAP1!
 - name: country_top_futures_commodities_gr
   symbols:
     tickers:
@@ -356,7 +362,7 @@ presets:
 - name: country_top_futures_commodities_ie
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_il
   symbols:
     tickers:
@@ -364,7 +370,9 @@ presets:
 - name: country_top_futures_commodities_it
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:IGA1!
+      - ICEENDEX:IPB1!
+      - ICEENDEX:IPP1!
 - name: country_top_futures_commodities_ke
   symbols:
     tickers:
@@ -396,7 +404,10 @@ presets:
 - name: country_top_futures_commodities_nl
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:DPB1!
+      - ICEENDEX:TFM1!
+      - ICEENDEX:DPA1!
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_ng
   symbols:
     tickers:
@@ -404,7 +415,7 @@ presets:
 - name: country_top_futures_commodities_no
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_pk
   symbols:
     tickers:
@@ -456,7 +467,7 @@ presets:
 - name: country_top_futures_commodities_es
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:SPB1!
 - name: country_top_futures_commodities_lk
   symbols:
     tickers:
@@ -499,7 +510,8 @@ presets:
 - name: country_top_futures_commodities_at
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:AOT1!
+      - ICEENDEX:AOU1!
 - name: country_top_futures_commodities_au
   symbols:
     tickers:
@@ -598,7 +610,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_de
   symbols:
@@ -634,7 +646,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_fr
   symbols:
@@ -670,7 +682,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_es
   symbols:
@@ -706,7 +718,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_it
   symbols:
@@ -742,7 +754,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_pl
   symbols:
@@ -1246,7 +1258,7 @@ presets:
       - ICEEUR:GWM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_se
   symbols:

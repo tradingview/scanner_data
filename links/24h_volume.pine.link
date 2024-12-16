@@ -76,7 +76,8 @@ plot(close24hChangeAbs, title = "24h_close_change_abs", style = plot.style_colum
 
 // 24h close change
 float close24hChange = na
-if na(close24hChangeAbs) or close24hPrev == 0 or (close24hPrev < 0 and close > 0)
+float close24hPrevToCompare = close24hPrev * 1e+36 // for comparing very small numbers since pine has limited precision (1e-10)
+if na(close24hChangeAbs) or close24hPrevToCompare == 0 or (close24hPrevToCompare < 0 and close > 0)
 	na
 else
 	close24hChange := (close24hChangeAbs / math.abs(close24hPrev)) * 100

@@ -322,7 +322,7 @@ presets:
 - name: country_top_futures_commodities_dk
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_eg
   symbols:
     tickers:
@@ -334,7 +334,7 @@ presets:
 - name: country_top_futures_commodities_fi
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_fr
   symbols:
     tickers:
@@ -476,7 +476,7 @@ presets:
 - name: country_top_futures_commodities_se
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_ch
   symbols:
     tickers:

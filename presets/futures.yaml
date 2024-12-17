@@ -322,7 +322,7 @@ presets:
 - name: country_top_futures_commodities_dk
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_eg
   symbols:
     tickers:
@@ -334,7 +334,7 @@ presets:
 - name: country_top_futures_commodities_fi
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_fr
   symbols:
     tickers:
@@ -362,7 +362,7 @@ presets:
 - name: country_top_futures_commodities_ie
   symbols:
     tickers:
-      - ICEENDEX:NRB1!
+      - ""
 - name: country_top_futures_commodities_il
   symbols:
     tickers:
@@ -404,10 +404,11 @@ presets:
 - name: country_top_futures_commodities_nl
   symbols:
     tickers:
-      - ICEENDEX:DPB1!
       - ICEENDEX:TFM1!
+      - ICEENDEX:DPB1!
       - ICEENDEX:DPA1!
-      - ICEENDEX:NRB1!
+      - ICEENDEX:NLB1!
+      - ICEENDEX:NLP1!
 - name: country_top_futures_commodities_ng
   symbols:
     tickers:
@@ -475,7 +476,7 @@ presets:
 - name: country_top_futures_commodities_se
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_ch
   symbols:
     tickers:
@@ -512,6 +513,7 @@ presets:
     tickers:
       - ICEENDEX:AOT1!
       - ICEENDEX:AOU1!
+      - ICEENDEX:AVM1!
 - name: country_top_futures_commodities_au
   symbols:
     tickers:
@@ -607,7 +609,7 @@ presets:
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
       - ICEENDEX:ECF1!
@@ -643,7 +645,7 @@ presets:
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
       - ICEENDEX:ECF1!
@@ -679,7 +681,7 @@ presets:
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
       - ICEENDEX:ECF1!
@@ -715,7 +717,7 @@ presets:
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
       - ICEENDEX:ECF1!
@@ -751,7 +753,7 @@ presets:
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
       - ICEENDEX:ECF1!
@@ -1255,7 +1257,7 @@ presets:
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
       - ICEENDEX:ECF1!

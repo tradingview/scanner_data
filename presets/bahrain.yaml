@@ -628,7 +628,7 @@ presets:
       operation: greater
       right: 100
   sort:
-    sortBy: revenue_per_employee
+    sortBy: revenue_per_employee_fy
     sortOrder: desc
 - name: highest_profit_per_employee
   filter:

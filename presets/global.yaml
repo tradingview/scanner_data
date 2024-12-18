@@ -2422,7 +2422,7 @@ presets:
       operation: greater
       right: 500
   sort:
-    sortBy: revenue_per_employee
+    sortBy: revenue_per_employee_fy
     sortOrder: desc
   price_conversion:
     to_currency: USD

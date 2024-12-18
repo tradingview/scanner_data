@@ -1067,7 +1067,7 @@ presets:
 - name: country_top_indices_us
   symbols:
     tickers:
-      - CBOE:SPX
+      - SP:SPX
       - NASDAQ:NDX
       - DJ:DJI
       - NASDAQ:IXIC
@@ -1076,8 +1076,8 @@ presets:
       - TVC:XAX
       - DJ:DJA
       - ICEUS:DXY
-      - CBOE:VIX
-      - CBOE:OEX
+      - TVC:VIX
+      - SP:OEX
 - name: highest_revenue_per_employee
   filter:
     - left: exchange

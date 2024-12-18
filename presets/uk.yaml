@@ -731,14 +731,14 @@ presets:
     - left: type
       operation: equal
       right: stock
-    - left: revenue_per_employee
+    - left: revenue_per_employee_fy
       operation: greater
       right: 0
     - left: number_of_employees_fy
       operation: greater
       right: 500
   sort:
-    sortBy: revenue_per_employee
+    sortBy: revenue_per_employee_fy
     sortOrder: desc
 - name: highest_profit_per_employee
   filter:

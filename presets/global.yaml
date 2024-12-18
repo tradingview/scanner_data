@@ -2412,7 +2412,7 @@ presets:
         - ''
         - common
         - foreign-issuer
-    - left: revenue_per_employee
+    - left: revenue_per_employee_fy
       operation: greater
       right: 1000000
     - left: is_primary
@@ -2422,7 +2422,7 @@ presets:
       operation: greater
       right: 500
   sort:
-    sortBy: revenue_per_employee
+    sortBy: revenue_per_employee_fy
     sortOrder: desc
   price_conversion:
     to_currency: USD

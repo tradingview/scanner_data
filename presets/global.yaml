@@ -5589,12 +5589,12 @@ presets:
 - name: indices_americas
   symbols:
     tickers:
-      - CBOE:SPX
+      - SP:SPX
       - NASDAQ:NDX
       - NASDAQ:IXIC
       - DJ:DJI
       - TVC:RUT
-      - CBOE:VIX
+      - TVC:VIX
       - ICEUS:DXY
       - TSX:TSX
       - BMFBOVESPA:IBOV
@@ -5609,7 +5609,7 @@ presets:
       - CBOEFTSE:RUI
       - TVC:RUA
       - SP:SP600
-      - CBOE:OEX
+      - SP:OEX
       - BCS:SP_IPSA
       - BVC:ICAP
       - BMV:ME

@@ -501,7 +501,7 @@ if not na(recVWMA)
 	recMAC += 1
 recIC = float(na)
 if not(na(IC_Lead1) or na(IC_Lead2) or na(close) or na(close[1]) or na(IC_BLine) or na(IC_CLine))
-	recIC := calcRecommend(IC_Lead1 > IC_Lead2 and close > IC_Lead1 and close < IC_BLine and close[1] < IC_CLine and close > IC_CLine, IC_Lead2 > IC_Lead1 and close < IC_Lead1 and close > IC_BLine and close[1] > IC_CLine and close < IC_CLine)
+	recIC := calcRecommend(IC_Lead1 > IC_Lead2 and IC_BLine > IC_Lead1 and IC_CLine > IC_BLine and close > IC_CLine, IC_Lead1 < IC_Lead2 and IC_BLine < IC_Lead1 and IC_CLine < IC_BLine and close < IC_CLine)
 plot(recIC, title='Rec.Ichimoku')
 if not na(recIC)
 	recMA += recIC
@@ -516,14 +516,14 @@ if not(na(recRSI) or na(recRSI[1]))
 	recOther += calcRecommend(recRSI < 30 and recRSI[1] < recRSI, recRSI > 70 and recRSI[1] > recRSI)
 if not(na(kStoch) or na(dStoch) or na(kStoch[1]) or na(dStoch[1]))
 	recOtherC += 1
-	recOther += calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch and kStoch[1] < dStoch[1], kStoch > 80 and dStoch > 80 and kStoch < dStoch and kStoch[1] > dStoch[1])
+	recOther += calcRecommend(kStoch < 20 and dStoch < 20 and kStoch > dStoch, kStoch > 80 and dStoch > 80 and kStoch < dStoch)
 recCCI = CCI
 if not(na(recCCI) or na(recCCI[1]))
 	recOtherC += 1
 	recOther += calcRecommend(recCCI < -100 and recCCI > recCCI[1], recCCI > 100 and recCCI < recCCI[1])
 if not(na(adxValue) or na(adxPlus[1]) or na(adxMinus[1]) or na(adxPlus) or na(adxMinus))
 	recOtherC += 1
-	recOther += calcRecommend(adxValue > 20 and adxPlus[1] < adxMinus[1] and adxPlus > adxMinus, adxValue > 20 and adxPlus[1] > adxMinus[1] and adxPlus < adxMinus)
+	recOther += calcRecommend(adxValue > 20 and adxValue > adxValue[1] and adxPlus > adxMinus, adxValue > 20 and adxValue > adxValue[1] and adxPlus < adxMinus)
 if not(na(AO) or na(AO[1]))
 	recOtherC += 1
 	recOther += calcRecommend(ta.crossover(AO, 0) or AO > 0 and AO[1] > 0 and AO > AO[1] and AO[2] > AO[1], ta.crossunder(AO, 0) or AO < 0 and AO[1] < 0 and AO < AO[1] and AO[2] < AO[1])
@@ -535,7 +535,7 @@ if not(na(macdMACD) or na(signalMACD))
 	recOther += calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
 recStoch_RSI = float(na)
 if not(na(DownTrend) or na(UpTrend) or na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
-	recStoch_RSI := calcRecommend(DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D and Stoch_RSI_K[1] < Stoch_RSI_D[1], UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D and Stoch_RSI_K[1] > Stoch_RSI_D[1])
+	recStoch_RSI := calcRecommend(DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D, UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D)
 plot(recStoch_RSI, title='Rec.Stoch.RSI')
 if not na(recStoch_RSI)
 	recOtherC += 1

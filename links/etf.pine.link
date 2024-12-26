@@ -78,8 +78,18 @@ plot(aumPerf3Y, title="aum_perf.3Y")
 plot(aumPerf5Y, title="aum_perf.5Y")
 plot(aumPerfYTD, title="aum_perf.YTD")
 
+// nav_total_return.<1M|3M|6M|YTD|1Y|3Y|5Y>
+canGetDataFromSec(bool isLastBarSecSer, int dayofmonthSecSer) =>
+	not isLastBarSecSer or dayofmonth <= dayofmonthSecSer
+navTotalReturns(finTicker) =>
+	[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD, dm, b_s] = request.security(finTicker, fundTF, [fundPerf(month1), fundPerf(month3), fundPerf(month6), fundPerf(years1), fundPerf(years3), fundPerf(years5), fundPerfYTD(), dayofmonth, barstate.islast], lookahead = barmerge.lookahead_on, ignore_invalid_symbol=true)
+	if canGetDataFromSec(b_s, dm)
+		[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD]
+	else
+		[na, na, na, na, na, na, na]
+
 navAllTicker = __financial_tickerid(syminfo.tickerid, "NAV_ALL", "D")
-[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD] = request.security(navAllTicker, fundTF, [fundPerf(month1), fundPerf(month3), fundPerf(month6), fundPerf(years1), fundPerf(years3), fundPerf(years5), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD] = navTotalReturns(navAllTicker)
 
 plot(navTotalReturn1M, title="nav_total_return.1M")
 plot(navTotalReturn3M, title="nav_total_return.3M")

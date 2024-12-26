@@ -1,3 +1,7 @@
+// first bar's timestamp in pine history
+var first_bar_time = time / 1000
+plot(first_bar_time, title='first_bar_time')
+
 // high & low
 var ath = high
 var ath_date = time/1000
@@ -66,10 +70,12 @@ fastSearchTimeIndex(x, maxbarsback) =>
 	mid = 0 * time[maxbarsback]
 	right = math.min(bar_index, maxbarsback)
 	left = 0
-	if time < x
+	if x/1000 <= first_bar_time
+		bar_index
+	else if time < x
 		0
 	else
-		for i = 0 to 9 by 1
+		for i = 0 to 10
 			mid := math.ceil((left + right) / 2)
 			if left == right
 				break
@@ -154,7 +160,3 @@ volatility(bb) =>
 plot(volatility(countOfBarsWeekAgoThisBar), title='Volatility.W')
 plot(volatility(countOfBars1MonthAgoThisBar), title='Volatility.M')
 plot(ta.tr(true) * 100 / math.abs(low), title='Volatility.D')
-
-// first bar's timestamp in pine history
-var first_bar_time = time / 1000
-plot(first_bar_time, title='first_bar_time')

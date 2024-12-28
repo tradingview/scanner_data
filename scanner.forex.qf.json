@@ -80,11 +80,6 @@
     "type": "price"
   },
   {
-    "name": "update-time",
-    "type": "number",
-    "extract_from": "daily-bar" 
-  },
-  {
     "name": "all_time_high_day",
     "type": "time"
   },

@@ -76,11 +76,6 @@
     "type": "number"
   },
   {
-    "name": "update-time",
-    "type": "number",
-    "extract_from": "daily-bar" 
-  },
-  {
     "name": "daily-summary-ast",
     "type": "text"
   },

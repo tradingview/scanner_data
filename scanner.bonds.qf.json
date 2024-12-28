@@ -56,11 +56,6 @@
     "type": "price"
   },
   {
-    "name": "update-time",
-    "type": "number",
-    "extract_from": "daily-bar" 
-  },
-  {
     "name": "term-to-maturity",
     "type": "text"
   },

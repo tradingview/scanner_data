@@ -40,11 +40,6 @@
         "type": "text"
     },
     {
-        "name": "update-time",
-        "type": "number",
-        "extract_from": "daily-bar" 
-    },
-    {
         "name": "source-logoid",
         "type": "text"
     },

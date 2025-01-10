@@ -688,11 +688,6 @@
         "type": "text"
     },
     {
-        "name": "update-time",
-        "type": "number",
-        "extract_from": "daily-bar" 
-    },
-    {
         "name": "total_revenue_fy_h",
         "type": "num_slice"
     },

@@ -737,6 +737,10 @@
         "type": "num_slice"
     },
     {
+        "name": "sum_for_enterprise_value",
+        "type": "fundamental_price"
+    },
+    {
         "name": "ebitda_fq_h",
         "type": "num_slice"
     },

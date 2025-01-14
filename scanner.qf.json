@@ -817,7 +817,7 @@
         "type": "fundamental_price"
     },
     {
-        "name": "enterprise_value_current",
+        "name": "sum_for_enterprise_value",
         "type": "fundamental_price"
     },
     {
@@ -1379,5 +1379,9 @@
     {
         "name": "fiscal_period_end_fh_h",
         "type": "num_slice"
+    },
+    {
+        "name": "country_code",
+        "type": "text"
     }
 ]

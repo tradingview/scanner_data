@@ -464,7 +464,7 @@ presets:
 - name: country_top_futures_commodities_kr
   symbols:
     tickers:
-      - ""
+      - KRX:KGD1!
 - name: country_top_futures_commodities_es
   symbols:
     tickers:
@@ -1090,7 +1090,7 @@ presets:
       - NYMEX:PL1!
       - COMEX:HG1!
       - NYMEX:PA1!
-      - COMEX:ALI1!
+      - KRX:KGD1!
 - name: locale_top_futures_agricultural_kr
   symbols:
     tickers:
@@ -1105,10 +1105,10 @@ presets:
     tickers:
       - EUREX:FBK21!
       - EUREX:FMK21!
-      - CME_MINI:ES1!
-      - CME_MINI:NQ1!
-      - CBOT_MINI:YM1!
-      - EUREX:FDAX1!
+      - KRX:K2I1!
+      - KRX:KQI1!
+      - KRX:MKI1!
+      - KRX:VKI1!
 - name: locale_top_futures_energy_cn
   symbols:
     tickers:

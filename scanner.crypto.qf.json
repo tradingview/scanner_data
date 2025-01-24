@@ -76,6 +76,11 @@
     "type": "number"
   },
   {
+    "name": "update-time",
+    "type": "number",
+    "extract_from": "daily-bar" 
+  },
+  {
     "name": "circulating_supply",
     "type": "number"
   },

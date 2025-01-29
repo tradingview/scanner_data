@@ -1,0 +1,9 @@
+// relative_volume_intraday_usd|5
+volExpr = syminfo.volumetype == "quote" ? volume : ( syminfo.volumetype == "base" ? close * volume : na )
+volInUSD = volExpr*request.currency_rate(syminfo.currency, "USD", ignore_invalid_currency = true)
+
+float pastVolumeUSD = rv.averageAtTime(volInUSD, 10, "1D", true)
+float currentVolumeUSD = rv.calcCumulativeSeries(volInUSD, timeframe.change("1D"), true)
+float relativeValueUSD = currentVolumeUSD / pastVolumeUSD
+rvUSD = request.security(syminfo.tickerid, "5", relativeValueUSD, calc_bars_count=3200, ignore_invalid_symbol=true)
+plot(rvUSD, "relative_volume_intraday_usd")

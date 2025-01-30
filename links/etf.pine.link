@@ -78,13 +78,37 @@ plot(aumPerf3Y, title="aum_perf.3Y")
 plot(aumPerf5Y, title="aum_perf.5Y")
 plot(aumPerfYTD, title="aum_perf.YTD")
 
-navAllTicker = __financial_tickerid(syminfo.tickerid, "NAV_ALL", "D")
-[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD] = request.security(navAllTicker, fundTF, [fundPerf(month1), fundPerf(month3), fundPerf(month6), fundPerf(years1), fundPerf(years3), fundPerf(years5), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+// nav_total_return.<1M|3M|6M|YTD|1Y|3Y|5Y>
+navTotalReturns(finTicker) =>
+	[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD, timeClose, isLast] = request.security(finTicker, fundTF, [fundPerf(month1), fundPerf(month3), fundPerf(month6), fundPerf(years1), fundPerf(years3), fundPerf(years5), fundPerfYTD(), time_close, barstate.islast], lookahead = barmerge.lookahead_on, ignore_invalid_symbol=true)
+	if isLast and time >= timeClose
+		[na, na, na, na, na, na, na]
+	else
+		[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD]
 
-plot(navTotalReturn1M, title="nav_total_return.1M")
-plot(navTotalReturn3M, title="nav_total_return.3M")
-plot(navTotalReturn6M, title="nav_total_return.6M")
-plot(navTotalReturn1Y, title="nav_total_return.1Y")
-plot(navTotalReturn3Y, title="nav_total_return.3Y")
-plot(navTotalReturn5Y, title="nav_total_return.5Y")
-plot(navTotalReturnYTD, title="nav_total_return.YTD")
+navAllTicker = __financial_tickerid(syminfo.tickerid, "NAV_ALL", "D")
+[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD] = navTotalReturns(navAllTicker)
+
+var float ntr1M = na
+var float ntr3M = na
+var float ntr6M = na
+var float ntr1Y = na
+var float ntr3Y = na
+var float ntr5Y = na
+var float ntrYTD = na
+if not na(navTotalReturn1M)
+    ntr1M := navTotalReturn1M
+    ntr3M := navTotalReturn3M
+    ntr6M := navTotalReturn6M
+    ntr1Y := navTotalReturn1Y
+    ntr3Y := navTotalReturn3Y
+    ntr5Y := navTotalReturn5Y
+    ntrYTD := navTotalReturnYTD
+
+plot(ntr1M, title="nav_total_return.1M")
+plot(ntr3M, title="nav_total_return.3M")
+plot(ntr6M, title="nav_total_return.6M")
+plot(ntr1Y, title="nav_total_return.1Y")
+plot(ntr3Y, title="nav_total_return.3Y")
+plot(ntr5Y, title="nav_total_return.5Y")
+plot(ntrYTD, title="nav_total_return.YTD")

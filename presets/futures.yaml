@@ -238,12 +238,12 @@ presets:
     tickers:
       - RUS:GD1!
       - RUS:SV1!
-      - RUS:NL1!
+      - RUS:NC1!
       - RUS:PD1!
-      - RUS:CO1!
+      - RUS:CE1!
       - RUS:PT1!
-      - RUS:AM1!
-      - RUS:ZN1!
+      - RUS:AN1!
+      - RUS:ZC1!
       - RUS:NG1!
       - RUS:BR1!
       - RUS:W41!
@@ -837,8 +837,8 @@ presets:
       - RUS:SV1!
       - RUS:PD1!
       - RUS:PT1!
-      - RUS:NL1!
-      - RUS:CO1!
+      - RUS:NC1!
+      - RUS:CE1!
 - name: locale_top_futures_agricultural_ru
   symbols:
     tickers:

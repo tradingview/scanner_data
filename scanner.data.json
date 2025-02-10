@@ -1346,6 +1346,22 @@
 			{
 				"id": "plot_330",
 				"type": "line"
+			},
+			{
+				"id": "plot_331",
+				"type": "line"
+			},
+			{
+				"id": "plot_332",
+				"type": "line"
+			},
+			{
+				"id": "plot_333",
+				"type": "line"
+			},
+			{
+				"id": "plot_334",
+				"type": "line"
 			}
 		],
 		"version": "",
@@ -2388,6 +2404,22 @@
 			},
 			"plot_330": {
 				"title": "nav_discount_premium",
+				"isHidden": false
+			},
+			"plot_331": {
+				"title": "AvgValue.Traded_10d",
+				"isHidden": false
+			},
+			"plot_332": {
+				"title": "AvgValue.Traded_30d",
+				"isHidden": false
+			},
+			"plot_333": {
+				"title": "AvgValue.Traded_60d",
+				"isHidden": false
+			},
+			"plot_334": {
+				"title": "AvgValue.Traded_90d",
 				"isHidden": false
 			},
 			"plot_34": {

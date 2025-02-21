@@ -1,3 +1,5 @@
+import TradingView/RelativeValue/2 as rv
+
 sum(daysBack)=>
 	startT = startFrom(daysBack)
 	sum = 0.
@@ -78,13 +80,55 @@ plot(aumPerf3Y, title="aum_perf.3Y")
 plot(aumPerf5Y, title="aum_perf.5Y")
 plot(aumPerfYTD, title="aum_perf.YTD")
 
-navAllTicker = __financial_tickerid(syminfo.tickerid, "NAV_ALL", "D")
-[navTotalReturn1M, navTotalReturn3M, navTotalReturn6M, navTotalReturn1Y, navTotalReturn3Y, navTotalReturn5Y, navTotalReturnYTD] = request.security(navAllTicker, fundTF, [fundPerf(month1), fundPerf(month3), fundPerf(month6), fundPerf(years1), fundPerf(years3), fundPerf(years5), fundPerfYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)
+// nav_total_return.<1M|3M|6M|YTD|1Y|3Y|5Y>
+percent(cur, prev) =>
+    (not na(prev) and prev != 0) ? (cur - prev) / prev * 100 : na
+changePercentAgo(source,period) =>
+    bool anchor = if str.endswith(period, "Y")
+        mult = period == "3Y" ? 3 : period == "5Y" ? 5 : 1
+        timeframe.change("12M") and year % mult == 0
+    else
+        timeframe.change(period)
+    prev = rv.averageAtTime(source, 1, anchor, false)
+    percent(source, prev)
+changePercentYTD(source) =>
+    var float lastYTD = na
+    if year!=year[1]
+        lastYTD := source[1]
+    percent(source, lastYTD)
+changePercent(source,period) =>
+    period == "YTD" ? changePercentYTD(source) : changePercentAgo(source,period)
 
-plot(navTotalReturn1M, title="nav_total_return.1M")
-plot(navTotalReturn3M, title="nav_total_return.3M")
-plot(navTotalReturn6M, title="nav_total_return.6M")
-plot(navTotalReturn1Y, title="nav_total_return.1Y")
-plot(navTotalReturn3Y, title="nav_total_return.3Y")
-plot(navTotalReturn5Y, title="nav_total_return.5Y")
-plot(navTotalReturnYTD, title="nav_total_return.YTD")
+navTotalReturns(finTicker) =>
+	[ntr1M, ntr3M, ntr6M, ntr1Y, ntr3Y, ntr5Y, ntrYTD, timeClose, isLast] = request.security(finTicker, fundTF, [changePercent(close, "1M"), changePercent(close, "3M"), changePercent(close, "6M"), changePercent(close, "1Y"), changePercent(close, "3Y"), changePercent(close, "5Y"), changePercent(close, "YTD"), time_close, barstate.islast], lookahead = barmerge.lookahead_on, ignore_invalid_symbol=true)
+	if isLast and time >= timeClose
+		[na, na, na, na, na, na, na]
+	else
+		[ntr1M, ntr3M, ntr6M, ntr1Y, ntr3Y, ntr5Y, ntrYTD]
+
+navAllTicker = __financial_tickerid(syminfo.tickerid, "NAV_ALL", "D")
+[ntr1M, ntr3M, ntr6M, ntr1Y, ntr3Y, ntr5Y, ntrYTD] = navTotalReturns(navAllTicker)
+
+var float navTotalReturn1M = na
+var float navTotalReturn3M = na
+var float navTotalReturn6M = na
+var float navTotalReturn1Y = na
+var float navTotalReturn3Y = na
+var float navTotalReturn5Y = na
+var float navTotalReturnYTD = na
+if not na(ntr1M)
+    navTotalReturn1M := ntr1M
+    navTotalReturn3M := ntr3M
+    navTotalReturn6M := ntr6M
+    navTotalReturn1Y := ntr1Y
+    navTotalReturn3Y := ntr3Y
+    navTotalReturn5Y := ntr5Y
+    navTotalReturnYTD := ntrYTD
+
+plot(navTotalReturn1M, title = "nav_total_return.1M")
+plot(navTotalReturn3M, title = "nav_total_return.3M")
+plot(navTotalReturn6M, title = "nav_total_return.6M")
+plot(navTotalReturnYTD, title = "nav_total_return.YTD")
+plot(navTotalReturn1Y, title = "nav_total_return.1Y")
+plot(navTotalReturn3Y, title = "nav_total_return.3Y")
+plot(navTotalReturn5Y, title = "nav_total_return.5Y")

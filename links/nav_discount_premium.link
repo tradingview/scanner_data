@@ -2,8 +2,14 @@
 symbolName = input.symbol("", title = "Symbol", confirm = false, __optional = true)
 getSymbolName(symbol) => symbol == "" ? syminfo.tickerid : symbol
 makeTicker(fund, symbol = "") => __financial_tickerid(getSymbolName(symbol), fund, "")
+getNAV(finTicker) =>
+	[sec, timeClose, isLast] = request.security(finTicker, "D", [close, time_close, barstate.islast], lookahead = barmerge.lookahead_on, ignore_invalid_symbol=true)
+	if isLast and time >= timeClose
+		float(na)
+	else
+		sec
 var finTicker = __financial_tickerid(getSymbolName(symbolName), "NAV", "D")
-nav = request.security(finTicker, "D", close, ignore_invalid_symbol=true, gaps=barmerge.gaps_on)
+nav = getNAV(finTicker)
 var float nav_discount_premium = na
 if not na(nav)
     nav_discount_premium := ((close / nav) - 1) * 100

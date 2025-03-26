@@ -24,6 +24,30 @@ presets:
   sort:
     sortBy: name
     sortOrder: asc
+- name: large_cap
+  filter:
+  - left: exchange
+    operation: in_range
+    right:
+    - AMEX
+    - CBOE
+    - NASDAQ
+    - NYSE
+  - left: is_primary
+    operation: equal
+    right: true
+  - left: typespecs
+    operation: has
+    right: common
+  - left: typespecs
+    operation: has_none_of
+    right: preferred
+  - left: type
+    operation: equal
+    right: stock
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: small_cap
   filter:
   - left: exchange

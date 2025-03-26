@@ -1,5 +1,7 @@
 // 24h volume
 currency = "USD"
+curr_rate_usd = request.currency_rate(syminfo.currency, currency, ignore_invalid_currency = true)
+
 msIn24h = 24*60*60*1000
 countOfFiveMinsInDay = 24*60/5
 maxBufferSize = 2*countOfFiveMinsInDay
@@ -22,7 +24,7 @@ sum24hVol(src) =>
 var cumVol = 0.
 cumVol += nz(volume)
 expr = syminfo.volumetype == "quote" ? volume : ( syminfo.volumetype == "base" ? close * volume : na )
-vol24h = request.security(syminfo.tickerid, sumVolTF, sum24hVol(expr * request.currency_rate(syminfo.currency, currency, ignore_invalid_currency = true)), ignore_invalid_symbol = true)
+vol24h = request.security(syminfo.tickerid, sumVolTF, sum24hVol(expr * curr_rate_usd), ignore_invalid_symbol = true)
 if barstate.islast
     if syminfo.volumetype == "tick" and syminfo.type == "crypto" or cumVol == 0
         vol24h := na
@@ -82,3 +84,8 @@ if na(close24hChangeAbs) or close24hPrevToCompare == 0 or (close24hPrevToCompare
 else
 	close24hChange := (close24hChangeAbs / math.abs(close24hPrev)) * 100
 plot(close24hChange, title = "24h_close_change", style = plot.style_columns)
+
+
+// study("close_usd")
+close_usd = curr_rate_usd * close
+plot(close_usd, "close_usd")

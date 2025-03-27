@@ -122,6 +122,7 @@ presets:
 - name: country_top_futures_commodities_ae
   symbols:
     tickers:
+      - ICEAD:ADM1!
       - DFM:OMOIL1!
 - name: country_top_futures_commodities_ar
   symbols:
@@ -235,18 +236,18 @@ presets:
 - name: country_top_futures_commodities_ru
   symbols:
     tickers:
-      - MOEX:GD1!
-      - MOEX:SV1!
-      - MOEX:NL1!
-      - MOEX:PD1!
-      - MOEX:CO1!
-      - MOEX:PT1!
-      - MOEX:AM1!
-      - MOEX:ZN1!
-      - MOEX:NG1!
-      - MOEX:BR1!
-      - MOEX:W41!
-      - MOEX:SA1!
+      - RUS:GD1!
+      - RUS:SV1!
+      - RUS:NC1!
+      - RUS:PD1!
+      - RUS:CE1!
+      - RUS:PT1!
+      - RUS:AN1!
+      - RUS:ZC1!
+      - RUS:NG1!
+      - RUS:BR1!
+      - RUS:W41!
+      - RUS:SA1!
 - name: country_top_futures_commodities_sg
   symbols:
     tickers:
@@ -299,11 +300,13 @@ presets:
 - name: country_top_futures_commodities_be
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:BPB1!
+      - ICEENDEX:BEB1!
+      - ICEENDEX:BEP1!
 - name: country_top_futures_commodities_ca
   symbols:
     tickers:
-      - ""
+      - ICEUS:RS1!
 - name: country_top_futures_commodities_cl
   symbols:
     tickers:
@@ -319,7 +322,7 @@ presets:
 - name: country_top_futures_commodities_dk
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_eg
   symbols:
     tickers:
@@ -331,15 +334,19 @@ presets:
 - name: country_top_futures_commodities_fi
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_fr
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:FNA1!
+      - ICEENDEX:FNB1!
+      - ICEENDEX:PEG1!
 - name: country_top_futures_commodities_de
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:GNM1!
+      - ICEENDEX:GAB1!
+      - ICEENDEX:GAP1!
 - name: country_top_futures_commodities_gr
   symbols:
     tickers:
@@ -352,6 +359,10 @@ presets:
   symbols:
     tickers:
       - ""
+- name: country_top_futures_commodities_ie
+  symbols:
+    tickers:
+      - ""
 - name: country_top_futures_commodities_il
   symbols:
     tickers:
@@ -359,7 +370,9 @@ presets:
 - name: country_top_futures_commodities_it
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:IGA1!
+      - ICEENDEX:IPB1!
+      - ICEENDEX:IPP1!
 - name: country_top_futures_commodities_ke
   symbols:
     tickers:
@@ -391,7 +404,11 @@ presets:
 - name: country_top_futures_commodities_nl
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:TFM1!
+      - ICEENDEX:DPB1!
+      - ICEENDEX:DPA1!
+      - ICEENDEX:NLB1!
+      - ICEENDEX:NLP1!
 - name: country_top_futures_commodities_ng
   symbols:
     tickers:
@@ -399,7 +416,7 @@ presets:
 - name: country_top_futures_commodities_no
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_pk
   symbols:
     tickers:
@@ -447,11 +464,11 @@ presets:
 - name: country_top_futures_commodities_kr
   symbols:
     tickers:
-      - ""
+      - KRX:KGD1!
 - name: country_top_futures_commodities_es
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:SPB1!
 - name: country_top_futures_commodities_lk
   symbols:
     tickers:
@@ -459,7 +476,7 @@ presets:
 - name: country_top_futures_commodities_se
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:NRB1!
 - name: country_top_futures_commodities_ch
   symbols:
     tickers:
@@ -494,7 +511,9 @@ presets:
 - name: country_top_futures_commodities_at
   symbols:
     tickers:
-      - ""
+      - ICEENDEX:AOT1!
+      - ICEENDEX:AOU1!
+      - ICEENDEX:AVM1!
 - name: country_top_futures_commodities_au
   symbols:
     tickers:
@@ -541,15 +560,15 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_us
+- name: locale_top_futures_index_us
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - CME_MINI:NQ1!
+      - CME_MINI:ES1!
+      - CBOT_MINI:YM1!
+      - CME_MINI:RTY1!
+      - CBOE:VX1!
+      - CME_MINI:EMD1!
 - name: locale_top_futures_energy_in
   symbols:
     tickers:
@@ -577,23 +596,23 @@ presets:
       - NCDEX:DHANIYA1!
       - NCDEX:COCUDAKL1!
       - MCX:MENTHAOIL1!
-- name: locale_top_futures_currency_in
+- name: locale_top_futures_index_in
   symbols:
     tickers:
-      - MSEI:USDINR1!
-      - MSEI:EURUSD1!
-      - MSEI:USDJPY1!
-      - MSEI:GBPUSD1!
-      - MSEI:GBPINR1!
-      - MSEI:EURINR1!
+      - NSEIX:NIFTY1!
+      - NSE:BANKNIFTY1!
+      - NSE:NIFTY1!
+      - NSE:FINNIFTY1!
+      - NSE:MIDCPNIFTY1!
+      - BSE:BSX1!
 - name: locale_top_futures_energy_de
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_de
   symbols:
@@ -613,23 +632,23 @@ presets:
       - ICEEUR:WHT1!
       - CBOT:ZS1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_de
+- name: locale_top_futures_index_de
   symbols:
     tickers:
-      - EUREX:FCEU1!
-      - EUREX:FCUY1!
-      - EUREX:FCAU1!
-      - EUREX:FCAY1!
-      - EUREX:FCEF1!
-      - EUREX:FCEP1!
+      - EUREX:FDAX1!
+      - EUREX:FESX1!
+      - EUREX:FDXM1!
+      - EUREX:FXXP1!
+      - EUREX:FDXS1!
+      - EUREX:FVS1!
 - name: locale_top_futures_energy_fr
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_fr
   symbols:
@@ -649,23 +668,23 @@ presets:
       - ICEEUR:WHT1!
       - CBOT:ZS1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_fr
+- name: locale_top_futures_index_fr
   symbols:
     tickers:
-      - EUREX:FCEU1!
-      - EUREX:FCUY1!
-      - EUREX:FCAU1!
-      - EUREX:FCAY1!
-      - EUREX:FCEF1!
-      - EUREX:FCEP1!
+      - EURONEXT:FCE1!
+      - EURONEXT:FTI1!
+      - EUREX:FESX1!
+      - EUREX:FXXP1!
+      - EUREX:FVS1!
+      - EUREX:FESB1!
 - name: locale_top_futures_energy_es
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_es
   symbols:
@@ -685,23 +704,23 @@ presets:
       - ICEEUR:WHT1!
       - CBOT:ZS1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_es
+- name: locale_top_futures_index_es
   symbols:
     tickers:
-      - EUREX:FCEU1!
-      - EUREX:FCUY1!
-      - EUREX:FCAU1!
-      - EUREX:FCAY1!
-      - EUREX:FCEF1!
-      - EUREX:FCEP1!
+      - MATBAROFEX:RFX201!
+      - EUREX:FESX1!
+      - EUREX:FXXP1!
+      - EUREX:FVS1!
+      - EUREX:FESB1!
+      - EUREX:FSTB1!
 - name: locale_top_futures_energy_it
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_it
   symbols:
@@ -721,23 +740,23 @@ presets:
       - ICEEUR:WHT1!
       - CBOT:ZS1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_it
+- name: locale_top_futures_index_it
   symbols:
     tickers:
-      - EUREX:FCEU1!
-      - EUREX:FCUY1!
-      - EUREX:FCAU1!
-      - EUREX:FCAY1!
-      - EUREX:FCEF1!
-      - EUREX:FCEP1!
+      - EUREX:FESX1!
+      - EUREX:FXXP1!
+      - EUREX:FVS1!
+      - EUREX:FESB1!
+      - EUREX:FSTB1!
+      - EUREX:FSXE1!
 - name: locale_top_futures_energy_pl
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_pl
   symbols:
@@ -757,15 +776,15 @@ presets:
       - ICEEUR:WHT1!
       - CBOT:ZS1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_pl
+- name: locale_top_futures_index_pl
   symbols:
     tickers:
-      - GPW:FUSD1!
-      - GPW:FEUR1!
-      - GPW:FCHF1!
-      - GPW:FGBP1!
-      - CME:6E1!
-      - CME:6B1!
+      - GPW:FW201!
+      - GPW:FW401!
+      - EUREX:FDAX1!
+      - EUREX:FESX1!
+      - EUREX:FXXP1!
+      - EUREX:FVS1!
 - name: locale_top_futures_energy_tr
   symbols:
     tickers:
@@ -793,20 +812,20 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_tr
+- name: locale_top_futures_index_tr
   symbols:
     tickers:
-      - BIST:EURUSD1!
-      - BIST:USDTRY1!
-      - BIST:GBPUSD1!
-      - BIST:EURTRY1!
-      - BIST:RUBTRY1!
-      - BIST:CNHTRY1!
+      - BIST:XU030D1!
+      - BIST:XLBNKD1!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
+      - CBOT_MINI:YM1!
+      - EUREX:FDAX1!
 - name: locale_top_futures_energy_ru
   symbols:
     tickers:
-      - MOEX:NG1!
-      - MOEX:BR1!
+      - RUS:NG1!
+      - RUS:BR1!
       - NYMEX:CL1!
       - NYMEX:RB1!
       - NYMEX:HO1!
@@ -814,30 +833,30 @@ presets:
 - name: locale_top_futures_metals_ru
   symbols:
     tickers:
-      - MOEX:GD1!
-      - MOEX:SV1!
-      - MOEX:PD1!
-      - MOEX:PT1!
-      - MOEX:NL1!
-      - MOEX:CO1!
+      - RUS:GD1!
+      - RUS:SV1!
+      - RUS:PD1!
+      - RUS:PT1!
+      - RUS:NC1!
+      - RUS:CE1!
 - name: locale_top_futures_agricultural_ru
   symbols:
     tickers:
-      - MOEX:SA1!
-      - MOEX:W41!
+      - RUS:SA1!
+      - RUS:W41!
       - ICEUS:KC1!
       - ICEUS:CT1!
       - CBOT:ZS1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_ru
+- name: locale_top_futures_index_ru
   symbols:
     tickers:
-      - MOEX:SI1!
-      - MOEX:CR1!
-      - MOEX:ED1!
-      - MOEX:EU1!
-      - MOEX:JP1!
-      - MOEX:UC1!
+      - RUS:RI1!
+      - RUS:MX1!
+      - RUS:MM1!
+      - RUS:RM1!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
 - name: locale_top_futures_energy_br
   symbols:
     tickers:
@@ -865,15 +884,15 @@ presets:
       - BMFBOVESPA:SOY1!
       - BMFBOVESPA:SJC1!
       - ICEUS:CT1!
-- name: locale_top_futures_currency_br
+- name: locale_top_futures_index_br
   symbols:
     tickers:
-      - BMFBOVESPA:WDO1!
-      - BMFBOVESPA:DOL1!
-      - BMFBOVESPA:EUR1!
-      - BMFBOVESPA:AUD1!
-      - BMFBOVESPA:JPY1!
-      - BMFBOVESPA:GBP1!
+      - BMFBOVESPA:WIN1!
+      - BMFBOVESPA:IND1!
+      - BMFBOVESPA:ISP1!
+      - BMFBOVESPA:WSP1!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
 - name: locale_top_futures_energy_id
   symbols:
     tickers:
@@ -901,15 +920,15 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_id
+- name: locale_top_futures_index_id
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
+      - CBOT_MINI:YM1!
+      - NSEIX:NIFTY1!
+      - EUREX:FDAX1!
+      - ICEEUR:Z1!
 - name: locale_top_futures_energy_my
   symbols:
     tickers:
@@ -937,15 +956,15 @@ presets:
       - CBOT:ZS1!
       - CBOT:ZW1!
       - ICEUS:SB1!
-- name: locale_top_futures_currency_my
+- name: locale_top_futures_index_my
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - MYX:FKLI1!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
+      - CBOT_MINI:YM1!
+      - NSEIX:NIFTY1!
+      - EUREX:FDAX1!
 - name: locale_top_futures_energy_th
   symbols:
     tickers:
@@ -973,15 +992,15 @@ presets:
       - CBOT:ZS1!
       - CBOT:ZW1!
       - ICEUS:SB1!
-- name: locale_top_futures_currency_th
+- name: locale_top_futures_index_th
   symbols:
     tickers:
-      - TFEX:USD1!
-      - TFEX:USDJPY1!
-      - TFEX:EURUSD1!
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
+      - TFEX:S501!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
+      - CBOT_MINI:YM1!
+      - NSEIX:NIFTY1!
+      - EUREX:FDAX1!
 - name: locale_top_futures_energy_vn
   symbols:
     tickers:
@@ -1009,15 +1028,15 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_vn
+- name: locale_top_futures_index_vn
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - HNX:VN301!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
+      - CBOT_MINI:YM1!
+      - NSEIX:NIFTY1!
+      - EUREX:FDAX1!
 - name: locale_top_futures_energy_jp
   symbols:
     tickers:
@@ -1045,15 +1064,15 @@ presets:
       - ICEUS:CT1!
       - CBOT:ZS1!
       - CBOT:ZW1!
-- name: locale_top_futures_currency_jp
+- name: locale_top_futures_index_jp
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - OSE:NK2251!
+      - OSE:TOPIX1!
+      - OSE:DJIA1!
+      - OSE:MOTHE1!
+      - OSE:REIT1!
+      - OSE:JN4001!
 - name: locale_top_futures_energy_kr
   symbols:
     tickers:
@@ -1071,7 +1090,7 @@ presets:
       - NYMEX:PL1!
       - COMEX:HG1!
       - NYMEX:PA1!
-      - COMEX:ALI1!
+      - KRX:KGD1!
 - name: locale_top_futures_agricultural_kr
   symbols:
     tickers:
@@ -1081,15 +1100,15 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_kr
+- name: locale_top_futures_index_kr
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - EUREX:FBK21!
+      - EUREX:FMK21!
+      - KRX:K2I1!
+      - KRX:KQI1!
+      - KRX:MKI1!
+      - KRX:VKI1!
 - name: locale_top_futures_energy_cn
   symbols:
     tickers:
@@ -1117,15 +1136,15 @@ presets:
       - ICEUS:KC1!
       - ICEUS:CT1!
       - CBOT:ZS1!
-- name: locale_top_futures_currency_cn
+- name: locale_top_futures_index_cn
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - CFFEX:IF1!
+      - CFFEX:IH1!
+      - CFFEX:IC1!
+      - CFFEX:IM1!
+      - HKEX:HSI1!
+      - HKEX:HHI1!
 - name: locale_top_futures_energy_tw
   symbols:
     tickers:
@@ -1153,15 +1172,15 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_tw
+- name: locale_top_futures_index_tw
   symbols:
     tickers:
-      - TAIFEX:XEF1!
-      - TAIFEX:XBF1!
-      - TAIFEX:XJF1!
-      - TAIFEX:RHF1!
-      - TAIFEX:XAF1!
-      - TAIFEX:RTF1!
+      - TAIFEX:TXF1!
+      - TAIFEX:EXF1!
+      - TAIFEX:FXF1!
+      - TAIFEX:SXF1!
+      - TAIFEX:TJF1!
+      - TAIFEX:SOF1!
 - name: locale_top_futures_energy_sa
   symbols:
     tickers:
@@ -1170,7 +1189,7 @@ presets:
       - ICEEUR:BRN1!
       - NYMEX:RB1!
       - NYMEX:HO1!
-      - NYMEX:AEZ1!
+      - ICEAD:ADM1!
 - name: locale_top_futures_metals_sa
   symbols:
     tickers:
@@ -1189,15 +1208,15 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_sa
+- name: locale_top_futures_index_sa
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
+      - CBOT_MINI:YM1!
+      - CME_MINI:RTY1!
+      - EUREX:FDAX1!
+      - ICEEUR:Z1!
 - name: locale_top_futures_energy_il
   symbols:
     tickers:
@@ -1225,23 +1244,23 @@ presets:
       - CBOT:ZW1!
       - ICEUS:SB1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_il
+- name: locale_top_futures_index_il
   symbols:
     tickers:
-      - CME:6E1!
-      - CME:6B1!
-      - CME:6J1!
-      - CME:6S1!
-      - CME:6A1!
-      - CME:6C1!
+      - CME_MINI:ES1!
+      - CME_MINI:NQ1!
+      - CBOT_MINI:YM1!
+      - CME_MINI:RTY1!
+      - EUREX:FDAX1!
+      - ICEEUR:Z1!
 - name: locale_top_futures_energy_se
   symbols:
     tickers:
       - ICEEUR:BRN1!
-      - ICEEUR:GWM1!
+      - ICEENDEX:TFM1!
       - ICEEUR:WBS1!
       - ICEEUR:UHU1!
-      - ICEEUR:UHO1!
+      - ICEENDEX:ECF1!
       - ICEEUR:ULS1!
 - name: locale_top_futures_metals_se
   symbols:
@@ -1261,15 +1280,15 @@ presets:
       - ICEEUR:WHT1!
       - CBOT:ZS1!
       - CBOT:ZC1!
-- name: locale_top_futures_currency_se
+- name: locale_top_futures_index_se
   symbols:
     tickers:
-      - EUREX:FCUS1!
-      - EUREX:FCSK1!
-      - EUREX:FCNS1!
-      - EUREX:FCEU1!
-      - EUREX:FCUY1!
-      - EUREX:FCEP1!
+      - EUREX:FESX1!
+      - EUREX:FXXP1!
+      - EUREX:FDAX1!
+      - EURONEXT:FTI1!
+      - EURONEXT:FCE1!
+      - EUREX:FVS1!
 - name: locale_top_futures_energy_ir
   symbols:
     tickers:
@@ -1282,7 +1301,7 @@ presets:
   symbols:
     tickers:
       - ""
-- name: locale_top_futures_currency_ir
+- name: locale_top_futures_index_ir
   symbols:
     tickers:
       - ""
@@ -1298,7 +1317,7 @@ presets:
   symbols:
     tickers:
       - ""
-- name: locale_top_futures_currency_hu
+- name: locale_top_futures_index_hu
   symbols:
     tickers:
       - ""

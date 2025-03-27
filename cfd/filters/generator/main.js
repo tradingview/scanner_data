@@ -118,11 +118,6 @@ const groups = [
         region: "Asia"
     },
     {
-        url2: "prefix=MOEX&type=index&typespecs=main",
-        include: ["MOEX:IMOEX"],
-        region: "Europe"
-    },
-    {
         url2: "prefix=NZX&type=index&typespecs=main",
         include: ["NZX:NZ50G"],
         region: "Pacific"
@@ -513,7 +508,6 @@ const majorIndices = [
     {"s": "GPW:WIG20", "cc": "PL"},
     {"s": "EURONEXT:AEX", "cc": "NL"},
     {"s": "EURONEXT:BEL20", "cc": "BE"},
-    {"s": "MOEX:IMOEX", "cc": "RU"},
     { "s":"OMXHEX:OMXH25", "cc":"FI" },
     { "s":"OMXICE:OMXI10",  "cc":"IS" },
     { "s":"OMXSTO:OMXS30", "cc":"SE" },

@@ -375,6 +375,15 @@ presets:
       - FX_IDC:GBPIDR
       - FX_IDC:CHFIDR
       - FX_IDC:CNYIDR
+- name: country_top_forex_ie
+  symbols:
+    tickers:
+      - FX_IDC:USDEUR
+      - FX_IDC:JPYEUR
+      - FX_IDC:GBPEUR
+      - FX_IDC:CHFEUR
+      - FX_IDC:AUDEUR
+      - FX_IDC:CNYEUR
 - name: country_top_forex_il
   symbols:
     tickers:
@@ -612,12 +621,12 @@ presets:
 - name: country_top_forex_ru
   symbols:
     tickers:
-      - MOEX:USDRUB_TOM
-      - MOEX:EURRUB_TOM
+      - FX_IDC:USDRUB
+      - FX_IDC:EURRUB
       - FX_IDC:JPYRUB
       - FX_IDC:GBPRUB
       - FX_IDC:CHFRUB
-      - MOEX:CNYRUB_TOM
+      - RUS:CNYRUB_TOM
 - name: country_top_forex_rs
   symbols:
     tickers:

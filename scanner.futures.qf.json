@@ -1,5 +1,17 @@
 [
     {
+        "name": "popularity_rank",
+        "type": "number"
+    },
+    {
+        "name": "product",
+        "type": "text"
+    },
+    {
+        "name": "country_code",
+        "type": "text"
+    },
+    {
         "name": "source-logoid",
         "type": "text"
     },

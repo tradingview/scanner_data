@@ -51,6 +51,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -146,6 +147,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -238,6 +240,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -330,6 +333,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -422,6 +426,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -514,6 +519,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -615,6 +621,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -711,6 +718,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -812,6 +820,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -913,6 +922,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1009,6 +1019,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1106,6 +1117,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1205,6 +1217,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1302,6 +1315,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1399,6 +1413,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1495,6 +1510,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1591,6 +1607,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1687,6 +1704,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1786,6 +1804,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1883,6 +1902,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -1983,6 +2003,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -2062,6 +2083,7 @@ presets:
   - iceland
   - india
   - indonesia
+  - ireland
   - israel
   - italy
   - japan
@@ -2121,7 +2143,7 @@ presets:
   symbols:
     tickers:
       - AMEX:VTI
-      - AMEX:IEFA
+      - CBOE:IEFA
       - TSE:1321
       - AMEX:XLK
       - AMEX:RSP
@@ -2164,21 +2186,21 @@ presets:
       - AMEX:GUNR
 - name: etfs_market_page_bitcoin
   sort:
-    sortBy: Value.Traded
+    sortBy: aum
     sortOrder: desc
   symbols:
     tickers:
       - NASDAQ:IBIT
       - AMEX:BITB
       - AMEX:DEFI
-      - AMEX:ARKB
+      - CBOE:ARKB
       - AMEX:GBTC
-      - AMEX:FBTC
-      - AMEX:BTCW
-      - AMEX:BTCO
+      - CBOE:FBTC
+      - CBOE:BTCW
+      - CBOE:BTCO
       - NASDAQ:BRRR
-      - AMEX:HODL
-      - AMEX:EZBC
+      - CBOE:HODL
+      - CBOE:EZBC
 - name: etfs_market_page_highest_return
   filter:
     - left: nav_total_return.1Y
@@ -2190,7 +2212,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -2227,6 +2248,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2273,7 +2295,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -2293,7 +2314,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: strategy
       operation: in_range
@@ -2334,6 +2354,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2388,7 +2409,7 @@ presets:
         - ''
         - common
         - foreign-issuer
-    - left: revenue_per_employee
+    - left: revenue_per_employee_fy
       operation: greater
       right: 1000000
     - left: is_primary
@@ -2398,7 +2419,7 @@ presets:
       operation: greater
       right: 500
   sort:
-    sortBy: revenue_per_employee
+    sortBy: revenue_per_employee_fy
     sortOrder: desc
   price_conversion:
     to_currency: USD
@@ -2429,6 +2450,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2524,6 +2546,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2573,7 +2596,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -2610,6 +2632,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2653,13 +2676,12 @@ presets:
     - vietnam
 - name: etfs_market_page_biggest_losses
   filter:
-    - left: nav_total_return.5Y
+    - left: nav_total_return.3Y
       operation: less
       right: 0
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -2667,7 +2689,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: nav_total_return.3Y
     sortOrder: asc
   markets:
     - america
@@ -2696,6 +2718,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2745,7 +2768,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -2782,6 +2804,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2832,7 +2855,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -2869,6 +2891,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -2918,7 +2941,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -2955,6 +2977,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3005,7 +3028,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3042,6 +3064,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3091,7 +3114,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3128,6 +3150,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3174,7 +3197,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3197,7 +3219,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3234,6 +3255,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3281,13 +3303,12 @@ presets:
       operation: in_range
       right:
         - '13'
-    - left: nav_total_return.5Y
+    - left: nav_total_return.3Y
       operation: greater
       right: 0
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3324,6 +3345,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3374,7 +3396,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3411,6 +3432,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3460,7 +3482,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3497,6 +3518,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3547,7 +3569,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3584,6 +3605,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3633,7 +3655,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3670,6 +3691,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3720,7 +3742,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3757,6 +3778,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3807,7 +3829,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3815,7 +3836,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: nav_total_return.3Y
     sortOrder: desc
   markets:
     - america
@@ -3844,6 +3865,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3894,7 +3916,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -3902,7 +3923,7 @@ presets:
   price_conversion:
     to_currency: USD
   sort:
-    sortBy: nav_total_return.5Y
+    sortBy: nav_total_return.3Y
     sortOrder: desc
   markets:
     - america
@@ -3931,6 +3952,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -3980,7 +4002,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4017,6 +4038,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4066,7 +4088,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4103,6 +4124,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4152,7 +4174,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4189,6 +4210,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4238,7 +4260,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4275,6 +4296,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4325,7 +4347,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4362,6 +4383,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4411,7 +4433,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4448,6 +4469,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4497,7 +4519,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4534,6 +4555,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4583,7 +4605,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4620,6 +4641,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4669,7 +4691,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4706,6 +4727,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4752,7 +4774,6 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - etn
         - etf
     - left: is_primary
       operation: equal
@@ -4789,6 +4810,7 @@ presets:
     - iceland
     - india
     - indonesia
+    - ireland
     - israel
     - italy
     - japan
@@ -4830,3 +4852,735 @@ presets:
     - uk
     - venezuela
     - vietnam
+- name: index_components_market_pages
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - ireland
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_all_time_high
+  filter:
+    - left: High.All
+      operation: eless
+      right: high
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - ireland
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_all_time_low
+  filter:
+    - left: Low.All
+      operation: egreater
+      right: low
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - ireland
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_52_week_high
+  filter:
+    - left: price_52_week_high
+      operation: eless
+      right: high
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - ireland
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_52_week_low
+  filter:
+    - left: price_52_week_low
+      operation: egreater
+      right: low
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - ireland
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
+- name: etfs_market_page_country_top_us
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - america
+- name: etfs_market_page_country_top_ca
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - canada
+- name: etfs_market_page_country_top_uk
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - uk
+- name: etfs_market_page_country_top_de
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - germany
+- name: etfs_market_page_country_top_jp
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - japan
+- name: etfs_market_page_country_top_au
+  filter:
+    - left: typespecs
+      operation: has
+      right:
+        - etf
+    - left: is_primary
+      operation: equal
+      right: true
+  price_conversion:
+    to_currency: USD
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  markets:
+    - australia
+- name: etfs_market_page_ethereum
+  sort:
+    sortBy: aum
+    sortOrder: desc
+  symbols:
+    tickers:
+      - CBOE:QETH
+      - CBOE:CETH
+      - CBOE:FETH
+      - CBOE:EZET
+      - CBOE:ETHV
+      - NASDAQ:ETHA
+      - AMEX:ETHW
+      - AMEX:ETHE
+      - AMEX:ETH
+- name: indices_africa
+  symbols:
+    tickers:
+      - JSE:J200
+      - EGX:EGX30
+      - CSEMA:MASI
+      - NSENG:ASI
+      - BVMT:PX1
+      - EGX:EGX70EWI
+      - EGX:EGX100EWI
+      - CSEMA:MSI20
+      - NSENG:NGX30
+      - BVMT:TUN20
+- name: indices_middle_east
+  symbols:
+    tickers:
+      - TADAWUL:TASI
+      - ADX:FADGI
+      - DFM:DFMGI
+      - TASE:TA35
+      - QSE:GNRI
+      - KSE:BKP
+      - BAHRAIN:BHBX
+      - TADAWUL:MT30
+      - ADX:FADX15
+      - TASE:TA125
+      - QSE:QEAS
+      - KSE:BKA
+      - KSE:BKM
+- name: indices_pacific
+  symbols:
+    tickers:
+      - ASX:XJO
+      - NZX:NZ50G
+      - ASX:XAO
+      - NZX:ALLG
+- name: indices_asia
+  symbols:
+    tickers:
+      - TVC:NI225
+      - HSI:HSI
+      - SSE:000001
+      - NSE:NIFTY
+      - BSE:SENSEX
+      - KRX:KOSPI
+      - TWSE:IX0001
+      - IDX:COMPOSITE
+      - FTSEMYX:FBMKLCI
+      - SET:SET
+      - HOSE:VNINDEX
+      - TSE:TOPIX
+      - SSE:000300
+      - SZSE:399001
+      - SZSE:399006
+      - HSI:HSTECH
+      - NSE:BANKNIFTY
+      - NSE:CNXFINANCE
+      - NSE:NIFTY_MID_SELECT
+      - NSE:NIFTYJR
+      - NSE:CNXSMALLCAP
+      - NSE:CNX500
+      - HOSE:VN30
+      - KRX:KOSPI200
+      - KRX:KOSDAQ
+      - PSE:PSEI
+      - HSI:HSCEI
+      - IDX:IDX30
+      - IDX:LQ45
+      - MYX:PLANTATION
+      - PSE:ALL
+      - FTSEST:STI
+      - PSX:KSE100
+      - CSELK:ASI
+      - CSELK:S&PSL20
+      - FTSE:TW50
+      - SET:SET50
+      - SET:MAI
+      - SET:SET100
+      - HOSE:VN100
+      - HNX:HNXINDEX
+      - SSE:000905
+      - SSE:000016
+      - SZSE:399106
+      - SSE:000852
+      - FTSE:XIN9
+      - DSEBD:DSEX
+      - TSE:JPXNIKKEI400
+      - TSE:MOS
+      - TSE:I0500
+      - FTSEMYX:FBMSCAP
+      - FTSEMYX:FBM70
+      - FTSEMYX:FBMEMAS
+- name: indices_europe
+  symbols:
+    tickers:
+      - XETR:DAX
+      - EURONEXT:PX1
+      - FTSE:UKX
+      - OMXSTO:OMXS30
+      - BME:IBC
+      - EURONEXT:AEX
+      - TVC:SX5E
+      - TVC:SXXP
+      - SIX:SMI
+      - FTSE:FTSEMIB
+      - GPW:WIG20
+      - BIST:XU100
+      - RUS:IRUS
+      - XETR:MDAX
+      - OSL:OSEBX
+      - OMXCOP:OMXC25
+      - EURONEXT:BEL20
+      - BET:BUX
+      - VIE:ATX
+      - PSECZ:PX
+      - EURONEXT:PSI20
+      - EURONEXT:ISEQ
+      - OMXHEX:OMXH25
+      - OMXICE:OMXI15
+      - FTSE:ITLMS
+      - OMXRSE:OMXRGI
+      - OMXVSE:OMXVGI
+      - LUXSE:LUXX
+      - EURONEXT:AMX
+      - EURONEXT:AAX
+      - OSL:OBX
+      - GPW:WIG
+      - GPW:MWIG40
+      - GPW:SWIG80
+      - EURONEXT:BVL
+      - XETR:3XJN
+      - XETR:DAXK
+      - XETR:TDXP
+      - XETR:SDXP
+      - BVB:BET
+      - RUS:RTSI
+      - BELEX:BELEX15
+      - BSSE:SAX
+      - BME:LXC
+      - OMXCOP:OMXC20
+      - OMXTSE:OMXTGI
+      - EURONEXT:N100
+      - OMXSTO:OMXSPI
+      - OMXSTO:OMXSCAPPI
+      - OMXSTO:OMXSSCPI
+      - SIX:SPIX
+      - BIST:XU030
+      - BIST:XUTUM
+      - BIST:XBANK
+      - FTSE:MCX
+      - FTSE:AXX
+      - FTSE:ASX
+      - FTSE:AIM5
+      - FTSE:NMX
+      - EURONEXT:BELAS
+      - EURONEXT:CACT
+      - EURONEXT:PX4
+      - EURONEXT:PAX
+      - ATHEX:GD
+      - ATHEX:FTSE
+      - OMXICE:OMXIPI
+      - EURONEXT:ISE20
+      - CSECY:GEN
+      - CSECY:FTSE20
+- name: indices_americas
+  symbols:
+    tickers:
+      - SP:SPX
+      - NASDAQ:NDX
+      - NASDAQ:IXIC
+      - DJ:DJI
+      - CBOEFTSE:RUT
+      - TVC:VIX
+      - ICEUS:DXY
+      - TSX:TSX
+      - BMFBOVESPA:IBOV
+      - BCBA:IMV
+      - ICEUS:NYFANG
+      - TVC:MOVE
+      - TVC:NYA
+      - DJ:DJT
+      - NASDAQ:SOX
+      - NASDAQ:XAU
+      - SP:MID
+      - CBOEFTSE:RUI
+      - TVC:RUA
+      - SP:SP600
+      - SP:OEX
+      - BCS:SP_IPSA
+      - BVC:ICAP
+      - BMV:ME
+      - BMV:IN
+      - BVL:SPBLPGPT
+      - BVCV:IBC
+      - SP:SPGSCI
+      - TVC:TRJEFFCRB
+      - TSX:TX60
+      - TSX:JX
+      - BCBA:IAB
+      - BMFBOVESPA:IFIX
+      - BMFBOVESPA:IBXL
+      - BMFBOVESPA:SMLL

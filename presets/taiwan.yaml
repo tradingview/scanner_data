@@ -569,16 +569,24 @@ presets:
       types:
       - sector
   sort:
-    sortBy: description
-    sortOrder: asc
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: market_industries
   symbols:
     query:
       types:
       - industry
   sort:
-    sortBy: description
-    sortOrder: asc
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: market_company
+  filter:
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: earning
   filter:
   - left: typespecs
@@ -593,17 +601,17 @@ presets:
 - name: country_top_indices_tw
   symbols:
     tickers:
-      - TWSE:TAIEX
+      - TWSE:IX0001
       - FTSE:TW50
       - FTSE:TW50C
-      - TPEX:STOCK
+      - TPEX:IX0043
       - TPEX:IX0118
       - TWSE:EMP99
-      - TWSE:FIN
-      - TWSE:GLC
-      - TWSE:EPC
-      - TWSE:BIM
-      - TWSE:CHE
+      - TWSE:IX0039
+      - TWSE:IX0022
+      - TWSE:IX0032
+      - TWSE:IX0021
+      - TWSE:IX0019
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary
@@ -615,14 +623,14 @@ presets:
     - left: type
       operation: equal
       right: stock
-    - left: revenue_per_employee
+    - left: revenue_per_employee_fy
       operation: greater
       right: 0
     - left: number_of_employees_fy
       operation: greater
       right: 500
   sort:
-    sortBy: revenue_per_employee
+    sortBy: revenue_per_employee_fy
     sortOrder: desc
 - name: highest_profit_per_employee
   filter:

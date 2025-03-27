@@ -644,16 +644,27 @@ presets:
       types:
       - sector
   sort:
-    sortBy: description
-    sortOrder: asc
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: market_industries
   symbols:
     query:
       types:
       - industry
   sort:
-    sortBy: description
-    sortOrder: asc
+    sortBy: market_cap_basic
+    sortOrder: desc
+- name: market_company
+  filter:
+    - left: typespecs
+      operation: has_none_of
+      right: odd
+    - left: typespecs
+      operation: has_none_of
+      right: preferred
+  sort:
+    sortBy: market_cap_basic
+    sortOrder: desc
 - name: earning
   filter:
   - left: typespecs
@@ -696,14 +707,14 @@ presets:
     - left: type
       operation: equal
       right: stock
-    - left: revenue_per_employee
+    - left: revenue_per_employee_fy
       operation: greater
       right: 0
     - left: number_of_employees_fy
       operation: greater
       right: 500
   sort:
-    sortBy: revenue_per_employee
+    sortBy: revenue_per_employee_fy
     sortOrder: desc
 - name: highest_profit_per_employee
   filter:

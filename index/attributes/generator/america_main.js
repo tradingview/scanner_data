@@ -106,7 +106,7 @@ const symbolsPriorities = {};
     "DJCFD:DJI",
     "NASDAQ:IXIC",
     "NASDAQ:NDX",
-    "TCV:RUA",
+    "TVC:RUA",
     "TVC:RUT",
     "TVC:RUI",
     "NYSE:NYA",

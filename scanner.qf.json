@@ -628,10 +628,6 @@
         "type": "number"
     },
     {
-        "name": "daily-summary-ast",
-        "type": "text"
-    },
-    {
         "name": "dividend_payout_ratio_percent_fq",
         "type": "percent"
     },
@@ -691,6 +687,10 @@
         "name": "update-time",
         "type": "number",
         "extract_from": "daily-bar" 
+    },
+    {
+        "name": "daily-summary-ast",
+        "type": "text"
     },
     {
         "name": "total_revenue_fy_h",
@@ -817,7 +817,7 @@
         "type": "fundamental_price"
     },
     {
-        "name": "enterprise_value_current",
+        "name": "sum_for_enterprise_value",
         "type": "fundamental_price"
     },
     {
@@ -1379,9 +1379,5 @@
     {
         "name": "fiscal_period_end_fh_h",
         "type": "num_slice"
-    },
-    {
-        "name": "country_code",
-        "type": "text"
     }
 ]

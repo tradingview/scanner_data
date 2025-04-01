@@ -1,0 +1,9 @@
+// average volume in USD
+volExpr = syminfo.volumetype == "quote" ? volume : ( syminfo.volumetype == "base" ? close * volume : na )
+volInUSD = volExpr*request.currency_rate(syminfo.currency, "USD", ignore_invalid_currency = true)
+avgVol10d = ta.sma(volInUSD, 10)
+plot(avgVol10d, title='average_volume_10d_calc_usd')
+plot(ta.sma(volInUSD, 30), title='average_volume_30d_calc_usd')
+plot(ta.sma(volInUSD, 60), title='average_volume_60d_calc_usd')
+plot(ta.sma(volInUSD, 90), title='average_volume_90d_calc_usd')
+plot(volInUSD / avgVol10d[1], title='relative_volume_10d_calc_usd')

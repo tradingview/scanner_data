@@ -1,0 +1,5 @@
+// average volume * price
+plot(ta.sma(volume * close * syminfo.pointvalue, 10), title = "AvgValue.Traded_10d")
+plot(ta.sma(volume * close * syminfo.pointvalue, 30), title = "AvgValue.Traded_30d")
+plot(ta.sma(volume * close * syminfo.pointvalue, 60), title = "AvgValue.Traded_60d")
+plot(ta.sma(volume * close * syminfo.pointvalue, 90), title = "AvgValue.Traded_90d")

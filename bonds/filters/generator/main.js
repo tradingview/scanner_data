@@ -210,7 +210,7 @@ function calcHash(name, limit) {
     let result = 0;
     const len = Math.min(name.length, limit);
     for (let i = 0; i < len; i++) {
-        result += (name.charCodeAt(i) - 0x41) * Math.pow(10, (len - i) * 2);
+        result += name.charCodeAt(i) * Math.pow(10, len - i - 1);
     }
     return result;
 }
@@ -222,7 +222,7 @@ function getBondRegionPriority(description, notUseRegionPriority) {
             return idx;
         }
     }
-    return bondsRegionsPriority.length + calcHash(description, 4);
+    return bondsRegionsPriority.length + calcHash(description, 10);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;

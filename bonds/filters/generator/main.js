@@ -222,7 +222,7 @@ function getBondRegionPriority(description, notUseRegionPriority) {
             return idx;
         }
     }
-    return bondsRegionsPriority.length + calcHash(description, description.match(/^\D*/).length);
+    return bondsRegionsPriority.length + calcHash(description, 10);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;

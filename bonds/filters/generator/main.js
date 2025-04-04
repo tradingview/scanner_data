@@ -215,14 +215,14 @@ function calcHash(name, limit) {
     return result;
 }
 
-function getBondRegionPriority(description, notUseRegionPriority) {
+function getBondRegionPriority(description, country, notUseRegionPriority) {
     if (!notUseRegionPriority) {
         const idx = bondsRegionsPriority.findIndex(reg => description.startsWith(reg));
         if (idx >= 0) {
             return idx;
         }
     }
-    return bondsRegionsPriority.length + calcHash(description, 10);
+    return calcHash(country + description, 4);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;
@@ -238,7 +238,8 @@ function getBondNamePriority(ticker) {
 
 function detectBondPriority(s, notUseRegionPriority) {
     const description = s.f[2];
-    const regionP = getBondRegionPriority(description, notUseRegionPriority);
+    const country = s.f[3];
+    const regionP = getBondRegionPriority(description, country, notUseRegionPriority);
     const nameP = getBondNamePriority(s.f[0]);
     return regionP * 1000 + nameP;
 }

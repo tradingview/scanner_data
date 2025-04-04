@@ -222,7 +222,7 @@ function getBondRegionPriority(description, country, notUseRegionPriority) {
             return idx;
         }
     }
-    return calcHash(country + description, 4);
+    return calcHash(description.substring(0, 4) + country, 6);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;

@@ -203,14 +203,47 @@ const bondsRegionsPriority = [
     "Singapore",
     "Malaysia",
     "Indonesia",
-    "Thailand"
+    "Thailand",
+    "Austria",
+    "Australia",
+    "Belgium",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Czech",
+    "Denmark",
+    "Euro",
+    "Finland",
+    "Greece",
+    "Hungary",
+    "Iceland",
+    "Ireland",
+    "Lithuania",
+    "Netherlands",
+    "New Zealand",
+    "Norway",
+    "Peru LPS",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Russian Federation",
+    "Slovakia",
+    "South Africa",
+    "South Korea",
+    "Sweden",
+    "Switzerland",
+    "Taiwan",
+    "Turkey",
+    "Ukraine",
+    "Vietnam"
 ];
 
 function calcHash(name, limit) {
     let result = 0;
     const len = Math.min(name.length, limit);
     for (let i = 0; i < len; i++) {
-        result += name.charCodeAt(i) * Math.pow(11, len - i - 1);
+        result += (name.charCodeAt(i) - 0x41) * Math.pow(10, (len - i) * 2);
     }
     return result;
 }
@@ -222,8 +255,7 @@ function getBondRegionPriority(description, notUseRegionPriority) {
             return idx;
         }
     }
-    countryInDescription = (description.match(/^\D+/)[0].trim() + "zzzzzzzz").substring(0, 10);
-    return calcHash(countryInDescription, 9);
+    return bondsRegionsPriority.length + calcHash(description, 4);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;

@@ -223,7 +223,7 @@ function getBondRegionPriority(description, notUseRegionPriority) {
         }
     }
     countryInDescription = (description.match(/^\D+/)[0].trim() + "aaaaaaaa").substring(0, 9);
-    return calcHash(countryInDescription, 8);
+    return bondsRegionsPriority.length + calcHash(countryInDescription, 8);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;

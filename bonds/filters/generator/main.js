@@ -210,7 +210,7 @@ function calcHash(name, limit) {
     let result = 0;
     const len = Math.min(name.length, limit);
     for (let i = 0; i < len; i++) {
-        result += name.charCodeAt(i) * Math.pow(10, len - i - 1);
+        result += name.charCodeAt(i) * Math.pow(11, len - i - 1);
     }
     return result;
 }
@@ -222,7 +222,7 @@ function getBondRegionPriority(description, notUseRegionPriority) {
             return idx;
         }
     }
-    countryInDescription = (description.match(/^\D+/)[0].trim() + "zzzzzzzz").toUpperCase().substring(0, 10);
+    countryInDescription = (description.match(/^\D+/)[0].trim() + "zzzzzzzz").substring(0, 10);
     return calcHash(countryInDescription, 9);
 }
 

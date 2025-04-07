@@ -222,7 +222,7 @@ function getBondRegionPriority(description, notUseRegionPriority) {
             return idx;
         }
     }
-    countryInDescription = (description.match(/^\D+/)[0].trim() + "zzzzzzzz").substring(0, 10);
+    countryInDescription = (description.match(/^\D+/)[0].trim() + "zzzzzzzz").toUpperCase().substring(0, 10);
     return calcHash(countryInDescription, 9);
 }
 

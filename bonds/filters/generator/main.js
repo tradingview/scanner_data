@@ -222,8 +222,8 @@ function getBondRegionPriority(description, notUseRegionPriority) {
             return idx;
         }
     }
-    countryInDescription = (description.match(/^\D+/)[0].trim() + "aaaaaaaa").substring(0, 9);
-    return bondsRegionsPriority.length + calcHash(countryInDescription, 8);
+    countryInDescription = (description.match(/^\D+/)[0].trim() + "zzzzzzzz").substring(0, 10);
+    return calcHash(countryInDescription, 9);
 }
 
 const rxBondParser = /[A-Z]{2}([0-9]{2})(M)?Y?/;

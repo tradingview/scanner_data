@@ -188,9 +188,6 @@ function getFirstCurrency(symbol) {
 
 const excludeSymbols = [
     "BITTREX:BCCBTC",
-    "HITBTC:BCCBTC",
-    "HITBTC:BCCUSD",
-    "HITBTC:HITBTC",
     "BITFINEX:BCCBTC",
     "BITFINEX:BCCUSD",
     "BTCE:NVCUSD",
@@ -218,7 +215,6 @@ const excludeSymbols = [
     "BITFINEX:AMPBTC",
     "BITFINEX:AMPUSD",
     "OKCOIN:USDCUSD",
-    "HITBTC:USDDUSD",
     "BITFINEX:IOTUSD",
     "POLONIEX:STRUSD",
     "BITFINEX:WBTUSD",
@@ -301,8 +297,7 @@ const explicitCoinNames = {
 let dstSymbols = [];
 
 const unDesirableExchanges = [
-    "BITFINEX",
-    "HITBTC"
+    "BITFINEX"
 ];
 
 function isUnDesirableExchange(exc) {

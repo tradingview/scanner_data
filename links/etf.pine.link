@@ -1,54 +1,68 @@
 import TradingView/RelativeValue/2 as rv
 
+var num_bb = 2
+
 sum(daysBack)=>
-	startT = startFrom(daysBack)
-	sum = 0.
-	for i = 0 to bar_index
-		if time[i] < startT
-			break
-		sum += close[i]
-	sum
+    if last_bar_index - bar_index < num_bb
+    	startT = startFrom(daysBack)
+    	sum = 0.
+    	for i = 0 to bar_index
+    		if time[i] < startT
+			    break
+    		sum += close[i]
+	    sum
+    else
+        na
 
 sumYTD()=>
-	var sum = 0.
-    if year(time[1], syminfo.timezone) < year(time, syminfo.timezone)
-        sum := 0
-    sum += close
-	sum
+    if last_bar_index - bar_index < num_bb
+    	var sum = 0.
+        if year(time[1], syminfo.timezone) < year(time, syminfo.timezone)
+            sum := 0
+        sum += close
+	    sum
+    else
+        na
 
 fundPerf(daysBack) =>
-	startT = startFrom(daysBack)
-	if time < startT
-		na
-	else
-		lastI = bar_index
-		for i = 0 to bar_index
-			if time[i] < startT
-				lastI := i - 1
-				break
+    if last_bar_index - bar_index < num_bb
+    	startT = startFrom(daysBack)
+	    if time < startT
+    		na
+    	else
+		    lastI = bar_index
+		    for i = 0 to bar_index
+    			if time[i] < startT
+				    lastI := i - 1
+				    break
 
-		perf = if (close[lastI] < 0 and close > 0) or close[lastI] == 0
-		    na
-		else
-		    (close - close[lastI]) * 100 / math.abs(close[lastI])
-		perf
+		    perf = if (close[lastI] < 0 and close > 0) or close[lastI] == 0
+    		    na
+		    else
+    		    (close - close[lastI]) * 100 / math.abs(close[lastI])
+		    perf
+    else
+        na
 
 fundPerfYTD() =>
-	max_bars_back(time, 2*years1)
-	max_bars_back(close, 2*years1)
+    if last_bar_index - bar_index < num_bb
+    	max_bars_back(time, 2*years1)
+    	max_bars_back(close, 2*years1)
     
-    lastI = bar_index
-    for i = 1 to bar_index
-        if year(time[i]) < year
-            lastI := i - 1
-            break
+        lastI = bar_index
+        for i = 1 to bar_index
+            if year(time[i]) < year
+                lastI := i - 1
+                break
 
-    perf = if (close[lastI] < 0 and close > 0) or close[lastI] == 0
-        na
+        perf = if (close[lastI] < 0 and close > 0) or close[lastI] == 0
+            na
+        else
+            (close - close[lastI]) * 100 / math.abs(close[lastI])
+
+        perf
     else
-        (close - close[lastI]) * 100 / math.abs(close[lastI])
-
-    perf
+        na
 
 fundFlowsTicker = __financial_tickerid(syminfo.tickerid, "FUND_FLOWS", "D")
 [fund_flows1M, fund_flows3M, fund_flows1Y, fund_flows3Y, fund_flows5Y, fund_flowsYTD] = request.security(fundFlowsTicker, fundTF, [sum(month1), sum(month3), sum(years1), sum(years3), sum(years5), sumYTD()], ignore_invalid_symbol=true, gaps=barmerge.gaps_off)

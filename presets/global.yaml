@@ -2209,6 +2209,10 @@ presets:
     - left: aum
       operation: egreater
       right: 1000000000
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -2292,6 +2296,10 @@ presets:
     - vietnam
 - name: etfs_market_page_most_traded
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -2311,6 +2319,10 @@ presets:
     - left: aum
       operation: egreater
       right: 10000000
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -2593,6 +2605,10 @@ presets:
     - left: aum
       operation: egreater
       right: 100000000
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -2679,6 +2695,10 @@ presets:
     - left: nav_total_return.3Y
       operation: less
       right: 0
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -2765,6 +2785,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: c05f85d35d1cd0be6ebb2af4be16e06a
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -2852,6 +2876,10 @@ presets:
       operation: in_range
       right:
         - '29'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -2938,6 +2966,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: b6e443a6c4a8a2e7918c5dbf3d45c796
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3025,6 +3057,10 @@ presets:
       operation: in_range
       right:
         - '62'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3111,6 +3147,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: 8fe80395f389e29e3ea42210337f0350
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3194,6 +3234,10 @@ presets:
     - vietnam
 - name: etfs_market_page_most_traded_all_markets
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3216,6 +3260,10 @@ presets:
     - left: dividends_yield
       operation: greater
       right: 0
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3306,6 +3354,10 @@ presets:
     - left: nav_total_return.3Y
       operation: greater
       right: 0
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3393,6 +3445,10 @@ presets:
       operation: in_range
       right:
         - '1'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3479,6 +3535,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: b090e99b8d95f5837ec178c2d3d3fc50
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3566,6 +3626,10 @@ presets:
       operation: in_range
       right:
         - '27'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3739,6 +3803,10 @@ presets:
       operation: in_range
       right:
         - '52'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3826,6 +3894,10 @@ presets:
       operation: in_range
       right:
         - 'Inverse'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3913,6 +3985,10 @@ presets:
       operation: in_range
       right:
         - 'Leveraged'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -3999,6 +4075,10 @@ presets:
     - left: fund_flows.1Y
       operation: greater
       right: 0
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4085,6 +4165,10 @@ presets:
     - left: fund_flows.1Y
       operation: less
       right: 0
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4171,6 +4255,10 @@ presets:
     - left: nav_discount_premium
       operation: eless
       right: 0
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4257,6 +4345,10 @@ presets:
     - left: nav_discount_premium
       operation: egreater
       right: 0
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4344,6 +4436,10 @@ presets:
       operation: in_range
       right:
         - 'Monthly'
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4430,6 +4526,10 @@ presets:
     - left: weight_top_10
       operation: less
       right: 25
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4516,6 +4616,10 @@ presets:
     - left: beta_3_year
       operation: greater
       right: 1
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4602,6 +4706,10 @@ presets:
     - left: beta_3_year
       operation: in_range
       right: [0.01, 0.99]
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4688,6 +4796,10 @@ presets:
     - left: beta_3_year
       operation: in_range
       right: [-100, -0.1]
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4771,6 +4883,10 @@ presets:
     - vietnam
 - name: etfs_market_page_highest_expense_ratio
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -4932,6 +5048,10 @@ presets:
     - left: High.All
       operation: eless
       right: high
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5018,6 +5138,10 @@ presets:
     - left: Low.All
       operation: egreater
       right: low
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5104,6 +5228,10 @@ presets:
     - left: price_52_week_high
       operation: eless
       right: high
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5190,6 +5318,10 @@ presets:
     - left: price_52_week_low
       operation: egreater
       right: low
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5273,6 +5405,10 @@ presets:
     - vietnam
 - name: etfs_market_page_country_top_us
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5289,6 +5425,10 @@ presets:
     - america
 - name: etfs_market_page_country_top_ca
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5305,6 +5445,10 @@ presets:
     - canada
 - name: etfs_market_page_country_top_uk
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5321,6 +5465,10 @@ presets:
     - uk
 - name: etfs_market_page_country_top_de
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5337,6 +5485,10 @@ presets:
     - germany
 - name: etfs_market_page_country_top_jp
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:
@@ -5353,6 +5505,10 @@ presets:
     - japan
 - name: etfs_market_page_country_top_au
   filter:
+    - left: type
+      operation: equal
+      right:
+        - structured
     - left: typespecs
       operation: has
       right:

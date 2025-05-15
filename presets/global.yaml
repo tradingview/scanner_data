@@ -3225,8 +3225,10 @@ presets:
 - name: etfs_market_page_most_traded_all_markets
   filter:
     - left: type
-      operation: equal
-      right: structured
+      operation: has
+      right:
+        - structured
+        - fund
     - left: typespecs
       operation: has
       right:

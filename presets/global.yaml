@@ -2211,8 +2211,7 @@ presets:
       right: 1000000000
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -2298,8 +2297,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -2321,8 +2319,7 @@ presets:
       right: 10000000
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -2607,8 +2604,7 @@ presets:
       right: 100000000
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -2697,8 +2693,7 @@ presets:
       right: 0
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -2787,8 +2782,7 @@ presets:
       right: c05f85d35d1cd0be6ebb2af4be16e06a
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -2878,8 +2872,7 @@ presets:
         - '29'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -2968,8 +2961,7 @@ presets:
       right: b6e443a6c4a8a2e7918c5dbf3d45c796
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3059,8 +3051,7 @@ presets:
         - '62'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3149,8 +3140,7 @@ presets:
       right: 8fe80395f389e29e3ea42210337f0350
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3236,8 +3226,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3262,8 +3251,7 @@ presets:
       right: 0
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3356,8 +3344,7 @@ presets:
       right: 0
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3447,8 +3434,7 @@ presets:
         - '1'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3537,8 +3523,7 @@ presets:
       right: b090e99b8d95f5837ec178c2d3d3fc50
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3628,8 +3613,7 @@ presets:
         - '27'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3805,8 +3789,7 @@ presets:
         - '52'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3896,8 +3879,7 @@ presets:
         - 'Inverse'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -3987,8 +3969,7 @@ presets:
         - 'Leveraged'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4077,8 +4058,7 @@ presets:
       right: 0
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4167,8 +4147,7 @@ presets:
       right: 0
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4257,8 +4236,7 @@ presets:
       right: 0
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4347,8 +4325,7 @@ presets:
       right: 0
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4438,8 +4415,7 @@ presets:
         - 'Monthly'
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4528,8 +4504,7 @@ presets:
       right: 25
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4618,8 +4593,7 @@ presets:
       right: 1
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4708,8 +4682,7 @@ presets:
       right: [0.01, 0.99]
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4798,8 +4771,7 @@ presets:
       right: [-100, -0.1]
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -4885,8 +4857,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5050,8 +5021,7 @@ presets:
       right: high
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5140,8 +5110,7 @@ presets:
       right: low
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5230,8 +5199,7 @@ presets:
       right: high
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5320,8 +5288,7 @@ presets:
       right: low
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5407,8 +5374,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5427,8 +5393,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5447,8 +5412,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5467,8 +5431,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5487,8 +5450,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:
@@ -5507,8 +5469,7 @@ presets:
   filter:
     - left: type
       operation: equal
-      right:
-        - structured
+      right: structured
     - left: typespecs
       operation: has
       right:

@@ -2209,13 +2209,30 @@ presets:
     - left: aum
       operation: egreater
       right: 1000000000
-    - left: typespecs
-      operation: has
-      right:
-        - etf
     - left: is_primary
       operation: equal
       right: true
+  filter2:
+    operator: and
+    operands:
+      - operation:
+          operator: or
+          operands:
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: typespecs
+                      operation: has
+                      right:
+                        - etf
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: type
+                      operation: equal
+                      right: structured
   price_conversion:
     to_currency: USD
   sort:

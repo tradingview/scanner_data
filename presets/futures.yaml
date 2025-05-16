@@ -1321,3 +1321,11 @@ presets:
   symbols:
     tickers:
       - ""
+- name: futures_contracts
+  filter:
+    - left: typespecs
+      operation: has_none_of
+      right: continuous
+  sort:
+    sortBy: expiration
+    sortOrder: asc

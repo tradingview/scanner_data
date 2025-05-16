@@ -2209,17 +2209,10 @@ presets:
     - left: aum
       operation: egreater
       right: 1000000000
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -2299,17 +2292,10 @@ presets:
     - vietnam
 - name: etfs_market_page_most_traded
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -2325,17 +2311,10 @@ presets:
     - left: aum
       operation: egreater
       right: 10000000
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: strategy
       operation: in_range
       right:
@@ -2614,17 +2593,10 @@ presets:
     - left: aum
       operation: egreater
       right: 100000000
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -2707,17 +2679,10 @@ presets:
     - left: nav_total_return.3Y
       operation: less
       right: 0
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -2800,17 +2765,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: c05f85d35d1cd0be6ebb2af4be16e06a
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -2894,17 +2852,10 @@ presets:
       operation: in_range
       right:
         - '29'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -2987,17 +2938,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: b6e443a6c4a8a2e7918c5dbf3d45c796
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3081,17 +3025,10 @@ presets:
       operation: in_range
       right:
         - '62'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3174,17 +3111,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: 8fe80395f389e29e3ea42210337f0350
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3264,17 +3194,10 @@ presets:
     - vietnam
 - name: etfs_market_page_most_traded_all_markets
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3293,17 +3216,10 @@ presets:
     - left: dividends_yield
       operation: greater
       right: 0
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3390,17 +3306,10 @@ presets:
     - left: nav_total_return.3Y
       operation: greater
       right: 0
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3484,17 +3393,10 @@ presets:
       operation: in_range
       right:
         - '1'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3577,17 +3479,10 @@ presets:
     - left: asset_class
       operation: in_range
       right: b090e99b8d95f5837ec178c2d3d3fc50
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3671,17 +3566,10 @@ presets:
       operation: in_range
       right:
         - '27'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3767,9 +3655,7 @@ presets:
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3853,17 +3739,10 @@ presets:
       operation: in_range
       right:
         - '52'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -3947,17 +3826,10 @@ presets:
       operation: in_range
       right:
         - 'Inverse'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4041,17 +3913,10 @@ presets:
       operation: in_range
       right:
         - 'Leveraged'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4134,17 +3999,10 @@ presets:
     - left: fund_flows.1Y
       operation: greater
       right: 0
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4227,17 +4085,10 @@ presets:
     - left: fund_flows.1Y
       operation: less
       right: 0
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4320,17 +4171,10 @@ presets:
     - left: nav_discount_premium
       operation: eless
       right: 0
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4413,17 +4257,10 @@ presets:
     - left: nav_discount_premium
       operation: egreater
       right: 0
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4507,17 +4344,10 @@ presets:
       operation: in_range
       right:
         - 'Monthly'
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4600,17 +4430,10 @@ presets:
     - left: weight_top_10
       operation: less
       right: 25
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4693,17 +4516,10 @@ presets:
     - left: beta_3_year
       operation: greater
       right: 1
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4786,17 +4602,10 @@ presets:
     - left: beta_3_year
       operation: in_range
       right: [0.01, 0.99]
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4879,17 +4688,10 @@ presets:
     - left: beta_3_year
       operation: in_range
       right: [-100, -0.1]
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -4969,17 +4771,10 @@ presets:
     - vietnam
 - name: etfs_market_page_highest_expense_ratio
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5137,17 +4932,10 @@ presets:
     - left: High.All
       operation: eless
       right: high
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5230,17 +5018,10 @@ presets:
     - left: Low.All
       operation: egreater
       right: low
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5323,17 +5104,10 @@ presets:
     - left: price_52_week_high
       operation: eless
       right: high
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5416,17 +5190,10 @@ presets:
     - left: price_52_week_low
       operation: egreater
       right: low
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5506,17 +5273,10 @@ presets:
     - vietnam
 - name: etfs_market_page_country_top_us
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5529,17 +5289,10 @@ presets:
     - america
 - name: etfs_market_page_country_top_ca
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5552,17 +5305,10 @@ presets:
     - canada
 - name: etfs_market_page_country_top_uk
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5575,17 +5321,10 @@ presets:
     - uk
 - name: etfs_market_page_country_top_de
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5598,17 +5337,10 @@ presets:
     - germany
 - name: etfs_market_page_country_top_jp
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true
@@ -5621,17 +5353,10 @@ presets:
     - japan
 - name: etfs_market_page_country_top_au
   filter:
-    - left: type
-      operation: in_range
-      right:
-        - structured
-        - fund
     - left: typespecs
       operation: has
       right:
-        - ''
         - etf
-        - etn
     - left: is_primary
       operation: equal
       right: true

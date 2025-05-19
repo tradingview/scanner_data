@@ -62,7 +62,7 @@ presets:
     right: Dominance
   - left: name
     operation: nmatch
-    right: OTHERS.D|TOTALDEFI.D
+    right: OTHERS.D|TOTALDEFI.D|TOTALES.D|TOTALE50.D|TOTALE100.D|STABLE.C.D
   range:
   - 0
   - 9

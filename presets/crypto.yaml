@@ -27,3 +27,11 @@ presets:
   sort:
     sortBy: market_cap_calc
     sortOrder: desc
+- name: cryptopairs_markets
+  filter:
+    - left: exchange
+      operation: nequal
+      right: BITMEX
+  sort:
+    sortBy: 24h_vol|5
+    sortOrder: desc

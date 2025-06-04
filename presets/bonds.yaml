@@ -663,7 +663,12 @@ presets:
 - name: country_top_bonds_yield_il
   symbols:
     tickers:
-      - ""
+      - TVC:IL01Y
+      - TVC:IL02Y
+      - TVC:IL05Y
+      - TVC:IL10Y
+      - TVC:IL20Y
+      - TVC:IL30Y
 - name: country_top_bonds_yield_10Y_il
   symbols:
     tickers:

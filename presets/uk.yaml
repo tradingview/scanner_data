@@ -675,9 +675,10 @@ presets:
       operation: has_none_of
       right: cdi
     - left: exchange
-      operation: equal
+      operation: in_range
       right:
         - LSE
+        - AQUIS
     - left: typespecs
       operation: has_none_of
       right: preferred
@@ -696,9 +697,10 @@ presets:
     operation: equal
     right: true
   - left: exchange
-    operation: equal
+    operation: in_range
     right:
     - LSE
+    - AQUIS
   sort:
    sortBy: market_cap_basic
    sortOrder: desc

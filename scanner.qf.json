@@ -690,7 +690,19 @@
     {
         "name": "update-time",
         "type": "number",
-        "extract_from": "daily-bar" 
+        "extract_from": "daily-bar"
+    },
+    {
+        "name": "update-time-test-1",
+        "type": "number",
+        "extract_from": "daily-bar",
+        "extract_nested": "update-time"
+    },
+    {
+        "name": "named-extracted-field-volume",
+        "type": "number",
+        "extract_from": "daily-bar",
+        "extract_nested": "volume"
     },
     {
         "name": "total_revenue_fy_h",

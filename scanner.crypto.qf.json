@@ -495,21 +495,21 @@
     "type": "number"
   },
   {
-      "name": "blockchain-addresses.base-currency",
-      "type": "number",
-      "extract_from": "blockchain-addresses",
-      "extract_nested": "base-currency"
+    "name": "blockchain-addresses.base-currency",
+    "type": "string",
+    "extract_from": "blockchain-addresses",
+    "extract_nested": "base-currency"
   },
   {
-      "name": "blockchain-addresses.currency",
-      "type": "number",
-      "extract_from": "blockchain-addresses",
-      "extract_nested": "currency"
+    "name": "blockchain-addresses.currency",
+    "type": "string",
+    "extract_from": "blockchain-addresses",
+    "extract_nested": "currency"
   },
   {
-      "name": "blockchain-addresses.pair",
-      "type": "number",
-      "extract_from": "blockchain-addresses",
-      "extract_nested": "pair"
+    "name": "blockchain-addresses.pair",
+    "type": "string",
+    "extract_from": "blockchain-addresses",
+    "extract_nested": "pair"
   }
 ]

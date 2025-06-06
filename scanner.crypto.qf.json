@@ -496,19 +496,19 @@
   },
   {
     "name": "blockchain-addresses.base-currency",
-    "type": "string",
+    "type": "text",
     "extract_from": "blockchain-addresses",
     "extract_nested": "base-currency"
   },
   {
     "name": "blockchain-addresses.currency",
-    "type": "string",
+    "type": "text",
     "extract_from": "blockchain-addresses",
     "extract_nested": "currency"
   },
   {
     "name": "blockchain-addresses.pair",
-    "type": "string",
+    "type": "text",
     "extract_from": "blockchain-addresses",
     "extract_nested": "pair"
   }

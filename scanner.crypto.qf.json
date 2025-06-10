@@ -251,6 +251,10 @@
     "type": "text"
   },
   {
+    "name": "daily-summary-ast",
+    "type": "text"
+  },
+  {
     "name": "dex_total_supply",
     "type": "number"
   },
@@ -489,5 +493,23 @@
   {
     "name": "social_volume_24h",
     "type": "number"
+  },
+  {
+    "name": "blockchain-addresses.base-currency",
+    "type": "text",
+    "extract_from": "blockchain-addresses",
+    "extract_nested": "base-currency"
+  },
+  {
+    "name": "blockchain-addresses.currency",
+    "type": "text",
+    "extract_from": "blockchain-addresses",
+    "extract_nested": "currency"
+  },
+  {
+    "name": "blockchain-addresses.pair",
+    "type": "text",
+    "extract_from": "blockchain-addresses",
+    "extract_nested": "pair"
   }
 ]

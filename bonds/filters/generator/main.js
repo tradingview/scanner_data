@@ -129,7 +129,7 @@ const bondsMarks = [
 ];
 
 const regionMarks = {
-    "Middle East": ["Turkey"],
+    "Middle East": ["Turkey","Israel"],
     "Asia": ["China", "Hong Kong", "India", "Indonesia", "Japan", "JAPANESE YEN WCO", "Korea", "Malaysia", "MALAYSIA", "Singapore", "Thailand", "Taiwan", "Philippines", "Vietnam"],
     "Europe": ["EUROS WCO", "BRITISH POUNDS WCO", "SWISS FRANCS WCO", "Belgium", "France", "Ukraine", "Russian Federation",
         "Denmark", "Germany", "Ireland", "Italy", "Netherlands", "Norway", "Portugal", "Iceland", "Lithuania", "Latvia", "Romania", "Slovakia",
@@ -217,6 +217,7 @@ const bondsRegionsPriority = [
     "Greece",
     "Hungary",
     "Iceland",
+    "Israel",
     "Ireland",
     "Lithuania",
     "Netherlands",

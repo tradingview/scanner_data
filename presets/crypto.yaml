@@ -35,3 +35,14 @@ presets:
   sort:
     sortBy: 24h_vol|5
     sortOrder: desc
+- name: dex_markets_tab
+  filter:
+    - left: centralization
+      operation: equal
+      right: dex
+    - left: currency_id
+      operation: equal
+      right: USD
+  sort:
+    sortBy: dex_txs_count_24h
+    sortOrder: desc

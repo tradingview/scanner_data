@@ -590,6 +590,9 @@ presets:
     - left: typespecs
       operation: has_none_of
       right: preferred
+    - left: is_primary
+      operation: equal
+      right: true
     - left: type
       operation: in_range
       right:

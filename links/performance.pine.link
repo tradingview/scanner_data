@@ -1,15 +1,28 @@
-// Perf.<W | 1M | 3M | 6M | Y | 5Y | 10Y | YTD>
-years1 = 365
-oneYearAgo = timenow - 1000 * 60 * 60 * 24 * years1
-barsCountOneYear = fastSearchTimeIndex(oneYearAgo, years1)
-perfYTD = perfYTD()
-plot((close - open[4]) / open[4] * 100, title='Perf.5D')
-plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
-plot(rr(countOfBars1MonthAgo, month1), title='Perf.1M')
-plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')
-plot(rr(countOfBars6MonthAgo, month6), title='Perf.6M')
-plot(rr(barsCountOneYear, years1), title='Perf.Y')
-plot(rr(countOfBars3YearAgo, years3), title='Perf.3Y')
-plot(rr(countOfBars5YearAgo, years5), title='Perf.5Y')
-plot(rr(countOfBars10YearAgo, years10), title='Perf.10Y')
-plot(perfYTD, title='Perf.YTD')
+import TradingView/ValueAtTime/1 as vat
+
+data = vat.collectData(close)
+
+//@function Calculates the value of `close` that was at a bar offset by `timeframe`.
+//@returns A `float` value if this bar is the last and the time difference between the time now and the bar's open is less than `timeframe`, `na` otherwise.
+// E.g., If the `timeframe` is "1Y" but the symbol's last trading day was 2 years ago, it will return `na`. But "3Y" will still work.
+getValidatedValue(string timeframe) =>
+
+    float result = na
+
+    if barstate.islast 
+        [value, offsetTime] = data.valueAtPeriodOffset(timeframe)
+        if timenow - time < time - offsetTime
+            result := value
+
+    result
+
+plot(rateOfreturn(getValidatedValue("5D")), title='Perf.5D')
+plot(rateOfreturn(getValidatedValue("1W")), title='Perf.W')
+plot(rateOfreturn(getValidatedValue("1M")), title='Perf.1M')
+plot(rateOfreturn(getValidatedValue("3M")), title='Perf.3M')
+plot(rateOfreturn(getValidatedValue("6M")), title='Perf.6M')
+plot(rateOfreturn(getValidatedValue("1Y")), title='Perf.Y')
+plot(rateOfreturn(getValidatedValue("3Y")), title='Perf.3Y')
+plot(rateOfreturn(getValidatedValue("5Y")), title='Perf.5Y')
+plot(rateOfreturn(getValidatedValue("10Y")), title='Perf.10Y')
+plot(rateOfreturn(getValidatedValue("YTD")), title='Perf.YTD')

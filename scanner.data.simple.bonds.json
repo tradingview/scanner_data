@@ -4,7 +4,7 @@
 			{
 				"id": "text",
 				"type": "text",
-				"defval": "close~$0;$0();#0~$0~$1-$1@1~na():f~v:if(!($1@1\u003c0)\u0026\u0026!($1\u003c0)){$3=($2/$1@1)*100~}~$3~$1!$2!$5;t:str.substring(ticker,0,str.length(ticker):i-1):t~t:sc(t:syminfo.prefix,t:':',t:$3):t~i:na():f~sym($4,period,period,false,false,true,'NONE',false,false,$5)|$1()|s3:$2($7):s3~$9!$10!$11",
+				"defval": "close~$0;$0();#0~$0~$1-$1@1~na():f~v:if(!($1@1\u003c0)\u0026\u0026!($1\u003c0)){$3=($2/$1@1)*100~}~$3~$1!$2!$5;t:str.substring(ticker,0,str.length(ticker):i-1):t~t:sc(t:syminfo.prefix,t:':',t:$3):t~i:na():f~sym($4,periodV6,periodV6,false,false,true,'NONE',false,false,$5)|$1()|s3:$2($7):s3~$9!$10!$11",
 				"isFake": false
 			},
 			{

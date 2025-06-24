@@ -1,4 +1,4 @@
-//@version=5
+//@version=6
 indicator(title='ScannerData', shorttitle='_SD_')
 
 #include <links/high_and_low.pine.link>

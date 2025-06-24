@@ -2,6 +2,7 @@
 var fundTF = timeframe.isintraday ? "D" : timeframe.period
 
 msInOneDay = 86400000
+years1 = 365
 
 startFrom(daysBack)=>
     time_close("D", syminfo.session, syminfo.timezone) - daysBack * msInOneDay

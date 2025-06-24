@@ -1,4 +1,4 @@
-//@version=5
+//@version=6
 indicator(title='ScannerData', shorttitle='_SD_')
 
 #include <links/bond_yield.pine.link>

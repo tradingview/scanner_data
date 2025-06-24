@@ -4,11 +4,3 @@ rateOfreturn(ref) =>
 		na
 	else
 		(close - ref) * 100 / math.abs(ref)
-rr(bb, maxbarsback) =>
-	// max_bars_back(open, maxbarsback)
-	open[maxbarsback] * 0 + bb == 0 ? na : rateOfreturn(open[bb])
-perfYTD() =>
-	var lastYearOpen = open
-	if year > year[1]
-		lastYearOpen := open
-	rateOfreturn(lastYearOpen)

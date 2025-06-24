@@ -259,10 +259,10 @@ presets:
       - SGX:TF1!
       - SGX:GOF1!
       - SGX:3MF1!
-      - SGX:EE1!
+      - SGX:EF1!
       - SGX:ACF1!
       - SGX:MTF1!
-      - SGX:TF1!
+      - SGX:RT1!
 - name: country_top_futures_commodities_th
   symbols:
     tickers:

@@ -6,7 +6,7 @@ rateOfreturn(ref) =>
 		(close - ref) * 100 / math.abs(ref)
 rr(bb, maxbarsback) =>
 	// max_bars_back(open, maxbarsback)
-	open[maxbarsback] * 0 + bb == 0 ? na : rateOfreturn(open[bb])
+	nz(open[maxbarsback] * 0) + bb == 0 ? na : rateOfreturn(open[bb])
 perfYTD() =>
 	if year != year(timenow)
 		na

@@ -2,8 +2,11 @@
 years1 = 365
 oneYearAgo = timenow - 1000 * 60 * 60 * 24 * years1
 barsCountOneYear = fastSearchTimeIndex(oneYearAgo, years1)
+fiveDays = 5
+fiveDaysAgo = timenow - 1000 * 60 * 60 * 24 * fiveDays
+countOfBarsFiveDaysAgo = fastSearchTimeIndex(fiveDaysAgo, fiveDays)
 perfYTD = perfYTD()
-plot((close - open[4]) / open[4] * 100, title='Perf.5D')
+plot(rr(countOfBarsFiveDaysAgo, fiveDays), title='Perf.5D')
 plot(rr(countOfBarsWeekAgo, week1), title='Perf.W')
 plot(rr(countOfBars1MonthAgo, month1), title='Perf.1M')
 plot(rr(countOfBars3MonthAgo, month3), title='Perf.3M')

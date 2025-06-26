@@ -1,4 +1,4 @@
-//@version=5
+//@version=6
 indicator(title='ScannerData', shorttitle='_SD_')
 
 // study(title="Moving Average", shorttitle="MA", overlay=true)
@@ -534,7 +534,7 @@ if not(na(macdMACD) or na(signalMACD))
 	recOtherC += 1
 	recOther += calcRecommend(macdMACD > signalMACD, macdMACD < signalMACD)
 recStoch_RSI = float(na)
-if not(na(DownTrend) or na(UpTrend) or na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
+if not(na(Stoch_RSI_K) or na(Stoch_RSI_D) or na(Stoch_RSI_K[1]) or na(Stoch_RSI_D[1]))
 	recStoch_RSI := calcRecommend(DownTrend and Stoch_RSI_K < 20 and Stoch_RSI_D < 20 and Stoch_RSI_K > Stoch_RSI_D, UpTrend and Stoch_RSI_K > 80 and Stoch_RSI_D > 80 and Stoch_RSI_K < Stoch_RSI_D)
 plot(recStoch_RSI, title='Rec.Stoch.RSI')
 if not na(recStoch_RSI)
@@ -548,7 +548,7 @@ if not na(recWR)
 	recOtherC += 1
 	recOther += recWR
 recBBPower = float(na)
-if not(na(UpTrend) or na(DownTrend) or na(BearPower) or na(BearPower[1]) or na(BullPower) or na(BullPower[1]))
+if not(na(BearPower) or na(BearPower[1]) or na(BullPower) or na(BullPower[1]))
 	recBBPower := calcRecommend(UpTrend and BearPower < 0 and BearPower > BearPower[1], DownTrend and BullPower > 0 and BullPower < BullPower[1])
 plot(recBBPower, title='Rec.BBPower')
 if not na(recBBPower)

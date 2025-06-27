@@ -648,5 +648,11 @@
     "issue_amount": "rates_current",
     "outstanding_amount": "rates_current",
     "accrued_coupon_interest": "rates_current",
-    "close_net": "rates_current"
+    "close_net": "rates_current",
+	"earnings_per_share_forecast_next_fh": "rates_fh",
+	"earnings_per_share_fh": "rates_fh",
+	"dps_common_stock_prim_issue_fh": "rates_fh",
+	"dps_common_stock_prim_issue_ttm": "rates_ttm",
+	"revenue_forecast_next_fh": "rates_fh",
+	"revenue_forecast_next_fy": "rates_fy"
 }

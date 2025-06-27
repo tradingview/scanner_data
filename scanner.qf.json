@@ -1379,5 +1379,321 @@
     {
         "name": "fiscal_period_end_fh_h",
         "type": "num_slice"
+    },
+    {
+        "name": "fiscal_period_current",
+        "type": "text"
+    },
+    {
+        "name": "fiscal_period_end_current",
+        "type": "time"
+    },
+    {
+        "name": "fiscal_period_fy",
+        "type": "text"
+    },
+    {
+        "name": "fiscal_period_end_fy",
+        "type": "time"
+    },
+    {
+        "name": "net_income_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_income_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_revenue_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_revenue_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capital_expenditures_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capital_expenditures_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capital_expenditures_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_financing_activities_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_financing_activities_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_financing_activities_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_investing_activities_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_investing_activities_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_investing_activities_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_operating_activities_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_operating_activities_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_f_operating_activities_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "dividend_payout_ratio_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "ebitda_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "oper_income_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "oper_income_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_basic_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_basic_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_cash_dividends_paid_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_cash_dividends_paid_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_cash_dividends_paid_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "current_ratio_fy",
+        "type": "number"
+    },
+    {
+        "name": "debt_to_equity_fy",
+        "type": "number"
+    },
+    {
+        "name": "earnings_per_share_forecast_next_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "goodwill_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "net_debt_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "quick_ratio_fy",
+        "type": "number"
+    },
+    {
+        "name": "total_current_assets_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_equity_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_diluted_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "gross_profit_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "free_cash_flow_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "dps_common_stock_prim_issue_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "dps_common_stock_prim_issue_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "research_and_dev_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "research_and_dev_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "return_on_common_equity_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_common_equity_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_equity_adjust_to_book_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "return_on_equity_adjust_to_book_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "revenue_forecast_next_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "revenue_forecast_next_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "share_buyback_ratio_fq",
+        "type": "final_percent"
+    },
+    {
+        "name": "share_buyback_ratio_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "sloan_ratio_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "sloan_ratio_current",
+        "type": "final_percent"
+    },
+    {
+        "name": "zmijewski_score_fy",
+        "type": "number"
+    },
+    {
+        "name": "zmijewski_score_current",
+        "type": "number"
+    },
+    {
+        "name": "altman_z_score_fy",
+        "type": "number"
+    },
+    {
+        "name": "altman_z_score_ttm",
+        "type": "number"
+    },
+    {
+        "name": "debt_to_revenue_fy",
+        "type": "number"
+    },
+    {
+        "name": "debt_to_revenue_ttm",
+        "type": "number"
+    },
+    {
+        "name": "ebitda_margin_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "ebitda_margin_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "effective_interest_rate_on_debt_fy",
+        "type": "final_percent"
+    },
+    {
+        "name": "effective_interest_rate_on_debt_ttm",
+        "type": "final_percent"
+    },
+    {
+        "name": "graham_numbers_fy",
+        "type": "number"
+    },
+    {
+        "name": "graham_numbers_ttm",
+        "type": "number"
+    },
+    {
+        "name": "long_term_debt_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "long_term_debt_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "piotroski_f_score_ttm",
+        "type": "number"
+    },
+    {
+        "name": "piotroski_f_score_fy",
+        "type": "number"
+    },
+    {
+        "name": "short_term_debt_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "short_term_debt_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "sustainable_growth_rate_fy",
+        "type": "number"
+    },
+    {
+        "name": "sustainable_growth_rate_ttm",
+        "type": "number"
+    },
+    {
+        "name": "tobin_q_ratio_fq",
+        "type": "number"
+    },
+    {
+        "name": "tobin_q_ratio_fy",
+        "type": "number"
     }
 ]

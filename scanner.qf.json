@@ -268,10 +268,6 @@
         "type": "fundamental_price"
     },
     {
-        "name": "debt_to_equity_fq",
-        "type": "number"
-    },
-    {
         "name": "expected_annual_dividends",
         "type": "number"
     },
@@ -589,10 +585,6 @@
     },
     {
         "name": "total_current_liabilities_fq",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "earnings_per_share_fq",
         "type": "fundamental_price"
     },
     {
@@ -1661,23 +1653,11 @@
         "type": "fundamental_price"
     },
     {
-        "name": "ebitda_fy",
-        "type": "fundamental_price"
-    },
-    {
         "name": "oper_income_fq",
         "type": "fundamental_price"
     },
     {
         "name": "oper_income_fh",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "earnings_per_share_basic_fq",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "earnings_per_share_basic_fh",
         "type": "fundamental_price"
     },
     {
@@ -1722,10 +1702,6 @@
     },
     {
         "name": "total_equity_fy",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "earnings_per_share_diluted_fh",
         "type": "fundamental_price"
     },
     {
@@ -1793,7 +1769,7 @@
         "type": "final_percent"
     },
     {
-        "name": "sloan_ratio_current",
+        "name": "sloan_ratio_ttm",
         "type": "final_percent"
     },
     {
@@ -1801,7 +1777,7 @@
         "type": "number"
     },
     {
-        "name": "zmijewski_score_current",
+        "name": "zmijewski_score_ttm",
         "type": "number"
     },
     {

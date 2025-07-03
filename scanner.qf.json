@@ -268,10 +268,6 @@
         "type": "fundamental_price"
     },
     {
-        "name": "debt_to_equity_fq",
-        "type": "number"
-    },
-    {
         "name": "expected_annual_dividends",
         "type": "number"
     },
@@ -592,10 +588,6 @@
         "type": "fundamental_price"
     },
     {
-        "name": "earnings_per_share_fq",
-        "type": "fundamental_price"
-    },
-    {
         "name": "earnings_per_share_fy",
         "type": "fundamental_price"
     },
@@ -626,10 +618,6 @@
     {
         "name": "long_term_debt_to_equity_fq",
         "type": "number"
-    },
-    {
-        "name": "daily-summary-ast",
-        "type": "text"
     },
     {
         "name": "dividend_payout_ratio_percent_fq",
@@ -690,7 +678,11 @@
     {
         "name": "update-time",
         "type": "number",
-        "extract_from": "daily-bar" 
+        "extract_from": "daily-bar"
+    },
+    {
+        "name": "daily-summary-ast",
+        "type": "text"
     },
     {
         "name": "total_revenue_fy_h",
@@ -1367,7 +1359,7 @@
     {
         "name": "top_revenue_country_code",
         "type": "text"
-    },   
+    },
     {
         "name": "issuance_of_stock_net_ttm",
         "type": "fundamental_price"
@@ -1379,6 +1371,194 @@
     {
         "name": "fiscal_period_end_fh_h",
         "type": "num_slice"
+    },
+    {
+        "name": "revenue_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "revenue_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "revenue_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_value_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_tangible_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capex_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capex_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capex_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capex_per_share_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "capex_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "operating_cash_flow_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "operating_cash_flow_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "operating_cash_flow_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "operating_cash_flow_per_share_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "operating_cash_flow_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "free_cash_flow_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "free_cash_flow_per_share_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "free_cash_flow_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebit_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebit_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebit_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebit_per_share_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebit_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_per_share_ttm",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ebitda_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "working_capital_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "working_capital_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "working_capital_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "working_capital_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ncavps_ratio_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ncavps_ratio_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ncavps_ratio_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "ncavps_ratio_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_debt_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_debt_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_debt_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "total_debt_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_per_share_fy",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "cash_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_basic_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_basic_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "earnings_per_share_diluted_fh",
+        "type": "fundamental_price"
     },
     {
         "name": "fiscal_period_current",
@@ -1473,23 +1653,11 @@
         "type": "fundamental_price"
     },
     {
-        "name": "ebitda_fy",
-        "type": "fundamental_price"
-    },
-    {
         "name": "oper_income_fq",
         "type": "fundamental_price"
     },
     {
         "name": "oper_income_fh",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "earnings_per_share_basic_fq",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "earnings_per_share_basic_fh",
         "type": "fundamental_price"
     },
     {
@@ -1534,10 +1702,6 @@
     },
     {
         "name": "total_equity_fy",
-        "type": "fundamental_price"
-    },
-    {
-        "name": "earnings_per_share_diluted_fh",
         "type": "fundamental_price"
     },
     {

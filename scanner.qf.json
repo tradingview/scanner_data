@@ -1033,6 +1033,10 @@
         "type": "fundamental_price"
     },
     {
+        "name": "book_value_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
         "name": "book_value_per_share_fy",
         "type": "fundamental_price"
     },
@@ -1386,6 +1390,18 @@
     },
     {
         "name": "book_value_per_share_current",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_tangible_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_tangible_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "book_tangible_per_share_fy",
         "type": "fundamental_price"
     },
     {

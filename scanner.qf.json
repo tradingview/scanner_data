@@ -1049,6 +1049,10 @@
         "type": "text"
     },
     {
+        "name": "etf_holdings_count",
+        "type": "number"
+    },
+    {
         "name": "category",
         "type": "text"
     },
@@ -1449,7 +1453,15 @@
         "type": "fundamental_price"
     },
     {
+        "name": "free_cash_flow_per_share_fq",
+        "type": "fundamental_price"
+    },
+    {
         "name": "free_cash_flow_per_share_fh",
+        "type": "fundamental_price"
+    },
+    {
+        "name": "free_cash_flow_per_share_fy",
         "type": "fundamental_price"
     },
     {

@@ -668,6 +668,9 @@ presets:
         - stock
         - dr
         - structured
+    - left: is_primary
+      operation: equal
+      right: true
   sort:
     sortBy: market_cap_basic
     sortOrder: desc

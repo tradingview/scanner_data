@@ -16,10 +16,12 @@ sum(daysBack)=>
 
 sumYTD()=>
     if last_bar_index - bar_index < num_bb
-    	var sum = 0.
-        if year(time[1], syminfo.timezone) < year(time, syminfo.timezone)
-            sum := 0
-        sum += close
+        sum = 0.
+        sum += close[0]
+        for i = 1 to bar_index    
+            if year(time[i], syminfo.timezone) < year(time[i-1], syminfo.timezone)
+			    break
+            sum += close[i]
 	    sum
     else
         na

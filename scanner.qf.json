@@ -1874,11 +1874,11 @@
     },
     {
         "name": "sustainable_growth_rate_fy",
-        "type": "number"
+        "type": "final_percent"
     },
     {
         "name": "sustainable_growth_rate_ttm",
-        "type": "number"
+        "type": "final_percent"
     },
     {
         "name": "tobin_q_ratio_fq",

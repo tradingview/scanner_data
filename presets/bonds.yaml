@@ -876,7 +876,6 @@ presets:
 - name: country_top_bonds_yield_pe
   symbols:
     tickers:
-      - TVC:PE02Y
       - TVC:PE05Y
       - TVC:PE10Y
       - TVC:PE15Y

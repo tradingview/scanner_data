@@ -617,7 +617,6 @@ presets:
       - BVL:SPBLSPT
       - BVL:SPBLEPT
       - BVL:SPBLCPT
-      - BVL:SPBPGEPT
 - name: highest_revenue_per_employee
   filter:
     - left: is_primary

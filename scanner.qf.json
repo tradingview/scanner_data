@@ -1053,6 +1053,10 @@
         "type": "number"
     },
     {
+        "name": "etf_holdings",
+        "type": "interface"
+    },
+    {
         "name": "category",
         "type": "text"
     },
@@ -1887,5 +1891,9 @@
     {
         "name": "tobin_q_ratio_fy",
         "type": "number"
+    },
+    {
+        "name": "symbol_primary_listing",
+        "type": "text"
     }
 ]

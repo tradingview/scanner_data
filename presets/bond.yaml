@@ -13,18 +13,12 @@ presets:
   - left: bond_issuer_type
     operation: in_range
     right: corporate
-  - left: yield_to_maturity
-    operation: egreater
-    right: 6
   - left: outstanding_amount
     operation: egreater
     right: 100000000
   - left: fundamental_currency_code
     operation: in_range
     right: USD
-  - left: yield_to_maturity
-    operation: eless
-    right: 10
   - left: is_primary
     operation: equal
     right: true
@@ -42,9 +36,6 @@ presets:
   - left: duration_type
     operation: in_range
     right: short-term
-  - left: yield_to_maturity
-    operation: egreater
-    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
@@ -71,9 +62,6 @@ presets:
   - left: duration_type
     operation: in_range
     right: long-term
-  - left: yield_to_maturity
-    operation: egreater
-    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
@@ -97,9 +85,6 @@ presets:
   - left: coupon_type_general
     operation: in_range
     right: zero
-  - left: yield_to_maturity
-    operation: egreater
-    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
@@ -123,18 +108,12 @@ presets:
   - left: coupon_type_general
     operation: in_range
     right: fixed
-  - left: yield_to_maturity
-    operation: egreater
-    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
   - left: fundamental_currency_code
     operation: in_range
     right: USD
-  - left: yield_to_maturity
-    operation: eless
-    right: 10
   - left: is_primary
     operation: equal
     right: true
@@ -152,18 +131,12 @@ presets:
   - left: coupon_type_general
     operation: in_range
     right: variable
-  - left: yield_to_maturity
-    operation: egreater
-    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
   - left: fundamental_currency_code
     operation: in_range
     right: USD
-  - left: yield_to_maturity
-    operation: eless
-    right: 10
   - left: is_primary
     operation: equal
     right: true
@@ -182,9 +155,6 @@ presets:
     values:
     - United States
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -203,9 +173,6 @@ presets:
     values:
     - Argentina
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -224,9 +191,6 @@ presets:
     values:
     - Austria
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -245,9 +209,6 @@ presets:
     values:
     - Australia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -266,9 +227,6 @@ presets:
     values:
     - Bahrain
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -291,9 +249,6 @@ presets:
     values:
     - Belgium
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -312,9 +267,6 @@ presets:
     values:
     - Brazil
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -333,9 +285,6 @@ presets:
     values:
     - Canada
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -354,9 +303,6 @@ presets:
     values:
     - Chile
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -375,9 +321,6 @@ presets:
     values:
     - China
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -396,9 +339,6 @@ presets:
     values:
     - Colombia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -417,9 +357,6 @@ presets:
     values:
     - Cyprus
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -438,9 +375,6 @@ presets:
     values:
     - Czech Republic
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -459,9 +393,6 @@ presets:
     values:
     - Denmark
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -480,9 +411,6 @@ presets:
     values:
     - Egypt
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -501,9 +429,6 @@ presets:
     values:
     - Estonia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -522,9 +447,6 @@ presets:
     values:
     - Finland
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -543,9 +465,6 @@ presets:
     values:
     - France
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -564,9 +483,6 @@ presets:
     values:
     - Germany
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -585,9 +501,6 @@ presets:
     values:
     - Greece
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -606,9 +519,6 @@ presets:
     values:
     - Hong Kong
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -627,9 +537,6 @@ presets:
     values:
     - Hungary
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -648,9 +555,6 @@ presets:
     values:
     - Iceland
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -669,9 +573,6 @@ presets:
     values:
     - India
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -690,9 +591,6 @@ presets:
     values:
     - Indonesia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -711,9 +609,6 @@ presets:
       values:
         - Ireland
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -732,9 +627,6 @@ presets:
     values:
     - Israel
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -753,9 +645,6 @@ presets:
     values:
     - Italy
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -774,9 +663,6 @@ presets:
     values:
     - Japan
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -799,9 +685,6 @@ presets:
     values:
     - South Korea
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -820,9 +703,6 @@ presets:
     values:
     - Saudi Arabia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -841,9 +721,6 @@ presets:
     values:
     - Kuwait
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -862,9 +739,6 @@ presets:
     values:
     - Latvia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -883,9 +757,6 @@ presets:
     values:
     - Lithuania
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -904,9 +775,6 @@ presets:
     values:
     - Luxembourg
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -925,9 +793,6 @@ presets:
     values:
     - Malaysia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -946,9 +811,6 @@ presets:
     values:
     - Mexico
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -967,9 +829,6 @@ presets:
     values:
     - Morocco
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -988,9 +847,6 @@ presets:
     values:
     - Netherlands
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1009,9 +865,6 @@ presets:
     values:
     - New Zealand
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1030,9 +883,6 @@ presets:
     values:
     - Nigeria
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1051,9 +901,6 @@ presets:
     values:
     - Norway
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1072,9 +919,6 @@ presets:
     values:
     - Pakistan
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1093,9 +937,6 @@ presets:
     values:
     - Peru
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1114,9 +955,6 @@ presets:
     values:
     - Philippines
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1135,9 +973,6 @@ presets:
     values:
     - Poland
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1156,9 +991,6 @@ presets:
     values:
     - Portugal
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1177,9 +1009,6 @@ presets:
     values:
     - Qatar
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1198,9 +1027,6 @@ presets:
     values:
     - Romania
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1219,9 +1045,6 @@ presets:
     values:
     - South Africa
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1240,9 +1063,6 @@ presets:
     values:
     - Russian Federation
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1265,9 +1085,6 @@ presets:
     values:
     - Singapore
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1286,9 +1103,6 @@ presets:
     values:
     - Slovakia
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1307,9 +1121,6 @@ presets:
     values:
     - Spain
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1332,9 +1143,6 @@ presets:
     values:
     - Sweden
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1353,9 +1161,6 @@ presets:
     values:
     - Switzerland
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1374,9 +1179,6 @@ presets:
     values:
     - Taiwan
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1395,9 +1197,6 @@ presets:
     values:
     - Thailand
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1420,9 +1219,6 @@ presets:
     values:
     - Turkey
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1441,9 +1237,6 @@ presets:
     values:
     - United Arab Emirates
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1462,9 +1255,6 @@ presets:
     values:
     - United Kingdom
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1483,9 +1273,6 @@ presets:
     values:
     - Venezuela
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
@@ -1504,9 +1291,6 @@ presets:
     values:
     - Vietnam
   filter:
-    - left: yield_to_maturity
-      operation: egreater
-      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000

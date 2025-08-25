@@ -1051,7 +1051,7 @@ presets:
         - fund
         - structured
     - left: typespecs
-      operation: in_range
+      operation: has
       right:
         - reit
   sort:

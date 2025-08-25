@@ -1052,12 +1052,6 @@ presets:
         - stock
         - dr
         - structured
-    - left: type
-      operation: equal
-      right: fund
-    - left: typespecs
-      operation: has
-      right: reit
   sort:
     sortBy: market_cap_basic
     sortOrder: desc

@@ -1043,17 +1043,31 @@ presets:
     - left: typespecs
       operation: has_none_of
       right: preferred
-    - left: type
-      operation: in_range
-      right:
-        - stock
-        - dr
-        - fund
-        - structured
-    - left: typespecs
-      operation: has
-      right:
-        - reit
+  filter2:
+    operator: and
+    operands:
+      - operation:
+          operator: or
+          operands:
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: typespecs
+                      operation: has
+                      right:
+                        - reit
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: type
+                      operation: in_range
+                      right:
+                        - stock
+                        - dr
+                        - structured
+                        - fund
   sort:
     sortBy: market_cap_basic
     sortOrder: desc

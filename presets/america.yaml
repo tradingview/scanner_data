@@ -1033,6 +1033,13 @@ presets:
     sortOrder: desc
 - name: market_company
   filter:
+    - left: exchange
+      operation: in_range
+      right:
+        - AMEX
+        - CBOE
+        - NASDAQ
+        - NYSE
     - left: typespecs
       operation: has_none_of
       right: preferred
@@ -1049,18 +1056,18 @@ presets:
                   - stock
                   - dr
                   - structured
-            - operation:
-                operator: and
-                operands:
-                  - expression:
-                      left: type
-                      operation: equal
-                      right: fund
-                  - expression:
-                      left: typespecs
-                      operation: has
-                      right:
-                        - reit
+      - operation:
+          operator: and
+          operands:
+            - expression:
+                left: type
+                operation: equal
+                right: fund
+            - expression:
+                left: typespecs
+                operation: has
+                right:
+                  - reit
   sort:
     sortBy: market_cap_basic
     sortOrder: desc

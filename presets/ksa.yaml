@@ -585,30 +585,30 @@ presets:
       operation: has_none_of
       right: preferred
   filter2:
-  operator: or
-  operands:
-    - operation:
-        operator: and
-        operands:
-          - expression:
-              left: type
-              operation: in_range
-              right:
-                - stock
-                - dr
-                - structured
-    - operation:
-        operator: and
-        operands:
-          - expression:
-              left: type
-              operation: equal
-              right: fund
-          - expression:
-              left: typespecs
-              operation: has
-              right:
-                - reit
+    operator: or
+    operands:
+      - operation:
+          operator: and
+          operands:
+            - expression:
+                left: type
+                operation: in_range
+                right:
+                  - stock
+                  - dr
+                  - structured
+      - operation:
+          operator: and
+          operands:
+            - expression:
+                left: type
+                operation: equal
+                right: fund
+            - expression:
+                left: typespecs
+                operation: has
+                right:
+                  - reit
   sort:
     sortBy: market_cap_basic
     sortOrder: desc

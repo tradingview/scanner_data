@@ -613,6 +613,8 @@ presets:
                 operation: has
                 right:
                   - reit
+                  - trust
+                  - closeend
   sort:
     sortBy: market_cap_basic
     sortOrder: desc

@@ -20,6 +20,9 @@ presets:
   - left: 24h_close_change|5
     operation: greater
     right: 0
+  - left: crypto_total_rank
+    operation: eless
+    right: 200
   sort:
     sortBy: 24h_close_change|5
     sortOrder: desc
@@ -28,6 +31,9 @@ presets:
   - left: 24h_close_change|5
     operation: less
     right: 0
+  - left: crypto_total_rank
+    operation: eless
+    right: 200
   sort:
     sortBy: 24h_close_change|5
     sortOrder: asc

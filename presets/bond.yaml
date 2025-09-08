@@ -25,6 +25,19 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: bond_snp_rating_lt
+    operation: in_range
+    right:
+      - 750
+      - 740
+      - 730
+      - 720
+      - 710
+      - 700
+      - 690
+      - 680
+      - 670
+      - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -51,6 +64,19 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: bond_snp_rating_lt
+    operation: in_range
+    right:
+      - 750
+      - 740
+      - 730
+      - 720
+      - 710
+      - 700
+      - 690
+      - 680
+      - 670
+      - 660
   sort:
     sortBy: maturity_date
     sortOrder: asc
@@ -74,6 +100,19 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: bond_snp_rating_lt
+    operation: in_range
+    right:
+      - 750
+      - 740
+      - 730
+      - 720
+      - 710
+      - 700
+      - 690
+      - 680
+      - 670
+      - 660
   sort:
     sortBy: maturity_date
     sortOrder: desc
@@ -97,6 +136,19 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: bond_snp_rating_lt
+    operation: in_range
+    right:
+      - 750
+      - 740
+      - 730
+      - 720
+      - 710
+      - 700
+      - 690
+      - 680
+      - 670
+      - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -120,6 +172,19 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: bond_snp_rating_lt
+    operation: in_range
+    right:
+      - 750
+      - 740
+      - 730
+      - 720
+      - 710
+      - 700
+      - 690
+      - 680
+      - 670
+      - 660
   sort:
     sortBy: current_coupon
     sortOrder: desc
@@ -143,6 +208,19 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: bond_snp_rating_lt
+    operation: in_range
+    right:
+      - 750
+      - 740
+      - 730
+      - 720
+      - 710
+      - 700
+      - 690
+      - 680
+      - 670
+      - 660
   sort:
     sortBy: current_coupon
     sortOrder: desc
@@ -161,6 +239,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -179,6 +270,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -197,6 +301,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -215,6 +332,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -233,6 +363,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -255,6 +398,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -273,6 +429,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -291,6 +460,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -309,6 +491,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -327,6 +522,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -345,6 +553,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -363,6 +584,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -381,6 +615,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -399,6 +646,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -417,6 +677,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -435,6 +708,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -453,6 +739,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -471,6 +770,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -489,6 +801,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -507,6 +832,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -525,6 +863,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -543,6 +894,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -561,6 +925,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -579,6 +956,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -597,6 +987,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -615,6 +1018,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -633,6 +1049,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -651,6 +1080,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -669,6 +1111,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -691,6 +1146,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -709,6 +1177,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -727,6 +1208,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -745,6 +1239,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -763,6 +1270,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -781,6 +1301,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -799,6 +1332,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -817,6 +1363,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -835,6 +1394,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -853,6 +1425,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -871,6 +1456,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -889,6 +1487,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -907,6 +1518,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -925,6 +1549,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -943,6 +1580,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -961,6 +1611,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -979,6 +1642,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -997,6 +1673,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1015,6 +1704,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1033,6 +1735,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1051,6 +1766,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1069,6 +1797,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1091,6 +1832,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1109,6 +1863,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1127,6 +1894,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1149,6 +1929,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1167,6 +1960,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1185,6 +1991,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1203,6 +2022,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1225,6 +2057,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1243,6 +2088,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1261,6 +2119,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1279,6 +2150,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1297,6 +2181,19 @@ presets:
     - left: is_primary
       operation: equal
       right: true
+    - left: bond_snp_rating_lt
+      operation: in_range
+      right:
+        - 750
+        - 740
+        - 730
+        - 720
+        - 710
+        - 700
+        - 690
+        - 680
+        - 670
+        - 660
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc

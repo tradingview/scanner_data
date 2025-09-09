@@ -2185,22 +2185,116 @@ presets:
       - AMEX:GDX
       - AMEX:GUNR
 - name: etfs_market_page_bitcoin
+  filter:
+    - left: focus
+      operation: in_range
+      right:
+        - '2184'
+        - '2121'
+        - '2115'
+        - '2036'
+        - '2037'
+        - '2111'
+        - '2134'
+        - '2129'
+    - left: is_primary
+      operation: equal
+      right: true
+  filter2:
+    operator: and
+    operands:
+      - operation:
+          operator: or
+          operands:
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: typespecs
+                      operation: has
+                      right:
+                        - etf
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: type
+                      operation: equal
+                      right: structured
+  price_conversion:
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc
-  symbols:
-    tickers:
-      - NASDAQ:IBIT
-      - AMEX:BITB
-      - AMEX:DEFI
-      - CBOE:ARKB
-      - AMEX:GBTC
-      - CBOE:FBTC
-      - CBOE:BTCW
-      - CBOE:BTCO
-      - NASDAQ:BRRR
-      - CBOE:HODL
-      - CBOE:EZBC
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - ireland
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
 - name: etfs_market_page_highest_return
   filter:
     - left: nav_total_return.1Y
@@ -6048,20 +6142,119 @@ presets:
   markets:
     - australia
 - name: etfs_market_page_ethereum
+  filter:
+    - left: focus
+      operation: in_range
+      right:
+        - '2144'
+        - '2120'
+        - '2142'
+        - '2137'
+        - '2140'
+        - '2112'
+        - '2141'
+        - '2125'
+        - '2139'
+        - '2004'
+        - '2169'
+    - left: is_primary
+      operation: equal
+      right: true
+  filter2:
+    operator: and
+    operands:
+      - operation:
+          operator: or
+          operands:
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: typespecs
+                      operation: has
+                      right:
+                        - etf
+            - operation:
+                operator: and
+                operands:
+                  - expression:
+                      left: type
+                      operation: equal
+                      right: structured
+  price_conversion:
+    to_currency: USD
   sort:
     sortBy: aum
     sortOrder: desc
-  symbols:
-    tickers:
-      - CBOE:QETH
-      - CBOE:CETH
-      - CBOE:FETH
-      - CBOE:EZET
-      - CBOE:ETHV
-      - NASDAQ:ETHA
-      - AMEX:ETHW
-      - AMEX:ETHE
-      - AMEX:ETH
+  markets:
+    - america
+    - argentina
+    - australia
+    - austria
+    - bahrain
+    - bangladesh
+    - belgium
+    - brazil
+    - canada
+    - chile
+    - china
+    - colombia
+    - cyprus
+    - czech
+    - denmark
+    - egypt
+    - estonia
+    - finland
+    - france
+    - germany
+    - greece
+    - hongkong
+    - hungary
+    - iceland
+    - india
+    - indonesia
+    - ireland
+    - israel
+    - italy
+    - japan
+    - kenya
+    - korea
+    - ksa
+    - kuwait
+    - latvia
+    - lithuania
+    - luxembourg
+    - malaysia
+    - mexico
+    - morocco
+    - netherlands
+    - newzealand
+    - nigeria
+    - norway
+    - pakistan
+    - peru
+    - philippines
+    - poland
+    - portugal
+    - qatar
+    - romania
+    - rsa
+    - russia
+    - serbia
+    - singapore
+    - slovakia
+    - spain
+    - srilanka
+    - sweden
+    - switzerland
+    - taiwan
+    - thailand
+    - tunisia
+    - turkey
+    - uae
+    - uk
+    - venezuela
+    - vietnam
 - name: indices_africa
   symbols:
     tickers:

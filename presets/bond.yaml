@@ -13,18 +13,30 @@ presets:
   - left: bond_issuer_type
     operation: in_range
     right: corporate
+  - left: yield_to_maturity
+    operation: egreater
+    right: 6
   - left: outstanding_amount
     operation: egreater
     right: 100000000
   - left: fundamental_currency_code
     operation: in_range
     right: USD
+  - left: yield_to_maturity
+    operation: eless
+    right: 10
   - left: is_primary
     operation: equal
     right: true
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: close_pct
+    operation: egreater
+    right: 80
+  - left: maturity_date
+    operation: in_day_range
+    right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -36,6 +48,9 @@ presets:
   - left: duration_type
     operation: in_range
     right: short-term
+  - left: yield_to_maturity
+    operation: egreater
+    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
@@ -51,6 +66,12 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: close_pct
+    operation: egreater
+    right: 80
+  - left: maturity_date
+    operation: in_day_range
+    right: [183,100000000]
   sort:
     sortBy: maturity_date
     sortOrder: asc
@@ -62,6 +83,9 @@ presets:
   - left: duration_type
     operation: in_range
     right: long-term
+  - left: yield_to_maturity
+    operation: egreater
+    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
@@ -74,6 +98,12 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: close_pct
+    operation: egreater
+    right: 80
+  - left: maturity_date
+    operation: in_day_range
+    right: [183,100000000]
   sort:
     sortBy: maturity_date
     sortOrder: desc
@@ -85,6 +115,9 @@ presets:
   - left: coupon_type_general
     operation: in_range
     right: zero
+  - left: yield_to_maturity
+    operation: egreater
+    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
@@ -97,6 +130,12 @@ presets:
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: close_pct
+    operation: egreater
+    right: 80
+  - left: maturity_date
+    operation: in_day_range
+    right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -108,18 +147,30 @@ presets:
   - left: coupon_type_general
     operation: in_range
     right: fixed
+  - left: yield_to_maturity
+    operation: egreater
+    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
   - left: fundamental_currency_code
     operation: in_range
     right: USD
+  - left: yield_to_maturity
+    operation: eless
+    right: 10
   - left: is_primary
     operation: equal
     right: true
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: close_pct
+    operation: egreater
+    right: 80
+  - left: maturity_date
+    operation: in_day_range
+    right: [183,100000000]
   sort:
     sortBy: current_coupon
     sortOrder: desc
@@ -131,18 +182,30 @@ presets:
   - left: coupon_type_general
     operation: in_range
     right: variable
+  - left: yield_to_maturity
+    operation: egreater
+    right: 1
   - left: outstanding_amount
     operation: egreater
     right: 100000000
   - left: fundamental_currency_code
     operation: in_range
     right: USD
+  - left: yield_to_maturity
+    operation: eless
+    right: 10
   - left: is_primary
     operation: equal
     right: true
   - left: time
     operation: in_day_range
     right: [-14,0]
+  - left: close_pct
+    operation: egreater
+    right: 80
+  - left: maturity_date
+    operation: in_day_range
+    right: [183,100000000]
   sort:
     sortBy: current_coupon
     sortOrder: desc
@@ -155,12 +218,21 @@ presets:
     values:
     - United States
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -173,12 +245,21 @@ presets:
     values:
     - Argentina
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -191,12 +272,21 @@ presets:
     values:
     - Austria
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -209,12 +299,21 @@ presets:
     values:
     - Australia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -227,12 +326,21 @@ presets:
     values:
     - Bahrain
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -249,12 +357,21 @@ presets:
     values:
     - Belgium
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -267,12 +384,21 @@ presets:
     values:
     - Brazil
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -285,12 +411,21 @@ presets:
     values:
     - Canada
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -303,12 +438,21 @@ presets:
     values:
     - Chile
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -321,12 +465,21 @@ presets:
     values:
     - China
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -339,12 +492,21 @@ presets:
     values:
     - Colombia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -357,12 +519,21 @@ presets:
     values:
     - Cyprus
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -375,12 +546,21 @@ presets:
     values:
     - Czech Republic
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -393,12 +573,21 @@ presets:
     values:
     - Denmark
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -411,12 +600,21 @@ presets:
     values:
     - Egypt
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -429,12 +627,21 @@ presets:
     values:
     - Estonia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -447,12 +654,21 @@ presets:
     values:
     - Finland
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -465,12 +681,21 @@ presets:
     values:
     - France
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -483,12 +708,21 @@ presets:
     values:
     - Germany
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -501,12 +735,21 @@ presets:
     values:
     - Greece
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -519,12 +762,21 @@ presets:
     values:
     - Hong Kong
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -537,12 +789,21 @@ presets:
     values:
     - Hungary
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -555,12 +816,21 @@ presets:
     values:
     - Iceland
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -573,12 +843,21 @@ presets:
     values:
     - India
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -591,12 +870,21 @@ presets:
     values:
     - Indonesia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -609,12 +897,21 @@ presets:
       values:
         - Ireland
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -627,12 +924,21 @@ presets:
     values:
     - Israel
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -645,12 +951,21 @@ presets:
     values:
     - Italy
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -663,12 +978,21 @@ presets:
     values:
     - Japan
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -685,12 +1009,21 @@ presets:
     values:
     - South Korea
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -703,12 +1036,21 @@ presets:
     values:
     - Saudi Arabia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -721,12 +1063,21 @@ presets:
     values:
     - Kuwait
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -739,12 +1090,21 @@ presets:
     values:
     - Latvia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -757,12 +1117,21 @@ presets:
     values:
     - Lithuania
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -775,12 +1144,21 @@ presets:
     values:
     - Luxembourg
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -793,12 +1171,21 @@ presets:
     values:
     - Malaysia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -811,12 +1198,21 @@ presets:
     values:
     - Mexico
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -829,12 +1225,21 @@ presets:
     values:
     - Morocco
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -847,12 +1252,21 @@ presets:
     values:
     - Netherlands
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -865,12 +1279,21 @@ presets:
     values:
     - New Zealand
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -883,12 +1306,21 @@ presets:
     values:
     - Nigeria
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -901,12 +1333,21 @@ presets:
     values:
     - Norway
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -919,12 +1360,21 @@ presets:
     values:
     - Pakistan
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -937,12 +1387,21 @@ presets:
     values:
     - Peru
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -955,12 +1414,21 @@ presets:
     values:
     - Philippines
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -973,12 +1441,21 @@ presets:
     values:
     - Poland
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -991,12 +1468,21 @@ presets:
     values:
     - Portugal
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1009,12 +1495,21 @@ presets:
     values:
     - Qatar
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1027,12 +1522,21 @@ presets:
     values:
     - Romania
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1045,12 +1549,21 @@ presets:
     values:
     - South Africa
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1063,12 +1576,21 @@ presets:
     values:
     - Russian Federation
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1085,12 +1607,21 @@ presets:
     values:
     - Singapore
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1103,12 +1634,21 @@ presets:
     values:
     - Slovakia
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1121,12 +1661,21 @@ presets:
     values:
     - Spain
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1143,12 +1692,21 @@ presets:
     values:
     - Sweden
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1161,12 +1719,21 @@ presets:
     values:
     - Switzerland
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1179,12 +1746,21 @@ presets:
     values:
     - Taiwan
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1197,12 +1773,21 @@ presets:
     values:
     - Thailand
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1219,12 +1804,21 @@ presets:
     values:
     - Turkey
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1237,12 +1831,21 @@ presets:
     values:
     - United Arab Emirates
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1255,12 +1858,21 @@ presets:
     values:
     - United Kingdom
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1273,12 +1885,21 @@ presets:
     values:
     - Venezuela
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc
@@ -1291,12 +1912,21 @@ presets:
     values:
     - Vietnam
   filter:
+    - left: yield_to_maturity
+      operation: egreater
+      right: 1
     - left: outstanding_amount
       operation: egreater
       right: 100000000
     - left: is_primary
       operation: equal
       right: true
+    - left: close_pct
+      operation: egreater
+      right: 80
+    - left: maturity_date
+      operation: in_day_range
+      right: [183,100000000]
   sort:
     sortBy: yield_to_maturity
     sortOrder: desc

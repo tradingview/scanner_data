@@ -8,3 +8,17 @@ float change_percent = na
 if not(bond_price[1] < 0) and not(bond_price < 0)
     change_percent := change_abs / bond_price[1] * 100
 plot(change_percent, title="Bond.Change.%")
+
+// Bond Yield 1 | 30 | 365 days
+dayYield = 1
+monthYield = 30
+yearYield = 365
+dayAgoYield = timenow - 1000 * 60 * 60 * 24 * dayYield
+monthAgoYield = timenow - 1000 * 60 * 60 * 24 * monthYield
+yearAgoYield = timenow - 1000 * 60 * 60 * 24 * yearYield
+countOfBars1DayAgoBond = fastSearchN(time, dayAgoYield, dayYield)
+countOfBars1MonthAgoBond = fastSearchN(time, monthAgoYield, monthYield)
+countOfBars1YearAgoBond = fastSearchN(time, yearAgoYield, yearYield)
+plot(close[countOfBars1DayAgoBond], title="close_1_days_back")
+plot(close[countOfBars1MonthAgoBond], title="close_30_days_back")
+plot(close[countOfBars1YearAgoBond], title="close_365_days_back")
